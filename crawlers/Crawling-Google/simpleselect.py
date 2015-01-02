@@ -19,4 +19,5 @@ google_html = opener.open(URL)
 # parse the html
 google_parsed = html.parse(google_html)
 
-print html.tostring(google_parsed)
+# Here comes the 'selecting'!
+google_results = google_parsed.xpath('//*[@id="rso"]/div[2]/li[1]/div/h3/a')

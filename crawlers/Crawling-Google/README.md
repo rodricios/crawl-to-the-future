@@ -18,6 +18,8 @@ T. of C.
   1. [Motivation](#motivation)
   2. [The Easy Way is Usually Best](#the-easy-way-is-usually-best)
     1. [Step 1](#step-1)
+      * [Simple Download](#simple-download)
+      * [Simple Select](#simple-select)
 
 Part I
 ======
@@ -388,9 +390,9 @@ URL = 'https://www.google.com/search?q=new+york+times&\
       tbs=cdr%3A1%2Ccd_min%3A1%2F1%2F2000%2Ccd_max%3A1%2F1%2F2001\
       &start=' + str(PAGE*10)
 
-google_results = html.parse(URL)
+google_parsed = html.parse(URL)
 
-print html.tostring(google_results)
+print html.tostring(google_parsed)
 ```
 
 Now if you tried running that, you'll likely get an error.
@@ -405,7 +407,7 @@ Here's the updated script:
 ```python
 import urllib2
 
-from lxml import s
+from lxml import html
 
 # To address paging in Google
 PAGE = 0
@@ -414,12 +416,16 @@ PAGE = 0
 # this is a custom range from Jan 1, 2000 to Jan 1, 2001
 URL = 'https://www.google.com/search?q=new+york+times&tbs=cdr%3A1%2Ccd_min%3A1%2F1%2F2000%2Ccd_max%3A1%2F1%2F2001&start=' + str(PAGE*10)
 
-
+# here we setup the necessary agent to download a google html page
 opener = urllib2.build_opener()
 opener.addheaders = [('User-agent', 'Mozilla/5.0')]
+
+# let's download
 google_html = opener.open(URL)
-google_results = html.parse(google_html)
-print html.tostring(google_results)
+
+# parse the html
+google_parsed = html.parse(google_html)
+print html.tostring(google_parsed)
 ```
 
 You'll notice that we've added urllib2, no biggie.
@@ -427,3 +433,69 @@ You'll notice that we've added urllib2, no biggie.
 That script can be found [here](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/simpledownload.py)
 
 
+Simple Select
+-------------
+
+Now, how do we select the results using what we have declared in simpledownload.py?
+
+Easy! In the "google_parsed" variable - an lxml.html.Element(?) object -
+there is a amazingly useful function called "xpath"
+
+I've written about this extensively in other places, but w/o having to lead to any
+outside resource, I'm going leave it to the reader to find his or her preferred resource.
+
+Simply said, "xpath" is a querying tool just like SQL is; where SQL is usefull in structured databases
+xpath is useful for XML and HTML trees.
+
+That said, there's one last thing you must do! You have to figure out how you can distinctly "select"
+the HTML nodes/elements that we want.
+
+There's two ways to do this. The short way is to right click on the browser (with the page pointing to
+a Google results page) and click on "inspect element"
+
+The long way is to figure it out yourself using the variable declared in the above script. Yeah, let's not do that.
+
+---
+
+If using Chrome or Opera, you can right click on the desired html element and copy the
+xpath that points to said element.
+
+Here's the xpath I ended up with:
+
+    //*[@id="rso"]/div[2]/li[1]/div/h3/a
+
+Note: Don't worry if you can't read or understand that (in case you do want a crash course, I
+wrote [this guide](http://rodricios.github.io/eatiht/#crash-course-on-html-and-xpath)
+for another project, but it still serves its purpose).
+
+Now how do we use the above xpath for purpose of selecting all links to outside-of-Google pages?
+
+Like this:
+
+
+```python
+import urllib2
+
+from lxml import html
+
+# To address paging in Google
+PAGE = 0
+
+# url and query string from PART I
+# this is a custom range from Jan 1, 2000 to Jan 1, 2001
+URL = 'https://www.google.com/search?q=new+york+times&tbs=cdr%3A1%2Ccd_min%3A1%2F1%2F2000%2Ccd_max%3A1%2F1%2F2001&start=' + str(PAGE*10)
+
+# here we setup the necessary agent to download a google html page
+opener = urllib2.build_opener()
+opener.addheaders = [('User-agent', 'Mozilla/5.0')]
+
+# let's download
+google_html = opener.open(URL)
+
+# parse the html
+google_parsed = html.parse(google_html)
+
+# Here comes the 'selecting'!
+google_results = google_parsed.xpath('//*[@id="rso"]/div[2]/li[1]/div/h3/a')
+
+```
