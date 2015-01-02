@@ -335,8 +335,7 @@ and select nodes in an HTML tree. That's all the power we need.
 To select, we're going to use your browsers developer tools - but more on that in a minute.
 
 Note: the following steps in Python can be downloaded in its entirety [here](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/simplecrawl.py)
-
-
+Note: the '\' is only for visual purposes, the file itself will have the url declared in single line.
 
 ```python
 import lxml
