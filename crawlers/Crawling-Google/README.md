@@ -164,7 +164,7 @@ client is "opera" and hs=SBu, I don't know what that means; biw=1309, what?
 bih=810? source=1nt? Yeah, thank Google, you make it really easy for us to
 interpret your auto generated query string parameters.
 
-####Final query string
+###Final query string
 
 So to finish, we'll decide on a query string to use in our crawler.
 
@@ -182,3 +182,13 @@ Let's skip all the stuff before the custom date range field to get this:
 
 Woohoo! If you copy and paste that into your browser (I'm using Opera), you should
 get a typical Google Results page. Success!
+
+###One last thing, Pagination
+
+If we want to satisfy the [*random 10 pages*](#brainstorming) mentioned
+in a quote in the Brainstorming section, we have to have a pretty large
+data set. Not too large, but I've seen number getting thrown around in the
+hundreds to thousands range. Let's refer to ClearEval and see what they
+specified. Be right back!
+
+---
