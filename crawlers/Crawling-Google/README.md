@@ -526,7 +526,7 @@ Nah, common sense. At least, we should try to have it be common sense.
 
 Refer to this picture:
 
-![Use you developer tools!](/crawl-to-the-future/crawlers/Crawling-Google/finding-Google-results.png?raw=true "Using Dev. Tools to Find Relevant HTML Nodes")
+![Use you developer tools!](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/finding-Google-results.png?raw=true "Using Dev. Tools to Find Relevant HTML Nodes")
 
 There's a function in lxml called "text_content;" it's similar to the "text" variable, but the main difference
 is that text_content() will return a string of **all** textnodes under the calling element; "text" on the other
