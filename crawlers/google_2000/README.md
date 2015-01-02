@@ -48,8 +48,8 @@ After looking at both *Complete* and *HTML Only* instances, it's easy to say tha
 because for whatever reason, "Complete" looks, frankly, *incomplete*. On a sidenote, programmers should not
 give name to filetypes, only functions and classes.
 
-I've included both types in the foldere #TODO: MAKE REFERENCE TO FOLDER
+I've included both types in the folder within the [**datasets** directory structure](https://github.com/rodricios/crawl-to-the-future/tree/master/dataset#dataset-aka-websites-from-2000-2005-2010-and-2015)
 
-And I repeat this method for the rest of the pages on the first page of Google's results
+And I repeat this method for the rest of the pages on the first page of Google's results. See the current hand picked [dataset here](https://github.com/rodricios/crawl-to-the-future/tree/master/dataset/NYTimes/byhand)
 
 But seriously though. Hand picking is not an option. Moving on to crawling.
