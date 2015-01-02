@@ -512,8 +512,24 @@ That means our xpath is incorrect, or is not understood. This happens. Let's see
 
 Time to get interactive with a Python shell.
 
-Remember, what we have to do is come up with an expath that will return a list of 10 elements, and those 10 elements
+Remember, what we have to do is come up with an xpath that will return a list of 10 elements, and those 10 elements
 will have, inside one of its variables a hyperlink; that hyperlink is the link that will lead us to the webpages that
 will make up our dataset.
 
+---
 
+So after a bit experimentation, and by bit I mean an hour, I realized I made a mistake. I made the mistake
+of assuming that the page rendered on a browser would match the HTML tree parsed by lxml.html.
+
+The way to go about finding those 10 'result' elements I've been talking about requires a bit of, ingenuity?
+Nah, common sense. At least, we should try to have it be common sense.
+
+Refer to this picture:
+
+![Use you developer tools!](/crawl-to-the-future/crawlers/Crawling-Google/finding-Google-results.png?raw=true "Using Dev. Tools to Find Relevant HTML Nodes")
+
+There's a function in lxml called "text_content;" it's similar to the "text" variable, but the main difference
+is that text_content() will return a string of **all** textnodes under the calling element; "text" on the other
+hand will return the calling node's immediate text (imagine a p node with some text).
+
+On thing I did use to prune out unnecessary elements from the HTML tree was to
