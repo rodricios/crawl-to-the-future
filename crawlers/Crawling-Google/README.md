@@ -4,7 +4,7 @@ Crawling Google
 T. of C.
 --------
 
-[Part I](#part-i)
+* [Part I](#part-i)
   1. [Intro](#intro)
   2. [Brainstorming](#brainstorming)
   3. [Decision?](#decision)
@@ -14,6 +14,8 @@ T. of C.
   7. [One last thing, Pagination](https://github.com/rodricios/crawl-to-the-future/tree/master/crawlers/Crawling-Google#one-last-thing-pagination)
   8. [Pagination](https://github.com/rodricios/crawl-to-the-future/tree/master/crawlers/Crawling-Google#pagination)
 
+* [Part II](#part-ii)
+  1. [Motivation](#motivation)
 
 Part I
 ======
@@ -280,3 +282,13 @@ Alright! That should do it. What we've just done is disect the necessary
 parameters for custom-date-range and paged queries!
 
 
+Part II
+=======
+
+Motivation
+----------
+
+So what was the point of the last section? Well, there is no "point." That section is simply an explanation. The explanation should be clear - it's about simplifying a query string. In the process of simplifying said query string, I hope I was able to show the typical process that one goes through when **beginning** to create a crawler that's designed to crawl search engines. 
+You can apply the same query-simplifying principle to Amazon, Yahoo, Bing, etc. But I should emphasize this: the key is not to simplify for simplicity sake, the key is for you to understand the field, value; the parameter names, the "language" that seperates the searcher from the searching. 
+
+Now, here's where things will start to get interesting. Instead of right away going to Scrapy, let's just bring out some simple Python tools: lxml and urllib2
