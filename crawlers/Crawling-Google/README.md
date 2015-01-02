@@ -25,7 +25,7 @@ Intro
 -----
 
 *Crawling Google*'s README is split up into more than one part. Part I is all about simplifying Google's
-query string. Why is this important? Because we are going to use that to our advantage when it comes building a substantial dataset, from which we can "randomly" pick out web pages. 
+query string. Why is this important? Because we are going to use that to our advantage when it comes building a substantial dataset, from which we can "randomly" pick out web pages.
 
 Part II will be us exploring Scrapy and using the url+query string we acquired in Part I.
 
@@ -278,9 +278,14 @@ That should do it; let's try to add that bit to the end of our shorter url+query
 
     https://www.google.com/search?q=new+york+times&tbs=cdr%3A1%2Ccd_min%3A1%2F1%2F2000%2Ccd_max%3A1%2F1%2F2001&start=10
 
-Alright! That should do it. What we've just done is disect the necessary
-parameters for custom-date-range and paged queries!
+Alright! Now change the value to 20; your entire url+query string will look like:
 
+    https://www.google.com/search?q=new+york+times&tbs=cdr%3A1%2Ccd_min%3A1%2F1%2F2000%2Ccd_max%3A1%2F1%2F2001&start=20
+
+If you checked what page you were on after the last query, you would be on the 3rd page :)
+
+That should do it. What we've just done is disect the necessary
+parameters for custom-date-range and paged queries!
 
 Part II
 =======
@@ -288,7 +293,43 @@ Part II
 Motivation
 ----------
 
-So what was the point of the last section? Well, there is no "point." That section is simply an explanation. The explanation should be clear - it's about simplifying a query string. In the process of simplifying said query string, I hope I was able to show the typical process that one goes through when **beginning** to create a crawler that's designed to crawl search engines. 
-You can apply the same query-simplifying principle to Amazon, Yahoo, Bing, etc. But I should emphasize this: the key is not to simplify for simplicity sake, the key is for you to understand the field, value; the parameter names, the "language" that seperates the searcher from the searching. 
+So what was the point of the last section? Well, there is no "point." That section is simply an explanation. The explanation should be clear - it's about simplifying a query string. In the process of simplifying said query string, I hope I was able to show the typical process that one goes through when **beginning** to create a crawler that's designed to crawl search engines.
+You can apply the same query-simplifying principle to Amazon, Yahoo, Bing, etc. But I should emphasize this: the key is not to simplify for simplicity sake, the key is for you to understand the field, value; the parameter names, the "language" that seperates the searcher from the searching.
 
-Now, here's where things will start to get interesting. Instead of right away going to Scrapy, let's just bring out some simple Python tools: lxml and urllib2
+Now, here's where things will start to get interesting. Instead of right away going to Scrapy, let's just bring out a very simple Python tool: lxml
+
+
+The Easy Way is Usually Best
+----------------------------
+
+I know I said we would likely use Scrapy, but now that I think about it, why should we?
+
+Let me specify what we need from Google
+
+1. We need to be able to search for a specific set of documents within a range of time. Check - we figured out the field, value pair for date ranges
+
+2. We need to get be able to generate a lot of results. Check - we figured out how to request the next page, and the next, and the next...
+
+3. We need to be able to select the results and save them. Ch... wait, we havent covered this part yet. Where's the justification that
+this even needs to happen?
+
+Here it is:
+
+###Justification for why we need to select and save Google search results
+
+Because we're trying to build up a data set of web pages
+
+That was easy. But let's look at what and how I laid out step 3:
+
+***We need to be able to select the results and save them***. There's two steps here, and we're going to translate those two steps directly
+into Python code.
+
+Step 1
+------
+
+####Select Results
+
+This step leads directly to the Python library lxml. I'm going to be very brief. lxml.html is a module that can download, parse
+and select nodes in an HTML tree. That's all the power we need.
+
+To select, we're going to use your browsers developer tools - but more on that in a minute.

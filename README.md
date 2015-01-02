@@ -7,11 +7,24 @@ Structure of this project
 1. [Datasets](https://github.com/rodricios/crawl-to-the-future/tree/master/dataset)
 2. [Crawlers](https://github.com/rodricios/crawl-to-the-future/tree/master/crawlers)
   * [Crawling Google](https://github.com/rodricios/crawl-to-the-future/tree/master/crawlers/Crawling-Google)
+    * [Part I](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/README.md#part-i)  - Google's query string
+    * [Part II](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/README.md#part-ii) - In Progress
   * TODO: Crawling Way Back
 
+---
 
-Welcome!
---------
+###Where's the work?
+
+Because I'm approaching this project in a very active manner - rapid README updates, quick prototyping of scripts used to crawl and
+acquire web pages - you'll likely see me working in a single place for at most a day. Please refer to this section to see where
+I'm writing.
+
+Currently, I'm updating the section describing how to quickly prototype a simple crawling script for google.
+
+[Read about it here](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/README.md#part-ii)
+
+
+---
 
 This repository will be the home of a subtask within a project that [Tim Weninger](http://www3.nd.edu/~tweninge/) and I have undertaken.
 
