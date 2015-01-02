@@ -86,3 +86,29 @@ This is what it should look like:
 Yeah, it's a giant mess.
 
 Let's try to make sense of Google's query string:
+
+```
+?q=new+york+times ----> query is "new york times"
+
+                ? ----> the "?" is a "seperator"
+                q ----> the "q" is a "field", everything after the "=" is the value
+                = ----> "=" seperates a field from a value
+              new ----> "new"d
+                + ----> " " (whitespace)
+             york ----> "york
+                + ----> " "
+            times ----> "times"
+```
+
+What you've just seen was a dissection of a pretty standard
+query string, usually preceded with a "?" (this is considered
+a "seperator") or other query strings, the structure "fiend=value"
+is what's commonly referred to as the field, value pair.
+
+If a value contains spaces, we replace the spaces with "+".
+In essence, everything after the "?" seperator is one or more
+field-value pairs[1]
+
+[1](http://en.wikipedia.org/wiki/Query_string#Web_forms)
+
+---
