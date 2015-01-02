@@ -166,4 +166,19 @@ interpret your auto generated query string parameters.
 
 ####Final query string
 
-So to finish,
+So to finish, we'll decide on a query string to use in our crawler.
+
+We are going to need:
+
+    https://www.google.com/search?q=new+york+times&
+
+and,
+
+    tbs=cdr%3A1%2Ccd_min%3A1%2F1%2F2000%2Ccd_max%3A1%2F1%2F2001&tbm=
+
+Let's skip all the stuff before the custom date range field to get this:
+
+    https://www.google.com/search?q=new+york+times&tbs=cdr%3A1%2Ccd_min%3A1%2F1%2F2000%2Ccd_max%3A1%2F1%2F2001&tbm=
+
+Woohoo! If you copy and paste that into your browser (I'm using Opera), you should
+get a typical Google Results page. Success!
