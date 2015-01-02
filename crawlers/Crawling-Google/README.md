@@ -334,7 +334,7 @@ and select nodes in an HTML tree. That's all the power we need.
 
 To select, we're going to use your browsers developer tools - but more on that in a minute.
 
-Note: the following steps in Python can be downloaded in its entirety [here](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/simplecrawl.py)
+Note: the following steps in Python can be downloaded in its entirety [here](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/simpledownload.py)
 Note: the '\' is only for visual purposes, the file itself will have the url declared in single line.
 
 ```python
@@ -390,3 +390,35 @@ google_results = html.parse(URL)
 
 print html.tostring(google_results)
 ```
+
+Now if you tried running that, you'll likely get an error.
+
+Refer to this [S.O. post](http://stackoverflow.com/questions/11450649/python-urllib2-cant-get-google-url) to find out why.
+
+Here's the updated script:
+
+```python
+import urllib2
+
+from lxml import s
+
+# To address paging in Google
+PAGE = 0
+
+# url and query string from PART I
+# this is a custom range from Jan 1, 2000 to Jan 1, 2001
+URL = 'https://www.google.com/search?q=new+york+times&tbs=cdr%3A1%2Ccd_min%3A1%2F1%2F2000%2Ccd_max%3A1%2F1%2F2001&start=' + str(PAGE*10)
+
+
+opener = urllib2.build_opener()
+opener.addheaders = [('User-agent', 'Mozilla/5.0')]
+google_html = opener.open(URL)
+google_results = html.parse(google_html)
+print html.tostring(google_results)
+```
+
+You'll notice that we've added urllib2, no biggie.
+
+That script can be found [here](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/simpledownload.py)
+
+
