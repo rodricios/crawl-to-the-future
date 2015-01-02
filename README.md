@@ -6,7 +6,7 @@ Structure of this project
 
 1. [Datasets](https://github.com/rodricios/crawl-to-the-future/tree/master/dataset)
 2. [Crawlers](https://github.com/rodricios/crawl-to-the-future/tree/master/crawlers)
-  * [Crawling Google](https://github.com/rodricios/crawl-to-the-future/tree/master/crawlers/google_2000) TODO: Change directory name
+  * [Crawling Google](https://github.com/rodricios/crawl-to-the-future/tree/master/crawlers/Crawling-Google)
   * TODO: Crawling Way Back
 
 
