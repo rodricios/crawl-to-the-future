@@ -9,13 +9,15 @@ T. of C.
   2. [Brainstorming](#brainstorming)
   3. [Decision?](#decision)
   4. [Crawling into Google's Backend](#crawling-into-googles-backend)
-  5. [Interpreting Google's query string](https://github.com/rodricios/crawl-to-the-future/tree/master/crawlers/Crawling-Google#interpreting-googles-query-string)
-  6. [Final query string](https://github.com/rodricios/crawl-to-the-future/tree/master/crawlers/Crawling-Google#final-query-string)
-  7. [One last thing, Pagination](https://github.com/rodricios/crawl-to-the-future/tree/master/crawlers/Crawling-Google#one-last-thing-pagination)
-  8. [Pagination](https://github.com/rodricios/crawl-to-the-future/tree/master/crawlers/Crawling-Google#pagination)
+  5. [Interpreting Google's query string](#interpreting-googles-query-string)
+  6. [Final query string](#final-query-string)
+  7. [One last thing, Pagination](#one-last-thing-pagination)
+  8. [Pagination](#pagination)
 
 * [Part II](#part-ii)
   1. [Motivation](#motivation)
+  2. [The Easy Way is Usually Best](#the-easy-way-is-usually-best)
+    1. [Step 1](#step-1)
 
 Part I
 ======
@@ -324,10 +326,10 @@ That was easy. But let's look at what and how I laid out step 3:
 ***We need to be able to select the results and save them***. There's two steps here, and we're going to translate those two steps directly
 into Python code.
 
-Step 1
+Step 1 - Select Results
 ------
 
-####Select Results
+There's a bit preliminary work required to being able to *select* our *results* - and what exactly do I mean by that? I'll answer that later.
 
 This step leads directly to the Python library lxml. I'm going to be very brief. lxml.html is a module that can download, parse
 and select nodes in an HTML tree. That's all the power we need.
@@ -394,6 +396,9 @@ print html.tostring(google_results)
 Now if you tried running that, you'll likely get an error.
 
 Refer to this [S.O. post](http://stackoverflow.com/questions/11450649/python-urllib2-cant-get-google-url) to find out why.
+
+Simple Download
+---------------
 
 Here's the updated script:
 
