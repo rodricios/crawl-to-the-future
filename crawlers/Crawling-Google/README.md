@@ -333,3 +333,61 @@ This step leads directly to the Python library lxml. I'm going to be very brief.
 and select nodes in an HTML tree. That's all the power we need.
 
 To select, we're going to use your browsers developer tools - but more on that in a minute.
+
+Note: the following steps in Python can be downloaded in its entirety [here](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/simplecrawl.py)
+
+
+
+```python
+import lxml
+
+# url and query string from PART I
+# this is a custom range from Jan 1, 2000 to Jan 1, 2001
+url = 'https://www.google.com/search?q=new+york+times&tbs=cdr%3A1%2Ccd_min%3A1%2F1%2F2000%2Ccd_max%3A1%2F1%2F2001&start=10'
+```
+
+Now what we just did was simple enough, we import lxml and we declared our query string that we've derived in Part I.
+
+But let's begin to "modularize" this a little bit:
+
+```python
+from lxml import html
+
+# To address paging in Google
+PAGE = 0
+
+# url and query string from PART I
+# this is a custom range from Jan 1, 2000 to Jan 1, 2001
+URL = 'https://www.google.com/search?q=new+york+times&\
+      tbs=cdr%3A1%2Ccd_min%3A1%2F1%2F2000%2Ccd_max%3A1%2F1%2F2001\
+      &start=' + PAGE*10
+```
+
+Ok, I also reformatted the URL string so that can see different parts of the
+query string more clearly.
+
+Also notice the "PAGE*10"
+
+Now let's see lxml in action. We'll use the [lxml.html.parse](http://lxml.de/lxmlhtml.html#parsing-html) function to download and parse the page we would
+have gotten if you copy and pasted the query in question:
+
+Note: We are also going to use lxml.html.tostring in order to quickly see what we get, but this should be
+a little obvious to you now
+
+
+```python
+from lxml import html
+
+# To address paging in Google
+PAGE = 0
+
+# url and query string from PART I
+# this is a custom range from Jan 1, 2000 to Jan 1, 2001
+URL = 'https://www.google.com/search?q=new+york+times&\
+      tbs=cdr%3A1%2Ccd_min%3A1%2F1%2F2000%2Ccd_max%3A1%2F1%2F2001\
+      &start=' + PAGE*10
+
+google_results = html.parse(URL)
+
+print html.tostring(google_results)
+```
