@@ -1,6 +1,18 @@
 Crawling Google
 ===============
 
+T. of C.
+--------
+
+1. [Intro](#intro)
+2. [Brainstorming](#brainstorming)
+3. [Decision?](#decision)
+4. [Crawling into Google's Backend](#crawling-into-googles-backend)
+
+
+Intro
+-----
+
 I'm going to apologize before hand and say that this will read like someone's thoughts in their head
 
 ###The simple query
@@ -13,11 +25,13 @@ And changed the "Any Time" to a "Custom Range" from Jan 1, 2000 to Jan 1, 2001
 
 ---
 
+Brainstorming
+-------------
+
 In an email with Tim Weninger, Tim asked this:
 
 > Can you think of a way to get 10 random nytimes articles from each time period, 10 reuters articles, 10 cnn articles, etc for 10-20 sources?
 
-###A moment of silence for some reflection
 
 From the results page one gets from the simple Google query above, I can say that we did get 10 nytimes articles.
 
@@ -30,7 +44,7 @@ Can I build a repository of .htmls from NYTimes during Jan. 1 of 2000 to Jan. 1 
 The first obvious approach is... yes, left click on each one of Google's results, and right
 click anywhere on the page that's not a link, and left click on "Save As"
 
-At this point, a window pops asking you to save, but it give you two options:
+At this point, a window pops up asking you to save, but it gives you two options:
 
 1. Webpage, HTML Only
 
@@ -38,9 +52,11 @@ or
 
 2. Webpage, Complete
 
-Here's where I and Tim, but really I because he's got few other paper to spearhead, anyways, here's where I
-can start noting down that this may very well be a specification for what time of page we'd like to
+Here's where I and Tim, but really I because he's got few other papers to spearhead; anyways, here's where I
+can start noting down that this may very well be a specification for what type of page we'd like to
 have in our dataset.
+
+---
 
 ###Decision?
 
@@ -52,4 +68,9 @@ I've included both types in the folder within the [**datasets** directory struct
 
 And I repeat this method for the rest of the pages on the first page of Google's results. See the current hand picked [dataset here](https://github.com/rodricios/crawl-to-the-future/tree/master/dataset/NYTimes/byhand)
 
-But seriously though. Hand picking is not an option. Moving on to crawling.
+But seriously though. Hand picking as an option has yet to go up against web-crawling. Moving on.
+
+Crawling into Google's Backend
+------------------------------
+
+Notes soon to come within the hour!
