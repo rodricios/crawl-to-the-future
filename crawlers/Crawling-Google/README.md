@@ -73,4 +73,16 @@ But seriously though. Hand picking as an option has yet to go up against web-cra
 Crawling into Google's Backend
 ------------------------------
 
-Notes soon to come within the hour!
+Want to be a **power crawler**?
+
+Do everything in the [intro](#intro). There's one more step.
+
+Go to the url bar and copy and paste the contents into some text document
+
+This is what it should look like:
+
+    https://www.google.com/search?q=new+york+times&safe=off&client=opera&hs=SBu&biw=1309&bih=810&source=lnt&tbs=cdr%3A1%2Ccd_min%3A1%2F1%2F2000%2Ccd_max%3A1%2F1%2F2001&tbm=
+
+Yeah, it's a giant mess.
+
+Let's try to make sense of Google's query string:
