@@ -1,0 +1,234 @@
+/* $Id: styles.css 65643 2011-04-21 16:15:11Z priya.ollapally $
+   /css/0.1/screen/build/sitehelp/styles.css
+   (c)2006 - 2010 The New York Times Company  */ 
+
+@import url(/css/0.1/screen/common/sectionfront.css);
+@import url(/css/0.1/screen/common/columnGroupSubColumns.css);
+@import url(/css/0.1/screen/common/modules/dialogbox.css);
+
+
+#main {
+  font-family: arial,helvetica,sans-serif;  
+}
+
+.header h1 {
+  font-size: 1.9em; /* 19px */
+  line-height: 1.105em; /* 21px */
+  margin-bottom: 3px;
+}
+
+.header .breadcrumb {
+  margin-bottom: 13px; 
+  text-transform: uppercase;
+}
+
+.header p {
+  font-size: 1.4em; /* 12px */ 
+  line-height: 1.286em; /* 18px */
+}
+
+.header ul li {
+  line-height: 18px;
+}
+
+
+/* region sectionheader text*/
+#categoryPages h3,
+.splitAB h3 {
+  margin-bottom: 7px;
+}
+
+
+.splitAB .singleRuleDivider,
+#categoryPages .singleRuleDivider {
+  margin-bottom: 18px;
+}
+
+
+/* dialogBox */
+.question .dialogBox {
+  width: 280px;
+  margin-top: 7px;
+  margin-left: 16px;
+}
+
+.dialogBox { 
+  display: none; 
+} 
+          
+.question .dialogBoxPointerUp { 
+  left: 6%; 
+} 
+
+
+.dialogBox div.inset {
+  margin-right: 20px;
+}
+
+/* page and question text */
+.question_text {
+  cursor: pointer;
+  outline: none;
+}
+
+.page a {
+  font-size: 1.4em; /* 14px */
+}
+
+
+/* ABTop region */
+.splitAB .question, 
+.splitAB .page {
+  margin-bottom: 10px;
+}
+
+.splitAB .last {
+  margin-bottom: 4px;
+}
+
+.splitAB .question_text {
+  font-size: 1.4em; /* 14px */
+  line-height: 17px;
+}
+
+.splitAB div.story h4 {
+  font-weight: normal;
+}
+
+.splitAB .question_text,
+#relatedLinks .question_text {
+  color: #004276;
+}
+
+.splitAB div.singleRule {
+  margin-bottom: 3px;
+}
+
+/* questions (numbered list and expanded list) */
+ul.question li {
+  background: none;
+  padding-left: 0;
+}
+
+ul.questions li {
+  font-size: 1.4em; /* 14px */
+  line-height: 1.6em;
+  background: none;
+  padding-left: 0;
+}
+
+ul.questionsAndAnswers li {
+  background: none;
+  padding:8px 0 12px 0;
+  border-top: 1px solid #eee;
+}
+
+ul.questionsAndAnswers li li {
+  border-top: none;
+  padding: 0 0 0 8px;
+}
+
+ul.questionsAndAnswers li ul li {
+  background: transparent url(/images/misc/bullet4x4.gif) no-repeat left 0.45em;
+}
+
+ul.questionsAndAnswers li ol {
+  padding-left: 8px;
+}
+
+ul.questionsAndAnswers li ol li {
+  padding: 0;
+}
+
+ul.questionsAndAnswers li .question_text {
+  font-size: 1.2em; /* 14px */
+  font-weight: bold;
+  line-height: 18px;
+}
+
+ul.questionsAndAnswers li .element2 a {
+  font-size: 0.9em; /* 11px */
+  background: transparent url(/images/global/togglepanel/toggle_up.gif) no-repeat center right;
+  padding-right: 14px;
+}
+
+ul.questionsAndAnswers div.question_text {
+  width: 524px;
+}
+
+
+/* categoryPages region */
+#categoryPages p {
+  line-height: 1.35em;
+}
+
+#categoryPages .page,
+#categoryPages .story { 
+  margin-bottom: 17px;
+}
+
+#categoryPages .page a {
+  font-weight: bold;
+}
+
+
+#categoryPages .page_title {
+  margin-bottom: 5px;
+} 
+
+#categoryPages .story h4 {
+  margin-bottom: 4px;
+}
+
+
+#categoryPages .last {
+  margin-bottom: 21px;
+}
+
+
+/* sitehelpSearch module */
+#sitehelpSearch.box {
+  border-color: #d1dde9
+}
+
+#sitehelpSearch.box label {
+  font-size: 1.4em; /* 14px */
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.box.blue {
+  background-color: #e6eff8;
+}
+
+#sitehelpSearch input#yourSearch_query {
+  margin-right: 2px;
+  margin-bottom: 3px;
+}
+
+#sitehelpSearch input#yourSearch_query {
+  margin-right: 2px;
+}
+
+
+
+/* relatedLinks region */
+#relatedLinks h4 {
+  margin-bottom: 7px;
+}
+
+#relatedLinks .question_text,
+#relatedLinks .page a {
+  font-size: 1.1em; /* 11px */
+  font-weight: normal;
+}
+
+#relatedLinks .page,
+#relatedLinks .question {
+  margin-bottom: 4px;
+}
+
+#relatedLinks .story h6 {
+  font-size: 1.1em; /* 11px */
+}
+

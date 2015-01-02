@@ -1,0 +1,22 @@
+/*$Id: styles.css 65210 2011-04-15 16:35:55Z fisherc $
+/css/0.1/screen/build/sitehelp/responsive/styles.css
+(c)2006 - 2011 The New York Times Company */
+
+@import url(/css/0.1/screen/responsive/global.css);
+@import url(/css/0.1/screen/responsive/shell.css);
+@import url(/css/0.1/screen/responsive/masthead.css);
+@import url(/css/0.1/screen/responsive/layout.css);
+@import url(/css/0.1/screen/responsive/ads.css);
+
+ul.questionsAndAnswers div.question_text {
+  width: 100%;
+}
+
+#categoryPages .page {
+  clear: both;
+}
+
+.searchTextbox {
+  width: 70%;
+}
+

@@ -1,0 +1,29 @@
+/* $Id: mobileBanner.css 135645 2013-11-21 22:18:33Z gopi_borra $
+   /css/0.1/screen/common/modules/mobileBanner.css
+   (c)2006 - 2013 The New York Times Company  */
+
+.NYT5Style .mobileBanner {
+  border-top: 1px solid #CCC;
+  margin-top: 25px;
+}
+
+.mobileBanner .bannerMessage,
+.NYT5Style .mobileBanner .bannerMessage {
+  font-family: "nyt-franklin", arial, helvetica, sans-serif;
+  font-size: 2em; /* 20px */
+  line-height: 1.2em; /* 24px */
+  font-weight: bold;
+  height: 48px;
+  padding: 22px 0 0 400px;
+  position: absolute;
+}
+
+.mobileBanner a,
+.NYT5Style .mobileBanner a {
+  color: #004276;
+}
+
+.mobileBanner a:visited,
+.NYT5Style .mobileBanner a:visited {
+  color: #669;
+}

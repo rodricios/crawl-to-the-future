@@ -1,0 +1,1168 @@
+/************ TAGX dynamic tags ************************/
+
+(function() {
+var tagger = new TAGX.Tagger();
+TAGX.config = {};
+TAGX.config.analyticsReady = function() { return (window.NYTD && window.NYTD.EventTracker && window.dcsMultiTrack) ? true : false }
+tagger.define("page.dom.custom", function (callback) {
+    TAGX.$.domReady(function () {
+        callback(function (params, callback) {
+            var tagCtx = this;
+            if (params.length > 0) {
+                TAGX.$(TAGX).one(params[0], function (eventData) {
+                    if (typeof tagCtx.eventsData === 'undefined') {
+                        tagCtx.eventsData = {};
+                    }
+                    tagCtx.eventsData[params[0]] = eventData || {};
+                    callback(true);
+                });
+            }
+        });
+    });
+}
+);
+tagger.tag().condition(function (callback) { TAGX.Ops.on.call(this, "page.dom.custom", ["loaded:webtrends.js"], callback); }).run(function() {var
+  imageViewerTrack;
+
+imageViewerTrack = function (eventData) {
+  var
+    data = TAGX.Utils.jsonObjToDCSparams(eventData);
+  data.push('WT.z_dcsm', '1');
+  data.push('WT.z_gpt', 'Multimedia');
+  data.push('WT.z_gpst', eventData.module);
+  data.push('WT.ti', 'Video Click to Play');
+  data.push('DCS.dcssip', location.hostname);
+  data.push('DCS.dcsuri', '/Video-Click-to-Play');
+  dcsMultiTrack.apply(this, data);
+};
+
+TAGX.$(TAGX).on('media-viewer-play-video', imageViewerTrack);;});
+tagger.tag().repeat('many').condition(function (callback) { TAGX.Ops.on.call(this, "page.dom.custom", ["comscore-pageview-candidate"], callback); }).run(function() {/*** comscore tag for page view candidate ***/
+if (TAGX.Utils && TAGX.Utils.ComScoreTag && typeof TAGX.Utils.ComScoreTag === 'function') {
+	TAGX.Utils.ComScoreTag();    
+}
+;});
+tagger.tag().repeat('many').condition(function (callback) { TAGX.Ops.on.call(this, "page.dom.custom", ["module-impression"], callback); }).run(function() {var evtData = this.eventsData['module-impression'];
+var moduleName = evtData.module.toLowerCase();
+	
+if (moduleName !== "ad") {
+
+	var priorityObj = {
+		gateway: 1,
+		growl : 1,
+        notification : 1
+	};
+	if(priorityObj.hasOwnProperty(moduleName)) {
+		evtData.priority = true;
+	}
+
+	NYTD.pageEventTracker.addModuleImpression(evtData);	
+};});
+tagger.tag().repeat('many').condition(function (callback) { TAGX.Ops.on.call(this, "page.dom.custom", ["module-interaction"], callback); }).run(function() {/* ET module interactions tag */
+var evtData = this.eventsData["module-interaction"];
+NYTD.EventTracker().track(evtData);
+;});
+tagger.tag().run(function() {NYTD = window.NYTD || {};
+NYTD.EventTrackerPageConfig = {
+    event: {
+        pageMetaData: {
+            value: function () {
+                var name, content, i;
+                var tags = document.getElementsByTagName('meta');
+                var whiteListObj = {PT:"", CG:"", SCG:"", byl:"", tom:"", hdl:"", ptime:"", cre:"", articleid:"", channels:"", CN:"", CT:"", des:""};
+                for (i = 0; i < tags.length; i += 1) {
+                    name = tags[i].getAttribute('name');
+                    content = tags[i].getAttribute('content');
+                    if (typeof name === 'string' && typeof content === 'string') {
+                        if (whiteListObj.hasOwnProperty(name)) {
+                            whiteListObj[name] = content;
+                        }
+                        
+                    }
+                }
+                
+                // augment channels with scg stuff
+                if (whiteListObj.CG.toLowerCase() === 'opinion') {
+                    whiteListObj.channels += whiteListObj.channels === '' ? '' : ';';
+                    whiteListObj.channels += whiteListObj.CG.toLowerCase();
+                }
+                
+                return TAGX.Utils.stringifyJson(whiteListObj);
+            }
+        }
+    }
+}
+;});
+tagger.tag().run(function() {/* jshint -W097 */
+/* global TAGX */
+'use strict';
+var i, pe;
+var priorityEvents = [{
+    eventName: 'page-break-equiv-nyt4',
+    eventFields: ['nyt4pg']
+}];
+var setPriority = function (evtData, fields) {
+    var i, fieldcount1, fieldcount2;
+    var _fields = fields || [];
+    fieldcount1 = 0;
+    fieldcount2 = _fields.length;
+    for (i = _fields.length - 1;i >= 0;i--) {
+        if (typeof evtData[_fields[i]] !== 'undefined') {
+            fieldcount1++;
+        }
+    }
+    if (fieldcount1 === fieldcount2 && evtData.priority !== true) {
+            evtData.priority = true;
+    }
+};
+for (i = priorityEvents.length - 1;i >= 0;i--) {
+    pe = priorityEvents[i];
+    TAGX.$(TAGX).on(pe.eventName, setPriority, pe.eventFields);
+}
+;});
+tagger.tag().repeat('many').condition(function (callback) { TAGX.Ops.on.call(this, "page.dom.custom", ["track-page-view"], callback); }).run(function() {/* tracking page view via the proxy */
+var datum = this.eventsData["track-page-view"];
+if(datum) {
+    // move // moduleData out of the way
+    if(JSON) {
+        var mData = JSON.parse(datum.moduleData), attr;
+        for(attr in mData) {
+            if(mData.hasOwnProperty(attr) && !datum.hasOwnProperty(attr)) {
+                datum[attr] = mData[attr];
+            }
+        }
+    } else {
+        // rename it to event data for now
+        datum.eventData = datum.moduleData;
+    }
+    delete datum.moduleData;
+    var extras = {
+        sendMeta: true,
+        useFieldOverwrites: true,
+        buffer: false,
+        collectClientData: true
+    }
+    datum.totalTime = 0;
+    NYTD.EventTracker().track(datum, extras);
+};});
+tagger.tag().run(function() {/* if this page is not the top document it should not be counted as a site wide page */
+if (window.top != window.self) {
+    NYTD = window.NYTD || {};
+    NYTD.EventTrackerPageConfig = {
+        event: {
+            siteWide: {
+                value: 0
+            },
+            subject: {
+                value: "iframedNYTpage"
+            }
+        }
+    }
+}
+
+;});
+tagger.tag().run(function() {(function () {
+    // cache tools
+    var meta = TAGX.Utils.getMetaTag;
+
+    // record social sign on click
+    TAGX.$(document).on('mousedown', '.oauth-ew5_btn, .oauth-button', function (e) {
+
+        var el = TAGX.$(this);
+        var elHtml = el.html();
+
+        // find out which provider was used
+        var provider = 'Unknown';
+        if (elHtml.indexOf('Google') !== -1) {
+            provider = 'Google';
+        }
+
+        if (elHtml.indexOf('Facebook') !== -1) {
+            provider = 'Facebook';
+        }
+
+        var data = {
+            'module': 'social-signon',
+            'version': provider,
+            'action': 'signon',
+            'pgType': meta('PT')
+        };
+
+        TAGX.EventProxy.trigger('SocialSignOn', data, 'interaction');
+    });
+
+    // switch from login to regi or vice versa
+    TAGX.$(document).on('mousedown', 'a.log-in, .login-modal .registration-modal-trigger, .registration-modal .login-modal-trigger', function (e) {
+
+        var el = TAGX.$(this);
+
+        // find out which action
+        var action;
+        elHtml = el.html();
+        if (elHtml.indexOf('Create') !== -1 || elHtml.indexOf('Sign Up') !== -1 || elHtml.indexOf('Register') !== -1) {
+            action = 'switchtoregi';
+        } else {
+            action = 'switchtologin';
+        }
+
+        var data = {
+            'module': 'social-signon',
+            'version': 'NYTimes',
+            'action': action,
+            'pgType': meta('PT')
+        };
+
+        TAGX.EventProxy.trigger('NYTimesSignOn', data, 'interaction');
+    });
+
+    // traditional login and regi
+    TAGX.$(document).on('mousedown', '#main .loginButton, #main .login-button, .login-modal .login-button, .registration-modal .register-button', function (e) {
+
+        var el = TAGX.$(this);
+
+        // find out which action
+        var action;
+        elHtml = el.html();
+
+        if (elHtml.indexOf('CREATE') !== -1 || elHtml.indexOf('Create') !== -1) {
+            action = 'register';
+        } else {
+            action = 'login';
+        }
+
+        var data = {
+            'module': 'social-signon',
+            'version': 'NYTimes',
+            'action': action,
+            'pgType': meta('PT')
+        };
+
+        // capture newsletters if regi
+        if (action === 'register') {
+            var newsletters = [];
+            TAGX.$('.registrationForm input[type="checkbox"]:checked').each(function (element, index) {
+                var el = TAGX.$(element);
+                newsletters.push(el.val());
+            });
+            data.mData = newsletters.toString();
+        }
+
+        TAGX.EventProxy.trigger('NYTimesSignOn', data, 'interaction');
+    });
+})();;});
+tagger.tag().condition(function (callback) { (TAGX.Ops.and.call(this, function (callback) { TAGX.Ops.on.call(this, "page.dom.custom", ["loaded:comscoreVendorCode.js"], callback); }, function (callback) { TAGX.Ops.on.call(this, "page.dom.custom", ["loaded:comscore.js"], callback); }))(callback); }).run(function() {var canonical, cg, extractContent, getUrl, href, queryString, scg, tagComscore, url;
+
+extractContent = function(el) {
+  var content;
+  content = null;
+  if (el !== null && el !== void 0 && el.length > 0 && el[0].content !== null && el[0].content !== void 0) {
+    content = el[0].content;
+  }
+  return content;
+};
+
+getUrl = function(url, canonical, query) {
+  var href;
+  href = canonical !== null && canonical !== void 0 ? canonical : url;
+  href += '?' + query;
+  return href;
+};
+
+tagComscore = function(udm, keyMapping, url, cg, scg) {
+  var comscoreConfig, comscoreKeyword, comscoreMappingKey, udmURL;
+  comscoreMappingKey = [];
+  comscoreConfig = ['c1=2', 'c2=3005403'];
+  if (cg !== null && cg !== void 0) {
+    comscoreMappingKey.push(cg);
+  }
+  if (scg !== null && scg !== void 0 && scg !== '') {
+    comscoreMappingKey.push(scg);
+  }
+  comscoreKeyword = keyMapping[comscoreMappingKey.join(' - ')];
+  if (url.indexOf('markets.on.nytimes.com') !== -1) {
+    if (url.indexOf('portfolio') !== -1) {
+      comscoreKeyword = 'portfolio';
+    }
+    if (url.indexOf('screener') !== -1) {
+      comscoreKeyword = 'screener';
+    }
+    if (url.indexOf('analysis_tools') !== -1) {
+      comscoreKeyword = 'analysis_tools';
+    }
+  }
+  if (comscoreKeyword !== void 0) {
+    comscoreConfig.push('comscorekw=' + comscoreKeyword);
+  }
+  udmURL = 'http';
+  udmURL += url.charAt(4) === 's' ? 's://sb' : '://b';
+  udmURL += '.scorecardresearch.com/b?';
+  udmURL += comscoreConfig.join('&');
+  return udm(udmURL);
+};
+
+href = window.location.href;
+
+queryString = document.location.search;
+
+canonical = extractContent(document.getElementsByName('canonicalURL'));
+
+cg = extractContent(document.getElementsByName('CG'));
+
+scg = extractContent(document.getElementsByName('SCG'));
+
+url = getUrl(href, canonical, queryString);
+
+tagComscore(udm_, {"business":"business","business - global":"global","Business Day - Dealbook":"dealbook","business - economy":"economy","business - energy-environment":"energy_environment","business - media":"media","business - smallbusiness":"smallbusiness","your-money":"your_money","Business Day - Economy":"economix","Business - Media and Advertising":"mediadecoder","Business Day - Small Business":"boss","Business Day - Your Money":"bucks","Business - Markets":"markets","Autos - wheels":"wheels","Science - Environment":"green","technology":"technology","technology - personaltech":"personaltech","Technology - bits":"bits","Technology - Personal Tech":"gadgetwise","Technology - pogue":"pogue","General - open":"open","style":"style","fashion":"fashion","dining":"dining","garden":"garden","fashion - weddings":"weddings","t-magazine":"t_magazine","T:Style - tmagazine":"t_style","Style - Dining":"dinersjournal","Style - Fashion":"runway","Style - parenting":"parenting","arts":"arts","arts - design":"design","books":"books","arts - dance":"dance","movies":"movies","arts - music":"music","arts - television":"television","theater":"theater","arts - video-games":"video_games","Arts - Event Search":"event_search","Arts - artsbeat":"artsbeat","Movies - carpetbagger":"carpetbagger","health":"health","health - research":"research","health - nutrition":"nutrition","health - policy":"policy","health - views":"views","Health - Health Guide":"health_guide","Health - well":"well","Health - newoldage":"newoldage","Health - consults":"consults","science":"science","science - earth":"earth","science - space":"space","Science - scientistatwork":"scientistatwork","Opinion - dotearth":"dotearth"}, url, cg, scg);;});
+tagger.tag().run(function() {var script = document.createElement("script");
+var html = "window.Krux||((Krux=function(){Krux.q.push(arguments)}).q=[]);" +
+    "(function(){ var k=document.createElement('script');k.type='text/javascript';k.async=true;var m,src=(m=location.href.match(/\bkxsrc=([^&]+)\b/))&&decodeURIComponent(m[1]); k.src=src||(location.protocol==='https:'?'https:':'http:')+'//cdn.krxd.net/controltag?confid=HrUwtkcl'; var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(k,s); })();";
+TAGX.$(script).attr({
+    "class": "kxct",
+    "data-id": "HrUwtkcl",
+    "data-version": "async:1.7",
+    "type": "text/javascript"
+});
+script.text = html;
+TAGX.$("head").append(script);});
+tagger.tag().condition(function (callback) { TAGX.Ops.on.call(this, "page.dom.custom", ["loaded:webtrends.js"], callback); }).run(function() {(function (z_aca) {
+    var name;
+    var commentEventHandler = function (eventData, eventName) {
+        var data = TAGX.Utils.jsonObjToDCSparams(eventData).concat(["WT.z_dcsm", "1", "WT.gcom", "Com"]);
+        var zaca = z_aca[eventName];
+        if (zaca && typeof zaca === "object") {
+            zaca = zaca[eventData.eventName];
+        }
+        dcsMultiTrack.apply(this, data.concat(["WT.z_aca", zaca]));
+    };
+    for (name in z_aca) {
+        if (z_aca.hasOwnProperty(name)) {
+            TAGX.$(TAGX).on(name, commentEventHandler, name);
+        }
+    }
+})({
+    "comments-open-panel": "More-coms",
+    "comments-read-more": "More-coms-in-panel",
+    "post-comment": "Post",
+    "recommend-comment": { "Rec": "Rec", "Un-Rec": "Un-rec" },
+    "load-replies": "All-replies",
+    "load-more-comments": "More-coms-in-panel",
+    "auto-open-comments-panel": "More-coms"
+});});
+tagger.tag().condition(function (callback) { TAGX.Ops.on.call(this, "page.dom.custom", ["loaded:webtrends.js"], callback); }).run(function() {TAGX.$(TAGX).on("masthead-search-click", function (evtData) {
+    var mydata = TAGX.Utils.jsonObjToDCSparams(evtData);
+    dcsMultiTrack.apply(this, mydata.concat(["WT.z_dcsm", "1"]));
+});});
+tagger.tag().condition(function (callback) { (TAGX.Ops.and.call(this, function (callback) { TAGX.Ops.on.call(this, "page.dom.custom", ["loaded:webtrends.js"], callback); }, function (callback) { TAGX.Ops.on.call(this, "page.dom.custom", ["loaded:WTHelperFunctions.js"], callback); }))(callback); }).run(function() {
+var intervalId, howManyTimes = 0, maxChecks = 5, done = 0, WTData = [];
+
+var meterIsReady = function(mtr) {
+    // check if the NYTD.Meter.loaded
+    if (mtr && typeof mtr === 'object' && mtr.final === true && done === 0) {
+        // remove the interval
+        clearInterval(intervalId);
+        done = 1;
+        var meterValue = TAGX.Utils.getMeterValue(["imv", "ica"]);
+        if (meterValue && meterValue.imv !== null) {
+            WTData.push("WT.z_imv");
+            WTData.push("" + meterValue.imv);
+        }
+        if (meterValue && meterValue.ica !== null) {
+            WTData.push("WT.z_ica");
+            WTData.push("" + meterValue.ica);
+        }
+
+        // make tha call
+        dcsMultiTrack.apply(window, WTData.concat(["WT.z_dcsm", "1"]))
+    } else {
+        // howManyTimes
+        if(howManyTimes > maxChecks) {
+            clearInterval(intervalId); // don't do it no more    
+        }
+    }
+};
+
+var getMeterObj = function(root, meterReadyCallBack) {
+        'use strict';
+
+        // exports for NYT5
+        if (typeof define === "function" && define.amd) {
+            require(['auth/mtr'], function (mtr) {
+                meterReadyCallBack(mtr);
+            });
+        } else if (typeof window.NYTD === 'object') {
+            meterReadyCallBack(NYTD.Meter);
+        }
+};
+
+intervalId = setInterval(function() {
+        // check if the meter is ready again.
+        howManyTimes++;
+        getMeterObj(window, meterIsReady);
+    }, 250)
+;});
+tagger.tag().condition(function (callback) { TAGX.Ops.on.call(this, "page.dom.custom", ["loaded:webtrends.js"], callback); }).run(function() {var mapping = {
+    "Share-facebook": {
+        ti: "Article-Tool-Share-facebook",
+        dcsuri: "/Article-Tool-Share-facebook.html"
+    },
+    "Share-twitter": {
+        ti: "Article-Tool-Share-Twitter",
+        dcsuri: "/Article-Tool-Share-Twitter.html"
+    },
+    "Share-linkedin": {
+        ti: "Article-Tool-Share-LinkedIn",
+        dcsuri: "/Article-Tool-Share-LinkedIn.html"
+    },
+    "Share-email": {
+        ti: "Article-Tool-Share-Email",
+        dcsuri: "/Article-Tool-Share-Email.html"
+    },
+    "Share-Digg": {
+        ti: "Article-Tool-Share-Digg",
+        dcsuri: "/Article-Tool-Share-Digg.html"
+    },
+    "Share-reddit": {
+        ti: "Article-Tool-Share-Reddit",
+        dcsuri: "/Article-Tool-Share-Reddit.html"
+    },
+    "Share-Tumblr": {
+        ti: "Article-Tool-Share-Tumblr",
+        dcsuri: "/Article-Tool-Share-Tumblr.html"
+    },
+    "Share-Permalink": {
+        ti: "Article-Tool-Share-Permalink",
+        dcsuri: "/Article-Tool-Share-Permalink.html"
+    },
+    "Share-google": {
+        ti: "Article-Tool-Share-GooglePlus",
+        dcsuri: "/Article-Tool-Share-GooglePlus.html"
+    },
+    "Share-ShowAll": {
+        ti: "Article-Tool-Share-ShowAll",
+        dcsuri: "/Article-Tool-Share-ShowAll.html"
+    },
+    "ArticleTool-print": {
+        ti: "Article-Tool-Print",
+        dcsuri: "/Article-Tool-Print.html"
+    },
+    "ArticleTool-reprints": {
+        ti: "Article-Tool-Reprints",
+        dcsuri: "/Article-Tool-Reprints.html"
+    },
+    "ArticleTool-save": {
+        ti: "Article-Tool-Save",
+        dcsuri: "/Article-Tool-Save.html"
+    },
+    "Share-Facebook": {
+        ti: "Article-Tool-Share-facebook",
+        dcsuri: "/Article-Tool-Share-facebook.html",
+        gcom: "Com"
+    },
+    "Share-Twitter": {
+        ti: "Article-Tool-Share-Twitter",
+        dcsuri: "/Article-Tool-Share-Twitter.html",
+        gcom: "Com"
+    }
+};
+var eventHandler = function (eventData) {
+    var evtData, dcssip, dcsuri, addition, gcom;
+    var dcs = window.webtrendsAsyncInit;
+    var map = mapping[eventData.eventName];
+    if (!dcs) {
+        return;
+    }
+
+    evtData = TAGX.Utils.jsonObjToDCSparams(eventData);
+    addition = ["WT.z_dcsm", "1", "WT.z_loc", eventData.region];
+
+    if (map) {
+        dcssip = dcs.DCS.dcssip;
+        dcsuri = dcs.DCS.dcsuri;
+        dcs.DCS.dcssip = "www.nytimes.com";
+        dcs.DCS.dcsuri = map.dcsuri;
+        addition = addition.concat(["WT.ti", map.ti]);
+        if (map.gcom || eventData.version === "CommentsPanel") {
+            addition = addition.concat(["WT.gcom", (map.gcom || "Com")]);
+        }
+    }
+
+    dcsMultiTrack.apply(this, evtData.concat(addition));
+
+    if (map) {
+        dcs.DCS.dcssip = dcssip;
+        dcs.DCS.dcsuri = dcsuri;
+    }
+};
+TAGX.$(TAGX).on("share-tools-click", eventHandler);
+TAGX.$(TAGX).on("comments-share", eventHandler);});
+tagger.tag().condition(function (callback) { (TAGX.Ops.and.call(this, function (callback) { TAGX.Ops.on.call(this, "page.dom.custom", ["loaded:webtrends.js"], callback); }, function (callback) { TAGX.Ops.on.call(this, "page.dom.custom", ["loaded:WTHelperFunctions.js"], callback); }))(callback); }).run(function() {var dcs=window.dcs || "";
+var source_app_map = {
+    "blogs": "nyt-v5"
+};
+/* Init WebTrends */
+window.webtrendsAsyncInit=(function(){
+    var colMeta = null;
+    var getMetaTag = TAGX.Utils.getMetaTag;
+    var pagetype = getMetaTag("PT");
+
+    dcs = new Webtrends.dcs();
+    dcs.init({
+        dcsid: "dcsktwey810000kfp9nsv3ceo_6n1r" || "dcsym57yw10000s1s8g0boozt_9t1x",
+        domain: "wt.o.nytimes.com",
+        timezone: -5,
+        i18n: false,
+        anchor: false,
+        fpcdom: (function(d){
+            return d.length >= 2 ? d.slice(-2).join('.') : '';
+        })(window.location.hostname.split('.')),
+        plugins:{
+        }
+    });
+
+    dcs.WT.cg_n = "Travel";
+    dcs.WT.cg_s = "";
+
+    dcs.WT.z_rmid = TAGX.Utils.getCookie("RMID");
+    dcs.WT.z_nyts = TAGX.Utils.getCookie("NYT-S");
+    dcs.WT.z_nytd = TAGX.Utils.getCookie("nyt-d");
+    dcs.WT.z_stcap = [];
+    dcs.WT.z_stat = "anon";
+
+    dcs.WT.z_gpt = pagetype;
+    dcs.WT.z_gpst = getMetaTag("PST");      // page subtype
+    dcs.WT.cre = getMetaTag("cre"); 
+
+    dcs.WT.z_gpsst = getMetaTag("PSST");     // page sub 2 type
+    dcs.WT.z_gpssst = getMetaTag("PSSST");    // page sub 3 type
+    dcs.WT.z_pc = getMetaTag("PC");       // partner content
+    dcs.WT.z_ps = getMetaTag("PS");       // partner supplied 
+    dcs.WT.z_puv = getMetaTag("PUV");      // publish view
+    dcs.WT.z_gosst = getMetaTag("GOOST");    // global onsite search
+    dcs.WT.z_gosst = getMetaTag("GOSST");    // global onsite search
+    dcs.WT.z_gsac = getMetaTag("GSAC");     // global search auto complete
+    dcs.WT.z_gtn = getMetaTag("GTN");      // global topic name
+    dcs.WT.gcom = getMetaTag("GCOM");     // global - community page
+    dcs.WT.z_tvt = getMetaTag("TVT");      // travel meta tag
+    dcs.WT.z_tvn = getMetaTag("TVN");      // travel meta tag
+    dcs.WT.z_tvid = getMetaTag("TVID");     // travel meta tag
+    dcs.WT.z_tDest = getMetaTag("TDES");     // travel meta tag
+    dcs.WT.z_tRegion = getMetaTag("TDREG");    // travel meta tag
+    dcs.WT.z_gblc = getMetaTag("GBLC");      // global - blogs 
+    dcs.WT.z_bn = getMetaTag("BN");
+    dcs.WT.z_hpt = getMetaTag("HPT");      // home page type - Extra
+
+    // Collection pages.
+    colMeta = getMetaTag("CN");
+    if (typeof colMeta == "string" && colMeta.length > 0) {
+        dcs.WT.z_collection = colMeta;
+    }
+    colMeta = getMetaTag("CT");
+    if (typeof colMeta == "string" && colMeta.length > 0) {
+        dcs.WT.z_collectiontype = colMeta;
+    }
+    colMeta = null;
+
+    // Set global cookie tracking info
+    if (/NYT-Global/.test(document.cookie)) {
+        dcs.WT.gv = "2";
+    } else if (/edition\|GLOBAL/.test(document.cookie)) {
+        dcs.WT.gv = "1";
+    }
+    dcs.WT.sourceapp = source_app_map["nyt-v5"] || "nyt-v5"; // source app
+
+    // Set article information
+    var metaArticleId = "";
+    if(!metaArticleId || metaArticleId === "") {
+        metaArticleId = getMetaTag("articleid");
+    }
+    
+    var wtHelperFn; 
+    try {
+        wtHelperFn = new wtHelper(TAGX.Utils);
+    } catch(e) {
+        //console.log(e);    
+        // now what???
+    }
+    
+    if (metaArticleId !== "" && getMetaTag("PST") !== "Comments Overflow" && wtHelperFn) {
+        wtHelperFn.setArticleInfo(metaArticleId, dcs.WT);
+    } else {
+        //setCommentOverflowInfo(metaArticleId);
+    }
+
+    if(dcs.WT.z_pud && dcs.WT.z_pud !== "" ) {
+        dcs.WT.z_pudr = wtHelperFn.getPubDateRange(dcs.WT.z_pud);
+        dcs.WT.z_pyr = dcs.WT.z_pud.substring(0, 4);
+    }
+
+    if(wtHelperFn) {
+        // set registration values
+        wtHelperFn.setRegistrationSection("Travel", "");
+        wtHelperFn.setContentInfo("Travel", dcs.WT);
+
+        
+        // Set interactive information
+
+        var tomMetaTag = "" !== "" ? "" : getMetaTag("tom");
+        if (tomMetaTag == "interactive_graphic" || tomMetaTag == "interactive_feature" || tomMetaTag == "Interactive Feature") {
+            dcs.WT.z_gpt = "Multimedia";
+            dcs.WT.z_gpst = "Flash";
+        }
+
+        // Set imagepages 
+        if (/^\/imagepages/.test("/travel/guides/europe/portugal/sintra/overview.html")) {
+            TAGX.Utils.addMetaTag("PT", "Multimedia");
+            TAGX.Utils.addMetaTag("PST", "Image");
+
+        }
+
+        // Set slideshow information
+        if ((tomMetaTag == "Slideshow") || (/^\/slideshow\/[0-9][0-9][0-9][0-9]\/[0-1][0-9]\/[0-3][0-9]\//.test("/travel/guides/europe/portugal/sintra/overview.html"))) {
+            
+            dcs.WT.z_gpt = "Multimedia";
+            dcs.WT.z_gpst = "Slideshow";
+            TAGX.Utils.addMetaTag("WT.z_pud", getMetaTag("pdate"));
+            TAGX.Utils.addMetaTag("WT.z_sssn", getMetaTag("SSSN"));
+            TAGX.Utils.addMetaTag("WT.z_ssts", getMetaTag("SSTS"));
+            TAGX.Utils.addMetaTag("WT.z_sse", getMetaTag("SSE"));    
+        }
+
+        // set Sunday Review info
+        if ((/[0-9][0-9][0-9][0-9]\/[0-1][0-9]\/[0-3][0-9]\/sunday-review\//.test("/travel/guides/europe/portugal/sintra/overview.html")) || 
+             (/[0-9][0-9][0-9][0-9]\/[0-1][0-9]\/[0-3][0-9]\/opinion\/sunday\//.test("/travel/guides/europe/portugal/sintra/overview.html"))) {
+            dcs.WT.cg_n = "Opinion";
+            dcs.WT.cg_s = "Sunday Review";
+        }
+
+        
+    }
+    // same as set section front function
+    if ( dcs.WT.z_gpt == "Section Front" && dcs.WT.cg_s) {
+        TAGX.Utils.addMetaTag("WT.z_gpst", "Subsection Front");
+    }
+
+    if (0) {
+        dcs.WT.dcsvid = 0;
+    }
+    dcs.WT.rv = (false === true ? "1" : "0");
+
+    if (TAGX.Utils.getMetaTag("errorpage") === "true") {
+        dcs.WT.cg_n = "Member Center";
+        dcs.WT.z_gpt = "Member Center";
+        dcs.WT.z_gpst = "Error Page";
+        TAGX.Utils.addMetaTag("WT.ti", "The New York Times > Page Not Found");
+    }
+                                      
+    // if channels information is available
+    if (TAGX.Utils.getMetaTag("channels") !== "") {
+        dcs.DCS.channels = TAGX.Utils.getMetaTag("channels");
+    }                                  
+
+    if (pagetype === "article") {
+        dcs.DCS.nyt4pg = "1";
+    }
+	// Don't send WT.z_aid if WT.z_recipeid exists. Workaround for recipe pages.
+	if (TAGX.Utils.getMetaTag('WT.z_recipeid')) {
+		delete dcs.WT.z_aid;
+	}
+
+    dcs.track({finish: function(dcs, options) {
+        // After page load data sent, clear dcsqry (parameter-value pairs in Address Bar)
+        dcs.DCS.dcsqry = "";
+        dcs.DCS.nyt4pg = "";
+//        dcs.DCS.nyt4totpg = "";
+    }});
+
+    return dcs;
+}());;});
+tagger.tag().condition(function (callback) { TAGX.Ops.on.call(this, "page.dom.custom", ["loaded:webtrends.js"], callback); }).run(function() {var pattern = /^MiddleRight([\d]+)$/;
+TAGX.$(TAGX).one("scroll-update-char-count", function (eventData) {
+    var lastpage = 1;
+    var pageNum = ((eventData && typeof eventData.numPages === "number") ? eventData.numPages : 1);
+    if (pageNum === 1) {
+        return;
+    }
+    TAGX.$(TAGX).on("ad-render", function (eventData) {
+        var match, page;
+        if (eventData && "AdImpression" === eventData.eventName) {
+            if (eventData.version === "Box1") {
+                page = pageNum;
+            }
+            else if ((match = pattern.exec(eventData.version))) {
+                page = parseInt(match[1], 10) + 1;
+            }
+            if (lastpage < page && page <= pageNum) {
+                lastpage = page;
+                dcsMultiTrack.apply(this, ["WT.z_dcsm", "1", "DCSext.nyt4pg", page, "DCSext.nyt4totpg", pageNum.toString()]);
+                try {
+                    NYTD.pageEventTracker.updateData({"nyt4pg" : page, "nyt4totpg": pageNum.toString()}); 
+                    NYTD.pageEventTracker.shortCircuit();   
+                } catch(e) {
+
+                }
+            }
+        }
+    });
+});});
+tagger.tag().condition(function (callback) { (TAGX.Ops.and.call(this, function (callback) { TAGX.Ops.on.call(this, "page.dom.custom", ["loaded:webtrends.js"], callback); }, function (callback) { TAGX.Ops.on.call(this, "page.dom.custom", ["loaded:WTHelperFunctions.js"], callback); }))(callback); }).run(function() {var eventHandler = function (evtData) {
+    var data = TAGX.Utils.jsonObjToDCSparams(evtData);
+    dcsMultiTrack.apply(this, data.concat(["WT.z_dcsm", "1"]));
+};
+TAGX.$(TAGX).on("ribbon-page-right", eventHandler);
+TAGX.$(TAGX).on("ribbon-page-left", eventHandler);});
+tagger.tag().run(function() {/****** start of DY tag *****/
+TAGX.$("<div id='DYSCR'></div>").appendTo('body');
+window.DY = {scsec : 8765260 ,API: function(){(DY.API.actions = DY.API.actions || []).push(arguments)}};
+(function(){
+	var d=document,e='createElement',a='appendChild',g='getElementsByTagName',m='getElementById',i=d[e]('iframe'); 
+	i.id=i.name='DY-iframe'; i.style.display='none'; i.width=i.height='1px';d[m]('DYSCR')[a](i);
+	DY.x = function(w) { var d=w.document, s=d[e]('script');s.type='text/javascript'; s.async=true;          s.src=('https:'==d.location.protocol?'http://st.dynamicyield.com'.replace('http:','https:') : 'http://st.dynamicyield.com')+'/ast?sec='+DY.scsec; 
+	d[g]('head')[0][a](s);}; var c = i.contentWindow.document;
+	c.open().write('<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><body onload="parent.DY.x(window)" style="margin:0"></'+'body></html>');
+	c.close();
+})();
+/******* end of DY tag *******/ 
+;});
+tagger.tag().repeat('many').condition(function (callback) { TAGX.Ops.on.call(this, "page.dom.custom", ["page-interaction"], callback); }).run(function() {var eData = this.eventsData["page-interaction"];
+if(eData) {
+    delete eData.module; // to prevent confussion.
+    NYTD.pageEventTracker.updateData(eData);
+    if ((eData.depth && typeof eData.depth === 'number') || eData.priority === true) { // ideally we get priority flag in the event
+        delete eData.priority; // to prevent confussion
+        NYTD.pageEventTracker.shortCircuit();  
+    }
+};});
+tagger.tag().run(function() {if (typeof NYTD === "undefined" || typeof NYTD.pageEventTracker == "undefined") {
+	var jsHost = "http" === 'https' ? "static.nytimes.com" : "graphics8.nytimes.com";
+	TAGX.Utils.includeFile('//' + jsHost + '/bi/js/analytics/EventTracker.js', false, 'body', true, 'loaded:EventTracker.js');
+};});
+tagger.tag().run(function() {/**** start of chartbeat tag ****/
+function getChartbeatDomain() {
+    var domain = '', 
+        edition = unescape(document.cookie).match('NYT-Edition=([^;]+)');
+
+    if (edition && edition[1] && edition[1].indexOf("edition|GLOBAL") !== -1) {
+        domain = "international.nytimes.com";
+    } else {
+        domain = "www.nytimes.com"
+    }
+    return domain;
+}
+
+window._sf_async_config = {
+    uid: 16698,
+    domain: getChartbeatDomain(),
+    pingServer: "pnytimes.chartbeat.net",
+    path: "/travel/guides/europe/portugal/sintra/overview.html",
+    title: window.TimesPeople && TimesPeople.Page && TimesPeople.Page.getTitle() || document.title.replace('- NYTimes.com', '')
+};
+
+try {
+  window._sf_async_config.sections = ["Travel", ""].join(",");
+} catch(e){}
+
+try {
+  window._sf_async_config.authors = ("") + "".replace('By ', '').toLowerCase().replace(/\b[a-z]/g, function(){return arguments[0].toUpperCase();});
+} catch(e){}
+
+window._sf_endpt = (new Date()).getTime();
+var scriptUrl = ((("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") + "js/chartbeat.js");
+TAGX.Utils.includeFile(scriptUrl, false, 'body', true, null); 
+/**** end of chartbeat tag ****/;});
+tagger.tag().run(function() {var ccLibScript = (document.location.protocol === "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/c2/3005403/cs.js";
+TAGX.Utils.includeFile(ccLibScript, false, "body", true, "loaded:comscore.js"); 
+
+var jsHost = "http" === 'https' ? "static.nytimes.com" : "graphics8.nytimes.com";
+TAGX.Utils.includeFile("http://" + jsHost + "/bi/js/analytics/comscore.js", false, "body", true, "loaded:comscoreVendorCode.js");});
+tagger.tag().condition(function (callback) { TAGX.Ops.on.call(this, "page.dom.custom", ["loaded:ga.js"], callback); }).run(function() {var googleAnalyticsTrackerID = {"Travel":"UA-4406282-79", "Business":"UA-4406282-80", "Health":"UA-4406282-81"};
+
+if (googleAnalyticsTrackerID["Travel"] !== undefined){
+	try {
+		var pageTracker = _gat._getTracker(googleAnalyticsTrackerID["Travel"]); 
+		pageTracker._trackPageview();
+	} catch(err) {}
+};});
+tagger.tag().run(function() {// Nielsen tagging
+(function () {
+  var d = new Image(1, 1);
+  d.onerror = d.onload = function () {
+    d.onerror = d.onload = null;
+  };
+  d.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-nytimes&cg=0&cc=1&si=",
+           escape(window.location.href), "&rp=", escape(document.referrer),
+           "&ts=compact&rnd=", (new Date()).getTime()].join('');
+})();;});
+tagger.tag().run(function() {NYTD = window.NYTD || {};
+NYTD.UPTracker = (function () {
+  var
+    isMobile,
+    defaultHref;
+
+  defaultHref = window.location.href;
+
+  // default configuration
+  var config = {
+    baseUrl: '//up.nytimes.com/?',
+    defaultArguments: 'd=0//&c=1'
+  };
+
+  var url;
+  
+  isMobile = (function(){
+    var
+      mobile,
+      tags,
+      i,
+      content;
+
+    mobile = false;
+    
+    // Loop through all the metas and search for source app.
+    tags = document.getElementsByName('sourceApp');
+    for (i = tags.length - 1; i >= 0 && mobile === false; i--) {
+        // Retrieve the tag's content.
+        content = tags[i].getAttribute('content');
+        
+        // Check if it is mobile.
+        mobile = content && content === 'mobileWeb';
+    }
+
+    // Return the value.
+    return mobile;
+  }());
+  // Update the config.
+  if (isMobile === true) {
+    // Discover the href for mobile.
+    defaultHref = (function() {
+      var
+        href,
+        canonicalURLMeta;
+      
+      href = window.location.href;
+      
+      canonicalURLMeta = document.getElementsByName("canonicalURL");
+      
+      if(canonicalURLMeta && canonicalURLMeta.length > 0) {
+        href = canonicalURLMeta[0].content;
+      }
+      
+      href = href + document.location.search
+      
+      return href;
+    }())
+
+    // Update the config object.
+    config.defaultArguments += '&m=1';
+    config.url = defaultHref;
+  }
+
+  function init (params) {
+
+    if (params.baseUrl) {
+      config.baseUrl = params.baseUrl;
+    }
+    if (params.eventType) {
+      config.eventType = params.eventType;
+    }
+    if (params.data) {
+      config.data = params.data;
+    }
+    if (params.userID) {
+      config.userID = params.userID;
+    }
+    
+    config.url = params.url || defaultHref;
+  }
+  
+  function createUrl() {
+    // begin with baseUrl
+    url = config.baseUrl + config.defaultArguments;
+    
+    // append eventType
+    if (config.eventType) {
+      url += '&e=' + config.eventType;
+    }
+
+    // add user id if we have one
+    if (config.userID) {
+      url += '&ui=' + config.userID;
+    }
+    
+    // url encode and append url
+    url += '&u=' + encodeURIComponent(config.url);
+    
+    // url encode and append referrer
+    url += '&r=' + encodeURIComponent(document.referrer);
+
+    // if we have meta data, encode and append it
+    if (config.data) {
+      try {
+        JSON.stringify({world:'peace'});
+        appendAndSend();        
+      } catch (e) {  // if no JSON, inlcude json2-min
+        var script = document.createElement('script');
+        script.type = "text/javascript";
+        script.src  = "//www.nytimes.com/js/app/lib/json/json2-min.js";
+        script.onload = function () { 
+          appendAndSend(); 
+        };
+        script.onreadystatechange = function () {
+          if (this.readyState == 'loaded' || this.readyState == 'complete') {
+            appendAndSend();  
+          }
+        };
+        
+        document.getElementsByTagName("head")[0].appendChild(script);
+      }
+    } else {
+      send();
+    }
+  } 
+
+  function appendAndSend() {
+    var jsonData = JSON.stringify(config.data);
+    if (jsonData) {
+      url += '&p=' + encodeURIComponent(jsonData);
+    }
+    send ();
+  }
+  
+  function send() {
+    if (url) {
+      var img = document.createElement('img');
+      img.setAttribute('border', 0);
+      img.setAttribute('height', 0);
+      img.setAttribute('width', 0);
+      img.setAttribute('src', url);
+      img.setAttribute('class', 'hidden');
+      document.body.appendChild(img);
+    } else {
+      return false;
+    }
+  }
+
+  return {
+    track: function (params) {
+      params = params || {};
+      init(params);
+      createUrl();
+    },
+    check: function (){
+    var imageTags = document.getElementsByTagName('img');
+    var UPTcalled = false;
+    var pattern = /up\.nytimes\.com\//;
+    for (var i=0; i < imageTags.length; i++){
+      if ( pattern.test(imageTags[i].src)){
+        UPTcalled = true;
+        break;
+      }
+    }
+    if (!UPTcalled) {
+      NYTD.UPTracker.track(); // set generic UPT call if not available on page load
+    }
+  }
+};
+})();
+NYTD.UPTracker.check();;});
+tagger.tag().run(function() {var jsHost = "http" === 'https' ? "static.nytimes.com" : "graphics8.nytimes.com";
+
+TAGX.Utils.includeFile("//" + jsHost + "/bi/js/analytics/wtHelperFunctions.js", false, "head", true, "loaded:WTHelperFunctions.js");
+TAGX.Utils.includeFile("//" + jsHost + "/bi/js/analytics/webtrends.js", false, 'body', true, "loaded:webtrends.js");;});
+tagger.tag().run(function() {(function () {
+    var addCategory = function(category, valueToAppend) {
+        if (valueToAppend !== "") {
+            return category + " > " + valueToAppend;
+        } else {
+            return category;
+        }
+    }
+
+    window.DM_prepClient = function(csid, client) {
+        if ("H07707" == csid) {
+            var contentGroup = "Travel";
+			if (contentGroup === "" ) {
+				contentGroup = TAGX.Utils.getMetaTag("CG");
+			}
+            if (contentGroup !== "Homepage" && contentGroup !== "Home Page") {
+				var scg = "";
+				if (scg === "" ) {
+					scg = TAGX.Utils.getMetaTag("SCG");
+				}
+				var catValue = "NYTimesglobal";
+                catValue = addCategory(catValue, contentGroup);
+                catValue = addCategory(catValue, scg);
+                client.DM_cat(catValue);    
+            }
+        } // if H07707     
+    }
+
+    // AudienceScience script tag 
+    TAGX.Utils.includeFile("//js.revsci.net/gateway/gw.js?csid=H07707&auto=t", true, 'body', false, null);
+}());;});
+tagger.tag().condition(function (callback) { TAGX.Ops.on.call(this, "page.dom.custom", ["loaded:webtrends.js"], callback); }).run(function() {var
+  imageViewerTrack;
+
+imageViewerTrack = function (eventData) {
+  var
+    data = TAGX.Utils.jsonObjToDCSparams(eventData);
+  data.push('WT.z_dcsm', '1');
+  data.push('WT.z_gpt', 'Multimedia');
+  data.push('WT.z_gpst', eventData.module);
+  data.push('WT.z_sssn', eventData.mdata.currentSlide);
+  data.push('WT.z_ssts', eventData.mdata.totalSlides);
+  if (eventData.mdata.currentSlide === eventData.mdata.totalSlides) {
+    data.push('WT.z_sse', 'finish');
+  }
+  dcsMultiTrack.apply(this, data);
+};
+
+TAGX.$(TAGX).on('media-viewer-opened', imageViewerTrack);
+TAGX.$(TAGX).on('media-viewer-next-image', imageViewerTrack);
+TAGX.$(TAGX).on('media-viewer-prev-image', imageViewerTrack);;});
+tagger.tag().run(function() {TAGX.Utils.includeFile((("https:" == document.location.protocol) ? "https://ssl." : "http://www.") + "google-analytics.com/ga.js", false, 'body', true, "loaded:ga.js");;});
+tagger.tag().condition(function (callback) { TAGX.Ops.on.call(this, "page.dom.custom", ["loaded:webtrends.js"], callback); }).run(function() {var
+  slideshowTrack;
+  
+slideshowTrack = function (eventData) {
+  "use strict";
+  var
+    data = TAGX.Utils.jsonObjToDCSparams(eventData);
+  data.push('WT.z_dcsm', '1');
+  data.push('WT.z_gpt', 'Multimedia');
+  data.push('WT.z_gpst', eventData.module);
+  data.push('WT.z_sssn', eventData.mdata.currentSlide);
+  data.push('WT.z_ssts', eventData.mdata.totalSlides);
+  if (eventData.mdata.currentSlide === eventData.mdata.totalSlides) {
+    data.push('WT.z_sse', 'finish');
+  }
+  dcsMultiTrack.apply(this, data);
+};
+
+TAGX.$(TAGX).on('embedded-slideshow-next-image', slideshowTrack);
+TAGX.$(TAGX).on('embedded-slideshow-prev-image', slideshowTrack);
+TAGX.$(TAGX).on('embedded-slideshow-dot', slideshowTrack);
+;});
+tagger.tag().repeat('many').condition(function (callback) { (TAGX.Ops.or.call(this, function (callback) { TAGX.Ops.on.call(this, "page.dom.custom", ["gateway-load"], callback); }, function (callback) { TAGX.Ops.on.call(this, "page.dom.custom", ["gateway-login-click"], callback); }))(callback); }).run(function() {var mapping = {
+    "common": [
+        'WT.cg_n', 'Digital Subscription',
+        'WT.z_gpt', 'E-Commerce',
+        'WT.z_gpst', 'Purchase',
+        'WT.si_n', 'Digital Subscription',
+        'WT.si_x', '1',
+        'WT.cg_s', (/edition|GLOBAL/.test(document.cookie) ? 'IHT' : 'NYT'),
+        'WT.rv', (false === true ? "1" : "0"),
+        'WT.z_ica', "0",
+        'WT.z_imv', "0",
+        'WT.es', document.location.host + document.location.pathname
+    ],
+    "impression" : { dcsuri: '/mem/purchase/gateway', ti: 'Gateway', dcsid: 'dcsv96qcv000008alp4trgo0q_7h8h' },
+    "login-click" : { dcsuri: '/mem/purchase/gateway/login', ti: 'Gateway - Login', z_dcsm: '1', dcsid: 'dcsv96qcv000008alp4trgo0q_7h8h' }
+};
+var eventData = this.eventsData["gateway-load"] || this.eventsData["gateway-login-click"];
+var evtData, dcssip, dcsuri, dcsid, addition;
+var dcs = window.webtrendsAsyncInit;
+var map = mapping[eventData.eventName.toLowerCase()];
+
+if (/*!dcs || */!eventData || !map) { return; } // need to have proper data
+
+addition = mapping.common.concat(["DCS.dcsuri", map.dcsuri, "WT.ti", map.ti, "DCS.dcssip", "myaccount.nytimes.com"]);
+
+if(map.z_dcsm) { 
+    addition = addition.concat(["WT.z_dcsm", map.z_dcsm]); 
+}
+
+evtData = TAGX.Utils.jsonObjToDCSparams(eventData); // event data to array
+
+if(dcs) {
+    // save originals
+    dcsid = dcs.dcsid;
+
+    // overwrite values
+    dcs.dcsid = map.dcsid;
+} else {
+    //save originals
+    dcsid = dcsInit.dcsid;
+    // overwrite
+    dcsInit.dcsid = map.dcsid
+    
+}
+
+// make the call
+dcsMultiTrack.apply(this, evtData.concat(addition));
+
+if(dcs) {
+    // restore
+    dcs.dcsid = dcsid;
+} else {
+    dcsInit.dcsid = dcsid
+};});
+tagger.tag().repeat('many').condition(function (callback) { (TAGX.Ops.or.call(this, function (callback) { TAGX.Ops.on.call(this, "page.dom.custom", ["growl-load"], callback); }, function (callback) { TAGX.Ops.on.call(this, "page.dom.custom", ["growl-login-click"], callback); }))(callback); }).run(function() {
+var mapping = {
+   "common": [
+        'WT.cg_n',            'Digital Subscription',
+        'WT.z_gpt',           'E-Commerce',
+        'WT.z_gpst',          'Purchase',
+        'WT.si_n',            'Digital Subscription',
+        'WT.si_x',            '8',
+        'WT.cg_s',            (/edition\|GLOBAL/.test(document.cookie) ?  'IHT' : 'NYT'),
+        'WT.rv',              (false === true ? "1" : "0"),
+        'WT.es',              document.location.host + document.location.pathname,
+        'WT.z_dcsm',          '1',
+        'WT.z_ica',           '0',
+        'WT.z_imv',           '0'
+    ],
+    "growl-load" : { dcsuri: '/mem/purchase/growl', ti: 'Growl', dcsid: 'dcsv96qcv000008alp4trgo0q_7h8h'},
+    "impression" : { dcsuri: '/mem/purchase/growl', ti: 'Growl', dcsid: 'dcsv96qcv000008alp4trgo0q_7h8h'},
+    "login-click": { dcsuri: '/mem/purchase/growl/login', ti: 'Growl - Login', dcsid: 'dcsv96qcv000008alp4trgo0q_7h8h'}
+};
+
+var excludeCampaingList = {
+    "nyt2013_abTest_regiAt6_growl_container" : 1, 
+    "nyt2013_abTest_regiAt6_setup" : 1, 
+    "nyt2013_abTest_regiAt6_display" : 1, 
+    "nyt2013_abTest_regiAt6_display_10Plus" : 1, 
+    "nyt2013_abTest_regiAt6_finalize}" : 1
+}
+
+var eventData = this.eventsData["growl-load"] || this.eventsData["growl-login-click"];
+var evtData, dcssip, dcsuri, dcsid, addition, specifics;
+var dcs = window.webtrendsAsyncInit;
+var map = mapping[eventData.eventName.toLowerCase()];
+if ( !eventData || !map) { return; } // need to have proper data
+
+// check exlude list
+if (eventData.contentId && excludeCampaingList && excludeCampaingList[eventData.contentId] === 1 ) {
+    // return, we dont want to count these hits
+    return;    
+}
+
+addition = mapping.common.concat(["DCS.dcsuri", map.dcsuri, "WT.ti", map.ti, "DCS.dcssip", "myaccount.nytimes.com"]);
+
+evtData = TAGX.Utils.jsonObjToDCSparams(eventData); // event data to array
+
+if(dcs) {
+    // save originals
+    dcsid = dcs.dcsid;
+
+    // overwrite values
+    dcs.dcsid = map.dcsid;
+} else {
+    //save originals
+    dcsid = dcsInit.dcsid;
+    // overwrite
+    dcsInit.dcsid = map.dcsid
+    
+}
+
+// make the call
+dcsMultiTrack.apply(this, evtData.concat(addition));
+
+if(dcs) {
+    // restore
+    dcs.dcsid = dcsid;
+} else {
+    dcsInit.dcsid = dcsid
+}
+;});
+TAGX.taggerReady=true;
+})();
