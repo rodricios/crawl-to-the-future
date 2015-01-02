@@ -499,3 +499,21 @@ google_parsed = html.parse(google_html)
 google_results = google_parsed.xpath('//*[@id="rso"]/div[2]/li[1]/div/h3/a')
 
 ```
+
+What we basically tried doing in the last line of the code above was to select the node I hand picked using Opera's dev tools.
+
+But to my surprise, it failed.
+
+Here's how I know:
+
+    len(google_results) == 0
+
+That means our xpath is incorrect, or is not understood. This happens. Let's see if we can fix this.
+
+Time to get interactive with a Python shell.
+
+Remember, what we have to do is come up with an expath that will return a list of 10 elements, and those 10 elements
+will have, inside one of its variables a hyperlink; that hyperlink is the link that will lead us to the webpages that
+will make up our dataset.
+
+
