@@ -187,8 +187,84 @@ get a typical Google Results page. Success!
 
 If we want to satisfy the [*random 10 pages*](#brainstorming) mentioned
 in a quote in the Brainstorming section, we have to have a pretty large
-data set. Not too large, but I've seen number getting thrown around in the
+data set. Not too large, but I've seen numbers getting thrown around in the
 hundreds to thousands range. Let's refer to ClearEval and see what they
 specified. Be right back!
 
+Note: the next section basically talks about how ClearEval wasn't
+very specific in terms of data set acquisition nor data set size
+requirements, unless I've missed it.
+
+[Skip to the Pagination](#pagination)
+
 ---
+
+Alright, interesting... Here's what I found from the ClearEval paper:
+
+> The corpora were collected from URLs returned by making queries to Google,
+which consisted of four words frequent in an individual language.
+We have previously established that if mid-frequency words like
+picture, extent, raised and events are all used in a query, retrieved
+pages are likely to contain extended stretches of text (Sharoff, 2006)
+
+So the ClearEval specification says that it simply search and downloaded
+the resulting html pages. Fair enough. And they did so on a specific
+set of key terms to search.
+
+As was mentioned in [this part](https://github.com/rodricios/crawl-to-the-future/tree/master/dataset)
+of the project, we have a specific list of online newspapers to fetch
+from. I guess in principle, it doesn't really matter where we fetch from
+as long as we have **many** webpages to be able to pick at random,
+and that it covers the appropriate era (2000,2005,2010,2015)
+
+---
+
+###Pagination
+
+We want to get not just the first 20 or so results from Google -
+as in, we want more than just the first page of results.
+
+The way to figure out how to get more than one page of results
+is by figuring out the "paging" parameter within the query string.
+
+But Rodrigo, you already went thru the entire query string!
+
+Nu uh! Go to your browser and enter this url (if you haven't already):
+
+    https://www.google.com/search?q=new+york+times&tbs=cdr%3A1%2Ccd_min%3A1%2F1%2F2000%2Ccd_max%3A1%2F1%2F2001&tbm=
+
+Again, that's the short url w/ query string arguments that set the
+search date range from Jan 1, 2000 to Jan 1, 2001.
+
+Once you've gotten back the first page of Google results, scroll down
+and click the button that takes you to the next page of results.
+
+This may feel strange to some of you ;)
+
+Now let's look at that new url:
+
+    https://www.google.com/search?q=new+york+times&tbs=cdr%3A1%2Ccd_min%3A1%2F1%2F2000%2Ccd_max%3A1%2F1%2F2001&tbm=#q=new+york+times&safe=off&tbs=cdr:1,cd_min:1/1/2000,cd_max:1/1/2001&start=10
+
+Did it not just get unnecessarily long again?
+
+Let's skip a lot of the "interpreting" stuff, and see if we can fish out
+the parameter with "2" in it, for "page 2"
+
+...
+
+You'll likely find nothing. Why? Because search engines use a different way
+provide "pagination." Read this [Elasticsearch](http://www.elasticsearch.org/guide/en/elasticsearch/guide/current/pagination.html)
+to get a feel for pagination. Great tool btw!
+
+Once you're satisfied, let's try to now look for our "from" parameter.
+
+The closest thing that I was able to find was "start=10"
+
+That should do it; let's try to add that bit to the end of our shorter url+query:
+
+    https://www.google.com/search?q=new+york+times&tbs=cdr%3A1%2Ccd_min%3A1%2F1%2F2000%2Ccd_max%3A1%2F1%2F2001&start=10
+
+Alright! That should do it. What we've just done is disect the necessary
+parameters for custom-date-range and paged queries!
+
+
