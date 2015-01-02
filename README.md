@@ -1,10 +1,19 @@
 crawl to the future
 ===================
 
+Structure of this project
+-------------------------
+
+1. [Datasets](https://github.com/rodricios/crawl-to-the-future/tree/master/dataset)
+2. [Crawlers](https://github.com/rodricios/crawl-to-the-future/tree/master/crawlers)
+  * [Crawling Google](https://github.com/rodricios/crawl-to-the-future/tree/master/crawlers/google_2000) TODO: Change directory name
+  * TODO: Crawling Way Back
+
+
 Welcome!
 --------
 
-This repository will be the home of a subtask within a project that [Tim Weninger](http://www3.nd.edu/~tweninge/) and I have undertaken. 
+This repository will be the home of a subtask within a project that [Tim Weninger](http://www3.nd.edu/~tweninge/) and I have undertaken.
 
 The subtask itself is determining whether or not it is possible to do the following*:
 
