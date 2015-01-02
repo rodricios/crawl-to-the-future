@@ -1,5 +1,5 @@
-dataset a.k.a. websites from 2000, 2005, 2010, and 2015
-=======================================================
+Datasets - websites from 2000, 2005, 2010, and 2015
+-----------------------------------------------------
 
 This directory is where you'll find a in-progress accumulation of
 websites from the following domains:
