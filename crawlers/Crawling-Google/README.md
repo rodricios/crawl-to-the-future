@@ -112,3 +112,58 @@ field-value pairs[1]
 [1](http://en.wikipedia.org/wiki/Query_string#Web_forms)
 
 ---
+
+###Interpreting Google's query string
+
+Now we'll try to skip most of the query string until we reach something that's date related,
+because what we really want to focus on is the query field,value pair
+that controls the custom range dates.
+
+Again, we're looking for something that has the following encoded in query string:
+
+* jan 1 2000 or
+* 1 1 2000
+* 01 01 2000
+* etc.
+
+Skipping all the way to the end of the query string, we see...:
+
+    &tbs=cdr%3A1%2Ccd_min%3A1%2F1%2F2000%2Ccd_max%3A1%2F1%2F2001&tbm=
+
+The %3A, %2C, basically all "%" followed by a # and letter are
+url encoded characters. Read about them [here](http://www.degraeve.com/reference/urlencoding.php)
+
+But if we swap those characters in the last query string with the url-unencoded(?) characters,
+we'll actually start to see the parameters for the dates:
+
+    tbs=cdr:1,Ccd_min:1/1/2000,Ccd_max:1/1/2001&tbm=
+
+Ok, there we go, now we have something we can kind of make out:
+
+"cdr" stands for "custom date range" and that's set to '1', meaning
+'true, we have chosen that option.
+
+Ccd_min is a little harder to de-abbreviate, any shots? Maybe
+Custom custom date min? Well, at this point, it really doesn't matter
+because we've found the bit of query that's necessary in order to specify
+our date-ranged search :)
+
+You can skip to the [final url+query string](#final-query-string) that we'll use in some crawling
+agent.
+
+What about the stuff in the query string that we skipped?
+
+    &safe=off&client=opera&hs=SBu&biw=1309&bih=810&source=lnt&
+
+In case I haven't said this already, the "&" just means "and" like in,
+'field1=True and field2=False' etc.
+
+So "&safe=off" is saying, I presume, "safe search" is off. And our browser
+client is "opera" and hs=SBu, I don't know what that means; biw=1309, what?
+
+bih=810? source=1nt? Yeah, thank Google, you make it really easy for us to
+interpret your auto generated query string parameters.
+
+####Final query string
+
+So to finish,
