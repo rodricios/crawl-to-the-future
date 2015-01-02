@@ -4,19 +4,28 @@ Crawling Google
 T. of C.
 --------
 
-1. [Intro](#intro)
-2. [Brainstorming](#brainstorming)
-3. [Decision?](#decision)
-4. [Crawling into Google's Backend](#crawling-into-googles-backend)
-5. [Interpreting Google's query string](https://github.com/rodricios/crawl-to-the-future/tree/master/crawlers/Crawling-Google#interpreting-googles-query-string)
-6. [Final query string](https://github.com/rodricios/crawl-to-the-future/tree/master/crawlers/Crawling-Google#final-query-string)
-7. [One last thing, Pagination](https://github.com/rodricios/crawl-to-the-future/tree/master/crawlers/Crawling-Google#one-last-thing-pagination)
-8. [Pagination](https://github.com/rodricios/crawl-to-the-future/tree/master/crawlers/Crawling-Google#pagination)
+[Part I](#part-i)
+  1. [Intro](#intro)
+  2. [Brainstorming](#brainstorming)
+  3. [Decision?](#decision)
+  4. [Crawling into Google's Backend](#crawling-into-googles-backend)
+  5. [Interpreting Google's query string](https://github.com/rodricios/crawl-to-the-future/tree/master/crawlers/Crawling-Google#interpreting-googles-query-string)
+  6. [Final query string](https://github.com/rodricios/crawl-to-the-future/tree/master/crawlers/Crawling-Google#final-query-string)
+  7. [One last thing, Pagination](https://github.com/rodricios/crawl-to-the-future/tree/master/crawlers/Crawling-Google#one-last-thing-pagination)
+  8. [Pagination](https://github.com/rodricios/crawl-to-the-future/tree/master/crawlers/Crawling-Google#pagination)
+
+
+Part I
+======
+
 
 Intro
 -----
 
-I'm going to apologize before hand and say that this will read like someone's thoughts in their head
+*Crawling Google*'s README is split up into more than one part. Part I is all about simplifying Google's
+query string. Why is this important? Because we are going to use that to our advantage when it comes building a substantial dataset, from which we can "randomly" pick out web pages. 
+
+Part II will be us exploring Scrapy and using the url+query string we acquired in Part I.
 
 ###The simple query
 
