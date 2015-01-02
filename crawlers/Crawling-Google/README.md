@@ -8,7 +8,10 @@ T. of C.
 2. [Brainstorming](#brainstorming)
 3. [Decision?](#decision)
 4. [Crawling into Google's Backend](#crawling-into-googles-backend)
-
+5. [Interpreting Google's query string](https://github.com/rodricios/crawl-to-the-future/tree/master/crawlers/Crawling-Google#interpreting-googles-query-string)
+6. [Final query string](https://github.com/rodricios/crawl-to-the-future/tree/master/crawlers/Crawling-Google#final-query-string)
+7. [One last thing, Pagination](https://github.com/rodricios/crawl-to-the-future/tree/master/crawlers/Crawling-Google#one-last-thing-pagination)
+8. [Pagination](https://github.com/rodricios/crawl-to-the-future/tree/master/crawlers/Crawling-Google#pagination)
 
 Intro
 -----
