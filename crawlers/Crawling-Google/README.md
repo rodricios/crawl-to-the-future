@@ -519,10 +519,11 @@ Use the magnifying glass on the top-left of the devtools window
 
 Now right-click and copy the xpath
 
-![Right-click and copy xpath](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/right-click-copy-xpath?raw=true "Right-click and copy xpath")
+![Right-click and copy xpath](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/right-click-copy-xpath.png?raw=true "Right-click and copy xpath")
 
 
 Now, we can update our simpleselect.py script by adding this piece of code:
+
 ```python
 # Here comes the 'selecting'!
 google_results = google_parsed.xpath('//*[@id="rso"]/div[2]')
@@ -532,12 +533,6 @@ google_results = google_parsed.xpath('//*[@id="rso"]/div[2]')
 print len(google_results[0].xpath('./*'))
 #10
 ```
-
-
-![](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/?raw=true "")
-
-
-
 
 
 INCORRECT Simple Select
