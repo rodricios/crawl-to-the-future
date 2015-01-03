@@ -22,6 +22,7 @@ T. of C.
     3. [Store](#store-website-links)
   3. [Google By Year(s)](#google-by-year)
 
+* [Conclusion](#bitter-sweet-conclusion)
 Part I
 ======
 
@@ -629,3 +630,13 @@ googlebyear.py "new york times" -p 2 -y 2000 2001
 
 Note: don't forget to symlink!
 
+Bitter sweet conclusion
+----------
+
+While this may seem like a neat script - and I'm struggling to not sound passive-aggressive - the links themselves can
+serve no purpose with regards to this project. The goal was to build a data set of pages that existed in those periods
+(2000, 2005, etc.), but if you were to visit any of those pages, you'll see that most of those links will send
+you to archived pages, served by updated web frameworks.
+
+
+Next, and last resort: Way Back Machine
