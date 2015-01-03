@@ -438,7 +438,7 @@ First, I assumed it would work. I was wrong, and this set me back a couple of ho
 
 Second, you'll have read in earlier additions of this README that I go further in the process, without
 realizing that the HTML tree I'm working with is wrong. I will leave the [incorrect steps further below](#incorrect-simple-select)
-in case it serves any education purpose.
+in case it serves any educational purpose.
 
 
 What I should have done, instead of copy & paste the user-agent from the S.O. post, was to
@@ -460,21 +460,62 @@ Open my browser's developer tools
 ![Open dev. tools](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/right-click-open-devtools.png?raw=true "Open Developer Tools")
 
 Click the Network tab
-![Click the Network tab](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/click-network-tab.png?raw=true "")
+![Click the Network tab](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/click-network-tab.png?raw=true "Click the Network tab")
 
 Click the Documents subtab
-![Click the Documents subtab](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/click-Documents-subtab.png?raw=true "")
+![Click the Documents subtab](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/click-Documents-subtab.png?raw=true "Click the Documents subtab")
 
 Highlight the search document
-![Highlight the search document](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/hightlight-search-document.png?raw=true "")
+![Highlight the search document](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/hightlight-search-document.png?raw=true "Highlight the search document")
 
 Highlight the request headers
-![Highlight the request headers](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/highlight-request-headers.png?raw=true "")
+![Highlight the request headers](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/highlight-request-headers.png?raw=true "Highlight the request headers")
 
 Copy the user agent value
-![Copy the user agent value](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/copy-user-agent.png?raw=true "")
+![Copy the user agent value](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/copy-user-agent.png?raw=true "Copy the user agent value")
 
 
+Wooo! That might have seemed like an eyeful, but trust me, it was better than using any of the results in this [Google search](https://www.google.com/search?client=opera&q=google+custom+search+with+python&sourceid=opera&ie=UTF-8&oe=UTF-8#q=how+to+request+google+search+with+python)
+
+Here's what our updated simpleselect.py script looks like:
+
+```python
+import urllib2
+
+from lxml import html
+
+# To address paging in Google
+PAGE = 0
+
+# url and query string from PART I
+# this is a custom range from Jan 1, 2000 to Jan 1, 2001
+URL = 'https://www.google.com/search?q=new+york+times&tbs=cdr%3A1%2Ccd_min%3A1%2F1%2F2000%2Ccd_max%3A1%2F1%2F2001&start=' + str(PAGE*10)
+
+# here we setup the necessary agent to download a google html page
+opener = urllib2.build_opener()
+opener.addheaders = [('User-agent', 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 OPR/26.0.1656.60')]
+
+# let's download
+google_html = opener.open(URL)
+
+# parse the html
+google_parsed = html.parse(google_html)
+
+# Here comes the 'selecting'!
+google_results = google_parsed.xpath('//ol//li')
+
+# Here's a smarter way to see what exactly it is you've downloaded/parsed with lxml:
+html.open_in_browser(google_parsed)
+#file://c:/users/rodrigo/appdata/local/temp/tmp1xllau.html
+```
+
+Note: in case the last line of the above code doesn't actually open a browser for you,
+copy and paste the path that's printed into your browser.
+
+Here's what I see:
+
+Correctly downloaded Google HTML (look at the dates)!
+![Correctly downloaded Google HTML](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/correct-lxml-download.png?raw=true "Correctly downloaded Google HTML")
 
 
 
