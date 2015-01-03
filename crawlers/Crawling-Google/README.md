@@ -18,8 +18,8 @@ T. of C.
   1. [Motivation](#motivation)
   2. [The Easy Way is Usually Best](#the-easy-way-is-usually-best)
     1. [Step 1](#step-1)
-      * [Simple Download](#simple-download)
-      * [Simple Select](#simple-select)
+      * [simpledownload dot py](#simpledownload-dot-py)
+      * [simpleselect dot py](#simpleselect-dot-py)
 
 Part I
 ======
@@ -331,7 +331,7 @@ into Python code.
 Step 1 - Select Results
 ------
 
-There's a bit preliminary work required to being able to *select* our *results* - and what exactly do I mean by that? I'll answer that later.
+There's a bit preliminary work required to being able to *select* our *results* - and what exactly do I mean by that? [I'll answer that later.](#simpleselect-dot-py)
 
 This step leads directly to the Python library lxml. I'm going to be very brief. lxml.html is a module that can download, parse
 and select nodes in an HTML tree. That's all the power we need.
@@ -399,8 +399,8 @@ Now if you tried running that, you'll likely get an error.
 
 Refer to this [S.O. post](http://stackoverflow.com/questions/11450649/python-urllib2-cant-get-google-url) to find out why.
 
-Simple Download
----------------
+simpledownload dot py
+---------------------
 
 Here's the updated script ([simpledownload.py](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/simpledownload.py):
 
@@ -444,8 +444,8 @@ in case it serves any educational purpose.
 What I should have done, instead of copy & paste the user-agent from the S.O. post, was to
 right bring up my [browser's developer tools](https://www.google.com/search?client=opera&q=how+to+open+developer+tools&sourceid=opera&ie=UTF-8&oe=UTF-8).
 
-Simple Select
--------------
+simpleselect dot py
+---------------
 
 Here are a few screenshots of what I did:
 
@@ -534,6 +534,11 @@ print len(google_results[0].xpath('./*'))
 #10
 ```
 
+
+
+
+
+---
 
 INCORRECT Simple Select
 -----------------------
