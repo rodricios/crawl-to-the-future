@@ -337,14 +337,14 @@ A - Download search results
 
 ... into memory.
 
-There's a bit preliminary work required to being able to *select* our *results* - and what exactly do I mean by that? [I'll answer that later.](#simpleselect-dot-py)
+There's a bit preliminary work required to being able to *select* our *results* - and what exactly do I mean by that? [I'll answer that later.](#select-search-results)
 
 This step leads directly to the Python library lxml. I'm going to be very brief. lxml.html is a module that can download, parse
 and select nodes in an HTML tree. That's all the power we need.
 
 To select, we're going to use your browsers developer tools - but more on that in a minute.
 
-Note: the following steps in Python can be downloaded in its entirety [here](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/simpledownload.py)
+Note: the following steps in Python can be downloaded in its entirety [here](simpledownload.py)
 Note: the '\' is only for visual purposes, the file itself will have the url declared in single line.
 
 ```python
@@ -405,7 +405,7 @@ Now if you tried running that, you'll likely get an error.
 
 Refer to this [S.O. post](http://stackoverflow.com/questions/11450649/python-urllib2-cant-get-google-url) to find out why.
 
-Here's the updated script [simpledownload.py](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/simpledownload.py):
+Here's the updated script [simpledownload.py](simpledownload.py):
 
 ```python
 import urllib2
@@ -433,7 +433,7 @@ print html.tostring(google_parsed)
 
 You'll notice that we've added urllib2, no biggie.
 
-That script can be found [here](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/simpledownload.py)
+That script can be found [here](simpledownload.py)
 
 Now, there's a bit of unintentional misinformation/presumption in the above user-agent "fix."
 
@@ -455,26 +455,26 @@ B - Select search results
 Here are a few screenshots of what I did:
 
 Search using the custom date range filter
-![Search using the custom date range](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/custom-date-range-Google-Search.png?raw=true "")
+![Search using the custom date range](pictures/custom-date-range-Google-Search.png?raw=true "")
 
 
 Open my browser's developer tools
-![Open dev. tools](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/right-click-open-devtools.png?raw=true "Open Developer Tools")
+![Open dev. tools](pictures/right-click-open-devtools.png?raw=true "Open Developer Tools")
 
 Click the Network tab
-![Click the Network tab](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/click-network-tab.png?raw=true "Click the Network tab")
+![Click the Network tab](pictures/click-network-tab.png?raw=true "Click the Network tab")
 
 Click the Documents subtab
-![Click the Documents subtab](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/click-Documents-subtab.png?raw=true "Click the Documents subtab")
+![Click the Documents subtab](pictures/click-Documents-subtab.png?raw=true "Click the Documents subtab")
 
 Highlight the search document
-![Highlight the search document](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/highlight-search-document.png?raw=true "Highlight the search document")
+![Highlight the search document](pictures/highlight-search-document.png?raw=true "Highlight the search document")
 
 Highlight the request headers
-![Highlight the request headers](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/highlight-request-headers.png?raw=true "Highlight the request headers")
+![Highlight the request headers](pictures/highlight-request-headers.png?raw=true "Highlight the request headers")
 
 Copy the user agent value
-![Copy the user agent value](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/copy-user-agent.png?raw=true "Copy the user agent value")
+![Copy the user agent value](pictures/copy-user-agent.png?raw=true "Copy the user agent value")
 
 
 Wooo! That might have seemed like an eyeful, but trust me, it was better than using any of the results in this [Google search](https://www.google.com/search?client=opera&q=google+custom+search+with+python&sourceid=opera&ie=UTF-8&oe=UTF-8#q=how+to+request+google+search+with+python)
@@ -514,17 +514,17 @@ copy and paste the path that's printed into your browser.
 Here's what I see:
 
 Correctly downloaded Google HTML (look at the dates)!
-![Correctly downloaded Google HTML](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/correct-lxml-download.png?raw=true "Correctly downloaded Google HTML")
+![Correctly downloaded Google HTML](pictures/correct-lxml-download.png?raw=true "Correctly downloaded Google HTML")
 
 Now, let's use the devtools once more and see if we can find the xpath that selects the parent HTML node|element
 that contains the hyperlinks to those outside New York Times related websites:
 
 Use the magnifying glass on the top-left of the devtools window
-![Select the parent node which highlights the DOM box containig results](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/use-magnifying-glass.png?raw=true "Select search results parent node")
+![Select the parent node which highlights the DOM box containig results](pictures/use-magnifying-glass.png?raw=true "Select search results parent node")
 
 Now right-click and copy the xpath
 
-![Right-click and copy xpath](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/right-click-copy-xpath.png?raw=true "Right-click and copy xpath")
+![Right-click and copy xpath](pictures/right-click-copy-xpath.png?raw=true "Right-click and copy xpath")
 
 
 Now, we can update our simpleselect.py script by adding this piece of code:
@@ -550,7 +550,7 @@ for elem in google_list_items:
     print elem
 ```
 
-Download [simpleselect.py](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/simpleselect.py)
+Download [simpleselect.py](simpleselect.py)
 
 
 Finally we've come to part C.
@@ -578,9 +578,49 @@ Let's specify the following arguments:
 
 We'll just have the script print to console, and we'll redirect ('>,>>,|') that into a text file.
 
+Oh, there's one more thing! We have to make sure we don't get our IP blocked by google.
+So in-between one page of results to another, we'll delay the download by 1 second.
 
 
+googlextract
+------------
 
+Finally, here's the [script](googlebyear.py) I'll be using to build up a long list of potential
+sites of which we can download, store, hand-extract, etc.
+
+Here's a little demonstration of how to use this little script:
+
+```python
+from googlebyear import search
+
+links = search("new york times", total_pages=3, year_range=(2001,2002), debug=True)
+# total_pages:  2
+# year_range:  (2000, 2001)
+# url:  https://www.google.com/search?q=new+york+times&start=0&tbs=cdr%3A1%2Ccd_min%3A1%2F1%2F2000%2Ccd_max%3A1%2F1%2F2001
+# url:  https://www.google.com/search?q=new+york+times&start=10&tbs=cdr%3A1%2Ccd_min%3A1%2F1%2F2000%2Ccd_max%3A1%2F1%2F2001
+```
+
+and stored within "links" is,
+
+```python
+['http://www.nytimes.com/content/help/search/search/search.html',
+ 'http://www.nytimes.com/books/00/12/24/specials/fitzgerald-gatsby.html',
+ 'http://www.nytimes.com/books/00/01/09/specials/joyce-ulysses.html',
+ 'http://www.nytimes.com/travel/guides/europe/portugal/sintra/overview.html',
+ 'http://www.nytimes.com/2000/01/01/us/c-a-correction-welcome-to-51254-000005.html',
+ 'http://www.nytimes.com/2000/04/09/us/they-threaten-seethe-and-unhinge-then-kill-in-quantity.html',
+ ...]
+```
+
+But wait, there's more!
+
+It's also a command line script!
+
+```bash
+googlebyear.py "new york times" -p 2 -y 2000 2001
+```
+
+Note: don't forget to symlink!
 
 ---
 
@@ -607,7 +647,6 @@ a Google results page) and click on "inspect element"
 The long way is to figure it out yourself using the "google_parsed" (type 'lxml.etree._ElementTree')
 declared in the above script. Yeah, let's not do that.
 
-NOTE: I
 ---
 
 If using Chrome or Opera, you can right click on the desired html element and copy the
