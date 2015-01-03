@@ -573,7 +573,6 @@ Nah, common sense. At least, we should try to have it be common sense.
 
 By "common sense" I mean, let's use your browser's developer tools!:
 
-![Use you developer tools!](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/finding-Google-results.png?raw=true "Using Dev. Tools to Find Relevant HTML Nodes")
 
 What's strange though is that while I believe in tradition HTML, "ol" will have "li" (list item) children,
 Google's Results page does not. At least, in the rendered version you'll see in the above picture, the
