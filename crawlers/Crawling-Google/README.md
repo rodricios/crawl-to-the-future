@@ -402,7 +402,7 @@ Refer to this [S.O. post](http://stackoverflow.com/questions/11450649/python-url
 Simple Download
 ---------------
 
-Here's the updated script:
+Here's the updated script ([simpledownload.py](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/simpledownload.py):
 
 ```python
 import urllib2
@@ -449,9 +449,6 @@ Simple Select
 
 Here are a few screenshots of what I did:
 
-![](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/?raw=true "")
-
-
 Search using the custom date range filter
 ![Search using the custom date range](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/custom-date-range-Google-Search.png?raw=true "")
 
@@ -466,7 +463,7 @@ Click the Documents subtab
 ![Click the Documents subtab](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/click-Documents-subtab.png?raw=true "Click the Documents subtab")
 
 Highlight the search document
-![Highlight the search document](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/hightlight-search-document.png?raw=true "Highlight the search document")
+![Highlight the search document](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/highlight-search-document.png?raw=true "Highlight the search document")
 
 Highlight the request headers
 ![Highlight the request headers](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/highlight-request-headers.png?raw=true "Highlight the request headers")
@@ -501,9 +498,6 @@ google_html = opener.open(URL)
 # parse the html
 google_parsed = html.parse(google_html)
 
-# Here comes the 'selecting'!
-google_results = google_parsed.xpath('//ol//li')
-
 # Here's a smarter way to see what exactly it is you've downloaded/parsed with lxml:
 html.open_in_browser(google_parsed)
 #file://c:/users/rodrigo/appdata/local/temp/tmp1xllau.html
@@ -516,6 +510,33 @@ Here's what I see:
 
 Correctly downloaded Google HTML (look at the dates)!
 ![Correctly downloaded Google HTML](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/correct-lxml-download.png?raw=true "Correctly downloaded Google HTML")
+
+Now, let's use the devtools once more and see if we can find the xpath that selects the parent HTML node|element
+that contains the hyperlinks to those outside New York Times related websites:
+
+Use the magnifying glass on the top-left of the devtools window
+![Select the parent node which highlights the DOM box containig results](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/select-ol-node.png?raw=true "Select search results parent node")
+
+Now right-click and copy the xpath
+
+![Right-click and copy xpath](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/right-click-copy-xpath?raw=true "Right-click and copy xpath")
+
+
+Now, we can update our simpleselect.py script by adding this piece of code:
+```python
+# Here comes the 'selecting'!
+google_results = google_parsed.xpath('//*[@id="rso"]/div[2]')
+
+# the xpath in this line basically selects all children, which in our
+# case are the 10 'li' elements
+print len(google_results[0].xpath('./*'))
+#10
+```
+
+
+![](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/?raw=true "")
+
+
 
 
 

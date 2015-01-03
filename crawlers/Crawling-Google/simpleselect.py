@@ -19,9 +19,17 @@ google_html = opener.open(URL)
 # parse the html
 google_parsed = html.parse(google_html)
 
-# Here comes the 'selecting'!
-google_results = google_parsed.xpath('//ol//li')
-
 # Here's a smarter way to see what exactly it is you've downloaded/parsed with lxml:
 html.open_in_browser(google_parsed)
 #file://c:/users/rodrigo/appdata/local/temp/tmp1xllau.html
+
+# Here comes the 'selecting'!
+google_results = google_parsed.xpath('//*[@id="rso"]/div[2]')
+
+print len(google_results)
+#1
+
+# the xpath in this line basically selects all children, which in our
+# case are the 10 'li' elements
+print len(google_results[0].xpath('./*'))
+#10
