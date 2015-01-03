@@ -11,7 +11,8 @@ URL = 'https://www.google.com/search?q=new+york+times&tbs=cdr%3A1%2Ccd_min%3A1%2
 
 # here we setup the necessary agent to download a google html page
 opener = urllib2.build_opener()
-opener.addheaders = [('User-agent', 'Mozilla/5.0')]
+opener.addheaders = [('User-agent', 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 OPR/26.0.1656.60')]
+
 
 # let's download
 google_html = opener.open(URL)
@@ -19,4 +20,4 @@ google_html = opener.open(URL)
 # parse the html
 google_parsed = html.parse(google_html)
 
-print html.tostring(google_parsed)
+#print html.tostring(google_parsed)

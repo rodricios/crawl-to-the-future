@@ -20,4 +20,8 @@ google_html = opener.open(URL)
 google_parsed = html.parse(google_html)
 
 # Here comes the 'selecting'!
-google_results = google_parsed.xpath('//*[@id="rso"]/div[2]/li[1]/div/h3/a')
+google_results = google_parsed.xpath('//ol//li')
+
+# print out elements descendant texts
+for e,elem in enumerate(google_results):
+    print e, ": ", elem.text_content()

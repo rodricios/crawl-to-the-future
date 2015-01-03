@@ -432,9 +432,54 @@ You'll notice that we've added urllib2, no biggie.
 
 That script can be found [here](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/simpledownload.py)
 
+Now, there's a bit of unintentional misinformation/presumption in the above user-agent "fix."
+
+First, I assumed it would work. I was wrong, and this set me back a couple of hours.
+
+Second, you'll have read in earlier additions of this README that I go further in the process, without
+realizing that the HTML tree I'm working with is wrong. I will leave the [incorrect steps further below](#incorrect-simple-select)
+in case it serves any education purpose.
+
+
+What I should have done, instead of copy & paste the user-agent from the S.O. post, was to
+right bring up my [browser's developer tools](https://www.google.com/search?client=opera&q=how+to+open+developer+tools&sourceid=opera&ie=UTF-8&oe=UTF-8).
 
 Simple Select
 -------------
+
+Here are a few screenshots of what I did:
+
+![](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/?raw=true "")
+
+
+Search using the custom date range filter
+![Search using the custom date range](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/custom-date-range-Google-Search.png?raw=true "")
+
+
+Open my browser's developer tools
+![Open dev. tools](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/right-click-open-devtools.png?raw=true "Open Developer Tools")
+
+Click the Network tab
+![Click the Network tab](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/click-network-tab.png?raw=true "")
+
+Click the Documents subtab
+![Click the Documents subtab](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/click-Documents-subtab.png?raw=true "")
+
+Highlight the search document
+![Highlight the search document](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/hightlight-search-document.png?raw=true "")
+
+Highlight the request headers
+![Highlight the request headers](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/highlight-request-headers.png?raw=true "")
+
+Copy the user agent value
+![Copy the user agent value](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/copy-user-agent.png?raw=true "")
+
+
+
+
+
+INCORRECT Simple Select
+-----------------------
 
 Now, how do we select the results using what we have declared in simpledownload.py?
 
@@ -453,8 +498,10 @@ the HTML nodes/elements that we want.
 There's two ways to do this. The short way is to right click on the browser (with the page pointing to
 a Google results page) and click on "inspect element"
 
-The long way is to figure it out yourself using the variable declared in the above script. Yeah, let's not do that.
+The long way is to figure it out yourself using the "google_parsed" (type 'lxml.etree._ElementTree')
+declared in the above script. Yeah, let's not do that.
 
+NOTE: I
 ---
 
 If using Chrome or Opera, you can right click on the desired html element and copy the
@@ -524,12 +571,84 @@ of assuming that the page rendered on a browser would match the HTML tree parsed
 The way to go about finding those 10 'result' elements I've been talking about requires a bit of, ingenuity?
 Nah, common sense. At least, we should try to have it be common sense.
 
-Refer to this picture:
+By "common sense" I mean, let's use your browser's developer tools!:
 
-![Use you developer tools!](/crawl-to-the-future/crawlers/Crawling-Google/finding-Google-results.png?raw=true "Using Dev. Tools to Find Relevant HTML Nodes")
+![Use you developer tools!](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/finding-Google-results.png?raw=true "Using Dev. Tools to Find Relevant HTML Nodes")
+
+What's strange though is that while I believe in tradition HTML, "ol" will have "li" (list item) children,
+Google's Results page does not. At least, in the rendered version you'll see in the above picture, the
+children are two "divs" - the second div has "li" children - and an "hr" element"
+
+If you hover over those list items, you'll see that you will actually highlight the search results we want!
+
+Now how do translate the above to paragraphs into an xpath selection?
+
+```python
+...
+# Here comes the 'selecting'!
+google_results = google_parsed.xpath('//ol/div/li')
+
+print len(google_results)
+# 0
+...
+```
+
+Unfortunately once more, that xpath we chose does not yield results; what about if we made those
+paths a little more inclusive by taking out the middle "div" and by choosing the '//' selector?
+
+```python
+...
+# Here comes the 'selecting'!
+google_results = google_parsed.xpath('//ol//li')
+
+print len(google_results)
+# 44
+...
+```
 
 There's a function in lxml called "text_content;" it's similar to the "text" variable, but the main difference
 is that text_content() will return a string of **all** textnodes under the calling element; "text" on the other
 hand will return the calling node's immediate text (imagine a p node with some text).
 
-On thing I did use to prune out unnecessary elements from the HTML tree was to
+Here's one way, using "text_content()", to see what is in your 44 elements:
+
+```python
+for e,elem in enumerate(google_results):
+    print e, ": ", elem.text_content()
+
+#0 :  Search
+#1 :  Images
+#2 :  Maps
+#3 :  Play
+#...
+#28 :  NYTimes.com - The New York TimesAdwww.nytimes.com/Subscription?Why this ad?...
+#29 :  Why this ad?
+#30 :  The New York Times - Breaking News, World News & Multimediawww.nytimes.com...
+```
+
+Now you'll see that we're starting to get text that we would find on a normal rendering on some browser.
+
+The next question that should come into mind is, "How do we prune these out?"
+
+Well, I know of two ways, one requires simple statistics; the other is simply hacking away at the problem - very
+much like what I've been doing this entire write-up. Let's not deviate from that, and just hack away!
+
+Let's force a threshold that each element must pass. The threshold will be some integer value that
+"len(elem.text_content())" must be greater than.
+
+Let's use set a threshold of say... 10.
+
+```python
+google_results = [elem for elem in google_results if len(elem.text_content()) > 10]
+
+print len(google_results)
+# 14
+
+# let's see what textual content we now have in each html element:
+print google_results[0].text_content()
+#MoreCalendarTranslateMobileBooksWalletShoppingBloggerFinancePhotosVideosDocsEven more »
+
+# dont let that mislead you!
+print google_results[5].text_content()
+
+```
