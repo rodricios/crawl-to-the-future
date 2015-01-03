@@ -515,7 +515,7 @@ Now, let's use the devtools once more and see if we can find the xpath that sele
 that contains the hyperlinks to those outside New York Times related websites:
 
 Use the magnifying glass on the top-left of the devtools window
-![Select the parent node which highlights the DOM box containig results](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/select-ol-node.png?raw=true "Select search results parent node")
+![Select the parent node which highlights the DOM box containig results](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/use-magnifying-glass.png?raw=true "Select search results parent node")
 
 Now right-click and copy the xpath
 
