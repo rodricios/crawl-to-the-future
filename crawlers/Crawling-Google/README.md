@@ -19,7 +19,8 @@ T. of C.
   2. [The Easy Way is Usually Best](#the-easy-way-is-usually-best)
     1. [Download](#download-search-results)
     2. [Select](#select-search-results)
-    3. [Store](#store-elements)
+    3. [Store](#store-website-links)
+  3. [Google By Year(s)](#google-by-year)
 
 Part I
 ======
@@ -332,8 +333,8 @@ C. store
 There's three steps there, and we're going to translate those three steps directly
 into Python code.
 
-A - Download search results
----------------------------
+Download search results
+------------------------
 
 ... into memory.
 
@@ -405,7 +406,7 @@ Now if you tried running that, you'll likely get an error.
 
 Refer to this [S.O. post](http://stackoverflow.com/questions/11450649/python-urllib2-cant-get-google-url) to find out why.
 
-Here's the updated script [simpledownload.py](simpledownload.py):
+Here's the updated [script](simpledownload.py):
 
 ```python
 import urllib2
@@ -421,7 +422,14 @@ URL = 'https://www.google.com/search?q=new+york+times&tbs=cdr%3A1%2Ccd_min%3A1%2
 
 # here we setup the necessary agent to download a google html page
 opener = urllib2.build_opener()
-opener.addheaders = [('User-agent', 'Mozilla/5.0')]
+# this line will work, but Google fails to respond to the custom date range
+# opener.addheaders = [('User-agent', 'Mozilla/5.0')]
+opener.addheaders = [('User-agent',
+                      'Mozilla/5.0 (Windows NT 6.3; WOW64) \
+                      AppleWebKit/537.36 (KHTML, like Gecko) \
+                      Chrome/39.0.2171.95 Safari/537.36 \
+                      OPR/26.0.1656.60')]
+
 
 # let's download
 google_html = opener.open(URL)
@@ -439,15 +447,14 @@ Now, there's a bit of unintentional misinformation/presumption in the above user
 
 First, I assumed it would work. I was wrong, and this set me back a couple of hours.
 
-Second, you'll have read in earlier additions of this README that I go further in the process, without
-realizing that the HTML tree I'm working with is wrong. I will leave the [incorrect steps further below](#incorrect-simple-select)
-in case it serves any educational purpose.
+Second, you'll have read in earlier editions of this README that I go further in the process, without
+realizing that the HTML tree I was working with was wrong.
 
 
-What I should have done, instead of copy & paste the user-agent from the S.O. post, was to
-right bring up my [browser's developer tools](https://www.google.com/search?client=opera&q=how+to+open+developer+tools&sourceid=opera&ie=UTF-8&oe=UTF-8).
+What I should have done instead of copy & pasting the user-agent from the S.O. post was to
+bring up my [browser's developer tools](https://www.google.com/search?client=opera&q=how+to+open+developer+tools&sourceid=opera&ie=UTF-8&oe=UTF-8).
 
-B - Select search results
+Select search results
 -------------------------
 
 ... using xpath.
@@ -555,8 +562,8 @@ Download [simpleselect.py](simpleselect.py)
 
 Finally we've come to part C.
 
-C - Store elements
-------------------
+Store website links
+-------------------
 
 ... again into memory or...
 
@@ -582,8 +589,8 @@ Oh, there's one more thing! We have to make sure we don't get our IP blocked by 
 So in-between one page of results to another, we'll delay the download by 1 second.
 
 
-googlextract
-------------
+Google By Year
+--------------
 
 Finally, here's the [script](googlebyear.py) I'll be using to build up a long list of potential
 sites of which we can download, store, hand-extract, etc.
@@ -622,177 +629,3 @@ googlebyear.py "new york times" -p 2 -y 2000 2001
 
 Note: don't forget to symlink!
 
----
-
-INCORRECT Simple Select
------------------------
-
-Now, how do we select the results using what we have declared in simpledownload.py?
-
-Easy! In the "google_parsed" variable - an lxml.html.Element(?) object -
-there is a amazingly useful function called "xpath"
-
-I've written about this extensively in other places, but w/o having to lead to any
-outside resource, I'm going leave it to the reader to find his or her preferred resource.
-
-Simply said, "xpath" is a querying tool just like SQL is; where SQL is usefull in structured databases
-xpath is useful for XML and HTML trees.
-
-That said, there's one last thing you must do! You have to figure out how you can distinctly "select"
-the HTML nodes/elements that we want.
-
-There's two ways to do this. The short way is to right click on the browser (with the page pointing to
-a Google results page) and click on "inspect element"
-
-The long way is to figure it out yourself using the "google_parsed" (type 'lxml.etree._ElementTree')
-declared in the above script. Yeah, let's not do that.
-
----
-
-If using Chrome or Opera, you can right click on the desired html element and copy the
-xpath that points to said element.
-
-Here's the xpath I ended up with:
-
-    //*[@id="rso"]/div[2]/li[1]/div/h3/a
-
-Note: Don't worry if you can't read or understand that (in case you do want a crash course, I
-wrote [this guide](http://rodricios.github.io/eatiht/#crash-course-on-html-and-xpath)
-for another project, but it still serves its purpose).
-
-Now how do we use the above xpath for purpose of selecting all links to outside-of-Google pages?
-
-Like this:
-
-
-```python
-import urllib2
-
-from lxml import html
-
-# To address paging in Google
-PAGE = 0
-
-# url and query string from PART I
-# this is a custom range from Jan 1, 2000 to Jan 1, 2001
-URL = 'https://www.google.com/search?q=new+york+times&tbs=cdr%3A1%2Ccd_min%3A1%2F1%2F2000%2Ccd_max%3A1%2F1%2F2001&start=' + str(PAGE*10)
-
-# here we setup the necessary agent to download a google html page
-opener = urllib2.build_opener()
-opener.addheaders = [('User-agent', 'Mozilla/5.0')]
-
-# let's download
-google_html = opener.open(URL)
-
-# parse the html
-google_parsed = html.parse(google_html)
-
-# Here comes the 'selecting'!
-google_results = google_parsed.xpath('//*[@id="rso"]/div[2]/li[1]/div/h3/a')
-
-```
-
-What we basically tried doing in the last line of the code above was to select the node I hand picked using Opera's dev tools.
-
-But to my surprise, it failed.
-
-Here's how I know:
-
-    len(google_results) == 0
-
-That means our xpath is incorrect, or is not understood. This happens. Let's see if we can fix this.
-
-Time to get interactive with a Python shell.
-
-Remember, what we have to do is come up with an xpath that will return a list of 10 elements, and those 10 elements
-will have, inside one of its variables a hyperlink; that hyperlink is the link that will lead us to the webpages that
-will make up our dataset.
-
----
-
-So after a bit experimentation, and by bit I mean an hour, I realized I made a mistake. I made the mistake
-of assuming that the page rendered on a browser would match the HTML tree parsed by lxml.html.
-
-The way to go about finding those 10 'result' elements I've been talking about requires a bit of, ingenuity?
-Nah, common sense. At least, we should try to have it be common sense.
-
-By "common sense" I mean, let's use your browser's developer tools!:
-
-
-What's strange though is that while I believe in tradition HTML, "ol" will have "li" (list item) children,
-Google's Results page does not. At least, in the rendered version you'll see in the above picture, the
-children are two "divs" - the second div has "li" children - and an "hr" element"
-
-If you hover over those list items, you'll see that you will actually highlight the search results we want!
-
-Now how do translate the above to paragraphs into an xpath selection?
-
-```python
-...
-# Here comes the 'selecting'!
-google_results = google_parsed.xpath('//ol/div/li')
-
-print len(google_results)
-# 0
-...
-```
-
-Unfortunately once more, that xpath we chose does not yield results; what about if we made those
-paths a little more inclusive by taking out the middle "div" and by choosing the '//' selector?
-
-```python
-...
-# Here comes the 'selecting'!
-google_results = google_parsed.xpath('//ol//li')
-
-print len(google_results)
-# 44
-...
-```
-
-There's a function in lxml called "text_content;" it's similar to the "text" variable, but the main difference
-is that text_content() will return a string of **all** textnodes under the calling element; "text" on the other
-hand will return the calling node's immediate text (imagine a p node with some text).
-
-Here's one way, using "text_content()", to see what is in your 44 elements:
-
-```python
-for e,elem in enumerate(google_results):
-    print e, ": ", elem.text_content()
-
-#0 :  Search
-#1 :  Images
-#2 :  Maps
-#3 :  Play
-#...
-#28 :  NYTimes.com - The New York TimesAdwww.nytimes.com/Subscription?Why this ad?...
-#29 :  Why this ad?
-#30 :  The New York Times - Breaking News, World News & Multimediawww.nytimes.com...
-```
-
-Now you'll see that we're starting to get text that we would find on a normal rendering on some browser.
-
-The next question that should come into mind is, "How do we prune these out?"
-
-Well, I know of two ways, one requires simple statistics; the other is simply hacking away at the problem - very
-much like what I've been doing this entire write-up. Let's not deviate from that, and just hack away!
-
-Let's force a threshold that each element must pass. The threshold will be some integer value that
-"len(elem.text_content())" must be greater than.
-
-Let's use set a threshold of say... 10.
-
-```python
-google_results = [elem for elem in google_results if len(elem.text_content()) > 10]
-
-print len(google_results)
-# 14
-
-# let's see what textual content we now have in each html element:
-print google_results[0].text_content()
-#MoreCalendarTranslateMobileBooksWalletShoppingBloggerFinancePhotosVideosDocsEven more »
-
-# dont let that mislead you!
-print google_results[5].text_content()
-
-```
