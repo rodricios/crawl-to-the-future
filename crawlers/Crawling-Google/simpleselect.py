@@ -33,3 +33,11 @@ print len(google_results)
 # case are the 10 'li' elements
 print len(google_results[0].xpath('./*'))
 #10
+
+# print out hyperlinks
+# Note: after using devtool's magnifying glass and 'copy xpath', I got:
+# //*[@id="rso"]/div[2]/li[1]/div/h3/a
+google_list_items = google_results[0].xpath('.//h3/a/@href')
+for elem in google_list_items:
+    print elem
+

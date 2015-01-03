@@ -17,9 +17,9 @@ T. of C.
 * [Part II](#part-ii)
   1. [Motivation](#motivation)
   2. [The Easy Way is Usually Best](#the-easy-way-is-usually-best)
-    1. [Step 1](#step-1)
-      * [simpledownload dot py](#simpledownload-dot-py)
-      * [simpleselect dot py](#simpleselect-dot-py)
+    1. [Download](#download-search-results)
+    2. [Select](#select-search-results)
+    3. [Store](#store-elements)
 
 Part I
 ======
@@ -314,22 +314,28 @@ Let me specify what we need from Google
 
 2. We need to get be able to generate a lot of results. Check - we figured out how to request the next page, and the next, and the next...
 
-3. We need to be able to select the results and save them. Ch... wait, we havent covered this part yet. Where's the justification that
-this even needs to happen?
+3. We need to **download** Google's search results as HTML, **select** the results and **store the links.**
 
-Here it is:
+Seeing that the first two requirements are more abstract/generalized explanations
+of what is required *overall*, the third requirement pretty straight forward.
 
-###Justification for why we need to select and save Google search results
 
-Because we're trying to build up a data set of web pages
+Ok. Let's look at what I laid out in step 3:
 
-That was easy. But let's look at what and how I laid out step 3:
+A. download
 
-***We need to be able to select the results and save them***. There's two steps here, and we're going to translate those two steps directly
+B. select
+
+C. store
+
+
+There's three steps there, and we're going to translate those three steps directly
 into Python code.
 
-Step 1 - Select Results
-------
+A - Download search results
+---------------------------
+
+... into memory.
 
 There's a bit preliminary work required to being able to *select* our *results* - and what exactly do I mean by that? [I'll answer that later.](#simpleselect-dot-py)
 
@@ -399,10 +405,7 @@ Now if you tried running that, you'll likely get an error.
 
 Refer to this [S.O. post](http://stackoverflow.com/questions/11450649/python-urllib2-cant-get-google-url) to find out why.
 
-simpledownload dot py
----------------------
-
-Here's the updated script ([simpledownload.py](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/simpledownload.py):
+Here's the updated script [simpledownload.py](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/simpledownload.py):
 
 ```python
 import urllib2
@@ -444,8 +447,10 @@ in case it serves any educational purpose.
 What I should have done, instead of copy & paste the user-agent from the S.O. post, was to
 right bring up my [browser's developer tools](https://www.google.com/search?client=opera&q=how+to+open+developer+tools&sourceid=opera&ie=UTF-8&oe=UTF-8).
 
-simpleselect dot py
----------------
+B - Select search results
+-------------------------
+
+... using xpath.
 
 Here are a few screenshots of what I did:
 
@@ -533,6 +538,45 @@ google_results = google_parsed.xpath('//*[@id="rso"]/div[2]')
 print len(google_results[0].xpath('./*'))
 #10
 ```
+
+If you'd like to see the links we need to have stored, run add these lines into your console or script:
+
+```python
+# print out hyperlinks
+# Note: after using devtool's magnifying glass and 'copy xpath', I got:
+# //*[@id="rso"]/div[2]/li[1]/div/h3/a
+google_list_items = google_results[0].xpath('.//h3/a/@href')
+for elem in google_list_items:
+    print elem
+```
+
+Download [simpleselect.py](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/simpleselect.py)
+
+
+Finally we've come to part C.
+
+C - Store elements
+------------------
+
+... again into memory or...
+
+Really, this part is up to the imagination of who's implementing this.
+
+We can create some crazy multi-modular Python package, or we can leave this a simple script
+that takes in 2 or 3 command line arguments.
+
+Let's do the latter first.
+
+Let's specify the following arguments:
+
+* custom year range
+  * ie. 2000,2001
+* Number of Google Search pages to gather up links from
+  * ie. 3
+* and search query
+  * ie. New York Times
+
+We'll just have the script print to console, and we'll redirect ('>,>>,|') that into a text file.
 
 
 
