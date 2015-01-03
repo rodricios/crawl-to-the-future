@@ -4,12 +4,12 @@ crawl to the future
 Structure of this project
 -------------------------
 
-1. [Datasets](https://github.com/rodricios/crawl-to-the-future/tree/master/dataset)
-2. [Crawlers](https://github.com/rodricios/crawl-to-the-future/tree/master/crawlers)
-  * [Crawling Google](https://github.com/rodricios/crawl-to-the-future/tree/master/crawlers/Crawling-Google)
-    * [Part I](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/README.md#part-i)  - Google's query string
-    * [Part II](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/README.md#part-ii) - In Progress
-  * TODO: Crawling Way Back
+1. [Datasets](dataset)
+2. [Crawlers](crawlers)
+  * [Crawling Google](crawlers/Crawling-Google)
+    * [Part I](crawlers/Crawling-Google/README.md#part-i)  - Google's query string
+    * [Part II](crawlers/Crawling-Google/README.md#part-ii) - Google By Year
+  * [Way Back](crawlers/Way-Back)
 
 ---
 
@@ -19,10 +19,16 @@ Because I'm approaching this project in a very active manner - rapid README upda
 acquire web pages - you'll likely see me working in a single place for at most a day. Please refer to this section to see where
 I'm writing.
 
-Currently, I'm updating the section describing how to quickly prototype a simple crawling script for google.
+~~Currently, I'm updating the section describing how to quickly prototype a simple crawling script for google.~~
+Unfortunately, attempting to build a dataset of archival/historical web pages using Google's custom date range
+filter was unrewarding, to say the least. Read my notes [here](crawlers/Crawling-Google#bitter-sweet-conclusion).
 
-[Read about it here](https://github.com/rodricios/crawl-to-the-future/blob/master/crawlers/Crawling-Google/README.md#part-ii)
+This leaves me with one last option of building a dataset: [Way Back Machine](https://archive.org/web/).
 
+There seems to be more [online discussion](http://superuser.com/questions/828907/how-to-download-a-website-from-the-archive-org-wayback-machine)
+behind downloading entire sites using way back archives, so hopefully this last attempt will be fruitful :)
+
+I'll be writing/updating on this [page](crawlers/Way-Back).
 
 ---
 
