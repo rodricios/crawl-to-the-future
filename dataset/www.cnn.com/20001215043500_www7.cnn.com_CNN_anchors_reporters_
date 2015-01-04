@@ -1,0 +1,997 @@
+<HTML><HEAD>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app13.us.archive.org";archive_analytics.values.server_ms=413;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<TITLE>Anchors &amp; Reporters</TITLE><SCRIPT LANGUAGE="Javascript" SRC="/web/20001215043500js_/http://www7.cnn.com/virtual/1998/code/cnn.js"></SCRIPT><STYLE type=text/css><!--A {	TEXT-DECORATION: none}.searchfield {	BORDER-BOTTOM: #000000 1px solid; 	BORDER-LEFT: 1px solid; 	BORDER-RIGHT: 1px solid; 	BORDER-TOP: 1px solid; 	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif;	FONT-SIZE: 10px; 	WIDTH: 130px;}.dropbox {	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif;	FONT-SIZE: 10px; 	WIDTH: 140px; 	background-color:#ffffff;}--></STYLE>	<!--CSSDATA:950810953-->	<SCRIPT src="/web/20001215043500js_/http://www7.cnn.com/virtual/2000/code/main.js" language="javascript"></SCRIPT>	<LINK rel="stylesheet" href="/web/20001215043500cs_/http://www7.cnn.com/virtual/2000/style/main.css" type="text/css">	<SCRIPT language="javascript" type="text/javascript">		<!--//		if (parseInt(navigator.appVersion)>=4) {			if (navigator.platform=='MacPPC')	{document.write('<LINK rel="stylesheet" href="/virtual/2000/style/mainMac.css" type="text/css">')}					if (screen.width > 1200)			{document.write('<LINK rel="stylesheet" href="/virtual/2000/style/mainX.css" type="text/css">')}				}		//-->	</SCRIPT>	<!--/CSSDATA--><SCRIPT langauge="javascript">function makeSelOpt (obj) {        if (obj.length > 1) {                var last = 2;                if (document.all){                        var last = obj.length;                        for (var count = 2; count < last; count++) {                        obj.remove(2)                        }                       }        } else {                var last = obj.length;        }        for (var count = 0; count < URLs.length; count++) {                if (navigator.appName == "Netscape") {                        obj[last + count] = new Option(NAMEs[count],URLs[count],false);                } else {                        var newElem     = document.createElement("OPTION");                        newElem.text    = NAMEs[count];                        if (URLs[count] != "") {                                newElem.value = URLs[count];                                if (navigator.platform != "MacPPC") {newElem.style.backgroundColor = "#ffffff";}                        } else if (navigator.platform != "MacPPC") {                                 newElem.style.backgroundColor = "#dddddd";                        }                        obj.add(newElem);                }        }return;}</SCRIPT><META HTTP-EQUIV="expires" content="0"><META HTTP-EQUIV="nocache" content="0"></HEAD><BODY BGCOLOR="#000000" LINK="#FF0000" ALINK="#FF0000" VLINK="#FF0000">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www7.cnn.com/CNN/anchors_reporters/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "15";
+var displayMonth = "Dec";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www7.cnn.com/CNN/anchors_reporters/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20001215043500" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20001109220200/http://www.cnn.com/CNN/anchors_reporters" title="9 Nov 2000">NOV</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 4:35:00 Dec 15, 2000">DEC</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20010124055300/http://www.cnn.com/CNN/anchors_reporters/" title="24 Jan 2001"><strong>JAN</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20001120005500/http://www7.cnn.com/CNN/anchors_reporters" title="0:55:00 Nov 20, 2000"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 4:35:00 Dec 15, 2000">15</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20010124055300/http://www.cnn.com/CNN/anchors_reporters/" title="5:53:00 Jan 24, 2001"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/19990921121915/http://www3.cnn.com/CNN/anchors_reporters/" title="21 Sep 1999"><strong>1999</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 4:35:00 Dec 15, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20011215125238/http://www1.cnn.com/CNN/anchors_reporters/" title="15 Dec 2001"><strong>2001</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20001215043500*/http://www7.cnn.com/CNN/anchors_reporters/" title="See a list of every capture for this URL">3,854 captures</a>
+           <div class="r" title="Timespan for captures of this URL">17 Jan 99 - 4 Jan 15</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:300000001000_2000:11:104454131451_2001:-1:11110101ecfa_2002:-1:110011011511_2003:-1:010105310111_2004:-1:010107787776_2005:-1:777878789797_2006:-1:861664453145_2007:-1:535335355736_2008:-1:136345415515_2009:-1:456613331133_2010:-1:546311354531_2011:-1:151133abbddd_2012:-1:dddcdddddbbb_2013:-1:a88887787689_2014:-1:bbbbbbbbab9b_2015:-1:400000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<a href="#ContentArea"><img src="/web/20001215043500im_/http://a388.g.akamaitech.net/7/388/21/fade2068e7503e/cnn.com/images/hub2000/1.gif" hspace="0" vspace="0" width="1" height="1" border="0" alt="Skip to main content" align="right"></a><A NAME="top"></A><TABLE WIDTH="770" BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD COLSPAN="3" WIDTH="600" VALIGN="top"><!-- ================== promo & ad ================== --><TABLE BORDER="0" WIDTH="600" CELLSPACING="0" CELLPADDING="0"><TR VALIGN="TOP"><TD WIDTH="120"><A HREF="/web/20001215043500/http://www7.cnn.com/event.ng/Type=click&amp;RunID=11075&amp;ProfileID=469&amp;AdID=15651&amp;GroupID=335&amp;FamilyID=1217&amp;TagValues=4.8.435.606.644.645.3654&amp;Redirect=http:%2F%2Fwww.cnn.com%2FWEATHER" target="_top"><img src="/web/20001215043500im_/http://a8.g.akamai.net/f/8/1162/1d/images.cnn.com/ads/advertiser/cnn/9910/weather120_sun_cnn.gif" border=0 height=60 width=120 alt=""></a><table width="100%" cellpadding=0 cellspacing=0 border=0><tr><td><font face="verdana,ARIAL,sans-serif" size=1><a href="/web/20001215043500/http://www7.cnn.com/event.ng/Type=click&amp;RunID=11075&amp;ProfileID=469&amp;AdID=15651&amp;GroupID=335&amp;FamilyID=1217&amp;TagValues=4.8.435.606.644.645.3654&amp;Redirect=http:%2F%2Fwww.cnn.com%2FWEATHER" target="_top">Click Here</a></font></td></tr></table></TD><TD WIDTH="12" ALIGN=RIGHT><A HREF="/web/20001215043500/http://www7.cnn.com/ads/e.market/"><IMG SRC="/web/20001215043500im_/http://www7.cnn.com/images/1998/05/homepage/ad.info.gif" WIDTH=7 HEIGHT=60 BORDER=0 ALT="ad info"></A></TD><TD WIDTH="468"><A HREF="/web/20001215043500/http://www7.cnn.com/event.ng/Type=click&amp;RunID=35805&amp;ProfileID=1953&amp;AdID=25696&amp;GroupID=1032&amp;FamilyID=328&amp;TagValues=4.8.435.594.2845.3654&amp;Redirect=http:%2F%2Fwww.cnn.com%2FCAREER%2F" target="_top"><img src="/web/20001215043500im_/http://a37.g.akamai.net/f/37/1162/1d/images.cnn.com/ads/advertiser/cnn/0010/career.worth.gif" border=0 width=468 height=60 alt=""></a></TD></TR></TABLE><HR NOSHADE WIDTH="600" SIZE="1" ALIGN="LEFT"><!-- ================== /promo & ad ================== --></TD><TD WIDTH="5" ROWSPAN="4"><img src="/web/20001215043500im_/http://www7.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 width="5" height="1" HSPACE="0" VSPACE="0"></TD><TD WIDTH="165" ROWSPAN="2" COLSPAN="3" VALIGN="top" BGCOLOR="#DDDDDD"><!-- ================== organizer ================== --><!-- BEGIN CNN SHOP INCLUDE -->
+
+
+<table width="165" border="0" cellpadding="0" cellspacing="0">
+<tr><td align="center">
+<A HREF="/web/20001215043500/http://www7.cnn.com/event.ng/Type=click&amp;RunID=31942&amp;ProfileID=4195&amp;AdID=26296&amp;GroupID=1024&amp;FamilyID=7268&amp;TagValues=4.8.435.3654.4700.4701&amp;Redirect=http:%2F%2Fwww.cnnestore.com" target="_top"><img src="/web/20001215043500im_/http://a93.g.akamai.net/f/93/388/1d/images.cnn.com/ads/advertiser/cnn.store/0010/bubbles1.jpg" border=0 height=135 width=165 alt=""></a>
+</td>
+</tr>
+</table>
+
+
+<!-- END CNN SHOP INCLUDE  -->
+<!-- ================== /organizer ================== --></TD></TR><TR><TD COLSPAN="3" WIDTH="600" VALIGN="bottom"><!-- ================== banner ================== --><table width=600 border=0 cellpadding=0 cellspacing=0 hspace=0 vspace=0><td width="167" align="left" valign="bottom"><map name="cnn.com">
+	<area shape="rect" coords="2, 3, 173, 44" href="/web/20001215043500/http://www7.cnn.com/">
+</map>
+<img  width="600" src="/web/20001215043500im_/http://www7.cnn.com/CNNPromos/banners/2000/anchor_banner.gif" usemap="#cnn.com" height="51" alt="Anchors and Reporters" border="0"><BR>
+</td></table><!-- ================== /banner ================== --></TD></TR><TR><TD WIDTH="125" ALIGN="LEFT" VALIGN="TOP" BGCOLOR="#434343"><!-- ================== nav bar ================== --><TABLE BORDER="0" WIDTH="125" CELLSPACING="0" CELLPADDING="1" BGCOLOR="#434343">
+<tr> 
+  <td>&nbsp;<A HREF="/web/20001215043500/http://www7.cnn.com/CNN/"><SPAN class="BoxStory" onMouseOver="this.style.color='#ff0000'"
+        onMouseOut="this.style.color='#ffffff'" style="color:#ffffff">CNN NEWSGROUP</SPAN></a>
+</td>
+</tr>
+<TR> 
+  <TD>
+<B>&nbsp;<A HREF="/web/20001215043500/http://www7.cnn.com/CNN/Programs/"><SPAN class="NvSmBDk" onMouseOver="this.style.color='#ff0000'"
+        onMouseOut="this.style.color='#ffffff'" style="color:#ffffff">CNN</SPAN></A></B></TD>
+</TR>
+<TR> 
+  <TD>
+<B>&nbsp;<A HREF="/web/20001215043500/http://www7.cnn.com/CNNI/"><SPAN class="NvSmBDk" onMouseOver="this.style.color='#ff0000'"
+        onMouseOut="this.style.color='#ffffff'" style="color:#ffffff">CNN International</SPAN></A></B></TD>
+</TR>
+<TR> 
+  <TD>
+<B>&nbsp;<A HREF="/web/20001215043500/http://headlinenews.cnn.com/"><SPAN class="NvSmBDk" onMouseOver="this.style.color='#ff0000'"
+        onMouseOut="this.style.color='#ffffff'" style="color:#ffffff">CNN Headline News</SPAN></A></B></TD>
+</TR>
+<TR> 
+  <TD>
+<B>&nbsp;<A HREF="/web/20001215043500/http://cnnfn.com/services/fnonair/whatson/"><SPAN class="NvSmBDk" onMouseOver="this.style.color='#ff0000'"
+        onMouseOut="this.style.color='#ffffff'" style="color:#ffffff">CNNfn</SPAN></A></B></TD>
+</TR>
+<TR> 
+  <TD>
+<B>&nbsp;<A HREF="/web/20001215043500/http://cnnsi.com/thenetwork/shows/schedule/"><SPAN class="NvSmBDk" onMouseOver="this.style.color='#ff0000'"
+        onMouseOut="this.style.color='#ffffff'" style="color:#ffffff">CNNSI</SPAN></A></B></TD>
+</TR>
+<TR> 
+  <TD>
+<B>&nbsp;<A HREF="/web/20001215043500/http://cnnenespanol.com/"><SPAN class="NvSmBDk" onMouseOver="this.style.color='#ff0000'"
+        onMouseOut="this.style.color='#ffffff'" style="color:#ffffff">CNN en Espa&#241;ol</SPAN></A></B></TD>
+</TR>
+<TR> 
+  <TD>
+<B>&nbsp;<A HREF="/web/20001215043500/http://www7.cnn.com/Airport/"><SPAN class="NvSmBDk" onMouseOver="this.style.color='#ff0000'"
+        onMouseOut="this.style.color='#ffffff'" style="color:#ffffff">CNN Airport Network</SPAN></A></B></TD>
+</TR>
+<TR> 
+  <TD>
+<B>&nbsp;<A HREF="/web/20001215043500/http://www.cnnradio.com/"><SPAN class="NvSmBDk" onMouseOver="this.style.color='#ff0000'"
+        onMouseOut="this.style.color='#ffffff'" style="color:#ffffff">CNN Radio</SPAN></A></B></TD>
+</TR>
+<TR> 
+  <TD>
+<B>&nbsp;<A HREF="/web/20001215043500/http://www.cnnradionoticias.com/"><SPAN class="NvSmBDk" onMouseOver="this.style.color='#ff0000'"
+        onMouseOut="this.style.color='#ffffff'" style="color:#ffffff">CNN Radio Noticias</SPAN></A></B></TD>
+</TR>
+
+<TR> 
+  <TD>
+&nbsp;<BR></TD>
+</TR>
+<TR> 
+  <TD>
+<B>&nbsp;<A HREF="/web/20001215043500/http://www7.cnn.com/CNN/Programs/Schedules/cnnregular.html"><SPAN class="NvSmBDk" onMouseOver="this.style.color='#ff0000'"
+        onMouseOut="this.style.color='#ffffff'" style="color:#ffffff">Program Schedule</SPAN></A></B></TD>
+</TR>
+<TR> 
+  <TD>
+<B>&nbsp;<A HREF="/web/20001215043500/http://www7.cnn.com/TRANSCRIPTS/"><SPAN class="NvSmBDk" onMouseOver="this.style.color='#ff0000'"
+        onMouseOut="this.style.color='#ffffff'" style="color:#ffffff">On-air Transcripts</SPAN></A></B></TD>
+</TR>
+<TR> 
+  <TD bgcolor="#ff6600">
+<B>&nbsp;<A HREF="/web/20001215043500/http://www7.cnn.com/CNN/anchors_reporters/"><SPAN class="NvSmBDk" style="color:#000000">Anchors/Reporters</SPAN></A></B></TD>
+</TR>
+<TR> 
+  <TD>
+<B>&nbsp;<A HREF="/web/20001215043500/http://www7.cnn.com/pr/"><SPAN class="NvSmBDk" onMouseOver="this.style.color='#ff0000'"
+        onMouseOut="this.style.color='#ffffff'" style="color:#ffffff">Press Releases</SPAN></A></B></TD>
+</TR>
+
+<TR> 
+  <TD>
+&nbsp;<BR></TD>
+</TR>
+
+<TR> 
+  <TD>
+&nbsp;<SPAN class="BoxStory" style="color:#ffffff">MULTIMEDIA</SPAN></TD>
+</TR>
+<TR> 
+  <TD>
+<B>&nbsp;<A HREF="/web/20001215043500/http://www7.cnn.com/CNNPromos/"><SPAN class="NvSmBDk" onMouseOver="this.style.color='#ff0000'"
+        onMouseOut="this.style.color='#ffffff'" style="color:#ffffff">CNN Promos</SPAN></A></B></TD>
+</TR>
+<TR> 
+  <TD>
+<B>&nbsp;<A HREF="/web/20001215043500/http://www7.cnn.com/audioselect/"><SPAN class="NvSmBDk" onMouseOver="this.style.color='#ff0000'"
+        onMouseOut="this.style.color='#ffffff'" style="color:#ffffff">Listen to CNN TV</SPAN></A></B></TD>
+</TR>
+<TR> 
+  <TD>
+<B>&nbsp;<A HREF="/web/20001215043500/http://www7.cnn.com/videoselect/"><SPAN class="NvSmBDk" onMouseOver="this.style.color='#ff0000'"
+        onMouseOut="this.style.color='#ffffff'" style="color:#ffffff">Watch CNN TV</SPAN></A></B></TD>
+</TR>
+
+<TR> 
+  <TD>
+&nbsp;<BR></TD>
+</TR>
+
+<!--
+[[TR]]
+  [[TD]]
+&nbsp;[[BR]][[/TD]]
+[[/TR]]
+-->
+
+<TR> 
+  <FORM> 
+  <TD>
+<SELECT class="FormLt1" valign="middle" onChange="location=this.options[this.selectedIndex].value;">
+<OPTION>CNN.com</OPTION>
+<OPTION value="/">Mainpage</OPTION>
+<OPTION value="/WORLD/">World</OPTION>
+<OPTION value="/US/">U.S.</OPTION>
+<OPTION value="/LOCAL/">Local</OPTION>
+<OPTION value="/ALLPOLITICS/">Politics</OPTION>
+<OPTION value="/WEATHER/">Weather</OPTION>
+<OPTION value="/cnnfn/">Business</OPTION>
+<OPTION value="/cnnsi/">Sports</OPTION>
+<OPTION value="/TECH/">Tech</OPTION>
+<OPTION value="/TECH/space/">Space</OPTION>
+<OPTION value="/HEALTH/">Health</OPTION>
+<OPTION value="/SHOWBIZ/">Showbiz</OPTION>
+<OPTION value="/books/">Books</OPTION>
+<OPTION value="/TRAVEL/">Travel</OPTION>
+<OPTION value="/FOOD/">Food</OPTION>
+<OPTION value="/STYLE/">Arts and</OPTION>
+<OPTION value="/STYLE/">Style</OPTION>
+<OPTION value="/NATURE/">Nature</OPTION>
+<OPTION value="/SPECIALS/">In-Depth</OPTION>
+<OPTION value="/SPECIALS/views/">Analysis</OPTION>
+<OPTION value="http://my.cnn.com">myCNN</OPTION>
+</SELECT>
+  </TD></FORM>
+</TR>
+<TR> 
+  <TD>
+&nbsp;<BR><BR><BR></TD>
+</TR>
+
+<TR> 
+  <TD bgcolor="#ff6600"><IMG SRC="/web/20001215043500im_/http://www7.cnn.com/CNN/Programs/images/ask.cnn.gif" ALT="" WIDTH="65" HEIGHT="18" ALIGN="left"></TD>
+</TR>
+<TR> 
+  <TD bgcolor="#999999">
+<DIV class="pad"><SPAN class="FSnPSmDk" style="color:#ffffff"><b>Do you have a question for CNN?</b></span><BR><BR><A HREF="/web/20001215043500/http://www7.cnn.com/CNN/askcnn/"><SPAN class="FSnPSmDk" style="color:#000099">Submit your question</span></A><SPAN class="FSnPSmDk" style="color:#ffffff"> and, if it is selected, CNN will find an expert to provide an answer.<BR><BR>
+The answers will appear on CNN and this Web site.</SPAN></DIV>
+</TD>
+</TR>
+<!--
+[[TR]] 
+  [[TD]]
+[[B]]&nbsp;[[A HREF="/index.html"]][[SPAN class="NvSmBDk" onMouseOver="this.style.color='#ff0000'"
+        onMouseOut="this.style.color='#ffffff'" style="color:#ffffff"]]CNN.com Home Page[[/SPAN]][[/A]][[/B]][[/TD]]
+[[/TR]]
+-->
+
+
+</TABLE>
+
+<!-- /top navigation -->  
+<!-- ================== /nav bar ================== --></TD><!-- ================== content ================== --><TD WIDTH=475 VALIGN=TOP><table width=475 bgcolor="#ffffff" cellpadding=0 cellspacing=0 border=0><TR><td bgcolor="#ffffff"><IMG SRC="/web/20001215043500im_/http://www7.cnn.com/images/1998/05/homepage/white.gif" WIDTH=475 HEIGHT=5 HSPACE=0 VSPACE=0 BORDER=0 ALT=""></td></TR><TR><td bgcolor="#ffffff" VALIGN="top"><table width=475 bgcolor="#ffffff" cellpadding=0 cellspacing=0 border=0><TR><td valign="bottom"><!-- ============ ANCHOR CHANGEOUT ============ -->
+
+		<map name="king1">
+			<area shape="polygon" coords="89, 105, 90, 88, 86, 77, 93, 64, 89, 39, 78, 23, 58, 7, 33, 1, 13, 7, -1, 13, 0, 106, 89, 105"
+				HREF="/web/20001215043500/http://cnn.com/CNN/anchors_reporters/king.larry.html" TARGET="new">
+		</map>
+		<map name="king2">
+			<area shape="polygon" coords="124, 365, 115, 280, 129, 277, 130, 251, 145, 241, 153, 216, 150, 210, 165, 141, 167, 80, 154, 60, 126, 49, 80, 39, 88, -1, 0, -1, 5, 21, 0, 24, -1, 366, 124, 365"
+				HREF="/web/20001215043500/http://cnn.com/CNN/anchors_reporters/king.larry.html" TARGET="new">
+		</map>
+<table align=top width=190 bgcolor="#ffffff" cellpadding=0 cellspacing=0 border=0>
+<tr>
+<td width=93 valign=top><img src="/web/20001215043500im_/http://www7.cnn.com/CNN/anchors_reporters/images/lkl_1.jpg" usemap="#king1" width=93 height=107 border=0></td>
+<td width=97 valign=top align=left bgcolor="#ffffff">
+<SPAN class="BoxStory">
+<A HREF="/web/20001215043500/http://www7.cnn.com/CNN/anchors_reporters/king.larry.html" TARGET="new" style="color:#ff0000">Larry King</A> hosts <A HREF="/web/20001215043500/http://www7.cnn.com/CNN/Programs/larry.king.live/" style="color:#ff0000">Larry King Live</A><BR>
+</SPAN>
+</td>
+</tr>
+<td valign=top colspan=2 width=190><img src="/web/20001215043500im_/http://www7.cnn.com/CNN/anchors_reporters/images/lkl_2.jpg" usemap="#king2" width=190 height=366  border=0></td>
+</tr>
+</table>
+<!-- ============ /ANCHOR CHANGEOUT ============ --></td><!-- <td valign="top" width="3"> --><!-- <IMG SRC="/images/1998/05/homepage/white.gif" WIDTH=3 HEIGHT=1 HSPACE=0 VSPACE=0 BORDER=0 ALT=""> --><!-- </td> --><td align=left valign="top" width="110">  <table width=110 bgcolor="#ffffff" cellpadding=0 cellspacing=0 border=0><TR><td valign="top"><IMG SRC="/web/20001215043500im_/http://www7.cnn.com/images/1998/05/homepage/white.gif" WIDTH=10 HEIGHT=1 HSPACE=0 VSPACE=0 BORDER=0 ALT=""></td></TR><TR><td valign="top"><!-- ============ MIDDLE CHANGEOUT ============ --><!-- Make sure you change the image name, usemap name, and include name --><IMG SRC="/web/20001215043500im_/http://www7.cnn.com/CNN/anchors_reporters/images/middle_1.jpg" WIDTH="110" HEIGHT="463" usemap="#middle1" border=0>		<map name="middle1">
+			<area shape="polygon" coords="0, 458, 0, 349, 7, 345, 11, 331, 11, 322, 31, 310, 47, 317, 51, 328, 46, 342, 42, 352, 25, 362, 51, 380, 8, 464, 1, 463, 0, 458"
+				href="/web/20001215043500/http://cnn.com/CNN/anchors_reporters/varney.stuart.html" target="new">
+			<area shape="polygon" coords="12, 461, 45, 397, 63, 399, 60, 387, 59, 375, 63, 363, 71, 350, 90, 348, 102, 351, 107, 368, 107, 386, 96, 400, 92, 409, 109, 425, 109, 461, 12, 461"
+				href="/web/20001215043500/http://cnn.com/CNN/anchors_reporters/bay.willow.html" target="new">
+			<area shape="polygon" coords="1, 304, 25, 270, 0, 237, -1, 155, 110, 154, 109, 307, 1, 304"
+				href="/web/20001215043500/http://cnn.com/CNN/anchors_reporters/blitzer.wolf.html" target="new">
+			<area shape="polygon" coords="0, 151, 0, 30, 12, 26, 11, 15, 11, 5, 20, 1, 32, 5, 33, 12, 27, 27, 34, 33, 34, 48, 20, 60, 18, 91, 22, 114, 19, 136, 27, 150, 0, 151"
+				href="/web/20001215043500/http://cnn.com/CNN/anchors_reporters/press.bill.html" target="new">
+			<area shape="polygon" coords="32, 150, 22, 135, 24, 114, 20, 93, 23, 61, 39, 52, 39, 44, 35, 39, 38, 31, 45, 21, 59, 30, 58, 42, 53, 50, 69, 63, 70, 98, 64, 116, 65, 129, 57, 152, 32, 150"
+				href="/web/20001215043500/http://cnn.com/CNN/anchors_reporters/matalin.mary.html" target="new">
+			<area shape="polygon" coords="58, 152, 78, 120, 74, 104, 77, 50, 75, 46, 81, 40, 80, 30, 77, 19, 82, 11, 91, 9, 99, 12, 101, 21, 100, 28, 101, 31, 108, 37, 109, 152, 58, 152"
+				href="/web/20001215043500/http://cnn.com/CNN/anchors_reporters/novak.robert.html" target="new">
+		</map>
+<!-- ============ /MIDDLE CHANGEOUT ============ --></TD></TR></TABLE></TD><td valign="top" width="5"><IMG SRC="/web/20001215043500im_/http://www7.cnn.com/images/1998/05/homepage/white.gif" WIDTH=5 HEIGHT=1 HSPACE=0 VSPACE=0 BORDER=0 ALT=""></td><td valign="top" width="150"><table align=top bgcolor="#cccccc" width=150 cellpadding=0 cellspacing=0 border=0><!--[[TR]][[td bgcolor="#ffffff"]][[IMG SRC="/images/1998/05/homepage/white.gif" WIDTH=148 HEIGHT=1 HSPACE=0 VSPACE=0 BORDER=0 ALT=""]][[/td]][[/TR]]--><TR><td bgcolor="#ffffff" HEIGHT=14 colspan=2><IMG SRC="/web/20001215043500im_/http://www7.cnn.com/CNN/anchors_reporters/images/top.gif" align=bottom WIDTH=154 HEIGHT=14 HSPACE=0 VSPACE=0 BORDER=0 ALT=""></TD></TR></td><td valign="top" bgcolor="#cccccc"><table bgcolor="#cccccc" width=150 cellpadding=0 cellspacing=0 border=0><TR>    <td rowspan="9" width="1" valign="top"><img src="/web/20001215043500im_/http://www7.cnn.com/images/1998/05/homepage/white.gif" width="2" height="450" border="0" alt=""></td><td valign="top" bgcolor="#cccccc"><table bgcolor="#cccccc" width=150 cellpadding=0 cellspacing=0 border=0><TR><TD><img src="/web/20001215043500im_/http://www7.cnn.com/images/1998/05/homepage/white.gif" height="7" width="1" border="0"><br><script>
+<!--
+function goSpecials2(){
+
+  if (document.specials2.anchors.options[document.specials2.anchors.selectedIndex].value == "") {
+    window.alert ("Select an Anchor");
+  }
+  else {
+    var url = document.specials2.anchors.options[document.specials2.anchors.selectedIndex].value;
+    
+	Features = 'toolbar=yes,location=yes,directories=no,status=no,menubar=yes,scrollbars=yes,resizable=yes,width=630,height=600';
+
+	window.open(url, name, Features);
+  }
+}
+
+
+// -->
+</script>
+
+<FORM name="specials2">
+<SELECT name="anchors" class="dropbox" onChange="goSpecials2(this.form.elements[0]);" style="width:140px">
+        <OPTION style="background:#ffffff;">CNN</OPTION>
+        <OPTION style="background:#ffffff;">==============</OPTION>
+        <option></option>
+        <option></option>
+</SELECT>     
+        
+<SCRIPT langauge="javascript">
+
+<!-- //
+        var URLs  = new Array("/CNN/anchors_reporters/allen.natalie.html","/CNN/anchors_reporters/battista.bobbie.html","/CNN/anchors_reporters/bay.willow.html","/CNN/anchors_reporters/blitzer.wolf.html","/CNN/anchors_reporters/cain.bob.html","/CNN/anchors_reporters/carlson.margaret.html","/CNN/anchors_reporters/charles.nick.html","/CNN/anchors_reporters/chen.joie.html","/CNN/anchors_reporters/cossack.roger.html","/CNN/anchors_reporters/evans.rowland.html","/CNN/anchors_reporters/frazier.stephen.html","/CNN/anchors_reporters/greenfield.jeff.html","/CNN/anchors_reporters/hall.andria.html","/CNN/anchors_reporters/harris.leon.html","/CNN/anchors_reporters/hattori.james.html","/CNN/anchors_reporters/hemmer.bill.html","/CNN/anchors_reporters/hopkins.jan.html","/CNN/anchors_reporters/hunt.al.html","/CNN/anchors_reporters/jackson.jesse.html","/CNN/anchors_reporters/jeras.jacqui.html","/CNN/anchors_reporters/kagan.daryn.html","/CNN/anchors_reporters/kalb.bernard.html","/CNN/anchors_reporters/king.larry.html","/CNN/anchors_reporters/klensch.elsa.html","/CNN/anchors_reporters/kurtz.howard.html","/CNN/anchors_reporters/lin.carol.html","/CNN/anchors_reporters/maginnis.karen.html","/CNN/anchors_reporters/marchini.deborah.html","/CNN/anchors_reporters/matalin.mary.html","/CNN/anchors_reporters/meserve.jeanne.html","/CNN/anchors_reporters/metaxas.john.html","/CNN/anchors_reporters/moret.jim.html","/CNN/anchors_reporters/myers.chad.html","/CNN/anchors_reporters/namdar.asieh.html","/CNN/anchors_reporters/nelson.brian.html","/CNN/anchors_reporters/novak.robert.html","/CNN/anchors_reporters/obeirne.kate.html","/CNN/anchors_reporters/obrien.miles.html","/CNN/anchors_reporters/oneil.carolyn.html","/CNN/anchors_reporters/peltz.perri.html","/CNN/anchors_reporters/perlmutter.bruce.html","/CNN/anchors_reporters/phillips.kyra.html","/CNN/anchors_reporters/press.bill.html","/CNN/anchors_reporters/schuch.beverly.html","/CNN/anchors_reporters/sesno.frank.html","/CNN/anchors_reporters/shaw.bernard.html","/CNN/anchors_reporters/shields.mark.html","/CNN/anchors_reporters/spiceland.flip.html","/CNN/anchors_reporters/stouffer.linda.html","/CNN/anchors_reporters/sydney.laurin.html","/CNN/anchors_reporters/tush.bill.html","/CNN/anchors_reporters/varney.stuart.html","/CNN/anchors_reporters/vansusteren.greta.html","/CNN/anchors_reporters/waters.lou.html","/CNN/anchors_reporters/wenge.ralph.html","/CNN/anchors_reporters/woodruff.judy.html");
+        var NAMEs = new Array("Natalie Allen","Bobbie Battista","Willow Bay","Wolf Blitzer","Bob Cain","Margaret Carlson","Nick Charles","Joie Chen","Roger Cossack","Rowland Evans","Stephen Frazier","Jeff Greenfield","Andria Hall","Leon Harris","James Hattori","Bill Hemmer","Jan Hopkins","Al Hunt","Jesse Jackson","Jacqui Jeras","Daryn Kagan","Bernard Kalb","Larry King","Elsa Klensch","Howard Kurtz","Carol Lin","Karen Maginnis","Deborah Marchini","Mary Matalin","Jeanne Meserve","John Metaxas","Jim Moret","Chad Myers","Asieh Namdar","Brian Nelson","Robert Novak","Kate O'Beirne","Miles O'Brien","Carolyn O'Neil","Perri Peltz","Bruce Perlmutter","Kyra Phillips","Bill Press","Beverly Schuch","Frank Sesno","Bernard Shaw","Mark Shields","Flip Spiceland","Linda Stouffer","Laurin Sydney","Bill Tush","Stuart Varney","Greta Van Susteren","Lou Waters","Ralph Wenge","Judy Woodruff");
+        var obj  = document.specials2.anchors.options;
+        makeSelOpt(obj);
+// -->
+
+</SCRIPT>
+</TD></TR></form><tr><td valign="top" bgcolor="#cccccc"><img src="/web/20001215043500im_/http://www7.cnn.com/images/1998/05/homepage/white.gif" height="7" width="1" border="0"><br><script>
+<!--
+function goSpecials6(){
+
+  if (document.specials6.hln.options[document.specials6.hln.selectedIndex].value == "") {
+    window.alert ("Select an Anchor");
+  }
+  else {
+    var url = document.specials6.hln.options[document.specials6.hln.selectedIndex].value;
+    
+	Features = 'toolbar=yes,location=yes,directories=no,status=no,menubar=yes,scrollbars=yes,resizable=yes,width=630,height=600';
+
+	window.open(url, name, Features);
+  }
+}
+
+
+// -->
+</script>
+
+<FORM name="specials6">
+<SELECT name="hln" class="dropbox" onChange="goSpecials6(this.form.elements[0]);" style="width:140px">
+        <OPTION style="background:#ffffff;">Headline News</OPTION>
+        <OPTION style="background:#ffffff;">==============</OPTION>
+        <option></option>
+        <option></option>
+</SELECT>    
+
+<SCRIPT langauge="javascript">
+<!-- //
+        var URLs        = new Array("/CNN/anchors_reporters/hln/callaway.catherine.html","/CNN/anchors_reporters/hln/daniels.kysa.html","/CNN/anchors_reporters/hln/dillon.denise.html","/CNN/anchors_reporters/hln/fortin.judy.html","/CNN/anchors_reporters/hln/koto.sachi.html","/CNN/anchors_reporters/hln/mitchell.michele.html","/CNN/anchors_reporters/hln/reid.jacque.html","/CNN/anchors_reporters/hln/roberts.chuck.html","/CNN/anchors_reporters/hln/russell.lynne.html");
+		var NAMEs = new Array("Catherine Callaway","Kysa Daniels","Denise Dillon","Judy Fortin","Sachi Koto","Michele Mitchell","Jacque Reid","Chuck Roberts","Lynne Russell");
+        var obj  = document.specials6.hln.options;
+        makeSelOpt(obj);
+// -->
+
+</SCRIPT>
+
+</TD></TR></form><tr><td valign="top" bgcolor="#cccccc"><img src="/web/20001215043500im_/http://www7.cnn.com/images/1998/05/homepage/white.gif" height="7" width="1" border="0"><br><script>
+<!--
+function goSpecials4(){
+
+  if (document.specials4.cnni.options[document.specials4.cnni.selectedIndex].value == "") {
+    window.alert ("Select an Anchor");
+  }
+  else {
+    var url = document.specials4.cnni.options[document.specials4.cnni.selectedIndex].value;
+    
+	Features = 'toolbar=yes,location=yes,directories=no,status=no,menubar=yes,scrollbars=yes,resizable=yes,width=630,height=600';
+
+	window.open(url, name, Features);
+  }
+}
+
+
+// -->
+</script>
+
+<FORM name="specials4">
+<SELECT name="cnni" class="dropbox" onChange="goSpecials4(this.form.elements[0]);" style="width:140px">
+        <OPTION style="background:#ffffff;">International</OPTION>
+        <OPTION style="background:#ffffff;">==============</OPTION>
+        <option></option>
+        <option></option>
+</SELECT>
+    
+
+<SCRIPT langauge="javascript">
+
+<!-- //
+        var URLs        = new Array("/CNN/anchors_reporters/alexander.brooke.html","/CNN/anchors_reporters/arduino.guillermo.html","/CNN/anchors_reporters/baddoo.terry.html","/CNN/anchors_reporters/benjamin.todd.html","/CNN/anchors_reporters/church.rosemary.html","/CNN/anchors_reporters/clancy.jim.html","/CNN/anchors_reporters/cotton.dave.html","/CNN/anchors_reporters/haswell.katy.html","/CNN/anchors_reporters/hodson.charles.html","/CNN/anchors_reporters/holmes.michael.html","/CNN/anchors_reporters/khan.riz.html","/CNN/anchors_reporters/luscher.bettina.html","/CNN/anchors_reporters/mann.jonathan.html","/CNN/anchors_reporters/mccarthy.sissel.html","/CNN/anchors_reporters/mcedwards.colleen.html","/CNN/anchors_reporters/mckay.mark.html","/CNN/anchors_reporters/naidoo.anand.html","/CNN/anchors_reporters/namdar.asieh.html","/CNN/anchors_reporters/pek.lian.html","/CNN/anchors_reporters/phillips.juanita.html","/CNN/anchors_reporters/pinto.pedro.html","/CNN/anchors_reporters/ruseler.sonia.html","/CNN/anchors_reporters/shinsho.karuna.html","/CNN/anchors_reporters/stevens.andrew.html","/CNN/anchors_reporters/stinar.tom.html","/CNN/anchors_reporters/sweeney.fionnuala.html","/CNN/anchors_reporters/tom.allison.html","/CNN/anchors_reporters/vassileva.ralitsa.html","/CNN/anchors_reporters/wenge.ralph.html");
+	var NAMEs = new Array("Brooke Alexander","Guillermo Arduino","Terry Baddoo","Todd Benjamin","Rosemary Church","Jim Clancy","Dave Cotton","Katy Haswell","Charles Hodson","Michael Holmes","Riz Khan","Bettina Luscher","Jonathan Mann","Sissel McCarthy","Colleen McEdwards","Mark McKay", "Anand Naidoo","Asieh Namdar","Lian Pek","Juanita Phillips","Pedro Pinto","Sonia Ruseler","Karuna Shinsho","Andrew Stevens","Tom Stinar","Fionnuala Sweeney","Allison Tom","Ralitsa Vassileva","Ralph Wenge");
+        var obj  = document.specials4.cnni.options;
+        makeSelOpt(obj);
+// -->
+
+</SCRIPT>
+</TD></TR></form><tr><td valign="top" bgcolor="#cccccc"><img src="/web/20001215043500im_/http://www7.cnn.com/images/1998/05/homepage/white.gif" height="7" width="1" border="0"><br><script>
+<!--
+function goSpecials11(){
+
+  if (document.specials11.weather.options[document.specials11.weather.selectedIndex].value == "") {
+    window.alert ("Select an Anchor");
+  }
+  else {
+    var url = document.specials11.weather.options[document.specials11.weather.selectedIndex].value;
+    
+	Features = 'toolbar=yes,location=yes,directories=no,status=no,menubar=yes,scrollbars=yes,resizable=yes,width=630,height=600';
+
+	window.open(url, name, Features);
+  }
+}
+
+
+// -->
+</script>
+
+<FORM name="specials11">
+<SELECT name="weather" class=dropbox onChange="goSpecials11(this.form.elements[0]);" style="width:140px">
+        <OPTION style="background:#ffffff;">Weather</OPTION>
+        <OPTION style="background:#ffffff;">==============</OPTION>
+        <option></option>
+        <option></option>
+</SELECT>   
+
+<SCRIPT langauge="javascript">
+
+<!-- //
+        var URLs        = new Array("","/CNN/anchors_reporters/weather/brown.jill.html","/CNN/anchors_reporters/weather/hennen.dave.html","/CNN/anchors_reporters/weather/jeras.jacqui.html","/CNN/anchors_reporters/weather/maginnis.karen.html","/CNN/anchors_reporters/weather/myers.chad.html","/CNN/anchors_reporters/weather/sidney.orelon.html","/CNN/anchors_reporters/weather/spiceland.flip.html","","/CNN/anchors_reporters/weather/nivose.fritz.html","/CNN/anchors_reporters/weather/arduino.guillermo.html","/CNN/anchors_reporters/weather/harrrison.jenny.html","/CNN/anchors_reporters/weather/feng.lila.html","/CNN/anchors_reporters/weather/ramos.mari.html","/CNN/anchors_reporters/weather/jeanes.martyn.html");
+	var NAMEs = new Array("CNN Domestic Team","    Jill Brown","    Dave Hennen","    Jacqui Jeras","    Karen Maginnis","    Chad Myers","    Orelon Sidney","    Flip Spiceland","CNNI Team","    Fritz Nivose","    Guillermo Arduino","    Jenny Harrison","    Lila Feng","    Mari Ramos","    Martyn Jeanes");
+        var obj  = document.specials11.weather.options;
+        makeSelOpt(obj);
+// -->
+
+</SCRIPT>
+
+
+
+</TD></TR></form><tr><td valign="top" bgcolor="#cccccc"><img src="/web/20001215043500im_/http://www7.cnn.com/images/1998/05/homepage/white.gif" height="7" width="1" border="0"><br><script>
+<!--
+function goSpecials3(){
+
+  if (document.specials3.cnnfns.options[document.specials3.cnnfns.selectedIndex].value == "") {
+    window.alert ("Select an Anchor");
+  }
+  else {
+    var url = document.specials3.cnnfns.options[document.specials3.cnnfns.selectedIndex].value;
+    
+	Features = 'toolbar=yes,location=yes,directories=no,status=no,menubar=yes,scrollbars=yes,resizable=yes,width=630,height=600';
+
+	window.open(url, name, Features);
+  }
+}
+
+
+// -->
+</script>
+
+<FORM name="specials3">
+<SELECT name="cnnfns" class="dropbox" onChange="goSpecials3(this.form.elements[0]);" style="width:140px">
+        <OPTION style="background:#ffffff;">CNNfn</OPTION>
+        <OPTION style="background:#ffffff;">==============</OPTION>
+        <option></option>
+        <option></option>
+</SELECT>        
+
+<SCRIPT langauge="javascript">
+
+<!-- //
+        var URLs        = new Array("/web/20001215043500/http://cnnfn.com/services/fnonair/anchors/arena","/web/20001215043500/http://cnnfn.com/services/fnonair/anchors/bay","/web/20001215043500/http://cnnfn.com/services/fnonair/anchors/benjamin","/web/20001215043500/http://cnnfn.com/services/fnonair/anchors/cafferty","/web/20001215043500/http://cnnfn.com/services/fnonair/anchors/clarkin","/web/20001215043500/http://cnnfn.com/services/fnonair/anchors/dorman","/web/20001215043500/http://cnnfn.com/services/fnonair/anchors/francis","/web/20001215043500/http://cnnfn.com/services/fnonair/anchors/doddsfrank","/web/20001215043500/http://cnnfn.com/services/fnonair/anchors/guida","/CNN/anchors_reporters/haffenreffer.david.html","/web/20001215043500/http://cnnfn.com/services/fnonair/anchors/hodson","/web/20001215043500/http://cnnfn.com/services/fnonair/anchors/hopkins","/web/20001215043500/http://cnnfn.com/services/fnonair/anchors/kandel","/web/20001215043500/http://cnnfn.com/services/fnonair/anchors/katayama","/web/20001215043500/http://cnnfn.com/fnonair/anchors/keenan","/web/20001215043500/http://cnnfn.com/services/fnonair/anchors/lisovicz","/web/20001215043500/http://cnnfn.com/services/fnonair/anchors/marchini","/web/20001215043500/http://cnnfn.com/services/fnonair/anchors/mccarthy","/web/20001215043500/http://cnnfn.com/services/fnonair/anchors/metaxas/","/web/20001215043500/http://cnnfn.com/services/fnonair/anchors/molineaux","/web/20001215043500/http://cnnfn.com/services/fnonair/anchors/morris","/web/20001215043500/http://cnnfn.com/services/fnonair/anchors/pilgrim","/web/20001215043500/http://cnnfn.com/services/fnonair/anchors/rodgers","/web/20001215043500/http://cnnfn.com/services/fnonair/anchors/schaffler","/web/20001215043500/http://cnnfn.com/services/fnonair/anchors/schuch","/web/20001215043500/http://cnnfn.com/services/fnonair/anchors/thierry","/web/20001215043500/http://cnnfn.com/services/fnonair/anchors/tucker","/web/20001215043500/http://cnnfn.com/services/fnonair/anchors/varney","/web/20001215043500/http://cnnfn.com/services/fnonair/anchors/wian","/web/20001215043500/http://cnnfn.com/services/fnonair/anchors/young");
+	var NAMEs = new Array("Kelli Arena","Willow Bay","Todd Benjamin","Jack Cafferty","Greg Clarkin","Bill Dorman","Bruce Francis","Allan Dodds Frank","Tony Guida","David Haffenreffer","Charles Hodson","Jan Hopkins","Myron Kandel","Fred Katayama","Terry Keenan","Susan Lisovicz","Deborah Marchini","Sissel McCarthy","John Metaxas","Charles Molineaux","Valerie Morris","Kitty Pilgrim","Ceci Rodgers","Rhonda Schaffler","Beverly Schuch","Lauren Thierry","Bill Tucker","Stuart Varney","Casey Wian","Steve Young");
+        var obj  = document.specials3.cnnfns.options;
+        makeSelOpt(obj);
+// -->
+
+</SCRIPT>
+
+</TD></TR></form><tr><td valign="top" bgcolor="#cccccc"><img src="/web/20001215043500im_/http://www7.cnn.com/images/1998/05/homepage/white.gif" height="7" width="1" border="0"><br><script>
+<!--
+function goSpecials5(){
+
+  if (document.specials5.cnnsi.options[document.specials5.cnnsi.selectedIndex].value == "") {
+    window.alert ("Select an Anchor");
+  }
+  else {
+    var url = document.specials5.cnnsi.options[document.specials5.cnnsi.selectedIndex].value;
+    
+	Features = 'toolbar=yes,location=yes,directories=no,status=no,menubar=yes,scrollbars=yes,resizable=yes,width=630,height=600';
+
+	window.open(url, name, Features);
+  }
+}
+
+
+// -->
+</script>
+
+<FORM name="specials5">
+<SELECT name="cnnsi" class="dropbox" onChange="goSpecials5(this.form.elements[0]);" style="width:140px">
+        <OPTION style="background:#ffffff;">CNNSI</OPTION>
+        <OPTION style="background:#ffffff;">==============</OPTION>
+        <option></option>
+        <option></option>
+</SELECT>     
+
+<SCRIPT langauge="javascript">
+
+<!-- //
+        var URLs        = new Array("/cnnsi/thenetwork/bios/alberts.html","/cnnsi/thenetwork/bios/aldridge.html","/cnnsi/thenetwork/bios/baines.html","/cnnsi/thenetwork/bios/beimfohr.html","/cnnsi/thenetwork/bios/cellini.html","/cnnsi/thenetwork/bios/charles.html","/cnnsi/thenetwork/bios/crane.html","/cnnsi/thenetwork/bios/dasey.html","/cnnsi/inside_game/archives/john_donovan/","/cnnsi/thenetwork/bios/fein.html","/cnnsi/thenetwork/bios/fiscella.html","/cnnsi/thenetwork/bios/galanos.html","/cnnsi/thenetwork/bios/gelfand.html","/cnnsi/thenetwork/bios/giannone.html","/cnnsi/thenetwork/bios/hammond.html","/cnnsi/thenetwork/bios/hickman.html","/cnnsi/thenetwork/bios/karp.html","/cnnsi/thenetwork/bios/kirwan.html","/cnnsi/thenetwork/bios/lorenz.html","/cnnsi/thenetwork/bios/matvick.html","/cnnsi/thenetwork/bios/meyer.html","/cnnsi/thenetwork/bios/morgan.html","/cnnsi/thenetwork/bios/newman.html","/cnnsi/thenetwork/bios/okmin.html","/cnnsi/thenetwork/bios/phelps.html","/cnnsi/thenetwork/bios/rinaldi.html","/cnnsi/thenetwork/bios/smith.html","/cnnsi/inside_game/archives/ozzie_smith/","/cnnsi/thenetwork/bios/steptoe.html","/cnnsi/thenetwork/bios/viviano.html");
+	var NAMEs = new Array("Trev Alberts","Andre Aldridge","Saxon Baines","Jeff Beimfohr","Vince Cellini","Nick Charles","Paul Crane","Jason Dasey","John Donovan","Mark Fein","Bob Fiscella","Mike Galanos","Gary Gelfand","John Giannone","Inga Hammond","Fred Hickman","Josie Karp","Pat Kirwan","Bob Lorenz","Clay Matvick","Ron Meyer","Mark Morgan","Nancy Newman ","Laura Okmin","Johnny Phelps","Tom Rinaldi","Larry Smith","Ozzie Smith","Sonja Steptoe","Mark Viviano");
+        var obj = document.specials5.cnnsi.options;
+        makeSelOpt(obj);
+// -->
+
+</SCRIPT>
+</TD></TR></form><tr><td valign="top" bgcolor="#cccccc"><img src="/web/20001215043500im_/http://www7.cnn.com/images/1998/05/homepage/white.gif" height="7" width="1" border="0"><br><script>
+<!--
+function goSpecials1(){
+
+  if (document.specials1.airports.options[document.specials1.airports.selectedIndex].value == "") {
+    window.alert ("Select an Anchor");
+  }
+  else {
+    var url = document.specials1.airports.options[document.specials1.airports.selectedIndex].value;
+    
+	Features = 'toolbar=yes,location=yes,directories=no,status=no,menubar=yes,scrollbars=yes,resizable=yes,width=630,height=600';
+
+	window.open(url, name, Features);
+  }
+}
+
+
+// -->
+</script>
+
+<FORM name="specials1">
+<SELECT name="airports" class=dropbox onChange="goSpecials1(this.form.elements[0]);" style="width:140px">
+        <OPTION style="background:#ffffff;">Airport Network</OPTION>
+        <OPTION style="background:#ffffff;">==============</OPTION>
+        <option></option>
+        <option></option>
+</SELECT>   
+
+<SCRIPT langauge="javascript">
+
+<!-- //
+        var URLs        = new Array("/CNN/anchors_reporters/elgin.stacey.html","/CNN/anchors_reporters/hovind.anna.html","/CNN/anchors_reporters/wuhl.elise.html");
+	var NAMEs = new Array("Stacey Elgin","Anna Hovind","Elise Wuhl");
+        var obj  = document.specials1.airports.options;
+        makeSelOpt(obj);
+// -->
+
+</SCRIPT>
+
+
+
+</TD></TR></form><tr><td valign="top" bgcolor="#cccccc"><img src="/web/20001215043500im_/http://www7.cnn.com/images/1998/05/homepage/white.gif" height="7" width="1" border="0"><br><script>
+<!--
+function goSpecials7(){
+
+  if (document.specials7.radio.options[document.specials7.radio.selectedIndex].value == "") {
+    window.alert ("Select an Anchor");
+  }
+  else {
+    var url = document.specials7.radio.options[document.specials7.radio.selectedIndex].value;
+    
+	Features = 'toolbar=yes,location=yes,directories=no,status=no,menubar=yes,scrollbars=yes,resizable=yes,width=630,height=600';
+
+	window.open(url, name, Features);
+  }
+}
+
+
+// -->
+</script>
+
+<FORM name="specials7">
+<SELECT name="radio" class="dropbox" onChange="goSpecials7(this.form.elements[0]);" style="width:140px">
+        <OPTION style="background:#ffffff;">CNN Radio</OPTION>
+        <OPTION style="background:#ffffff;">==============</OPTION>
+        <option></option>
+        <option></option>
+</SELECT>   
+
+<SCRIPT langauge="javascript">
+
+<!-- //
+	var URLs        = new Array("/CNN/anchors_reporters/baumgarten.gary.html","/CNN/anchors_reporters/beadle.harry.html","/CNN/anchors_reporters/bisney.john.html","/CNN/anchors_reporters/bustillo.cesar.html","/CNN/anchors_reporters/case.stan.html","/CNN/anchors_reporters/chambers.paul.html","/CNN/anchors_reporters/colombo-abdullah.flavia.html","/CNN/anchors_reporters/cotti.jose.html","/CNN/anchors_reporters/goldstein.jacobo.html","/CNN/anchors_reporters/guerrero.maria.html","/CNN/anchors_reporters/hernandez.claudia.html","/CNN/anchors_reporters/hopkins.mary.html","/CNN/anchors_reporters/hull.david.html","/CNN/anchors_reporters/jones.michael.html","/CNN/anchors_reporters/lee.rachel.html","/CNN/anchors_reporters/lisk.john.html","/CNN/anchors_reporters/mccarthy.ed.html","/CNN/anchors_reporters/naveja.juan.html","/CNN/anchors_reporters/orozco.cesar.html","/CNN/anchors_reporters/pauli.ken.html","/CNN/anchors_reporters/roope.jim.html","/CNN/anchors_reporters/rury.tim.html","/CNN/anchors_reporters/stclaire.pat.html","/CNN/anchors_reporters/scatena.juan.html","/CNN/anchors_reporters/sibal.indra.html","/CNN/anchors_reporters/uliano.dick.html","/CNN/anchors_reporters/witkin.bob.html");
+	var NAMEs = new Array("Gary Baumgarten","Harry Beadle","John Bisney","Cesar Bustillo","Stanley Case","Paul Chambers","Flavia Colombo-Abdullah","Jose Cotti","Jacobo Goldstein","Maria Guerrero","Claudia Hernandez","Mary Hopkins","David Hull","Michael Jones","Rachel Lee","John Lisk","Ed McCarthy","Juan Naveja","Cesar Orozco","Ken Pauli","Jim Roope","Tim Rury","Pat St. Claire","Juan Scatena","Indra Sibal","Dick Uliano","Bob Witkin");
+        var obj  = document.specials7.radio.options;
+        makeSelOpt(obj);
+// -->
+
+</SCRIPT>
+
+
+</TD></TR></form><tr><td valign="top" bgcolor="#cccccc"><img src="/web/20001215043500im_/http://www7.cnn.com/images/1998/05/homepage/white.gif" height="7" width="1" border="0"><br><script>
+<!--
+function goSpecials8(){
+
+  if (document.specials8.reportersAL.options[document.specials8.reportersAL.selectedIndex].value == "") {
+    window.alert ("Select an Anchor");
+  }
+  else {
+    var url = document.specials8.reportersAL.options[document.specials8.reportersAL.selectedIndex].value;
+    
+	Features = 'toolbar=yes,location=yes,directories=no,status=no,menubar=yes,scrollbars=yes,resizable=yes,width=630,height=600';
+
+	window.open(url, name, Features);
+  }
+}
+
+
+// -->
+</script>
+
+<FORM name="specials8">
+<SELECT name="reportersAL" class="dropbox" onChange="goSpecials8(this.form.elements[0]);" style="width:140px">
+        <OPTION style="background:#ffffff;">Reporters A-L</OPTION>
+        <OPTION style="background:#ffffff;">==============</OPTION>
+        <option></option>
+        <option></option>
+</SELECT> 
+
+<SCRIPT langauge="javascript">
+
+<!-- //
+        var URLs        = new Array("/CNN/anchors_reporters/amanpour.christiane.html","/CNN/anchors_reporters/arraf.jane.html","/CNN/anchors_reporters/auther.jennifer.html","/CNN/anchors_reporters/bakhtiar.rudi.html","/CNN/anchors_reporters/bernheimer.mark.html","/CNN/anchors_reporters/bierbauer.charles.html","/CNN/anchors_reporters/bindra.satinder.html","/CNN/anchors_reporters/bittermann.jim.html","/CNN/anchors_reporters/black.chris.html","/CNN/anchors_reporters/blitzer.wolf.html","/CNN/anchors_reporters/blystone.richard.html","/CNN/anchors_reporters/buckley.frank.html","/CNN/anchors_reporters/burns.chris.html","/CNN/anchors_reporters/burkhardt.bruce.html","/CNN/anchors_reporters/cabell.brian.html","/CNN/anchors_reporters/callebs.sean.html","/CNN/anchors_reporters/candiotti.susan.html","/CNN/anchors_reporters/chinoy.mike.html","/CNN/anchors_reporters/ciampa.linda.html","/CNN/anchors_reporters/clark.tony.html","/CNN/anchors_reporters/cohen.elizabeth.html","/CNN/anchors_reporters/collins.sharon.html","/CNN/anchors_reporters/crowley.candy.html","/CNN/anchors_reporters/davis.patty.html","/CNN/anchors_reporters/delaney.bill.html","/CNN/anchors_reporters/dougherty.jill.html","/CNN/anchors_reporters/ensor.david.html","/CNN/anchors_reporters/etheridge.pat.html","/CNN/anchors_reporters/feldman.charles.html","/CNN/anchors_reporters/feyerick.deborah.html","/CNN/anchors_reporters/firfer.holly.html","/CNN/anchors_reporters/flock.jeff.html","/CNN/anchors_reporters/franken.bob.html","/CNN/anchors_reporters/garsten.ed.html","/CNN/anchors_reporters/hanna.mike.html","/CNN/anchors_reporters/harris.art.html","/CNN/anchors_reporters/haynes.tom.html","/CNN/anchors_reporters/hill.jim.html","/CNN/anchors_reporters/hillard.gloria.html","/CNN/anchors_reporters/hinman.al.html","/CNN/anchors_reporters/hinojosa.maria.html","/CNN/anchors_reporters/hochmuth.joel.html","/CNN/anchors_reporters/hoff.charles.html","/CNN/anchors_reporters/horng.eric.html","/CNN/anchors_reporters/humi.peter.html","/CNN/anchors_reporters/huntergault.charlayne.html","/CNN/anchors_reporters/jackson.brooks.html","/CNN/anchors_reporters/jie-ae.sohn.html","/CNN/anchors_reporters/kamimura.marina.html","/CNN/anchors_reporters/kandel.myron.html","/CNN/anchors_reporters/karl.jonathan.html","/CNN/anchors_reporters/katayama.fred.html","/CNN/anchors_reporters/kellan.ann.html","/CNN/anchors_reporters/kelly.patricia.html","/CNN/anchors_reporters/kessel.jerrold.html","/CNN/anchors_reporters/kim.lilian.html","/CNN/anchors_reporters/king.jane.html","/CNN/anchors_reporters/king.john.html","/CNN/anchors_reporters/koppel.andrea.html","/CNN/anchors_reporters/lamotte.greg.html","/CNN/anchors_reporters/lee.alexa.html","/CNN/anchors_reporters/lefevre.greg.html","/CNN/anchors_reporters/leka.claire.html","/CNN/anchors_reporters/lewis.david.html","/CNN/anchors_reporters/lockridge.rick.html","/CNN/anchors_reporters/loescher.skip.html","/CNN/anchors_reporters/london.gina.html","/CNN/anchors_reporters/lowrie.margaret.html");
+	var NAMEs = new Array("Christiane Amanpour","Jane Arraf","Jennifer Auther","Rudi Bakhtiar","Mark Bernheimer","Charles Bierbauer","Satinder Bindra","Jim Bittermann","Chris Black","Wolf Blitzer","Richard Blystone","Frank Buckley","Chris Burns","Bruce Burkhardt","Brian Cabell","Sean Callebs","Susan Candiotti","Mike Chinoy","Linda Ciampa","Tony Clark","Elizabeth Cohen","Sharon Collins","Candy Crowley","Patty Davis","Bill Delaney","Jill Dougherty","David Ensor","Pat Etheridge","Charles Feldman","Deborah Feyerick","Holly Firfer","Jeff Flock","Bob Franken","Ed Garsten","Mike Hanna","Art Harris","Tom Haynes","Jim Hill","Gloria Hillard","Al Hinman","Maria Hinojosa","Joel Hochmuth","Charles Hoff","Eric Horng","Peter Humi","Charlayne Hunter-Gault","Brooks Jackson","Sohn Jie-Ae","Marina Kamimura","Myron Kandel","Jonathan Karl","Fred Katayama","Ann Kellan","Patricia Kelly","Jerrold Kessel","Lilian Kim","Jane King","John King","Andrea Koppel","Greg LaMotte","Alexa Lee","Greg Lefevre","Claire Leka","David Lewis","Rick Lockridge","Skip Loescher","Gina London","Margaret Lowrie");
+        var obj  = document.specials8.reportersAL.options;
+        makeSelOpt(obj);
+// -->
+
+</SCRIPT>
+</TD></TR></form><tr><td valign="top" bgcolor="#cccccc"><img src="/web/20001215043500im_/http://www7.cnn.com/images/1998/05/homepage/white.gif" height="7" width="1" border="0"><br><script>
+<!--
+function goSpecials9(){
+
+  if (document.specials9.reportersMZ.options[document.specials9.reportersMZ.selectedIndex].value == "") {
+    window.alert ("Select an Anchor");
+  }
+  else {
+    var url = document.specials9.reportersMZ.options[document.specials9.reportersMZ.selectedIndex].value;
+    
+	Features = 'toolbar=yes,location=yes,directories=no,status=no,menubar=yes,scrollbars=yes,resizable=yes,width=630,height=600';
+
+	window.open(url, name, Features);
+  }
+}
+
+// -->
+</script>
+
+<FORM name="specials9">
+<SELECT name="reportersMZ" class="dropbox" onChange="goSpecials9(this.form.elements[0]);" style="width:140px">
+        <OPTION style="background:#ffffff;">Reporters M-Z</OPTION>
+        <OPTION style="background:#ffffff;">==============</OPTION>
+        <option></option>
+        <option></option>
+</SELECT>    
+
+<SCRIPT langauge="javascript">
+
+<!-- //
+        var URLs        = new Array("/CNN/anchors_reporters/mackinnon.rebecca.html","/CNN/anchors_reporters/mcdermott.anne.html","/CNN/anchors_reporters/mcintyre.jamie.html","/CNN/anchors_reporters/michael.dennis.html","/CNN/anchors_reporters/mintier.tom.html","/CNN/anchors_reporters/moos.jeanne.html","/CNN/anchors_reporters/morton.bruce.html","/CNN/anchors_reporters/nasr.octavia.html","/CNN/anchors_reporters/nappe.beth.html","/CNN/anchors_reporters/nettleton.steve.html","/CNN/anchors_reporters/newman.lucia.html","/CNN/anchors_reporters/nissen.beth.html","/CNN/anchors_reporters/oconnor.eileen.html","/CNN/anchors_reporters/okwu.michael.html","/CNN/anchors_reporters/oppenheim.keith.html","/CNN/anchors_reporters/oswald.stephanie.html","/CNN/anchors_reporters/palmer.brian.html","/CNN/anchors_reporters/pattillo.linda.html","/CNN/anchors_reporters/pawelski.natalie.html","/CNN/anchors_reporters/philips.eric.html","/CNN/anchors_reporters/potter.mark.html","/CNN/anchors_reporters/raedler.john.html","/CNN/anchors_reporters/randall.gene.html","/CNN/anchors_reporters/ressa.maria.html","/CNN/anchors_reporters/robertson.nic.html","/CNN/anchors_reporters/rochelle.carl.html","/CNN/anchors_reporters/rodgers.walter.html","/CNN/anchors_reporters/roth.richard.html","/CNN/anchors_reporters/rowland.rhonda.html","/CNN/anchors_reporters/rutz.dan.html","/CNN/anchors_reporters/sadler.brent.html","/CNN/anchors_reporters/savidge.martin.html","/CNN/anchors_reporters/scheerer.mark.html","/CNN/anchors_reporters/schneider.bill.html","/CNN/anchors_reporters/slobogin.kathy.html","/CNN/anchors_reporters/snow.kate.html","/CNN/anchors_reporters/spurgeon.suzanne.html","/CNN/anchors_reporters/strieker.gary.html","/CNN/anchors_reporters/sylvester.sherri.html","/CNN/anchors_reporters/tank.ron.html","/CNN/anchors_reporters/thomas-samuel.kalin.html","/CNN/anchors_reporters/tornquist.cynthia.html","/CNN/anchors_reporters/tuchman.gary.html","/CNN/anchors_reporters/utley.garrick.html","/CNN/anchors_reporters/vercammen.paul.html","/CNN/anchors_reporters/wallace.kelly.html","/CNN/anchors_reporters/wedeman.ben.html","/CNN/anchors_reporters/whitbeck.harris.html","/CNN/anchors_reporters/young.gayle.html","/CNN/anchors_reporters/young.graylian.html","/CNN/anchors_reporters/zarrella.john.html","/CNN/anchors_reporters/zewe.charles.html");
+	var NAMEs = new Array("Rebecca MacKinnon","Anne McDermott","Jamie McIntyre","Dennis Michael","Tom Mintier","Jeanne Moos","Bruce Morton","Octavia Nasr","Beth Nappe","Steve Nettleton","Lucia Newman","Beth Nissen","Eileen O'Connor","Michael Okwu","Keith Oppenheim","Stephanie Oswald","Brian Palmer","Linda Pattillo","Natalie Pawelski","Eric Philips","Mark Potter","John Raedler","Gene Randall","Maria Ressa","Nic Robertson","Carl Rochelle","Walter Rodgers","Richard Roth","Rhonda Rowland","Dan Rutz","Brent Sadler","Martin Savidge","Mark Scheerer","Bill Schneider","Kathy Slobogin","Kate Snow","Suzanne Spurgeon","Gary Strieker","Sherri Sylvester","Ron Tank","Kalin Thomas-Samuel","Cynthia Tornquist","Gary Tuchman","Garrick Utley","Paul Vercammen","Kelly Wallace","Ben Wedeman","Harris Whitbeck","Gayle Young","Graylian Young","John Zarrella","Charles Zewe");
+        var obj  = document.specials9.reportersMZ.options;
+        makeSelOpt(obj);
+// -->
+
+</SCRIPT>
+
+
+
+</TD></TR></form><tr><td valign="top" bgcolor="#cccccc"><img src="/web/20001215043500im_/http://www7.cnn.com/images/1998/05/homepage/white.gif" height="7" width="1" border="0"><br><script>
+<!--
+function goSpecials10(){
+
+  if (document.specials10.exec.options[document.specials10.exec.selectedIndex].value == "") {
+    window.alert ("Select an Executive");
+  }
+  else {
+    var url = document.specials10.exec.options[document.specials10.exec.selectedIndex].value;
+    
+	Features = 'toolbar=yes,location=yes,directories=no,status=no,menubar=yes,scrollbars=yes,resizable=yes,width=630,height=600';
+
+	window.open(url, name, Features);
+  }
+}
+
+
+// -->
+</script>
+
+<FORM name="specials10">
+<SELECT name="exec" class="dropbox" onChange="goSpecials10(this.form.elements[0]);" style="width:140px">
+        <OPTION style="background:#ffffff;">Executives</OPTION>
+        <OPTION style="background:#ffffff;">==============</OPTION>
+        <option></option>
+        <option></option>
+</SELECT>    
+
+<SCRIPT langauge="javascript">
+<!-- //
+        var URLs        = new Array("/CNN/anchors_reporters/executives/bedingfield.sid.html","/CNN/anchors_reporters/executives/bunda.susan.html","/CNN/anchors_reporters/executives/castle.gordon.html","/CNN/anchors_reporters/executives/coffey.shelby.html","/CNN/anchors_reporters/executives/cramer.chris.html","/CNN/anchors_reporters/executives/curry.karen.html","/CNN/anchors_reporters/executives/davis.richard.html","/CNN/anchors_reporters/executives/evans.gail.html","/CNN/anchors_reporters/executives/furnad.bob.html","/CNN/anchors_reporters/executives/golden.rena.html","/CNN/anchors_reporters/executives/johnson.tom.html","/CNN/anchors_reporters/executives/jordan.eason.html","/CNN/anchors_reporters/executives/kent.phil.html","/CNN/anchors_reporters/executives/lucas.wonya.html","/CNN/anchors_reporters/executives/mullig.monty.html","/CNN/anchors_reporters/executives/reinhardt.burt.html","/CNN/anchors_reporters/executives/ryan.teya.html","/CNN/anchors_reporters/executives/santos.rolando.html","/CNN/anchors_reporters/executives/schiller.vivian.html","/CNN/anchors_reporters/executives/teissler.scott.html","/CNN/anchors_reporters/executives/walton.jim.html","/CNN/anchors_reporters/executives/westbrook.chuck.html","/CNN/anchors_reporters/executives/woelfel.scott.html");
+		var NAMEs = new Array("Sid Bedingfield","Sue Bunda","Gordon Castle","Shelby Coffey","Chris Cramer","Karen Curry","Richard Davis","Gail Evans","Bob Furnad","Rena Golden","Tom Johnson","Eason Jordan","Phil Kent","Wonya Lucas","Monty Mullig","Burt Reinhardt","Teya Ryan","Rolando Santos","Vivian Schiller","Scott Teissler","Jim Walton","Chuck Westbrook","Scott Woelfel");
+        var obj  = document.specials10.exec.options;
+        makeSelOpt(obj);
+// -->
+
+</SCRIPT>
+
+<BR><BR></TD></TR></form></TABLE></TD><td rowspan=9 bgcolor="#cccccc"><IMG SRC="/web/20001215043500im_/http://www7.cnn.com/images/1998/05/homepage/white.gif" WIDTH=1 HEIGHT=435 HSPACE=0 VSPACE=0 BORDER=0 ALT=""></td></TR></form></TABLE></td></TD></TR><TR><td valign="bottom" bgcolor="#ffffff" colspan=2><IMG SRC="/web/20001215043500im_/http://www7.cnn.com/CNN/anchors_reporters/images/bottom.gif" WIDTH=154 HEIGHT=14 HSPACE=0 VSPACE=0 BORDER=0 ALT=""></TD></TR></TABLE></TD></TR>	<TR>	<TD width=475 align=right valign=top bgcolor="#333333" colspan=5>	&nbsp;<BR><BR>		<!--[[!~~#include virtual="/CNN/anchors_reporters/includes/search.txt" ~~]]-->		</TD></TR><TR colspan=5><TD bgcolor="000000" colspan=5><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#ffffff"><font face="HELVETICA, ARIAL, sans-serif" size="1">&#169; 2000 Cable News Network. All Rights Reserved.</font><br><a href="/web/20001215043500/http://www7.cnn.com/interactive_legal.html"><font face="HELVETICA, ARIAL, sans-serif" size="1" color="#FF0000">Terms</font></a> <font face="HELVETICA, ARIAL, sans-serif" size="1">under which this service is provided to you.<br>Read our</font> <A HREF="/web/20001215043500/http://www7.cnn.com/privacy.html"><font face="HELVETICA, ARIAL, sans-serif" size="1" color="#FF0000">privacy guidelines</font></A>.<br></font></TD></TR></table></TD></TR></table><TABLE width=100% CELLPADDING=0 CELLSPACING=0 BORDER=0></table></FORM></TD><!-- ================== /content ================== --><TD WIDTH="1" BGCOLOR="#000000" ROWSPAN="2"><img src="/web/20001215043500im_/http://www7.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 width="1" height="1" HSPACE="0" VSPACE="0"></TD><TD WIDTH="163" ROWSPAN="2" VALIGN="top" BGCOLOR="#FFFFFF"><!-- ================== newsnet ================== --><table border=0 cellspacing=0 cellpadding=0 width=163><tr><td width=163 bgcolor="#FFFFFF"><table width=163 bgcolor="#FFFFFF" align="top" cellspacing=0 cellpadding=0 border=0>
+<tr><form><td bgcolor="#666666">
+<img src="/web/20001215043500im_/http://www7.cnn.com/images/hub2000/CNN.com.news.net2.gif" hspace=0 vspace=0 width=159 align="bottom" border=0 height=24 alt=""><br>
+<!-- ||||| CNN Sites ||||| -->
+<!--class="FormLt1"-->
+&nbsp;<SELECT valign="middle" onChange="location=this.options[this.selectedIndex].value;">
+<OPTION>CNN Sites</OPTION>
+<OPTION value="http://cnn.com">CNN</OPTION>
+<OPTION value="http://europe.cnn.com">CNN Europe</OPTION>
+<OPTION value="http://cnnfn.com">CNNfn</OPTION>
+<OPTION value="http://cnnsi.com">CNNSI</OPTION>
+<OPTION value="http://mycnn.com">myCNN</OPTION>
+<OPTION value="http://cnnfyi.com">CNNfyi</OPTION>
+<OPTION value="http://cnn.com/allpolitics">AllPolitics</OPTION>
+<OPTION value="http://cnn.com/INDEX/languages/">Languages</OPTION>
+</SELECT>
+<!-- ||||| CNN Sites ||||| -->
+<!--<span class="NNTxt">
+<br><br>
+</span>-->
+</td></form></tr><tr>
+<FORM action="/web/20001215043500/http://search.cnn.com/query.html" method="get" name="seek_nn" onsubmit="return validate(this);"><td bgcolor="#666666">
+<!-- ||||| CNN Search ||||| -->
+<!-- class="FormLt1" -->
+<SPAN class="FSnBSmLt"><br>&nbsp;&nbsp;Search<br></SPAN>
+&nbsp;<SELECT align="middle" name=sites>
+<OPTION value="CNN">CNN.com</OPTION>
+<OPTION value="CNNSI">CNNSI.com</OPTION>
+<OPTION value="CNNfn">CNNfn.com</OPTION>
+<!-- <OPTION value="TIME">TIME.com</OPTION> -->
+<OPTION value="Internet">The Web</OPTION>
+</SELECT><BR>
+<!-- class="FormLt1" -->
+&nbsp;<INPUT type="text" size="8" name=qt><SPAN class="FSnBSmLt"><BR><br></span>
+<!-- class="FormLt1" -->
+&nbsp;<INPUT type="submit" value="Find"><BR>
+<INPUT name=qc type=hidden  value="">
+<INPUT name=col type=hidden value=cnni>
+<INPUT name=qm type=hidden value=0>
+<INPUT name=st type=hidden value=1>
+<INPUT name=nh type=hidden value=10>
+<INPUT name=lk type=hidden value=1>
+<INPUT name=rf type=hidden value=1>
+<INPUT type=hidden name=look value="">
+<INPUT type=hidden name=key  value="">
+<INPUT type="hidden" name="search" value="0">
+<INPUT TYPE="HIDDEN" NAME="venue" VALUE="all">
+<INPUT TYPE="HIDDEN" NAME="keyword"  value="">
+<input type=hidden name=qp  value="">
+<input type=hidden name=comefrom value="izcb-search"><input type=hidden name=isp value=zcb>
+<!-- ||||| CNN Search ||||| -->
+</td></form>
+</tr>
+<tr>
+<td>
+<img src="/web/20001215043500im_/http://www7.cnn.com/images/hub2000/divider2.gif" hspace=0 vspace=0 align="top" width="163" height="11" border=0>
+<table border=0 width="155" cellspacing=0 cellpadding=0><TR><TD><table border=0 width="100%" cellspacing=0 cellpadding=0><TR><TD width="2"><img src="/web/20001215043500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" hspace=0 vspace=0 width="1" height="1" align=top border=0></td><td>
+<span CLASS="NNTxt">
+<b><a href="/web/20001215043500/http://www7.cnn.com/US/index.html" class="NNSection">U.S.</a></b><BR>TOP STORIES<br><br>
+<a href="/web/20001215043500/http://www7.cnn.com/2000/ALLPOLITICS/stories/12/14/next.president/index.html">Bush-Cheney transition team officially under way</a><BR><BR>
+<a href="/web/20001215043500/http://www7.cnn.com/2000/US/12/14/terrorism.report.02/index.html">Cash offered, new strategy pushed in U.S. fight to foil terrorism</a><BR><BR>
+<a href="/web/20001215043500/http://www7.cnn.com/cnnfn/2000/12/14/markets/tech_outlook/">Tech stocks poised for drop</a><BR><BR>
+<a href="/web/20001215043500/http://www7.cnn.com/2000/US/12/14/osprey.crash/index.html">Mechanical problem suspected in Osprey crash</a><BR><BR>
+<a href="/web/20001215043500/http://www7.cnn.com/2000/US/12/14/airbag.tests/index.html">Tests show head impact air bags can save lives</a><BR><BR>
+<a href="/web/20001215043500/http://www7.cnn.com/2000/US/12/14/cole.commander/index.html">Pentagon sources dispute report of no discipline for USS Cole commander</a><BR><BR>
+<span class="NNMore">(<a href="/web/20001215043500/http://www7.cnn.com/US/index.html">MORE</A>)</span>
+</span>
+</td></tr></table>
+</td></tr>
+<tr><td><img src="/web/20001215043500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=1 hspace=1 border=0 width=1 height=1></td></tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/web/20001215043500/http://www7.cnn.com/"><img src="/web/20001215043500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/cnn.com.logo.gif" hspace=0 vspace=0 width=163 height="23" align=top border=0><br></a><table border=0 width="155" cellspacing=0 cellpadding=2><TR><TD><table border=0 width="100%" cellspacing=0 cellpadding=0><TR><TD width="2"><img src="/web/20001215043500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" hspace=0 vspace=0 width="1" height="1" align=top border=0></td><td>
+<span CLASS="NNTxt">
+TOP STORIES<br><br>
+<a href="/web/20001215043500/http://www7.cnn.com/2000/ALLPOLITICS/stories/12/14/next.president/index.html">Attention turns to Bush Cabinet</a><BR><BR>
+<a href="/web/20001215043500/http://www7.cnn.com/2000/WORLD/meast/12/14/mideast.04/index.html">Arafat, Israelis meet in Gaza</a><BR><BR>
+<a href="/web/20001215043500/http://www7.cnn.com/2000/TECH/space/12/14/mars.life/index.html">New report offers compelling evidence of Mars life</a><BR><BR>
+<a href="/web/20001215043500/http://www7.cnn.com/cnnfn/2000/12/14/markets/tech_outlook/">Microsoft warning has tech stocks poised for drop</a><BR><BR>
+<span class="NNMore">(<a href="/web/20001215043500/http://www7.cnn.com/">MORE</A>)</span>
+</span>
+</td></tr></table>
+</td></tr></table>
+</td>
+</tr>
+</table>
+</td></tr><tr><td bgcolor="#FFFFFF"><a href="/web/20001215043500/http://www7.cnn.com/cnnfn/"><img src="/web/20001215043500im_/http://www7.cnn.com/images/hub2000/fn.logo.gif" hspace=0 border=0 vspace=0 align="top" width=163 height=23 alt=""></a> 	
+<table border=0 width="155" cellspacing=0 cellpadding=3><TR><TD>
+<div class="NNTxt" style="">
+<a href="/web/20001215043500/http://www7.cnn.com/cnnfn/" style="color:#000000">BUSINESS</a><BR>
+<BR>
+<div style="width:155" CLASS="NNTxt">
+<a href="/web/20001215043500/http://www7.cnn.com/cnnfn/2000/12/14/markets/tech_outlook/">Tech stocks poised for drop</a><br><br><a href="/web/20001215043500/http://www7.cnn.com/cnnfn/2000/12/14/technology/microsoft/">Microsoft will miss estimates</a><br><br><a href="/web/20001215043500/http://www7.cnn.com/cnnfn/2000/12/14/deals/aoltimewarner/">AOL, Time Warner deal OK'd</a><br><br>
+</div>
+<span class="NNMore"><a href="/web/20001215043500/http://www7.cnn.com/cnnfn/">(MORE)</a>
+<BR><BR></span>
+</div>
+<table border=0 cellpadding=0 cellspacing=0 bgcolor=#EEEEEE width=155 align=center><tr><TD colspan=2><div class="FSnPSmDk">MARKETS</div></td><td colspan=2 align="right"><div class="FSnPSmDk">
+4:31pm ET, 12/14</div></td></tr><tr><TD width=15><div class="FSnPSmDk"><a href="/web/20001215043500/http://www7.cnn.com/cnnfn/markets/dow.html">DJIA</a></div></td><td width=10><img src="/web/20001215043500im_/http://www7.cnn.com/images/1999/09/down.gif" width="7" height="7" vspace=0 hspace=0 align=middle></td><td align=left width=20><div class="FSnPSmDk">119.50</div></td><td align="right" width="110"><div class="FSnPSmDk">10674.90</div></td></tr>
+<tr><TD width=15><div class="FSnPSmDk"><a href="/web/20001215043500/http://www7.cnn.com/cnnfn/markets/nasdaq.html">NAS</a></div></td><td width=10><img src="/web/20001215043500im_/http://www7.cnn.com/images/1999/09/down.gif" width="7" height="7" vspace=0 hspace=0 align=middle></td><td align=left width=20><div class="FSnPSmDk">94.26</div></td><td align="right" width="110"><div class="FSnPSmDk">2728.51</div></td></tr>
+<tr><TD width=15><div class="FSnPSmDk"><a href="/web/20001215043500/http://www7.cnn.com/cnnfn/markets/sandp.html">S&P</a></div></td><td width=10><img src="/web/20001215043500im_/http://www7.cnn.com/images/1999/09/down.gif" width="7" height="7" vspace=0 hspace=0 align=middle></td><td align=left width=20><div class="FSnPSmDk">19.06</div></td><td align="right" width="110"><div class="FSnPSmDk">1340.93</div></td></tr>
+</table>
+
+
+
+<form action="/web/20001215043500/http://gw.cnnfn.com/search/GW" method="post"><input type="text" name="symbol" maxlength=38 size=5>&nbsp;<input type="hidden" name="search_button" value="quote"><input type="image" name="submit" src="/web/20001215043500im_/http://www7.cnn.com/images/hub2000/get.quote.gif" align="top" alt="get quote" width="35" height="21" hspace="0" vspace="0" border="0" border="0"></form>
+
+</td>
+</tr>
+</table>
+<a href="/web/20001215043500/http://www7.cnn.com/cnnsi"><img src="/web/20001215043500im_/http://www7.cnn.com/images/hub2000/si.logo.gif" border=0 vspace=0 hspace=0 align=top width=163 height=23 alt=""></a>
+<table border=0 width="100%" cellspacing=0 cellpadding=2><TR><TD>
+<span class="NNTxt">
+<a href="/web/20001215043500/http://www7.cnn.com/cnnsi" style="color:#000000">SPORTS</a><BR><br>
+<div style="width:155" CLASS="NNTxt">
+<a href="/web/20001215043500/http://www7.cnn.com/cnnsi/football/college/2000/bowls/news/2000/12/13/bowl_grid">Get into college football&#039;s postseason with Bowl Previews</a><BR><BR>
+<a href="/web/20001215043500/http://www7.cnn.com/cnnsi/hockey/nhl/news/2000/12/14/ducks_hartsburg_ap">Mighty Ducks fire coach Craig Hartsburg</a><BR><BR>
+<a href="/web/20001215043500/http://www7.cnn.com/cnnsi/football/nfl/news/2000/12/14/pro_bowl_ap">Titans, Bucs send eight each to Pro Bowl</a><BR><BR>
+
+</div>
+<span class="NNMore"><a href="/web/20001215043500/http://www7.cnn.com/cnnsi/">(MORE)</a><BR><BR></span>
+			<img src="/web/20001215043500im_/http://www7.cnn.com/images/icons/arrow.gif">&nbsp;<a href="/web/20001215043500/http://www7.cnn.com/cnnsi/scoreboards/">All Scoreboards</a></span>
+			</td>
+</tr>
+</table><FORM METHOD=GET ACTION="/web/20001215043500/http://weather.cnnaudience.com/cgi-bin/weather/redirect">
+<table width="163" border="0" cellspacing="0" cellpadding="0" align="top"><tr><td colspan=3><img src="/web/20001215043500im_/http://www7.cnn.com/images/hub2000/divider1.gif" hspace="0" width="163" vspace="0" border="0" height="11"></td></tr><tr><td width="1"><img src="/web/20001215043500im_/http://www7.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td><td><table cellspacing=0 cellpadding=2 border=0 width="100%"><TR><TD>
+<span class="NNTxt"><a href="/web/20001215043500/http://www7.cnn.com/WEATHER" style="color:#000000">WEATHER</a><br><br></span>
+<span CLASS="NNTxt">Enter your U.S. Zip:<BR></span><input type="text" size=5 name="zip"><input type="submit" value="go"><span CLASS="NNTxt"><br><a href="/web/20001215043500/http://www7.cnn.com/WEATHER/browse.html">Click here for U.S. States or world cities</a></span></td></tr></table></td><td width="1"><img src="/web/20001215043500im_/http://www7.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td></tr>
+</form></TABLE>
+</td></tr><tr><td bgcolor="#FFFFFF"><br><hr noshade size=1 width="163"><span class="NNMore"><img src="/web/20001215043500im_/http://www7.cnn.com/images/icons/popup.gif" width="10" height="10" hspace=5 vspace=0> (<a href="javascript:openWindow('/desktop/frameset.exclude.html','desktopnews','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=260,height=380')">MORE HEADLINES</a>)</span><!--include virtual="/editionvirtual/2000/headlines/US/minuslatestheadlines.txt"--></td></tr></table><!-- ================== /newsnet ================== --></TD><TD WIDTH="1" BGCOLOR="#666666" ROWSPAN="2"><img src="/web/20001215043500im_/http://www7.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 width="1" height="1" HSPACE="0" VSPACE="0"></TD></TR></TABLE></BODY></HTML>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 4:35:00 Dec 15, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 10:44:40 Jan 4, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

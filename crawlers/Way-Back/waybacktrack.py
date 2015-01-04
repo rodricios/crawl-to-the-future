@@ -101,6 +101,8 @@ def archive_domain(domain, year, dir_path=DATASET_DIR,
 
     for snapshot in domain_snapshots[:span]:
         forward_links.extend(get_forwardlink_snapshots(snapshot))
+        if debug:
+            print "snapshot url: ", snapshot
 
     # archive forward links
     archived_links = []

@@ -1,0 +1,1404 @@
+<HTML>
+<HEAD>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app11.us.archive.org";archive_analytics.values.server_ms=436;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<TITLE>CNN.com - Entertainment Main Page</TITLE>
+
+	<!--CSSDATA:976917204-->
+	<SCRIPT src="/web/20001216174400js_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/virtual/2000/code/main.js" language="javascript"></SCRIPT>
+	<LINK rel="stylesheet" href="/web/20001216174400cs_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/virtual/2000/style/main.css" type="text/css">
+	<SCRIPT language="javascript" type="text/javascript">
+		<!--//
+		if ((navigator.platform=='MacPPC')&&(navigator.appVersion.substr(17,8) != "MSIE 5.0")) {document.write('<LINK rel="stylesheet" href="/virtual/2000/style/mainMac.css" type="text/css">')}
+		if (screen.width > 1200)	{document.write('<LINK rel="stylesheet" href="/virtual/2000/style/mainX.css" type="text/css">')}		
+		//-->
+	</SCRIPT>
+	<LINK rel="stylesheet" href="/web/20001216174400cs_/http://www7.cnn.com/virtual/2000/style/entertainment.css" type="text/css">
+	<!--/CSSDATA-->
+
+<SCRIPT langauge="javascript">
+function makeSelOpt (obj) {
+	if (obj.length > 1) {
+		var last = 2;
+ 		if (document.all){
+ 			var last = obj.length;
+ 			for (var count = 2; count < last; count++) {
+ 			obj.remove(2)
+ 			}	
+ 		}
+	} else {
+		var last = obj.length;
+	}
+	for (var count = 0; count < URLs.length; count++) {
+		if (navigator.appName == "Netscape") {
+			obj[last + count] = new Option(NAMEs[count],URLs[count],false);
+		} else {
+			var newElem 	= document.createElement("OPTION");
+			newElem.text 	= NAMEs[count];
+			if (URLs[count] != "") {
+				newElem.value = URLs[count];
+				if (navigator.platform != "MacPPC") {newElem.style.backgroundColor = "#ffffff";}
+			} else if (navigator.platform != "MacPPC") {
+				 newElem.style.backgroundColor = "#dddddd";
+			}
+			obj.add(newElem);
+		}
+	}
+return;
+}
+</SCRIPT>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www7.cnn.com/SHOWBIZ/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "16";
+var displayMonth = "Dec";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www7.cnn.com/SHOWBIZ/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20001216174400" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20001109181900/http://cnn.com/SHOWBIZ/" title="9 Nov 2000">NOV</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 17:44:00 Dec 16, 2000">DEC</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20010124153500/http://www.cnn.com/SHOWBIZ/" title="24 Jan 2001"><strong>JAN</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20001121133200/http://www3.cnn.com/SHOWBIZ" title="13:32:00 Nov 21, 2000"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 17:44:00 Dec 16, 2000">16</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20010124153500/http://www.cnn.com/SHOWBIZ/" title="15:35:00 Jan 24, 2001"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/19990222094928/http://cnn.com/SHOWBIZ/" title="22 Feb 1999"><strong>1999</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 17:44:00 Dec 16, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20011216192551/http://www1.cnn.com/SHOWBIZ/" title="16 Dec 2001"><strong>2001</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20001216174400*/http://www7.cnn.com/SHOWBIZ/" title="See a list of every capture for this URL">10,206 captures</a>
+           <div class="r" title="Timespan for captures of this URL">16 Jan 99 - 4 Jan 15</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:530000000000_2000:11:015565051351_2001:-1:10116732dde9_2002:-1:120102026774_2003:-1:030206321223_2004:-1:121318999899_2005:-1:a99a9a9a8898_2006:-1:971856376445_2007:-1:064466366757_2008:-1:453545517756_2009:-1:686766575557_2010:-1:666887887785_2011:-1:6676659aabbb_2012:-1:bbbabbbccbbb_2013:-1:bcccccccbacc_2014:-1:cbccccbbefee_2015:-1:900000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<a href="#ContentArea"><img src="/web/20001216174400im_/http://a388.g.akamai.net/7/388/21/fade2068e7503e/www.cnn.com/images/hub2000/1.gif" hspace="0" vspace="0" width="10" height="1" border="0" alt="Skip to main content" align="right"></a>
+
+<A NAME="TOP"></A>
+
+<TABLE WIDTH="770" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD COLSPAN="3" WIDTH="600" VALIGN="top">
+<!-- ================== promo & ad ================== -->
+<table border="0" width="600" cellspacing="0" cellpadding="0"><tr valign="top"><td width="120"><A HREF="/web/20001216174400/http://www7.cnn.com/event.ng/Type=click&amp;RunID=11075&amp;ProfileID=469&amp;AdID=15649&amp;GroupID=335&amp;FamilyID=1217&amp;TagValues=4.8.435.606.644.645.3654&amp;Redirect=http:%2F%2Fwww.cnn.com%2FWEATHER" target="_top"><img src="/web/20001216174400im_/http://a63.g.akamai.net/f/63/1162/1d/images.cnn.com/ads/advertiser/cnn/9910/weather120_rain_cnn.gif" border=0 height=60 width=120 alt=""></a><table width="100%" cellpadding=0 cellspacing=0 border=0><tr><td><font face="verdana,ARIAL,sans-serif" size=1><a href="/web/20001216174400/http://www7.cnn.com/event.ng/Type=click&amp;RunID=11075&amp;ProfileID=469&amp;AdID=15649&amp;GroupID=335&amp;FamilyID=1217&amp;TagValues=4.8.435.606.644.645.3654&amp;Redirect=http:%2F%2Fwww.cnn.com%2FWEATHER" target="_top">Click Here</a></font></td></tr></table></td><td width="12" align=right><a href="/web/20001216174400/http://www7.cnn.com/ads/e.market/"><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/ad.info.gif" width=7 height=60 border=0 alt="ad info"></a></td><td width="468"><A HREF="/web/20001216174400/http://www7.cnn.com/event.ng/Type=click&amp;RunID=31637&amp;ProfileID=49&amp;AdID=23663&amp;GroupID=39&amp;FamilyID=6749&amp;TagValues=4.8.264.435.594.606.3654&amp;Redirect=http:%2F%2Fwww.bissellpets.com" target="_top"><img src="/web/20001216174400im_/http://a16.g.akamai.net/f/16/1162/1d/images.cnn.com/ads/advertiser/bissell/0008/pet_stains_468x60.gif" border=0 height=60 width=468 alt=""></a><table width="100%" cellpadding=0 cellspacing=0 border=0><tr><td align="right"><font face="verdana,ARIAL,sans-serif" size=1><a href="/web/20001216174400/http://www7.cnn.com/event.ng/Type=click&amp;RunID=31637&amp;ProfileID=49&amp;AdID=23663&amp;GroupID=39&amp;FamilyID=6749&amp;TagValues=4.8.264.435.594.606.3654&amp;Redirect=http:%2F%2Fwww.bissellpets.com" target="_top">Click Here</a></font></td></tr></table></td></tr></table>
+<HR NOSHADE WIDTH="600" SIZE="1" ALIGN="LEFT">
+<!-- ================== /promo & ad ================== -->
+</TD>
+<TD WIDTH="5" ROWSPAN="4"><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 width="5" height="1" HSPACE="0" VSPACE="0"></TD>
+<TD WIDTH="165" ROWSPAN="2" COLSPAN="3" VALIGN="top" BGCOLOR="#DDDDDD">
+<!-- ================== organizer ================== -->
+<!--include virtual="/virtual/2000/org/org.txt"-->
+<!-- BEGIN CNN SHOP INCLUDE -->
+
+
+<table width="165" border="0" cellpadding="0" cellspacing="0">
+<tr><td align="center">
+<a href="/web/20001216174400/http://www.cnn.com/event.ng/Type=click&amp;RunID=35886&amp;ProfileID=4195&amp;AdID=28533&amp;GroupID=1024&amp;FamilyID=7268&amp;TagValues=4.8.435.3654.4700.4701&amp;Redirect=http:%2F%2Fwww.cnnestore.com" onClick=window.open('/web/20001216174400/http://www.cnnestore.com/sweepstakes.htm','sweeps','scrollbars=yes,resizable=yes,width=500,height=450')><Img Src="/web/20001216174400im_/http://a9.g.akamai.net/f/9/1162/1h/images.cnn.com/ads/advertiser/cnn.store/0012/cnnbubbles.gif" width="165" height="135" border="0"></a>
+</td>
+</tr>
+</table>
+
+
+<!-- END CNN SHOP INCLUDE  -->
+
+<!-- ================== /organizer ================== -->
+</TD>
+</TR>
+<TR>
+<TD COLSPAN="3" WIDTH="600" VALIGN="bottom">
+<!-- ================== banner ================== -->
+<table width="600" bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" hspace="0" vspace="0"><tr><td width="170" valign=bottom align=left><img src="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/cnn.logo.gif" width=167 height=40 alt="CNN.com" border="0" hspace="0" vspace="0"></td><td width="430" valign=bottom align=right><img src="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/entertainment.banner.gif" width=433 height=40 alt="" border="0" hspace="0" vspace="0" usemap="#banner_nav">
+
+<map name="banner_nav">
+<!-- movies -----------><area shape="rect" coords="313, 3, 340, 30" href="javascript:openWindow('/SHOWBIZ/Movies/headlines/frameset.exclude.html','entertainment','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=260,height=250')">
+<!-- music ------------><area shape="rect" coords="343, 3, 370, 30" href="javascript:openWindow('/SHOWBIZ/Music/headlines/frameset.exclude.html','entertainment','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=260,height=250')">
+<!-- tv ---------------><area shape="rect" coords="373, 3, 400, 30" href="javascript:openWindow('/SHOWBIZ/TV/headlines/frameset.exclude.html','entertainment','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=260,height=250')">
+<!-- performing arts --><area shape="rect" coords="403, 3, 430, 30" href="javascript:openWindow('/SHOWBIZ/Arts/headlines/frameset.exclude.html','entertainment','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=260,height=250')">
+</map>
+
+</td></tr></table>
+<!-- ================== /banner ================== -->
+</TD>
+</TR>
+<TR>
+<FORM><TD WIDTH="125" ALIGN="LEFT" VALIGN="TOP" BGCOLOR="#CCCCFF">
+<!-- ================== CNN Sites ================== -->
+<!-- ||||| CNN Sites ||||| -->
+<FONT face="verdana" size="1">
+<SELECT class="FormLt1" valign="middle" onChange="location=this.options[this.selectedIndex].value;">
+<OPTION>CNN Sites</OPTION>
+<OPTION value="http://cnn.com">CNN</OPTION>
+<OPTION value="http://europe.cnn.com">CNN Europe</OPTION>
+<OPTION value="http://cnnfn.com">CNNfn</OPTION>
+<OPTION value="http://cnnsi.com">CNNSI</OPTION>
+<OPTION value="http://mycnn.com">myCNN</OPTION>
+<OPTION value="http://cnnfyi.com">Education</OPTION>
+<OPTION value="http://cnn.com/allpolitics">AllPolitics</OPTION>
+<OPTION value="http://cnn.com/INDEX/languages/">Languages</OPTION>
+</SELECT>
+</FONT>
+<!-- ||||| CNN Sites ||||| -->
+<!-- ================== CNN Sites ================== -->
+</TD></FORM>
+<TD WIDTH=15 VALIGN=TOP BGCOLOR="#666699"><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 width="15" height="1" HSPACE="0" VSPACE="0"></TD>
+<TD WIDTH=460 ALIGN=LEFT VALIGN=BOTTOM BGCOLOR="#666699">
+<!-- ================== blue bar ================== -->
+<span class="RfStory"><a href="javascript:launchEditionPopup()" class="RfMain">Editions</a></span><span class="RfStory">&nbsp;|&nbsp;</span><SPAN class="RfStory"><A HREF="/web/20001216174400/http://my.cnn.com/" CLASS="RfStory">myCNN</A>&nbsp;|&nbsp;<A HREF="/web/20001216174400/http://www7.cnn.com/videoselect/" CLASS="RfStory">Video</A>&nbsp;|&nbsp;<A href="/web/20001216174400/http://www7.cnn.com/audioselect/" class="RfStory">Audio</A>&nbsp;|&nbsp;<A href="/web/20001216174400/http://headlinenews.cnn.com/" class="RfStory">Headline News Brief</A>&nbsp;|&nbsp;<A href="/web/20001216174400/http://email.cnn.com/member/login.page" CLASS="RfStory">Free E-mail</A>&nbsp;|&nbsp;<A href="/web/20001216174400/http://www7.cnn.com/feedback/" class="RfStory">Feedback</A></SPAN>
+<!-- ================== /blue bar ================== -->
+</TD>
+<TD WIDTH="1" BGCOLOR="#666666" ROWSPAN="2"><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 width="1" height="1" HSPACE="0" VSPACE="0"></TD>
+<TD WIDTH="163" ROWSPAN="2" VALIGN="top" BGCOLOR="#FFFFFF">
+<!-- ================== newsnet ================== -->
+<table border=0 cellspacing=0 cellpadding=0 width=163><tr><td width=163 bgcolor="#FFFFFF"><table width=163 bgcolor="#FFFFFF" align="top" cellspacing=0 cellpadding=0 border=0>
+<tr><form><td bgcolor="#666666">
+<img src="/web/20001216174400im_/http://www7.cnn.com/images/hub2000/CNN.com.news.net2.gif" hspace=0 vspace=0 width=159 align="bottom" border=0 height=24 alt=""><br>
+<!-- ||||| CNN Sites ||||| -->
+<!--class="FormLt1"-->
+&nbsp;<SELECT valign="middle" onChange="location=this.options[this.selectedIndex].value;">
+<OPTION>CNN Sites</OPTION>
+<OPTION value="http://cnn.com">CNN</OPTION>
+<OPTION value="http://europe.cnn.com">CNN Europe</OPTION>
+<OPTION value="http://cnnfn.com">CNNfn</OPTION>
+<OPTION value="http://cnnsi.com">CNNSI</OPTION>
+<OPTION value="http://mycnn.com">myCNN</OPTION>
+<OPTION value="http://cnnfyi.com">CNNfyi</OPTION>
+<OPTION value="http://cnn.com/allpolitics">AllPolitics</OPTION>
+<OPTION value="http://cnn.com/INDEX/languages/">Languages</OPTION>
+</SELECT>
+<!-- ||||| CNN Sites ||||| -->
+<!--<span class="NNTxt">
+<br><br>
+</span>-->
+</td></form></tr><tr>
+<FORM action="/web/20001216174400/http://search.cnn.com/query.html" method="get" name="seek_nn" onsubmit="return validate(this);"><td bgcolor="#666666">
+<!-- ||||| CNN Search ||||| -->
+<!-- class="FormLt1" -->
+<SPAN class="FSnBSmLt"><br>&nbsp;&nbsp;Search<br></SPAN>
+&nbsp;<SELECT align="middle" name=sites>
+<OPTION value="CNN">CNN.com</OPTION>
+<OPTION value="CNNSI">CNNSI.com</OPTION>
+<OPTION value="CNNfn">CNNfn.com</OPTION>
+<!-- <OPTION value="TIME">TIME.com</OPTION> -->
+<OPTION value="Internet">The Web</OPTION>
+</SELECT><BR>
+<!-- class="FormLt1" -->
+&nbsp;<INPUT type="text" size="8" name=qt><SPAN class="FSnBSmLt"><BR><br></span>
+<!-- class="FormLt1" -->
+&nbsp;<INPUT type="submit" value="Find"><BR>
+<INPUT name=qc type=hidden  value="">
+<INPUT name=col type=hidden value=cnni>
+<INPUT name=qm type=hidden value=0>
+<INPUT name=st type=hidden value=1>
+<INPUT name=nh type=hidden value=10>
+<INPUT name=lk type=hidden value=1>
+<INPUT name=rf type=hidden value=1>
+<INPUT type=hidden name=look value="">
+<INPUT type=hidden name=key  value="">
+<INPUT type="hidden" name="search" value="0">
+<INPUT TYPE="HIDDEN" NAME="venue" VALUE="all">
+<INPUT TYPE="HIDDEN" NAME="keyword"  value="">
+<input type=hidden name=qp  value="">
+<input type=hidden name=comefrom value="izcb-search"><input type=hidden name=isp value=zcb>
+<!-- ||||| CNN Search ||||| -->
+</td></form>
+</tr>
+<tr>
+<td>
+<a href="/web/20001216174400/http://www7.cnn.com/"><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/cnn.com.logo.w.gray.top.gif" hspace=0 vspace=0 width=163 align="top" border=0 height=23 alt=""><br></a><table border=0 width="155" cellspacing=0 cellpadding=2><TR><TD><table border=0 width="100%" cellspacing=0 cellpadding=0><TR><TD width="2"><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" hspace=0 vspace=0 width="1" height="1" align=top border=0></td><td>
+<span CLASS="NNTxt">
+TOP STORIES<br><br>
+<a href="/web/20001216174400/http://www7.cnn.com/2000/ALLPOLITICS/stories/12/15/transition.wrap/index.html">Building the Bush Cabinet</a><BR><BR>
+<a href="/web/20001216174400/http://www7.cnn.com/2000/WORLD/meast/12/16/mideast.01/index.html">Palestinians bury dead while diplomats look for peace</a><BR><BR>
+<a href="/web/20001216174400/http://www7.cnn.com/2000/US/12/15/cole.suspect/index.html">Key Cole suspects fled to Afghanistan, officials say</a><BR><BR>
+<a href="/web/20001216174400/http://www7.cnn.com/2000/WEATHER/12/16/winter.storm.02/index.html">Snow, storms make for freezing weekend in Midwestern U.S.</a><BR><BR>
+<span class="NNMore">(<a href="/web/20001216174400/http://www7.cnn.com/">MORE</A>)</span>
+</span>
+</td></tr></table>
+</td></tr></table>
+</td>
+</tr>
+</table>
+</td></tr><tr><td bgcolor="#FFFFFF"><a href="/web/20001216174400/http://www7.cnn.com/cnnfn/"><img src="/web/20001216174400im_/http://www7.cnn.com/images/hub2000/fn.logo.gif" hspace=0 border=0 vspace=0 align="top" width=163 height=23 alt=""></a> 	
+<table border=0 width="155" cellspacing=0 cellpadding=3><TR><TD>
+<div class="NNTxt" style="">
+<a href="/web/20001216174400/http://www7.cnn.com/cnnfn/" style="color:#000000">BUSINESS</a><BR>
+<BR>
+<div style="width:155" CLASS="NNTxt">
+<a href="/web/20001216174400/http://www7.cnn.com/cnnfn/2000/12/16/deals/sat_ipo/">CSFB-banker on most IPOs</a><br><br><a href="/web/20001216174400/http://www7.cnn.com/cnnfn/2000/12/15/companies/autos/">Autos in hard landing?</a><br><br><a href="/web/20001216174400/http://www7.cnn.com/cnnfn/2000/12/15/mutualfunds/q_funds_sectors/">Friend-in-Bush sectors?</a><br><br>
+</div>
+<span class="NNMore"><a href="/web/20001216174400/http://www7.cnn.com/cnnfn/">(MORE)</a>
+<BR><BR></span>
+</div>
+<table border=0 cellpadding=0 cellspacing=0 bgcolor=#EEEEEE width=155 align=center><tr><TD colspan=2><div class="FSnPSmDk">MARKETS</div></td><td colspan=2 align="right"><div class="FSnPSmDk">
+4:32pm ET, 12/15</div></td></tr><tr><TD width=15><div class="FSnPSmDk"><a href="/web/20001216174400/http://www7.cnn.com/cnnfn/markets/dow.html">DJIA</a></div></td><td width=10><img src="/web/20001216174400im_/http://www7.cnn.com/images/1999/09/down.gif" width="7" height="7" vspace=0 hspace=0 align=middle></td><td align=left width=20><div class="FSnPSmDk">240.00</div></td><td align="right" width="110"><div class="FSnPSmDk">10434.90</div></td></tr>
+<tr><TD width=15><div class="FSnPSmDk"><a href="/web/20001216174400/http://www7.cnn.com/cnnfn/markets/nasdaq.html">NAS</a></div></td><td width=10><img src="/web/20001216174400im_/http://www7.cnn.com/images/1999/09/down.gif" width="7" height="7" vspace=0 hspace=0 align=middle></td><td align=left width=20><div class="FSnPSmDk">75.19</div></td><td align="right" width="110"><div class="FSnPSmDk">2653.32</div></td></tr>
+<tr><TD width=15><div class="FSnPSmDk"><a href="/web/20001216174400/http://www7.cnn.com/cnnfn/markets/sandp.html">S&P</a></div></td><td width=10><img src="/web/20001216174400im_/http://www7.cnn.com/images/1999/09/down.gif" width="7" height="7" vspace=0 hspace=0 align=middle></td><td align=left width=20><div class="FSnPSmDk">28.78</div></td><td align="right" width="110"><div class="FSnPSmDk">1312.15</div></td></tr>
+</table>
+
+
+
+<form action="/web/20001216174400/http://gw.cnnfn.com/search/GW" method="post"><input type="text" name="symbol" maxlength=38 size=5>&nbsp;<input type="hidden" name="search_button" value="quote"><input type="image" name="submit" src="/web/20001216174400im_/http://www7.cnn.com/images/hub2000/get.quote.gif" align="top" alt="get quote" width="35" height="21" hspace="0" vspace="0" border="0" border="0"></form>
+
+</td>
+</tr>
+</table>
+<a href="/web/20001216174400/http://www7.cnn.com/cnnsi"><img src="/web/20001216174400im_/http://www7.cnn.com/images/hub2000/si.logo.gif" border=0 vspace=0 hspace=0 align=top width=163 height=23 alt=""></a>
+<table border=0 width="100%" cellspacing=0 cellpadding=2><TR><TD>
+<span class="NNTxt">
+<a href="/web/20001216174400/http://www7.cnn.com/cnnsi" style="color:#000000">SPORTS</a><BR><br>
+<div style="width:155" CLASS="NNTxt">
+<a href="/web/20001216174400/http://www7.cnn.com/cnnsi/thenetwork/news/2000/12/14/page_one_three_rivers">Steelers, Redskins set for key showdown in Three Rivers finale</a><BR><BR>
+<a href="/web/20001216174400/http://www7.cnn.com/cnnsi/football/nfl/news/2000/12/15/broncos_davis_ap">Broncos&#039; Davis could be done for season</a><BR><BR>
+<a href="/web/20001216174400/http://www7.cnn.com/cnnsi/basketball/nba/news/2000/12/15/mavs_sixers_ap">Mavs welcome Nellie back by slamming Sixers </a><BR><BR>
+
+</div>
+<span class="NNMore"><a href="/web/20001216174400/http://www7.cnn.com/cnnsi/">(MORE)</a><BR><BR></span>
+			<img src="/web/20001216174400im_/http://www7.cnn.com/images/icons/arrow.gif">&nbsp;<a href="/web/20001216174400/http://www7.cnn.com/cnnsi/scoreboards/">All Scoreboards</a></span>
+			</td>
+</tr>
+</table><FORM METHOD=GET ACTION="/web/20001216174400/http://weather.cnnaudience.com/cgi-bin/weather/redirect">
+<table width="163" border="0" cellspacing="0" cellpadding="0" align="top"><tr><td colspan=3><img src="/web/20001216174400im_/http://www7.cnn.com/images/hub2000/divider1.gif" hspace="0" width="163" vspace="0" border="0" height="11"></td></tr><tr><td width="1"><img src="/web/20001216174400im_/http://www7.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td><td><table cellspacing=0 cellpadding=2 border=0 width="100%"><TR><TD>
+<span class="NNTxt"><a href="/web/20001216174400/http://www7.cnn.com/WEATHER" style="color:#000000">WEATHER</a><br><br></span>
+<span CLASS="NNTxt">Enter your U.S. Zip:<BR></span><input type="text" size=5 name="zip"><input type="submit" value="go"><span CLASS="NNTxt"><br><a href="/web/20001216174400/http://www7.cnn.com/WEATHER/browse.html">Click here for U.S. States or world cities</a></span></td></tr></table></td><td width="1"><img src="/web/20001216174400im_/http://www7.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td></tr>
+</form></TABLE>
+</td></tr><tr><td bgcolor="#FFFFFF">
+
+<table border=0 width="100%" cellspacing=0 cellpadding=0>
+<TR><TD colspan=3><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=1 hspace=1 border=0 width=1 height=1></td></tr><TR><TD colspan=3>
+<img src="/web/20001216174400im_/http://www7.cnn.com/images/hub2000/divider1.gif" hspace=0 vspace=0 width="163" height="11" align=top border=0>
+</td></tr>
+
+
+
+
+
+
+<tr><td width="1"><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td><td><table border=0 cellspacing=0 width="100%" cellpadding=2><TR><TD><a href="/web/20001216174400/http://www7.cnn.com/WORLD/" class="NNTxt" style="color:#000000">WORLD</a><BR><br><div style="width:155" class="NNTxt"><a href="/web/20001216174400/http://www7.cnn.com/2000/WORLD/meast/12/16/mideast.01/index.html">Palestinians bury dead while diplomats look for peace</a></div></td></tr></table></td><td width="1"><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td></tr>
+</table>
+
+
+<table border=0 width="100%" cellspacing=0 cellpadding=0>
+<TR><TD colspan=3><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=1 hspace=1 border=0 width=1 height=1></td></tr><TR><TD colspan=3>
+<img src="/web/20001216174400im_/http://www7.cnn.com/images/hub2000/divider1.gif" hspace=0 vspace=0 width="163" height="11" align=top border=0>
+</td></tr>
+
+
+
+
+
+
+<tr><td width="1"><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td><td><table border=0 cellspacing=0 width="100%" cellpadding=2><TR><TD><a href="/web/20001216174400/http://www7.cnn.com/US/" class="NNTxt" style="color:#000000">U.S.</a><BR><br><div style="width:155" class="NNTxt"><a href="/web/20001216174400/http://www7.cnn.com/2000/ALLPOLITICS/stories/12/15/transition.wrap/index.html">Bush to tap Powell for Cabinet post Saturday</a></div></td></tr></table></td><td width="1"><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td></tr>
+</table>
+
+
+
+
+<table border=0 width="100%" cellspacing=0 cellpadding=0>
+<TR><TD colspan=3><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=1 hspace=1 border=0 width=1 height=1></td></tr><TR><TD colspan=3>
+<img src="/web/20001216174400im_/http://www7.cnn.com/images/hub2000/divider1.gif" hspace=0 vspace=0 width="163" height="11" align=top border=0>
+</td></tr>
+
+
+
+
+
+
+<tr><td width="1"><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td><td><table border=0 cellspacing=0 width="100%" cellpadding=2><TR><TD><a href="/web/20001216174400/http://www7.cnn.com/ALLPOLITICS/" class="NNTxt" style="color:#000000">POLITICS</a><BR><br><div style="width:155" class="NNTxt"><a href="/web/20001216174400/http://www7.cnn.com/2000/ALLPOLITICS/stories/12/15/transition.wrap/index.html">Bush to tap Powell for Cabinet post Saturday</a></div></td></tr></table></td><td width="1"><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td></tr>
+</table>
+
+
+<table border=0 width="100%" cellspacing=0 cellpadding=0>
+<TR><TD colspan=3><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=1 hspace=1 border=0 width=1 height=1></td></tr><TR><TD colspan=3>
+<img src="/web/20001216174400im_/http://www7.cnn.com/images/hub2000/divider1.gif" hspace=0 vspace=0 width="163" height="11" align=top border=0>
+</td></tr>
+
+
+
+
+
+
+<tr><td width="1"><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td><td><table border=0 cellspacing=0 width="100%" cellpadding=2><TR><TD><a href="/web/20001216174400/http://www7.cnn.com/LAW/" class="NNTxt" style="color:#000000">LAW</a><BR><br><div style="width:155" class="NNTxt"><a href="/web/20001216174400/http://www7.cnn.com/2000/LAW/12/15/peltier.clemency.crim.02/index.html">FBI agents urge President Clinton not to free American Indian activist</a></div></td></tr></table></td><td width="1"><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td></tr>
+</table>
+
+
+<table border=0 width="100%" cellspacing=0 cellpadding=0>
+<TR><TD colspan=3><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=1 hspace=1 border=0 width=1 height=1></td></tr><TR><TD colspan=3>
+<img src="/web/20001216174400im_/http://www7.cnn.com/images/hub2000/divider1.gif" hspace=0 vspace=0 width="163" height="11" align=top border=0>
+</td></tr>
+
+
+
+
+
+
+<tr><td width="1"><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td><td><table border=0 cellspacing=0 width="100%" cellpadding=2><TR><TD><a href="/web/20001216174400/http://www7.cnn.com/TECH/" class="NNTxt" style="color:#000000">TECHNOLOGY</a><BR><br><div style="width:155" class="NNTxt"><a href="/web/20001216174400/http://www7.cnn.com/2000/TECH/computing/12/15/bush.net.agenda.idg/index.html">Bush expected to have business-friendly Web agenda</a></div></td></tr></table></td><td width="1"><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td></tr>
+</table>
+
+
+<table border=0 width="100%" cellspacing=0 cellpadding=0>
+<TR><TD colspan=3><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=1 hspace=1 border=0 width=1 height=1></td></tr><TR><TD colspan=3>
+<img src="/web/20001216174400im_/http://www7.cnn.com/images/hub2000/divider1.gif" hspace=0 vspace=0 width="163" height="11" align=top border=0>
+</td></tr>
+
+
+
+
+
+
+<tr><td width="1"><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td><td><table border=0 cellspacing=0 width="100%" cellpadding=2><TR><TD><a href="/web/20001216174400/http://www7.cnn.com/HEALTH/" class="NNTxt" style="color:#000000">HEALTH</a><BR><br><div style="width:155" class="NNTxt"><a href="/web/20001216174400/http://www7.cnn.com/2000/HEALTH/12/15/live.long.ap/index.html">Gene mutated in fruit flies doubles life span</a></div></td></tr></table></td><td width="1"><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td></tr>
+</table>
+
+
+<table border=0 width="100%" cellspacing=0 cellpadding=0>
+<TR><TD colspan=3><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=1 hspace=1 border=0 width=1 height=1></td></tr><TR><TD colspan=3>
+<img src="/web/20001216174400im_/http://www7.cnn.com/images/hub2000/divider1.gif" hspace=0 vspace=0 width="163" height="11" align=top border=0>
+</td></tr>
+
+
+
+
+
+
+<tr><td width="1"><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td><td><table border=0 cellspacing=0 width="100%" cellpadding=2><TR><TD><a href="/web/20001216174400/http://www7.cnn.com/TRAVEL/" class="NNTxt" style="color:#000000">TRAVEL</a><BR><br><div style="width:155" class="NNTxt"><a href="/web/20001216174400/http://www7.cnn.com/2000/TRAVEL/NEWS/12/15/airport.museum/index.html">Airport museum gives harried travelers reason to stand by</a></div></td></tr></table></td><td width="1"><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td></tr>
+</table>
+
+
+<table border=0 width="100%" cellspacing=0 cellpadding=0>
+<TR><TD colspan=3><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=1 hspace=1 border=0 width=1 height=1></td></tr><TR><TD colspan=3>
+<img src="/web/20001216174400im_/http://www7.cnn.com/images/hub2000/divider1.gif" hspace=0 vspace=0 width="163" height="11" align=top border=0>
+</td></tr>
+
+
+
+
+
+
+<tr><td width="1"><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td><td><table border=0 cellspacing=0 width="100%" cellpadding=2><TR><TD><a href="/web/20001216174400/http://www7.cnn.com/FOOD/" style="color:#000000" class="NNTxt">FOOD</a><BR><br><div style="width:155" class="NNTxt"><a href="/web/20001216174400/http://www7.cnn.com/2000/FOOD/news/12/16/foodpoisoning.ap/index.html">Maker of dips linked to food poisoning to pay $500,000</a></div></td></tr></table></td><td width="1"><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td></tr>
+</table>
+
+
+<table border=0 width="100%" cellspacing=0 cellpadding=0>
+<TR><TD colspan=3><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=1 hspace=1 border=0 width=1 height=1></td></tr><TR><TD colspan=3>
+<img src="/web/20001216174400im_/http://www7.cnn.com/images/hub2000/divider1.gif" hspace=0 vspace=0 width="163" height="11" align=top border=0>
+</td></tr>
+
+
+
+
+
+
+<tr><td width="1"><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td><td><table border=0 cellspacing=0 width="100%" cellpadding=2><TR><TD><a href="/web/20001216174400/http://www7.cnn.com/STYLE/" class="NNTxt" style="color:#000000">ARTS & STYLE</a><BR><br><div style="width:155" class="NNTxt"><a href="/web/20001216174400/http://www7.cnn.com/2000/STYLE/arts/12/15/museum.gift.shops/index.html">Explore museums for creative, last-minute gifts</a></div></td></tr></table></td><td width="1"><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td></tr>
+</table>
+<br><hr noshade size=1 width="163"><span class="NNMore"><img src="/web/20001216174400im_/http://www7.cnn.com/images/icons/popup.gif" width="10" height="10" hspace=5 vspace=0> (<a href="javascript:openWindow('/desktop/frameset.exclude.html','desktopnews','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=260,height=380')">MORE HEADLINES</a>)</span>
+</td></tr></table>
+<!-- ================== /newsnet ================== -->
+</TD>
+<TD WIDTH="1" BGCOLOR="#666666" ROWSPAN="2"><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 width="1" height="1" HSPACE="0" VSPACE="0"></TD>
+</TR>
+
+<TR VALIGN=TOP>
+<TD WIDTH="125">
+<!-- ================== nav ================== -->
+<table width="125" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td colspan="2" width="125" valign="top" bgcolor="#CCCCFF"><div class="Navthreespaceindent">
+<a href="/web/20001216174400/http://www7.cnn.com/" class="NvSmBDk">MAINPAGE</a><br>
+<a href="/web/20001216174400/http://www7.cnn.com/WORLD/" class="NvSmBDk">WORLD</a><br>		
+<a href="/web/20001216174400/http://www7.cnn.com/US/" class="NvSmBDk">U.S.</a><br>	
+<a href="/web/20001216174400/http://www7.cnn.com/WEATHER/" class="NvSmBDk">WEATHER</a><br>
+<a href="/web/20001216174400/http://www7.cnn.com/cnnfn/" class="NvSmBDk">BUSINESS</a><br>
+<a href="/web/20001216174400/http://www7.cnn.com/cnnsi/" class="NvSmBDk">SPORTS</a><br>
+<a href="/web/20001216174400/http://www7.cnn.com/TECH/" class="NvSmBDk">TECHNOLOGY</a><br>	
+<a href="/web/20001216174400/http://www7.cnn.com/TECH/space/" class="NvSmBDk">SPACE</a><br>
+<a href="/web/20001216174400/http://www7.cnn.com/HEALTH/" class="NvSmBDk">HEALTH</a><br>
+</div></td></tr>
+<tr bgcolor="#CC0000"><td colspan="2"><img src="/web/20001216174400im_/http://a388.g.akamai.net/7/388/21/fade2068e7503e/www.cnn.com/images/hub2000/1.gif" width="1" height="2" border="0" hspace="0" vspace="0"></td></tr>
+<tr bgcolor="#CC0000"> 
+<td width="115"><div class="Threespaceindent"><a href="/web/20001216174400/http://www7.cnn.com/SHOWBIZ/" class="NvSmBLt">ENTERTAINMENT</a></div></td>
+<td width="10"><IMG src="/web/20001216174400im_/http://www7.cnn.com/images/2000/editions/arrow.left.gif" width="9" height="9" alt="*" hspace="0" vspace="0" border="0"></td>
+</tr>
+<tr bgcolor="#CC0000"><td colspan="2"><img src="/web/20001216174400im_/http://a388.g.akamai.net/7/388/21/fade2068e7503e/www.cnn.com/images/hub2000/1.gif" width="1" height="2" border="0" hspace="0" vspace="0"></td></tr>
+<tr><td bgcolor="#FFFFFF"><div class="Threespaceindent">
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/1999/12/movie.bullet.gif" ALT="" WIDTH="9" HEIGHT="9" >&nbsp;<A href="javascript:openWindow('/SHOWBIZ/Movies/headlines/frameset.exclude.html','entertainment','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=260,height=250')" class="NvSmBDk">movies</a><br>
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/1999/12/music.bullet.gif" ALT="" WIDTH="9" HEIGHT="9">&nbsp;<A href="javascript:openWindow('/SHOWBIZ/Music/headlines/frameset.exclude.html','entertainment','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=260,height=250')" class="NvSmBDk">music</a><br>
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/1999/12/tv.bullet.gif" ALT="" WIDTH="9" HEIGHT="9">&nbsp;<A href="javascript:openWindow('/SHOWBIZ/TV/headlines/frameset.exclude.html','entertainment','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=260,height=250')" class="NvSmBDk">tv</a><br>
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/1999/12/perform.arts.bullet.gif" ALT="" WIDTH="9" HEIGHT="9">&nbsp;<A href="javascript:openWindow('/SHOWBIZ/Arts/headlines/frameset.exclude.html','entertainment','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=260,height=250')" class="NvSmBDk">performing arts</a><br>
+</div></td></tr>					
+<tr bgcolor="#FFFFFF"><td colspan="2"><img src="/web/20001216174400im_/http://a388.g.akamai.net/7/388/21/fade2068e7503e/www.cnn.com/images/hub2000/1.gif" width="1" height="2" border="0" hspace="0" vspace="0"></td></tr>
+<tr>
+<td colspan="2" bgcolor="#ccccff" valign="top" width="125"><div class="Navthreespaceindent">
+<a href="/web/20001216174400/http://www7.cnn.com/ALLPOLITICS/" class="NvSmBDk">POLITICS</a><br>						
+<a href="/web/20001216174400/http://www7.cnn.com/LAW/" class="NvSmBDk">LAW</a><br>
+<a href="/web/20001216174400/http://www7.cnn.com/CAREER/" class="NvSmBDk">CAREER</a><br>
+<a href="/web/20001216174400/http://www7.cnn.com/TRAVEL/" class="NvSmBDk">TRAVEL</a><br>
+<a href="/web/20001216174400/http://www7.cnn.com/FOOD/" class="NvSmBDk">FOOD</a><br>
+<a href="/web/20001216174400/http://www7.cnn.com/STYLE/" class="NvSmBDk">ARTS &amp; STYLE</a><br>
+<a href="/web/20001216174400/http://www7.cnn.com/books/" class="NvSmBDk">BOOKS</a><br>
+<a href="/web/20001216174400/http://www7.cnn.com/NATURE/" class="NvSmBDk">NATURE</a><br>
+<a href="/web/20001216174400/http://www7.cnn.com/SPECIALS/" class="NvSmBDk">IN-DEPTH</a><br>
+<a href="/web/20001216174400/http://www7.cnn.com/SPECIALS/views/" class="NvSmBDk">ANALYSIS</a><br>
+<a href="/web/20001216174400/http://www7.cnn.com/LOCAL/" class="NvSmBDk">LOCAL</a><br>			
+<span class="extraspace"><br></span>
+</div></td></tr>
+<tr bgcolor="#666699"><td colspan="2"><div class="Navthreespaceindent"><span class="NvSmBLt">EDITIONS:</span></div></td></tr>
+<tr> 
+<td colspan="2" bgcolor="#CCCCFF">
+<div class="Navthreespaceindent">
+<a href="/web/20001216174400/http://www.cnn.com/selectedition/europe/" class="NvSmPDk">CNN.com Europe</a><br>
+<span class="extraspace"><br></span>
+<a href="javascript:launchEditionPopup()" class="NvSmPDk">change default edition</a><br><br>
+</div>
+</td>
+</tr>
+<tr bgcolor="#666699"><td colspan="2"><div class="Navthreespaceindent"><span class="NvSmBLt">MULTIMEDIA:</span></div></td></tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCFF">
+<div class="Navthreespaceindent">
+<A HREF="/web/20001216174400/http://www7.cnn.com/videoselect/" class="NvSmPDk">video</A><br>
+<A HREF="/web/20001216174400/http://www7.cnn.com/video_vault/" class="NvSmPDk">video archive</A><br>
+<A HREF="/web/20001216174400/http://www7.cnn.com/audioselect/" class="NvSmPDk">audio</A><br>
+<A HREF="/web/20001216174400/http://www7.cnn.com/interactive/" class="NvSmPDk">multimedia showcase</A><br>
+<A href="/web/20001216174400/http://www7.cnn.com/SEARCH/quiz/quiz.html" class="NvSmPDk">news quiz</A><br>
+<A HREF="/web/20001216174400/http://www7.cnn.com/INDEX/services.html" class="NvSmPDk">more services</A><br><br>
+</div>
+</td>
+</tr>
+</table><table border="0" width="125" cellspacing="0" cellpadding="0" bgcolor="#ccccff">
+<SCRIPT>
+function email()
+{
+address=document.emailform.emailinput.value;
+location='/web/20001216174400/http://www.cnn.com/EMAIL/index.html?'+address;
+}
+</SCRIPT>
+<tr bgcolor="#666699"><td><div class="Navthreespaceindent"><span class="NvSmBLt">E-MAIL:</span></div></td></tr>
+<tr> 
+<td><div class="Navthreespaceindent">
+<span class="NvSmPDk">Subscribe to one of our <a href="/web/20001216174400/http://www7.cnn.com/EMAIL/" class="NvSmPDk">news e-mail lists</a>.<br>Enter your address:</span>
+</div></td>
+</tr>
+<tr>
+<td><FORM name="emailform" onsubmit="email();return false;"><input type="text" name="emailinput" size="10" class="FormLt1">&nbsp;<input type="submit" value="go"></form></td>
+</tr>
+<tr bgcolor="#666699"><td width="125"><div class="Navthreespaceindent"><span class="NvSmBLt">DISCUSSION:</span></div></td></tr>
+<tr> 
+<td><div class="Navthreespaceindent">
+<A href="/web/20001216174400/http://community.cnn.com/" class="NvSmPDk">message boards</A><BR>
+<A href="/web/20001216174400/http://www7.cnn.com/chat/" class="NvSmPDk">chat</A><BR>
+<A href="/web/20001216174400/http://www7.cnn.com/feedback/" class="NvSmPDk">feedback</A><BR><BR>
+</div></td>
+</tr>
+<!--- CNN WEB SITES NAV --->
+<tr bgcolor="#666699"><td width="125"><div class="Navthreespaceindent"><span class="NvSmBLt">CNN WEB SITES:</span></div></td></tr>
+<tr><td bgcolor="#ccccff">
+<MAP name="sites">
+<AREA shape="rect" coords="64, 20, 121, 40" href="/web/20001216174400/http://www7.cnn.com/cnnfn/">
+<AREA shape="rect" coords="0, 20, 64, 40" href="/web/20001216174400/http://www7.cnn.com/ALLPOLITICS/">
+<AREA shape="rect" coords="64, 0, 121, 20" href="/web/20001216174400/http://www7.cnn.com/cnnsi/">
+<AREA shape="rect" coords="0, 0, 64, 20" href="/web/20001216174400/http://my.cnn.com/">
+</MAP>
+<IMG src="/web/20001216174400im_/http://a388.g.akamai.net/7/388/21/7223b3eca936a5/www.cnn.com/images/1999/09/cnn.website.gif" alt="CNN Websites" width=121 height=40 border=0 usemap="#sites"><br>
+</td>
+</tr>
+<tr> 
+<td><div class="Navthreespaceindent">
+<A href="/web/20001216174400/http://fyi.cnn.com/fyi/" class="NvSmPDk">CNNfyi.com</A><BR>
+<A href="/web/20001216174400/http://europe.cnn.com/" class="NvSmPDk">CNN.com Europe</A><BR>
+<A href="/web/20001216174400/http://www7.cnn.com/ASIANOW/" class="NvSmPDk">AsiaNow</A><BR>
+<A href="/web/20001216174400/http://www7.cnn.com/cnnes/" class="NvSmPDk">Spanish</A><BR>
+<A href="/web/20001216174400/http://www7.cnn.com/cnnpt/" class="NvSmPDk">Portuguese</A><BR>
+<A href="/web/20001216174400/http://www.cnn.de/" class="NvSmPDk">German</A><BR>
+<A href="/web/20001216174400/http://www.cnnitalia.it/" class="NvSmPDk">Italian</A><BR>
+<A href="/web/20001216174400/http://cnn.passagen.se/" class="NvSmPDk">Swedish</A><BR>
+<A href="/web/20001216174400/http://cnn.vg.no/" class="NvSmPDk">Norwegian</A><BR>
+<A href="/web/20001216174400/http://www.cnn.dk/" class="NvSmPDk">Danish</A><BR>
+<A href="/web/20001216174400/http://cnn.co.jp/" class="NvSmPDk">Japanese</A><BR>
+<A href="/web/20001216174400/http://www7.cnn.com/QUICKNEWS/chinese.html" class="NvSmPDk">Chinese Headlines</A><BR><BR>
+</div></td>
+</tr>
+<!--- /CNN WEB SITES NAV --->
+<!--TIME NAV -->
+<tr bgcolor="#666699"><td width="125"><div class="Navthreespaceindent"><span class="NvSmBLt">TIME INC. SITES:</span></div></td></tr>
+<tr> 
+<td align=center>
+<FORM name="pathfinder">
+<SELECT name="site" size=1 onchange ="goTW()">
+<OPTION value=""> Go To ... </OPTION>
+<OPTION value="http://www.pathfinder.com/time/">Time.com</OPTION>
+<OPTION value="http://www.pathfinder.com/people/">People</OPTION>
+<OPTION value="http://www.money.com/">Money</OPTION>
+<OPTION value="http://www.pathfinder.com/fortune/">Fortune</OPTION>
+<OPTION value="http://cgi.pathfinder.com/ew/">EW</OPTION>
+</SELECT>
+</td></FORM>
+</tr>
+<!--/TME NAV --> 
+<!--ON TV NAV -->
+<tr bgcolor="#666699"><td width="125"><div class="Navthreespaceindent"><span class="NvSmBLt">CNN NETWORKS:</span></div></td></tr>
+<tr><td>
+<map name="networks.map">
+	<area shape="rect" coords="1, 77, 125, 94" href="/web/20001216174400/http://www7.cnn.com/Airport">
+	<area shape="rect" coords="1, 58, 125, 74" href="/web/20001216174400/http://cnnradio.com/">
+	<area shape="rect" coords="1, 39, 125, 55" href="/web/20001216174400/http://headlinenews.cnn.com/">
+	<area shape="rect" coords="1, 20, 125, 36" href="/web/20001216174400/http://www7.cnn.com/CNNI/">
+	<area shape="rect" coords="1, 1, 125, 17" href="/web/20001216174400/http://www7.cnn.com/CNN/Programs/">
+</map>
+<img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/0010/network.airport.gif" width=125 height=95 border=0 alt="Networks image" usemap="#networks.map">
+</td>
+</tr>
+<tr> 
+<td><div class="Navthreespaceindent">
+<A HREF="/web/20001216174400/http://www7.cnn.com/CNN/anchors_reporters/" class="NvSmPDk">CNN anchors</A><BR>
+<A HREF="/web/20001216174400/http://www7.cnn.com/TRANSCRIPTS/" class="NvSmPDk">transcripts</A><BR>
+<A HREF="/web/20001216174400/http://www7.cnn.com/LOCAL/coordinates/" class="NvSmPDk">Turner distribution</A><BR><BR>
+</div></td>
+</tr>
+<!--ON TV NAV -->
+<!-- SITE INFO NAV -->
+<tr bgcolor="#666699"><td width="125"><div class="Navthreespaceindent"><span class="NvSmBLt">SITE INFO:</span></div></td></tr>
+<tr> 
+<td><div class="Navthreespaceindent">
+<A HREF="/web/20001216174400/http://www7.cnn.com/feedback/help/" class="NvSmPDk">help</A><BR>
+<A HREF="/web/20001216174400/http://www7.cnn.com/INDEX/" class="NvSmPDk">contents</A><BR>
+<A HREF="/web/20001216174400/http://www7.cnn.com/SEARCH/" class="NvSmPDk">search</A><BR>
+<A HREF="/web/20001216174400/http://www7.cnn.com/ads/e.market/" class="NvSmPDk">ad info</A><BR>
+<A HREF="/web/20001216174400/http://www7.cnn.com/JOBS/" class="NvSmPDk">jobs</A><BR><BR>
+</div></td>
+</tr>
+<tr bgcolor="#666699"><td width="125"><div class="Navthreespaceindent"><span class="NvSmBLt">WEB SERVICES:</span></div></td></tr>
+</table>
+<BR>
+
+<table width="125" cellspacing="0" cellpadding="5" border="0" bgcolor="#dddddd">
+<tr><td bgcolor="#dddddd" align="center" valign="middle"><A HREF="/web/20001216174400/http://www.cnnestore.com/" class="NvSmBDk" style="color: #000099;">CNN e-store</A></td></tr></table>
+
+<center>
+
+<a href="/web/20001216174400/http://www.cnn.com/event.ng/Type=click&amp;ProfileID=1031&amp;RunID=19077&amp;AdID=28642&amp;GroupID=369&amp;FamilyID=3095&amp;TagValues=4.8.435.1706.2430.3654&amp;Redirect=http:%2F%2Fservice.bfast.com%2Fbfast%2Fclick%3Fbfmid%3D2181%26sourceid%3D11764%26categoryid%3D10off"><img src="/web/20001216174400im_/http://a3.g.akamai.net/f/3/1162/1h/images.cnn.com/ads/advertiser/barnesandnoble/0012/3235_coupon_120x90.gif" WIDTH="120" HEIGHT="90" ALT="" border=0 ></a>
+
+<BR><BR><a href="/web/20001216174400/http://www.cnn.com/event.ng/Type=click&amp;ProfileID=1031&amp;RunID=19077&amp;AdID=28385&amp;GroupID=369&amp;FamilyID=3095&amp;TagValues=4.8.435.1706.2430.3654&amp;Redirect=http:%2F%2Fportal.brodia.com%2Fchase%2Fservice%2Fapp_PromoSignUp.htm%3FrefID%3DA2f1ec774ebfd63d2339e6baa94a5c70b4ab12b72"><img src="/web/20001216174400im_/http://a46.g.akamai.net/f/46/1162/1d/images.cnn.com/ads/advertiser/chase/0012/FIVEDOLLAR120X90.GIF" WIDTH="120" HEIGHT="90" ALT="" border=0 ></a>
+
+</center>
+<!-- ================== /nav ================== -->
+</TD>
+<TD WIDTH=15 VALIGN=TOP><img src="/web/20001216174400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 width="15" height="1" HSPACE="0" VSPACE="0"></TD>
+<TD WIDTH=460 VALIGN=TOP>
+<a name="ContentArea"></a>
+
+<table border=0 width=460 cellpadding=0 cellspacing=0 hspace=0 vspace=0><tr><td width=290 valign=top align=left>
+<!----------------------------------------------------------------------------------------->
+<!------------------------------ Content -------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!-- timestamp -->
+<SPAN class="FSnPSmDk">Updated: <A HREF="/web/20001216174400/http://www7.cnn.com/almanac/daily/" class="FSnPSmDk">
+04:53 p.m. EST (2153 GMT) -- 15 Dec 2000
+</A></SPAN><br><br>
+<!-- /timestamp -->
+
+
+
+
+<a href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Movies/12/15/quills/index.html"><img src="/web/20001216174400im_/http://www7.cnn.com/2000/SHOWBIZ/Movies/12/15/quills/top.jpg" height="170" width="280" border="0" alt="'Quills' scribe channels sadistic Sade"></a><br clear=all>
+<a href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Movies/12/15/quills/index.html" CLASS="H3"><H3>'Quills' scribe channels sadistic Sade</H3></a>
+<P class="VSnP">Doug Wright penned the "Quills" screenplay from his award-winning stage play about the Marquis de Sade. The film stars Geoffrey Rush, Kate Winslet and Michael Caine -- no strangers to Oscar -- and is earning critical raves.</P></font>
+<span class="FSnBSmDk"><a href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Movies/12/15/quills/index.html">FULL STORY</a></span><br>
+
+
+
+
+<HR size=1>
+
+
+
+<a href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Movies/12/15/review.what.women.want/index.html"><img src="/web/20001216174400im_/http://www7.cnn.com/2000/SHOWBIZ/Movies/12/15/review.what.women.want/custom.jpg" height="90" width="120" border="0" alt="Review: 'What Women Want' good for a few giggles" align="left"></a>
+<a href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Movies/12/15/review.what.women.want/index.html"><span class="VSnP" style="font-weight:bold;">Review: 'What Women Want' good for a few giggles</span></B></A><BR>
+<P class="VSnP">
+In "What Women Want," Mel Gibson plays a hotshot advertising executive who, through a freak accident, can suddenly hear women's inner thoughts. Helen Hunt co-stars as his new boss and romantic comedy partner.
+</P>
+<span class="FSnBSmDk"><B><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Movies/12/15/review.what.women.want/index.html">FULL STORY</A></B>
+</span><BR clear=all>
+
+<br clear=all><TABLE border=0 cellpadding=0 cellspacing=0 width="280">
+<TR><TD align=right width="20%" valign="top"><IMG SRC="/web/20001216174400im_/http://www7.cnn.com/images/icons/arrow.gif" ALT="arrow" WIDTH="10" HEIGHT="10" HSPACE="3" VSPACE="0" BORDER="0"></TD><TD><span class="FSnBSmDk"><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Movies/12/13/mel.gibson">Interview: Mel Gibson on performing, parenting and pantyhose</A></span></TD></TR>
+</TABLE>
+<HR size=1>
+
+
+
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/1999/12/show.buzz.gif" ALT="SHOWBUZZ" WIDTH="145" HEIGHT="19">
+<BR clear=all>
+<span class="BlLink">
+
+
+
+<span class="FSnPSmDk">
+<li><A HREF="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/News/12/15/showbuzz/#1">Man convicted of stalking Gwyneth Paltrow</A>
+<li><A HREF="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/News/12/15/showbuzz/#2">Rapper Eminem and wife reconcile</A>
+<li><A HREF="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/News/12/15/showbuzz/#3">Muhammad Ali to make New Year's Eve appearance</A>
+<li><A HREF="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/News/12/15/showbuzz/#4">Streisand, Angelou to receive National Medal of Arts</A>
+
+
+
+
+
+
+</span>
+
+
+
+
+</span>
+
+<BR clear=all>
+<HR size=1>
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/1999/12/more.news.gif" ALT="more news" WIDTH="289" HEIGHT="28" border=0 usemap="#more_news">
+<map name="more_news">
+	<!-- movie --><area shape="rect" coords="0, 15, 62, 28" href="javascript:openWindow('/SHOWBIZ/Movies/headlines/frameset.exclude.html','entertainment','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=260,height=250')" alt="more movie news">
+	<!-- music --><area shape="rect" coords="61, 15, 121, 28" href="javascript:openWindow('/SHOWBIZ/Music/headlines/frameset.exclude.html','entertainment','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=260,height=250')" alt="more music news">
+	<!-- tv --><area shape="rect" coords="120, 15, 165, 28" href="javascript:openWindow('/SHOWBIZ/TV/headlines/frameset.exclude.html','entertainment','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=260,height=250')" alt="more tv news">
+	<!-- performing arts --><area shape="rect" coords="164, 16, 290, 28" href="javascript:openWindow('/SHOWBIZ/Arts/headlines/frameset.exclude.html','entertainment','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=260,height=250')" alt="more performing arts news">
+</map>
+<!-- add an image map here -->
+
+<TABLE border=0 cellpadding=1 cellspacing=2>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/Music.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Music/12/15/review.dyllon/index.html">Country music goes 'Backstreet' with Marshall Dyllon</A></SPAN></TD></TR>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/Movies.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Movies/12/14/spade/index.html">Interview: David Spade enjoys the animated life</A></SPAN></TD></TR>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/Arts.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Arts/12/15/mousetrap.london/index.html">London still caught in Christie's 'Mousetrap'</A></SPAN></TD></TR>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/Music.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Music/12/14/aaron.carter/index.html">Little brother of Backstreet Boy makes big name for himself</A></SPAN></TD></TR>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/TV.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/TV/12/15/nbc.zucker.ap/index.html">'Today' show chief to head NBC entertainment</A></SPAN></TD></TR>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/Music.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Music/12/14/beatles.one.album.reut/index.html">Beatles top Backstreet Boys with '1'</A></SPAN></TD></TR>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/Movies.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Movies/12/14/france.film.reut/index.html">Chabrol's 'Merci Pour le Chocolat' named best French film</A></SPAN></TD></TR>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/TV.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/TV/12/14/military.network/index.html">Military network entertains overseas troops</A></SPAN></TD></TR>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/Arts.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Arts/12/14/rosie.ap/index.html">Rosie O'Donnell puts on the Cat's Hat</A></SPAN></TD></TR>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/Movies.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Movies/12/13/film.awards.reut/index.html">N.Y. film critics name "Traffic" year's best film</A></SPAN></TD></TR>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/Movies.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Movies/12/14/review.emperors.groove/index.html">Review: Have an animated time with 'Emperor's New Groove'</A></SPAN></TD></TR>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/Music.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Music/12/13/wb.lifetime.grammy/index.html">Beach Boys, Bennett, Marley to receive lifetime achievement Grammys</A></SPAN></TD></TR>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/Music.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Music/12/14/madonna/index.html">Madonna to wed in Princess Grace's tiara</A></SPAN></TD></TR>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/Movies.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Movies/12/13/mel.gibson/index.html">Interview: Mel Gibson ponders 'What Women Want'</A></SPAN></TD></TR>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/Showbiz.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/books/news/12/13/jane.eyre.ap/index.html">New musical version of Bronte tale hits Broadway</A></SPAN></TD></TR>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/Music.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Music/12/13/rap.damages.ap/index.html">Death Row Records, Knight to pay $10 million in damages</A></SPAN></TD></TR>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/Movies.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Movies/12/12/chocolat/index.html">Johnny Depp: Living unconventionally is magnifique</A></SPAN></TD></TR>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/Music.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Music/12/12/wb.bollywood/index.html">Celebrating India's cinematic musical sensations</A></SPAN></TD></TR>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/TV.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/TV/12/13/nielsens.ap/index.html">Nielsens: Election continues to drive up ratings for evening news</A></SPAN></TD></TR>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/TV.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/TV/12/12/cnn.program/index.html">CNN experiments with new prime-time lineup</A></SPAN></TD></TR>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/Music.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Music/12/12/wb.williams/index.html">Andy Williams still crooning the hits</A></SPAN></TD></TR>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/Movies.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Movies/12/12/celebrity.property/index.html">An American superstar in London</A></SPAN></TD></TR>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/Music.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Music/12/12/wb.bennett/index.html">Tony Bennett: Timeless and tireless</A></SPAN></TD></TR>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/Movies.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Movies/12/12/home.video.lat/index.html">On video: No riches found in 'El Dorado'</A></SPAN></TD></TR>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/Movies.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Movies/12/11/crouching.tiger/index.html">Lee, Yeoh leap into 'Crouching Tiger, Hidden Dragon'</A></SPAN></TD></TR>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/TV.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/TV/12/12/simpsons.reut/index.html">'Simpsons' Monopoly game passes go</A></SPAN></TD></TR>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/Movies.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Movies/12/12/stone.reut/index.html">Silent film director Stone dead at 98</A></SPAN></TD></TR>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/Movies.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Movies/12/10/box.office.ap/index.html">'Grinch' again grasps top spot at box office</A></SPAN></TD></TR>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/Movies.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Movies/12/11/sundance.lineup.reut/index.html">Indie stars stud Sundance lineup</A></SPAN></TD></TR>
+<TR><TD width="10" valign="top">
+
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/2000/01/bullets/Showbiz.gif" ALT="*" WIDTH="9" HEIGHT="9" BORDER="0">
+
+</TD><TD align="left" valign="top"><SPAN class="BlLink"><A href="/web/20001216174400/http://www7.cnn.com/2000/WORLD/europe/UK/12/11/madonna/index.html">Madonna 'wanted Althorp wedding'</A></SPAN></TD></TR>
+</TABLE>
+
+
+
+<!----------------------------------------------------------------------------------------->
+<!------------------------------ /Content ------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+</td><td width=5 valign=top>&nbsp;</td><td width=165 valign=top align=right>
+<!----------------------------------------------------------------------------------------->
+<!------------------------------- Sidebar ------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<table cellpadding="0" cellspacing="0" border="0" width="165" bgcolor="#666666">
+<tr><td width="165" align=left valign=top>
+
+<table cellpadding="3" width="170" cellspacing="0" border="0" align="left" bgcolor="#ffcc33"><tr><td align=left><A HREF="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Music/12/06/pop.christmas/index.html"><img src="/web/20001216174400im_/http://www7.cnn.com/2000/SHOWBIZ/Music/12/06/pop.christmas/t3.gif" alt="photo" align="right" width="55" height="45" border="0" hspace="5" vspace="0"></A><DIV class="BoxStory"><B>Looking for some holiday music?:</B><A HREF="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Music/12/06/pop.christmas/index.html" TARGET="NEW">Tunes kwazy and quaint, rockin' and religious</a></DIV></td></tr></table>
+
+</td></tr>
+<tr><td width="165" align=left valign=top><img src="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/1999/12/line.gif" width="1" height="1" hspace="0" vspace="0"></td></tr>
+<tr><td width="165" bgcolor="#000000" align=left valign=top>
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/1999/12/top10.gif" alt="top10" width="160" height="132" align="left" hspace="0" vspace="0" border="0" usemap="#top10">
+
+<map name="top10">
+<!-- movie --><area shape="rect" coords="0, 15, 80, 30" href="javascript:openWindow('/SHOWBIZ/Movies/top10/frameset.exclude.html','Entertainment','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=510,height=400')" alt="top ten movies">
+<!-- tv --><area shape="rect" coords="80, 15, 160, 30" href="javascript:openWindow('/SHOWBIZ/TV/top10/frameset.exclude.html','Entertainment','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=510,height=400')" alt="top ten tv">
+<!-- music --><area shape="rect" coords="0, 30, 80, 45" href="javascript:openWindow('/SHOWBIZ/Music/top10/frameset.exclude.html','Entertainment','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=510,height=400')" alt="top ten music">
+<!-- reviews -->	
+	<!-- movie --><area shape="rect" coords="0, 60, 80, 75" href="javascript:openWindow('/SHOWBIZ/Movies/reviews/film/frameset.exclude.html','Entertainment','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=510,height=400')" alt="movie reviews">	
+	<!-- video --><area shape="rect" coords="80, 60, 160, 75" href="javascript:openWindow('/SHOWBIZ/Movies/reviews/video/frameset.exclude.html','Entertainment','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=510,height=400')" alt="video reviews">
+	<!-- music --><area shape="rect" coords="0, 75, 80, 90" href="javascript:openWindow('/SHOWBIZ/Music/reviews/frameset.exclude.html','Entertainment','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=510,height=400')" alt="music reviews">
+	<!-- tv --><area shape="rect" coords="80, 75, 160, 90" href="javascript:openWindow('/SHOWBIZ/TV/reviews/frameset.exclude.html','Entertainment','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=510,height=400')" alt="tv reviews">
+<!-- new releases -->
+	<!-- movie --><area shape="rect" coords="0, 105, 80, 120" href="javascript:openWindow('/SHOWBIZ/Movies/new.releases/film/frameset.exclude.html','Entertainment','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=510,height=400')" alt="movie releases">
+	<!-- video --><area shape="rect" coords="80, 105, 160, 120" href="javascript:openWindow('/SHOWBIZ/Movies/new.releases/video/frameset.exclude.html','Entertainment','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=510,height=400')" alt="top ten tv">
+	<!-- music --><area shape="rect" coords="0, 120, 80, 135" href="javascript:openWindow('/SHOWBIZ/Music/new.releases/frameset.exclude.html','Entertainment','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=510,height=400')" alt="top ten music">
+</map>
+
+<!-- /top 10 -->
+</td></tr>
+<tr><td width="165" align=left valign=top><img src="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/1999/12/line.gif" width="1" height="1" hspace="0" vspace="0"></td></tr>
+<tr><td width="165" align=left valign=top>
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/1999/12/vo.of.the.day.gif" ALT="video of the day" WIDTH="151" HEIGHT="16" ALIGN="top">
+</td></tr><tr><td width="165" align=left valign=top>
+<DIV class="FSnPSmDk">
+<TABLE border=0 cellpadding=3 cellspacing=0 with="160">
+<TR><TD>
+<SPAN class="FSnPSmLt">
+<A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Movies/12/13/sbst.sanaa.lathan/index.html"><FONT face="helvetica,arial,sans-serif" size="1" color="#ffffff"><B>Star of Tomorrow:</b> actress Sanaa Lathan</font></A>
+</SPAN>
+</TD><TD width="65">
+<A href="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Movies/12/13/sbst.sanaa.lathan/index.html"><img src="/web/20001216174400im_/http://www7.cnn.com/2000/SHOWBIZ/Movies/12/13/sbst.sanaa.lathan/t3.gif" alt="video" align="right" width="55" height="45" border=0 hspace="5" vspace=0></A>
+</TD></TR>
+</TABLE>
+
+
+
+</DIV>
+
+</td></tr>
+<tr><td width="165" align=left valign=top><img src="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/1999/12/line.gif" width="1" height="1" hspace="0" vspace="0"></td></tr>
+<tr><td width="165" bgcolor="#99cc33" align=left valign=top>
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/images/icons/arrow.gif" ALT="" WIDTH="10" HEIGHT="10" HSPACE="0" VSPACE="0" BORDER="0">
+<SPAN class="FSnBSmDk"><A href="/web/20001216174400/http://www7.cnn.com/SHOWBIZ/TV/daily.tv.ap">Today's TV Highlights</A></SPAN>
+
+</td></tr>
+<tr><td width="165" align=left valign=top><img src="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/1999/12/line.gif" width="1" height="1" hspace="0" vspace="0"></td></tr>
+<tr><td width="165" bgcolor="#66ccff" align=left valign=top>
+
+<A href="/web/20001216174400/http://www7.cnn.com/WorldBeat"><IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/1999/12/world.beat.gif" ALT="World Beat" WIDTH="111" HEIGHT="16" ALIGN="top" border="0"></A>
+</td></tr><tr><td width="165" bgcolor="#66ccff" align=left valign=top>
+<DIV class="FSnPSmDk">
+<TABLE border=0 cellpadding=3 cellspacing=0 with="160">
+<TR><TD>
+<SPAN class="FSnPSmDk">
+<A HREF="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Music/12/14/wb.christian/"><IMG SRC="/web/20001216174400im_/http://www7.cnn.com/2000/SHOWBIZ/Music/12/14/wb.christian/t3.gif" WIDTH=55 HEIGHT=45 BORDER=0 ALIGN="LEFT" ALT=""></A>
+<A HREF="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Music/12/14/wb.christian/">Christian music moves against current to go mainstream</A>
+<br><br>
+
+<li><a href="/web/20001216174400/http://www7.cnn.com/WorldBeat/news/index.html#story1">Beach Boys, Bennett, Marley to receive lifetime achievement Grammys</a><br>
+
+<li><a href="/web/20001216174400/http://www7.cnn.com/WorldBeat/news/index.html#story2">Simon, Jackson among 2001 Rock Hall inductees</a><br>
+
+
+
+
+<!-- 
+<A HREF="javascript:openWindow('/interactive/entertainment/9908/wb.sked/frameset.exclude.html','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=510,height=300')"><FONT COLOR="#000000">Click here for an on-air schedule in your part of the world.</FONT></A>
+ -->
+<br>
+<center><A HREF="/web/20001216174400/http://www7.cnn.com/WorldBeat/top30/index.html">Global top 30</A></center>
+</P>
+</SPAN>
+</TD></TR></TABLE>
+
+</DIV>
+
+</td></tr>
+<tr><td width="165" align=left valign=top><img src="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/1999/12/line.gif" width="1" height="1" hspace="0" vspace="0"></td></tr>
+<tr><td width="165" bgcolor="#000000" align=left valign=top>
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/1999/12/cnn.on.air.gif" ALT="cnn-air" WIDTH="111" HEIGHT="16" ALIGN="top" border="5">
+</td></tr><tr><td width="165" bgcolor="#000000" align=left valign=top>
+<DIV class="FSnPSmLt">
+<DIV class="FSnPSmLt" style="padding:2px;">
+&nbsp;
+	<!-- on air -->
+Watch <A HREF="/web/20001216174400/http://www7.cnn.com/CNN/Programs/showbiz.today/index.html" style="color:#ffffff;">CNN's Showbiz Today</A> weekdays at 4:30 p.m. ET (replay at 4 a.m. ET)
+
+<P class="FSnPSmLt">
+<!--Monday: <A HREF="/CNN/Programs/showbiz.today/" style="color:#ffffff;"> David Hasselhoff heads to Broadway in 'Jekyll & Hyde'   -->                                                                         
+</a>
+</P>
+
+
+<P class="FSnPSmLt">Larry King Live: The top news, personalities on <a href="/web/20001216174400/http://www7.cnn.com/CNN/Programs/larry.king.live/" style="color:#ffffff;">Larry King Live</a>, at 9 p.m. ET (replay 12 a.m. ET).</P>
+
+
+<!--<P class="FSnPSmLt">Talkback Live: Film Producer Brad Krevoy<a href="/CNN/Programs/crossfire/" style="color:#ffffff;"> 3 pm EDT</a></P>-->
+
+<!--<P class="FSnPSmLt"><a href="/CNN/Programs/larry.king.live/" style="color:#ffffff;">Larry King Live:</a> Veteran Hollywood actress Angie Dickinson in a rare interview
+<a href="/CNN/Programs/larry.king.live/" style="color:#ffffff;">9 p.m. ET (replay 12 a.m. ET)</a></P>-->
+
+</DIV>
+
+
+
+
+
+</DIV>
+
+</td></tr>
+<tr><td width="165" align=left valign=top><img src="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/1999/12/line.gif" width="1" height="1" hspace="0" vspace="0"></td></tr>
+<tr><td width="165" bgcolor="#000000" align=left valign=top>
+
+<A HREF="/web/20001216174400/http://community.cnn.com/"><IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/1999/12/msg.bds.gif" ALT="message boards" WIDTH="152" HEIGHT="26" ALIGN="top" border="0"></A>
+</td></tr><tr><td width="165" bgcolor="#000000" align=left valign=top>
+<DIV class="FSnPSmLt">
+<P class="FSnPSmLt">
+
+
+<A HREF="/web/20001216174400/http://community.cnn.com/cgi-bin/WebX?13@@.eeded81" TARGET="new" style="color:#ffffff">What is the best CD you've gotten in 2000? What albums and boxed sets make the best gifts?</A>
+</P>
+
+<MAP name="mbnav">
+			<AREA shape="rect" coords="0, 0, 81, 14" href="/web/20001216174400/http://community.cnn.com/cgi-bin/WebX?13@@.ee6e2b9" target="new">			
+				<AREA shape="rect" coords="80, 0, 161, 14" href="/web/20001216174400/http://community.cnn.com/cgi-bin/WebX?13@@.ee6e2bb" target="new">		
+			<AREA shape="rect" coords="0, 12, 82, 27" href="/web/20001216174400/http://community.cnn.com/cgi-bin/WebX?13@@.ee6e2b7" target="new">		
+</MAP>
+
+</DIV>
+</td></tr>
+
+
+<tr><td width="165" align=left valign=top><img src="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/1999/12/line.gif" width="1" height="1" hspace="0" vspace="0"></td></tr>
+<tr><td width="165" bgcolor="#000000" align=left valign=top>
+
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/1999/12/quick.vote.gif" ALT="quick vote" WIDTH="108" HEIGHT="16" ALIGN="top"></A>
+</td></tr><tr><td width="165" bgcolor="#000000" align=left valign=top>
+<DIV class="FSnPSmLt">
+<!-- Poll begins --><TABLE CELLPADDING=3><TR><TD><FORM METHOD=POST ACTION="/web/20001216174400/http://poll.cnn.com/poll?1313881" TARGET="popuppoll"><INPUT TYPE=HIDDEN NAME="Poll" VALUE="131388"><!-- Question 1 --><INPUT TYPE=HIDDEN NAME="Question" VALUE="1"><DIV class="FSnPSmLt"><P ALIGN=LEFT class="FSnPSmLt">Which holiday kid flick is the best?</P><INPUT TYPE=RADIO NAME="Answer131390" VALUE=1>'Dr. Seuss' How the Grinch Stole Christmas<BR><INPUT TYPE=RADIO NAME="Answer131390" VALUE=2>102 Dalmations<BR><INPUT TYPE=RADIO NAME="Answer131390" VALUE=3>Rugrats in Paris: The Movie<BR><BR><INPUT TYPE=SUBMIT VALUE="vote" onClick="pollSubPop('','popuppoll','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=510,height=400')"><A  HREF="javascript:pollSubPop('/POLL/results/1313881.html','popuppoll','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=510,height=400')" style="color:#ffffff">View Results</DIV></A><BR><br><li><A HREF="/web/20001216174400/http://www7.cnn.com/2000/SHOWBIZ/Movies/11/27/holiday.movies/index.html" style="color:#ffffff">Holiday film highlights</A></TD></TR></TABLE><DIV class="FSnPSmLt"></DIV><Br></FORM><!-- Poll ends -->
+</DIV>
+<!-- /quick vote -->
+</td></tr>
+<tr><td width="165" align=left valign=top><img src="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/1999/12/line.gif" width="1" height="1" hspace="0" vspace="0"></td></tr>
+<tr><td width="165" bgcolor="#000000" align=left valign=top>
+<!-- Horoscope --->
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/1999/12/horoscope.gif" ALT="horoscope" WIDTH="108" HEIGHT="16" ALIGN="top">
+</td></tr><tr><td width="165" bgcolor="#000000" align=left valign=top>
+<TABLE broder=0 cellpadding=0 cellspacing=0 width="160"><TR><TD valign="center" align="center"><FONT size=1 face="verdana"><FORM name="zodiac"><SELECT name="signs" class="FORMMENU" onchange="var goingto = this.options[this.selectedIndex].value;if(goingto){document.location = goingto};"  style="width:140px">	<OPTION style="background:#dddddd;">Pick your sign</OPTION>	<OPTION style="background:#dddddd;">=============</OPTION>	<option></option>	<option></option>	<option></option>	<option></option></SELECT></FORM></FONT><SCRIPT langauge="javascript">	<!-- //	var URLs 	= new Array("/SHOWBIZ/horoscope/index.html#aries","/SHOWBIZ/horoscope/index.html#taurus","/SHOWBIZ/horoscope/index.html#gemini","/SHOWBIZ/horoscope/index.html#cancer","/SHOWBIZ/horoscope/index.html#leo","/SHOWBIZ/horoscope/index.html#virgo","/SHOWBIZ/horoscope/index.html#libra","/SHOWBIZ/horoscope/index.html#scopio","/SHOWBIZ/horoscope/index.html#sagittarius","/SHOWBIZ/horoscope/index.html#capricorn","/SHOWBIZ/horoscope/index.html#aquarius","/SHOWBIZ/horoscope/index.html#pisces");	var NAMEs = new Array("\xbb ARIES","\xbb TAURUS","\xbb GEMINI","\xbb CANCER","\xbb LEO","\xbb VIRGO","\xbb LIBRA","\xbb SCOPIO","\xbb SAGITTARIUS","\xbb CAPRICORN","\xbb AQUARIUS","\xbb PISCES");	var obj  = document.zodiac.signs.options;	makeSelOpt(obj);	// --></SCRIPT></TD></TR></TABLE><!-- /Horoscope -->
+</td></tr>
+<tr><td width="165" align=left valign=top><img src="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/1999/12/line.gif" width="1" height="1" hspace="0" vspace="0"></td></tr>
+<tr><td width="165" bgcolor="#000000" align=left valign=top>
+<!-- Comics --->
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/1999/12/comics.gif" ALT="comics" WIDTH="76" HEIGHT="16" ALIGN="top">
+</td></tr>
+<tr><td width="165" bgcolor="#000000" align=left valign=top>
+<TABLE broder=0 cellpadding=0 cellspacing=0 width="160">
+<TR><TD valign="center" align="center">
+<FONT size=1 face="verdana">
+<FORM name="comic">
+<SELECT name="comics" class="FORMMENU" onchange="var goingto = this.options[this.selectedIndex].value;if(goingto){document.location = goingto};" style="width:140px">
+	<OPTION style="background:#dddddd;">Pick a Comic</OPTION>
+	<OPTION style="background:#dddddd;">=============</OPTION>
+	<option></option>
+	<option></option>
+	<option></option>
+	<option></option>
+</SELECT>
+</FORM></FONT>
+<SCRIPT langauge="javascript">
+	<!-- //
+	var URLs 	= new Array("/SHOWBIZ/comics/fusco/index.html","/TECH/computing/comics","/SHOWBIZ/comics/in.the.bleachers/index.html","/SHOWBIZ/comics/bizarro/index.html","/ALLPOLITICS/analysis");
+	var NAMEs = new Array("\xbb The Fusco Brothers","\xbb The Fifth Wave","\xbb In the Bleachers","\xbb Bizarro","\xbb Bill Mitchell");
+	var obj  = document.comic.comics.options;
+	makeSelOpt(obj);
+	// -->
+</SCRIPT>
+</TD></TR>
+</TABLE><!-- /Comics -->
+</td></tr>
+<tr><td width="165" align=left valign=top><img src="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/1999/12/line.gif" width="1" height="1" hspace="0" vspace="0"></td></tr>
+<tr><td width="165" bgcolor="#000000" align=left valign=top>
+<!-- Games --->
+<IMG SRC="/web/20001216174400im_/http://www7.cnn.com/SHOWBIZ/images/1999/12/games.gif" ALT="games" WIDTH="76" HEIGHT="16" ALIGN="top">
+</td></tr><tr><td width="165" bgcolor="#000000" align=left valign=top>
+<TABLE broder=0 cellpadding=0 cellspacing=0 width="160">
+<TR><TD valign="center" align="center">
+<FONT size=1 face="verdana">
+<FORM name="game">
+<SELECT name="games" scroll=2 class="FORMMENU" onchange="var goingto = this.options[this.selectedIndex].value;if(goingto){document.location = goingto};" style="width:140px">
+	<OPTION style="background:#dddddd;">Pick a Game</OPTION>
+	<OPTION style="background:#dddddd;">=============</OPTION>
+	<option></option>
+	<option></option>
+	<option></option>
+	<option></option>
+</SELECT>
+</FORM>
+</FONT>
+<SCRIPT langauge="javascript">
+	<!-- //
+	var URLs 	= new Array("/SHOWBIZ/quiz/index.html","/books/wordsearch/","/books/crossword/index.html","/interactive/");
+	var NAMEs = new Array("\xbb Quiz","\xbb Word Search","\xbb Crossword","\xbb More Games");
+	var obj  = document.game.games.options;
+	makeSelOpt(obj);
+	// -->
+</SCRIPT>
+</TD></TR>
+</TABLE>
+<!-- /Games -->
+</td></tr>
+<tr><td width="165" align=left valign=top></td></tr>
+</table>
+<!----------------------------------------------------------------------------------------->
+<!------------------------------ /Sidebar ------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+</td></tr><tr><td colspan=3 width=460>
+<!-- Netmind Search -->
+<br clear=all>
+<div class="center"><!--------------- NETMIND ----------------------->
+<style>
+.netmindtext		{
+					color:				#000000;
+					font-family:		verdana, helvetica,arial,  sans-serif;		
+					font-weight:		normal;
+					font-size:			11px;					
+					}
+.netmindsmalltext   {
+					color:				#000000;
+					font-family:		verdana, helvetica,arial,  sans-serif;		
+					font-weight:		normal;
+					font-size:			10px;					
+					}
+.privacy            {
+					color:				#555555;
+					font-family:		verdana, helvetica,arial,  sans-serif;		
+					font-weight:		normal;
+					font-size:			10px;					
+					}					
+					
+</style>
+<SCRIPT language=Javascript>
+<!--//
+function mindit(ret) {
+        var email = document.MinderForm.EMAIL.value;
+        var keyword = document.MinderForm.PATTERN.value ;
+
+        if ( (email == "") ){
+            alert( "Please enter your e-mail address" );
+			if (ret)
+            return false; else return;
+        }
+
+        if(keyword == ""){
+           alert( "Please enter a keyword" );
+           if (ret)
+           return false; else return;
+        }
+
+document.MinderForm.URL.value = "/web/20001216174400/http://www.cnn.com/SHOWBIZ/";
+document.MinderForm.REDIRECT.value = "/web/20001216174400/http://www.cnn.com/SHOWBIZ";
+document.MinderForm.USERNAME.value = this.document.MinderForm.EMAIL.value;
+document.MinderForm.MNEMONIC.value = this.document.MinderForm.PATTERN.value;
+document.MinderForm.submit();
+}
+//-->
+</SCRIPT>
+<table width="460" border="0" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC">
+<tr bgcolor="#000000"><td align="left"><img src="/web/20001216174400im_/http://cnn.netmind.com/images/ent_logo.gif" width="460" height="21" alt="CNN.com Entertainment" border="0" hspace="0" vspace="0"></td></tr>
+<tr><td><!-- begin top table -->
+<table cellpadding="1" cellspacing="0" border="0" width="460"><tr>
+<td width="345"><span class="netmindtext">Receive e-mail updates about your favorite showbiz topics, such as a specific celebrity, award, reviews or new releases.</span></td>
+<td align="right" width="115"><a href="/web/20001216174400/http://www.pumatech.com/"><span class="netmindsmalltext">Powered by PUMATECH</span></td></tr></table>
+<!-- end top table --></td></tr>
+<tr><td><!-- begin input table -->
+<table cellpadding="1" cellspacing="0" border="0" width="460"><tr>
+<FORM action="/web/20001216174400/http://cnn.netmind.com/responder" name="MinderForm" method=post onSubmit="return(mindit(1));">
+<INPUT TYPE="hidden" NAME="OPERATION" VALUE="add">
+<INPUT TYPE="hidden" NAME="URL" VALUE="">
+<INPUT TYPE="hidden" NAME="SOURCE" VALUE="30">
+<INPUT TYPE="hidden" NAME="REGISTRATION_OBJECT" value="">
+<INPUT TYPE="hidden" NAME="GLOBAL_OBJECT" value="">
+<INPUT TYPE="hidden" NAME="DOC_TITLE" value="">
+<INPUT TYPE="hidden" NAME="HEX_PATTERN" value="">
+<INPUT TYPE="hidden" NAME="USERNAME" VALUE="">
+<INPUT TYPE="hidden" NAME="REDIRECT" VALUE="">
+<INPUT TYPE="hidden" NAME="MNEMONIC" VALUE="">
+<INPUT TYPE="hidden" NAME="SILENT" VALUE="false">
+<INPUT TYPE="hidden" NAME="NOTICE_CHANGE" VALUE="true">
+<INPUT TYPE="hidden" NAME="NOTICE_MOVE" VALUE="false">
+<INPUT TYPE="hidden" NAME="NOTICE_DEAD" VALUE="false">
+<INPUT TYPE="hidden" NAME="NOTICE_DIFF" VALUE="false">
+<INPUT TYPE="hidden" NAME="DOC_CONTENTS" VALUE="">
+<INPUT TYPE="hidden" NAME="FILTER" VALUE="keyword">
+<INPUT TYPE="hidden" name="USER_ACCEPTED_TERM" value="true">
+<INPUT TYPE="hidden" name="USER_CREATED" value="false">
+<INPUT TYPE="hidden" NAME="EMAIL_ENABLED" VALUE="true">
+<INPUT TYPE="hidden" NAME="FOLDER" VALUE="Entertainment">
+<INPUT TYPE="hidden" NAME="OPTIONS" VALUE="i">
+<td width="230" align="left"><span class="netmindtext">Enter a key word:</font> <input type="text" name="PATTERN" size="10" class="FormLt1"></td>
+<td width="230" align="left"><span class="netmindtext">Your e-mail address:</font> <INPUT TYPE="TEXT" NAME="EMAIL" VALUE="" size="10" class="FormLt1"></td></form>
+</tr></table>
+<!-- end input table --></td></tr>
+<tr><td><table width="100%" cellpadding="1" cellspacing="0" border="0" align="left"><tr><td width="40"><span class="netmindtext">Click: </span></td><td width="60" align=left><A href="javascript:mindit(0);">
+<IMG src="/web/20001216174400im_/http://cnn.netmind.com/images/mindit_cnn_entertainment.gif" border="0" alt="Mind-it Button"></a></td><td width="360" align=right><span class="privacy">The information you submit may be shared by <BR>both CNN Interactive and PUMATECH, Inc.</span></td></tr></table></td></tr>
+
+</table>
+<!--------------- /NETMIND ---------------------->
+</div>
+<!-- /Netmind Search -->
+</td></tr><tr><td colspan=3 width=460>
+<!-- Search Box -->
+<br clear=all>
+<center><!-- search box -->
+
+<FORM action="/web/20001216174400/http://search.cnn.com/query.html" method="get" name="seek_bot" onsubmit="return validate(this);">
+<TABLE border=0 cellpadding=0 cellspacing=0 width="450" bgcolor="#666666">
+<TR><TD>&nbsp;<SPAN class="FSnBMdLt">Search</SPAN></TD><TD>
+<SELECT style="width:120px;" align="middle" name=sites>
+<OPTION value="CNN">CNN.com</OPTION>
+<OPTION value="CNNSI">CNNSI.com</OPTION>
+<OPTION value="CNNfn">CNNfn.com</OPTION>
+<!-- <OPTION value="TIME">TIME.com</OPTION> -->
+<OPTION value="Internet">The Web</OPTION>
+</SELECT>
+<INPUT name=qc type=hidden value=""><INPUT name=col type=hidden value=cnni><INPUT name=qm type=hidden value=0><INPUT name=st type=hidden value=1><INPUT name=nh type=hidden value=10><INPUT name=lk type=hidden value=1><INPUT name=rf type=hidden value=1><INPUT type=hidden name=look value=""><INPUT type=hidden name=key value=""><INPUT TYPE="HIDDEN" NAME="venue" VALUE="all"><INPUT TYPE="HIDDEN" NAME="keyword" value=""><input type=hidden name=qp value=""><input type=hidden name=comefrom value="izcb-search"><input type=hidden name=isp value=zcb></TD><TD><INPUT  style="width:120px;" type="text" name=qt size="25"></TD><TD><INPUT type="submit" value="Find"></TD></TR></TABLE></FORM>
+
+<!-- /search box -->
+</center>
+<!-- /Search Box -->
+</td></tr></table>
+
+</TD>
+</TR>
+<TR>
+<TD COLSPAN="7">
+<HR NOSHADE WIDTH="100%" SIZE="1" ALIGN="LEFT">
+</TD>
+</TR>
+</TABLE>
+
+<TABLE BORDER="0" WIDTH="600" CELLSPACING="0" CELLPADDING="0"><TR><TD WIDTH=125 VALIGN=TOP><A HREF="#top" class="BackToTop"> Back to the top</A><img src="/web/20001216174400im_/http://www7.cnn.com/cookie.crumb" width="1" height="1"></TD><TD WIDTH="15">&nbsp;</TD><TD WIDTH="460" VALIGN=TOP><font face="Verdana, HELVETICA, ARIAL, sans-serif" size="1"><B>&#169; 2000 Cable News Network.</B> All Rights Reserved.<br><a href="/web/20001216174400/http://www7.cnn.com/interactive_legal.html">Terms</a> under which this service is provided to you.<br>Read our <A HREF="/web/20001216174400/http://www7.cnn.com/privacy.html">privacy guidelines</A>.</font><br>
+</TD></TR></TABLE>
+
+</BODY>
+</HTML>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 17:44:00 Dec 16, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 10:45:42 Jan 4, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

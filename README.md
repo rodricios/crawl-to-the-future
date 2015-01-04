@@ -4,12 +4,13 @@ crawl to the future
 Structure of this project
 -------------------------
 
-1. [Datasets](dataset)
-  * [www.nytimes.com](dataset/www.nytimes.com) - currently contains .html's from 2000
-  * [www.reuters.com](dataset/www.reuters.com) - currently contains .html's from 2000
+1. [Datasets](dataset) - currently only data from the year 2000
+  * [www.nytimes.com](dataset/www.nytimes.com)
+  * [www.reuters.com](dataset/www.reuters.com)
+  * [www.cnn.com](dataset/www.cnn.com)
 2. [Crawlers](crawlers)
   * [**WayBack Machine**](crawlers/Way-Back) - only possible source and candidate for dataset
-    * [The Archival Year](crawlers/Way-Back#the-archival-year) - First possible specification for a dataset built from WayBack archives
+    * [The Archival Year](crawlers/Way-Back#the-archival-year) - First specification for a dataset built from WayBack archives
     * [Intro to WayBackTrack](crawlers/Way-Back#intro-to-waybacktrack) - A tool for downloading archived html's from any given year
   * [Crawling Google](crawlers/Crawling-Google) - not a candidate source for dataset
     * [Part I](crawlers/Crawling-Google/README.md#part-i)  - Google's query string
@@ -27,18 +28,19 @@ The closest thing to a writeup about the above referenced "larger project" is
 
 ####"larger project" tl;dr
 
-We're attempting to [backtest](http://en.wikipedia.org/wiki/Backtesting) content-extractors from the last 15 years against a
-dataset of archived websites (ie. websites that have existed in the last 15 years).
+We're attempting to [backtest](http://en.wikipedia.org/wiki/Backtesting)
+content-extractors from the last 15 years against a dataset of archived
+websites (ie. websites that have existed in the last 15 years).
 
-####This repo tl;dr
+####crawl-to-the-future tl;dr
 
-I'm documenting and prototyping methods for building up a dataset of **immediately,
-at-our-disposal** HTML files.
+I'm documenting and prototyping methods for building up a dataset of
+**immediately-at-our-disposal** HTML files.
 
 ---
 
-"subtask"
--------
+The small task of crawling back to the future
+---------------------------------------------
 
 The subtask itself is determining whether or not it is possible to do the following*:
 
@@ -49,21 +51,28 @@ The subtask itself is determining whether or not it is possible to do the follow
 at creating a silver or gold standard (probably will be addressed in this repo)
 
 3. need to have content manually extracted - yes, this means having to **hand extract** the content
-  * refer to [CleanEval's homepage](http://cleaneval.sigwac.org.uk/); [formal paper here](http://cleaneval.sigwac.org.uk/lrec08-cleaneval.pdf)
+  * refer to:
+    * [CleanEval's homepage](http://cleaneval.sigwac.org.uk/); [formal paper here](http://cleaneval.sigwac.org.uk/lrec08-cleaneval.pdf)
+    * [Serge Sharoff's 2006 paper on creating a general-purpose corpora of websites](http://www.comp.leeds.ac.uk/ssharoff/publications/wacky-paper.pdf)
+    * Please [email me](rodrigopala91@gmail.com) if you know of similar papers
 
-4. write up specifications for the above processes (the various README's in this repo will hopefully
-address this part)
+4. write up specifications for the above processes (the various README's
+in this repo will hopefully address this part)
 
 *note: these steps were derived from emails with Tim
 
-Again, the goal is to figure out if we can, in a timely manner, define a process for creating a dataset. This dataset or the process itself can then be used for further research in the area of data and text extraction. As for the origins of the name "crawl to the future," *crawling* will be a significant process in aquiring our dataset.
+Again, the goal is to figure out if we can, in a timely manner, define a process for
+creating a dataset. This dataset or the process itself can then be used for further
+research in the area of data and text extraction. As for the origins of the name
+"crawl to the future," *crawling* will be a significant process in aquiring our dataset.
 
 ---
 
 Timeline
 --------
 
-Refer to this [folder](https://github.com/rodricios/crawl-to-the-future/tree/master/timelines) for a week by week plan-of-action
+Refer to this [folder](https://github.com/rodricios/crawl-to-the-future/tree/master/timelines)
+for a week by week plan-of-action
 
 
 ---
@@ -76,9 +85,10 @@ used to crawl and acquire web pages - you'll likely see me working in a
 single subdirectory for at most a day. Please refer to this section to see where
 I'm writing.
 
-~~Currently, I'm updating the section describing how to quickly prototype a simple crawling script for google.
-Unfortunately, attempting to build a dataset of archival/historical web pages using Google's custom date range
-filter was unrewarding, to say the least. Read my notes [here](crawlers/Crawling-Google#bitter-sweet-conclusion).~~
+~~Currently, I'm updating the section describing how to quickly prototype a
+simple crawling script for google. Unfortunately, attempting to build a dataset
+of archival/historical web pages using Google's custom date range filter was
+unrewarding, to say the least. Read my notes [here](crawlers/Crawling-Google#bitter-sweet-conclusion).~~
 
 ~~This leaves me with one last option of building a dataset: [Way Back Machine](https://archive.org/web/).~~
 
@@ -87,7 +97,8 @@ behind downloading entire sites using way back archives, so hopefully this last 
 
 ~~I'll be writing/updating on this [page](crawlers/Way-Back).~~
 
-I've written [waybacktracy.py](crawlers/Way-Back/waybacktrack.py) as tool for extracting .html's from
-WayBack Machine's archives. It's pretty buggy, so use at your discretion!
+I've written [waybacktracy.py](crawlers/Way-Back/waybacktrack.py) as tool
+for extracting .html's from WayBack Machine's archives. It's pretty buggy,
+so use at your discretion!
 
 ---
