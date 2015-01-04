@@ -49,6 +49,16 @@ def archive_domain(domain, year, dir_path=DATASET_DIR,
     # crawl-to-the-future project
     # automatically find or eventually create directory
     # based off domain name
+
+    # Found way to check if file is being ran in crawl-to-the-future
+    # super "hacky" though
+    # TODO: Find better way to check if module is getting ran in
+    # in crawl-to-the-future project
+    if os.path.split(
+        os.path.abspath(os.path.join(__file__, os.pardir)))[1] != "Way-Back":
+        raise Exception("Please manually specify 'dir_name' value")
+
+
     if dir_path is DATASET_DIR:
         dir_path = os.path.join(dir_path, domain + '/')
 
@@ -76,8 +86,15 @@ def archive_domain(domain, year, dir_path=DATASET_DIR,
 
     if debug:
         print "Extracting links from: ", domain
-        print "Storing files in: ", dir_path
+
+        # http://margerytech.blogspot.com/2011/06/python-get-last-directory-name-in-path.html
+        print "Current directory: ", os.path.split(
+            os.path.abspath(os.path.join(__file__, os.pardir)))[1]
+
+        print "Storing files in: ", os.path.abspath(dir_path)
+
         print "Number of domain snapshots: ", len(domain_snapshots)
+
         print "Number of domain snapshots to process: ", span
 
     forward_links = []
