@@ -20,13 +20,11 @@ T.o.C.
 
 1. [The archival year](#the-archival-year)
 
-2. [Visualizing WayBackTrack](#visualizing-waybacktrack)
+2. [Intro to WayBackTrack](#intro-to-waybacktrack)
 
-3. [Using WayBackTrack](#using-waybacktrack)
+3. [WayBackTrack](#waybacktrack)
 
 ---
-
-
 
 Let's begin with this [post](http://superuser.com/questions/828907/how-to-download-a-website-from-the-archive-org-wayback-machine).
 
@@ -127,7 +125,7 @@ You should see 2002. This is not good. When we should be building a dataset of a
 from within the same year, or the fifth, or the 10th year after that, we are getting an archive
 from the year 2002.
 
-The archival year
+The Archival Year
 -----------------
 
 So, here we can layout a specification, in the context of using the Way Back Machine as our
@@ -172,12 +170,12 @@ the root domain page (ie. nytimes.com/index.html) and the forward-linked sites
 (ie. nytimes.com/pages-technology/index.html).
 
 
-Visualizing WayBackTrack
-------------------------
+Intro to WayBackTrack
+---------------------
 
-[waybacktrack.py](waybacktrack.py) is a script designed to start at a domain like
-www.nytimes.com or www.reuters.com and then extract forward links within that
-domain.
+[waybacktrack.py](waybacktrack.py) is a script designed to interface with the
+WayBack Machine; the module starts with a domain (ie. www.nytimes.com or www.reuters.com)
+and then extract forward links within that domain.
 
 Let's visualize www.reuters.com circa may 11, 2000:
 
@@ -219,8 +217,8 @@ And here's a reuters page that is "valid":
 
 ![Market professionals, Reuters is hiring!](pictures/reuters-is-hiring.png?raw=true "Where's the jobs, reuters?")
 
-Using WayBackTrack
-------------------
+WayBackTrack
+------------
 
 Usage, at the moment, is pretty simple. Just provide a domain name,
 the year, a directory where the .html files will be stored , and
