@@ -27,3 +27,16 @@ in [waybacktrack.py](../crawlers/Way-Back#waybacktrack)
 
 Most likely in future updates, I will include automated process
 of creating subdirectories depending on the year of the archive.
+
+Examples of raw Dataset .html's
+-------------------------------
+
+![cnn ex1](pictures/cnn-ex1.png?raw=true "ex1")
+
+---
+
+![cnn ex2](pictures/cnn-ex2.png?raw=true "ex2")
+
+---
+
+![cnn ex3](pictures/cnn-ex3.png?raw=true "ex3")
