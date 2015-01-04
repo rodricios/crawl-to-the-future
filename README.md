@@ -97,7 +97,7 @@ behind downloading entire sites using way back archives, so hopefully this last 
 
 ~~I'll be writing/updating on this [page](crawlers/Way-Back).~~
 
-I've written [waybacktracy.py](crawlers/Way-Back/waybacktrack.py) as tool
+I've written [waybacktrack.py](crawlers/Way-Back/waybacktrack.py) as tool
 for extracting .html's from WayBack Machine's archives. It's pretty buggy,
 so use at your discretion!
 
