@@ -5,13 +5,15 @@ Structure of this project
 -------------------------
 
 1. [Datasets](dataset)
+  * [www.nytimes.com](dataset/www.nytimes.com) - currently contains .html's from 2000
+  * [www.reuters.com](dataset/www.reuters.com) - currently contains .html's from 2000
 2. [Crawlers](crawlers)
-  * [Crawling Google](crawlers/Crawling-Google)
-    * [Part I](crawlers/Crawling-Google/README.md#part-i)  - Google's query string
-    * [Part II](crawlers/Crawling-Google/README.md#part-ii) - Google Search By Year
-  * [WayBack](crawlers/Way-Back)
+  * [**WayBack Machine**](crawlers/Way-Back) - only possible source and candidate for dataset
     * [The Archival Year](crawlers/Way-Back#the-archival-year) - First possible specification for a dataset built from WayBack archives
     * [Intro to WayBackTrack](crawlers/Way-Back#intro-to-waybacktrack) - A tool for downloading archived html's from any given year
+  * [Crawling Google](crawlers/Crawling-Google) - not a candidate source for dataset
+    * [Part I](crawlers/Crawling-Google/README.md#part-i)  - Google's query string
+    * [Part II](crawlers/Crawling-Google/README.md#part-ii) - Google Search By Year
 
 ---
 
