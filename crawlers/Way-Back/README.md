@@ -26,12 +26,12 @@ T.o.C.
 
 ---
 
-Let's begin with this [post](http://superuser.com/questions/828907/how-to-download-a-website-from-the-archive-org-wayback-machine).
+Let's begin with this [post](http://superuser.com/questions/828907/how-to-download-a-website-from-the-archive-org-wayback-machine), which I copy&paste a few lines down.
 
-I've been spamming it multiple times, but it seems like that *superuser* post may be the most succint
-post describing how we should go about this problem.
+While there's a few other resources you'll find if you Google "how to download WayBack archives", that
+*superuser* post may be the most succint post describing how we should go about this problem.
 
-First, let's test out downloading and parsing an arbitrary archived page from the Way Back Machine,
+First, let's start with requesting, parsing, and opening an arbitrary archived page from the WayBack Machine,
 just to make sure we don't start off on the wrong foot.
 
 ```python
@@ -45,12 +45,14 @@ html.open_in_browser(ia_parsed)
 # file://c:/users/rodrigo/appdata/local/temp/tmpr46riv.html
 ```
 
-Note: if your browser doesn't pop up with the page you've just parsed, then just copy and paste
+Note: if your browser doesn't pop up with the page you've just parsed, just copy and paste
 the filepath into your browser.
 
 ---
 
-So far so good :) Referring back to that post, which I'll paste here
+From my end, so far so good :)
+
+Now take a minute to read the *superuser* post:
 
 > The idea is to use some of the nide URL features of the wayback machine:
 >
@@ -59,19 +61,11 @@ So far so good :) Referring back to that post, which I'll paste here
 * http://web.archive.org/web/YYYYMMDDhhmmssid_/http://domain/page will return the unmodified page http://domain/page at the given timestamp. Notice the id_ token.
 
 
-Let's experiment with the following url then,
+Alright, you heard the man, let's experiment with the following url,
 
     http://web.archive.org/web/2000*/http://www.nytimes.com/
 
-All we've specified is that we want all snapshots of New York Time's website from the year 2000
-
-```python
-from lxml import html
-
-ia_year_url = "http://web.archive.org/web/2000*/http://www.nytimes.com/"
-
-ia_parsed = html.parse(ia_year_url)
-```
+All we've specified in the above url is that we want **all** snapshots belonging to New York Time's domain from the year 2000
 
 Now take a look at this screenshot:
 
@@ -83,8 +77,11 @@ This makes my life so much easier in terms of being able to select the urls lead
 archived pages. Let's add the following selection:
 
 ```python
+...
+ia_parsed = html.parse(ia_year_url)
+
 nov_elem = ia_parsed.xpath('//*[@id="2000-11"]//a/@href')
-# this is good
+# this is good!
 # ['/web/20001201203900/http://www10.nytimes.com/',
 # '/web/20001201203900/http://www10.nytimes.com/',
 # '/web/20001202140900/http://www.nytimes.com/',
@@ -93,19 +90,21 @@ nov_elem = ia_parsed.xpath('//*[@id="2000-11"]//a/@href')
 # ...]
 ```
 
-Well... what about getting all of these year's archived sites? While we can just loop 12 times,
-and keep changing the 'id' string, maybe we can use wild cards?
+Well... what about getting all of NYTime's archived sites from the year 2000? While we can just
+loop 12 times and in each loop we specify a different month in the 'id' string, what using wild 
+cards instead (ie. [@id='2000-*'])?
 
-Not really, but we can use [xpath's "starts-with" function](http://stackoverflow.com/questions/2556897/yql-how-to-use-wildcard-in-xpath).
+Turns out xpath doesn't support the above wild card notation. Instead we can use [xpath's "starts-with" function](http://stackoverflow.com/questions/2556897/yql-how-to-use-wildcard-in-xpath).
 
 ```python
 nyt_2000_archived = list(set(ia_parsed.xpath('//*[starts-with(@id,"2000-")]//a/@href')))
 ```
 
-But what this does is basically give you a list of archived www.nytimes.com/**index.html**.
+What the line above does is provide a list of url-strings referencing various www.nytimes.com 
+snapshots (each string is a differnt snapshot url).
 
 What would be cool is if we could somehow crawl within not only the index.html, but also the
-forward links.
+forward links **in** that index.html.
 
 There's an issue that comes up though. This issue is best shown, not told.
 
