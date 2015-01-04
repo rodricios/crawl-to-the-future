@@ -15,6 +15,19 @@ project sooner.
 
 ---
 
+T.o.C.
+-----
+
+1. [The archival year](#the-archival-year)
+
+2. [Visualizing WayBackTrack](#visualizing-waybacktrack)
+
+3. [Using WayBackTrack](#using-waybacktrack)
+
+---
+
+
+
 Let's begin with this [post](http://superuser.com/questions/828907/how-to-download-a-website-from-the-archive-org-wayback-machine).
 
 I've been spamming it multiple times, but it seems like that *superuser* post may be the most succint
@@ -110,8 +123,6 @@ Now let's click on the picture of Bill Clinton and Macaulay Culkin:
 Take a good look at the first four digits after "http://web.archive.org/web/" in your address bar.
 
 
-
-
 You should see 2002. This is not good. When we should be building a dataset of archived websites
 from within the same year, or the fifth, or the 10th year after that, we are getting an archive
 from the year 2002.
@@ -129,5 +140,137 @@ Expressed in words, the four digits following "http://web.archive.org/web/" has 
 either "2000", "2005", or "2010" - we do not need archived 2015 websites.
 
 
+---
+
+The above specification can be expressed in code in the following way:
+```python
+ARCHIVE_DOMAIN = "http://web.archive.org"
+
+page = '/web/20001119144900/http://www1.nytimes.com/subscribe/help/searchtips.html'
+
+parsed_page = html.parse(ARCHIVE_DOMAIN + page)
+
+archival_year_spec = ARCHIVE_DOMAIN + '/web/' + str(year)
+
+if parsed_page.docinfo.URL.startswith(archival_year_spec):
+    return True
+else:
+    return False
+```
 
 
+For the current implementation of the script, what we I do is simply two things:
+
+1. given a domain name (ie. www.nytimes.com) and archive year, retrive list of "snapshots"
+within that year.
+
+2. given an existing domain "snapshot" url, we retrive a list of forward-linking "snapshots" from
+within the same year of the input domain.
+
+What we're doing is we're trying to retrieve as many websites from only two levels:
+the root domain page (ie. nytimes.com/index.html) and the forward-linked sites
+(ie. nytimes.com/pages-technology/index.html).
+
+
+Visualizing WayBackTrack
+------------------------
+
+[waybacktrack.py](waybacktrack.py) is a script designed to start at a domain like
+www.nytimes.com or www.reuters.com and then extract forward links within that
+domain.
+
+Let's visualize www.reuters.com circa may 11, 2000:
+
+![www.reuters.com circa 2000](pictures/reuters-2000.png?raw=true "Where's the news, reuters?")
+
+Now, here's the xpath we use to extract hyperlinks/forward links:
+
+    '//a[starts-with(@href,"<parent_site>")]/@href'
+
+That xpath yields us a lot of forward links, which I then process and split
+into two lists: "flinks" and "duds"
+
+```
+print flinks
+['/web/20000511182917/http://www.reuters.com/',
+ '/web/20000511182917/http://www.reuters.com/nav/mar_ads/mar_ad_campaign.htm',
+ '/web/20000511182917/http://www.reuters.com/nav/redir/promo001.html',
+ '/web/20000511182917/http://www.reuters.com/legal/disclaimer.htm',
+ '/web/20000511182917/http://www.reuters.com/legal/copyright.htm',
+ '/web/20000511182917/http://www.reuters.com/legal/privacy.htm']
+
+print duds
+['/web/20000511182917/http://www.reuters.com/products/',
+ '/web/20000511182917/http://www.reuters.com/investors/',
+ '/web/20000511182917/http://www.reuters.com/careers/',
+ '/web/20000511182917/http://www.reuters.com/aboutreuters/',
+ ...]
+ # a lot more duds than flinks
+```
+
+Note: There's a few tests we have to do in order to seperate the links into the
+above two lists; please refer to the source code for more info.
+
+It's pretty easy to show a "dud" webpage:
+
+![Let's buy some reuters shirts!](pictures/reuters-products-2000.png?raw=true "Where's the products, reuters?")
+
+And here's a reuters page that is "valid":
+
+![Market professionals, Reuters is hiring!](pictures/reuters-is-hiring.png?raw=true "Where's the jobs, reuters?")
+
+Using WayBackTrack
+------------------
+
+Usage, at the moment, is pretty simple. Just provide a domain name,
+the year, a directory where the .html files will be stored , and
+optionally you can provide a "percent*" and/or turn on debug
+messages.
+
+*'percent' is the percent of domain "snapshots" to process. Default value is
+'0'; what this means is that only the first domain snapshot (ie. www.reuters.com circa
+June 11, 2000) extracted is crawled for forward links.
+
+###Usage
+
+```python
+import waybacktrack
+flinks, duds = waybacktrack.archive_domain(domain='www.reuters.com',
+                                           year=2000,
+                                           dir_path='path/to/directory/',
+                                           percent=10,
+                                           debug=True)
+
+print flinks
+```
+
+Output:
+```python
+Extracting links from:  www.reuters.com
+Storing files in:  ../../dataset/www.reuters.com
+Number of domain snapshots:  42
+Number of domain snapshots to process:  1
+file name:  20000511182917_www.reuters.com_
+file name:  20000512004654_www.reuters.com_nav_mar_ads_mar_ad_campaign.htm
+file name:  20000619154054_www.reuters.com_nav_redir_promo001.html
+file name:  20000511102346_www.reuters.com_legal_disclaimer.htm
+file name:  20000511091512_www.reuters.com_legal_copyright.htm
+file name:  20000306080923_www.reuters.com_legal_privacy.htm
+Number of archived forward links:  6
+Number of duds:  14
+```
+
+Note: the directory will be automatically created, but this may and likely will
+bug out if project is this module is used outside of the overall project directory
+
+Final Remarks
+-------------
+
+Alright! So it seems like we literally had luck on our side, at least as
+of this writing; Google custom date range search was a no-go (I should've
+thought that one through tbh, of course servers aren't going to be hosting
+original content from 15 years ago lol).
+
+To say the least, the WayBack Machine delivered. Thanks [Brewster Kahle](http://brewster.kahle.org/)
+and everyone else at [archive.org](https://archive.org/) for keeping these websites
+alive and accessible! I'll try not to spam you with too many requests.

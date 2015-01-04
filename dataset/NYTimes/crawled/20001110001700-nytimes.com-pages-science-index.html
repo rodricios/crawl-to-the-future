@@ -1,0 +1,2399 @@
+
+
+
+     
+
+
+     
+
+
+      
+   
+
+
+  
+      
+
+
+     
+               
+
+            
+   	      
+ 
+
+ 
+
+ 
+ 
+
+
+   
+ 
+
+
+
+ 
+ 
+ 
+ 
+
+
+  
+
+ 
+
+   
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+ 
+  
+    
+    
+
+    
+
+
+   
+
+
+        
+ 
+    
+ 
+
+         
+
+    
+
+
+         
+
+
+  
+
+
+    <HTML> <head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app3.us.archive.org";archive_analytics.values.server_ms=769;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+ <title>The New York Times: Science</title> </head> 
+ <BODY bgcolor="#ffffff" vlink="#444464" link="#000064" background="/web/20001202062300im_/http://graphics.nytimes.com/images/back.c.gif">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.nytimes.com/pages/science/index.html";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "2";
+var displayMonth = "Dec";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.nytimes.com/pages/science/index.html" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20001202062300" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20001018132330/http://nytimes.com/pages/science/index.html" title="18 Oct 2000">OCT</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 6:23:00 Dec 2, 2000">DEC</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20010515021544/http://www.nytimes.com/pages/science/index.html" title="15 May 2001"><strong>MAY</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20001118142400/http://www.nytimes.com/pages/science/index.html" title="14:24:00 Nov 18, 2000"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 6:23:00 Dec 2, 2000">2</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20001205122200/http://nytimes.com/pages/science/index.html" title="12:22:00 Dec 5, 2000"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   1999
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 6:23:00 Dec 2, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20011204183830/http://www.nytimes.com/pages/science/index.html" title="4 Dec 2001"><strong>2001</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20001202062300*/http://www.nytimes.com/pages/science/index.html" title="See a list of every capture for this URL">3,923 captures</a>
+           <div class="r" title="Timespan for captures of this URL">18 Oct 00 - 3 Jan 15</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:11:000000000113_2001:-1:00001101cba6_2002:-1:080101036671_2003:-1:010103110001_2004:-1:100000000000_2005:-1:004a999a88aa_2006:-1:a71945666577_2007:-1:755555454977_2008:-1:567674799765_2009:-1:155331011145_2010:-1:454341456764_2011:-1:5996549abbcc_2012:-1:cbbabbbbabcb_2013:-1:bbabaaa968bc_2014:-1:cbbbbfaaa9aa_2015:-1:300000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+ <table border="0" cellpadding="0" cellspacing="0" width="754"> <tr> <td align="left" width="600" valign="top">
+
+ 
+
+
+ 
+
+ 
+
+ 
+  
+
+
+   <NYT_HEADER>
+<table border="0" cellpadding="0" cellspacing="0"> <tr> <td align="left" valign="top" width="60">
+<br> </td> <td align="left" valign="top" width="480">
+<NYT_BANNER> <img src="/web/20001202062300im_/http://graphics.nytimes.com/images/header/science/science.gif" border="0" alt="Science"/> </NYT_BANNER> <br clear="all">
+<NYT_TOOLBARMAP> <map name="maintoolbar2"> <area shape="rect" coords="0,0,75,16" href="/web/20001202062300/http://www.nytimes.com/pages/index.html" onMouseOver="window.status='Click to go to the Home Page';return true"> <area shape="rect" coords="76,0,154,16" href="/web/20001202062300/http://www.nytimes.com/info/contents/siteindex.html" onMouseOver="window.status='Click to see site contents';return true"> <area shape="rect" coords="155,0,233,16" href="/web/20001202062300/http://www.nytimes.com/search/daily/" onMouseOver="window.status='Click to search the current site';return true"> <area shape="rect" coords="234,0,312,16" href="/web/20001202062300/http://www.nytimes.com/comment/" onMouseOver="window.status='Click for discussion in the Forums';return true"> <area shape="rect" coords="313,0,391,16" href="/web/20001202062300/http://www.nytimes.com/archives/" onMouseOver="window.status='Click to search the archives';return true"> <area shape="rect" coords="392,0,468,16" href="/web/20001202062300/http://www.nytimes.com/marketplace/" onMouseOver="window.status='Click to go shopping';return true">
+</map>
+</NYT_TOOLBARMAP> <NYT_TOOLBAR> <img src="/web/20001202062300im_/http://graphics.nytimes.com/images/navigation/smalltoolbar.gif" border="0" alt="toolbar" usemap="#maintoolbar2" width="468" height="16"/> </NYT_TOOLBAR> <br> <NYT_AD>
+
+<A HREF="/web/20001202062300/http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/0/Top/Dscience01/sciencedaily-468.gif/64316637323864633361323839353730" target="_top"><IMG SRC="/web/20001202062300im_/http://ads.nytimes.com/RealMedia/ads/adstream_lx.ads/www.nytimes.com/pages/science/index.html/0/Top/Dscience01/sciencedaily-468.gif/64316637323864633361323839353730" BORDER=0  WIDTH=468 HEIGHT=60 ALT="" ></A>
+
+</NYT_AD> </td> </tr>
+</table>
+</NYT_HEADER> 
+
+    <p></p> <NYT_TEXT>
+
+
+
+          <table border="0" cellspacing="0" cellpadding="0" width="530"> <tr>  <td width="10"><br></td>  <td align="left" valign="top" width="60"><br></td>  <td> <table align="center" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">      <tr> <td width="470" valign="top" colspan="6"> 
+
+
+            
+<NYT_INDEX_ITEM> 
+
+
+      
+
+      
+
+   
+
+
+  
+    
+
+
+     
+
+
+   
+                
+
+
+    
+
+
+
+ 
+
+ 
+
+             
+
+       
+<NYT_HEADLINE> <font size="+1"><b><a href="/web/20001202062300/http://www.nytimes.com/2000/12/02/science/02SHUT.html">Shuttle Nearing Space Station and Causing a Traffic Jam</a></b></font><br>
+</NYT_HEADLINE>
+<NYT_BYLINE>   
+   
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+          
+   
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+         
+       
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <font size="-1">By REUTERS</font> <BR>  <font size="-1">FROM SATURDAY'S TIMES</font><BR>                         
+    
+</NYT_BYLINE>
+<NYT_SUMMARY> As the NASA space shuttle Endeavour closed in on the International Space Station, the astronauts who have been living on the station for a month dealt with their first traffic jam.
+</NYT_SUMMARY>
+ 
+</NYT_INDEX_ITEM>    
+
+    </td> </tr> <tr> <td colspan="6">
+<hr size="1">  </td> </tr>   <tr> <td width="305" valign="top">                
+
+
+            
+<NYT_INDEX_ITEM> 
+
+
+      
+
+
+   
+
+
+  
+    
+
+
+     
+
+
+   
+                
+
+
+    
+
+
+
+ 
+
+ 
+
+             
+
+       
+<NYT_HEADLINE> <font size="+1"><b><a href="/web/20001202062300/http://www.nytimes.com/2000/12/02/world/02AFRI.html">South Africa to Distribute $50 Million in Donated AIDS Drugs</a></b></font><br>
+</NYT_HEADLINE>
+<NYT_BYLINE>   
+   
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+          
+   
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+         
+       
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <font size="-1">By RACHEL L. SWARNS</font> <BR>  <font size="-1">FROM SATURDAY'S TIMES</font><BR>                         
+    
+</NYT_BYLINE>
+<NYT_SUMMARY> After months of official indecision over how to confront the epidemic ravaging South Africa, the government announced that it would make critical drugs available to people who have H.I.V. or AIDS.
+</NYT_SUMMARY>
+ <br><br>  
+</NYT_INDEX_ITEM> 
+<NYT_INDEX_ITEM> 
+
+
+      
+
+
+   
+
+
+  
+    
+
+
+     
+
+
+   
+                
+
+
+    
+
+
+
+ 
+
+ 
+
+             
+
+       
+<NYT_HEADLINE> <font size="+1"><b><a href="/web/20001202062300/http://www.nytimes.com/2000/12/01/science/01SHUTTLE.html">Endeavour Roars Into Orbit to Meet Space Station</a></b></font><br>
+</NYT_HEADLINE>
+<NYT_BYLINE>   
+   
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+          
+   
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+         
+       
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <font size="-1">By THE ASSOCIATED PRESS</font> <BR>  <font size="-1">FROM FRIDAY'S TIMES</font><BR>                         
+    
+</NYT_BYLINE>
+<NYT_SUMMARY> Space shuttle Endeavour blasted off Thursday night carrying five astronauts and giant solar wings for the International Space Station.
+</NYT_SUMMARY>
+ <br><br>  
+</NYT_INDEX_ITEM> 
+<NYT_INDEX_ITEM> 
+
+
+      
+
+
+   
+
+
+  
+    
+
+
+     
+
+
+   
+                
+
+
+    
+
+
+
+ 
+
+ 
+
+             
+
+       
+<NYT_HEADLINE> <font size="+1"><b><a href="/web/20001202062300/http://www.nytimes.com/2000/12/01/world/01COW.html">As Mad Cow Disease Spreads in Europe, Consumers Panic</a></b></font><br>
+</NYT_HEADLINE>
+<NYT_BYLINE>   
+   
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+          
+   
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+         
+       
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <font size="-1">By SUZANNE DALEY</font> <BR>  <font size="-1">FROM FRIDAY'S TIMES</font><BR>                         
+    
+</NYT_BYLINE>
+<NYT_SUMMARY> In Europe, mad cow disease is dominating the headlines. Governments are promising action, but these efforts are doing little to calm consumers' fears.
+</NYT_SUMMARY>
+ <br><br>  
+</NYT_INDEX_ITEM> 
+<NYT_INDEX_ITEM> 
+
+
+      
+
+
+   
+
+
+  
+    
+
+
+     
+
+
+   
+                
+
+
+    
+
+
+
+ 
+
+ 
+
+             
+
+        <FONT size="-1" color="#990000" face="times"><B><p />MEDICINE MERCHANTS</B></FONT><br> 
+<NYT_HEADLINE> <font size="+1"><b><a href="/web/20001202062300/http://www.nytimes.com/2000/12/01/science/01PIRA.html">Selling Cheap 'Generic' Drugs, India's Copycats Irk Industry</a></b></font><br>
+</NYT_HEADLINE>
+<NYT_BYLINE>   
+   
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+          
+   
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+         
+       
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <font size="-1">By DONALD G. McNEIL Jr.</font> <BR>  <font size="-1">FROM FRIDAY'S TIMES</font><BR>                         
+    
+</NYT_BYLINE>
+<NYT_SUMMARY> Under Indian law, only manufacturing processes, not the products themselves, are covered by patents. So Indian drug companies can boldly reverse-engineer best-selling drugs and sell copies cheaply. And India is not alone.
+</NYT_SUMMARY>
+ <br><br>  
+</NYT_INDEX_ITEM> 
+<NYT_INDEX_ITEM> 
+
+
+      
+
+
+   
+
+
+  
+    
+
+
+     
+
+
+   
+                
+
+
+    
+
+
+
+ 
+
+ 
+
+             
+
+       
+<NYT_INLINEIMAGE> <a href="/web/20001202062300/http://www.nytimes.com/2000/11/28/science/28BOMB.html"><img src="/web/20001202062300im_/http://www.nytimes.com/images/2000/11/28/science/28bomb.3.gif" align="right" height="75" width="75" border="0"/></a> </NYT_INLINEIMAGE>   
+<NYT_HEADLINE> <font size="+1"><b><a href="/web/20001202062300/http://www.nytimes.com/2000/11/28/science/28BOMB.html">Testing the Aging Stockpile in a Test Ban Era</a></b></font><br>
+</NYT_HEADLINE>
+<NYT_BYLINE>   
+   
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+          
+   
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+         
+       
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <font size="-1">By JAMES GLANZ</font> <BR>  <font size="-1">FROM TUESDAY'S TIMES</font><BR>                         
+    
+</NYT_BYLINE>
+<NYT_SUMMARY> A debate has broken out among the masters of nuclear weapons design over whether a program called science-based stockpile stewardship, using computer simulations to test America's aging arsenal, is actually effective.
+</NYT_SUMMARY>
+ <br><br>  
+</NYT_INDEX_ITEM> 
+<NYT_INDEX_ITEM> 
+
+
+      
+
+
+   
+
+
+  
+    
+
+
+     
+
+
+   
+                
+
+
+    
+
+
+
+ 
+
+ 
+
+             
+
+        <FONT size="-1" color="#990000" face="times"><B><p />NEWS ANALYSIS</B></FONT><br> 
+<NYT_HEADLINE> <font size="+1"><b><a href="/web/20001202062300/http://www.nytimes.com/2000/11/28/science/28CLIM.html">Odd Culprits in Collapse of Climate Talks</a></b></font><br>
+</NYT_HEADLINE>
+<NYT_BYLINE>   
+   
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+          
+   
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+         
+       
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <font size="-1">By ANDREW C. REVKIN</font> <BR>  <font size="-1">FROM TUESDAY'S TIMES</font><BR>                         
+    
+</NYT_BYLINE>
+<NYT_SUMMARY> There was no shortage of consternation in The Hague when a rift between branches of the environmental movement appeared to have contributed to the failure of negotiations aimed at completing a pioneering climate treaty.
+</NYT_SUMMARY>
+ <br><br>  
+</NYT_INDEX_ITEM>    
+
+       
+
+
+   <hr size="1">
+
+
+      <font size="-1" color="#990000"><B>MORE SCIENCE NEWS</B></font> 
+<br>  
+<NYT_INDEX_ITEM> 
+
+
+      
+
+
+   
+
+
+  
+    
+
+
+     
+
+
+   
+                
+
+
+    
+
+
+
+ 
+
+ 
+
+             
+
+       <NYT_HEADLINE> • <a href="/web/20001202062300/http://www.nytimes.com/2000/11/28/science/28CHAN.html"> From Jungle to Space in Pursuit of New Drugs</a> </NYT_HEADLINE> <br> 
+</NYT_INDEX_ITEM> 
+<NYT_INDEX_ITEM> 
+
+
+      
+
+
+   
+
+
+  
+    
+
+
+     
+
+
+   
+                
+
+
+    
+
+
+
+ 
+
+ 
+
+             
+
+       <NYT_HEADLINE> • <a href="/web/20001202062300/http://www.nytimes.com/2000/11/28/science/28TOXI.html"> DNA Chip May Help Usher in a New Era of Product Testing</a> </NYT_HEADLINE> <br> 
+</NYT_INDEX_ITEM> 
+<NYT_INDEX_ITEM> 
+
+
+      
+
+
+   
+
+
+  
+    
+
+
+     
+
+
+   
+                
+
+
+    
+
+
+
+ 
+
+ 
+
+             
+
+       <NYT_HEADLINE> • <a href="/web/20001202062300/http://www.nytimes.com/2000/11/28/science/28TROU.html"> When the Trout Arrive, the Amphibian Exodus Begins</a> </NYT_HEADLINE> <br> 
+</NYT_INDEX_ITEM> 
+<NYT_INDEX_ITEM> 
+
+
+      
+
+
+   
+
+
+  
+    
+
+
+     
+
+
+   
+                
+
+
+    
+
+
+
+ 
+
+ 
+
+             
+
+       <NYT_HEADLINE> • <a href="/web/20001202062300/http://www.nytimes.com/2000/11/28/science/28CHEM.html"> Negotiators Focus on 'Dirty Dozen' Pollutants</a> </NYT_HEADLINE> <br> 
+</NYT_INDEX_ITEM> 
+<NYT_INDEX_ITEM> 
+
+
+      
+
+
+   
+
+
+  
+    
+
+
+     
+
+
+   
+                
+
+
+    
+
+
+
+ 
+
+ 
+
+             
+
+       <NYT_HEADLINE> • <a href="/web/20001202062300/http://www.nytimes.com/2000/11/28/science/28CONV.html"> A Doctor With a Cause: 'What's My Prognosis?'</a> </NYT_HEADLINE> <br> 
+</NYT_INDEX_ITEM> 
+<NYT_INDEX_ITEM> 
+
+
+      
+
+
+   
+
+
+  
+    
+
+
+     
+
+
+   
+                
+
+
+    
+
+
+
+ 
+
+ 
+
+             
+
+       <NYT_HEADLINE> • <a href="/web/20001202062300/http://www.nytimes.com/2000/11/28/science/28CASE.html"> Those Magic Times When the Patient Makes the Doctor Feel Better</a> </NYT_HEADLINE> <br> 
+</NYT_INDEX_ITEM> 
+<NYT_INDEX_ITEM> 
+
+
+      
+
+
+   
+
+
+  
+    
+
+
+     
+
+
+   
+                
+
+
+    
+
+
+
+ 
+
+ 
+
+             
+
+       <NYT_HEADLINE> • <a href="/web/20001202062300/http://www.nytimes.com/2000/11/28/science/28WEEK.html"> The Week in Science: Busy and Dubious</a> </NYT_HEADLINE> <br> 
+</NYT_INDEX_ITEM> 
+<NYT_INDEX_ITEM> 
+
+
+      
+
+
+   
+
+
+  
+    
+
+
+     
+
+
+   
+                
+
+
+    
+
+
+
+ 
+
+ 
+
+             
+
+       <NYT_HEADLINE> • <a href="/web/20001202062300/http://www.nytimes.com/2000/11/28/science/28BROD.html"> Less Pain: Is It in the Magnets or the Mind?</a> </NYT_HEADLINE> <br> 
+</NYT_INDEX_ITEM> 
+<NYT_INDEX_ITEM> 
+
+
+      
+
+
+   
+
+
+  
+    
+
+
+     
+
+
+   
+                
+
+
+    
+
+
+
+ 
+
+ 
+
+             
+
+       <NYT_HEADLINE> • <a href="/web/20001202062300/http://www.nytimes.com/2000/11/28/science/28EXER.html"> Sing-Along Aerobics at Your Corner Gym</a> </NYT_HEADLINE> <br> 
+</NYT_INDEX_ITEM> 
+<NYT_INDEX_ITEM> 
+
+
+      
+
+
+   
+
+
+  
+    
+
+
+     
+
+
+   
+                
+
+
+    
+
+
+
+ 
+
+ 
+
+             
+
+       <NYT_HEADLINE> • <a href="/web/20001202062300/http://www.nytimes.com/2000/11/28/science/28OBSE.html"> Observatory: Out-of-Control Elephants</a> </NYT_HEADLINE> <br> 
+</NYT_INDEX_ITEM> 
+<NYT_INDEX_ITEM> 
+
+
+      
+
+
+   
+
+
+  
+    
+
+
+     
+
+
+   
+                
+
+
+    
+
+
+
+ 
+
+ 
+
+             
+
+       <NYT_HEADLINE> • <a href="/web/20001202062300/http://www.nytimes.com/2000/11/28/science/28QNA.html"> Science Q&A: Lazy Afternoon</a> </NYT_HEADLINE> <br> 
+</NYT_INDEX_ITEM> 
+<NYT_INDEX_ITEM> 
+
+
+      
+
+
+   
+
+
+  
+    
+
+
+     
+
+
+   
+                
+
+
+    
+
+
+
+ 
+
+ 
+
+             
+
+       <NYT_HEADLINE> • <a href="/web/20001202062300/http://www.nytimes.com/2000/11/28/science/28BREA.html"> Doctor Main Variable in Mastectomy Choice</a> </NYT_HEADLINE> <br> 
+</NYT_INDEX_ITEM> 
+<NYT_INDEX_ITEM> 
+
+
+      
+
+
+   
+
+
+  
+    
+
+
+     
+
+
+   
+                
+
+
+    
+
+
+
+ 
+
+ 
+
+             
+
+       <NYT_HEADLINE> • <a href="/web/20001202062300/http://www.nytimes.com/2000/11/28/science/28CAVE.html"> Indian Art, Circa A.D. 900</a> </NYT_HEADLINE> <br> 
+</NYT_INDEX_ITEM> 
+<NYT_INDEX_ITEM> 
+
+
+      
+
+
+   
+
+
+  
+    
+
+
+     
+
+
+   
+                
+
+
+    
+
+
+
+ 
+
+ 
+
+             
+
+       <NYT_HEADLINE> • <a href="/web/20001202062300/http://www.nytimes.com/2000/11/28/science/28BERG.html"> Tracking Rogue Giant Icebergs From the Skies</a> </NYT_HEADLINE> <br> 
+</NYT_INDEX_ITEM> 
+<NYT_INDEX_ITEM> 
+
+
+      
+
+
+   
+
+
+  
+    
+
+
+     
+
+
+   
+                
+
+
+    
+
+
+
+ 
+
+ 
+
+             
+
+       <NYT_HEADLINE> • <a href="/web/20001202062300/http://www.nytimes.com/2000/11/28/science/28MARI.html"> Sensations: Realities of Breaking a Marijuana Habit</a> </NYT_HEADLINE> <br> 
+</NYT_INDEX_ITEM> 
+<NYT_INDEX_ITEM> 
+
+
+      
+
+
+   
+
+
+  
+    
+
+
+     
+
+
+   
+                
+
+
+    
+
+
+
+ 
+
+ 
+
+             
+
+       <NYT_HEADLINE> • <a href="/web/20001202062300/http://www.nytimes.com/2000/11/28/science/28OBES.html"> Patterns: When Obesity Comes With a Price Tag</a> </NYT_HEADLINE> <br> 
+</NYT_INDEX_ITEM> 
+<NYT_INDEX_ITEM> 
+
+
+      
+
+
+   
+
+
+  
+    
+
+
+     
+
+
+   
+                
+
+
+    
+
+
+
+ 
+
+ 
+
+             
+
+       <NYT_HEADLINE> • <a href="/web/20001202062300/http://www.nytimes.com/2000/11/28/science/28ANDR.html"> Consequences: Athletes, Andro and Trouble in the Urine</a> </NYT_HEADLINE> <br> 
+</NYT_INDEX_ITEM> 
+<NYT_INDEX_ITEM> 
+
+
+      
+
+
+   
+
+
+  
+    
+
+
+     
+
+
+   
+                
+
+
+    
+
+
+
+ 
+
+ 
+
+             
+
+       <NYT_HEADLINE> • <a href="/web/20001202062300/http://www.nytimes.com/2000/11/28/science/28NEED.html"> Prevention: Bigger Needles for Better Vaccinations</a> </NYT_HEADLINE> <br> 
+</NYT_INDEX_ITEM> 
+<NYT_INDEX_ITEM> 
+
+
+      
+
+
+   
+
+
+  
+    
+
+
+     
+
+
+   
+                
+
+
+    
+
+
+
+ 
+
+ 
+
+             
+
+       <NYT_HEADLINE> • <a href="/web/20001202062300/http://www.nytimes.com/2000/11/28/science/28PREG.html"> Mental Health: Light Regimen for Pregnancy Depression</a> </NYT_HEADLINE> <br> 
+</NYT_INDEX_ITEM> 
+<NYT_INDEX_ITEM> 
+
+
+      
+
+
+   
+
+
+  
+    
+
+
+     
+
+
+   
+                
+
+
+    
+
+
+
+ 
+
+ 
+
+             
+
+       <NYT_HEADLINE> • <a href="/web/20001202062300/http://www.nytimes.com/2000/11/28/science/28LETT.html"> Letters: Risking Safety of Fetus</a> </NYT_HEADLINE> <br> 
+</NYT_INDEX_ITEM>  <br> 
+
+    
+        •<a href="/web/20001202062300/http://www.nytimes.com/pages/science/text/index.html"> Science Text Version</a>    </td>  <td width="8"><br></td> <td width="1" valign="top" bgcolor="#aaaaaa" align="center"><br></td> <td width="4"><br></td> 
+ <td width="150" valign="top"> 
+
+
+    
+
+
+   
+<table border="0" cellspacing="0" cellpadding="6" width="150"> <tr> <td>
+<!-- add all promo html here.  no tables or images greater than 184 pixels. No HTML, HEAD or BODY tags needed. -->
+<font size="-1" color="#990000" face="times"><b>SCIENCE SPECIALS</b></font><br>
+&#149 <a href="/web/20001202062300/http://www.nytimes.com/endeavour"><b>Endeavour: Mission STS-97</b></a><br>
+<font size=-1>The shuttle roared into orbit on Thrusday night to deliver giant solar panels to the <a href="/web/20001202062300/http://www.nytimes.com/spacestation"><b>International Space Station</b></a>.</font>
+<P>
+
+<font size=-1 color=#ab0000><b>DAILY MISSION QUIZ</b></font><br>
+
+&#149 <a href="/web/20001202062300/http://www.nytimes.com/library/national/science/113000shuttle-quiz.1.html" onClick="window.open('','popup','height=650,width=550,scrollbars=yes')"
+target="popup">Endeavour Mission Quiz</a><br><font size=-1>
+Answer each day's question correctly for a chance to win a book from The New York Times on the Web and Discovery.com.</font>
+<P>
+<hr size=1>
+<font size="-1" color="#990000" face="times"><b>DIRECTORY</b></font><br>
+<a href="/web/20001202062300/http://www.nytimes.com/library/national/science/health/street/index.html"><img src="/web/20001202062300im_/http://graphics.nytimes.com/library/national/science/health/street/logo-healthstreet.z.jpg" border=0></a><br>
+<font size="-1">
+<a href="/web/20001202062300/http://www.nytimes.com/library/national/science/health/street/index.html"><b>Find a Doctor</b></a><br>
+Search for a physician, dentist, hospital or health plan anywhere in the United States.
+</font>
+
+
+<table border="0" cellspacing="0" cellpadding="0" width=150><tr><td><hr size=1><font size=-1 color=990000><b>SHARE YOUR KNOWLEDGE</B></font><br clear=all><a href="/web/20001202062300/http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/0/Left4/askbuz13/abuzz_sci_front.html/64316637323864633361323839353730?_RM_REDIR_=info.abuzz.com/static/html/tour/index.html"><IMG SRC="/web/20001202062300im_/http://graphics.nytimes.com/ads/abuzz/abuzz_logo90.gif" align=right border=0 width=90 vspace=3 hspace=2></A> <font size="-1">Add your thoughts on science and health topics, including <A href="/web/20001202062300/http://images2.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/0/Left4/askbuz13/abuzz_sci_front.html/64316637323864633361323839353730?_RM_REDIR_=nytimes.abuzz.com/interaction/s.124988/discussion/e/1.615">osteoporosis</A> or <A href="/web/20001202062300/http://images2.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/0/Left4/askbuz13/abuzz_sci_front.html/64316637323864633361323839353730?_RM_REDIR_=nytimes.abuzz.com/interaction/s.129409/discussion/e/1.616"> home nursing services.</A> Or <a href="/web/20001202062300/http://images2.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/0/Left4/askbuz13/abuzz_sci_front.html/64316637323864633361323839353730?_RM_REDIR_=nytimes.abuzz.com/create_interaction/it/1/e/1.617">ask your own question</a> about Health, in Abuzz.</a></font><br><hr size=1></td></tr></table>
+
+<br>
+
+<A HREF="/web/20001202062300/http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/0/Frame1/lancom06/125x125.gif/64316637323864633361323839353730" target="_top"><IMG SRC="/web/20001202062300im_/http://ads.nytimes.com/RealMedia/ads/adstream_lx.ads/www.nytimes.com/pages/science/index.html/0/Frame1/lancom06/125x125.gif/64316637323864633361323839353730" BORDER=0  WIDTH=125 HEIGHT=125 ALT="" ></A>
+
+<br> <center><font size="-2">Advertisements</font></center>
+<hr size="1"> <!-- add all promo html here.  no tables or images greater than 184 pixels. No HTML, HEAD or BODY tags needed. -->
+<font size="-1" color="#990000" face="times"><b>FEATURES</b></font><br>
+&#149 <a href="/web/20001202062300/http://www.nytimes.com/library/national/science/index-space.html#hypercosm"><b>3D Animations</a></b><br>
+&#149 <a href="/web/20001202062300/http://www.nytimes.com/library/national/science/index-specials.html#health"><b>Health Specials</a></b><br>
+&#149 <a href="/web/20001202062300/http://www.nytimes.com/library/national/science/index-specials.html"><b>Science Specials</a></b><br>
+&#149 <a href="/web/20001202062300/http://www.nytimes.com/library/national/science/index-space.html"><b>Space</a></b>
+<P>
+<hr size="1"> <font size="-1">We welcome your <a href="mailto:sciweb@nytimes.com">comments</a>.</font> <br>
+
+<A HREF="/web/20001202062300/http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/0/Left3/default/empty.gif/64316637323864633361323839353730" target="_top"><IMG SRC="/web/20001202062300im_/http://ads.nytimes.com/RealMedia/ads/adstream_lx.ads/www.nytimes.com/pages/science/index.html/0/Left3/default/empty.gif/64316637323864633361323839353730" BORDER=0  WIDTH=2 HEIGHT=2 ALT="" BORDER=0></A>
+
+<br>
+
+<IFRAME SRC="/web/20001202062300if_/http://ad.doubleclick.net/adi/N1773.nytimes/B30077;sz=125x125;ord=2000.12.02.06.23.45" WIDTH=125 HEIGHT=125 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR='#000000'><SCRIPT language='JavaScript1.1' SRC="/web/20001202062300js_/http://ad.doubleclick.net/adj/N1773.nytimes/B30077;abr=!ie;sz=125x125;ord=2000.12.02.06.23.45"></SCRIPT><NOSCRIPT><A HREF="/web/20001202062300/http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/0/Right1/discha02/discov_pb.html/64316637323864633361323839353730?2000.12.02.06.23.45"><IMG SRC="/web/20001202062300im_/http://ad.doubleclick.net/ad/N1773.nytimes/B30077;abr=!ie4;abr=!ie5;sz=125x125;ord=2000.12.02.06.23.45" BORDER=0 WIDTH=125 HEIGHT=125 ALT="Click Here!"></A></NOSCRIPT></IFRAME>
+
+<br>
+
+<A HREF="/web/20001202062300/http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/0/Frame2/default/empty.gif/64316637323864633361323839353730" target="_top"><IMG SRC="/web/20001202062300im_/http://ads.nytimes.com/RealMedia/ads/adstream_lx.ads/www.nytimes.com/pages/science/index.html/0/Frame2/default/empty.gif/64316637323864633361323839353730" BORDER=0  WIDTH=2 HEIGHT=2 ALT="" BORDER=0></A>
+
+<br>
+
+<center>
+<hr size=3 noshade>
+<table border=0 width="125" height="125" cellspacing=0 cellpadding=0 
+bgcolor="#99CCFF">
+<tr>
+<td valign="top" width="125" height="77">
+<div align="center">
+<a href="/web/20001202062300/http://www.fromcausetocure.com/"><img 
+src="/web/20001202062300im_/http://graphics.nytimes.com/ads/ctc/cause1.gif" width="125" 
+height="77" border="0"></a>
+</div>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+<div align="center">
+<FORM 
+ACTION="/web/20001202062300/http://images2.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html%20/0/Left1/nytcur01/nytcur01.htm/64316637323864633361323839353730" method=get>
+<select name=url 
+onChange="self.location=this.options[this.selectedIndex].value"> 
+
+<option 
+value="http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/%%RA 
+ND%%/Left1/nytcur01/nytcur01.htm/64316637323864633361323839353730?_RM_REDIR_=www.nytimes.com/pa 
+rtners/microsites/sept/causetocure/">Select an Issue:
+<option 
+value="http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/%%RA 
+ND%%/Left1/nytcur01/nytcur01.htm/64316637323864633361323839353730?_RM_REDIR_=www.nytimes.com/pa 
+rtners/microsites/fromcausetocure/AIDS/index.html">AIDS
+<option 
+value="http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/%%RA 
+ND%%/Left1/nytcur01/nytcur01.htm/64316637323864633361323839353730?_RM_REDIR_=www.nytimes.com/pa 
+rtners/microsites/fromcausetocure/allergies_asthma/index.html">Allergies
+<option 
+value="http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/%%RA 
+ND%%/Left1/nytcur01/nytcur01.htm/64316637323864633361323839353730?_RM_REDIR_=www.nytimes.com/pa 
+rtners/microsites/fromcausetocure/alzheimers/index.html">Alzheimer
+<option 
+value="http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/%%RA 
+ND%%/Left1/nytcur01/nytcur01.htm/64316637323864633361323839353730?_RM_REDIR_=www.nytimes.com/pa 
+rtners/microsites/fromcausetocure/arthritis/index.html">Arthritis
+<option 
+value="http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/%%RA 
+ND%%/Left1/nytcur01/nytcur01.htm/64316637323864633361323839353730?_RM_REDIR_=www.nytimes.com/pa 
+rtners/microsites/fromcausetocure/breast_cancer/index.html">Breast 
+Cancer
+<option 
+value="http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/%%RA 
+ND%%/Left1/nytcur01/nytcur01.htm/64316637323864633361323839353730?_RM_REDIR_=www.nytimes.com/pa 
+rtners/microsites/fromcausetocure/cancer/index.html">Cancer
+<option 
+value="http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/%%RA 
+ND%%/Left1/nytcur01/nytcur01.htm/64316637323864633361323839353730?_RM_REDIR_=www.nytimes.com/pa 
+rtners/microsites/fromcausetocure/diabetes/index.html">Diabetes
+<option 
+value="http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/%%RA 
+ND%%/Left1/nytcur01/nytcur01.htm/64316637323864633361323839353730?_RM_REDIR_=www.nytimes.com/pa 
+rtners/microsites/fromcausetocure/heart_disease/index.html">Heart 
+Disease
+<option 
+value="http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/%%RA 
+ND%%/Left1/nytcur01/nytcur01.htm/64316637323864633361323839353730?_RM_REDIR_=www.nytimes.com/pa 
+rtners/microsites/fromcausetocure/lung_disease/index.html">Lung 
+Disease
+<option 
+value="http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/%%RA 
+ND%%/Left1/nytcur01/nytcur01.htm/64316637323864633361323839353730?_RM_REDIR_=www.nytimes.com/pa 
+rtners/microsites/fromcausetocure/mental_health/index.html">Mental 
+Health
+<option 
+value="http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/%%RA 
+ND%%/Left1/nytcur01/nytcur01.htm/64316637323864633361323839353730?_RM_REDIR_=www.nytimes.com/pa 
+rtners/microsites/fromcausetocure/osteoporosis/index.html">Osteoporosi 
+s
+<option 
+value="http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/%%RA 
+ND%%/Left1/nytcur01/nytcur01.htm/64316637323864633361323839353730?_RM_REDIR_=www.nytimes.com/pa 
+rtners/microsites/fromcausetocure/pain/index.html">Pain
+</select>
+</select>
+</div>
+</form>
+</td>
+</tr>
+</table>
+<font size=-2>Advertisement</font>
+<hr size=1>
+</center>
+
+
+
+<br> <center><font size="-2">Advertisements</font></center>
+<hr size="1"> </td> </tr>
+</table> <p></p> <hr size="1"> 
+
+   
+ 
+
+    </td> </tr> </table> </td> </tr> </table> 
+
+   
+</NYT_TEXT> <br clear="all"> 
+
+
+   <br> <NYT_FOOTER>
+<table border="0" cellpadding="0" cellspacing="0"> <tr> <td align="left" valign="top" width="60">
+<br> </td> <td align="center" valign="top" width="468">
+  
+    <A HREF="/web/20001202062300/http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/0/Bottom/Dscience01/sciencedaily-468b.gif/64316637323864633361323839353730" target="_top"><IMG SRC="/web/20001202062300im_/http://ads.nytimes.com/RealMedia/ads/adstream_lx.ads/www.nytimes.com/pages/science/index.html/0/Bottom/Dscience01/sciencedaily-468b.gif/64316637323864633361323839353730" BORDER=0  WIDTH=468 HEIGHT=60 ALT="" ></A>
+      <hr size="1"> <p></p> <center> <font size="-1">
+<b><a href="/web/20001202062300/http://www.nytimes.com/pages/index.html">Home</a></b> | <b><a href="/web/20001202062300/http://www.nytimes.com/info/contents/siteindex.html">Site Index</a></b> | <b><a href="/web/20001202062300/http://www.nytimes.com/search/daily/">Site Search</a></b> | <b><a href="/web/20001202062300/http://www.nytimes.com/comment/">Forums</a></b> | <b><a href="/web/20001202062300/http://www.nytimes.com/archives/">Archives</a></b> | <b><a href="/web/20001202062300/http://www.nytimes.com/marketplace/">Shopping</a></b> <p></p> <b>News</b> | <a href="/web/20001202062300/http://www.nytimes.com/pages/business/index.html">Business</a> | <a href="/web/20001202062300/http://www.nytimes.com/pages/world/index.html">International</a> | <a href="/web/20001202062300/http://www.nytimes.com/pages/national/index.html">National</a> | <a href="/web/20001202062300/http://www.nytimes.com/pages/nyregion/index.html">New York Region</a> | <a href="/web/20001202062300/http://www.nytimes.com/pages/pageone/index.html">NYT Front Page</a> | <a href="/web/20001202062300/http://www.nytimes.com/pages/national/text/index.html#obits">Obituaries</a> | <a href="/web/20001202062300/http://www.nytimes.com/pages/politics/index.html">Politics</a> | <a href="/web/20001202062300/http://www.nytimes.com/pages/quicknews/index.html">Quick News</a> | <a href="/web/20001202062300/http://www.nytimes.com/pages/sports/index.html">Sports</a> | <a href="/web/20001202062300/http://www.nytimes.com/pages/science/index.html">Science</a> | <a href="/web/20001202062300/http://www.nytimes.com/pages-technology/index.html">Technology/Internet</a> | <a href="/web/20001202062300/http://www.nytimes.com/partners/weather/">Weather</a>
+<br>
+<a href="/web/20001202062300/http://www.nytimes.com/pages/editorial/index.html">Editorial</a> | <a href="/web/20001202062300/http://www.nytimes.com/pages/oped/index.html">Op-Ed</a> <p></p> <b>Features</b> | <a href="/web/20001202062300/http://www.nytimes.com/pages/arts/index.html">Arts</a> | <a href="/web/20001202062300/http://www.nytimes.com/yr/mo/day/auto/">Automobiles</a> | <a href="/web/20001202062300/http://www.nytimes.com/books/yr/mo/day/home/">Books</a> | <a href="/web/20001202062300/http://www.nytimes.com/diversions/cartoons/">Cartoons</a> | <a href="/web/20001202062300/http://www.nytimes.com/diversions/">Crossword</a> | <a href="/web/20001202062300/http://www.nytimes.com/diversions/">Games</a> | <a href="/web/20001202062300/http://www.nytimes.com/yr/mo/day/jobmarket/">Job Market</a> | <a href="/web/20001202062300/http://www.nytimes.com/pages/living/index.html">Living</a> | <a href="/web/20001202062300/http://www.nytimes.com/library/magazine/home/">Magazine</a> | <a href="/web/20001202062300/http://www.nytoday.com/realestate">Real Estate</a> | <a href="/web/20001202062300/http://www.nytimes.com/pages/travel/index.html">Travel</a> | <a href="/web/20001202062300/http://www.nytimes.com/pages/weekinreview/index.html">Week in Review</a> <p></p> <a href="/web/20001202062300/http://www.nytimes.com/subscribe/help/">Help/Feedback</a> | <a href="/web/20001202062300/http://www.nytimes.com/classified/">Classifieds</a> | <a href="/web/20001202062300/http://www.nytimes.com/info/contents/services.html">Services</a> | <a href="/web/20001202062300/http://www.newyorktoday.com/">New York Today</a> <p></p> <NYT_COPYRIGHT>
+<b><a href="/web/20001202062300/http://www.nytimes.com/subscribe/help/copyright.html">Copyright 2000 The New York Times Company</a></b>
+</NYT_COPYRIGHT>
+</font> <p></p>  </center> </td> </tr>
+</table>
+</NYT_FOOTER> 
+
+    </td>
+ <td align="left" width="14" valign="top"> <img src="/web/20001202062300im_/http://graphics.nytimes.com/images/misc/pixel.gif" border="0" WIDTH="14" HEIGHT="1"/> </td> <td align="center" width="140" valign="top"> <img src="/web/20001202062300im_/http://graphics.nytimes.com/images/misc/pixel.gif" border="0" WIDTH="140" HEIGHT="2"/> <img src="/web/20001202062300im_/http://graphics.nytimes.com/ads/house/Technology-140.gif" width="140" height="800" border="0" usemap="#Tech140x800 Map"> 
+<map name="Tech140x800 Map">
+  <area shape="rect" coords="21,592,119,680" href="/web/20001202062300/http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/0/Right3/nytnyt62/Technology-140.html/64316637323864633361323839353730?_RM_REDIR_=www.nytimes.com/library/tech/reference/index-specials.html" alt="Technology Specials and Issues In Depth">
+  <area shape="rect" coords="12,748,130,790" href="/web/20001202062300/http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/0/Right3/nytnyt62/Technology-140.html/64316637323864633361323839353730?_RM_REDIR_=www.nytimes.com/pages-technology/" alt="Click Here: NYTimes.com/tech">
+  <area shape="rect" coords="22,389,120,527" href="/web/20001202062300/http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/0/Right3/nytnyt62/Technology-140.html/64316637323864633361323839353730?_RM_REDIR_=email.nytimes.com/email/email.jsp" alt="Technology Headlines">
+  <area shape="rect" coords="18,253,133,290" href="/web/20001202062300/http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/0/Right3/nytnyt62/Technology-140.html/64316637323864633361323839353730?_RM_REDIR_=www.nytimes.com/pages-technology/" alt="Technology Briefings">
+  <area shape="rect" coords="17,322,131,342" href="/web/20001202062300/http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/0/Right3/nytnyt62/Technology-140.html/64316637323864633361323839353730?_RM_REDIR_=www.nytimes.com/library/tech/reference/cynavi.html" alt="Navigator">
+  <area shape="rect" coords="17,297,131,318" href="/web/20001202062300/http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/0/Right3/nytnyt62/Technology-140.html/64316637323864633361323839353730?_RM_REDIR_=email.nytimes.com/email/email.jsp" alt="Sign Up for E-Mail Updates">
+  <area shape="rect" coords="18,227,134,248" href="/web/20001202062300/http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/0/Right3/nytnyt62/Technology-140.html/64316637323864633361323839353730?_RM_REDIR_=www.nytimes.com/pages-technology/circuits/" alt="Circuits">
+  <area shape="rect" coords="18,201,135,222" href="/web/20001202062300/http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/0/Right3/nytnyt62/Technology-140.html/64316637323864633361323839353730?_RM_REDIR_=www.nytimes.com/pages-technology/cybertimes/cyberlaw/" alt="Cyber Law">
+  <area shape="rect" coords="18,175,133,197" href="/web/20001202062300/http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/0/Right3/nytnyt62/Technology-140.html/64316637323864633361323839353730?_RM_REDIR_=www.nytimes.com/pages-technology/cybertimes/education/" alt="Education">
+  <area shape="rect" coords="18,149,134,171" href="/web/20001202062300/http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/0/Right3/nytnyt62/Technology-140.html/64316637323864633361323839353730?_RM_REDIR_=www.nytimes.com/pages-technology/" alt="New Economy">
+  <area shape="rect" coords="18,123,135,146" href="/web/20001202062300/http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/0/Right3/nytnyt62/Technology-140.html/64316637323864633361323839353730?_RM_REDIR_=www.nytimes.com/pages-technology/cybertimes/commerce/" alt="E-Commerce">
+  <area shape="rect" coords="19,102,138,117" href="/web/20001202062300/http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/0/Right3/nytnyt62/Technology-140.html/64316637323864633361323839353730?_RM_REDIR_=www.nytimes.com/pages-technology/" alt="Technology Section">
+  <area shape="rect" coords="10,19,127,78" href="/web/20001202062300/http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/0/Right3/nytnyt62/Technology-140.html/64316637323864633361323839353730?_RM_REDIR_=www.nytimes.com/pages-technology/" alt="Technology Section">
+</map>
+
+
+<br clear="all">
+
+<A HREF="/web/20001202062300/http://ads.nytimes.com/RealMedia/ads/click_lx.ads/www.nytimes.com/pages/science/index.html/0/Right4/default/empty.gif/64316637323864633361323839353730" target="_top"><IMG SRC="/web/20001202062300im_/http://ads.nytimes.com/RealMedia/ads/adstream_lx.ads/www.nytimes.com/pages/science/index.html/0/Right4/default/empty.gif/64316637323864633361323839353730" BORDER=0  WIDTH=2 HEIGHT=2 ALT="" BORDER=0></A>
+ </td> </tr>
+</table> <BODY> </HTML> 
+
+     
+ 
+
+     
+
+    
+
+   
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 6:23:00 Dec 2, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 13:02:28 Jan 3, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
