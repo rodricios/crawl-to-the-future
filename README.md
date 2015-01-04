@@ -25,7 +25,7 @@ The closest thing to a writeup about the above referenced "larger project" is
 
 ####"larger project" tl;dr
 
-We're attempting to test content-extractors from the last 15 years against a
+We're attempting to [backtest](http://en.wikipedia.org/wiki/Backtesting) content-extractors from the last 15 years against a
 dataset of archived websites (ie. websites that have existed in the last 15 years).
 
 ####This repo tl;dr
