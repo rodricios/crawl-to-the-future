@@ -1,0 +1,564 @@
+<html><head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app13.us.archive.org";archive_analytics.values.server_ms=941;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<title>MSNBC - Japanese robots to guard shops and offices </title><link rel="stylesheet" type="text/css" href="/web/20051212100938cs_/http://www.msnbc.msn.com/css/html40.css"><script src="/web/20051212100938js_/http://www.msnbc.msn.com/js/std.js"></script><script>var sd_name='Tech News & Reviews';</script></head><body leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0" bgcolor="white">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.msnbc.msn.com/id/6448213/did/8330600/?GT1=6657";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "12";
+var displayMonth = "Dec";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.msnbc.msn.com/id/6448213/did/8330600/?GT1=6657" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20051212100938" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Nov
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 10:09:38 Dec 12, 2005">DEC</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20070603223951/http://www.msnbc.msn.com/id/6448213/did/8330600/?GT1=6657" title="3 Jun 2007"><strong>JUN</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 10:09:38 Dec 12, 2005">12</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20051225134919/http://www.msnbc.msn.com/id/6448213/did/8330600/?GT1=6657" title="13:49:19 Dec 25, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2004
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 10:09:38 Dec 12, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20070603223951/http://www.msnbc.msn.com/id/6448213/did/8330600/?GT1=6657" title="3 Jun 2007"><strong>2007</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20051212100938*/http://www.msnbc.msn.com/id/6448213/did/8330600/?GT1=6657" title="See a list of every capture for this URL">3 captures</a>
+           <div class="r" title="Timespan for captures of this URL">12 Dec 05 - 3 Jun 07</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:11:000000000002_2006:-1:000000000000_2007:-1:000001000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<a href="#skipnav" style="display:none;visibility:hidden">Skip navigation</a><script>pd_top('Story','html40','8330600','Japanese robots to guard shops and offices','Robots could soon begin patrolling Japanese offices, shopping malls and banks to keep them safe from intruders','Technology & Science','Tech News & Reviews','','','1','09:54, 23/06/05','','hmedium','','','3033117','69868','6448213');pd_om('msnbcom','100');</script><img src="/web/20051212100938im_/http://c.msn.com/c.gif?NC=47049&amp;NA=1154&amp;PS=69868&amp;PI=7329&amp;DI=305&amp;TP=http%3a%2f%2fmsnbc.msn.com%2fid%2f8330600%2f" width="0" height="0" border="0" alt="" /><!-- SiteCatalyst code version: G.9. Copyright 1997-2004 Omniture, Inc. More info available at /web/20051212100938/http://www.omniture.com --><script src="/web/20051212100938js_/http://www.msnbc.msn.com/js/s_code_remote.js"></script><div id="nm_c1" class="nmX"></div><div id="nm_c2" class="nmX"></div><div id="nm_c3" class="nmX"></div><div id="nm_c4" class="nmX"></div><div class="clr"><span id="lookforhead" style="visibility: hidden;"></span>
+    <div style="position: absolute">
+        <!-- SiteCatalyst code version: G.9. Copyright 1997-2004 Omniture, Inc. More info available at /web/20051212100938/http://www.omniture.com -->
+
+        <script type="text/javascript">
+        <!--
+            var s_p1r=readCookie("P1")
+            var s_p1=(s_p1r+"|||||||||||").split("|");
+            var s_p2r=readCookie("P2")
+            var s_p2z=(s_p2r.length>8&&s_p2r.substring(0,4)=="pi6=")?s_p2r.substring(4,9):""
+            var s_pageName="Story|Technology|Wireless W|9990526|The best BlackBerry handheld yet"
+            var s_channel="Technology &amp; Science"
+            var s_prop1="The best BlackBerry handheld yet"
+            var s_prop2="RIM's new 8700 adds a fast Web browser to great e-mail device"
+            var s_prop3="Gary Krakow"
+            var s_prop4="Technology &amp; Science"
+            var s_prop5="Wireless World"
+            var s_prop6=""
+            var s_prop7="vlarge"
+            var s_prop8=(s_p1r!="")?"Y":"N"
+            var s_prop9=s_p2z
+            var s_prop10=readCookie("CP")
+            var s_prop11=s_p1[6]
+            var s_prop12=s_p1[2]
+            var s_prop13=s_p1[5]
+            var s_prop14=s_p1[11]
+            var s_campaign=""
+            var s_zip=s_p2z
+            var s_account="msnbcom"
+            var s_visitorSampling="100"
+        //-->
+        </script>
+        <script type="text/javascript" src="/web/20051212100938js_/http://www.msnbc.msn.com/js/s_code_remote.js"></script>
+        <!-- End SiteCatalyst code version: G.9. -->
+    </div>
+    <style type="text/css">
+        @import url("/web/20051212100938im_/http://stc.msn.com/br/gbl/css/2/GTL_SiteGeneric.css");@import url("/web/20051212100938im_/http://stc.msn.com/br/chan/tech/css/1/tech_partnersearch.css");@import url("/web/20051212100938im_/http://stc.msn.com/br/chan/css/2/chan_override.css");@import url("/web/20051212100938im_/http://stc.msn.com/br/chan/tech/css/1/tech_override.css");
+        
+        div.w649 h1{margin:20 14 0 15; font:normal 180% Georgia, Times, serif; color:#CC0000;}
+        div.w649 h2{margin:5 14 0 15; font:bold 100% Tahoma; color: #000000;}
+       .nav1 a:link, .nav1 a:visited {color: #07519a;}
+       .nav1 a:active {color:#090;}
+       span#prnt_AsiaQuake_HowToHelp a:link {color: #666;}
+    </style>
+    <!--[if IE 7]><style type="text/css">@import url("/web/20051212100938/http://stc.msn.com/br/gbl/css/1/ie7.css");</style><![endif]-->
+
+    <script type="text/javascript">
+    <!--
+        var bodyRef = document.getElementsByTagName("body").item(0);
+        var divWrap = document.getElementById("lookforhead").parentNode;
+        try{
+            bodyRef.style.textAlign = "center";
+            
+            divWrap.id = "wrapper";
+            divWrap.style.margin = "0 auto";
+            divWrap.style.textAlign = "left";
+            divWrap.style.width = "799px";
+            divWrap.className = "page1 region9";
+        }
+        catch(e){}
+    //-->
+    </script>
+
+    <div id="head" style="text-align:left; border-bottom: solid 3px #06c;">
+        <div class="parent chrome6 single1">
+            <div class="child c1 first">
+                <div class="msnhead1 cf">
+                    <div class="network">
+                        <div class="bannerad">
+                            <iframe scrolling="no" width="728" height="90" marginwidth="0" marginheight="0" frameborder="0"
+                                src="/web/20051212100938if_/http://rad.msn.com/ADSAdClient31.dll?GetAd?pg=COM9A3&amp;AP=1390"></iframe>
+                        </div>
+                        <div class="primary dMSNME_1">
+                            <form action="/web/20051212100938/http://search.msn.com/results.aspx" method="get">
+                                <div>
+                                    <label accesskey="s" for="q">
+                                        Web Search:</label>
+                                    <input type="text" id="q" name="q" size="20" maxlength="150" style="height: 20px;" /><input type="hidden"
+                                        name="FORM" value="a4" />
+                                    <input id="qSubmit" type="submit" class="button" name="submit" size="20" value="Search Web" style="height: 20px;" />
+                                    <script type="text/javascript">
+                                        var qSub = document.getElementById("qSubmit");
+                                        if (navigator.userAgent.indexOf("MSIE") < 0)
+                                            qSub.style.marginBottom = "-1px";
+                                    </script>
+                                </div>
+                            </form>
+                            <ul>
+                                <li class="first"><a href="/web/20051212100938/http://www.msn.com/">MSN Home</a></li>
+                                <li><a href="/web/20051212100938/http://www.hotmail.com/">Hotmail</a></li>
+                                <li><a href="/web/20051212100938/http://my.msn.com/">My MSN</a></li>
+                            </ul>
+                        </div>
+                        <div class="site">
+                            <a href="/web/20051212100938/http://www.msn.com/">
+                                <img src="/web/20051212100938im_/http://sc.msn.com/global/c/lgpos/MSFT_pos.gif" alt="go to MSN.com" class="logo" height="35" width="118" /></a>
+                            <a href="/web/20051212100938/http://tech.msn.com/" class="name">Tech &amp; Gadgets</a>
+                        </div>
+                        <div class="secondary">
+                            <ul>
+                                <li class="first"><a href="/web/20051212100938/http://tech.msn.com/newsletter/about.aspx">Newsletters</a></li>
+                                <li class="last"><a href="/web/20051212100938/http://tech.msn.com/help.aspx">Help</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div></div><table style="table-layout:fixed;overflow:display;" cellpadding="0" cellspacing="0" border="0" width="779"><colgroup><col width="130"><col width="649"><col width="170"></colgroup><tr id="midRow"><td class="nav" width="130" valign="top"><script type="text/javascript">
+ <!--
+  try{
+         // get the main Table
+         var tblMain = document.getElementById("midRow").parentNode.parentNode;
+         
+         tblMain.align = "center";
+         tblMain.style.width = "100%";
+         tblMain.style.display = "none";
+         
+         if (navigator.userAgent.indexOf("Opera") < 0)
+         {
+             tblMain.style.styleFloat = "left";
+             tblMain.style.clear = "both";
+         }
+         
+         var divPage = document.createElement("div");
+         divPage.id = "page";
+         divPage.style.borderTopWidth = "0";
+         divPage.style.paddingBottom = "10px";
+         
+     }
+     catch(e){}
+    //-->
+    </script></td><td width="649" valign="top"><table cellpadding="0" cellspacing="0" border="0" width="649"><tr><td width="526" valign="top"><a href="/web/20051212100938/http://www.msnbc.msn.com/"><img src="/web/20051212100938im_/http://www.msnbc.msn.com/images/msnbc/msnbc_NFN.gif" width="526" height="48" border="0" alt="MSNBC"></a></td><td width="123" valign="top" bgcolor="#F6EED8"></td></tr></table><div class="w649 fL clrR"><h1>Japanese robots to guard shops and offices</h1><h2>Will alert human guards of intruders, fires, water leaks</h2><table cellpadding="0" cellspacing="0" border="0"><tr><td valign="bottom" width="1%" style="padding:25 0 0 15;"><img border="0" src="/web/20051212100938im_/http://msnbcmedia.msn.com/j/msnbc/Components/Photos/050623/050623_japrobot_hmed_7a.hmedium.jpg" style="border:1px solid #000000;" vspace="0" hspace="0" alt="Sohgo Security Services Co. demonstrates new security robot &quot;Guardrobo D1&quot; in Tokyo"></td><td valign="bottom" width="99%"><div class="caption" style="padding:25 10 0 15;">Sohgo Security Services Co. demonstrates the company's newly developed security robot "Guardrobo D1" in Tokyo.</div></td></tr><tr><td><div class="credit aR">Issei Kato / Reuters</div></td><td></td></tr></table><div class="p14"><div id="finalPos"></div><div class="WCCol w300 fR clrR"><div style="padding-bottom:20;"><link href="/web/20051212100938cs_/http://www.msnbc.msn.com/css/html40.css" rel="stylesheet" type="text/css"><script src="/web/20051212100938js_/http://www.msnbc.msn.com/js/std.js"></script><script>var cssList = new Array();</script><script>getCSS("4010972")</script><div class="box_4010972" style="width:300;"><script></script><table width="300" cellspacing="0" cellpadding="0" class="boxH_4010972"><tr><td width="*" nowrap="true" class="boxHC_4010972"><div class="textSmallBold">  MSN Tech &amp; Gadgets</div></td></tr></table><table width="300" cellspacing="0" cellpadding="0" class="boxB_4010972"><tr valign="top"><td class="boxBI_4010972"><style>.travelmodule {width: 276px; font: normal 11px tahoma; color: #000000; background-color: #E4E8DD;} .travelmodule a {text-decoration: none; color: #000000;} .travelmodule a:hover {text-decoration: underline;} .travelmodule td {font-size: 11px;} .travelmodule .headline {height: 20px; color: #FFFFFF; font-size: 12px; font-weight: bold; background-color: #00732E; margin-bottom: 8px; padding: 2px 7px;} .travelmodule .chip {margin: 7px 7px 10px 7px;} .travelmodule .chip .tdL {width: 60px; vertical-align: top;} .travelmodule .chip .tdR {padding-left: 8px;} .travelmodule .relatedlinks {margin: 0px 7px 2px 7px;} .travelmodule .relatedlinks h4 {margin: 0px 0px 3px 0px; font-size: 11px;} .travelmodule ul {list-style-type: disc; margin: 0px 0px 0px 15px;} .travelmodule ul li {margin: 0px 0px 3px 0px;}</style>
+
+<div class="travelmodule">
+  <table border="0" cellspacing="0" cellpadding="0" class="chip">
+    <tr>
+      <td class="tdL">
+        <a href="/web/20051212100938/http://g.msn.com/0US!s9.82921_34446/57.c9302/1??cm=ChannelPartnerOutboundFeed-SC">
+          <img src="/web/20051212100938im_/http://sc.msn.com/3~/XD%5D_XN1NJ,1_TK%5B+8D61PE.jpg" width="60" height="60" border="0">
+        </a>
+      </td>
+      <td class="tdR">
+        <a href="/web/20051212100938/http://g.msn.com/0US!s9.82921_34446/57.c9302/2??cm=ChannelPartnerOutboundFeed-SC">Clean up your files... safely</a>
+      </td>
+    </tr>
+  </table>
+  <div class="relatedlinks">
+    <h4>Related Links</h4>
+    <li>
+      <a href="/web/20051212100938/http://g.msn.com/0US!s9.82921_34446/57.a9302/3??cm=ChannelPartnerOutboundFeed-SC">Terrorism threat to Net overblown</a>
+    </li>
+    <li>
+      <a href="/web/20051212100938/http://g.msn.com/0US!s9.82921_34446/57.b9302/4??cm=ChannelPartnerOutboundFeed-SC">Experience Your Tech Universe</a>
+    </li>
+    <li>
+      <a href="/web/20051212100938/http://g.msn.com/0US!s9.82921_34446/57.b9302/5??cm=ChannelPartnerOutboundFeed-SC">Is your business getting squeezed by gas prices?</a>
+    </li>
+  </div>
+</div></td></tr></table></div></div><div style="padding-bottom:20;"><link href="/web/20051212100938cs_/http://www.msnbc.msn.com/css/html40.css" rel="stylesheet" type="text/css"><script src="/web/20051212100938js_/http://www.msnbc.msn.com/js/std.js"></script><script>var cssList = new Array();</script><script>getCSS("3053751")</script></div><div style="padding-bottom:20;"><link href="/web/20051212100938cs_/http://www.msnbc.msn.com/css/html40.css" rel="stylesheet" type="text/css"><script src="/web/20051212100938js_/http://www.msnbc.msn.com/js/std.js"></script><script>var cssList = new Array();</script><script>getCSS("3053751")</script><div class="box_3053751" style="width:300;"><script></script><table width="300" cellspacing="0" cellpadding="0" class="boxH_3053751"><tr><td width="*" nowrap="true" class="boxHC_3053751"><div class="textSmallBold">  Most Popular</div></td></tr></table><table width="300" cellspacing="0" cellpadding="0" class="boxB_3053751"><tr><td><table cellspacing="0" border="0" width="100%" cellpadding="0" class="headlineList2"><tr><td id="boxB_3053751_tab1" align="center"><span class="bulletRed" id="boxB_3053751_tab1_bt">• </span>Most Viewed</td><td><img scr="/images/cleardot.gif" width="2" height="1"></td><td id="boxB_3053751_tab2" align="center"><span class="bulletRed" id="boxB_3053751_tab2_bt">• </span>Top Rated</td><td><img scr="/images/cleardot.gif" width="2" height="1"></td><td id="boxB_3053751_tab3" align="center"><span class="bulletRed" id="boxB_3053751_tab3_bt">• </span>Most E-mailed</td></tr></table></td></tr><tr valign="top" id="boxB_3053751_tab1_c"><td class="boxBI_3053751"><div class="textHang"><div style="padding-bottom:3px"><span class="bulletRedSmall">• </span><span class="textMed"><a href="/web/20051212100938/http://www.msnbc.msn.com/id/10355657/" id="gted" CE="Link-1">State court rejects Williams’ request for stay</a></span></div><div style="padding-bottom:3px"><span class="bulletRedSmall">• </span><span class="textMed"><a href="/web/20051212100938/http://www.msnbc.msn.com/id/10417159/site/newsweek/" id="gted" CE="Link-1">Bush in the Bubble</a></span></div><div style="padding-bottom:3px"><span class="bulletRedSmall">• </span><span class="textMed"><a href="/web/20051212100938/http://www.msnbc.msn.com/id/10430742/" id="gted" CE="Link-1">‘Survivor’ finalists were consistent to the end</a></span></div><div style="padding-bottom:3px"><span class="bulletRedSmall">• </span><span class="textMed"><a href="/web/20051212100938/http://www.msnbc.msn.com/id/10431104/" id="gted" CE="Link-1">Soldier’s family gets card, then news of death</a></span></div><div style="padding-bottom:3px"><span class="bulletRedSmall">• </span><span class="textMed"><a href="/web/20051212100938/http://www.msnbc.msn.com/id/10411399/" id="gted" CE="Link-1">Ex-‘Sopranos’ actor faces murder charge</a></span></div><div style="padding-bottom:3px"><span class="bulletRedSmall">• </span><span class="textMed"><b><a href="/web/20051212100938/http://www.msnbc.msn.com/id/7468311/">Most viewed on MSNBC.com</a></b></span></div></div></td></tr><tr valign="top" id="boxB_3053751_tab2_c" style="display:none;"><td class="boxBI_3053751"><div class="textHang"><div style="padding-bottom:3px"><span class="bulletRedSmall">• </span><span class="textMed"><a href="/web/20051212100938/http://www.msnbc.msn.com/id/10415553/site/newsweek/" id="gted" CE="Link-1">Keeping Up With the Gateses</a></span></div><div style="padding-bottom:3px"><span class="bulletRedSmall">• </span><span class="textMed"><a href="/web/20051212100938/http://www.msnbc.msn.com/id/10384331/" id="gted" CE="Link-1">DNA tests clear Georgia inmate of rape charges</a></span></div><div style="padding-bottom:3px"><span class="bulletRedSmall">• </span><span class="textMed"><a href="/web/20051212100938/http://www.msnbc.msn.com/id/10385928/" id="gted" CE="Link-1">Scientists figure out our place in Milky Way</a></span></div><div style="padding-bottom:3px"><span class="bulletRedSmall">• </span><span class="textMed"><a href="/web/20051212100938/http://www.msnbc.msn.com/id/10399956/" id="gted" CE="Link-1">Ex-associate of Abramoff could plead guilty</a></span></div><div style="padding-bottom:3px"><span class="bulletRedSmall">• </span><span class="textMed"><a href="/web/20051212100938/http://www.msnbc.msn.com/id/10312469/site/newsweek/" id="gted" CE="Link-1">Want Some Buffett? Not This Way, Fans.</a></span></div><div style="padding-bottom:3px"><span class="bulletRedSmall">• </span><span class="textMed"><b><a href="/web/20051212100938/http://www.msnbc.msn.com/id/7468311/">Most viewed on MSNBC.com</a></b></span></div></div></td></tr><tr valign="top" id="boxB_3053751_tab3_c" style="display:none;"><td class="boxBI_3053751"><div class="textHang"><div style="padding-bottom:3px"><span class="bulletRedSmall">• </span><span class="textMed"><a href="/web/20051212100938/http://www.msnbc.msn.com/id/10296177/site/newsweek/" id="gted" CE="Link-1">Google: Ten Golden Rules</a></span></div><div style="padding-bottom:3px"><span class="bulletRedSmall">• </span><span class="textMed"><a href="/web/20051212100938/http://www.msnbc.msn.com/id/10416802/site/newsweek/" id="gted" CE="Link-1">Breaching the Barrier</a></span></div><div style="padding-bottom:3px"><span class="bulletRedSmall">• </span><span class="textMed"><a href="/web/20051212100938/http://www.msnbc.msn.com/id/10417159/site/newsweek/" id="gted" CE="Link-1">Bush in the Bubble</a></span></div><div style="padding-bottom:3px"><span class="bulletRedSmall">• </span><span class="textMed"><a href="/web/20051212100938/http://www.msnbc.msn.com/id/10415553/site/newsweek/" id="gted" CE="Link-1">Keeping Up With the Gateses</a></span></div><div style="padding-bottom:3px"><span class="bulletRedSmall">• </span><span class="textMed"><a href="/web/20051212100938/http://www.msnbc.msn.com/id/10432126/" id="gted" CE="Link-1">Beirut car bomb targets anti-Syrian lawmaker</a></span></div><div style="padding-bottom:3px"><span class="bulletRedSmall">• </span><span class="textMed"><b><a href="/web/20051212100938/http://www.msnbc.msn.com/id/7468311/">Most viewed on MSNBC.com</a></b></span></div></div></td></tr></table><script>pop_pushTabBox('boxB_3053751');</script></div></div><div style="padding-bottom:20;"><link href="/web/20051212100938cs_/http://www.msnbc.msn.com/css/html40.css" rel="stylesheet" type="text/css"><script src="/web/20051212100938js_/http://www.msnbc.msn.com/js/std.js"></script><script>var cssList = new Array();</script><script>getCSS("3053751")</script><div class="box_3053751" style="width:300;"><script></script><table width="300" cellspacing="0" cellpadding="0" class="boxH_3053751"><tr><td width="*" nowrap="true" class="boxHC_3053751"><div class="textSmallBold">  RSS FEEDS ON MSNBC.COM</div></td></tr></table><table width="300" cellspacing="0" cellpadding="0" class="boxB_3053751"><tr valign="top"><td class="boxBI_3053751"><p class="textMed">Add these headlines to your news reader</p><div class="textHang"><div style="padding-bottom:3px"><span class="bulletRedSmall">• </span><span class="textMed"><strong>Tech News &amp; Reviews</strong>  <a href="/web/20051212100938/http://rss.msnbc.msn.com/id/3033117/device/rss/rss.xml" target="_blank"><img border="0" src="/web/20051212100938im_/http://msnbcmedia.msn.com/i/msnbc/Sections/zNews%20Tools/Newstools/RSS/rss_icon.gif" height="11" width="29" vspace="0" hspace="0"></a></span></div><div style="padding-bottom:3px"><span class="bulletRedSmall">• </span><span class="textMed"><a href="/web/20051212100938/http://www.msnbc.msn.com/id/5216556/" id="gted" CE="Link-1">Learn more about RSS</a></span></div></div></td></tr></table></div></div></div><div class="CCol w160 fR clrR"></div><div class="mR165"><div><a href="/web/20051212100938/http://www.reuters.com/"><a href="/web/20051212100938/http://www.reuters.com/"><img border="0" src="/web/20051212100938im_/http://media.msnbc.msn.com/i/msnbc/Components/Sources/sourceReuters.gif" height="20" width="140" vspace="0" hspace="0"></a></a><div class="textTimestamp">Updated: 9:54 a.m. ET June 23, 2005</div></div><p class="textBodyBlack"><span id="byLine"></span>TOKYO - Burglars beware, robot guards are here.</p><p class="textBodyBlack"><span id="byLine"></span>In an idea straight out of science fiction, robots could soon begin patrolling Japanese offices, shopping malls and banks to keep them safe from intruders.  Equipped with a camera and sensors, the "Guardrobo D1", developed by Japanese security firm Sohgo Security Services Co., is designed to patrol along pre-programmed paths and keep an eye out for signs of trouble.</p><p class="textBodyBlack"><span id="byLine"></span>The 45 inch tall robot will alert human guards via radio and by sending camera footage if it detects intruders, fires, or even water leaks.</p><div class="aC"><div class="textSmallGrey w320"><a href="#storyContinued">Story continues below ↓</a><hr noshade size="1">
+								advertisement
+								<div style="padding:0 10 10 10;"><!--NOAD--><img src="/web/20051212100938im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=B08"/></div><hr noshade size="1"></div></div><a name="storyContinued"></a><p class="textBodyBlack"><span id="byLine"></span>Such robots are vital from a business standpoint when considering Japan's aging population, Sohgo Security said.</p><p class="textBodyBlack"><span id="byLine"></span>"In the near future, it is certain that securing young and capable manpower will become even more difficult ... and the security industry will feel the full brunt of the impact," the company said in a statement.</p><p class="textBodyBlack"><span id="byLine"></span>Around one in five Japanese are now 65 or over and the proportion is expected to rise to one in three in 2040, according to government data.</p><p class="textBodyBlack"><span id="byLine"></span>Sohgo Security is negotiating with several clients, and after an initial trial run hopes to begin offering a robot-assisted security system within a year, the company said.</p><p class="textBodyBlack"><span id="byLine"></span>Pricing has yet to be decided. </p><div class="textBodyBlack"><i>© Reuters 2005. All rights reserved. Republication or redistribution of Reuters content, including by caching, framing or similar means, is expressly prohibited without the prior written consent of Reuters. Reuters and the Reuters sphere logo are registered trademarks and trademarks of the Reuters group of companies around the world.</i></div><div class="userRating t1 b f11 c000" style="margin-top:20px;"><nobr>   Rate this story </nobr><span style="white-space:wrap;"></span><nobr>   Low  <script language="javascript" src="/web/20051212100938js_/http://www.msnbc.msn.com/js/msnrrua.js"></SCRIPT><img src="/web/20051212100938im_/http://www.msnbc.msn.com/images/msnrrua/b35.gif" border="0" id="Rating" useMap="#RatingMap" originalImg="/images/msnrrua/b35.gif" style="cursor:hand;" /><map name="RatingMap" hp="/rate.ashx" ct="0fQ%2fRL7a%2ff%2fk%2fnaO9vV%2f%2bmuqK8qoh6K7dFMbC%2buk6d8niTDyScCKmo5%2bc32I36Fs" ii="SAv6SnprSu9OGqUJZIeCxg%3d%3d" it="long" ai="7f333340-ad1e-4978-9b5d-f92512fa6938" key="rrk%28%2522%250130%2515R%2510%250b%2524%255cw%2526%2509+%250e%2501Y%255b" hc="2017105661" rtxt="You rated this item %userrating%"><area shape="RECT" coords="0,0,6,12" onmouseover="UCI(this,'Rating')" onmouseout="URI('Rating')" onclick="return UR('/images/msnrrua/y05.gif', 'Rating', 'CgGkypw1dGpGbrAICJqSaA%3d%3d', 0, this)" href="/web/20051212100938/http://www.msnbc.msn.com/rate.ashx?ct=0fQ%2fRL7a%2ff%2fk%2fnaO9vV%2f%2bmuqK8qoh6K7dFMbC%2buk6d8niTDyScCKmo5%2bc32I36Fs&amp;ii=SAv6SnprSu9OGqUJZIeCxg%3d%3d&amp;it=long&amp;ai=7f333340-ad1e-4978-9b5d-f92512fa6938&amp;r=CgGkypw1dGpGbrAICJqSaA%3d%3d&amp;c=0&amp;u=0&amp;ru=http%3a%2f%2fwww.msnbc.msn.com%2fDefault.aspx%3fid%3d6448213%26did%3d8330600%26GT1%3d6657%26uart%3d1%26uarc%3dRating" alt="Rate it 0.5" i="/images/msnrrua/y05.gif" v="0.5"></area><area shape="RECT" coords="6,0,12,12" onmouseover="UCI(this,'Rating')" onmouseout="URI('Rating')" onclick="return UR('/images/msnrrua/y10.gif', 'Rating', 'qGWcDbqaa%2bTdfSWR6FZunQ%3d%3d', 1, this)" href="/web/20051212100938/http://www.msnbc.msn.com/rate.ashx?ct=0fQ%2fRL7a%2ff%2fk%2fnaO9vV%2f%2bmuqK8qoh6K7dFMbC%2buk6d8niTDyScCKmo5%2bc32I36Fs&amp;ii=SAv6SnprSu9OGqUJZIeCxg%3d%3d&amp;it=long&amp;ai=7f333340-ad1e-4978-9b5d-f92512fa6938&amp;r=qGWcDbqaa%2bTdfSWR6FZunQ%3d%3d&amp;c=1&amp;u=0&amp;ru=http%3a%2f%2fwww.msnbc.msn.com%2fDefault.aspx%3fid%3d6448213%26did%3d8330600%26GT1%3d6657%26uart%3d2%26uarc%3dRating" alt="Rate it 1" i="/images/msnrrua/y10.gif" v="1"></area><area shape="RECT" coords="12,0,18,12" onmouseover="UCI(this,'Rating')" onmouseout="URI('Rating')" onclick="return UR('/images/msnrrua/y15.gif', 'Rating', 'HNYPSaHY5g9BfczKMxRy9w%3d%3d', 2, this)" href="/web/20051212100938/http://www.msnbc.msn.com/rate.ashx?ct=0fQ%2fRL7a%2ff%2fk%2fnaO9vV%2f%2bmuqK8qoh6K7dFMbC%2buk6d8niTDyScCKmo5%2bc32I36Fs&amp;ii=SAv6SnprSu9OGqUJZIeCxg%3d%3d&amp;it=long&amp;ai=7f333340-ad1e-4978-9b5d-f92512fa6938&amp;r=HNYPSaHY5g9BfczKMxRy9w%3d%3d&amp;c=2&amp;u=0&amp;ru=http%3a%2f%2fwww.msnbc.msn.com%2fDefault.aspx%3fid%3d6448213%26did%3d8330600%26GT1%3d6657%26uart%3d3%26uarc%3dRating" alt="Rate it 1.5" i="/images/msnrrua/y15.gif" v="1.5"></area><area shape="RECT" coords="18,0,25,12" onmouseover="UCI(this,'Rating')" onmouseout="URI('Rating')" onclick="return UR('/images/msnrrua/y20.gif', 'Rating', '3ovdVGPXGtuD7c%2bZT61JSg%3d%3d', 3, this)" href="/web/20051212100938/http://www.msnbc.msn.com/rate.ashx?ct=0fQ%2fRL7a%2ff%2fk%2fnaO9vV%2f%2bmuqK8qoh6K7dFMbC%2buk6d8niTDyScCKmo5%2bc32I36Fs&amp;ii=SAv6SnprSu9OGqUJZIeCxg%3d%3d&amp;it=long&amp;ai=7f333340-ad1e-4978-9b5d-f92512fa6938&amp;r=3ovdVGPXGtuD7c%2bZT61JSg%3d%3d&amp;c=3&amp;u=0&amp;ru=http%3a%2f%2fwww.msnbc.msn.com%2fDefault.aspx%3fid%3d6448213%26did%3d8330600%26GT1%3d6657%26uart%3d4%26uarc%3dRating" alt="Rate it 2" i="/images/msnrrua/y20.gif" v="2"></area><area shape="RECT" coords="25,0,31,12" onmouseover="UCI(this,'Rating')" onmouseout="URI('Rating')" onclick="return UR('/images/msnrrua/y25.gif', 'Rating', 'jT%2f7A5GorvC7ZxtBju4%2biA%3d%3d', 4, this)" href="/web/20051212100938/http://www.msnbc.msn.com/rate.ashx?ct=0fQ%2fRL7a%2ff%2fk%2fnaO9vV%2f%2bmuqK8qoh6K7dFMbC%2buk6d8niTDyScCKmo5%2bc32I36Fs&amp;ii=SAv6SnprSu9OGqUJZIeCxg%3d%3d&amp;it=long&amp;ai=7f333340-ad1e-4978-9b5d-f92512fa6938&amp;r=jT%2f7A5GorvC7ZxtBju4%2biA%3d%3d&amp;c=4&amp;u=0&amp;ru=http%3a%2f%2fwww.msnbc.msn.com%2fDefault.aspx%3fid%3d6448213%26did%3d8330600%26GT1%3d6657%26uart%3d5%26uarc%3dRating" alt="Rate it 2.5" i="/images/msnrrua/y25.gif" v="2.5"></area><area shape="RECT" coords="31,0,38,12" onmouseover="UCI(this,'Rating')" onmouseout="URI('Rating')" onclick="return UR('/images/msnrrua/y30.gif', 'Rating', 'gyfPgfRYv1Oim0wKiqhc8g%3d%3d', 5, this)" href="/web/20051212100938/http://www.msnbc.msn.com/rate.ashx?ct=0fQ%2fRL7a%2ff%2fk%2fnaO9vV%2f%2bmuqK8qoh6K7dFMbC%2buk6d8niTDyScCKmo5%2bc32I36Fs&amp;ii=SAv6SnprSu9OGqUJZIeCxg%3d%3d&amp;it=long&amp;ai=7f333340-ad1e-4978-9b5d-f92512fa6938&amp;r=gyfPgfRYv1Oim0wKiqhc8g%3d%3d&amp;c=5&amp;u=0&amp;ru=http%3a%2f%2fwww.msnbc.msn.com%2fDefault.aspx%3fid%3d6448213%26did%3d8330600%26GT1%3d6657%26uart%3d6%26uarc%3dRating" alt="Rate it 3" i="/images/msnrrua/y30.gif" v="3"></area><area shape="RECT" coords="38,0,45,12" onmouseover="UCI(this,'Rating')" onmouseout="URI('Rating')" onclick="return UR('/images/msnrrua/y35.gif', 'Rating', 'YgdFQxV2BGswpTkokhKIPQ%3d%3d', 6, this)" href="/web/20051212100938/http://www.msnbc.msn.com/rate.ashx?ct=0fQ%2fRL7a%2ff%2fk%2fnaO9vV%2f%2bmuqK8qoh6K7dFMbC%2buk6d8niTDyScCKmo5%2bc32I36Fs&amp;ii=SAv6SnprSu9OGqUJZIeCxg%3d%3d&amp;it=long&amp;ai=7f333340-ad1e-4978-9b5d-f92512fa6938&amp;r=YgdFQxV2BGswpTkokhKIPQ%3d%3d&amp;c=6&amp;u=0&amp;ru=http%3a%2f%2fwww.msnbc.msn.com%2fDefault.aspx%3fid%3d6448213%26did%3d8330600%26GT1%3d6657%26uart%3d7%26uarc%3dRating" alt="Rate it 3.5" i="/images/msnrrua/y35.gif" v="3.5"></area><area shape="RECT" coords="45,0,51,12" onmouseover="UCI(this,'Rating')" onmouseout="URI('Rating')" onclick="return UR('/images/msnrrua/y40.gif', 'Rating', 'qOQxqOmE6VfCZMFpdZt73A%3d%3d', 7, this)" href="/web/20051212100938/http://www.msnbc.msn.com/rate.ashx?ct=0fQ%2fRL7a%2ff%2fk%2fnaO9vV%2f%2bmuqK8qoh6K7dFMbC%2buk6d8niTDyScCKmo5%2bc32I36Fs&amp;ii=SAv6SnprSu9OGqUJZIeCxg%3d%3d&amp;it=long&amp;ai=7f333340-ad1e-4978-9b5d-f92512fa6938&amp;r=qOQxqOmE6VfCZMFpdZt73A%3d%3d&amp;c=7&amp;u=0&amp;ru=http%3a%2f%2fwww.msnbc.msn.com%2fDefault.aspx%3fid%3d6448213%26did%3d8330600%26GT1%3d6657%26uart%3d8%26uarc%3dRating" alt="Rate it 4" i="/images/msnrrua/y40.gif" v="4"></area><area shape="RECT" coords="51,0,58,12" onmouseover="UCI(this,'Rating')" onmouseout="URI('Rating')" onclick="return UR('/images/msnrrua/y45.gif', 'Rating', '4krDLqFGt%2bNtMW0waRmaGA%3d%3d', 8, this)" href="/web/20051212100938/http://www.msnbc.msn.com/rate.ashx?ct=0fQ%2fRL7a%2ff%2fk%2fnaO9vV%2f%2bmuqK8qoh6K7dFMbC%2buk6d8niTDyScCKmo5%2bc32I36Fs&amp;ii=SAv6SnprSu9OGqUJZIeCxg%3d%3d&amp;it=long&amp;ai=7f333340-ad1e-4978-9b5d-f92512fa6938&amp;r=4krDLqFGt%2bNtMW0waRmaGA%3d%3d&amp;c=8&amp;u=0&amp;ru=http%3a%2f%2fwww.msnbc.msn.com%2fDefault.aspx%3fid%3d6448213%26did%3d8330600%26GT1%3d6657%26uart%3d9%26uarc%3dRating" alt="Rate it 4.5" i="/images/msnrrua/y45.gif" v="4.5"></area><area shape="RECT" coords="58,0,63,12" onmouseover="UCI(this,'Rating')" onmouseout="URI('Rating')" onclick="return UR('/images/msnrrua/y50.gif', 'Rating', 'fz8Zor7EEpkaK9JhvEhHow%3d%3d', 9, this)" href="/web/20051212100938/http://www.msnbc.msn.com/rate.ashx?ct=0fQ%2fRL7a%2ff%2fk%2fnaO9vV%2f%2bmuqK8qoh6K7dFMbC%2buk6d8niTDyScCKmo5%2bc32I36Fs&amp;ii=SAv6SnprSu9OGqUJZIeCxg%3d%3d&amp;it=long&amp;ai=7f333340-ad1e-4978-9b5d-f92512fa6938&amp;r=fz8Zor7EEpkaK9JhvEhHow%3d%3d&amp;c=9&amp;u=0&amp;ru=http%3a%2f%2fwww.msnbc.msn.com%2fDefault.aspx%3fid%3d6448213%26did%3d8330600%26GT1%3d6657%26uart%3d10%26uarc%3dRating" alt="Rate it 5" i="/images/msnrrua/y50.gif" v="5"></area></map><img id="rrir_Rating" src="/web/20051212100938im_/http://www.msnbc.msn.com/images/msnrrua/1x1.gif" width="1" height="1" style="position:absolute;"><input type="hidden" id="rrur_Rating" style="behavior:url(#default#userData)"><script language="javascript" defer="true">UGR('Rating')</script><script>var usrRating=3.5;var totalUsers=20</script> High
+				</nobr></div><span class="t1 f11 c000" style="display:none" id="userRatingTotal"></span><span>  </span><span class="bulletRedSmall">   • </span><a href="/web/20051212100938/http://www.msnbc.msn.com/id/7468311/" class="t1 b f11 c000">View Top Rated stories</a><br><script>WriteRatings();</script><br><div class="textMedBlack doThis" style="text-align:center"><span class="dSp"><img class="dIc" src="/web/20051212100938im_/http://www.msnbc.msn.com/images/msnbc/print02.gif"> <a href="javascript:printThis('8330600')">Print this</a></span><span class="dSp"><img class="dIc" src="/web/20051212100938im_/http://www.msnbc.msn.com/images/msnbc/email02.gif"> <a href="javascript:emThis('8330600')">Email this</a></span><span class="dSp" id="blogThis" style="display:none"> <img class="dIc" src="/web/20051212100938im_/http://www.msnbc.msn.com/images/msnbc/blog02.gif"> <a href="javascript:blogThis('8330600')" title="Add to your blog on MSN Spaces">Blog this</a></span><span class="dSp" id="imThis"> <img class="dIc" src="/web/20051212100938im_/http://www.msnbc.msn.com/images/msnbc/icon_IM.gif"> <a href="javascript:IMThis('8330600')" title="Send this story with MSN Messenger"> IM this</a></span></div><script>blogCheck();</script><img width="100%" height="0"><div style="padding-top:20px;"><script>getCSS("3053751")</script><div class="box_3053751" style="width:100%;"><script></script><table width="100%" cellspacing="0" cellpadding="0" class="boxH_3053751"><tr><td width="*" nowrap="true" class="boxHC_3053751"><div class="textSmallBold">  MORE FROM TECH NEWS &amp; REVIEWS  </div></td><td width="80%" class="boxH2C_3053751"><div class="textSmall">  </div></td></tr></table><table width="100%" cellspacing="0" cellpadding="0" class="boxB_3053751"><tr valign="top"><td><div style="width:100%;background-color:#ffffff;height:100%;"><div style="padding:10px;width:16%;height:100%;float:left;"><span ID="StoryNextButton" CM="StoryNextButton"><a id="gted" CE="Tech News &amp; Reviews" onmouseover="swapImage('next_links','/images/buttons/next/buttonNextOver.gif')" onmouseout="swapImage('next_links','/images/buttons/next/buttonNext.gif')" onmousedown="swapImage('next_links','/images/buttons/next/buttonNextDown.gif')" href="/web/20051212100938/http://www.msnbc.msn.com/id/3033118/"><img src="/web/20051212100938im_/http://www.msnbc.msn.com/images/buttons/next/buttonNext.gif" border="0" width="53" height="19" id="next_links"></a></span></div><div id="nextText" class="textMedBlackBold fL p11">Tech News &amp; Reviews Section Front</div></div></td></tr><tr valign="top"><td class="boxBI_3053751"><span CM="StoryNextLink"><div style="width:100%;height:16;" id="1039764"><div style="float:left;width:25;height:100%;"></div><div class="textHang"><span class="bulletRedSmall">• </span><span class="headlineList2"><a class="linkBlack" href="/web/20051212100938/http://www.msnbc.msn.com/id/6448213/did/10397642/" id="gted" CE="1">Intel blasts '$100 laptop' as mere 'gadget'</a></span></div></div><div style="width:100%;height:16;" id="1039455"><div style="float:left;width:25;height:100%;"></div><div class="textHang"><span class="bulletRedSmall">• </span><span class="headlineList2"><a class="linkBlack" href="/web/20051212100938/http://www.msnbc.msn.com/id/6448213/did/10394558/" id="gted" CE="2">Intel narrows revenue outlook</a></span></div></div><div style="width:100%;height:16;" id="1039767"><div style="float:left;width:25;height:100%;"></div><div class="textHang"><span class="bulletRedSmall">• </span><span class="headlineList2"><a class="linkBlack" href="/web/20051212100938/http://www.msnbc.msn.com/id/6448213/did/10397672/" id="gted" CE="3">Google ad fraud plaintiff seeks to cut role in case</a></span></div></div><div style="width:100%;height:16;" id="1038175"><div style="float:left;width:25;height:100%;"></div><div class="textHang"><span class="bulletRedSmall">• </span><span class="headlineList2"><a class="linkBlack" href="/web/20051212100938/http://www.msnbc.msn.com/id/6448213/did/10381754/" id="gted" CE="4">Europeans race to claim new Net names</a></span></div></div><div style="width:100%;height:16;" id="1038175"><div style="float:left;width:25;height:100%;"></div><div class="textHang"><span class="bulletRedSmall">• </span><span class="headlineList2"><a class="linkBlack" href="/web/20051212100938/http://www.msnbc.msn.com/id/6448213/did/10381757/" id="gted" CE="5">Bad Web registrations abound, GAO finds</a></span></div></div><div style="width:100%;height:16;" id="1038076"><div style="float:left;width:25;height:100%;"></div><div class="textHang"><span class="bulletRedSmall">• </span><span class="headlineList2"><a class="linkBlack" href="/web/20051212100938/http://www.msnbc.msn.com/id/6448213/did/10380765/" id="gted" CE="6">MPAA pushes for tougher bootlegging laws</a></span></div></div><div style="width:100%;height:16;" id="1036699"><div style="float:left;width:25;height:100%;"></div><div class="textHang"><span class="bulletRedSmall">• </span><span class="headlineList2"><a class="linkBlack" href="/web/20051212100938/http://www.msnbc.msn.com/id/6448213/did/10366993/" id="gted" CE="7">Yahoo adds Skype-like ability to its messenger</a></span></div></div><div style="width:100%;height:16;" id="1036753"><div style="float:left;width:25;height:100%;"></div><div class="textHang"><span class="bulletRedSmall">• </span><span class="headlineList2"><a class="linkBlack" href="/web/20051212100938/http://www.msnbc.msn.com/id/6448213/did/10367538/" id="gted" CE="8">Prices falling on satellite radios</a></span></div></div><div style="width:100%;height:16;" id="1036750"><div style="float:left;width:25;height:100%;"></div><div class="textHang"><span class="bulletRedSmall">• </span><span class="headlineList2"><a class="linkBlack" href="/web/20051212100938/http://www.msnbc.msn.com/id/6448213/did/10367504/" id="gted" CE="9">DVD sales seen nearing global peak</a></span></div></div><div style="width:100%;height:16;" id="69962"><div style="float:left;width:25;height:100%;"></div><div class="textHang"><span class="bulletRedSmall">• </span><span class="headlineList2"><a class="linkBlack" href="/web/20051212100938/http://www.msnbc.msn.com/id/3053419/?qp=69962" id="gted" CE="10">ARCHIVE: More tech news</a></span></div></div></span><div style="width:100%;height:16;"><div style="float:left;width:25;height:100%;"></div><div class="textHang"><span class="bulletRedSmall">• </span><span class="headlineList2"><a class="linkBlack" href="/web/20051212100938/http://www.msnbc.msn.com/id/3033118/">Tech News &amp; Reviews Section Front</a></span></div></div><span class="textSmall"> </span></td></tr></table><table width="100%" cellspacing="0" cellpadding="0" class="boxF_3053751"><tr><td class="boxFI_3053751"><div class="textSmall"></div></td></tr></table></div><script>nextStory("1039764^Intel blasts '$100 laptop' as mere 'gadget'|1039455^Intel narrows revenue outlook|1039767^Google ad fraud plaintiff seeks to cut role in case|1038175^Europeans race to claim new Net names|1038175^Bad Web registrations abound, GAO finds|1038076^MPAA pushes for tougher bootlegging laws|1036699^Yahoo adds Skype-like ability to its messenger|1036753^Prices falling on satellite radios|1036750^DVD sales seen nearing global peak|69962^ARCHIVE: More tech news|");</script></div><div style="padding-top:20px;"><div class="fL" style="width:225px;"><span CM="StoryTop"><script>getCSS("3182775")</script><div class="box_3182775" style="width:100%;"><script></script><table width="100%" cellspacing="0" cellpadding="0" class="boxH_3182775"><tr><td width="1%" class="boxHI_3182775"><img border="0" src="/web/20051212100938im_/http://msnbcmedia.msn.com/j/msnbc/Test-Dev/donna/msnbc10/Launch%20images/top_msnbc.gif,standard.jpg" vspace="0" hspace="0"></td><td width="*" nowrap="true" class="boxHC_3182775"><div class="textSmallBold"></div></td></tr></table><table width="100%" cellspacing="0" cellpadding="0" class="boxB_3182775"><tr valign="top"><td class="boxBI_3182775"><div class="textHang" style="padding-bottom:3px;"><span class="bulletRedSmall">• </span><span class="headlineList2"><a href="/web/20051212100938/http://www.msnbc.msn.com/id/10426494/" id="gted" CE="1">Iraq poised for election</a></span></div><div class="textHang" style="padding-bottom:3px;"><span class="bulletRedSmall">• </span><span class="headlineList2"><a href="/web/20051212100938/http://www.msnbc.msn.com/id/10355657/" id="gted" CE="2">Court rejects Williams’ request for stay</a></span></div><div class="textHang" style="padding-bottom:3px;"><span class="bulletRedSmall">• </span><span class="headlineList2"><a href="/web/20051212100938/http://www.msnbc.msn.com/id/10424922/" id="gted" CE="3">Colts stay perfect at 13-0</a></span></div><div class="textHang" style="padding-bottom:3px;"><span class="bulletRedSmall">• </span><span class="headlineList2"><a href="/web/20051212100938/http://www.msnbc.msn.com/id/10424013/" id="gted" CE="4">Frist would block filibuster</a></span></div><div class="textHang" style="padding-bottom:3px;"><span class="bulletRedSmall">• </span><span class="headlineList2"><a href="/web/20051212100938/http://www.msnbc.msn.com/id/10429797/" id="gted" CE="5">WP: Abuse cited in 2nd Iraq ministry facility</a></span></div></td></tr></table></div></span></div><div class="fL" style="width:14px;"> </div><div class="fL" style="width:225px;"><span CM="StoryEdChoice"><script>getCSS("3182775")</script><div class="box_3182775" style="width:100%;"><script></script><table width="100%" cellspacing="0" cellpadding="0" class="boxH_3182775"><tr><td width="1%" class="boxHI_3182775"><img border="0" src="/web/20051212100938im_/http://msnbcmedia.msn.com/j/msnbc/Test-Dev/donna/msnbc10/Launch%20images/tv_highlights.gif,standard.jpg" vspace="0" hspace="0"></td><td width="*" nowrap="true" class="boxHC_3182775"><div class="textSmallBold"></div></td></tr></table><table width="100%" cellspacing="0" cellpadding="0" class="boxB_3182775"><tr valign="top"><td class="boxBI_3182775"><div class="textHang" style="padding-bottom:3px;"><span class="bulletRedSmall">• </span><span class="headlineList2"><a href="/web/20051212100938/http://www.msnbc.msn.com/id/3080261/" id="gted" CE="1">MSNBC-TV Question of the Day</a></span></div><div class="textHang" style="padding-bottom:3px;"><span class="bulletRedSmall">• </span><span class="headlineList2"><a href="/web/20051212100938/http://www.msnbc.msn.com/id/10382594/" id="gted" CE="2">Blog: Inside the 'Trail of Terror'</a></span></div><div class="textHang" style="padding-bottom:3px;"><span class="bulletRedSmall">• </span><span class="headlineList2"><a href="/web/20051212100938/http://www.msnbc.msn.com/id/10284169/#051208a" id="gted" CE="3">Carlson: False conspiracies poison</a></span></div><div class="textHang" style="padding-bottom:3px;"><span class="bulletRedSmall">• </span><span class="headlineList2"><a href="/web/20051212100938/http://www.msnbc.msn.com/id/10381687/" id="gted" CE="4">Al Franken in Scarborough Country</a></span></div><div class="textHang" style="padding-bottom:3px;"><span class="bulletRedSmall">• </span><span class="headlineList2"><a href="/web/20051212100938/http://www.msnbc.msn.com/id/9665456/#051208a" id="gted" CE="5">Cosby blogs: Patrolling in Afghanistan</a></span></div></td></tr></table></div></span></div></div><div class="textSmallGrey p2">advertisement</div><div class="eshopStory"><script src="/web/20051212100938js_/http://shopping.msn.com/i/ptnrContent.aspx?ptnrId=1&amp;ptnrData=100210&amp;mapKey=Techbottom"></script></div><div class="w460 clr"></div><div class="w460 clr"><div style="font-family : Verdana, Arial, Geneva, Helvetica, sans-serif;padding-top:15px;"><script src="/web/20051212100938js_/http://context3.kanoodle.com/cgi-bin/context.cgi?id=78053631&amp;db=context&amp;query=*general_network&amp;cgroup=ittools&amp;format=table&amp;numresults=5&amp;width=459&amp;bordercolor=7788AA&amp;fillcolor=FFFFFF&amp;title=1&amp;signup=1&amp;newtarget=1&amp;fontsize=10px"></script></div></div></div></div></div></td><td width="160" valign="top" class="w160 p4"><div id="DCol"><div><div style="width:152;overflow:hidden;"><div style="text-align:center;width:160;" class="textSmallGrey">advertisement</div><div class="AdEShopHead">Shopping on MSN</div><div class="AdEShopMain"><SCRIPT language="JavaScript" src="/web/20051212100938js_/http://shopping.msn.com/i/ptnrContent.aspx?ptnrId=1&amp;ptnrData=10021&amp;mapKey=Tech"></SCRIPT></div></div></div><div><br></div><script>msnSideBar();</script></div></td></tr><tr height="20"><td class="nav" width="130" valign="top"> </td><td width="649" valign="top" colspan="2"> </td></tr></table><div class="clr"><span id="lookforfoot" style="display: none;"></span>
+
+    <script type="text/javascript">
+        // remove table from body
+        if (navigator.userAgent.indexOf("Opera") < 0)
+            bodyRef.removeChild(tblMain);
+        
+        // remove the second row
+        tblMain.deleteRow(1);
+        
+        // remove the colgroup element
+        tblMain.removeChild(tblMain.firstChild);
+        tblMain.style.width = "799px";
+        tblMain.style.margin = "0 auto";        
+        
+        // set the content of nav menu bar
+        var tdNav = tblMain.rows[0].cells[0];
+        
+        tdNav.style.backgroundColor = "#FFF";
+        tdNav.style.width = "150px";
+        tdNav.style.fontSize = "70%";
+        //tdNav.style.borderTop = "solid 3px #06c";
+        tdNav.innerHTML = '<div id="nav" class="region2"><div class="parent chrome6 single1"><div class="child c1 first"><div class="nav1"><ul style="background-color: #FFF;"><li class="first preexpanded"><a href="/web/20051212100938/http://tech.msn.com/">Home</a></li><li><a href="/web/20051212100938/http://tech.msn.com/products/">Product Reviews</a></li><li><a href="/web/20051212100938/http://tech.msn.com/downloads/">Downloads &amp; Tools</a></li><li><a href="/web/20051212100938/http://tech.msn.com/howto/">How-To</a></li><li><a href="/web/20051212100938/http://tech.msn.com/news/">News &amp; Trends</a></li><li><a href="/web/20051212100938/http://tech.msn.com/mobile/">Mobile</a></li><li><a href="/web/20051212100938/http://tech.msn.com/virus/">Virus &amp; Security</a></li><li><a href="/web/20051212100938/http://tech.msn.com/games/">Games</a></li><li><a href="/web/20051212100938/http://tech.msn.com/business/">Business &amp; IT</a></li><li class="last"><a href="/web/20051212100938/http://shopping.msn.com/partnercategory.aspx?catId=419&ptnrId=7">Shopping</a></li></ul></div></div></div><div class="parent chrome5 single1"><h2 style="font-size:100%;">Special Guides</h2><div class="child c1 first"><ul class="linklist16"><li class="first"><a href="/web/20051212100938/http://tech.msn.com/guides/itdecision.aspx">IT Decision Center</a></li><li><a href="/web/20051212100938/http://tech.msn.com/guides/microsoftproducts.aspx">Microsoft Products</a></li><li class="last"><a href="/web/20051212100938/http://tech.msn.com/guides/photosguide.aspx">Focus on Photos</a></li></ul></div></div><div class="parent chrome1 single1"><h2 style="font-size:100%; margin: 0; lineHeight: 10.08pt; color: #999;">More from MSN</h2><div class="child c1 first"><ul class="linklist16"><li class="first"><a href="/web/20051212100938/http://tech.msn.com/products/speedtest.aspx">Internet Speed Test</a></li><li><a href="/web/20051212100938/http://spaces.msn.com/members/technologyfilter/">Technology Filter</a></li><li class="last"><a href="/web/20051212100938/http://hotlist.msn.com/">What&#39;s Hot on MSN?</a></li></ul></div></div></div>';
+        
+        var tdCont = tblMain.rows[0].cells[1];
+        
+        tblMain.rows[0].cells[2].style.visibility= "hidden";
+        tblMain.rows[0].cells[2].style.width = "0";
+        //tdCont.style.width  =  "112.14ex";
+        tdCont.style.width = "649px";
+        //tdCont.style.width = "100%";
+        tdCont.style.fontFamily = "Times New Roman";
+        //tdCont.style.borderTop = "solid 3px #06c";
+        
+        /*
+        var innerHR1 = document.createElement("hr");
+        innerHR1.style.width = "175px";
+        innerHR1.style.visibility = "hidden";
+
+        // add columns
+        var newtd = tblMain.rows[0].insertCell(0);
+        //newtd.style.width = "100%";
+        newtd.style.width = "175px";
+        newtd.appendChild(innerHR1);*/
+    </script>
+
+    <div id="foot">
+        <div class="parent chrome6 single1">
+            <div class="child c1 first">
+                <div class="msnfoot1 cf">
+                    <ul class="primary">
+                        <li class="first">&copy; 2005 Microsoft</li>
+                        <li><a href="/web/20051212100938/http://privacy.msn.com/">MSN Privacy</a></li>
+                        <li><a href="/web/20051212100938/http://privacy.msn.com/tou/">Legal</a></li>
+                        <li class="last"><a href="/web/20051212100938/http://advertising.msn.com/">Advertise</a></li>
+                    </ul>
+                    <ul class="secondary">
+                        <li class="first"><a href="/web/20051212100938/http://feedback.msn.com/eform.aspx?productkey=techandgadgets&amp;page=feedback_home_form">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- nohack -->
+    <script type="text/javascript">
+        var divFoot = document.getElementById("lookforfoot").parentNode;
+     
+        divFoot.style.margin = "0 auto";
+        divFoot.style.textAlign = "left";
+        divFoot.className = "page1 region9";
+
+        // Set background color for bantop
+        var tblBantop = tdCont.getElementsByTagName("table").item(0);
+        tblBantop.style.width = "100%";
+        tblBantop.style.backgroundColor = "#F6EED8";
+     
+        // show main table
+        if (navigator.userAgent.indexOf("Opera") < 0)
+        {
+            divPage.appendChild(tblMain);
+            divWrap.appendChild(divPage);
+        }
+        
+        tblMain.style.display = "block";
+        
+        var divList = tdCont.getElementsByTagName("div");
+        for (i=0; i<divList.length; i++)
+        {
+            if (divList[i].className.indexOf("w300") > 0)
+                divList[i].style.width = "300px";
+        }
+        
+        var divDCol = document.getElementById("DCol");
+        var divPD = divDCol.parentNode;
+        
+        divDCol.style.width = "160px";
+        divDCol.style.backgroundColor = "#FFF";
+        divDCol.style.textAlign = "center";
+        divDCol.style.fontSize = "11pt";
+        
+        if (navigator.userAgent.indexOf("MSIE") < 0 || navigator.userAgent.indexOf("Opera") > 0)
+        {
+            divDCol.style.position = "relative";
+            divDCol.style.left = "500px";
+            divDCol.style.margin = "0 auto";
+            
+            if (navigator.userAgent.indexOf("Opera") > 0)
+                divDCol.style.top = 1-divFoot.offsetTop + "px";
+            else
+                divDCol.style.top = 100 - divFoot.offsetTop + "px";
+            
+            divPD.removeChild(divDCol);
+            
+            //divPage.insertBefore(divDCol, divPage.firstChild);
+            //bodyRef.insertBefore(divDCol, divWrap);
+            //bodyRef.appendChild(divDCol);
+            
+            bodyRef.insertBefore(divDCol, null);
+            //divFoot.style.height = "300px";
+            //divFoot.style.overflow = "hidden";
+            //divFoot.appendChild(divDCol);
+            
+//            var sCheckAd = document.createElement("span");
+//            sCheckAd.style.visibility = "hidden";
+//            divDCol.appendChild(sCheckAd);            
+//            
+//            var adHeight = sCheckAd.offsetTop - divDCol.offsetTop;
+//                        
+//            var sBottom = document.createElement("span");
+//            sBottom.innerHTML = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+//            //sBottom.style.visibility = "hidden";
+//            
+//            bodyRef.appendChild(sBottom);
+//            sBottom.style.marginTop = -300 + "px";
+            //divFoot.style.marginBottom = -adHeight + "px";
+            //divFoot.style.marginBottom = "200px";
+            
+            //alert("adHeight:  " + adHeight);
+        }
+        else
+        {
+            try
+            {
+                //divDCol.style.cssFloat = "right";
+                divDCol.style.styleFloat = "right";
+                divDCol.style.position = "relative";
+                divDCol.style.left = "180px";
+            }catch(e){}
+            divPage.insertBefore(divDCol, divPage.firstChild);
+        }
+        
+        /*
+        var newDCol = divPD.removeChild(divDCol);
+        
+        */
+        /*
+        tblMain.rows[0].cells[3].style.width = "175px";
+        tblMain.rows[0].cells[3].appendChild(newDCol);
+        
+        var innerHR = document.createElement("hr");
+        
+        innerHR.style.width = "175px";
+        innerHR.style.visibility = "hidden";
+        
+        tblMain.rows[0].cells[3].appendChild(innerHR);
+        */
+        
+        // show print this
+        var spanPrint = document.getElementById("prnt_AsiaQuake_HowToHelp");
+        if (spanPrint) spanPrint.style.display = "inline";
+        
+        // resize advertisement
+        var div165 = document.getElementById("userRatingTotal").parentNode;
+        var aList = div165.getElementsByTagName("div");
+        
+        for (j=0; j<aList.length; j++)
+        {
+            if (aList[j].className == "textSmallGrey p2")
+            {
+                aList[j].style.marginTop = "40px";
+                if (navigator.userAgent.indexOf("MSIE") < 0)
+                {
+                    aList[j].style.marginTop = "80px";
+                    aList[j].style.paddingTop = "80px";
+                }
+                break;
+            }
+        }
+    </script></div></body></html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 10:09:38 Dec 12, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 6:43:39 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

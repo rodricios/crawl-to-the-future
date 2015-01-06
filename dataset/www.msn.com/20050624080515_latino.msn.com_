@@ -1,0 +1,219 @@
+<html><head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app12.us.archive.org";archive_analytics.values.server_ms=2297;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<link rel="SHORTCUT ICON" href="/web/20050624090131im_/http://sc.msn.com/global/c/shs/favicon.ico" /><title>Bienvenidos a MSN Latino</title><meta charset="utf-8" /><meta http-equiv="pics-label" content="(pics-1.1 &quot;http://www.icra.org/ratingsv02.html&quot; comment &quot;Single file v2.0&quot; l gen true for &quot;http://latino.msn.com&quot;  r (nz 1 vz 1 lz 1 oz 1 cz 1) &quot;http://www.rsac.org/ratingsv01.html&quot; l gen true for &quot;http://latino.msn.com&quot;  r (n 0 s 0 v 0 l 0))" /><meta name="keywords" content="msn en espanol, msn en español, español, latino, hispano, latinoamericanos, méxico, cuba, puerto rico, honduras, nicaragua, guatemala, panamá, colombia, venezuela, noticias, latinos usa, fútbol, inmigración, yupi" /><meta name="description" content="El sitio de MSN dedicado a la comunidad hispana de los Estados Unidos. Reflejamos tu cultura, hablamos tu idioma y cubrimos los principales temas de interés para ti. ¡Visítanos!" /><link rel="stylesheet" type="text/css" href="/web/20050624090131cs_/http://sc.msn.com/global/css/nw/nw.css" /><link rel="stylesheet" type="text/css" href="/web/20050624090131cs_/http://sc.msn.com/css/latino/home/site-latino.css" /><script type="text/javascript" src="/web/20050624090131js_/http://sc.msn.com/global/scr/ph/hp26.js">&nbsp;</script><script type="text/javascript" src="/web/20050624090131js_/http://sc.msn.com/scr/lat/lathdr35.js">&nbsp;</script><script type="text/javascript" src="/web/20050624090131js_/http://sc.msn.com/scr/lat/latSurvey.js">&nbsp;</script><script type="text/javascript" src="/web/20050624090131js_/http://video.msn.com/js/vp.js">&nbsp;</script><base href="/web/20050624090131/http://g.msn.com/0US!s5.53982_540102/" /></head><body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://latino.msn.com/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "24";
+var displayMonth = "Jun";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://latino.msn.com/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20050624090131" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20050524082250/http://latino.msn.com/" title="24 May 2005">MAY</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 9:01:31 Jun 24, 2005">JUN</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20050725013814/http://latino.msn.com/" title="25 Jul 2005"><strong>JUL</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20050624013313/http://latino.msn.com/" title="1:33:13 Jun 24, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 9:01:31 Jun 24, 2005">24</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20050626010321/http://latino.msn.com/" title="1:03:21 Jun 26, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20040623005719/http://latino.msn.com/" title="23 Jun 2004"><strong>2004</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 9:01:31 Jun 24, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20060702175119/http://www.latino.msn.com/" title="2 Jul 2006"><strong>2006</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20050624090131*/http://latino.msn.com/" title="See a list of every capture for this URL">4,037 captures</a>
+           <div class="r" title="Timespan for captures of this URL">30 Oct 03 - 5 Jan 15</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000101_2004:-1:113038678778_2005:5:798899ab78ab_2006:-1:a71903777669_2007:-1:a9889a9abbaa_2008:-1:976653761316_2009:-1:375331111313_2010:-1:110000156330_2011:-1:113316554899_2012:-1:999374456344_2013:-1:667656667565_2014:-1:6eefeeeeeeee_2015:-1:900000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<div class="ctag" style="width:779px;"><!-- LWBA25 --><img width="0" height="0" src="/web/20050624090131im_/http://c.msn.com/c.gif?na=1154&amp;nc=10009&amp;ps=10274&amp;di=2585&amp;pi=70709&amp;TP=http%3a%2f%2flatino.msn.com%2f" alt="" border="0" /></div><table width="779" height="25" cellpadding="0" cellspacing="0" class="hph1"><tr><td valign="middle" class="td1"><!--NOAD--><img src="/web/20050624090131im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A25"/></td><td class="td2" align="right"><span class="dMSNME_1"><A HREF="/web/20050624090131/http://login.passport.com/login.srf?lc=3082&amp;id=6528&amp;ru=http%3a%2f%2flatino.msn.com%2f%3ftcru%3dhttp%253a%252f%252flatino.msn.com%252f&amp;tw=14400&amp;kv=6&amp;ct=1119603691&amp;cb=0&amp;msppjph=1&amp;ver=2.1.6000.1&amp;tpf=8cc5ed348dd09413f402e77c04cdd154"><IMG SRC="/web/20050624090131im_/http://www.passportimages.com/3082/signin.gif" CLASS="PassportSignIn" BORDER="0" ALT=".NET Passport"/></A></span></td></tr></table><table width="779" cellpadding="0" cellspacing="0" class="sf"><tr><td width="118" rowspan="2" class="sfl"><img src="/web/20050624090131im_/http://sc.msn.com/V!/D1E@%5D~A2A40C3%60O_HPW%60O.gif" border="0" alt="latino.msn.com" title="latino.msn.com" width="118" height="35" /><br /></td><td width="76" rowspan="3" valign="bottom" class="sfm"><img src="/web/20050624090131im_/http://sc.msn.com/c/latino/sf.gif" alt="" width="76" height="34" border="0" /></td><td width="*" colspan="2" class="sfr">&nbsp;</td><td height="10"></td></tr><tr><td rowspan="2" class="sfi"><form id="searchweb" method="get" action="/web/20050624090131/http://search.latino.msn.com/results.aspx"><table cellpadding="0" cellspacing="0" border="0" class="srch"><tr valign="middle"><td align="right" class="td1"><label class="txt" for="S1"><b>&nbsp;&nbsp;Busca en la Red:&nbsp;&nbsp;</b></label></td><td class="td2"><img src="/web/20050624090131im_/http://sc.msn.com/c/latino/srch_ar.gif" border="0" width="11" height="22" /></td><td class="td3"><input type="text" id="S1" name="q" size="38" maxlength="150" accesskey="S" class="srch_inp" /></td><td class="td4"><input type="hidden" name="FORM" value="MSNH" />&nbsp;<input type="submit" class="srch_btn" ID="Submit1" NAME="Submit1" value="&nbsp;Buscar&nbsp;" /></td></tr></table></form></td><td rowspan="2" class="sfi" align="right"><a href="javascript:DoHelp();">Ayuda</a></td><td height="26"></td></tr><tr><td class="sflb">&nbsp;</td><td height="9"></td></tr></table><table width="779" height="490" cellpadding="0" cellspacing="0" border="0" class="main"><tr><td class="n130" width="130" valign="top"><div class="LeftAd"><!--NOAD--><img src="/web/20050624090131im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A25"/></div><div class="nav"><div class="MkHome"><a href="javascript:MakeHomePage('/web/20050624090131/http://latino.msn.com');">iHaz de MSN Latino tu página principal!</a></div><p class="Space">&nbsp;</p><div class="cl"><h4><b>Canales MSN Latino</b></h4><div class="ct"><a href="86.b5396/1??cm=HP_leftnav1-s_CanalesMSNLatino">Amor</a><br /><a href="86.a5396/2??cm=HP_leftnav1-s_CanalesMSNLatino">Autos</a><br /><a href="86.c5396/3??cm=HP_leftnav1-s_CanalesMSNLatino">Busca Pareja</a><br /><a href="86.b5396/4??cm=HP_leftnav1-s_CanalesMSNLatino">Compras (en inglés)</a><br /><a href="86.a5396/5??cm=HP_leftnav1-s_CanalesMSNLatino">Deportes por</a>&nbsp;<span class="cimg"><a href="86.a5396/5??cm=HP_leftnav1-s_CanalesMSNLatino"><img src="/web/20050624090131im_/http://sc.msn.com/1~/SD!7O+,Q8ZC5AVQZ09X9V.gif" border="0" alt="Deportes por" title="Deportes por" width="43" height="12" /></a></span><br /><a href="86.a5396/6??cm=HP_leftnav1-s_CanalesMSNLatino">Empleos</a><br /><a href="86.a5396/7??cm=HP_leftnav1-s_CanalesMSNLatino">Entretenimiento</a><br /><a href="86.a5396/8??cm=HP_leftnav1-s_CanalesMSNLatino">Horóscopo</a><br /><a href="86.a5396/9??cm=HP_leftnav1-s_CanalesMSNLatino">Mapas y direcciones</a><br /><a href="86.a5396/10??cm=HP_leftnav1-s_CanalesMSNLatino">Mujer</a><br /><a href="86.c5396/11??cm=HP_leftnav1-s_CanalesMSNLatino">Video</a><br /><a href="86.a5396/12??cm=HP_leftnav1-s_CanalesMSNLatino">Noticias</a><br /></div></div><p class="Space">&nbsp;</p><div class="exp"><h4><b>Explora</b></h4><div class="ct"><a href="88.d5396/1??cm=HP_leftnav2-s_Explora">Finanzas, tu casa y más</a><br /><a href="88.a5396/2??cm=HP_leftnav2-s_Explora">Aprende Inglés Online</a><br /><a href="88.i5396/3??cm=HP_leftnav2-s_Explora" class="hilight">Calcula tu mortgage</a><br /><a href="88.a5396/4??cm=HP_leftnav2-s_Explora">Inmigración</a><br /><a href="88.a5396/5??cm=HP_leftnav2-s_Explora">Latinos en EE.UU.</a><br /><a href="88.a5396/6??cm=HP_leftnav2-s_Explora">Noticias de salud</a><br /></div></div><p class="Space">&nbsp;</p><div class="expAD"><h4><b>Promo Links</b></h4><!--NOAD--><img src="/web/20050624090131im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A25"/><!--NOAD--><img src="/web/20050624090131im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A25"/><!--NOAD--><img src="/web/20050624090131im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A25"/><!--NOAD--><img src="/web/20050624090131im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A25"/><!--NOAD--><img src="/web/20050624090131im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A25"/></div><p class="Space">&nbsp;</p><div class="diverete"><h4><b>Diviértete</b></h4><div class="ct"><a href="87.g5396/1??cm=HP_leftnav3-s_Diviertete">Shakira (muy especial)</a><br /><a href="87.e5396/2??cm=HP_leftnav3-s_Diviertete">Autos deportivos</a><br /><a href="87.g5396/3??cm=HP_leftnav3-s_Diviertete">Premios Billboard</a><br /><a href="87.f5396/4??cm=HP_leftnav3-s_Diviertete">Compara autos</a><br /><a href="87.c5396/5??cm=HP_leftnav3-s_Diviertete">ESPNACIÓN</a><br /><a href="87.b5396/6??cm=HP_leftnav3-s_Diviertete">Cine de verano</a><br /></div></div><p class="Space">&nbsp;</p><div class="svcsMSN"><h4><b>Servicios MSN</b></h4><div class="ct"><a href="91.b5396/1??cm=HP_leftnav4-s_ServiciosMSN">Barra de Herramientas</a><br /><a href="91.b5396/2??cm=HP_leftnav4-s_ServiciosMSN">Encarta en español</a><br /><a href="91.d5396/3??cm=HP_leftnav4-s_ServiciosMSN">Grupos y gente</a><br /><a href="/web/20050624090131/http://g.msn.com/0US!s5.53982_540102/91.b5396/3??cm=HP_leftnav5-s_ServiciosMSN">Hotmail Plus</a><br /><a href="91.d5396/5??cm=HP_leftnav4-s_ServiciosMSN">Messenger 7.0</a><br /><a href="91.b5396/6??cm=HP_leftnav4-s_ServiciosMSN">Nuevo MSN Search</a><br /><a href="91.d5396/7??cm=HP_leftnav4-s_ServiciosMSN">Protege tu PC</a><br /></div></div><p class="Space">&nbsp;</p><div class="otherMSN"><h4><b>En Inglés</b></h4><div class="ct"><a href="90.b5396/1??cm=HP_leftnav5-s_EnIngles">City Guides</a><br /><a href="90.e5396/2??cm=HP_leftnav5-s_EnIngles">Money</a><br /><a href="90.e5396/3??cm=HP_leftnav5-s_EnIngles">MSN.com</a><br /><a href="90.d5396/4??cm=HP_leftnav5-s_EnIngles">Travel</a><br /><a href="90.d5396/5??cm=HP_leftnav5-s_EnIngles">Weather</a><br /></div></div><p class="Space">&nbsp;</p></div></td><td class="p319" width="319" valign="top"><div class="page"><table cellpadding="0" cellspacing="0" border="0" class="TableBox1"><tr><td class="td1"><div class="ipdef"><table cellpadding="0" cellspacing="0" border="0" class="toprow"><tr><td valign="top" class="td1"><div class="lcol"><a href="24.v6720/1??cm=HP_InfoPane_BigPIC_Viernes"><img src="/web/20050624090131im_/http://sc.msn.com/50/JZ5ANNWCL!56+LA%7DEOWU!U.jpg" border="0" alt="El lujo se pone de moda - 06.24 - (©  American Honda Motor Co., Inc)" title="El lujo se pone de moda - 06.24 - (©  American Honda Motor Co., Inc)" width="145" height="170" /></a><br /><h3><a href="26.y6720/1??cm=HP_InfoPane_BigPICText_Viernes">El fabuloso mundo de los autos perfectos</a></h3></div></td><td valign="top" class="td2"><div class="rcol"><div class="BulletList"><div class="HoyEnLatino"><b>Hoy en MSN Latino</b></div><ul><li><a href="28.b6720/1??cm=HP_InfoPane_HoyEnMSNLatino_Viernes">Horóscopo del día</a></li><li><a href="28.y6720/2??cm=HP_InfoPane_HoyEnMSNLatino_Viernes">Especial para novias (tienda - en inglés)</a></li><li><a href="28.y6720/3??cm=HP_InfoPane_HoyEnMSNLatino_Viernes">Amor o enamoramiento</a></li><li><a href="28.g6720/4??cm=HP_InfoPane_HoyEnMSNLatino_Viernes">Para ahorrar mucho, piensa en grande</a></li></ul></div><div class="BulletList"><div class="LoNuevo"><b>En los cines</b></div><ul><li><a href="30.v6720/1??cm=HP_InfoPane_LoNuevo_Viernes">Herbie: Fully Loaded</a></li><li><a href="30.u6720/2??cm=HP_InfoPane_LoNuevo_Viernes">Bewitched</a></li><li><a href="30.r6720/3??cm=HP_InfoPane_LoNuevo_Viernes">Land of the Dead</a></li><li><a href="30.l6720/4??cm=HP_InfoPane_LoNuevo_Viernes">Batman Begins</a></li></ul></div></div></td></tr></table><table cellpadding="0" cellspacing="0" border="0" class="botrow"><tr><td valign="top" class="td1"><div class="lcol"><div class="BulletList"><div class="BulletListTitle">Noticias</div><ul><li><a href="80.e5396/1??cm=HP_InfoPane_Noticias_Links_Viernes">PRI moviliza maquinaria para elección estatal clave en México</a></li><li><a href="80.e5396/2??cm=HP_InfoPane_Noticias_Links_Viernes">México detiene a británico buscado por EEUU por ataques 11 sept</a></li></ul></div><div class="BulletList"><div class="BulletListTitle">Deportes por ESPN</div><ul><li><a href="74.a5396/1??cm=HP_InfoPane_DeportesPorESPN_Links_Viernes">Spurs campeones en la NBA</a></li><li><a href="74.a5396/2??cm=HP_InfoPane_DeportesPorESPN_Links_Viernes">Atlético Paranaense venció a las Chivas</a></li></ul></div></div></td><td valign="top" class="td2"><div class="rcol"><h4><a href="40.b6720/1??cm=HP_InfoPane_MediumPic_TopText_Viernes">Al sol, guerra sin tregua</a></h4><a href="49.b6720/1??cm=HP_InfoPane_MediumPic_Viernes"><img src="/web/20050624090131im_/http://sc.msn.com/3U/TW9FEN%7BHJ53P1-F%5BJ%7D%7DG9+.jpg" border="0" alt="Al sol, guerra sin tregua - 06.24 - (© L. Clarke/Corbis)" title="Al sol, guerra sin tregua - 06.24 - (© L. Clarke/Corbis)" width="86" height="54" /></a><br /><h5><a href="52.b6720/1??cm=HP_InfoPane_MediumPic_BehindText_Viernes">Consejos para estos días de verano</a></h5></div></td></tr></table></div></td></tr><tr><td class="td2"><div class="ent"><div class="hdr"><h5><a href="64.c5396/1??cm=HP_Quad_Entretenimiento_Title">Entretenimiento y mucho más...</a></h5></div><div class="hBulletList"><a href="63.c5396/1??cm=HP_Quad_Entretenimiento_Quicklinks">Música</a><b class="dot">&middot;</b><a href="63.c5396/2??cm=HP_Quad_Entretenimiento_Quicklinks">Cine</a><b class="dot">&middot;</b><a href="63.c5396/3??cm=HP_Quad_Entretenimiento_Quicklinks">Televisión</a><b class="dot">&middot;</b><a href="63.b5396/4??cm=HP_Quad_Entretenimiento_Quicklinks">Noticias</a><b class="dot">&middot;</b><a href="63.c5396/5??cm=HP_Quad_Entretenimiento_Quicklinks">Chismes</a><b class="dot">&middot;</b><a href="63.a5396/6??cm=HP_Quad_Entretenimiento_Quicklinks">Fotos</a></div><table cellpadding="0" cellspacing="0" border="0" class="LeftCombo"><tr><td valign="top"><div class="ComboImage"><a href="26.f10341/1??cm=HP_Quad_Entretenimiento_Pic"><img src="/web/20050624090131im_/http://sc.msn.com/1~/%7DI1~RVWP+@4GM-IA@4~@XS.jpg" border="0" alt="Benicio del Toro - (© EFE)" title="Benicio del Toro - (© EFE)" width="50" height="50" /></a></div></td><td valign="top"><div class="ComboHeader"><a href="26.f10341/1??cm=HP_Quad_Entretenimiento_Pic">Hola retrosexual, adiós metrosexual</a></div><br /><div class="ComboDeck"><a href="26.f10341/1??cm=HP_Quad_Entretenimiento_Pic">Benicio del Toro, Javier Barden, Matthew McConaughey, Russell...  (con galería)</a></div></td></tr></table><div class="BulletList"><div class="BulletListTitle">¡No te lo pierdas!</div><ul><li><a href="89.d5980/1??cm=HP_Quad_Entretenimiento_Links">Juan Gabriel, otra vez en problemas</a></li><li><a href="89.c5980/2??cm=HP_Quad_Entretenimiento_Links">Shakira, la que más vende y la que más se escucha</a></li><li><a href="89.c5980/3??cm=HP_Quad_Entretenimiento_Links">Los retoques plásticos de la Miss Mundo</a></li><li><a href="89.d5980/4??cm=HP_Quad_Entretenimiento_Links">Catherine Banderas y Catherine Zeta-Jones, el regreso de una pareja explosiva</a></li></ul></div></div></td></tr><tr><td class="td3"><div class="juegos"><div class="hdr"><h5><a href="65.a8045/1??cm=HP_Quad_Juegos_Title">Juegos</a></h5></div><div class="hBulletList"><a href="64.a8045/1??cm=HP_Quad_Juegos_Quicklinks">Manuales de ayuda</a><b class="dot">&middot;</b><a href="64.a8045/2??cm=HP_Quad_Juegos_Quicklinks">Más juegos</a><b class="dot">&middot;</b><a href="64.a8045/3??cm=HP_Quad_Juegos_Quicklinks">Tienda de juegos</a></div><table cellpadding="0" cellspacing="0" border="0" class="TwoColBL"><tr><td valign="top" class="td1"><div class="BulletList"><ul><li><a href="javascript:void window.open('/web/20050624090131/http://g.msn.com/US3/1?/web/20050624090131/http://games.msn.com/en/bejeweled/es_game.htm&amp;&amp;PS=10274&amp;PI=70709&amp;DI=2585&amp;CM=Juegos&amp;CE=top_left&amp;HL=bejeweled','bejeweled','width=800,height=510,scrollbars=yes,resizeable=yes');">Bejeweled</a></li><li><a href="javascript:void window.open('/web/20050624090131/http://g.msn.com/US3/1?/web/20050624090131/http://games.msn.com/en/cubis/es_game.htm&amp;&amp;PS=10274&amp;PI=70709&amp;DI=2585&amp;CM=Juegos&amp;CE=bottom_left&amp;HL=cubis','cubis','width=800,height=510,scrollbars=yes,resizeable=yes');">Cubis</a></li></ul></div></td><td valign="top" class="td2"><div class="BulletList"><ul><li><a href="javascript:void window.open('/web/20050624090131/http://g.msn.com/US3/1?/web/20050624090131/http://games.msn.com/en/solitaire/es_game.htm&amp;&amp;PS=10274&amp;PI=70709&amp;DI=2585&amp;CM=Juegos&amp;CE=top_right&amp;HL=solitario','solitario','width=800,height=510,scrollbars=yes,resizeable=yes');">Solitario</a></li><li><a href="javascript:void window.open('/web/20050624090131/http://g.msn.com/US3/1?/web/20050624090131/http://games.msn.com/en/zuma/es_game.htm&amp;&amp;PS=10274&amp;PI=70709&amp;DI=2585&amp;CM=Juegos&amp;CE=bottom_right&amp;HL=zuma','zuma','width=800,height=510,scrollbars=yes,resizeable=yes');">Zuma</a></li></ul></div></td></tr></table></div></td></tr><tr><td class="td4"><div class="Especiales"><div class="hdr"><h5><a href="80.b8764/1??cm=HP_Quad_Especiales_Title">De nuestros anunciantes</a></h5></div><table cellpadding="0" cellspacing="0" border="0" class="2ColBullList"><tr><td valign="top" class="td1"><div class="BulletList"><ul><li><a href="javascript:void window.open('/web/20050624090131/http://ad.doubleclick.net/clk;9331497;9671298;d?/web/20050624090131/http://banner.goarmy.com/banrtrck/atrack.jsp?banner=5172-014i-H071-0902-87','KRAFT','width=670,height=660,toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,scrollbars,resizable');">Yo soy el Army</a></li><li><a href="javascript:void window.open('/web/20050624090131/http://us.lightspeedpanel.com/es/join/Register?custom=BYUUS07203','LIGHTSPEED','width=670,height=660,toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,scrollbars,resizable');">Contesta y Gana $3000</a></li></ul></div></td><td valign="top" class="td2"><div class="BulletList"><ul><li><a href="javascript:void window.open(' /web/20050624090131/http://www.1234cyc.com/s-latino/lp/patchplus.html?sts=1&amp;val=0&amp;pu=0','CRAVINGS','width=670,height=660,toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,scrollbars,resizable');">Pierde 30lbs ¡YA!</a></li><li><a href="javascript:void window.open('/web/20050624090131/http://www.cuponesymuestras.com/msn','LENDING','width=670,height=660,toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,scrollbars,resizable');">Cupones y Muestras</a></li></ul></div></td></tr></table></div></td></tr><tr><td class="td5"><div class="comp"><div class="hdr"><h5><a href="43.a5396/1??cm=HP_Quad_Compras_Title">Compras (en inglés)</a></h5></div><div class="hBulletList"><a href="44.k5396/1??cm=HP_Quad_Compras_Quicklinks">Shakira</a><b class="dot">&middot;</b><a href="44.l5396/2??cm=HP_Quad_Compras_Quicklinks">Juanes</a><b class="dot">&middot;</b><a href="44.m5396/3??cm=HP_Quad_Compras_Quicklinks">Luis Miguel</a><b class="dot">&middot;</b><a href="44.f5396/4??cm=HP_Quad_Compras_Quicklinks">Paulina Rubio</a><b class="dot">&middot;</b><a href="44.a5396/5??cm=HP_Quad_Compras_Quicklinks">Thalía</a></div><table cellpadding="0" cellspacing="0" border="0" class="top"><tr><td valign="top" class="td1"><a href="45.a5396/1??cm=HP_Quad_Compras_Image_TitleBottom"><img src="/web/20050624090131im_/http://di.image.eshop.msn.com/img/edt/ContentModule/HoldEverything_062105_50x50.jpg" border="0" alt="Save up to 60% on storage" title="Save up to 60% on storage" width="50" height="50" /></a><br /><a href="45.a5396/1??cm=HP_Quad_Compras_Image_TitleBottom">Save up to 60% on storage</a><br /></td><td valign="top" class="td2"><div class="BulletList"><ul><li><a href="42.b5396/1??cm=HP_Quad_Compras_Links_List_1">Free pedometer with purchase of scale</a></li><li><a href="42.a5396/2??cm=HP_Quad_Compras_Links_List_1">AVON's top solutions - save up to 50%</a></li><li><a href="42.a5396/3??cm=HP_Quad_Compras_Links_List_1">June savings on pearl jewelry - up to 88%</a></li><li><a href="42.a5396/4??cm=HP_Quad_Compras_Links_List_1">Collectible Batman watch from Fossil</a></li><li><a href="42.a5396/5??cm=HP_Quad_Compras_Links_List_1">3 dozen summer roses with vase $29.99</a></li><li><a href="42.a5396/6??cm=HP_Quad_Compras_Links_List_1">Free ship on personalized beach towels</a></li></ul></div></td></tr></table><table cellpadding="0" cellspacing="0" border="0" class="bot"><tr><td class="td1"><div class="BulletList"><div class="BulletListTitle">What's Hot at MSN Shopping</div><ul><li><a href="46.a5396/1??cm=HP_Quad_Compras_Links_List_2">Summer Jewelry Trends: Cool off those hot summer days and nights with a little fresh ice. The season's favorite gemstones dazzle in a rainbow of hues and even pearls are showing up in new shades.
+ 
+</a></li></ul></div></td></tr></table></div></td></tr></table></div></td><td class="r330" width="330" valign="top" align="center"><div class="big4"><table class="hpBig4" cellpadding="0" cellspacing="0" border="0" width="309px"><tr><td class="td1" valign="top"><img src="/web/20050624090131im_/http://sc.msn.com/c/latino/bg_lt.gif" width="9" height="47" border="0" /></td><td class="td2"><a href="9.a5397/1??cm=HP_BIG7_Hotmail"><img src="/web/20050624090131im_/http://sc.msn.com/3H/%5D4B2,%5DW%7BU%5B5UV-93_%7D+P3K.gif" border="0" alt="Hotmail" title="Hotmail" width="35" height="22" /></a><br /><a href="9.a5397/1??cm=HP_BIG7_Hotmail">Hotmail</a></td><td class="td3"><a href="10.c5397/1??cm=HP_BIG7_Messenger"><img src="/web/20050624090131im_/http://sc.msn.com/,E/%7DY_Z,QW%60~10M3M@+RH%5D,T.gif" border="0" alt="Messenger" title="Messenger" width="35" height="22" /></a><br /><a href="10.c5397/1??cm=HP_BIG7_Messenger">Messenger</a></td><td class="td4"><a href="8.d5397/1??cm=HP_BIG7_Grupos"><img src="/web/20050624090131im_/http://sc.msn.com/4%7D/8~JB3M_P%7DL5!8H@F4F0%7DDO.gif" border="0" alt="Grupos y Gente " title="Grupos y Gente " width="35" height="22" /></a><br /><a href="8.d5397/1??cm=HP_BIG7_Grupos">Grupos</a></td><td class="td5"><a href="7.c5397/1??cm=HP_BIG7_Compras"><img src="/web/20050624090131im_/http://sc.msn.com/2C/VWN%5DJ8%60J11EA%60IL-D~3QY.gif" border="0" alt="Compras" title="Compras" width="35" height="22" /></a><br /><a href="7.c5397/1??cm=HP_BIG7_Compras">Compras</a></td><td class="td6" valign="top"><img src="/web/20050624090131im_/http://sc.msn.com/c/latino/bg_rt.gif" width="9" height="47" border="0" /></td></tr></table></div><p class="Space">&nbsp;</p><!--NOAD--><img src="/web/20050624090131im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A25"/><div class="col330"><div class="StyleBox4"></div><p class="Space">&nbsp;</p><div class="match"><div class="hdr"><h5>Busca pareja por Match.com</h5></div><div class="frmMatch"><form method="post" action="/web/20050624090131/http://match.latino.msn.com/match/mt.cfm?pg=search&amp;amp;action=save_search&amp;amp;tcid=235763" name="search" target="_top" ID="Form1" onsubmit="gImage.src=gImage.g;"><input type="hidden" value="yes" name="s_photo" /><input type="hidden" value="16" name="s_profile_language_id" /><input type="hidden" name="searchaction" value="search" /><img id="gImage" width="0" height="0" g="http://g.msn.com/US18/1?http://match.latino.msn.com/match/mt.cfm?pg=search&amp;amp;action=save_search&amp;amp;tcid=235763&amp;&amp;PS=10274&amp;PI=70709&amp;DI=2585&amp;CM=Match_search_Box_submit" style="display:none;" /><table class="tbl1" border="0" cellpadding="0" cellspacing="0" ID="Table1"><tr class="row1"><td class="col1">Yo soy un/a</td><td class="td1" nowrap="nowrap" align="left"><select name="s_quick_gender_match" ID="Select1"><option value="f" selected="true">mujer</option><option value="m">hombre</option></select></td><td class="col2">buscando  un/a</td><td class="td2" nowrap="nowrap" align="left"><select name="s_quick_gender_match" ID="Select2"><option value="m" selected="true">hombre</option><option value="f">mujer</option></select></td></tr></table><table class="tbl2" border="0" cellpadding="0" cellspacing="0" ID="Table2"><tr class="row2"><td class="col3">entre</td><td class="td1" nowrap="nowrap" align="left"><select class="fromage" name="s_age_from" ID="Select3"><option value="18" selected="true">18</option><option value="25">25</option><option value="30">30</option><option value="35">35</option><option value="40">40</option><option value="45">45</option><option value="50">50</option><option value="55">55</option><option value="60">60</option><option value="70">70</option><option value="80">80</option></select></td><td class="col4">y</td><td><select class="toage" name="s_age_to" ID="Select4"><option value="18">18</option><option value="25">25</option><option value="30">30</option><option value="35" selected="true">35</option><option value="40">40</option><option value="45">45</option><option value="50">50</option><option value="55">55</option><option value="60">60</option><option value="70">70</option><option value="80">80</option><option value="99">99</option></select></td><td class="col5">años</td><td class="td2" nowrap="nowrap" align="left"><select name="s_province_id" style="width:100px;"><option value="USAlabama">Alabama</option><option value="USAlaska">Alaska</option><option value="USArizona">Arizona</option><option value="USArkansas">Arkansas</option><option value="USCaliforn">California</option><option value="USColorado">Colorado</option><option value="USConnecti">Connecticut</option><option value="USDelaware">Delaware</option><option value="USDistrict">District of Columbia</option><option value="USFlorida">Florida</option><option value="USGeorgia">Georgia</option><option value="USHawaii">Hawaii</option><option value="USIdaho">Idaho</option><option value="USIllinois">Illinois</option><option value="USIndiana">Indiana</option><option value="USIowa">Iowa</option><option value="USKansas">Kansas</option><option value="USKentucky">Kentucky</option><option value="USLouisian">Louisiana</option><option value="USMaine">Maine</option><option value="USMaryland">Maryland</option><option value="USMassachu">Massachusetts</option><option value="USMichigan">Michigan</option><option value="USMinnesot">Minnesota</option><option value="USMississi">Mississippi</option><option value="USMissouri">Missouri</option><option value="USMontana">Montana</option><option value="USNebraska">Nebraska</option><option value="USNevada">Nevada</option><option value="USNewHamps">New Hampshire</option><option value="USNewJerse">New Jersey</option><option value="USNewMexic">New Mexico</option><option value="USNewYork">New York</option><option value="USNorthCar">North Carolina</option><option value="USNorthDak">North Dakota</option><option value="USOhio">Ohio</option><option value="USOklahoma">Oklahoma</option><option value="USOregon">Oregon</option><option value="USPennsylv">Pennsylvania</option><option value="USRhodeIsl">Rhode Island</option><option value="USSouthCar">South Carolina</option><option value="USSouthDak">South Dakota</option><option value="USTennesse">Tennessee</option><option value="USTexas">Texas</option><option value="USUtah">Utah</option><option value="USVermont">Vermont</option><option value="USVirginia">Virginia</option><option value="USWashingt">Washington</option><option value="USWestVirg">West Virginia</option><option value="USWisconsi">Wisconsin</option><option value="USWyoming">Wyoming</option></select></td><td class="col6"><img class="srch_match" alt="" src="/web/20050624090131im_/http://sc.msn.com/c/latino/Match_button.gif" width="18" height="18" onClick="javascript:search.submit();" /></td></tr></table></form></div></div><p class="Space">&nbsp;</p><div class="hideAd" id="hideAd"><h5></h5><!--NOAD--><img src="/web/20050624090131im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A25"/></div><script type="text/javascript">
+  if (document.getElementById("hideAd").innerHTML.indexOf("NOAD") != -1)
+    document.getElementById("hideAd").style.display = "none";
+</script><p class="Space">&nbsp;</p><div class="autos"><div class="hdr"><h5><a href="36.b5396/1??cm=HP_Quad__Autos_Title">Autos, mapas y direcciones, accesorios...</a></h5></div><table cellpadding="0" cellspacing="0" border="0" class="LeftCombo"><tr><td valign="top"><div class="ComboImage"><a href="78.c7246/1??cm=HP_Quad_Autos_Pic"><img src="/web/20050624090131im_/http://sc.msn.com/48/TTHSW!-N0W5535,F1@S_MC.jpg" border="0" alt="Ford - (Autocosmos.com)" title="Ford - (Autocosmos.com)" width="50" height="50" /></a></div></td><td valign="top"><div class="ComboHeader"><a href="78.c7246/1??cm=HP_Quad_Autos_Pic">¿Eres dueño de un vehículo Ford?</a></div><br /><div class="ComboDeck"><a href="78.c7246/1??cm=HP_Quad_Autos_Pic">La compañía llama a revisión a 258.000 vehículos en los Estados Unidos</a></div></td></tr></table><div class="BulletList"><div class="BulletListTitle">Nuevo</div><ul><li><a href="21.c10170/1??cm=HP_Quad_Autos_Links">Presentan un videojuego creado por Alfa Romeo</a></li><li><a href="21.c10170/2??cm=HP_Quad_Autos_Links">Dodge Sidewinder: Una camioneta deslumbrante</a></li><li><a href="21.c10170/3??cm=HP_Quad_Autos_Links">Chevrolet SSR: Pickup convertible</a></li><li><a href="21.c10170/4??cm=HP_Quad_Autos_Links">Nace la primera camioneta Honda: La Ridgeline</a></li></ul></div></div><p class="Space">&nbsp;</p><div class="mujer"><div class="hdr"><h5><a href="1.d5397/1??cm=HP_Quad_Mujer_Title">Temas de interés</a></h5></div><table cellpadding="0" cellspacing="0" border="0" class="LeftCombo"><tr><td valign="top"><div class="ComboImage"><a href="9.w6134/1??cm=HP_Quad_Mujer_Pic_Jueves"><img src="/web/20050624090131im_/http://sc.msn.com/1G/1%602%7D_H%7BNYM4U_%60KK2LGJPC.jpg" border="0" alt="Descanso a pierna suelta - (© EFE)" title="Descanso a pierna suelta - (© EFE)" width="50" height="50" /></a></div></td><td valign="top"><div class="ComboHeader"><a href="9.w6134/1??cm=HP_Quad_Mujer_Pic_Jueves">Descanso a pierna suelta</a></div><br /><div class="ComboDeck"><a href="9.w6134/1??cm=HP_Quad_Mujer_Pic_Jueves">Llegan tiempos de renovación. Conoce los colores y estilos de muebles de moda.</a></div></td></tr></table><div class="BulletList"><div class="BulletListTitle"><b>No te puedes perder...</b></div><ul><li><a href="15.p6134/1??cm=HP_Quad_Mujer_Links_Jueves">Envía un beso virtual gratis</a></li><li><a href="15.o6134/2??cm=HP_Quad_Mujer_Links_Jueves">¿Qué es la puntuación de crédito?</a></li><li><a href="15.s6134/3??cm=HP_Quad_Mujer_Links_Jueves">¿Cómo pagar las deudas?</a></li><li><a href="15.p6134/4??cm=HP_Quad_Mujer_Links_Jueves">Por qué son importantes las metas</a></li></ul></div></div><p class="Space">&nbsp;</p><div class="msnworld"><div class="hdr"><h5><a href="96.d5396/1??cm=HP_Quad_LatinoamericaEnMSNLatino_Title">Latinoamérica en MSN Latino</a></h5></div><table cellpadding="0" cellspacing="0" border="0" class="TwoColBL"><tr><td valign="top" class="td1"><div class="BulletList"><ul><li><a href="95.a5396/1??cm=HP_Quad_LatinoamericaEnMSNLatino_List_Left">Perú</a></li><li><a href="95.d5396/2??cm=HP_Quad_LatinoamericaEnMSNLatino_List_Left">Puerto Rico</a></li><li><a href="95.a5396/3??cm=HP_Quad_LatinoamericaEnMSNLatino_List_Left">Chile</a></li><li><a href="95.d5396/4??cm=HP_Quad_LatinoamericaEnMSNLatino_List_Left">Argentina</a></li><li><a href="95.b5396/5??cm=HP_Quad_LatinoamericaEnMSNLatino_List_Left">Nicaragua</a></li></ul></div></td><td valign="top" class="td2"><div class="BulletList"><ul><li><a href="97.c5396/1??cm=HP_Quad_LatinoamericaEnMSNLatino_List_Right">México</a></li><li><a href="97.c5396/2??cm=HP_Quad_LatinoamericaEnMSNLatino_List_Right">Venezuela</a></li><li><a href="97.c5396/3??cm=HP_Quad_LatinoamericaEnMSNLatino_List_Right">Colombia</a></li><li><a href="97.c5396/4??cm=HP_Quad_LatinoamericaEnMSNLatino_List_Right">Cuba</a></li><li><a href="97.a5396/5??cm=HP_Quad_LatinoamericaEnMSNLatino_List_Right">Otros países</a></li></ul></div></td></tr></table></div><p class="Space">&nbsp;</p><div class="deMS"><div class="hdr"><h5><a href="55.a5396/1??cm=HP_Quad_HP_GaleriasDeFotos_Title">Galerías de fotos</a></h5></div><div class="hBulletList"><a href="53.j5396/1??cm=HP_Quad_GaleriasDeFotos_Links_Quicklinks">Miss Universo 2005</a><b class="dot">&middot;</b><a href="53.b5396/2??cm=HP_Quad_GaleriasDeFotos_Links_Quicklinks">Moda en México</a><b class="dot">&middot;</b><a href="53.h5396/3??cm=HP_Quad_GaleriasDeFotos_Links_Quicklinks">Mini Cooper</a></div><table cellpadding="0" cellspacing="0" border="0" class="TwoColBL"><tr><td valign="top" class="td1"><div class="BulletList"><ul><li><a href="54.d5396/1??cm=HP_Quad_GaleriasDeFotos_Links_List_Left">Infiniti G35 Coupe</a></li><li><a href="54.h5396/2??cm=HP_Quad_GaleriasDeFotos_Links_List_Left">Semana en imágenes</a></li><li><a href="54.d5396/3??cm=HP_Quad_GaleriasDeFotos_Links_List_Left">Moda del verano</a></li></ul></div></td><td valign="top" class="td2"><div class="BulletList"><ul><li><a href="56.j5396/1??cm=HP_Quad_GaleriasDeFotos_Links_List_Right">Padres famosos</a></li><li><a href="56.i5396/2??cm=HP_Quad_GaleriasDeFotos_Links_List_Right">Batman Begins</a></li><li><a href="56.f5396/3??cm=HP_Quad_GaleriasDeFotos_Links_List_Right">Los latinos más bellos</a></li></ul></div></td></tr></table></div><p class="Space">&nbsp;</p></div></td></tr></table><table class="hpf1" width="779" height="20" cellpadding="0" cellspacing="0" border="0"><tr><td class="td1">&nbsp;&nbsp;<a href="14.b5397/1??cm=HP_Almacenamiento-Link_Footer">¡Almacenamiento extra para tu cuenta de Hotmail!</a></td><td class="td2" align="right"><a href="12.a5397/1??cm=HP_Ayuda_Footer">Comentarios</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:DoHelp();">Ayuda</a>&nbsp;&nbsp;</td></tr></table><table class="hpf2" width="779" cellpadding="0" cellspacing="0" border="0"><tr><td class="td1"><div class="hpTerms">&nbsp;&nbsp;© 2005 Microsoft Corporation. Todos los derechos reservados.&nbsp;<a href="13.b5397/1??cm=HP_legal1-s">Términos de Uso</a>&nbsp;<a href="13.b5397/2??cm=HP_legal1-s">Publicidad</a>&nbsp;<a href="13.b5397/3??cm=HP_legal1-s">Declaración de Privacidad aprobada por TRUSTe</a>&nbsp;<a href="13.b5397/4??cm=HP_legal1-s">GetNetWise</a></div></td></tr></table><!--NOAD--><img src="/web/20050624090131im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A25"/></body></html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 9:01:31 Jun 24, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 6:57:41 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

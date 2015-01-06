@@ -1,0 +1,505 @@
+<html><head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app18.us.archive.org";archive_analytics.values.server_ms=463;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<title>Yahoo Entertainment Top Stories</title>
+<script language="javascript">
+<!--
+function clickHandler(url)
+{window.open(url,'mediaframe_window','toolbar=no,width=750,height=550,left=0,top=30,status=no,scrollbars=no,resize=yes');}
+//-->
+</script>
+</head><body bgcolor=white>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://entertainment.tv.yahoo.com/entnews/main/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "11";
+var displayMonth = "Jul";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://entertainment.tv.yahoo.com/entnews/main/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20050711014539" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20050611010409/http://entertainment.tv.yahoo.com/entnews/main/" title="11 Jun 2005">JUN</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 1:45:39 Jul 11, 2005">JUL</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20050811232906/http://entertainment.tv.yahoo.com/entnews/main/" title="11 Aug 2005"><strong>AUG</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20050710014144/http://entertainment.tv.yahoo.com/entnews/main/" title="1:41:44 Jul 10, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 1:45:39 Jul 11, 2005">11</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20050713032505/http://entertainment.tv.yahoo.com/entnews/main/" title="3:25:05 Jul 13, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20040710192421/http://entertainment.tv.yahoo.com/entnews/main/" title="10 Jul 2004"><strong>2004</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 1:45:39 Jul 11, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20060712203409/http://entertainment.tv.yahoo.com/entnews/main/" title="12 Jul 2006"><strong>2006</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20050711014539*/http://entertainment.tv.yahoo.com/entnews/main/" title="See a list of every capture for this URL">558 captures</a>
+           <div class="r" title="Timespan for captures of this URL">4 Jun 03 - 8 May 08</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000001010101_2004:-1:00110acbc9aa_2005:6:bbabcddfaacb_2006:-1:da2a23425231_2007:-1:55268639a900_2008:-1:101010000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<center>
+<!-- SpaceID=0 robot -->
+<!-- SpaceID=0 robot -->
+<!-- SpaceID=0 robot -->
+<p>
+<table border=0 width=750><tr><td align=center>
+<!-- SpaceID=0 robot -->
+</td></tr></table>
+<p>
+<table width="750" border="0" cellpadding="3" cellspacing="0" bgcolor="000033">
+<tr>
+<td nowrap>&nbsp;<font size="+1" face="arial" color=white><b>Yahoo! Entertainment</b></font></td>
+<td align=right>
+<table cellpadding=3><tr><td bgcolor=white><font size="-1" face="arial" color=white><b><a href="/web/20050711014539/http://entertainment.yahoo.com/">Entertainment Home</a></b></font>
+</td></tr></table>
+</td></tr></table>
+<table><tr><td height=6></td></tr></table>
+<table border=0 width=750 cellpadding=0 cellspacing=0>
+<tr><td valign=top colspan=5 width=180><img src="/web/20050711014539im_/http://us.i1.yimg.com/us.yimg.com/i/ent/ent-lc.gif" width="180" height="12" alt="" border="0"></td></tr>
+<tr><td valign=top colspan=5>
+<table cellpadding=3 cellspacing=0 border=0 width=750>
+<tr><td bgcolor=eeeeee width=8><img src="/web/20050711014539im_/http://us.i1.yimg.com/us.yimg.com/i/space.gif" width=8 height=1 border=0 alt="spacer"></td>
+<td bgcolor=990000 width=742>&nbsp;&nbsp;<font size=+1 face=arial color=white><b>Entertainment News &amp; Gossip</b></font></td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+</table>
+<table border=0 width=750 cellpadding=0 cellspacing=0>
+<tr>
+<td width=180 valign=top bgcolor=#eeeeee align=center>
+<table><tr><td height=4></td></tr></table>
+<table border=0 cellpadding=2 cellspacing=0 width="100%">
+<tr valign=middle><td width="1%" align=right>
+<img src=/web/20050711014539im_/http://us.i1.yimg.com/us.yimg.com/i/sr/ar.gif border=0 width=8 height=9></td><td><font face="Arial,Helvetica" size="-1"><a href=/web/20050711014539/http://entertainment.tv.yahoo.com/entnews/main/><b>Main Page</b></a></font>
+</td></tr></table>
+<table cellspacing="0" cellpadding="0" bgcolor=ebeff5>
+<tr><td height="8" bgcolor=ebeff5></td></tr>
+</table>
+<table border=0 cellpadding=2 cellspacing=0 width="100%">
+<tr><td height=2 colspan=2></td></tr>
+<tr valign=middle><td width="1%" align=right>
+&nbsp;</td><td><font face="arial,helvetica" size="-1">
+<a href=/web/20050711014539/http://entertainment.tv.yahoo.com/entnews/><b>Top Stories</b></a></font></td></tr>
+<tr valign=middle><td width="1%" align=right>
+&nbsp;</td><td><font face="arial,helvetica" size="-1">
+<a href=/web/20050711014539/http://entertainment.tv.yahoo.com/entnews/ap/>Associated Press</a></font></td></tr>
+<tr valign=middle><td width="1%" align=right>
+<img src=/web/20050711014539im_/http://us.i1.yimg.com/us.yimg.com/i/space.gif border=0 width=8 height=9></td><td><font face="arial,helvetica" size="-1">
+<a href=/web/20050711014539/http://entertainment.tv.yahoo.com/entnews/eo/>E! Online</a></font></td></tr>
+<tr valign=middle><td width="1%" align=right>
+&nbsp;</td><td><font face="arial,helvetica" size="-1">
+<a href=/web/20050711014539/http://entertainment.tv.yahoo.com/entnews/va/>Reuters</a></font></td></tr>
+</table>
+<table><tr><td height=4></td></tr></table>
+<table border=0 cellpadding=2 cellspacing=0 width="100%">
+<tr valign=middle><td width="1%" align=right>
+<img src=/web/20050711014539im_/http://us.i1.yimg.com/us.yimg.com/i/space.gif border=0 width=8 heigh
+t=9>
+</td><td><font face="arial,helvetica" size="-1"><a href=/web/20050711014539/http://entertainment.tv.yahoo.com/columns/><b>Gossip Columns</b></a></font></td></tr>
+<tr valign=middle><td width="1%" align=right>
+</td><td><font face="arial,helvetica" size="-1"><a href=/web/20050711014539/http://entertainment.tv.yahoo.com/entnews/tc/>The Awful Truth</a></font></td></tr>
+<tr valign=middle><td width="1%" align=right>
+</td><td><font face="arial,helvetica" size="-1"><a href=/web/20050711014539/http://entertainment.tv.yahoo.com/entnews/w/>Watch with Kristin</a></font></td></tr>
+<tr valign=middle><td width="1%" align=right>
+</td><td><font face="arial,helvetica" size="-1"><a href=/web/20050711014539/http://entertainment.tv.yahoo.com/entnews/mm/>INSIDE with Marc Malkin</a></font></td></tr>
+</table>
+<table><tr><td height=4></td></tr></table>
+<table border=0 width="100%" cellpadding=2 cellspacing=0>
+
+<tr valign=middle>
+<td width="1%" align=right>
+<img src=/web/20050711014539im_/http://us.i1.yimg.com/us.yimg.com/i/space.gif border=0 width=8 height=9></td><td><font face="arial,helvetica" size="-1">
+<a href=/web/20050711014539/http://entertainment.tv.yahoo.com/gossip/><b>Supermarket Tabloids</b></a></font></td></tr>
+
+<tr valign=middle><td width="1%" align=right>
+<img src=/web/20050711014539im_/http://us.i1.yimg.com/us.yimg.com/i/space.gif border=0 width=8 height=9></td><td><font face="arial,helvetica" size="-1">
+<a href=/web/20050711014539/http://entertainment.tv.yahoo.com/entnews/ne/>National Enquirer</a></font></td></tr>
+
+<tr valign=middle><td width="1%" align=right>
+<img src=/web/20050711014539im_/http://us.i1.yimg.com/us.yimg.com/i/space.gif border=0 width=8 height=9></td><td><font face="Arial,Helvetica" size="-1"><a href=/web/20050711014539/http://entertainment.tv.yahoo.com/entnews/st/>Star Magazine</a></font></td></tr>
+
+<tr valign=middle><td width="1%" align=right>
+<img src=/web/20050711014539im_/http://us.i1.yimg.com/us.yimg.com/i/space.gif border=0 width=8 height=9></td><td><font face="arial,helvetica" size="-1">
+<a href=/web/20050711014539/http://entertainment.tv.yahoo.com/entnews/wwn/>Weekly World News</a></font></td></tr></table> 
+<table><tr><td height=4></td></tr></table>
+<table border=0 cellpadding=2 cellspacing=0 width="100%">
+<tr valign=middle><td width="1%" align=right><img src=/web/20050711014539im_/http://us.i1.yimg.com/us.yimg.com/i/space.gif border=0 width=8 height=9></td><td><font face="arial,helvetica" size="-1"><a href=/web/20050711014539/http://entertainment.tv.yahoo.com/shop?d=ap&amp;id=1807763769&amp;cf=mm&amp;index-0><b>Entertainment Photos</b></a>&nbsp;<img src="/web/20050711014539im_/http://us.i1.yimg.com/us.yimg.com/i/auctions/cam.gif" height=15 width=15></font></td></tr></table>
+<table><tr><td height=4></td></tr></table>
+<br>
+<iframe src="/web/20050711014539if_/http://quiz1.polls.scd.yahoo.com/quiz/quiziframe.php?cat_name=/us/entertainment/news" height=400 width=100% marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=no>
+</iframe>
+</td>
+<td width=10>&nbsp;</td>
+<td valign=top>
+<table border=0 cellpadding=3 cellspacing=1>
+<tr>
+<td colspan=2 valign=top>
+<p><a href="/web/20050711014539/http://entertainment.tv.yahoo.com/entnews/ap/20050710/112103886000.html"><font face=arial,helvetica><b>'Fantastic Four' Snaps Hollywood Slump</b></font></a><br>
+<font size=-2 face=arial,helvetica color=666666>July 10, 4:07:41 PM ET, AP</font><br>
+<font size=-1 face=arial,helvetica>The latest superhero movie may have been just fantastic enough to snap Hollywood's longest modern losing streak at the box office.</font></td></tr>
+<tr>
+<td colspan=2 valign=top>
+<table cellspacing=0 cellpadding=0 align=right><tr><td>
+<font size=-2 face=arial,helvetica color=666666>
+<a href=/web/20050711014539/http://entertainment.tv.yahoo.com/shop?d=ap&amp;id=1807763769&amp;cf=pg&amp;photoid=578922><img src=/web/20050711014539im_/http://us.ent3.yimg.com/entertainment.tv.yahoo.com/images/ent/ap/20050710/thumb_ny112_people_shields.sff.jpg border=1></a></font></td><td>&nbsp;</td></tr></table>
+<p><a href="/web/20050711014539/http://entertainment.tv.yahoo.com/entnews/ap/20050710/112103790000.html"><font face=arial,helvetica><b>Shields Returning to Broadway in 'Chicago'</b></font></a><br>
+<font size=-2 face=arial,helvetica color=666666>July 10, 4:07:25 PM ET, AP</font><br><font size=-1 face=arial,helvetica>Brooke Shields is coming back to Broadway to play Roxie Hart in the long-running revival of "Chicago."</font></td></tr>
+<tr>
+<td colspan=2 valign=top>
+<p><a href="/web/20050711014539/http://entertainment.tv.yahoo.com/entnews/ap/20050710/112103256000.html"><font face=arial,helvetica><b>Slam Poet Defies Classification in Show</b></font></a><br>
+<font size=-2 face=arial,helvetica color=666666>July 10, 2:07:56 PM ET, AP</font><br>
+<font size=-1 face=arial,helvetica>Staceyann Chin defies easy classification. In fact, she rebels against it, saying in her autobiographical one-woman show playing off-Broadway that it's become her mission to "erase the straight lines" in society that dictate people's places and, often times, their worth.</font></td></tr>
+<tr>
+<td colspan=2 valign=top>
+<table cellspacing=0 cellpadding=0 align=left><tr><td>
+<font size=-2 face=arial,helvetica color=666666>
+<a href=/web/20050711014539/http://entertainment.tv.yahoo.com/shop?d=ap&amp;id=1807763769&amp;cf=pg&amp;photoid=578923><img src=/web/20050711014539im_/http://us.ent3.yimg.com/entertainment.tv.yahoo.com/images/ent/ap/20050710/thumb_ny113_people_mcknight.sff.jpg border=1></a></font></td><td>&nbsp;</td></tr></table>
+<p><a href="/web/20050711014539/http://entertainment.tv.yahoo.com/entnews/ap/20050710/112103154000.html"><font face=arial,helvetica><b>Brian McKnight to Sing for All-Star Crowd</b></font></a><br>
+<font size=-2 face=arial,helvetica color=666666>July 10, 2:07:39 PM ET, AP</font><br><font size=-1 face=arial,helvetica>R&B artist Brian McKnight will perform the national anthem before the All-Star game at Comerica Park on Tuesday.</font></td></tr>
+<tr>
+<td colspan=2 valign=top>
+<table cellspacing=0 cellpadding=0 align=right><tr><td>
+<font size=-2 face=arial,helvetica color=666666>
+<a href=/web/20050711014539/http://entertainment.tv.yahoo.com/shop?d=ap&amp;id=1807763769&amp;cf=pg&amp;photoid=578921><img src=/web/20050711014539im_/http://us.ent3.yimg.com/entertainment.tv.yahoo.com/images/ent/ap/20050710/thumb_par105_france_people_smith.sff.jpg border=1></a></font></td><td>&nbsp;</td></tr></table>
+<p><a href="/web/20050711014539/http://entertainment.tv.yahoo.com/entnews/ap/20050710/112102824000.html"><font face=arial,helvetica><b>France Honors Punk Rocker Patti Smith</b></font></a><br>
+<font size=-2 face=arial,helvetica color=666666>July 10, 1:07:44 PM ET, AP</font><br><font size=-1 face=arial,helvetica>U.S. punk rocker Patti Smith received one of France's top cultural honors on Sunday.</font></td></tr>
+<tr>
+<td colspan=2 valign=top>
+<table cellspacing=0 cellpadding=0 align=left><tr><td>
+<font size=-2 face=arial,helvetica color=666666>
+<a href=/web/20050711014539/http://entertainment.tv.yahoo.com/shop?d=ap&amp;id=1807763769&amp;cf=pg&amp;photoid=578919><img src=/web/20050711014539im_/http://us.ent3.yimg.com/entertainment.tv.yahoo.com/images/ent/ap/20050710/thumb_ny111_people_nelson.sff.jpg border=1></a></font></td><td>&nbsp;</td></tr></table>
+<p><a href="/web/20050711014539/http://entertainment.tv.yahoo.com/entnews/ap/20050710/112102308000.html"><font face=arial,helvetica><b>Willie Nelson to Release Reggae Album</b></font></a><br>
+<font size=-2 face=arial,helvetica color=666666>July 10, 12:07:18 PM ET, AP</font><br><font size=-1 face=arial,helvetica>Willie Nelson is so prolific that sometimes even he forgets he has another record coming out. At a recent show here with Bob Dylan, Nelson performed a long list of hits, but not a single song from his new long-awaited reggae album.</font></td></tr>
+<tr>
+<td colspan=2 valign=top>
+<p><a href="/web/20050711014539/http://entertainment.tv.yahoo.com/entnews/ap/20050710/112102218000.html"><font face=arial,helvetica><b>'Today' Set to Mark 10 Years on Top</b></font></a><br>
+<font size=-2 face=arial,helvetica color=666666>July 10, 12:07:03 PM ET, AP</font><br>
+<font size=-1 face=arial,helvetica>After a lousy spring, summer certainly is a lot brighter at NBC's "Today" show. Television's most popular morning program has halted a ratings free-fall and, by most accounts, improved enough so that those around it this week can exhale and enjoy a milestone 10 years in the making.</font></td></tr>
+<tr>
+<td colspan=2 valign=top>
+<p><a href="/web/20050711014539/http://entertainment.tv.yahoo.com/entnews/ap/20050710/112101498000.html"><font face=arial,helvetica><b>Series Looks at Europeans' March to Power</b></font></a><br>
+<font size=-2 face=arial,helvetica color=666666>July 10, 10:07:03 AM ET, AP</font><br>
+<font size=-1 face=arial,helvetica>In his shrewd investigation, Jared Diamond puts a new spin on the old idea that "Life isn't fair." In the three-part National Geographic documentary series "Guns, Germs and Steel," Diamond enlarges on his Pulitzer Prize-winning book of the same title to explore these questions: Why were Europeans able to take over other cultures and disseminate so much influence in the past 13,000 years? Why do societies advance at different paces?</font></td></tr>
+<tr>
+<td colspan=2 valign=top>
+<p><a href="/web/20050711014539/http://entertainment.tv.yahoo.com/entnews/ap/20050710/112101468000.html"><font face=arial,helvetica><b>Texas Rapper Aims for National Big Time</b></font></a><br>
+<font size=-2 face=arial,helvetica color=666666>July 10, 9:07:58 AM ET, AP</font><br>
+<font size=-1 face=arial,helvetica>Slim Thug is a Goliath on the Houston rap scene and it has nothing to do with his 6-foot-6, 265-pound frame.</font></td></tr>
+<tr>
+<td colspan=2 valign=top>
+<table cellspacing=0 cellpadding=0 align=right><tr><td>
+<font size=-2 face=arial,helvetica color=666666>
+<a href=/web/20050711014539/http://entertainment.tv.yahoo.com/shop?d=ap&amp;id=1807763769&amp;cf=pg&amp;photoid=578898><img src=/web/20050711014539im_/http://us.ent3.yimg.com/entertainment.tv.yahoo.com/images/ent/ap/20050710/thumb_ny115_people_bryant.sff.jpg border=1></a></font></td><td>&nbsp;</td></tr></table>
+<p><a href="/web/20050711014539/http://entertainment.tv.yahoo.com/entnews/ap/20050709/112096992000.html"><font face=arial,helvetica><b>Kobe Bryant Resumes Endorsement Career</b></font></a><br>
+<font size=-2 face=arial,helvetica color=666666>July 9, 9:07:32 PM ET, AP</font><br><font size=-1 face=arial,helvetica>Nike is using photos of Kobe Bryant for the first time since his arrest two years ago for an alleged assault on a female employee at a Colorado resort.</font></td></tr>
+</table>
+<p>
+</td>
+<td width=10>&nbsp;</td>
+<td valign=top width=160>
+<table><tr><td height=4></td></tr></table>
+<table border=0 cellpadding=1 cellspacing=0 width="100%" bgcolor=cccccc>
+<tr><td>
+<table border=0 cellpadding=2 cellspacing=0 width="100%">
+<tr><td bgcolor=eeeeee align=center>
+<font face=arial,helvetica>
+<b><img src="/web/20050711014539im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif" width=16 height=16>Full Coverage</b></font>
+</td></tr></table>
+<table border=0 cellpadding=2 cellspacing=0 width="100%" bgcolor=white>
+<tr nowrap><td align=right width="1%" valign=top>&nbsp;&#149;&nbsp;</td>
+<td><a href="/web/20050711014539/http://news.yahoo.com/fc/entertainment/anne_bancroft"><font face="arial,helvetica" size=-1>
+Actress Anne Bancroft Dies at Age 73</font></a></td></tr>
+<tr nowrap><td align=right width="1%" valign=top>&nbsp;&#149;&nbsp;</td>
+<td><a href="/web/20050711014539/http://news.yahoo.com/fc/Entertainment/Live_8;_ylt=Auvqv2oqFtcCbkMPPwUI8Td8XckB;_ylu=X3oDMTBiMW04NW9mBHNlYwMlJVRPUCUl"><font face="arial,helvetica" size=-1>
+Live 8</font></a></td></tr>
+<tr nowrap><td align=right width="1%" valign=top>&nbsp;&#149;&nbsp;</td>
+<td><a href="/web/20050711014539/http://dailynews.yahoo.com/fc/Entertainment/Michael_Jackson"><font face="arial,helvetica" size=-1>
+Michael Jackson Acquitted of All Charges</font></a></td></tr>
+<tr><td height=4>
+</td></tr></table>
+</td></tr></table>
+<br>
+<table border=0 cellpadding=1 cellspacing=0 bgcolor=cccccc>
+<tr><td>
+<table border=0 cellpadding=0 cellspacing=0 bgcolor=ffffff>
+<tr>
+<td valign=top>
+<table border=0 width="100%" cellpadding=3 cellspacing=0>
+<tr>
+<td valign=top bgcolor=eeeeee align=center>
+<font face="arial,helvetica">
+<b>Gossip Columns</b>
+</font>
+</td>
+</tr>
+</table>
+<table border=0 cellpadding=2 cellspacing=0 width="100%">
+<tr><td width=50>
+<a href="/web/20050711014539/http://entertainment.yahoo.com/entnews/w/"><img src=/web/20050711014539im_/http://us.i1.yimg.com/us.yimg.com/i/tv/watchwithkristin50.jpg border=0 align=left></a></td><td>
+<a href="/web/20050711014539/http://entertainment.yahoo.com/entnews/w/"><font face="arial,helvetica" size=-1>Watch With Kristin</font></a><br><font size=-2 face="arial,helvetica" color=666666>E!Online, updated Fridays</font></td></tr>
+<tr><td colspan=2>
+<a href="/web/20050711014539/http://entertainment.yahoo.com/entnews/bs/"><font face="arial,helvetica" size=-1>Monday Night at Morton's</font></a><br><font size=-2 face="arial,helvetica" color=666666>E! Online, updated weekdays</font></td></tr>
+<tr><td colspan=2>
+<a href="/web/20050711014539/http://entertainment.yahoo.com/entnews/tc/"><font face="arial,helvetica" size=-1>Ted Casablanca - 'The Awful Truth'</font></a><br><font size=-2 face="arial,helvetica" color=666666>E! Online, updated Thursdays</font></td></tr>
+<tr><td colspan=2 align=center bgcolor=eeeeee><font face="arial,helvetica" size=-1><a href="/web/20050711014539/http://entertainment.yahoo.com/columns/"><b>More Gossip Columns...</b></a></font></td></tr>
+</table>
+</td></tr></table>
+</td></tr></table>
+<br>
+<br>
+<table border=0 cellpadding=1 cellspacing=0 bgcolor=cccccc>
+<tr><td>
+<table border=0 cellpadding=0 cellspacing=0 bgcolor=ffffff>
+<tr>
+<td valign=top>
+<table border=0 width=100% cellpadding=3 cellspacing=0>
+<tr><td valign=top bgcolor=eeeeee align=center>
+<font face=arial,helvetica><b>Supermarket Tabloids</b></font>
+</td></tr></table>
+<table border=0 cellspacing=0 cellpadding=2 width=100%>
+<tr><td><font face=arial size=-1><a href=/web/20050711014539/http://entertainment.yahoo.com/news/ne/20050624/111962520001.html>MISSING NATALEE WAS DRUGGED AND LEFT FOR DEAD</a></font><br><font face="Arial, Helvetica, sans-serif" size=-2 color=666666>Jun 24, 2005 - National Enquirer</font></td></tr>
+<tr><td><font face=arial size=-1><a href=/web/20050711014539/http://entertainment.yahoo.com/news/st/20050624/111962520000.html>TOMKAT'S WHIRLWIND WEDDING</a></font><br><font face="Arial, Helvetica, sans-serif" size=-2 color=666666>Jun 24, 2005 - Star Magazine</font></td></tr>
+<tr><td><font face=arial size=-1><a href=/web/20050711014539/http://entertainment.yahoo.com/news/st/20050407/111288600000.html>WHY IS PREGNANT DEMI SMOKING? IS ASHTON UPSET?</a></font><br><font face="Arial, Helvetica, sans-serif" size=-2 color=666666>Apr 7, 2005 - Star Magazine</font></td></tr>
+<tr align=right>
+<td colspan=2 align=center bgcolor=EBEFF5>
+<font face=arial size=-1><b><a href=/web/20050711014539/http://entertainment.yahoo.com/gossip/>More Supermarket Tabloids...</a></b></font>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+<br>
+<table border=0 width=100% cellpadding=1 cellspacing=0 bgcolor=cccccc>
+<tr><td>
+<table cellpadding=2 border=0 width=100% bgcolor=eeeeee cellspacing=0>
+<tr><td align=center>
+<font face=arial><b>Photo Highlight</b></font>
+</td></tr></table>
+<table border=0 cellspacing=0 cellpadding=2 width=100% bgcolor=white>
+<tr><td height=4></td></tr>
+</tr><td align=center><font face=arial size=-2>
+<a href=/web/20050711014539/http://entertainment.yahoo.com/shop?d=ap&amp;id=1807763769&amp;cf=pg&amp;photoid=578922><img border=1 align=middle src=/web/20050711014539im_/http://us.ent3.yimg.com/entertainment.tv.yahoo.com/images/ent/ap/20050710/thumb_ny112_people_shields.sff.jpg><br>
+AP Photo</a><br>
+<font size=-2>   Brooke Shields poses for the press in the courtyard of a hotel in central London in this Thursday, April 14, 2005 ... </font></td></tr></table>
+<table border=0 cellpadding=2 cellspacing=0 width=100% bgcolor=eeeeee>
+<tr><td align=center>
+<font face=arial size=-1>
+<b><a href=/web/20050711014539/http://entertainment.tv.yahoo.com/shop?d=ap&amp;id=1807763769&amp;cf=mm&amp;index-0>More Photos...</a></b></font>
+</td></tr></table>
+</td></tr></table>
+</td>
+</tr></table>
+<br>
+<hr size=1 width="750" noshade>
+<table cellpadding=0 cellspacing=0 border=0 width="750">
+<tr><td>
+<table cellpadding=1 cellspacing=0 border=0 width="100%">
+
+<tr><td>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr><td align=center>
+<font face="arial" size=-1>
+<b>Yahoo! Entertainment</b>:
+<a href="/web/20050711014539/http://us.rd.yahoo.com/ent/bottomtrough/more/?http://movies.yahoo.com">Movies</a>
+- <a href="/web/20050711014539/http://us.rd.yahoo.com/ent/bottomtrough/music/?http://music.yahoo.com">Music</a>
+- <a href="/web/20050711014539/http://us.rd.yahoo.com/ent/bottomtrough/tv/?http://tv.yahoo.com">TV</a>
+- <a href="/web/20050711014539/http://us.rd.yahoo.com/ent/bottomtrough/games/?http://games.yahoo.com">Games</a>
+- <a href="/web/20050711014539/http://us.rd.yahoo.com/ent/bottomtrough/astrology/?http://astrology.yahoo.com">Astrology</a>
+- <a href="/web/20050711014539/http://us.rd.yahoo.com/ent/bottomtrough/more/?http://entertainment.tv.yahoo.com">more...</a>
+</font>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+</table>
+
+<table border=0 cellspacing=0 cellpadding=4 width=750>
+<tr><td valign=top align=center><hr noshade size=1>
+<!-- SpaceID=0 robot -->
+</td></tr>
+</table>
+</center></body></html>
+ <!-- p1.movies.scd.yahoo.com uncompressed Sun Jul 10 18:45:39 PDT 2005 -->
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 1:45:39 Jul 11, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 8:11:16 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

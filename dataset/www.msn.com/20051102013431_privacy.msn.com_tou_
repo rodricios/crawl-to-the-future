@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xml:lang="en-US" lang="en-US" xmlns="http://www.w3.org/1999/xhtml"> <head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app15.us.archive.org";archive_analytics.values.server_ms=2838;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="g-link" content="2000;" /><title>MSN Terms of Use</title><style type="text/css">@import url("/web/20051102084502im_/http://stc.msn.com/br/gbl/css/1/GTL_SiteGeneric.css");@import url("/web/20051102084502im_/http://stc.msn.com/br/chan/css/1/chan_override.css");@import url("/web/20051102084502im_/http://stc.msn.com/br/chan/priv/css/1/privacy_override.css");</style><script type="text/javascript" src="/web/20051102084502js_/http://stj.msn.com/br/gbl/js/1/MozCompat.js"></script><script type="text/javascript" src="/web/20051102084502js_/http://stj.msn.com/br/gbl/js/1/Navigation.js"></script><script type="text/javascript" src="/web/20051102084502js_/http://stj.msn.com/br/gbl/js/1/Gtracking.js"></script></head><body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://privacy.msn.com/tou/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "2";
+var displayMonth = "Nov";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://privacy.msn.com/tou/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20051102084502" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20051002042000/http://privacy.msn.com/tou/" title="2 Oct 2005">OCT</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 8:45:02 Nov 2, 2005">NOV</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20051206034659/http://privacy.msn.com/tou/" title="6 Dec 2005"><strong>DEC</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20051101021134/http://privacy.msn.com/tou/" title="2:11:34 Nov 1, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 8:45:02 Nov 2, 2005">2</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20051103053212/http://privacy.msn.com/tou/" title="5:32:12 Nov 3, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20041101014801/http://privacy.msn.com/tou/" title="1 Nov 2004"><strong>2004</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 8:45:02 Nov 2, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20061104012405/http://privacy.msn.com/tou" title="4 Nov 2006"><strong>2006</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20051102084502*/http://privacy.msn.com/tou/" title="See a list of every capture for this URL">1,100 captures</a>
+           <div class="r" title="Timespan for captures of this URL">5 Dec 01 - 1 Mar 10</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000002_2002:-1:010102021732_2003:-1:020101020102_2004:-1:02020abbcbcc_2005:10:ccdccccfa99a_2006:-1:77193999a99b_2007:-1:ba797b9cbb99_2008:-1:776563bb9347_2009:-1:372716276524_2010:-1:141000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<div></div><div id="wrapper" class="page5 region9"><div id="head"></div><div id="page"><div id="nav"></div><div id="content"><div id="subhead"></div><div id="area1"><div class="parent chrome1 single1"><div class="child c1 first"><p><font face="Arial"><strong>MSN Website Terms of Use and Notices</strong></font></p><p><font face="Arial"><strong>Last Updated: February 2004</strong></font></p><p><font face="Arial"><strong>1. THIS IS AN AGREEMENT BETWEEN YOU AND MICROSOFT </strong></font></p><font face="Arial"></font><p><font face="Arial">This is an agreement ("Agreement") between you and Microsoft Corporation (or, if applicable based on where you live, one of its affiliates) ("Microsoft"). This Agreement governs your use of any Web site or Web page operated by Microsoft (each, a "MSN Web Site," and collectively, the "MSN Web Sites"). You represent that you are at least 18 years of age and have attained the age of majority in the province, state or country in which you reside, and any information that you submit is correct. <br></br><strong>MICROSOFT OFFERS THE MSN WEB SITES TO YOU CONDITIONED ON YOUR ACCEPTANCE WITHOUT MODIFICATION OF THIS AGREEMENT. YOUR USE OF THE MSN WEB SITES CONSTITUTES YOUR ACCEPTANCE OF THIS AGREEMENT. </strong><br></br><strong>THIS AGREEMENT CONTAINS DISCLAIMERS OF WARRANTIES AND LIABILITY (See Sections 9, 10, and 11); AND AN EXCLUSIVE REMEDY (See Section 10). THESE PROVISIONS FORM AN ESSENTIAL BASIS OF OUR BARGAIN. </strong></font></p><p><font face="Arial"><strong>2. HOW MICROSOFT MAY MODIFY THIS AGREEMENT </strong></font></p><p><font face="Arial">Microsoft reserves the right to change the terms, conditions, and notices under which it offers the MSN Web Sites, including any charges associated with the use of the MSN Web Sites. You are responsible for regularly reviewing these terms, conditions and notices, and any additional terms posted on any MSN Web Site. Your continued use of the MSN Web Sites after the effective date of such changes constitutes your acceptance of and agreement to such changes. </font></p><p><font face="Arial"><strong>3. ADDITIONAL TERMS </strong></font></p><p><font face="Arial">Any MSN Web Site may itself contain additional terms (for example, codes of conduct or guidelines) that further govern use of that MSN Web Site, including without limitation, particular features or offers (for example, sweepstakes). If any terms contained in this Agreement conflict with any terms contained within a MSN Web Site, then the terms in this Agreement shall control. </font></p><p><font face="Arial"><strong>4. NO COMMERCIAL, UNLAWFUL OR HARMFUL USE OF THE MSN WEB SITES</strong></font></p><p><font face="Arial">The MSN Web Sites are only for your personal use. You will not use the MSN Web Sites for commercial purposes. You will not use the MSN Web Sites in any way that is unlawful, or harms Microsoft, its affiliates, resellers, distributors, service providers and/or suppliers (each, a "Microsoft Party" and collectively, the "Microsoft Parties") or any customer of a Microsoft Party, as determined in Microsoft's sole discretion. Microsoft may tell you about certain specific harmful uses in a code of conduct or other notices available through a MSN Web Site, but has no obligation to do so. You may not use the MSN Web Sites in any way that breaches any code of conduct, policy or other notice applicable to the MSN Web Sites. Without limiting the generality of this section, you may not use the MSN Web Sites in any manner that could damage, disable, overburden, or impair any MSN Web Site (or the network(s) connected to any MSN Web Site) or interfere with any other party's use and enjoyment of the MSN Web Sites. </font></p><p><font face="Arial"><strong>5. SPAM IS PROHIBITED AND CAUSES DAMAGE; SPAM FILTERING TECHNOLOGY</strong></font></p><p><font face="Arial">Without limiting the generality of Section 4, you will not use the MSN Web Sites to transmit, either directly or indirectly, any unsolicited bulk e-mail or unsolicited commercial e-mail. You will not use the MSN Web Sites in any way that violates the Microsoft Anti-Spam Policy. You may view the Anti-Spam Policy at <a href="/web/20051102084502/http://privacy.msn.com/anti-spam"><font color="#00009c">privacy.msn.com/anti-spam</font></a>. A breach of any part of the Anti-Spam Policy is a breach of this Agreement. Microsoft may use filtering technology or other measures in its efforts to stop unsolicited bulk e-mail and unsolicited commercial e-mail, and if your use of the MSN Web Sites includes e-mail related services, then such filtering technology or other measures may block, either temporarily or permanently, some e-mail sent to you through the MSN Web Sites even if such e-mail does not violate the Anti-Spam Policy. </font></p><p><font face="Arial"><strong>6. MATERIALS YOU POST OR PROVIDE; COMMUNICATIONS MONITORING</strong></font></p><p><font face="Arial">For materials you post or otherwise provide to Microsoft related to the MSN Web Sites (a "Submission"), you grant Microsoft permission to (1) use, copy, distribute, transmit, publicly display, publicly perform, reproduce, edit, modify, translate and reformat your Submission, each in connection with the MSN Web Sites, and (2) sublicense these rights, to the maximum extent permitted by applicable law. Microsoft will not pay you for your Submission. Microsoft may remove your Submission at any time. For each Submission, you represent that you have all rights necessary for you to make the grants in this section. To the maximum extent permitted by applicable law, Microsoft may monitor your e-mail, or other electronic communications and may disclose such information in the event it has a good faith reason to believe it is necessary for purposes of ensuring your compliance with this Agreement, and protecting the rights, property, and interests of the Microsoft Parties or any customer of a Microsoft Party. </font></p><p><font face="Arial"><strong>7. SOFTWARE</strong></font></p><p><font face="Arial">Your use of any software associated with the MSN Web Sites will be governed by the terms and conditions of the end user license agreement ("EULA") accompanying such software. If you receive any software that is not accompanied by a EULA, then Microsoft grants to you a non-exclusive, revocable, personal, non-transferable license to use such software solely in connection with the MSN Web Sites and in accordance with this Agreement. Microsoft reserves all rights to such software not expressly granted to you in this Agreement. Such software is protected by copyright and other intellectual property laws and treaties. Microsoft or its suppliers own the title, copyright, and other intellectual property rights in such software, and such software is licensed, not sold. You will not disassemble, decompile, or reverse engineer, such software, except and only to the extent that such activity is expressly permitted by applicable law. Microsoft may automatically check your version of such software and may automatically download upgrades to such software to your computer to update, enhance and further develop the MSN Web Sites. </font></p><p><font face="Arial"><strong>8. INFORMATION AVAILABLE FROM THE MSN WEB SITES</strong></font></p><p><font face="Arial">Microsoft and its suppliers do not warrant or guarantee the accuracy or timeliness of any information available from the MSN Web Sites including stock quotes, even if such information appears in any e-mail, pager, cell phone or other alerts available through the MSN Web Sites. Microsoft and its suppliers do not authorize the use of information available from the MSN Web Sites including stock quote or other financial information, for any purpose other than your personal use, and prohibit to the maximum extent allowable the resale, redistribution, and use of this information for commercial purposes. Microsoft is not a broker/dealer or registered investment advisor under United States federal securities law or securities laws of other jurisdictions, and does not advise individuals as to the advisability of investing in, purchasing or selling securities or other financial products or services. Nothing contained in the MSN Web Sites constitute an offer or solicitation to buy or sell any security. Microsoft does not endorse or recommend any particular product or service, including financial products or services. Nothing contained in the MSN Web Sites is intended to constitute professional advice, including but not limited to, investment or tax advice. </font></p><p><font face="Arial"><strong>9. MICROSOFT MAKES NO WARRANTY </strong></font></p><p><font face="Arial"><strong>MICROSOFT PROVIDES THE MSN WEB SITES "AS IS," "WITH ALL FAULTS" AND "AS AVAILABLE," AND THE ENTIRE RISK AS TO SATISFACTORY QUALITY, PERFORMANCE, ACCURACY, AND EFFORT IS WITH YOU. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE MICROSOFT PARTIES MAKE NO REPRESENTATIONS, WARRANTIES OR CONDITIONS, EXPRESS OR IMPLIED. THE MICROSOFT PARTIES DISCLAIM ANY AND ALL WARRANTIES OR CONDITIONS, EXPRESS, STATUTORY AND IMPLIED, INCLUDING WITHOUT LIMITATION (1) WARRANTIES OR CONDITIONS OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, WORKMANLIKE EFFORT, ACCURACY, TITLE, QUIET ENJOYMENT, NO ENCUMBRANCES, NO LIENS AND NON-INFRINGEMENT, (2) WARRANTIES OR CONDITIONS ARISING THROUGH COURSE OF DEALING OR USAGE OF TRADE, AND (3) WARRANTIES OR CONDITIONS THAT ACCESS TO OR USE OF THE MSN WEB SITES WILL BE UNINTERRUPTED OR ERROR-FREE. THERE ARE NO WARRANTIES THAT EXTEND BEYOND THE FACE OF THIS AGREEMENT. </strong></font></p><p><font face="Arial"><strong>10. LIABILITY LIMITATION; YOUR EXCLUSIVE REMEDY </strong></font></p><p><font face="Arial"><strong>IN NO EVENT WILL ANY MICROSOFT PARTY BE LIABLE FOR ANY DAMAGES, INCLUDING WITHOUT LIMITATION ANY INDIRECT, CONSEQUENTIAL, SPECIAL, INCIDENTAL, OR PUNITIVE DAMAGES ARISING OUT OF, BASED ON, OR RESULTING FROM THIS AGREEMENT OR YOUR USE OF THE MSN WEB SITES, EVEN IF SUCH MICROSOFT PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THE EXCLUSION OF DAMAGES UNDER SECTION 10 IS INDEPENDENT OF YOUR EXCLUSIVE REMEDY AND SURVIVES IN THE EVENT SUCH REMEDY FAILS OF ITS ESSENTIAL PURPOSE OR IS OTHERWISE DEEMED UNENFORCEABLE. THESE LIMITATIONS AND EXCLUSIONS APPLY WITHOUT REGARD TO WHETHER THE DAMAGES ARISE FROM (1) BREACH OF CONTRACT, (2) BREACH OF WARRANTY, (3) NEGLIGENCE, OR (4) ANY OTHER CAUSE OF ACTION, TO THE EXTENT SUCH EXCLUSION AND LIMITATIONS ARE NOT PROHIBITED BY APPLICABLE LAW. IF YOU ARE DISSATISFIED WITH THE MSN WEB SITES, YOU DO NOT AGREE WITH ANY PART OF THIS AGREEMENT, OR YOU HAVE ANY OTHER DISPUTE OR CLAIM WITH OR AGAINST ANY MICROSOFT PARTY WITH RESPECT TO THIS AGREEMENT OR THE MSN WEB SITES, THEN YOUR SOLE AND EXCLUSIVE REMEDY IS TO DISCONTINUE USING THE MSN WEB SITES.</strong></font></p><p><font face="Arial"><strong>11. CHANGES TO THE MSN WEB SITES; ADDITIONAL LIABILITY LIMITATION </strong></font></p><p><font face="Arial"><strong>THE MICROSOFT PARTIES MAY CHANGE THE MSN WEB SITES OR DELETE FEATURES IN ANY WAY, AT ANY TIME AND FOR ANY REASON.</strong> As you use the MSN Web Sites, you should expect to receive, access or use information, materials, graphics, software, data and content (collectively, "Content") originated by Microsoft and persons other than Microsoft (any such person is referred to as a "Third Party"). <strong>WITHOUT LIMITING THE GENERALITY OF SECTIONS 9 AND 10, YOU ACKNOWLEDGE AND AGREE THAT THE MICROSOFT PARTIES ARE NOT RESPONSIBLE OR LIABLE FOR (1) ANY CONTENT, INCLUDING WITHOUT LIMITATION, ANY INFRINGING, INACCURATE, OBSCENE, INDECENT, THREATENING, OFFENSIVE, DEFAMATORY, TORTIOUS, OR ILLEGAL CONTENT, OR (2) ANY THIRD PARTY CONDUCT, TRANSMISSIONS OR DATA. IN ADDITION, WITHOUT LIMITING THE GENERALITY OF SECTIONS 9 AND 10, YOU ACKNOWLEDGE AND AGREE THAT MICROSOFT IS NOT RESPONSIBLE OR LIABLE FOR (1) ANY VIRUSES OR OTHER DISABLING FEATURES THAT AFFECT YOUR ACCESS TO OR USE OF THE MSN WEB SITES, (2) ANY INCOMPATIBILITY BETWEEN THE MSN WEB SITES AND OTHER WEB SITES, SERVICES, SOFTWARE AND HARDWARE, (3) ANY DELAYS OR FAILURES YOU MAY EXPERIENCE IN INITIATING, CONDUCTING OR COMPLETING ANY TRANSMISSIONS OR TRANSACTIONS IN CONNECTION WITH THE MSN WEB SITES IN AN ACCURATE OR TIMELY MANNER, OR (4) ANY DAMAGES OR COSTS OF ANY TYPE ARISING OUT OF OR IN ANY WAY CONNECTED WITH YOUR USE OF ANY SERVICES AVAILABLE FROM THIRD PARTIES THOUGH LINKS CONTAINED ON THE MSN WEB SITES. THE LIMITATIONS, EXCLUSIONS AND DISCLAIMERS IN SECTIONS 9, 10 AND 11 OF THIS AGREEMENT APPLY TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, AND ARE NOT INTENDED TO DEPRIVE YOU OF ANY MANDATORY PROTECTIONS PROVIDED TO YOU UNDER APPLICABLE LAW.</strong></font></p><p><font face="Arial"><strong>12. TERMINATION; ACCESS RESTRICTION </strong></font></p><p><font face="Arial">Microsoft may terminate this Agreement, or terminate or suspend your access to the MSN Web Sites at any time, with or without cause, with or without notice. Upon such termination or suspension, your right to use the MSN Web Sites will immediately cease. UPON SUCH TERMINATION OR SUSPENSION, ANY INFORMATION YOU HAVE STORED ON THE MSN WEB SITES MAY NOT BE RETRIEVED LATER. </font></p><p><font face="Arial"><strong>13. CHOICE OF LAW AND LOCATION FOR RESOLVING DISPUTES </strong></font></p><p><font face="Arial">If this Agreement is with Microsoft Corporation, claims for enforcement, breach or violation of duties or rights under this Agreement will be adjudicated under the laws of the State of Washington, without reference to conflict of laws principles. If this Agreement is with a Microsoft affiliate, claims for enforcement, breach or violation of duties or rights under this Agreement will be adjudicated under the laws of the place of incorporation for such Microsoft affiliate, without reference to conflict of laws principles. All other claims, including, without limitation, claims under or for violation of consumer protection laws, unfair competition laws, and in tort, will be adjudicated under the laws of your state of residence in the United States, or, if you reside outside the United States, under the laws of the country to which the subject MSN Web Sites are directed. If this Agreement is with Microsoft Corporation, you hereby irrevocably consent to the exclusive jurisdiction and venue of state or federal courts in King County, Washington, USA in all disputes arising out of or relating to the use of the MSN Web Sites. If this Agreement is with a Microsoft affiliate, you hereby consent to the exclusive jurisdiction and venue of the courts located in the place of incorporation for such Microsoft affiliate in all disputes arising out of or relating to the use of the MSN Web Sites. </font></p><p><font face="Arial"><strong>14. INTERPRETING THE AGREEMENT; ASSIGNMENT </strong></font></p><p><font face="Arial">If any part of this Agreement is determined to be invalid or unenforceable pursuant to applicable law, then the invalid or unenforceable provision will be deemed superseded by a valid, enforceable provision that most closely matches the intent of the original provision and the remainder of this Agreement will continue in effect. Microsoft may assign this Agreement, in whole or in part, at any time with or without notice to you. You may not assign this Agreement, or assign, transfer or sublicense your rights, if any, in the MSN Web Sites. Except as expressly stated herein, this Agreement constitutes the entire agreement between you and Microsoft with respect to the MSN Web Sites and it supersedes all prior or contemporaneous communications and proposals, whether electronic, oral or written, between you and Microsoft with respect to the MSN Web Sites. The section titles in the Agreement are solely used for the convenience of the parties and have no legal or contractual significance. </font></p><p><font face="Arial"><strong>15. YOU HAVE LIMITED TIME TO BRING YOUR CLAIM </strong></font></p><p><font face="Arial"><strong>YOU AND MICROSOFT AGREE THAT ANY CAUSE OF ACTION ARISING OUT OF OR RELATED TO THE MSN WEB SITES MUST COMMENCE WITHIN ONE (1) YEAR AFTER THE CAUSE OF ACTION ACCRUES. OTHERWISE, SUCH CAUSE OF ACTION IS PERMANENTLY BARRED. </strong></font></p><p><font face="Arial"><strong>16. COPYRIGHT AND TRADEMARK NOTICES; OTHER ACKNOWLEDGEMENTS </strong></font></p><p><font face="Arial">All contents of the MSN Web Sites are Copyright © 2004 Microsoft Corporation and/or its suppliers, One Microsoft Way, Redmond, Washington 98052-6399 U.S.A. All rights reserved. Microsoft, MSN, MSN logo (butterfly), and/or other Microsoft products and services referenced herein may also be either trademarks or registered trademarks of Microsoft in the United States and/or other countries. The names of actual companies and products mentioned herein may be the trademarks of their respective owners. The example companies, organizations, products, domain names, e-mail addresses, logos, people, places and events depicted herein are fictitious. No association with any real company, organization, product, domain name, e-mail address, logo, person, places or events is intended or should be inferred. Any rights not expressly granted herein are reserved. Certain software used in certain MSN Web Sites servers is based in part on the work of the Independent JPEG Group. Copyright © 1991 -1996 Thomas G. Lane. All rights reserved. "gnuplot" software used in certain MSN Web Sites servers is copyright © 1986-1993 Thomas Williams, Colin Kelley. All rights reserved. Historical chart information supplied by Commodity Systems, Inc. (CSI), 200 W. Palmetto Park Road, Boca Raton, FL 33432 (561) 392-8663 or (800) 274- 4727. Email marketing@csidata.com </font></p><p><font face="Arial"><strong>17. OTHER NOTICES </strong></font></p><p><font face="Arial"><strong>Stock Quotes and E-mail Alerts</strong></font></p><p><font face="Arial">Stock quotes appearing on the MSN Web Sites and in email alerts are supplied by S&amp;P ComStock, Inc. Unless otherwise indicated, stock quotes are delayed at least 20 minutes (NASDAQ stock quotes are delayed at least 15 minutes). Stock quotes indicated as "real-time quotes" are made available without delay following their receipt from S&amp;P ComStock, Inc. Your actual receipt of real-time quotes may be affected by delays in transmission over the Internet, and by other causes. All stock quotes are labeled with "time of last trade" to indicate the timeliness of the data. </font></p><p><font face="Arial">All information provided by S&amp;P ComStock, Inc. ("ComStock") and its affiliates (the "ComStock Information") included in the MSN Web Sites is owned by or licensed to ComStock and its affiliates and any user is permitted to store, manipulate, analyze, reformat, print and display the ComStock Information only for such user's personal use. In no event shall any user publish, retransmit, redistribute or otherwise reproduce any ComStock Information in any format to anyone, and no user shall use any ComStock Information in or in connection with any business or commercial enterprise, including, without limitation, any securities, investment, accounting, banking, legal or media business or enterprise. Prior to the execution of a security trade based upon the ComStock Information, you are advised to consult with your broker or other financial representative to verify pricing information. Neither ComStock nor its affiliates make any express or implied warranties (including, without limitation, any warranty or merchantability or fitness for a particular purpose or use) regarding the ComStock Information. The ComStock Information is provided to the users "as is." Neither ComStock nor its affiliates will be liable to any user or anyone else for any interruption, inaccuracy, error or omission, regardless of cause, in the ComStock Information or for any damages (whether direct or indirect, consequential, punitive or exemplary) resulting therefrom. </font></p><p><font face="Arial"><strong>Third Party Account Information</strong></font></p><p><font face="Arial">By using the "My Accounts" service through the MSN Web Sites, you authorize Microsoft and its agents to access third party sites designated by you or on your behalf, to retrieve information requested by you, and you appoint Microsoft and its agents as your agent for this limited purpose. Each time you enter your account login information, you are permitting Microsoft and its agents to process your request and use information submitted by you to accomplish the foregoing. You will choose a password when registering. </font></p><p><font face="Arial"><strong>MSN Bill Pay Service Terms of Use and Privacy Statement</strong></font></p><p><font face="Arial">The MSN Bill Pay service is provided by a third party service provider. <a href="/web/20051102084502/https://billpay.msn.com/common/touforcf.asp"><font color="#00009c">Click here</font></a> to view the third party service provider's terms and conditions for use of the MSN Bill Pay service. <a href="/web/20051102084502/https://mybills.com/wpsgen/wps?rq=gf&amp;sp=1299&amp;file=pp.htmt"><font color="#00009c">Click here</font></a> for the privacy policy applicable to how the third party service provider handles your data for the MSN Bill Pay service. </font></p><p><font face="Arial"><strong>Parental Controls</strong></font></p><p><font face="Arial">Microsoft offers parental control protections that help you limit access to material that is harmful to minors. If you are interested in learning more about these protections, information is available at http://family.msn.com/onlinesafetyguide or other similar sites providing information on parental control protections. </font></p><p><font face="Arial"><strong>18. NOTICES AND PROCEDURE FOR MAKING CLAIMS OF COPYRIGHT INFRINGEMENT </strong></font></p><p><font face="Arial">Pursuant to Title 17, United States Code, Section 512(c)(2), notifications of claimed copyright infringement should be sent to Service Provider's Designated Agent. <strong>ALL INQUIRIES NOT RELEVANT TO THE FOLLOWING PROCEDURE WILL RECEIVE NO RESPONSE.</strong><a href="/web/20051102084502/http://www.microsoft.com/info/cpyrtInfrg.htm"><font color="#00009c">See Notice and Procedure for Making Claims of Copyright Infringement.</font></a></font></p><p><font face="Arial"><strong>19. </strong><a href="/web/20051102084502/http://privacy.msn.com/en-us/default.aspx"><strong><font color="#00009c">FOR INFORMATION REGARDING THE MSN.COM PRIVACY STATEMENT CLICK HERE.</font></strong></a></font></p></div></div></div></div></div><div id="foot"></div></div><script type="text/javascript" src="/web/20051102084502js_/http://stj.msn.com/br/gbl/js/1/ieminwidth.js"></script></body></html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 8:45:02 Nov 2, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 6:35:18 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

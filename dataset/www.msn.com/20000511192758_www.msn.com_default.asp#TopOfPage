@@ -1,0 +1,288 @@
+ <html>  <head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app0.us.archive.org";archive_analytics.values.server_ms=3682;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+ <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">  <META HTTP-EQUIV="Expires" content="0">  <TITLE>Welcome to MSN.com</TITLE> <META http-equiv=PICS-Label content='(PICS-1.1 "http://www.rsac.org/ratingsv01.html" l comment "RSACi North America Server" by "inet@microsoft.com" r (n 0 s 0 v 0 l 0))'>  <base target="_top" href="/web/20000511215949/http://go.msn.com/"> </head> <BODY  topmargin=0 leftmargin=3 bgcolor=#FFFFFF text=#000000 link=#000000 vlink=#000000 alink=#000000>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.msn.com/Default.asp";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "11";
+var displayMonth = "May";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.msn.com/Default.asp" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20000511215949" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20000309165756/http://www.msn.com/default.asp?" title="9 Mar 2000">MAR</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 21:59:49 May 11, 2000">MAY</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20000612045121/http://www.msn.com/DEFAULT.ASP" title="12 Jun 2000"><strong>JUN</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20000510220056/http://www.msn.com/Default.asp" title="22:00:56 May 10, 2000"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 21:59:49 May 11, 2000">11</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20000511225811/http://www.msn.com/Default.asp?" title="22:58:11 May 11, 2000"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/19990508214507/http://www.msn.com/Default.ASP" title="8 May 1999"><strong>1999</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 21:59:49 May 11, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20010521070651/http://www.msn.com/default.asp" title="21 May 2001"><strong>2001</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20000511215949*/http://www.msn.com/Default.asp" title="See a list of every capture for this URL">333 captures</a>
+           <div class="r" title="Timespan for captures of this URL">20 Dec 96 - 11 Jun 13</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000001_1997:-1:000000000000_1998:-1:100000000001_1999:-1:010220000750_2000:4:24d099320338_2001:-1:310245132fb1_2002:-1:020200001101_2003:-1:100102010102_2004:-1:030109b31878_2005:-1:96955270065d_2006:-1:921902322070_2007:-1:010100010010_2008:-1:101000001000_2009:-1:001010100300_2010:-1:000001010010_2011:-1:100102010001_2012:-1:001001000000_2013:-1:201112000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<script><!--
+strRunWide="";strRunNarrow="";
+//--></script><script><!--
+function msnpUp(){var A_=window.open("/web/20000511215949/http://www.msn.com/msnpup.htm","msnpopup","toolbar=no,location=no,directories=no,status=no,scrollbars=no,resizable=no,menubar=no,width=250,height=250");A_.focus();}
+//--></script> <a name=TopOfPage></a> <table id=RowHead width=608 border=0 cellpadding=0 cellspacing=0> <tr> <td rowspan=2 valign=center width=155><a href=0/3/><img src="/web/20000511215949im_/http://msimg.com/w/logo_bf2.gif" width=140 height=60 vspace=4 border=0 alt="Go to MSN.com"></a></td> <td width=28>&nbsp; <!-- hold space above slant--></td> <td id=tdAd height=37 width=425> <table id=tabAd width=425 height=32 border=0 cellpadding=0 cellspacing=0> <tr valign=bottom> <td width=25>&nbsp;</td> <td valign=center><A HREF="/web/20000511215949/http://ads.msn.com/ads/redirect.dll/CID=000787855c8e67c400000000/AREA=MSNMER?image=http://ads.msn.com/ads/MSNMER/001914730117_C8.gif" TARGET="_top"><IMG SRC="/web/20000511215949im_/http://ads.msn.com/ads/MSNMER/001914730117_C8.gif" ALT="Blue Nile" BORDER=0></A></td> <td align=right><b><font face=arial,sans-serif size=2 style="font:bold 11pt arial,sans-serif;">MAY </font><font face=arial,sans-serif size=5 style="font:bold 19pt arial,sans-serif;line-height:16pt;">11</font></b></td> </tr> </table> </td> </tr> <tr> <td width=28 align=right valign=bottom height=28><img src=/web/20000511215949im_/http://msimg.com/w/AS_0/corner.gif width=28 height=28 alt=""></td> <td id=tdSearch height=28 width=395 bgcolor=#336699 valign=bottom><script><!--
+function valSearch(df){MT=df.elements[0];st=MT.value;if(st==""){alert("Please type the word or words you wish to search for in the Search box.");MT.focus();return false;}else{return true;}}
+//--></script><form name=frm action="1/0/default.asp" onSubmit="return valSearch(this);" Method=GET style=margin:0;> <font face=arial,sans-serif size=2 color=white> <img src="/web/20000511215949im_/http://msimg.com/w/chevrons.gif" width=12 height=11 alt="">&nbsp;  <label for=q><b><u>S</u>EARCH</b> the Web</label>  </font> <input type=text name=q ID=q VCARD_NAME="SearchText" size=22 value="" maxlength=150 accesskey="S" style=position:relative;top:2px;> <input type=image ID=y src="/web/20000511215949im_/http://msimg.com/w/go_y.gif" alt="Begin your Web search" width=17 height=17 align=middle> </form> </td> </tr> <tr> <td colspan=3 align=left bgcolor=#336699> <table id=tabOTabs width=608 border=0 bgcolor=#336699 cellpadding=0 cellspacing=0> <tr><td height=3 colspan=3></td></tr> <tr> <td width=3></td> <td id=tdOTabs width=602>  <table width=602 cellpadding=0 cellspacing=1 bgcolor=white border=0> <tr align=center> <td width=75 bgcolor=#FFFFCC><font face=verdana,sans-serif size=2><b>Home</b></font></td> <td width=75 style="border-right:black solid 1px"><a href=0/1/><font face=verdana,sans-serif size=2 color=black><b>Hotmail</b></font></a></td> <td width=75 style="border-right:black solid 1px"><a href=0/2/><font face=verdana,sans-serif size=2 color=black><b>Search</b></font></a></td> <td width=75 style="border-right:black solid 1px"><a href=0/6/><font face=verdana,sans-serif size=2 color=black><b>Shopping</b></font></a></td> <td width=75 style="border-right:black solid 1px"><a href=0/7/><font face=verdana,sans-serif size=2 color=black><b>Money</b></font></a></td> <td width=120 style="border-right:black solid 1px"><a href=0/5/><font face=verdana,sans-serif size=2 color=black><b>People &amp; Chat</b></font></a></td> <td align=center> <A HREF="/web/20000511215949/http://login.passport.com/login.asp?id=950&amp;TW=43200&amp;FS=0&amp;RU=http://www.msn.com/passport/passport_default.asp" TARGET=_top><IMG SRC=/web/20000511215949im_/http://www.passportimages.com/signin.gif ALT="Passport" WIDTH=67 HEIGHT=19 BORDER=0 HSPACE=10></A> </td> </tr> </table>  </td> <td width=3></td> </tr>  <tr><td height=3 colspan=3></td></tr> </table> </td> </tr> </table> <script><!--
+function wideHead(){frm.q.size=48;tabOTabs.width=768;tdOTabs.width=762;tabTabs.width=762;tdSearch.width=555;tdAd.width=585;tabAd.width=585;tdTabs.width=107+160;}function skinnyHead(){frm.q.size=22;tabOTabs.width=608;tdOTabs.width=602;tabTabs.width=602;tdTabs.width=107;tdSearch.width=395;tabAd.width=425;tdAd.width=425;}strRunWide+="wideHead();";strRunNarrow+="skinnyHead();";
+//--></script><table cellspacing=0 cellpadding=0 border=0 bgcolor=#FFFFFF><tr><td><table id=Row0 width=608 style=margin-top:0; cellpadding=0 cellspacing=0 border=0 bgcolor=#FFFFFF><tr align=left valign=top><td id=r0c0 width=154  bgcolor=#336699><font face=arial,sans-serif size=2> <table width=100% border=0 cellpadding=0 cellspacing=0> <tr> <td width=4></td> <td bgcolor=#336699> <font face=verdana,sans-serif size=1><b>  <a href=/web/20000511215949/http://go.msn.com/0000/5/P4.asp?target=http%3A//free.msn.com/default.asp%3Fcampaign%3D0000-AM-072B
+ class=y>Get fast Net access:</a><br> <a href=/web/20000511215949/http://go.msn.com/0000/5/P4.asp?target=http%3A//free.msn.com/default.asp%3Fcampaign%3D0000-AM-072B
+ class=w>MSN, 6 months free</a><br>  </b></font> </td> <td></td> <td width=1><img src="/web/20000511215949im_/http://msimg.com/w/dotline.gif" width=1 height=22 alt=""></td> </tr> </table> </font></td><td id=r0c1 width=152  bgcolor=#336699><font face=arial,sans-serif size=2> <table width=100% border=0 cellpadding=0 cellspacing=0> <tr> <td width=4></td> <td bgcolor=#336699> <font face=verdana,sans-serif size=1><b>  <a href=/web/20000511215949/http://go.msn.com/0000/5/P1.asp?target=http%3A//eshop.msn.com/softcontent/softcontent.asp%3FscmId%3D394
+ class=y>Give Mom a tender</a><br> <a href=/web/20000511215949/http://go.msn.com/0000/5/P1.asp?target=http%3A//eshop.msn.com/softcontent/softcontent.asp%3FscmId%3D394
+ class=w>loving hand-care kit</a><br>  </b></font> </td> <td></td> <td width=1><img src="/web/20000511215949im_/http://msimg.com/w/dotline.gif" width=1 height=22 alt=""></td> </tr> </table> </font></td><td id=r0c2  align=right bgcolor=#336699><font face=arial,sans-serif size=2><A HREF="/web/20000511215949/http://ads.msn.com/ads/redirect.dll/CID=0007bf65d8e6221f00000000/AREA=MSNBFP?image=http://ads.msn.com/ads/MSNBFP/00520A0007_D2.gif" TARGET="_top"><IMG SRC="/web/20000511215949im_/http://ads.msn.com/ads/MSNBFP/00520A0007_D2.gif" ALT="Send FTD.COM Flowers!" BORDER=0></A>&nbsp;</font></td></tr></table></tr></table><table cellspacing=0 cellpadding=0 border=0 bgcolor=#336699><tr><td><table id=Row1 width=608 style=margin-top:0; cellpadding=3 cellspacing=3 border=0 bgcolor=#336699><tr align=left valign=top><td id=r1c0 width=142  bgcolor=#FFFFCC><font face=arial,sans-serif size=2> <b> <a href=2/1/0/ class=chan>Autos</a><br><a href=2/0/0/ class=chan>Business</a><br><a href=2/3/0/ class=chan>Careers</a><br><a href=2/M/0/ class=chan>City Guides</a><br><a href=2/2/0/ class=chan>Computing&nbsp;&amp;&nbsp;Web</a><br><a href=2/4/0/ class=chan>Entertainment</a><br><a href=2/5/0/ class=chan>Games</a><br><a href=2/6/0/ class=chan>Health</a><br><a href=2/7/0/ class=chan>Home & Loans</a><br><a href=2/L/0/ class=chan>Love&nbsp;&amp;&nbsp;Relationships</a><br><a href=2/8/0/ class=chan>MSN&nbsp;Update</a><br><a href=2/K/0/ class=chan><font color="#FF3300">Mother's Day</font></a><br><a href=2/9/0/ class=chan>News</a><br><a href=2/J/0/ class=chan><font color="#FF3300">Radio & Video</font></a><br><a href=2/B/0/ class=chan>Research&nbsp;&amp;&nbsp;School</a><br><a href=2/D/0/ class=chan>Sports</a><br><a href=2/E/0/ class=chan>Travel</a><br><a href=2/F/0/ class=chan>Women</a><br> </b> </font></td><td id=r1c1 width=295  bgcolor=#FFFFFF><font face=arial,sans-serif size=2><table id=tabQL border=0 cellpadding=0 cellspacing=0 width=100% ><tr><td align=left valign=top width=25% ><font face=arial,sans-serif size=1><a href=3/0/ class=ql>Air Tickets</a><br><a href=3/K/ class=ql>Auctions</a><br><a href=3/1/ class=ql>Buy Books</a><br></font></td><td align=left valign=top width=25% ><font face=arial,sans-serif size=1><a href=3/2/ class=ql>Buy Music</a><br><a href=3/6/ class=ql>Calendar</a><br><a href=3/4/ class=ql>Downloads</a><br></font></td><td align=left valign=top width=25% ><font face=arial,sans-serif size=1><a href=3/8/ class=ql>Free Games</a><br><a href=3/5/ class=ql>Greeting Cards</a><br><a href=3/M/ class=ql><font color="#FF3300">Home Pages</font></a><br></font></td><td align=left valign=top width=25% ><font face=arial,sans-serif size=1><a href=3/J/ class=ql>Maps</a><br><a href=3/D/ class=ql>Stock Quotes</a><br><a href=3/L/ class=ql><font color="#FF3300">More ...</font></a><br></font></td><tr><td height=8 colspan=4></td></tr></tr></table><script><!--
+function wideQL(){tabQL.width=452;}function skinnyQL(){tabQL.width=292;}strRunWide+="wideQL();";strRunNarrow+="skinnyQL();";
+//--></script> <table id=tabToday width=292 border=0 cellpadding=0 cellspacing=0> <tr valign=top align=left ><td> <table cellspacing=0 cellpadding=0 border=0 width=292><tr><td colspan=3 valign=top height=24><a href="/web/20000511215949/http://go.msn.com/0000/5/22.asp?target=http%3A//www.msnbc.com/news/405360.asp%3Fbt%3Dpu%26btu%3Dhttp%3A//www.msnbc.com/m/olk2k/msnbc_o_install.asp"><b>Secret to eating fat, living skinny</b></a><br></td></tr><tr><td valign=top width=134><a href="/web/20000511215949/http://go.msn.com/0000/5/23.asp?target=http%3A//www.msnbc.com/news/405360.asp%3Fbt%3Dpu%26btu%3Dhttp%3A//www.msnbc.com/m/olk2k/msnbc_o_install.asp"><img src="/web/20000511215949im_/http://msimg.com/nipimage/AL_frenchfood05011.jpg" alt="How French people eat rich foods and stay slim" width=130 height=75 vspace=3 border=0><br></a><font face=verdana size=1>Pass the butter, merci</font></td><td width=8>&nbsp;<br></td><td valign=top width=148><font face=verdana size=1><b>Today on MSN</b></font><br><font size=2><b>&#183;&nbsp;</b><a href="/web/20000511215949/http://go.msn.com/0000/5/28.asp?target=http%3A//www.eshop.msn.com/link.asp%3FilId%3D188"><font color=#FF0000>Gift certificates for Mom</font></a><br><b>&#183;&nbsp;</b><a href="/web/20000511215949/http://go.msn.com/0000/5/29.asp?target=http%3A//moneycentral.msn.com/articles/invest/models/5408.asp%3Fspecial%3Dmsn">Hot stock set to double</a><br><b>&#183;&nbsp;</b><a href="/web/20000511215949/http://go.msn.com/0000/5/30.asp?target=http%3A//encarta.msn.com/category/challenge/sports_hobbies/challenge.asp">New sports-trivia game</a><br><b>&#183;&nbsp;</b><a href="/web/20000511215949/http://go.msn.com/0000/5/31.asp?target=http%3A//womencentral.msn.com/beautystyle/articles/week2.asp">3 home facial recipes</a></font></td></tr><tr><td colSpan=3 valign=top><table cellspacing=0 cellpadding=0 border=0 width=100%><tr><td width=154><font face=verdana size=1><b>All decked out</b></font><br><font size=2><b>&#183;&nbsp;</b><a href="/web/20000511215949/http://go.msn.com/0000/5/24.asp?target=http%3A//computingcentral.msn.com/topics/shareware/dbdetails.asp%3FdownloadID%3D54651">Cruise on a 3-D sailboat</a><br><b>&#183;&nbsp;</b><a href="/web/20000511215949/http://go.msn.com/0000/5/25.asp?target=http%3A//eshop.msn.com/softcontent/softcontent.asp%3FscmId%3D422">Top 12 men's swimsuits</a><br><b>&#183;&nbsp;</b><a href="/web/20000511215949/http://go.msn.com/0000/5/26.asp?target=http%3A//www.msnbc.com/news/395719.asp%3Fbt%3Dpu%26btu%3Dhttp%3A//www.msnbc.com/m/olk2k/msnbc_o_install.asp">Legal cruise to Cuba</a></font></td><td width=8>&nbsp;<br></td><td valign=top><table cellspacing=0 cellpadding=0 border=0 ><tr><td valign=top width=65><a href="/web/20000511215949/http://go.msn.com/0000/5/90.asp?target=http%3A//eshop.msn.com/softcontent/softcontent.asp%3FscmId%3D437"><img src="/web/20000511215949im_/http://msimg.com/nipimage/AS_shopping.jpg" alt="You can still get a great gift for Mom" width=65 height=60 vspace=2 border=0></a></td><td width=4>&nbsp;</td><td valign=top width=63><font face=verdana size=1><a href="/web/20000511215949/http://go.msn.com/0000/5/90.asp?target=http%3A//eshop.msn.com/softcontent/softcontent.asp%3FscmId%3D437">Great last-minute gifts for Mom</a><br></font></td></tr></table></td></tr></table></td></tr></table>
+ </td><td id=tdToday> <span id=spanToday></span> </td></tr> </table> <iframe name=splatter height=1 width=1 frameborder=0 style=display:none;></iframe><script><!--
+function wider(){tabToday.width=455;tdToday.width=160;if(splatter.location.href.indexOf("/glb/info_expand.asp")==-1)splatter.location.replace("/glb/info_expand.asp?CMID=12141");}function skinnier(){tabToday.width=295;tdToday.width="";if(spanToday.innerHTML!=""){spanToday.innerHTML="";splatter.location.replace("/glb/blank.htm");}}strRunWide+="wider();";strRunNarrow+="skinnier();";
+//--></script></font></td><td id=r1c2 width=142  bgcolor=#FFFF99><font face=arial,sans-serif size=2> <table cellpadding=0 cellspacing=0 border=0 width=100% class=mctbl> <tr><td bgColor=#336699 height=1></td></tr> <tr><td bgcolor=#FFFF99><font face=verdana,sans-serif size=1><font face=verdana size=2><b>MESSAGE CENTER</b></font></font></td></tr> <tr><td bgColor=#336699 height=1></td></tr> <tr><td><font face=verdana,sans-serif size=1><b>E-mail</b></font></td></tr>  <tr valign=top><td> <form style="margin:0;" name=HotmailForm ACTION="/web/20000511215949/https://lc1.law5.hotmail.passport.com/cgi-bin/dologin/" onSubmit="document.HotmailForm.js.value='yes';" method=post> <input type=hidden name=curmbox value=ACTIVE> <input type=hidden name=js value=no> <input type=hidden name="6c6f7264" value="www.msn.com"> <font face=verdana,sans-serif size=1>Hotmail Member Name:</font><br> <input type="text" name="login" size="15" maxlength="64"> <font face=verdana,sans-serif size=1>Password:</font><br> <input type="password" name="passwd" size="15" maxlength="64"> <INPUT TYPE=IMAGE height=17 width=17 ID=m BORDER=0 SRC=/web/20000511215949im_/http://msimg.com/w/AS_0/go_m.gif class=srchBtn ALT="Sign in to Hotmail"> <br> <a href="P/1/"><font face=verdana,sans-serif size=1>Sign up for free e-mail</font></a> </form> </td></tr>  <tr><td bgColor=#336699 height=1></td></tr>  <tr><td bgColor=#336699 height=1></td></tr> </table> <table cellpadding=0 cellspacing=0 border=0 width=100% class=mctbl><tr><td height=1></td></tr><tr><td><font face=verdana,sans-serif size=1><b>Communities</b></font></td></tr><tr><td><font face=verdana,sans-serif size=1><a class=mclink HREF="0008/11196/default.asp?target=http://communities.msn.com/filecabinets/">Keep favorite files <B>here</B></A><tr><td height=3></td></tr><tr><td class=mcln height=1></td></tr></font></td></tr></table><table cellpadding=0 cellspacing=0 border=0 width=100% class=mctbl><tr><td height=1></td></tr><tr><td><font face=verdana,sans-serif size=1><b>Chat</b></font></td></tr><tr><td><font face=verdana,sans-serif size=1><a class=mclink HREF="0008/11197/default.asp?target=http://chat.msn.com/msnlive/features/eestevez51100.asp">Meet <B>Emilio Estevez</B></A><tr><td height=3></td></tr><tr><td class=mcln height=1></td></tr></font></td></tr></table></font></td></tr></table></tr></table><table cellspacing=0 cellpadding=0 border=0 bgcolor=#FFFFFF><tr><td><table id=Row2 width=608 style=margin-top:3; cellpadding=0 cellspacing=0 border=0 bgcolor=#FFFFFF><tr align=left valign=top><td id=r2c0 width=608  bgcolor=#336699><font face=arial,sans-serif size=2> <a href=ZZP/5/ class=tdn><font face=verdana,sans-serif size=1 color=#FFFFCC><b>HELP</b></font></a> <script><!--
+function wz(){tz.width=768;}function nz(){tz.width=608;}strRunWide+="wz();";strRunNarrow+="nz();";
+//--></script></font></td></tr></table></tr></table><table cellspacing=0 cellpadding=0 border=0 bgcolor=#FFFFFF><tr><td><table id=Row3 width=608 style=margin-top:3; cellpadding=0 cellspacing=0 border=0 bgcolor=#FFFFFF><tr align=left valign=top><td id=r3c0 width=150  bgcolor=#FFFFFF><font face=arial,sans-serif size=2> <p> <table border=0 cellspacing=0 cellpadding=0 width=100% height=14 bgcolor=#336699><tr> <td align=left><font face=verdana,sans-serif size=1 color=white><b>&nbsp;Worth a Click</b></font></td> <td align=right> &nbsp;</td> </tr></table>  <table width=100% cellpadding=0 cellspacing=0 border=0> <tr> <td width=5></td> <td><font face=arial,sans-serif size=2> <A HREF="B/R/default.asp?target=http%3A//moneycentral.msn.com/articles/invest/jubak/stocks.asp">Jim Jubak picks & pans 31 stocks he owns</A><P><A HREF="B/O/default.asp?target=http%3A//newsletters.msn.com/home.asp">Get secret gaming tips in your inbox</A><P><A HREF="B/P/default.asp?target=http%3A//msn.expedia.com/pubspec/scripts/eap.asp%3Fintro%3D/daily/highlights/fpm/default.asp%20%26eapid%3D7208-1">Get the inside track on cheap air fares</A>
+ </font></td> <td width=5></td> </tr> </table>  <p> <table border=0 cellspacing=0 cellpadding=0 width=100% height=14 bgcolor=#336699><tr> <td align=left><font face=verdana,sans-serif size=1 color=white><b>&nbsp;Links & Resources</b></font></td> <td align=right> &nbsp;</td> </tr></table>  <table width=100% cellpadding=0 cellspacing=0 border=0> <tr> <td width=5></td> <td><font face=arial,sans-serif size=2> <font size=2 face=arial, sans-serif><B>From MSN</B></FONT><BR>
+<font face=verdana size=1>
+<A HREF="/web/20000511215949/http://go.msn.com/B/C/" class=ql>Fast Internet Access</A><BR>
+<A HREF="/web/20000511215949/http://go.msn.com/B/5/" class=ql>MSN on your cell phone</A><BR>
+<A HREF="/web/20000511215949/http://go.msn.com/B/T/" class=ql>MSN Messenger Service</A><P>
+</FONT>
+<font size=2 face=arial, sans-serif><B>From Microsoft</B></FONT><BR>
+<font face=verdana size=1>
+<A HREF="/web/20000511215949/http://go.msn.com/zzu/6/" class=ql>microsoft.com</A><BR>
+<A HREF="/web/20000511215949/http://go.msn.com/2/0/0/" class=ql>bCentral</A><BR>
+<A HREF="/web/20000511215949/http://go.msn.com/B/F/" class=ql>Windows Update</A><BR>
+<A HREF="/web/20000511215949/http://go.msn.com/B/E/" class=ql>Office Update</A><P>
+</font>
+<font size=2 face=arial, sans-serif><B>MSN Worldwide</B></FONT><BR>
+<font face=verdana size=1>
+<A HREF="/web/20000511215949/http://go.msn.com/B/AB/" class=ql>Mexico</A><BR>
+<A HREF="/web/20000511215949/http://go.msn.com/B/AC/" class=ql>United Kingdom</A><BR>
+<A HREF="/web/20000511215949/http://go.msn.com/B/AD/" class=ql>More sites...</A><P>
+</font>
+<font size=2 face=arial, sans-serif><B>Other Resources</B></FONT><BR>
+<font face=verdana size=1>
+<A HREF="/web/20000511215949/http://go.msn.com/B/H/" class=ql>Contact us</A><BR>
+<a href=B/9/1.asp id=makehome class=ql>Set as your home page</a><br>
+<script>if(navigator.userAgent.indexOf("IE 5")>-1 && navigator.platform.indexOf("Win16") == -1) makehome.outerHTML = "<a href=B/9/0.asp class=ql onClick=\"this.style.behavior='url(#default#homepage)';this.setHomePage(location.href);\">Set as your home page</a>"</script>
+<A HREF="/web/20000511215949/http://go.msn.com/B/3/" class=ql>Get Internet Explorer</A>
+</FONT> </font></td> <td width=5></td> </tr> </table> </font></td><td width=2></td><td width=1 bgcolor=black></td><td width=2></td><td id=r3c1 width=298  bgcolor=#FFFFFF><font face=arial,sans-serif size=2> <p> <table border=0 cellspacing=0 cellpadding=0 width=100% height=14 bgcolor=#336699><tr> <td align=left><font face=verdana,sans-serif size=1 color=white><b>&nbsp;News</b></font></td> <td align=right>  &nbsp;</td> </tr></table>  <table width=100% cellpadding=0 cellspacing=0 border=0> <tr> <td width=5></td> <td><font face=arial,sans-serif size=2><b>MSNBC News</b><br> <ul><li><A HREF="0008/10000/default.asp?target=http://www.msnbc.com/modules/counters/msn_story.asp%3Fu%3D/msn/404782.asp">400 Los Alamos homes burn</A><li><A HREF="0008/10000/default.asp?target=http://www.msnbc.com/modules/counters/msn_story.asp%3Fu%3D/msn/406382.asp">Student, officer wounded in gunfight</A><li><A HREF="0008/10000/default.asp?target=http://www.msnbc.com/modules/counters/msn_story.asp%3Fu%3D/msn/403350.asp">Student says he may have released the "Love Bug"</A></ul> </font></td> <td width=5></td> </tr> </table>  <table width=100% cellpadding=0 cellspacing=0 border=0> <tr> <td width=5></td> <td><font face=arial,sans-serif size=2><b>Politics -- from Slate</b><br> <ul><li><A HREF="0008/12386/default.asp?target=http://politics.slate.msn.com/politics/00-01-14/politics.asp">What happens if Giuliani quits? plus today's top political news</A></ul> </font></td> <td width=5></td> </tr> </table>  <table width=100% cellpadding=0 cellspacing=0 border=0> <tr> <td width=5></td> <td><font face=arial,sans-serif size=2><b>Slate</b><br> <ul><li><A HREF="0008/11090/default.asp?target=http://slate.msn.com/Furboy/entries/00-05-09_82100.asp">Furboy's adventures in Silicon Valley</A></ul> </font></td> <td width=5></td> </tr> </table>  <p> <table border=0 cellspacing=0 cellpadding=0 width=100% height=14 bgcolor=#336699><tr> <td align=left><font face=verdana,sans-serif size=1 color=white><b>&nbsp;Personal Finance</b></font></td> <td align=right>  &nbsp;</td> </tr></table>  <table width=100% cellpadding=0 cellspacing=0 border=0> <tr> <td width=5></td> <td><font face=arial,sans-serif size=2><b>MoneyCentral Stock Quotes</b><br> <script><!--
+var A_=new Date();var B_=A_.getTime();function ReplStr(C_,D_,E_){var F_=new String(C_);var G_=F_.indexOf(D_);while(G_>-1){F_=F_.substring(0,G_)+E_+F_.substring(G_+1,F_.length);G_=F_.indexOf(D_,G_);}return F_;}function LinkToInvestor(H_,I_){var J_,U;if(H_.name=="WQAction"){J_=document.WebQForm.Symbol.value;}else{J_=H_.Symbol.value;}if(J_.indexOf('+')!=-1){J_=ReplStr(J_,'+','%252B');}if(J_.indexOf(' ')!=-1){if(J_.indexOf(',')!=-1){J_=ReplStr(J_,' ','');}else{for(;J_.length&&J_.charAt(0)==' ';J_=J_.substring(1,J_.length));J_=ReplStr(J_,' ',',');}}if(I_==1){U="/web/20000511215949/http://go.msn.com/0008/2/gqt.asp?target=/web/20000511215949/http://moneycentral.msn.com/scripts/webquote.dll%3FiPage%3Dlqd%26Symbol%3D"+J_;}else{U="/web/20000511215949/http://go.msn.com/0008/2/gch.asp?MSN=1&Symbol="+J_;}top.location.href=U;if(window.event!=null)window.event.returnValue=false;return false;}
+//--></script><table width=100% cellpadding=0 cellspacing=0 border=0> <tr> <td> <a href="/web/20000511215949/http://ads.msn.com/ads/adredir.asp?url=http://www.fidelity.com&amp;image=http://ads.msn.com/ads/MSNBTA/FI610001_TR.gif"><font face=arial,sans-serif size=1 color=#3366CC>Fidelity&nbsp;Investments</font></a>&nbsp;<a href="/web/20000511215949/http://ads.msn.com/ads/adredir.asp?url=http://ad.doubleclick.net%2Fclk%3b825409%3b3778262%3bs%3Fhttp://www.datek.com%2Fadvert%2Ftn.html&amp;image=http://ads.msn.com/ads/MSNBTA/DA810001_TR.gif"><font face=arial,sans-serif size=1 color=#3366CC>Datek&nbsp;Online</font></a>&nbsp;<a href="/web/20000511215949/http://ads.msn.com/ads/adredir.asp?url=http://www.keytradeonline.com%2Fmsn%2Findex.html&amp;image=http://ads.msn.com/ads/msnbta/}M420045_TR.gif"><font face=arial,sans-serif size=1 color=#3366CC>KeyTrade&nbsp;Online</font></a>&nbsp;<a href="/web/20000511215949/http://ads.msn.com/ads/adredir.asp?url=http://ad.doubleclick.net/clk;977436;4005279;s%3Fhttp://www.etrade.com/cgi-bin/gx.cgi/AppLogic%2BHome%3FSOURCE%3DMS62&amp;image=http://ads.msn.com/ads/MSNBTA/ER740001_TR.GIF"><font face=arial,sans-serif size=1 color=#3366CC>E*TRADE</font></a><BR> <SPAN ID=STOCKTABLESPAN>  <table cellspacing=0 cellpadding=0 border=0 width=100% summary="Money Central Stock Quotes. Column heads are symbol, name, last quote, change, and percentage of change."> <tr> <th id=hSym width=51><font face=arial,sans-serif size=1><b>Symbol</b></font></td> <th id=hNam><font face=arial,sans-serif size=1><b>Name</b></font></td> <th id=hLst width=56 align=right><font face=arial,sans-serif size=1><b>Last</b></font></td> <th id=hCh width=52 align=right><font face=arial,sans-serif size=1><b><abbr title="Change">Chg</abbr></b></font></td> <th id=hPCh width=52 align=right><font face=arial,sans-serif size=1><b><abbr title="Percent Change">%Chg</abbr></b></font></td> </tr>  <tr bgcolor=#F1F1F1> <TD headers=hSym><font face=arial,sans-serif size=1><a title="Click for detailed quote" href=0008/2/snm.asp?target=http://moneycentral.msn.com/scripts/webquote.dll%3FiPage%3Dqdext%26Symbol%3D$INDU class=sql>$INDU</a></font></TD> <TD headers=hNam><font face=arial,sans-serif size=1>Dow Jones Industrials Index</font></TD> <TD headers=hLst ALIGN=right><font face=arial,sans-serif size=1>10,545.970</font></td> <td	headers=hCh align=right><font color="green"><font face=arial,sans-serif size=1>+178.190</font></td> <td headers=hPCh align=right><font color="green"><font face=arial,sans-serif size=1>+1.72%</font></td> </tr>  <tr > <TD headers=hSym><font face=arial,sans-serif size=1><a title="Click for detailed quote" href=0008/2/snm.asp?target=http://moneycentral.msn.com/scripts/webquote.dll%3FiPage%3Dqdext%26Symbol%3D$XAX.X class=sql>$XAX.X</a></font></TD> <TD headers=hNam><font face=arial,sans-serif size=1>Amex Composite Index</font></TD> <TD headers=hLst ALIGN=right><font face=arial,sans-serif size=1>926.100</font></td> <td	headers=hCh align=right><font color="green"><font face=arial,sans-serif size=1>+13.400</font></td> <td headers=hPCh align=right><font color="green"><font face=arial,sans-serif size=1>+1.47%</font></td> </tr>  <tr bgcolor=#F1F1F1> <TD headers=hSym><font face=arial,sans-serif size=1><a title="Click for detailed quote" href=0008/2/snm.asp?target=http://moneycentral.msn.com/scripts/webquote.dll%3FiPage%3Dqdext%26Symbol%3D$COMPX class=sql>$COMPX</a></font></TD> <TD headers=hNam><font face=arial,sans-serif size=1>Nasdaq Combined Composite Index</font></TD> <TD headers=hLst ALIGN=right><font face=arial,sans-serif size=1>3,499.580</font></td> <td	headers=hCh align=right><font color="green"><font face=arial,sans-serif size=1>+114.850</font></td> <td headers=hPCh align=right><font color="green"><font face=arial,sans-serif size=1>+3.39%</font></td> </tr>  <tr > <TD headers=hSym><font face=arial,sans-serif size=1><a title="Click for detailed quote" href=0008/2/snm.asp?target=http://moneycentral.msn.com/scripts/webquote.dll%3FiPage%3Dqdext%26Symbol%3D$INX class=sql>$INX</a></font></TD> <TD headers=hNam><font face=arial,sans-serif size=1>S&P 500 INDEX</font></TD> <TD headers=hLst ALIGN=right><font face=arial,sans-serif size=1>1,407.810</font></td> <td	headers=hCh align=right><font color="green"><font face=arial,sans-serif size=1>+24.760</font></td> <td headers=hPCh align=right><font color="green"><font face=arial,sans-serif size=1>+1.79%</font></td> </tr>  </TABLE>  </SPAN> </TD></TR> <tr><td> <table cellspacing=0 cellpadding=0 border=0 width=100%> <tr> <td align=left valign=top>  </td> <td align=right> <a href=0008/2/own.asp?target=http://www.msn.com/personalize/editcm.asp%3FCAT%3D388%26CCMFunc%3D11146%26CMName%3DMSN%2BMoneyCentral%2BStock%2BQuotes><font face=arial,sans-serif size=1> Add your own symbols</font></a> <P> </td> </tr>  <tr> <td colspan=2 align=center valign=top> <font face=arial,sans-serif size=1> <a href=0008/2/nws.asp>News</a>&nbsp;&nbsp; <a href=0008/2/rpt.asp>Market Report</a>&nbsp;&nbsp; <a href=0008/2/t10.asp>Top 10 Lists</a>&nbsp;&nbsp; <a href=0008/2/trd.asp>Trading</a>&nbsp;&nbsp; <p> </font> </td> </tr> <tr> <td colspan=2> <font face=arial,sans-serif size=1> <form NAME=WebQForm Action=Default.asp OnSubmit="LinkToInvestor(this,1);return false;" Method="POST"> <input Name=Symbol TYPE=text VALUE="" SIZE=8 MaxLength=15 title="enter symbol">&nbsp; <input Name=WQAction TYPE=submit VALUE="get quote" onClick="LinkToInvestor(this,1);">&nbsp; <input Name=WQAction TYPE=submit VALUE="get chart" onClick="LinkToInvestor(this,2);">&nbsp; <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a HREF=0008/2/fsm.asp title="Click here to find a symbol"><b>Find symbol</b></a> </form> Quotes supplied by <a href=0008/2/spc.asp>Standard & Poor's Comstock</a> and delayed at least 20 minutes. </font> </td> </tr> </table> </td></tr> </TABLE>  </font></td> <td width=5></td> </tr> </table> </font></td><td width=2></td><td width=1 bgcolor=black></td><td width=2></td><td id=r3c2 width=150  bgcolor=#FFFFFF><font face=arial,sans-serif size=2> <p> <table border=0 cellspacing=0 cellpadding=0 width=100% height=14 bgcolor=#336699><tr> <td align=left><font face=verdana,sans-serif size=1 color=white><b>&nbsp;Local Lookups</b></font></td> <td align=right> &nbsp;</td> </tr></table>  <table width=100% cellpadding=0 cellspacing=0 border=0> <tr> <td width=5></td> <td><font face=arial,sans-serif size=2> <a href=3/T/ class=ql><font color="#FF3300">Yellow Pages</font></a><br><a href=3/S/ class=ql>White Pages</a><br><a href=3/R/ class=ql>Weather</a><br><a href=3/AB/ class=ql>Find a Job</a><br><a href=3/AE/ class=ql>Apartments</a><br><a href=3/AF/ class=ql>Local Radio</a><br><a href=3/AA/ class=ql>Event Tickets</a><br><a href=3/P/ class=ql>Sports Scores</a><br><a href=3/Q/ class=ql>TV Listings</a><br><a href=3/AD/ class=ql><font color="#FF3300">More...</font></a><br> </font></td> <td width=5></td> </tr> </table>  <p> <table border=0 cellspacing=0 cellpadding=0 width=100% height=14 bgcolor=#336699><tr> <td align=left><font face=verdana,sans-serif size=1 color=white><b>&nbsp;Spotlight</b></font></td> <td align=right> &nbsp;</td> </tr></table>  <table width=100% cellpadding=0 cellspacing=0 border=0> <tr> <td width=5></td> <td><font face=arial,sans-serif size=2> <TABLE BORDER=0 cellpadding=0 BGCOLOR=#FFFFCC WIDTH=140><TR><TD WIDTH=1 HEIGHT=60><BR></TD><TD><A HREF="/web/20000511215949/http://go.msn.com/0000/9/5/default.asp?target=http%3A//womencentral.msn.com/health/articles/week2.asp"><IMG SRC="/web/20000511215949im_/http://msimg.com/nipimage/SL_meditest0511.gif" ALT="Get a health status report: 9 tests you need" WIDTH=50 HEIGHT=50 BORDER=1></A></TD><TD WIDTH=1><BR></TD><TD VALIGN=TOP><A HREF="/web/20000511215949/http://go.msn.com/0000/9/5/default.asp?target=http%3A//womencentral.msn.com/health/articles/week2.asp"><FONT FACE=VERDANA SIZE=1>Get a health status report</FONT><BR></A></TD></TR><TR><TD WIDTH=1 HEIGHT=30><BR></TD><TD COLSPAN=3 VALIGN=TOP><FONT SIZE=1 FACE=arial,sans-serif><A HREF="/web/20000511215949/http://go.msn.com/0000/9/5/default.asp?target=http%3A//womencentral.msn.com/health/articles/week2.asp">9 tests you need</A></FONT></TD></TR></TABLE>
+ </font></td> <td width=5></td> </tr> </table>  <p> <table border=0 cellspacing=0 cellpadding=0 width=100% height=14 bgcolor=#336699><tr> <td align=left><font face=verdana,sans-serif size=1 color=white><b>&nbsp;Shopping Shortcuts</b></font></td> <td align=right> &nbsp;</td> </tr></table>  <table width=100% cellpadding=0 cellspacing=0 border=0> <tr> <td width=5></td> <td><font face=arial,sans-serif size=2> <table cellpadding=5 cellspacing=0 border=0 bgcolor=#CCFF99 width=140>
+<tr>
+	<td align=left>
+	<font face=arial,sans-serif size=2><b>Popular Picks:</b></font><br>
+	<font face=verdana,sans-serif size=1>
+		<A HREF=B/1/E/ class=ql>Pokemon</A><br>
+		<A HREF=B/1/I/ class=ql>Wireless Phones</A><br>
+		<A HREF=B/1/R/ class=ql>Sales &amp; Closeouts</A><br>
+		<A HREF=B/1/T/ class=ql>More...</A>
+	</font>
+	
+	<form method=GET action="/web/20000511215949/http://go.msn.com/B/1/Q/default.asp" name=eShop style="margin-top:8px;margin-bottom:10px;">
+	<label for=eshopsrch><font face=arial,sans-serif size=2><b>Search eSh<u>o</u>p for:</b></font></label><br>
+		<input type=text size=13 name=eshopsrch id=eshopsrch accesskey=o>
+		<p style="margin-top:3px;"><input type=submit value=Search>
+	</form>
+	
+	<font face=arial,sans-serif size=2><b>Gifts for:</b></font><br>
+	<font face=verdana,sans-serif size=1>
+		<A HREF=B/1/L/ class=ql>Her</A><br>
+		<A HREF=B/1/K/ class=ql>Him</A><br>	
+	</font>
+		
+	</td>
+</tr>
+</table> </font></td> <td width=5></td> </tr> </table> </font></td></tr></table></tr></table> <table id=RowFoot width=608 border=0 cellspacing=0 cellpadding=6 bgcolor=#336699 style=margin-top:6px; > <tr><td align=center valign=top><font face=arial,sans-serif size=1 color=white>  <a href=ZZP/1/><font face=arial,sans-serif size=2 color=#FFFFCC><b>PERSONALIZE</b> this page in 3 easy steps!</font></a> <br><br> <a href="/web/20000511215949/http://www.msn.com/default.asp#TopOfPage"><font face=arial,sans-serif size=1 color=white>Return to Top</font></a><br></br>  &copy;2000 Microsoft Corporation. All rights reserved.<br> <a href=B/0/><font face=arial,sans-serif size=1 color=white>Terms of Use</font></a> &nbsp;&nbsp;&nbsp;<a href=B/1/><font face=arial,sans-serif size=1 color=white>Advertise</font></a> &nbsp;&nbsp;&nbsp;<a href=B/2/ title="The MSN network is TRUSTe compliant for your privacy protection"><font face=arial,sans-serif size=1 color=white>TRUSTe&nbsp;Approved&nbsp;Privacy&nbsp;Statement</font></a> &nbsp;&nbsp;&nbsp;<a href=B/M/><font face=arial,sans-serif size=1 color=white>GetNetWise</font></a> </font><br> </td></tr> </table>  <img src="set/ptnr.asp?ptnr=MSFT" width=1 height=1 alt="">  </body> </html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 21:59:49 May 11, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 5:33:07 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

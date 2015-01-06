@@ -1,0 +1,670 @@
+
+<html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app12.us.archive.org";archive_analytics.values.server_ms=1820;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<title>The New York Times on the Web Headlines Program</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" background="/web/20050721011506im_/http://graphics.nytimes.com/images/misc/yellowbg.gif">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.nytimes.com/gst/nytheadlines.html";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "21";
+var displayMonth = "Jul";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.nytimes.com/gst/nytheadlines.html" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20050721011506" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20050621005049/http://www.nytimes.com/gst/nytheadlines.html" title="21 Jun 2005">JUN</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 1:15:06 Jul 21, 2005">JUL</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20050822064835/http://www.nytimes.com/gst/nytheadlines.html" title="22 Aug 2005"><strong>AUG</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20050713001655/http://www.nytimes.com/gst/nytheadlines.html" title="0:16:55 Jul 13, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 1:15:06 Jul 21, 2005">21</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20050725004642/http://www.nytimes.com/gst/nytheadlines.html" title="0:46:42 Jul 25, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20040113031904/http://www.nytimes.com/gst/nytheadlines.html" title="13 Jan 2004"><strong>2004</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 1:15:06 Jul 21, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20060721082157/http://www.nytimes.com/gst/nytheadlines.html" title="21 Jul 2006"><strong>2006</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20050721011506*/http://www.nytimes.com/gst/nytheadlines.html" title="See a list of every capture for this URL">697 captures</a>
+           <div class="r" title="Timespan for captures of this URL">3 May 02 - 22 Dec 14</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:00001103a894_2003:-1:010103020101_2004:-1:100000000100_2005:6:003eab9fbbcb_2006:-1:ca7b69aaa9aa_2007:-1:766336316855_2008:-1:238533c89113_2009:-1:127401000141_2010:-1:020020124320_2011:-1:201101001020_2012:-1:50215031106c_2013:-1:9aa990200000_2014:-1:100200100011_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<form method="POST">
+  <table width="600" border="0" cellspacing="2" cellpadding="0">
+
+    <tr> 
+      <td colspan="5"><img src="/web/20050721011506im_/http://graphics.nytimes.com/images/misc/header.gif" width="600" height="94"> 
+        <table width="450" border="0" cellspacing="0" cellpadding="0" align="center">
+          <tr> 
+            <td>&nbsp;</td>
+          </tr>
+          <tr> 
+            <td>Join The New York Times on the Web Headlines Program by adding 
+              great FREE news content to your Web site. Apply by simply filling 
+              out this form.</td>
+          </tr>
+          <tr>
+             <td><font face="Times New Roman, Times, serif" size="2"></font></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td width="30">&nbsp;</td>
+      <td width="185"  align="right">
+        <font face="Times New Roman, Times, serif" size="2"  >First Name </font>
+      </td>
+      <td width="10">&nbsp;</td>
+      <td width="345"> <input type="text" name="fname" size="25" value=""></td>
+      <td width="30">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="30">&nbsp;</td>
+      <td width="185" align="right"> 
+        <font face="Times New Roman, Times, serif" size="2"  >Last Name </font>
+      </td>
+      <td width="10">&nbsp;</td>
+      <td width="345"> 
+        <input type="text" name="lname" size="25" value="">
+      </td>
+      <td width="30">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="30">&nbsp;</td>
+      <td width="185" align="right"> 
+        <font face="Times New Roman, Times, serif" size="2"  >Country </font>
+      </td>
+      <td width="10">&nbsp;</td>
+      <td width="345"> 
+        <select name="country_select" size="1">
+                                  <option value="">&#151;&#151;Select One&#151;&#151;
+                                  <option value="US"  >United States
+                                  <option value="" >&#151;&#151;&#151;&#151;&#151;&#151;&#151;&#151;&#151;&#151;
+                                  <option value="AF" >Afghanistan
+                                  <option value="AL" >Albania
+                                  <option value="DZ" >Algeria
+                                  <option value="AS" >American Samoa
+                                  <option value="AD" >Andorra
+                                  <option value="AO" >Angola
+                                  <option value="AI" >Anguilla
+                                  <option value="AQ" >Antarctica
+                                  <option value="AG" >Antigua and Barbuda
+                                  <option value="AR" >Argentina
+                                  <option value="AM" >Armenia
+                                  <option value="AW" >Aruba
+                                  <option value="AU" >Australia
+                                  <option value="AT" >Austria
+                                  <option value="AZ" >Azerbaijan
+                                  <option value="BS"  >Bahamas
+                                  <option value="BH" >Bahrain
+                                  <option value="BD" >Bangladesh
+                                  <option value="BB" >Barbados
+                                  <option value="BY" >Belarus
+                                  <option value="BE" >Belgium
+                                  <option value="BZ" >Belize
+                                  <option value="BJ" >Benin
+                                  <option value="BM" >Bermuda
+                                  <option value="BT" >Bhutan
+                                  <option value="BO" >Bolivia
+                                 <option value="BA" >Bosnia and Herzegowina
+                                  <option value="BW" >Botswana
+                                  <option value="BV" >Bouvet Island
+                                  <option value="BR" >Brazil
+                                  <option value="IO" >British Indian Ocean Territory
+                                  <option value="BN" >Brunei Darussalam
+                                  <option value="BG" >Bulgaria
+                                  <option value="BF" >Burkina Faso
+                                  <option value="BI" >Burundi
+                                  <option value="KH" >Cambodia
+                                  <option value="CM" >Cameroon
+                                  <option value="CA" >Canada
+                                  <option value="CV" >Cape Verde
+                                  <option value="KY" >Cayman Islands
+                                  <option value="CF" >Central African Republic
+                                  <option value="TD" >Chad
+                                  <option value="CL" >Chile
+                                  <option value="CN" >China
+                                  <option value="CX" >Christmas Island
+                                  <option value="CC" >Cocos (Keeling) Islands
+                                  <option value="CO" >Colombia
+                                  <option value="KM" >Comoros
+                                  <option value="CG" >Congo
+                                  <option value="CK" >Cook Islands
+                                  <option value="CR" >Costa Rica
+                                  <option value="CI" >Cote D'Ivoire
+                                  <option value="HR" >Croatia (local name: Hrvatska)
+                                  <option value="CU" >Cuba
+                                  <option value="CY" >Cyprus
+                                  <option value="CZ" >Czech Republic
+                                  <option value="DK" >Denmark
+                                  <option value="DJ" >Djibouti
+                                  <option value="DM" >Dominica
+                                  <option value="DO" >Dominican Republic
+                                  <option value="TP" >East Timor
+                                  <option value="EC" >Ecuador
+                                  <option value="EG" >Egypt
+                                  <option value="SV" >El Salvador
+                                  <option value="GQ" >Equatorial Guinea
+                                  <option value="ER" >Eritrea
+                                  <option value="EE" >Estonia
+                                  <option value="ET" >Ethiopia
+                                  <option value="FK" >Falkland Islands (Malvinas)
+                                  <option value="FO" >Faroe Islands
+                                  <option value="FJ" >Fiji
+                                  <option value="FI" >Finland
+                                  <option value="FR" >France
+                                  <option value="FX" >France, Metropolitan
+                                  <option value="GF" >French Guiana
+                                  <option value="PF" >French Polynesia
+                                  <option value="TF" >French Southern Territories
+                                  <option value="GA" >Gabon
+                                  <option value="GM" >Gambia
+                                  <option value="GE" >Georgia
+                                  <option value="DE" >Germany
+                                  <option value="GH" >Ghana
+                                  <option value="GI" >Gibraltar
+                                  <option value="GR" >Greece
+                                  <option value="GL" >Greenland
+                                  <option value="GD" >Grenada
+                                  <option value="GP" >Guadeloupe
+                                  <option value="GU" >Guam
+                                  <option value="GT" >Guatemala
+                                  <option value="GN" >Guinea
+                                  <option value="GW" >Guinea-Bissau
+                                  <option value="GY" >Guyana
+                                  <option value="HT" >Haiti
+                                  <option value="HM" >Heard and Mc Donald Islands
+                                  <option value="HN" >Honduras
+                                  <option value="HK" >Hong Kong
+                                  <option value="HU" >Hungary
+                                  <option value="IS" >Iceland
+                                  <option value="IN" >India
+                                  <option value="ID" >Indonesia
+                                  <option value="IR" >Iran (Islamic Republic of)
+                                  <option value="IQ" >Iraq
+                                  <option value="IE" >Ireland
+                                  <option value="IL" >Israel
+                                  <option value="IT" >Italy
+                                  <option value="JM" >Jamaica
+                                  <option value="JP" >Japan
+                                  <option value="JO" >Jordan
+                                  <option value="KZ" >Kazakhstan
+                                  <option value="KE" >Kenya
+                                  <option value="KI" >Kiribati
+                                  <option value="KP" >Korea, Democratic People's
+                                  Republic of
+                                  <option value="KR" >Korea, Republic of
+                                  <option value="KW" >Kuwait
+                                  <option value="KG" >Kyrgyzstan
+                                  <option value="LA" >Lao People's Democratic
+                                  Republic
+                                  <option value="LV" >Latvia
+                                  <option value="LB" >Lebanon
+                                  <option value="LS" >Lesotho
+                                  <option value="LR" >Liberia
+                                  <option value="LY" >Libyan Arab Jamahiriya
+                                  <option value="LI" >Liechtenstein
+                                  <option value="LT" >Lithuania
+                                  <option value="LU" >Luxembourg
+                                  <option value="MO" >Macau
+                                  <option value="MK" >Macedonia, the former Yugoslav
+                                  Republic of
+                                  <option value="MG" >Madagascar
+                                  <option value="MW" >Malawi
+                                  <option value="MY" >Malaysia
+                                  <option value="MV" >Maldives
+                                  <option value="ML" >Mali
+                                  <option value="MT" >Malta
+                                  <option value="MH" >Marshall Islands
+                                  <option value="MQ" >Martinique
+                                  <option value="MR" >Mauritania
+                                  <option value="MU" >Mauritius
+                                  <option value="YT" >Mayotte
+                                  <option value="MX" >Mexico
+                                  <option value="FM" >Micronesia, Federated States
+                                  of
+                                  <option value="MD" >Moldova, Republic of
+                                  <option value="MC" >Monaco
+                                  <option value="MN" >Mongolia
+                                  <option value="MS" >Montserrat
+                                  <option value="MA" >Morocco
+                                  <option value="MZ" >Mozambique
+                                  <option value="MM" >Myanmar
+                                  <option value="NA" >Namibia
+                                  <option value="NR" >Nauru
+                                  <option value="NP" >Nepal
+                                  <option value="NL" >Netherlands
+                                  <option value="AN" >Netherlands Antilles
+                                  <option value="NC" >New Caledonia
+                                  <option value="NZ" >New Zealand
+                                  <option value="NI" >Nicaragua
+                                  <option value="NE" >Niger
+                                  <option value="NG" >Nigeria
+                                  <option value="NU" >Niue
+                                  <option value="NF" >Norfolk Island
+                                  <option value="MP" >Northern Mariana Islands
+                                  <option value="NO" >Norway
+                                  <option value="OM" >Oman
+                                  <option value="PK" >Pakistan
+                                  <option value="PW" >Palau
+                                  <option value="PA" >Panama
+                                  <option value="PG" >Papua New Guinea
+                                  <option value="PY" >Paraguay
+                                  <option value="PE" >Peru
+                                  <option value="PH" >Philippines
+                                  <option value="PN" >Pitcairn
+                                  <option value="PL" >Poland
+                                  <option value="PT" >Portugal
+                                  <option value="PR" >Puerto Rico
+                                  <option value="QA" >Qatar
+                                  <option value="RE" >Reunion
+                                  <option value="RO" >Romania
+                                  <option value="RU" >Russian Federation
+                                  <option value="RW" >Rwanda
+                                  <option value="KN" >Saint Kitts and Nevis
+                                  <option value="LC" >Saint Lucia
+                                  <option value="VC" >Saint Vincent and the Grenadines
+                                  <option value="WS" >Samoa
+                                  <option value="SM" >San Marino
+                                  <option value="ST" >Sao Tome and Principe
+                                  <option value="SA" >Saudi Arabia
+                                  <option value="SN" >Senegal
+                                  <option value="SC" >Seychelles
+                                  <option value="SL" >Sierra Leone
+                                  <option value="SG" >Singapore
+                                  <option value="SK" >Slovakia (Slovak Republic)
+                                  <option value="SI" >Slovenia
+                                  <option value="SB" >Solomon Islands
+                                  <option value="SO" >Somalia
+                                  <option value="ZA" >South Africa
+                                  <option value="ES" >Spain
+                                  <option value="LK" >Sri Lanka
+                                  <option value="SH" >St. Helena
+                                  <option value="PM" >St. Pierre and Miquelon
+                                  <option value="SD" >Sudan
+                                  <option value="SR" >Suriname
+                                  <option value="SJ" >Svalbard and Jan Mayen Islands
+                                  <option value="SZ" >Swaziland
+                                  <option value="SE" >Sweden
+                                  <option value="CH" >Switzerland
+                                  <option value="SY" >Syrian Arab Republic
+                                  <option value="TW" >Taiwan
+                                  <option value="TJ" >Tajikistan
+                                  <option value="TZ" >Tanzania, United Republic
+                                  of
+                                  <option value="TH" >Thailand
+                                  <option value="TG" >Togo
+                                  <option value="TK" >Tokelau
+                                  <option value="TO" >Tonga
+                                  <option value="TT" >Trinidad and Tobago
+                                  <option value="TN" >Tunisia
+                                  <option value="TR" >Turkey
+                                  <option value="TM" >Turkmenistan
+                                  <option value="TC" >Turks and Caicos Islands
+                                  <option value="TV" >Tuvalu
+                                  <option value="UG" >Uganda
+                                  <option value="UA" >Ukraine
+                                  <option value="AE" >United Arab Emirates
+                                  <option value="GB" >United Kingdom
+                                  <option value="UM" >United States Minor Outlying
+                                  Islands
+                                  <option value="UY" >Uruguay
+                                  <option value="UZ" >Uzbekistan
+                                  <option value="VU" >Vanuatu
+                                  <option value="VA" >Vatican City State (Holy
+                                  See)
+                                  <option value="VE" >Venezuela
+                                  <option value="VN" >Vietnam
+                                  <option value="VG" >Virgin Islands (British)
+                                  <option value="VI" >Virgin Islands (U.S.)
+                                  <option value="WF" >Wallis And Futuna Islands
+                                  <option value="EH" >Western Sahara
+                                  <option value="YE" >Yemen
+                                  <option value="YU" >Yugoslavia
+                                  <option value="ZR" >Zaire
+                                  <option value="ZM" >Zambia
+                                  <option value="ZW" >Zimbabwe
+        </select>
+      </td>
+      <td width="30">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="30">&nbsp;</td>
+      <td width="185" align="right"> 
+        <font face="Times New Roman, Times, serif" size="2"  >E-Mail 
+          Address</font>
+      </td>
+      <td width="10">&nbsp;</td>
+      <td width="345"> 
+        <input type="text" name="email" size="25" value="">
+      </td>
+      <td width="30">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="30">&nbsp;</td>
+      <td width="185" align="right"> 
+        <font face="Times New Roman, Times, serif" size="2"  >Web Site URL </font>
+      </td>
+      <td width="10">&nbsp;</td>
+      <td width="345"> 
+        <input type="text" name="url" size="25" value="">
+      </td>
+      <td width="30">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="30">&nbsp;</td>
+      <td width="185" align="right"> 
+        <font face="Times New Roman, Times, serif" size="2"  >Categorize 
+          Your Site</font>
+      </td>
+      <td width="10">&nbsp;</td>
+      <td width="345"> 
+        <select name="category_select" size="1">
+		<option value="">&#151;&#151;Select One&#151;&#151;
+		<option value="1" > Arts/Entertainment 
+		<option value="2" > Education 
+		<option value="3" > Financial 
+		<option value="4" > High-Tech/Telecom 
+		<option value="5" > Healthcare 
+		<option value="6" > Industrial/Manufacturing 
+		<option value="7" > Media/Publishing 
+		<option value="8" > Professional/Consulting Services 
+		<option value="9" > Public Sector 
+		<option value="10" > Retail 
+		<option value="11" > Travel 
+		<option value="12" > Other 
+        </select>
+      </td>
+      <td width="30">&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="5"> 
+        <table width="450" border="0" cellspacing="0" cellpadding="0" align="center">
+          <tr> 
+            <td width="25"> 
+              <input type="checkbox" name="aff_prog_check" value="Y" >
+            </td>
+            <td width="425"><font face="Times New Roman, Times, serif">&nbsp;Check 
+              here to receive updates on NYTimes.com affiliate programs.</font></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td colspan="5">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td colspan="5"> 
+        <table width="450" border="0" cellspacing="0" cellpadding="0" align="center">
+          <tr> 
+            <td> 
+              <textarea name="agreement" size="52" rows="5" cols="52"> 
+THE NEW YORK TIMES ON THE WEB HEADLINES PROGRAM AGREEMENT
+
+BY CLICKING ON THE "Get NYT Headlines" BUTTON, YOU ARE CONSENTING TO BE BOUND BY AND ARE BECOMING A PARTY TO THIS AGREEMENT ("AGREEMENT") WHICH GOVERNS YOUR USE OF THE NEW YORK TIMES ON THE WEB HEADLINES PROGRAM ("SERVICE"). IF YOU DO NOT AGREE TO ALL OF THE TERMS OF THIS AGREEMENT, CLICK THE "CANCEL" BUTTON. IF THESE TERMS ARE CONSIDERED AN OFFER, ACCEPTANCE IS EXPRESSLY LIMITED TO THESE TERMS. THE NEW YORK TIMES ON THE WEB ("NYT", "WE" OR "OUR") MAY MODIFY ANY OF THE TERMS AND CONDITIONS CONTAINED IN THIS AGREEMENT, AT ANY TIME AND IN OUR SOLE DISCRETION, BY POSTING A CHANGE NOTICE OR A NEW AGREEMENT ON OUR SITE. YOUR CONTINUED USE OF THE CONTENT OR SERVICE FOLLOWING OUR POSTING OF A CHANGE NOTICE OR NEW AGREEMENT ON OUR SITE WILL CONSTITUTE BINDING ACCEPTANCE OF THE CHANGE. REGISTRATION CANNOT BE COMPLETED WITHOUT A VALID EMAIL ADDRESS. 
+
+1. GRANT. Subject to the terms of this Agreement and, unless otherwise consented to by NYT, in compliance with Usage Restrictions, NYT hereby grants you, during the Term, a revocable, nontransferable, nonsublicensable, royalty-free, nonexclusive license to display on your website ("Site") the headlines, active links, or other source identifiers, and other information or materials, including any promotional taglines ("Content") that you receive from NYT through the Service provided that you do not alter, edit, or delete any of the Content. NYT may restrict, suspend or terminate your access to any aspect or all of the Content or Service at any time without liability. NYT reserves the right to modify the Service at any time within NYT's sole discretion. You acknowledge that Content availability is subject to change at the NYT's sole discretion. 
+
+2. RESERVATION OF RIGHTS. The Content is protected by the copyright laws of the United States and international copyright treaties. As between the parties, title, ownership rights, and intellectual property rights in and to the Content, and any copies or portions thereof, shall remain in NYT. NYT shall retain all rights to the Content and Services not expressly granted to you under Section 1 of this Agreement. You agree not to do anything contesting or impairing the rights of NYT in and to any of the Content and Services.
+
+3. RESTRICTIONS. Except as expressly set forth in Section 1 and/or unless otherwise consented to by NYT, you may not, directly or indirectly: (a) sell, modify, translate, copy, publish, transmit, distribute or otherwise disseminate the Content or any portion thereof; or delete or fail to display any promotional taglines included in the Content (b) rent, lease, or otherwise transfer rights to the Content; (c) display the name, logo, trademark or other identifier of another person (except for NYT or you) on your Site in such a manner as to give the viewer the impression that such other person is a publisher or distributor of the Content on the Site; (d) remove, conceal or obliterate any copyright or other proprietary notice or any credit-line or date-line on other mark or source identifier included on Content or in the Services, including without limitation, the size, color, location or style of NYT's marks; (e) encumber or suffer to exist any lien or security interest on the subject matter of this Agreement;  (f) make any representation or warranty on behalf of NYT; or (g) use Content or Services on any Site that contains nudity or pornographic material of any kind, displays material that exploits children under the age of 18, provides material that is grossly offensive to the online community, including blatant expressions of bigotry, prejudice, racism, hatred or excessive profanity, promotes or provides instructional information about illegal activities or physical harm or injury against any group or individual, or use the Content or Services in any manner that is obscene, defamatory, libelous, invasive of personal privacy or misleading. 
+
+Unless otherwise permitted by NYT, you will: (i) display all Content on your Site in the exact form received by you, and not modify or edit any of the foregoing without NYT's prior written consent; (ii) ensure that the fundamental meaning of the Content is not changed or distorted;  (iii) comply with all applicable laws and all limitations and restrictions (if any) placed by NYT on the use, display or distribution of any Content ("Usage Restrictions"); (iv) give NYT complete and accurate registration information when requested to do so; and (v) delete and remove any Content and related Hyperlinks from your Web site after a maximum of seven (7) days and not archive any Content for access by users at any future date after the Content has been removed from the your Web site. 
+
+You acknowledge that the service must link and redirect to the appropriate NYT web page when a user clicks on the Content (e.g. a headline).  You shall not display Content in such a manner that does not allow for successful linking and redirection to, and delivery of, NYT's web page, nor may you frame any NYT web page. You must always stipulate that the Content is supplied by The New York Times and is protected by copyright and owned by The New York Times Company. 
+
+NYT assumes no liability for your activity in connection with the Services and the Content or for the development, operation, and maintenance of your Site. Any fraudulent, abusive, or otherwise illegal activity may be grounds for termination of this Agreement. You will not attempt to hide your identity, represent yourself as someone else, compromise or attempt to compromise the security of any account, or interfere or attempt to interfere with the proper working of Services. If you use, or attempt to use, any Service or Content beyond the scope of the license granted in this Agreement, or beyond the scope expressly granted by NYT, or attempt to, tamper, hack, spoof, use robots or scripts, copy, distribute, modify, or otherwise corrupt the administration, security, or proper function of any part of the Service or the Content, then, in addition to termination of this Agreement, you be subject to appropriate legal and equitable action. 
+
+4. CONFIDENTIALITY. During the term of this Agreement, you may have access to some of NYT's nonpublic technical or product information ("Proprietary Information"). Such Proprietary Information shall belong solely to NYT. You shall not, except as expressly authorized by this Agreement, use or disclose Proprietary Information without the prior written consent of NYT unless such Proprietary Information becomes part of the public domain through no fault of yours. You agree (i) not to disclose any Proprietary Information to any third parties, (ii) not to use any Proprietary Information for any purposes except carrying out your rights and responsibilities under this Agreement, and (iii) to keep the Proprietary Information confidential using the same degree of care you use to protect your own confidential information, as long as you use at least reasonable care. You acknowledge and agree that due to the unique nature of NYT's Proprietary Information, there can be no adequate remedy at law for any breach of its obligations hereunder, that any such breach may allow you or third parties to unfairly compete with NYT resulting in irreparable harm to NYT, and therefore, that upon any such breach or threat thereof, NYT shall be entitled to injunctions and other appropriate equitable relief in addition to whatever remedies it may have at law. 
+
+5. PUBLICITY. NYT may use your name in releases, customer lists, marketing and other materials. Unless otherwise expressly permitted by NYT, you may not create, publish, or distribute any items that reference NYT without first submitting those items to NYT and receiving NYT's written consent. 
+
+6. WARRANTY DISCLAIMER. You represent and warrant to NYT that your Mark(s) and/or content on your Web site, other than the Content, do not and will not infringe any trademark, service mark, copyright, right to publicity, right of privacy or other intellectual property right of a third party, constitute false, deceptive or unfair advertising or disparagement under applicable law, or fail to comply with applicable laws and regulations (including, for example, licensing requirements and administrative or professional rules). NYT represents and warrants that the NYT Mark(s) and/or Content do not and will not infringe any trademark, service mark, copyright, right to publicity, right of privacy or other intellectual property right of a third party, constitute false, deceptive or unfair advertising or disparagement under applicable law, or fail to comply with applicable laws and regulations (including, for example, licensing requirements and administrative or professional rules). NYT makes no representations concerning any interruption in Service. NYT PROVIDES THE CONTENT AND SERVICE ON AN "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTY OF ANY KIND, AND NYT HEREBY DISCLAIMS ALL IMPLIED WARRANTIES, INCLUDING WITHOUT LIMITATION WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, PERFORMANCE, ACCURACY, RELIABILITY, AND NON-INFRINGEMENT. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS AGREEMENT. 
+
+7. LIMITATION OF LIABILITY. UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, TORT, CONTRACT, STRICT LIABILITY, OR OTHERWISE, SHALL NYT BE LIABLE TO YOU OR ANY OTHER PERSON FOR ANY INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOST PROFITS, LOSS OF GOODWILL, WORK STOPPAGE, ACCURACY OF SERVICES, CONTENT OR RESULTS, COMPUTER FAILURE OR MALFUNCTION, DAMAGES RESULTING FROM DISABLING OF THE CONTENT RELATED TO NON-PAYMENT OF LICENSE FEES, COST OF PROCUREMENT OF SUBSTITUTE GOODS, OR ANY AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES. IN NO EVENT WILL NYT BE LIABLE FOR ANY DAMAGES IN EXCESS OF THE FEES PAID BY YOU (IF ANY) IN CONNECTION WITH THE CONTENT, EVEN IF NYT SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES, OR FOR ANY CLAIM BY ANY OTHER PARTY. SOME STATES DO NOT ALLOW EXCLUSION OF IMPLIED WARRANTIES OR LIMITATION OF LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATIONS OR EXCLUSIONS MAY NOT APPLY TO YOU. IN SUCH STATES, THE LIABILITY OF THE PROVIDERS, THIRD PARTY CONTENT PROVIDERS AND THEIR RESPECTIVE AGENTS SHALL BE LIMITED TO THE GREATEST EXTENT PERMITTED BY LAW. 
+
+8. INDEMNITY. You hereby agree to fully indemnify, defend and hold NYT and their respective affiliates, officers, directors and licensors (collectively, the "Provider Parties") harmless from and against any and all claims, liability, losses, costs and expenses (including attorneys' fees) incurred by you in connection with: (i) any use or alleged use of the Service or the Content through your account by any person, whether or not authorized by you; or (ii) your Site or (iii) any breach of Sections 2-5. NYT reserves the right, at its own expense, to assume the exclusive defense and control of any matter otherwise subject to indemnification by you, and in such case, you agree to cooperate with NYT's defense of such claim. 
+
+9. TERMINATION. The term of this Agreement will begin when you click on the "Accept" button below and will continue until terminated in accordance with this Section. Unless otherwise agreed to by NYT, you may terminate this Agreement and the license granted herein at any time by destroying or removing all copies of the Content from your Site, all hard drives, networks, and other storage media. Unless otherwise agreed to by NYT, NYT may restrict, suspend or terminate the Service, this Agreement, the license granted herein, or your access to any aspect or all of the Content or Service at any time without liability. You agree to destroy or return to NYT all copies of the Content and all Proprietary Information promptly upon learning of such Termination. Sections 2 through 8 and 10 and 11 shall survive termination of this Agreement. 
+
+10. MISCELLANEOUS. This Agreement represents the complete agreement concerning this license between the parties and supersedes all prior agreements and representations between them. If any provision of this Agreement is held to be unenforceable for any reason, such provision shall be reformed only to the extent necessary to make it enforceable. This Agreement shall be governed by and construed under the internal laws and jurisdiction of the State of New York. Any action to enforce this agreement shall be brought in the federal or state courts located in New York, New York. You may not assign this Agreement without NYT's prior written consent; any assignment by you without such consent shall be null and void. Each party shall be responsible for compliance with all applicable laws, rules and regulations, if any, related to the performance of its obligations under this Agreement. Neither party will be liable for any failure to perform any obligation (other than payment obligations) hereunder, or from any delay in the performance thereof, due to causes beyond its control, including industrial disputes of whatever nature, acts of God, public enemy, acts of government, failure of telecommunications, fire or other casualty. NYT is not responsible for any costs or liability associated with making a connection (by any means) to the Internet, the Service or other online service, or network. You certify you are legally permitted to use the Services and access the Content, and  if you are an individual, you are over 18 years of age. You take full responsibility for the selection and use of the Services and access of the Content. This Agreement is void where prohibited by law, and the right to access the Content is revoked in such jurisdictions. The sections headings appearing in this Agreement are inserted only as a matter of convenience and shall not be interpreted as substantive. Nothing in this Agreement will be deemed to limit or restrict NYT from entering into agreements with any other person covering services similar to your Site or from offering such similar services itself. The parties hereto are independent contractors, and nothing in this Agreement creates any Providership, joint venture, agency, franchise, sales representative or employment relationship between the parties. You have no authority to make or accept any offers or representations on our behalf and you shall not make any statement, on your site or otherwise, that contradicts anything in this Section.
+</textarea>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td colspan="5">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td colspan="5"> 
+        <table width="450" border="0" cellspacing="0" cellpadding="0" align="center">
+          <tr> 
+            <td> 
+              <p><font face="Times New Roman, Times, serif">Click the &quot;Get 
+                NYT Headlines&quot; button to indicate your acceptance of this 
+                delivery agreement and continue the process to add headlines to your site.
+                </font></p>
+              <p><font face="Times New Roman, Times, serif"><b>Note: Netscape 
+                navigator 3.x and below, Internet Explorer 3.x and below and WebTV 
+                are not supported at this time.</b></font></p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td colspan="5">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="30"><img src="/web/20050721011506im_/http://graphics.nytimes.com/images/misc/spacer.gif" width="30" height="10"></td>
+      <td width="185">&nbsp;</td>
+      <td width="10"><img src="/web/20050721011506im_/http://graphics.nytimes.com/images/misc/spacer.gif" width="10" height="10"></td>
+      <td width="345"> 
+	<input type="hidden" name="submit_form" value="submit_form">
+        <input type="submit" name="submit_form" value="Get NYT Headlines">
+      </td>
+      <td width="30"><img src="/web/20050721011506im_/http://graphics.nytimes.com/images/misc/spacer.gif" width="30" height="10"></td>
+    </tr>
+    <tr> 
+      <td colspan="5">&nbsp;</td>
+    </tr>
+  </table>
+</form>
+<!-- $Revision: 1.1 $ web191t -->
+</body>
+</html>
+
+
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 1:15:06 Jul 21, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 4:55:03 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

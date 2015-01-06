@@ -1,0 +1,991 @@
+<!-- Vignette StoryServer 5.0 Fri Oct 14 18:48:40 2005 -->
+
+	      
+
+	 <html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app2.us.archive.org";archive_analytics.values.server_ms=3228;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<title>The Tony Snow Show</title>
+
+<SCRIPT LANGUAGE="JavaScript">
+function _hbxStrip(a){
+	a = a.split("|").join("");
+	a = a.split("&").join("");
+	a = a.split("'").join("");
+	a = a.split("#").join("");
+	a = a.split("$").join("");
+	a = a.split("%").join("");
+	a = a.split("^").join("");
+	a = a.split("*").join("");
+	a = a.split(":").join("");
+	a = a.split("!").join("");
+	a = a.split("<").join("");
+	a = a.split(">").join("");
+	a = a.split("~").join("");
+	a = a.split(";").join("");
+	a = a.split(" ").join("+");
+	return a;    
+}
+</SCRIPT>
+
+<!--WEBSIDESTORY CODE HBX1.0 (Universal)-->
+<!--COPYRIGHT 1997-2005 WEBSIDESTORY,INC. ALL RIGHTS RESERVED. U.S.PATENT No. 6,393,479B1. MORE INFO:/web/20051015193913/http://websidestory.com/privacy-->
+<script language="javascript">
+// Initialize the temporary segment variables
+var this_segment = ""; // Set to the overnight hours segment by default
+// Do the time of day testing
+var date = new Date();
+var hours = date.getHours();
+if (hours == 5) { this_segment = "1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 6) { this_segment = "-1,2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 7) { this_segment = "-1,-2,3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 8) { this_segment = "-1,-2,-3,4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 9) { this_segment = "-1,-2,-3,-4,5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 10) { this_segment = "-1,-2,-3,-4,-5,6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 11) { this_segment = "-1,-2,-3,-4,-5,-6,7,-8,-9,-10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 12) { this_segment = "-1,-2,-3,-4,-5,-6,-7,8,-9,-10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 13) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,9,-10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 14) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 15) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 16) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 17) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 18) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 19) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,15,-16,-17,-18,-19,-20"; }
+if (hours == 20) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,16,-17,-18,-19,-20"; }
+if (hours == 21) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16,17,-18,-19,-20"; }
+if (hours == 22) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16,-17,18,-19,-20"; }
+if (hours == 23) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16,-17,-18,19,-20"; }
+
+var _hbEC=0,_hbE=new Array;function _hbEvent(a,b){b=_hbE[_hbEC++]=new Object();b._N=a;b._C=0;return b;}
+var hbx=_hbEvent("pv");hbx.vpc="HBX0100u";hbx.gn="tracking.foxnews.com";
+
+//BEGIN EDITABLE SECTION
+
+//OPTIONAL PAGE VARIABLES
+//ACTION SETTINGS
+hbx.fv="";//FORM VALIDATION MINIMUM ELEMENTS OR SUBMIT FUNCTION NAME
+hbx.lt="auto";//LINK TRACKING
+hbx.dlf="n";//DOWNLOAD FILTER
+hbx.dft="n";//DOWNLOAD FILE NAMING
+hbx.elf="n";//EXIT LINK FILTER
+
+//SEGMENTS AND FUNNELS
+hbx.seg=this_segment;//VISITOR SEGMENTATION
+
+//CONFIGURATION VARIABLES
+hbx.acct="DM550608D8WV01EN3";//ACCOUNT NUMBER(S)
+hbx.pndef="title";//DEFAULT PAGE NAME
+hbx.ctdef="full";//DEFAULT CONTENT CATEGORY
+
+hbx.pn=_hbxStrip("Tony Snow Radio Front");//PAGE NAME(S)
+hbx.mlc=_hbxStrip("/radio/Tony Snow Radio/front");//MULTI-LEVEL CONTENT CATEGORY
+
+//END EDITABLE SECTION
+
+</script><script language="javascript1.1" defer src="/web/20051015193913js_/http://www.foxnews.com/js/hbx.js"></script>
+<!--END WEBSIDESTORY CODE--> <script language=javascript src="/web/20051015193913js_/http://www.foxnews.com/tonysnowradio/tonysnowradio.js"></script>
+<LINK REL=STYLESHEET TYPE="text/css" HREF="/web/20051015193913cs_/http://www.foxnews.com/tonysnowradio/snowStyles2.css">
+
+</head>
+
+<body bgcolor="#ffffff" marginwidth=0 marginheight=0 topmargin=0 leftmargin=0>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.foxnews.com/tonysnow/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "15";
+var displayMonth = "Oct";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.foxnews.com/tonysnow/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20051015193913" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Sep
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 19:39:13 Oct 15, 2005">OCT</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20060309183101/http://www.foxnews.com/tonysnow" title="9 Mar 2006"><strong>MAR</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20051011080004/http://www.foxnews.com/tonysnow/" title="8:00:04 Oct 11, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 19:39:13 Oct 15, 2005">15</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20060309183101/http://www.foxnews.com/tonysnow" title="18:31:01 Mar 9, 2006"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2004
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 19:39:13 Oct 15, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20061016174629/http://www.foxnews.com/tonysnow/" title="16 Oct 2006"><strong>2006</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20051015193913*/http://www.foxnews.com/tonysnow/" title="See a list of every capture for this URL">111 captures</a>
+           <div class="r" title="Timespan for captures of this URL">27 Sep 05 - 28 Sep 14</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:9:000000002300_2006:-1:002f45711535_2007:-1:830301111331_2008:-1:201210001110_2009:-1:040000020001_2010:-1:000000010100_2011:-1:100010010110_2012:-1:020010000010_2013:-1:000001001000_2014:-1:001000101000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+<table cellpadding=0 cellspacing=0 width=770>
+	 <tr><td>
+	<img src="/web/20051015193913im_/http://www.foxnews.com/tonysnowradio/images/hd_fnr_snow.jpg" width="770" height="110" border="0" usemap="#headTonySnow">
+<map name="headTonySnow">
+<area alt="FOXNews.com" shape="POLY" coords="249,14,230,32,358,32,376,14" href="/web/20051015193913/http://www.foxnews.com/index.html">
+<area alt="FOX News Live w/ Alan Colmes" shape="poly" coords="379,14,607,14,587,32,361,32" href="/web/20051015193913/http://www.foxnews.com/alancolmesradio/index.html">
+<area alt="FOX News Radio" coords="16,19,87,86" href="/web/20051015193913/http://www.foxnews.com/access/radio.html" shape="RECT">
+</map>
+
+	</td></tr>
+	  <tr><td style="padding-bottom:10px;" align="center">
+	
+<table width="750" border=0 cellspacing=0 cellpadding=0 align=center>
+<tr>
+<td width=76><a href="/web/20051015193913/http://www.foxnews.com/tonysnow/index.html" onMouseover="rollOver('nav01');" onMouseout="rollOut('nav01');"><img src="/web/20051015193913im_/http://www.foxnews.com/tonysnowradio/images/nav01_off.gif" name="nav01" width=76 height=25 border="0"></a></td>
+<td width=152><a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,113193,00.html" onMouseover="openDiv('nav02');" onMouseout="rollOut('nav02');"><img src="/web/20051015193913im_/http://www.foxnews.com/tonysnowradio/images/nav02_off.gif" name="nav02" width=152 height=25 border="0"></a></td>
+<td width=130><a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,112980,00.html" onMouseover="openDiv('nav03');" onMouseout="rollOut('nav03');"><img src="/web/20051015193913im_/http://www.foxnews.com/tonysnowradio/images/nav03_off.gif" name="nav03" width=130 height=25 border="0"></a></td>
+<td width=128><a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,112966,00.html" onMouseover="openDiv('nav04');" onMouseout="rollOut('nav04');"><img src="/web/20051015193913im_/http://www.foxnews.com/tonysnowradio/images/nav04_off.gif" name="nav04" width=128 height=25 border="0"></a></td>
+<td width=117><a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,112983,00.html" onMouseover="openDiv('nav05');" onMouseout="rollOut('nav05');"><img src="/web/20051015193913im_/http://www.foxnews.com/tonysnowradio/images/nav05_off.gif" name="nav05" width=117 height=25 border="0"></a></td>
+<td width=147><a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,112988,00.html" onMouseover="openDiv('nav06');" onMouseout="rollOut('nav06');"><img src="/web/20051015193913im_/http://www.foxnews.com/tonysnowradio/images/nav06_off.gif" name="nav06" width=147 height=25 border="0"></a></td>
+</tr>
+</table>
+
+	</td></tr>
+	 <tr><td style="padding:0px 10px 0px 10px;">
+	<table width="100%" border=0 cellspacing=0 cellpadding=0>
+		<tr><td>
+		<map name="snowMap">
+<area coords="23,272,154,314" href="/web/20051015193913/http://www.foxnews.com/tonysnow/signup.html">
+<area coords="23,326,211,370" href="/web/20051015193913/http://www.foxnews.com/tonysnow/wanttony.html" shape="RECT">
+<area coords="23,375,163,412" href="/web/20051015193913/http://www.foxnews.com/tonysnow/tellfriend.html">
+<area coords="73,445,277,530" href="/web/20051015193913/http://www.foxnews.com/tonysnow/signup.html">
+</map>
+
+<table cellpadding=0 cellspacing=0 border=0 width=730 align="center">
+	 <tr>
+	<td style="padding-right:30px;" valign="top">
+	<table cellpadding=0 cellspacing=0 border=0 width=350>
+		<tr><td style="padding-bottom:15px;"><img src="/web/20051015193913im_/http://www.foxnews.com/tonysnowradio/images/left_column.jpg" width=350 height=549 border=0 usemap="#snowMap"></td></tr>
+		
+			 
+	 
+	    
+		<tr><td style="padding-bottom:5px;"><img src="/web/20051015193913im_/http://www.foxnews.com/foxfan/images/headers/hd_root_snow_from_the_airwa.gif" width=350 height=25></td></tr>
+		  
+		
+			  
+				       
+					   <tr><td align="center">
+			
+				
+					<div class="frontHead" style="text-align:left;">
+				 <a href="javascript:videoPlayer('snow/101405/snow_scales_101405_1','Tony Snow','Tony_Snow_Audio','acc','Radio','-1');">Progress in Iraq</a> </div>
+			 <div class="frontDeck">
+				
+					<div style="text-align:left;" class="deckts">
+					<div style="float:left;width:90px;padding-right:5px;"><a href="javascript:videoPlayer('snow/101405/snow_scales_101405_1','Tony Snow','Tony_Snow_Audio','acc','Radio','-1');"><img src="/web/20051015193913im_/http://www.foxnews.com/video2/images/iraqi_co0nstitution_90_70s.jpg" width=90 height=70 border=0></a></div>
+					General Bob Scales stopped by the studio to give Tony an update on the Iraq War. Scales returned from Iraq last week, and was one of the leading military figures in the first Gulf War. 
+						      
+					<br><br><a href="javascript:videoPlayer('snow/101405/snow_scales_101405_1','Tony Snow','Tony_Snow_Audio','acc','Radio','-1');">
+					 
+						<img src="/web/20051015193913im_/http://www.foxnews.com/tonysnowradio/images/btn_listen.gif" width=61 height=21 border=0>
+					 </a>
+					
+				 </div>
+				
+				<div style="clear:both;width:330px;height:15px;"></div>
+			</div>
+			</td></tr>
+			
+		
+		
+			  
+				       
+					   <tr><td align="center">
+			
+				
+					<div class="frontHead" style="text-align:right;">
+				 <a href="javascript:videoPlayer('snow/101405/snow_aq_101405_1','Tony Snow','Tony_Snow_Audio','acc','Radio','-1');">Camp al-Qaeda </a> </div>
+			 <div class="frontDeck">
+				
+					<div style="text-align:right;" class="deckts">
+					<div style="float:right;width:90px;padding-left:5px;"><a href="javascript:videoPlayer('snow/101405/snow_aq_101405_1','Tony Snow','Tony_Snow_Audio','acc','Radio','-1');"><img src="/web/20051015193913im_/http://www.foxnews.com/video2/images/ZawahiriZarqawi_90_70s.jpg" width=90 height=70 border=0></a></div>
+					Tony couldn't help but return to al-Qaeda #2 Ayman al-Zawahiri's desperate letter to lead terrorist in Iraq Abu Musab al-Zarqawi. Tony found some more gems in the desperate and defeatist screed. 
+						      
+					<br><br><a href="javascript:videoPlayer('snow/101405/snow_aq_101405_1','Tony Snow','Tony_Snow_Audio','acc','Radio','-1');">
+					 
+						<img src="/web/20051015193913im_/http://www.foxnews.com/tonysnowradio/images/btn_listen.gif" width=61 height=21 border=0>
+					 </a>
+					
+				 </div>
+				
+				<div style="clear:both;width:330px;height:15px;"></div>
+			</div>
+			</td></tr>
+			
+		
+		
+			  
+				       
+					   <tr><td align="center">
+			
+				
+					<div class="frontHead" style="text-align:left;">
+				 <a href="javascript:videoPlayer('snow/101405/snow_shine_101405','Tony Snow','Tony_Snow_Audio','acc','Radio','-1');">A Real (And Happy) Housewife</a> </div>
+			 <div class="frontDeck">
+				
+					<div style="text-align:left;" class="deckts">
+					<div style="float:left;width:90px;padding-right:5px;"><a href="javascript:videoPlayer('snow/101405/snow_shine_101405','Tony Snow','Tony_Snow_Audio','acc','Radio','-1');"><img src="/web/20051015193913im_/http://www.foxnews.com/video2/images/DesperateHousewives_90_70s.jpg" width=90 height=70 border=0></a></div>
+					Author and former television producer Darla Shine spoke to Tony about her new book, Happy Housewives. Shine gave up her career as a successful TV producer to be a fulltime Mom and housewife, but her workload certainly didn't decrease.  
+						      
+					<br><br><a href="javascript:videoPlayer('snow/101405/snow_shine_101405','Tony Snow','Tony_Snow_Audio','acc','Radio','-1');">
+					 
+						<img src="/web/20051015193913im_/http://www.foxnews.com/tonysnowradio/images/btn_listen.gif" width=61 height=21 border=0>
+					 </a>
+					
+				 </div>
+				
+				<div style="clear:both;width:330px;height:15px;"></div>
+			</div>
+			</td></tr>
+			
+		 
+	    
+		<tr><td style="padding-bottom:5px;"><img src="/web/20051015193913im_/http://www.foxnews.com/foxfan/images/headers/hd_root_snow_tony_picks.gif" width=350 height=25></td></tr>
+		  
+		
+			  
+				       
+					   <tr><td align="center">
+			
+				
+					<div class="frontHead" style="text-align:left;">
+				 <a href="javascript:videoPlayer('042705/foxfan_sr_tonysnow_042705','Soldier Ride','FOX_Fan_Exclusives','acc','FOX Fan','-1');">"The Best of America"</a> </div>
+			 <div class="frontDeck">
+				
+					<div style="text-align:left;" class="deckts">
+					<div style="float:left;width:90px;padding-right:5px;"><a href="javascript:videoPlayer('042705/foxfan_sr_tonysnow_042705','Soldier Ride','FOX_Fan_Exclusives','acc','FOX Fan','-1');"><img src="/web/20051015193913im_/http://www.foxnews.com/video2/images/90_vid_sr_tonysnow_042705.jpg" width=90 height=70 border=0></a></div>
+					Tony Snow on the lessons we could all learn from soldiers. 
+						      
+					<br><br><a href="javascript:videoPlayer('042705/foxfan_sr_tonysnow_042705','Soldier Ride','FOX_Fan_Exclusives','acc','FOX Fan','-1');">
+					 
+						<img src="/web/20051015193913im_/http://www.foxnews.com/tonysnowradio/images/btn_watch.gif" width=61 height=21 border=0>
+					 </a>
+					
+				 </div>
+				
+				<div style="clear:both;width:330px;height:15px;"></div>
+			</div>
+			</td></tr>
+			
+		
+		
+			  
+				     <tr><td align="center">
+			
+				
+					<div class="frontHead" style="text-align:left;">
+				 <a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,145692,00.html">Defaced Billboard </a> </div>
+			 <div class="frontDeck">
+				
+					<div style="width:330px;text-align:left;" class="deckts"><b><a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,145692,00.html">See pictures</a></b> of the NewsRadio 750 KXL billboard defaced with paintballs.  
+					<br><br><a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,145692,00.html"><img src="/web/20051015193913im_/http://www.foxnews.com/tonysnowradio/images/btn_read_more.gif" width=46 height=21 border=0></a>
+				 </div>
+				
+				<div style="clear:both;width:330px;height:15px;"></div>
+			</div>
+			</td></tr>
+			
+		 
+	    
+		<tr><td style="padding-bottom:5px;"><img src="/web/20051015193913im_/http://www.foxnews.com/foxfan/images/headers/hd_root_snow_cancer_fight.gif" width=350 height=25></td></tr>
+		  
+		
+			  
+				     <tr><td align="center">
+			
+				
+					<div class="frontHead" style="text-align:left;">
+				 <a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,148056,00.html">Tony: I'm Feeling Great</a> </div>
+			 <div class="frontDeck">
+				
+					<div style="width:330px;text-align:left;" class="deckts">As Tony gets back in the saddle, he gives a big THANK YOU to all his fans. Read his note, plus e-mails from fellow listeners.   
+					<br><br><a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,148056,00.html"><img src="/web/20051015193913im_/http://www.foxnews.com/tonysnowradio/images/btn_read_more.gif" width=46 height=21 border=0></a>
+				 </div>
+				
+				<div style="clear:both;width:330px;height:15px;"></div>
+			</div>
+			</td></tr>
+			
+		 
+	    
+		<tr><td style="padding-bottom:5px;"><img src="/web/20051015193913im_/http://www.foxnews.com/foxfan/images/headers/hd_root_snow_tell_them_you_.gif" width=350 height=25></td></tr>
+		  
+		
+			  
+				    <tr><td align="center">
+			
+				
+					<div class="frontHead" style="text-align:left;">
+				 <a href="/web/20051015193913/http://www.foxnews.com/tonysnow/wanttony.html">We Make It Easy!</a> </div>
+			 <div class="frontDeck">
+				
+					<div style="width:330px;text-align:left;" class="deckts">Use our online form to let radio stations in your area know that they should carry "The Tony Snow Show."    </div>
+				
+				<div style="clear:both;width:330px;height:15px;"></div>
+			</div>
+			</td></tr>
+			
+		 
+	    
+		<tr><td style="padding-bottom:5px;"><img src="/web/20051015193913im_/http://www.foxnews.com/foxfan/images/headers/hd_root_snow_by_pop_demand.gif" width=350 height=25></td></tr>
+		  
+		
+			  
+				       
+					   <tr><td align="center">
+			
+				
+					<div class="frontHead" style="text-align:left;">
+				 <a href="javascript:videoPlayer('snow/111204/snow_spongebob_111204','The Tony Snow Show','Tony_Snow_Audio','acc','Radio','-1');">Tony Sings!</a> </div>
+			 <div class="frontDeck">
+				
+					<div style="text-align:left;" class="deckts">
+					<div style="float:left;width:90px;padding-right:5px;"><a href="javascript:videoPlayer('snow/111204/snow_spongebob_111204','The Tony Snow Show','Tony_Snow_Audio','acc','Radio','-1');"><img src="/web/20051015193913im_/http://www.foxnews.com/video2/images/tonymegaphone_90_70s.jpg" width=90 height=70 border=0></a></div>
+					Listen to Tony's, um, unique rendition of the Spongebob Squarepants theme song. 
+						      
+					<br><br><a href="javascript:videoPlayer('snow/111204/snow_spongebob_111204','The Tony Snow Show','Tony_Snow_Audio','acc','Radio','-1');">
+					 
+						<img src="/web/20051015193913im_/http://www.foxnews.com/tonysnowradio/images/btn_listen.gif" width=61 height=21 border=0>
+					 </a>
+					
+				 </div>
+				
+				<div style="clear:both;width:330px;height:15px;"></div>
+			</div>
+			</td></tr>
+			
+		
+		
+			  
+				         <tr><td align="center">
+			
+				
+					<div class="frontHead" style="text-align:left;">
+				 <a href="javascript:videoPlayer('snow/041604/snow_repubsong_041604','The Tony Snow Show','Tony_Snow_Audio','acc','Radio','-1');">"Thank God I'm Republican"</a> </div>
+			 <div class="frontDeck">
+				
+					<div style="width:330px;text-align:left;" class="deckts">As heard on the show, here's the song (written by parodist Jim Salestrom) you've been asking for.  
+					<br><br><a href="javascript:videoPlayer('snow/041604/snow_repubsong_041604','The Tony Snow Show','Tony_Snow_Audio','acc','Radio','-1');">
+					 
+						<img src="/web/20051015193913im_/http://www.foxnews.com/tonysnowradio/images/btn_listen.gif" width=61 height=21 border=0>
+					 </a>
+					
+				 </div>
+				
+				<div style="clear:both;width:330px;height:15px;"></div>
+			</div>
+			</td></tr>
+			
+		   </table>
+	</td>
+	<td valign="top">
+	
+	<table cellpadding=0 cellspacing=0 border=0 width=350>
+		  
+	    
+		<tr><td style="padding-bottom:5px;"><img src="/web/20051015193913im_/http://www.foxnews.com/foxfan/images/headers/hd_root_snow_by_pop_demand.gif" width=350 height=25></td></tr>
+		  
+		
+			  
+				    <tr><td align="center">
+			
+				
+					<div class="frontHead" style="text-align:left;">
+				 <a href="javascript:pop('/tonysnow/livePlayer/player.html','TSLivePlayer',728,515,'no','no');">Listen Live Online!</a> </div>
+			 <div class="frontDeck">
+				
+					<div style="width:330px;text-align:left;" class="deckts">Click the link below between <b>9am and noon ET</b> to hear the "The Tony Snow Show" live online.<p><b><a href="javascript:pop('/tonysnow/livePlayer/player.html','TSLivePlayer',728,515,'no','no');">Listen Live</a></b>   </div>
+				
+				<div style="clear:both;width:330px;height:15px;"></div>
+			</div>
+			</td></tr>
+			
+		 
+	    
+		<tr><td style="padding-bottom:5px;"><img src="/web/20051015193913im_/http://www.foxnews.com/foxfan/images/headers/hd_root_snow_only_from_tony.gif" width=350 height=25></td></tr>
+		  
+		
+			  
+				   
+					   <tr><td align="center">
+			
+				
+					<div class="frontHead" style="text-align:left;">
+				 <a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,170809,00.html">Transcript: The Tom DeLay Interview</a> </div>
+			 <div class="frontDeck">
+				
+					<div style="text-align:left;" class="deckts">
+					<div style="float:left;width:90px;padding-right:5px;"><a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,170809,00.html"><img src="/web/20051015193913im_/http://www.foxnews.com/images/178724/1_14_section_delay_tom_90_70s.jpg" width=90 height=70 border=0></a></div>
+					Missed it live?  Read the compelling discussion with the indicted former House majority leader. 
+						      
+					<br><br><a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,170809,00.html"><img src="/web/20051015193913im_/http://www.foxnews.com/tonysnowradio/images/btn_read_more.gif" width=46 height=21 border=0></a>
+				 </div>
+				
+				<div style="clear:both;width:330px;height:15px;"></div>
+			</div>
+			</td></tr>
+			
+		
+		
+			  
+				  
+					   <tr><td align="center">
+			
+				
+					<div class="frontHead" style="text-align:right;">
+				 Call Chuck Schumer for FREE Credit Report </div>
+			 <div class="frontDeck">
+				
+					<div style="text-align:right;" class="deckts">
+					<div style="float:right;width:90px;padding-left:5px;"><img src="/web/20051015193913im_/http://www.foxnews.com/foxfan/images/schumer_credit_90_70s.jpg" width=90 height=70 border=0></div>
+					Call Sen. Chuck Schumer for your FREE Credit Report at (202) 224-6542.  
+						       </div>
+				
+				<div style="clear:both;width:330px;height:15px;"></div>
+			</div>
+			</td></tr>
+			
+		
+		
+			  
+				       
+					   <tr><td align="center">
+			
+				
+					<div class="frontHead" style="text-align:left;">
+				 <a href="javascript:videoPlayer('snow/090905/snow_911tribute_090905','9/11 Tribute','Tony_Snow_Audio','acc','Radio','-1');">9/11 Tribute</a> </div>
+			 <div class="frontDeck">
+				
+					<div style="text-align:left;" class="deckts">
+					<div style="float:left;width:90px;padding-right:5px;"><a href="javascript:videoPlayer('snow/090905/snow_911tribute_090905','9/11 Tribute','Tony_Snow_Audio','acc','Radio','-1');"><img src="/web/20051015193913im_/http://www.foxnews.com/video2/images/9-11_tribute_ap_90s.jpg" width=90 height=70 border=0></a></div>
+					Four years later, sounds from the day we'll never forget. 
+						      
+					<br><br><a href="javascript:videoPlayer('snow/090905/snow_911tribute_090905','9/11 Tribute','Tony_Snow_Audio','acc','Radio','-1');">
+					 
+						<img src="/web/20051015193913im_/http://www.foxnews.com/tonysnowradio/images/btn_listen.gif" width=61 height=21 border=0>
+					 </a>
+					
+				 </div>
+				
+				<div style="clear:both;width:330px;height:15px;"></div>
+			</div>
+			</td></tr>
+			
+		
+		
+			  
+				  
+					   <tr><td align="center">
+			
+				
+					<div class="frontHead" style="text-align:right;">
+				 <a href=""javascript:pop('/photo_essay/0,3927,551:1,00.html','foxphotoessay',600,600,'no','no');"">With the Peace Mom!</a> </div>
+			 <div class="frontDeck">
+				
+					<div style="text-align:right;" class="deckts">
+					<div style="float:right;width:90px;padding-left:5px;"><a href=""javascript:pop('/photo_essay/0,3927,551:1,00.html','foxphotoessay',600,600,'no','no');""><img src="/web/20051015193913im_/http://www.foxnews.com/foxfan/images/Peace-House_90_70s.jpg" width=90 height=70 border=0></a></div>
+					Producer Griff Jenkins travels to Crawford to meet with Cindy Sheehan and company.  <a href="javascript:pop('/photo_essay/0,3927,551:1,00.html','foxphotoessay',600,600,'no','no');"><b>Check out the photo-essay!</b></a> 
+						       </div>
+				
+				<div style="clear:both;width:330px;height:15px;"></div>
+			</div>
+			</td></tr>
+			
+		
+		
+			  
+				  
+					   <tr><td align="center">
+			
+				
+					<div class="frontHead" style="text-align:left;">
+				 <a href="/web/20051015193913/http://www.foxnews.com/projects/pdf/Vote_Fraud_Intimidation_Suppression_2004_Pres_Election_v2.pdf">Who Committed Voter Fraud, Democrats or Republicans?</a> </div>
+			 <div class="frontDeck">
+				
+					<div style="text-align:left;" class="deckts">
+					<div style="float:left;width:90px;padding-right:5px;"><a href="/web/20051015193913/http://www.foxnews.com/projects/pdf/Vote_Fraud_Intimidation_Suppression_2004_Pres_Election_v2.pdf"><img src="/web/20051015193913im_/http://www.foxnews.com/foxfan/images/voter_fraud_90_70s.jpg" width=90 height=70 border=0></a></div>
+					The American Center for Voting Rights compiled a detailed report of all the violations of elections law in the 2004 presidential contest.  It turns out that fraud in Democratic precincts was widespread. <b><a href="/web/20051015193913/http://www.foxnews.com/projects/pdf/Vote_Fraud_Intimidation_Suppression_2004_Pres_Election_v2.pdf" target="_blank">Read the report!</a></b> 
+						       </div>
+				
+				<div style="clear:both;width:330px;height:15px;"></div>
+			</div>
+			</td></tr>
+			
+		
+		
+			  
+				   
+					   <tr><td align="center">
+			
+				
+					<div class="frontHead" style="text-align:right;">
+				 <a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,165109,00.html">The PDB Myth</a> </div>
+			 <div class="frontDeck">
+				
+					<div style="text-align:right;" class="deckts">
+					<div style="float:right;width:90px;padding-left:5px;"><a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,165109,00.html"><img src="/web/20051015193913im_/http://www.foxnews.com/images/172574/1_14_081902_bush4.jpg" width=90 height=70 border=0></a></div>
+					Raw Data: <b><a href="http:/story/0,2933,165109,00.html">Read</a></b> the August 6, 2001 Presidential Daily Briefing (PDB) that liberals say should have alerted Bush to the 9/11 plot. Was it a dire warning or something that could have been written by any high school history student? You decide! 
+						      
+					<br><br><a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,165109,00.html"><img src="/web/20051015193913im_/http://www.foxnews.com/tonysnowradio/images/btn_read_more.gif" width=46 height=21 border=0></a>
+				 </div>
+				
+				<div style="clear:both;width:330px;height:15px;"></div>
+			</div>
+			</td></tr>
+			
+		
+		
+			  
+				    <tr><td align="center">
+			
+				
+					<div class="frontHead" style="text-align:left;">
+				 <a href="/web/20051015193913/http://www.foxnews.com/projects/pdf/GTMO-menu.pdf">Gitmo Prisoner's Menu</a> </div>
+			 <div class="frontDeck">
+				
+					<div style="width:330px;text-align:left;" class="deckts">Raw Data: <a href="/web/20051015193913/http://www.foxnews.com/projects/pdf/GTMO-menu.pdf" target="_blank">Click here</a> to see how the prisoners at Guantanamo Bay are being fed.   </div>
+				
+				<div style="clear:both;width:330px;height:15px;"></div>
+			</div>
+			</td></tr>
+			
+		 
+	    
+		<tr><td style="padding-bottom:5px;"><img src="/web/20051015193913im_/http://www.foxnews.com/foxfan/images/headers/hd_root_snow_on_the_show.gif" width=350 height=25></td></tr>
+		  
+		
+			  
+				  
+					   <tr><td align="center">
+			
+				
+					<div class="frontHead" style="text-align:left;">
+				 America Bounces Back </div>
+			 <div class="frontDeck">
+				
+					<div style="text-align:left;" class="deckts">
+					<div style="float:left;width:90px;padding-right:5px;"><img src="/web/20051015193913im_/http://www.foxnews.com/foxfan/images/haley_barbour_90_70s.jpg" width=90 height=70 border=0></div>
+					The aftermath of Hurricane Katrina has fallen off the front pages, but the rebuilding effort is stronger than ever. Mississippi Governor Haley Barbour joins Tony to discuss what Americans can do to help. 
+						       </div>
+				
+				<div style="clear:both;width:330px;height:15px;"></div>
+			</div>
+			</td></tr>
+			
+		
+		
+			  
+				  
+					   <tr><td align="center">
+			
+				
+					<div class="frontHead" style="text-align:right;">
+				 Leave Rove Alone </div>
+			 <div class="frontDeck">
+				
+					<div style="text-align:right;" class="deckts">
+					<div style="float:right;width:90px;padding-left:5px;"><img src="/web/20051015193913im_/http://www.foxnews.com/foxfan/images/Rove_testify_90_70s.jpg" width=90 height=70 border=0></div>
+					Former Federal Prosecutor Victoria Toensing makes a strong case about why the feds should think twice before indicting WH Deputy  Chief of Staff Karl Rove.  
+						       </div>
+				
+				<div style="clear:both;width:330px;height:15px;"></div>
+			</div>
+			</td></tr>
+			
+		
+		
+			  
+				  
+					   <tr><td align="center">
+			
+				
+					<div class="frontHead" style="text-align:left;">
+				 Mondays with Luci </div>
+			 <div class="frontDeck">
+				
+					<div style="text-align:left;" class="deckts">
+					<div style="float:left;width:90px;padding-right:5px;"><img src="/web/20051015193913im_/http://www.foxnews.com/foxfan/images/lucianne_90_70s.jpg" width=90 height=70 border=0></div>
+					Everybody's favorite Monday Gossip Lucianne Goldberg stops by to discuss the stories you'll be talking about all week.  
+						       </div>
+				
+				<div style="clear:both;width:330px;height:15px;"></div>
+			</div>
+			</td></tr>
+			
+		 
+	    
+		<tr><td style="padding-bottom:5px;"><img src="/web/20051015193913im_/http://www.foxnews.com/foxfan/images/headers/hd_root_snow_the_word.gif" width=350 height=25></td></tr>
+		  
+		
+			  
+				     <tr><td align="center">
+			
+				
+					<div class="frontHead" style="text-align:left;">
+				 <a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,159572,00.html"><font color="#FFAE08">Blog: June 14</font> &#151; Peer Pressure</a> </div>
+			 <div class="frontDeck">
+				
+					<div style="width:330px;text-align:left;" class="deckts">We tell our children not to bow to peer pressure, assuring them that principle trumps momentary popularity every time. Now we need to teach the same lesson to members of Congress.  
+					<br><br><a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,159572,00.html"><img src="/web/20051015193913im_/http://www.foxnews.com/tonysnowradio/images/btn_read_more.gif" width=46 height=21 border=0></a>
+				 </div>
+				
+				<div style="clear:both;width:330px;height:15px;"></div>
+			</div>
+			</td></tr>
+			
+		
+		
+			  
+				     <tr><td align="center">
+			
+				
+					<div class="frontHead" style="text-align:left;">
+				 <a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,154770,00.html">Cover Up?</a> </div>
+			 <div class="frontDeck">
+				
+					<div style="width:330px;text-align:left;" class="deckts">Tony tells YOU about how three U.S. Senators are trying to pull a fast one on their Congressional colleagues.  
+					<br><br><a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,154770,00.html"><img src="/web/20051015193913im_/http://www.foxnews.com/tonysnowradio/images/btn_read_more.gif" width=46 height=21 border=0></a>
+				 </div>
+				
+				<div style="clear:both;width:330px;height:15px;"></div>
+			</div>
+			</td></tr>
+			
+		
+		
+			  
+				     <tr><td align="center">
+			
+				
+					<div class="frontHead" style="text-align:left;">
+				 <a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,156767,00.html">Call Your Senator!</a> </div>
+			 <div class="frontDeck">
+				
+					<div style="width:330px;text-align:left;" class="deckts">Click over for phone numbers of the GOP fence-sitters on the constitutional option.  Tell them how you feel about giving President Bush's judicial nominees a vote on the Senate floor.   
+					<br><br><a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,156767,00.html"><img src="/web/20051015193913im_/http://www.foxnews.com/tonysnowradio/images/btn_read_more.gif" width=46 height=21 border=0></a>
+				 </div>
+				
+				<div style="clear:both;width:330px;height:15px;"></div>
+			</div>
+			</td></tr>
+			
+		 
+	    
+		<tr><td style="padding-bottom:5px;"><img src="/web/20051015193913im_/http://www.foxnews.com/foxfan/images/headers/hd_root_snow_speak_out.gif" width=350 height=25></td></tr>
+		  
+		
+			  
+				    <tr><td align="center">
+			
+				
+					<div class="frontHead" style="text-align:left;">
+				 <a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,112983,00.html">Question of the Day</a> </div>
+			 <div class="frontDeck">
+				
+					<div style="width:330px;text-align:left;" class="deckts"><i>Are shows like Desperate Housewives hurting women?   </i><p>Voice your opinion by e-mailing us at <b><a href="mailto:tonysnow@foxnews.com?subject=Speak Out">tonysnow@foxnews.com</a></b> and by calling "The Tony Snow Show" weekdays from 9 am to noon ET at <b>1-866-408-SNOW (7669)</b>.   </div>
+				
+				<div style="clear:both;width:330px;height:15px;"></div>
+			</div>
+			</td></tr>
+			
+		 
+	    
+		<tr><td style="padding-bottom:5px;"><img src="/web/20051015193913im_/http://www.foxnews.com/foxfan/images/headers/hd_root_snow_find_tony.gif" width=350 height=25></td></tr>
+		  
+		
+			  
+				  
+					   <tr><td align="center">
+			 <div class="frontDeck">
+				
+					<div style="text-align:left;" class="deckts">
+					<div style="float:left;width:90px;padding-right:5px;"><a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,113193,00.html"><img src="/web/20051015193913im_/http://www.foxnews.com/foxfan/images/100_stationfinder.jpg" width=90 height=70 border=0></a></div>
+					<b>Tony Via Radio</b><br>Click on the map to find out if he's available in your neck of the woods. 
+<p><b>Tony Via Satellite</b><br>You can catch "The Tony Snow Show" from 9am - noon ET on XM Radio channel 165 and Sirius Radio channel 142.  
+						       </div>
+				
+				<div style="clear:both;width:330px;height:15px;"></div>
+			</div>
+			</td></tr>
+			
+		  </table>
+	 </td>
+	</tr>
+</table> </td></tr>
+	</table>
+	</td></tr>
+	 <tr><td style="padding:10px;">
+	<table width="750" border=0 cellspacing=0 cellpadding=0 align=center>
+<tr>
+<td width=127 align=left><a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,112960,00.html" onMouseover="rollOver('subnav01');" onMouseout="rollOut('subnav01');"><img src="/web/20051015193913im_/http://www.foxnews.com/tonysnowradio/images/subnav01_off.gif" name="subnav01" width=127 height=25 border="0"></a></td>
+<td width=168 align=right><a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,112990,00.html" onMouseover="rollOver('subnav02');" onMouseout="rollOut('subnav02');"><img src="/web/20051015193913im_/http://www.foxnews.com/tonysnowradio/images/subnav02_off.gif" name="subnav02" width=168 height=25 border="0"></a></td>
+<td width=80 align=right><a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,113195,00.html" onMouseover="rollOver('subnav03');" onMouseout="rollOut('subnav03');"><img src="/web/20051015193913im_/http://www.foxnews.com/tonysnowradio/images/subnav03_off.gif" name="subnav03" width=80 height=25 border="0"></a></td>
+<td width=133 align=right><a href="mailto:tonysnow@foxnews.com?subject=For Tony" onMouseover="rollOver('subnav04');" onMouseout="rollOut('subnav04');"><img src="/web/20051015193913im_/http://www.foxnews.com/tonysnowradio/images/subnav04_off.gif" name="subnav04" width=133 height=25 border="0"></a></td>
+<td width=78 align=right><a href="mailto:tonysnow@foxnews.com?subject=Help!" onMouseover="rollOver('subnav05');" onMouseout="rollOut('subnav05');"><img src="/web/20051015193913im_/http://www.foxnews.com/tonysnowradio/images/subnav05_off.gif" name="subnav05" width=78 height=25 border="0"></a></td>
+<td width=164 align=right><a href="/web/20051015193913/http://www.foxnews.com/index.html" onMouseover="rollOver('subnav06');" onMouseout="rollOut('subnav06');"><img src="/web/20051015193913im_/http://www.foxnews.com/tonysnowradio/images/subnav06_off.gif" name="subnav06" width=164 height=25 border="0"></a></td>
+</tr>
+</table>
+
+	</td></tr>
+	 <tr><td style="padding:0px 10px 10px 10px;" class="cap" align="center">
+	<a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,27906,00.html">Jobs at FOX News Channel.</a> 
+<a href="javascript:pop('/web/20051015193913/http://www.foxnews.com/projects/internships','internsWin',640,480,'no','no');">Internships at FOX News Channel.</a>
+<br><A HREF="/web/20051015193913/http://www.foxnews.com/other/termsofuse.html">Terms of use.</a>&nbsp;&nbsp;<A HREF="/web/20051015193913/http://www.foxnews.com/other/privacy.html">Privacy Statement.</A>&nbsp;&nbsp;For FOXNews.com comments write to
+<br><A HREF="mailto:foxnewsonline@foxnews.com">foxnewsonline@foxnews.com</A>;&nbsp;&nbsp;For FOX News Channel comments write to
+<br><A HREF="mailto:comments@foxnews.com">comments@foxnews.com</A>
+<br>&copy; Associated Press.  All rights reserved.
+<br>Copyright &copy; 2004 <a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,89127,00.html">ComStock, Inc.</a>
+<br>This material may not be published, broadcast, rewritten, or redistributed.
+<br><br>Copyright 2004 FOX News Network, LLC.  All rights reserved.
+<br>All market data delayed 20 minutes.
+	</td></tr>
+</table>
+
+
+<div id="nav02Div">
+	<table cellpadding=0 cellspacing=0 border=0>
+	<tr>
+		<td class="divnavoverall" valign="top"><table width="100%" cellspacing=0 cellpadding=0 border=0>
+		<tr><td class=bulletdiv valign=top>&#149;&nbsp;</td><td class=divnav style="padding: 0px 0px 7px 0px;"><a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,113193,00.html">Find Tony in Your Area</a></td></tr>
+		<tr><td class=bulletdiv valign=top>&#149;&nbsp;</td><td class=divnav><a href="/web/20051015193913/http://www.foxnews.com/tonysnow/wanttony.html">Tell 'Em You Want Tony</a>	</td></tr>
+		</table></td>
+	</tr>
+	</table>
+</div>
+<div id="nav03Div">
+	<table cellpadding=0 cellspacing=0 border=0>
+	<tr>
+		<td class="divnavoverall" valign="top"><table width="100%" cellspacing=0 cellpadding=0 border=0>
+		<tr><td class=bulletdiv valign=top>&#149;&nbsp;</td><td class=divnav style="padding: 0px 0px 7px 0px;"><a href="/web/20051015193913/http://www.foxnews.com/tonysnow/signup.html">Join the Campaign!</a></td></tr>
+		<tr><td class=bulletdiv valign=top>&#149;&nbsp;</td><td class=divnav style="padding: 0px 0px 7px 0px;"><a href="/web/20051015193913/http://www.foxnews.com/tonysnow/signup.html">Stay in the Loop</a></td></tr>
+		<tr><td class=bulletdiv valign=top>&#149;&nbsp;</td><td class=divnav style="padding: 0px 0px 7px 0px;"><a href="/web/20051015193913/http://www.foxnews.com/tonysnow/tellfriend.html">Tell a Friend</a></td></tr>
+		<tr><td class=bulletdiv valign=top>&#149;&nbsp;</td><td class=divnav><a href="/web/20051015193913/http://www.foxnews.com/tonysnow/editprofile.html">Modify Your Profile</a></td></tr>
+		</table></td>
+	</tr>
+	</table>
+</div>
+
+<div id="nav04Div">
+	<table cellpadding=0 cellspacing=0 border=0>
+	<tr>
+		<td class="divnavoverall" valign="top"><table width="100%" cellspacing=0 cellpadding=0 border=0>
+		<tr><td class=bulletdiv valign=top>&#149;&nbsp;</td><td class=divnav style="padding: 0px 0px 7px 0px;"><a href="/web/20051015193913/http://www.foxnews.com/tonysnow/america/index.html">Tony's Commentary</a></td></tr>
+		<tr><td class=bulletdiv valign=top>&#149;&nbsp;</td><td class=divnav style="padding: 0px 0px 7px 0px;"><a href="/web/20051015193913/http://www.foxnews.com/tonysnow/tonystake/index.html">Tony's Blog</a></td></tr>
+		<tr><td class=bulletdiv valign=top>&#149;&nbsp;</td><td class=divnav style="padding: 0px 0px 7px 0px;"><a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,112959,00.html">Favorite Links</a></td></tr>
+		<tr><td class=bulletdiv valign=top>&#149;&nbsp;</td><td class=divnav style="padding: 0px 0px 7px 0px;"><a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,112958,00.html">Must-Reads</a></td></tr>
+		<tr><td class=bulletdiv valign=top>&#149;&nbsp;</td><td class=divnav><a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,112957,00.html">Must-Sees</a></td></tr>
+		</table></td>
+	</tr>
+	</table>
+</div>
+
+<div id="nav05Div">
+	<table cellpadding=0 cellspacing=0 border=0>
+	<tr>
+		<td class="divnavoverall" valign="top"><table width="100%" cellspacing=0 cellpadding=0 border=0>
+		<tr><td class=bulletdiv valign=top>&#149;&nbsp;</td><td class=divnav><a href="/web/20051015193913/http://www.foxnews.com/story/0,2933,112983,00.html">Your Comments and Tony's Answers</a></td></tr>
+		</table></td>
+	</tr>
+	</table>
+</div>
+
+<div id="nav06Div">
+	<table cellpadding=0 cellspacing=0 border=0>
+	<tr>
+		<td class="divnavoverall" valign="top"><table width="100%" cellspacing=0 cellpadding=0 border=0>
+		<tr><td class=bulletdiv valign=top>&#149;&nbsp;</td><td class=divnav style="padding: 0px 0px 7px 0px;"><a href="mailto:tonysnow@foxnews.com?subject=For Tony">E-mail Tony Snow</a></td></tr>
+		<tr><td class=bulletdiv valign=top>&#149;&nbsp;</td><td class=divnav style="padding: 0px 0px 7px 0px;"><a href="mailto:tonysnow@foxnews.com?subject=Help!">Help!</a></td></tr>
+		<tr><td class=bulletdiv valign=top>&#149;&nbsp;</td><td class=divnav><a href="/web/20051015193913/http://www.foxnews.com/access/radio.html">Program Directors</a></td></tr>
+		</table></td>
+	</tr>
+	</table>
+</div>
+
+</body>
+</html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 19:39:13 Oct 15, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 7:27:11 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

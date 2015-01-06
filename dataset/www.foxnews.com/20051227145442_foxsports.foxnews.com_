@@ -1,0 +1,1561 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app15.us.archive.org";archive_analytics.values.server_ms=3331;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<!-- FNUpdate: 10/31/2005 -->
+<title>FOXNews.com</title>
+<LINK REL=STYLESHEET TYPE="text/css" HREF="/web/20051228100307cs_/http://www.foxnews.com/css/mainStyles2005.css">
+<!-- ===================== FS start: Site Wide JS ====================-->
+<script language="JavaScript1.2" src="/web/20051228100307js_/http://foxsports.foxnews.com/fe/js/site_wide.js" type="text/javascript"></script>
+<!-- ===================== FS end: Site Wide JS ====================-->
+<script language="JavaScript">
+	var fnDomain = "/web/20051228100307/http://www.foxnews.com";
+	var section_id = -1;
+	var pageType = "front";
+	ranNum = new String (Math.random());
+	ranNum = ranNum.substring (2, 11);
+	document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="/web/20051228100307/http://www.foxnews.com/js/main2005.js?'+ranNum+'"></SCR' + 'IPT>');
+	document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="/web/20051228100307/http://www.foxnews.com/js/navData.js?'+ranNum+'"></SCR' + 'IPT>');
+	document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="/web/20051228100307/http://www.foxnews.com/js/navScripts.js?'+ranNum+'"></SCR' + 'IPT>');
+	document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="/web/20051228100307/http://www.foxnews.com/js/accessScripts.js?'+ranNum+'"></SCR' + 'IPT>');
+	document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="/web/20051228100307/http://www.foxnews.com/js/accessData.js?'+ranNum+'"></SCR' + 'IPT>');
+	document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="/web/20051228100307/http://www.foxnews.com/js/promoBanner.js?'+ranNum+'"></SCR' + 'IPT>');
+</script>
+<SCRIPT LANGUAGE="JavaScript">
+	OAS_url = '/web/20051228100307/http://oas.foxnews.com/RealMedia/ads/';
+	OAS_sitepage = 'sports.foxnews/front';
+	OAS_listpos = 'Position1,Top,Frame1,Top3';
+	OAS_query = '';
+	OAS_target = '_top';
+	//end of configuration
+	OAS_version = 10;
+	OAS_rn = '001234567890'; OAS_rns = '1234567890';
+	OAS_rn = new String (Math.random()); OAS_rns = OAS_rn.substring (2, 11);
+	function OAS_NORMAL(pos) {
+	  document.write('<A HREF="' + OAS_url + 'click_nx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + '?' + OAS_query + '" TARGET=' + OAS_target + '>');
+	  document.write('<IMG SRC="' + OAS_url + 'adstream_nx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + '?' + OAS_query + '" BORDER=0></A>');
+	}
+</SCRIPT>
+<SCRIPT LANGUAGE=JavaScript1.1>
+	OAS_version = 11;
+	if ((navigator.userAgent.indexOf('Mozilla/3') != -1) || (navigator.userAgent.indexOf('Mozilla/4.0 WebTV') != -1))
+	  OAS_version = 10;
+	if (OAS_version >= 11)
+	  document.write('<SCR' + 'IPT LANGUAGE=JavaScript1.1 SRC="' + OAS_url + 'adstream_mjx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '?' + OAS_query + '"></SCR' + 'IPT>');
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+	document.write('');
+	function OAS_AD(pos) {
+	  if (OAS_version >= 11)
+	    OAS_RICH(pos);
+	  else
+	    OAS_NORMAL(pos);
+	}
+</SCRIPT>
+<!--WEBSIDESTORY CODE HBX1.0 (Universal)-->
+<!--COPYRIGHT 1997-2005 WEBSIDESTORY,INC. ALL RIGHTS RESERVED. U.S.PATENT No. 6,393,479B1. MORE INFO:/web/20051228100307/http://websidestory.com/privacy-->
+<script language="javascript">
+// Initialize the temporary segment variables
+var this_segment = ""; // Set to the overnight hours segment by default
+// Do the time of day testing
+var date = new Date();
+var hours = date.getHours();
+if (hours == 5) { this_segment = "1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 6) { this_segment = "-1,2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 7) { this_segment = "-1,-2,3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 8) { this_segment = "-1,-2,-3,4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 9) { this_segment = "-1,-2,-3,-4,5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 10) { this_segment = "-1,-2,-3,-4,-5,6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 11) { this_segment = "-1,-2,-3,-4,-5,-6,7,-8,-9,-10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 12) { this_segment = "-1,-2,-3,-4,-5,-6,-7,8,-9,-10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 13) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,9,-10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 14) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 15) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 16) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 17) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 18) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 19) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,15,-16,-17,-18,-19,-20"; }
+if (hours == 20) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,16,-17,-18,-19,-20"; }
+if (hours == 21) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16,17,-18,-19,-20"; }
+if (hours == 22) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16,-17,18,-19,-20"; }
+if (hours == 23) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16,-17,-18,19,-20"; }
+
+var _hbEC=0,_hbE=new Array;function _hbEvent(a,b){b=_hbE[_hbEC++]=new Object();b._N=a;b._C=0;return b;}
+var hbx=_hbEvent("pv");hbx.vpc="HBX0100u";hbx.gn="tracking.foxnews.com";
+
+//BEGIN EDITABLE SECTION
+
+//OPTIONAL PAGE VARIABLES
+//ACTION SETTINGS
+hbx.fv="";//FORM VALIDATION MINIMUM ELEMENTS OR SUBMIT FUNCTION NAME
+hbx.lt="auto";//LINK TRACKING
+hbx.dlf="n";//DOWNLOAD FILTER
+hbx.dft="n";//DOWNLOAD FILE NAMING
+hbx.elf="n";//EXIT LINK FILTER
+
+//SEGMENTS AND FUNNELS
+hbx.seg=this_segment;//VISITOR SEGMENTATION
+
+//CONFIGURATION VARIABLES
+hbx.acct="DM550608D8WV01EN3;DM520329A1SZ95EN3";//ACCOUNT NUMBER(S)
+hbx.pndef="title";//DEFAULT PAGE NAME
+hbx.ctdef="full";//DEFAULT CONTENT CATEGORY
+
+hbx.pn=_hbxStrip("Sports");//PAGE NAME(S)
+hbx.mlc="/news/sports/front;/home/newssectionfront";//MULTI-LEVEL CONTENT CATEGORY
+
+//CUSTOM VARIABLES	
+var cv=_hbEvent("cv"); 
+cv.c9="Sports | Sports"; 
+
+//END EDITABLE SECTION
+</script><script language="javascript1.1" defer src="/web/20051228100307js_/http://www.foxnews.com/js/hbx.js"></script>
+<!--END WEBSIDESTORY CODE-->
+
+</head>
+
+<body bgcolor="#000099" marginwidth=0 marginheight=0 topmargin=0 leftmargin=0 onLoad="loader('search',-1);">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://foxsports.foxnews.com/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "28";
+var displayMonth = "Dec";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://foxsports.foxnews.com/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20051228100307" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Nov
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 10:03:07 Dec 28, 2005">DEC</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20060129210630/http://foxsports.foxnews.com/" title="29 Jan 2006"><strong>JAN</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20051227101450/http://foxsports.foxnews.com/" title="10:14:50 Dec 27, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 10:03:07 Dec 28, 2005">28</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20051230025852/http://foxsports.foxnews.com/" title="2:58:52 Dec 30, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2004
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 10:03:07 Dec 28, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20070101045825/http://foxsports.foxnews.com/" title="1 Jan 2007"><strong>2007</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20051228100307*/http://foxsports.foxnews.com/" title="See a list of every capture for this URL">153 captures</a>
+           <div class="r" title="Timespan for captures of this URL">6 Dec 05 - 15 Sep 14</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:11:00000000000d_2006:-1:df5e44841632_2007:-1:624211020132_2008:-1:001110001010_2009:-1:210000010000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000001000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+<table border=0 cellpadding=0 cellspacing=0 width=770>
+	
+	<tr><td colspan=2 align="center" style="padding:5px 0px 5px 0px;"><div id="topAd" style="height:90px;overflow:hidden;"><SCRIPT LANGUAGE="JavaScript">OAS_AD('Top');</SCRIPT></div></td></tr>
+	
+    <tr><td colspan=2>
+	<div id="nav" style="background-color:#990000;"><script language="JavaScript">topNav();</script></div>
+	<div id="logo"><a href="/web/20051228100307/http://www.foxnews.com/index.html"><img src="/web/20051228100307im_/http://www.foxnews.com/images/headers/fnc_logo05.gif" width=90 height=75 border=0></a></div>
+	<div id="header">
+		<div style="width:680px;">
+			<div id="headImage" style="background-image:url(/web/20051228100307im_/http://www.foxnews.com/images/headers/sec_id_sports.jpg);">
+				<table cellpadding=0 cellspacing=0 border=0 width=370>
+					<tr>
+					<td valign="bottom">
+					<table cellpadding=0 cellspacing=0 border=0 width=250>
+						<form method="get" name="searchForm" action="/web/20051228100307/http://search.foxnews.com/info.foxnws/redirs_all.htm" onSubmit="return searchSub(document.searchForm);">
+							<input type="hidden" name="pgtarg" value="wbsdogpile">
+							<input type="hidden" name="qcat" value="web">
+							<input type="hidden" name="fs" value="">
+							<tr>
+							<td bgcolor="#000000" style="font-size:11px;color:white;padding:3px 5px 3px 5px;"><b>SEARCH</b></td>
+							<td bgcolor="#000000" align="center"><input type="text" size="15" name="qkw" maxlength="52" value="" class="searchInput" style="width:170px;"></td>
+							<td bgcolor="#000000" style="padding:3px 4px 3px 4px;"><input type="submit" value="GO" class="goBut"></td>
+							</tr>
+						</form>
+					</table>
+					</td>
+					<!-- SPONSORSHIP AREA HERE -->
+          <td align="right" class="cap"><div style="width:90px;height:75px;"><script language="JavaScript">OAS_AD('Top3');</script></div></td>
+					</tr>
+				</table>
+			</div>
+			<div style="width:310px;height:75px;float:right;overflow:hidden;"><script language="JavaScript">document.write(flashBanner());</script></div>
+		</div>
+	</div>
+	</td></tr>
+	
+	
+	 
+	
+  <!-- =============== FS start: FOX SPORTS SCORESTRIP =============== -->
+  <tr>
+    <td colspan="2"><div id="hide1"><script language="JavaScript1.2" src="/web/20051228100307js_/http://foxsports.foxnews.com/widget/partners/scorestrip?categoryId=0" type=text/javascript></script></div></td>
+  </tr>
+  <tr>
+    <td colspan="2"><script language="JavaScript1.2" src="/web/20051228100307js_/http://foxsports.foxnews.com/partnerNav?categoryId=0&amp;partner=foxnews" type="text/javascript"></script></td>
+  </tr>
+  <tr height="5">
+    <td colspan="2"></td>
+  </tr>
+  <style>
+  .nav a:link, .nav a:visited {text-transform:uppercase; font-size:11px; font-family:arial; font-weight:bold; text-decoration: none; color:#fff; padding:1px 0px 1px 0px;}
+  #navOn {background-color:#fff;  border-bottom:0px solid #fff;}
+  .sectionFrontNav, .featureNav {
+  width:770px; border-bottom:1px solid #996a00; padding:4px 0px 4px 0px; font-weight:bold; font-family:arial; font-size:11px; color:#fff; background-color:#eee;
+  text-align: left;
+  }
+  .sectionFrontNav a:link, .sectionFrontNav a:visited, .featureNav a:link, .featureNav a:visited {padding:0px 3px 0px 3px;font-weight:bold;font-family:arial; font-size:11px;color:#fff;text-decoration:none;}
+  .sectionFrontNav a:hover, .sectionFrontNavOn a:link, .sectionFrontNavOn a:visited {color:#fff; background-color:#ccc;}
+  
+  td.navEl {border-bottom:0px solid #996a00; border-right:0px solid #a58401; border-left:0px solid #fc0; height:26px;  color:#fff; font-family:arial; font-size:11px; font-weight:bold;}
+  td.navElOn, td.navEl2On {border-right:0px solid #a58401; border-left:0px solid #eee; border-bottom:0px solid #eee; height:26px; background-color:#990000; color:#fff; font-family:arial; font-size:11px; font-weight:bold;}
+  td.navElOnHome {border-right:0px solid #a58401; border-left:0px solid #fff; border-bottom:0px solid #fff; height:26px; background-color:#990000; color:#fff; font-family:arial; font-size:11px; font-weight:bold;}
+  td.navElOnOver {border-right:0px solid #a58401; border-left:0px solid #eee; border-bottom:0px solid #996a00; background-color:#990000; height:26px; color:#fff; font-family:arial; font-size:11px; font-weight:bold;}
+  td.navElOver {border-right:0px solid #a58401; border-left:0px solid #eee; border-bottom:0px solid #eee; background-color:#990000; height:26px; color:#fff; font-family:arial; font-size:11px; font-weight:bold;}
+
+  td.navElOnOver a:link, td.navElOn a:link, td.navElOver a:link, td.navEl a:link, td.navElOnHome a:link {
+  color:#fff; font-size:11px; font-weight:bold; width:100%; padding-top:7px; padding-bottom:6px; display:block;
+  }
+  td.navElOnOver a:visited, td.navElOn a:visited, td.navElOver a:visited, , td.navEl a:visited, td.navElOnHome a:visited {
+  color:#fff; font-size:11px; font-weight:bold; width:100%; padding-top:7px; padding-bottom:6px; display:block;
+  }  
+  td.navElOnOver a:hover, td.navElOn a:hover, td.navElOver a:hover, td.navEl a:hover, td.navElOnHome a:hover {
+  color:#fc0; font-size:11px; font-weight:bold; width:100%; padding-top:7px; padding-bottom:6px; display:block;
+  }
+  div.dd1, div.dd2 {position:absolute; visibility:hidden; padding:3px; width:120px; background-color:#fff;}
+  div.dd1 {border-right:1px solid #000; border-left:1px solid #000; border-bottom:1px solid #000; border-top:1px solid #000; z-Index:1000;}
+  div.dd2 {border: 1px solid #000; z-Index:1001;}
+  div.dd, div.ddHigh {font-size:11px; font-family:arial; color:#000; font-weight:bold; width:120px; padding:1px; z-Index:1000;}
+  div.ddHigh {background-color:#ccc; color:#009;}
+  
+  /* this is for the orange fantasy tab background */
+  td.navEl2 {border-bottom:0px solid #996a00; border-right:0px solid #a58401; border-left:0px solid #fc0; height:26px;  color:#fff; font-family:arial; font-size:11px; font-weight:bold; background-image: url(); background-color:#990000;}
+  td.navEl2 a:visited, td.navEl2 a:link, td.navEl2 a:hover {color:#fff; width:100%; padding-top:7px; padding-bottom:6px; display:block;}
+  </style>
+  <!-- =============== FS start: BREAKING NEWS =============== -->
+  <tr height="5">
+    <td colspan="2">
+      <style>
+      .bn {background-image: url(/web/20051228100307im_/http://foxsports.foxnews.com/fe/img/breaking_news_bg.gif);background-color:#c00;}
+      .bn, .bn a, .bn td {color:#eee;font: 11px arial;}
+      .bn .hdr1 {font : bold 17px verdana;}
+      .bn .hdr2, .bn .hdr2 a:link, .bn .hdr2 a:visited, .bn .hdr2 a:active {font: bold 15px arial; color:#fff;}
+      .bn .hdr2 a:hover, .bn td a:hover {color:#ffa;}
+      </style>
+      <span id="alertContentArea">
+        <!--this comment needed to prevent a bug-->
+
+      </span>
+    </td>
+  </tr>
+  <!-- =============== FS end: BREAKING NEWS =============== -->
+  <!-- =============== FS end: FOX SPORTS SCORESTRIP =============== -->
+	<tr>
+	<td valign="top" style="padding:5px 5px 0px 5px;">
+	<!-- MAIN CONTENT AREA HERE -->
+  <!-- =============== FS start: PAGEWIDE STYLES =============== -->
+  <style>
+  div.spacer10 {height:10px;}
+  </style>
+  <!-- =============== FS end: PAGEWIDE STYLES =============== -->
+  <!-- =============== FS start: CENTERPIECE =============== -->
+  <style>
+  .cpHeadline {
+    font-size:32px;
+    font-weight:bold;
+    font-family:Arial;
+    text-transform:uppercase;
+    color:#000000;
+  }
+  .cpHeadline a:link, .cpHeadline a:visited { color:#000000; text-decoration:none;}
+  .cpHeadline a:hover { color:#CC0000; text-decoration:underline; }
+  #cp {
+    font-size: 11px;
+    font-family:Arial;
+    color:#000000;
+    padding:0px 0px 0px 0px;
+    background-color: #ffffff;
+  }
+  #cp a:link, #cp a:visited { color:#000000; }
+  #cp a:hover { color:#CC0000; }
+  #cp .h1 {font-size:32px;  font-weight:bold; font-family: verdana; text-transform:uppercase;}
+  #cp .h2 {font-size:13px;  font-weight:bold; font-family: verdana; padding-bottom:3px;}
+  #cp .img {float:left; padding:0px 5px 10px 0px;}
+  </style>
+  <div style="padding-bottom:10px;">
+    <div style="height:235px; border:1px solid #000000; background-color: #ffffff; width:450;">
+      <table width="448" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="5">&nbsp;</td>
+          <td width="438">
+            <span id="cpContentArea" style="width:438;">
+              
+
+
+
+
+<div id="cp">
+
+  <script language="JavaScript1.2" type="text/javascript">
+    document.write('<div class="cpHeadline"><a href="/web/20051228100307/http://msn.foxsports.com/nba/story/5200380">Time to move on </a></div>');
+  </script>
+
+  <div class="img">
+
+   <a href="/web/20051228100307/http://msn.foxsports.com/nba/story/5200380"><img src="/web/20051228100307im_/http://msn.foxsports.com/id/5200382_18_1.jpg" width="255" height="180" alt="" style="border:1px solid black;"></a>
+
+  </div>
+  <div>
+  With Ron Artest's future in Indiana <a href="/web/20051228100307/http://foxsports.foxnews.com/nba/story/5198816">still up in the air</a>, the Pacers have struggled to win games. After watching <a href="/web/20051228100307/http://foxsports.foxnews.com/nba/story/5200150">Tuesday night's loss to the Spurs</a>, <b>Charley Rosen</b> says if Indiana wants to become a contender, it needs to get rid of Artest as soon as possible.
+  <a href="/web/20051228100307/http://msn.foxsports.com/nba/story/5200380">Full Story ...</a>
+  <p></p>
+
+         &#8226;&nbsp;<a href="/web/20051228100307/http://msn.foxsports.com/nba/story/5200150">Ginobili rallies Spurs past Pacers</a>
+        <br>&#8226;&nbsp;<a href="/web/20051228100307/http://msn.foxsports.com/nba/pgStory?contentId=5199956">PHOTOS: NBA hot shots</a>
+      
+<br>&#8226;&nbsp;<a href="/web/20051228100307/http://msn.foxsports.com/nba/story/5197180">KAHN: 10 things we learned</a>
+      
+
+  </div>
+</div>
+<br clear="all" />
+
+            </span>
+          </td>
+          <td width="5">&nbsp;</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <!-- =============== FS end: CENTERPIECE =============== -->
+  <!-- =============== FS start: FEATURES =============== -->
+  <style>
+  #fts {padding:0px;}
+  .ftsImg {padding:0px 0px 5px 0px;}
+  .ftsCom {border-right:1px solid #ccc;	padding:2px; border-bottom-width:0px; font-size: 11px;}
+  .ftsCom a:link, .ftsCom a:visited  {font-size: 11px; color:#000000;}
+  .ftsCom a:hover {font-size: 11px; color:#CC0000;}
+  </style>
+	<table cellpadding=0 cellspacing=0 border=0 width=450>
+    <tr><td colspan=2 class="tab450"><div class="name">TODAY'S FEATURES</div></td></tr>
+		<tr>
+      <td style="padding-bottom:10px;">
+        <div style="border:1px solid black; background-color:white; width:450px;">
+          <span id="featuresContentArea">
+            
+
+
+
+
+
+
+  <table colspan="4" width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr valign="top">
+
+              <td class="ftsCom" colspan="1">
+                <div>
+                  
+                    <div class="ftsImg">
+                      <a href="/web/20051228100307/http://foxsports.foxnews.com/nfl/story/5199726">
+                        <img src="/web/20051228100307im_/http://foxsports.foxnews.com/id/5199734_4_1.jpg" width="105" alt="" border="0" />
+                      </a>
+                    </div>
+                  
+                  <a href="/web/20051228100307/http://foxsports.foxnews.com/nfl/story/5199726"><b>Follow the leaders</b></a>
+                  <br/>
+                  There's just one week left in the NFL season. That means there's just one week left for players to rack up individual milestones. See where your favorite player stands.
+                </div>
+              </td>
+
+              <td class="ftsCom" colspan="1">
+                <div>
+                  
+                    <div class="ftsImg">
+                      <a href="/web/20051228100307/http://foxsports.foxnews.com/other/story/3228170">
+                        <img src="/web/20051228100307im_/http://foxsports.foxnews.com/id/5170410_4_1.jpg" width="105" alt="" border="0" />
+                      </a>
+                    </div>
+                  
+                  <a href="/web/20051228100307/http://foxsports.foxnews.com/other/story/3228170"><b>Goals of the Year</b></a>
+                  <br/>
+                  Vote for the best goal of 2005 and make sure to watch the results on the last Fox Sports World Report of the year.
+                </div>
+              </td>
+
+              <td class="ftsCom" colspan="1">
+                <div>
+                  
+                    <div class="ftsImg">
+                      <a href="/web/20051228100307/http://foxsports.foxnews.com/nfl/story/5200424">
+                        <img src="/web/20051228100307im_/http://foxsports.foxnews.com/id/5200674_4_1.jpg" width="105" alt="" border="0" />
+                      </a>
+                    </div>
+                  
+                  <a href="/web/20051228100307/http://foxsports.foxnews.com/nfl/story/5200424"><b>Power rankings </b></a>
+                  <br/>
+                  With four straight December victories, the Redskins are fighting for a playoff spot. They have also vaulted into the top five of our <b>power rankings</b>.
+                </div>
+              </td>
+
+              <td class="ftsCom" colspan="1">
+                <div>
+                  
+                    <div class="ftsImg">
+                      <a href="/web/20051228100307/http://foxsports.foxnews.com/other/story/5199962">
+                        <img src="/web/20051228100307im_/http://foxsports.foxnews.com/id/5200300_4_1.jpg" width="105" alt="" border="0" />
+                      </a>
+                    </div>
+                  
+                  <a href="/web/20051228100307/http://foxsports.foxnews.com/other/story/5199962"><b>FUNHOUSE: Wednesday Buffet</b></a>
+                  <br/>
+                  <b>Peter Schrager</b>'s weekly off-the-cuff observations of sports and pop culture begins with the best bowl-game gifts and ends with a surprise choice by Eugene Levy.
+                </div>
+              </td>
+
+    </tr>
+  </table>
+
+
+
+          </span>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <!-- =============== FS end: FEATURES =============== -->
+  <!-- =============== FS start: NFL FANTASY FOCUS =============== -->
+  <style>
+  #fan {width:448px;}
+  #fanWidContent {font-size: 11px; color:#000000;}
+  #fanWidContent a:link, #fanWidContent a:visited  {font-size: 11px; color:#000000;}
+  #fanWidContent a:hover {font-size: 11px; color:#CC0000;}
+  .hdr {display:none;}
+  span table.dataTableStats tr.bgFtr td {background-color:#eeeeee;  border-bottom: 1px solid #dddddd;}
+  span table.dataTableStats tr td {background-color:#ffffff;  border-bottom: 1px solid #dddddd;}
+  </style>
+  <script>
+    var fanid = "";
+  </script>
+	<table cellpadding=0 cellspacing=0 border=0 width=450>
+    <tr><td class="tab450"><div class="name">NFL FANTASY FOCUS</div></td></tr>
+		<tr>
+      <td style="padding-bottom:10px;">
+        <div style="border:1px solid black; background-color:white;">
+          <span id="fantasyContentArea">
+            
+
+
+
+
+
+
+
+
+ <script>
+ var sectionName = "NFL FANTASY FOCUS";
+ </script>
+ 
+ <script>
+   if ((fanid.length >0) && (typeof(nflDefaultLeague)!= "undefined") && (uid.length > 0)) {
+    if (teamsInfo && teamsInfo.length > 0) {
+      var sectionName = "FANTASY TEAM CENTER";
+			var nflDefaultLeagueIndex = 0;
+			leagueId = nflDefaultLeague;
+			//find teamId of default league (if exists)
+			for(var i=0; i < teamsInfo.length; i++){
+				if(teamsInfo[i][4] == leagueId){
+					teamId = teamsInfo[i][0];
+					teamLogoUrl = teamsInfo[i][3];
+					nflDefaultLeagueIndex = i;
+				}
+			}
+			var fantasyNFLHomeLoggedinJsPath = '/web/20051228100307/http://msnfantasy.foxsports.com' + '/nugget/100176_' + leagueId + '|||' + fanid;
+			document.write('<scr' + 'ipt language="JavaScript1.2" src="' + fantasyNFLHomeLoggedinJsPath + '" type="text/javascript"></scr' + 'ipt>');
+		}
+  }
+
+function displayFantasyResults() {
+   elContent = '';
+   elStoryContent = '';
+   if (fantasyTeamRecordNFLHome.length > 0) {
+     pLength = fantasyTeamRecordNFLHome.length;
+   } else {
+     pLength = fantasyTeamRecordNFLHome.length;
+   }
+   if (fantasyMessagesNFLHome.length > 1) {
+     messagesLength = 1;
+   } else {
+     messagesLength = fantasyMessagesNFLHome.length;
+   }
+   for (var i = 0; i < pLength; i++) {
+     if (teamId == fantasyTeamRecordNFLHome[i][0]) {
+       elContent += '<b>Team: </b>' + ff_dt(teamsInfo[nflDefaultLeagueIndex][0]) + '<br>';
+       elContent += '<b>League: </b>' + ff_dg(teamsInfo[nflDefaultLeagueIndex][4]) + '<br>';
+       elContent += '<br>';
+       elContent += '<b>Rank: </b>' + fantasyTeamRecordNFLHome[i][1] + '<br>';
+       elContent += '<b>Record: </b>' + fantasyTeamRecordNFLHome[i][2] + '-' + fantasyTeamRecordNFLHome[i][3] + '-' + fantasyTeamRecordNFLHome[i][4] + '<br>';
+       elContent += '<b>Total Points: </b>' + fantasyTeamRecordNFLHome[i][5];
+       elContent += '<div class="spacer10"></div>';
+     }
+   }
+
+   var rExp = /\^/gi;
+   for (var i = 0; i < messagesLength; i++) {
+     if (fantasyMessagesNFLHome[i][2]=='')
+     {
+       elStoryContent += '<div style="padding:10px; margin:6px 6px 6px 6px; float:left; border:1px solid #ccc; color:#ccc; text-align=center; font:10px; height:68px; width:68px;">No Image<br>Available</div>'
+       elStoryContent += '<a href="/web/20051228100307/http://msnfantasy.foxsports.com/nfl/commish/story/read?leagueId='+leagueId+'&messageId='+fantasyMessagesNFLHome[i][3]+'">';
+     }
+     else
+     {
+       elStoryContent += '<a href="/web/20051228100307/http://msnfantasy.foxsports.com/nfl/commish/story/read?leagueId='+leagueId+'&messageId='+fantasyMessagesNFLHome[i][3]+'">';
+       elStoryContent += '<img src="'+fantasyMessagesNFLHome[i][2]+'" width="105" alt="" border="0" align="left" hspace="5"/>'
+     }
+     elStoryContent += '<b>' + fantasyMessagesNFLHome[i][0].replace(rExp,'"') + '</b></a><br>';
+     //elStoryContent += '<b>Posted by:</b> ' + ff_dt(fantasyMessagesNFLHome[i][4]) + '<br>';
+     elStoryContent += fantasyMessagesNFLHome[i][6].replace(rExp,'"');
+   }
+   el = document.getElementById("playerData");
+   el.innerHTML = elContent
+
+   if (elStoryContent != '')
+   {
+     el = document.getElementById("fanWidContent");
+     el.innerHTML = elStoryContent
+   }
+ }
+
+ function displayFantasyTop5Results() {
+   top5Content = '';
+   top5Content += '<table width="100%" border="0" cellspacing="1" cellpadding="2" class="dataTableStats">';
+   top5Content += '<tr class="bgHdr1">';
+   top5Content += '<td colspan="6">Top 5 Available Players</td>';
+   top5Content += '</tr>';
+   top5Content += '<tr class="bgHdr2" align="center">';
+   top5Content += '<td>Rk</td>';
+   top5Content += '<td align="left">Player</td>';
+   top5Content += '<td>Action</td>';
+   top5Content += '<td>FP/G</td>';
+   top5Content += '<td>FP</td>';
+   top5Content += '<td>Status</td>';
+   top5Content += '</tr>';
+   if (fantasyTop5AvailableNFLHome.length > 5) {
+     top5Length = 5;
+   } else {
+     top5Length = fantasyTop5AvailableNFLHome.length;
+   }
+   for (var i = 0; i < top5Length; i++) {
+     top5Content += '<tr class="bgC" align="center">';
+     top5Content += '<td>' + fantasyTop5AvailableNFLHome[i][0] + '</td>';
+     top5Content += '<td align="left">' + fantasyTop5AvailableNFLHome[i][1] + ' ' + fantasyTop5AvailableNFLHome[i][2] + '</td>';
+     top5Content += '<td>' + fantasyTop5AvailableNFLHome[i][5].replace(/nfl/gi, '/web/20051228100307/http://msnfantasy.foxsports.com/nfl') + '</td>';
+     top5Content += '<td>' + fantasyTop5AvailableNFLHome[i][3].toFixed(2) + '</td>';
+     top5Content += '<td>' + fantasyTop5AvailableNFLHome[i][4].toFixed(2) + '</td>';
+     top5Content += '<td>' + fantasyTop5AvailableNFLHome[i][6] + '</td>';
+     top5Content += '</tr>';
+
+   }
+   top5Content += '<tr class="bgFtr">';
+   top5Content += '<td colspan="6"><a href="/web/20051228100307/http://msnfantasy.foxsports.com/nfl/commish/players/home?leagueId='+leagueId+'">View All</a></td>';
+   top5Content += '</tr>';
+   top5Content += '</table>';
+   top5 = document.getElementById("playerData2");
+   top5.innerHTML = top5Content
+ }
+</script>
+
+
+
+<style>
+/********************************* Data Table Stats ****************************************/
+.dataTableStats {background-color:#fff;}
+.dataTableStats td {font-size:10px; font-family:verdana, arial, helvetica, sans-serif;}
+/*
+.dataTableStats td a {text-decoration:none;}
+.dataTableStats td a:hover {text-decoration:underline;}
+*/
+.dataTableStats tr.bgHdr1 td {background-color:#005A9C; font-weight:bold; color:#fff; text-transform: none;}
+.dataTableStats tr.bgHdr1 td a:link, .dataTableStats tr.bgHdr1 td a:visited {color:#fc0; text-decoration:none;}
+.dataTableStats tr.bgHdr1 td a:hover {color:#ffa; text-decoration:underline;}
+.dataTableStats tr.bgHdr1TeamLogo td {background-color:#fff; font-weight:bold;}
+.dataTableStats tr.bgHdr2 td {background-color:#d3e5f2; color:#000; font-weight:normal;}
+.dataTableStats tr.bgHdr2 td.bgSort {background-color:#a2c4dd; font-we ight:bold; color:#000;}
+.dataTableStats tr.bgHdr2 td.bgSort a:link, .dataTableStats tr.bgHdr2 td.bgSort a:visited {color:#000; text-decoration:none}
+.dataTableStats tr.bgHdr3 td {background-color:#eee;}
+.dataTableStats tr.bgC td {background-color:#fff; border-bottom: 1px solid #eee;}
+.dataTableStats tr.bgC2 td, .dataTableStats tr.bgC td.bgC2 {background-color:#eee;}
+.dataTableStats tr.bgInactive td {background-color:#fff;color:#999;}
+.dataTableStats tr.bgInactive td a:link {color:#999;}
+.dataTableStats tr.bgC td.bgSort, .dataTableStats tr.bgHigh td.bgSort {background-color:#ffc} /* eef7ff */
+.dataTableStats tr.bgC td.bgTeam, .dataTableStats tr.bgHigh td.bgTeam {background-color:#eef7ff; text-align:left} /* eef7ff */
+.dataTableStats tr.bgC td.bgPlayer, .dataTableStats tr.bgHigh td.bgPlayer {background-color:#eef7ff; text-align:left} /* eef7ff */
+.dataTableStats tr.bgC td.bgForm, .dataTableStats tr.bgHigh td.bgForm {background-color:#eef7ff; text-align:center} /* eef7ff */
+.dataTableStats tr.bgHigh td, .dataTableStats tr.bgC td.bgHigh {background-color:#f6f6f6;  border-bottom: 1px solid #eee;}
+</style>
+<div class="coml">
+  <div class="hdr">
+    <script>
+      document.write(sectionName);
+      </script>
+      </div>
+      <div id="fan">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr valign="top" style="padding:5px; background-color:#ffffff;">
+            <td width="49%">
+              <div id="playerData">
+                <a href="/web/20051228100307/http://msnfantasy.foxsports.com/fantasy"><img src="/web/20051228100307/http://msn.foxsports.com/id/3669358" align="center" width="200" height="100" alt="" border="0" /></a>
+                <div class="spacer10"></div>
+              </div>
+            </td>
+            <td width="1%" style="border-right:1px; solid #D8D8D8;"></td>
+            <td width="50%">
+              <div id="fanWidContent">
+              
+                <a href="/fantasy/story/5200330">
+                  <img src="/id/5200114_4_1.jpg" width="105" alt="" border="0" align="left" hspace="5"/>
+                  </a>
+                  
+                  <b><a href="/fantasy/story/5200330">Playoff primer</a></b>
+                  <br>
+                    Since playoff-bound starters may sit, writes <b>Roger Rotter</b>, claim hot free agents who have favorable matchups.
+                  </td>
+                  </div>
+                </tr>
+              </table>
+
+              <div id="playerData2">
+                
+                  <div><table width="100%" border="0" cellspacing="1" cellpadding="2" class="dataTableStats"><tr class="bgHdr1"><td colspan="5">Player Predictions</td></tr><tr class="bgHdr2" align="center"><td>Rk</td><td align="left">Player</td><td>Opponent</td><td>Time (ET)</td><td>Proj. FP</td></tr><tr valgin="top"><td align="center">1</td><td align="left"><a href="/nfl/playerFantasyNews?statsId=3937">T. Barber</a> (NYG - RB)</td><td>@Oak</td><td><a href="/nfl/gameTrax?gameId=20051231013">8:00 p.m.</a></td><td align="right">23</td></tr><tr valgin="top"><td align="center">2</td><td align="left"><a href="/nfl/playerFantasyNews?statsId=5339">B. Volek</a> (TEN - QB)</td><td>@Jac</td><td><a href="/nfl/gameTrax?gameId=20060101030">4:05 p.m.</a></td><td align="right">21</td></tr><tr valgin="top"><td align="center">3</td><td align="left"><a href="/nfl/playerFantasyNews?statsId=6363">L. Johnson</a> (KC - RB)</td><td>Cin</td><td><a href="/nfl/gameTrax?gameId=20060101012">1:00 p.m.</a></td><td align="right">21</td></tr><tr valgin="top"><td align="center">4</td><td align="left"><a href="/nfl/playerFantasyNews?statsId=5228">T. Brady</a> (NE - QB)</td><td>Mia</td><td><a href="/nfl/gameTrax?gameId=20060101017">1:00 p.m.</a></td><td align="right">21</td></tr><tr valgin="top"><td align="center">5</td><td align="left"><a href="/nfl/playerFantasyNews?statsId=6355">K. Boller</a> (BAL - QB)</td><td>@Cle</td><td><a href="/nfl/gameTrax?gameId=20060101005">1:00 p.m.</a></td><td align="right">20</td></tr><tr class="bgFtr"><td colspan="5"><a href="/fantasy/weeklyProjections">View All</a></td></tr></table></div>
+                    
+                  </div>
+                </div>
+                <div class="fade"></div>
+              </div>
+
+  <script>
+   if ((fanid.length >0) && (typeof(nflDefaultLeague)!= "undefined") && (uid.length > 0)) {
+     if (teamsInfo && teamsInfo.length > 0) {
+		   displayFantasyResults();
+       displayFantasyTop5Results();
+     }
+	 }
+  </script>
+
+
+          </span>
+        </div>
+      </td>
+    </tr>
+	</table>
+  <style>
+  /********************************* Data Table Stats ****************************************/
+  span table.dataTableStats {background-color:#fff;}
+  span table.dataTableStats td {font-size:10px; font-family:verdana, arial, helvetica, sans-serif;}
+  span table.dataTableStats tr.bgHdr1 td {background-color:#005A9C; font-weight:bold; color:#fff; text-transform: none;}
+  span table.dataTableStats tr.bgHdr1 td a:link, span table.dataTableStats tr.bgHdr1 td a:visited {color:#fc0; text-decoration:none;}
+  span table.dataTableStats tr.bgHdr1 td a:hover {color:#ffa; text-decoration:underline;}
+  span table.dataTableStats tr.bgHdr1TeamLogo td {background-color:#fff; font-weight:bold;}
+  span table.dataTableStats tr.bgHdr2 td {background-color:#d3e5f2; color:#000; font-weight:normal;}
+  span table.dataTableStats tr.bgHdr2 td.bgSort {background-color:#a2c4dd; font-we ight:bold; color:#000;}
+  span table.dataTableStats tr.bgHdr2 td.bgSort a:link, span table.dataTableStats tr.bgHdr2 td.bgSort a:visited {color:#000; text-decoration:none}
+  span table.dataTableStats tr.bgHdr3 td {background-color:#eee;}
+  span table.dataTableStats tr.bgC td {background-color:#fff; border-bottom: 1px solid #eee;}
+  span table.dataTableStats tr.bgC2 td, span table.dataTableStats tr.bgC td.bgC2 {background-color:#eee;}
+  span table.dataTableStats tr.bgInactive td {background-color:#fff;color:#999;}
+  span table.dataTableStats tr.bgInactive td a:link {color:#999;}
+  span table.dataTableStats tr.bgC td.bgSort, span table.dataTableStats tr.bgHigh td.bgSort {background-color:#ffc} /* eef7ff */
+  span table.dataTableStats tr.bgC td.bgTeam, span table.dataTableStats tr.bgHigh td.bgTeam {background-color:#eef7ff; text-align:left} /* eef7ff */
+  span table.dataTableStats tr.bgC td.bgPlayer, span table.dataTableStats tr.bgHigh td.bgPlayer {background-color:#eef7ff; text-align:left} /* eef7ff */
+  span table.dataTableStats tr.bgC td.bgForm, span table.dataTableStats tr.bgHigh td.bgForm {background-color:#eef7ff; text-align:center} /* eef7ff */
+  span table.dataTableStats tr.bgHigh td, span table.dataTableStats tr.bgC td.bgHigh {background-color:#f6f6f6;  border-bottom: 1px solid #eee;}
+  </style>
+  <!-- =============== FS end: NFL FANTASY FOCUS =============== -->
+  <!-- =============== FS start: TV LISTINGS =============== -->
+  <style>
+  #tv td {color:#000; font-size: 11px;}
+  #tv .bgBdr {background-color:#ffffff;}
+  #tv .bgC {background-color:#ffffff;}
+  .comlTan {width:100%; background-color:#ffffff; font-size: 11px;}
+  .comHdr {font-size:15px; font-weight:bold;}
+  .comHdr a:link, .comHdr a:visited, .fadeTan a:link, .fadeTan a:visited, #tv a:link, #tv a:visited  {color:#000000;}
+  .comHdr a:hover, .fadeTan a:hover, #tv a:hover {color:#CC0000;}
+  .fadeTan {background-image: url(); background-color:#ffffff; height:17px;}
+  .hdrTan {display:none;}
+  .comHdrG {display:none;}
+  .formElement, .pulldown {font-size:10px; font-family:verdana, arial, helvetica, sans-serif;}
+  </style>
+  <script>
+    //this var is defined and used as a flag for the 2 tv listings pulldown menus
+  	var isFOXNews = true;
+  </script>
+	<table cellpadding=0 cellspacing=0 border=0 width=450>
+    <tr><td class="tab450"><div class="name">FOX SPORTS TV LISTINGS</div></td></tr>
+		<tr>
+      <td style="padding-bottom:10px;">
+        <div style="border:1px solid black; background-color:white;">
+          <span id="tvContentArea">
+            
+
+
+
+
+
+
+<div class="comlTan">
+  <div class="hdrTan">
+    <div style="position:absolute; top:0px; left:133px; height:26px; background-image: url(/fe/img/SectionFront/hdr_bg_dark_gray.gif); width:315;">
+    </div>
+    <div class="comHdrG" style="position:absolute; top:5px; left:160px;">
+  		<!-- home tv links -->
+Email the Show: 
+<a href="/story/2597614" class="g">Best Damn Sports Show</a>
+    </div>
+    TV Listings
+  </div>
+  <div id="tv">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr valign="top">
+    <td width="50%" style="padding:5px;">
+
+      <div class="comHdr" style="padding:0px 0px 5px 0px;">
+<a href="/web/20051228100307/http://msn.foxsports.com/bestdamn"><a href="/web/20051228100307/http://msn.foxsports.com/bestdamn">Tonight on...</a></a>
+
+      </div>
+
+      <div style="padding:0px 5px 10px 0px; float:left;">
+
+      <a href="/web/20051228100307/http://msn.foxsports.com/bestdamn"><img src="/id/2548602_36_540.gif" alt="" width="105" height="105" vspace="3" border="0"></a>
+
+      </div>
+      <id>Rapper/actor <b>50 Cent</b> and "Stacked" star <b>Pamela Anderson</b>.</id>
+
+			<div align="center" style="padding: 0px 0px 0px 0px; clear: both;">
+				<script>
+  function pulldownRedirect(url) {
+    if (typeof(isFOXNews) == "undefined") {
+      window.location.href = url;
+    }
+    else if(url != "javascript:void(0);") {
+      if (url.indexOf("http") >= 0) {
+        window.open(url, 'newwindow');
+      }
+      else {
+        url = "/web/20051228100307/http://msn.foxsports.com" + url;
+        window.open(url, 'newwindow');
+      }
+    }
+  }
+</script>
+<form id="tvListings" name="tvmenu" class="formElement" style="display: inline;">
+<select name="url" onchange="javascript:pulldownRedirect(this.options[this.selectedIndex].value);" class="formElement">
+<option selected value="javascript:void(0);">-- FOX Shows</option>
+<option value="/nascaronfox">NASCAR on FOX</option>
+<option value="/mlbonfox">MLB on FOX</option>
+<option value="/nflonfox">NFL on FOX</option>
+<option value="javascript:void(0);">-- FSN Shows</option>
+<option value="/bestdamn">Best Damn Sports Show Period</option>
+<option value="/web/20051228100307/http://speedtv.com/nascartv/">NASCAR TV</option>
+<option value="/fsnaa">FSN Across America</option>
+<option value="/sportslist">The Sports List</option>
+<option value="/story/865313">Beyond The Glory</option>
+<option value="/story/865337">Sunday Night Fights</option>
+<option value="/fantasy">Ultimate Fantasy Football Show</option>
+<option value="/name/FS/Shows">All Shows</option>
+<option value="javascript:void(0);">-- More FOX Sports</option>
+<option value="/story/865321">Fox Sports Radio</option>
+</select> 
+</form>
+      </div>
+    </td>
+    <td width="2" bgcolor="#FFFFFF">
+    </td>
+    <td width="*" style="padding:5px;">
+      <div style="padding:3px 0px 3px 0px;">
+        <img src="/fe/img/SectionFront/fsn_thumb.gif" alt="" border="0">
+      </div>
+      Enter your zip code to get listings for your FSN Region.<br>
+      <div align="center" style="padding: 10px 0px 0px 0px; clear: both;">
+			  <script>
+
+				</script>
+        <FORM onsubmit="return validate5DigitZIP(this);" class="formElement" style="display: inline;" action="/tv/schedule" method="post">
+          <input type="hidden" name="sportCategoryId" value="0">
+          <input name="zipcode" type="text" size="5" maxlength="5">
+          <input type="submit" name="get_listings" value="Get Listings">
+        </form>
+      </div>
+      <p></p>
+      <div align="center" style="padding: 10px 0px 0px 0px; clear: both;">
+        <form id="regionalListings" name="regionalmenu" style="display: inline;">
+<select name="url" onchange="javascript:pulldownRedirect(this.options[this.selectedIndex].value);" class="formElement">
+<option selected>FSN Regions</option>
+<option value="/regional?categoryId=269">Arizona</option>
+<option value="/regional?categoryId=272">Detroit</option>
+<option value="/regional?categoryId=277">Midwest</option>
+<option value="/regional?categoryId=296">Minnesota</option>
+<option value="/regional?categoryId=298">North</option>
+<option value="/regional?categoryId=270">Northwest</option>
+<option value="/regional?categoryId=271">Pittsburgh</option>
+<option value="/regional?categoryId=276">Rocky Mountain</option>
+<option value="/regional?categoryId=273">South</option>
+<option value="/regional?categoryId=274">Southwest</option>
+<option value="/regional?categoryId=267">West/West2</option>
+<option value="/tv/schedule?regionCategoryId=284">Bay Area</option>
+<option value="/web/20051228100307/http://www.fsnchicago.com">Chicago</option>
+<option value="/tv/schedule?regionCategoryId=295">Florida</option>
+<option value="/web/20051228100307/http://www.fsnnewengland.com">New England</option>
+<option value="/tv/schedule?regionCategoryId=288">New York</option>
+<option value="/web/20051228100307/http://www.fsnohio.com">Ohio</option>
+</select>
+</form>
+      </div>
+    </td>
+    </tr>
+    </table>
+  </div>
+  <div class="fadeTan">
+    <div align="right" style="padding:0px;">
+    <a href="/other/story/1636002">FSN</a> |
+    <a href="/fcs">Fox College Sports</a> |
+    <a target="_blank" href="/other/story/920998">FSC</a> |
+    <a target="_blank" href="/web/20051228100307/http://www.speedtv.com">Speed</a> |
+    <a target="_blank" href="/web/20051228100307/http://www.fuel.tv">Fuel</a> |
+    <a target="_blank" href="/web/20051228100307/http://www.fox.com">FOX</a> |
+    <a target="_blank" href="/web/20051228100307/http://www.fxnetworks.com">FX</a> |
+    <a target="_blank" href="/web/20051228100307/http://www.foxnews.com">FOX News</a> |
+    <a href="/other/story/865321">Radio</a>
+    &nbsp;
+    </div>
+  </div>
+</div>
+
+          </span>
+        </div>
+      </td>
+    </tr>
+	</table>
+  <!-- =============== FS end: TV LISTINGS =============== -->
+  <!-- =============== FS start: LIFE AT THE BOTTOM =============== -->
+  <style>
+  #life {	padding:5px;}
+  </style>
+	<table cellpadding=0 cellspacing=0 border=0 width=450>
+    <tr><td class="tab450"><div class="name">LIFE AT THE BOTTOM</div></td></tr>
+		<tr>
+      <td>
+        <div style="border:1px solid black; background-color:white;">
+          <span id="lifeContentArea">
+            
+
+
+
+
+<div class="coml">
+  <div class="hdr"></div>
+  <div id="life">
+    <div class="comHdr">Larry Bird on Ron Artest:</div>
+    <div style="font:15px; padding:20px;">
+    "I think enough is enough. I think Ronnie will do fine but not here." <a href="/nba/story/5198816">Full story...</a>
+    </div>
+  </div>
+  <div class="fade"></div>
+</div>
+
+          </span>
+        </div>
+      </td>
+    </tr>
+	</table>
+  <!-- =============== FS end: LIFE AT THE BOTTOM =============== -->
+  <!-- =============== FoxNews start: FOOTER =============== -->
+	<table cellpadding=0 cellspacing=0 border=0 width=440>
+		<tr><td style="padding-top:10px;">
+		<table cellpadding=0 cellspacing=0 width=450>
+			<tr><td class="adHead"><div style="float:left;text-align:left;width:150px;">&nbsp;ADVERTISEMENTS</div> <div style="float:right;text-align:right;width:150px;"><a href="/web/20051228100307/http://foxnews.adsonar.com" target="_blank" style="color:#FFFFFF;font-weight:normal;">Advertise Here</a>&nbsp;</div></td></tr>
+			<tr><td><script type="text/javascript">adsonar_pid=256758;adsonar_ps=620667;adsonar_zw=450;adsonar_zh=120;adsonar_jv='ads.adsonar.com';</script><script language="JavaScript" src="/web/20051228100307/http://js.adsonar.com/js/adsonar.js"></script></td></tr>
+		</table>
+		</td></tr>
+		
+		<tr><td align="center" style="padding-top:10px;">
+		<table cellpadding=0 cellspacing=0 border=0 width=450 style="background-color:#000000;">
+			<form method="get" name="searchFormBot" action="/web/20051228100307/http://search.foxnews.com/info.foxnws/redirs_all.htm" onSubmit="return searchSub(document.searchFormBot);">
+				<input type="hidden" name="pgtarg" value="wbsdogpile">
+				<input type="hidden" name="qcat" value="web">
+				<tr>
+				<td style="font-size:11px;color:white;padding:3px 5px 3px 5px;"><b>SEARCH</b></td>
+				<td align="center"><input type="text" size="15" name="qkw" maxlength="52" value="" class="searchInput" style="width:350px;"></td>
+				<td style="padding:3px 5px 3px 5px;"><input type="submit" value="GO" class="goBut"></td>
+				</tr>
+			</form>
+		</table>
+		</td></tr>
+    <!-- =============== FS start: FS FOOTER  =============== -->
+		<tr><td align="center" class="botNav" style="padding-top:10px;">
+      <div>
+        <b>FOXSports.com:</b>
+        <a href="/web/20051228100307/http://msn.foxsports.com/name/Legal/privacyPolicy" target="_blank">PRIVACY POLICY</a> |
+        <a href="/web/20051228100307/http://msn.foxsports.com/name/Legal/termsOfUse" target="_blank">TERMS OF USE</a> |
+        <a href="/web/20051228100307/http://msn.foxsports.com/name/Press" target="_blank">PRESS</a> |
+        <a href="/web/20051228100307/http://msn.foxsports.com/feedback" target="_blank">FEEDBACK</a> |
+        <a href="/web/20051228100307/http://www.foxcareers.com" target="_blank">JOBS</a> |
+        <a href="/web/20051228100307/http://foxsports.razorgator.com" target="_blank">TICKETS</a> |
+        <a href="/web/20051228100307/http://www.newscorp.com" target="_blank">NEWS CORP.</a> |
+        <a href="/web/20051228100307/http://www.controlyourtv.org" target="_blank">CONTROLYOURTV.ORG</a> |
+        <a href="/web/20051228100307/http://msn.foxsports.com/story/2005035" title="RSS index page" target="_blank">ALL RSS</a>
+        <a href="/web/20051228100307/http://msn.foxsports.com/feedout/syndicatedContent?categoryId=0" class="rssXML" style="color:#fff;" title="RSS XML file" target="_blank">XML</a>
+        <br>
+        <a href="/web/20051228100307/http://www.fox.com" target="_blank">FOX.COM</a> |
+        <a href="/web/20051228100307/http://www.foxnews.com" target="_blank">FOX NEWS</a> |
+        <a href="/web/20051228100307/http://www.fxnetworks.com" target="_blank">FX</a> |
+        <a href="/web/20051228100307/http://msn.foxsports.com/foxsoccer" target="_blank">FOX SOCCER CHANNEL</a> |
+        <a href="/web/20051228100307/http://www.fuel.tv/" target="_blank">FUEL TV</a> |
+        <a href="/web/20051228100307/http://www.foxreality.com" target="_blank">FOX REALITY</a>
+        <br>
+        &copy; 2005 Fox Sports Interactive Media, LLC.  All rights reserved.
+      </div>
+		</td></tr>
+    <!-- =============== FS end: FS FOOTER =============== -->
+		<tr><td align="center" class="botNav" style="padding-top:10px;">
+      <b>FOXNews.com:</b> 
+			<script language="JavaScript">document.write(botNav());</script>
+		</td></tr>
+		<tr><td align="center" class="cap" style="padding:15px 0px 20px 0px;">
+      <script language="JavaScript">document.write(footer());</script>
+		</td></tr>
+	</table>
+  <!-- =============== FoxNews end: FOOTER =============== -->  
+	</td>
+	<td valign="top" style="padding: 5px 5px 0px 0px;">
+	<!-- CONSOLE AREA HERE -->
+  <!--================= FS start: Fox News CSS Override =================-->
+  <style>
+  .tab300 {
+	background-image: url(/web/20051228100307/http://www.foxnews.com/images/rede04/tab05_450x26.gif);
+	background-repeat: no-repeat;
+	height: 26px;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0px 3px 0px 12px;
+	width:300px;
+  }
+  .tab300 div.name {
+  	width: 250px;
+  	float: left;
+  	padding-top: 3px;
+  	overflow: hidden;
+  }
+  </style>
+  <!--================= FS end: Fox News CSS Override =================-->
+  <!--================= FS start: BOOKMARK =================-->
+  <style>
+  .bkmk {
+  font-size: 10px;
+  color: #000000;
+  text-decoration: none;
+  padding-bottom: 5px;
+  }
+  .bkmk a:link, .bkmk a:visited {
+  color: #000000;
+  text-decoration: none;
+  }
+  .bkmk a:hover {
+  color: #CC0000;
+  }
+  </style>
+  <script>
+  var bookmarkurl = document.URL;
+  var bookmarktitle = document.title;
+  var bookmark ='';
+
+  if (document.all){
+    bookmark += ('<div class="bkmk">');
+    bookmark += ('<a href="javascript:void(0);" onClick="window.external.AddFavorite(bookmarkurl,bookmarktitle);" target="_parent">');
+    bookmark += ('<b>Bookmark this page</b></a>');
+
+    bookmark += (' | <a href="javascript:void(0);" onClick="this.style.behavior=\'url(#default#homepage)\';this.setHomePage(\'/web/20051228100307/http://foxsports.foxnews.com\');" target="_parent">');
+    bookmark += ('<b>Make this your homepage</b></a>');
+
+    bookmark += ('</div>');
+    document.write(bookmark);
+  }
+  </script>
+  <!--================= FS end: BOOKMARK =================-->
+  <!--================= FS start: NEWS =================-->
+  <style>
+  .news {
+    font-size: 11px;
+    background-repeat:repeat-x;
+    background-color:#ffffff;
+    padding:7px;
+    color:#000000;
+  }
+  .news a, .news a:visited {text-decoration: none; line-height:18px; color: #000000;}
+  .news a:hover {text-decoration:underline; color: #CC0000;}  
+  .newsLinks a, .newsLinks a:visited {text-decoration: none; color: #000000;}
+  .newsLinks a:hover {text-decoration:underline; color: #CC0000;}  
+  .newsRSS {float:right; font-family:arial; font-size:11px; text-transform:none; font-weight:normal;}
+  .newsRSS a, .newsRSS a:visited {color: #fff;}
+  .newsRSS a:hover {color: #fc0;}  
+  a.rssXML:link, a.rssXML{border:1px solid #fc0; color:#fff; background-color:#f60; font-weight: bold; font-size:10px;font-family:verdana; text-decoration:none; padding-right:1px;}
+  a.rssXML:visited {border:1px solid #fc0; color:#fff; background-color:#f60; font-weight: bold; font-size:10px;font-family:verdana; text-decoration:none; padding-right:1px;}
+  a.rssXML:hover {color:#fc0;}
+  </style>
+	<table cellpadding=0 cellspacing=0 border=0 width=300>
+    <tr><td class="tab300">
+      <div class="name">
+        <span class="newsRSS">
+          <a href="/web/20051228100307/http://msn.foxsports.com/other/story/2005035" title="RSS index page" target="_blank">All RSS</a>
+          <a href="/web/20051228100307/http://msn.foxsports.com/feedout/syndicatedContent?categoryId=0" class="rssXML" title="RSS XML file" target="_blank">XML</a> |
+          <a href="/web/20051228100307/http://my.msn.com/addtomymsn.armx?id=rss&ut=/web/20051228100307/http://msn.foxsports.com/feedout/syndicatedContent?categoryId=0&ru=/web/20051228100307/http://msn.foxsports.com" target="_blank"><img src="/fe/img/rss_mymsn.gif" border="0" width="71" height="14" align="absmiddle"></a>
+        </span>
+        NEWS
+      </div>
+      </td></tr>
+		<tr>
+      <td style="padding-bottom:10px;">
+        <div style="border:1px solid black; border-bottom:0px solid black; background-color:white;" class="news">
+          <span id="newsContentArea">
+            
+
+
+
+
+
+
+
+        &#8226;&nbsp;<a href="/nfl/story/5198418">NFL stars past and present attend Dungy funeral</a>
+     | <a href="javascript:oMvsLink('33','c73c40a8-5256-4893-a195-954f114e32c1',0,'Sports','Top News','','','','','Fox%20Sports_Top%20News');"><b>VIDEO</b></a><br>&#8226;&nbsp;<a href="/cbk/story/5200000">Memphis outguns Gonzaga, Morrison in Top 10 clash</a><br>&#8226;&nbsp;<a href="/mlb/story/5199468">Former closer Reardon charged with armed robbery</a><br>&#8226;&nbsp;<a href="/nba/story/5200106">T-Mac daddy: McGrady leaves loss to help with baby</a><br>&#8226;&nbsp;<a href="/nba/story/5200082">Jefferson leads Nets to seventh straight win </a><br>&#8226;&nbsp;<a href="/nhl/story/5200292">Report: Gretzky to return to Coyotes Wednesday</a><br>&#8226;&nbsp;<a href="/cfb/story/5200412">Sun Devils top Rutgers</a> | <a href="/cfb/story/5199748"><b>Clemson downs Colorado</b></a><br>&#8226;&nbsp;<a href="/mlb/story/5198852">Blue Jays get their 'big bopper' in trade for Glaus</a> | <a href="javascript:oMvsLink('33','c72157d4-05c7-4557-94c6-6c9403ccfd93',0,'Sports','Top News','','','','','Fox%20Sports_Top%20News');"><b>VIDEO</b></a>
+
+
+ 
+          </span>
+        </div>
+        <div class="newsLinks" align="center" style="padding:0px; height:15px; border-left:1px solid black; border-right:1px solid black; border-bottom:1px solid black; background-color:white; font-size: 11px;">
+          <a href="/web/20051228100307/http://msn.foxsports.com/nfl/odds" target="_blank">Odds</a> |
+          <a href="/web/20051228100307/http://msn.foxsports.com/morenews" target="_blank">Newswire</a> |
+          <a href="/web/20051228100307/http://msn.foxsports.com/name/FS/rumors" class="rumors" target="_blank">Rumors</a> |
+          <a href="/web/20051228100307/http://foxsports.razorgator.com" target="_blank">Tickets</a> |
+          <a href="/web/20051228100307/http://foxsports.navio.com" target="_blank">Mobile</a> |
+          <a href="/web/20051228100307/http://msn.foxsports.com/pgStory?workingCategoryId=0" target="_blank">Photos</a> |
+          <a href="/web/20051228100307/http://alerts.msn.foxsports.com/alerts/login.do?PINID=1347&returnURL=/web/20051228100307/http://msn.foxsports.com" target="_blank">Alerts</a>
+        </div>
+      </td>
+    </tr>
+	</table>
+  <!--================= FS end: NEWS =================-->
+  <!--================= FoxNews start: 300x250 AD =================-->
+	<table cellpadding=0 cellspacing=0 border=0 width=300>
+		<tr><td style="padding-bottom:10px;"><SCRIPT LANGUAGE="JavaScript">OAS_AD('Frame1');</SCRIPT></td></tr>
+	</table>
+  <!--================= FoxNews end: 300x250 AD =================-->
+  <!--================= FS start: HSO =================-->
+  <style>
+  .comOp {
+    background-image: url();
+    background-repeat:repeat-x;
+    font-size: 11px; 
+    color:#000000;
+    background-color:#FFFFFF;
+  }
+  .hdrOp {
+    background-image: url();
+    background-repeat:repeat-x;
+    background-color:#FFFFFF;
+    height:0px;
+    color:#000000;
+    display: none;
+  }
+  .comHdr {
+    font-size: 13px;
+    font-family:Arial;
+    font-weight: bold;
+    text-transform:capitalize;
+    color:#000000;
+  }
+  #op { 
+    background-image: url();
+    background-repeat:repeat-x;
+    background-color:#FFFFFF;
+    width: 298px;
+    font-size:11px;
+    color:#000000;
+  }
+  #op td { 
+    font-size:11px;
+    color:#000000;
+  }
+  #op a:link, #op a:visited { color:#000000; }
+  #op a:hover { color:#CC0000; }
+  .fadeOp {
+    background-image: url(); 
+    height:0px;
+    background-color: #FFFFFF;
+    color:#000000;
+    font-size:11px;
+  }
+  </style>
+	<table cellpadding=0 cellspacing=0 border=0 width=300>
+    <tr><td class="tab300"><div class="name">HOT SPORTS OPINIONS</div></td></tr>
+		<tr>
+      <td style="padding-bottom:10px;">
+        <div style="border:1px solid black; background-color:white;">
+          <span id="hsoContentArea">
+            
+
+
+
+
+<div class="comOp">
+  <div class="hdrOp"></div>
+  <div id="op">
+
+    <table width="99%" border="0" cellspacing="0" cellpadding="5">
+    
+          <tr valign="top">
+            <td>
+            
+              <div class="comHdr">Ken Rosenthal</div>
+            
+              <b><a class="op" href="/mlb/story/5198618">Rice has my vote</a></b>
+              <br>
+              For the last seven years, Jim Rice's name has been missing from our man's Hall-of-Fame ballot. See why he's there this time around.
+            </td>
+            <td>
+              
+                  <a href="/mlb/story/5198618"><img src="/fe/img/Writers/headshots/162.jpg" width="90" height="90" alt="" border="0"></a>
+                
+            </td>
+          </tr>
+        
+          <tr valign="top">
+            <td>
+            
+              <div class="comHdr">Jay Glazer</div>
+            
+              <b><a class="op" href="/nfl/story/5194896">Vermeil on his way out </a></b>
+              <br>
+              The Chiefs may be giving Dick Vermeil something to cry about. FOXSports.com has learned that Vermeil won't be back next year, even if Kansas City makes the playoffs.
+            </td>
+            <td>
+              
+                  <a href="/nfl/story/5194896"><img src="/fe/img/Writers/headshots/228.jpg" width="90" height="90" alt="" border="0"></a>
+                
+            </td>
+          </tr>
+        
+    </table>
+
+  </div>
+  <div class="fadeOp">
+  
+  </div>
+</div>
+
+
+          </span>
+        </div>
+      </td>
+    </tr>
+	</table>
+  <!--================= FS end: HSO =================-->
+  <!-- =============== FS start: VIDEO =============== -->  
+  <style>
+  #vid { 
+    font-size:11px;
+    color:#000000;
+    width: 290px;
+    padding: 5px;
+  }
+  #vid td { 
+    font-size:11px;
+    color:#ffffff;
+  }
+  #vid a {text-decoration: underline; color: #000000;  font-size:11px;}
+  #vid a:hover {text-decoration: underline; color: #CC0000; font-size:11px;}
+  div.newsRSS { display: none; }
+  .fade {
+    background-image: url(); 
+    height:10px;
+    background-color: #ffffff;
+    color:#000000;
+    font-size:11px;
+    width: 285px;
+    padding: 5px;
+  }
+  .fade a:link, .fade a:visited { color:#000000; }
+  .fade a:hover { color:#CC0000; }
+  </style>
+	<table cellpadding=0 cellspacing=0 border=0 width=300>
+    <tr><td class="tab300">
+      <div class="name">
+        <span class="newsRSS">
+          <a href="/web/20051228100307/http://msn.foxsports.com/other/story/2005035" title="RSS index page" target="_blank">All RSS</a>
+          <a href="/web/20051228100307/http://rss.video.msn.com/s/us/rss.aspx?t=Fox%20Sports&c=Top%20News&title=Fox%20Sports%20video%20-%20Top%20news&p=33" class="rssXML" title="RSS XML file" target="_blank">XML</a>
+        </span>
+        FREE VIDEO
+      </div>
+    </td></tr>
+		<tr>
+      <td style="padding-bottom:10px;">
+        <div style="border:1px solid black; background-color:white; width:300px;">
+          <span id="videoContentArea" class="contentArea">
+            
+
+
+
+
+
+
+<div class="comr">
+  <div class="hdr">
+
+    <!-- ===================RSS XML=========================== -->
+    <div class="newsRSS">
+      <a href="/other/story/2005035" title="RSS index page">All RSS</a>
+      <a href="/web/20051228100307/http://rss.video.msn.com/s/us/rss.aspx?t=Fox%20Sports&c=Top%20News&title=Fox%20Sports%20video%20-%20Top%20news&p=33" class="rssXML" title="RSS XML file">XML</a>
+
+      | <a href="/web/20051228100307/http://my.msn.com/addtomymsn.armx?id=rss&ut=/web/20051228100307/http://rss.video.msn.com/s/us/rss.aspx?t=hotVideo&c=topsports&title=%20MSN%20Video%20-%20sports&p=05&tt=CENTRALDIRECTORY&ru=/web/20051228100307/http://rss.msn.com"><img src="/fe/img/rss_mymsn.gif" border="0" width="71" height="14" align="absmiddle"></a>
+
+    </div>
+    <!-- ===================RSS XML=========================== -->
+
+    
+  </div>
+  <div id="vid">
+
+			  <span style="float:right; padding-left:5px;">
+				<a href="javascript:oMvsLink('33','b01c4e19-6c5c-446c-879d-26cc09ed9726',0,'Sports','College FB News','','','','','Fox%20Sports_Top%20News');"><img src="/id/5200416_4_1.jpg" width="105" height="105" alt="" border="0"><br><img src="/fe/img/video_play_105.gif" alt="" width="105" height="14" border="0"></a>
+				</span>
+			
+				<b><a href="javascript:oMvsLink('33','b01c4e19-6c5c-446c-879d-26cc09ed9726',0,'Sports','College FB News','','','','','Fox%20Sports_Top%20News');">Sun Devils out of sight</a></b><br>
+				Arizona State QB Rudy Carpenter, RB Rudy Burgess and head coach Dirk Koetter speak to FSN after a 45-40 victory over Rutgers. The Sun Devils put up an Insight Bowl-record 678 yards in the win.
+				<p></p>
+				
+					<b>More  Video</b><br>
+					
+				&#8226;&nbsp;<a href="javascript:oMvsLink('33','64011485-c40b-4a09-8f47-e856017f155f',0,'Sports','NFL News','','','','','Fox%20Sports_Top%20News');">Schein sounds off</a><br>
+			
+				&#8226;&nbsp;<a href="javascript:oMvsLink('33','33cf612d-1187-4d95-a89e-606a20d01b16',0,'Sports','Top News','','','','','Fox%20Sports_Top%20News');">FOX Wire: Daily Sports Update</a><br>
+			
+				&#8226;&nbsp;<a href="javascript:oMvsLink('33','c73c40a8-5256-4893-a195-954f114e32c1',0,'Sports','Top News','','','','','Fox%20Sports_Top%20News');">Dungy remembers his son</a><br>
+			
+				&#8226;&nbsp;<a href="javascript:oMvsLink('33','61b4fb5c-4a73-42d2-acaa-526729aed67f',0,'Sports','College FB News','','','','','Fox%20Sports_Top%20News');">Tigers' backup plan</a><br>
+			
+  </div>
+  <div class="fade" style="clear: both;">
+    <div align="right" style="padding:0px;">
+
+    <a href="javascript:oMvsLink('33','0',0,'Sports','Top News','','','','','Fox%20Sports_Top%20News');">Video Home</a>
+				
+     | <a href="/cfb/story/2997856">College Football Highlights</a>		
+		 
+
+    &nbsp;
+    </div>
+  </div>
+</div>
+
+
+          </span>
+        </div>
+      </td>
+    </tr>
+	</table>
+  <!-- =============== FS end: VIDEO =============== -->  
+  <!-- =============== FS start: POLL =============== -->  
+  <style>
+  #ad300x40 { display: none; }
+  </style>
+	<table cellpadding=0 cellspacing=0 border=0 width=300>
+    <tr><td class="tab300"><div class="name">POLL</div></td></tr>
+		<tr>
+      <td style="padding-bottom:10px;">
+        <div style="border:1px solid black; background-color:white;">
+          
+
+
+
+<!-- if event is true we only want to display poll and poll ad. -->
+
+    <div id="ad300x40" style="position:relative; width:298px; height:40px;">
+    <div style="position:absolute; top:0px; left:-1px;">
+    <!-- categoryId = 0  -->
+
+      
+
+<script>
+if (!adQs) var adQs = "action=serveAd";
+var _ad300x40 = '';
+
+_ad300x40 += '<IFRAME SCROLLING=NO MARGINHEIGHT=0 MARGINWIDTH=0 FRAMEBORDER=0 FRAMESPACING=0 ';
+_ad300x40 += 'WIDTH="300" HEIGHT="40" ';
+_ad300x40 += 'SRC="/web/20051228100307/http://rad.msn.com/ADSAdClient31.dll?GetAd=&PG=SPTHPL&SC=1452&TF=_NEW&'
+_ad300x40 += adQs;
+_ad300x40 += '"></IFRAME>';
+
+
+    document.write(_ad300x40);
+
+</script>
+
+
+    </div>
+  </div>
+  <div id="pol">
+    
+
+<script language="JavaScript" type="text/javascript">
+
+  var userStatus='vote';
+
+
+  // if this poll is the one for which they have answered, show results
+  if (typeof(pollsVoted)!="undefined") {
+    for (var i = 0; i < pollsVoted.length; i++) {
+      if (pollsVoted[i] == 5199750) {
+        var userStatus = 'results';
+        break;
+      }
+    }
+  }
+  // has to have retry because hitbox code is defered.
+  function hitBoxVote(m,p) {
+  }
+  if (typeof(pollWidth)=="undefined") {
+    var pollWidth=298;
+  }
+  var pollHeight = (269 + (5 - 5) * 35);
+  var flashPollQuery='choices=5&questionId=50198&pollId=5199750&cUrl=&userStatus=' + userStatus+'&width='+pollWidth;
+  flashPollQuery+='&bgColor=FFFFFF&fgColor=&bgImage=&bgInvert=false&bgTexture=3';
+  flashPollQuery+='&choicesTextArray=&resultsLink=';
+  flashPollQuery+='&buttonIndex=1';
+
+  document.write('<object codebase=" /web/20051228100307/http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+pollWidth+'" height="'+pollHeight+'" ><param name="movie" value="/fe/swf/poll_generic.swf"> <param name="flashVars" value="'+flashPollQuery+'" ><param name="loop" value="false"> <param name="quality" value="high"> <param name="menu" value="false"> <param name="scale" value="noscale"> <param name="salign" value="lt"> <param name=wmode value=opaque>');
+  document.write('<embed src="/fe/swf/poll_generic.swf" flashVars="'+flashPollQuery+'" loop="false" quality="high" width="'+pollWidth+'" height="'+pollHeight+'" scale="noscale" salign="LT" type="application/x-shockwave-flash" menu="false" wmode="opaque"></embed></object> ');
+</script>
+
+
+  </div>
+  <!-- if event is true we only want to display poll and poll ad. -->
+
+
+        </div>
+      </td>
+    </tr>
+	</table>
+  <!-- =============== FS end: POLL =============== -->  
+	</td>
+	</tr>
+</table>
+
+<script language="JavaScript">
+	buildNav();
+	rightPromo();
+	writePlayer();
+</script>
+<!-- =============== FS start: Video Link Targeting =============== -->  
+<script language="JavaScript">
+	var alertContentArea=document.getElementById("alertContentArea");
+	var cpContentArea=document.getElementById("cpContentArea");
+	var featuresContentArea=document.getElementById("featuresContentArea");
+	var fantasyContentArea=document.getElementById("fantasyContentArea");
+	var tvContentArea=document.getElementById("tvContentArea");
+	var lifeContentArea=document.getElementById("lifeContentArea");
+	var newsContentArea=document.getElementById("newsContentArea");
+	var hsoContentArea=document.getElementById("hsoContentArea");
+	var videoContentArea=document.getElementById("videoContentArea");
+
+  void(alertContentArea.innerHTML=alertContentArea.innerHTML.replace(/href="javascript:oMvsLink/g,'target="_self" href="javascript:oMvsLink').replace(/a href=/gi,'a target="_blank" href=').replace(/href="\//gi,'href="/web/20051228100307/http://msn.foxsports.com/'));
+	void(cpContentArea.innerHTML=cpContentArea.innerHTML.replace(/href="javascript:oMvsLink/g,'target="_self" href="javascript:oMvsLink').replace(/a href=/gi,'a target="_blank" href=').replace(/href="\//gi,'href="/web/20051228100307/http://msn.foxsports.com/'));
+	void(featuresContentArea.innerHTML=featuresContentArea.innerHTML.replace(/href="javascript:oMvsLink/g,'target="_self" href="javascript:oMvsLink').replace(/a href=/gi,'a target="_blank" href=').replace(/href="\//gi,'href="/web/20051228100307/http://msn.foxsports.com/'));
+	void(fantasyContentArea.innerHTML=fantasyContentArea.innerHTML.replace(/href="javascript:oMvsLink/g,'target="_self" href="javascript:oMvsLink').replace(/a href=/gi,'a target="_blank" href=').replace(/href="\//gi,'href="/web/20051228100307/http://msn.foxsports.com/'));
+	void(tvContentArea.innerHTML=tvContentArea.innerHTML.replace(/href="javascript:oMvsLink/g,'target="_self" href="javascript:oMvsLink').replace(/a href=/gi,'a target="_blank" href=').replace(/href="\//gi,'href="/web/20051228100307/http://msn.foxsports.com/'));
+	void(lifeContentArea.innerHTML=lifeContentArea.innerHTML.replace(/href="javascript:oMvsLink/g,'target="_self" href="javascript:oMvsLink').replace(/a href=/gi,'a target="_blank" href=').replace(/href="\//gi,'href="/web/20051228100307/http://msn.foxsports.com/'));
+	void(newsContentArea.innerHTML=newsContentArea.innerHTML.replace(/href="javascript:oMvsLink/g,'target="_self" href="javascript:oMvsLink').replace(/a href=/gi,'a target="_blank" href=').replace(/href="\//gi,'href="/web/20051228100307/http://msn.foxsports.com/'));
+	void(hsoContentArea.innerHTML=hsoContentArea.innerHTML.replace(/href="javascript:oMvsLink/g,'target="_self" href="javascript:oMvsLink').replace(/a href=/gi,'a target="_blank" href=').replace(/a class=op href=/gi,'a target="_blank" href=').replace(/a class="op" href=/gi,'a target="_blank" href=').replace(/href="\//gi,'href="/web/20051228100307/http://msn.foxsports.com/'));
+	void(videoContentArea.innerHTML=videoContentArea.innerHTML.replace(/href="javascript:oMvsLink/g,'target="_self" href="javascript:oMvsLink').replace(/a href=/gi,'a target="_blank" href=').replace(/href="\//gi,'href="/web/20051228100307/http://msn.foxsports.com/'));
+</script>
+<!-- =============== FS end: Video Link Targeting =============== --> 
+</body>
+</html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 10:03:07 Dec 28, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 7:17:32 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

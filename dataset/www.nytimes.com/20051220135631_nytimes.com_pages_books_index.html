@@ -1,0 +1,1065 @@
+
+
+
+
+
+
+
+
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"/><html><head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app14.us.archive.org";archive_analytics.values.server_ms=2095;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<meta  http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script type="text/JavaScript" src="/web/20051220130204js_/http://graphics8.nytimes.com/js/csssniff.js"></script>
+<script language="JavaScript" src="/web/20051220130204js_/http://graphics8.nytimes.com/js/browserSize.js" type="text/javascript"></script>
+
+<script type="text/JavaScript">
+<!--
+	//this is javascript
+
+	function nameIt() {
+    	window.name = 'nytimesmain';
+    }
+
+	function pop_me_up2(pURL,name,features){
+		new_window = window.open(pURL,name,features);
+		new_window.focus();
+	}
+
+	function changeImage(image_name,image_src) {
+   		document.images[image_name].src = image_src;
+	}
+
+	function goToURL(obj){
+		var f = (obj.section) ? obj : obj.form;
+		var selected = f.section.selectedIndex;
+		var URL = f.section.options[selected].value;
+		if (URL != "") document.location = URL;
+		return false;
+	}
+
+        function goToURL2(sel){
+        // This version only works for onChange events from select objects
+        // but the select object can have any name, unlike goToURL() which requires 
+        // the select object to be named "section"
+        
+                var selected = sel.selectedIndex;
+                var url = sel.options[selected].value;
+                if (url != "") document.location = url;
+                return false;
+        }
+
+	if (window.self != window.top) {
+		top.location.replace(window.location.href);
+	}
+
+//-->
+</script>
+<!--begin Tacoda-specific code -->
+<script src="/web/20051220130204js_/http://graphics8.nytimes.com/js/Tacoda_AMS_DDC_Header.js"></script>
+<!--end Tacoda-specific code -->
+<script src="/web/20051220130204js_/http://graphics8.nytimes.com/js/article_dhtml.js" type="text/javascript"></script>
+<script src="/web/20051220130204js_/http://graphics8.nytimes.com/js/section/timesselect/timesselect.js" type="text/javascript"></script>
+<!--TimesSelect js -->
+
+
+<link rel="stylesheet" href="/web/20051220130204cs_/http://graphics8.nytimes.com/css/globalToolbar_px.css" type="text/css"><link rel="stylesheet" href="/web/20051220130204cs_/http://graphics8.nytimes.com/css/section/timesselect/timesselect.css" type="text/css">
+<meta  name="description" content="Find book reviews & news on authors, best sellers, fiction & non-fiction, literature, biographies, memoirs, children’s books, Pulitzer Prize, Nobel Prize & first chapters.
+"/>
+
+<LINK rel="alternate" TYPE="application/rss+xml" TITLE="RSS" HREF="http://www.nytimes.com/services/xml/rss/nyt/Books.xml"/>
+
+<script type="text/JavaScript">
+	var static_kw = "audio+books,audiobooks,book+clubs,book+lights,book+publishing,book+reviews,bookfinder,books,books+in+print,books+on+cd,books+on+tape,bookshelves,creative+writing,desktop+publishing,digital+voice+recorders,magnet+poetry,novels,reading+glasses,reading+lamps,reading+lights,reading+programs,speed+reading,teach+reading,used+books,voice+transcription,writing+courses,writing+jobs,writing+workshops";
+	var dynamic_kw = "";
+	var google_contents = dynamic_kw + static_kw;
+	var google_ad_channel = "books";
+</script>
+<title>Books - The New York Times Book Review</title><meta  NAME="HOMEPAGE_TEMPLATE_VERSION" CONTENT="300">
+<meta  name="robots" content="noarchive">
+</head> <body marginheight="5" marginwidth="0" leftmargin="0" topmargin="5" bgcolor="#ffffff" link="#000066" alink="#990000" vlink="#444464" onLoad="nameIt(); setClientSizeCookies();" onUnload="setClientSizeCookies()">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://nytimes.com/pages/books/index.html";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "20";
+var displayMonth = "Dec";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://nytimes.com/pages/books/index.html" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20051220130204" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20051117155430/http://www.nytimes.com/pages/books/index.html" title="17 Nov 2005">NOV</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 13:02:04 Dec 20, 2005">DEC</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20060126205015/http://www.nytimes.com/pages/books/index.html" title="26 Jan 2006"><strong>JAN</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20051220082148/http://www.nytimes.com/pages/books/index.html" title="8:21:48 Dec 20, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 13:02:04 Dec 20, 2005">20</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20051221035847/http://nytimes.com/pages/books/index.html" title="3:58:47 Dec 21, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20040113055101/http://www.nytimes.com/pages/books/index.html" title="13 Jan 2004"><strong>2004</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 13:02:04 Dec 20, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20061222141859/http://www.nytimes.com/pages/books/index.html" title="22 Dec 2006"><strong>2006</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20051220130204*/http://nytimes.com/pages/books/index.html" title="See a list of every capture for this URL">3,721 captures</a>
+           <div class="r" title="Timespan for captures of this URL">12 Jul 01 - 4 Jan 15</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:00000010db96_2002:-1:190001037671_2003:-1:011103110000_2004:-1:100000000000_2005:11:004a999b88aa_2006:-1:b61816776777_2007:-1:665356316866_2008:-1:377675789773_2009:-1:145303040134_2010:-1:654331457654_2011:-1:54464499aaab_2012:-1:bbaabbaaabcb_2013:-1:bbaaaaa969cc_2014:-1:dbbbbfa9a9aa_2015:-1:500000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+ <a name="TOP"></a><NYT_HEADER version="1.0" type="main"><table width="768" border="0" cellpadding="0" cellspacing="0"><tr><td colspan="6" width="768" bgcolor="#ffffff" height="5"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="768" height="5" border="0"/></td></tr><tr><td width="8"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="8" height="5" border="0"/></td><td width="280" valign="bottom"><NYT_HEADER_IMAGE> <a href="/web/20051220130204/http://www.nytimes.com/pages/books/index.html"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/section/books/books.gif" width="231" height="25" border="0" alt="New York Times Books"/></a> </NYT_HEADER_IMAGE></td><td width="1" bgcolor="#000000"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"/></td><td width="6" rowspan="3"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="6" height="1" border="0"/></td><td width="468" rowspan="3"><!-- ADXINFO classification="banner" campaign="spanish02-nyt4"--><SCRIPT language='JavaScript1.1' SRC="/web/20051220130204js_/http://ad.doubleclick.net/adj/N884.NewYorkTimes.eu/B1741859.2;sz=468x60;ord=2005.12.20.13.02.00"> 
+</SCRIPT> 
+<NOSCRIPT> 
+<A HREF="/web/20051220130204/http://ad.doubleclick.net/jump/N884.NewYorkTimes.eu/B1741859.2;sz=468x60;ord=2005.12.20.13.02.00"> 
+<IMG SRC="/web/20051220130204im_/http://ad.doubleclick.net/ad/N884.NewYorkTimes.eu/B1741859.2;sz=468x60;ord=2005.12.20.13.02.00" BORDER=0 WIDTH=468 HEIGHT=60 ALT="Click Here"></A> 
+</NOSCRIPT></td><td width="5" rowspan="3"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1" border="0"/></td></tr><tr><td width="8" height="1"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="8" height="1" border="0"/></td><td height="1" width="280" bgcolor="#000000"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"/></td><td width="1" bgcolor="#000000"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"/></td></tr><tr><td width="8"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="8" height="5" border="0"/></td><td width="280" valign="top"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="280" height="7" border="0"/><a href="/web/20051220130204/http://www.nytimes.com/"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/section/NytSectionHeader.gif" width="122" height="21" border="0" alt="The New York Times"/></a></td><td width="1" bgcolor="#000000"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"/></td></tr><tr><td colspan="6" width="768" bgcolor="#ffffff" height="7"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="768" height="7" border="0"/></td></tr><tr><td colspan="6" width="768" bgcolor="#000000" height="3"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="768" height="3" border="0"/></td></tr></table></NYT_HEADER>
+
+<script type="text/javascript" src="/web/20051220130204js_/http://nytimes.com/js/article_dhtml.js"></script>
+<div id="globalToolBar">
+<div id="siteBar">
+
+
+
+<span id="siteNavigation">
+
+
+<span id="updateTime">
+December 19, 2005
+</span>
+</span><!--#siteNavigation -->
+
+
+
+   <span id="memberLinks">
+   <a href="/web/20051220130204/http://www.nytimes.com/auth/login" class="small">Log In</a> -
+   <a href="/web/20051220130204/http://www.nytimes.com/gst/regi.html" class="small">Register Now</a>
+   </span> 
+<!--Login bar end -->
+</div><!--#siteBar -->
+
+<div id="searchBar">
+
+
+   <div id="rightDD"><a id="tsPromoLink"
+   href="/web/20051220130204/http://www.nytimes.com/ts?incamp=ts:toolbar_trial"
+   title="Start your free trial today!"><img
+   src="/web/20051220130204im_/http://graphics8.nytimes.com/images/search/ts_freetrial.gif"
+   alt="TimesSelect Free Trial" border="0" /></a>
+   <div class="clear"></div>
+   </div> 
+
+<div id="searchSponsor"><!-- ADXINFO classification="button" campaign="etrade48-nyt1"--><!-- ad starts here-->
+
+	<div id="searchSponsorHeader"><img src="/web/20051220130204im_/http://graphics8.nytimes.com/ads/common/search_sponsor.gif" alt="Search Sponsored By" /></div>
+	<div id="searchSponsorAd">
+	<a href="/web/20051220130204/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/books/index.html&amp;pos=Middle1B&amp;camp=etrade48-nyt1&amp;ad=88x31_etf_logo.html&amp;goto=http://ad.doubleclick.net/click;h=v2|3616|0|0|%2a|l;22804942;0-0;0;11946596;31-1|1;13017379|13035275|1;;%3fhttp://track.did-it.com/n%3Flid=16021526%26tid=433c2f6935b73%26url=https://us.etrade.com/e/t/jumppage/viewjumppage%3FPageName=unbeatable2%26tb=3724%26WT.mc_id=3724" target="_blank"><img border=0 src="/web/20051220130204im_/http://graphics8.nytimes.com/ads/etrade/88x31_etf_logo.gif" border="0" width=88 height=31 alt="Open an E*TRADE Bank Money Market--4.10% APY for 3 months--plus..." title="Open an E*TRADE Bank Money Market--4.10% APY for 3 months--plus..."></a>
+
+<img src="/web/20051220130204im_/http://ad.doubleclick.net/imp;v1;f;22804942;0-0;0;11946596;1|1;13017379|13035275|1;;cs=o%3fhttp://m.doubleclick.net/dot.gif" border="0">
+
+	</div>
+
+
+<!-- ad ends here-->
+</div>
+
+<div id="searchFormWrap">
+<form id="searchForm" name="searchForm" method="GET" action="/web/20051220130204/http://query.nytimes.com/gst/sitesearch_selector.html" enctype="application/x-www-form-urlencoded">
+<INPUT type="hidden" name="date_select" value="full"/>
+<IMG class="searchLabelImg" src="/web/20051220130204im_/http://graphics8.nytimes.com/images/search/search_srcHeader.gif" style="border:0;height:5px;width:29px;" />
+<div class="searchInputs">
+<INPUT type="text" name="query" id="searchQuery" />
+<select id="searchType" name="type">
+<option value="nyt">NYT Since 1981</option>
+<option value="proquest">NYT 1851-1980</option>
+<option value="google">Google/Web</option>
+<option value="multimedia">Multimedia</option>
+<option value="venues">NYC Guide</option>
+</select>
+<input align="absmiddle" value="Search" width="56" height="21" border="0" name="submit" alt="Submit" type="image" src="/web/20051220130204im_/http://graphics8.nytimes.com/images/global/global_search/search_button.gif" >
+</div><!--.searchInputs -->
+</form>
+</div><!--#searchFormWrap -->
+
+</div><!--#searchBar -->
+</div><!--#globalToolBar -->
+
+<table border="0" width="768" cellspacing="0" cellpadding="0"><tr><td width="98" valign="top" align="left" bgcolor="#cccccc">
+<NYT_GLOBAL_NAV>
+<table width="98" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+<tr><td width="98"><a href="/web/20051220130204/http://nytimes.com/"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/global/global_nav/gn_home.gif" width="98" height="20" border="0" alt="Home"/></a><br><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"/><br></td></tr>
+<tr><td id="clsButton" class="classifiedBtn"><a href="/web/20051220130204/http://jobmarket.nytimes.com/pages/jobs/"><span>JOB MARKET</span></a></td></tr>
+<tr><td id="clsButton" class="classifiedBtn"><a href="/web/20051220130204/http://nytimes.com/pages/realestate/index.html"><span>REAL ESTATE</span></a></td></tr>
+<tr><td id="clsButton" class="classifiedBtn"><a href="/web/20051220130204/http://nytimes.com/pages/automobiles/index.html"><span>AUTOS</span></a></td></tr>
+<tr><td width="98"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/global/global_nav/gn_news.gif" width="98" height="20" alt="News"/><br></td></tr>
+<tr><td class="globalnav" width="98">
+<a href="/web/20051220130204/http://nytimes.com/pages/world/index.html">International</a><br>
+<a href="/web/20051220130204/http://nytimes.com/pages/national/index.html">National</a><br>
+<a href="/web/20051220130204/http://nytimes.com/pages/politics/index.html">Washington</a><br>
+<a href="/web/20051220130204/http://nytimes.com/pages/nyregion/index.html">New York/Region</a><br>
+<a href="/web/20051220130204/http://nytimes.com/pages/business/index.html">Business</a><br>
+<a href="/web/20051220130204/http://tech.nytimes.com/pages/technology/index.html">Technology</a><br>
+<a href="/web/20051220130204/http://nytimes.com/pages/science/index.html">Science</a><br>
+<a href="/web/20051220130204/http://nytimes.com/pages/health/index.html">Health</a><br>
+<a href="/web/20051220130204/http://nytimes.com/pages/sports/index.html">Sports</a><br>
+<a href="/web/20051220130204/http://nytimes.com/pages/education/index.html">Education</a><br>
+<a href="/web/20051220130204/http://www.nytimes.com/weather">Weather</a><br>
+<a href="/web/20051220130204/http://nytimes.com/pages/obituaries/index.html">Obituaries</a><br>
+<a href="/web/20051220130204/http://nytimes.com/pages/pageone/index.html">NYT Front Page</a><br>
+<a href="/web/20051220130204/http://nytimes.com/corrections.html">Corrections</a><br>
+</td></tr>
+<tr><td width="98"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/global/global_nav/gn_opinion.gif" width="98" height="20" alt="Opinion"/><br></td></tr>
+<tr><td class="globalnav" width="98">
+<a href="/web/20051220130204/http://nytimes.com/pages/opinion/index.html">Editorials/Op-Ed</a><br>
+<a href="/web/20051220130204/http://nytimes.com/pages/readersopinions/index.html">Readers' Opinions</a><br>
+<a href="/web/20051220130204/http://topics.nytimes.com/top/opinion/thepubliceditor/index.html">The Public Editor</a><br>
+</td></tr>
+
+<tr><td bgcolor="#999999"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"/></td></tr>
+<tr><td align="center" valign="middle">
+<IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="2"/><br>
+<font face="arial,helvetica,sans serif" size="1" color="#999999">Advertisement</font><br><NYT_NAV_AD>
+
+<!-- ADXINFO classification="box_86x60" campaign="Vonage45e-nyt2"--><iframe src="/web/20051220130204if_/http://view.atdmt.com/VON/iview/nwyrkvon0300001211von/direct/01/2005.12.20.13.02.00?click=" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" allowtransparency="true" width="86" height="60">
+<script language="JavaScript" type="text/javascript">
+document.write('<a href="/web/20051220130204/http://clk.atdmt.com/VON/go/nwyrkvon0300001211von/direct/01/2005.12.20.13.02.00" target="_blank"><img src="/web/20051220130204/http://view.atdmt.com/VON/view/nwyrkvon0300001211von/direct/01/2005.12.20.13.02.00"/></a>');
+</script><noscript><a href="/web/20051220130204/http://clk.atdmt.com/VON/go/nwyrkvon0300001211von/direct/01/2005.12.20.13.02.00" target="_blank"><img border="0" src="/web/20051220130204im_/http://view.atdmt.com/VON/view/nwyrkvon0300001211von/direct/01/2005.12.20.13.02.00" /></a></noscript></iframe>
+
+</NYT_NAV_AD><br>
+<IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"/><br>
+</td></tr>
+
+<tr><td width="98"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/global/global_nav/gn_features.gif" width="98" height="20" alt="Features"/><br></td></tr>
+<tr><td class="globalnav" width="98">
+<a href="/web/20051220130204/http://nytimes.com/pages/arts/index.html">Arts</a><br>
+<a href="/web/20051220130204/http://nytimes.com/pages/books/index.html">Books</a><br>
+<table with="93" cellspacing="0" cellpadding="0" border="0">
+<tr><td class="nav" width="10" valign="top">-</td><td class="nav" width="83"><a href="/web/20051220130204/http://nytimes.com/pages/books/review/index.html">Sunday Book Review</a></td></tr>
+<tr><td class="nav" width="10" valign="top">-</td><td class="nav" width="83"><a href="/web/20051220130204/http://nytimes.com/pages/books/bestseller/index.html">Best-Seller Lists</a></td></tr>
+<tr><td class="nav" width="10" valign="top">-</td><td class="nav" width="83"><a href="/web/20051220130204/http://nytimes.com/pages/books/chapters/index.html">First Chapters</a></td></tr>
+<tr><td class="nav" width="10" valign="top">-</td><td class="nav" width="83"><a href="/web/20051220130204/http://nytimes.com/pages/books/columns/index.html">Columns</a></td></tr>
+</table>
+<a href="/web/20051220130204/http://movies.nytimes.com/">Movies</a><br>
+<a href="/web/20051220130204/http://theater.nytimes.com/">Theater</a><br>
+<a href="/web/20051220130204/http://travel.nytimes.com/">Travel</a><br>
+<a href="/web/20051220130204/http://travel2.nytimes.com/top/features/travel/destinations/unitedstates/newyork/newyorkcity/guide.html">NYC Guide</a><br>
+<a href="/web/20051220130204/http://nytimes.com/pages/dining/index.html">Dining & Wine</a><br>
+<a href="/web/20051220130204/http://nytimes.com/pages/garden/index.html">Home & Garden</a><br>
+<a href="/web/20051220130204/http://nytimes.com/pages/fashion/index.html">Fashion & Style</a><br>
+<a href="/web/20051220130204/http://nytimes.com/pages/crosswords/index.html">Crossword/Games</a><br>
+<a href="/web/20051220130204/http://nytimes.com/pages/cartoons/index.html">Cartoons</a><br>
+<a href="/web/20051220130204/http://nytimes.com/pages/magazine/index.html">Magazine</a><br>
+<a href="/web/20051220130204/http://nytimes.com/pages/weekinreview/index.html">Week in Review</a><br>
+<a href="/web/20051220130204/http://video.on.nytimes.com/">Video</a><br>
+<a href="/web/20051220130204/http://nytimes.com/pages/multimedia/index.html">Multimedia/Photos</a><br>
+<a href="/web/20051220130204/http://nytimes.com/learning/index.html">Learning Network</a><br>
+</td></tr>
+<tr><td width="98"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/global/global_nav/gn_services.gif" width="98" height="20" alt="Services"/><br></td></tr>
+<tr><td class="globalnav" width="98">
+<a href="/web/20051220130204/http://search.nytimes.com/search/">Archive</a><br>
+<a href="/web/20051220130204/http://listings.nytimes.com/classifiedsmarketplace/">Classifieds</a><br>
+<a href="/web/20051220130204/http://nytimes.com/college/index.html">College</a><br>
+<a href="/web/20051220130204/http://www.nytimes.com/personals">Personals</a><br>
+<a href="/web/20051220130204/http://www.nytimes.com/whitepapers/">White Papers</a><br>
+<a href="/web/20051220130204/http://www.nytbroadway.com/?thtrtx">Theater Tickets</a><br>
+<a href="/web/20051220130204/http://nytimes.com/nytstore/">NYT Store</a><br>
+<a href="/web/20051220130204/http://www.nytimes.com/services/nytmobile/">NYT Mobile</a><br>
+<a href="/web/20051220130204/http://www.nytdigital.com/">About NYTDigital</a><br>
+<a href="/web/20051220130204/http://www.nytdigital.com/work/job.html">Jobs at NYTDigital</a><br>
+<a href="/web/20051220130204/http://www.nytimes.com/adinfo/">Online Media Kit</a><br>
+</td></tr>
+<tr><td width="98"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/global/global_nav/gn_member_center.gif" width="98" height="20" alt="Member_Center"/><br></td></tr>
+<tr><td class="globalnav" width="98">
+<a href="/web/20051220130204/http://www.nytimes.com/mem/profile.html">Your Profile</a><br>
+<a href="/web/20051220130204/http://www.nytimes.com/mem/email.html">E-Mail Preferences</a><br>
+<a href="/web/20051220130204/http://www.nytimes.com/mem/tnt.html?incamp=tnt:globalnav">News Tracker</a><br>
+<a href="/web/20051220130204/http://select.nytimes.com/pages/timesselect/index.html">TimesSelect</a><br>
+<a href="/web/20051220130204/http://www.nytimes.com/purchasehistory">Purchase History</a><br>
+<a href="/web/20051220130204/http://www.nytimes.com/membercenter/sitehelp.html">Site Help</a><br>
+<a href="/web/20051220130204/http://www.nytimes.com/ref/membercenter/help/privacy.html">Privacy Policy</a><br>
+</td></tr>
+<tr><td width="98"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/global/global_nav/gn_newspaper.gif" width="98" height="20" alt="Newspaper"/><br></td></tr>
+<tr><td class="globalnav" width="98">
+<a href="/web/20051220130204/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=homedelivery-globalnavlinktrack&amp;pos=Position2&amp;camp=homedelivery-globalnavlinktrack&amp;ad=blank.html&amp;goto=http://homedelivery.nytimes.com/HDS/SubscriptionT1.do?mode=SubscriptionT1%26ExternalMediaCode=W11FZ">Get Home Delivery</a><br>
+<a href="/web/20051220130204/http://homedelivery.nytimes.com/">Customer Care</a><br>
+<a href="/web/20051220130204/http://www.nytimes.com/ee">Electronic Edition</a><br>
+<a href="/web/20051220130204/http://www.nytadvertising.com/" target="_blank">Media Kit</a><br>
+<a href="/web/20051220130204/http://www.nytco.com/community/">Community Affairs</a><br>
+</td></tr>
+</NYT_GLOBAL_NAV>
+<tr><td><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="3"/></td></tr>
+<tr><td bgcolor="#999999"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"/></td></tr>
+<tr><td><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="2"/></td></tr>	
+<tr><td class="globalnav">
+<a href="/web/20051220130204/http://nytimes.com/ref/membercenter/textversion.html">Text Version</a><br>
+</td></tr>
+<tr><td><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="3"/></td></tr>	
+<tr><td bgcolor="#999999"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"/></td></tr>
+<tr><td class="globalnav">
+<IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="2"/>
+<br>
+<IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="2"/><br>
+</td></tr>
+<tr><td><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="3"/></td></tr>
+<tr><td bgcolor="#999999"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1""/></td></tr>
+<tr><td height="20" bgcolor="#CCCCCC">&nbsp;</td></tr>
+<tr><td class="globalnav" bgcolor="#CCCCCC">
+<!-- ADXINFO classification="homepage_mkt" campaign="Vonage58-nyt2"--><iframe src="/web/20051220130204if_/http://view.atdmt.com/VON/iview/nwyrkvon0300001324von/direct/01/2005.12.20.13.02.00?click=" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" allowtransparency="true" width="86" height="40">
+<script language="JavaScript" type="text/javascript">
+document.write('<a href="/web/20051220130204/http://clk.atdmt.com/VON/go/nwyrkvon0300001324von/direct/01/2005.12.20.13.02.00" target="_blank"><img src="/web/20051220130204/http://view.atdmt.com/VON/view/nwyrkvon0300001324von/direct/01/2005.12.20.13.02.00"/></a>');
+</script><noscript><a href="/web/20051220130204/http://clk.atdmt.com/VON/go/nwyrkvon0300001324von/direct/01/2005.12.20.13.02.00" target="_blank"><img border="0" src="/web/20051220130204im_/http://view.atdmt.com/VON/view/nwyrkvon0300001324von/direct/01/2005.12.20.13.02.00" /></a></noscript></iframe>
+<br>
+<A HREF="/web/20051220130204/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/books/index.html&amp;pos=Left1&amp;camp=Vonage58-nyt2&amp;ad=vonage-sfmktpl-1324von-86x40&amp;goto=http%3A%2F%2Fclk%2Eatdmt%2Ecom%2FVON%2Fgo%2Fnwyrkvon0300001324von%2Fdirect%2F01%2F&amp;query=2005.12.20.13.02.00" target="_blank">
+<font size="1" face="times new roman, times">Start saving! 1 FREE month phone service with Vonage.</font></a><br><br>
+<br><br>
+
+<br><br>
+<!-- ADXINFO classification="homepage_mkt" campaign="OkidataQ405-01-nyt2"--><A HREF="/web/20051220130204/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/books/index.html&amp;pos=Left3&amp;camp=OkidataQ405-01-nyt2&amp;ad=oki_86_40.gif&amp;goto=http%3A%2F%2Fad%2Edoubleclick%2Enet%2Fclk%3B21603352%3B11931682%3Bw%3Fhttp%3A%2F%2Fwww%2Eokiprintingsolutions%2Ecom%2Fgoodmath&amp;query=2005.12.20.13.02.00" target="_blank"><img src="/web/20051220130204im_/http://graphics8.nytimes.com/ads/ads/oki_86_40.gif" WIDTH="86" HEIGHT="40" BORDER="0"><br><font size="1" face="times new roman, times">OKI Printing Solutions It’s Good Math.</font></a><br><br>
+<br><br>
+<!-- ADXINFO classification="homepage_mkt" campaign="SunRocketDec01-nyt2"--><A HREF="/web/20051220130204/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/books/index.html&amp;pos=Left4&amp;camp=SunRocketDec01-nyt2&amp;ad=sunrocket-hp-marketpl-0020rsp-86x40&amp;goto=http%3A%2F%2Fclk%2Eatdmt%2Ecom%2FRSP%2Fgo%2Fnwyrkroc0030000020rsp%2Fdirect%2F01%2F&amp;query=2005.12.20.13.02.00" target="_blank"><img src="/web/20051220130204im_/http://graphics8.nytimes.com/ads/sunrocket/SunRoc_text3.gif" WIDTH="86" HEIGHT="40" BORDER="0"><br><font size="1" face="times new roman, times">Internet Phone Service Only $9.95/month! CHECK IT OUT</font></a><br>
+<IMG SRC="/web/20051220130204im_/http://view.atdmt.com/RSP/view/nwyrkroc0030000020rsp/direct/01/">
+
+
+
+<br><br>
+<!-- ADXINFO classification="homepage_mkt" campaign="DellSysQ406-08-nyt2"--><A HREF="/web/20051220130204/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/books/index.html&amp;pos=Left5&amp;camp=DellSysQ406-08-nyt2&amp;ad=499-Dell-Home-Notebook-round_gif&amp;goto=http%3A%2F%2Flandingstrip%2Edell%2Ecom%2Flandingstrip%2Fls%2Easp%3FCID%3D9174%26LID%3D279836%26DGC%3DBA%26DGStor%3DDHS%26DGSite%3DNYT%26Conum%3D19%26K%3D6VP11%26DURL%3Dhttp%3A%2F%2Fwww1%2Eus%2Edell%2Ecom%2Fcontent%2Ftopics%2Fsegtopic%2Easpx%2Fodg%5Fspecial49%3Fc%253Dus%2526cs%253D19%2526l%253Den%2526s%253Ddhs&amp;query=2005.12.20.13.02.00" target="_blank"><img src="/web/20051220130204im_/http://graphics8.nytimes.com/ads/dell/gmoon_60x_1k.gif" WIDTH="60" HEIGHT="60" BORDER="0"><br><font size="1" face="times new roman, times">$499 Dell™ Home Notebook after instant savings.</font></a><br>
+<br><br>
+<!-- ADXINFO classification="homepage_mkt" campaign="nytnyt-hpmarketplace_neediestcases"--><a HREF="/web/20051220130204/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/books/index.html&amp;pos=Left6&amp;camp=nytnyt-hpmarketplace_neediestcases&amp;ad=neediest_86x40.html&amp;goto=http://www.nytimes.com/neediest%3Fmkt=marketadneediest" target=_blank>
+<img src="/web/20051220130204im_/http://graphics8.nytimes.com/ads/house/neediest_86x40.gif" WIDTH="86" HEIGHT="40" BORDER="0"></a><br>
+<a HREF="/web/20051220130204/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/books/index.html&amp;pos=Left6&amp;camp=nytnyt-hpmarketplace_neediestcases&amp;ad=neediest_86x40.html&amp;goto=http://www.nytimes.com/neediest%3Fmkt=marketadneediest" target=_blank><font size="1" face="times new roman, times">Help those who need it most. Donate to the Neediest Cases Fund today.</font></a>
+<br>
+<br>
+
+
+
+
+
+<br><br>
+<!-- ADXINFO classification="homepage_mkt" campaign="nytnyt-hpmarketplace"--><a HREF="/web/20051220130204/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/books/index.html&amp;pos=Left7&amp;camp=nytnyt-hpmarketplace&amp;ad=nytstore_5redesignedstore2.gif&amp;goto=http://www.nytimes.com/nytstore/index.html" target=_blank>
+<img src="/web/20051220130204im_/http://graphics8.nytimes.com/ads/house/nytstore_5redesignedstore2.gif" WIDTH="86" HEIGHT="40" BORDER="0"></a><br>
+<a HREF="/web/20051220130204/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/books/index.html&amp;pos=Left7&amp;camp=nytnyt-hpmarketplace&amp;ad=nytstore_5redesignedstore2.gif&amp;goto=http://www.nytimes.com/nytstore/index.html" target=_blank><font size="1" face="times new roman, times">Redesigned, bigger and better than ever</font></a>
+<br>
+<br>
+
+
+
+
+
+<br><br>
+
+<br><br>
+
+<br><br>
+
+<br><br>
+</td></tr>
+<tr><td bgcolor="#CCCCCC" height="20"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="20""/></td></tr>
+<tr><td bgcolor="#CCCCCC">
+
+<table bgcolor="#ffffff" width="98" cellspacing="0" cellpadding="0" border="0">
+<tr><td colspan="3" width="98"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/blue_hr.gif" width="98" height="3""/></td></tr>
+<tr>
+<td width="4"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="4" height="1""/></td>
+<td width="90"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/ad_links.gif" width="90" height="22""/><br/>
+
+<!-- ADXINFO classification="text_ad" campaign="SprintNextel07c-nyt2"--><!-- start text link -->
+<FONT class="smtext" color="#3366CC" FACE="Arial, Helvetica, Sans Serif" SIZE="-1">
+<A HREF="/web/20051220130204/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/books/index.html&amp;pos=Right5&amp;camp=SprintNextel07c-nyt2&amp;ad=sprintnextel-textlink-right7&amp;goto=http%3A%2F%2Fclk%2Eatdmt%2Ecom%2FM0N%2Fgo%2Fnwyrkspr0020000086m0n%2Fdirect%3Bat%2Em0nspr00000023%3Bct%2E1%2F01%2F&amp;query=2005.12.20.13.02.00" target="_blank">Be a yes man. Say yes to choice. Yes to customers. Sprint® Business.</a>
+</font>
+<br>
+<!-- end text link -->
+<br><br> 
+<!-- ADXINFO classification="text_ad" campaign="Vonage49-nyt2"--><FONT class="smtext" color="#3366CC" FACE="Arial, Helvetica, Sans Serif" SIZE="-1">
+<a href="/web/20051220130204/http://clk.atdmt.com/VON/go/nwyrkvon0300000885von/direct/01/2005.12.20.13.02.00" target="_blank">
+<img border="0" src="/web/20051220130204im_/http://view.atdmt.com/VON/view/nwyrkvon0360000055von/direct/01/2005.12.20.13.02.00" >VONAGE: The #1 Broadband Phone Service. Join now & get your 1st month FREE</a>
+</font>
+<br>
+<br><br>
+<!-- ADXINFO classification="text_ad" campaign="Soundsgood.com04-nyt9"--><FONT class="smtext" color="#3366CC" FACE="Arial, Helvetica, Sans Serif" SIZE="-1">
+<A HREF="/web/20051220130204/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/books/index.html&amp;pos=Right7&amp;camp=Soundsgood.com04-nyt9&amp;ad=SG_sectionfront_text2.html&amp;goto=http://clk.atdmt.com/AGI/go/nwyrksgd0010003702agi/direct/01/2005.12.20.13.02.00" target="_blank">A Gift FOR YOU This Holiday!  Audio Books on CD Cassette & Download
+</a>
+</font>
+<br>
+
+<A HREF="/web/20051220130204/http://clk.atdmt.com/AGI/go/nwyrksgd0010003702agi/direct/01/2005.12.20.13.02.00" target="_blank">
+<IMG SRC="/web/20051220130204im_/http://view.atdmt.com/AGI/view/nwyrksgd0010003702agi/direct/01/2005.12.20.13.02.00" BORDER=0 ALT="Click Here"></A>
+
+<br><br>
+<!-- ADXINFO classification="text_ad" campaign="amerex20a-nyt1"--><FONT class="smtext" color="#3366CC" FACE="Arial, Helvetica, Sans Serif" SIZE="-1"><A HREF="/web/20051220130204/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/books/index.html&amp;pos=Right8&amp;camp=amerex20a-nyt1&amp;ad=amex_textlink2.html&amp;goto=http://www.americanexpress.com/cardfinder/apply.cgi%3F14/8473/b/9" target="_blank">American Express<br>
+Apply today for the Business Gold Card</a></font><br>
+<br><br>
+
+</td>
+<td width="4"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="4" height="1"/></td>
+</tr>
+<tr><td colspan="3" width="98"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/blue_hr.gif" width="98" height="3""/></td></tr>
+</table>
+
+</td></tr>
+</table>
+</td><td width="1" bgcolor="#999999" valign="top"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"/></td><td width="669" valign="top" align="left"><table border="0" width="669" cellspacing="0" cellpadding="0" bgcolor="#ffffff"><tr><td align="left" valign="top" width="5" rowspan="3"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1" border="0"/></td><td align="left" valign="top" width="469"><table border="0" width="469" cellspacing="0" cellpadding="0" bgcolor="#ffffff"><tr><td width="274" valign="top" style="padding-top: 5px;"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="274" height="1" border="0"/><br><!--<a href="/web/20051220130204/http://www.nytimes.com/indexes/2005/12/17/books/review/index.html"><img src="/web/20051220130204/http://graphics.nytimes.com/images/2005/12/18/books/cover274.jpg" width="274" height="214" border="0" alt=""/></a>
+<div align="right"><font size="-2">Viktor Koen</font> 
+<br clear="all">-->
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+
+<a href="/web/20051220130204/http://www.nytimes.com/2005/12/20/books/20kirs.html"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/2005/12/19/books/kirsh75.jpg" height="75" width="75" alt="Ex-Publisher, Now Agent, Looking Both Ways" align="right" border="0"></a>
+
+<font face="Times New Roman,Times,Serif" color="#000066" size="+1"><strong>
+<span class="headlineWrapper"><a href="/web/20051220130204/http://www.nytimes.com/2005/12/20/books/20kirs.html" class="main">Ex-Publisher, Now Agent, Looking Both Ways</a></span>
+</strong></font><br><font FACE="Times New Roman,Times,Serif" COLOR="#000000" SIZE="-1">By EDWARD WYATT</font><br><font face="Times New Roman,Times,Serif" color="#000000">Laurence J. Kirshbaum, the former chief executive of the Time Warner Book Group, has changed sides and opened his own literary agency.</font><br>
+
+
+<br>
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+
+<a href="/web/20051220130204/http://www.nytimes.com/2005/12/20/arts/design/20mosa.html"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/2005/12/19/books/mosa75.jpg" height="75" width="75" alt="Three Faiths, One Lesson" align="right" border="0"></a>
+
+<font face="Times New Roman,Times,Serif" color="#000066" size="+1"><strong>
+<span class="headlineWrapper"><a href="/web/20051220130204/http://www.nytimes.com/2005/12/20/arts/design/20mosa.html" class="main">Three Faiths, One Lesson</a></span>
+</strong></font><br><font FACE="Times New Roman,Times,Serif" COLOR="#000000" SIZE="-1">By KATHRYN SHATTUCK</font><br><font face="Times New Roman,Times,Serif" color="#000000">An exhibit in Brooklyn shows the work of Muslim, Jewish and Catholic students reacting to a children's book about Jerusalem.</font><br>
+
+
+<br>
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+<font color="#666666" size="-1"><strong>BOOKS OF THE TIMES | 'PRESIDENT REAGAN'</strong></font><br>
+
+<a href="/web/20051220130204/http://www.nytimes.com/2005/12/20/books/20kaku.html"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/2005/12/19/books/reeves75.jpg" height="75" width="75" alt="Trying to Tell if Reagan Was a Leader or Was Led" align="right" border="0"></a>
+
+<font face="Times New Roman,Times,Serif" color="#000066" size="+1"><strong>
+<span class="headlineWrapper"><a href="/web/20051220130204/http://www.nytimes.com/2005/12/20/books/20kaku.html" class="main">Trying to Tell if Reagan Was a Leader or Was Led</a></span>
+</strong></font><br><font FACE="Times New Roman,Times,Serif" COLOR="#000000" SIZE="-1">By MICHIKO KAKUTANI</font><br><font face="Times New Roman,Times,Serif" color="#000000">Richard Reeves's volume reminds us of the disparity between Reagan's mythic reputation and the speculation about his intellectual disengagement.</font><br>
+
+
+<br>
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+<font face="Times New Roman,Times,Serif" color="#000066" size="+1"><strong>
+<span class="headlineWrapper"><a href="/web/20051220130204/http://www.nytimes.com/2005/12/20/books/20book.html" class="main">The New German Novel: Less Weighty, More Exportable</a></span>
+</strong></font><br><font FACE="Times New Roman,Times,Serif" COLOR="#000000" SIZE="-1">By CARTER DOUGHERTY</font><br><font face="Times New Roman,Times,Serif" color="#000000">German authors are in the midst of a breakthrough that is propelling their work to hitherto unfound success abroad. </font><br>
+
+
+<br>
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+
+<a href="/web/20051220130204/http://www.nytimes.com/2005/12/19/arts/television/19mast.html"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/2005/12/19/arts/19mast_CA075.jpg" height="75" width="75" alt="Russians Await a Cult Novel's Film Debut With Eagerness and Skepticism" align="right" border="0"></a>
+
+<font face="Times New Roman,Times,Serif" color="#000066" size="+1"><strong>
+<span class="headlineWrapper"><a href="/web/20051220130204/http://www.nytimes.com/2005/12/19/arts/television/19mast.html" class="main">Russians Await a Cult Novel's Film Debut With Eagerness and Skepticism</a></span>
+</strong></font><br><font FACE="Times New Roman,Times,Serif" COLOR="#000000" SIZE="-1">By PAUL SONNE</font><br><font face="Times New Roman,Times,Serif" color="#000000">A television adaptation of Mikhail Bulgakov's novel, "The Master and Margarita," has caused mixed reactions among its devoted fans.</font><br>
+
+
+<br><font face="Times New Roman,Times,Serif" color="#666666" size="-1"><strong>MORE BOOKS NEWS</strong></font><br>&#149; <a href="/web/20051220130204/http://nytimes.com/pages/books/text/index.html">All Headlines</a> <br clear="all"><br></td><td width="5"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1" border="0"/></td><td width="1" bgcolor="#999999"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"/></td><td width="5"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1" border="0"/></td><td width="184" valign="top" style="padding-top: 5px;">
+<IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/2004/10/17/books/BookReview_SF_184.gif" align="left" vspace="0" hspace="0" border="0">
+<br clear="all"><br>
+<table align="right" width="100" cellpadding="0" cellspacing="0">
+<tr><td width="100" align="left">
+<a href="/web/20051220130204/http://www.nytimes.com/pages/books/review/index.html"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/2005/12/18/books/cover100.jpg" width="100" height=125" alt="Cover Art" vspace="0" hspace="0" border="0" align="left"></a>
+</td></tr></table>
+<a href="/web/20051220130204/http://www.nytimes.com/2005/12/18/books/review/18weiner.html"><font size="-1"><strong>'A People's History of Science'</strong></font></a>
+<br><font size="-1">By Clifford D. Conner</font>
+<BR><br>
+<a href="/web/20051220130204/http://www.nytimes.com/2005/12/18/books/review/18horgan.html"><font size="-1"><strong>'The Republican War on Science'</strong></font></a>
+<br><font size="-1">By Chris Mooney</font>
+<BR><br>
+<a href="/web/20051220130204/http://www.nytimes.com/2005/12/18/books/review/18paul.html"><font size="-1"><strong>Pamela Paul on Book Blogs</strong></font></a>
+<!--<br><font size="-1">By John Banville</font>-->
+<BR>
+<table width="180" cellpadding="0" cellspacing="0" align="left" border="0">
+<tr><td align="left" colspan="2"><br>
+</td></tr>
+<tr><td align="left" width="10" height="15">
+<IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/2002/11/10/books/arrow.gif" align="left" vspace="0" hspace="0" border="0">
+</td><td align="left" width="170" height="15">
+<a href="/web/20051220130204/http://www.nytimes.com/pages/books/review/index.html"><font class="smtext" face="arial, helvetica, sans serif" size="-1" color="#000066">Complete Sunday Book Review</font></a>
+</td></tr>
+<tr><td align="left" height="15" width="10">
+<IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/2002/11/10/books/arrow.gif" align="left" vspace="0" hspace="0" border="0">
+</td><td align="left" width="170">
+<a href="/web/20051220130204/http://www.nytimes.com/pages/books/chapters/index.html">
+<font class="smtext" face="arial, helvetica, sans serif" size="-1" color="#000066">Read First Chapters</font></a>
+</td></tr>
+<tr><td align="left" colspan="2"><br>
+</td></tr>
+</table>
+<br clear="all">
+<br clear="all">
+<IMG src="/web/20051220130204im_/http://graphics8.nytimes.com//images/2004/10/17/books/BestSellers_184.gif" align="left" vspace="0" hspace="0" border="0">
+<br clear="all">
+<table width="180" cellpadding="0" cellspacing="0" align="left" border="0">
+<tr><td align="left" width="10" height="15" valign="top">
+<IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/2002/11/10/books/arrow.gif" align="left" vspace="0" hspace="0" border="0">
+</td><td align="left" height="15" width="170" valign="top">
+<a href="/web/20051220130204/http://www.nytimes.com/2005/12/25/books/bestseller/1225besthardfiction.html"><font class="smtext" face="arial, helvetica, sans serif" size="-1" color="#000066">#1 on the Fiction List</a>:</font> <font class="smtext" face="arial, helvetica, sans serif" size="-1" color="#000000">'S Is for Silence,' by Sue Grafton</font>
+<tr><td align="left" width="10" height="15" valign="top">
+<IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/2002/11/10/books/arrow.gif" align="left" vspace="0" hspace="0" border="0">
+</td><td align="left" height="15" width="170" valign="top">
+<font class="smtext" face="arial, helvetica, sans serif" size="-1" color="#000066"> <a href="/web/20051220130204/http://www.nytimes.com/2005/12/25/books/bestseller/1225besthardnonfiction.html">#1 on the Nonfiction List</a>:</font> <font class="smtext" face="arial, helvetica, sans serif" size="-1" color="#000000">'Teacher Man,' by Frank McCourt</font> <tr><td align="left" width="10" height="15" valign="top">
+<IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/2002/11/10/books/arrow.gif" align="left" vspace="0" hspace="0" border="0">
+</td><td align="left" height="15" width="170" valign="top">
+<a href="/web/20051220130204/http://www.nytimes.com/pages/books/bestseller/index.html"><font class="smtext" face="arial, helvetica, sans serif" size="-1" color="#000066">All Lists</font></a>
+</td></tr>
+<tr><td align="left" width="10" height="15" valign="top">
+<IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/2002/11/10/books/arrow.gif" align="left" vspace="0" hspace="0" border="0">
+</td><td align="left" height="15" width="170" valign="top">
+<a href="/web/20051220130204/http://www.nytimes.com/2005/12/18/books/review/18tbr.html"><font class="smtext" face="arial, helvetica, sans serif" size="-1" color="#000066">Inside the List</font></a>
+</td></tr>
+</table>
+<br clear="all"><br>
+<IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/2004/10/17/books/BrowsingBooks_184.gif" align="left" vspace="0" hspace="0" border="0">
+<br clear="all">
+<table width="180" bgcolor="#ffffff" cellpadding="0" cellspacing="0" align="left" border="0">
+<tr><td align="left" width="10" height="15">
+<IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/2002/11/10/books/arrow.gif" align="left" vspace="0" hspace="0" border="0">
+</td><td align="left" height="15" width="170">
+<a href="/web/20051220130204/http://www.nytimes.com/2005/12/18/books/review/1218bb-hardcover.html"><font class="smtext" face="arial, helvetica, sans serif" size="-1" color="#000066">Editors' Choice</font></a>
+</td></tr>
+<tr><td align="left" height="15" width="10">
+<IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/2002/11/10/books/arrow.gif" align="left" vspace="0" hspace="0" border="0">
+</td><td align="left" width="170">
+<a href="/web/20051220130204/http://www.nytimes.com/2005/12/18/books/review/1218bb-paperback.html"><font class="smtext" face="arial, helvetica, sans serif" size="-1" color="#000066">Paperback Row</font></a>
+</td></tr>
+<tr><td align="left" height="15" width="10">
+<IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/2002/11/10/books/arrow.gif" align="left" vspace="0" hspace="0" border="0">
+</td><td align="left" width="170">
+<a href="/web/20051220130204/http://www.nytimes.com/ref/readersopinions/reading-group-picks.html">
+<font class="smtext" face="arial, helvetica, sans serif" size="-1" color="#000066">Reading Group Picks</font></a>
+</td></tr>
+<tr><td align="left" height="15" width="10">
+<IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/2002/11/10/books/arrow.gif" align="left" vspace="0" hspace="0" border="0">
+</td><td align="left" width="170">
+<a href="/web/20051220130204/http://www.nytimes.com/2005/12/11/books/review/tenbest.html">
+<font class="smtext" face="arial, helvetica, sans serif" size="-1" color="#000066">The 10 Best Books of 2005</font></a>
+</td></tr>
+<tr><td align="left" height="15" width="10">
+<IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/2002/11/10/books/arrow.gif" align="left" vspace="0" hspace="0" border="0">
+</td><td align="left" width="170">
+<a href="/web/20051220130204/http://www.nytimes.com/2005/12/04/books/review/notable-books2005.html">
+<font class="smtext" face="arial, helvetica, sans serif" size="-1" color="#000066">100 Notable Books of 2005</font></a>
+</td></tr>
+<tr><td align="left" height="15" width="10">
+<IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/2002/11/10/books/arrow.gif" align="left" vspace="0" hspace="0" border="0">
+</td><td align="left" width="170">
+<a href="/web/20051220130204/http://www.nytimes.com/2005/12/18/books/review/18grandin.html">
+<font class="smtext" face="arial, helvetica, sans serif" size="-1" color="#000066">Children's Books</font></a>
+</td></tr>
+<tr><td align="left" height="15" width="10">
+<IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/2002/11/10/books/arrow.gif" align="left" vspace="0" hspace="0" border="0">
+</td><td align="left" width="170">
+<a href="/web/20051220130204/http://www.nytimes.com/ref/books/books-featured-authors-archive.html">
+<font class="smtext" face="arial, helvetica, sans serif" size="-1" color="#000066">Featured Authors</font></a>
+</td></tr>
+<tr><td align="left" height="15" width="10">
+<IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/2002/11/10/books/arrow.gif" align="left" vspace="0" hspace="0" border="0">
+</td><td align="left" width="170">
+<a href="/web/20051220130204/http://www.nytimes.com/ref/books/books-audio-archive.html">
+<font class="smtext" face="arial, helvetica, sans serif" size="-1" color="#000066">Audio Readings</font></a>
+</td></tr>
+<tr><td align="left" height="15" width="10">
+<IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/2002/11/10/books/arrow.gif" align="left" vspace="0" hspace="0" border="0">
+</td><td align="left" width="170">
+<a href="/web/20051220130204/http://www.nytimes.com/ref/books/nobel-prize-literature.html">
+<font class="smtext" face="arial, helvetica, sans serif" size="-1" color="#000066">Nobel Prizes</font></a>
+</td></tr>
+<tr><td align="left" height="15" width="10">
+<IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/2002/11/10/books/arrow.gif" align="left" vspace="0" hspace="0" border="0">
+</td><td align="left" width="170">
+<a href="/web/20051220130204/http://www.nytimes.com/ref/books/national-book-award.html">
+<font class="smtext" face="arial, helvetica, sans serif" size="-1" color="#000066">National Book Awards</font></a>
+</td></tr>
+<tr><td colspan="2">
+<br><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/2002/11/10/books/line.gif" align="left" vspace="0" hspace="0" border="0" alt="Line"></td></tr>
+</table>
+<br clear="all">
+<font face="Times New Roman,Times,Serif" color="#666666" size="-1"><strong>THE CRITICS</strong></font> <br>
+<font face="Times New Roman,Times,Serif" color="#000000"><em>Reviews since 1996 by:</em>
+<br>•
+<a href="/web/20051220130204/http://query.nytimes.com/search/query?ppds=bylL&amp;v1=MICHIKO%20KAKUTANI&amp;fdq=19960101&amp;td=sysdate&amp;sort=newest&amp;ac=MICHIKO%20KAKUTANI?inline=nyt-per">Michiko Kakutani</a>
+<br>•
+<a href="/web/20051220130204/http://query.nytimes.com/search/query?ppds=bylL&amp;v1=JANET%20MASLIN&amp;fdq=19960101&amp;td=sysdate&amp;sort=newest&amp;ac=JANET%20MASLIN?inline=nyt-per">Janet Maslin</a>
+<br>•
+<a href="/web/20051220130204/http://query.nytimes.com/search/query?ppds=bylL&amp;v1=WILLIAM%20GRIMES&amp;fdq=19960101&amp;td=sysdate&amp;sort=newest&amp;ac=WILLIAM%20GRIMES?inline=nyt-per">William Grimes</a></font>
+<br>
+<br clear="all">
+<hr size="1"> 
+<br></td></tr><tr><td width="469" colspan="5" align="center"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/section/homepage/line2gray5x468.gif" width="468" height="5" border="0" vspace="4"/> <!-- ADXINFO classification="banner" campaign="spanish02-nyt4"--><SCRIPT language='JavaScript1.1' SRC="/web/20051220130204js_/http://ad.doubleclick.net/adj/N884.NewYorkTimes.eu/B1741859.2;sz=468x60;ord=2005.12.20.13.02.00"> 
+</SCRIPT> 
+<NOSCRIPT> 
+<A HREF="/web/20051220130204/http://ad.doubleclick.net/jump/N884.NewYorkTimes.eu/B1741859.2;sz=468x60;ord=2005.12.20.13.02.00"> 
+<IMG SRC="/web/20051220130204im_/http://ad.doubleclick.net/ad/N884.NewYorkTimes.eu/B1741859.2;sz=468x60;ord=2005.12.20.13.02.00" BORDER=0 WIDTH=468 HEIGHT=60 ALT="Click Here"></A> 
+</NOSCRIPT><br> <IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/section/homepage/line2gray5x468.gif" width="468" height="5" border="0" vspace="4"/></td></tr><tr><td width="274" valign="top"> <a href="/web/20051220130204/http://nytimes.com/pages/books/review/index.html"><font size="-1" color="#990000"><strong>SUNDAY BOOK REVIEW</strong></font></a><br><br><font face="Times New Roman,Times,Serif">
+<span class="headlineWrapper"><a href="/web/20051220130204/http://www.nytimes.com/2005/12/18/books/review/18weiner.html">Proletarian Science</a></span>
+</font><br><br><font face="Times New Roman,Times,Serif">
+<span class="headlineWrapper"><a href="/web/20051220130204/http://www.nytimes.com/2005/12/18/books/review/18horgan.html">Political Science</a></span>
+</font><br><br><font face="Times New Roman,Times,Serif">
+<span class="headlineWrapper"><a href="/web/20051220130204/http://www.nytimes.com/2005/12/18/books/review/18paul.html">What Are the Blogs Saying About Me?</a></span>
+</font><br><br><font face="Times New Roman,Times,Serif">
+<span class="headlineWrapper"><a href="/web/20051220130204/http://www.nytimes.com/2005/12/18/books/review/18harrison.html">Metaphor as Illness</a></span>
+</font><br><br><font face="Times New Roman,Times,Serif">
+<span class="headlineWrapper"><a href="/web/20051220130204/http://www.nytimes.com/2005/12/18/books/review/18ladd.html">A State of Evil</a></span>
+</font><br><br><font face="Times New Roman,Times,Serif">
+<span class="headlineWrapper"><a href="/web/20051220130204/http://www.nytimes.com/2005/12/18/books/review/18johnson.html">Enigmatic</a></span>
+</font><br><br><font face="Times New Roman,Times,Serif">
+<span class="headlineWrapper"><a href="/web/20051220130204/http://www.nytimes.com/2005/12/18/books/review/18kirby.html">The Biggest Little Poems</a></span>
+</font><br><br> <a href="/web/20051220130204/http://nytimes.com/pages/books/bestseller/index.html"><font size="-1" color="#990000"><strong>BEST-SELLER LISTS</strong></font></a><br><br><font face="Times New Roman,Times,Serif">
+<span class="headlineWrapper"><a href="/web/20051220130204/http://www.nytimes.com/2005/12/25/books/bestseller/1225besthardfiction.html">Hardcover Fiction</a></span>
+</font><br><br><font face="Times New Roman,Times,Serif">
+<span class="headlineWrapper"><a href="/web/20051220130204/http://www.nytimes.com/2005/12/25/books/bestseller/1225besthardnonfiction.html">Hardcover Nonfiction</a></span>
+</font><br><br><font face="Times New Roman,Times,Serif">
+<span class="headlineWrapper"><a href="/web/20051220130204/http://www.nytimes.com/2005/12/25/books/bestseller/1225besthardadvice.html">Hardcover Advice</a></span>
+</font><br><br><font face="Times New Roman,Times,Serif">
+<span class="headlineWrapper"><a href="/web/20051220130204/http://www.nytimes.com/2005/12/25/books/bestseller/1225bestchildren.html">Children's Books</a></span>
+</font><br><br><font face="Times New Roman,Times,Serif">
+<span class="headlineWrapper"><a href="/web/20051220130204/http://www.nytimes.com/2005/12/25/books/bestseller/1225bestpaperfiction.html">Paperback Fiction</a></span>
+</font><br><br><font face="Times New Roman,Times,Serif">
+<span class="headlineWrapper"><a href="/web/20051220130204/http://www.nytimes.com/2005/12/25/books/bestseller/1225bestpapernonfiction.html">Paperback Nonfiction</a></span>
+</font><br><br><font face="Times New Roman,Times,Serif">
+<span class="headlineWrapper"><a href="/web/20051220130204/http://www.nytimes.com/2005/12/25/books/bestseller/1225bestpaperadvice.html">Paperback Advice</a></span>
+</font><br><br></td><td width="5"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1" border="0"/></td><td width="1" bgcolor="#999999"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"/></td><td width="5"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1" border="0"/></td><td width="184" valign="top">
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+<div class="promoTextEditorial"><font color="#666666" size="-1"><strong>READER PICKS</strong></font><br>
+
+<a href="/web/20051220130204/http://www.nytimes.com/ref/readersopinions/reading-group-picks.html"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/2005/09/19/books/gorr75.jpg" height="75" width="75" alt="Books Reading Group" align="right" border="0"></a>
+
+<font face="Times New Roman,Times,Serif" color="#000066"><strong>
+<span class="headlineWrapper"><a href="/web/20051220130204/http://www.nytimes.com/ref/readersopinions/reading-group-picks.html">Books Reading Group</a></span>
+</strong></font><br><font face="Times New Roman,Times,Serif" color="#000000">Join Ahab and Ishmael and the rest of the crew of the Pequod on a quest for the great white whale.</font><br>
+
+<IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/global/common/bullet_black.gif" align="absmiddle" alt="" border="0" height="3" width="3"/>&#160;<span style="font-size:80%"><a href="/web/20051220130204/http://forums.nytimes.com/top/opinion/readersopinions/forums/books/index.html">More Books Forums</a></span><br/>
+
+<br></div><hr size="1">
+<font face="Times New Roman,Times,Serif" color="#666666" size="-1"><strong>FEATURED FIRST CHAPTER</strong></font></font><BR>
+<font face="Times New Roman,Times,Serif" color="#000000"><strong><A HREF="/web/20051220130204/http://www.nytimes.com/2005/12/18/books/chapters/1218-1st-gordi.html">'Get a Life'</A></strong></font> <br> <font FACE="Times New Roman,Times,Serif" COLOR="#000000" SIZE="-1">By NADINE GORDIMER
+</font><br>
+<font face="Times New Roman,Times,Serif" color="#000000">
+"[W]hen he was discharged after a few days of total isolation in hospital he still would be radioactive and a threat to those in contact with him."
+</font><br>
+<font size="-1">•</font> <font FACE="Times New Roman,Times,Serif" COLOR="#000000" SIZE="-1"> <A HREF="/web/20051220130204/http://www.nytimes.com/2005/12/18/books/chapters/1218-1st-hamil.html">'Cooking With Fernet Branca,' by James Hamilton-Paterson</A></font><br>
+<font size="-1">•</font> <font FACE="Times New Roman,Times,Serif" COLOR="#000000" SIZE="-1"> <A HREF="/web/20051220130204/http://www.nytimes.com/2005/12/18/books/chapters/1218-1st-vande.html">'The Brontë Project,' by Jennifer Vandever</A></font><br>
+<font size="-1">•</font> <font FACE="Times New Roman,Times,Serif" COLOR="#000000" SIZE="-1"> <a href="/web/20051220130204/http://www.nytimes.com/pages/books/chapters/index.html">More First Chapters</A></font><br><br>
+<hr size="1">
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+<div class="promoTextEditorial"><font color="#666666" size="-1"><strong>HOLIDAY BOOKS</strong></font><br>
+
+<a href="/web/20051220130204/http://www.nytimes.com/2005/12/11/books/review/tenbest.html"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/2005/11/30/books/tenbest75.jpg" height="75" width="75" alt="The 10 Best Books of 2005" align="right" border="0"></a>
+
+<font face="Times New Roman,Times,Serif" color="#000066"><strong>
+<span class="headlineWrapper"><a href="/web/20051220130204/http://www.nytimes.com/2005/12/11/books/review/tenbest.html">The 10 Best Books of 2005</a></span>
+</strong></font><br><font face="Times New Roman,Times,Serif" color="#000000">The editors' choices include books by Zadie Smith, Ian McEwan, George Packer and Joan Didion.</font><br>
+
+<IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/global/common/bullet_black.gif" align="absmiddle" alt="" border="0" height="3" width="3"/>&#160;<span style="font-size:80%"><a href="/web/20051220130204/http://www.nytimes.com/2005/12/04/books/review/notable-books2005.html">100 Notable Books of 2005</a></span><br/>
+<IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/global/common/bullet_black.gif" align="absmiddle" alt="" border="0" height="3" width="3"/>&#160;<span style="font-size:80%"><a href="/web/20051220130204/http://forums.nytimes.com/top/opinion/readersopinions/forums/books/notablebooksof2005/index.html">Forum: Discuss the Choices</a></span><br/>
+
+<br></div><hr size="1">
+<br clear="all">
+<font face="Times New Roman,Times,Serif" color="#666666" size="-1"><strong>NEWSLETTERS</strong></font> 
+<br>
+<font face="Times New Roman,Times,Serif" color="#000000">
+<strong><a href="/web/20051220130204/http://www.nytimes.com/email">
+Sign Up for the Books Update</a></strong></font> 
+<br>
+<font face="Times New Roman,Times,Serif" color="#000000">
+Receive a selective overview of new book reviews and features every Sunday. 
+</font> 
+<br>
+<br clear="all">
+<font face="Times, Times New Roman, Serif" color="#666666" size="-1">
+<strong>HELP</strong></font><br>
+<font face="Times New Roman,Times,Serif" color="#000000"><strong><a href="/web/20051220130204/http://www.nytimes.com/membercenter/faq/books.html">Books FAQ</a></strong> <br></FONT>
+<br clear="all">
+</td></tr></table></td><td align="left" valign="top" width="5" rowspan="2"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1" border="0"/></td><td align="left" valign="top" width="1" rowspan="2" bgcolor="#999999"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"/></td><td align="left" valign="top" width="5" rowspan="2"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1" border="0"/></td><td width="184" rowspan="2" valign="top" style="padding-top: 5px;">
+
+
+
+<!--- Code starts here-->
+<table width="184" border="0" align="left" cellpadding="0" cellspacing="0">
+<TR>
+<TD WIDTH="184" HEIGHT="22">
+<IMG SRC="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/pennants/booksearch.gif" WIDTH="184" 
+
+HEIGHT="22" BORDER="0" ALT="Book Search"/>
+</TD>
+</TR>
+<TR>
+<TD>
+<IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="2" height="2" border="0"/><br 
+
+clear="all">
+<FONT CLASS="bodytextsmall" FACE="Times New Roman,Times,Serif" COLOR="#000000" SIZE="1">
+Search book reviews since 1996.</FONT>
+</TD>
+</TR>
+<TR>
+<FORM METHOD="GET" NAME="booksearch" action="/web/20051220130204/http://topics.nytimes.com/top/features/books/bookreviews/">
+<TD ALIGN="left" VALIGN="middle">
+<FONT CLASS="forms" FACE="Arial,Helvetica,Sans serif" COLOR="#000000" SIZE="1">
+<INPUT type="hidden" name="s" value="closest">
+<select name="match" class="small">
+<option value="all" selected="">Match All Words</option>
+<option value="any">Match Any Words</option>
+<option value="exact">Match Exact Phrase</option>
+</select> <br>
+<INPUT class="small" type="text" maxlength="50" value="" size="14" name="query"/> <input align="absmiddle" vspace="5" width="28" height="21" border="0" hspace="4" alt="Go" type="image" src="/web/20051220130204im_/http://graphics8.nytimes.com/images/article/go_button.gif">
+</FONT>
+</TD>
+</TR>
+<TR>
+<TD ALIGN="left" VALIGN="middle">
+</TD>
+</FORM>
+</TR>
+<TR>
+<TD>
+<hr size="1">
+</TD>
+</TR>
+</TABLE>
+<br clear="all"/>
+<!--Code Ends here --><!--<div class="epromoBox"><div class="epromoText"><a href="/pages/multimedia/index.html?8dpc"><img src="/web/20051220130204/http://graphics.nytimes.com/images/promos/headers/multimedia.gif" alt="Multimedia" width="162" height="25" border="0"></a><br><a href="/web/20051220130204/http://www.nytimes.com/literarymap"><img src="/web/20051220130204/http://graphics.nytimes.com/images/promos/headers/subheaders/interactivefeature.gif" alt="Interactive Feature" width="162" height="20" border="0"></a><br><a href="/web/20051220130204/http://www.nytimes.com/literarymap"><img src="/web/20051220130204/http://graphics.nytimes.com/images/2005/06/05/books/litmap162b.jpg" width="162" height="94" border=0 vspace=2></a><br clear="all"><strong><a href="/web/20051220130204/http://www.nytimes.com/literarymap">A Literary Map of Manhattan</a></strong><br>Where imaginary New Yorkers lived, worked, played, drank, walked and looked at ducks.<br>•  <a href="/web/20051220130204/http://www.nytimes.com/2005/06/05/books/review/05RAND01.html">How We Mapped Manhattan</a> <br></div></div>
+<hr size=1>--><div align="center"></div><br><br><div align="center"><!-- ADXINFO classification="skyscraper" campaign="spanish03b-nyt4"--><SCRIPT language='JavaScript1.1' SRC="/web/20051220130204js_/http://ad.doubleclick.net/adj/N884.NewYorkTimes.eu/B1741859.3;sz=160x600;ord=2005.12.20.13.02.00"> 
+</SCRIPT> 
+<NOSCRIPT> 
+<A HREF="/web/20051220130204/http://ad.doubleclick.net/jump/N884.NewYorkTimes.eu/B1741859.3;sz=160x600;ord=2005.12.20.13.02.00"> 
+<IMG SRC="/web/20051220130204im_/http://ad.doubleclick.net/ad/N884.NewYorkTimes.eu/B1741859.3;sz=160x600;ord=2005.12.20.13.02.00" BORDER=0 WIDTH=160 HEIGHT=600 ALT="Click Here"></A> 
+</NOSCRIPT></div><br><br><div align="center"><!-- ADXINFO classification="feature_squares" campaign="nytnyt-marketingmoduleTUES"-->
+
+
+
+
+
+<!--MARKETING MODULE STARTS HERE -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td align="left" valign="top" colspan="3" width="100%">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="left" valign="top"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_1b.gif" width="14" height="21" alt="" /></td>			
+<td align="center" valign="top" background="/web/20051220130204im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_2b.gif" width="100%"></td>
+<td align="left" valign="top"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_3b.gif" width="14" height="21" alt="" /></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="left" valign="top" background="/web/20051220130204im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_10.gif" width="4"></td>
+<td align="left" valign="top" width="100%"> 
+<div align="center"><a href="/web/20051220130204/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/books/index.html&amp;pos=Right&amp;camp=nytnyt-marketingmoduleTUES&amp;ad=business_122005.html&amp;goto=http://www.nytimes.com/business%3Fmkt=bizgif" target="_new"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/marketing/2005module/images/h_business2.gif" alt="Business" width="130" height="15" border="0"></a><br>
+<a href="/web/20051220130204/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/books/index.html&amp;pos=Right&amp;camp=nytnyt-marketingmoduleTUES&amp;ad=business_122005.html&amp;goto=http://www.nytimes.com/business%3Fmkt=bizurl" style="font-size:11px; font-family: arial, helvetica, sans-serif;" target="_new"><strong>nytimes.com/business</strong></a></div>
+<br>
+</td>
+<td align="right" valign="top" background="/web/20051220130204im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_09.gif"></td>
+</tr>
+<tr>
+<td align="left" valign="top" background="/web/20051220130204im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_10.gif" width="4"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="4"></td>
+<td align="left" valign="top" background="/web/20051220130204im_/http://graphics8.nytimes.com/marketing/2005module/images/business_122005text.gif" width="100%"><a href="/web/20051220130204/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/books/index.html&amp;pos=Right&amp;camp=nytnyt-marketingmoduleTUES&amp;ad=business_122005.html&amp;goto=http://www.nytimes.com/2005/12/19/business/media/19aol.html%3Fex=1150606800%26en=32aadad6effac89e%26ei=5087%26mkt=bizphoto" target="new"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="100%" height="46" border="0" alt="The Big Deal"></a></td>
+<td align="left" valign="top" background="/web/20051220130204im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_09.gif"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="4"></td>
+</tr>
+<tr>
+<td align="left" valign="top" background="/web/20051220130204im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_10.gif" width="4"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="4"></td>
+<td align="left" valign="top" background="/web/20051220130204im_/http://graphics8.nytimes.com/marketing/2005module/images/business_122005photo.jpg" width="100%"><a href="/web/20051220130204/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/books/index.html&amp;pos=Right&amp;camp=nytnyt-marketingmoduleTUES&amp;ad=business_122005.html&amp;goto=http://www.nytimes.com/2005/12/19/business/media/19aol.html%3Fex=1150606800%26en=32aadad6effac89e%26ei=5087%26mkt=bizphoto" target="new"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="100%" height="48" border="0" alt="The Big Deal"></a></td>
+<td align="left" valign="top" background="/web/20051220130204im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_09.gif"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="4"></td>
+</tr>
+<tr>
+<td align="left" valign="top" background="/web/20051220130204im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_10.gif" height="100%"></td>
+<td align="left" valign="top" width="100%" style="margin-top: 10px; margin-bottom: 10px;"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/images/misc/spacer.gif" class="spacer" width="100%" height="1" alt="" border="0" /></td>
+<td align="right" valign="top" background="/web/20051220130204im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_09.gif"></td>
+</tr>
+<tr>
+<td align="left" valign="top" background="/web/20051220130204im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_10.gif" height="100%"></td>
+<td align="left" valign="top" width="100%" style="font-size:11px; font-family: arial, helvetica, sans-serif; color:000000; padding-top:5px; padding-bottom:0px; padding-left:10px; padding-right: 9px;"><p style="margin-bottom: 3px;"><a href="/web/20051220130204/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/books/index.html&amp;pos=Right&amp;camp=nytnyt-marketingmoduleTUES&amp;ad=business_122005.html&amp;goto=http://www.nytimes.com/2005/12/19/business/media/19aol.html%3Fex=1150606800%26en=32aadad6effac89e%26ei=5087%26mkt=bizphoto" target="_new"><strong>AOL's choice of Google leaves Microsoft as the outsider</strong></a></p><br>Also in Business:<br>
+<table width="100%">
+<tr>
+<td width="10" valign="top"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/marketing/2005module/images/bullet.gif" width="10" height="11"></td>
+<td width="100%" valign="top" style="font-size:11px; font-family: arial, helvetica, sans-serif; color:000000;"><a href="/web/20051220130204/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/books/index.html&amp;pos=Right&amp;camp=nytnyt-marketingmoduleTUES&amp;ad=business_122005.html&amp;goto=http://www.nytimes.com/2005/12/19/business/19warner.html%3Fex=1137646800%26en=516bb81879aed83c%26ei=5087%26mkt=bizlink1" target="_new">Inside the shake-up at the WB</a></td>
+</tr>
+<tr>
+<td width="10" valign="top"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/marketing/2005module/images/bullet.gif" width="10" height="11"></td>
+<td width="100%" valign="top" style="font-size:11px; font-family: arial, helvetica, sans-serif; color:000000;"><a href="/web/20051220130204/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/books/index.html&amp;pos=Right&amp;camp=nytnyt-marketingmoduleTUES&amp;ad=business_122005.html&amp;goto=http://www.nytimes.com/2005/12/18/business/yourmoney/18digi.html%3Fex=1150606800%26en=a3a30ae05f1db405%26ei=5087%26mkt=bizlink2" target="_new">Is Mark Cuban missing the big picture?</a></td>
+</tr>
+<tr>
+<td width="10" valign="top"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/marketing/2005module/images/bullet.gif" width="10" height="11"></td>
+<td width="100%" valign="top" style="font-size:11px; font-family: arial, helvetica, sans-serif; color:000000;"><a href="/web/20051220130204/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/books/index.html&amp;pos=Right&amp;camp=nytnyt-marketingmoduleTUES&amp;ad=business_122005.html&amp;goto=http://nytimes.com/2005/12/13/business/worldbusiness/TradeIssues.html%3Fex=1150606800%26en=bacd98f70b14494d%26ei=5087%26mkt=bizlink3" target="_new">Your guide to the 2005 W.T.O. conference</a></td>
+</tr>
+</table>
+</td>
+<td align="right" valign="top" background="/web/20051220130204im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_09.gif"></td>
+</tr>	
+<tr>
+<td align="left" valign="top" colspan="3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" valign="top" ><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_15.gif" width="14" height="21" alt="" /></td>
+<td align="left" valign="top" background="/web/20051220130204im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_16.gif" width="100%"></td>
+<td align="left" valign="top" colspan="2"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_17.gif" width="14" height="21" alt="" /></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--MARKETING MODULE ENDS -->
+
+</div><br><br><div align="center"><!-- ADXINFO classification="box_184x90" campaign="Vonage56-nyt2"--><iframe src="/web/20051220130204if_/http://view.atdmt.com/VON/iview/nwyrkvon0300001321von/direct/01/2005.12.20.13.02.00?click=" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" allowtransparency="true" width="184" height="90">
+<script language="JavaScript" type="text/javascript">
+document.write('<a href="/web/20051220130204/http://clk.atdmt.com/VON/go/nwyrkvon0300001321von/direct/01/2005.12.20.13.02.00" target="_blank"><img src="/web/20051220130204/http://view.atdmt.com/VON/view/nwyrkvon0300001321von/direct/01/2005.12.20.13.02.00"/></a>');
+</script><noscript><a href="/web/20051220130204/http://clk.atdmt.com/VON/go/nwyrkvon0300001321von/direct/01/2005.12.20.13.02.00" target="_blank"><img border="0" src="/web/20051220130204im_/http://view.atdmt.com/VON/view/nwyrkvon0300001321von/direct/01/2005.12.20.13.02.00" /></a></noscript></iframe></div><br><br></td></tr><tr><td><br><NYT_FOOTER><table cellspacing="0" cellpadding="0" border="0" width="469"><tr><td align="center"><a href="/web/20051220130204/http://ads.nytimes.com/nytdstuck1124990841702.html"></a><br>
+<script type="text/javascript" language="JavaScript">
+<!--
+	var google_ad_client= 'nytimes_section_var';
+	var google_ad_width = '100%';
+	var google_ad_height = '180';
+	var google_ad_format = 'ca-nytimes_flex';
+	var google_safe = 'high';
+        
+// -->
+</script>
+<script type="text/javascript" language="JavaScript" src="/web/20051220130204js_/http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+<br clear="all">
+<br clear="all">
+<br clear="all">
+
+<br></td></tr><tr><td align="center"><a href="/web/20051220130204/http://www.nytimes.com/gst/nytheadlines.html">Add New York Times headlines to your site</a><br><br><a href="/web/20051220130204/http://www.nytimes.com/rss">Add New York Times RSS feeds</a>&nbsp;<a href="/web/20051220130204/http://www.nytimes.com/rss"><IMG src="/web/20051220130204im_/http://graphics8.nytimes.com/services/xml/rss/images/xml_36x14.gif" height="14" width="36" border="0"></a><br><br><NYT_COPYRIGHT><font face="arial,helvetica,sans-serif" size="1"><a href="/web/20051220130204/http://www.nytimes.com/ref/membercenter/help/copyright.html">Copyright 2005</a>&nbsp;<a href="/web/20051220130204/http://www.nytco.com/">The New York Times Company</a></font><font size="2"> | </font><a href="/web/20051220130204/http://www.nytimes.com/ref/membercenter/help/privacy.html"><font face="arial,helvetica,sans-serif" size="1">Privacy Policy</font></a><font size="2"> | </font><a href="/web/20051220130204/http://www.nytimes.com/ref/membercenter/help/infoservdirectory.html"><font face="arial,helvetica,sans-serif" size="1">Contact Us</font></a><font size="2"> | </font><a href="/web/20051220130204/http://www.nytdigital.com/careers"><font face="arial,helvetica,sans-serif" size="1">Work for Us</font></a><font size="2"> | </font><a href="/web/20051220130204/http://spiderbites.nytimes.com/"><font face="arial,helvetica,sans-serif" size="1">Site Map</font></a></NYT_COPYRIGHT><!-- ADXINFO classification="popunder" campaign="popunder_LowerMyBills06-nytla"--><img src="/web/20051220130204im_/http://graphics8.nytimes.com/ads/usga/blank.gif" onLoad="window.open('/web/20051220130204/http://www.nytimes.com/ads/nytla/LMB-popunder.html','MyWindow','toolbar=no,directories=no,status=yes,menubar=no,scrollbars=yes,resizable=yes,width=740,height=320, top=0');window.focus();" BORDER=0"></td></tr></table></NYT_FOOTER></td></tr></table></td></tr></table><script language="JavaScript">
+if(Math.random()<0.9 && document.cookie.indexOf('dl_dn_seen')==-1) {document.cookie='dl_dn_seen=1'; document.write('<scr'+'ipt src="/web/20051220130204/http://amch.questionmarket.com/adsc/d0/473/0/decide.php?randnum='+Math.random()+'"></scr'+'ipt>');}
+</script>
+
+
+
+
+
+		<!-- SiteCatalyst code version: G.5.
+		Copyright 1997-2003 Omniture, Inc. More info available at
+		/web/20051220130204/http://www.omniture.com --><script language="JavaScript"><!--
+		var s_account="nytimesglobal"
+		var s_pageName="/pages/books/index.html"
+		var s_server=""
+		var s_channel="books"
+		var s_pageType=""
+		var s_prop1="section front"
+		var s_prop2=""
+		var s_prop3=""
+		var s_prop4=""
+		var s_prop5=""
+		var s_prop6=""
+		var s_prop7=""
+		var s_prop8=""
+		var s_prop9=""
+		var s_prop10=""
+		var s_prop12=""
+		var s_prop13=""
+		var s_prop14=""
+		var s_prop15=""
+		var s_prop16=""
+		var s_prop17=""
+		var s_campaign=""
+		var s_state=""
+		var s_zip=""
+		var s_events=""
+		var s_products=""
+		var s_purchaseID=""
+		var s_eVar1=""
+		var s_eVar2=""
+		var s_eVar3=""
+		var s_eVar4=""
+		var s_eVar5=""
+		var s_eVar6=""
+		var s_eVar7=""
+		var s_eVar8=""
+		var s_eVar9=""
+		var s_eVar10=""
+		//--></script><script language="JavaScript" src="/web/20051220130204js_/http://graphics8.nytimes.com/js/s_code_sampling.js"></script>
+		<!-- End SiteCatalyst code version: G.5. -->
+
+		
+		
+
+		<script language="Javascript">Tacoda_AMS_DDC_addPair("t_section","Books")</script>
+		<script language="Javascript">Tacoda_AMS_DDC_addPair("site","nytimes.com")</script>
+		<script language="JavaScript">Tacoda_AMS_DDC("/web/20051220130204/http://te.nytimes.com/tte/blank.gif","1.0")</script>	
+		<IMG SRC="/web/20051220130204im_/http://nytimes.com/adx/bin/clientside/40622a33Q2FVQ7BxrOtAYpQ238rODDOp8YpQ23AQ24O" height="1" width="3"> </body> </html>
+
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 13:02:04 Dec 20, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 4:08:57 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

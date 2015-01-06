@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app16.us.archive.org";archive_analytics.values.server_ms=2306;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<title>Local, National, and International Weather - Forecasts, Radar Maps, Video, and News</title><meta name="description" content="MSN Weather - Current conditions, forecasts, news, video, satellite and Doppler radar maps, and more." /><meta name="keywords" content="weather, forecast, temperature, video, news, radar maps, satellite maps, precipitation" /><meta http-equiv="content-style-type" content="text/css" /><style type="text/css">@import "/web/20051102093510cs_/http://st.msn.com/as/wea3/css/weather3.css";</style><script type="text/javascript" src="/web/20051102093510js_/http://video.msn.com/js/vp.js"></script><script src="/web/20051102093510js_/http://st.msn.com/as/wea3/js/mru-js3.txt"></script><script language="javascript" src="/web/20051102093510js_/http://hp.msn.com/scr/op/ol-fdbkv3_r1.js"></script></head><body onload="SearchFocus();">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://weather.msn.com/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "2";
+var displayMonth = "Nov";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://weather.msn.com/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20051102093510" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20051001062757/http://weather.msn.com/" title="1 Oct 2005">OCT</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 9:35:10 Nov 2, 2005">NOV</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20051203084832/http://weather.msn.com/" title="3 Dec 2005"><strong>DEC</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20051101004233/http://weather.msn.com/" title="0:42:33 Nov 1, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 9:35:10 Nov 2, 2005">2</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20051103011027/http://weather.msn.com/" title="1:10:27 Nov 3, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2004
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 9:35:10 Nov 2, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20061103163855/http://weather.msn.com/" title="3 Nov 2006"><strong>2006</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20051102093510*/http://weather.msn.com/" title="See a list of every capture for this URL">769 captures</a>
+           <div class="r" title="Timespan for captures of this URL">22 Jul 05 - 23 Dec 14</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:10:0000008b0bdf_2006:-1:cc3d27bb9898_2007:-1:686999387cab_2008:-1:962220220243_2009:-1:291211222201_2010:-1:010020143020_2011:-1:121123234211_2012:-1:acb240100205_2013:-1:323022311456_2014:-1:a11021022202_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript">var s_account="msnportalweather";</script><script language="JavaScript" src="/web/20051102093510js_/http://stj.msn.com/br/om/js/s_code.js"></script><script language="JavaScript"><!--
+s.pageName="home";s.channel="General";s.server="weather.msn.com";s.prop1="Weather";s.prop2="en-us";s.prop7="F";s.prop8="";s.prop9="OK";s.prop10="";s.prop11="";s.linkInternalFilters="javascript:,weather.msn.,weather.msn-";var s_code=s.t();if(s_code)document.write(s_code);//--></script><noscript><img src="/web/20051102093510im_/http://msnportalweather.112.2o7.net/b/ss/msnportalweather/1/H.1--NS/0" height="1" width="1" border="0" alt="" /></noscript><div><div class="container" id="msnhead"><div class="dMSNME_1"><div id="big6"><ul id="netnav"><li><a href="/web/20051102093510/http://g.msn.com/wrenus_s/0">MSN Home</a></li><li><a href="/web/20051102093510/http://g.msn.com/wrenus_s/1">My MSN</a></li><li><a href="/web/20051102093510/http://g.msn.com/wrenus_s/2">Hotmail</a></li><li><a href="/web/20051102093510/http://g.msn.com/wrenus_s/4">Shopping</a></li><li><a href="/web/20051102093510/http://g.msn.com/wrenus_s/5">Money</a></li><li><a href="/web/20051102093510/http://g.msn.com/wrenus_s/6">People &amp; Chat</a></li></ul></div><form action="/web/20051102093510/http://g.msn.com/wrenus_s/16" id="search" method="get"><fieldset><label accesskey="s" for="q">Web Search:</label><input type="text" id="q" name="q" size="14" maxlength="150" /><input type="submit" class="button" name="submit" value="Search" /><input name="CP" value="1252" type="hidden" /><input name="FORM" value="MSNW" type="hidden" /></fieldset></form></div><div><h1><a href="/web/20051102093510/http://g.msn.com/wrenus_s/14"><img alt="MSN" id="logo" src="/web/20051102093510im_/http://sc.msn.com/global/c/lgpos/MSFT_pos.gif" height="35" title="go to MSN.com" width="118" /></a><a id="sitename" href="default.aspx?weai=1">Weather</a></h1><div id="subnav"><a href="/web/20051102093510/http://g.msn.com/wrenus_s/twci_logo"><img src="/web/20051102093510im_/http://st.msn.com/as/wea3/i/wc/lgo_powered_by.gif" alt="Weather.com" /></a><a href="/web/20051102093510/http://g.msn.com/wrenus_s/msnbc_logo"><img src="/web/20051102093510im_/http://st.msn.com/as/wea3/i/lgo_msnbc.gif" alt="MSNBC" /></a></div></div></div></div><div id="mru"><form name="find" id="find" action="search.aspx" onSubmit="javascript:return SubmitIfNotEmpty('Type a city or U.S. ZIP');" method="get"><fieldset><label for="weasearchstr">Find weather for:</label><input onkeydown="setFocus();" maxlength="254" type="text" name="weasearchstr" id="weasearchstr" value="" /><input class="btn" type="submit" value="Go" /><p>(Type a city or U.S. ZIP)</p></fieldset></form><div id="tiles"><noscript><p class="noscript">A display error has occurred.  To use this feature, you must allow the use of Javascript.  To fix this error, try changing your security settings so that the use of Javascript is enabled.</p></noscript></div><div id="clear"></div></div><div id="global"><div id="gnav"><a class="i3" href="default.aspx?weai=1">Weather home</a> | <a href="maps.aspx">Weather maps</a> | <a href="TropicalStorms.aspx"><font color="#cc0000">Hurricanes &amp; storms</font></a></div><div class="scale">&#176;<a class="i3" href="/web/20051102093510/http://weather.msn.com/default.aspx?&amp;setunit=F">F</a> | &#176;<a href="/web/20051102093510/http://weather.msn.com/default.aspx?&amp;setunit=C">C</a></div><br /></div><table id="pg"><tr><td id="pg5"><div class="m2"><h2>Weather maps</h2><img src="/web/20051102093510im_/http://st.msn.com/as/wea3/i/wc/m/curwx_277x187.jpg" alt="Weather Map" /><p class="a1"><a href="maps.aspx">View all weather maps</a></p></div><div class="m0"><h2>World weather by region</h2><div class="map"><img src="/web/20051102093510im_/http://st.msn.com/as/wea3/i/wc/navigation_map.gif"  alt="To see regional weather, click a region" usemap="#Map"/></div><map name="Map"><area shape="poly" coords="3,36,26,37,26,65,6,69" alt="United States" title="United States" href="region.aspx?wealocations=United+States" /><area shape="poly" coords="27,31,28,73,70,74,73,82,78,75,87,82,100,59,71,26,89,8,71,4" alt="Canada" title="Canada" href="region.aspx?wealocations=Canada" /><area shape="poly" coords="35,74,68,74,73,82,77,77,85,81,74,96,62,96,40,88" alt="United States" title="United States" href="region.aspx?wealocations=United+States" /><area shape="poly" coords="38,88,60,96,68,100,54,103,38,91" alt="Mexico" title="Mexico" href="region.aspx?wealocations=Mexico" /><area shape="poly" coords="74,106,108,117,83,168,68,158" alt="South America" title="South America" href="region.aspx?wealocations=South+America" /><area shape="poly" coords="56,104,68,101,75,108,71,114" alt="Central America" title="Central America" href="region.aspx?wealocations=Central+America" /><area shape="poly" coords="115,100,134,84,157,90,164,106,174,108,168,137,146,147" alt="Africa" title="Africa" href="region.aspx?wealocations=Africa" /><area shape="poly" coords="180,38,183,50,178,69,168,71,168,81,155,78,150,85,139,81,123,89,119,66,150,36" alt="Europe" title="Europe" href="region.aspx?wealocations=Europe" /><area shape="poly" coords="180,36,183,47,178,71,169,72,170,78,184,79,192,79,185,99,188,112,212,109,260,70,270,42,213,18 " alt="Asia" title="Asia" href="region.aspx?wealocations=Asia" /><area shape="poly" coords="227,99,212,111,202,111,212,130,214,150,262,161,269,141" alt="Australia / Oceania" title="Australia / Oceania" href="region.aspx?wealocations=Australia+/+Oceania" /><area shape="poly" coords="166,106,182,100,190,82,174,80,156,79,154,84" alt="Middle East" title="Middle East" href="region.aspx?wealocations=Middle+East" /><area shape="poly" coords="93,6,74,26,95,53,113,41,124,11" alt="Europe" title="Europe" href="region.aspx?wealocations=Europe" /><area shape="poly" coords="117,42,108,46,113,56,123,49" alt="Europe" title="Europe" href="region.aspx?wealocations=Europe" /><area shape="poly" coords="78,94,74,97,66,97,76,106,85,105,87,96" alt="Caribbean" title="Caribbean" href="region.aspx?wealocations=Caribbean" /></map><div class="f2"><ul class="l1"><li><a href="region.aspx?wealocations=Africa">Africa</a></li><li><a href="region.aspx?wealocations=Antarctica">Antarctica</a></li><li><a href="region.aspx?wealocations=Asia">Asia</a></li><li><a href="region.aspx?wealocations=Australia / Oceania">Australia / Oceania</a></li><li><a href="region.aspx?wealocations=Canada">Canada</a></li><li><a href="region.aspx?wealocations=Caribbean">Caribbean</a></li></ul></div><div class="f2"><ul class="l1"><li><a href="region.aspx?wealocations=Central America">Central America</a></li><li><a href="region.aspx?wealocations=Europe">Europe</a></li><li><a href="region.aspx?wealocations=Mexico">Mexico</a></li><li><a href="region.aspx?wealocations=Middle East">Middle East</a></li><li><a href="region.aspx?wealocations=South America">South America</a></li><li><a href="region.aspx?wealocations=United States">United States</a></li></ul></div><br /></div><br /></div><script type="text/javascript" xmlns:msn="http://www.msn.com"><!--
+		var thumbs = new Array("Heavy rain swamps the Northwest","d9e090d5-365b-4e9f-af85-12fdecd42c7c","/web/20051102093510/http://img.video.msn.com/i/7/01_topstory_92x69.jpg.jpg","Heavy rain swamps the Northwest: Follow today's big weather event as it unfolds, updated four times each day.","Severe Weather Outlook","b70599d0-2819-45c0-98c5-ff917160e81a","/web/20051102093510/http://img.video.msn.com/i/7/07_severe_92x69.jpg","Severe Weather Outlook: Stay informed of potential storms and severe weather situations, updated twice daily.","Watching Beta","1733231d-99ba-4239-a5e9-7adfa7636db8","/web/20051102093510/http://img.video.msn.com/i/7/hurr_beta_msn.jpg","Watching Beta: Get the latest updates on Tropical Storm Beta","National Forecast","ff85722d-6b30-4ede-837a-a43f4ba94d4e","/web/20051102093510/http://img.video.msn.com/i/7/02_national_92x69.jpg","National Forecast: Three-day forecast for the entire US, updated each morning and afternoon.","Northeast Regional Forecast","1a41fcec-a3c3-43bb-9761-05c53d7f39ce","/web/20051102093510/http://img.video.msn.com/i/7/06_northeast_92x69.jpg","Northeast Regional Forecast: A look at weather conditions in the Northeast, updated twice each day.","Western Regional Forecast","8ca7fbd2-d4eb-4d1e-a544-3ac718d079c8","/web/20051102093510/http://img.video.msn.com/i/7/03_west_92x69.jpg","Western Regional Forecast: A look at weather conditions in the Western US, updated twice each day.","Southern Regional Forecast","fcc4f619-895e-4bc5-aaa5-8fee1630dd13","/web/20051102093510/http://img.video.msn.com/i/7/05_south_92x69.jpg","Southern Regional Forecast: A look at weather conditions in the South, updated twice each day.","Midwest Regional Forecast","138a9971-1b5e-46cf-a9f5-9228ac3989b6","/web/20051102093510/http://img.video.msn.com/i/7/04_midwest_92x69.jpg","Midwest Regional Forecast: A look at weather conditions in the Midwest, updated twice each day.");
+var hasRegion = false;
+var local = new Array("","","","");
+VideoModule(thumbs, hasRegion);
+		//-->
+		</script></td><td id="pg6"><div id="news" class="m0">
+  <h2>Weather news</h2>
+  <h3>
+    <a href="/web/20051102093510/http://g.msn.com/0MN0RS9/3?http://www.msnbc.msn.com/id/9880231/&amp;&amp;CE=3032127">Military wants the weather on its side</a>
+  </h3>
+  <p>Space.com: This year's horrid hurricane season has scientists associated with the military wondering about ways to improve predictions — and even control storms.</p>
+  <h5>Other top stories:</h5>
+  <p class="li">
+    <a href="/web/20051102093510/http://g.msn.com/0MN0RS9/3?http://www.msnbc.msn.com/id/9883766/&amp;&amp;CE=3032127">October rain records across East Coast</a>
+  </p>
+  <p class="li">
+    <a href="/web/20051102093510/http://g.msn.com/0MN0RS9/3?http://www.msnbc.msn.com/id/9878610/&amp;&amp;CE=3032127">$55 million sought for hurricane science</a>
+  </p>
+  <p class="li">
+    <a href="/web/20051102093510/http://g.msn.com/0MN0RS9/3?http://www.msnbc.msn.com/id/9876884/&amp;&amp;CE=3032127">Miami tries Halloween despite Wilma damage</a>
+  </p>
+  <p class="li">
+    <a href="/web/20051102093510/http://g.msn.com/0MN0RS9/3?http://www.msnbc.msn.com/id/9850580/&amp;&amp;CE=3032127">Wilma death toll rises to 21 in Florida</a>
+  </p>
+</div><div id="" class="m0"><h2>MSN Weather Toolbar add-in</h2><div class="f2"><ul class="l3"><li><a href="/web/20051102093510/http://toolbar.msn.com/weather/" onclick="window.open('/web/20051102093510/http://toolbar.msn.com/weather/', '_blank');return false;">Get your local forecast with the MSN Toolbar and Weather add-in.</a></li></ul></div><div class="f2"><a href="/web/20051102093510/http://toolbar.msn.com/weather/" onclick="window.open('/web/20051102093510/http://toolbar.msn.com/weather/', '_blank');return false;"><img src="/web/20051102093510im_/http://st.msn.com/as/wea3/i/wc/download_weather_toolbar.gif" alt="Download the MSN Weather add-in" /></a></div><br /></div><a name="current"></a><table id="world" class="t3"><colgroup span="3" align="left" /><tr class="rs2"><th colspan="2">Current conditions around the world</th><td colspan="2"><div class="scale">&#176;<a class="i3" href="/web/20051102093510/http://weather.msn.com/default.aspx?&amp;setunit=F#current">F</a> | &#176;<a href="/web/20051102093510/http://weather.msn.com/default.aspx?&amp;setunit=C#current">C</a></div></td></tr><tr class="r0"><th>City</th><th>Current</th><th colspan="2">Hi/Lo</th></tr><tr><td class="td1"><a href="local.aspx?wealocations=wc:CHXX0008">Beijing, CHN</a></td><td class="nobr"><img src="/web/20051102093510im_/http://st.msn.com/as/wea3/i/wc/21.gif" width="35" height="21" alt="Haze" />61&#176;</td><td class="nobr">NA/47&#176;</td><td></td></tr><tr><td class="td1"><a href="local.aspx?wealocations=wc:USMA0046">Boston, MA</a></td><td class="nobr"><img src="/web/20051102093510im_/http://st.msn.com/as/wea3/i/wc/26.gif" width="35" height="21" alt="Cloudy" />53&#176;</td><td class="nobr">NA/48&#176;</td><td></td></tr><tr><td class="td1"><a href="local.aspx?wealocations=wc:ARBA0009">Buenos Aires, ARG</a></td><td class="nobr"><img src="/web/20051102093510im_/http://st.msn.com/as/wea3/i/wc/34.gif" width="35" height="21" alt="Fair" />63&#176;</td><td class="nobr">82&#176;/64&#176;</td><td></td></tr><tr><td class="td1"><a href="local.aspx?wealocations=wc:EGXX0004">Cairo, EGY</a></td><td class="nobr"><img src="/web/20051102093510im_/http://st.msn.com/as/wea3/i/wc/34.gif" width="35" height="21" alt="Fair" />72&#176;</td><td class="nobr">76&#176;/60&#176;</td><td></td></tr><tr><td class="td1"><a href="local.aspx?wealocations=wc:USIL0225">Chicago, IL</a></td><td class="nobr"><img src="/web/20051102093510im_/http://st.msn.com/as/wea3/i/wc/33.gif" width="35" height="21" alt="Fair" />43&#176;</td><td class="nobr">NA/39&#176;</td><td></td></tr><tr><td class="td1"><a href="local.aspx?wealocations=wc:INXX0038">Delhi, IND</a></td><td class="nobr"><img src="/web/20051102093510im_/http://st.msn.com/as/wea3/i/wc/22.gif" width="35" height="21" alt="Smoke" />84&#176;</td><td class="nobr">86&#176;/59&#176;</td><td></td></tr><tr><td class="td1"><a href="local.aspx?wealocations=wc:USHI0026">Honolulu, HI</a></td><td class="nobr"><img src="/web/20051102093510im_/http://st.msn.com/as/wea3/i/wc/29.gif" width="35" height="21" alt="Partly Cloudy" />76&#176;</td><td class="nobr">85&#176;/74&#176;</td><td></td></tr><tr><td class="td1"><a href="local.aspx?wealocations=wc:USTX0617">Houston, TX</a></td><td class="nobr"><img src="/web/20051102093510im_/http://st.msn.com/as/wea3/i/wc/33.gif" width="35" height="21" alt="Fair" />48&#176;</td><td class="nobr">NA/44&#176;</td><td></td></tr><tr><td class="td1"><a href="local.aspx?wealocations=wc:USNV0049">Las Vegas, NV</a></td><td class="nobr"><img src="/web/20051102093510im_/http://st.msn.com/as/wea3/i/wc/33.gif" width="35" height="21" alt="Fair" />56&#176;</td><td class="nobr">NA/56&#176;</td><td></td></tr><tr><td class="td1"><a href="local.aspx?wealocations=wc:UKXX0085">London, GBR</a></td><td class="nobr"><img src="/web/20051102093510im_/http://st.msn.com/as/wea3/i/wc/28.gif" width="35" height="21" alt="Mostly Cloudy" />63&#176;</td><td class="nobr">69&#176;/59&#176;</td><td></td></tr><tr><td class="td1"><a href="local.aspx?wealocations=wc:USCA0638">Los Angeles, CA</a></td><td class="nobr"><img src="/web/20051102093510im_/http://st.msn.com/as/wea3/i/wc/33.gif" width="35" height="21" alt="Fair" />63&#176;</td><td class="nobr">NA/59&#176;</td><td></td></tr><tr><td class="td1"><a href="local.aspx?wealocations=wc:SPXX0050">Madrid, ESP</a></td><td class="nobr"><img src="/web/20051102093510im_/http://st.msn.com/as/wea3/i/wc/28.gif" width="35" height="21" alt="Mostly Cloudy" />52&#176;</td><td class="nobr">66&#176;/46&#176;</td><td></td></tr><tr><td class="td1"><a href="local.aspx?wealocations=wc:USFL0316">Miami, FL</a></td><td class="nobr"><img src="/web/20051102093510im_/http://st.msn.com/as/wea3/i/wc/26.gif" width="35" height="21" alt="Cloudy" />71&#176;</td><td class="nobr">NA/74&#176;</td><td></td></tr><tr><td class="td1"><a href="local.aspx?wealocations=wc:RSXX0063">Moscow, RUS</a></td><td class="nobr"><img src="/web/20051102093510im_/http://st.msn.com/as/wea3/i/wc/34.gif" width="35" height="21" alt="Fair" />39&#176;</td><td class="nobr">42&#176;/23&#176;</td><td></td></tr><tr><td class="td1"><a href="local.aspx?wealocations=wc:USNY0996">New York, NY</a></td><td class="nobr"><img src="/web/20051102093510im_/http://st.msn.com/as/wea3/i/wc/33.gif" width="35" height="21" alt="Fair" />50&#176;</td><td class="nobr">NA/50&#176;</td><td></td></tr><tr><td class="td1"><a href="local.aspx?wealocations=wc:FRXX0076">Paris, FRA</a></td><td class="nobr"><img src="/web/20051102093510im_/http://st.msn.com/as/wea3/i/wc/28.gif" width="35" height="21" alt="Mostly Cloudy" />59&#176;</td><td class="nobr">66&#176;/56&#176;</td><td></td></tr><tr><td class="td1"><a href="local.aspx?wealocations=wc:ITXX0067">Rome, ITA</a></td><td class="nobr"><img src="/web/20051102093510im_/http://st.msn.com/as/wea3/i/wc/32.gif" width="35" height="21" alt="Sunny" />66&#176;</td><td class="nobr">71&#176;/50&#176;</td><td></td></tr><tr><td class="td1"><a href="local.aspx?wealocations=wc:USCA0987">San Francisco, CA</a></td><td class="nobr"><img src="/web/20051102093510im_/http://st.msn.com/as/wea3/i/wc/9.gif" width="35" height="21" alt="Light Drizzle" />58&#176;</td><td class="nobr">NA/58&#176;</td><td></td></tr><tr><td class="td1"><a href="local.aspx?wealocations=wc:USWA0395">Seattle, WA</a></td><td class="nobr"><img src="/web/20051102093510im_/http://st.msn.com/as/wea3/i/wc/27.gif" width="35" height="21" alt="Mostly Cloudy" />46&#176;</td><td class="nobr">NA/42&#176;</td><td></td></tr><tr><td class="td1"><a href="local.aspx?wealocations=wc:ASXX0112">Sydney, AUS</a></td><td class="nobr"><img src="/web/20051102093510im_/http://st.msn.com/as/wea3/i/wc/33.gif" width="35" height="21" alt="Fair/Windy" />73&#176;</td><td class="nobr">NA/71&#176;</td><td></td></tr><tr><td class="td1"><a href="local.aspx?wealocations=wc:JAXX0085">Tokyo, JPN</a></td><td class="nobr"><img src="/web/20051102093510im_/http://st.msn.com/as/wea3/i/wc/33.gif" width="35" height="21" alt="Fair" />63&#176;</td><td class="nobr">NA/57&#176;</td><td></td></tr><tr><td class="td1"><a href="local.aspx?wealocations=wc:CAXX0504">Toronto, CAN</a></td><td class="nobr"><img src="/web/20051102093510im_/http://st.msn.com/as/wea3/i/wc/29.gif" width="35" height="21" alt="Partly Cloudy" />37&#176;</td><td class="nobr">NA/42&#176;</td><td></td></tr><tr><td class="td1"><a href="local.aspx?wealocations=wc:USDC0001">Washington, DC</a></td><td class="nobr"><img src="/web/20051102093510im_/http://st.msn.com/as/wea3/i/wc/33.gif" width="35" height="21" alt="Fair" />51&#176;</td><td class="nobr">NA/49&#176;</td><td></td></tr></table></td><td id="pg4"><div class="ad2"><h6>advertisement</h6><!--NOAD--><img src="/web/20051102093510im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A03"/></div></td></tr></table><div id="msnfoot" class="en"><ul class="legal"><li>© 2005 Microsoft</li><li>Weather data © 2005 The Weather Channel, Inc</li><li><a href="/web/20051102093510/http://g.msn.com/wrenus_s/20">MSN Privacy</a></li><li><a href="/web/20051102093510/http://g.msn.com/wrenus_s/18">Legal</a></li><li class="last"><a href="/web/20051102093510/http://g.msn.com/wrenus_s/19">Advertise</a></li></ul><ul class="support"><li class="last"><a href="javascript:O_LC();">Feedback</a></li></ul></div><script>MRU("", "F");</script><img width="1" height="1" alt="" src="/web/20051102093510im_/http://c.msn.com/c.gif?di=5115&amp;pi=85132&amp;ps=86192&amp;tp=http://weather.msn.com/default.aspx&amp;rf=" /></body></html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 9:35:10 Nov 2, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 6:56:22 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

@@ -1,0 +1,526 @@
+<!--  Browser Capabilities --- Cookies: False; JavaScript: False; Tables: False; IE: False(Unknown); MajorVersion: 0 -->
+
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app14.us.archive.org";archive_analytics.values.server_ms=1955;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<script>var imgssearch = new Array(3);imgssearch[0] = new Image();imgssearch[0].src = '/web/20051102064148/http://entimg.msn.com/i/ms/bt_go.gif';imgssearch[1] = new Image();imgssearch[1].src = '/web/20051102064148/http://entimg.msn.com/i/ms/bt_go_o.gif';imgssearch[2] = new Image();imgssearch[2].src = '/web/20051102064148/http://entimg.msn.com/i/ms/bt_go_d.gif';</script><script>var imgPre="/web/20051102064148/http://entimg.msn.com";var meetsReqs=false;var indefli=false;var serviceid=0;var rpsub=false;var pcontr=false;
+</script>
+<title>MSN - News - Gossip</title><script src="/web/20051102064148js_/http://entimg.msn.com/script/msnent3426.js"></script><script>function SF(func) { try { if(eval('window.' + func) != null) { return true; } else { return false; } } catch(e) { alert('Failed exec:'+code+'\r\n'+e.description); } return false; }function GE(v) { if(document.all) { return document.all[v]; } return document.getElementById(v); }window.name='MSNMusic';</script>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<meta name="Name" content="Editorial Six">
+		<link rel="stylesheet" href="/web/20051102064148cs_/http://entimg.msn.com/styles/e3426.css" rev="stylesheet" type="text/css">
+		<style>
+			.modbod { background-color: #f1f1f1; }
+			.mnbg	{ background-color: #98A7E2; }
+			.mbbg	{ background-color: #E0E6FF; }
+			.brbg	{ background-color: #f1f1f1; }
+			.blt	{ font-family: wingdings; }
+			.h380   { height: 380px; }
+			
+			/* find bar */
+			.fib	{ width: 100px; margin: 3px  3px 3px 5px;} 
+			.fpd	{ margin: 0px 3px 0px 5px; width: 100px;}
+			.ftt	{ padding: 3px 0px 3px 5px; font-size: 11px; color: #ffffff; text-align: left;text-transform:uppercase; } 
+			.fbb	{ margin:2px 10px 0px 2px;}
+			.fsd	{ margin: 0px 3px 0px 10px; width: 160px;}
+			.tbMain {padding-left:10px}
+			.ComplexLinkCellCss{}	
+			.FlashCellCss{}	
+			.PromoCellCss{}	
+			.ContentCellCss{border-left: solid 1px #B4CCEB;border-bottom: solid 1px #B4CCEB;border-right: solid 1px #B4CCEB;}
+			.AdCss{}
+			.RightTableCss{padding-left:10px;padding-right:10px;padding-bottom:10px}
+			/*charts override */
+			.ctm	{ background-color: #ffffff;}				
+            .ctmc	{ padding:0px }				
+            .ctin	{ color: #366AB3; padding-top: 10px }		
+            .ctmtb	{ margin:0px;padding:0px}
+			
+		</style>
+		<style>
+
+/* INCREASE ARTICLE TEXT SIZE */
+p	{ font-size: 9.5pt; color: #474747 }
+
+/* 10px PADDING ON TOP OF SHOWCASE AD */
+.adCSS	{ padding-top: 10px; }
+
+/* HIDE SCOREBOARD */
+
+.tbMain	{ padding-bottom: 20px; }
+.flashCellCss	{ border: none; }
+.NewsModuleCss{padding-top:10px;}
+.galleryCss{width:50%;padding-top:10px;padding-right:5px;}
+
+.EditorialCellCss	{width:429}
+
+
+.nextcss      {
+padding: 15px 0px 15px 5px; 
+text-transform: uppercase; 
+}
+
+
+</style>
+	</HEAD>
+	<body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://entertainment.msn.com/movies/hotgossip";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "2";
+var displayMonth = "Nov";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://entertainment.msn.com/movies/hotgossip" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20051102064148" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20051001064002/http://entertainment.msn.com/movies/hotgossip" title="1 Oct 2005">OCT</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 6:41:48 Nov 2, 2005">NOV</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20051208040529/http://entertainment.msn.com/movies/hotgossip?" title="8 Dec 2005"><strong>DEC</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20051101011606/http://entertainment.msn.com/movies/hotgossip" title="1:16:06 Nov 1, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 6:41:48 Nov 2, 2005">2</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20051104045216/http://entertainment.msn.com/movies/hotgossip" title="4:52:16 Nov 4, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20041030235837/http://entertainment.msn.com/movies/hotgossip" title="30 Oct 2004"><strong>2004</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 6:41:48 Nov 2, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20061107042558/http://entertainment.msn.com/movies/hotgossip" title="7 Nov 2006"><strong>2006</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20051102064148*/http://entertainment.msn.com/movies/hotgossip" title="See a list of every capture for this URL">338 captures</a>
+           <div class="r" title="Timespan for captures of this URL">14 Oct 04 - 20 Sep 10</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:0000000009cb_2005:10:7ababbbf2bdb_2006:-1:bb2454463996_2007:-1:a31200311611_2008:-1:111210000000_2009:-1:001000000000_2010:-1:000000001000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+		<script>	var pageId = "invalidPS";	var domaindId = "invalidDI";	var propertyId = "invalidPI";	var gServer = "/web/20051102064148/http://g.msn.com/1ETCLT01/1";	var timeOut = "3";	var backoffTime = "1";</script><script src="/web/20051102064148js_/http://entimg.msn.com/script/tracking.js"></script><img  id="clickTarget" style="display:none" src="/web/20051102064148im_/http://entimg.msn.com/i/sp.gif" onReadyStateChange="if(SF('ctStateChange')) ctStateChange();" >	
+		<center>
+		
+			
+		
+		
+			<div id="pghdr" style="width:750px;"><div class="sbtb"><!--BeginAd(ENTBNR,SuperBanner)--><!--NOAD--><img src="/web/20051102064148im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A39"/><!--EndAd--></div><div id="imgDiv"><a onclick="if(SF('h')) return h(this,'cm=HEADER&amp;ce=2');" href="/web/20051102064148/http://g.msn.com/0nwenus0/A5/00"><script type="text/javascript" src="/web/20051102064148js_/http://sc.msn.com/global/scr/lg/hdrPOS.js">&nbsp;</script><noscript><img src="/web/20051102064148im_/http://sc.msn.com/global/c/lgpos/msft_pos.gif" alt="MSN Home" border=0 style="height:35px;width:118px;" /></noscript><script type="text/javascript">logoImg("/web/20051102064148/http://sc.msn.com");</script></a></div><div class="hdrtxt"><a onclick="if(SF('h')) return h(this,'cm=HEADER&amp;ce=3');" href="/web/20051102064148/http://movies.msn.com/">Movies</a></div><div class="sbhdsp"><a onclick="if(SF('h')) return h(this,'cm=HEADER&amp;ce=4');" href="/web/20051102064148/http://entertainment.msn.com/">entertainment</a></div><div id="menuDiv"><div TABINDEX="0" class="hdnvc" onclick="if(SF('u')) u('/web/20051102064148/http://music.msn.com','cm=HEADER&amp;ce=1'); else location.href='/web/20051102064148/http://music.msn.com';" onkeypress="if(SF('u')) u('http://music.msn.com','cm=HEADER&amp;ce=1'); else location.href='http://music.msn.com';">Music</div><div TABINDEX="0" class="hdnvc" onclick="if(SF('u')) u('/web/20051102064148/http://radio.msn.com','cm=HEADER&amp;ce=1'); else location.href='/web/20051102064148/http://radio.msn.com';" onkeypress="if(SF('u')) u('http://radio.msn.com','cm=HEADER&amp;ce=1'); else location.href='http://radio.msn.com';">Radio</div><div TABINDEX="0" class="hdnvc_s" onclick="if(SF('u')) u('/web/20051102064148/http://movies.msn.com','cm=HEADER&amp;ce=1'); else location.href='/web/20051102064148/http://movies.msn.com';" onkeypress="if(SF('u')) u('http://movies.msn.com','cm=HEADER&amp;ce=1'); else location.href='http://movies.msn.com';">Movies</div><div TABINDEX="0" class="hdnvc" onclick="if(SF('u')) u('/web/20051102064148/http://tv.msn.com','cm=HEADER&amp;ce=1'); else location.href='/web/20051102064148/http://tv.msn.com';" onkeypress="if(SF('u')) u('http://tv.msn.com','cm=HEADER&amp;ce=1'); else location.href='http://tv.msn.com';">TV</div><div TABINDEX="0" class="hdnvc" onclick="if(SF('u')) u('/web/20051102064148/http://music.msn.com/musicvideos/','cm=HEADER&amp;ce=1'); else location.href='/web/20051102064148/http://music.msn.com/musicvideos/';" onkeypress="if(SF('u')) u('http://music.msn.com/musicvideos/','cm=HEADER&amp;ce=1'); else location.href='http://music.msn.com/musicvideos/';">Video</div></div></div><span style="display:none;"></span>
+		
+		
+			
+			<table class="sbout" cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td align="Center"><table cellspacing="0" cellpadding="0" border="0" width="750">
+			<tr>
+				<td><form method='get' id=search onsubmit="return slvd(true,false,&quot;Type a movie, cast, or crew name&quot;,&quot;Enter a movie, cast, or crew name&quot;);" name='search' action='/web/20051102064148/http://entertainment.msn.com/search/movie/'><table class="tb2" cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tr>
+						<td width="260"><input type="text" id="ss" name="ss" VCARD_NAME="SearchText" maxlength=255 value="Type a movie, cast, or crew name" onclick="if(this.value == 'music search' || this.value == 'Type a movie, cast, or crew name'|| this.value == 'Enter a movie, cast, or crew name' || this.value == 'radio search') { this.value=''; this.focus(); }" class="sbib"/></td><td><span><img title="Go" onmouseout="if(SF('nbs')) nbs(imgssearch[0]);" onkeyup="if(event.keyCode == 13 || event.keyCode == 32 ){if(SF('nbs')) { nbs(imgssearch[0]);slvd(true,true,&quot;Type a movie, cast, or crew name&quot;,&quot;Enter a movie, cast, or crew name&quot;) }}" onmouseup="if(SF('nbs')) { nbs(imgssearch[0]); slvd(true,true,&quot;Type a movie, cast, or crew name&quot;,&quot;Enter a movie, cast, or crew name&quot;)}" onmouseover="if(SF('nbs')) nbs(imgssearch[1]);" TABINDEX="0" onkeydown="if(event.keyCode == 13 || event.keyCode == 32 ){if(SF('nbs')) nbs(imgssearch[2]);}" onfocus="if(SF('hFL')) hFL();" onmousedown="if(SF('nbs')) nbs(imgssearch[2]);" src="/web/20051102064148im_/http://entimg.msn.com/i/ms/bt_go.gif" alt="" border="0" style="cursor:hand;" /></span></td><td></form></td>
+					</tr>
+				</table></td><td align="Right"><table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td align="Right"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td><a class="SignInLinkClass" onclick="if(SF('h')) return h(this,'cm=SEAMUS&amp;ce=1');" href="/web/20051102064148/http://login.passport.com/login.srf?lc=1033&amp;id=31948&amp;ru=http%3a%2f%2fentertainment.msn.com%2fbeacon%2feditorial6.aspx%3fptid%3d13ef8444-5d8b-42c6-8945-8f7806f86700&amp;tw=7200&amp;fs=1&amp;kv=7&amp;ct=1130913708&amp;cb=returl%3dhttp%253a%252f%252fentertainment.msn.com%252fbeacon%252feditorial6.aspx%253fptid%253d13ef8444-5d8b-42c6-8945-8f7806f86700%26ppcb%3dmovies&amp;kpp=3&amp;ver=2.1.6000.1&amp;rn=ptH2xBXw&amp;tpf=cb9378efc559f48735071b90aab1aaea">sign&nbsp;in</a></td><td></td>
+							</tr>
+						</table></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+		
+				
+				<table class="navin" cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td align="Center"><table class="bk" cellspacing="0" cellpadding="0" border="0" width="750">
+
+		</table></td>
+	</tr>
+</table>
+		
+			
+		
+			<table class="brtb" cellspacing="0" cellpadding="0" border="0" width="750">
+	<tr>
+		<td><table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td><a class="lnk3" onclick="if(SF('h')) return h(this,'cm=CRUMBS&amp;ce=1');" href="/web/20051102064148/http://entertainment.msn.com/movies/">msn movies</a></td><td class="blt3">&#052;</td><td><span class="lnk3">hot gossip</span></td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+		
+
+            <table cellpadding=0 cellspacing=0 width=750 >
+			     <tr>
+				    <td valign="top" class=PromoCellCss>
+					    
+							<table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+
+		</table></td>
+	</tr>
+</table>
+							
+    			    </td>
+			    </tr>
+			    <tr>
+				    <td valign="top" class=FlashCellCss>
+					    			
+						    <table cellspacing="0" cellpadding="0" border="0" width="750">
+	<tr>
+		<td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+
+		</table></td>
+	</tr>
+</table>	
+					    	
+					    </td>
+			    </tr>        
+			    <tr>
+				    <td valign="top" class=ContentCellCss>
+    					<table cellpadding=0 cellspacing=0 class=tbMain >
+						<tr>
+							<td valign="top"  class=EditorialCellCss>
+								
+									<table class="tp10" cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td><table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr>
+				<td><span class="txt4">Vaughniston Rumor Rundown</span></td>
+			</tr>
+		</table></td>
+	</tr>
+</table><table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr>
+				<td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tr>
+						<td><span>The latest rumblings on Jen and Vince; Plus, Angelina's bad rap, Eva's blood-encrusted tribute, along with news on Jessica, Paris, Madonna and many more ...</span></td>
+					</tr>
+				</table></td>
+			</tr><tr>
+				<td class="tp10" valign="Top"><table border="0">
+					<tr>
+						<td><BR> <P><I>Oct. 31, 2005</I>  <P>"I don't look at that stuff. No, I just don't pay attention to it." That's <a href=/web/20051102064148/http://entertainment.msn.com/celebs/celeb.aspx?c=186410 class="art">Jennifer Aniston</a> during a "<a href=/web/20051102064148/http://entertainment.msn.com/movies/movie.aspx?m=579568 class="art">Derailed</a>" promotional stop in New York Sunday, explaining to  UPI that she doesn't read what's written about her. That's probably a wise  decision given the non-stop rumblings about her fledgling romance with <a href=/web/20051102064148/http://entertainment.msn.com/celebs/celeb.aspx?c=247867 class="art">Vince Vaughn</a>, with recent chatter ranging from conspiracy  theories to baby talk. Here's a breakdown:  <P>By now, we've all ogled the snaps of Aniston, 36, and Vaughn, 35, smooching  on the balcony of her Chicago hotel suite earlier this month, but was the magic  moment captured by lucky, plucky paparazzi, or was it a setup by the stars?  <P>Gossip maven Liz Smith recently posited that "somebody" close to Jen and  Vince set up the shoot, with the stars' blessing, because it was "time" for the  romance to go public.  <P>But such supposed shenanigans are news to Vaughn, who last week was overheard  "exclaiming" how surprised he was that their 20th floor lip-lock was recorded  for posterity, reports the Chicago Sun-Times.  <P>"But they get a lot of money for those pictures," said the beefy star. "So  these guys will do whatever they have to" in order to nab the money shot.  <P>In other Vaughniston rumor mongering, just how serious is their relationship?  Even though Jen's divorce from <a href=/web/20051102064148/http://entertainment.msn.com/celebs/celeb.aspx?c=79296 class="art">Brad Pitt</a> was finalized only a month ago, the  tabloids are itching for her to make a major commitment to her "<a href=/web/20051102064148/http://entertainment.msn.com/movies/movie.aspx?m=584309 class="art">Break Up</a>" co-star.  <P>First up is the Star, which says that during the duo's recent sojourn at the  swanky Sunset Marquis in L.A., Aniston asked Vaughn to shack up with her.  <P>"I think Jen's ready to take things to the next step," a confidante of the  couple claims to the tab, "and between her place and various hotels, they're  practically living together anyway."  <P>Not to be outdone, Life & Style sees Star's digs-sharing story and raises  a proposal, claiming that commitment-averse Vaughn asked for Aniston's hand in  mid-October with a "diamond cluster ring" -- and she accepted.  <P>"He asked her early one morning," an insider alleges to the tab, "but she  made him wait until midnight before giving him an answer. She finally told him,  'Yes ... but not just yet.'"  <P>A gun-shy Jen is wearing the ring on a necklace "under her clothes," says the  mag, which features a close-up of a possibly hidden sparkler that, alas, looks  far more oval than round. Aniston's rep brushes off the vow-swap stories.  <P>In Touch, meanwhile, further ups the ante by expressing its concern that the  actress, who has insisted she doesn't "want to be a rebound girl," may be  "headed for more pain" because she's "thinking about having a baby with  [Vince]."  <P>"She feels so in love that having Vince's baby just feels right," a "close  pal" tells the magazine. "But he probably won't be with her for long. Having his  kid isn't wise ... Jen should have a ball with him -- and then move on."  <P>And finally, Us refreshingly sidesteps the breakneck commitment angle for a  reconciliation report: The actress recently invited her long-estranged mom Nancy  to tea at her Malibu beach pad.  <P>The teary, hug-filled visit helped heal their almost decade-long rift, a  source tells the mag, adding, "They are on the road back to a healthy mother and  daughter relationship." </P></td>
+					</tr>
+				</table></td>
+			</tr><tr>
+				<td class="tp20r"><a class="nextcss" onclick="if(SF('h')) return h(this,'cm=listModule&amp;ce=1');" href="/web/20051102064148/http://entertainment.msn.com/movies/hotgossip2">NEXT: Angelina's Diva Defense</a></td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+										
+							</td>
+							<td valign=top>
+		                        <table cellpadding=0 cellspacing=0 class=RightTableCss>
+									<tr>
+									 <td valign="top" class=AdCss>
+						                    
+							                    <!--BeginAd(ENTCEB,MediumShowcase)--><!--NOAD--><img src="/web/20051102064148im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A39"/><!--EndAd-->
+						                    	
+					                    </td>
+	                    			</tr>
+	                    			<tr>
+										<td valign="top"  class=NewsModuleCss>
+										     
+			                                    
+		                                    	
+		                               	</td>
+									</tr>
+	                    			<tr>
+										<td valign="top" class=ComplexLinkCellCss>
+										    
+			                                    
+		                                    		
+		                                </td>
+		                            </tr>
+									<tr>
+									    <td valign="top" class="GalleryCellCss">
+										
+              								<table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td><table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr>
+				<td><span class="txt4">Top Photo Galleries</span></td>
+			</tr>
+		</table></td>
+	</tr>
+</table><table cellspacing="0" cellpadding="0" border="0">
+	<tr>
+		<td class="galleryCss" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td align="Left" valign="Top" width="15"><a class="imgActive" onclick="if(SF('h')) return h(this,'cm=PHOTOGALLERY&amp;ce=1');" href="/web/20051102064148/http://entertainment.msn.com/movies/gallery.aspx?gallery=9868"><img src="/web/20051102064148im_/http://entimg.msn.com/i/gal/ScarlettJohansson/cropped/410/ScarlettJo_Barso_4974868_75.jpg" width="75" height="75"border="0" alt="© Barso/WireImage.com" ></a></td>
+			</tr><tr>
+				<td class="t5r2" align="Left" valign="Top"><a class="lnk1" onclick="if(SF('h')) return h(this,'cm=PHOTOGALLERY&amp;ce=2');" href="/web/20051102064148/http://entertainment.msn.com/movies/gallery.aspx?gallery=9868">Scarlett Johansson</a></td>
+			</tr><tr>
+				<td class="t5r2" valign="Top">View photos of the the young actress on the red carpet</td>
+			</tr>
+		</table></td><td class="galleryCss" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td align="Left" valign="Top" width="15"><a class="imgActive" onclick="if(SF('h')) return h(this,'cm=PHOTOGALLERY&amp;ce=3');" href="/web/20051102064148/http://entertainment.msn.com/movies/gallery.aspx?gallery=9830"><img src="/web/20051102064148im_/http://entimg.msn.com/i/gal/Jarhead/jarhead7_75.jpg" width="75" height="75"border="0" alt="© Universal Studios" ></a></td>
+			</tr><tr>
+				<td class="t5r2" align="Left" valign="Top"><a class="lnk1" onclick="if(SF('h')) return h(this,'cm=PHOTOGALLERY&amp;ce=4');" href="/web/20051102064148/http://entertainment.msn.com/movies/gallery.aspx?gallery=9830">'Jarhead' Stills</a></td>
+			</tr><tr>
+				<td class="t5r2" valign="Top">Take a look at the Gulf War through the scope of Marine snipers</td>
+			</tr>
+		</table></td>
+	</tr><tr>
+		<td class="galleryCss" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td align="Left" valign="Top" width="15"><a class="imgActive" onclick="if(SF('h')) return h(this,'cm=PHOTOGALLERY&amp;ce=5');" href="/web/20051102064148/http://entertainment.msn.com/movies/gallery.aspx?gallery=9822"><img src="/web/20051102064148im_/http://entimg.msn.com/i/gal/GwynethPaltrow/GwynethPal_Wargo_3445931_600_75.jpg" width="75" height="75"border="0" alt="©Theo Wargo/WireImage.com" ></a></td>
+			</tr><tr>
+				<td class="t5r2" align="Left" valign="Top"><a class="lnk1" onclick="if(SF('h')) return h(this,'cm=PHOTOGALLERY&amp;ce=6');" href="/web/20051102064148/http://entertainment.msn.com/movies/gallery.aspx?gallery=9822">Gwyneth Paltrow</a></td>
+			</tr><tr>
+				<td class="t5r2" valign="Top">View candid shots of the blonde actress</td>
+			</tr>
+		</table></td><td class="galleryCss" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td align="Left" valign="Top" width="15"><a class="imgActive" onclick="if(SF('h')) return h(this,'cm=PHOTOGALLERY&amp;ce=7');" href="/web/20051102064148/http://entertainment.msn.com/movies/gallery.aspx?gallery=9832"><img src="/web/20051102064148im_/http://entimg.msn.com/i/gal/ChickenLittle/ChickenLittle_sidwalk_75.jpg" width="75" height="75"border="0" alt="©Buena Vista Pictures" ></a></td>
+			</tr><tr>
+				<td class="t5r2" align="Left" valign="Top"><a class="lnk1" onclick="if(SF('h')) return h(this,'cm=PHOTOGALLERY&amp;ce=8');" href="/web/20051102064148/http://entertainment.msn.com/movies/gallery.aspx?gallery=9832">'Chicken Little' stills</a></td>
+			</tr><tr>
+				<td class="t5r2" valign="Top">Images from the upcoming animated film</td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+	                                    		
+	                                 </td>
+									</tr>	
+						            <tr>
+										<td valign="top" >
+										    <span class="bgb1" style="width:95%">&nbsp;</span>
+										</td>
+									</tr>	
+								    <tr>
+									    <td valign="top" class=EHListModuleCss>
+						                  
+									        <table class="bp5" cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td><table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr>
+				<td><span class="txt4">Recent Gossip</span></td>
+			</tr>
+		</table></td>
+	</tr>
+</table><table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr>
+				<td valign="Top"> <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>   <TBODY>   <TR>     <TD class=rp5 width="50%"><a href=/web/20051102064148/http://entertainment.msn.com/celebs/article.aspx?news=204559 class="altlink">Oct. 17, 2005</a></TD>     <TD class=rp5 width="50%"><a href=/web/20051102064148/http://entertainment.msn.com/celebs/article.aspx?news=204215 class="altlink">Oct. 13, 2005</a></TD></TR>   <TR>     <TD class=rp5 width="50%"><a href=/web/20051102064148/http://entertainment.msn.com/celebs/article.aspx?news=204104 class="altlink">Oct. 12, 2005</a></TD>     <TD class=rp5 width="50%"><a href=/web/20051102064148/http://entertainment.msn.com/celebs/article.aspx?news=203814 class="altlink">Oct. 10, 2005</a> </TD></TR>   <TR>     <TD class=rp5 width="50%"><a href=/web/20051102064148/http://entertainment.msn.com/celebs/article.aspx?news=203484 class="altlink">Oct. 6, 2005</a></TD>     <TD class=rp5 width="50%"><a href=/web/20051102064148/http://entertainment.msn.com/celebs/article.aspx?news=203188 class="altlink">Oct. 3, 2005</a></TD></TR>   <TR>     <TD class=rp5 width="50%"><a href=/web/20051102064148/http://entertainment.msn.com/celebs/article.aspx?news=202860 class="altlink">Sept. 29, 2005</a></TD>     <TD class=rp5 width="50%"><a href=/web/20051102064148/http://entertainment.msn.com/celebs/article.aspx?news=202794 class="altlink">Sept. 28, 2005</a></TD></TR></TBODY></TABLE></td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+								         		
+					                    </td>
+	                    			</tr>
+								    <tr>
+										<td valign="top" class=ScoreBoardCss>
+										    <a name=topchart>
+
+		                                </td>
+		                            </tr>
+		                         </table>         
+							</td>
+						</tr>
+					</table>
+				    </td>
+			    </tr>
+		</table>
+		
+		
+			<script language="javascript" src="/web/20051102064148js_/http://hp.msn.com/scr/op/ol-fdbkv3_r1.js"></script><div id="pgFtr"><div id="subFtr1"><div id="div1_1"><div id="div1_2"><ul class="ftr"><li class="1st"><a class="lnk4" onclick="if(SF('h')) return h(this,'cm=FOOTER&amp;ce=1');" href="/web/20051102064148/http://entertainment.msn.com/sitemap">Site Map</a></li><li><span class="lnk4"><a class="lnk4" href="mailto:?subject=MSN%20-%20News%20-%20Gossip&amp;body=I%20found%20this%20on%20MSN%20Entertainment%20and%20thought%20you%20might%20be%20interested%20in%20it.%0d%0a%0d%0aClick%20this%20link%3a%0d%0ahttp%3a%2f%2fentertainment.msn.com%2fbeacon%2feditorial6.aspx%3fptid%3d13ef8444-5d8b-42c6-8945-8f7806f86700%0d%0a">Email This Page</a></span></li><li><a class="lnk4" onclick="if(SF('h')) return h(this,'cm=FOOTER&amp;ce=2');" href="/web/20051102064148/http://entertainment.msn.com/help/customer.aspx">Customer Service</a></li><li><a class="lnk4" onmouseup="if(SF('blog'))blog()" onclick="if(SF('h')) return h(this,'cm=FOOTER&amp;ce=3');" href="#">BlogThis</a></li><li><a class="lnk4" onclick="if(SF('h')) return h(this,'cm=FOOTER&amp;ce=4');" href="javascript:O_LC();">Feedback</a></li></ul></div></div></div><div id="subFtr2"><div id="div2_1"><div id="div2_2"><ul class="t3"><li class="1st">&copy;2005 Microsoft</li><li><span class='lr10 lnk4'>|</span><a class="t3" onclick="if(SF('h')) return h(this,'cm=FOOTER&amp;ce=5');" href="/web/20051102064148/http://entertainment.msn.com/music/providers.aspx">Partners</a>&nbsp;&amp;&nbsp;<a class="t3" onclick="if(SF('h')) return h(this,'cm=FOOTER&amp;ce=6');" href="/web/20051102064148/http://g.msn.com/0nwenus0/A5/19" target="_new">Advertisers</a></li><li><span class='lr10 lnk4'>|</span><a class="t3" onclick="if(SF('h')) return h(this,'cm=FOOTER&amp;ce=7');" href="/web/20051102064148/http://g.msn.com/0nwenus0/a5/20" target="_new">Privacy</a>&nbsp;&amp;&nbsp;<a class="t3" onclick="if(SF('h')) return h(this,'cm=FOOTER&amp;ce=8');" href="/web/20051102064148/http://g.msn.com/0nwenus0/a5/18" target="_new">Legal</a></li></ul></div></div></div></div><a class="txt2" onclick="var win = window.open(); win.document.open(); win.document.writeln('Machine Code: A39 - Date: 2005-11-01T22:41:48-08&lt;br /&gt;&lt;br /&gt;Page URL: ' + escape(document.URL)); return false;" href="#">Page Information</a><!-- SiteCatalyst code version: H.1.Copyright 1997-2005 Omniture, Inc. More info available at /web/20051102064148/http://www.omniture.com --><script src="/web/20051102064148js_/http://stj.msn.com/br/om/js/s_code_ent.js"></script><script language="JavaScript"><!--
+ try{
+ s.pageName=window.location.pathname; s.channel ="entertainment.msn.com"; s.prop1="msn.com"; s.prop2 ="Entertainment"; s.prop3 ="en-us";var s_code=s.t();if(s_code)document.write(s_code); 
+}catch(e){}
+//--></script><script language="JavaScript"><!--
+ if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')//--></script><noscript><img src="/web/20051102064148im_/http://msnportalent.112.2o7.net/b/ss/msnportalent/1/H.1--NS/0" height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/--><!-- End SiteCatalyst code version: H.1. -->
+				
+		</center>
+	</body>
+</HTML>
+<script>if(window.sdd){sHS();}</script><script>window.onunload = Rsn; function Rsn() {window.name = 'notmine';} if(SF('SetupRatings')) SOL(SetupRatings); if(SF('cklnch')) SOL(cklnch); if(SF('chkbb')) SOL(chkbb);</script><span id=clipSpan></span>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 6:41:48 Nov 2, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 6:32:21 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

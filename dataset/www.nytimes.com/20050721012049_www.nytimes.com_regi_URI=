@@ -1,0 +1,927 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app19.us.archive.org";archive_analytics.values.server_ms=2413;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<title>The New York Times &gt; Free Registration</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" src="/web/20050911224216js_/http://www.nytimes.com/js/mc_app1.js" type="text/javascript"></script><script language="JavaScript" type="text/JavaScript">
+<!--
+<!--
+
+// Frame Breaker Start
+if (window.self != window.top) {
+	top.location.replace(window.location.href);
+}
+// Frame Breaker End
+
+function putFocus(formInst, elementInst) {
+	if (document.forms.length > 0) {
+		document.forms[formInst].elements[elementInst].focus();
+	}
+}
+
+var submitted = false;
+
+function preventDoubleClick() {
+	if (submitted == false) {
+		submitted = true;
+		return true;
+	}
+	return false;
+}
+
+function Certify() {
+	popupWin = window.open('/web/20050911224216/http://www.bbbonline.org/cnfm.cfm?company=03301999011123', 'Participant', 'location,scrollbars,width=450,height=300')
+	window.name='opener';
+}
+
+function pop_me_up(pURL,features){ 
+	new_window = window.open(pURL, "popup_window", features);
+	new_window.focus();
+}
+
+function KeyPress(evt) {
+
+	var keyCode;
+	if (evt.which) {
+		keyCode = evt.which;
+	} else {
+		keyCode = window.event.keyCode;
+	}
+	if (keyCode == 13) {
+		if (evt.which) {
+			evt.preventDefault();
+		} else {
+			window.event.keyCode = 0;
+		}
+	}
+} 
+//-->
+//-->
+</script><script src="/web/20050911224216js_/http://www.nytimes.com/js/Tacoda_AMS_DDC_Header.js"></script>
+</head>
+<body text="#000000" link="#000066" vlink="#000066" alink="#000066" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="putFocus(0,3)" onKeyPress="KeyPress(event)">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.nytimes.com/regi?URI=http://";
+
+var firstYear = 1996;
+var imgWidth = 475,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "11";
+var displayMonth = "Sep";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.nytimes.com/regi?URI=http://" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20050911224216" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20050505220547/http://www.nytimes.com/regi?URI=http://" title="5 May 2005">MAY</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 22:42:16 Sep 11, 2005">SEP</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20060206155741/http://www.nytimes.com/regi?URI=http://" title="6 Feb 2006"><strong>FEB</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20050505220547/http://www.nytimes.com/regi?URI=http://" title="22:05:47 May 5, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 22:42:16 Sep 11, 2005">11</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20050916084027/http://www.nytimes.com/regi?URI=http://" title="8:40:27 Sep 16, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2004
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 22:42:16 Sep 11, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20060921083800/http://www.nytimes.com/regi?URI=http://" title="21 Sep 2006"><strong>2006</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20050911224216*/http://www.nytimes.com/regi?URI=http://" title="See a list of every capture for this URL">435 captures</a>
+           <div class="r" title="Timespan for captures of this URL">6 Apr 05 - 10 Aug 14</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="475"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=475_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:8:000a10003000_2006:-1:021002111011_2007:-1:101002001102_2008:-1:016502011101_2009:-1:015301000120_2010:-1:010000000231_2011:-1:101010000202_2012:-1:2300241232ce_2013:-1:fedeeedc1121_2014:-1:20dd00010000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<table width="768" border="0" cellspacing="0" cellpadding="0"><form name="regi" method="POST" action="/web/20050911224216/http://www.nytimes.com/regi">
+<input type="hidden" name="URI" value="http://"><input type="hidden" name="OQ" value=""><input type="hidden" name="OP" value=""><tr><td colspan="3" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/regi_nyt_header.gif" alt="NYTimes.com" width="768" height="103"></td></tr>
+<tr>
+<td width="100" align="left" valign="top" background="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/regi_left_margin.gif"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="100" height="500"></td>
+<td width="568" align="left" valign="top">
+<table width="568" border="0" cellspacing="0" cellpadding="0"><tr>
+<td width="518" align="right" valign="bottom"><font size="2"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/regi_alreadyamember.gif" alt="Already a Member?" width="122" height="13"></font></td>
+<td width="40" align="right" valign="top"><font size="2" face="Arial, Helvetica, sans-serif"><a href="/web/20050911224216/http://www.nytimes.com/auth/login?URI=http://&amp;OQ=&amp;OP=">Log In</a></font></td>
+</tr></table>
+<table width="568" border="0" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/regi_topheadline.gif" alt="Registering for NYTimes.com is free and easy!" width="568" height="62"></td></tr></table>
+<table width="568" border="0" cellspacing="0" cellpadding="0"><tr><td align="left" valign="bottom"><font size="2" face="Arial, Helvetica, sans-serif">
+Registration provides instant access to everything you love about The New York Times and more.<br><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="10"><br><a href="/web/20050911224216/http://www.nytimes.com/ref/membercenter/faq/registerqa2.html" onClick="window.open('','popup','height=400,width=420,scrollbars=yes,resizable=yes')" target="popup">Why Register?</a>
+| <a href="/web/20050911224216/http://www.nytimes.com/ref/membercenter/help/privacysummary.html" onClick="window.open('','popup','height=430,width=795,scrollbars=yes,resizable=yes,toolbar=yes,location=yes')" target="popup">Privacy Concerns</a>
+| <a href="/web/20050911224216/http://www.nytimes.com/ref/membercenter/faq/cookieqa1.html" onClick="window.open('','popup','height=400,width=420,scrollbars=yes,resizable=yes')" target="popup">Cookies Information</a>
+| <a href="/web/20050911224216/http://www.nytimes.com/membercenter/faq/registration.html" onClick="window.open('','popup','height=430,width=795,scrollbars=yes,resizable=yes,toolbar=yes,location=yes')" target="popup">FAQ's</a></font></td></tr></table>
+<table width="568" border="0" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top">
+<img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="100" height="20"><br><font color="#FF9900" size="3" face="Arial, Helvetica, sans-serif"><strong>Create an Account (Required)</strong></font><br><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="100" height="10">
+</td></tr></table>
+<table width="568" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="165" align="left" valign="top"><font size="2" face="Arial, Helvetica, sans-serif" color="#000000"><strong>Choose a Member ID:</strong></font></td>
+<td width="10" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="10"></td>
+<td width="393" align="left" valign="top"><input type="text" name="login" value="" id="textfield1" size="25" maxlength="15" tabindex="1"></td>
+</tr>
+<tr><td colspan="3" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="5"></td></tr>
+<tr>
+<td width="165" align="left" valign="top"><font size="2" face="Arial, Helvetica, sans-serif" color="#000000"><strong>Choose a Password:</strong></font></td>
+<td width="10" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="10"></td>
+<td width="393" align="left" valign="top">
+<input type="password" name="passwd1" value="" id="textfield1" size="25" maxlength="15" tabindex="2"><font size="2" face="Arial, Helvetica, sans-serif"> (Five character minimum)</font>
+</td>
+</tr>
+<tr><td colspan="3" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="5"></td></tr>
+<tr>
+<td width="165" align="left" valign="top"><font size="2" face="Arial, Helvetica, sans-serif" color="#000000"><strong>Re-enter your Password:</strong></font></td>
+<td width="10" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="10"></td>
+<td width="393" align="left" valign="top"><input type="password" name="passwd2" value="" id="textfield1" size="25" maxlength="15" tabindex="3"></td>
+</tr>
+<tr><td colspan="3" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="5"></td></tr>
+<tr>
+<td width="165" align="left" valign="top"><font size="2" face="Arial, Helvetica, sans-serif" color="#000000"><strong>Secret Question:</strong></font></td>
+<td width="10" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="10"></td>
+<td width="393" align="left" valign="top">
+<select name="secretquestion" id="secretquestion" style="width:250px; font-size:12px;" tabindex="4"><option value="">--- Select One ---</option>
+<option value="1">Name of Favorite Book?</option>
+<option value="2">Name of Best Friend?</option>
+<option value="3">Name of Favorite Film?</option>
+<option value="4">Name of First Pet?</option>
+<option value="5">Name of Favorite Band?</option>
+<option value="6">Name of Elementary School?</option></select><font size="2" face="Arial, Helvetica, sans-serif"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="10"><a href="/web/20050911224216/http://www.nytimes.com/ref/membercenter/faq/registerqa8.html" onclick="window.open('','popup','height=400,width=420,scrollbars=yes,resizable=yes')" target="popup">What's this?</a></font>
+</td>
+</tr>
+<tr><td colspan="3" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="5"></td></tr>
+<tr>
+<td width="165" align="left" valign="top"><font size="2" face="Arial, Helvetica, sans-serif" color="#000000"><strong>Secret Answer:</strong></font></td>
+<td width="10" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="10"></td>
+<td width="393" align="left" valign="top"><input type="text" name="secretanswer" id="textfield1" size="25" maxlength="50" tabindex="5" value=""></td>
+</tr>
+<tr><td colspan="3" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="5"></td></tr>
+<tr>
+<td width="165" align="left" valign="top"><font size="2" face="Arial, Helvetica, sans-serif" color="#000000"><strong>E-Mail Address:</strong></font></td>
+<td width="10" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="10"></td>
+<td width="393" align="left" valign="top">
+<input type="text" name="email" value="" id="textfield1" size="25" maxlength="64" tabindex="6"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="10"><font size="2" face="Arial, Helvetica, sans-serif"><a href="/web/20050911224216/http://www.nytimes.com/ref/membercenter/faq/registerqa9.html" onclick="window.open('','popup','height=400,width=420,scrollbars=yes,resizable=yes')" target="popup">
+		Why do we need this?</a><br><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="5"><br>
+		NYTimes.com will only use this address with your permission.</font>
+</td>
+</tr>
+<tr><td colspan="3" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="10"></td></tr>
+<tr>
+<td width="165" align="left" valign="top"><font size="2" face="Arial, Helvetica, sans-serif"></font></td>
+<td width="10" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="10"></td>
+<td width="393" align="left" valign="top">
+<input type="checkbox" name="saveoption" value="YES" checked tabindex="7"><font size="2" face="Arial, Helvetica, sans-serif">
+	Remember my Member ID and password on this computer.</font>
+</td>
+</tr>
+</table>
+<table width="568" border="0" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top">
+<img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="100" height="30"><br><font color="#FF9900" size="3" face="Arial, Helvetica, sans-serif"><strong>Tell Us About Yourself
+(Required)</strong></font><br><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="100" height="10">
+</td></tr></table>
+<table width="568" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="165" align="left" valign="top"><font size="2" face="Arial, Helvetica, sans-serif" color="#000000"><strong>Gender:</strong></font></td>
+<td width="10" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="10"></td>
+<td width="393" align="left" valign="top"><font size="2" face="Arial, Helvetica, sans-serif"><input type="radio" name="gender" value="M" tabindex="8">Male
+		<input type="radio" name="gender" value="F" tabindex="9">Female
+		</font></td>
+</tr>
+<tr><td colspan="3" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="5"></td></tr>
+<tr>
+<td width="165" align="left" valign="top"><font size="2" face="Arial, Helvetica, sans-serif" color="#000000"><strong>Year of Birth:</strong></font></td>
+<td width="10" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="10"></td>
+<td width="393" align="left" valign="top">
+<input type="text" name="birth_year" value="" id="textfield1" size="7" maxlength="4" tabindex="10"><font size="2" face="Arial, Helvetica, sans-serif"> 
+		(<a href="/web/20050911224216/http://www.nytimes.com/learning">Click here</a> if you are under 13)</font>
+</td>
+</tr>
+<tr><td colspan="3" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="5"></td></tr>
+<tr>
+<td width="165" align="left" valign="top"><font size="2" face="Arial, Helvetica, sans-serif" color="#000000"><strong>ZIP Code:</strong></font></td>
+<td width="10" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="10"></td>
+<td width="393" align="left" valign="top"><input type="text" name="zip" value="" id="textfield1" size="7" maxlength="5" tabindex="11"></td>
+</tr>
+<tr><td colspan="3" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="5"></td></tr>
+<tr>
+<td width="165" align="left" valign="top"><font size="2" face="Arial, Helvetica, sans-serif" color="#000000"><strong>Country of Residence:</strong></font></td>
+<td width="10" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="10"></td>
+<td width="393" align="left" valign="top"><select name="country" id="country" style="width:250px; font-size:12px;" tabindex="12"><option value="">--- Select One ---</option>
+<option value="US">
+				United States</option>
+<option value="AF">Afghanistan</option>
+<option value="AX">Aland Islands</option>
+<option value="AL">Albania</option>
+<option value="DZ">Algeria</option>
+<option value="AS">American Samoa</option>
+<option value="AD">Andorra</option>
+<option value="AO">Angola</option>
+<option value="AI">Anguilla</option>
+<option value="AQ">Antarctica</option>
+<option value="AG">Antigua and Barbuda</option>
+<option value="AR">Argentina</option>
+<option value="AM">Armenia</option>
+<option value="AW">Aruba</option>
+<option value="AU">Australia</option>
+<option value="AT">Austria</option>
+<option value="AZ">Azerbaijan</option>
+<option value="BS">Bahamas</option>
+<option value="BH">Bahrain</option>
+<option value="BD">Bangladesh</option>
+<option value="BB">Barbados</option>
+<option value="BY">Belarus </option>
+<option value="BE">Belgium </option>
+<option value="BZ">Belize </option>
+<option value="BJ">Benin </option>
+<option value="BM">Bermuda </option>
+<option value="BT">Bhutan </option>
+<option value="BO">Bolivia </option>
+<option value="BA">Bosnia and Herzegovina </option>
+<option value="BW">Botswana </option>
+<option value="BV">Bouvet Island </option>
+<option value="BR">Brazil </option>
+<option value="IO">British Indian Ocean Territory </option>
+<option value="BN">Brunei Darussalam </option>
+<option value="BG">Bulgaria </option>
+<option value="BF">Burkina Faso </option>
+<option value="BI">Burundi </option>
+<option value="KH">Cambodia </option>
+<option value="CM">Cameroon </option>
+<option value="CA">Canada </option>
+<option value="CV">Cape Verde </option>
+<option value="KY">Cayman Islands </option>
+<option value="CF">Central African Republic </option>
+<option value="TD">Chad </option>
+<option value="CL">Chile </option>
+<option value="CN">China </option>
+<option value="CX">Christmas Island </option>
+<option value="CC">Cocos (Keeling) Islands </option>
+<option value="CO">Colombia </option>
+<option value="KM">Comoros </option>
+<option value="CG">Congo </option>
+<option value="CD">Congo, the Democratic Republic of the</option>
+<option value="CK">Cook Islands </option>
+<option value="CR">Costa Rica </option>
+<option value="CI">Cote D'Ivoire </option>
+<option value="HR">Croatia </option>
+<option value="CU">Cuba </option>
+<option value="CY">Cyprus </option>
+<option value="CZ">Czech Republic </option>
+<option value="DK">Denmark </option>
+<option value="DJ">Djibouti </option>
+<option value="DM">Dominica </option>
+<option value="DO">Dominican Republic </option>
+<option value="EC">Ecuador </option>
+<option value="EG">Egypt </option>
+<option value="SV">El Salvador </option>
+<option value="GQ">Equatorial Guinea </option>
+<option value="ER">Eritrea </option>
+<option value="EE">Estonia </option>
+<option value="ET">Ethiopia </option>
+<option value="FK">Falkland Islands (Malvinas) </option>
+<option value="FO">Faroe Islands </option>
+<option value="FJ">Fiji </option>
+<option value="FI">Finland </option>
+<option value="FR">France </option>
+<option value="GF">French Guiana </option>
+<option value="PF">French Polynesia </option>
+<option value="TF">French Southern Territories </option>
+<option value="GA">Gabon </option>
+<option value="GM">Gambia </option>
+<option value="GE">Georgia </option>
+<option value="DE">Germany </option>
+<option value="GH">Ghana </option>
+<option value="GI">Gibraltar </option>
+<option value="GR">Greece </option>
+<option value="GL">Greenland </option>
+<option value="GD">Grenada </option>
+<option value="GP">Guadeloupe </option>
+<option value="GU">Guam </option>
+<option value="GT">Guatemala </option>
+<option value="GN">Guinea </option>
+<option value="GW">Guinea-Bissau </option>
+<option value="GY">Guyana </option>
+<option value="HT">Haiti </option>
+<option value="HM">Heard and McDonald Islands </option>
+<option value="VA">Holy See (Vatican City State)</option>
+<option value="HN">Honduras </option>
+<option value="HK">Hong Kong </option>
+<option value="HU">Hungary </option>
+<option value="IS">Iceland </option>
+<option value="IN">India </option>
+<option value="ID">Indonesia </option>
+<option value="IR">Iran, Islamic Republic of</option>
+<option value="IQ">Iraq </option>
+<option value="IE">Ireland </option>
+<option value="IL">Israel </option>
+<option value="IT">Italy </option>
+<option value="JM">Jamaica </option>
+<option value="JP">Japan </option>
+<option value="JO">Jordan </option>
+<option value="KZ">Kazakhstan </option>
+<option value="KE">Kenya </option>
+<option value="KI">Kiribati </option>
+<option value="KP">Korea, Democratic People's Republic of </option>
+<option value="KR">Korea, Republic of </option>
+<option value="KW">Kuwait </option>
+<option value="KG">Kyrgyzstan </option>
+<option value="LA">Lao People's Democratic Republic </option>
+<option value="LV">Latvia </option>
+<option value="LB">Lebanon </option>
+<option value="LS">Lesotho </option>
+<option value="LR">Liberia </option>
+<option value="LY">Libyan Arab Jamahiriya </option>
+<option value="LI">Liechtenstein </option>
+<option value="LT">Lithuania </option>
+<option value="LU">Luxembourg </option>
+<option value="MO">Macao </option>
+<option value="MK">Macedonia, the former Yugoslav Republic of </option>
+<option value="MG">Madagascar </option>
+<option value="MW">Malawi </option>
+<option value="MY">Malaysia </option>
+<option value="MV">Maldives </option>
+<option value="ML">Mali </option>
+<option value="MT">Malta </option>
+<option value="MH">Marshall Islands </option>
+<option value="MQ">Martinique </option>
+<option value="MR">Mauritania </option>
+<option value="MU">Mauritius </option>
+<option value="YT">Mayotte </option>
+<option value="MX">Mexico </option>
+<option value="FM">Micronesia, Federated States of </option>
+<option value="MD">Moldova, Republic of </option>
+<option value="MC">Monaco </option>
+<option value="MN">Mongolia </option>
+<option value="MS">Montserrat </option>
+<option value="MA">Morocco </option>
+<option value="MZ">Mozambique </option>
+<option value="MM">Myanmar </option>
+<option value="NA">Namibia </option>
+<option value="NR">Nauru </option>
+<option value="NP">Nepal </option>
+<option value="NL">Netherlands </option>
+<option value="AN">Netherlands Antilles </option>
+<option value="NC">New Caledonia </option>
+<option value="NZ">New Zealand </option>
+<option value="NI">Nicaragua </option>
+<option value="NE">Niger </option>
+<option value="NG">Nigeria </option>
+<option value="NU">Niue </option>
+<option value="NF">Norfolk Island </option>
+<option value="MP">Northern Mariana Islands </option>
+<option value="NO">Norway </option>
+<option value="OM">Oman </option>
+<option value="PK">Pakistan </option>
+<option value="PW">Palau </option>
+<option value="PS">Palestinian Territory, Occupied</option>
+<option value="PA">Panama </option>
+<option value="PG">Papua New Guinea </option>
+<option value="PY">Paraguay </option>
+<option value="PE">Peru </option>
+<option value="PH">Philippines </option>
+<option value="PN">Pitcairn </option>
+<option value="PL">Poland </option>
+<option value="PT">Portugal </option>
+<option value="PR">Puerto Rico </option>
+<option value="QA">Qatar </option>
+<option value="RE">Reunion </option>
+<option value="RO">Romania </option>
+<option value="RU">Russian Federation </option>
+<option value="RW">Rwanda </option>
+<option value="SH">Saint Helena </option>
+<option value="KN">Saint Kitts and Nevis </option>
+<option value="LC">Saint Lucia </option>
+<option value="PM">Saint Pierre and Miquelon </option>
+<option value="VC">Saint Vincent and the Grenadines </option>
+<option value="WS">Samoa </option>
+<option value="SM">San Marino </option>
+<option value="ST">Sao Tome and Principe </option>
+<option value="SA">Saudi Arabia </option>
+<option value="SN">Senegal </option>
+<option value="CS">Serbia and Montenegro </option>
+<option value="SC">Seychelles </option>
+<option value="SL">Sierra Leone </option>
+<option value="SG">Singapore </option>
+<option value="SK">Slovakia </option>
+<option value="SI">Slovenia </option>
+<option value="SB">Solomon Islands </option>
+<option value="SO">Somalia </option>
+<option value="ZA">South Africa </option>
+<option value="GS">South Georgia and the South Sandwich Islands</option>
+<option value="ES">Spain </option>
+<option value="LK">Sri Lanka </option>
+<option value="SD">Sudan </option>
+<option value="SR">Suriname </option>
+<option value="SJ">Svalbard and Jan Mayen </option>
+<option value="SZ">Swaziland </option>
+<option value="SE">Sweden </option>
+<option value="CH">Switzerland </option>
+<option value="SY">Syrian Arab Republic </option>
+<option value="TW">Taiwan </option>
+<option value="TJ">Tajikistan </option>
+<option value="TZ">Tanzania, United Republic of </option>
+<option value="TH">Thailand </option>
+<option value="TL">Timor-Leste</option>
+<option value="TG">Togo </option>
+<option value="TK">Tokelau </option>
+<option value="TO">Tonga </option>
+<option value="TT">Trinidad and Tobago </option>
+<option value="TN">Tunisia </option>
+<option value="TR">Turkey </option>
+<option value="TM">Turkmenistan </option>
+<option value="TC">Turks and Caicos Islands </option>
+<option value="TV">Tuvalu </option>
+<option value="UG">Uganda </option>
+<option value="UA">Ukraine </option>
+<option value="AE">United Arab Emirates </option>
+<option value="GB">United Kingdom </option>
+<option value="US">United States</option>
+<option value="UM">United States Minor Outlying Islands </option>
+<option value="UY">Uruguay </option>
+<option value="UZ">Uzbekistan </option>
+<option value="VU">Vanuatu </option>
+<option value="VE">Venezuela </option>
+<option value="VN">Vietnam </option>
+<option value="VG">Virgin Islands (British) </option>
+<option value="VI">Virgin Islands (U.S.) </option>
+<option value="WF">Wallis And Futuna Islands </option>
+<option value="EH">Western Sahara </option>
+<option value="YE">Yemen </option>
+<option value="ZM">Zambia </option>
+<option value="ZW">Zimbabwe</option></select></td>
+</tr>
+<tr><td colspan="3" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="5"></td></tr>
+<tr>
+<td width="165" align="left" valign="top"><font size="2" face="Arial, Helvetica, sans-serif" color="#000000"><strong>Household Income:</strong></font></td>
+<td width="10" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="10"></td>
+<td width="393" align="left" valign="top"><select name="income_select" id="income_select" style="width:250px; font-size:12px;" tabindex="13"><option value="">--- Select One ---</option>
+<option value="7">$150,000 or more</option>
+<option value="6">$100,000 to $149,999</option>
+<option value="5">$75,000 to $99,999</option>
+<option value="4">$50,000 to $74,999</option>
+<option value="3">$25,000 to $49,999</option>
+<option value="2">Less than $25,000</option>
+<option value="1">Prefer Not to Say</option></select></td>
+</tr>
+<tr><td colspan="3" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="5"></td></tr>
+<tr>
+<td width="165" align="left" valign="top"><font size="2" face="Arial, Helvetica, sans-serif" color="#000000"><strong>Job Title:</strong></font></td>
+<td width="10" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="10"></td>
+<td width="393" align="left" valign="top"><select name="title_select" id="title_select" style="width:250px; font-size:12px;" tabindex="14"><option value="">--- Select One ---</option>
+<option value="1">Accountant/Auditor</option>
+<option value="2">Administrative/Clerical</option>
+<option value="3">Analyst</option>
+<option value="5">Architect</option>
+<option value="4">Artist/Musician/Actor/Entertainer</option>
+<option value="7">Broker/Trader/Advisor</option>
+<option value="8">CEO/President/Chairman</option>
+<option value="9">CFO, COO, CTO, CIO, CMO</option>
+<option value="10">Clergy</option>
+<option value="12">Computer Professional/IT/IS</option>
+<option value="13">Consultant</option>
+<option value="14">Director</option>
+<option value="16">Educator/Teacher/Professor</option>
+<option value="17">Engineer</option>
+<option value="19">Government official</option>
+<option value="20">Health care worker (other than doctor)</option>
+<option value="21">Homemaker</option>
+<option value="22">Lawyer/Judge</option>
+<option value="23">Manager/Supervisor</option>
+<option value="24">Military</option>
+<option value="36">Other</option>
+<option value="25">Partner/Principal/Owner</option>
+<option value="15">Physician</option>
+<option value="26">Researcher</option>
+<option value="37">Retired</option>
+<option value="27">Sales Manager/Account Executive</option>
+<option value="29">Scientist</option>
+<option value="18">Self-Employed</option>
+<option value="30">Service provider</option>
+<option value="28">Skilled laborer</option>
+<option value="31">Student</option>
+<option value="33">Technician</option>
+<option value="34">Vice President/SVP/EVP</option>
+<option value="35">Writer/Editor</option></select></td>
+</tr>
+<tr><td colspan="3" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="5"></td></tr>
+<tr>
+<td width="165" align="left" valign="top"><font size="2" face="Arial, Helvetica, sans-serif" color="#000000"><strong>Industry:</strong></font></td>
+<td width="10" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="10"></td>
+<td width="393" align="left" valign="top"><select name="industry_select" id="industry_select" style="width:250px; font-size:12px;" tabindex="15"><option value="">--- Select One ---</option>
+<option value="1">Accounting</option>
+<option value="39">Aerospace/Defense</option>
+<option value="2">Agriculture/Mining</option>
+<option value="3">Architecture/Design</option>
+<option value="4">Arts/Entertainment</option>
+<option value="38">Automotive</option>
+<option value="5">Computers/Software/Technology</option>
+<option value="6">Construction</option>
+<option value="7">Consulting</option>
+<option value="8">Education/Schools/Academia</option>
+<option value="9">Energy/Utilities/Fuel/Chemicals</option>
+<option value="10">Engineering</option>
+<option value="11">Finance/Banking/Brokerage</option>
+<option value="12">Government/Diplomatic services</option>
+<option value="13">Health Care/Hospitals</option>
+<option value="34">Homemaker</option>
+<option value="14">Import/Export/Trade</option>
+<option value="15">Information Management/Library</option>
+<option value="16">Insurance</option>
+<option value="17">Legal</option>
+<option value="18">Manufacturing</option>
+<option value="19">Marketing/Advertising/Communications/PR</option>
+<option value="20">Media/Publishing/Broadcasting</option>
+<option value="21">Military</option>
+<option value="22">Non-profit/Associations</option>
+<option value="37">Other</option>
+<option value="23">Pharmaceuticals/Biotech</option>
+<option value="24">Real Estate/Property Management</option>
+<option value="25">Recruiting/Staffing/Human Resources</option>
+<option value="26">Religious Institutions</option>
+<option value="27">Research &amp; Development/Research</option>
+<option value="28">Retail</option>
+<option value="36">Retired</option>
+<option value="29">Social Services</option>
+<option value="35">Student</option>
+<option value="30">Telecommunications</option>
+<option value="31">Transportation/Logistics</option>
+<option value="32">Travel/Hospitality/Service</option>
+<option value="33">Wholesale</option></select></td>
+</tr>
+</table>
+<table width="568" border="0" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top">
+<img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="100" height="30"><br><font color="#FF9900" size="3" face="Arial, Helvetica, sans-serif"><strong>Select Free NYTimes.com E-mail Newsletters (Optional)</strong></font><br><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="100" height="10">
+</td></tr></table>
+<table width="568" border="0" cellspacing="0" cellpadding="0"><tr>
+<td width="275" align="left" valign="top"><table width="275" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20" align="left" valign="top">
+<img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="8"><br><input type="checkbox" name="todaysheadlines_check" value="Y" tabindex="16">
+</td>
+<td width="255" align="left" valign="top"><font size="2" face="Arial, Helvetica, sans-serif"><strong><a href="/web/20050911224216/http://www.nytimes.com/marketing/email/samples/todaysheadlines.html" onclick="window.open('','popup','height=430,width=640,scrollbars=yes,resizable=yes')" target="popup"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/marketing/email/logos/email_headers_th.gif" alt="Click here to see a sample" width="255" height="20" border="0"></a></strong><br>The top stories from each morning's paper as well as stories from other 
+		preferred sections sent daily.</font></td>
+</tr>
+<tr><td colspan="3" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="20" height="10"></td></tr>
+<tr>
+<td width="20" align="left" valign="top">
+<img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="5"><br><input type="checkbox" name="dealbook_check" value="Y" tabindex="21">
+</td>
+<td width="255" align="left" valign="top"><font size="2" face="Arial, Helvetica, sans-serif"><a href="/web/20050911224216/http://www.nytimes.com/marketing/email/samples/dealbook.html" onclick="window.open('','popup','height=430,width=640,scrollbars=yes,resizable=yes')" target="popup"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/marketing/email/logos/email_headers_dealbook.gif" alt="Click here to see a sample" width="255" height="20" border="0"></a><br>News on mergers &amp; acquisitions, IPOs, venture capital and more sent weekdays from Andrew Ross Sorkin.</font></td>
+</tr>
+<tr><td colspan="3" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="20" height="10"></td></tr>
+<tr>
+<td width="20" align="left" valign="top">
+<img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="8"><br><input type="checkbox" name="massmail_nyt_check" value="Y" tabindex="18">
+</td>
+<td width="255" align="left" valign="top"><font size="2" face="Arial, Helvetica, sans-serif"><a href="/web/20050911224216/http://www.nytimes.com/marketing/email/samples/attimes.html" onclick="window.open('','popup','height=430,width=640,scrollbars=yes,resizable=yes')" target="popup"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/marketing/email/logos/email_headers._attimes.gif" alt="Click here to see a sample" width="255" height="20" border="0"></a><br> Bi-monthly updates on new NYTimes.com features, highlights and the 10 most popular articles.</font></td>
+</tr>
+</table></td>
+<td width="18" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="18" height="10"></td>
+<td width="275" align="left" valign="top"><table width="275" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20" align="left" valign="top">
+<img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="8"><br><input type="checkbox" name="massmail_other_check" value="Y" tabindex="17">
+</td>
+<td width="255" align="left" valign="top"><font size="2" face="Arial, Helvetica, sans-serif"><strong><a href="/web/20050911224216/http://www.nytimes.com/marketing/email/samples/timesselect.html" onclick="window.open('','popup','height=430,width=640,scrollbars=yes,resizable=yes')" target="popup"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/marketing/email/logos/email_headers_timesselect.gif" alt="Click here to see a sample" width="255" height="20" border="0"></a></strong><br>Exclusive offers sent bi-monthly by NYTimes.com on behalf of select 
+		advertisers.</font></td>
+</tr>
+<tr><td colspan="4" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="20" height="10"></td></tr>
+<tr>
+<td width="20" align="left" valign="top">
+<img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="5"><br><input type="checkbox" name="holiday_check" value="Y" tabindex="20">
+</td>
+<td width="255" align="left" valign="top"><font size="2" face="Arial, Helvetica, sans-serif"><a href="/web/20050911224216/http://www.nytimes.com/marketing/email/samples/sophisticatedshopper.html" onClick="window.open('','popup','height=430,width=640,scrollbars=yes,resizable=yes')" target="popup"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/marketing/email/logos/email_headers_sophisticated.gif" alt="Click here to see a sample" width="255" height="20" border="0"></a><br>
+		Insider updates on sales and promotions sent regularly from NYTimes.com on behalf of select advertisers.</font></td>
+</tr>
+<tr><td colspan="4" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="20" height="10"></td></tr>
+<tr>
+<td width="20" align="left" valign="top">
+<img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="5"><br><input type="checkbox" name="getaways_check" value="Y" tabindex="19">
+</td>
+<td width="255" align="left" valign="top"><font size="2" face="Arial, Helvetica, sans-serif"><strong><a href="/web/20050911224216/http://www.nytimes.com/marketing/email/samples/greatgetaways.html" onclick="window.open('','popup','height=430,width=640,scrollbars=yes,resizable=yes')" target="popup"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/marketing/email/logos/email_headers_greatget.gif" alt="Click here to see a sample" width="255" height="20" border="0"></a></strong><br>The best in luxury travel deals sent regularly from NYTimes.com 
+		on behalf of select advertisers.</font></td>
+</tr>
+</table></td>
+</tr></table>
+<table width="568" border="0" cellspacing="0" cellpadding="0"><tr>
+<td width="165" align="left" valign="top"><font size="2" face="Arial, Helvetica, sans-serif"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="10"><br><strong>Preferred E-mail Format:</strong></font></td>
+<td width="10" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="10"></td>
+<td width="393" align="left" valign="top">
+<img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="10"><br><font size="2" face="Arial, Helvetica, sans-serif"><input type="radio" name="format" value="H" tabindex="22" checked>HTML (Text and Images)
+		<input type="radio" name="format" value="T" tabindex="23">Text Only
+		<img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="10" height="10"><a href="/web/20050911224216/http://www.nytimes.com/ref/membercenter/faq/aboutsiteqa20.html" onclick="window.open('','popup','height=400,width=420,scrollbars=yes,resizable=yes')" target="popup">What's this?</a></font>
+</td>
+</tr></table>
+<table width="568" border="0" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top">
+<img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="100" height="30"><br><font color="#FF9900" size="3" face="Arial, Helvetica, sans-serif"><strong>Finish Your Registration</strong></font><br><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="100" height="10"><br><font size="2" face="Arial, Helvetica, sans-serif">Registration signifies that you agree to the terms and conditions of our <nobr><a href="/web/20050911224216/http://www.nytimes.com/ref/membercenter/help/agree.html" onclick="window.open('','popup','height=430,width=795,scrollbars=yes,resizable=yes')" target="popup">Member Agreement</a>.</nobr></font><br><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="100" height="10"><br><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="100" height="10"><br><input type="submit" name="Submit_Regi" value="Click to Complete Your Free Registration" tabindex="24">
+</td></tr></table>
+<table width="568" border="0" cellspacing="0" cellpadding="0">
+<tr><td colspan="3" align="left" valign="top">
+<img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="100" height="20"><br><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/horizontal_line.gif" width="568" height="10"><br><font color="#00639C" size="2" face="Arial, Helvetica, sans-serif">Privacy</font><br><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="100" height="10">
+</td></tr>
+<tr>
+<td width="343" align="left" valign="top"><font size="2" face="Arial, Helvetica, sans-serif">
+NYTimes.com will never share your information, including your e-mail address, without your explicit permission. <br>
+View our <a href="/web/20050911224216/http://www.nytimes.com/privacy" onclick="window.open('','popup','height=430,width=795,scrollbars=yes,resizable=yes')" target="popup"><nobr>Privacy Policy</nobr></a>.</font></td>
+<td width="10" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="5" height="20"></td>
+<td width="215" align="left" valign="middle">
+<a href="javascript:Certify();"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi/privacyseal6.gif" alt="BBBOnLine Privacy Seal" width="90" height="31" border="0"></a>&nbsp;<a href="/web/20050911224216/http://www.nytimes.com/privacy" onClick="window.open('','popup','height=430,width=795,scrollbars=yes,resizable=yes')" target="popup"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi/trustmark.gif" border="0"></a>
+</td>
+</tr>
+</table>
+<img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="20" height="30"><font color="0066CC" size="2" face="Arial, Helvetica, sans-serif"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="100" height="20"></font>
+</td>
+<td width="100" align="left" valign="top" background="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/regi_right_margin.gif"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/spacer.gif" width="100" height="200"></td>
+</tr>
+<tr>
+<td width="100" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/regi_left_lowercorner.gif" width="100" height="87"></td>
+<td width="568" align="left" valign="top"><table width="568" height="87" border="0" cellpadding="0" cellspacing="0">
+<tr><td height="33" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/regi_bottom_linetop.gif" width="568" height="33"></td></tr>
+<tr><td height="38" align="left" valign="middle" bgcolor="F7F7F1"><font size="1" face="Arial, Helvetica, sans-serif"><a href="/web/20050911224216/http://www.nytimes.com/ref/membercenter/help/copyright.html" onClick="window.open('','popup','height=430,width=550,scrollbars=yes,resizable=yes')" target="popup">Copyright 2005</a>&nbsp;<a class="footer" href="/web/20050911224216/http://www.nytco.com/" onClick="window.open('','popup','height=430,width=550,scrollbars=yes,resizable=yes')" target="popup">The New York Times Company</a>
+| <a class="footer" href="/web/20050911224216/http://www.nytimes.com/ref/membercenter/help/privacy.html" onClick="window.open('','popup','height=430,width=550,scrollbars=yes,resizable=yes')" target="popup">Privacy Policy</a>
+| <a class="footer" href="/web/20050911224216/http://www.nytimes.com/membercenter/formr.html" onClick="window.open('','popup','height=430,width=768,scrollbars=yes,resizable=yes')" target="popup">Contact Us</a></font></td></tr>
+<tr><td height="16" align="left" valign="bottom"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/regi_bottom_linebottom.gif" width="568" height="16"></td></tr>
+</table></td>
+<td width="100" align="left" valign="top"><img src="/web/20050911224216im_/http://graphics8.nytimes.com/images/apps/regi2/regi_right_lowercorner.gif" width="100" height="87"></td>
+</tr>
+</form></table>
+
+		<!-- SiteCatalyst code version: G.6.
+		Copyright 1997-2004 Omniture, Inc. More info available at
+		/web/20050911224216/http://www.omniture.com --><script language="JavaScript"><!--
+		var s_account="nytmembercenter"
+		var s_pageName=document.title.replace(/^the new york times/i, "NYT")
+		var s_server=""
+		var s_channel="registration"
+		var s_formOnPage=true
+		var s_pageType=""
+		var s_prop1="regi/login"
+		var s_prop2=""
+		var s_prop3=""
+		var s_prop4=""
+		var s_prop5=""
+		var s_prop6=""
+		var s_prop7=""
+		var s_prop8=""
+		var s_prop9="registration form"
+		var s_prop10=""
+		var s_prop12=""
+		var s_prop13=""
+		var s_campaign=""
+		var s_state=""
+		var s_zip=""
+		var s_events="event3"
+		var s_products=""
+		var s_purchaseID=""
+		var s_eVar1=""
+		var s_eVar2=""
+		var s_eVar3=""
+		var s_eVar4=""
+		var s_eVar5=""
+		var s_eVar6=""
+		var s_eVar7=""
+		var s_eVar8=""
+		var s_eVar9=""
+		var s_eVar10=""
+		var s_code=' '//--></script>
+		<script language="JavaScript" src="/web/20050911224216js_/http://graphics8.nytimes.com/js/s_code_1to1.js"></script>
+		<script language="JavaScript"><!-- 
+		var s_wd=window,s_tm=new Date;if(s_code!=' '){s_code=s_dc(
+		s_account);if(s_code)document.write(s_code)}else
+		document.write('<im'+
+		'g src="/web/20050911224216/http://std.o.nytimes.com/b/ss/'+s_account+'/1/G.6--FB/s'+s_tm.getTime()+'?[AQB]'
+		+'&j=1.0&[AQE]" height="1" width="1" border="0" alt="" />')
+		//--></script><script language="JavaScript"><!-- 
+		if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+		//--></script><noscript><img 
+		src="/web/20050911224216im_/http://std.o.nytimes.com/b/ss/nytmembercenter/1/G.6--NS/0" 
+		height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+		<!-- End SiteCatalyst code version: G.6. -->
+		
+
+		<!-- SiteCatalyst code version: G.5.
+		Copyright 1997-2003 Omniture, Inc. More info available at
+		/web/20050911224216/http://www.omniture.com --><script language="JavaScript"><!--
+		var s_account="nytimesglobal"
+		var s_pageName=document.title.replace(/^the new york times/i, "NYT")
+		var s_server=""
+		var s_channel="registration"
+		var s_pageType=""
+		var s_prop1="regi/login"
+		var s_prop2=""
+		var s_prop3=""
+		var s_prop4=""
+		var s_prop5=""
+		var s_prop6=""
+		var s_prop7=""
+		var s_prop8=""
+		var s_prop9="registration form"
+		var s_prop10=""
+		var s_prop12=""
+		var s_prop13=""
+		var s_campaign=""
+		var s_state=""
+		var s_zip=""
+		var s_events="event3"
+		var s_products=""
+		var s_purchaseID=""
+		var s_eVar1=""
+		var s_eVar2=""
+		var s_eVar3=""
+		var s_eVar4=""
+		var s_eVar5=""
+		var s_eVar6=""
+		var s_eVar7=""
+		var s_eVar8=""
+		var s_eVar9=""
+		var s_eVar10=""
+		//--></script><script language="JavaScript" src="/web/20050911224216js_/http://graphics8.nytimes.com/js/s_code_sampling.js"></script>
+		<!-- End SiteCatalyst code version: G.5. -->
+
+		
+		
+
+		<script language="Javascript">Tacoda_AMS_DDC_addPair("t_section","Registration")</script>
+		<script language="Javascript">Tacoda_AMS_DDC_addPair("site","nytimes.com")</script>
+		<script language="JavaScript">Tacoda_AMS_DDC("/web/20050911224216/http://te.nytimes.com/tte/blank.gif","1.0")</script>	
+		</body>
+</html>
+
+
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 22:42:16 Sep 11, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 4:59:00 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

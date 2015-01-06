@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xml:lang="en-US" lang="en-US" xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app16.us.archive.org";archive_analytics.values.server_ms=1068;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="pics-label" content="(pics-1.1 &quot;http://www.icra.org/ratingsv02.html&quot; comment &quot;ICRAonline EN v2.0&quot; l gen true for &quot;http://kids.msn.com/&quot; r (nz 1 vk 1 vr 1 lz 1 oz 1 cz 1) &quot;http://www.rsac.org/ratingsv01.html&quot; l gen true for &quot;http://kids.msn.com/&quot; r (n 0 s 0 v 1 l 0))" /><title>MSN Kids</title><style type="text/css">@import url("/web/20051212081103im_/http://stc.msn.com/br/gbl/css/2/GTL_SiteGeneric.css");@import url("/web/20051212081103im_/http://stc.msn.com/br/chan/css/1/chan_pollservice.css");@import url("/web/20051212081103im_/http://stc.msn.com/br/chan/Kids/css/1/Kids.css");</style><!--[if IE 7]><style type="text/css">@import url("/web/20051212081103/http://stc.msn.com/br/chan/Kids/css/1/Kids_ie7.css");</style><![endif]--><script type="text/javascript" src="/web/20051212081103js_/http://stj.msn.com/br/gbl/js/1/MozCompat.js"></script><script type="text/javascript" src="/web/20051212081103js_/http://stj.msn.com/br/gbl/js/1/flash.js"></script><script type="text/javascript" src="/web/20051212081103js_/http://stj.msn.com/br/gbl/js/1/Navigation.js"></script><script type="text/javascript" src="/web/20051212081103js_/http://stj.msn.com/br/chan/kids/js/1/Kids_ContentArea2.js"></script></head><body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://kids.msn.com/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "12";
+var displayMonth = "Dec";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://kids.msn.com/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20051212081103" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20051110154833/http://kids.msn.com/" title="10 Nov 2005">NOV</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 8:11:03 Dec 12, 2005">DEC</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20060112105044/http://kids.msn.com/" title="12 Jan 2006"><strong>JAN</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20051210031708/http://kids.msn.com/" title="3:17:08 Dec 10, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 8:11:03 Dec 12, 2005">12</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20051213010645/http://kids.msn.com/" title="1:06:45 Dec 13, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20041211174616/http://kids.msn.com/" title="11 Dec 2004"><strong>2004</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 8:11:03 Dec 12, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20061214002323/http://kids.msn.com/" title="14 Dec 2006"><strong>2006</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20051212081103*/http://kids.msn.com/" title="See a list of every capture for this URL">842 captures</a>
+           <div class="r" title="Timespan for captures of this URL">10 Nov 00 - 22 Oct 14</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000010_2001:-1:014111202151_2002:-1:001012114330_2003:-1:021413120602_2004:-1:71224ccbb8b9_2005:11:cba9cddf7bdd_2006:-1:b94b589a5797_2007:-1:987517335955_2008:-1:622210000341_2009:-1:431033013326_2010:-1:555100010021_2011:-1:113312311112_2012:-1:010231310300_2013:-1:301003001000_2014:-1:120000000100_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<div id="reporting"><img id="ctag" width="1" height="1" alt="" src="/web/20051212081103im_/http://c.msn.com/c.gif?di=362&amp;pi=7327&amp;ps=56422&amp;tp=http://kids.msn.com/&amp;rf=" /><div id="omni"><script type="text/javascript">var s_account='msnportalkids';</script><script type="text/javascript" src="/web/20051212081103js_/http://stj.msn.com/br/om/js/s_code.js"></script><script type="text/javascript">s.linkInternalFilters='javascript:,kids.msn.com';s.pageName='Kids_home_08';s.server='msn.com';s.prop1='MSN Channels US';s.prop2='en-US';s.channel='msnportalkids';s.prop22='False';s.prop25='';s.prop26='';var s_code=s.t();if(s_code)document.write(s_code);</script><script type="text/javascript"><!--if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')//--></script><noscript><div><img src="/web/20051212081103im_/http://msnportalkids.112.2o7.net/b/ss/msnportalkids/1/H.1--NS/0" height="1" width="1" alt="" /></div></noscript></div><script type="text/javascript" src="/web/20051212081103js_/http://stj.msn.com/br/gbl/js/1/Linktracking.js"></script></div><div id="wrapper" class="page8 region9"><div id="head"><div class="parent chrome1 single1"><div class="child c1 first"><div class="advertisement"><!--NOAD--><img src="/web/20051212081103im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=B03"/></div></div></div></div><div id="page"><div id="nav"></div><div id="content"><div id="subhead"><div id="sharkfin" class="parent chrome1 quad2 cf"><div id="sharkfin1" class="child c1 first"><div class="img"><img src="/web/20051212081103im_/http://stb.msn.com/i/8F/8F59C32622E49E3427DA49175B26D12C.gif" width="87" height="45" alt="MSN logo" /></div></div><div id="sharkfin2" class="child c2"><div class="linkedimg"><a href="/web/20051212081103/http://kids.msn.com/"><img src="/web/20051212081103im_/http://stb.msn.com/i/7B/7BFB5F69497998B4E6365F438A309A.gif" width="62" height="42" alt="kids homepage" /></a></div></div><br class="b3" /><div id="sharkfin3" class="child c3"><div class="linkedimg"><a href="/web/20051212081103/http://sea.search.msn.com/kidz/default.aspx?FORM=PTHM"><img src="/web/20051212081103im_/http://stb.msn.com/i/B5/B5449F4AC32636631BBACD1C4F51B11.gif" width="168" height="42" alt="kids search" /></a></div></div><div id="sharkfin4" class="child c4 last"><div class="linkedimg"><a href="/web/20051212081103/http://kids.msn.com/help.aspx"><img src="/web/20051212081103im_/http://stb.msn.com/i/4A/4AAA3DB9C2159B38A44B526E2353C8C.gif" width="71" height="42" alt="Help" /></a></div></div></div></div><div id="area1" class="region7"><div id="nav1" class="parent chrome1 single1"><div id="nav2" class="child c1 first"><div class="flashlink" id="11"><a href="/web/20051212081103/http://kids.msn.com/">Kids</a><script type="text/javascript">Msn.Flash.Build('/web/20051212081103/http://stb.msn.com/i/E5/E5E407A14223B96E9BC92E6B943F9.swf', '7', 608, 35, '11');</script></div></div></div><div id="flashvote" class="parent chrome1 double2"><div id="flash" class="child c1 first"><div class="flashlink" id="112"><a href="/web/20051212081103/http://kids.msn.com/">Flash</a><script type="text/javascript">Msn.Flash.Build('/web/20051212081103/http://stb.msn.com/i/F1/F16A535D825DB14D8662E9173959E8F9.swf', '5', 393, 237, '112');</script></div></div><div id="vote" class="child c2 last"><div class="poll" ><form id="f3529947706" method="get" action="/web/20051212081103/http://kids.msn.com/"><div><img src="/web/20051212081103im_/http://stb.msn.com/i/C7/C71DB7A5171A24889072C0D41B2277.gif" alt="" height="33" width="161" /><input name="pollId" value="p3529947706" type="hidden" id="p3529947706" /><input name="vote" value="1" type="hidden" /><input name="voteshowresults" value="1" type="hidden" /><input name="pollcontent" value="522516617" type="hidden" /><input name="jsdisabled" value="true" type="hidden" /><ol><li>How do you buy your favorite music?<ol><li><input name="q1" value="c1" id="p3529947706q1c1" type="radio" /><label for="p3529947706q1c1">I prefer to buy the CD so I can have an original copy.</label></li><li><input name="q1" value="c2" id="p3529947706q1c2" type="radio" /><label for="p3529947706q1c2">I like downloading my tunes so I can burn them myself.</label></li></ol></li></ol><input onclick="javascript:return SwitchAndVote('3529947706', 'f3529947706', 'd3529947706rv', false, '');" alt="Vote" onmouseout="this.src='http://stb.msn.com/i/3D/3D98C5948FD982572145921A1DB474CF.gif'" src="/web/20051212081103im_/http://stb.msn.com/i/3D/3D98C5948FD982572145921A1DB474CF.gif" id="submit3529947706" type="image" height="30" width="61" /><p class="result"><a href="?voteshowresults=1&amp;pollcontent=522516617&amp;jsdisabled=true" onclick="javascript:return Switch('f3529947706', 'd3529947706rv');">Click here to see results without voting</a></p><img src="/web/20051212081103im_/http://st.msn.com/as/poll/i/c.gif" id="img3529947706" height="1" width="1" alt="" /></div></form><script type="text/javascript">var requireallmessage='Please choose an answer for every question';var requireonemessage='Please choose an answer for at least one question';var pgUrl='/web/20051212081103/http://kids.msn.com/';</script><script type="text/javascript" src="/web/20051212081103js_/http://stj.msn.com/as/poll/js/pudhtml.js"></script><div class="results off" id="d3529947706rv"><img src="/web/20051212081103im_/http://stb.msn.com/i/C7/C71DB7A5171A24889072C0D41B2277.gif" alt="" height="33" width="161" /><ol><li>How do you buy your favorite music?<ol><li>I prefer to buy the CD so I can have an original copy.<br /><strong class="bar pct55"> 58%</strong></li><li>I like downloading my tunes so I can burn them myself.<br /><strong class="bar pct40"> 42%</strong></li></ol></li></ol><cite>9318 responses, not scientifically valid, results updated every minute.</cite><script type="text/javascript">CheckCookie('p3529947706::','f3529947706','d3529947706rv')</script></div></div></div></div><div id="quad" class="parent chrome1 quad1 cf"><div id="quad1" class="child c1 first"><div class="imglinkabs1 cf"><a href="/web/20051212081103/http://psc.disney.go.com/disneychannel/suitelife/games/pizzapartypickup/index.html?sdk=msn"><img src="/web/20051212081103im_/http://stb.msn.com/i/17/17BF41A19E2DEC758BEDB6F3D3A3510.gif" width="100" height="100" alt="© Disney" /></a><div class="linkabs1"><a href="/web/20051212081103/http://psc.disney.go.com/disneychannel/suitelife/games/pizzapartypickup/index.html?sdk=msn">Pizza Party Pickup</a><p><a href="/web/20051212081103/http://psc.disney.go.com/disneychannel/suitelife/games/pizzapartypickup/index.html?sdk=msn"></a>Keep the party meter high by collecting supplies</p></div></div></div><div id="quad2" class="child c2"><div class="imglinkabs1 cf"><a href="/web/20051212081103/http://www.discovery.com/ex/adtrack/msn_kids/corwin_gorilla/kids.discovery.com/fansites/jeffcorwin/gorilla/gorilla.html?dcitc=w01-106-ag-0000"><img src="/web/20051212081103im_/http://stb.msn.com/i/4B/4B576E9DF738965DECC850B14EFD9356.jpg" width="100" height="100" alt="© Discovery" /></a><div class="linkabs1"><a href="/web/20051212081103/http://www.discovery.com/ex/adtrack/msn_kids/corwin_gorilla/kids.discovery.com/fansites/jeffcorwin/gorilla/gorilla.html?dcitc=w01-106-ag-0000">Go Ape</a><p><a href="/web/20051212081103/http://www.discovery.com/ex/adtrack/msn_kids/corwin_gorilla/kids.discovery.com/fansites/jeffcorwin/gorilla/gorilla.html?dcitc=w01-106-ag-0000"></a>Discover the secrets of great apes and other primates!</p></div></div></div><br class="b3" /><div id="quad3" class="child c3"><div class="imglinkabs2 cf"><a href="/web/20051212081103/http://play.toontown.com/webHome.php"><img src="/web/20051212081103im_/http://stb.msn.com/i/4A/4AD62A8418C878DAA1CF89FBC0C78C11.jpg" width="100" height="100" alt="ToonTown; © Disney" /></a><div class="linkabs1"><a href="/web/20051212081103/http://play.toontown.com/webHome.php">Disney's ToonTown</a><p><a href="/web/20051212081103/http://play.toontown.com/webHome.php"></a>Be a Toon and play with hundreds of kids online!</p></div></div></div><div id="quad4" class="child c4 last"><div class="imglinkabs2 cf"><a href="/web/20051212081103/http://www.scholastic.com/ontherun/"><img src="/web/20051212081103im_/http://stb.msn.com/i/86/868D2B6BA6564016275E713D72D9CBDC.gif" width="100" height="100" alt="© Scholastic" /></a><div class="linkabs1"><a href="/web/20051212081103/http://www.scholastic.com/ontherun/">On The Run</a><p><a href="/web/20051212081103/http://www.scholastic.com/ontherun/"></a>What would you do if you were on the run?</p></div></div></div></div><div id="funplaces" class="parent chrome1 double2"><div id="morefun" class="child c1 first"><div class="img"><img src="/web/20051212081103im_/http://stb.msn.com/i/A2/A2F96FEE5249FDD2120D2C21211B62.gif" width="340" height="29" alt="More Fun places on the web" /></div></div><div id="disney" class="child c2 last"><ul class="linkedimglist1 cf"><li class="first"><a href="/web/20051212081103/http://disney.go.com/kids/today/index.html?sdk=msn" onclick="return Msn.Navigation.OpenNew(this)"><img src="/web/20051212081103im_/http://stb.msn.com/i/CD/CD99C6EA1D39DE5263F29EA3258A9FB5.gif" width="122" height="35" alt="Disney.com" /></a></li><li><a href="/web/20051212081103/http://www.discovery.com/ex/adtrack/msn_kids/kids_home/kids.discovery.com/?msn=kids_home" onclick="return Msn.Navigation.OpenNew(this)"><img src="/web/20051212081103im_/http://stb.msn.com/i/F9/F9426D7134CEAFE581F59BBD5358671.gif" width="76" height="63" alt="Discovery Kids" /></a></li><li><a href="/web/20051212081103/http://www.scholastic.com/kids/" id="sch0llist" onclick="return Msn.Navigation.OpenNew(this)"><img src="/web/20051212081103im_/http://stb.msn.com/i/A3/A3CA5FB612A11BC2F2E5CE983CB8E6C5.gif" width="126" height="19" alt="Scholastic" /></a></li><li class="last"><a href="/web/20051212081103/http://kids.msn.com/schoolers.aspx?Encarta" onclick="return Msn.Navigation.OpenPopup(this,'width=420,height=300')"><img src="/web/20051212081103im_/http://stb.msn.com/i/9D/9D3A896852EDF57EFE47DEF55B212A42.gif" width="131" height="27" alt="MSN Encarta" /></a></li></ul></div></div><div id="plogo" class="parent chrome1 double1 cf"><div id="parenting" class="child c1 first"><div class="abs"><span>For parenting resources, visit</span></div></div><div id="sponsorlogo" class="child c2 last"><div class="linkedimg"><a href="/web/20051212081103/http://kids.msn.com/schoolers.aspx?Lifestyle" onclick="return Msn.Navigation.OpenPopup(this,'width=420,height=300')"><img src="/web/20051212081103im_/http://stb.msn.com/i/E3/E332EAF9655BAAE9CE7CA9AFF43EED1E.gif" width="138" height="30" alt="MSN Lifestyle" /></a></div></div></div></div><div id="area2" class="region3"><div id="toparea2flash" class="parent chrome1 single1"><div class="child c1 first"><div class="flashlink" id="1"><a href="/web/20051212081103/http://lifestyle.msn.com/FamilyandParenting/PreschoolPlayground/default.aspx">Fun for Preschoolers</a><script type="text/javascript">Msn.Flash.Build('/web/20051212081103/http://stb.msn.com/i/65/6539637818D890876AB3D83A5D65433C.swf', '7', 134, 120, '1');</script></div></div></div></div></div></div><div id="foot"><div class="parent chrome6 single1"><div class="child c1 first"><div class="msnfoot1 cf"><ul class="primary"><li class="first"><span>© 2005 Microsoft</span></li><li><a href="/web/20051212081103/http://kids.msn.com/privacy/default.aspx">TRUSTe Approved Privacy Statement </a></li><li><a href="javascript:openWin(&quot;/web/20051212081103/http://kids.msn.com/schoolers.aspx?TOU&quot;,420,300)">Terms of Use</a></li><li class="last"><a href="javascript:openWin(&quot;/web/20051212081103/http://kids.msn.com/schoolers.aspx?StaySafeOnline&quot;,420,300)">Stay Safe Online</a></li></ul><ul class="secondary"><li class="first"><a href="/web/20051212081103/http://kids.msn.com/wehearyou.aspx">We Hear You</a></li></ul></div></div></div></div></div><script type="text/javascript" src="/web/20051212081103js_/http://stj.msn.com/br/gbl/js/1/ieminwidth.js"></script></body></html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 8:11:03 Dec 12, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 6:12:44 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

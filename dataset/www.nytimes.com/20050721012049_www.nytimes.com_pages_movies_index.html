@@ -1,0 +1,1593 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app16.us.archive.org";archive_analytics.values.server_ms=1857;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<script type="text/JavaScript">
+<!--
+	
+	function nameIt() {
+
+		window.name = 'nytimesmain';
+	}
+	
+	function pop_me_up2(pURL,name,features){
+		new_window = window.open(pURL,name,features);
+		new_window.focus();
+	}
+	
+	function changeImage(image_name,image_src) {
+   		document.images[image_name].src = image_src;
+	}
+	
+	function goToURL(obj){
+		var f = (obj.section) ? obj : obj.form;
+		var selected = f.section.selectedIndex;
+		var URL = f.section.options[selected].value;
+		if (URL != "") document.location = URL;
+		return false;
+	}
+	
+	if (window.self != window.top) { 
+		top.location.replace(window.location.href); 
+	}
+	
+//-->
+</script>
+<script language="JavaScript" src="/web/20050722030559js_/http://www.nytimes.com/js/browserSize.js" type="text/javascript">
+</script>
+<!--begin Tacoda-specific code -->
+<script src="/web/20050722030559js_/http://www.nytimes.com/js/Tacoda_AMS_DDC_Header.js"></script>
+<!--end Tacoda-specific code -->
+<script>
+<!--
+	if (document.layers) {   
+		document.write("<link rel='stylesheet' type='text/css' href='/web/20050722030559/http://www.nytimes.com/css/movies.ns.css'>"); 
+		document.write("<link rel='stylesheet' type='text/css' href='/web/20050722030559/http://www.nytimes.com/css/global.ns.css'>");  
+	} else {   
+		document.write("<link rel='stylesheet' type='text/css' href='/web/20050722030559/http://www.nytimes.com/css/movies.css'>");
+		document.write("<link rel='stylesheet' type='text/css' href='/web/20050722030559/http://www.nytimes.com/css/global.css'>");
+	}
+	var google_contents = "buy dvds,buy film posters,buy movie posters,buy movies,cheap dvd players,cheap dvds,cheap movies,cheap vhs,cheap vhs movies,cheap video rentals,discount dvds,dvd rentals,film posters,film schools,foreign film,indie films,movie clubs,movie posters,movies for sale,rent dvds,used dvds,vhs movies";
+	var google_ad_channel = "movies";
+//-->
+</script>
+<script src="/web/20050722030559js_/http://www.nytimes.com/js/todays_date.js" type="text/javascript" language="JavaScript"></script>
+<style>
+.smtext { font-family: arial, helvetica, sans-serif; font-size: 11px; }
+.date {	font-family: arial, helvetica, sans-serif; font-size: 10px; }
+.breadcrumb { font-family: arial, helvetica, sans-serif; font-size: 12px; }
+.tool { font-family: arial, helvetica, sans-serif; font-size: 10px; }
+.active { font-family: arial, helvetica, sans-serif; font-size: 11px; color: #990000; }
+A:link { color: #000066; }
+A:hover { color: #990000; } 
+</style>
+<!--RSS link -->
+<LINK rel="alternate" TYPE="application/rss+xml" TITLE="RSS" HREF="http://www.nytimes.com/services/xml/rss/nyt/Movies.xml"/>
+<title>Movies - Movie Reviews, Showtimes & Trailers - New York Times</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="robots" content="noarchive">
+<meta name="description" content="Find movie reviews & breaking news on actors & actresses, studios, Hollywood, DVD & Video, Oscars, new releases, independent film, movie trailers, showtimes, movie tickets.">
+<META NAME="HOMEPAGE_TEMPLATE_VERSION" CONTENT="300">
+
+</head>
+<body marginheight="5" marginwidth="5" leftmargin="5" topmargin="5" link="#000066" bgcolor="#ffffff" alink="#990000" vlink="#000066">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://nytimes.com/pages/movies/index.html";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "22";
+var displayMonth = "Jul";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://nytimes.com/pages/movies/index.html" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20050722030559" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20050620010214/http://www.nytimes.com/pages/movies/index.html" title="20 Jun 2005">JUN</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 3:05:59 Jul 22, 2005">JUL</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20050822102534/http://nytimes.com/pages/movies/index.html" title="22 Aug 2005"><strong>AUG</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20050719232536/http://www.nytimes.com/pages/movies/index.html" title="23:25:36 Jul 19, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 3:05:59 Jul 22, 2005">22</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20050722235649/http://www.nytimes.com/pages/movies/index.html" title="23:56:49 Jul 22, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20040113091637/http://www.nytimes.com/pages/movies/index.html" title="13 Jan 2004"><strong>2004</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 3:05:59 Jul 22, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20060813122032/http://www.nytimes.com/pages/movies/index.html" title="13 Aug 2006"><strong>2006</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20050722030559*/http://nytimes.com/pages/movies/index.html" title="See a list of every capture for this URL">4,033 captures</a>
+           <div class="r" title="Timespan for captures of this URL">13 Jul 01 - 4 Jan 15</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:00000011ca95_2002:-1:180001027661_2003:-1:011101100100_2004:-1:100000000000_2005:6:0039888a7788_2006:-1:941712451035_2007:-1:545134126989_2008:-1:878788777616_2009:-1:477766567666_2010:-1:740010012424_2011:-1:56575579899a_2012:-1:a9a9baabbacc_2013:-1:cbbbbbabaabc_2014:-1:cbcccfbaa9aa_2015:-1:500000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+<!--Header -->
+<nyt_header>
+<a name="top"></a>
+<!--Begin Sectionfront Header-->
+<table width="768" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td width="132"><!-- ADXINFO classification="button" campaign="moviesrr9_topleft"--><A HREF="/web/20050722030559/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=movies.nytimes.com/pages/movies/index.html&amp;pos=TopLeft&amp;camp=moviesrr9_topleft&amp;ad=movies_newsletter.gif&amp;goto=http%3A%2F%2Fwww%2Enytimes%2Ecom%2Fmem%2Femail%2Ehtml%23film" target="_blank"><IMG SRC="/web/20050722030559im_/http://graphics8.nytimes.com/adx/images/ADS/11/13/ad.111354/movies_newsletter.gif" BORDER=0 ></A></td>
+<td width="51"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="51" height="1" alt=""></td>
+<td width="402" align="center"><a href="/web/20050722030559/http://movies.nytimes.com/movies"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/section/movies/movies_header_reel.gif" width="146" height="63" border="0" alt="Movies"></a></td>
+<td width="178" align="right" class="date">
+<script language="JavaScript">
+			<!--
+			document.write(day + month + myweekday + ", " + year);
+			//-->	
+			</script>
+</td>
+<td width="5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1" alt=""></td>
+</tr>
+<tr bgcolor="#000000">
+<td colspan="5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="3" alt=""></td>
+</tr>
+</table>
+<table width="768" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td colspan="2"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="3" border="0" alt="-"></td>
+<td rowspan="2"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/section/movies/movies_reel_foot.gif" width="146" height="20" alt=""></td>
+<td colspan="2"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="3" border="0" alt="-"></td>
+</tr>
+<tr>
+<td><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1" alt=""></td>
+<td class="nav"><a href="/web/20050722030559/http://www.nytimes.com/index.html" class="small">Home</a> - <a href="/web/20050722030559/http://www.nytimes.com/ref/membercenter/help/siteindex.html" class="small">Site Index</a> - <a href="/web/20050722030559/http://query.nytimes.com/search/archive.html" class="small">Archive</a> - <a href="/web/20050722030559/http://www.nytimes.com/membercenter/sitehelp.html" class="small">Help</a></td>
+<td class="nav" align="right">
+ 
+			<span class="small"><a href="/web/20050722030559/http://www.nytimes.com/auth/login?URI=http://" class="small">Log In</a><nobr> - <a href="/web/20050722030559/http://www.nytimes.com/auth/login?URI=http://" class="small">Register Now</a></nobr>&nbsp;&nbsp;<font color="#990000">It's Free!</font></span>
+			
+
+</td>
+<td><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1" alt=""></td>
+</tr>
+<tr><td colspan="5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="3" border="0" alt=""></td></tr>
+<tr>
+<td bgcolor="#000000"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1" border="0" alt="-"></td>
+<td bgcolor="#000000"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="308" height="1" border="0" alt="-"></td>
+<td bgcolor="#000000"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="146" height="1" border="0" alt="-"></td>
+<td bgcolor="#000000"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="304" height="1" border="0" alt="-"></td>
+<td bgcolor="#000000"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1" border="0" alt="-"></td>
+</tr>
+</table>
+<!--end header --> 
+</nyt_header>
+<!--Search -->
+
+<table width="768" bgcolor="#F6F6F6" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td colspan="4" background="/web/20050722030559im_/http://graphics8.nytimes.com/images/global/bg_header.gif"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="4" border="0" alt=""/></td>
+</tr>
+<tr>
+<td width="5" background="/web/20050722030559im_/http://graphics8.nytimes.com/images/global/bg_header.gif"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1" border="0" alt=""/></td>
+<td background="/web/20050722030559im_/http://graphics8.nytimes.com/images/global/bg_header.gif">
+
+<table cellspacing="0" cellpadding="0" border="0">
+<form name="sectionform" action="/web/20050722030559/http://www.nytimes.com/gst/go.html" onsubmit="return goToURL(this);">
+<tr>
+<td valign="center">
+<span class="small">
+<select name="section" onchange="goToURL(this);" class="small">
+<option selected="">Go to a Section</option>
+<option>-----------------------</option>
+<option value="http://www.nytimes.com/pages/arts/index.html">Arts</option>
+<option value="http://www.nytimes.com/pages/automobiles/index.html">Automobiles</option>
+<option value="http://www.nytimes.com/pages/books/index.html">Books</option>
+<option value="http://www.nytimes.com/pages/business/index.html">Business</option>
+<option value="http://www.nytimes.com/pages/cartoons/index.html">Cartoons</option>
+<option value="http://listings.nytimes.com/classifiedsmarketplace/">Classifieds</option>
+<option value="http://www.nytimes.com/corrections.html">Corrections</option>
+<option value="http://www.nytimes.com/pages/crosswords/index.html">Crossword/Games</option>
+<option value="http://www.nytimes.com/pages/dining/index.html">Dining & Wine</option>
+<option value="http://www.nytimes.com/pages/opinion/index.html">Editorials/Op-Ed</option>
+<option value="http://www.nytimes.com/pages/education/index.html">Education</option>
+<option value="http://www.nytimes.com/pages/fashion/index.html">Fashion & Style</option>
+<option value="http://www.nytimes.com/pages/health/index.html">Health</option>
+<option value="http://www.nytimes.com/pages/garden/index.html">Home & Garden</option>
+<option value="http://www.nytimes.com/pages/world/index.html">International</option>
+<option value="http://www.nytimes.com/pages/jobs/index.html">Job Market</option>
+<option value="http://www.nytimes.com/learning">Learning Network</option>
+<option value="http://www.nytimes.com/pages/magazine/">Magazine</option>
+<option value="http://movies.nytimes.com">Movies</option>
+<option value="http://www.nytimes.com/pages/multimedia/index.html">Multimedia/Photos</option>
+<option value="http://travel2.nytimes.com/top/features/travel/destinations/unitedstates/newyork/newyorkcity/guide.html">NYC Guide</option>
+<option value="http://www.nytimes.com/pages/pageone/index.html">NYT Front Page</option>
+<option value="http://www.nytimes.com/pages/national/index.html">National</option>
+<option value="http://www.nytimes.com/pages/nyregion/index.html">New York/Region</option>
+<option value="http://www.nytimes.com/pages/obituaries/index.html">Obituaries</option>
+<option value="http://www.nytimes.com/pages/readersopinions/index.html">Readers' Opinions</option>
+<option value="http://www.nytimes.com/pages/realestate/index.html">Real Estate</option>
+<option value="http://www.nytimes.com/pages/science/index.html">Science</option>
+<option value="http://www.nytimes.com/pages/sports/index.html">Sports</option>
+<option value="http://tech.nytimes.com/pages/technology/index.html">Technology</option>
+<option value="http://topics.nytimes.com/top/opinion/thepubliceditor/index.html">The Public Editor</option>
+<option value="http://theater.nytimes.com/pages/theater/index.html">Theater</option>
+<option value="http://www.nytimes.com/pages/travel/index.html">Travel</option>
+<option value="http://www.nytimes.com/pages/politics/index.html">Washington</option>
+<option value="http://www.nytimes.com/weather/">Weather</option>
+<option value="http://www.nytimes.com/pages/weekinreview/index.html">Week in Review</option>
+<option>-----------------------</option>
+<option value="http://www.nytimes.com/ref/membercenter/help/siteindex.html#services">Services</option>
+</select>
+</span>
+</td>
+<td width="5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1" border="0" alt=""/></td>
+<td width="17" valign="center"><input width="28" height="21" border="0" alt="Go" type="image" src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/go_button.gif"></td>
+<td width="10"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="10" height="1" border="0" alt=""/></td>
+</tr>
+</form>
+</table>
+
+<script language="Javascript">
+	<!--
+	document.sectionform.action = "";
+	//-->
+	</script>
+
+</td>
+<td width="1" align="center" background="/web/20050722030559im_/http://graphics8.nytimes.com/images/global/bg_header.gif">	
+<IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc//spacer.gif" width="1" height="1" border="0" alt=""/>
+</td>
+<td align="right" background="/web/20050722030559im_/http://graphics8.nytimes.com/images/global/bg_header.gif">	
+<!--Search box begins -->
+<table cellpadding="0" cellspacing="0" border="0" background="/web/20050722030559im_/http://graphics.nytimes.com/images/section/movies/bg_header.gif" align="right">
+<tr>
+<form method="get" action="/web/20050722030559/http://movies2.nytimes.com/gst/movies/msearch.html">
+<!--begin "Select A Section" -->
+<td class="small" align="right">&nbsp;</td>
+<td width="5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/section/movies/spacer.gif" width="5" height="1" alt="" border="0"/></td>
+<td valign="center" class="headerbold" align="right">Search:</td>
+<td width="5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/section/movies/spacer.gif" width="5" height="1" alt="" border="0"/></td>
+<td valign="center">
+<select name="st" class="small">
+<option  value="a">All of Movies</option>
+<option  value="t">Movie Titles Only</option>
+<option  value="p">People Only</option>
+<option  value="r">Reviews Only</option>
+<option  value="n">News Only</option>
+<option  value="c">All of NYTimes.com</option>
+</select>
+</td>
+<!--end "Select A Section" -->
+<!--begin "Search" -->
+<td width="20"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/section/movies/spacer.gif" width="10" height="1" alt="" border="0"/></td>
+<td valign="center"><INPUT type="text" SIZE="14" NAME="query" /></td>
+<td width="5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/section/movies/spacer.gif" width="5" height="1" alt="" border="0"/></td>
+<td valign="middle" align="right"><input width="28" height="21" border="0" alt="Go" type="image" src="/web/20050722030559im_/http://graphics8.nytimes.com/images/section/movies/go.gif"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/section/movies/spacer.gif" width="10" height="1" border="0" alt=""/></td>
+<!--end "Search" -->
+
+</form>
+</tr>	
+</table>
+<!--Search box ends -->
+</td>
+</tr>
+<tr>
+<td colspan="4" background="/web/20050722030559im_/http://graphics8.nytimes.com/images/global/bg_header.gif"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="3" border="0" alt=""/></td>
+</tr>
+<tr>
+<td colspan="4" bgcolor="#cccccc" width="768"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="768" height="1" border="0" alt=""/></td>
+</tr>
+</table>
+
+
+
+
+<!--Navigation -->
+
+<!--BEGIN NAV -->
+<table border="0" cellspacing="0" cellpadding="0" width="768">
+<tr>
+<td width="768" height="24" align="left" valign="middle">
+<!--BEGIN MAIN NAV -->
+<div id="navBar" class="navHeader">
+<table width="768" cellspacing="0" cellpadding="0" border="0" valign="top">
+<tr>
+<td class="navHeader" width="98" align="middle" valign="middle"><span class="navHeaderOn">Movies Home</span></td>
+<td><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/section/movies/nav_pipe.gif" alt="" width="1" height="23" border="0" /></td>
+<td class="navHeader" width="121" align="middle" valign="middle"><span class="navHeaderOn"><a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/current.html">Current Releases</a></span></td>
+<td><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/section/movies/nav_pipe.gif" alt="" width="1" height="23" border="0" /></td>
+<td class="navHeader" width="150" align="middle" valign="middle"><span class="navHeaderOn"><a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/showtimes.html">Showtimes & Tickets</a></span></td>
+<td><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/section/movies/nav_pipe.gif" alt="" width="1" height="23" border="0" /></td>
+<td class="navHeader" width="109" align="middle" valign="middle"><span class="navHeaderOn"><a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/current.html?&amp;view=soon">Coming Soon</a></span></td>
+<td><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/section/movies/nav_pipe.gif" alt="" width="1" height="23" border="0" /></td>
+<td class="navHeader" width="67" align="middle" valign="middle"><a href="/web/20050722030559/http://movies.nytimes.com/pages/movies/news/index.html">News</a></td>
+<td><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/section/movies/nav_pipe.gif" alt="" width="1" height="23" border="0" /></td>
+<td class="navHeader" width="80" align="middle" valign="middle"><a href="/web/20050722030559/http://movies.nytimes.com/ref/movies/reviews/index.html">Reviews</a></td>
+<td><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/section/movies/nav_pipe.gif" alt="" width="1" height="23" border="0" /></td>
+<td class="navHeader" width="53" align="middle" valign="middle"><a href="/web/20050722030559/http://movies.nytimes.com/pages/movies/homevideo/index.html">DVD</a></td>
+<td><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/section/movies/nav_pipe.gif" alt="" width="1" height="23" border="0" /></td>
+<td class="navHeader" width="83" align="middle" valign="middle"><a href="/web/20050722030559/http://movies.nytimes.com/pages/movies/boxoffice/weekend_us/index.html">Box Office</a></td>
+</tr>
+<tr>
+<GMATCH><td background="/web/20050722030559im_/http://graphics.nytimes.com/images/section/movies/nav_bg.gif"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="98" height="2" border="0" alt="0" /></td></GMATCH>
+<GMATCH><td background="/web/20050722030559im_/http://graphics.nytimes.com/images/section/movies/nav_bg.gif"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="2" border="0" alt="0" /></td></GMATCH>
+<GMATCH><td background="/web/20050722030559im_/http://graphics.nytimes.com/images/section/movies/nav_bg.gif"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="121" height="2" border="0" alt="0" /></td></GMATCH>
+<GMATCH><td background="/web/20050722030559im_/http://graphics.nytimes.com/images/section/movies/nav_bg.gif"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="2" border="0" alt="0" /></td></GMATCH>
+<GMATCH><td background="/web/20050722030559im_/http://graphics.nytimes.com/images/section/movies/nav_bg.gif"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="150" height="2" border="0" alt="0" /></td></GMATCH>
+<GMATCH><td background="/web/20050722030559im_/http://graphics.nytimes.com/images/section/movies/nav_bg.gif"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="2" border="0" alt="0" /></td></GMATCH>
+<GMATCH><td background="/web/20050722030559im_/http://graphics.nytimes.com/images/section/movies/nav_bg.gif"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="109" height="2" border="0" alt="0" /></td></GMATCH>
+<GMATCH><td background="/web/20050722030559im_/http://graphics.nytimes.com/images/section/movies/nav_bg.gif"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="2" border="0" alt="0" /></td></GMATCH>
+<GMATCH><td background="/web/20050722030559im_/http://graphics.nytimes.com/images/section/movies/nav_bg.gif"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="67" height="2" border="0" alt="0" /></td></GMATCH>
+<GMATCH><td background="/web/20050722030559im_/http://graphics.nytimes.com/images/section/movies/nav_bg.gif"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="2" border="0" alt="0" /></td></GMATCH>
+<GMATCH><td background="/web/20050722030559im_/http://graphics.nytimes.com/images/section/movies/nav_bg.gif"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="80" height="2" border="0" alt="0" /></td></GMATCH>
+<GMATCH><td background="/web/20050722030559im_/http://graphics.nytimes.com/images/section/movies/nav_bg.gif"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="2" border="0" alt="0" /></td></GMATCH>
+<GMATCH><td background="/web/20050722030559im_/http://graphics.nytimes.com/images/section/movies/nav_bg.gif"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="53" height="2" border="0" alt="0" /></td></GMATCH>
+<GMATCH><td background="/web/20050722030559im_/http://graphics.nytimes.com/images/section/movies/nav_bg.gif"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="2" border="0" alt="0" /></td></GMATCH>
+<GMATCH><td background="/web/20050722030559im_/http://graphics.nytimes.com/images/section/movies/nav_bg.gif"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="83" height="2" border="0" alt="0" /></td></GMATCH>
+</tr>
+</table>
+</div>
+<!--END MAIN NAV -->
+</td>
+</tr>
+</table>
+<!--END NAV -->
+
+<IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="10" alt="" border="0"/><br/>
+<!--body start -->
+<!--body begin -->
+<table width="768" cellpadding="0" cellspacing="0" border="0">
+<!--set column widths-->
+<tr>
+<td width="366"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="366" height="1" border="0"></td>
+<td width="10"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="10" height="1" border="0"></td>
+<td width="1"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"></td>
+<td width="10"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="10" height="1" border="0"></td>
+<td width="381"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="381" height="1" border="0"></td>
+</tr>
+<tr>
+<!--a-column start -->	
+<td valign="top">
+<table width="366" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td width="184" valign="top">
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+<table width="184" border="0" cellspacing="0" cellpadding="0" align="right"><tr><td><a href="/web/20050722030559/http://movies2.nytimes.com/2005/07/22/movies/22hust.html"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/2005/07/22/arts/22hust.1.184.jpg" width="184" height="240" border="0" alt="A Pimp With a Heart Follows His Dream"></a><br><div align="right"><font size="-2">Alan Spearman/Crunk Pictures</font></div></td></tr></table> <br clear="all"> <font color="#666666" size="-1"><strong>MOVIE REVIEW | 'HUSTLE & FLOW'</strong></font><br><font face="Times New Roman,Times,Serif" color="#000066" size="+1"><strong><a href="/web/20050722030559/http://movies2.nytimes.com/2005/07/22/movies/22hust.html">A Pimp With a Heart Follows His Dream</a></strong></font><br><font FACE="Times New Roman,Times,Serif" COLOR="#000000" SIZE="-1">By A. O. SCOTT</font><br><font face="Times New Roman,Times,Serif" color="#000000">Craig Brewer's first feature film is a volatile mixture of slickness and sincerity, hard-edged naturalism and sheer show-business hokum.</font><br> &#149; <font FACE="Times New Roman,Times,Serif" COLOR="#000000" SIZE="-1"><a href="javascript:pop_me_up2('/web/20050722030559/http://www.nytimes.com/video/html/2005/07/21/movies/20050722_mm_HUSTLE_VIDEO.html', '20050722_mm_HUSTLE_VIDEO', 'width=776,height=550,scrollbars=no,toolbars=no,resizable=yes')">Video: Movie Minutes</A></font><br>
+&#149; <font face="Times,Times New Roman,serif" COLOR="#000000" SIZE="-1">Go to <a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/movie.html?v_id=318931">Movie Details</a> | <a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/showtimes.html?v_id=318931">Showtimes</a> | <a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/trailer.html?v_id=318931">Trailer</a></font><br>
+<br> 
+</td>
+<td width="5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1" border="0"></td>
+<td width="1" bgcolor="#eeeeee"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"></td>
+<td width="5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1" border="0"></td>
+<td width="171" valign="top">
+<!--Rankable A column start (needs to have an nrank value of 1-100) -->
+<!--find showtimes -->
+<table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#660000">
+<tr>
+<td bgcolor="#ffffff">
+<table width="100%" align="left" border="0" cellpadding="4" cellspacing="0" bgcolor="#ffffff">
+<tr>
+<form method="GET" action="/web/20050722030559/http://movies2.nytimes.com/gst/movies/showtimes.html" enctype="x-www-form-encoded">
+<td align="center" bgcolor="#660000"><font class="smtext" color="#ffffff"><strong>Showtimes & Tickets</strong></font></td>
+</tr>
+<tr>
+<td align="left" bgcolor="#eeeeee"><font class="smtext" color="#000000"><strong>Search by Movie Title:</strong></font></td></tr>
+<tr>
+<td align="left" bgcolor="#eeeeee">
+<INPUT type="text" name="title" value="" size="15" maxlength="40"> 
+</td>
+</tr>
+<tr>
+<td align="left" bgcolor="#eeeeee"><font class="smtext" color="#000000"><strong>And/Or by ZIP Code or City:</strong></font></td>
+</tr>
+<tr>
+<td align="left" bgcolor="#eeeeee">
+
+						<input type="text" name="zip" size="15" maxlength="30" value=""/> 
+<input align="absmiddle" width="28" height="21" border="0" name="" alt="Go" type="image" src="/web/20050722030559im_/http://graphics8.nytimes.com/images/section/movies/go.gif">
+</td>
+</form>
+</tr>
+<tr>
+<td bgcolor="#eeeeee">
+<tr>
+<td align="left" bgcolor="#eeeeee">
+<table border="0" align="left">
+<tr>
+<td>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--end find showtimes -->
+<table width="171" border="0" cellpadding="1" cellspacing="0" bgcolor="#660000">
+<tr>
+<td>
+<table width="169" border="0" cellpadding="4" cellspacing="0" bgcolor="#ffffff">
+<tr>
+<td align="center" bgcolor="#660000"><font class="smtext" color="#ffffff"><strong>Box Office Top 5</strong></font></td>
+</tr>
+<tr>
+<td bgcolor="#eeeeee">
+<font class="smtext" size="-1"><strong>1. </strong></font> 
+<font class="smtext" face="arial, helvetica, sans serif" size="-1" color="#000066"><a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/movie.html?v_id=290415">Charlie and the Chocolate Factory</a></font><br>
+<font class="smtext" size="-1"><strong>2. </strong></font> 
+<font class="smtext" face="arial, helvetica, sans serif" size="-1" color="#000066"><a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/movie.html?v_id=302705">Wedding Crashers</a></font><br>
+<font class="smtext" size="-1"><strong>3. </strong></font> 
+<font class="smtext" face="arial, helvetica, sans serif" size="-1" color="#000066"><a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/movie.html?v_id=286677">Fantastic Four</a></font><br>
+<font class="smtext" size="-1"><strong>4. </strong></font> 
+<font class="smtext" face="arial, helvetica, sans serif" size="-1" color="#000066"><a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/movie.html?v_id=312948">War of the Worlds</a></font><br>
+<font class="smtext" size="-1"><strong>5. </strong></font> 
+<font class="smtext" face="arial, helvetica, sans serif" size="-1" color="#000066"><a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/movie.html?v_id=289465">Batman Begins</a></font><br>
+<IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="10" border="0"><br>
+<a href="/web/20050722030559/http://movies.nytimes.com/pages/movies/boxoffice/weekend_us/index.html"><font class="smtext" face="arial, helvetica, sans serif" size="-1" color="#000066"><strong>More Box Office Data</strong></font></a>
+<br>
+<IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="10" border="0">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<td bgcolor="#CCCCCC" colspan="5"><IMG
+src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1"
+height="1" border="0"/></td>
+</tr>
+<tr>
+<td bgcolor="#CCCCCC" width="1"><IMG
+src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1"
+height="1" border="0"/></td>
+<td width="10"><IMG
+src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="10"
+height="1" border="0"/></td>
+<td width="100%">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><td><a href="/web/20050722030559/http://query.nytimes.com/search/query?submit.x=11&amp;submit.y=10&amp;query=%22movie%20minutes%22&amp;clean_query=%22movie%20minutes%22%20&amp;srchot=s&amp;srchst=m&amp;srcht=s&amp;sort=newest&amp;"><IMG 
+src="/web/20050722030559im_/http://graphics8.nytimes.com/images/promos/movies/mm_header2.gif"
+border="0" width="148" height="62" alt="" /></a><br
+clear="all"></td></tr>
+<tr><td><font face="times, times new roman, serif" size="-1">A. O. Scott reviews:<br><IMG 
+src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" 
+height="5" border="0"/><br>
+• <a href="javascript:pop_me_up2('/web/20050722030559/http://www.nytimes.com/video/html/2005/07/21/movies/20050722_mm_HUSTLE_VIDEO.html', '20050722_mm_HUSTLE_VIDEO', 'width=776,height=550,scrollbars=no,toolbars=no,resizable=yes')">Hustle & Flow</a><br>
+• <a href="javascript:pop_me_up2('/web/20050722030559/http://www.nytimes.com/video/html/2005/07/21/movies/20050722_mm_ISLAND_VIDEO.html', '20050722_mm_ISLAND_VIDEO', 'width=776,height=550,scrollbars=no,toolbars=no,resizable=yes')">The Island</a><br>
+<IMG
+src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1"
+height="5" border="0"/><br>
+• <a
+href="/web/20050722030559/http://query.nytimes.com/search/query?submit.x=11&amp;submit.y=10&amp;query=%22movie%20minutes%22&amp;clean_query=%22movie%20minutes%22%20&amp;srchot=s&amp;srchst=m&amp;srcht=s&amp;sort=newest&amp;">More Movie Minutes</a></font><br><br></td></tr>
+</table>
+</td>
+<td width="10"><IMG
+src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="10"
+height="1" border="0"/></td>
+<td bgcolor="#CCCCCC" width="1"><IMG
+src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1"
+height="1" border="0"/></td>
+</tr>
+<tr>
+<td bgcolor="#CCCCCC" colspan="5"><IMG
+src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1"
+height="1" border="0"/></td>
+</tr>
+</table>
+<br clear="all">
+<!--Rankable A column end -->
+</td>
+</tr>
+<tr>
+<td colspan="5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="5" border="0"></td>
+</tr>
+</table>
+<!--Well Top File insert-->
+<!--well top insert start -->
+<!--if you don't want any insert content here, leave just an hr tag -->
+<hr>
+<!--well top insert end -->
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+<a href="/web/20050722030559/http://movies2.nytimes.com/2005/07/22/movies/22days.html"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/2005/07/22/arts/22days.75.jpg" width="75" height="75" border="0" align="right" alt="Sorrow in Harmony With the Sublime"></a><font color="#666666" size="-1"><strong>MOVIE REVIEW | 'LAST DAYS'</strong></font><br><font face="Times New Roman,Times,Serif" color="#000066" size="+1"><strong><a href="/web/20050722030559/http://movies2.nytimes.com/2005/07/22/movies/22days.html">Sorrow in Harmony With the Sublime</a></strong></font><br><font FACE="Times New Roman,Times,Serif" COLOR="#000000" SIZE="-1">By MANOHLA DARGIS</font><br><font face="Times New Roman,Times,Serif" color="#000000">Gus Van Sant's mesmerizing dream of a film is "inspired" by the last days of Kurt Cobain.</font><br>
+&#149; <font face="Times,Times New Roman,serif" COLOR="#000000" SIZE="-1">Go to <a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/movie.html?v_id=325765">Movie Details</a> | <a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/showtimes.html?v_id=325765">Showtimes</a></font><br>
+<br> 
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+<a href="/web/20050722030559/http://movies2.nytimes.com/2005/07/22/movies/22isla.html"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/2005/07/22/arts/22isla.75.jpg" width="75" height="75" border="0" align="right" alt="No Soul, Perhaps, but This Clone Has a Skeptic's Heart"></a><font color="#666666" size="-1"><strong>MOVIE REVIEW | 'THE ISLAND'</strong></font><br><font face="Times New Roman,Times,Serif" color="#000066" size="+1"><strong><a href="/web/20050722030559/http://movies2.nytimes.com/2005/07/22/movies/22isla.html">No Soul, Perhaps, but This Clone Has a Skeptic's Heart</a></strong></font><br><font FACE="Times New Roman,Times,Serif" COLOR="#000000" SIZE="-1">By A. O. SCOTT</font><br><font face="Times New Roman,Times,Serif" color="#000000">Michael Bay's lavish, exhaustingly kinetic film is smarter than you might expect, and at the same time dumber than it could be.</font><br> &#149; <font FACE="Times New Roman,Times,Serif" COLOR="#000000" SIZE="-1"><a href="javascript:pop_me_up2('/web/20050722030559/http://www.nytimes.com/packages/khtml/2005/07/22/movies/20050722_BAY_FEATURE.html', '20050722_BAY_FEATURE', 'width=600,height=475,scrollbars=yes,toolbars=no,resizable=yes')">Audio Slide Show</A></font><br>
+&#149; <font face="Times,Times New Roman,serif" COLOR="#000000" SIZE="-1">Go to <a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/movie.html?v_id=314781">Movie Details</a> | <a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/showtimes.html?v_id=314781">Showtimes</a> | <a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/trailer.html?v_id=314781">Trailer</a></font><br>
+<br> 
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+<a href="/web/20050722030559/http://movies2.nytimes.com/2005/07/22/movies/22bear.html"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/2005/07/22/arts/22bear.1.75.jpg" width="75" height="75" border="0" align="right" alt="The Kids Are All Right; The Coach Has Problems"></a><font color="#666666" size="-1"><strong>MOVIE REVIEW | 'BAD NEWS BEARS'</strong></font><br><font face="Times New Roman,Times,Serif" color="#000066" size="+1"><strong><a href="/web/20050722030559/http://movies2.nytimes.com/2005/07/22/movies/22bear.html">The Kids Are All Right; The Coach Has Problems</a></strong></font><br><font FACE="Times New Roman,Times,Serif" COLOR="#000000" SIZE="-1">By MANOHLA DARGIS</font><br><font face="Times New Roman,Times,Serif" color="#000000">Richard Linklater's enjoyable remake is filled with small, cute kids and large, goofy laughs.</font><br>
+&#149; <font face="Times,Times New Roman,serif" COLOR="#000000" SIZE="-1">Go to <a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/movie.html?v_id=316325">Movie Details</a> | <a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/showtimes.html?v_id=316325">Showtimes</a> | <a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/trailer.html?v_id=316325">Trailer</a></font><br>
+<br> 
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+<a href="/web/20050722030559/http://movies2.nytimes.com/2005/07/22/movies/22song.html"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/2005/07/22/arts/22song.75.jpg" width="75" height="75" border="0" align="right" alt="The Story of a Love Affair, in the Language of the Body"></a><font color="#666666" size="-1"><strong>MOVIE REVIEW | '9 SONGS'</strong></font><br><font face="Times New Roman,Times,Serif" color="#000066" size="+1"><strong><a href="/web/20050722030559/http://movies2.nytimes.com/2005/07/22/movies/22song.html">The Story of a Love Affair, in the Language of the Body</a></strong></font><br><font FACE="Times New Roman,Times,Serif" COLOR="#000000" SIZE="-1">By STEPHEN HOLDEN</font><br><font face="Times New Roman,Times,Serif" color="#000000">Michael Winterbottom's film is a lyrical, graphically explicit chronicle of an ordinary love affair between two attractive people.</font><br>
+&#149; <font face="Times,Times New Roman,serif" COLOR="#000000" SIZE="-1">Go to <a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/movie.html?v_id=308514">Movie Details</a> | <a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/showtimes.html?v_id=308514">Showtimes</a></font><br>
+<br> 
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+<a href="/web/20050722030559/http://movies2.nytimes.com/2005/07/22/movies/22devi.html"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/2005/07/22/arts/22devi.75.jpg" width="75" height="75" border="0" align="right" alt="The Further Adventures of a Murderous Clan"></a><font color="#666666" size="-1"><strong>MOVIE REVIEW | 'THE DEVIL'S REJECTS'</strong></font><br><font face="Times New Roman,Times,Serif" color="#000066" size="+1"><strong><a href="/web/20050722030559/http://movies2.nytimes.com/2005/07/22/movies/22devi.html">The Further Adventures of a Murderous Clan</a></strong></font><br><font FACE="Times New Roman,Times,Serif" COLOR="#000000" SIZE="-1">By DANA  STEVENS</font><br><font face="Times New Roman,Times,Serif" color="#000000">Despite its nearly nonstop torrent of gore, "The Devil's Rejects" is not really a horror film. It's a compendium of tributes and references to horror films of the past.</font><br>
+&#149; <font face="Times,Times New Roman,serif" COLOR="#000000" SIZE="-1">Go to <a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/movie.html?v_id=290584">Movie Details</a> | <a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/showtimes.html?v_id=290584">Showtimes</a> | <a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/trailer.html?v_id=290584">Trailer</a></font><br>
+<br> 
+<br clear="all">
+<hr>
+<br clear="all">
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+<p><font face="Times New Roman,Times,Serif"><a href="/web/20050722030559/http://movies2.nytimes.com/2005/07/22/movies/22nove.html">Movie Review | 'November': A Fateful Stop for a Bite to Eat</font></a><br></p>
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+<p><font face="Times New Roman,Times,Serif"><a href="/web/20050722030559/http://movies2.nytimes.com/2005/07/22/movies/22vill.html">Movie Review | 'The Ballad of Greenwich Village': A Familiar History of Manhattan's Bohemian Hub</font></a><br></p>
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+<p><font face="Times New Roman,Times,Serif"><a href="/web/20050722030559/http://movies2.nytimes.com/2005/07/22/movies/22eduk.html">Movie Review | 'The Edukators': Suburban Break-In as Political Statement, With Kidnapping</font></a><br></p>
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+<p><font face="Times New Roman,Times,Serif"><a href="/web/20050722030559/http://movies2.nytimes.com/2005/07/22/movies/22wild.html">Movie Review | 'Monumental: David Brower's Fight for Wild America': The Legacy of a Fearless Environmentalist</font></a><br></p>
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+<p><font face="Times New Roman,Times,Serif"><a href="/web/20050722030559/http://movies2.nytimes.com/2005/07/22/movies/22squa.html">Movie Review | 'Rittenhouse Square': A Visit to the Heart of Philadelphia</font></a><br></p>
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+<p><font face="Times New Roman,Times,Serif"><a href="/web/20050722030559/http://movies2.nytimes.com/2005/07/22/movies/22thro.html">Movie Review | 'Throwdown': Lost Souls Adrift in the Neon-Soaked Night</font></a><br></p>
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+<p><font face="Times New Roman,Times,Serif"><a href="/web/20050722030559/http://nytimes.com/2005/07/22/movies/22bmovi.html">Film Series: 'What a Swell Party This Is! — A Salute to Bing Crosby'</font></a><br></p>
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+<p><font face="Times New Roman,Times,Serif"><a href="/web/20050722030559/http://nytimes.com/2005/07/22/movies/22movi.html">Movie Guide and Film Series</font></a><br></p>
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+<p><font face="Times New Roman,Times,Serif"><a href="/web/20050722030559/http://nytimes.com/2005/07/21/movies/21sing.html">Director Puts His Name, and Money, at Stake</font></a><br></p>
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+<p><font face="Times New Roman,Times,Serif"><a href="/web/20050722030559/http://nytimes.com/2005/07/21/movies/21pola.html">Lapham Takes Stand in Polanski Libel Trial</font></a><br></p>
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+<p><font face="Times New Roman,Times,Serif"><a href="/web/20050722030559/http://nytimes.com/2005/07/20/movies/20pres.html">Lucas's New Headquarters Give Bay Area Film a Lift</font></a><br></p>
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+<p><font face="Times New Roman,Times,Serif"><a href="/web/20050722030559/http://movies2.nytimes.com/2005/07/20/movies/20maki.html">Movie Review | 'Making Grace': Highs and Lows of Lesbian Parenting</font></a><br></p>
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+<p><font face="Times New Roman,Times,Serif"><a href="/web/20050722030559/http://nytimes.com/2005/07/19/movies/19jame.html">Critic's Notebook: The Decline and Fall of Journalists on Film</font></a><br></p>
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+<p><font face="Times New Roman,Times,Serif"><a href="/web/20050722030559/http://nytimes.com/2005/07/19/movies/19dvd.html">Critic's Choice: New DVD's</font></a><br></p>
+<br clear="all">
+<font size="-1">&#149; </font> 
+<a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/current.html"><font face="Times New Roman, Times, Serif" size="-1">All Current Releases</font></a><br/>
+<font size="-1">&#149; </font> 
+<a href="/web/20050722030559/http://movies.nytimes.com/pages/movies/text/index.html"><font face="Times New Roman, Times, Serif" size="-1">More Movies Headlines</font></a><br/>
+<br clear="all"><br clear="all">
+<!--Well Bottom File insert-->
+<!--well bottom insert start -->
+<!--well bottom insert end -->
+</td>
+<!--a-column end -->
+<!--gutter start-->
+<td><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"></td>
+<td bgcolor="#cccccc"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"></td>
+<td><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"></td>
+<!--gutter end-->
+<!--b-column start -->				
+<td valign="top" id="bColumn">
+
+<IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="5" border="0" alt=""><br clear="all"/>
+<center><font class="date" color="#666666">Advertisement</font></center>			
+
+<div align="center">
+<!-- ADXINFO classification="bigad" campaign="warnerbros-charlie06-nyt5"--><A HREF="/web/20050722030559/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=movies.nytimes.com/pages/movies/index.html&amp;pos=SFMiddle&amp;camp=warnerbros-charlie06-nyt5&amp;ad=336x280_np.jpg&amp;goto=http%3A%2F%2Fchocolatefactorymovie%2Ewarnerbros%2Ecom" target="_blank"><IMG SRC="/web/20050722030559im_/http://graphics8.nytimes.com/adx/images/ADS/11/80/ad.118097/336x280_np.jpg" BORDER=0 width=336 height=280></A>
+</div>
+
+<br/><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"><br/>
+
+<!--Critics Picks goes here -->
+
+<table width="358" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td width="1" colspan="2" bgcolor="#660000"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="2" border="0" alt="" /></td>
+</tr>
+<tr>
+<td colspan="2" class="subheader" style="padding:2px; padding-left:10px;">CRITICS' PICKS</td>
+</tr>
+<tr>
+<td width="1" colspan="2" bgcolor="#CDCDCD"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0" alt="" /></td>
+</tr>
+<tr>
+<td width="1" colspan="2"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="10" border="0" alt="" /></td>
+</tr>
+</table>
+<table width="358" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td width="11"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="11" height="1" border="0" alt=""/></td>			
+<td width="55" valign="top"><a href="/web/20050722030559/http://movies.nytimes.com/ref/movies/reviews/author/rev_auth_scott/index.html"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/section/movies/pic_scott.gif" width="55" height="55" alt="A. O. Scott" border="0"></a></td>
+<td width="8"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="8" height="1" border="0" alt=""/></td>			
+<td width="284" class="small" valign="top">
+<strong><a href="/web/20050722030559/http://movies.nytimes.com/ref/movies/reviews/author/rev_auth_scott/index.html">A. O. Scott</a></strong> Recommends:<br />
+<font class="small">&#8226; <a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/movie.html?v_id=319594">Rize</a></font><br>
+<font class="small">&#8226; <a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/movie.html?v_id=313744">My Summer of Love</a></font><br>
+<font class="small">&#8226; <a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/movie.html?v_id=312502">Me and You and Everyone We Know</a></font><br>
+</td>
+</tr>	
+<tr>	
+<td colspan="4"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="17" border="0" alt=""/></td>			
+</tr>
+<tr>
+<td width="11"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="11" height="1" border="0" alt=""/></td>			
+<td width="55" valign="top"><a href="/web/20050722030559/http://movies.nytimes.com/ref/movies/reviews/author/rev_auth_holden/index.html"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/section/movies/pic_holden.gif" width="55" height="55" alt="Stephen Holden" border="0"></a></td>
+<td width="8"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="8" height="1" border="0" alt=""/></td>			
+<td width="284" class="small" valign="top"><strong><a href="/web/20050722030559/http://movies.nytimes.com/ref/movies/reviews/author/rev_auth_holden/index.html">Stephen Holden</a></strong> Recommends:<br />
+<font class="small">&#8226; <a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/movie.html?v_id=318807">Murderball</a></font><br>
+<font class="small">&#8226; <a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/movie.html?v_id=283030">Saraband</a></font><br>
+<font class="small">&#8226; <a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/movie.html?v_id=328540">March of the Penguins</a></font><br>
+</td>
+</tr>
+<tr>	
+<td colspan="4"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="10" border="0" alt=""/></td>			
+</tr>
+<tr>
+<td width="11"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="11" height="1" border="0" alt=""/></td>			
+<td width="55" valign="top"><a href="/web/20050722030559/http://movies.nytimes.com/ref/movies/reviews/author/rev_auth_dargis/index.html"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/section/movies/pic_dargis.gif" width="55" height="55" alt="Manohla Dargis" border="0"></a></td>
+<td width="8"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="8" height="1" border="0" alt=""/></td>			
+<td width="284" class="small" valign="top">
+<strong><a href="/web/20050722030559/http://movies.nytimes.com/ref/movies/reviews/author/rev_auth_dargis/index.html">Manohla Dargis</a></strong> Recommends:<br />
+<font class="small">&#8226; <a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/movie.html?v_id=316325">Bad News Bears</a></font><br>
+<font class="small">&#8226; <a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/movie.html?v_id=325765">Last Days</a></font><br>
+<font class="small">&#8226; <a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/movie.html?v_id=295227">Happy Endings</a></font><br>
+</td>
+</tr>	
+<tr>	
+<td colspan="4"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="10" border="0" alt=""/></td>			
+</tr>
+<tr>
+<td width="1" colspan="4" bgcolor="#CDCDCD"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0" alt="" /></td>
+</tr>
+</table>	
+
+<br/><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"><br/>
+<!--begin split b/c column -->
+<table width="381" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td width="184"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="184" height="5" border="0"></td>
+<td width="13"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="13" height="5" border="0"></td>
+<td width="184"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="184" height="5" border="0"></td>
+</tr>
+<tr>
+<td valign="top">
+<!--Begin B-column (needs to have an nrank value of 101-200 ) -->						
+<div class="multimediaBox"> <IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/multimedia_promo_hd.gif" width="162" height="25" alt="Multimedia">
+
+
+<div class="item">
+<a href="javascript:pop_me_up2('/web/20050722030559/http://www.nytimes.com/ref/multimedia/mm_redirect.html?/web/20050722030559/http://www.nytimes.com/packages/khtml/2005/07/22/movies/20050722_BAY_FEATURE.html','600_475','width=600,height=475,scrollbars=yes,toolbars=no,resizable=yes');"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/template_images/sectionfront_kicker/audioslideshow.gif" alt="Audio Slide Show" border="0" height="20" width="162" class="kicker"></a>
+<a href="javascript:pop_me_up2('/web/20050722030559/http://www.nytimes.com/ref/multimedia/mm_redirect.html?/web/20050722030559/http://www.nytimes.com/packages/khtml/2005/07/22/movies/20050722_BAY_FEATURE.html','600_475','width=600,height=475,scrollbars=yes,toolbars=no,resizable=yes');"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/2005/07/22/movies/island.162.jpg" border="0" height="90" vspace="2" width="162"></a>
+<div class="headline">
+<a href="javascript:pop_me_up2('/web/20050722030559/http://www.nytimes.com/ref/multimedia/mm_redirect.html?/web/20050722030559/http://www.nytimes.com/packages/khtml/2005/07/22/movies/20050722_BAY_FEATURE.html','600_475','width=600,height=475,scrollbars=yes,toolbars=no,resizable=yes');">
+Anatomy of a Scene</a>
+</div>
+<div class="summary">Michael Bay describes his approach to directing an action scene in "The Island," with exclusive storyboards and a video clip.</div>
+<ul>
+<li><a href="/web/20050722030559/http://movies2.nytimes.com/2005/07/22/movies/22isla.html">Related Review</A></li>
+</ul>
+</div>
+
+</div>  
+<!--BEGIN THE BATMAN ARCHIVE-->
+<table cellpadding="0" cellspacing="0" border="0" width="184" class="epromoBox">
+<tr> 
+<td><a href="/web/20050722030559/http://www.nytimes.com/batman"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/promos/headers/specials/batman_archive.gif" alt="The Batman Archive" width="162" height="25" border="0"></a><br>
+<a href="/web/20050722030559/http://www.nytimes.com/batman"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/promos/headers/subheaders/specialsection.gif" width="162" height="20" border="0"></a><br>
+<a href="/web/20050722030559/http://www.nytimes.com/batman"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/2005/06/14/movies/barchive.162.jpg" width="162" height="90" border=0 vspace=2></a>
+<div class="movieseditpromo">Reviews of previous "Batman" movies, trailers and an audio slide show.  
+<br>• <a href="/web/20050722030559/http://movies2.nytimes.com/2005/06/15/movies/15batm.html">Review: 'Batman Begins'</a><br>
+• <a href="/web/20050722030559/http://www.nytimes.com/batman">Go to Special Section</a></div></td>
+</tr>
+</table>
+<!--END THE BATMAN ARCHIVE-->
+<P>
+<!--reader favorites-->
+<table width="184" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td colspan="5" width="184" bgcolor="#cdcdcd"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" width="184" height="1" border="0" alt=""></td>
+</tr>
+<tr>
+<td width="1" bgcolor="#cdcdcd"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" width="1" height="1" border="0" alt=""></td>
+<td width="5" bgcolor="#ffffff"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" width="5" height="20" border="0" alt=""></td>
+<td  height="20" width="172" bgcolor="#ffffff" align="center" valign="middle">
+<font class="smtext" face="arial, helvetica, sans serif" color="#660000"><strong>Readers' Favorites</strong></font>
+</td>
+<td width="5" bgcolor="#ffffff"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" width="5" height="20" border="0" alt=""></td>
+<td width="1" bgcolor="#cdcdcd"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" width="1" height="1" border="0" alt=""></td>
+</tr>
+<tr>
+<td colspan="5" width="184" bgcolor="#cdcdcd"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" width="184" height="1" border="0" alt=""></td>
+</tr>
+<tr>
+<td bgcolor="#cdcdcd"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" width="1" height="1" border="0" alt=""></td>
+<td bgcolor="#eeeeee"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" width="5" height="10" border="0" alt=""></td>
+<td bgcolor="#eeeeee" width="172"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" width="172" height="5" border="0" alt=""><br clear="all">
+<font class="movieseditpromo"><em>The following movies have received ratings of at least four stars from Times readers.</em><br>
+• <A 
+href="/web/20050722030559/http://movies2.nytimes.com/rnr/movies/rnr_read.html?fid=.f73a508&amp;showtimes=1&amp;trailer=0&amp;title1=Murderball%20%28Movie%29&amp;title2=Murderball%20%28Movie%29&amp;reviewer=Stephen%20Holden&amp;pdate=20050708&amp;sort=helpful">Murderball</A><BR>
+• <A 
+href="/web/20050722030559/http://movies2.nytimes.com/rnr/movies/rnr_read.html?fid=.f4f8310&amp;showtimes=1&amp;trailer=1&amp;title1=Howl%27s%20Moving%20Castle%20%28Movie%29&amp;title2=Howl%27s%20Moving%20Castle%20%28Movie%29&amp;reviewer=A%2e%20O%2e%20Scott&amp;pdate=20050610&amp;sort=helpful">Howl's Moving Castle</A><BR>
+• <A 
+href="/web/20050722030559/http://movies2.nytimes.com/rnr/movies/rnr_read.html?fid=.f5d5b07&amp;showtimes=1&amp;trailer=1&amp;title1=Batman%20Begins%20%28Movie%29&amp;title2=Batman%20Begins%20%28Movie%29&amp;reviewer=Manohla%20Dargis&amp;pdate=20050615&amp;sort=helpful">Batman Begins</A><BR>
+• <A 
+href="/web/20050722030559/http://movies2.nytimes.com/rnr/movies/rnr_read.html?fid=.f6f57c4&amp;showtimes=1&amp;trailer=1&amp;title1=Mad%20Hot%20Ballroom%20%28Movie%29&amp;title2=Mad%20Hot%20Ballroom%20%28Movie%29&amp;reviewer=A%2e%20O%2e%20Scott&amp;pdate=20050513&amp;sort=helpful">Mad Hot Ballroom</A><BR>
+• <A 
+href="/web/20050722030559/http://movies2.nytimes.com/rnr/movies/rnr_read.html?fid=.f735c2d&amp;showtimes=1&amp;trailer=1&amp;title1=Beat%20That%20My%20Heart%20Skipped%2c%20The%20%28Movie%29&amp;title2=Beat%20That%20My%20Heart%20Skipped%2c%20The%20%28Movie%29&amp;reviewer=Manohla%20Dargis&amp;pdate=20050701&amp;sort=helpful">The Beat That My Heart Skipped</A><BR>
+<br>
+Most Highly Rated: <br>
+<strong><a href="/web/20050722030559/http://www.nytimes.com/readersreviews/movies/highlyrated/currentreleases/index.html">Current Releases</a> | <a href="/web/20050722030559/http://www.nytimes.com/readersreviews/movies/highlyrated/alltime/index.html">All Time</A></strong><br>
+</FONT><br>
+</td>
+<td bgcolor="#eeeeee"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" alt="" width="5" height="10" border="0" alt=""></td>
+<td bgcolor="#cdcdcd"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" alt="" width="1" height="1" border="0" alt=""></td>
+</tr>
+<tr>
+<td colspan="5" width="184" bgcolor="#cdcdcd"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" width="184" height="1" border="0" alt=""></td>
+</tr>
+</table>
+<br clear="all">
+<!--end reader reviews-->
+<!--Begin Rankable File Insert-->
+<!--BEGIN REVIEW ARCHIVE MODULE-->
+<table width="184" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td colspan="5" width="184" bgcolor="#cccccc"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" width="184" height="1" border="0" alt=""></td>
+</tr>
+<tr>
+<td width="1" bgcolor="#cccccc"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" width="1" height="1" border="0" alt=""></td>
+<td width="5" height="20" bgcolor="#ffffff"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" width="5" height="20" border="0" alt=""></td>
+<td width="172" bgcolor="#ffffff" align="center" valign="middle"><font class="smtext" face="arial, helvetica, sans serif" color="#660000"><strong>Reviews</strong></font></td>
+<td width="5" height="20" bgcolor="#ffffff"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" width="5" height="20" border="0" alt=""></td>
+<td width="1" bgcolor="#cdcdcd"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" width="1" height="1" border="0" alt=""></td>
+</tr>
+<tr>
+<td width="1" bgcolor="#cccccc"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" width="1" height="1" border="0" alt=""></td>
+<td colspan="3" bgcolor="#eeeeee" width="182" height="50"><a href="/web/20050722030559/http://movies.nytimes.com/ref/movies/reviews/index.html"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/promos/movies/casablanca-promo.jpg" height="75" width="182" border="0"/></a></td>
+<td width="1" bgcolor="#cccccc"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" width="1" height="1" border="0" alt=""></td>
+</tr>
+<tr> 
+<td width="1" bgcolor="#CCCCCC"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"/></td>
+<td width="5" bgcolor="#EEEEEE"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1"/></td>
+<td width="172" bgcolor="#EEEEEE" class="small" valign="top"><form name="sectionform" onsubmit="return goToURL(this);">
+<IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="172" height="10"><br> 
+<font class="movieseditpromo">Browse or search more than 15,000 New York Times movie reviews.<br><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="5"/><br>
+&#149; <a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/current.html">Current Releases</a><br><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="5"/><br>
+&#149; <a href="/web/20050722030559/http://www.nytimes.com/ref/movies/1000best.html">Best 1,000 Movies</a><br><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="5"/><br>
+&#149; <a href="/web/20050722030559/http://movies.nytimes.com/ref/movies/reviews/index.html">Review Archive</a></font><br><br>
+</FONT>
+<select name="section" onchange="goToURL(this);" class="small">
+<option selected>Browse by Title</option>
+<option value="/ref/movies/reviews/alpha/rev_alpha_0_9/index.html">0-9</option>
+<option value="/ref/movies/reviews/alpha/rev_alpha_A/index.html">A</option>
+<option value="/ref/movies/reviews/alpha/rev_alpha_B/index.html">B</option>
+<option value="/ref/movies/reviews/alpha/rev_alpha_C/index.html">C</option>
+<option value="/ref/movies/reviews/alpha/rev_alpha_D/index.html">D</option>
+<option value="/ref/movies/reviews/alpha/rev_alpha_E/index.html">E</option>
+<option value="/ref/movies/reviews/alpha/rev_alpha_F/index.html">F</option>
+<option value="/ref/movies/reviews/alpha/rev_alpha_G/index.html">G</option>
+<option value="/ref/movies/reviews/alpha/rev_alpha_H/index.html">H</option>
+<option value="/ref/movies/reviews/alpha/rev_alpha_I/index.html">I</option>
+<option value="/ref/movies/reviews/alpha/rev_alpha_J/index.html">J</option>
+<option value="/ref/movies/reviews/alpha/rev_alpha_K/index.html">K</option>
+<option value="/ref/movies/reviews/alpha/rev_alpha_L/index.html">L</option>
+<option value="/ref/movies/reviews/alpha/rev_alpha_M/index.html">M</option>
+<option value="/ref/movies/reviews/alpha/rev_alpha_N/index.html">N</option>
+<option value="/ref/movies/reviews/alpha/rev_alpha_O/index.html">O</option>
+<option value="/ref/movies/reviews/alpha/rev_alpha_P/index.html">P</option>
+<option value="/ref/movies/reviews/alpha/rev_alpha_Q/index.html">Q</option>
+<option value="/ref/movies/reviews/alpha/rev_alpha_R/index.html">R</option>
+<option value="/ref/movies/reviews/alpha/rev_alpha_S/index.html">S</option>
+<option value="/ref/movies/reviews/alpha/rev_alpha_T/index.html">T</option>
+<option value="/ref/movies/reviews/alpha/rev_alpha_U/index.html">U</option>
+<option value="/ref/movies/reviews/alpha/rev_alpha_V/index.html">V</option>
+<option value="/ref/movies/reviews/alpha/rev_alpha_W/index.html">W</option>
+<option value="/ref/movies/reviews/alpha/rev_alpha_X/index.html">X</option>
+<option value="/ref/movies/reviews/alpha/rev_alpha_Y/index.html">Y</option>
+<option value="/ref/movies/reviews/alpha/rev_alpha_Z/index.html">Z</option>
+</select>&nbsp;&nbsp;<input align="absmiddle" width="28" height="21" border="0" alt="Go" type="image" src="/web/20050722030559im_/http://graphics8.nytimes.com/images/section/movies/go.gif"></form>
+<form name="sectionform" onsubmit="return goToURL(this);">
+<select name="section" onchange="goToURL(this);" class="small">
+<option selected>Select a Year </option>
+<option value="/ref/movies/reviews/years/rev_year_2005/index.html">2005</option>
+<option value="/ref/movies/reviews/years/rev_year_2004/index.html">2004</option>
+<option value="/ref/movies/reviews/years/rev_year_2003/index.html">2003</option>
+<option value="/ref/movies/reviews/years/rev_year_2002/index.html">2002</option>
+<option value="/ref/movies/reviews/years/rev_year_2001/index.html">2001</option>
+<option value="/ref/movies/reviews/years/rev_year_2000/index.html">2000</option>
+<option value="/ref/movies/reviews/years/rev_year_1999/index.html">1999</option>
+<option value="/ref/movies/reviews/years/rev_year_1998/index.html">1998</option>
+<option value="/ref/movies/reviews/years/rev_year_1997/index.html">1997</option>
+<option value="/ref/movies/reviews/years/rev_year_1996/index.html">1996</option>
+<option value="/ref/movies/reviews/years/rev_year_1995/index.html">1995</option>
+<option value="/ref/movies/reviews/years/rev_year_1994/index.html">1994</option>
+<option value="/ref/movies/reviews/years/rev_year_1993/index.html">1993</option>
+<option value="/ref/movies/reviews/years/rev_year_1992/index.html">1992</option>
+<option value="/ref/movies/reviews/years/rev_year_1991/index.html">1991</option>
+<option value="/ref/movies/reviews/years/rev_year_1990/index.html">1990</option>
+<option value="/ref/movies/reviews/years/rev_year_1989/index.html">1989</option>
+<option value="/ref/movies/reviews/years/rev_year_1988/index.html">1988</option>
+<option value="/ref/movies/reviews/years/rev_year_1987/index.html">1987</option>
+<option value="/ref/movies/reviews/years/rev_year_1986/index.html">1986</option>
+<option value="/ref/movies/reviews/years/rev_year_1985/index.html">1985</option>
+<option value="/ref/movies/reviews/years/rev_year_1984/index.html">1984</option>
+<option value="/ref/movies/reviews/years/rev_year_1983/index.html">1983</option>
+<option value="/ref/movies/reviews/years/rev_year_1982/index.html">1982</option>
+<option value="/ref/movies/reviews/years/rev_year_1981/index.html">1981</option>
+<option value="/ref/movies/reviews/years/rev_year_1980/index.html">1980</option>
+<option value="/ref/movies/reviews/years/rev_year_1979/index.html">1979</option>
+<option value="/ref/movies/reviews/years/rev_year_1978/index.html">1978</option>
+<option value="/ref/movies/reviews/years/rev_year_1977/index.html">1977</option>
+<option value="/ref/movies/reviews/years/rev_year_1976/index.html">1976</option>
+<option value="/ref/movies/reviews/years/rev_year_1975/index.html">1975</option>
+<option value="/ref/movies/reviews/years/rev_year_1974/index.html">1974</option>
+<option value="/ref/movies/reviews/years/rev_year_1973/index.html">1973</option>
+<option value="/ref/movies/reviews/years/rev_year_1972/index.html">1972</option>
+<option value="/ref/movies/reviews/years/rev_year_1971/index.html">1971</option>
+<option value="/ref/movies/reviews/years/rev_year_1970/index.html">1970</option>
+<option value="/ref/movies/reviews/years/rev_year_1969/index.html">1969</option>
+<option value="/ref/movies/reviews/years/rev_year_1968/index.html">1968</option>
+<option value="/ref/movies/reviews/years/rev_year_1967/index.html">1967</option>
+<option value="/ref/movies/reviews/years/rev_year_1966/index.html">1966</option>
+<option value="/ref/movies/reviews/years/rev_year_1965/index.html">1965</option>
+<option value="/ref/movies/reviews/years/rev_year_1964/index.html">1964</option>
+<option value="/ref/movies/reviews/years/rev_year_1963/index.html">1963</option>
+<option value="/ref/movies/reviews/years/rev_year_1962/index.html">1962</option>
+<option value="/ref/movies/reviews/years/rev_year_1961/index.html">1961</option>
+<option value="/ref/movies/reviews/years/rev_year_1960/index.html">1960</option>
+<option value="/ref/movies/reviews/years/rev_year_1959/index.html">1959</option>
+<option value="/ref/movies/reviews/years/rev_year_1958/index.html">1958</option>
+<option value="/ref/movies/reviews/years/rev_year_1957/index.html">1957</option>
+<option value="/ref/movies/reviews/years/rev_year_1956/index.html">1956</option>
+<option value="/ref/movies/reviews/years/rev_year_1955/index.html">1955</option>
+<option value="/ref/movies/reviews/years/rev_year_1954/index.html">1954</option>
+<option value="/ref/movies/reviews/years/rev_year_1953/index.html">1953</option>
+<option value="/ref/movies/reviews/years/rev_year_1952/index.html">1952</option>
+<option value="/ref/movies/reviews/years/rev_year_1951/index.html">1951</option>
+<option value="/ref/movies/reviews/years/rev_year_1950/index.html">1950</option>
+<option value="/ref/movies/reviews/years/rev_year_1949/index.html">1949</option>
+<option value="/ref/movies/reviews/years/rev_year_1948/index.html">1948</option>
+<option value="/ref/movies/reviews/years/rev_year_1947/index.html">1947</option>
+<option value="/ref/movies/reviews/years/rev_year_1946/index.html">1946</option>
+<option value="/ref/movies/reviews/years/rev_year_1945/index.html">1945</option>
+<option value="/ref/movies/reviews/years/rev_year_1944/index.html">1944</option>
+<option value="/ref/movies/reviews/years/rev_year_1943/index.html">1943</option>
+<option value="/ref/movies/reviews/years/rev_year_1942/index.html">1942</option>
+<option value="/ref/movies/reviews/years/rev_year_1941/index.html">1941</option>
+<option value="/ref/movies/reviews/years/rev_year_1940/index.html">1940</option>
+<option value="/ref/movies/reviews/years/rev_year_1939/index.html">1939</option>
+<option value="/ref/movies/reviews/years/rev_year_1938/index.html">1938</option>
+<option value="/ref/movies/reviews/years/rev_year_1937/index.html">1937</option>
+<option value="/ref/movies/reviews/years/rev_year_1936/index.html">1936</option>
+<option value="/ref/movies/reviews/years/rev_year_1935/index.html">1935</option>
+<option value="/ref/movies/reviews/years/rev_year_1934/index.html">1934</option>
+<option value="/ref/movies/reviews/years/rev_year_1933/index.html">1933</option>
+<option value="/ref/movies/reviews/years/rev_year_1932/index.html">1932</option>
+<option value="/ref/movies/reviews/years/rev_year_1931/index.html">1931</option>
+<option value="/ref/movies/reviews/years/rev_year_1930/index.html">1930</option>
+<option value="/ref/movies/reviews/years/rev_year_1929/index.html">1929</option>
+</select>&nbsp;&nbsp;<input align="absmiddle" width="28" height="21" border="0" alt="Go" type="image" src="/web/20050722030559im_/http://graphics8.nytimes.com/images/section/movies/go.gif">
+</form>
+<form name="sectionform" onsubmit="return goToURL(this);">
+<select name="section" onchange="goToURL(this);" class="small">
+<option selected>Browse by Genre</option>
+<option value="/ref/movies/reviews/genre/rev_genre_action/index.html">Action/Adventure</option>
+<option value="/ref/movies/reviews/genre/rev_genre_avante/index.html">Avant-garde</option>
+<option value="/ref/movies/reviews/genre/rev_genre_children/index.html">Children</option>
+<option value="/ref/movies/reviews/genre/rev_genre_comedy/index.html">Comedy</option>
+<option value="/ref/movies/reviews/genre/rev_genre_crime/index.html">Crime</option>
+<option value="/ref/movies/reviews/genre/rev_genre_drama/index.html">Drama</option>
+<option value="/ref/movies/reviews/genre/rev_genre_epic/index.html">Epic</option>
+<option value="/ref/movies/reviews/genre/rev_genre_fantasy/index.html">Fantasy</option>
+<option value="/ref/movies/reviews/genre/rev_genre_historical/index.html">Historical</option>
+<option value="/ref/movies/reviews/genre/rev_genre_horror/index.html">Horror</option>
+<option value="/ref/movies/reviews/genre/rev_genre_musical/index.html">Musical</option>
+<option value="/ref/movies/reviews/genre/rev_genre_mystery/index.html">Mystery</option>
+<option value="/ref/movies/reviews/genre/rev_genre_romance/index.html">Romance</option>
+<option value="/ref/movies/reviews/genre/rev_genre_scifi/index.html">Science Fiction</option>
+<option value="/ref/movies/reviews/genre/rev_genre_spy/index.html">Spy Film</option>
+<option value="/ref/movies/reviews/genre/rev_genre_thriller/index.html">Thriller</option>
+<option value="/ref/movies/reviews/genre/rev_genre_war/index.html">War</option>
+<option value="/ref/movies/reviews/genre/rev_genre_western/index.html">Western</option>
+</select>&nbsp;&nbsp;<input align="absmiddle" width="28" height="21" border="0" alt="Go" type="image" src="/web/20050722030559im_/http://graphics8.nytimes.com/images/section/movies/go.gif">  				
+</form>
+</td>
+<td width="5" bgcolor="#EEEEEE"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1"/></td>
+<td width="1" bgcolor="#CCCCCC"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"/></td>
+</tr>
+<tr>
+<td width="184" bgcolor="#CCCCCC" colspan="5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="184" height="1"/></td>
+</tr>
+</table><br clear="all">
+<!--END REVIEW ARCHIVE MODULE-->
+<!--End Rankable File Insert-->
+<table border="0" cellpadding="0" cellspacing="0"><tr><td width="1" bgcolor="#cdcdcd"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"></td><td width="5" bgcolor="#cdcdcd"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1" border="0"></td><td width="172" bgcolor="#cdcdcd"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="172" height="1" border="0"></td><td width="5" bgcolor="#cdcdcd"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1" border="0"></td><td width="1" bgcolor="#cdcdcd"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"></td></tr><tr><td width="1" bgcolor="#cdcdcd"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"></td><td width="5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="20" border="0"></td><td width="172" align="center" valign="middle"><font class="smtext" face="arial, helvetica, sans serif" color="#660000"><strong>Readers' Opinions</strong></font></td><td width="5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1" border="0"></td><td width="1" bgcolor="#cdcdcd"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"></td></tr><tr><td colspan="5" bgcolor="#cdcdcd"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"></td></tr><tr><td bgcolor="#cdcdcd"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"></td><td bgcolor="#eeeeee"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="20" border="0"></td><td bgcolor="#eeeeee"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="5" border="0"><br clear="all"> <!--Error: Missing expected Image. This article does not have an image associated with it. --> <font face="Times New Roman,Times,Serif" size="-1" color="#000066"><strong><a href="/web/20050722030559/http://forums.nytimes.com/top/opinion/readersopinions/forums/arts/movies/index.html?page=recent">Join a Discussion on Movies</a></strong></font><br><font face="Times New Roman,Times,Serif" size="-1">How does Tim Burton's adaptation of "Charlie and the Chocolate Factory" compare to the novel and earlier film version?</font><br> &#149; <font class="movieseditpromo"><a href="/web/20050722030559/http://movies2.nytimes.com/2005/07/15/movies/15char.html">Related Review</a></font><br> &#149; <font class="movieseditpromo"><a href="/web/20050722030559/http://forums.nytimes.com/top/opinion/readersopinions/forums/arts/index.html">More Arts Forums</a></font><br><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="5" border="0"><br></td><td bgcolor="#eeeeee"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="20" border="0"></td><td bgcolor="#cdcdcd"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"></td></tr><tr><td colspan="5" bgcolor="#cdcdcd"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="184" height="1" border="0"></td></tr></table><br><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"><br> </div>  
+<!--Coming Soon-->
+<table width="184" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td colspan="5" width="184" bgcolor="#cdcdcd"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" width="184" height="1" border="0" alt=""></td>
+</tr>
+<tr>
+<td width="1" bgcolor="#cdcdcd"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" width="1" height="1" border="0" alt=""></td>
+<td width="5" bgcolor="#ffffff"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" width="5" height="20" border="0" alt=""></td>
+<td  height="20" width="172" bgcolor="#ffffff" align="center" valign="middle">
+<font class="smtext" face="arial, helvetica, sans serif" color="#660000"><strong>Coming Soon</strong></font>
+</td>
+<td width="5" bgcolor="#ffffff"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" width="5" height="20" border="0" alt=""></td>
+<td width="1" bgcolor="#cdcdcd"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" width="1" height="1" border="0" alt=""></td>
+</tr>
+<tr>
+<td colspan="5" width="184" bgcolor="#cdcdcd"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" width="184" height="1" border="0" alt=""></td>
+</tr>
+<tr>
+<td bgcolor="#cdcdcd"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" width="1" height="1" border="0" alt=""></td>
+<td bgcolor="#eeeeee"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" width="5" height="10" border="0" alt=""></td>
+<td bgcolor="#eeeeee" width="172"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" width="172" height="5" border="0" alt=""><br clear="all">
+<font class="movieseditpromo">
+• <A 
+href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/movie.html?v_id=315705">Must Love Dogs</A><BR>
+• <A 
+href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/movie.html?v_id=313197">Sky High</A><BR>
+• <A 
+href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/movie.html?v_id=295815">Stealth</A><BR>
+• <A 
+href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/movie.html?v_id=307674">2046</A><BR>
+• <A 
+href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/movie.html?v_id=325257">Broken Flowers</A><BR>
+<br>
+<strong><a href="/web/20050722030559/http://movies2.nytimes.com/gst/movies/current.html?view=soon">Go to Coming Soon</a></strong><br>
+</FONT><br>
+</td>
+<td bgcolor="#eeeeee"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" alt="" width="5" height="10" border="0" alt=""></td>
+<td bgcolor="#cdcdcd"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" alt="" width="1" height="1" border="0" alt=""></td>
+</tr>
+<tr>
+<td colspan="5" width="184" bgcolor="#cdcdcd"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/spacer.gif" width="184" height="1" border="0" alt=""></td>
+</tr>
+</table>
+<br clear="all">
+<!--end Coming Soon-->
+<br>						
+<!--End B-Column -->
+</td>
+<td><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"></td>
+<td valign="top" align="center">
+<!--Begin C-Column -->
+<div align="center">
+<font class="date" color="#666666">Advertisement</font><br>
+<!-- ADXINFO classification="skyscraper" campaign="WestinQ305_01-nyt4"--><iframe src="/web/20050722030559if_/http://view.atdmt.com/NYC/iview/nwyrkstw0650000075nyc/direct;wi.160;hi.600/01/2005.07.22.03.06.10?click=" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" allowtransparency="true" width="160" height="600">
+<script language="JavaScript" type="text/javascript">
+document.write('<a href="/web/20050722030559/http://clk.atdmt.com/NYC/go/nwyrkstw0650000075nyc/direct;wi.160;hi.600/01/2005.07.22.03.06.10" target="_blank"><img src="/web/20050722030559/http://view.atdmt.com/NYC/view/nwyrkstw0650000075nyc/direct;wi.160;hi.600/01/2005.07.22.03.06.10"/></a>');
+</script><noscript><a href="/web/20050722030559/http://clk.atdmt.com/NYC/go/nwyrkstw0650000075nyc/direct;wi.160;hi.600/01/2005.07.22.03.06.10" target="_blank"><img border="0" src="/web/20050722030559im_/http://view.atdmt.com/NYC/view/nwyrkstw0650000075nyc/direct;wi.160;hi.600/01/2005.07.22.03.06.10" /></a></noscript></iframe>
+<br clear="all"><br>
+</div>
+<!--Rankable C column start (needs to have an nrank value of 301+) -->
+<!--Rankable C column end -->
+
+
+
+
+
+
+<!--ANIMATED MARKETING MODULE STARTS HERE -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td align="left" valign="top" colspan="3" width="100%">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="left" valign="top"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_1b.gif" width="14" height="21" alt="" /></td>			
+<td align="center" valign="top" background="/web/20050722030559im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_2b.gif" width="100%"></td>
+<td align="left" valign="top"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_3b.gif" width="14" height="21" alt="" /></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="left" valign="top" background="/web/20050722030559im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_10.gif" width="4"></td>
+<td align="left" valign="top" width="100%"> 
+<div align="center"><a href="/web/20050722030559/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=movies.nytimes.com/pages/movies/index.html&amp;pos=Right&amp;camp=nytnyt-marketingmoduleTHUR&amp;ad=autos_072105.html&amp;goto=http://www.nytimes.com/autos%3Fmkt=autosgif" target="_new"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/marketing/2005module/images/h_automobiles2.gif" alt="Autos" width="130" height="15" border="0"></a><br>
+<a href="/web/20050722030559/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=movies.nytimes.com/pages/movies/index.html&amp;pos=Right&amp;camp=nytnyt-marketingmoduleTHUR&amp;ad=autos_072105.html&amp;goto=http://www.nytimes.com/autos%3Fmkt=autosurl" style="font-size:11px; font-family: arial, helvetica, sans-serif;" target="_new"><strong>nytimes.com/autos</strong></a></div>
+<br>
+</td>
+<td align="right" valign="top" background="/web/20050722030559im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_09.gif"></td>
+</tr>
+<tr>
+<td align="left" valign="top" background="/web/20050722030559im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_10.gif" width="4">
+<IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="4"></td>
+<td align="left" valign="top" background="/web/20050722030559im_/http://graphics8.nytimes.com/marketing/2005module/images/autos_072105.gif" width="100%"> 
+<a href="/web/20050722030559/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=movies.nytimes.com/pages/movies/index.html&amp;pos=Right&amp;camp=nytnyt-marketingmoduleTHUR&amp;ad=autos_072105.html&amp;goto=http://www.nytimes.com/2005/07/04/automobiles/04BIKE.html%3Fex=1123387200%26en=c86d618dbbc46ff1%26ei=5087mkt=autosphotocaption" target="new"> 
+<IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="100%" height="94" border="0" alt="Traffic Jam"></a></td>
+<td align="left" valign="top" background="/web/20050722030559im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_09.gif">
+<IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="4"></td>
+</tr>
+<tr>
+<td align="left" valign="top" background="/web/20050722030559im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_10.gif" height="100%"></td>
+<td align="left" valign="top" width="100%" style="margin-top: 10px; margin-bottom: 10px;">
+<IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" class="spacer" width="100%" height="1" alt="" border="0" /></td>
+<td align="right" valign="top" background="/web/20050722030559im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_09.gif"></td>
+</tr>
+<tr>
+<td align="left" valign="top" background="/web/20050722030559im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_10.gif" height="100%"></td>
+<td align="left" valign="top" width="100%" style="font-size:11px; font-family: arial, helvetica, sans-serif; color:000000; padding-top:5px; padding-bottom:0px; padding-left:10px; padding-right: 9px;">
+<p style="margin-bottom: 3px;"><a href="/web/20050722030559/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=movies.nytimes.com/pages/movies/index.html&amp;pos=Right&amp;camp=nytnyt-marketingmoduleTHUR&amp;ad=autos_072105.html&amp;goto=http://www.nytimes.com/2005/07/04/automobiles/04BIKE.html%3Fex=1123387200%26en=c86d618dbbc46ff1%26ei=5087mkt=autosphotocaption" target="_new">
+<strong>2005 Honda Gold Wing - all the accommodations of a Winnebago</strong></a></p><br>Also in Autos:<br>
+<table width="100%">
+<tr>
+<td width="10" valign="top"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/marketing/2005module/images/bullet.gif" width="10" height="11"></td>
+<td width="100%" valign="top" style="font-size:11px; font-family: arial, helvetica, sans-serif; color:000000;">
+<a href="/web/20050722030559/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=movies.nytimes.com/pages/movies/index.html&amp;pos=Right&amp;camp=nytnyt-marketingmoduleTHUR&amp;ad=autos_072105.html&amp;goto=http://edmunds.nytimes.com/advice/buying/articles/78386/article.html" target="_new">
+10 steps to buying a new car</a></td>
+</tr>
+<tr>
+<td width="10" valign="top"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/marketing/2005module/images/bullet.gif" width="10" height="11"></td>
+<td width="100%" valign="top" style="font-size:11px; font-family: arial, helvetica, sans-serif; color:000000;">
+<a href="/web/20050722030559/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=movies.nytimes.com/pages/movies/index.html&amp;pos=Right&amp;camp=nytnyt-marketingmoduleTHUR&amp;ad=autos_072105.html&amp;goto=http://edmunds.nytimes.com/advice/buying/articles/78387/article.html" target="_new">
+10 steps to buying a used car</a></td>
+</tr>
+<tr>
+<td width="10" valign="top"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/marketing/2005module/images/bullet.gif" width="10" height="11"></td>
+<td width="100%" valign="top" style="font-size:11px; font-family: arial, helvetica, sans-serif; color:000000;">
+<a href="/web/20050722030559/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=movies.nytimes.com/pages/movies/index.html&amp;pos=Right&amp;camp=nytnyt-marketingmoduleTHUR&amp;ad=autos_072105.html&amp;goto=http://www.nytimes.com/mem/email.html%23nl" target="_new">
+Love cars? Sign up for DriveTimes!</a></td>
+</tr>
+</table>
+</td>
+<td align="right" valign="top" background="/web/20050722030559im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_09.gif"></td>
+</tr>	
+<tr>
+<td align="left" valign="top" colspan="3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" valign="top" ><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_15.gif" width="14" height="21" alt="" /></td>
+<td align="left" valign="top" background="/web/20050722030559im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_16.gif" width="100%"></td>
+<td align="left" valign="top" colspan="2"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_17.gif" width="14" height="21" alt="" /></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--ANIMATED MARKETING MODULE ENDS -->
+
+
+<br clear="all">
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td width="5" bgcolor="#3D4A5D"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="20" alt="" /></td>
+<td width="100%" bgcolor="#3D4A5D" class="boldwhite" align="center" valign="center">Advertiser Links</td>
+<td width="10" bgcolor="#3D4A5D"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="10" height="20" alt="" /></td>
+</tr>
+<tr><td width="100%" colspan="3" bgcolor="#F6F6F5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="10" alt="" /></td></tr>				
+<tr>			
+<td width="5" bgcolor="#F6F6F5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1" alt="" /></td>
+<td width="100%" class="smtext" align="left" bgcolor="#F6F6F5">
+
+
+<!-- ADXINFO classification="text_ad" campaign="Vonage49-nyt2"--><FONT class="smtext" color="#3366CC" FACE="Arial, Helvetica, Sans Serif" SIZE="-1">
+<a href="/web/20050722030559/http://clk.atdmt.com/VON/go/nwyrkvon0300000885von/direct/01/2005.07.22.03.06.10" target="_blank">
+<img border="0" src="/web/20050722030559im_/http://view.atdmt.com/VON/view/nwyrkvon0360000055von/direct/01/2005.07.22.03.06.10" >Save big on your phone bill with VONAGE broadband phone service!</a>
+</font>
+<br><br clear="all">
+
+
+
+</td>
+<td width="10" bgcolor="#F6F6F5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="10" height="1" alt="" /></td>	
+</tr>
+<tr><td width="100%" colspan="3" bgcolor="#F6F6F5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="10" alt=""></td></tr>
+</table>
+
+<br><br>
+<table width="184" cellpadding="0" cellspacing="0" border="0"><tr>
+<td width="184" colspan="7" bgcolor="#1164A0"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="184" height="2"></td></tr><tr>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="15"></td>
+<td width="5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1"></td>
+<td width="173" class="subheader" colspan="3">TIMES NEWS TRACKER</td>
+<td width="4"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="4" height="1"></td>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td></tr><tr>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td>
+<td width="5" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td>
+<td width="127" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="127" height="1"></td>
+<td width="5" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1"></td>
+<td width="41" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="41" height="1"></td>
+<td width="4" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td></tr><tr>
+<td width="1" bgcolor="#C9C9C9" rowspan="2"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="15"></td>
+<td width="5" bgcolor="#E5E5E5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="15"></td>
+<td width="127" bgcolor="#E5E5E5" class="newstracker">Topics</td>
+<td width="5" bgcolor="#E5E5E5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1"></td>
+<td width="41" bgcolor="#E5E5E5" align="center" class="newstracker">Alerts</td>
+<td width="4" bgcolor="#E5E5E5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="4" height="1"></td>
+<td width="1" bgcolor="#C9C9C9" rowspan="2"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td></tr><tr>
+<td colspan="5" bgcolor="#F6F6F5" width="182"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="2"></td></tr>
+<form ACTION="/web/20050722030559/http://query.nytimes.com/mem/tnt.html" METHOD="GET" ENCTYPE="application/x-www-form-urlencoded">
+<INPUT type="hidden" name="retA" value="">
+<INPUT type="hidden" name="retT" value="">
+<INPUT type="hidden" name="topic1" value="Motion Pictures">
+<INPUT type="hidden" name="topic_field1" value="des">
+<INPUT type="hidden" name="topic2" value="Animated Films">
+<INPUT type="hidden" name="topic_field2" value="des">
+<INPUT type="hidden" name="topic3" value="Television">
+<INPUT type="hidden" name="topic_field3" value="des">
+<INPUT type="hidden" name="topic4" value="Documentary Films and Programs">
+<INPUT type="hidden" name="topic_field4" value="des">
+<INPUT type="hidden" name="module" value="call">
+<INPUT type="hidden" name="alert_context" value="1">
+<tr>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td>
+<td width="5" bgcolor="#F6F6F5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1"></td>
+<td width="127" bgcolor="#F6F6F5" class="small"><a href="/web/20050722030559/http://query.nytimes.com/search/query?ppds=des&amp;v1=MOTION+PICTURES&amp;fdq=19960101&amp;td=sysdate&amp;sort=newest&amp;ac=MOTION+PICTURES&amp;rt=1%2Cdes%2Corg%2Cper%2Cgeo">Motion Pictures</a></td>
+<td width="5" bgcolor="#F6F6F5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1"></td>
+<td width="41" bgcolor="#F6F6F5" valign="top">
+<input value="y" width="41" height="14" border="0" name="topic1_check" alt="Create" type="image" src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/newstracker_create.gif"></td>
+<td width="4" bgcolor="#F6F6F5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="4" height="1"></td>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td></tr>
+<tr>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td>
+<td colspan="5" width="182" bgcolor="#F6F6F5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"></td>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td></tr><tr>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td>
+<td colspan="5" width="182" bgcolor="#FFFFFF"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"></td>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td></tr><tr>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td>
+<td colspan="5" width="182" bgcolor="#F6F6F5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="2" border="0"></td>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td></tr>
+<tr>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td>
+<td width="5" bgcolor="#F6F6F5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1"></td>
+<td width="127" bgcolor="#F6F6F5" class="small"><a href="/web/20050722030559/http://query.nytimes.com/search/query?ppds=des&amp;v1=ANIMATED+FILMS&amp;fdq=19960101&amp;td=sysdate&amp;sort=newest&amp;ac=ANIMATED+FILMS&amp;rt=1%2Cdes%2Corg%2Cper%2Cgeo">Animated Films</a></td>
+<td width="5" bgcolor="#F6F6F5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1"></td>
+<td width="41" bgcolor="#F6F6F5" valign="top">
+<input value="y" width="41" height="14" border="0" name="topic2_check" alt="Create" type="image" src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/newstracker_create.gif"></td>
+<td width="4" bgcolor="#F6F6F5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="4" height="1"></td>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td></tr>
+<tr>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td>
+<td colspan="5" width="182" bgcolor="#F6F6F5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"></td>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td></tr><tr>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td>
+<td colspan="5" width="182" bgcolor="#FFFFFF"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"></td>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td></tr><tr>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td>
+<td colspan="5" width="182" bgcolor="#F6F6F5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="2" border="0"></td>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td></tr>
+<tr>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td>
+<td width="5" bgcolor="#F6F6F5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1"></td>
+<td width="127" bgcolor="#F6F6F5" class="small"><a href="/web/20050722030559/http://query.nytimes.com/search/query?ppds=des&amp;v1=TELEVISION&amp;fdq=19960101&amp;td=sysdate&amp;sort=newest&amp;ac=TELEVISION&amp;rt=1%2Cdes%2Corg%2Cper%2Cgeo">Television</a></td>
+<td width="5" bgcolor="#F6F6F5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1"></td>
+<td width="41" bgcolor="#F6F6F5" valign="top">
+<input value="y" width="41" height="14" border="0" name="topic3_check" alt="Create" type="image" src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/newstracker_create.gif"></td>
+<td width="4" bgcolor="#F6F6F5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="4" height="1"></td>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td></tr>
+<tr>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td>
+<td colspan="5" width="182" bgcolor="#F6F6F5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"></td>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td></tr><tr>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td>
+<td colspan="5" width="182" bgcolor="#FFFFFF"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"></td>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td></tr><tr>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td>
+<td colspan="5" width="182" bgcolor="#F6F6F5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="2" border="0"></td>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td></tr>
+<tr>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td>
+<td width="5" bgcolor="#F6F6F5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1"></td>
+<td width="127" bgcolor="#F6F6F5" class="small"><a href="/web/20050722030559/http://query.nytimes.com/search/query?ppds=des&amp;v1=DOCUMENTARY+FILMS+AND+PROGRAMS&amp;fdq=19960101&amp;td=sysdate&amp;sort=newest&amp;ac=DOCUMENTARY+FILMS+AND+PROGRAMS&amp;rt=1%2Cdes%2Corg%2Cper%2Cgeo">Documentary Films and Programs</a></td>
+<td width="5" bgcolor="#F6F6F5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1"></td>
+<td width="41" bgcolor="#F6F6F5" valign="top">
+<input value="y" width="41" height="14" border="0" name="topic4_check" alt="Create" type="image" src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/newstracker_create.gif"></td>
+<td width="4" bgcolor="#F6F6F5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="4" height="1"></td>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td></tr>
+</form>
+<tr>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td>
+<td colspan="5" bgcolor="#F6F6F5" width="182"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="3"></td>
+<td width="1" bgcolor="#C9C9C9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td></tr>
+<tr>
+<td colspan="7" bgcolor="#C9C9C9" width="184"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td></tr><tr>
+<td width="1" bgcolor="#C9C9C9" rowspan="5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="15"></td>
+<td width="5" bgcolor="#F6F6F5" rowspan="5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1"></td>
+<td colspan="3" width="173" bgcolor="#F6F6F5" align="center"><a href="/web/20050722030559/http://nytimes.com/mem/tnt.html?module=precall"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/article/module_buttons_01.gif" alt="Create Your Own" width="100" height="20" border="0"/></a><a href="/web/20050722030559/http://nytimes.com/mem/tnt.html?module=manage"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/article/module_buttons_02.gif" alt="Manage" width="67" height="20" border="0"/></a></td>
+<td width="4" bgcolor="#F6F6F5" rowspan="5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="4" height="1"></td>
+<td width="1" bgcolor="#C9C9C9" rowspan="5"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td></tr><tr>
+<td colspan="3" width="173" bgcolor="#F6F6F5" align="center"><a href="/web/20050722030559/http://nytimes.com/gst/poptoptnt.html"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/article/module_buttons_03.gif" alt="Most Popular Alerts" width="100" height="15" border="0"></a><a href="javascript:pop_me_up2('/web/20050722030559/http://www.nytimes.com/ads/marketing/newstracker/Timestracker.swf','700480','width=700,height=480,scrollbars=yes,resizable=no,top=10,left=20,status=no,location=no');"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/article/module_buttons_04.gif" alt="Take A Tour" width="67" height="15" border="0"></a></td></tr><tr>
+<td colspan="3" bgcolor="#F6F6F5" width="173" align="center"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="5"></td></tr><tr>
+<td colspan="3" bgcolor="#F6F6F5" width="173" align="center"><a href="/web/20050722030559/https://query.nytimes.com/servlet/PurchaseProxy?oid=72&amp;target=%2fmem%2ftnttrans%2ehtml%3fgood%3d0"><IMG src="/web/20050722030559im_/http://graphics.nytimes.com/images/article/module_buttons_07.gif" alt="Click Here to Subscribe" width="143" height="19" border="0" REPALCEALL="http://graphics8.nytimes.com/images/article/"/></a></td></tr><tr>
+<td colspan="3" bgcolor="#F6F6F5" width="173" align="center"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="5"></td></tr><tr>
+<td colspan="7" bgcolor="#C9C9C9" width="184"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"></td></tr></table>
+<br clear="all">
+</td>
+</tr>
+</table>
+<!--End C-Column -->
+</td>
+</tr>
+</table>			
+</td>
+<!--b-column end -->				
+</tr>
+</table>
+<br><br>
+<!--end body -->
+<!--body end -->
+<!--footer-->
+<!--Footer Begins -->
+<table width="768" cellspacing="0" cellpadding="0" border="0" valign="top">
+<tr>
+<td width="584">
+<script type="text/javascript" language="JavaScript">
+<!--
+	var google_ad_client= 'nytimes_section_var';
+	var google_ad_width = '100%';
+	var google_ad_height = '180';
+	var google_ad_format = 'ca-nytimes_flex';
+	var google_safe = 'high';
+        
+// -->
+</script>
+<script type="text/javascript" language="JavaScript" src="/web/20050722030559js_/http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+</td>
+<td width="184>
+<IMG src="http://graphics8.nytimes.com/images/misc/spacer.gif" width="184" height="3" alt="" border="0"/></td>
+</td>		
+</tr>
+<tr>
+<td colspan="2"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="3" alt="" border="0"/></td>
+</tr>
+</table>
+<!--the below link is to detect robots from normal users and helps with ad reporting -->
+<a href="/web/20050722030559/http://ads.nytimes.com/nytdstuck.html"></a>
+<table width="768" bgcolor="#f2f2f2" cellspacing="0" cellpadding="0" border="0" valign="top">
+<tr>
+<td><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="3" alt="" border="0"/></td>
+</tr>
+<tr>
+<td width="768" align="center" valign="top">
+
+</td>
+</tr>
+<tr>
+<td><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="3" alt="" border="0"/></td>
+</tr>
+</table>	
+<!--begin footer -->
+<table width="768" cellpadding="0" cellspacing="0" border="0">
+<tr bgcolor="#e5e5e5">
+<td><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" alt="" width="5" height="25" border="0"></td>
+<td width="100%" class="footer">
+<a href="/web/20050722030559/http://www.nytimes.com/ref/membercenter/help/copyright.html">Copyright 2005</a>&nbsp;<a href="/web/20050722030559/http://www.nytco.com/">The New York Times Company</a> | <a href="/web/20050722030559/http://www.nytimes.com/ref/membercenter/help/privacy.html" class="footer">Privacy Policy</a> |
+<!--begin global links -->
+<a href="/web/20050722030559/http://www.nytimes.com/index.html" class="footer">Home</a> | 
+<a href="/web/20050722030559/http://query.nytimes.com/search/advanced/" class="footer">Search</a> | 
+<a href="/web/20050722030559/http://www.nytimes.com/corrections.html" class="footer">Corrections</a> | 
+<a href="/web/20050722030559/http://www.nytimes.com/rss" class="footer">RSS</a> |
+<a href="/web/20050722030559/http://www.nytimes.com/membercenter/sitehelp.html" class="footer">Help</a> | 
+<a href="#top" class="footer">Back to Top</a> 
+<!--end global links -->
+</td>
+</tr>
+<tr><td colspan="2"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" alt="" width="1" height="1" border="0"></td></tr>
+<tr><td colspan="2" bgcolor="#b9b9b9"><IMG src="/web/20050722030559im_/http://graphics8.nytimes.com/images/misc/spacer.gif" alt="" width="1" height="1" border="0"></td></tr>	
+</table>
+<!--end footer -->
+<br><br>
+<!--Footer Ends -->
+<!-- ADXINFO classification="blank" campaign="test-moviesdelivery-general"--><SCRIPT LANGUAGE="JavaScript1.1" SRC="/web/20050722030559js_/http://ads.nytimes.com/adx/bin/adx_remote.html?page=moviesinventory.nytimes.com&amp;posall=Bottom8&amp;pos=Bottom8&amp;type=script&amp;query=?"></script><!-- 
+if (navigator.appVersion.indexOf('MSIE 3') != -1){
+document.write('<IFRAME WIDTH=0 HEIGHT=0 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR="#000000" SRC="/web/20050722030559/http://ads.nytimes.com/adx/bin/adx_remote.html?page=moviesinventory.nytimes.com&posall=Bottom8&pos=Bottom8&type=html&query=?"></iframe>'); 
+} else if (_version < 11) {
+  document.write ('<A 
+HREF="/web/20050722030559/http://ads.nytimes.com/adx/bin/adx_click.html?type=cookie&pos=Bottom8">
+<img src="/web/20050722030559/http://graphics8.nytimes.com/adx/bin/adx_remote.html?page=moviesinventory.nytimes.com&posall=Bottom8&pos=Bottom8&pos=Bottom8&type=noscript&query=?"</a>');
+}
+// -->
+<script language="JavaScript">
+if(Math.random()<0.9 && document.cookie.indexOf('dl_dn_seen')==-1) {document.cookie='dl_dn_seen=1'; document.write('<scr'+'ipt src="/web/20050722030559/http://amch.questionmarket.com/adsc/d0/474/0/decide.php?randnum='+Math.random()+'"></scr'+'ipt>');}
+</script>
+
+
+		<!-- SiteCatalyst code version: G.6.
+		Copyright 1997-2004 Omniture, Inc. More info available at
+		/web/20050722030559/http://www.omniture.com --><script language="JavaScript"><!--
+		var s_account="nytmovies"
+		var s_pageName="/pages/movies/index.html"
+		var s_server=""
+		var s_channel="movies"
+		var s_formOnPage=""
+		var s_pageType=""
+		var s_prop1="section front"
+		var s_prop2=""
+		var s_prop3=""
+		var s_prop4=""
+		var s_prop5=""
+		var s_prop6=""
+		var s_prop7=""
+		var s_prop8=""
+		var s_prop9=""
+		var s_prop10=""
+		var s_prop12=""
+		var s_prop13=""
+		var s_campaign=""
+		var s_state=""
+		var s_zip=""
+		var s_events=""
+		var s_products=""
+		var s_purchaseID=""
+		var s_eVar1=""
+		var s_eVar2=""
+		var s_eVar3=""
+		var s_eVar4=""
+		var s_eVar5=""
+		var s_eVar6=""
+		var s_eVar7=""
+		var s_eVar8=""
+		var s_eVar9=""
+		var s_eVar10=""
+		var s_code=' '//--></script>
+		<script language="JavaScript" src="/web/20050722030559js_/http://graphics8.nytimes.com/js/s_code_1to1.js"></script>
+		<script language="JavaScript"><!-- 
+		var s_wd=window,s_tm=new Date;if(s_code!=' '){s_code=s_dc(
+		s_account);if(s_code)document.write(s_code)}else
+		document.write('<im'+
+		'g src="http://'+s_account+'.112.2O7.net/b/ss/'+s_account+'/1/G.6--FB/s'+s_tm.getTime()+'?[AQB]'
+		+'&j=1.0&[AQE]" height="1" width="1" border="0" alt="" />')
+		//--></script><script language="JavaScript"><!-- 
+		if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+		//--></script><noscript><img 
+		src="/web/20050722030559im_/http://nytmovies.112.2o7.net/b/ss/nytmovies/1/G.6--NS/0" 
+		height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+		<!-- End SiteCatalyst code version: G.6. -->
+		
+
+		<!-- SiteCatalyst code version: G.5.
+		Copyright 1997-2003 Omniture, Inc. More info available at
+		/web/20050722030559/http://www.omniture.com --><script language="JavaScript"><!--
+		var s_account="nytimesglobal"
+		var s_pageName="/pages/movies/index.html"
+		var s_server=""
+		var s_channel="movies"
+		var s_pageType=""
+		var s_prop1="section front"
+		var s_prop2=""
+		var s_prop3=""
+		var s_prop4=""
+		var s_prop5=""
+		var s_prop6=""
+		var s_prop7=""
+		var s_prop8=""
+		var s_prop9=""
+		var s_prop10=""
+		var s_prop12=""
+		var s_prop13=""
+		var s_campaign=""
+		var s_state=""
+		var s_zip=""
+		var s_events=""
+		var s_products=""
+		var s_purchaseID=""
+		var s_eVar1=""
+		var s_eVar2=""
+		var s_eVar3=""
+		var s_eVar4=""
+		var s_eVar5=""
+		var s_eVar6=""
+		var s_eVar7=""
+		var s_eVar8=""
+		var s_eVar9=""
+		var s_eVar10=""
+		//--></script><script language="JavaScript" src="/web/20050722030559js_/http://graphics8.nytimes.com/js/s_code_sampling.js"></script>
+		<!-- End SiteCatalyst code version: G.5. -->
+
+		
+		
+
+
+		<script language="Javascript">Tacoda_AMS_DDC_addPair("t_section","Movies")</script>
+		<script language="Javascript">Tacoda_AMS_DDC_addPair("site","nytimes.com")</script>
+		<script language="JavaScript">Tacoda_AMS_DDC("/web/20050722030559/http://te.nytimes.com/tte/blank.gif","1.0")</script>	
+		
+<IMG SRC="/web/20050722030559im_/http://nytimes.com/adx/bin/clientside/7fad15feQ2FoQ2BiQ7EQ2FQ7EQ7CEfQ51Q5EbQ7EQ5EQ2BvQ51ffQ2BfQ2B" height=1 width=1>
+</body>
+</html>
+
+
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 3:05:59 Jul 22, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 4:50:05 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

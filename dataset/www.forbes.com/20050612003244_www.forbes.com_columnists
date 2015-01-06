@@ -1,0 +1,1830 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app19.us.archive.org";archive_analytics.values.server_ms=1968;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+  
+  <title>Forbes.com - Columnist</title>
+  <link rel="alternate" type="application/rss+xml" title="Forbes Columnists RSS" href="http://www.forbes.com/columnists/index.xml">
+
+  <link rel="SHORTCUT ICON" href="/web/20050612003255im_/http://www.forbesimg.com/icon/favicon.ico">
+
+<script language="JavaScript" type="text/javascript">
+<!--
+
+if (navigator.appName.indexOf("Netscape") != -1){
+	document.write ('<LINK REL="STYLESHEET" TYPE="text/css" HREF="/web/20050612003255/http://www.forbes.com/css/style_ns.css">');	
+} else {
+	document.write ('<LINK REL="STYLESHEET" TYPE="text/css" HREF="/web/20050612003255/http://www.forbes.com/css/style_ie.css">');
+}
+
+// -->
+</script>
+
+<SCRIPT LANGUAGE=JAVASCRIPT TYPE="TEXT/JAVASCRIPT">
+<!-- Hide script from old browsers
+
+function newWindow() {
+	bestbuyWindow = window.open('inv_fun_bestbuy_index.jhtml', 'bestbuy', 'width=200,height=200')
+}
+
+function jumpNav (form) {
+		if (form.jumpSelect.options[form.jumpSelect.selectedIndex].value != "") {
+			this.location = form.jumpSelect.options[form.jumpSelect.selectedIndex].value;
+		}
+	}
+// End hiding script from old browsers -->
+</SCRIPT>	
+
+
+</head>
+<body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginheight="0" marginwidth="0" link="#003399" alink="#0080ff" vlink="#6699cc">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.forbes.com/columnists/";
+
+var firstYear = 1996;
+var imgWidth = 475,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "12";
+var displayMonth = "Jun";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.forbes.com/columnists/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20050612003255" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20050507100235/http://www.forbes.com/columnists/" title="7 May 2005">MAY</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 0:32:55 Jun 12, 2005">JUN</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20050825150340/http://www.forbes.com/columnists/" title="25 Aug 2005"><strong>AUG</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20050610085917/http://www.forbes.com/columnists/" title="8:59:17 Jun 10, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 0:32:55 Jun 12, 2005">12</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20050618022034/http://www.forbes.com/columnists/" title="2:20:34 Jun 18, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20040606020719/http://www.forbes.com/columnists/" title="6 Jun 2004"><strong>2004</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 0:32:55 Jun 12, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20060612210622/http://forbes.com/columnists" title="12 Jun 2006"><strong>2006</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20050612003255*/http://www.forbes.com/columnists/" title="See a list of every capture for this URL">685 captures</a>
+           <div class="r" title="Timespan for captures of this URL">28 Nov 99 - 7 Oct 14</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="475"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=475_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000010_2000:-1:105413020240_2001:-1:11120002eef9_2002:-1:220001010121_2003:-1:010102010101_2004:-1:010203145543_2005:5:434955267513_2006:-1:240225451202_2007:-1:030231002311_2008:-1:112121997021_2009:-1:000010000010_2010:-1:000110111010_2011:-1:101020111210_2012:-1:a98030101210_2013:-1:101131104210_2014:-1:010100201100" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+
+
+
+
+
+
+	<!------ OAS SETUP begin ------>
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+//configuration
+OAS_url = '/web/20050612003255/http://ads.forbes.com/RealMedia/ads/';
+if(typeof OAS_sitepage=="undefined"){
+OAS_sitepage = "forbes.com/Columnists/index.jhtml";
+}
+else{
+if(OAS_sitepage.length == 0){
+OAS_sitepage = "forbes.com/Columnists/index.jhtml";
+}
+}
+if(typeof OAS_listpos=="undefined"){
+OAS_listpos = "AdController,BigBanner,CenterBanner,LeftTop,RightTop,RightBottom,x5,ZebusCompanion,x50,RightAboveCol,RightMiddle,x70";
+}
+else{
+if(OAS_listpos.length == 0){
+OAS_listpos = "AdController,BigBanner,CenterBanner,LeftTop,RightTop,RightBottom,x5,ZebusCompanion,x50,RightAboveCol,RightMiddle,x70";
+}
+}
+OAS_query = '';
+OAS_target = '_top';
+//end of configuration
+OAS_version = 10;
+OAS_rn = '001234567890'; OAS_rns = '1234567890';
+OAS_rn = new String (Math.random()); OAS_rns = OAS_rn.substring (2, 11);
+function OAS_NORMAL(pos) {
+  document.write('<A HREF="' + OAS_url + 'click_nx.cgi/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + OAS_query + '" TARGET=' + OAS_target + '>');
+  document.write('<IMG SRC="' + OAS_url + 'adstream_nx.cgi/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + OAS_query + '" BORDER=0></A>');
+}
+function OAS_RICH(pos) {
+  document.write('<A HREF="' + OAS_url + 'click_nx.cgi/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + OAS_query + '" TARGET=' + OAS_target + '>');
+  document.write('<IMG SRC="' + OAS_url + 'adstream_nx.cgi/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + OAS_query + '" BORDER=0></A>');
+}
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE=JavaScript1.1>
+<!--
+OAS_version = 11;
+if (navigator.userAgent.indexOf('Mozilla/3') != -1 || navigator.userAgent.indexOf('Mozilla/4.0 WebTV') != -1)
+  OAS_version = 10;
+if (OAS_version >= 11)
+  document.write('<SCRIPT LANGUAGE=JavaScript1.1 SRC="' + OAS_url + 'adstream_mjx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + OAS_query + '"><\/SCRIPT>');
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+document.write('');
+function OAS_AD(pos) {
+  if (OAS_version >= 11)
+    OAS_RICH(pos);
+  else
+    OAS_NORMAL(pos);
+}
+//-->
+</SCRIPT>
+<!------ OAS SETUP end ------>
+
+	
+
+
+
+<div style="display:none">
+<!-- Omniture SiteCatalyst -->
+<script language="JavaScript" src="/web/20050612003255js_/http://www.forbes.com/scripts/omniture/s_code_forbescom.js"></script>
+<script language="JavaScript" src="/web/20050612003255js_/http://www.forbes.com/scripts/omniture/s_code_remote.js"></script>
+<!-- /Omniture SiteCatalyst -->
+</div>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+
+
+var partner = '';
+
+var query = this.location.search.substring(1);
+if( query.length > 0 ) {
+   var params=query.split("&");
+   for (var i = 0 ; i < params.length ; i++) {
+      var pos = params[i].indexOf("=");
+      var name = params[i].substring(0, pos);
+      var value = params[i].substring(pos + 1);
+      if( name == "partner" ) {
+         partner = value;
+      }
+   }
+}
+
+var currentHostname=this.location.hostname;
+if (currentHostname.length > 0) {
+   if (currentHostname == "aol.forbes.com" || currentHostname == "forbes.aol.com") {
+      partner = 'aol';
+   }
+}
+
+var partner_cookie = "partner_session=" + partner;
+if (document.cookie.indexOf(partner_cookie) < 0) {
+   document.cookie=partner_cookie + ';path=/;domain=.forbes.com';
+}
+
+//-->
+</script>
+
+<!-- Cobrand Hats -->
+<script language="JavaScript" type="text/javascript">
+<!--
+
+
+
+if (document.cookie.indexOf('partner_session=aol') != -1) {
+   document.write('<SCRIPT SRC="/web/20050612003255/http://aolsvc.aol.com/pf/tools/hat/js/hat100.js"><img src="/web/20050612003255/http://server-us.imrworldwide.com/cgi-bin/count?cid=us_forbes-aol_0" width=0 height=0></SCRIPT><NOSCRIPT><table border=0 cellpadding=0 cellspacing=0 width=100% background="/web/20050612003255/http://aolsvc.aol.com/pf/tools/hat/gr/bluetilehat_gr.gif"><tr><TD ALIGN=left><a href="aol://1722:Personal Finance"><img src="/web/20050612003255/http://aolsvc.aol.com/pf/tools/hat/gr/pfhat2_gr.gif" border=0 align=left hspace=0 alt="AOL Personal Finance Main"></a><img src="/web/20050612003255/http://server-us.imrworldwide.com/cgi-bin/count?cid=us_forbes-aol_0" width=0 height=0></TD></TR></TABLE></NOSCRIPT>');
+}
+
+
+if( partner == 'netscape' ) {
+   document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="/web/20050612003255/http://hat.netscape.com/header/ns/forbes/nsheader.js"></SCRIPT>');
+}
+
+
+if (document.cookie.indexOf('partner_session=earthlink') != -1) {
+   document.write('<script language="JavaScript" src="/web/20050612003255/http://w.eimg.net/partners/global/nav_bar.js"></script>');
+}
+
+
+if (document.cookie.indexOf('partner_session=msnbc') != -1) {
+   var _rsCI='us-forbes';
+   var _rsCG='msnbc_hat_test';
+   var _rsDT=1;
+   var _rsSI=escape(window.location);
+   var _rsLP=location.protocol.indexOf('https')>-1?'https:':'http:';
+   var _rsRP=escape(document.referrer);
+   var _rsND=_rsLP+'//secure-us.imrworldwide.com/';
+
+   if (parseInt(navigator.appVersion)>=4) {
+      var _rsRD=(new Date()).getTime();
+      var _rsSE=1;
+      var _rsSV='';
+      var _rsSM=1.0;
+      _rsCL='<scr'+'ipt language="JavaScript" type="text/javascript" src="'+_rsND+'v5.js"><\/scr'+'ipt>';
+   } 
+   else {
+      _rsCL='<img src="/cms/components/'+_rsND+'cgi-bin/m?ci='+_rsCI+'&cg='+_rsCG+'&si='+_rsSI+'&rp='+_rsRP+'">';
+   }
+   //document.write(_rsCL);
+
+   document.write('<table cellspacing="0" cellpadding="0" border="0" width="100%" background="/web/20050612003255/http://images.forbes.com/media/partners/msnbc/back.gif"><tr><td width="75"><script language="JavaScript" type="text/javascript">document.write(_rsCL);</script><a href="/web/20050612003255/http://www.msnbc.com/"><img src="/web/20050612003255/http://images.forbes.com/media/partners/msnbc/msnbc_logo.gif" border="0" width="80" height="42"></a></td><td width="100%" align="right"><a href="/web/20050612003255/http://www.msnbc.com/"><img src="/web/20050612003255/http://images.forbes.com/media/partners/msnbc/msnbc_return.gif" border="0" width="277" height="42"></a></td></tr></table>');
+}
+
+
+if (document.cookie.indexOf('partner_session=compuserve') != -1) {
+   document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="/web/20050612003255/http://hat.compuserve.com/header/forbes/csheader.js"></SCRIPT>');
+}
+
+// -->
+</script>
+
+<!-- /Cobrand Hats -->
+
+<script language="Javascript">
+<!--
+	var pCid="us_us-forbes_0";
+	var w0=1;
+	var refR=escape(document.referrer);
+	if (refR.length>=252) refR=refR.substring(0,252)+"...";
+//-->
+</script>	
+<script language="JavaScript1.1"><!--
+	var w0=0;		
+//--></script>		
+
+<!-- Javasript RollOver and ImageMap --> 
+   <script language="JavaScript" type="text/javascript">
+      
+<!-- 
+
+      var adtag = '';
+      var displayedChannel = 'home'; 
+      var displayedSection = '';
+      var skipNavRollover  = '';
+      var dynamicPath           = '/scripts/dynamic.js';
+      var staticPath            = '/scripts/static.js';
+      var dynamicStyleSheetPath = '/css/dynamic.css';
+      var windowMoveAround = false;
+      
+ // -->
+
+  </script>
+  <script language="JavaScript" src="/web/20050612003255js_/http://www.forbes.com/scripts/navBar_rollOver_imageMap.js"></script>
+<!-- /Javasript RollOver and ImageMap --> 
+
+	<script language="JavaScript" src="/web/20050612003255js_/http://www.forbes.com/scripts/popit.js"></script>
+
+<script language="JavaScript" src="/web/20050612003255js_/http://www.forbes.com/scripts/fifth/header.js">
+</script>
+
+<table border="0" cellpadding="0" cellspacing="0" width="790">
+	<tr>
+		<td colspan=2 bgcolor="#336699" height="15">&nbsp;</td>
+	</tr>
+	<tr>
+		<td bgcolor="#336699">
+			<table border="0" cellpadding="0" cellspacing="0" width="774" onMouseOver="setUpRollOut(thisX,divYNav);">
+				<tr>
+					<td align="center">
+
+					
+
+
+    <!-- AD -->
+<!-- OAS AD 'x5' begin -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('x5');
+//-->
+</SCRIPT>
+<!-- OAS AD 'x5' end -->
+
+<!-- /AD -->
+  
+
+
+
+
+
+
+                                
+                                          
+                                              <!-- AD -->
+<!-- OAS AD 'AdController' begin -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('AdController');
+//-->
+</SCRIPT>
+<!-- OAS AD 'AdController' end -->
+
+<!-- /AD -->
+                                            
+                                  
+
+					<!--SUPER BANNER OUTPUT GOES HERE-->
+						
+     							<!-- AD -->
+<!-- OAS AD 'BigBanner' begin -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('BigBanner');
+//-->
+</SCRIPT>
+<!-- OAS AD 'BigBanner' end -->
+
+<!-- /AD -->
+   							
+					<!--END OF SUPER BANNER-->
+					</td>
+				</tr>
+			</table>
+			<table border="0" cellpadding="0" cellspacing="0" width="774" onMouseOver="setUpRollOut(thisX,divYNav);">
+				<tr>
+					<td align="right" width="483">
+						<!--SMALL HOME BANNER-->
+
+					  	
+
+						
+     						<!-- AD -->
+<!-- OAS AD 'LeftTop' begin -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('LeftTop');
+//-->
+</SCRIPT>
+<!-- OAS AD 'LeftTop' end -->
+
+<!-- /AD -->
+   						
+
+  						
+
+						<!--END OF SMALL HOME BANNER-->
+					</td>
+					<td width="41"></td>
+					<td width="249">
+						<!--HOME BANNER-->
+
+					
+ 
+						
+     						<!-- AD -->
+<!-- OAS AD 'RightTop' begin -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('RightTop');
+//-->
+</SCRIPT>
+<!-- OAS AD 'RightTop' end -->
+
+<!-- /AD -->
+   						
+
+					
+
+						<!--END OF HOME BANNER-->
+					</td>
+				</tr>
+			</table>
+			<table border="0" cellpadding="0" cellspacing="0" width="774" onMouseOver="setUpRollOut(thisX,divYNav);">
+				<tr>
+					<td bgcolor="#336699" colspan="3" height="15">&nbsp;</td>
+				</tr>				
+				<tr valign="bottom">
+					<td rowspan="2" width="15">&nbsp;</td>
+					<td wi><a href="/web/20050612003255/http://www.forbes.com/"><img src="/web/20050612003255im_/http://images.forbes.com/media/assets/forbes_home_logo.gif" vspace="0" hspace="0" width="150" height="49" border="0" ></a></td>
+					<td rowspan="2" width="20">&nbsp;</td>
+					<td>
+					
+						<table border="0" cellpadding="0" cellspacing="0" width="372">
+							<tr>
+								<td colspan="3">&nbsp;</td>
+							</tr>
+							<tr>
+								<td class="mainfindertitle">Jump
+
+ | <a href="/web/20050612003255/https://w1.buysub.com/servlet/OrdersGateway?cds_mag_code=FRB&amp;cds_response_key=IMJFT013" class="advfindertitle" title="">Free Trial Issue</a>
+  
+</td>
+<form name="searchOptions">							
+	<td class="whitetxt" colspan="2">
+		<input type="radio" name="searchType" value="siteSearch" checked>
+		<b><a href="/web/20050612003255/http://www.forbes.com/search/" class="whitetxt" title="More Search Options">Search</a></b>  
+		<input type="radio" name="searchType" value="quoteSearch"> <b>Quote</b>
+	</td>
+</form>                                                               
+	</tr>
+					<tr valign="middle">
+						<td>
+<!--jump droplet-->
+
+
+<form name="JumpForm">
+<select name="jumpSelect" class="maindropdown"  onChange="jumpNav(this.form);">
+	<option>Select Section</option>
+
+
+
+
+	
+  
+	
+		<option value="/">Home</option>
+	
+  
+	
+		<option value="/newsletters/">Investment Newsletters</option>
+	
+  
+	
+		<option value="http://forums.prospero.com/fdcbiz/">Polls &amp; Discussions</option>
+	
+  
+	
+		<option value="/tools/">Premium Tools</option>
+	
+  
+	
+		<option value="/search/storyTypeResults.jhtml?storyType=Special+Report">Special Reports</option>
+	
+  
+	
+		<option value="/Video/">Video &amp; Audio</option>
+	
+  
+	
+		<option value="/2001/01/30/layoffs.html">Watchlist</option>
+	
+  
+	
+		<option value="http://itresearch.forbes.com">IT Research Library</option>
+	
+  
+	
+		<option value="http://forbes.knowledgestorm.com/forbes/">IT Product &amp; Service Search</option>
+	
+  
+	
+		<option value="http://blogs.forbes.com/eprise/main/Blogs/blogs/hiddenjewels/index.html">Forbes Digital Tool</option>
+	
+  
+	
+                <option value=""></option>
+        
+  
+	
+		<option value="/business/">Business</option>
+	
+  
+	
+		<option value="/manufacturing/">-Manufacturing</option>
+	
+  
+	
+		<option value="/businesstech/">-Technology</option>
+	
+  
+	
+		<option value="/commerce/">-Commerce</option>
+	
+  
+	
+		<option value="/services/">-Services</option>
+	
+  
+	
+		<option value="/energy/">-Energy</option>
+	
+  
+	
+		<option value="/healthcare/">-Healthcare</option>
+	
+  
+	
+		<option value="/smallbusiness/">-Small Business</option>
+	
+  
+	
+                <option value=""></option>
+        
+  
+	
+		<option value="/technology/">Technology</option>
+	
+  
+	
+		<option value="/ebusiness/">-E-Business</option>
+	
+  
+	
+		<option value="/enterprisetech/">-Enterprise Tech</option>
+	
+  
+	
+		<option value="/infoimaging/">-Infoimaging</option>
+	
+  
+	
+		<option value="/infrastructure/">-Intelligent Infrastructure</option>
+	
+  
+	
+		<option value="/personaltech/">-Personal Tech</option>
+	
+  
+	
+		<option value="/sciences/">-Sciences &amp; Medicine</option>
+	
+  
+	
+		<option value="/wireless/">-Wireless</option>
+	
+  
+	
+		<option value="/cionetwork/">-CIO Network</option>
+	
+  
+	
+		<option value="/entertainment/">-Digital Entertainment</option>
+	
+  
+	
+                <option value=""></option>
+        
+  
+	
+		<option value="/markets/">Markets</option>
+	
+  
+	
+		<option value="/equities/">-Equities</option>
+	
+  
+	
+		<option value="/economy/">-Economy</option>
+	
+  
+	
+		<option value="/commodities/">-Commodities</option>
+	
+  
+	
+		<option value="/bonds/">-Bonds</option>
+	
+  
+	
+		<option value="/emergingmarkets/">-Emerging Markets</option>
+	
+  
+	
+		<option value="/currencies/">-Currencies</option>
+	
+  
+	
+                <option value=""></option>
+        
+  
+	
+		<option value="/work/">Work</option>
+	
+  
+	
+		<option value="/careers/">-Careers</option>
+	
+  
+	
+		<option value="/compensation/">-Compensation</option>
+	
+  
+	
+		<option value="/entrepreneurs/">-Entrepreneurs</option>
+	
+  
+	
+		<option value="/management/">-Management</option>
+	
+  
+	
+                <option value=""></option>
+        
+  
+	
+		<option value="/lists/">Lists</option>
+	
+  
+	
+		<option value="/lists/">-Companies</option>
+	
+  
+	
+		<option value="/forbes500/">--Forbes 500s</option>
+	
+  
+	
+		<option value="/international/">--Forbes Global 500</option>
+	
+  
+	
+		<option value="/200best/">--200 Best Small Cos.</option>
+	
+  
+	
+		<option value="/platinum400/">--400 Best Big Cos.</option>
+	
+  
+	
+		<option value="/private/">--Largest Private Cos.</option>
+	
+  
+	
+                <option value=""></option>
+        
+  
+	
+		<option value="/lists/">-People</option>
+	
+  
+	
+		<option value="/worldsrichest/">--World's Richest People</option>
+	
+  
+	
+		<option value="/celebrity100/">--100 Top Celebrities</option>
+	
+  
+	
+		<option value="/400richest/">--400 Richest Americans</option>
+	
+  
+	
+		<option value="/ceos/">--Best Paid CEOs</option>
+	
+  
+	
+                <option value=""></option>
+        
+  
+	
+		<option value="/bestplaces/">-Places</option>
+	
+  
+	
+		<option value="/bestplaces/">--Best Places</option>
+	
+  
+	
+                <option value=""></option>
+        
+  
+	
+		<option value="/finance/">Personal Finance</option>
+	
+  
+	
+		<option value="/estate_planning/">-Estate Planning</option>
+	
+  
+	
+		<option value="/funds/">-Funds</option>
+	
+  
+	
+		<option value="/philanthropy/">-Philanthropy</option>
+	
+  
+	
+		<option value="/retirement/">-Retirement</option>
+	
+  
+	
+		<option value="/strategies/">-Strategies</option>
+	
+  
+	
+		<option value="/taxes/">-Taxes</option>
+	
+  
+	
+                <option value=""></option>
+        
+  
+	
+		<option value="/lifestyle/">Lifestyle</option>
+	
+  
+	
+		<option value="/lifestyle/collecting/">-Collecting</option>
+	
+  
+	
+		<option value="/lifestyle/health/">-Health</option>
+	
+  
+	
+		<option value="/lifestyle/realestate/">-Real Estate</option>
+	
+  
+	
+		<option value="/lifestyle/sports/">-Sport</option>
+	
+  
+	
+		<option value="/lifestyle/travel/">-Travel</option>
+	
+  
+	
+		<option value="/lifestyle/vehicles/">-Vehicles</option>
+	
+  
+	
+		<option value="/lifestyle/wine/">-Wine &amp; Food</option>
+	
+  
+	
+		<option value="/lifestyle/goodlife">-Good Life Experience</option>
+	
+  
+	
+                <option value=""></option>
+        
+  
+	
+		<option value="/columnists/">Columnists</option>
+	
+  
+	
+                <option value=""></option>
+        
+  
+	
+		<option value="/magazines/">Magazines</option>
+	
+  
+	
+		<option value="/forbes/">-Forbes Magazine</option>
+	
+  
+	
+		<option value="/forbesglobal/">-Forbes Global</option>
+	
+  
+	
+		<option value="/fyi/">-Forbes FYI</option>
+	
+  
+	
+		<option value="/asap/">-Forbes ASAP</option>
+	
+  
+	
+		<option value="/bow/">-Best of the Web</option>
+	
+  
+	
+		<option value="/news/12.shtml">-Archives</option>
+	
+  
+	
+		<option value="/fdc/subservices.html">-Subscriptions</option>
+	
+  
+	
+                <option value=""></option>
+        
+  
+	
+		<option value="/tools/">Tools</option>
+	
+  
+	
+                <option value=""></option>
+        
+  
+	
+		<option value="/fdc/about.shtml">About Us</option>
+	
+  
+	
+		<option value="/fdc/contact.shtml">Contact Us</option>
+	
+  
+	
+		<option value="/fdc/help.shtml">Help</option>
+	
+  
+	
+		<option value="/fdc/reprints/Reprints.jhtml">Reprints/Permissions</option>
+	
+  
+	
+		<option value="/fdc/sitemap.shtml">Sitemap</option>
+	
+  
+	
+                <option value=""></option>
+        
+  
+	
+		<option value="/adinfo/">Advertising</option>
+	
+  
+	
+		<option value="/conf/index.shtml">Conferences</option>
+	
+  
+	
+		<option value="/forbescollection/">Forbes Collection</option>
+	
+  
+	
+		<option value="/mobile/">Forbes Mobile</option>
+	
+  
+	
+		<option value="/specialsections/">Special Advertising</option>
+	
+  	
+	
+  
+
+<script language="JavaScript" type="text/javascript">
+	function submitSearch() {
+
+		if (document.searchOptions.searchType[0].checked) {
+    		return true;
+		} else if (document.searchOptions.searchType[1].checked) {
+      		var gotoURL = "";
+			var userInput = escape( document.Search.MT.value );
+
+      		if( (userInput.length == 5) && ( (userInput.charAt(4) == "X") || (userInput.charAt(4) == "x") ) ) {
+         		gotoURL = "/funds/Tearsheet.jhtml?tkr=" + userInput.toUpperCase();
+      		} 
+      		else {
+         		gotoURL = "/finance/mktguideapps/compinfo/CompanyTearsheet.jhtml?tkr=" + userInput;
+      		}
+			
+      		window.location = gotoURL;
+		} 
+
+    	return false;
+	}
+</script>
+
+</select><!--/jump droplet--></td><td><!--search form--></form><form method=get name=Search action="/web/20050612003255/http://www.forbes.com/search/results.jhtml" target="_top" onSubmit="return submitSearch();"><input type="text" name="MT" size="12" class="mainsearchbox">
+<input type="hidden" name="sort" value=""><input type="hidden" name="aname" value=""><input type="hidden" name="author" value=""><input type="hidden" name="date" value="">
+
+<input type="hidden" name="pub" value="forbes.com,magazine,global,fyi,asap,best,bow,ap,pinnacor,afx">
+</td>  
+								
+<td align="right">    
+									
+<input type="submit" value="Go">
+								
+</td></form>
+</tr>
+<!--/search form-->	
+	</table>
+					</td>
+					<td rowspan="2" width="196" valign="top" align="center">
+						<!--AD GOES HERE-->
+				
+					
+
+						
+     							<!-- AD -->
+<!-- OAS AD 'CenterBanner' begin -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('CenterBanner');
+//-->
+</SCRIPT>
+<!-- OAS AD 'CenterBanner' end -->
+
+<!-- /AD -->
+   							
+
+					
+                                  
+						<!--AD ENDS HERE-->
+
+					</td>
+				</tr>
+				
+
+
+
+				<!-- ALL OTHER PAGES -->
+				<tr valign="top">
+					<td class="intlhomepagelink" nowrap><nobr><a href="/web/20050612003255/http://www.forbes.com/home_usa/" class="intlhomepagelink">U.S.</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/web/20050612003255/http://www.forbes.com/home_europe/" class="intlhomepagelink">EUROPE</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/web/20050612003255/http://www.forbes.com/home_asia/" class="intlhomepagelink">ASIA</a></nobr></td>
+					<td class="tagline">HOME PAGE FOR THE WORLD'S BUSINESS LEADERS</td>
+				</tr>
+				<!-- ALL OTHER PAGES -->
+	
+
+			</table>
+		</td>
+		<td width="100%" bgcolor="#336699"></td>
+	</tr>
+
+	<tr>
+		<td colspan=2 bgcolor="#336699" height="10"><img src="/web/20050612003255im_/http://images.forbes.com/media/assets/spacer_blue.gif" width="1" height="10" border="0" alt="" onMouseOver="setUpRollOut(thisX,divYNav);"></td></tr> 
+
+
+
+
+<!--DISPLAY NAVIGATIONS DEPENDING ON CHANNEL NAME PASSED TO THE COMPONENT-->
+ 
+	<tr>
+		<td colspan=2 background="/web/20050612003255im_/http://images.forbes.com/media/assets/nav_background.gif">
+			<img src="/web/20050612003255im_/http://images.forbes.com/media/assets/generic.gif" id="navImg" border="0" width="774" height="28" usemap="#nav">
+		</td>
+	</tr>
+	
+
+
+
+
+
+
+
+
+
+
+
+</table>
+
+
+
+
+<br>
+  <table border="0" cellpadding="0" cellspacing="0" width="761">
+    <tbody>
+      <tr>
+        <td>&nbsp;<br>&nbsp;</td>
+        <td colspan="4" valign="top">
+          <span class="mainlink"><a href="/web/20050612003255/http://www.forbes.com/home" class="mainbreadlink">Home</a> &gt; <span class="mainbread">Columnists</span></span><br>
+        </td>
+      </tr>
+      <tr>
+       <td width="10">
+         <img alt="" border="0" height="5" src="/web/20050612003255im_/http://images.forbes.com/media/assets/spacer_white.gif" width="10"></td>
+       <!-- left column and center column table -->
+       <td valign="top" width="168">
+       <!-- begin left column -->
+       <!-- columnists title -->
+       <span class="mainsubindextitle">Archive</span><br><br>
+
+       <!-- columnist listings -->
+            <span class=mainsubindexarttxt>Ian Ayres and Barry Nalebuff</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=Ian+Ayres+and+Barry+Nalebuff&amp;author=ayres+and+nalebuff">Why Not?</A><BR><BR>	
+
+  <span class=mainsubindexarttxt>William Baldwin</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=William+Baldwin&amp;author=william+and+baldwin">Side Lines</A><BR><BR>
+
+      <span class=mainsubindexarttxt>Laszlo Birinyi Jr.</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=Laszlo+Birinyi+Jr.&amp;author=laszlo+and+birinyi">Stock Trends</A><BR><BR>
+
+      <span class=mainsubindexarttxt>Marilyn Cohen</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=Marilyn+Cohen&amp;author=marilyn+and+cohen">Capital Markets</A><BR><BR>
+
+      <span class=mainsubindexarttxt>David Dreman</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=David+Dreman&amp;author=david+and+dreman">The Contrarian</A><BR><BR>
+
+      <span class=mainsubindexarttxt>John C. Dvorak</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=John+C.+Dvorak&amp;author=john+and+dvorak">The Weekly Warm-up</A><BR><BR>
+
+      <span class=mainsubindexarttxt>Kenneth L. Fisher</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=Kenneth+L.+Fisher&amp;author=kenneth+and+fisher">Portfolio Strategy</A><BR><BR>
+
+      <span class=mainsubindexarttxt>Jerry Flint</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=Jerry+Flint&amp;author=jerry+and+flint">Backseat Driver</A><BR><BR>
+
+      <span class=mainsubindexarttxt>Steve Forbes</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=Steve+Forbes&amp;author=steve+and+forbes">Fact and Comment</A><BR><BR>     
+
+      <span class=mainsubindexarttxt>Joseph R. Garber</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=Joseph+R.+Garber&amp;author=joseph+and+garber">Software Horizon</A><BR><BR>
+
+      <span class=mainsubindexarttxt>James Grant</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=James+Grant&amp;author=james+and+grant">Yes, But</A><BR><BR>
+
+      <span class=mainsubindexarttxt>Steve H. Hanke</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=Steve+H.+Hanke&amp;author=steve+and+hanke">Point Of View</A><BR><BR>
+
+      <span class=mainsubindexarttxt>Lisa W, Hess</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=Lisa+W.+Hess&amp;author=lisa+and+hess">Absolute Return</A><BR><BR>
+
+      <span class=mainsubindexarttxt>Peter Huber</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=Peter+Huber&amp;author=peter+and+huber">Insights</A><BR><BR>
+
+      <span class=mainsubindexarttxt>Vahan Janjigian</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=Vahan+Janjigian&amp;author=vahan+and+janjigian">Small Stocks</A><BR><BR>
+
+      <span class=mainsubindexarttxt>Rich Karlgaard</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=Rich+Karlgaard&amp;author=rich+and+karlgaard">Digital Rules</A><BR><BR>
+
+      <span class=mainsubindexarttxt>Guy Kawasaki</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=Guy+Kawasaki&amp;author=guy+and+kawasaki">Art Of The Start</A><BR><BR>
+
+      <span class=mainsubindexarttxt>Andrew J. Kessler</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=Andrew+J.+Kessler&amp;author=Andrew+and+kessler">Parameters</A><BR><BR>
+
+      <span class=mainsubindexarttxt>Richard Lehmann</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=Richard+Lehmann&amp;author=richard+and+lehmann">Fixed-Income Watch</A><BR><BR>
+
+      <span class=mainsubindexarttxt>Michael S. Malone</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=Michael+S.+Malone&amp;author=michael+and+malone">Silicon Insider</A><BR><BR>
+
+      <span class=mainsubindexarttxt>Stephen Manes</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=Stephen+Manes&amp;author=stephen+and+manes">Digital Tools</A><BR><BR>
+
+      <span class=mainsubindexarttxt>James W. Michaels</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=James+W.+Michaels&amp;author=james+and+michaels">Perspectives</A><BR><BR>
+
+      <span class=mainsubindexarttxt>Jennifer Morse</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=Jennifer+Morse&amp;author=jennifer+and+morse">Close to Home</A><BR><BR>
+
+      <span class=mainsubindexarttxt>Virginia Postrel</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=Virginia+Postrel&amp;author=virginia+and+postrel">Looking Forward</A><BR><BR>
+
+      <span class=mainsubindexarttxt>Marc Robins</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=Marc+Robins&amp;author=marc+and+robins">Small Stocks</A><BR><BR>
+
+      <span class=mainsubindexarttxt>John W. Rogers Jr.</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=John+W.+Rogers+Jr.&amp;author=john+and+rogers">The Patient Investor</A><BR><BR>
+
+      <span class=mainsubindexarttxt>John Rutledge</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=John+Rutledge&amp;author=john+and+rutledge">Business Strategy</A><BR><BR>
+
+      <span class=mainsubindexarttxt>Robert S. Salomon Jr.</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=Robert+S.+Salomon+Jr.&amp;author=robert+and+salomon">Stock Trends</A><BR><BR>
+
+      <span class=mainsubindexarttxt>Matthew Schifrin</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=Matthew+Schifrin&amp;author=matthew+and+schifrin">Sitelines</A><BR><BR>
+
+      <span class=mainsubindexarttxt>A. Gary Shilling</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=A.+Gary+Shilling&amp;author=gary+and+shilling">Financial Strategy</A><BR><BR>
+
+      <span class=mainsubindexarttxt>David Simons</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=David+Simons&amp;author=david+and+simons">Double Take</A><BR><BR>
+
+      <span class=mainsubindexarttxt>Martin Sosnoff</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=Martin+Sosnoff&amp;author=martin+and+sosnoff">Market Trends</A><BR><BR>
+
+      <span class=mainsubindexarttxt>Caspar Weinberger<BR>and Guests</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=Weinberger&amp;author=weinberger">Current Events</A><BR><BR>
+
+      <span class=mainsubindexarttxt>Sam Whitmore</span><br><A class=mainlink
+      href="col_archive.jhtml?aname=Sam+Whitmore&amp;author=sam+and+whitmore">Media</A><BR><BR>
+
+       
+       <!-- end columnist listings -->
+
+      <!-- END LEFT COLUMN --></td>
+
+      <td width="10">
+      <img alt="" border="0" height="5" src="/web/20050612003255im_/http://images.forbes.com/media/assets/spacer_white.gif" width="10"></td>
+      <td valign="top" width="413">
+
+
+      <!-- BEGIN MIDDLE COLUMN -->
+      <!-- featured article title -->
+
+<!-- Put in ForEach, incase multiple feature stories -->
+
+
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr valign="top">
+    <td>
+    
+        <span class="mainsubindexstorytype">Commentary</span><br>
+      
+    <a href="/web/20050612003255/http://www.forbes.com/columnists/2005/06/08/china-internet-blogs-cx_sm_0608censorship.html" class="hpfeatarttitle">Chinese Whispers</a><br>
+    <span class="mainsubindexarttxt">
+    
+        <span class="mainsubindexartauthor">Steve McGookin</span><br>
+      
+    The latest wave of censorship in the world's largest Internet population rears a very ugly head.
+    </span></td>
+    <td>&nbsp;</td>
+    <td>       
+    <a href="/web/20050612003255/http://www.forbes.com/columnists/2005/06/08/china-internet-blogs-cx_sm_0608censorship.html" class="hpfeatarttitle"><img src="/web/20050612003255im_/http://www.forbes.com/cms/template/columnists/index.jhtml" width="" height="" alt="" border="0" vspace="3"></a>
+    </td>
+    </tr>
+    </table>
+    <p>
+    <span class="mainsubindextitle">Current Columns</span><br>
+    <br>
+    
+        <span class="mainsubindexsubtitle">Jerry Flint</span><br>
+        <a class="mainartlink" href="/web/20050612003255/http://www.forbes.com/columnists/2005/06/07/cz_jf_0607flint.html">The Truck Doesn't Stop Here</a><br>
+        <span class="mainarttxt">The SUV market isn't dying, just changing, and probably won't stop until every American owns one.</span><br>
+        <br>
+      
+        <span class="mainsubindexsubtitle">Steve Forbes</span><br>
+        <a class="mainartlink" href="/web/20050612003255/http://www.forbes.com/columnists/free_forbes/2005/0620/029.html">Washington's Knucklehead Economics</a><br>
+        <span class="mainarttxt">Why isn't the stock market -- or at least the nontech portion of it -- reaching new heights?  Because of the ominous drumbeat of protectionism.</span><br>
+        <br>
+      
+        <span class="mainsubindexsubtitle">William Baldwin</span><br>
+        <a class="mainartlink" href="/web/20050612003255/http://www.forbes.com/columnists/free_forbes/2005/0620/020.html">A Price On Your Head</a><br>
+        <span class="mainarttxt">The expansion of Medicare is going to cost a whole lot more than the advertised price, and will force us to confront the unpleasant question of whose life is worth saving.</span><br>
+        <br>
+      
+        <span class="mainsubindexsubtitle">Rich Karlgaard</span><br>
+        <a class="mainartlink" href="/web/20050612003255/http://www.forbes.com/columnists/free_forbes/2005/0620/041.html">Why IBM Should Buy Electronic Arts</a><br>
+        <span class="mainarttxt">Microsoft's Xbox 360 and Sony's PlayStation 3 provide glimpses into what serious computing -- corporate, government and acadecmic -- could look like a decade from now.</span><br>
+        <br>
+      
+        <span class="mainsubindexsubtitle">Richard Vedder</span><br>
+        <a class="mainartlink" href="/web/20050612003255/http://www.forbes.com/columnists/free_forbes/2005/0620/046.html">College Is A Bad Investment</a><br>
+        <span class="mainarttxt">Pouring taxpayer money into universities doesn't lead to prosperity.  Colleges have devoted little new funding to instruction, spending instead on research, athletics and facilities.</span><br>
+        <br>
+      
+        <span class="mainsubindexsubtitle">Steve McGookin</span><br>
+        <a class="mainartlink" href="/web/20050612003255/http://www.forbes.com/columnists/2005/06/03/cx_sm_0606mcgookin.html">Blog Muscle In Europe</a><br>
+        <span class="mainarttxt">The European constitution, even the union itself, may be held hostage by its new generation of bloggers.</span><br>
+        <br>
+      
+        <span class="mainsubindexsubtitle">Stephen Manes</span><br>
+        <a class="mainartlink" href="/web/20050612003255/http://www.forbes.com/columnists/free_forbes/2005/0620/088.html">Hard Drive In Your Palm</a><br>
+        <span class="mainarttxt">PalmOne's LifeDrive has a 4-gigabyte hard drive that you can fill with documents, songs, photos and videos.  You'll wish it had a keyboard and a phone.</span><br>
+        <br>
+      
+        <span class="mainsubindexsubtitle">James Grant</span><br>
+        <a class="mainartlink" href="/web/20050612003255/http://www.forbes.com/columnists/free_forbes/2005/0620/160.html">Who's Locking In?</a><br>
+        <span class="mainarttxt">People used to pay off their mortgages, then they removed the cash when they retired.  Now, though, they take out cash as they go.</span><br>
+        <br>
+      
+        <span class="mainsubindexsubtitle">A. Gary Shilling</span><br>
+        <a class="mainartlink" href="/web/20050612003255/http://www.forbes.com/columnists/free_forbes/2005/0620/162.html">Still Time For Treasurys</a><br>
+        <span class="mainarttxt">The bond rally of a lifetime is still under way.  Be prepared to welcome the new 30-year bond, likely to surface next winter.</span><br>
+        <br>
+      
+  
+       <!-- end current columns --><br><!-- end middle column -->
+       <br><img alt="" border="0" height="1" src="/web/20050612003255im_/http://images.forbes.com/media/assets/spacer_white.gif" width="413">
+	
+    <!-- AD -->
+<!-- OAS AD 'x70' begin -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('x70');
+//-->
+</SCRIPT>
+<!-- OAS AD 'x70' end -->
+
+<!-- /AD -->
+  
+
+</td>
+       <!-- end left column and center column table -->
+       <td width="10"><img alt="" border="0" height="5" src="/web/20050612003255im_/http://images.forbes.com/media/assets/spacer_white.gif" width="10"></td>
+       <td valign="top" width="150">
+
+<!-- Right Column with ad-only component -->
+
+<div class="dynamicadlocation" id="dynamicAdColDiv">
+
+  
+      <!-- AD -->
+<!-- OAS AD 'RightMiddle' begin -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('RightMiddle');
+//-->
+</SCRIPT>
+<!-- OAS AD 'RightMiddle' end -->
+
+<!-- /AD -->
+    
+
+</div>
+
+<!-- Right Column with ad-only component -->
+
+       </td>
+     </tr>
+   </tbody>
+ </table>
+    <br>
+    
+
+
+
+
+<div id="dynamicFoot" class="footwrapper">
+<!-- advertiser links -->
+
+
+    <!-- AD -->
+<!-- OAS AD 'x50' begin -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('x50');
+//-->
+</SCRIPT>
+<!-- OAS AD 'x50' end -->
+
+<!-- /AD -->
+  
+
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="/web/20050612003255cs_/http://www.forbes.com/css/foot.css">
+<!-- / advertiser links -->
+<div class="footop">
+	<a href="/web/20050612003255/http://www.forbes.com/fdc/sitemap.shtml" class="footlink">Sitemap</a><a href="/web/20050612003255/http://www.forbes.com/fdc/help.shtml" class="footlink">Help</a><a href="/web/20050612003255/http://www.forbes.com/fdc/contact.shtml" class="footlink">Contact Us</a><a href="/web/20050612003255/http://www.newsletters.forbes.com/" class="footlink">Investment Newsletters</a><a href="/web/20050612003255/http://www.forbes.com/conf/" class="footlink">Forbes Conferences</a><a href="/web/20050612003255/http://www.forbes.com/fdc/magazines.shtml" class="footlink">Forbes Magazines</a><a href="/web/20050612003255/http://www.forbesautos.com/" class="footlink">ForbesAutos.com</a>
+</div>
+
+<div class="footcopy">
+        <a href="/web/20050612003255/http://www.forbes.com/adinfo" class="greylink">Ad Information</a> &nbsp; 
+   	<a href="/web/20050612003255/http://www.forbes.com/forbeswireless/" class="greylink">Forbes.com Wireless</a> &nbsp; 
+   	<a href="/web/20050612003255/http://www.forbes.com/rss/" class="greylink">RSS <img src="/web/20050612003255im_/http://images.forbes.com/media/icons/xml.gif" width="20" height="9" border="0"></a> &nbsp; 
+   	<a href="/web/20050612003255/http://www.forbes.com/fdc/reprints/Reprints.jhtml" class="greylink">Reprints/Permissions</a> &nbsp; 
+   	<a href="/web/20050612003255/http://www.forbes.com/fdc/subservices.shtml" class="greylink">Subscriber Services</a> &nbsp; 
+   	<br>
+   	&copy; 2005 Forbes.com Inc.&#153; &nbsp; All Rights Reserved &nbsp; 
+        <a href="/web/20050612003255/http://www.forbes.com/fdc/privacy.shtml" class="greylink">Privacy Statement</a> &nbsp; 
+   	<a href="/web/20050612003255/http://www.forbes.com/fdc/terms.shtml" class="greylink">Terms, Conditions and Notices</a>
+</div>
+<br>
+<div class="footlogo">
+<center>
+	<table cellpadding="5" cellspacing="0"><tr align="center"><td class="footsponsor">Delivered By<br>
+    	<a href="/web/20050612003255/http://www.mirror-image.com/"><img src="/web/20050612003255im_/http://images.forbes.com/media/partners/footer/mirrorimage.gif" vspace="3" width="77" height="33" border="0"></a></td>
+    	<td class="footsponsor">Tested By<br>
+	<a href="/web/20050612003255/http://www.spirentcom.com/"><img src="/web/20050612003255im_/http://images.forbes.com/media/partners/footer/spirent.gif" width="77" height="38" border="0"></a></td>
+	<td class="footsponsor" align="left">Market Data By<br>
+	<a href="/web/20050612003255/http://www.hemscott.com/"><img src="/web/20050612003255im_/http://images.forbes.com/media/partners/footer/hemscott.gif" width="77" height="38" border="0"></a></td>
+	<td class="footsponsor" align="left">Market Data By<br>
+	<a href="/web/20050612003255/http://www.comstock-interactivedata.com/"><img src="/web/20050612003255im_/http://images.forbes.com/media/partners/footer/comstock.gif" width="77" height="38" border="0"></a></td>
+	</tr></table></center>
+</div>
+
+<div class="footbot">
+
+        
+
+
+<br>
+        Stock quotes are delayed at least 15 minutes for Nasdaq, at least 20 minutes for NYSE/AMEX.
+	
+        U.S. indexes are delayed at least 15 minutes with the exception of Nasdaq, Dow Jones Industrial Average and S&P 500 which are 2 minutes delayed. 
+        
+        <!-- Telemet disclaimer
+        Forbes 40 Index powered by <a href="/finance/redirect.jhtml?nextpage=/web/20050612003255/http://www.taquote.com/" class="greylink">Telemet</a>.
+         /Telemet disclaimer -->
+        
+        <!-- Exchange notice page
+        <a href="/web/20050612003255/http://www.forbes.com/fdc/exchanges.shtml" class="greylink">Exchange trademark and copyright notices.</a>
+         /Exchange notice page -->
+        
+        
+        <!-- ADDITIONAL LEGAL DISCLAIMERS -->
+        
+        
+        
+        </oparam>
+        
+   </droplet>
+   <!-- /legalese -->
+</oparam>
+</droplet>
+<br><br><br>
+<span class="footsponsor">Powered By<br>
+	<img src="/web/20050612003255im_/http://images.forbes.com/media/partners/footer/att.gif" vspace="6" width="81" height="61" border="0"></span>
+
+
+<noscript> 
+
+
+<h1><a href="/web/20050612003255/http://www.forbes.com/"><font size="3">Forbes.com - Columnist</font></a></h1>
+
+<!-- HOME -->
+<a href="/web/20050612003255/http://www.forbes.com/"><font size="3">Financial News - Business News</font></a>
+<p><a class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/newsletters/">Investment Newsletter - Financial Newsletters - Stock Newsletter</a><br>
+  <a class=brknewshed 
+            href="/web/20050612003255/http://forums.prospero.com/fdcbiz">Polls &amp; Discussions</a><br>
+  <a class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/tools/">Financial Tools - Stock Trading Tool - Investing Tool - Planning Tools</a><br>
+  <a class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/search/storyTypeResults.jhtml?storyType=Special+Report">Special 
+  Reports</a><br>
+  <a class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/video/">Video News - Financial Video Reports</a></p>
+
+<!-- BUSINESS -->
+<p><a href="/web/20050612003255/http://www.forbes.com/business/">Business News - Business Information</a></p>
+<p><a 
+            class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/commerce/">Retail News - Commerce News - Retail Industry News</a><br>
+  <a 
+            class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/energy/">Energy News - Utility News - Energy Industry News</a><br>
+  <a 
+            class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/healthcare/">Health Care News - Healthcare News - Health Care Industry News</a><br>
+  <a 
+            class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/manufacturing/">Manufacturing News - Supply Chain News - Manufacturing Industry News</a><br>
+  <a 
+            class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/services/">Business Services News - Service Industry News - Services Industry News</a><br>
+  <a 
+            class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/businesstech/">Technology News - Information Technology News - Tech News</a></p>
+
+
+<!-- TECHNOLOGY -->
+<p><a href="/web/20050612003255/http://www.forbes.com/technology/">Technology News - Tech News</a></p>
+<p><a 
+            class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/ebusiness/">E-Business</a><br>
+  <a 
+            class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/enterprisetech/">Enterprise Tech</a><br>
+  <a class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/futuretech/">Future Tech</a><br>
+  <a 
+            class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/networks/">Networks</a><br>
+  <a 
+            class=brknewshed href="/web/20050612003255/http://www.forbes.com/personaltech/">Personal 
+  Tech</a><br>
+  <a class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/sciences/">Sciences and Medicine</a></p>
+
+
+<!-- MARKETS -->
+<p><a href="/web/20050612003255/http://www.forbes.com/markets/">Stock Market News - World Markets - Stock Quotes</a></p>
+<p><a 
+            class=brknewshed href="/web/20050612003255/http://www.forbes.com/bonds/">Bonds</a><br>
+  <a 
+            class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/commodities/">Commodities</a><br>
+  <a 
+            class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/currencies/">Currencies</a><br>
+  <a 
+            class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/economy/">Economy</a><br>
+  <a 
+            class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/emergingmarkets/">Emerging Markets</a><br>
+  <a class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/equities/">Equities</a></p>
+
+
+<!-- FINANCE -->
+<p><a href="/web/20050612003255/http://www.forbes.com/finance/">Personal Finance - Personal Finances - Financial Advise</a></p>
+<p><a class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/estate_planning/">Estate Planning</a><br>
+  <a class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/funds/">Funds</a><br>
+  <a class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/philanthropy/">Philanthropy</a><br>
+  <a 
+            class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/retirement/">Retirement</a><br>
+  <a 
+            class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/strategies/">Strategies</a><br>
+  <a 
+            class=brknewshed href="/web/20050612003255/http://www.forbes.com/taxes/">Taxes</a></p>
+
+
+<!-- LIFESTYLE -->
+<p><a href="/web/20050612003255/http://www.forbes.com/lifestyle/">Lifestyle</a></p>
+<p><a 
+            class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/lifestyle/collecting/">Collecting</a><br>
+  <a 
+            class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/lifestyle/health/">Health and Fitness</a><br>
+  <a 
+            class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/lifestyle/realestate/">Real Estate</a><br>
+  <a class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/lifestyle/sports/">Sports</a><br>
+  <a 
+            class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/lifestyle/travel/">Travel</a><br>
+  <a 
+            class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/lifestyle/vehicles/">Vehicles</a><br>
+  <a 
+            class=brknewshed href="/web/20050612003255/http://www.forbes.com/lifestyle/wine/">Wine 
+  &amp; Food</a></p>
+
+
+<p><a href="/web/20050612003255/http://www.forbes.com/lifestyle/">Business and Finance Magazines</a></p>
+<p><a 
+            class=brknewshed href="/web/20050612003255/http://www.forbes.com/forbes/">Forbes Magazine</a><br>
+  <a class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/forbesglobal/">Forbes Global</a><br>
+  <a 
+            class=brknewshed href="/web/20050612003255/http://www.forbes.com/fyi/">Forbes FYI</a><br>
+  <a class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/asap/">Forbes ASAP</a><br>
+  <a 
+            class=brknewshed href="/web/20050612003255/http://www.forbesbest.com/">Best of the Web</a><br>
+  <a class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/news/12.html">Archives</a><br>
+  <a 
+            class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/fdc/subservices.shtml">Subscriptions</a><br>
+  <a 
+            class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/columnists/">Columnists</a></p>
+
+
+<p><a href="/web/20050612003255/http://www.forbes.com/premium/">Forbes Pemium Services</a></p>
+<p><a class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/premium/#business">Business Services</a><br>
+  <a class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/premium/#forbes">Forbes Services</a><br>
+  <a class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/premium/#investing">Investing Services</a><br>
+  <a class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/premium/#lifestyle">Lifestyle Services</a></p>
+
+
+<!-- LISTS -->
+<p><a href="/web/20050612003255/http://www.forbes.com/lists/">Forbes Lists - Award List - People List</a></p>
+<p><a 
+            class=dirsec href="/web/20050612003255/http://www.forbes.com/lists">People</a><br>
+  <a 
+            class=dirsubsec href="/web/20050612003255/http://www.forbes.com/celebrity100/">100 Top 
+  Celebrities</a> &nbsp;|&nbsp; <a class=dirsubsec 
+            href="/web/20050612003255/http://www.forbes.com/2002/09/13/rich400land.html">400 Richest 
+  Americans</a> &nbsp;|&nbsp; <a class=dirsubsec 
+            href="/web/20050612003255/http://www.forbes.com/lists/2003/02/26/billionaireland.html">The 
+  World's Billionaires</a> &nbsp;|&nbsp; <a class=dirsubsec 
+            href="/web/20050612003255/http://www.forbes.com/home/2002/04/25/ceos.html">Big Bosses 
+  &amp; Paychecks</a> &nbsp;|&nbsp; <a class=dirsubsec 
+            href="/web/20050612003255/http://www.forbes.com/2003/01/29/midasland.html">Midas List</a> 
+  &nbsp;|&nbsp; <a class=dirsubsec 
+            href="/web/20050612003255/http://www.forbes.com/lists/2002/10/24/chinaland.html">China's 
+  100 Richest Business People </a><br>
+  &nbsp;<br>
+  <a class=dirsec 
+            href="/web/20050612003255/http://www.forbes.com/lists">Companies</a><br>
+  <a 
+            class=dirsubsec 
+            href="/web/20050612003255/http://www.forbes.com/2002/03/27/forbes500.html">Forbes 500s</a> 
+  &nbsp;|&nbsp; <a class=dirsubsec 
+            href="/web/20050612003255/http://www.forbes.com/200best/">200 Best Small Companies</a> 
+  &nbsp;|&nbsp; <a class=dirsubsec 
+            href="/web/20050612003255/http://www.forbes.com/platinum400/">400 Best Big Companies</a> 
+  &nbsp;|&nbsp; <a class=dirsubsec 
+            href="/web/20050612003255/http://www.forbes.com/private500/">500 Largest Privates</a> 
+  &nbsp;|&nbsp; <a class=dirsubsec 
+            href="/web/20050612003255/http://www.forbes.com/international/">International 500</a> 
+  &nbsp;|&nbsp; <a class=dirsubsec 
+            href="/web/20050612003255/http://www.forbes.com/global/2002/0415/alist.html">The Global 
+  A-List</a> <br>
+  &nbsp;<br>
+  <a class=dirsec 
+            href="/web/20050612003255/http://www.forbes.com/lists">Places</a><br>
+  <a class=dirsubsec 
+            href="/web/20050612003255/http://www.forbes.com/bestplaces/">Forbes/Milken Best Places</a> 
+  &nbsp;|&nbsp; <a class=dirsubsec 
+            href="/web/20050612003255/http://www.forbes.com/lists/2002/06/05/singles.html">Best Cities 
+  for Singles</a> &nbsp;|&nbsp; <a class=dirsubsec 
+            href="/web/20050612003255/http://www.forbes.com/2001/08/16/0816feat.html">Best Business 
+  Restaurants</a> &nbsp;|&nbsp; <a class=dirsubsec 
+            href="/web/20050612003255/http://www.forbes.com/lists/2001/10/25/1025feat.html">World's 
+  Ten Best Airport Lounges</a> &nbsp;|&nbsp; <a class=dirsubsec 
+            href="/web/20050612003255/http://www.forbes.com/2001/06/07/0607feat.html">World's Best 
+  Beach Resorts</a></p>
+
+
+<p><a href="/web/20050612003255/http://www.forbes.com/work/">Career Information - Career News - Work News</a></p>
+<p><a class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/careers/">Forbes.com: Careers</a><br>
+  <a class=brknewshed 
+            href="/web/20050612003255/http://forums.prospero.com/compensation/">Forbes.com: Compensation</a><br>
+  <a class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/entrepreneurs/">Forbes.com: Entrepreneurs</a><br>
+  <a class=brknewshed 
+            href="/web/20050612003255/http://www.forbes.com/management/">Forbes.com: Management</a><br>
+
+</noscript>
+
+
+
+</div>
+</div>  
+
+
+
+
+
+	
+    		
+
+
+    <!-- AD -->
+<!-- OAS AD 'ZebusCompanion' begin -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('ZebusCompanion');
+//-->
+</SCRIPT>
+<!-- OAS AD 'ZebusCompanion' end -->
+
+<!-- /AD -->
+  
+
+		
+  
+
+<!-- Insight -->
+
+<!-- Redsheriff -->
+<!-- START RedSheriff Measurement V5.01 -->
+<!-- COPYRIGHT 2002 RedSheriff Limited -->
+<script language="JavaScript" type="text/javascript"><!--
+  var _rsCI="us-forbes";
+  var _rsCG="0";
+
+  if (document.cookie.length > 0) {
+    begin = document.cookie.indexOf('ceonetwork_session=');
+    if (begin > -1) {
+        _rsCG="ceonetwork";
+    }
+  }
+
+  var _rsDT=0;
+  var _rsSI=escape(window.location);
+  var _rsLP=location.protocol.indexOf('https')>-1?'https:':'http:';
+  var _rsRP=escape(document.referrer);
+  var _rsND=_rsLP+'//secure-us.imrworldwide.com/';
+
+  if (parseInt(navigator.appVersion)>=4) {
+    var _rsRD=(new Date()).getTime();
+    var _rsSE=1;
+    var _rsSV="";
+    var _rsSM=0.0;
+    _rsCL='<scr'+'ipt language="JavaScript" type="text/javascript" src="'+_rsND+'v5.js"></scr'+'ipt>';
+  } else {
+    _rsCL='<img src="'+_rsND+'cgi-bin/m?ci='+_rsCI+'&cg='+_rsCG+'&si='+_rsSI+'&rp='+_rsRP+'">';
+  }
+  document.write(_rsCL);
+//--></script>
+<noscript>
+<img src="/web/20050612003255im_/http://secure-us.imrworldwide.com/cgi-bin/m?ci=us-forbes&amp;cg=0" alt="">
+</noscript>
+<!-- END RedSheriff Measurement V5.01 -->
+
+
+
+
+
+
+
+
+
+
+        
+				
+						<!--foresee code-->
+
+<SCRIPT LANGUAGE="JavaScript" SRC="/web/20050612003255js_/http://www.forbes.com/scripts/triggerParams.js"></SCRIPT> 
+<SCRIPT LANGUAGE="JavaScript" SRC="/web/20050612003255js_/http://www.forbes.com/scripts/stdLauncher.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+Poll();
+</SCRIPT>
+
+<!--/foresee code-->
+
+					
+           
+
+    
+
+
+
+
+<div id="rollOverDiv" class="submenu" onMouseOut="setUpRollOut(thisX,divYNav);"></div>
+<div id="menuSponsorDiv" class="menusponsor" onMouseOut="setUpRollOut(thisX,divYNav);"></div>
+
+
+
+<script language="JavaScript" type="text/javascript">
+  initFooter();
+</script>
+
+
+<!--
+static = true
+
+-->
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 0:32:55 Jun 12, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 5:54:24 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

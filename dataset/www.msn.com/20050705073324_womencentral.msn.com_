@@ -1,0 +1,228 @@
+<html><head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app12.us.archive.org";archive_analytics.values.server_ms=1492;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<link rel="SHORTCUT ICON" href="/web/20050706052854im_/http://sc.msn.com/global/c/shs/favicon.ico" /><title>MSN Women - Home</title><meta charset="utf-8" /><meta http-equiv="pics-label" content="(pics-1.1 &quot;http://www.icra.org/ratingsv02.html&quot; comment &quot;Single file v2.0&quot; l gen true for &quot;http://women.msn.com&quot;  r (nz 1 vz 1 lz 1 oz 1 cz 1) &quot;http://www.rsac.org/ratingsv01.html&quot; l gen true for &quot;http://women.msn.com&quot;  r (n 0 s 1 v 0 l 0))" /><meta name="keywords" content="woman, women, women's pages, women's channel, women's content, food, fitness, women on the web, career, job, self help, health, nutrition, home, garden, decorate, women's issues, women's sports, family, parenting, pregnancy, relationships, work, money, financial planning, women's web sites, cool links, hot links, useful links, sexpert, fitness videos, running, women in business, diet, weight loss, great reading, advice, how-to, marriage, exercise, workout, expert, sex advice, divorce, body image, Underwire, etiquette, Miss Manners, finance, women online, women writers, humor, dating, working moms, working mothers, women's community, feminism, feminists, fashion, beauty, men, opinion, mothers, daughters, women's studies, style, wellness, women's health, beauty expert, Denise Austin, Anna Johnson, sexuality, shopping" /><link rel="stylesheet" type="text/css" href="/web/20050706052854cs_/http://sc.msn.com/global/css/nw/nw.css" /><link rel="stylesheet" type="text/css" href="/web/20050706052854cs_/http://sc.msn.com/css/women/site-women.css" /><link rel="stylesheet" type="text/css" href="/web/20050706052854cs_/http://sc.msn.com/css/women/page-departments.css" /><script type="text/javascript" src="/web/20050706052854js_/http://video.msn.com/js/vp.js">&nbsp;</script><script type="text/javascript" src="/web/20050706052854js_/http://sc.msn.com/global/scr/ph/hp26.js">&nbsp;</script><script type="text/javascript" src="/web/20050706052854js_/http://sc.msn.com/scr/wom/wom.js">&nbsp;</script><script type="text/javascript" src="/web/20050706052854js_/http://sc.msn.com/scr/wom/womSurvey.js">&nbsp;</script><script type="text/javascript" src="/web/20050706052854js_/http://sc.msn.com/global/scr/lg/hdr35.js">&nbsp;</script><base href="/web/20050706052854/http://g.msn.com/0US!s2.2791_31496/" /></head><body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://womencentral.msn.com/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "6";
+var displayMonth = "Jul";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://womencentral.msn.com/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20050706052854" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20050606014918/http://womencentral.msn.com/" title="6 Jun 2005">JUN</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 5:28:54 Jul 6, 2005">JUL</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20050806082249/http://womencentral.msn.com/" title="6 Aug 2005"><strong>AUG</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20050703004823/http://womencentral.msn.com/" title="0:48:23 Jul 3, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 5:28:54 Jul 6, 2005">6</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20050706090913/http://womencentral.msn.com/" title="9:09:13 Jul 6, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20040706014956/http://womencentral.msn.com/" title="6 Jul 2004"><strong>2004</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 5:28:54 Jul 6, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20060717125858/http://womencentral.msn.com/" title="17 Jul 2006"><strong>2006</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20050706052854*/http://womencentral.msn.com/" title="See a list of every capture for this URL">667 captures</a>
+           <div class="r" title="Timespan for captures of this URL">20 Apr 99 - 15 Aug 14</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000200000100_2000:-1:000000010022_2001:-1:5231392116d2_2002:-1:101100024340_2003:-1:042314121404_2004:-1:20112abcc7c9_2005:6:8aaacccf9336_2006:-1:131301180231_2007:-1:020012031601_2008:-1:010101898001_2009:-1:000000000001_2010:-1:000000100000_2011:-1:000000001110_2012:-1:300000000000_2013:-1:102010110000_2014:-1:000000110000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<div class="big7" style="width:779px;"><!-- LWBA26 --><img width="0" height="0" src="/web/20050706052854im_/http://c.msn.com/c.gif?na=1154&amp;nc=1326&amp;ps=10189&amp;di=577&amp;pi=7327&amp;TP=http%3a%2f%2fwomencentral.msn.com%2f" alt="" border="0" /></div><div class="dMSNME_1"><table width="779" height="25" cellpadding="0" cellspacing="0" class="big7"><tr><td align="left" valign="middle">&nbsp;&nbsp;<a href="59.a30/1??cm=Big6">MSN Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="59.a30/2??cm=Big6">My MSN</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="59.a30/3??cm=Big6">Hotmail</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="59.a30/4??cm=Big6">Shopping</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="59.a30/5??cm=Big6">Money</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="59.a30/6??cm=Big6">People &amp; Chat</a></td><td align="center"><span class="dMSNME_1"><A HREF="/web/20050706052854/http://login.passport.com/login.srf?lc=1033&amp;id=6528&amp;ru=http%3a%2f%2fwomencentral.msn.com%2f%3ftcru%3dhttp%253a%252f%252fwomencentral.msn.com%252f&amp;tw=14400&amp;kv=7&amp;ct=1120627734&amp;cb=0&amp;msppjph=1&amp;ver=2.1.6000.1&amp;tpf=be394691f77970e0463b95fb3305bd89"><IMG SRC="/web/20050706052854im_/http://www.passportimages.com/1033/signin.gif" CLASS="PassportSignIn" BORDER="0" ALT="Sign in with your .NET Passport"/></A></span></td><td width="75" align="right">Web Search:</td><td width="180" align="left"><form method="get" action="/web/20050706052854/http://g.msn.com/0nwenus0/AM/16">&nbsp;&nbsp;<input type="text" name="q" size="14" maxlength="150" style="width:140px;" />&nbsp;<input type="submit" class="GoBtn" size="4" value="Go" /><input type="hidden" name="cp" value="1252" /></form></td></tr></table></div><table width="779" height="105" cellpadding="0" cellspacing="0" class="adsb"><tr><td align="center" valign="top"><br /><!--NOAD--><img src="/web/20050706052854im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A26"/></td></tr></table><table width="779" cellpadding="0" cellspacing="0" class="sf"><tr><td rowspan="2" width="118" class="sfl"><a href="58.b30/1??cm=sfLogo"><noscript><img border="0" width="118" height="35" src="/web/20050706052854im_/http://sc.msn.com/global/c/lg/msft_118x35.gif" alt="go to MSN.com" title="go to MSN.com" /></noscript><script language="javascript">logoImg("/web/20050706052854/http://sc.msn.com");</script></a></td><td rowspan="2" width="*" class="sfl" valign="bottom" nowrap="nowrap"><h2><a href="58.a277/1??cm=SiteName-S">Women</a></h2></td><td rowspan="3" width="113" class="sfm"><img src="/web/20050706052854im_/http://sc.msn.com/global/c/sf/sf_db.jpg" alt="" width="113" height="44" border="0" /></td><td width="458" class="sfr">&nbsp;</td><td height="10"></td></tr><tr><td rowspan="2" class="sfi" valign="bottom" align="right"><a href="javascript:SendMail();">Email a friend</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="59.a277/2??cm=OtherLinks-S">Newsletters</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:DoHelp();">Help</a></td><td height="26"></td></tr><tr><td colspan="2" class="sflb">&nbsp;</td><td height="9"></td></tr></table><table width="779" cellpadding="0" cellspacing="0" border="0" class="main"><tr><td width="130" valign="top" align="right" class="n130"><table width="120" cellpadding="0" cellspacing="0" border="0" class="vnav"><tr><td class="hilight"><img src="/web/20050706052854im_/http://sc.msn.com/global/c/sf/n.gif" border="0" width="7" height="7" />&nbsp;&nbsp;<a href="53.b277/1??cm=NavMenu-S" class="hilight">Home</a></td></tr><tr><td><img src="/web/20050706052854im_/http://sc.msn.com/global/c/sf/n.gif" border="0" width="7" height="7" />&nbsp;&nbsp;<a href="53.b277/2??cm=NavMenu-S">Beauty</a></td></tr><tr><td><img src="/web/20050706052854im_/http://sc.msn.com/global/c/sf/n.gif" border="0" width="7" height="7" />&nbsp;&nbsp;<a href="53.b277/3??cm=NavMenu-S">Fashion &amp; Style</a></td></tr><tr><td><img src="/web/20050706052854im_/http://sc.msn.com/global/c/sf/n.gif" border="0" width="7" height="7" />&nbsp;&nbsp;<a href="53.b277/4??cm=NavMenu-S">Health &amp; Wellness</a></td></tr><tr><td><img src="/web/20050706052854im_/http://sc.msn.com/global/c/sf/n.gif" border="0" width="7" height="7" />&nbsp;&nbsp;<a href="53.b277/5??cm=NavMenu-S">Relationships</a></td></tr><tr><td><img src="/web/20050706052854im_/http://sc.msn.com/global/c/sf/n.gif" border="0" width="7" height="7" />&nbsp;&nbsp;<a href="53.b277/6??cm=NavMenu-S">Home &amp; Food</a></td></tr><tr><td><img src="/web/20050706052854im_/http://sc.msn.com/global/c/sf/n.gif" border="0" width="7" height="7" />&nbsp;&nbsp;<a href="53.b277/7??cm=NavMenu-S">Career &amp; Money</a></td></tr><tr><td><img src="/web/20050706052854im_/http://sc.msn.com/global/c/sf/n.gif" border="0" width="7" height="7" />&nbsp;&nbsp;<a href="53.b277/8??cm=NavMenu-S">Shopping</a></td></tr></table><div class="GuidesNav"><h4>Special Guides</h4><div class="BulletList"><ul><li><a href="2.a10091/2??cm=SpecialGuides-S">Weddings</a></li><li><a href="2.a10091/3??cm=SpecialGuides-S">Family</a></li></ul></div></div><div class="watercooler"><div class="BulletList"><div class="BulletListTitle">More from MSN</div><ul><li><a href="6.b10984/1??cm=WaterCooler-SC">Dating &amp; Personals</a></li><li><a href="6.b10984/2??cm=WaterCooler-SC">Send an eCard</a></li><li><a href="6.a10984/3??cm=WaterCooler-SC">Best Local Pizza</a></li><li><a href="6.c10984/4??cm=WaterCooler-SC">Family Fitness</a></li><li><a href="6.c10984/5??cm=WaterCooler-SC">Lawn &amp; Garden Tips</a></li></ul></div></div><table cellpadding="0" cellspacing="0" border="0" class="NLModule"><tr><td class="td1">hot<strong>on</strong>women</td></tr><tr><td class="td2">Newsletter Sign-up</td></tr><tr><td class="td3"><form name="newsform" onsubmit="javascript:callinsite();return false;">
+	Your email address:<br /><input type="text" name="txtemail" size="12" value="" /><br /><br />
+	Preferred format:<br /><input type="radio" name="radiohtml" value="HTM" checked="1" />HTML (graphical)<br /><input type="radio" name="radiohtml" value="TXT" />Plain text<br /><input type="image" name="go" title="Click to Sign Up" onclick="javascript:callinsite();return false;" onmouseover="javascript:this.src='http://sc.msn.com/c/women/i/ds/c/goover.gif';" onmouseout="javascript:this.src='http://sc.msn.com/c/women/i/ds/c/go.gif';" align="right" src="/web/20050706052854im_/http://sc.msn.com/c/women/i/ds/c/go.gif" border="0" width="20" height="20" style="cursor:Hand;" /><br /><a title="Learn More About Our Newsletters" href="/web/20050706052854/http://women.msn.com/about.armx">Learn more</a><br /></form></td></tr></table><h3>our content partners</h3><img src="/web/20050706052854im_/http://sc.msn.com/5Z/48F_7GDTX51%5D@V1Y007%60WK.gif" border="0" alt="Content partner logos" title="Content partner logos" width="108" height="110" /><br /></td><td width="649" valign="top" class="p649"><table cellpadding="0" cellspacing="0" border="0" class="hTableBox1"><tr><td valign="top" class="td1"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="/web/20050706052854oe_/http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="325" height="243"><param name="movie" value="http://sc.msn.com/51/V,QZ+MVIHH7PJ`]WM,X}6.swf"></param><param name="quality" VALUE="high"></param><param name="wmode" value="transparent"></param><embed src="/web/20050706052854oe_/http://sc.msn.com/51/V,QZ+MVIHH7PJ%60%5DWM,X%7D6.swf" quality="high" bgcolor="#ffffff" width="325" height="243" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" /></object><br /></td><td valign="top" class="td2"><div class="ThisWeekHdr"><img src="/web/20050706052854im_/http://sc.msn.com/1Y/!DXH%5D,AX%5BG4~LOB9M1V%5BDQ.gif" /></div><div class="InsideAbst"><a href="22.f27822/1??cm=InsideMSNHeaderAbstract-S">Looking for lifestyle content on MSN? Tell us!</a></div><table cellpadding="0" cellspacing="0" border="0" class="hTableBox2"><tr><td valign="top" class="td1"><table cellpadding="0" cellspacing="0" border="0" class="HIHLTable"><tr><td class="td1" rowspan="2" valign="top"><a href="65.d274/2??cm=LeftColumnDeck1-SC"><img src="/web/20050706052854im_/http://sc.msn.com/4~/M%5B%7DLG3%606EG4M4C%5BCAT--TF.jpg" border="0" alt="Smiling woman; © More.com" title="Smiling woman; © More.com" width="85" height="85" /></a></td><td class="td2" valign="top">BEAUTY</td></tr><tr><td class="td3" valign="top"><a href="65.f274/1??cm=LeftColumnDeck1-SC">Real women show how beautiful life after 40 can be.</a></td></tr></table><table cellpadding="0" cellspacing="0" border="0" class="HIHLTable"><tr><td class="td1" rowspan="2" valign="top"><a href="77.h274/2??cm=LeftColumnDeck2S1-S"><img src="/web/20050706052854im_/http://sc.msn.com/4%5D/QY2VQUGBFM%60_SL,I%7DW52T.jpg" border="0" alt="Woman and dog in pool; © Big Cheese Photo / SuperStock" title="Woman and dog in pool; © Big Cheese Photo / SuperStock" width="85" height="85" /></a></td><td class="td2" valign="top">HOME &amp; FOOD</td></tr><tr><td class="td3" valign="top"><a href="77.h274/1??cm=LeftColumnDeck2S1-S">Eight cheap and easy ways to beat the heat.</a></td></tr></table></td><td valign="top" class="td2"><div class="ExpMultilinks"><p>RELATIONSHIPS<br /><a href="70.d140570/1??cm=RightColumnMultiTitleLinks-SC">Jane Austen's dating do's and don'ts.<br /></a><br />HEALTH<br /><a href="70.d140570/2??cm=RightColumnMultiTitleLinks-SC">Stay happy and productive at work.</a><br /><br />CAREER &amp; MONEY<br /><a href="70.d140570/3??cm=RightColumnMultiTitleLinks-SC">Do you work with a control freak?</a></p></div></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" border="0" class="hTableBox4"><tr><td valign="top" class="td1"><table cellpadding="0" cellspacing="0" border="0" class="hTableBox3"><tr><td valign="top" class="td1"><div class="BlueText">experts<strong>on</strong>women</div><table cellpadding="0" cellspacing="0" border="0" class="HIHLTable"><tr><td class="td1" rowspan="2" valign="top"><a href="64.w274/2??cm=Deck1S1-S"><img src="/web/20050706052854im_/http://sc.msn.com/3%5B/B2@7H%60WD8Y5UL_@_,!IF%7D1.jpg" border="0" alt="Miss Manners (Judith Martin)" title="Miss Manners (Judith Martin)" width="85" height="85" /></a></td><td class="td2" valign="top">MISS MANNERS</td></tr><tr><td class="td3" valign="top"><a href="64.x274/1??cm=Deck1S1-S">What to do about a guest who's too generous.</a></td></tr></table><div class="ExpMultilinks"><p>DEBORAH MOSS<br /><a href="69.b27469/1??cm=Deck2S2-S">How the right foods can improve your mood.</a><br /><br />SARA ECKEL<br /><a href="69.b27469/2??cm=Deck2S2-S">Foul-weather friends and what to do about them.<br /></a><br />DR. BARBARA O'NEILL<br /><a href="69.b27469/3??cm=Deck2S2-S">Expert advice for talking to your credit card company.</a></p></div><div class="BlueText">current<strong>chic</strong></div><div class="BulletList"><ul><li><a href="79.i1387/2??cm=SlideShowsLinks-S">Your fail-proof summer outfit</a></li><li><a href="79.i1387/1??cm=SlideShowsLinks-S">Beauty splurges and saves</a></li><li><a href="79.i1387/3??cm=SlideShowsLinks-S">TLC for lips</a></li></ul></div><div class="PurpleText">quizzes<strong>games</strong></div><div class="DropNav"><form><select onchange="window.location.href=this.options[this.selectedIndex].value"><option value="http://g.msn.com/0US!s2.2791_31496/71.b274/1??cm=QuizesandGamesModule-SC">Please select a quiz</option><option value="http://g.msn.com/0US!s2.2791_31496/71.a274/2??cm=QuizesandGamesModule-SC">Is your boyfriend a keeper?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.a274/3??cm=QuizesandGamesModule-SC">Do you suffer for fashion?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.a274/4??cm=QuizesandGamesModule-SC">Do you risk addiction?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.a274/5??cm=QuizesandGamesModule-SC">Are you a good friend?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.a274/6??cm=QuizesandGamesModule-SC">What are your love ethics?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.b274/7??cm=QuizesandGamesModule-SC">Do you have A.D.D.?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.b274/8??cm=QuizesandGamesModule-SC">Are you headed for divorce?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.b274/9??cm=QuizesandGamesModule-SC">Do you understand portions?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.a274/10??cm=QuizesandGamesModule-SC">Is fitness a priority?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.a274/11??cm=QuizesandGamesModule-SC">Are you happy at home?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.a274/12??cm=QuizesandGamesModule-SC">Test your calorie IQ</option><option value="http://g.msn.com/0US!s2.2791_31496/71.a274/13??cm=QuizesandGamesModule-SC">Are you a control freak?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.a274/14??cm=QuizesandGamesModule-SC">Do you date smart?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.a274/15??cm=QuizesandGamesModule-SC">Is your fitness routine old?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.a274/16??cm=QuizesandGamesModule-SC">Do you show the love?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.b274/17??cm=QuizesandGamesModule-SC">Do your kids eat right?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.a274/18??cm=QuizesandGamesModule-SC">What's your fat IQ?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.a274/19??cm=QuizesandGamesModule-SC">Is your mate a stranger?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.b274/20??cm=QuizesandGamesModule-SC">Are you about to be dumped?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.a274/21??cm=QuizesandGamesModule-SC">Are you a good listener?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.a274/22??cm=QuizesandGamesModule-SC">Test your birth control IQ</option><option value="http://g.msn.com/0US!s2.2791_31496/71.a274/23??cm=QuizesandGamesModule-SC">Will he be a good dad?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.a274/24??cm=QuizesandGamesModule-SC">How's your man radar?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.a274/25??cm=QuizesandGamesModule-SC">Are you a junk food junkie?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.a274/26??cm=QuizesandGamesModule-SC">Do you have healthy hair?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.a274/27??cm=QuizesandGamesModule-SC">Is your pad romance ready?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.a274/28??cm=QuizesandGamesModule-SC">Priority 1: mate or kids?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.a274/29??cm=QuizesandGamesModule-SC">Are you too judgmental?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.a274/30??cm=QuizesandGamesModule-SC">Are you stuck in a rut?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.a274/31??cm=QuizesandGamesModule-SC">Do you guard your identity?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.a274/32??cm=QuizesandGamesModule-SC">Are you a heartbreaker?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.a274/33??cm=QuizesandGamesModule-SC">Will you gain weight?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.a274/34??cm=QuizesandGamesModule-SC">Do you take care of yourself?</option><option value="http://g.msn.com/0US!s2.2791_31496/71.a274/35??cm=QuizesandGamesModule-SC">See all quizzes</option></select></form></div></td><td valign="top" class="td2"><div class="PurpleText">quick<strong>links</strong></div><div class="BulletList"><ul><li><a href="60.d451/1??cm=QuickTipslinks-SC">Woman of the week</a></li><li><a href="60.b451/2??cm=QuickTipslinks-SC">Miss Manners</a></li><li><a href="60.a451/7??cm=QuickTipslinks-SC">Quiz yourself</a></li><li><a href="/web/20050706052854/http://g.msn.com/US17/1?http://astrology.msn.com/Horoscopes/&amp;&amp;DI=577&amp;PI=">Your horoscope</a></li><li><a href="60.b451/5??cm=QuickTipslinks-SC">Help for hair</a></li><li><a href="60.b451/6??cm=QuickTipslinks-SC">Find the best day spas</a></li><li><a href="60.a451/3??cm=QuickTipslinks-SC">Daily dieting tips</a></li></ul></div><div class="PurpleText">weekly<strong>poll</strong></div><script type="text/javascript">var requireallmessage="Please choose your answer before submitting your vote."</script><script type="text/javascript" src="/web/20050706052854js_/http://sc.msn.com/global/scr/shs/poll/punodhtml.js"></script><form id="f1229145" method="get" action="/web/20050706052854/http://women.msn.com/vote.ashx"><table width="127" class="poll" cellpadding="0" cellspacing="0"><tr><td align="center"><img src="/web/20050706052854im_/http://sc.msn.com/global/c/shs/poll/c.gif" alt="" /></td></tr><tr><td><table width="127" class="polls" cellpadding="0" cellspacing="0"><tr><td><input name="pollid" value="1229145" type="hidden" /><input name="url" value="/careermoney.armx?GT1=6682" type="hidden" /></td></tr><tr><td align="left" valign="top"><table width="127" cellpadding="0" cellspacing="0"><tr><td class="question">Tom Cruise believes in aliens. What about you?</td></tr><tr><td class="choice"><input name="q1" value="c1" type="radio" />Absolutely. As Tom says, we'd be arrogant to think we're the only beings in the universe.</td></tr><tr><td class="choice"><input name="q1" value="c2" type="radio" />No way. Scientists have found no proof that aliens exist and most reports of UFO's can be explained away.</td></tr><tr><td class="choice"><input name="q1" value="c9" type="radio" />I'm undecided. </td></tr></table></td></tr></table></td></tr><tr><td align="center" class="sub"><a href="javascript:Vote('1229145',true)"><img alt="Click to vote" border="0" src="/web/20050706052854im_/http://sc.msn.com/c/women/i/ds/c/vote.gif" /></a></td></tr><tr><td align="center"><img src="/web/20050706052854im_/http://sc.msn.com/global/c/shs/poll/c.gif" alt="" /></td></tr><tr><td align="right" class="prompt"></td></tr><tr><td align="right" class="results"><a href="/web/20050706052854/http://women.msn.com/vote.ashx?pollid=1229145&amp;url=/careermoney.armx?GT1=6682">Click here to see the results of this poll without voting</a></td></tr></table></form></td></tr></table><h4>msn shopping</h4><SCRIPT language = "JavaScript">
+<!-- //
+var fSucceed = false;
+// -->
+</SCRIPT>
+<SCRIPT language = "JavaScript" src="/web/20050706052854js_/http://xml.eshop.msn.com/xmlbuddy/eShopOffer.aspx?formatType=0&amp;ptnrData=0&amp;func=mod&amp;moduletype=7&amp;moduleId=500&amp;styletype=0&amp;v=3&amp;ptnrId=16">
+</SCRIPT>
+<SCRIPT language = "JavaScript">
+<!-- //
+if (!fSucceed) 
+document.write('<A href="/web/20050706052854/http://www.eshop.msn.com"><FONT size="1" family="Verdana">MSN Shopping</FONT></A>'); 
+// -->
+</SCRIPT> </td><td valign="top" class="td2"><h5>advertisement</h5><!--NOAD--><img src="/web/20050706052854im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A26"/><div class="Sweepstakes"><a href="23.f27423/1??cm=Sweepstakes-SC"></a></div></td></tr></table></td></tr></table><table class="big7" width="779" height="20" cellpadding="0" cellspacing="0" border="0"><tr><td valign="middle" align="left" class="big1">&nbsp;&nbsp;<a href="55.a30/1?su=http://women.msn.com/default.armx&amp;di=577&amp;&amp;cm=fTag">Try MSN Internet Software for FREE!</a></td></tr></table><div class="dMSNME_1"><table class="big7" width="779" height="20" cellpadding="0" cellspacing="0" border="0"><tr><td valign="middle" align="left">&nbsp;&nbsp;<a href="54.a30/1??cm=fBig7">MSN Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="54.a30/2??cm=fBig7">My MSN</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="54.a30/3??cm=fBig7">Hotmail</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="54.a30/4??cm=fBig7">Shopping</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="54.a30/5??cm=fBig7">Money</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="54.a30/6??cm=fBig7">People &amp; Chat</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="54.a30/7??cm=fBig7">Search</a></td><td class="fhelp" align="right"><a href="23.b3029/1?productkey=women&amp;CW=1&amp;&amp;cm=FeedbackLink" target="_blank">Feedback</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:DoHelp();">Help</a>&nbsp;&nbsp;</td></tr></table></div><table class="terms" width="779" height="16" cellpadding="0" cellspacing="0" border="0"><tr><td height="15">&nbsp;&nbsp;© 2005 Microsoft Corporation. All rights reserved.&nbsp;<a href="56.a30/1??cm=fTerms">Terms of Use</a>&nbsp;<a href="56.a30/2??cm=fTerms">Advertise</a>&nbsp;<a href="56.a30/3??cm=fTerms">TRUSTe Approved Privacy Statement</a>&nbsp;<a href="56.a30/4??cm=fTerms">GetNetWise</a>&nbsp;<a href="56.b30/5??cm=fTerms">Anti-Spam Policy</a></td></tr></table><!--NOAD--><img src="/web/20050706052854im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A26"/></body></html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 5:28:54 Jul 6, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 6:46:08 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

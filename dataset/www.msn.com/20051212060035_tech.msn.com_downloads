@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xml:lang="en-US" lang="en-US" xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app17.us.archive.org";archive_analytics.values.server_ms=2276;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Downloads &amp; Tools - MSN Tech &amp; Gadgets</title><style type="text/css">@import url("/web/20051212053314im_/http://stc.msn.com/br/gbl/css/2/GTL_SiteGeneric.css");@import url("/web/20051212053314im_/http://stc.msn.com/br/chan/tech/css/1/tech_partnersearch.css");@import url("/web/20051212053314im_/http://stc.msn.com/br/chan/css/2/chan_override.css");@import url("/web/20051212053314im_/http://stc.msn.com/br/chan/tech/css/1/tech_override.css");</style><!--[if IE 7]><style type="text/css">@import url("/web/20051212053314/http://stc.msn.com/br/gbl/css/1/ie7.css");</style><![endif]--><script type="text/javascript" src="/web/20051212053314js_/http://stj.msn.com/br/gbl/js/1/MozCompat.js"></script><script type="text/javascript" src="/web/20051212053314js_/http://stj.msn.com/br/chan/tech/js/1/tech_partnersearch.js"></script><script type="text/javascript" src="/web/20051212053314js_/http://stj.msn.com/br/gbl/js/1/Navigation.js"></script></head><body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://tech.msn.com/downloads";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "12";
+var displayMonth = "Dec";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://tech.msn.com/downloads" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20051212053314" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20051107025514/http://tech.msn.com/downloads/" title="7 Nov 2005">NOV</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 5:33:14 Dec 12, 2005">DEC</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20060112071848/http://tech.msn.com/downloads" title="12 Jan 2006"><strong>JAN</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20051211120140/http://tech.msn.com/downloads" title="12:01:40 Dec 11, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 5:33:14 Dec 12, 2005">12</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20051213013914/http://tech.msn.com/downloads" title="1:39:14 Dec 13, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20041212034739/http://tech.msn.com/downloads/" title="12 Dec 2004"><strong>2004</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 5:33:14 Dec 12, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20061212155909/http://tech.msn.com/downloads/" title="12 Dec 2006"><strong>2006</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20051212053314*/http://tech.msn.com/downloads" title="See a list of every capture for this URL">1,060 captures</a>
+           <div class="r" title="Timespan for captures of this URL">25 Jun 01 - 12 Sep 14</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000001020101_2002:-1:000001010000_2003:-1:010101011202_2004:-1:11040aabbabc_2005:11:cbbbccdfa9bc_2006:-1:b91a15993388_2007:-1:877667596977_2008:-1:642020001104_2009:-1:041220220003_2010:-1:000000000000_2011:-1:101010201111_2012:-1:101010101011_2013:-1:001010201110_2014:-1:000000001000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<div id="reporting"><img id="ctag" width="1" height="1" alt="" src="/web/20051212053314im_/http://c.msn.com/c.gif?di=21&amp;pi=7327&amp;ps=10121&amp;tp=http://tech.msn.com/downloads&amp;rf=" /><div id="omni"><script type="text/javascript">var s_account='msnportalchannels';</script><script type="text/javascript" src="/web/20051212053314js_/http://stj.msn.com/br/om/js/s_code.js"></script><script type="text/javascript">s.linkInternalFilters='javascript:,tech.msn.com';s.pageName='Downloads &amp; Tools - MSN Tech &amp; Gadgets';s.server='msn.com';s.prop1='MSN Channels US';s.prop2='en-US';s.channel='msnportalchannels';s.prop22='False';s.prop25='';s.prop26='';s.prop3='Downloads';s.prop5='Dept front';var s_code=s.t();if(s_code)document.write(s_code);</script><script type="text/javascript"><!--if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')//--></script><noscript><div><img src="/web/20051212053314im_/http://msnportalchannels.112.2o7.net/b/ss/msnportalchannels/1/H.1--NS/0" height="1" width="1" alt="" /></div></noscript></div><script type="text/javascript" src="/web/20051212053314js_/http://stj.msn.com/br/gbl/js/1/Linktracking.js"></script></div><div id="wrapper" class="page1 region9"><div id="head"><div class="parent chrome6 single1"><div class="child c1 first"><div class="msnhead1 cf"><div class="network"><div class="bannerad"><!--NOAD--><img src="/web/20051212053314im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A02"/></div><div class="primary dMSNME_1"><form action="/web/20051212053314/http://search.msn.com/results.aspx" method="get"><div><label accesskey="s" for="q">Web Search:</label><input type="text" id="q" name="q" size="20" maxlength="150" /><input type="hidden" name="FORM" value="A4" /><input type="submit" class="button" name="submit" size="20" value="Search Web" /></div></form><ul><li class="first"><a href="/web/20051212053314/http://www.msn.com/">MSN Home</a></li><li><a href="/web/20051212053314/http://hotmail.msn.com/">Hotmail</a></li><li><a href="/web/20051212053314/http://my.msn.com/">My MSN</a></li><li class="last"><em class="passport"><a href="/web/20051212053314/http://login.passport.com/login.srf?lc=1033&amp;id=6528&amp;ru=http%3a%2f%2ftech.msn.com%2fdownloads&amp;tw=1800&amp;kv=7&amp;ct=1134365594&amp;ems=1&amp;ver=2.1.6000.1&amp;tpf=20a62011b12e3e37b330dd5afb2fcb9c" class="dMSNME_1">Sign In</a></em></li></ul></div><div class="site"><a href="/web/20051212053314/http://www.msn.com/"><img src="/web/20051212053314im_/http://sc.msn.com/global/c/lgpos/MSFT_pos.gif" alt="go to MSN.com" class="logo" height="35" width="118" /></a><a href="/web/20051212053314/http://tech.msn.com/default.aspx" class="name">Tech &amp; Gadgets</a></div><div class="secondary"><ul><li class="first"><a href="/web/20051212053314/http://tech.msn.com/newsletter/about.aspx">Newsletter</a></li><li class="last"><a href="/web/20051212053314/http://tech.msn.com/help.aspx">Help</a></li></ul></div></div></div></div></div></div><div id="page"><div id="nav" class="region2"><div id="vnav" class="parent chrome6 single1"><div class="child c1 first"><ul class="linklist3"><li class="first"><a href="/web/20051212053314/http://tech.msn.com/default.aspx">Home</a></li><li><a href="/web/20051212053314/http://tech.msn.com/products/default.aspx">Product Reviews</a></li><li class="selected"><a href="/web/20051212053314/http://tech.msn.com/downloads/default.aspx">Downloads &amp; Tools</a></li><li><a href="/web/20051212053314/http://tech.msn.com/howto/default.aspx">How-To</a></li><li><a href="/web/20051212053314/http://tech.msn.com/news/default.aspx">News &amp; Trends</a></li><li><a href="/web/20051212053314/http://tech.msn.com/mobile/default.aspx">Mobile</a></li><li><a href="/web/20051212053314/http://tech.msn.com/virus/default.aspx">Virus &amp; Security</a></li><li><a href="/web/20051212053314/http://tech.msn.com/games/default.aspx">Games</a></li><li><a href="/web/20051212053314/http://tech.msn.com/business/default.aspx">Business &amp; IT</a></li><li class="last"><a href="/web/20051212053314/http://shopping.msn.com/content/shp/?ctId=234,ptnrid=7,ptnrdata=24004">Shopping</a></li></ul></div></div><div id="specialguides" class="parent chrome5 single1"><h2>Special Guides</h2><div id="tg_specguides" class="child c1 first"><ul class="linklist2"><li class="first"><a href="/web/20051212053314/http://tech.msn.com/guides/sponsored/holidaytech.aspx">Holiday Tech</a></li><li><a href="/web/20051212053314/http://special.msn.com/tech/yourtechuniverse.armx">Your Tech Universe</a></li><li><a href="/web/20051212053314/http://tech.msn.com/guides/msproducts/default.aspx">Microsoft Products</a></li><li><a href="/web/20051212053314/http://tech.msn.com/guides/itdecision/default.aspx">IT Decision Center</a></li><li class="last"><a href="/web/20051212053314/http://tech.msn.com/guides/photosguide.aspx">Focus on Photos</a></li></ul></div></div><div id="moremsn" class="parent chrome1 single1"><h2>More from MSN</h2><div class="child c1 first"><ul class="linklist2"><li class="first"><a href="/web/20051212053314/http://music.msn.com/music/newthisweek?affid=100012">Hear new music</a></li><li><a href="/web/20051212053314/http://msn.careerbuilder.com/JobSeeker/Jobs/JobResults.aspx?sc_extcmp=JS_tech_FindJob&amp;strCrit=QID=A3848747933106;st=a;use=ALL;CID=US;SID=?;TID=0;ENR=NO;DTP=ALL;YDI=YES;IND=All;PDQ=All;JN=JN008;POY=NO;ETD=ALL;RE=ALL;MGT=DC;SUP=DC;FRE=30;CHL=AL;QS=sid_CBMSNTG3138;SS=NO&amp;ch=AL">Search for tech jobs</a></li><li class="last"><a href="/web/20051212053314/http://spaces.msn.com/members/technologyfilter/">MSN's tech blog</a></li></ul></div></div></div><div id="content"><div id="subhead" class="region8"><div class="parent chrome1 single1"><div class="child c1 first"><div class="img"><img src="/web/20051212053314im_/http://stb.msn.com/i/7F/7F9214AC95D759594A8BEA45785C55A6.gif" width="355" height="27" alt="Downloads and Tools with Download.com" /></div></div></div></div><div id="area1" class="region4"><div class="parent chrome1 quad6 cf"><div id="dl_dipimg" class="child c1 first"><div class="img"><img src="/web/20051212053314im_/http://stb.msn.com/i/CF/CFA1A87BB49B38B3305C22C65B10C2BA.jpg" width="145" height="200" alt="© Jae Rew/Photonica/Getty Images" /></div></div><div class="child c2"><div class="linkabs1"><span><a href="/web/20051212053314/http://msn-cnet.com.com/3150-2641_4-0.html?part=msn-cnet&amp;subj=dl_4-0&amp;tag=tg_dl"><big>Soup up your mobile phone</big></a></span><p>Create ringtones, wallpapers and more. Your phone will turn heads with these dazzling downloads.</p></div></div><br class="b3" /><div id="assoclinks" class="child c3"><ul class="linklist2"><li class="first"><a href="/web/20051212053314/http://msn-cnet.com.com/Xingtone-Ringtone-Maker/3000-2056_4-10468014.html?part=msn-cnet&amp;subj=dl_10468014&amp;tag=tg_dl">Xingtone Ringtone Maker</a></li><li class="last"><a href="/web/20051212053314/http://msn-cnet.com.com/MOBILedit-Lite/3000-2074_4-10458464.html?part=msn-cnet&amp;subj=dl_10458464&amp;tag=tg_dl">MOBILedit Lite</a></li></ul></div><div class="child c4 last"><div class="imglinkabs1 cf"><img src="/web/20051212053314im_/http://stb.msn.com/i/31/3152A1A7D157F461AF647FF1733C433.jpg" width="60" height="60" alt="© CNET" /><a href="/web/20051212053314/http://tech.msn.com/products/camcorders.aspx"><strong>In T&amp;G</strong></a><p>New reviews on hip, cool camcorders.</p></div></div></div><div class="parent chrome4 triple2 cf"><h2>Today in Downloads</h2><div class="child c1 first"><div class="imglinkabs1 cf"><a href="/web/20051212053314/http://msn-cnet.com.com//Planet-Quest/3000-2400_4-10358053.html?tag=sptlt?part=msn-cnet&amp;amp;subj=dl_today&amp;amp;tag=today_feed"><img src="/web/20051212053314im_/http://i.i.com.com/cnwk.1d/i/dl/scr/palnetmsn.gif" width="85" height="110" alt="Planet Quest 2.3" /></a><a href="/web/20051212053314/http://msn-cnet.com.com//Planet-Quest/3000-2400_4-10358053.html?tag=sptlt?part=msn-cnet&amp;amp;subj=dl_today&amp;amp;tag=today_feed">Planet Quest 2.3</a><p>Zoom through the depths of the galaxy. Planet Quest 2.3 takes you on a 3D desktop voyage past cloud-shrouded planets, glowing stars, and rings of cosmic debris.</p></div></div><div class="child c2"><h3>Top rated:</h3><ul class="linklist2"><li class="first"><a href="/web/20051212053314/http://msn-cnet.com.com/3000-2092-10039884.html?part=msn-cnet&amp;subj=dl_toprated&amp;tag=top_feed">ZoneAlarm</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3000-7241-10199759.html?part=msn-cnet&amp;subj=dl_toprated&amp;tag=top_feed">Sonic Stylus Studio</a></li><li class="last"><a href="/web/20051212053314/http://msn-cnet.com.com/3000-2071-10071618.html?part=msn-cnet&amp;subj=dl_toprated&amp;tag=top_feed">Internet Download Manager</a></li></ul><a href="/web/20051212053314/http://msn-cnet.com.com/3130-2001_4-0-1-2.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl" class="more">More...</a></div><div class="child c3 last"><h3>Hot files:</h3><ul class="linklist2"><li class="first"><a href="/web/20051212053314/http://msn-cnet.com.com/Paltalk/3000-2150-10418337.html?part=msn-cnet&amp;subj=dl_hotfiles&amp;tag=ppd_feed">Paltalk 8.1</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/GoToMyPC/3000-7240-10349578.html?part=msn-cnet&amp;subj=dl_hotfiles&amp;tag=ppd_feed">GoToMyPC 4.1</a></li><li class="last"><a href="/web/20051212053314/http://msn-cnet.com.com/Yahoo-Toolbar-with-Anti-Spy/3000-2379-10310983.html?part=msn-cnet&amp;subj=dl_hotfiles&amp;tag=ppd_feed">Yahoo Toolbar with Anti-Spy 5.5.5</a></li></ul><a href="/web/20051212053314/http://msn-cnet.com.com/sort/3120-2001_4-0-1-5.html?qt=hotdownload&amp;part=msn-cnet&amp;subj=dl_hotfiles&amp;tag=tg_dl" class="more">More...</a></div></div><div class="parent chrome4 single1"><h2>Tools</h2><div class="child c1 first"><ul class="linklist2"><li class="first"><a href="/web/20051212053314/http://msnmemory.shopper.com/?part=msn-cnet&amp;subj=sh_memconfig&amp;tag=tg_dl">Time to upgrade your gadget's memory?</a></li><li><a href="/web/20051212053314/http://www.microsoft.com/security/malwareremove/default.mspx">Remove Zotob and other malicious software</a></li><li><a href="/web/20051212053314/http://tech.msn.com/products/speedtest.aspx">Internet speed test</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3101-2001-0-1.html?part=msn-cnet&amp;subj=dl_3101-2001-0-1&amp;tag=tg_dl">Most popular downloads</a></li><li class="last"><a href="/web/20051212053314/http://tech.msn.com/guides/msproducts/index.aspx">Help resources for Microsoft and MSN</a></li></ul></div></div><div id="dl_howto" class="parent chrome4 single1"><h2>How-To</h2><div class="child c1 first"><ul class="linklist2"><li class="first"><a href="/web/20051212053314/http://msn.pcworld.com/downloads/collection/0,collid,1370,00.asp">Identify OS problems before they get out of hand</a></li><li><a href="/web/20051212053314/http://msn.pcworld.com/downloads/collection/0,collid,1376,00.asp">Good free productivity and security applications</a></li><li class="last"><a href="/web/20051212053314/http://msn.pcworld.com/downloads/collection/0,collid,1373,00.asp">Block pop-ups, organize bookmarks and more</a></li></ul></div><a href="/web/20051212053314/http://tech.msn.com/howto/default.aspx" class="more">More how-tos...</a></div><div class="parent chrome4 single1"><h2>Inside Mobile</h2><div class="child c1 first"><h3><a href="/web/20051212053314/http://tech.msn.com/mobile/default.aspx">Get more on the go</a></h3><div class="imgabslink1 cf"><div><img src="/web/20051212053314im_/http://stb.msn.com/i/AF/AF7B4832EDE377FCED21A7103BF8C886.jpg" width="70" height="70" alt="© Digital Vision" /><a href="/web/20051212053314/http://tech.msn.com/mobile/default.aspx">Mobile on T&amp;G</a></div><p>Find expert cell phone and handheld reviews, the latest ring tones, mobile games, and everything else you need to take the fun with you</p></div></div></div><div id="dl_morelinks" class="parent chrome4 single1"><h2>More Links From Our Sponsors </h2><div class="child c1 first"><div class="advertisement"><!--NOAD--><img src="/web/20051212053314im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A02"/></div></div></div></div><div id="area2" class="region4"><div id="showcaseadnf" class="parent chrome1 single1"><div class="child c1 first"><h3>advertisement</h3><div class="advertisement"><!--NOAD--><img src="/web/20051212053314im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A02"/></div></div></div><div id="dlt_music" class="parent chrome4 single1"><h2>Find Downloads</h2><div class="child c1 first"><h3>Free Music</h3><ul class="linklist8 cf"><li class="first"><a href="/web/20051212053314/http://msn-cnet.com.com/2001-7983_32-0.html?part=msn-cnet&amp;subj=dl_music&amp;tag=tg_dl_dir">Electronic &amp; Dance</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/2001-7976_32-0.html?part=msn-cnet&amp;subj=dl_music&amp;tag=tg_dl_dir">Blues</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3605-7994_32-0.html?part=msn-cnet&amp;subj=dl_music&amp;tag=tg_dl_dir">Children's Music</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/2001-7979_32-0.html?part=msn-cnet&amp;subj=dl_music&amp;tag=tg_dl_dir">Classical</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/2001-7981_32-0.html?part=msn-cnet&amp;subj=dl_music&amp;tag=tg_dl_dir">Country</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/2001-7975_32-0.html?part=msn-cnet&amp;subj=dl_music&amp;tag=tg_dl_dir">Rock &amp; Pop</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/2001-7984_32-0.html?part=msn-cnet&amp;subj=dl_music&amp;tag=tg_dl_dir">Hip-Hop</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/2001-7985_32-0.html?part=msn-cnet&amp;subj=dl_music&amp;tag=tg_dl_dir">Jazz</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/2001-8191_32-0.html?part=msn-cnet&amp;subj=dl_music&amp;tag=tg_dl_dir">Latin</a></li><li class="last"><a href="/web/20051212053314/http://msn-cnet.com.com/2001-8203_32-0.html?part=msn-cnet&amp;subj=dl_music&amp;tag=tg_dl_dir">R&amp;B/Soul</a></li></ul><a href="/web/20051212053314/http://msn-cnet.com.com/2001-1_32-0.html?part=msn-cnet&amp;subj=dl_music&amp;tag=tg_dl_dir" class="more">More...</a></div></div><div id="dlt_video" class="parent chrome4 single1"><div class="child c1 first"><h3>Audio &amp; Video</h3><ul class="linklist8 cf"><li class="first"><a href="/web/20051212053314/http://msn-cnet.com.com/3101-2025_4-0-1.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">Most popular</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3140-2025_4-0-1-2.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">New releases</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3130-2025_4-0-1-2.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">Top rated</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3150-2646_4-0.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">CD/DVD burners</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3150-2139_4-0.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">Media players</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3150-2166_4-0.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">MP3 search tools</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3150-2171_4-0.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">Movie trailers</a></li><li class="last"><a href="/web/20051212053314/http://msn-cnet.com.com/3150-2194_4-0.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">Video</a></li></ul><a href="/web/20051212053314/http://msn-cnet.com.com/2001-2025_4-0.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir" class="more">More...</a></div></div><div id="dlt_screen" class="parent chrome4 single1"><div class="child c1 first"><h3>Screen Savers</h3><ul class="linklist8 cf"><li class="first"><a href="/web/20051212053314/http://msn-cnet.com.com/3101-2257_4-0-1.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">Most popular</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3140-2257_4-0-1-2.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">New releases</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3130-2257_4-0-1-2.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">Top rated</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3150-2385_4-0.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">Animals &amp; Nature</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3150-2389_4-0.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">Holidays &amp; Seasonal</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3150-2390_4-0.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">Movies, TV, Celebrities</a></li><li class="last"><a href="/web/20051212053314/http://msn-cnet.com.com/2001-2319_4-0.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">Themes</a></li></ul><a href="/web/20051212053314/http://msn-cnet.com.com/2001-2257_4-0.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir" class="more">More...</a></div></div><div id="dlt_ms" class="parent chrome4 single1"><div id="dlt_ms" class="child c1 first"><h3>Microsoft</h3><ul class="linklist8 cf"><li class="first"><a href="/web/20051212053314/http://www.microsoft.com/downloads/search.aspx?displaylang=en">Microsoft downloads</a></li><li><a href="/web/20051212053314/http://toolbar.msn.com/">MSN Search Toolbar</a></li><li><a href="/web/20051212053314/http://www.microsoft.com/windows/messenger/">Windows Messenger</a></li><li><a href="/web/20051212053314/http://www.microsoft.com/windows/ie/downloads/critical/ie6sp1/default.mspx">Internet Explorer 6.0</a></li><li><a href="/web/20051212053314/http://www.xbox.com/en-us/downloads">Xbox</a></li><li><a href="/web/20051212053314/http://www.microsoft.com/security/default.mspx">Security &amp; Privacy</a></li><li><a href="/web/20051212053314/http://join.msn.com/?page=dept/dialup&amp;pgmarket=en-us&amp;xAPID=576&amp;DI=340&amp;HL=HPQLIASpecials">MSN Internet access deals</a></li><li><a href="/web/20051212053314/http://tech.msn.com/mobile/default.aspx">MSN Mobile</a></li><li class="last"><a href="/web/20051212053314/http://www.microsoft.com/windows/windowsmedia/download/AllDownloads.aspx?displang=en&amp;qstechnology=">Windows Media Player 9</a></li></ul><a href="/web/20051212053314/http://www.microsoft.com/downloads/search.aspx?displaylang=en" class="more">More...</a></div></div><div id="dlt_design" class="parent chrome4 single1"><div class="child c1 first"><h3>Design</h3><ul class="linklist8 cf"><li class="first"><a href="/web/20051212053314/http://msn-cnet.com.com/3101-2016_4-0-1.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">Most popular</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3140-2016_4-0-1-2.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">New releases</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3130-2016_4-0-1-2.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">Top rated</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3150-2204_4-0.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">Digital photography</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3150-6676_4-0.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">Flash design tools</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3150-2192_4-0.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">Image editing</a></li><li class="last"><a href="/web/20051212053314/http://msn-cnet.com.com/3150-2193_4-0.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">Media management</a></li></ul><a href="/web/20051212053314/http://msn-cnet.com.com/2001-2016_4-0.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir" class="more">More...</a></div></div><div id="dlt_utilities" class="parent chrome4 single1"><div class="child c1 first"><h3>Utilities</h3><ul class="linklist8 cf"><li class="first"><a href="/web/20051212053314/http://msn-cnet.com.com/3101-2018_4-0-1.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">Most popular</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3140-2018_4-0-1-2.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">New releases</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3130-2018_4-0-1-2.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">Top rated</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3150-2239_4-0.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">Antivirus</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3150-2242_4-0.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">Backup</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3150-2250_4-0.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">File compression</a></li><li class="last"><a href="/web/20051212053314/http://msn-cnet.com.com/3150-2092_4-0.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">Security &amp; encryption</a></li></ul><a href="/web/20051212053314/http://msn-cnet.com.com/2001-2018_4-0.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir" class="more">More...</a></div></div><div id="dlt_games" class="parent chrome4 single1"><div class="child c1 first"><h3>Games</h3><ul class="linklist8 cf"><li class="first"><a href="/web/20051212053314/http://msn-cnet.com.com/3101-2012_4-0-1.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">Most popular</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3140-2012_4-0-1-2.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">New releases</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3130-2012_4-0-1-2.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">Top rated</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3150-2095_4-0.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">Action</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3150-2099_4-0.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">Arcade</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3150-2102_4-0.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">Kids</a></li><li><a href="/web/20051212053314/http://msn-cnet.com.com/3150-2117_4-0.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">Sports</a></li><li class="last"><a href="/web/20051212053314/http://msn-cnet.com.com/3150-2647_4-0.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir">Cards</a></li></ul><a href="/web/20051212053314/http://msn-cnet.com.com/2001-2012_4-0.html?part=msn-cnet&amp;subj=dl&amp;tag=tg_dl_dir" class="more">More...</a></div></div><div class="partsearch"><form id="reviewsearch" action="" onsubmit="RSvalidate(this);return false"><div class="form"><label>Search:</label><input type="text" id="search" /></div><div><select class="option" id="category"><option select="selected">Choose Category...</option><option value="http://zdnn.search.com/search?part=msn&amp;amp;subj=search&amp;amp;tag=biz&amp;amp;qt=">Business &amp; IT</option><option value="http://msn-cnet.com.com/3120-20_4-0.html?part=msn-cnet&amp;amp;subj=search&amp;amp;tag=dl&amp;amp;qt=">Downloads &amp; Tools</option><option value="http://www.gamespot.com/msn/?/finder/findgames.html?part=msn-gamespot&amp;amp;subj=search&amp;amp;tag=gs&amp;amp;anchor=%&amp;amp;platform=&amp;amp;q=">Games</option><option value="http://search.pcworld.com/query.html?col=hh&amp;amp;op0=&amp;amp;fl0=&amp;amp;ty0=w&amp;amp;dt=an&amp;amp;inthe=604800&amp;amp;ady=19&amp;amp;amo=8&amp;amp;ayr=2003&amp;amp;bdy=26&amp;amp;bmo=8&amp;amp;byr=2003&amp;amp;nh=10&amp;amp;rf=0&amp;amp;lk=1&amp;amp;ht=0&amp;amp;qp=&amp;amp;qs=&amp;amp;qc=&amp;amp;pw=463&amp;amp;la=en&amp;amp;qm=0&amp;amp;st=1&amp;amp;rq=0&amp;amp;si=0&amp;amp;ql=a&amp;amp;qt=">How-to</option><option value="http://search.microsoft.com/search/results.aspx?View=en-us&amp;amp;p=1&amp;amp;s=0&amp;amp;c=2&amp;amp;st=b&amp;amp;qu=">Microsoft Products</option><option value="http://msn-cnet.com.com/4500-3504_7-0.html?part=msn-cnet&amp;amp;subj=search&amp;amp;tag=mobile&amp;amp;qt=">Mobile</option><option value="http://news.search.com/search?part=msn-cnet&amp;amp;subj=search&amp;amp;tag=ns&amp;amp;qt=">News &amp; Trends</option><option value="http://cnet.search.com/search?part=msn-cnet&amp;amp;subj=search&amp;amp;tag=re&amp;amp;qt=">Product Reviews</option><option value="http://msn.mcafee.com/virusInfo/default.asp?id=alphar&amp;amp;SearchType=2&amp;amp;searchString=">Virus &amp; Security</option></select><input class="button" id="RSbutton" type="submit" value="Go" /></div></form></div><div id="video_dlt" class="parent chrome4 single1"><h2>Video Spotlight</h2><div class="child c1 first"><div class="imglinkabs1 cf"><img src="/web/20051212053314im_/http://stb.msn.com/i/1E/1E644F92191E2CA1BC146E3D1B14ECFE.JPG" width="70" height="48" alt="© MSNBC" /><a href="/web/20051212053314/http://video.msn.com/v/us/v.htm?f=34%2f64&amp;i=7de0cd3e-486a-4072-9476-92357f3126b6%2c7d76ae1a-cf35-4186-b6bf-c40a22798ea3%2ce613af9a-776d-479c-93b4-d37a5667449b&amp;p=Business_Sci-Tech&amp;m=Biz%20-%20Tech&amp;mi=Sci%20-%20Tech"><strong>Latest tech news from MSNBC</strong></a><p>Watch the latest news on your PC.</p></div><a href="/web/20051212053314/http://video.msn.com/video/p.htm?m=Biz%20-%20Tech&amp;mi=Sci%20-%20Tech&amp;i=7d76ae1a-cf35-4186-b6bf-c40a22798ea3,a2a806d9-794d-4d0a-8c07-068e2d33c7c9,81893722-b15e-42eb-a6b0-2ad0873eec83,22f1d12e-7640-4ee0-b7eb-ed37f250dd5f&amp;p=Business_Sci-Tech&amp;rf=http://tech.msn.com/downloads/" class="more">MSNBC Tech Watch on MSN Video</a></div></div><div id="msnshopping" class="parent chrome3 single1"><h2>MSN Shopping</h2><div class="child c1 first"><div class="buddy"><script type="text/javascript">var fSucceed = false;</script><script type="text/javascript" src="/web/20051212053314js_/http://shopping.msn.com/i/ptnrContent.aspx?ptnrId=7&amp;ptnrData=10007&amp;mapKey=DNLD"></script><script type="text/javascript">if (!fSucceed)  document.write('<a href="/web/20051212053314/http://shopping.msn.com">MSN Shopping Module</a>');</script><noscript><a href="/web/20051212053314/http://shopping.msn.com/">MSN Shopping Module</a></noscript></div></div></div></div></div></div><div id="foot"><div class="parent chrome6 single1"><div class="child c1 first"><div class="msnfoot1 cf"><ul class="primary"><li class="first"><span>© 2005 Microsoft</span></li><li><a href="/web/20051212053314/http://privacy.msn.com/">MSN Privacy</a></li><li><a href="/web/20051212053314/http://privacy.msn.com/tou/">Legal</a></li><li class="last"><a href="/web/20051212053314/http://advertising.msn.com/home/home.asp">Advertise</a></li></ul><ul class="secondary"><li class="first"><a href="/web/20051212053314/http://feedback.msn.com/eform.aspx?productkey=techandgadgets&amp;page=feedback_home_form">Feedback</a></li></ul></div></div></div><div class="parent chrome6 single1"><div class="child c1 first"><div class="advertisement"><!--NOAD--><img src="/web/20051212053314im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A02"/></div></div></div></div></div><script type="text/javascript" src="/web/20051212053314js_/http://stj.msn.com/br/gbl/js/1/ieMinWidth.js"></script></body></html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 5:33:14 Dec 12, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 6:09:24 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

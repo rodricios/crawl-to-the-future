@@ -1,0 +1,905 @@
+
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app16.us.archive.org";archive_analytics.values.server_ms=4616;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://tv.msn.com/tv/realitytv?GT1=6657";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "27";
+var displayMonth = "Jul";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://tv.msn.com/tv/realitytv?GT1=6657" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20050727082328" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Jun
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 8:23:28 Jul 27, 2005">JUL</td>
+		<td class="f" nowrap="nowrap">
+		
+		    Aug
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 8:23:28 Jul 27, 2005">27</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+               
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2004
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 8:23:28 Jul 27, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2006
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20050727082328*/http://tv.msn.com/tv/realitytv?GT1=6657" title="See a list of every capture for this URL">1 captures</a>
+           <div class="r" title="Timespan for captures of this URL">27 Jul 05 - 27 Jul 05</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:6:000000100000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<noscript><meta http-equiv=refresh content="0;url=/web/20050727082328/http://tv.msn.com/help/requirements.aspx"></noscript><script>var imgssearch = new Array(3);imgssearch[0] = new Image();imgssearch[0].src = '/web/20050727082328/http://entimg.msn.com/i/ms/bt_go.gif';imgssearch[1] = new Image();imgssearch[1].src = '/web/20050727082328/http://entimg.msn.com/i/ms/bt_go_o.gif';imgssearch[2] = new Image();imgssearch[2].src = '/web/20050727082328/http://entimg.msn.com/i/ms/bt_go_d.gif';</script><script>var imgPre="/web/20050727082328/http://entimg.msn.com";var meetsReqs=false;var indefli=false;var serviceid=0;var rpsub=false;var pcontr=false;
+</script>
+<title>MSN Entertainment - Reality TV</title><script src="/web/20050727082328js_/http://entimg.msn.com/script/msnent3112.js"></script><script>function SF(func) { try { if(eval('window.' + func) != null) { return true; } else { return false; } } catch(e) { alert('Failed exec:'+code+'\r\n'+e.description); } return false; }function GE(v) { if(document.all) { return document.all[v]; } return document.getElementById(v); }</script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<meta name="Name" content="Editorial Second">
+		<link rel="stylesheet" href="/web/20050727082328cs_/http://entimg.msn.com/styles/e3112.css" rev="stylesheet" type="text/css">
+		<style>
+			.modbod { background-color: #f1f1f1; }
+			.mnbg	{ background-color: #98A7E2; }
+			.mbbg	{ background-color: #E0E6FF; }
+			.brbg	{ background-color: #f1f1f1; }
+			.blt	{ font-family: wingdings; }
+			.h380   { height: 380px; }
+			
+			/* find bar */
+			.fib	{ width: 100px; margin: 3px  3px 3px 5px;} 
+			.fpd	{ margin: 0px 3px 0px 5px; width: 100px;}
+			.ftt	{ padding: 3px 0px 3px 5px; font-size: 11px; color: #ffffff; text-align: left;text-transform:uppercase; } 
+			.fbb	{ margin:2px 10px 0px 2px;}
+			.fsd	{ margin: 0px 3px 0px 10px; width: 160px;}
+						
+		</style>
+		<style>
+.gblr10 {border-left:white;border-right:white; padding:0px; }
+.gbl10  {border-left:white;border-right:white; padding:0px; }
+
+/*numbered text color*/
+.nbtxt	{color:#777777; }
+
+/*headers*/
+.hed	{ font-size:16pt; color:#406635; }
+.subh	{ color:#406635; }
+
+/*links*/
+.lnk1		{ font-family:tahoma; color: #555 }
+a.lnk1		{ color: #366ab3 }
+a.lnk1:visited	{ color: #366ab3 }	
+a.lnk1:hover	{ color: #366ab3 }
+
+.nbtxt	{ align:left; }
+
+</style>
+	</HEAD>
+	<body>
+		<script>	var pageId = "83537";	var domaindId = "1275";	var propertyId = "56656";	var gServer = "/web/20050727082328/http://g.msn.com/1ETCLT01/1";	var timeOut = "3";	var backoffTime = "1";</script><script src="/web/20050727082328js_/http://entimg.msn.com/script/tracking.js"></script><img  id="clickTarget" style="display:none" src="/web/20050727082328im_/http://entimg.msn.com/i/sp.gif" onReadyStateChange="if(SF('ctStateChange')) ctStateChange();" >			
+		<center>
+		<img width=0 height=0 src="/web/20050727082328im_/http://c.msn.com/c.gif?ps=83537&amp;pi=56656&amp;di=1275&amp;rf=">
+		
+			
+		
+		
+			<table class="sbtb" cellspacing="0" cellpadding="0" border="0">
+	<tr>
+		<td><!--BeginAd(ENTRY1,SuperBanner)--><!--NOAD--><img src="/web/20050727082328im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=E06"/><!--EndAd--></td>
+	</tr>
+</table><table class="tp10" cellspacing="0" cellpadding="0" border="0" width="750">
+	<tr>
+		<td><table class="hdpos" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td width="118"><a onclick="if(SF('h')) return h(this,'cm=HEADER&amp;ce=2');" href="/web/20050727082328/http://g.msn.com/0nwenus0/A5/00"><script type="text/javascript" src="/web/20050727082328js_/http://sc.msn.com/global/scr/lg/hdrPOS.js">&nbsp;</script><noscript><img src="/web/20050727082328im_/http://sc.msn.com/global/c/lgpos/msft_pos.gif" alt="MSN Home" border=0 style="height:35px;width:118px;" /></noscript><script type="text/javascript">logoImg("/web/20050727082328/http://sc.msn.com");</script></a></td><td class="hdrtxt" valign="Bottom"><a onclick="if(SF('h')) return h(this,'cm=HEADER&amp;ce=3');" href="/web/20050727082328/http://tv.msn.com/"><span class='hdrtxt'>&nbsp;TV</span></a></td>
+			</tr><tr>
+				<td class="sbhdsp" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=HEADER&amp;ce=4');" href="/web/20050727082328/http://entertainment.msn.com/">entertainment</a></td>
+			</tr>
+		</table></td><td align="Right"><table cellspacing="1" cellpadding="0" border="0">
+			<tr>
+				<td class="hdnvc" TABINDEX="0" onmouseover="this.className='hdnvch'" onmouseout="this.className='hdnvc'" onclick="if(SF('u')) u('/web/20050727082328/http://music.msn.com','cm=HEADER&amp;ce=1'); else location.href='/web/20050727082328/http://music.msn.com';" onkeypress="if(SF('u')) u('http://music.msn.com','cm=HEADER&amp;ce=1'); else location.href='http://music.msn.com';">Music</td><td class="hdnvc" TABINDEX="0" onmouseover="this.className='hdnvch'" onmouseout="this.className='hdnvc'" onclick="if(SF('u')) u('/web/20050727082328/http://radio.msn.com','cm=HEADER&amp;ce=1'); else location.href='/web/20050727082328/http://radio.msn.com';" onkeypress="if(SF('u')) u('http://radio.msn.com','cm=HEADER&amp;ce=1'); else location.href='http://radio.msn.com';">Radio</td><td class="hdnvc" TABINDEX="0" onmouseover="this.className='hdnvch'" onmouseout="this.className='hdnvc'" onclick="if(SF('u')) u('/web/20050727082328/http://movies.msn.com','cm=HEADER&amp;ce=1'); else location.href='/web/20050727082328/http://movies.msn.com';" onkeypress="if(SF('u')) u('http://movies.msn.com','cm=HEADER&amp;ce=1'); else location.href='http://movies.msn.com';">Movies</td><td class="hdnvch" TABINDEX="0" onclick="if(SF('u')) u('/web/20050727082328/http://tv.msn.com','cm=HEADER&amp;ce=1'); else location.href='/web/20050727082328/http://tv.msn.com';" onkeypress="if(SF('u')) u('http://tv.msn.com','cm=HEADER&amp;ce=1'); else location.href='http://tv.msn.com';">TV</td><td class="hdnvc" TABINDEX="0" onmouseover="this.className='hdnvch'" onmouseout="this.className='hdnvc'" onclick="if(SF('u')) u('/web/20050727082328/http://music.msn.com/musicvideos/','cm=HEADER&amp;ce=1'); else location.href='/web/20050727082328/http://music.msn.com/musicvideos/';" onkeypress="if(SF('u')) u('http://music.msn.com/musicvideos/','cm=HEADER&amp;ce=1'); else location.href='http://music.msn.com/musicvideos/';">Video</td>
+			</tr>
+		</table></td>
+	</tr>
+</table><span style="display:none;"></span>
+		
+		
+			
+			<table class="sbout" cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td align="Center"><table class="ftb" cellspacing="0" cellpadding="0" border="0" width="750">
+			<tr>
+				<td><table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td><form id=PageFindForm method=GET action='/web/20050727082328/http://tv.msn.com/tv/search/'><span class="lnk1">Search by:</span></td><td><label for="scope"><span style=display:none>Select search type</span></label><select name="scope" id="scope" class="fpd">
+							<option value="title">show</option>
+							<option value="titleDesc">keyword</option>
+							<option value="person">person</option>
+						</select></td><td><label for="query"><span style=display:none>Enter your search query</span></label><input name="query" id="query" type="text" class="fib" VCARD_NAME="SearchText" maxlength="45" /></td><td><span><img title="Go" TABINDEX="0" onmouseover="if(SF('nbs')) nbs(imgssearch[1]);" onmouseout="if(SF('nbs')) nbs(imgssearch[0]);" onmousedown="if(SF('nbs')) nbs(imgssearch[2]);" onmouseup="if(SF('nbs')) { nbs(imgssearch[0]); document.forms[&quot;PageFindForm&quot;].submit();}" onkeydown="if(event.keyCode == 13 || event.keyCode == 32 ){if(SF('nbs')) nbs(imgssearch[2]);}" onkeyup="if(event.keyCode == 13 || event.keyCode == 32 ){if(SF('nbs')) { nbs(imgssearch[0]);document.forms[&quot;PageFindForm&quot;].submit(); }}" src="/web/20050727082328im_/http://entimg.msn.com/i/ms/bt_go.gif" alt="" border="0" style="cursor:hand;" /></span></td>
+					</tr>
+				</table></td><td></form></td><td align="Right"><table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td align="Right"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td><a class="SignInLinkClass" onclick="if(SF('h')) return h(this,'cm=SEAMUS&amp;ce=1');" href="/web/20050727082328/http://login.passport.com/login.srf?lc=1033&amp;id=31948&amp;ru=http%3a%2f%2ftv.msn.com%2fbeacon%2feditorial2.aspx%3fptid%3d61dd2ada-d637-446b-b4c3-b65114a3265a%26GT1%3d6657&amp;tw=7200&amp;fs=1&amp;kv=7&amp;ct=1122452608&amp;cb=returl%3dhttp%253a%252f%252ftv.msn.com%252fbeacon%252feditorial2.aspx%253fptid%253d61dd2ada-d637-446b-b4c3-b65114a3265a%2526GT1%253d6657&amp;kpp=3&amp;ver=2.1.6000.1&amp;tpf=e2d668a4a7550b4242e32cd088ab39d3">Sign&nbsp;In</a></td><td></td>
+							</tr>
+						</table></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+		
+				
+				<table class="navin" cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td align="Center"><table class="bk" cellspacing="0" cellpadding="0" border="0" width="750">
+
+		</table></td>
+	</tr>
+</table>
+			
+		
+			<table class="brtb" cellspacing="0" cellpadding="0" border="0" width="750">
+	<tr>
+		<td><table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td><a class="lnk3" onclick="if(SF('h')) return h(this,'cm=CRUMBS&amp;ce=1');" href="/web/20050727082328/http://tv.msn.com/tv/">TV Home</a></td><td class="blt3">&#052;</td><td><span class="lnk3">Reality TV</span></td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+		
+		
+		<table cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td valign=top>
+					<table cellpadding=0 cellspacing=0 border=0 width=150 class="contb">
+						<tr>
+							<td>
+								
+									<table cellspacing="0" cellpadding="0" border="0">
+	<tr>
+		<td><img title="Weekend Movie Guide" src="/web/20050727082328im_/http://entimg.msn.com/i/150/TV/sept04/reality_spon.gif" alt="" border="0" height="44" width="150" /></td>
+	</tr>
+</table>
+									
+							</td>
+						</tr>
+						<tr>
+							<td valign="top">
+								
+									<table cellspacing="0" cellpadding="0" border="0">
+	<tr>
+		<td valign="Top"><table cellspacing="0" cellpadding="0" border="0" bgcolor="#8DC63F" width="150">
+			<tr>
+				<td valign="Top"><font color="#8DC63F"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tr>
+						<td class="lp10" valign="Top"><font color="#8DC63F"> <TABLE style="MARGIN-TOP: 4px" cellSpacing=0 cellPadding=0 width=130 border=0>   <TBODY>   <TR>     <TD class=nl style="COLOR: #ffffff" align=left width="100%">sponsored      by:</TD></TR></TBODY></TABLE></font></td>
+					</tr><tr>
+						<td class="lp10" valign="Top"><font color="#8DC63F"><!--BeginAd(ENTRY2,Button30)--><!--NOAD--><img src="/web/20050727082328im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=E06"/><!--EndAd--></font></td>
+					</tr><tr>
+						<td class="lp10" valign="Top"><font color="#8DC63F"> <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>   <TBODY>   <TR>     <TD width="100%" height=10></TD></TR></TBODY></TABLE></font></td>
+					</tr>
+				</table></font></td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+								</td>
+							<td valign="top">
+								
+									
+								</td>
+						</tr>
+						<tr>
+							<td>
+								<table cellpadding=0 cellspacing=0 border=0 width=150  style="border-top: 1px solid white" >
+									<tr>
+										<td>
+											<a class="culpng"></a>
+											
+												<table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td><table class="lrt10" cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr>
+				<td><span class="subh">MORE MSN TV</span></td>
+			</tr>
+		</table></td>
+	</tr>
+</table><table class="lrb10" cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr>
+				<td class="tp5" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=leftListModule1&amp;ce=1');" href="/web/20050727082328/http://tv.msn.com/tv/browse/">Browse TV Shows</a></td>
+			</tr><tr>
+				<td class="tp5" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=leftListModule1&amp;ce=2');" href="/web/20050727082328/http://tv.msn.com/news/archive.aspx?tv">TV News</a></td>
+			</tr><tr>
+				<td class="tp5" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=leftListModule1&amp;ce=3');" href="/web/20050727082328/http://tv.msn.com/tv/">TV Home Page</a></td>
+			</tr><tr>
+				<td class="tp5" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=leftListModule1&amp;ce=4');" href="/web/20050727082328/http://tv.msn.com/tv/DVD">TV on DVD</a></td>
+			</tr><tr>
+				<td class="tp5" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=leftListModule1&amp;ce=5');" href="/web/20050727082328/http://tv.msn.com/TV/BestBets">TV Best Bets</a></td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+												
+											
+										</td>
+									</tr>
+									<tr>
+										<td class="p10">
+											
+												<table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td><table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr>
+				<td><span class="subh">NIELSEN RATINGS</span></td>
+			</tr>
+		</table></td>
+	</tr>
+</table><table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr>
+				<td class="tp5" valign="Top"><span>CSI</span></td>
+			</tr><tr>
+				<td class="tp5" valign="Top"><span>Without a Trace</span></td>
+			</tr><tr>
+				<td class="tp5" valign="Top"><span>FOX MLB All-Star Game</span></td>
+			</tr><tr>
+				<td class="tp5" valign="Top"><span>Brat Camp</span></td>
+			</tr><tr>
+				<td class="tp5" valign="Top"><span>Law and Order: SVU</span></td>
+			</tr><tr>
+				<td class="tp5" valign="Top"><span>NCIS</span></td>
+			</tr><tr>
+				<td class="tp5" valign="Top"><span>FOX MLB All-Star Game Preshow</span></td>
+			</tr><tr>
+				<td class="tp5" valign="Top"><span>Law and Order</span></td>
+			</tr><tr>
+				<td class="tp5" valign="Top"><span>60 Minutes</span></td>
+			</tr><tr>
+				<td class="tp5" valign="Top"><span>Big Brother 6 (Tuesday)</span></td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+													
+											
+											
+												
+													
+											
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td valign=top>
+					<table cellpadding=0 cellspacing=0 border=0 width=600 >
+						<tr>
+							<td  valign="top" width=600 height="100%" class="wblr1">
+								<table cellpadding=0 cellspacing=0 border=0 class=brbg width=100% height="100%">
+									<tr>
+										<td width=10><img src="/web/20050727082328im_/http://entimg.msn.com/i/ms/C_ul_g.gif" alt="" border="0" /></td>
+										<td width=100%></td>
+										<td width=10><img src="/web/20050727082328im_/http://entimg.msn.com/i/ms/C_ur_g.gif" alt="" border="0" /></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td width=100% height="100%" valign="top">
+											
+													<table cellspacing="0" cellpadding="0" border="0">
+	<tr>
+		<td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr>
+				<td><table cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tr>
+						<td><span class="hed">DREAMS DIE ON 'DANCE'</span></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table><table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr>
+				<td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tr>
+						<td valign="Top"><table class="tp10" cellspacing="0" cellpadding="0" border="0" width="100%">
+							<tr>
+								<td><span>
+<P>One of the most heavily hyped premieres of the summer was Fox's "So You Think 
+You Can Dance" (Wednesdays, 8 p.m. ET), hatched by the producers, cheesy-patter 
+enthusiasts, and viciously perky mentality of "American Idol."</P>
+<P>Here, the prize is a Manhattan apartment and a $100,000 cash haul instead of 
+a recording contract. Other than that, it's pure "Idol" redux, with "Idol" 
+producer Nigel Lythgoe as Simon Cowell, only with less wit, less slice-and-dice 
+accuracy, and more unctuous ogling of belly-baring Britney impersonators. 
+<BR></P>
+<P></P>
+<P></P>
+<P></P>
+<P></P></span></td>
+							</tr>
+						</table></td>
+					</tr><tr>
+						<td class="tp5" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td valign="Top"><span class='blt2'>&#052;</span><a class="lnk1" onclick="if(SF('h')) return h(this,'cm=featureTextListModule&amp;ce=1');" href="javascript:newWindow1()">Read more</a></td>
+							</tr>
+						</table></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+												
+										</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td width=10><img src="/web/20050727082328im_/http://entimg.msn.com/i/ms/C_bl_g.gif" alt="" border="0" /></td>
+										<td width=100%></td>
+										<td width=10></td>
+									</tr>
+								</table>
+							</td>
+							<td valign="top">
+							
+								<table cellpadding=0 cellspacing=0 border=0 >
+									<tr>
+										<td  valign="top">
+											
+													<table cellspacing="0" cellpadding="0" border="0">
+	<tr>
+		<td><a onclick="if(SF('h')) return h(this,'cm=centerPromoImage1&amp;ce=1');" href="javascript:newWindow1()"><img title="'So You Think You Can Dance'" src="/web/20050727082328im_/http://entimg.msn.com/i/300/tv/05/SoYouThink_300x298.jpg" alt="©AP" border="0" height="298" width="300" /></a></td>
+	</tr>
+</table>
+												
+										</td>
+										<td  valign="top">
+											
+												
+												
+										</td>
+									</tr>
+								</table>
+								
+							</td>
+						</tr>
+						<tr>
+							<td  valign="top">
+								
+									 <SCRIPT language=JAVASCRIPT>                                                                                                                                                function newWindow1() {documentWindow = window.open('/web/20050727082328/http://www.msnbc.msn.com/id/8667914/','documentWin', 'status=yes,scrollbars=yes,toolbar=yes,menubar=yes,resizable=yes,width=790,height=500')  }                                                                                                                                              </SCRIPT>  <SCRIPT language=JAVASCRIPT>                                                                                                                                                function newWindow2() {documentWindow = window.open('/web/20050727082328/http://www.msnbc.msn.com/id/8378392','documentWin', 'status=yes,scrollbars=yes,toolbar=yes,menubar=yes,resizable=yes,width=790,height=500')  }                                                                                                                                              </SCRIPT>  <SCRIPT language=JAVASCRIPT>                                                                                                                                                function newWindow3() {documentWindow = window.open('/web/20050727082328/http://www.msnbc.msn.com/id/8476125','documentWin', 'status=yes,scrollbars=yes,toolbar=yes,menubar=yes,resizable=yes,width=790,height=500')  }                                                                                                                                              </SCRIPT>  <SCRIPT language=JAVASCRIPT>                                                                                                                                                function newWindow4() {documentWindow = window.open('/web/20050727082328/http://www.msnbc.msn.com/id/7320259/','documentWin', 'status=yes,scrollbars=yes,toolbar=yes,menubar=yes,resizable=yes,width=790,height=500')  }                                                                                                                                              </SCRIPT>  <SCRIPT language=JAVASCRIPT>                                                                                                                                                function newWindow5() {documentWindow = window.open('/web/20050727082328/http://www.msnbc.msn.com/id/6942320/','documentWin', 'status=yes,scrollbars=yes,toolbar=yes,menubar=yes,resizable=yes,width=790,height=500')  }                                                                                                                                              </SCRIPT>  <SCRIPT language=JAVASCRIPT>                                                                                                                                                function newWindow6() {documentWindow = window.open('/web/20050727082328/http://www.msnbc.msn.com/id/8381272/','documentWin', 'status=yes,scrollbars=yes,toolbar=yes,menubar=yes,resizable=yes,width=790,height=500')  }                                                                                                                                              </SCRIPT>  <SCRIPT language=JAVASCRIPT>                                                                                                                                                function newWindow7() {documentWindow = window.open('/web/20050727082328/http://msnbc.msn.com/id/7903083/','documentWin', 'status=yes,scrollbars=yes,toolbar=yes,menubar=yes,resizable=yes,width=790,height=500')  }                                                                                                                                              </SCRIPT> 
+									
+								
+							</td>
+						</tr>
+					</table>
+					<table cellspacing=0 cellpadding=0 border=0 class='tp10'>
+						<tr>
+							<td>
+								<table cellpadding=0 cellspacing=0 border=0 width=600>
+									<tr>
+										<td class=gbl10 valign="top">
+											<table cellpadding=0 cellspacing=0 border=0 >
+												<tr>
+													<td>
+														
+															
+															
+
+														
+															<table cellspacing="0" cellpadding="0" border="0">
+	<tr>
+		<td valign="Top"><table class="lr10" cellspacing="0" cellpadding="0" border="0" width="299">
+			<tr>
+				<td><table class="tb5" cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tr>
+						<td><span class="subh">'ROCK STAR:INXS'</span></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table><table class="lr10" cellspacing="0" cellpadding="0" border="0" width="299">
+			<tr>
+				<td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tr>
+						<td class="bp20" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+									<tr>
+										<td class="rp5" align="Left" valign="Top" width="130"><a onclick="if(SF('h')) return h(this,'cm=editListModule1&amp;ce=1');" href="/web/20050727082328/http://rockstar.msn.com/"><img title="©Rock Star/CBS" src="/web/20050727082328im_/http://entimg.msn.com/i/130/TV/05/RockStar_130x50.jpg" alt="©Rock Star/CBS" border="0" height="50" width="130" /></a></td><td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+											<tr>
+												<td class="vp5" align="Left" valign="Top"><a class="lnk1" onclick="if(SF('h')) return h(this,'cm=editListModule1&amp;ce=2');" href="/web/20050727082328/http://rockstar.msn.com/">ARE YOU READY TO ROCK?</a></td>
+											</tr><tr>
+												<td valign="Top">
+<P>New show from "Survivor" creator will&nbsp;determine a&nbsp;new singer for 
+INXS</P></td>
+											</tr>
+										</table></td>
+									</tr>
+								</table></td>
+							</tr>
+						</table></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table></td>
+	</tr><tr>
+		<td valign="Top"><table class="lr10" cellspacing="0" cellpadding="0" border="0" width="299">
+			<tr>
+				<td><table class="tb5" cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tr>
+						<td><span class="subh">'MINDING THE STORE'</span></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table><table class="lr10" cellspacing="0" cellpadding="0" border="0" width="299">
+			<tr>
+				<td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tr>
+						<td class="bp20" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+									<tr>
+										<td class="rp5" align="Left" valign="Top" width="130"><a onclick="if(SF('h')) return h(this,'cm=editListModule1&amp;ce=3');" href="/web/20050727082328/http://tv.msn.com/tv/article.aspx?news=196854"><img title="©TBS" src="/web/20050727082328im_/http://entimg.msn.com/i/130/TV/05/MindingTheStore_PaulyStage_130x50.jpg" alt="©TBS" border="0" height="50" width="130" /></a></td><td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+											<tr>
+												<td class="vp5" align="Left" valign="Top"><a class="lnk1" onclick="if(SF('h')) return h(this,'cm=editListModule1&amp;ce=4');" href="/web/20050727082328/http://tv.msn.com/tv/article.aspx?news=196854">SHORE MINDS 'THE STORE'</a></td>
+											</tr><tr>
+												<td valign="Top">
+<P>Pauly Shore tends to the family business in his new TBS reality 
+show</P></td>
+											</tr>
+										</table></td>
+									</tr>
+								</table></td>
+							</tr>
+						</table></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table></td>
+	</tr><tr>
+		<td valign="Top"><table class="lr10" cellspacing="0" cellpadding="0" border="0" width="299">
+			<tr>
+				<td><table class="tb5" cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tr>
+						<td><span class="subh">ASK THE EXPERTS</span></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table><table class="lr10" cellspacing="0" cellpadding="0" border="0" width="299">
+			<tr>
+				<td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tr>
+						<td class="bp20" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+									<tr>
+										<td class="rp5" align="Left" valign="Top" width="130"><a onclick="if(SF('h')) return h(this,'cm=editListModule1&amp;ce=5');" href="javascript:newWindow6()"><img title="©AP" src="/web/20050727082328im_/http://entimg.msn.com/i/130/TV/05/RealWorldDesigner_130x50.jpg" alt="©AP" border="0" height="50" width="130" /></a></td><td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+											<tr>
+												<td class="vp5" align="Left" valign="Top"><a class="lnk1" onclick="if(SF('h')) return h(this,'cm=editListModule1&amp;ce=6');" href="javascript:newWindow6()">NEXT 'REAL WORLD' CITY?</a></td>
+											</tr><tr>
+												<td valign="Top">
+<P>Plus, who belongs to that mysterious "Big Brother" eyeball?</P></td>
+											</tr>
+										</table></td>
+									</tr>
+								</table></td>
+							</tr>
+						</table></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table></td>
+	</tr><tr>
+		<td valign="Top"><table class="lr10" cellspacing="0" cellpadding="0" border="0" width="299">
+			<tr>
+				<td><table class="tb5" cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tr>
+						<td><span class="subh">'BEING BOBBY BROWN'</span></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table><table class="lr10" cellspacing="0" cellpadding="0" border="0" width="299">
+			<tr>
+				<td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tr>
+						<td class="bp20" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+									<tr>
+										<td class="rp5" align="Left" valign="Top" width="130"><a onclick="if(SF('h')) return h(this,'cm=editListModule1&amp;ce=7');" href="/web/20050727082328/http://tv.msn.com/tv/article.aspx?news=195276"><img title="©WireImage.com" src="/web/20050727082328im_/http://entimg.msn.com/i/130/TV/05/WhitneyHouston_BobbyBrown_130x50.jpg" alt="©WireImage.com" border="0" height="50" width="130" /></a></td><td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+											<tr>
+												<td class="vp5" align="Left" valign="Top"><a class="lnk1" onclick="if(SF('h')) return h(this,'cm=editListModule1&amp;ce=8');" href="/web/20050727082328/http://tv.msn.com/tv/article.aspx?news=195276">BOBBY'S WORLD</a></td>
+											</tr><tr>
+												<td valign="Top">
+<P>Bobby Brown and Whitney Houston get "real"</P></td>
+											</tr>
+										</table></td>
+									</tr>
+								</table></td>
+							</tr>
+						</table></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table></td>
+	</tr><tr>
+		<td valign="Top"><table class="lr10" cellspacing="0" cellpadding="0" border="0" width="299">
+			<tr>
+				<td><table class="tb5" cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tr>
+						<td><span class="subh">'THE CUT'</span></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table><table class="lr10" cellspacing="0" cellpadding="0" border="0" width="299">
+			<tr>
+				<td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tr>
+						<td class="bp20" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td class="tp2" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+									<tr>
+										<td class="rp5" align="Left" valign="Top" width="130"><a onclick="if(SF('h')) return h(this,'cm=editListModule1&amp;ce=9');" href="/web/20050727082328/http://tv.msn.com/tv/article.aspx?news=193168"><img title="©The Cut/CBS" src="/web/20050727082328im_/http://entimg.msn.com/i/130/TV/05/the_cut_hilfiger_130x50.jpg" alt="©The Cut/CBS" border="0" height="50" width="130" /></a></td><td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+											<tr>
+												<td class="vp5" align="Left" valign="Top"><a class="bp2" onclick="if(SF('h')) return h(this,'cm=editListModule1&amp;ce=10');" href="/web/20050727082328/http://tv.msn.com/tv/article.aspx?news=193168">HILFIGER'S REALITY</a></td>
+											</tr><tr>
+												<td valign="Top">Tommy Hilfiger's new reality show "The Cut" is from a different cloth</td>
+											</tr>
+										</table></td>
+									</tr>
+								</table></td>
+							</tr>
+						</table></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+															
+
+														
+															
+															
+														
+														
+															
+															
+													</td>
+												</tr>
+											</table>
+										</td>
+										<td class=gblr10 valign="top">
+											<table cellpadding=0 cellspacing=0 border=0 >
+												<tr>
+													<td colspan=2>
+														
+															<!--BeginAd(ENTRY3,MediumShowcase)--><!--NOAD--><img src="/web/20050727082328im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=E06"/><!--EndAd-->
+															
+													</td>
+												</tr>
+												<tr>
+													<td colspan=2>
+														
+															<table cellspacing="0" cellpadding="0" border="0">
+	<tr>
+		<td valign="Top"><table class="tm15" cellspacing="0" cellpadding="0" border="0" bgcolor="#F1F1F1" width="100%">
+			<tr>
+				<td><font color="#F1F1F1"><table class="tlp10" cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tr>
+						<td><font color="#F1F1F1"><span class="subh">REALITY TV NEWS</span></font></td>
+					</tr>
+				</table></font></td>
+			</tr>
+		</table><table class="bp5" cellspacing="0" cellpadding="0" border="0" bgcolor="#F1F1F1" width="100%">
+			<tr>
+				<td valign="Top"><font color="#F1F1F1"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tr>
+						<td class="p10" valign="Top"><font color="#F1F1F1"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td class="rp5" align="Left" valign="Top" width="50"><font color="#F1F1F1"><a onclick="if(SF('h')) return h(this,'cm=editListModule2&amp;ce=1');" href="/web/20050727082328/http://tv.msn.com/tv/article.aspx?news=197181"><img title="©CBS Television" src="/web/20050727082328im_/http://entimg.msn.com/i/50/tv/survivoraustralia_dvd_50x50.jpg" alt="©CBS Television" border="0" height="50" width="50" /></a></font></td><td valign="Top"><font color="#F1F1F1"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+									<tr>
+										<td class="vp5" align="Left" valign="Top"><font color="#F1F1F1"><a class="lnk1" onclick="if(SF('h')) return h(this,'cm=editListModule2&amp;ce=2');" href="/web/20050727082328/http://tv.msn.com/tv/article.aspx?news=197181">REALITY RERUNS?</a></font></td>
+									</tr><tr>
+										<td valign="Top"><font color="#F1F1F1">With reruns of "Survivor" and "Amazing Race," TV tests whether reality has 
+a second life</font></td>
+									</tr>
+								</table></font></td>
+							</tr>
+						</table></font></td>
+					</tr><tr>
+						<td class="p10" valign="Top"><font color="#F1F1F1"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td class="rp5" align="Left" valign="Top" width="50"><font color="#F1F1F1"><a onclick="if(SF('h')) return h(this,'cm=editListModule2&amp;ce=3');" href="/web/20050727082328/http://tv.msn.com/tv/article.aspx?news=196662"><img title="©The Bachelor/ABC" src="/web/20050727082328im_/http://entimg.msn.com/i/50/tv/bachelor_coconnell_50x50.jpg" alt="©The Bachelor/ABC" border="0" height="50" width="50" /></a></font></td><td valign="Top"><font color="#F1F1F1"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+									<tr>
+										<td class="vp5" align="Left" valign="Top"><font color="#F1F1F1"><a class="lnk1" onclick="if(SF('h')) return h(this,'cm=editListModule2&amp;ce=4');" href="/web/20050727082328/http://tv.msn.com/tv/article.aspx?news=196662">'BACHELOR' HEADING TO PARIS</a></font></td>
+									</tr><tr>
+										<td valign="Top"><font color="#F1F1F1">City of Light loses Olympics bid, but gets "Bachelor" as consolation 
+prize</font></td>
+									</tr>
+								</table></font></td>
+							</tr>
+						</table></font></td>
+					</tr>
+				</table></font></td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+															
+
+														
+															
+															
+														
+														
+															
+															
+													</td>
+												</tr>
+												<tr>
+													<td  valign="top" class="tp10">
+														
+															<table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+
+		</table></td>
+	</tr>
+</table>
+														
+														
+													</td>
+													<td  valign="top" class="tp10">
+														
+															<table class="mh_outer" cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td><table class="mh_inner" cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr>
+				<td><span class="lnk3"></span></td>
+			</tr>
+		</table></td>
+	</tr>
+</table><table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+
+		</table></td>
+	</tr>
+</table>
+														
+														
+														
+															
+														
+														
+													</td>
+												</tr>
+												
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				
+				</td>
+				
+			</tr>
+		</table>
+		
+			<table class="ftout" cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td align="Center"><table cellspacing="0" cellpadding="0" border="0" width="750">
+			<tr>
+				<td><table cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tr>
+						<td><table class="ftrtbi2" cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td><span class="lnk1">&copy;2005 Microsoft</span></td><td><span class="blt1">&#159</span></td><td><a class="lnk4" onclick="if(SF('h')) return h(this,'cm=FOOTER&amp;ce=1');" href="/web/20050727082328/http://tv.msn.com/music/providers.aspx">Partners</a><span class="lnk4">&nbsp;&amp;&nbsp;</span><a class="lnk4" onclick="if(SF('h')) return h(this,'cm=FOOTER&amp;ce=2');" href="/web/20050727082328/http://g.msn.com/0nwenus0/A5/19" target="_new">Advertisers</a></td><td><span class="blt1">&#159</span></td><td><a class="lnk4" onclick="if(SF('h')) return h(this,'cm=FOOTER&amp;ce=3');" href="/web/20050727082328/http://g.msn.com/0nwenus0/a5/20" target="_new">Privacy</a><span class="lnk4">&nbsp;&amp;&nbsp;</span><a class="lnk4" onclick="if(SF('h')) return h(this,'cm=FOOTER&amp;ce=4');" href="/web/20050727082328/http://g.msn.com/0nwenus0/a5/18" target="_new">Legal</a></td>
+							</tr>
+						</table></td><td align="Right"><table class="ftrtbi2" cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td><span class="lnk4"><a class="lnk4" href="mailto:?subject=MSN%20Entertainment%20-%20Reality%20TV&amp;body=I%20found%20this%20on%20MSN%20Entertainment%20and%20thought%20you%20might%20be%20interested%20in%20it.%0d%0a%0d%0aClick%20this%20link%3a%0d%0ahttp%3a%2f%2ftv.msn.com%2fbeacon%2feditorial2.aspx%3fptid%3d61dd2ada-d637-446b-b4c3-b65114a3265a%26GT1%3d6657%0d%0a">Email This Page</a></span></td><td><span class="blt1">&#159</span></td><td><a class="lnk4" onclick="if(SF('h')) return h(this,'cm=FOOTER&amp;ce=5');" href="/web/20050727082328/http://tv.msn.com/help/customer.aspx">Customer Service</a></td>
+							</tr>
+						</table></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table></td>
+	</tr>
+</table><a class="txt2" onclick="var win = window.open(); win.document.open(); win.document.writeln('Machine Code: E06 - Date: 2005-07-27T01:23:28-07&lt;br&gt;&lt;br&gt;Page URL: ' + escape(document.URL)); return false;" href="#">Page Information</a>
+				
+		</center>
+	</body>
+</HTML>
+<script>if(window.sdd){sHS();}</script>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 8:23:28 Jul 27, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 6:42:16 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

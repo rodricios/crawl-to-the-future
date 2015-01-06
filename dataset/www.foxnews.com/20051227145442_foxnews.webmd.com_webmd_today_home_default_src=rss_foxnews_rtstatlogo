@@ -1,0 +1,659 @@
+
+	
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app12.us.archive.org";archive_analytics.values.server_ms=332;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<script language="javascript" type="text/javascript">
+		var guid_source = "{F96033D0-CE80-46F8-81A5-F2AA4B4A1450}";
+		var guid_source_id = ""; //unused
+		var encodedurl = "/default.htm";
+	</script>
+	<script language="javascript" type="text/javascript" src="/web/20051221091253js_/http://a876.g.akamai.net/7/876/1448/v00002/images.webmd.com/images/common/javascripts/cms_common.js"></script>
+		
+				<script>
+					
+					if(getcookie("VisitorId").length!=0)
+					{
+						
+						document.write('<iframe  src=/web/20051221091253/http://www.webmd.com/cookie.asp?cookiebrand=foxnews&rand=21725100&cookie=%7B90177396%2D5B7B%2D46F5%2DAEC8%2D1AD7750B8DBB%7D height=0 width=0></iframe>')
+					}
+				</script>
+				
+
+<html>
+    <head>
+        
+
+	<title>home</title>
+	
+	<!-- master stylesheet -->
+	<link rel="stylesheet" type="text/css" href="/web/20051221091253cs_/http://foxnews.webmd.com/includes/MINIBRANDInc/stylesheets/master/master.css">
+
+	<!-- dynamic based on configuration-->
+	<link rel="stylesheet" type="text/css" href="/web/20051221091253cs_/http://foxnews.webmd.com/includes/MINIBRANDInc/stylesheets/color5/primary.css" title="default">
+	<link rel="stylesheet" type="text/css" href="/web/20051221091253cs_/http://foxnews.webmd.com/includes/MINIBRANDInc/stylesheets/color5/secondary.css" title="default">
+	<link rel="stylesheet" type="text/css" href="/web/20051221091253cs_/http://foxnews.webmd.com/includes/MINIBRANDInc/stylesheets/color5/tertiary.css" title="default">
+	
+	<!-- client stylesheet: -->
+	<link rel="stylesheet" type="text/css" href="">
+		<meta name="ROBOTS" content="FOLLOW,INDEX" />
+</head>
+    <body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://foxnews.webmd.com/webmd_today/home/default?src=rss_foxnews_rtstatlogo";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "21";
+var displayMonth = "Dec";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://foxnews.webmd.com/webmd_today/home/default?src=rss_foxnews_rtstatlogo" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20051221091253" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Nov
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 9:12:53 Dec 21, 2005">DEC</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20060224152820/http://foxnews.webmd.com/webmd_today/home/default?src=rss_foxnews_rtstatlogo" title="24 Feb 2006"><strong>FEB</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 9:12:53 Dec 21, 2005">21</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20060224152820/http://foxnews.webmd.com/webmd_today/home/default?src=rss_foxnews_rtstatlogo" title="15:28:20 Feb 24, 2006"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2004
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 9:12:53 Dec 21, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20070206142557/http://foxnews.webmd.com/webmd_today/home/default?src=rss_foxnews_rtstatlogo" title="6 Feb 2007"><strong>2007</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20051221091253*/http://foxnews.webmd.com/webmd_today/home/default?src=rss_foxnews_rtstatlogo" title="See a list of every capture for this URL">57 captures</a>
+           <div class="r" title="Timespan for captures of this URL">21 Dec 05 - 29 Nov 12</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:11:000000000001_2006:-1:010112651311_2007:-1:010101020101_2008:-1:010011001002_2009:-1:010101010101_2010:-1:010101010101_2011:-1:001010101020_2012:-1:100000001010_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<div id="layout-body"><div id="layout-hat"><div style="height:25px;width:728px;background:#ddd;margin-bottom:10px;"><LINK REL=STYLESHEET TYPE="text/css" HREF="/web/20051221091253cs_/http://www.foxnews.com/css/mainStyles2004.css">
+<script language="JavaScript">
+	var fnDomain = "/web/20051221091253/http://www.foxnews.com";
+	var section_id = -1;
+	ranNum = new String (Math.random());
+	ranNum = ranNum.substring (2, 11);
+	document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="/web/20051221091253/http://www.foxnews.com/js/main2004.js?'+ranNum+'"></SCR' + 'IPT>');
+	document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="/web/20051221091253/http://www.foxnews.com/js/navData.js?'+ranNum+'"></SCR' + 'IPT>');
+	document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="/web/20051221091253/http://www.foxnews.com/js/navScripts.js?'+ranNum+'"></SCR' + 'IPT>');
+	document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="/web/20051221091253/http://www.foxnews.com/js/accessScripts.js?'+ranNum+'"></SCR' + 'IPT>');
+	document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="/web/20051221091253/http://www.foxnews.com/js/accessData.js?'+ranNum+'"></SCR' + 'IPT>');
+	document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="/web/20051221091253/http://www.foxnews.com/js/promoBanner.js?'+ranNum+'"></SCR' + 'IPT>');
+</script>
+
+<SCRIPT LANGUAGE="JavaScript">
+	OAS_url = '/web/20051221091253/http://oas.foxnews.com/RealMedia/ads/';
+	OAS_sitepage = 'health.foxnews/front';
+	OAS_listpos = 'Top1';
+	OAS_query = '';
+	OAS_target = '_top';
+	//end of configuration
+	OAS_version = 10;
+	OAS_rn = '001234567890'; OAS_rns = '1234567890';
+	OAS_rn = new String (Math.random()); OAS_rns = OAS_rn.substring (2, 11);
+	function OAS_NORMAL(pos) {
+	  document.write('<A HREF="' + OAS_url + 'click_nx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + '?' + OAS_query + '" TARGET=' + OAS_target + '>');
+	  document.write('<IMG SRC="' + OAS_url + 'adstream_nx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + '?' + OAS_query + '" BORDER=0></A>');
+	}
+</SCRIPT>
+<SCRIPT LANGUAGE=JavaScript1.1>
+	OAS_version = 11;
+	if ((navigator.userAgent.indexOf('Mozilla/3') != -1) || (navigator.userAgent.indexOf('Mozilla/4.0 WebTV') != -1))
+	  OAS_version = 10;
+	if (OAS_version >= 11)
+	  document.write('<SCR' + 'IPT LANGUAGE=JavaScript1.1 SRC="' + OAS_url + 'adstream_mjx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '?' + OAS_query + '"></SCR' + 'IPT>');
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+	document.write('');
+	function OAS_AD(pos) {
+	  if (OAS_version >= 11)
+	    OAS_RICH(pos);
+	  else
+	    OAS_NORMAL(pos);
+	}
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+	var if_Site_ID = "foxnews";
+	var if_sid="97";
+	var if_tag = "<SCR" + "IPT LANGUAGE='JavaScript' " + "DEFER SRC=http" + "://" + 
+	 "a248.e.akamai.net/7/836/1132/102403/" + if_Site_ID + ".insightfirst.com/scripts/" + if_Site_ID + "_if.js" + 
+	 "></SCR" + "IPT>";
+	var mep1="&#129;&sect;ionName=health&pageType=external";
+	document.write(if_tag);
+</SCRIPT>
+
+
+<table border=0 cellpadding=0 cellspacing=0 width=770>
+	
+	<!--<tr><td style="padding:5px 0px 5px 0px;"><div id="topAd" style="width:770px;height:90px;overflow:hidden;" align="center"><SCRIPT LANGUAGE="JavaScript">OAS_AD('Top');</SCRIPT></div></td></tr>-->
+  <tr><td style="padding-bottom:5px;">
+	<div id="logo"><a href="/web/20051221091253/http://www.foxnews.com/index.html"><img src="/web/20051221091253im_/http://www.foxnews.com/images/headers/fnc_logo.gif" width=90 height=85 border=0></a></div>
+	<div id="header">
+		<div id="nav"><script language="JavaScript">topNav();</script></div>
+		<div style="width:680px;">
+			<div id="headImage" style="background-image:url(/web/20051221091253im_/http://www.foxnews.com/images/headers/sec_id_health.jpg);">
+				<table cellpadding=0 cellspacing=0 border=0 width=370>
+					<tr>
+					<td valign="bottom">
+					<table cellpadding=0 cellspacing=0 border=0 width=195>
+						<form method="get" name="searchForm" action="/web/20051221091253/http://search.foxnews.com/info.foxnws/redirs_all.htm" onSubmit="return searchSub(document.searchForm);">
+							<input type="hidden" name="pgtarg" value="wbsdogpile">
+							<input type="hidden" name="qcat" value="web">
+							<tr>
+							<td bgcolor="#000000" style="font-size:11px;color:white;padding:3px 5px 3px 5px;"><b>SEARCH</b></td>
+							<td bgcolor="#000000" align="center"><input type="text" size="15" name="qkw" maxlength="52" value="" class="searchInput" style="width:105px;"></td>
+							<td bgcolor="#000000" style="padding:3px 5px 3px 5px;"><input type="image" src="/web/20051221091253im_/http://www.foxnews.com/images/rede04/btn_go.gif" style="width:22px;height:16px;" border=0></td>
+							</tr>
+						</form>
+					</table>
+					</td>
+					<td align="right" class="cap"><a href="/web/20051221091253/http://my.webmd.com/webmd_today/home/default" target="_blank"><img src="/web/20051221091253im_/http://www.foxnews.com/images/clear_dot.gif" width=70 height=75 border=0></a></td>
+					</tr>
+				</table>
+			</div>
+			<div style="width:310px;height:75px;float:right;overflow:hidden;" id="hide1"><script language="JavaScript">document.write(flashBanner());</script></div>
+		</div>
+	</div>
+	</td></tr>
+
+</table>
+<style type="text/css">
+#layout-hat {
+ height:100px;
+}
+#layout-ad-leaderboard {
+ background-color:#fff;
+ width:770px;
+ height:120px;
+}
+#layout-ad-leaderboard table {
+ background-color:transparent;
+}
+#layout-main {
+ background-color:#fff;
+ width:770px;
+}
+#layout-main table {
+ background-color:transparent;
+}
+#layout-boot #foxnews-boot {
+ background-color: #BDC5D6;
+}
+#layout-boot table table {
+}
+#layout-boot a:hover {
+ color:#990000;
+ text-decoration:underline;
+}
+#layout-ad-leaderboard div {
+ /*background-color:#fff !important;*/
+}
+#layout-main-right, #layout-footer-right {
+ background-image:none;
+}
+#layout-main-right div {
+ /*background-color:#fff !important;*/
+ /*border:0 !important;*/
+}
+
+#layout-main-left {
+ /*border: 1px solid #000000;*/
+ margin: 5px;
+}
+
+.article-float div {
+ /*background-color:#fff !important;*/
+}
+</style>
+
+</div></div><div id="layout-ad-leaderboard"><div class="ad-heading"><BR></div><div style="width:728px;height:90px;margin-bottom:10px;"><iframe  width="728" height="114" marginwidth="0" marginheight="0" style="margin:0;" frameborder="0" scrolling="no" src="/web/20051221091253if_/http://adv.webmd.com/html.ng/transactionID=101412860&amp;apg=home&amp;site=cobrand&amp;dom=www%2Ewebmd%2Ecom&amp;affiliate=foxnews&amp;asset=und&amp;brand=foxnews&amp;uri=%2Fwebmd%5Ftoday%2Fhome%2Fdefault&amp;pos=top&amp;adsize=728x90&amp;network=consumer"><script language="JavaScript1.2" type="text/javascript" charset="ISO-8859-1" src="/web/20051221091253js_/http://adv.webmd.com/js.ng/Params.richmedia=yes&amp;transactionID=101412860&amp;apg=home&amp;site=cobrand&amp;dom=www%2Ewebmd%2Ecom&amp;affiliate=foxnews&amp;asset=und&amp;brand=foxnews&amp;uri=%2Fwebmd%5Ftoday%2Fhome%2Fdefault&amp;pos=top&amp;adsize=728x90&amp;network=consumer"></script></iframe></div></div><div id="layout-main"><table cellpadding="0" cellspacing="0" border="0"><tr valign="top"><td id="layout-main-left"><div class="container-main-left">
+
+	  <div id="searchbox">
+		<div style="width:100%">
+		  
+			<form action="/web/20051221091253/http://foxnews.webmd.com/search/search_results/" method="get" ID="Form1">
+		  
+			<table cellpadding="2" cellspacing="0" border="0" align="center" ID="Table1">
+			  <tr>
+				<td><img src="/web/20051221091253im_/http://a876.g.akamai.net/7/876/1448/v00002/images.webmd.com/images/minibrand/searchbar-text.gif" alt="WebMD Health Search"></td>
+
+				<td><input type="text" size="12" name="query" id="searchbox-query"></td>
+
+				<td><input type="submit" value="Search" ID="Submit1" NAME="Submit1"></td>
+			  </tr>
+			</table>
+		
+		  </form>
+		
+		</div>
+	  </div>
+
+	  <div id="navbar">
+		<div class="container-navbar">
+		  <table cellpadding="0" cellspacing="0" border="0" width="100%" ID="Table2">
+			<tr>
+			  
+			<td class="navbar-column-first" style="border:0;"><a href="/web/20051221091253/http://foxnews.webmd.com/webmd_today/home/default">&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;</a></td><td class="navbar-column"><a href="/web/20051221091253/http://foxnews.webmd.com/search/headlines?channelId=1728">News &amp; Features</a></td>
+
+			  <td class="navbar-column"><a href="/web/20051221091253/http://foxnews.webmd.com/medical_information/condition_centers/default.htm">Disease &amp; Conditions</a></td>
+
+			  <td class="navbar-column"><a href="/web/20051221091253/http://foxnews.webmd.com/health_and_wellness/living_better/default.htm">Wellness Centers</a></td>
+				
+			  
+
+			</tr>
+		  </table>
+		</div>
+	  </div>
+
+	<div><!-- BEGIN content guts -->
+
+	<div>
+	
+		<p class="hide">&nbsp;</p>
+		<!--commented out 04.21.05 per  chris brandon--<div id="fda-alert">                  <table cellpadding="0" cellspacing="0" border="0">                    <tr>                      <th>FDA Alert</th>
+                      <td><a href="/content/article/104/107281.htm">Bextra Taken Off Market; Celebrex Gets Warning</a></td>                    </tr>                  </table>                </div>-->		
+
+
+		<!-- BEGIN two column table -->
+		<p class="hide"></p>
+		<table cellpadding="0" cellspacing="0" border="0" width="554">
+		  <tr valign="top">
+			<td width="278">
+			  
+			  <div class="column278 secondary278">
+				<h2><img src="/web/20051221091253im_/http://a876.g.akamai.net/7/876/1448/v00002/images.webmd.com/images/minibrand/webmd-logo.gif" alt="WebMD"> News &amp; Features</h2>
+			  </div>
+
+			  <div style="padding:0 10px;"><div class="clearfix"><img src="/web/20051221091253im_/http://foxnews.webmd.com/NR/rdonlyres/ez5yl4xczghbbyajyransi5eivdphehp4l4pcoqbbycauffhosuy2k4353nmlmggqvbgfhtskni4p3gkqn3qjsdisnd/7WaystoSquelch.jpg" alt="" style="float:left;margin-right:10px;border:1px solid #000;width:88px;height:120px;"><h3><a href="/web/20051221091253/http://foxnews.webmd.com/content/article/114/111442.htm">7 Ways to Squelch Holiday Squabbles</a></h3>Etiquette expert Peggy Post shares tips for a harmonious holiday season.</div><div style="text-align:center;padding:10px 0;"><img src="/web/20051221091253im_/http://a876.g.akamai.net/7/876/1448/v00002/images.webmd.com/images/minibrand/hr-fade.gif" style="width:240px" alt=""></div><h4>More Health Headlines</h4><ul class="minibrand-ul" style="font-size:85%;"><li> <a href="/web/20051221091253/http://foxnews.webmd.com/content/article/116/112229">Erectile Dysfunction-Heart Risk Link</a></li><li> <a href="/web/20051221091253/http://foxnews.webmd.com/content/article/116/112228">UVB Rays Linked to Milder Skin Cancer</a></li><li> <a href="/web/20051221091253/http://foxnews.webmd.com/content/article/116/112227">Bird Flu Woes: Flying This Way?</a></li><li> <a href="/web/20051221091253/http://foxnews.webmd.com/search/headlines?channelId=1728&amp;show=cclist" style="font-weight:bold;">All Health Headlines</a></li></ul></div>  
+		
+			</td>
+
+			<td width="14"></td>
+			<td width="258">
+  
+			  <div id="client-feed"><table cellpadding="0" cellspacing="0" border="0" width="258"><tr><td id="client-feed-top"></td></tr><tr><td id="client-feed-body"><h2><a href="/web/20051221091253/http://www.foxnews.com/">FOXNews.com - Health</a></h2><ul><li><a href="/web/20051221091253/http://www.foxnews.com/story/0,2933,179325,00.html">Happiness May Lead to Success</a></li><li><a href="/web/20051221091253/http://www.foxnews.com/story/0,2933,179326,00.html">Weight Loss Surgeries Soaring</a></li><li><a href="/web/20051221091253/http://www.foxnews.com/story/0,2933,179194,00.html">Coping With Chronic Illness During the Holidays</a></li></ul></td></tr><tr><td id="client-feed-bottom"></td></tr></table></div><BR><SCRIPT LANGUAGE="JavaScript">
+function formHandler(form){
+var URL = document.form.site.options[document.form.site.selectedIndex].value;
+window.location.href = URL;
+}
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+function form2Handler(form2){
+var URL = document.form2.site.options[document.form2.site.selectedIndex].value;
+window.location.href = URL;
+}
+</SCRIPT>                             <!-- BEGIN background box -->
+                      <h2 style="margin:16px 0 0 12px;">Medical Info</h2>
+                      <div class="bbox tertiary-bbox">                        <table class="bbox-table" cellpadding="0" cellspacing="0" border="0">                          <tr>                            <td style="padding:12px;">                              <h4>Diseases and Conditions</h4>
+                              <form name="form" onsubmit="return false;">                                <table cellpadding="0" cellspacing="0" border="0">                                  <tr>                                    <td><select name="site"  style="width:180px;">                                      <option value="">                                        Select                                      </option>
+                                      <option value="/medical_information/condition_centers/add_adhd/default.htm">                                       ADD                                      </option>           <option value="/medical_information/condition_centers/allergies/default.htm">                                       Allergies                                      </option>           <option value="/medical_information/condition_centers/alzheimers/default.htm">                                      Alzheimer's                                      </option>           <option value="/medical_information/condition_centers/arthritis/default.htm">                                      Arthritis                                      </option>           <option value="/medical_information/condition_centers/asthma/default.htm">                                      Asthma                                      </option>           <option value="/medical_information/condition_centers/back_pain/default.htm">                                       Back Pain                                      </option>           <option value="/medical_information/condition_centers/breast_cancer/default.htm">                                      Breast Cancer                                      </option>           <option value="/medical_information/condition_centers/cancer/default.htm">                                      Cancer                                      </option>           <option value="/health_and_wellness/living_better/dental_health_center/default.htmm">                                      Dental                                      </option>           <option value="/medical_information/condition_centers/depression/default.htm">                                       Depression                                      </option>           <option value="/medical_information/condition_centers/diabetes_1_2/default.htm">                                     Diabetes                                      </option>           <option value="/health_and_wellness/living_better/eye_health_center/default.htm">                                      Eye Health                                      </option>           <option value="/medical_information/condition_centers/heart_disease/default.htm">                                      Heart Disease                                      </option>           <option value="/medical_information/condition_centers/hepatitis/default.htm">                                       Hepatitis                                      </option>           <option value="/medical_information/condition_centers/hiv_aids/default.htm">                                       HIV/AIDS                                      </option>           <option value="/medical_information/condition_centers/hypertension/default.htm">                                       Hypertension                                      </option>           <option value="/medical_information/condition_centers/mens_conditions/default.htm">                                       Men's Conditions                                      </option>           <option value="/medical_information/condition_centers/mental_health/default.htm">                                       Mental Health                                      </option>           <option value="/medical_information/condition_centers/migraines/default.htm">                                     Migraines                                      </option>           <option value="/medical_information/condition_centers/multiple_sclerosis/default.htm">                                      Multiple Sclerosis                                      </option>           <option value="/medical_information/condition_centers/osteoporosis/default.htm">                                       Osteoporosis                                      </option>           <option value="/medical_information/condition_centers/parkinsons/default.htm">                                     Parkinson's                                      </option>           <option value="/medical_information/condition_centers/sexual_conditions/default.htm">                                     Sexual Conditions                                      </option>           <option value="/health_and_wellness/living_better/skin_and_beauty_center/default.htm">                                       Skin & Beauty                                      </option>           <option value="/medical_information/condition_centers/stroke/default.htm">                                      Stroke                                      </option>           <option value="/medical_information/condition_centers/weight_control/default.htm">                                      Weight Control                                      </option>           <option value="/medical_information/condition_centers/womens_conditions/default.htm">                                      Women's Conditions                                      </option></SELECT></td>
+                                   <td style="padding-left:6px;"><input type=button value="Go!" onClick="javascript:formHandler(this)"><!-- <input type="submit" value="Go" onclick="return redirect(document.diseases_conditions.condition_center);"> --></td></form>                                  </tr>
+                                  <tr>                                    <td class="all-centers"><a href="/web/20051221091253/http://foxnews.webmd.com/content/pages/20/105576.htm">All Centers</a></td>                                  </tr>                                </table>                              </form>
+                              <h4 style="margin-top:12px;">Wellness Centers</h4>
+                              <form name="form2" onsubmit="return false;">                                <table cellpadding="0" cellspacing="0" border="0">                                  <tr>                                    <td><select name="site" style="width:180px;">                                      <option value="">                                        Select                                      </option>
+                                      <option value="/health_and_wellness/living_better/healthy_seniors/default.htm">                                      Healthy Aging                                      </option>           <option value="/health_and_wellness/living_better/alternative_medicine/default.htm">                                      Alternative Medicine                                      </option>           <option value="/health_and_wellness/living_better/dental_health_center/default.htm">                                      Dental Health                                      </option>           <option value="/health_and_wellness/living_better/emotional_wellness/default.htm">                                      Emotional Wellness                                      </option>           <option value="/health_and_wellness/living_better/eye_health_center/default.htm">                                      Eye Health                                      </option>           <option value="/health_and_wellness/living_better/healthy_men/default.htm">                                      Healthy Men                                      </option>           <option value="/health_and_wellness/living_better/healthy_sexuality/default.htm">                                      Healthy Sexuality                                      </option>           <option value="/health_and_wellness/living_better/healthy_women/default.htm">                                      Healthy Women                                      </option>           <option value="/health_and_wellness/living_better/sports_and_fitness/default.htm">                                      Fitness & Exercise                                      </option>           <option value="/health_and_wellness/food_nutrition/default.htm">                                     Diet & Nutrition                                      </option>           <option value="/health_and_wellness/living_better/skin_and_beauty_center/default.htm">                                      Skin & Beauty                                      </option>           <option value="/health_and_wellness/pregnancy_family/getting_pregnant/default.htm">                                     Getting Pregnant                                      </option>           <option value="/health_and_wellness/pregnancy_family/pregnancy/default.htm">                                      Pregnancy                                      </option>           <option value="/health_and_wellness/pregnancy_family/parenting/default.htm">                                      Parenting                                      </option>                                    </select></td>
+                                    <td style="padding-left:6px;"><input type=button value="Go!" onClick="javascript:form2Handler(this)"><!-- <input type="submit" value="Go" onclick="return redirect(document.wellness_centers.condition_center2);"> --></td>                                  </tr>
+                                  <tr>                                    <td class="all-centers"><a href="/web/20051221091253/http://foxnews.webmd.com/health_and_wellness/living_better/default.htm">All Centers</a></td>                                  </tr>                                </table>                              </form>                            </td>                          </tr>                        </table>                      </div><!-- END background box -->
+			</td>
+		  </tr>
+		</table>
+
+
+		<p style="margin-top:20px;" id="problem"></p>
+	
+		<table cellpadding="0" cellspacing="0" border="0" width="554">
+		  <tr valign="top">
+			<td width="278"><!-- BEGIN quiz EI: replace this content -->
+<style type="text/css">
+#wmdPollButton {
+ display:block;
+ margin-top:10px;
+ width:50px;
+ height:20px;
+ text-align:center; /* horizontal center */
+ line-height:18px;  /* vertical center */
+ font-size:8pt;
+ text-decoration:none;
+ font-weight:bold;
+ background-image: url('/web/20051221091253im_/http://foxnews.webmd.com/NR/rdonlyres/eisjsmku2hh3vns5i3a65yv6gbg5vo5dacodou733idscqgjc2xb2uqr53msbpiusycir3sgvlo4vfeehpm4g574jga/pollbutton.gif');background-repeat : no-repeat;background-position : bottom;
+}
+#wmdPollViewResults {
+ display:block;
+ margin-top:10px;
+ padding:0 15px;
+ line-height:18px;  /* vertical center */
+ font-size:8pt;
+ height:20px;
+}
+</style>
+<div class="column278 primary278">
+<h2><img src="/web/20051221091253im_/http://foxnews.webmd.com/NR/rdonlyres/ertdqabxhet5et6l3asyzw7gnx52icmdnjm7ao3g4o2p4mn7pzusdes3byvcgynq3axp2psl6jsrzgfddooufdenjwb/webmdlogo.gif" alt="WebMD"> Health Poll</h2>
+</div>
+<div style="padding:0 15px"><form method="post" action="/web/20051221091253/http://foxnews.webmd.com/content/polls/1/111987.htm?uri=%2Fcontent%2Fpollresults%2F1%2F111987%2Ehtm&amp;action=vote" name=pollform><input type=hidden name=results value=true%>      <div id="wmdPollQuestion1">   <input type="hidden" name="question1Id" value="119">         Will the holidays this year be more stressful than usual?    </div>
+    <div id="wmdPollAnswers1">      <table cellpadding="0" cellspacing="0" border="0">         <tr><td class="answer"><label for="q1Choice_435"><input type="radio" name="q1Choice" id="q1Choice_435" value="435"> Less Stressful</label></td></tr>
+         <tr><td class="answer"><label for="q1Choice_436"><input type="radio" name="q1Choice" id="q1Choice_436" value="436"> Same as always</label></td></tr>
+         <tr><td class="answer"><label for="q1Choice_437"><input type="radio" name="q1Choice" id="q1Choice_437" value="437"> More stressful</label></td></tr>   
+      </table> </div>
+ 
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td style="vertical-align:middle;"><a href="javascript:document.pollform.submit()" id="wmdPollButton">VOTE</a></td>
+<td style="vertical-align:bottom;" align="right" id="wmdPollViewResults"><a href="/web/20051221091253/http://foxnews.webmd.com/content/polls/1/111987.htm?uri=%2Fcontent%2Fpollresults%2F1%2F111987%2Ehtm">View Results</a></td>
+</tr>
+</table>
+ 
+</form>
+</div>
+<!-- END quiz EI -->
+ 
+</td>
+			<td width="14"></td>
+			<td width="258"></td>
+		  </tr>
+		</table>
+
+			
+		
+	</div>
+	
+	<!-- END content guts --></div></div></td>
+
+		<td id="layout-main-right">
+
+			<div id="container-main-right" class="container-main-right">
+			<div class="ad-heading">
+				<BR>
+				<!-- advertisement -->
+			</div>
+
+			<div style="width:120px; height:600px; text-align:center;">
+				<iframe  width="120" height="624" marginwidth="0" marginheight="0" style="margin:0;" frameborder="0" scrolling="no" src="/web/20051221091253if_/http://adv.webmd.com/html.ng/transactionID=101412860&amp;apg=home&amp;site=cobrand&amp;dom=www%2Ewebmd%2Ecom&amp;affiliate=foxnews&amp;asset=und&amp;brand=foxnews&amp;uri=%2Fwebmd%5Ftoday%2Fhome%2Fdefault&amp;pos=right&amp;adsize=120x600&amp;network=consumer"><script language="JavaScript1.2" type="text/javascript" charset="ISO-8859-1" src="/web/20051221091253js_/http://adv.webmd.com/js.ng/Params.richmedia=yes&amp;transactionID=101412860&amp;apg=home&amp;site=cobrand&amp;dom=www%2Ewebmd%2Ecom&amp;affiliate=foxnews&amp;asset=und&amp;brand=foxnews&amp;uri=%2Fwebmd%5Ftoday%2Fhome%2Fdefault&amp;pos=right&amp;adsize=120x600&amp;network=consumer"></script></iframe>
+			</div>
+			</div>
+
+		</td>
+
+		</tr><tr><td id="layout-footer">
+		
+	<div class="container-footer">
+	  <p style="text-align:center;padding:15px 0;">
+		<img src="/web/20051221091253im_/http://a876.g.akamai.net/7/876/1448/v00002/images.webmd.com/images/minibrand/hr-fade.gif" style="width:500px;height:1px;" alt="">
+	  </p>
+
+	  <div>
+		<a href="/web/20051221091253/http://foxnews.webmd.com/who_we_are/privacy/default">WebMD Privacy Policy</a> | <a href="/web/20051221091253/http://foxnews.webmd.com/webmd_today/home/terms_conditions">WebMD Terms and Conditions</a> | <a href="/web/20051221091253/http://foxnews.webmd.com/webmd_today/home/contactus.htm">Contact WebMD</a><br>
+		&copy;1996-2005 <a href="/web/20051221091253/http://www.webmd.com/">WebMD</a> Inc. All rights reserved.
+		| <a href="/web/20051221091253/http://foxnews.webmd.com/who_we_are/about_webmd/default">About WebMD</a> | <a href="/web/20051221091253/http://my.webmd.com/webmd_today/home/default.htm">WebMD Health Site</a>
+	  </div>
+	</div>
+
+
+	  <div id="container-footer-icons">
+	  <div style="margin:15px 45px;border:solid #3399cc 2px;text-align:center;">
+	  <a href="/web/20051221091253/http://webapps.urac.org/healthWebsiteaccreditation/default.asp?id=321554545" onclick="window.open(this.href,'urac','width=600,height=540,left=300,resizable,scrollbars=auto');return false;"><img src="/web/20051221091253im_/http://a876.g.akamai.net/7/876/1448/v00001/images.webmd.com/images/mywebmd/URAC.gif" width="71" height="78" alt="URAC Accredited Health Web Site" border="0" ></a>
+	  &nbsp;&nbsp;
+	  <a href="/web/20051221091253/http://foxnews.webmd.com/who_we_are/privacy/default.htm"><img src="/web/20051221091253im_/http://a876.g.akamai.net/7/876/1448/v00001/images.webmd.com/images/mywebmd/trust-e.gif" width="121" height="78" alt="" border="0"></a>
+	  &nbsp;&nbsp;
+	  <a href="/web/20051221091253/http://my.webmd.com/click?url=http://www.hon.ch/HONcode/Conduct.html?HONConduct298987"><img src="/web/20051221091253im_/http://a876.g.akamai.net/7/876/1448/v00001/images.webmd.com/images/mywebmd/honcode.gif" width="65" height="78" alt="" border="0"></a>
+	  </div>
+	  </div>
+
+
+</td><td id="layout-footer-right"></td></tr></table><p class="hide"></p><div id="layout-boot"><div style="height:25px;width:728px;background:#ddd;margin-top:10px;"><table id="foxnews-boot" cellpadding="0" cellspacing="0" border="0" width="770">
+	<tr><td align="center" style="padding-top:20px;">
+	<table cellpadding=0 cellspacing=0 border=0 width=450 style="background-color:#000000;">
+		<form method="get" name="searchFormBot" action="/web/20051221091253/http://search.foxnews.com/info.foxnws/redirs_all.htm" onSubmit="return searchSub(document.searchFormBot);">
+			<input type="hidden" name="pgtarg" value="wbsdogpile">
+			<input type="hidden" name="qcat" value="web">
+			<tr>
+			<td style="font-size:11px;color:white;padding:3px 5px 3px 5px;"><b>SEARCH</b></td>
+			<td align="center"><input type="text" size="15" name="qkw" maxlength="52" value="" class="searchInput" style="width:365px;"></td>
+			<td style="padding:3px 5px 3px 5px;"><input type="image" src="/web/20051221091253im_/http://www.foxnews.com/images/rede04/btn_go.gif" style="width:22px;height:16px;" border=0></td>
+			</tr>
+		</form>
+	</table>
+	</td></tr>
+	
+	<tr><td align="center" class="botNav" style="padding-top:10px;">
+		<script language="JavaScript">document.write(botNav());</script>
+	</td></tr>
+	<tr><td align="center" class="cap" style="padding:15px 0px 20px 0px;">
+		<script language="JavaScript">document.write(footer());</script>
+	</td></tr>
+
+</table>
+
+
+
+
+
+
+
+
+
+<script language="JavaScript">
+	//buildNav();
+	rightPromo();
+	writePlayer();
+	document.body.style.backgroundColor = "#000099";
+</script>
+
+
+<script language="JavaScript1.2" type="text/javascript">
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') { window.onload = func; }
+  else                                    { window.onload = function() { oldonload(); func(); } }
+}
+addLoadEvent( wrap_loader );
+
+function wrap_loader() {
+  loader('external',-1)
+}
+</script>
+</div></div></div></div>
+
+	<script language="javascript1.2" type="text/javascript"><!--  
+		var s_pageName="/web/20051221091253/http://foxnews.webmd.com/default.htm"
+		var s_server="cs27"
+		var s_channel=""
+		var s_pageType=""
+		var s_prop1="1728"
+		var s_prop2="home"
+		var s_campaign=""
+		var s_eVar2=""
+		var s_site="foxnews"
+		var s_siteclass="af"
+		var s_account="webmd" + "com"
+		var s_pub=""
+		var s_asset_class="WebMD_TOC"
+		var s_asset_type=""
+		
+		//-->
+	</script>
+	<script language="javascript1.2" type="text/javascript" src="/web/20051221091253js_/http://a876.g.akamai.net/7/876/1448/v00002/images.webmd.com/images/common/bi_common/bi_consumer.js?d=12/21/2005"></script>
+</body>
+</html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 9:12:53 Dec 21, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 7:47:00 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

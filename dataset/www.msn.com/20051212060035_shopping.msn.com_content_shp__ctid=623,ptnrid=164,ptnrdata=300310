@@ -1,0 +1,932 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app16.us.archive.org";archive_analytics.values.server_ms=3441;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+		<title>MSN Shopping: Holiday 2005: Holiday Home</title>
+		<meta name="ms.locale" content="en-us"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="description" content="MSN Shopping: Holiday 2005: Holiday Home">
+<meta name="keywords" content="MSN Shopping: Holiday 2005: Holiday Home">
+		<LINK href="/web/20051228031230cs_/http://images.shopping.msn.com/css/baseline.css" type="text/css" rel="stylesheet">
+		<script type="text/javaScript" language="javascript" src="/web/20051228031230js_/http://images.shopping.msn.com/scripts/marketplace.js"></script>
+	</HEAD>
+	<BODY>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://shopping.msn.com/content/shp/?ctid=623,ptnrid=164,ptnrdata=300310";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "28";
+var displayMonth = "Dec";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://shopping.msn.com/content/shp/?ctid=623,ptnrid=164,ptnrdata=300310" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20051228031230" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Nov
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 3:12:30 Dec 28, 2005">DEC</td>
+		<td class="f" nowrap="nowrap">
+		
+		    Jan
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 3:12:30 Dec 28, 2005">28</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+               
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2004
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 3:12:30 Dec 28, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2006
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20051228031230*/http://shopping.msn.com/content/shp/?ctid=623,ptnrid=164,ptnrdata=300310" title="See a list of every capture for this URL">1 captures</a>
+           <div class="r" title="Timespan for captures of this URL">28 Dec 05 - 28 Dec 05</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:11:000000000001_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+		<div class="centeredPage">
+		<style type="text/css">
+.wide > .headerDiv /* adjustment for mozilla-based browsers */
+{
+	float:left;
+	width:748px;
+}
+.centeredPage > .wide
+{
+	width: 768px;
+}
+.centeredPage table, #colThree
+{
+	background: transparent;
+}
+#colOne
+{
+	width:200px;
+}
+.centeredPage > .footer
+{
+width: 768px;
+}
+.recentPanel > .recentList
+{
+	width:748px;
+}
+.recentPanel > .recentHead
+{
+	width:768px;
+}
+</style>
+<div id="head">
+	<script type="text/javascript" src="/web/20051228031230js_/http://images.shopping.msn.com/scripts/helppane26.js"></script>
+	<script type="text/javascript">var bSearch=true;var L_H_TEXT="For help using this MSN Home page, click a topic.";var H_KEY="redaeh_egap";var H_TOPIC="";var H_BURL="/web/20051228031230/http://www.msn.com/panehelp.armx";var L_H_APP="";var H_URL_BASE="/web/20051228031230/http://help.msn.com/en_us";var H_CONFIG="msn_msncomv9.ini";window.name="msn_msncomv9";</script>
+	<script language="JavaScript" src="/web/20051228031230js_/http://hp.msn.com/scr/op/ol-fdbkv3_r1.js"></script>
+	<div>
+	<ul id="netnav">
+		<li class="first"><a href="/web/20051228031230/http://g.msn.com/0nwenus0/AH/00">MSN Home</a></li>
+		<li><a href="/web/20051228031230/http://g.msn.com/0nwenus0/AH/01">My MSN</a></li>
+		<li><a href="/web/20051228031230/http://g.msn.com/0nwenus0/AH/02">Hotmail</a></li>
+		<li><a href="/web/20051228031230/http://shopping.msn.com/">Shopping</a></li>
+		<li><a href="/web/20051228031230/http://g.msn.com/0nwenus0/AH/05">Money</a></li>
+		<li><a href="/web/20051228031230/http://g.msn.com/0nwenus0/AH/06">People &amp; Chat</a></li>
+		<li class="last"><span class="ppSignIn"><a href="/web/20051228031230/http://login.passport.com/login.srf?lc=1033&amp;id=30045&amp;ru=http%3a%2f%2fshopping.msn.com%2fcontent.aspx%3fctid%3d623%26ptnrid%3d164%26ptnrdata%3d300310&amp;tw=3600&amp;fs=1&amp;kv=7&amp;ct=1135739550&amp;cb=returl=http%3a%2f%2fshopping.msn.com%2fcontent.aspx%3fctid%3d623%26ptnrid%3d164%26ptnrdata%3d300310&amp;ems=1&amp;ver=2.1.6000.1&amp;rn=M9JJwkas&amp;tpf=4779641367b7617c2eeb98abe363863c">Sign In</a></span></li>
+	</ul>
+	<form action="/web/20051228031230/http://search.msn.com/results.aspx" id="search" method="get">
+		<span>Web search:</span><input type="text" name="q" id="q" size="14" maxlength="150" /><input type="submit" class="button" name="submit" value="Search" title="Search the Web" />
+		<input name="FORM" value="SHOP" type="hidden" /> <input name="cp" value="65001" type="hidden" />
+	</form>
+	</div>
+	<div id="subhead">
+		<a href="/web/20051228031230/http://www.msn.com/"><img id="logo" alt="MSN" src="/web/20051228031230im_/http://images.shopping.msn.com/img/msnlg.gif" height="35" width="118" /></a><script type="text/javascript" src="/web/20051228031230js_/http://images.shopping.msn.com/scripts/hdr36.js"></script><script type="text/javascript">logo();</script><a class="subheadTitle" href="/web/20051228031230/http://shopping.msn.com/" title="MSN Shopping">Shopping</a>
+	</div>
+	<ul id="subnav">
+		<li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=623,ptnrid=164,ptnrdata=300310,savepage=1,pagelink=RVsavepage#lstPos">Save this page</a></li>
+		<li><a href="javascript:O_LC();">Feedback</a></li>
+		<li><a href="/web/20051228031230/http://shopping.msn.com/sitemap/shp/">Site map</a></li>
+        <li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=79">Help</a></li>
+	</ul>
+</div>
+<div class="tabs">
+<a href="/web/20051228031230/http://shopping.msn.com/">Home</a><span class="tabpipe">|</span><a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bcatid=4234">Beauty</a><span class="tabpipe">|</span><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctId=402">Books</a><span class="tabpipe">|</span><a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bcatid=4445">Clothing</a><span class="tabpipe">|</span><a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bcatid=4506">Computers</a><span class="tabpipe">|</span><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=198">Deals</a><span class="tabpipe">|</span><a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bcatid=4634">Electronics</a><span class="tabpipe">|</span><a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bcatid=4726">Flowers</a><span class="tabpipe">|</span><a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bcatid=4846">Home</a> &amp; <a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bcatid=5260">Garden</a><span class="tabpipe">|</span><a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bcatid=5119">Jewelry</a><span class="tabpipe">|</span><a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bcatid=5319">Movies</a><span class="tabpipe">|</span><a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bcatid=5341">Music</a><span class="tabpipe">|</span><a href="/web/20051228031230/http://shopping.msn.com/sitemap/shp/">More&nbsp;...</a>
+</div>
+		
+<DIV id="header" class="headerTile wide" >
+<div class="headerDiv"><form id="shopsearch" action="/web/20051228031230/http://shopping.msn.com/results.aspx" method=get onsubmit="return DoSearch(searchText.value,'Please type the word or words you want to search for in the search box.', 'http://shopping.msn.com');">
+<div style="clear:both; padding: 10px 0px 0px 0px;"></div>
+<div style="clear:both;float:left; padding: 1px 7px 7px 0px;"><h2>Search Shopping</h2></div>
+<div class="searchBoxDiv" style="float:left;"><INPUT id="searchText" class="searchBox" maxLength="128" name="text" size="66" value=""></div>
+<div class="searchBtnDiv" style="float:left;"><INPUT type="submit" class="searchBtn" value="Search Shopping" title="Search MSN Shopping"></div>
+<div class="hr" style="margin: 0px 0px 0px 0px;"></div></form>
+
+</div><img class="thirdRow" style="width:100%" src="/web/20051228031230im_/http://images.shopping.msn.com/img/1X1.gif" alt="" border="0"></DIV>
+
+		<table bgcolor="#f3f9fc" border="0" cellpadding="0" style="FONT-SIZE: 100%;BORDER-COLLAPSE: collapse" width="770">
+			<tr>
+				
+				
+				<td id="colThree" bgcolor="#FFFFFF" width="100%"><div id="panelCenter"><link href="/web/20051228031230cs_/http://images.shopping.msn.com/img/edt/css/xsbaseline.css" rel="stylesheet" type="text/css">
+<link href="/web/20051228031230cs_/http://images.shopping.msn.com/img/edt/css/xsHolidayStyles2005.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.xs {
+	width: 430px!important;
+	margin-right: 0!important;
+	margin-left: 10px!important;
+	padding: 10px 0 10px 0;
+}
+.xsbLeftNavCol, .xsbRightNavCol {
+	width: 210px!important;
+}
+#colThree {
+	background-image: url(/web/20051228031230im_/http://images.shopping.msn.com/img/edt/_content/2005/holiday/bkg_tax_hub.gif);
+	background-repeat: repeat-x;
+	background-position: 0px 136px;
+width:100%;
+}
+.xsHolidayHeader {
+	height:136px!important;
+	padding:5px 0!important;
+}
+*html .xsHolidayHeader {height:145px!important;padding:5px 0px!important;}
+.xsHolidayHeader .xsSlideShow{
+	margin: 5px 15px 5px 10px!important; width:165px!important;
+}
+*html .xsHolidayHeader h1 {margin-top:10px!important;}
+</style>
+<script language="JavaScript1.2" type="text/javascript" src="/web/20051228031230js_/http://images.shopping.msn.com/img/edt/js/xsSlideshow.js"></script>
+<div id="sc">
+	<div class="xsHolidayHeader" style="background:#BD0707 url(/web/20051228031230im_/http://images.shopping.msn.com/img/edt/_content/2005/holiday/bkg_hubHeader.gif) no-repeat top right;">
+		<div class="xsSlideShow">
+			<a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=1013" id="xsSlideLink">
+				<img name="xsSlideImage" src="/web/20051228031230im_/http://images.shopping.msn.com/img/edt/_content/2005/holiday/slideShow_test/165x125/stockingStuffers.jpg" width="165" height="125" border="0"  alt="" /></a>
+		</div>
+		<!-- REPLACE THE TEXT BELOW WITH YOUR TITLE -->
+		<div style="padding-right:175px">
+			<h1>Holiday Gift Guide</h1>
+			<!-- START HEADER DESCRIPTION -->
+It's the time for good cheer, for gathering our family and friends together and for celebrating the many joys of the season. We'd like to help you spend more time on these important things &#151; and less in the lines at the mall. Find something for everyone on your list the easy way and make this holiday the best one yet.
+			<!-- END HEADER DESCRIPTION -->
+		</div>
+<script language="JavaScript1.2" type="text/javascript">
+<!-- initialize slideshow
+
+	var defaultImg = "/web/20051228031230/http://images.shopping.msn.com/img/edt/_content/2005/holiday/slideShow_test/165x125/stockingStuffers.jpg";
+	var defaultAlt = "Happy Holidays";
+	var defaultCap = "";
+	var defaultLnk = "/web/20051228031230/http://shopping.msn.com/results/shp/?collID=1013";
+	xsSlides = new Array(new Array(),new Array(),new Array(),new Array(),new Array(),new Array(),new Array());
+	for (j=0;j<7;j++) {
+		xsSlides[j][0] = defaultImg; //default slides
+		xsSlides[j][1] = defaultAlt; //default alt
+		xsSlides[j][2] = defaultCap; //default captions
+		xsSlides[j][3] = defaultLnk; //default links
+	}
+
+	var today = new Date();
+	today.setHours(0,0,0,0);
+
+	xsSlides[0][0]="/web/20051228031230/http://images.shopping.msn.com/img/edt/_content/2005/holiday/slideShow_test/165x125/121805_freeShip.jpg";
+	xsSlides[1][0]="/web/20051228031230/http://images.shopping.msn.com/img/edt/_content/2005/holiday/slideShow_test/165x125/121905_giftBaskets.jpg";
+	xsSlides[2][0]="/web/20051228031230/http://images.shopping.msn.com/img/edt/_content/2005/holiday/slideShow_test/165x125/122005_giftCertificate.jpg";
+	xsSlides[3][0]="/web/20051228031230/http://images.shopping.msn.com/img/edt/_content/2005/holiday/slideShow_test/165x125/122105_expressGifts.jpg";
+	xsSlides[4][0]="/web/20051228031230/http://images.shopping.msn.com/img/edt/_content/2005/holiday/slideShow_test/165x125/121705_lastMinute.jpg";
+	xsSlides[5][0]="/web/20051228031230/http://images.shopping.msn.com/img/edt/_content/2005/holiday/slideShow_test/165x125/122305_flowers.jpg";
+	xsSlides[6][0]="/web/20051228031230/http://images.shopping.msn.com/img/edt/_content/2005/holiday/slideShow_test/165x125/121705_chocolates.jpg";
+
+	xsSlides[0][1]="Free Shipping Center";
+	xsSlides[1][1]="Gift Baskets";
+	xsSlides[2][1]="Gift Certificates";
+	xsSlides[3][1]="Express Gifts";
+	xsSlides[4][1]="Last-minute Gifts";
+	xsSlides[5][1]="Flowers";
+	xsSlides[6][1]="Chocolates & Candy";
+
+	xsSlides[0][3]="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=18";
+	xsSlides[1][3]="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=873";
+	xsSlides[2][3]="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=19";
+	xsSlides[3][3]="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=445";
+	xsSlides[4][3]="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=398";
+	xsSlides[5][3]="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=872";
+	xsSlides[6][3]="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=871";
+
+	xsStartSlideshow(0,today.getDay(),1);
+// -->
+</script>
+	</div>
+</div><style type="text/css">
+.xsHolidayHubAd {
+	width: 300px;
+	margin: 10px;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:9px;
+	color:#cccccc;
+	text-align: right;
+	float:right;
+}
+*html .xsHolidayHubAd {
+	margin: 17px 5px 10px 5px;
+}
+.xsHolidayHubAd {
+	width: 300px;
+	height: 250px;
+	border: 0;
+}
+</style>
+<div class="xsHolidayHubAd xsHide">
+<IFRAME SCROLLING=NO WIDTH=300px HEIGHT=250px MARGINHEIGHT=0 MARGINWIDTH=0 FRAMEBORDER=0 SRC="/web/20051228031230if_/http://rad.msn.com/ADSAdClient31.dll?GetAd=&amp;PG=SHPGHP" style="border: 1px #e0e0e0 solid;"></IFRAME>
+Advertisement
+</div><link href="/web/20051228031230cs_/http://images.shopping.msn.com/img/edt/css/xsbModule.css" rel="stylesheet" type="text/css">
+<link href="/web/20051228031230cs_/http://images.shopping.msn.com/img/edt/css/xsHolidayStyles2005.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.xsHoliday100Box img {
+	width: 100px;
+	height: 100px;
+	border: 0;
+}
+.xsHoliday100Box {
+	width: 100px;
+	padding: 0;
+	text-align: center;
+	margin-right: 23px;
+	margin-bottom: 10px;
+	float:left;
+}
+.xsHoliday100Box a:link, .xsHoliday100Box a:visited, .xsHoliday100Box a:active {
+	color: #8A170F!important;
+}
+.xsHoliday100Box a:hover {
+	color: #F5802D!important;
+}
+.xsHoliday100BoxLast {
+margin-right:0;
+}
+.xs470Wide {
+	width:470px!important;
+	margin-right: 0!important;
+	margin-left: 0!important;
+	margin-top: 0!important;
+}
+</style>
+<div class="xs xs470Wide xsHide" style="margin:0!important;margin-left:5px!important;margin-bottom:10px!important;">
+	<!--<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctId=397" style="float:right;margin-top: 6px;font-weight: 700;">See all</a>-->
+	<h1><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=397" style="font-size: 20px;">Holiday guide 2005: Top categories</a></h1>
+	<div class="xsHoliday100Box">
+		<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=480"><img src="/web/20051228031230im_/http://images.shopping.msn.com/img/edt/_partner/2005/100x100/holiday05/125top20her.jpg" alt="Top 20 gifts for her" />
+		20 gifts for her</a>
+	</div>
+
+	<div class="xsHoliday100Box">
+		<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=481"><img src="/web/20051228031230im_/http://images.shopping.msn.com/img/edt/_partner/2005/100x100/holiday05/125top20him.jpg" alt="Top 20 gifts for him" />
+		20 gifts for him</a>
+	</div>
+
+	<div class="xsHoliday100Box ">
+	    <a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=478"><img src="/web/20051228031230im_/http://images.shopping.msn.com/img/edt/_partner/2005/100x100/holiday05/125topCandE.jpg" alt="Top 20 electronics" />
+		20 electronic gifts</a>
+	</div>
+
+	<div class="xsHoliday100Box xsHoliday100BoxLast">
+		<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=477"><img src="/web/20051228031230im_/http://images.shopping.msn.com/img/edt/_partner/2005/100x100/holiday05/125topFurnishings.jpg" alt="Top 20 home d&eacute;cor" />
+		20 home gifts</a>
+	</div>
+	<div class="xsHoliday100Box">
+		<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=19"><img src="/web/20051228031230im_/http://images.shopping.msn.com/img/edt/_partner/2005/100x100/holiday05/125giftCertificate.jpg" alt="Gift Certificate" />
+		Gift certificates</a>
+	</div>
+	<div class="xsHoliday100Box">
+		<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=18"><img src="/web/20051228031230im_/http://images.shopping.msn.com/img/edt/_partner/2005/100x100/holiday05/125freeshipping.jpg" alt="Free Shipping" />
+		Free shipping</a>
+	</div>
+	<div class="xsHoliday100Box">
+		<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=401"><img src="/web/20051228031230im_/http://images.shopping.msn.com/img/edt/_partner/2005/100x100/holiday05/125exclusive.jpg" alt="MSN Shopping Exclusive Deals" />
+		Exclusive deals</a>
+	</div>
+	<div class="xsHoliday100Box xsHoliday100BoxLast">
+		<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=398"><img src="/web/20051228031230im_/http://images.shopping.msn.com/img/edt/_partner/2005/100x100/procrastination100.jpg" alt="Procrastination Central: Last-minute Gifts" />
+		Last-minute gifts</a>
+	</div>
+	<br class="xsFireFoxBr" />
+</div><link href="/web/20051228031230cs_/http://images.shopping.msn.com/img/edt/css/xsHolidayStyles2005.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+/* TAXONOMY */
+.xsbExploreTree {margin: 0;padding: 0;float: left; font-size:12px;}
+.xsbExploreTree ul, .xsbExploreTree li {line-height:1.4em;text-align:left;list-style-type:none;margin:0;padding:2px 0;}
+.xsbExploreTree ul {font-weight:bold;}
+.xsbExploreTree li {font-weight:normal;}
+.xsbExploreTree ul li {line-height:1.3em;padding:2px 0;padding-left:11px;margin-top:1px;}
+* html .xsbExploreTree ul li {padding-left:13px;}
+.xsbLeftNavCol,.xsbRightNavCol {width:190px;margin-left:10px;}
+.xsbRightNavCol {margin-bottom:5px;padding-bottom:5px;}
+*html .xsbLeftNavCol, *html .xsbRightNavCol {margin-left:5px;}
+a.xsbExplore {float:left;cursor:hand;width:9px;height:9px;margin:5px 2px -2px 0;}
+.open a.xsbExplore, ul a.xsbExplore {background: url(/web/20051228031230im_/http://images.shopping.msn.com/img/minus.gif) no-repeat;}
+.closed a.xsbExplore {background: url(/web/20051228031230im_/http://images.shopping.msn.com/img/plus.gif) no-repeat;}
+ul.closed li, ul.closed ul {display: none;}
+ul.open li{diplay: block!important;}
+div.closed ul {display: none;}
+ul.nosub {padding-left:11px;}
+*html ul.nosub {padding-left:14px;}
+#xsHolidayTaxHubHead {display:none;}
+</style>
+<script language="javascript">
+function xsbToggle(menu) {
+menu.parentNode.className=(menu.parentNode.className == 'closed')?'open':'closed';
+}
+</script>
+<h2 style="margin:10px 0 5px 10px;font-size:16px;" id="xsHolidayTaxHubHead">Holiday Home 2005</h2>
+<h2 style="margin:10px 0 5px 10px;font-size:16px;" id="xsHolidayTaxCatHead"><a class="xsHoliday"
+
+href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=397">Holiday Home 2005</a></h2>
+<ul class="xsbExploreTree xsbLeftNavCol">
+<ul class="closed" id="xsbET01"><a class="xsbExplore" onclick="return xsbToggle(this);"></a>
+	<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=453">Beauty &amp; Spa</a>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=913,layout=grid">Bath, Spa &amp; Massage</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=914,layout=grid">Beauty Gift Sets</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=911,layout=grid">Men's Fragrance</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=910,layout=grid">Men's Health &amp; Grooming</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=912,layout=grid">Women's Fragrance </a></li>
+</ul>
+<ul class="closed" id="xsbET02"><a class="xsbExplore" onclick="return xsbToggle(this);"></a>
+	<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=466">Books &amp; Magazines</a>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=980,layout=grid">Award-Winning Kids' Books</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=981,layout=grid">Best-Selling Fiction</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=1038,layout=grid">Best-Selling Nonfiction</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=1430,layout=grid">Magazines</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=983,layout=grid">Oprah's Book Picks</a></li>
+</ul>
+<ul class="nosub" id="xsbET03"><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=871">Chocolates &amp; Candy</a></ul>
+<ul class="closed" id="xsbET12"><a class="xsbExplore" onclick="return xsbToggle(this);"></a>
+	<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=457">Christmas Decorating</a>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=939,layout=grid">Indoor Decorating</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=937,layout=grid">Ornaments</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=938,layout=grid">Outdoor Decorating</a></li>
+</ul>
+<ul class="closed" id="xsbET13"><a class="xsbExplore" onclick="return xsbToggle(this);"></a>
+	<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=469">Christmas Entertainment</a>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=990,layout=grid">Classic Books</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=992,layout=grid">Christmas Movies</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=991,layout=grid">Christmas Music</a></li>
+</ul>
+<ul class="closed" id="xsbET07"><a class="xsbExplore" onclick="return xsbToggle(this);"></a>
+	<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=446">Clothing &amp; Shoes</a>
+<li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=447">Children's Clothing</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=448">Young Women's Clothing</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=449">Young Men's Clothing</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=450">Women's Clothing</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=451">Men's Clothing</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=452">Shoes</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=909">Handbags</a></li>
+</ul>
+<ul class="closed" id="xsbET04"><a class="xsbExplore" onclick="return xsbToggle(this);"></a>
+	<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=462">Computers &amp; Electronics</a>
+<li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=463">Computers</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=464">Electronics</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=465">Video Games</a></li>
+</ul>
+<ul class="nosub" id="xsbET05"><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=874">Corporate Gifts</a></ul>
+<ul class="closed" id="xsbET06"><a class="xsbExplore" onclick="return xsbToggle(this);"></a>
+	<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=196">Editor's Picks</a>
+<li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=501">Gifts for Colleagues</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=489">Gifts for Geeks</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=491">Gifts for Gourmands</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=499">Gifts for Grandparents</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=495">Gifts for Her</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=493">Gifts for Him</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=497">Gifts for Kids</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=503">Gifts for Unexpected</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=505">Decorating the Home</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=507">Romantic Gifts</a></li>
+</ul>
+<ul class="nosub" id="xsbET27"><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=401">Exclusive Deals</a></ul>
+<ul class="nosub" id="xsbET08"><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=872,bCatId=4726,layout=grid">Flowers</a></ul>
+<ul class="closed" id="xsbET09"><a class="xsbExplore" onclick="return xsbToggle(this);"></a>
+	<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=459">Garage &amp; Workshop</a>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=976,layout=grid">Car Electronics</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=959,layout=grid">Exterior Accessories</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=958,layout=grid">Interior Accessories</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=957,layout=grid">Tires, Wheels &amp; Access</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=956,layout=grid">Garage Gear</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=954,layout=grid">Gardening Tools</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=953,layout=grid">Hand Tools</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=952,layout=grid">Power Tools</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=955,layout=grid">Storage &amp; Workbenches</a></li>
+</ul>
+<ul class="nosub" id="xsbET10"><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=873">Gift Baskets</a></ul>
+<ul class="nosub" id="xsbET29"><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=19">Gift Certificates</a></ul>
+<ul class="closed" id="xsbET11"><a class="xsbExplore" onclick="return xsbToggle(this);"></a>
+	<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=444">Gourmet Food</a>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=868,layout=grid">Desserts &amp; Baked Goods</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=867,layout=grid">Food for the Feast</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=869,layout=grid">Specialty Foods</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=870,layout=grid">Wine</a></li>
+</ul>
+</ul>
+
+<ul class="xsbExploreTree xsbRightNavCol xsHoliday">
+<ul class="closed" id="xsbET14"><a class="xsbExplore" onclick="return xsbToggle(this);"></a>
+	<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=458">Home Furnishings</a>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=940,layout=grid">Art &amp; Prints</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=941,layout=grid">Bed &amp; Bath</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=945,layout=grid">Company's Coming</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=942,layout=grid">Furniture</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=943,layout=grid">Lighting</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=944,layout=grid">Housewarming/Hostess Gifts</a></li>
+</ul>
+<ul class="closed" id="xsbET15"><a class="xsbExplore" onclick="return xsbToggle(this);"></a>
+	<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=454">Jewelry &amp; Watches</a>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=1018,layout=grid">Accessories</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=916,layout=grid">Bracelets</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=917,layout=grid">Brooches</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=918,layout=grid">Earrings</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=919,layout=grid">Loose Diamonds &amp; Engagement</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=923,layout=grid">Men's Watches</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=920,layout=grid">Necklaces</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=921,layout=grid">Pendants</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=922,layout=grid">Rings</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=924,layout=grid">Women's Watches</a></li>
+</ul>
+
+<ul class="closed" id="xsbET17"><a class="xsbExplore" onclick="return xsbToggle(this);"></a>
+	<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=460">Kitchen</a>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=948,layout=grid">Bakeware</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=949,layout=grid">Cook's Tools</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=947,layout=grid">Cookware</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=950,layout=grid">Cutlery</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=946,layout=grid">Party Prep</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=951,layout=grid">Small Appliances</a></li>
+</ul>
+<ul class="closed" id="xsbET18"><a class="xsbExplore" onclick="return xsbToggle(this);"></a>
+	<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=456">Lingerie</a>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=1320,layout=grid">Women's Bras & Panties</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=936,layout=grid">Women's Intimate Wear</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=935,layout=grid">Women's PJs &amp; Nightgowns</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=933,layout=grid">Women's Robes</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=934,layout=grid">Women's Slippers</a></li>
+</ul>
+<ul class="closed" id="xsbET19"><a class="xsbExplore" onclick="return xsbToggle(this);"></a>
+	<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=468">Movies</a>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=984,layout=grid">Best-Sellers</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=985,layout=grid">Kids' Movies</a></li>
+</ul>
+<ul class="closed" id="xsbET20"><a class="xsbExplore" onclick="return xsbToggle(this);"></a>
+	<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=467">Music</a>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=988,layout=grid">Box Sets</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=987,layout=grid">New Releases</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=986,layout=grid">Top Artists of 2005</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=989,layout=grid">Musical Instruments</a></li>
+</ul>
+<ul class="nosub" id="xsbET21"><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=875,layout=grid">Pet Gifts</a></ul>
+<ul class="closed" id="xsbET22"><a class="xsbExplore" onclick="return xsbToggle(this);"></a>
+	<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=455">Romantic Gifts</a>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=928,layout=grid">Books &amp; Magazines</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=925,layout=grid">Games &amp; Gifts</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=926,layout=grid">Mood Setters</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=927,layout=grid">Sensual Delights</a></li>
+</ul>
+<ul class="closed" id="xsbET23"><a class="xsbExplore" onclick="return xsbToggle(this);"></a>
+	<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=461">Sports &amp; Outdoors</a>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=963,layout=grid">Camping &amp; Climbing</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=960,layout=grid">Fan Gear</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=962,layout=grid">Fishing &amp; Hunting</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=965,layout=grid">Fitness &amp; Yoga</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=961,layout=grid">Golf Gear</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=964,layout=grid">Snow Sports</a></li>
+</ul>
+<ul class="nosub" id="xsbET24"><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=1014">Stocking Stuffers</a></ul>
+<ul class="closed" id="xsbET16"><a class="xsbExplore" onclick="return xsbToggle(this);"></a>
+	<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=470">Toys</a>
+<li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=602">Shop by Age</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=993,layout=grid">0 to 12 months</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=994,layout=grid">1 to 3 years</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=995,layout=grid">4 to 5 years</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=996,layout=grid">6 to 8 years</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=997,layout=grid">9 - 12 years</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=1005,layout=grid">Action Figures</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=1002,layout=grid">Arts &amp; Crafts</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=1011,layout=grid">Award Winning Toys</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=1007,layout=grid">Classic Boardgames &amp; Puzzles</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=1040,layout=grid">Dinosaurs</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=1004,layout=grid">Dolls</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=1012,layout=grid">Electronic Games &amp; Devices</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=1000,layout=grid">Learning Center</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=1006,layout=grid">Models &amp; Construction Sets</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=1008,layout=grid">Musical Instruments &amp; Toys</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=1010,layout=grid">Animals &amp; Plush Toys</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=1003,layout=grid">Remote Control Toys</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=1001,layout=grid">Robotic Pets &amp; Toys</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=1039,layout=grid">Science &amp; Nature</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=1009,layout=grid">Sports &amp; Outdoor Play</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=998,layout=grid">Teens</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/results/shp/?collID=999,layout=grid">Video Gaming</a></li>
+</ul>
+<ul class="nosub" id="xsbET26"><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=400">Top 10 Gifts by Store</a></ul>
+<ul class="closed" id="xsbET28"><a class="xsbExplore" onclick="return xsbToggle(this);"></a>
+	<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctID=475">Top 20 Gifts</a>
+<li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctID=478">Electronics</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctID=476">Fashion</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctID=480">Gifts for Her</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctID=481">Gifts for Him</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctID=483">Gifts Under &#36;20</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctID=477">Home Furnishings</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctID=482">Luxury Gifts</a></li>
+<li><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctID=479">Toys</a></li>
+</ul>
+<ul class="nosub" id="xsbET26"><a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=398">Last-minute Gifts</a></ul>
+</ul>
+<script language="javascript">
+var tt= new Date();tt.setHours(0,0,0,0);
+var st= new Date("12/24/2005");
+if(tt >= st)
+	xsbET27.style.display="none";
+</script><link href="/web/20051228031230cs_/http://images.shopping.msn.com/img/edt/css/xsHolidayStyles2005.css" rel="stylesheet" type="text/css">
+<div class="xs xsHide" style="margin-top:-35px;border-top:1px solid #dddddd; clear:right;">
+	<h1 style="font-size:18px; font-weight:normal;">Editors&#8217; Picks</h1>
+	<strong><a class="xsHoliday" href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctId=505">For the Holiday Home</a></strong><br>
+It’s the time of year to celebrate with family and friends and your home becomes the center of all the festivities. Pour yourself an eggnog and get ready to deck the halls.  <a class="xsHoliday" href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=196">See all our Editors&#39; Holiday Picks</a>
+</div><div id="xsShirley" class="xs xsStorefront xsHide" style="border-top:1px solid #DDDDDD;border-bottom:0px;width: 310px!important;float:right;margin-left:0!important;">
+<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctID=598"><img border="0" src="/web/20051228031230im_/http://images.shopping.msn.com/img/edt/_content/2005/holiday/70shirleyJones.jpg" alt="Shirley Jones" style="width:70px; height: 70px;" style="float:left;margin:0 5px 20px 0;"></a>
+	<b>Shirley Jones:<br /> Mother of all shopping</b><br>
+	MSN Shopping has great gift ideas for everyone on your list this holiday season. Also visit the <a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=401">Exclusives</a> page for great deals.<br>
+</div><style type="text/css">
+.xsHoliday100Box {
+	margin-right: 13px!important;
+}
+.xsHoliday100BoxLast {
+margin-right:0!important;
+}
+.xs {
+	background: none!important;
+	width: 310px!important;
+	margin-right: 0!important;
+	margin-left: 0!important;
+	float:right;
+}
+.xs470Wide {
+	width:440px!important;
+	margin-left: 10px!important;
+	background-color: transparent!important;
+	border-bottom: 1px #dddddd solid;
+	float:left;
+}
+.xsbExploreTree {
+	width: 210px!important;
+}
+.xsbLeftNavCol,.xsbRightNavCol {
+	width: 200px;
+}
+#xsHolidayTaxCatHead {
+	display: none;
+}
+#xsHolidayTaxHubHead {
+	display: block;
+	width: 420px;
+}
+.xsFireFoxBr {
+	clear:left;
+}
+</style><div class="xs xsStorefront xsHide" style="border-top:1px solid #DDDDDD;border-bottom:0px;width: 310px!important;float:right;margin-left:0!important;">
+<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctID=584"><img border="0" src="/web/20051228031230im_/http://images.shopping.msn.com/img/edt/_content/2005/oprah/oprahspicks70x70.jpg" alt="Oprah's Top Picks 2005" style="width:70px; height: 70px;" style="float:left;margin:0 5px 20px 0;"></a>
+	<b>Oprah's Top Picks 2005</b><br>
+	She's made the list and we've found the products. See <a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=584">some of her top picks for 2005.</a>
+</div></div></td>
+
+			</tr>
+		</table>
+		
+		<div style="clear:both;"></div>	
+		<div class="footer">
+<link href="/web/20051228031230cs_/http://images.shopping.msn.com/img/edt/css/xsPrint.css" rel="stylesheet" type="text/css" media="print">
+	<div class="footerDiv">
+		<table border="0" cellspacing="0" cellpadding="0">
+			<tbody class="text" style="font-size: 67%">
+			<tr>
+				<td valign="top" colspan="7" width="640">
+					<div style="padding:7 0 7 0;">
+						<form id="searchFooter" action="/web/20051228031230/http://shopping.msn.com/results.aspx" method="get" onsubmit="return DoSearch(hsearchText.value,'Please type the word or words you wish to search for in the search box.', 'http://shopping.msn.com');">
+							<div style="clear:both;float:left; padding: 1px 7px 7px 0px;"><h2>Search Shopping</h2></div>
+							<div class="searchBoxDiv" style="float:left;"><INPUT id="hsearchText" class="searchBox" maxLength="128" name="text" size="66" value=""></div>
+							<div class="searchBtnDiv" style="float:left;"><INPUT type="submit" class="searchBtn" value="Search Shopping" title="Search MSN Shopping"></div>
+							<div style="clear:both;"></div>
+						</form>
+					</div>
+				</td>
+				<td valign="center" rowspan="2" width="109px" style="padding:13px 0 0 0;">
+					<b>Shopping help</b><br>
+					<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=6">About this site</a><br>
+					<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=79">FAQ</a><br>
+					<br>
+					<b>Newsletter sign-up</b><br>
+					<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=16">Trends &amp; deals</a>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" width="104px">
+					<a href="/web/20051228031230/http://shopping.msn.com/">Home</a><br>
+					<a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bCatID=4169">Baby</a><br>
+					<a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bCatID=4234">Beauty</a><br>
+					<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctID=402">Books</a>
+				</td>
+				<td valign="top" width="104px">
+					<a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bCatID=4387">Car &amp; Garage</a><br>
+					<a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bCatID=4445">Clothing</a><br>
+					<a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bCatID=4506">Computer</a><br>
+					<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctid=198">Deals</a>
+				</td>
+				<td valign="top" width="104px">
+					<a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bCatID=4634">Electronics</a><br>
+					<a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bCatID=4726">Flowers</a><br>
+					<a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bCatID=4846">Furnishings</a><br>
+					<a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bCatId=5260">Garden</a>
+				</td>
+				<td valign="top" width="104px">
+					<a href="/web/20051228031230/http://shopping.msn.com/content/shp/?ctId=73">Gifts</a><br>
+					<a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bCatID=4778">Health</a><br>
+					<a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bCatID=5119">Jewelry</a><br>
+					<a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bCatID=5144">Kitchen</a>
+				</td>
+				<td valign="top" width="104px">
+					<a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bCatID=5319">Movies</a><br>
+					<a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bCatID=5341">Music</a><br>
+					<a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bCatID=5431">Office</a><br>
+					<a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bCatID=5532">Pets</a>
+				</td>
+				<td valign="top" width="104px">
+					<a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bCatID=4498">Shoes</a><br>
+					<a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bCatID=5590">Sports</a><br>
+					<a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bCatID=6436">Toys</a><br>
+					<a href="/web/20051228031230/http://shopping.msn.com/category/shp/?bCatID=6489">Video Games
+				</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<script language="javascript">
+/* SCRIPT CONFIG */
+var xsPopupOdds = 250;
+var xsPopupMinVisits = 5;
+var xsPopupSurvey = "/web/20051228031230/http://www.pdcsurveys.com/cgi-bin/p.pl?P=microsoft/4dd05c3b.htm";
+var xsPopupWidth = "650";
+var xsPopupHeight = "500";
+var xsPopupDomain = "/web/20051228031230/http://shopping.msn.com/";
+
+var xsPopupExpirationDate=new Date(new Date().getTime()+(31536000000)).toGMTString();
+var today = new Date();
+var xsPopupResults=document.cookie.match ('xsPopupVisits=(.*?)(;|$)');
+var xsPopupResults2=document.cookie.match ('xsPopupSurveyCompletion=(.*?)(;|$)');
+var xsPopupResults3=document.cookie.match ('xsPopupFirstVisit=(.*?)(;|$)');
+var xsPopupResults4=document.cookie.match ('xsPopupLastVisit=(.*?)(;|$)');
+
+if(xsPopupResults && xsPopupResults2 && xsPopupResults3 && xsPopupResults4){
+	var xsPopupVisits=eval(xsPopupResults[1])+1;
+	var xsPopupCompletion=eval(xsPopupResults2[1]);
+	var xsPopupFirstVisit=xsPopupResults3[1];
+	var xsPopupLastVisit=xsPopupResults4[1];
+	var xsPopupRandom = Math.round(Math.random()*xsPopupOdds);
+	if(xsPopupRandom == Math.round(xsPopupOdds/2) && xsPopupCompletion == 0){
+		document.cookie= "xsPopupSurveyCompletion=1; expires=" +xsPopupExpirationDate + ";path=/";
+		window.open(xsPopupSurvey,"_blank","width="+xsPopupWidth+",height="+xsPopupHeight+",top=" + ((screen.height - xsPopupHeight) / 2) + ", left=" + ((screen.width - xsPopupWidth) / 2) + ", scrollbars=yes,status=no,toolbar=no,menubar=no,location=no");
+ 	}
+}
+else {
+	var xsPopupVisits=1;
+	document.cookie= "xsPopupFirstVisit=" + today + "; expires=" +xsPopupExpirationDate + ";path=/";
+	document.cookie= "xsPopupSurveyCompletion=0; expires=" +xsPopupExpirationDate + ";path=/";
+}
+document.cookie="xsPopupVisits="+xsPopupVisits+";expires="+xsPopupExpirationDate + ";path=/";
+document.cookie= "xsPopupLastVisit=" + today + "; expires=" +xsPopupExpirationDate + ";path=/";
+</script>
+		<div id="foot" class="container" style="border-top:2px solid #b3d3f3;">
+<link href="/web/20051228031230cs_/http://images.shopping.msn.com/img/edt/css/xsPrint.css" rel="stylesheet" type="text/css" media="print">
+<ul id="legal">
+		<li class="first">&#169;2005 Microsoft</li>
+		<li><a href="/web/20051228031230/http://g.msn.com/0nwenus0/AH/18">Legal</a></li>
+		<li class="last"><a href="/web/20051228031230/http://g.msn.com/0nwenus0/AH/20">MSN Privacy</a></li>&nbsp;&nbsp;&nbsp;<li class="first"><a href="/web/20051228031230/http://www.advertising.msn.com/msnsites/msnindividualsite.asp?siteid=siteid80">Advertise</a></li>
+	</ul>
+	<img style="width:0;height:0;float:left;" src="/web/20051228031230im_/http://c.msn.com/c.gif?DI=4397" />
+	<ul id="support">
+		<li class="first">Images credit: Getty Images</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<li class="first"><a href="javascript:O_LC();">Feedback</a></li>
+
+	</ul>
+</div>
+		</div>
+		
+		<div style="position:absolute;left:-100px;top:-100px;">
+<script type="text/javaScript" language="javascript">
+<!--
+var s_pageName="Content:623:Holiday 2005: Holiday Home (10:623:1680)"
+var s_server="shopping.msn.com"
+var s_channel="CDP Traffic (164)"
+var s_pageType=""
+var s_prop1="Content (10)"
+var s_prop2=""
+var s_prop3="CDP Traffic (164)"
+var s_prop14="Content:623:Holiday 2005: Holiday Home (10:623:1680)"
+var s_prop15=""
+var s_prop17=""
+var s_prop18="100"
+var s_prop19="300310"
+var s_prop20="User"
+var s_prop25="All Items"
+var s_prop37="1"
+var s_prop38="c5901a19-c9e3-4e85-bfa3-83451db8ac71"
+var s_prop39="151"
+s_events="event1"
+var s_evar1="Content (10)"
+var s_evar2=""
+var s_evar3="CDP Traffic (164)"
+var s_evar14="Content:623:Holiday 2005: Holiday Home (10:623:1680)"
+var s_evar17=""
+var s_evar18="100"
+var s_evar19="300310"
+var s_evar20="User"
+var s_evar25="All Items"
+var s_code=' '//--></script>
+<script type="text/javaScript" language="javascript"  src="/web/20051228031230js_/http://images.shopping.msn.com/scripts/s_code.js"></script>
+<script type="text/javaScript" language="javascript"><!--
+var s_wd=window, s_tm=new Date; if(s_code!=' '){s_code=s_dc('msneshopbase');if(s_code)document.write(s_code)}else document.write('<im'+'g src="/web/20051228031230/http://msneshopbase.112.2o7.net/b/ss/msneshopbase/1/G.6--FB/s'+s_tm.getTime()+'?[AQB]'+'&j=1.0&[AQE]" height="1" width="1" border="0" alt="" />')
+//--></script><script type="text/javaScript" language="javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//-->
+</script><noscript><img src="/web/20051228031230im_/http://msneshopbase.112.2o7.net/b/ss/msneshopbase/1/G.6--NS/0" height="1" width="1" border="0" alt="" /></noscript><!-- /DO NOT REMOVE/-->
+</div>
+	</BODY>
+</HTML>
+<!--93ms | 151-->
+
+
+
+
+<!--
+     FILE ARCHIVED ON 3:12:30 Dec 28, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 6:15:18 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

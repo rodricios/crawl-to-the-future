@@ -1,0 +1,1237 @@
+<html>
+<!-- InstanceBegin template="/Templates/M9-fullshell-Center-template03.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app11.us.archive.org";archive_analytics.values.server_ms=1970;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+<script language="javascript">
+    var sRFVal=escape(document.referrer);
+    var sUrl= window.location.href;    
+    var iPosParam = sUrl.indexOf('?');
+    var imgTax = new Image();
+    if (iPosParam > 0 ) {
+     sUrl =sUrl.substring(0,iPosParam);
+    }
+    imgTax.src = "/web/20051125175045/http://c.msn.com/c.gif?PS=33806&PI=7327&DI=32&NC=1208&NA=1154&TP=" + escape(sUrl)+ "&RF=" + sRFVal;
+</script>
+
+<script type="text/javascript" src="/web/20051125175045js_/http://sc.msn.com/global/scr/ph/hp26.js"></script>
+<script language="javascript">
+H_URL_BASE="/web/20051125175045/http://help.msn.com/en_us";
+H_APP="MSN Astrology";
+H_CONFIG="MSN_Channel_Astrology.ini";
+H_BURL="fs.htm";
+H_TOPIC="CHANNEL_HELP_Astrology_StartPage.htm";
+L_H_APP=H_APP;bSearch=false;
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="/web/20051125175045cs_/http://sc.msn.com/global/css/ptnr/purple.css" />
+<script language="javascript" src="/web/20051125175045js_/http://astrocenter.astrology.msn.com/msn/JS/ast.js"></script>
+<link rel='stylesheet' type="text/css" href='css/astrocenter.css'>
+
+
+
+<title>MSN Astrology: Free Daily Horoscopes</title>
+
+
+<script language='javascript'>
+<!----
+function isStringEmpty(StrInput) {
+	var i, taille = StrInput.length;
+
+	if (0 >= taille) return true;
+
+	for (i = 0; i<taille; i++)
+		if (' ' != StrInput.charAt(i)) return false;
+
+	return true;
+}
+
+
+
+function SubmitValidation() {
+	var aVariable, aConfirmationVariable, aBirthTimeUnkownFlag = false, aField, lb_DiplayDialogBox = true;
+
+	aField = eval('window.document.PZ_MainForm.DisplayDialogBox');				
+	if (typeof(aField) != 'undefined') {
+		lb_DiplayDialogBox = (aField.value == 'true');
+//		alert('lb_DiplayDialogBox=' + aField.value);
+	}
+
+	
+		var aField = eval('window.document.PZ_MainForm.FirstName');
+		if (typeof(aField) != 'undefined') {
+			aVariable = window.document.PZ_MainForm.FirstName.value;
+			if (isStringEmpty(aVariable) && lb_DiplayDialogBox) {
+				alert("Please, enter your first name");
+				return false;
+			}
+		}
+	
+		aField = eval('window.document.PZ_MainForm.DaySelector.selectedIndex');
+		if (typeof(aField) != 'undefined') {
+			aVariable = window.document.PZ_MainForm.DaySelector[window.document.PZ_MainForm.DaySelector.selectedIndex].value;
+			if (isStringEmpty(aVariable) && lb_DiplayDialogBox) {
+				alert("Please choose a day");
+				return false;
+			}
+		}
+	
+		aField = eval('window.document.PZ_MainForm.MonthSelector.selectedIndex');
+		if (typeof(aField) != 'undefined') {
+			aVariable = window.document.PZ_MainForm.MonthSelector[window.document.PZ_MainForm.MonthSelector.selectedIndex].value;
+			if (isStringEmpty(aVariable) && lb_DiplayDialogBox) {
+				alert("Please, choose a month");
+				return false;
+			}
+		}
+	
+		aField = eval('window.document.PZ_MainForm.YearSelector.selectedIndex');
+		if (typeof(aField) != 'undefined') {
+			aVariable = window.document.PZ_MainForm.YearSelector[window.document.PZ_MainForm.YearSelector.selectedIndex].value;
+			if (isStringEmpty(aVariable) && lb_DiplayDialogBox) {
+				alert("Please, choose a year of birth");
+				return false;
+			}
+		}
+	
+
+	if (typeof(CustomizedSubmitValidation)=="function") return CustomizedSubmitValidation();
+
+	
+
+	return true;
+}
+function OnClick4Submit(EtatAutomate) {
+
+	if (SubmitValidation()) {
+		document.PZ_MainForm.AutomateState.value = EtatAutomate;
+		document.PZ_MainForm.submit();
+	}
+}
+//--->
+</script>
+<script language='javascript'>
+<!----
+function SetCookie(name, value, expires, path, domain, secure) {
+
+	var expString = ((expires == null) ? ' ' : ('; expires=' + expires.toGMTString()));
+	var pathString = ((path == null) ? ' ' : ('; path=' + path));	
+	var domainString = ((domain == null) ? ' ' : ('; domain=' + domain));
+	var secureString = ((secure == true) ? '; secure' : '');		
+
+	document.cookie = name + '=' + escape(value) + expString + pathString + domainString + secureString;
+}
+function GetCookie(name) {	
+	var result = null;
+	var myCookie = " " + document.cookie + ";";
+	var searchName = " " + name + "=";
+	var startOfCookie = myCookie.indexOf(searchName);
+	var endOfCookie;
+	if (startOfCookie != -1) { 
+		startOfCookie += searchName.length;
+		endOfCookie = myCookie.indexOf(";", startOfCookie);
+		result = unescape(myCookie.substring(startOfCookie, endOfCookie));
+	}
+	return result;
+}
+function PopUPUnder13() {
+
+	SetCookie('COPPA', 'true', null, '/', 'astrology.msn.com', false);
+	
+//	var theURL = 'Under13.aspx';
+
+//	var popup = window.open(theURL , 'displayWindow', 'toolbar=no,location=no,directories=no,resizable=yes,status=no,scrollbars=yes,menubar=no');
+			
+//	if (!popup.opener) popup.opener = self;
+
+	alert('Thank you for visiting the MSN Astrology site. We\'re sorry, but you must be 13 or older to personalize your horoscope. Please visit MSN Kids (/web/20051125175045/http://kids.msn.com) where you\'ll find lots of fun games and other cool things to do.');
+}
+function getIntValue(aFieldName) {
+
+	var aField = eval('window.document.' + aFieldName);				
+
+	return parseInt(aField.value, 10);
+}
+function CustomizedSubmitValidation() {
+	var theLimit = 20051125 - 130000, theAge = 0;
+	var ReturnValue = true;
+
+
+
+	// Clear the COPPA Cookie
+	SetCookie('COPPA', 'false', null, '/', 'astrology.msn.com', false);
+
+	var theYear = 0, theMonth = 0, theDay = 0;
+	var aFieldName;
+	var aFormName;
+	
+	// Cas de la page Default.aspx
+	
+	aFieldName = 'PZ_MainForm' + '.' + 'YearSelector';
+	theYear = getIntValue(aFieldName + '[' + aFieldName +'.selectedIndex]');
+	aFieldName = 'PZ_MainForm' + '.' + 'MonthSelector';
+	theMonth = getIntValue(aFieldName + '[' + aFieldName +'.selectedIndex]') + 1;
+	aFieldName = 'PZ_MainForm' + '.' + 'DaySelector';
+	theDay = getIntValue(aFieldName + '[' + aFieldName +'.selectedIndex]');
+	
+	
+	theAge = theYear * 10000 + theMonth * 100 + theDay;
+	if (theAge > theLimit) ReturnValue = false;
+
+	theAge = 0;
+	aFormName = 'SunSignForm';
+	if ('undefined' != typeof(SunSignForm)) {
+		if ('undefined' != typeof(SunSignForm.MonthSelector)) {
+			aFieldName = 'YearSelector';
+			theYear = getIntValue(aFormName + '.' + aFieldName + '[' + aFormName + '.' + aFieldName +'.selectedIndex]');
+			aFieldName = 'MonthSelector';
+			theMonth = getIntValue(aFormName + '.' + aFieldName + '[' + aFormName + '.' + aFieldName +'.selectedIndex]');
+			aFieldName = 'DaySelector';
+			theDay = getIntValue(aFormName + '.' + aFieldName + '[' + aFormName + '.' + aFieldName +'.selectedIndex]');
+
+			theAge = theYear * 10000 + theMonth * 100 + theDay;
+			if (theAge > theLimit) ReturnValue = false;
+		}
+	}
+	
+	theAge = 0;
+	aFormName = 'LoveSignForm';
+	if ('undefined' != typeof(LoveSignForm)) {
+		// Manque de bol, le lovesignform sert dans plusieurs formulaires??
+		if ('undefined' != typeof(LoveSignForm.PHSF_MonthSelector)) {
+			aFieldName = 'PHSF_YearSelector';
+			theYear = getIntValue(aFormName + '.' + aFieldName + '[' + aFormName + '.' + aFieldName +'.selectedIndex]');
+			aFieldName = 'PHSF_MonthSelector';
+			theMonth = getIntValue(aFormName + '.' + aFieldName + '[' + aFormName + '.' + aFieldName +'.selectedIndex]');
+			aFieldName = 'PHSF_DaySelector';
+			theDay = getIntValue(aFormName + '.' + aFieldName + '[' + aFormName + '.' + aFieldName +'.selectedIndex]');
+
+			theAge = theYear * 10000 + theMonth * 100 + theDay;
+			if (theAge > theLimit) ReturnValue = false;
+		}
+		if ('undefined' != typeof(LoveSignForm.PLSF_MonthSelector)) {
+			aFieldName = 'PLSF_YearSelector';
+			theYear = getIntValue(aFormName + '.' + aFieldName + '[' + aFormName + '.' + aFieldName +'.selectedIndex]');
+			aFieldName = 'PLSF_MonthSelector';
+			theMonth = getIntValue(aFormName + '.' + aFieldName + '[' + aFormName + '.' + aFieldName +'.selectedIndex]');
+			aFieldName = 'PLSF_DaySelector';
+			theDay = getIntValue(aFormName + '.' + aFieldName + '[' + aFormName + '.' + aFieldName +'.selectedIndex]');
+
+			theAge = theYear * 10000 + theMonth * 100 + theDay;
+			if (theAge > theLimit) ReturnValue = false;
+		}
+	}
+			
+	theAge = 0;
+	aFormName = 'ChineseSignForm';
+	if ('undefined' != typeof(ChineseSignForm)) {
+		aFieldName = 'PCSF_YearSelector';
+		theYear = getIntValue(aFormName + '.' + aFieldName + '[' + aFormName + '.' + aFieldName +'.selectedIndex]');
+		aFieldName = 'PCSF_MonthSelector';
+		theMonth = getIntValue(aFormName + '.' + aFieldName + '[' + aFormName + '.' + aFieldName +'.selectedIndex]');
+		aFieldName = 'PCSF_DaySelector';
+		theDay = getIntValue(aFormName + '.' + aFieldName + '[' + aFormName + '.' + aFieldName +'.selectedIndex]');
+
+		theAge = theYear * 10000 + theMonth * 100 + theDay;
+		if (theAge > theLimit) ReturnValue = false;
+	}
+
+	theAge = 0;
+	aFormName = 'NumerologyForm';
+	if ('undefined' != typeof(NumerologyForm)) {
+		aFieldName = 'PNSF_YearSelector';
+		theYear = getIntValue(aFormName + '.' + aFieldName + '[' + aFormName + '.' + aFieldName +'.selectedIndex]');
+		aFieldName = 'PNSF_MonthSelector';
+		theMonth = getIntValue(aFormName + '.' + aFieldName + '[' + aFormName + '.' + aFieldName +'.selectedIndex]');
+		aFieldName = 'PNSF_DaySelector';
+		theDay = getIntValue(aFormName + '.' + aFieldName + '[' + aFormName + '.' + aFieldName +'.selectedIndex]');
+
+		theAge = theYear * 10000 + theMonth * 100 + theDay;
+		if (theAge > theLimit) ReturnValue = false;
+	}
+
+
+	if (!ReturnValue) PopUPUnder13();
+
+	return ReturnValue;
+}
+if ('true' == GetCookie('COPPA')) PopUPUnder13();
+//--->
+</script>
+<meta http-equiv="Keywords" name="Keywords" content="horoscope, horoscopes, weekly horoscopes, reading tarot cards, pet horoscopes, horoscope chino 2005 gratis, chinese astrology, dream interpretation, free dream interpretation, love horoscopes, free will astrology, match love horoscopes, free horoscopes, chinese love horoscope, capricorn horoscopes, chinese horoscope, teenage love horoscopes, chinese astrology signs compatibility, psychic phone reading, links to astrology forecast, 2005 chinese horoscope, astrocenter horoscopes, dog horoscope, free tarot readings, astrology signs, daily horoscope, psychic love reading, chinese horoscope 2005, phone psychic, astronet horoscopes, compatibility horoscope, horoscopes, dream interpretations, accurate psychic reading, dream dictionary, daily chinese horoscope, read horoscope, free love horoscope, meaning of dreams, meaning of dreams, chinese astrology compatibility, psychic reader, free tarot card readings, 2005 horoscopes, astrological signs">
+<meta http-equiv="Description" name="Description" content="Check your free daily horoscope at MSN Astrology and learn more about the zodiac.">
+<meta http-equiv="PICS-Label" content='(pics-1.0 "http://www.rsac.org/ratingsv01.html" l comment "RSACi North America Server" by "Microsoft Network" on "1996.04.16T08:15-0500" r (n 0 s 0 v 0 l 0))'>
+
+</head>
+<body topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://astrocenter.astrology.msn.com/msn/DeptHoroscope.aspx?When=0&amp;Af=-1000&amp;VS=";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "25";
+var displayMonth = "Nov";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://astrocenter.astrology.msn.com/msn/DeptHoroscope.aspx?When=0&amp;Af=-1000&amp;VS=" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20051125175045" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20051013093147/http://astrocenter.astrology.msn.com/msn/DeptHoroscope.aspx?When=0&amp;Af=-1000&amp;VS=" title="13 Oct 2005">OCT</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 17:50:45 Nov 25, 2005">NOV</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20060109012131/http://astrocenter.astrology.msn.com/msn/DeptHoroscope.aspx?When=0&amp;Af=-1000&amp;VS=" title="9 Jan 2006"><strong>JAN</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20051104095230/http://astrocenter.astrology.msn.com/msn/DeptHoroscope.aspx?When=0&amp;Af=-1000&amp;VS=" title="9:52:30 Nov 4, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 17:50:45 Nov 25, 2005">25</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20051128090921/http://astrocenter.astrology.msn.com/msn/DeptHoroscope.aspx?When=0&amp;Af=-1000&amp;VS=" title="9:09:21 Nov 28, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2004
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 17:50:45 Nov 25, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20070217033233/http://astrocenter.astrology.msn.com/msn/DeptHoroscope.aspx?When=0&amp;Af=-1000&amp;VS=" title="17 Feb 2007"><strong>2007</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20051125175045*/http://astrocenter.astrology.msn.com/msn/DeptHoroscope.aspx?When=0&amp;Af=-1000&amp;VS=" title="See a list of every capture for this URL">198 captures</a>
+           <div class="r" title="Timespan for captures of this URL">7 Mar 05 - 26 Aug 14</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:10:002434dc2233_2006:-1:2cfee2671010_2007:-1:033140141232_2008:-1:322200000003_2009:-1:010000100001_2010:-1:000000000000_2011:-1:000000001010_2012:-1:501010101010_2013:-1:101010020000_2014:-1:000000010000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+
+	<!--MSN UX HEADER CODE WITH PLACE HOLDER FOR PASSPORT IMAGE -->
+	<script language="javascript">
+		if (navigator.appName.indexOf('WebTV') != -1) {
+			document.write('<embed src="wtv-tricks:/msndispatch?type=tv-navbar-insert&amp;loc=top-navbar" height="33" width="544"></embed>');
+		} else {
+			document.write('<div class="dMSNME_1"><table class="big7" width="779" height="25" cellpadding="0" cellspacing="0" border="0"><form id="form1" name="form1" method="get" action="/web/20051125175045/http://g.msn.com/0nwenus0/A18/16"><input type="hidden" cp="1252"><tr><td align="left" valign="center">&nbsp;&nbsp;<a href="/web/20051125175045/http://g.msn.com/0nwenus0/A18/00">MSN Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/web/20051125175045/http://g.msn.com/0nwenus0/A18/01">My MSN</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/web/20051125175045/http://g.msn.com/0nwenus0/A18/02">Hotmail</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/web/20051125175045/http://g.msn.com/0nwenus0/A18/04">Shopping</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/web/20051125175045/http://g.msn.com/0nwenus0/A18/05">Money</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/web/20051125175045/http://g.msn.com/0nwenus0/A18/06">People &amp; Chat</a></td><td width="66">&nbsp;</td><td width="85" align="right">Web&nbsp;Search:</td><td width="180" align="left">&nbsp;&nbsp;<input type="text" name="q" size="14" maxlength="150"  style="width:140px;" /><input type="submit" id="submit1" name="submit1" size="4" class="GoBtn" value="Go" /></td></tr><input type="hidden" name="FORM" value="A18" /></form></table></div>');
+		}
+	</script>
+<script language=javascript>
+<!--
+var refURL;
+refURL=document.referrer.toLowerCase();
+
+// specify the invitation criteria here
+// NOTE you cannot use double quotes " in the text of any of these fields
+var survey_location = "/web/20051125175045/https://www.msnfeedback.com/surveys/usa/satastrology.htm";
+var survey_title = "<img src='/web/20051125175045/http://msimg.com/w/logo_bf2.gif'>";
+var invite_title = "MSN wants your feedback!<BR>";
+var invite_text = "You have been randomly selected to represent MSN Astrology users in a quick survey.  If you have a few minutes to spare we'd love to hear from you!";
+var expiration_date = new Date();
+//-------------------------------------
+//set the cookie expiration date 4 months from now.
+var four_months_from_now = expiration_date.getTime() + (120 * 24 * 60 * 60 * 1000);
+expiration_date.setTime(four_months_from_now);
+var ex_date = expiration_date;
+
+function getValue(offset) {
+	    var endstr = document.cookie.indexOf (";", offset);
+		if (endstr == -1)
+			endstr = document.cookie.length;
+		return unescape(document.cookie.substring(offset, endstr));
+}
+function msnGetCookie(name) {
+		var arg = name + "=";
+		var arg_len = arg.length;
+		var cookie_length = document.cookie.length;
+		var i = 0;
+		while (i<cookie_length) {
+		   var j= i + arg_len;
+		   if (document.cookie.substring(i,j) == arg)
+		       return getValue(j);
+			   i = document.cookie.indexOf(" ",i) + 1;
+		   if (i == 0) break;
+		}
+		return null;
+}
+function msnSetCookie(name,value,expires) {
+	    document.cookie = name + "=" + escape(value) + ";expires=" + expires.toGMTString()+ ";domain=survey.msn.com" ;
+}
+//--------------------------------------
+// opens the survey when they click on YES
+var nextwindow;
+function openSurvey() {
+	nextwindow = window.open(survey_location,"survey","width=550,height=350,location=no,resizable=yes,status=yes,scrollbars=yes");
+}
+
+var rn = Math.random() * 240;
+rn = Math.round(rn);
+ 
+if((refURL.indexOf(".msn.com")>-1)&&(rn==2)) 
+{
+// opens the popup invite window and writes the invite text into it
+	var already_seen = msnGetCookie("qnet_popup");
+	if (already_seen != "true") {
+	   //open the invite
+	    window.setTimeout("popUpWindow()", 250);
+	    msnSetCookie("qnet_popup","true",ex_date);
+	}
+	else {
+		//aleady seen the invite
+		//do nothing
+	}
+
+}
+
+function popUpWindow() {
+	var filter = (navigator.appName == "Netscape" && parseInt(navigator.appVersion)<3.0);
+	var today = new Date();
+	//var ex_date = new Date(expiration_date);
+
+	if (!filter) {
+
+		var  window_html = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">';
+		window_html += '<html><head><title>MSN Survey</title></head>';
+		window_html += '<body alink="#000000" bgcolor="#ffffff" leftmargin="0" link="#000000" text="#000000" topmargin="6" vlink="#000000">';
+		window_html += '<center>';
+		window_html += '<table border="0" cellpadding="15" cellspacing="0" width="300">';
+  		window_html += '<tr><td colspan="2" align="center">';
+		window_html += '<p><font color="#ff8000" face="arial" size="4"><b>';
+		window_html += survey_title;
+		window_html += '</b></font></p></td></tr>'
+		window_html += '<tr><td colspan="2">';
+		window_html += '<font face="arial"><font color="#004080" size="5"><strong><center>' + invite_title + '</strong></font><br>';
+  	    window_html += '<font size="3">' + invite_text + '</center></font></font>';
+		window_html += '</td></tr>';
+  		window_html += '<tr><td width="10%"></td><td width="90%">';
+		window_html += '<ul>';
+       	window_html += '<li><font face="arial" size="3"><a href="javascript:window.opener.openSurvey();window.close();"><font color="#ff8000">Yes,</font></a> I\'ll take the survey</font>';
+        window_html += '<li><font face="arial" size="3"><a href="javascript:window.close();"><font color="#ff8000">No,</font></a> close this window.</font>';
+  		window_html += '</li></ul></td></tr></table></center></body></html>';
+		var popup_window = window.open("","eval_invite","width=350,height=350,location=no,resizable=yes,status=0,scrollbars=no");
+		if(popup_window){
+			popup_window.document.write(window_html);
+			popup_window.document.close();
+			popup_window.focus();
+		}
+	}
+}
+
+//-->
+</script>
+
+	<!--MSN UX HEADER CODE ENDS HERE-->
+	
+	<!--SUPER BANNER AD CALL -->
+	<table width="779" height="105" cellpadding="0" cellspacing="0" class="adbar">
+		<tr>
+			<td align="center" valign="top"><br />
+				<script language= "Javascript">
+					document.writeln('<iframe width="728" height="90" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" src="/web/20051125175045/http://rad.msn.com/ADSAdClient31.dll?GetAd?pg=ASTSBP?SC=L9?AP=1390"></iframe>');
+				</script></td>
+		</tr>
+	</table>
+
+	<table width="779" cellpadding="0" cellspacing="0" class="sf">
+		<tr>
+			<td rowspan="2" width="118" class="sfl"><a href="/web/20051125175045/http://g.msn.com/0nwenus0/A18/14" target="_top"><img src="/web/20051125175045im_/http://sc.msn.com/global/c/lg/MSFT_118x35.gif" width="118" height="35" border="0" alt="go to MSN.com" title="go to MSN.com" align="abscenter" /></a></td>
+			<td rowspan="2" width="*" class="sfl" valign="bottom"><a href="/web/20051125175045/http://astrology.msn.com/">Astrology</a></td>
+			<td rowspan="3" width="113" class="sfm"><img src="/web/20051125175045im_/http://sc.msn.com/global/c/sf/sf_p.jpg" width="113" height="44" border="0" /></td>
+			<td width="458" class="sfr"></td>
+			<td height="10"></td>
+		</tr>
+		<tr>
+			<td rowspan="2" width="*" class="sfi" valign="bottom" align="right"><a href="/web/20051125175045/http://astrology.msn.com/newsletter/default.aspx?id=about">Newsletters</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:DoHelp();">Help</a>&nbsp;&nbsp;</td>
+			<td height="26"></td>
+		</tr>
+		<tr>
+			<td colspan="2" class="sflb">&nbsp;</td>
+			<td height="9"></td>
+		</tr>
+	</table>
+
+
+	<table width="779" height="400" cellpadding="0" cellspacing="0">
+		<tr>
+			<td width="130" align="right" valign="top" class="nav">
+
+				<img src="images/CenterLogoMx9.gif" border="0" alt="with Astrocenter.com" title="Astrocenter.com" width="130" height="50" />
+
+				<table width="120" cellpadding="0" cellspacing="0" border="0" class="vnav">
+					<tr>
+						<td width="8"><img src="/web/20051125175045im_/http://sc.msn.com/global/c/sf/n.gif" border="0" width="7" height="7" /></td>
+						<td><a href="/web/20051125175045/http://g.msn.com/US2/1?http://astrology.msn.com/default.aspx&amp;&amp;DI=32&amp;PI=7327&amp;PS=33806">Home</a></td>
+					</tr>
+					<tr>
+						<td width="8" class="tdh"><img src="/web/20051125175045im_/http://sc.msn.com/global/c/sf/n.gif" border="0" width="7" height="7" /></td>
+						<td class="tdh"><a href="/web/20051125175045/http://g.msn.com/US2/1?http://astrocenter.astrology.msn.com/msn/DeptHoroscope.aspx?When=0&amp;Af=-1000&amp;VS=&amp;&amp;DI=32&amp;PI=7327&amp;PS=33806">Horoscopes</a></td>
+					</tr>
+					<tr>
+						<td width="8"><img src="/web/20051125175045im_/http://sc.msn.com/global/c/sf/n.gif" border="0" width="7" height="7" /></td>
+						<td><a href="/web/20051125175045/http://g.msn.com/US2/1?http://astrocenter.astrology.msn.com/msn/DeptLoveToday.aspx?Af=-1000&amp;VS=&amp;&amp;DI=32&amp;PI=7327&amp;PS=33806">Love</a></td>
+					</tr>
+					<tr>
+						<td width="8"><img src="/web/20051125175045im_/http://sc.msn.com/global/c/sf/n.gif" border="0" width="7" height="7" /></td>
+						<td><a href="/web/20051125175045/http://g.msn.com/US2/1?http://astrocenter.astrology.msn.com/msn/DeptTarot.aspx?Af=-1000&amp;VS=&amp;&amp;DI=32&amp;PI=7327&amp;PS=33806">Tarot</a></td>
+					</tr>
+					<tr>
+						<td width="8"><img src="/web/20051125175045im_/http://sc.msn.com/global/c/sf/n.gif" border="0" width="7" height="7" /></td>
+						<td><a href="/web/20051125175045/http://g.msn.com/US2/1?http://astrocenter.astrology.msn.com/msn/DeptChinWeek.aspx?When=2&amp;Af=-1000&amp;VS=&amp;&amp;DI=32&amp;PI=7327&amp;PS=33806">Chinese Readings</a></td>
+					</tr>
+					<tr>
+						<td width="8"><img src="/web/20051125175045im_/http://sc.msn.com/global/c/sf/n.gif" border="0" width="7" height="7" /></td>
+						<td><a href="/web/20051125175045/http://g.msn.com/US2/1?http://astrocenter.astrology.msn.com/msn/deptNumToday.aspx?Af=-1000&amp;VS=&amp;&amp;DI=32&amp;PI=7327&amp;PS=33806">Numerology</a></td>
+					</tr>
+					<tr>
+						<td width="8"><img src="/web/20051125175045im_/http://sc.msn.com/global/c/sf/n.gif" border="0" width="7" height="7" /></td>
+						<td><a href="/web/20051125175045/http://g.msn.com/US2/1?http://www.astrocenter.com/msn/HPChartsAndReports.aspx?Af=-1000&amp;VS=&amp;&amp;DI=32&amp;PI=7327&amp;PS=33806"><font color=A73E97><font color=A73E97>Charts &amp; Reports</font></font></a></td>
+					</tr>
+					<tr>
+						<td width="8"><img src="/web/20051125175045im_/http://sc.msn.com/global/c/sf/n.gif" border="0" width="7" height="7" /></td>
+						<td><a href="/web/20051125175045/http://g.msn.com/US2/1?http://store.astrocenter.com/msn/Telephony/Welcome.asp?Af=-1000&amp;VS=&amp;&amp;DI=32&amp;PI=7327&amp;PS=33806">Phone Consultations</a></td>
+					</tr>
+					<tr>
+						<td width="8"><img src="/web/20051125175045im_/http://sc.msn.com/global/c/sf/n.gif" border="0" width="7" height="7" /></td>
+						<td><a href="/web/20051125175045/http://g.msn.com/US2/1?http://eshop.msn.com/partnercategory.aspx?catId=702&amp;ptnrId=33">Shopping</a></td>
+					</tr>
+				</table>
+
+				<!-- Nav Bar - Lower -->
+
+<div style="height:10px;"><spacer type="block" height="10"/></div>
+
+<!-- ASTRO NEWSLETTER SIGNUP -->
+<table style="table-layout:fixed;" cellspacing=0 cellpadding=0 width=130 border=0>
+	<tr>
+		<td width=3></td>
+		<td>
+			<table cellspacing=0 cellpadding=0 border=0 bgcolor=#C8BCD4>
+				<tr>
+					<td width=10></td>
+					<td>
+						<table cellspacing=0 cellpadding=0 border=0>
+							<form id=frmNewsletterDaily name=frmNewsletterDaily action="/web/20051125175045/http://store.astrocenter.com/msn/store/buy/Default.asp?De=StEdEm&amp;Af=-1000&amp;VS=" method=post>
+							<tr>
+								<td height=10><div style="height:10px;"><spacer type="block" height="10" /></div></td>
+							</tr><tr>
+								<td class="T13TahBPu">Free Daily Horoscope</td>
+							</tr><tr>
+								<td height=5><div style="height:5px;"><spacer type="block" height="5" /></div></td>
+							</tr><tr>
+								<td class="T11TahBAq">Center.com Newsletter</td>
+							</tr><tr>
+								<td height=5><div style="height:5px;"><spacer type="block" height="5" /></div></td>
+							</tr><tr>
+								<td class="T11TahBk">Get a personalized horoscope delivered to your inbox every morning.</td>
+							</tr><tr>
+								<td height=5><div style="height:5px;"><spacer type="block" height="5" /></div></td>
+							</tr><tr>
+								<td align=center><input class=T11TahBk id=btnGoEmailSignupDaily type=submit value=Subscribe name=btnGoEmailSignupDaily></td>
+							</tr><tr>
+								<td height=5><div style="height:5px;"><spacer type="block" height="5" /></div></td>
+							</tr><tr>
+								<td><a class="T11TahBk" href="/web/20051125175045/http://astrology.msn.com/newsletter/default.aspx?id=about"><u>Learn more</u></a></td>
+							</tr><tr>
+								<td height=15><div style="height:15px;"><spacer type="block" height="15" /></div></td>
+							</tr>
+							</form>
+						</table>
+					</td>
+					<td width=10></td>
+				</tr>
+			</table>			
+		</td>
+		<td width=3></td>
+	</tr>
+</table>
+<div style="height:8px;"><spacer type="block" height="8" /></div>
+<table style="table-layout:fixed;" cellspacing=0 cellpadding=0 width=130 border=0>
+	<tr>
+		<td width=3></td>
+		<td>
+			<table cellspacing=0 cellpadding=0 border=0 bgcolor=#C8BCD4>
+				<tr>
+					<td width=10></td>
+					<td>
+						<table cellspacing=0 cellpadding=0 border=0>
+							<form name=newsform onSubmit="javascript:callinsite();return false;">
+							<tr>
+								<td height=10><div style="height:10px;"><spacer type="block" height="10" /></div></td>
+							</tr><tr>
+								<td class="T13TahBPu">Free Weekly Horoscope</td>
+							</tr><tr>
+								<td height=5><div style="height:5px;"><spacer type="block" height="5" /></div></td>
+							</tr><tr>
+								<td class="T11TahBAq">MSN Newsletter</td>
+							</tr><tr>
+								<td height=5><div style="height:5px;"><spacer type="block" height="5" /></div></td>
+							</tr><tr>
+								<td class="T11TahBk">Your e-mail address:</td>
+							</tr><tr>
+								<td><input class=T11TahBk style="width:104px;" size=9 name=txtemail value="" onFocus='this.value=""; return true'></td>
+							</tr><tr>
+								<td height=5><div style="height:5px;"><spacer type="block" height="5" /></div></td>
+							</tr><tr>
+								<td>
+									<select class=T11TahBk name=letters>
+										<option value=0 selected>Your sign</option>
+										<option value=266>Aries</option> 
+										<option value=277>Taurus</option>
+										<option value=268>Gemini</option> 
+										<option value=276>Cancer</option>
+										<option value=267>Leo</option> 
+										<option value=272>Virgo</option> 
+										<option value=274>Libra</option> 
+										<option value=275>Scorpio</option> 
+										<option value=271>Sagittarius</option> 
+										<option value=269>Capricorn</option> 
+										<option value=270>Aquarius</option> 
+										<option value=273>Pisces</option>
+									</select> 
+									<div style="HEIGHT: 6px"><spacer type="block" height="6" /></div>
+							</tr><tr>
+								<td height=2><div style="height:2px;"><spacer type="block" height="2" /></div></td>
+							</tr><tr>
+								<td>
+									<a class="T11TahBk">Preferred format:</a>
+									<div class=T11TahBk><input id=Radio1 type=radio checked value=HTM name=radiohtml>HTML&nbsp;(graphical)<br><input id=Radio2 type=radio value=TXT name=radiohtml>Text</div>
+							</tr><tr>
+								<td>
+									<table cellspacing=0 cellpadding=0 border=0>
+										<tr>
+											<td width=73>
+												<a class="T11TahBk" href="/web/20051125175045/http://astrology.msn.com/newsletter/default.aspx?id=about"><u>Learn more</u></a>
+											</td>
+											<td>
+												<input class=Btn11Tah id=btnGoEmailSignup type=submit value="Go" name=btnGoEmailSignup>
+											</td>
+											<td width=10></td>
+										</tr>
+									</table>
+								</td>
+							</tr><tr>
+								<td height=15><div style="height:15px;"><spacer type="block" height="15" /></div></td>
+							</tr>
+							</form>
+						</table>
+					</td>
+				</tr>
+			</table>			
+		</td>
+		<td width=3></td>
+	</tr>
+</table> 
+<!-- END ASTRO NEWSLETTER SIGNUP -->
+
+<div style="height:10px;"><spacer type="block" height="10" />&nbsp;</div>
+
+
+
+			</td>
+			<td width="649" valign="top" class="msnw">
+<!-- CONTENT - START -->
+				<table width="649" cellpadding="0" cellspacing="0" border="0" style="background-image: url(images/Stars_bg.gif);">
+					<tr>
+						<td>
+							<table width="649" cellpadding="0" cellspacing="0" border="0" style="background-image: url(images/Orbit_bg.gif); background-repeat: no-repeat; background-position: bottom right">
+								<tr>
+									<td height="15" colspan=6><spacer type="block" height="15"></spacer></td>
+								</tr><tr>
+									<td width=15><div style="width:15px;"><spacer type="block" width="15" /></div></td>
+									<td width=305 valign=top>
+
+										<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: #FFFFFF url('images/Background_module.gif') no-repeat scroll bottom right;">
+<form name="PZ_MainForm" method="post" action="/web/20051125175045/http://astrocenter.astrology.msn.com//msn/DeptHoroscope.aspx?When=0&amp;Af=-1000&amp;VS=" onsubmit="return(SubmitValidation());">
+<input type="hidden" name="AutomateState" value=""><input type="hidden" name="URLAfterSuccededSubmit" value="http://astrocenter.astrology.msn.com/msn/MyToday.aspx?Af=-1000&VS=">
+	<tr valign="bottom">
+		<td>
+			<table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor=ffffff>
+				<tr>
+					<td><IMG src="images/Top_piece.gif" WIDTH=305 HEIGHT=22 BORDER=0 ALT=""><MAP NAME="index_Map"><AREA SHAPE="rect" ALT="" COORDS="0,0,108,35" HREF="/web/20051125175045/http://astrocenter.astrology.msn.com/msn/MyToday.aspx?When=0&amp;Af=-1000&amp;VS="><AREA SHAPE="rect" ALT="" COORDS="109,0,220,35" HREF="/web/20051125175045/http://astrocenter.astrology.msn.com/msn/EditLevel3.aspx?IM=PF&amp;Af=-1000&amp;VS="></MAP></td>
+				</tr>
+			</table>
+		</td>
+	</tr><tr valign="top" height=78>
+		<td>
+			<table width="305" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width=19></td>
+					<td><img src="images/welcome.gif"></td>
+					<td width=19></td>
+				</tr><tr>
+					<td colspan=3><div style="height:5px;"><spacer type="block" height="5" /></div>
+				</tr><tr>
+					<td></td>
+					<td class="T11TahBk">
+						Personalize today and get free access to customized<br>
+						daily, weekly, and monthly forecasts!
+					</td>
+					<td></td>
+				</tr><tr>
+					<td colspan=3><div style="height:12px;"><spacer type="block" height="12" /></div>
+				</tr>
+			</table><table width="305" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width=15></td>
+					<td width=4></td>
+					<td class="T11TahPu">
+						Enter your first name:
+					</td>
+					<td width=4></td>
+					<td class="T11TahPu">
+						Select your gender:
+					</td>
+				</tr><tr>
+					<td></td>
+					<td></td>
+					<td class="T11TahBk">
+						<input type="text" size="23" maxlength="13" name="FirstName" class="P-FormObject" value="">
+					</td>
+					<td></td>
+					<td><SELECT CLASS="P-FormObject" NAME="GenderSelector"><OPTION VALUE="1" SELECTED>Female</OPTION><OPTION VALUE="0">Male</OPTION></SELECT></td>
+				</tr><tr>
+					<td colspan=5><div style="height:8px;"><spacer type="block" height="8" /></div>
+				</tr>
+			</table><table width="305" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width=15></td>
+					<td width=4></td>
+					<td class="T11TahPu">Date of Birth:</td>
+				</tr><tr>
+					<td></td>
+					<td></td>
+					<td><SELECT CLASS="P-FormObject" NAME="MonthSelector"><OPTION VALUE="">Month</OPTION><OPTION VALUE="0">January</OPTION><OPTION VALUE="1">February</OPTION><OPTION VALUE="2">March</OPTION><OPTION VALUE="3">April</OPTION><OPTION VALUE="4">May</OPTION><OPTION VALUE="5">June</OPTION><OPTION VALUE="6">July</OPTION><OPTION VALUE="7">August</OPTION><OPTION VALUE="8">September</OPTION><OPTION VALUE="9">October</OPTION><OPTION VALUE="10">November</OPTION><OPTION VALUE="11">December</OPTION></SELECT>&nbsp;<SELECT CLASS="P-FormObject" NAME="DaySelector"><OPTION VALUE="">Day</OPTION><OPTION VALUE="1">1</OPTION><OPTION VALUE="2">2</OPTION><OPTION VALUE="3">3</OPTION><OPTION VALUE="4">4</OPTION><OPTION VALUE="5">5</OPTION><OPTION VALUE="6">6</OPTION><OPTION VALUE="7">7</OPTION><OPTION VALUE="8">8</OPTION><OPTION VALUE="9">9</OPTION><OPTION VALUE="10">10</OPTION><OPTION VALUE="11">11</OPTION><OPTION VALUE="12">12</OPTION><OPTION VALUE="13">13</OPTION><OPTION VALUE="14">14</OPTION><OPTION VALUE="15">15</OPTION><OPTION VALUE="16">16</OPTION><OPTION VALUE="17">17</OPTION><OPTION VALUE="18">18</OPTION><OPTION VALUE="19">19</OPTION><OPTION VALUE="20">20</OPTION><OPTION VALUE="21">21</OPTION><OPTION VALUE="22">22</OPTION><OPTION VALUE="23">23</OPTION><OPTION VALUE="24">24</OPTION><OPTION VALUE="25">25</OPTION><OPTION VALUE="26">26</OPTION><OPTION VALUE="27">27</OPTION><OPTION VALUE="28">28</OPTION><OPTION VALUE="29">29</OPTION><OPTION VALUE="30">30</OPTION><OPTION VALUE="31">31</OPTION></SELECT>&nbsp;<SELECT CLASS="P-FormObject" NAME="YearSelector"><OPTION VALUE="1901">1901</OPTION><OPTION VALUE="1902">1902</OPTION><OPTION VALUE="1903">1903</OPTION><OPTION VALUE="1904">1904</OPTION><OPTION VALUE="1905">1905</OPTION><OPTION VALUE="1906">1906</OPTION><OPTION VALUE="1907">1907</OPTION><OPTION VALUE="1908">1908</OPTION><OPTION VALUE="1909">1909</OPTION><OPTION VALUE="1910">1910</OPTION><OPTION VALUE="1911">1911</OPTION><OPTION VALUE="1912">1912</OPTION><OPTION VALUE="1913">1913</OPTION><OPTION VALUE="1914">1914</OPTION><OPTION VALUE="1915">1915</OPTION><OPTION VALUE="1916">1916</OPTION><OPTION VALUE="1917">1917</OPTION><OPTION VALUE="1918">1918</OPTION><OPTION VALUE="1919">1919</OPTION><OPTION VALUE="1920">1920</OPTION><OPTION VALUE="1921">1921</OPTION><OPTION VALUE="1922">1922</OPTION><OPTION VALUE="1923">1923</OPTION><OPTION VALUE="1924">1924</OPTION><OPTION VALUE="1925">1925</OPTION><OPTION VALUE="1926">1926</OPTION><OPTION VALUE="1927">1927</OPTION><OPTION VALUE="1928">1928</OPTION><OPTION VALUE="1929">1929</OPTION><OPTION VALUE="1930">1930</OPTION><OPTION VALUE="1931">1931</OPTION><OPTION VALUE="1932">1932</OPTION><OPTION VALUE="1933">1933</OPTION><OPTION VALUE="1934">1934</OPTION><OPTION VALUE="1935">1935</OPTION><OPTION VALUE="1936">1936</OPTION><OPTION VALUE="1937">1937</OPTION><OPTION VALUE="1938">1938</OPTION><OPTION VALUE="1939">1939</OPTION><OPTION VALUE="1940">1940</OPTION><OPTION VALUE="1941">1941</OPTION><OPTION VALUE="1942">1942</OPTION><OPTION VALUE="1943">1943</OPTION><OPTION VALUE="1944">1944</OPTION><OPTION VALUE="1945">1945</OPTION><OPTION VALUE="1946">1946</OPTION><OPTION VALUE="1947">1947</OPTION><OPTION VALUE="1948">1948</OPTION><OPTION VALUE="1949">1949</OPTION><OPTION VALUE="1950">1950</OPTION><OPTION VALUE="1951">1951</OPTION><OPTION VALUE="1952">1952</OPTION><OPTION VALUE="1953">1953</OPTION><OPTION VALUE="1954">1954</OPTION><OPTION VALUE="1955">1955</OPTION><OPTION VALUE="1956">1956</OPTION><OPTION VALUE="1957">1957</OPTION><OPTION VALUE="1958">1958</OPTION><OPTION VALUE="1959">1959</OPTION><OPTION VALUE="" SELECTED>Year</OPTION><OPTION VALUE="1960">1960</OPTION><OPTION VALUE="1961">1961</OPTION><OPTION VALUE="1962">1962</OPTION><OPTION VALUE="1963">1963</OPTION><OPTION VALUE="1964">1964</OPTION><OPTION VALUE="1965">1965</OPTION><OPTION VALUE="1966">1966</OPTION><OPTION VALUE="1967">1967</OPTION><OPTION VALUE="1968">1968</OPTION><OPTION VALUE="1969">1969</OPTION><OPTION VALUE="1970">1970</OPTION><OPTION VALUE="1971">1971</OPTION><OPTION VALUE="1972">1972</OPTION><OPTION VALUE="1973">1973</OPTION><OPTION VALUE="1974">1974</OPTION><OPTION VALUE="1975">1975</OPTION><OPTION VALUE="1976">1976</OPTION><OPTION VALUE="1977">1977</OPTION><OPTION VALUE="1978">1978</OPTION><OPTION VALUE="1979">1979</OPTION><OPTION VALUE="1980">1980</OPTION><OPTION VALUE="1981">1981</OPTION><OPTION VALUE="1982">1982</OPTION><OPTION VALUE="1983">1983</OPTION><OPTION VALUE="1984">1984</OPTION><OPTION VALUE="1985">1985</OPTION><OPTION VALUE="1986">1986</OPTION><OPTION VALUE="1987">1987</OPTION><OPTION VALUE="1988">1988</OPTION><OPTION VALUE="1989">1989</OPTION><OPTION VALUE="1990">1990</OPTION><OPTION VALUE="1991">1991</OPTION><OPTION VALUE="1992">1992</OPTION><OPTION VALUE="1993">1993</OPTION><OPTION VALUE="1994">1994</OPTION><OPTION VALUE="1995">1995</OPTION><OPTION VALUE="1996">1996</OPTION><OPTION VALUE="1997">1997</OPTION><OPTION VALUE="1998">1998</OPTION><OPTION VALUE="1999">1999</OPTION><OPTION VALUE="2000">2000</OPTION><OPTION VALUE="2001">2001</OPTION><OPTION VALUE="2002">2002</OPTION><OPTION VALUE="2003">2003</OPTION><OPTION VALUE="2004">2004</OPTION><OPTION VALUE="2005">2005</OPTION><OPTION VALUE="2006">2006</OPTION></SELECT>&nbsp;&nbsp;<input class="T11TahBk" type="submit" name="Submit" value="Go"></td>
+				</tr><tr>
+					<td colspan=12><div style="height:12px;"><spacer type="block" height="12" /></div>
+				</tr>
+			</table>
+			<div style="height:10px;"><spacer type="block" height="10" /></div>
+		</td>
+	</tr>
+	</form>
+</table>
+<div style="height:8px;"><spacer type="block" height="8" /></div><!-- Unpersonalized module start -->
+
+
+<script language='javascript'>
+<!---
+function isStringEmpty4UM(StrInput) {
+	var i, taille = StrInput.length;
+
+	if (0 >= taille) return true;
+
+	for (i = 0; i<taille; i++)
+		if (' ' != StrInput.charAt(i)) return false;
+
+	return true;
+}
+function UnpersonalizedSubmitValidation() {
+	var aVariable, aConfirmationVariable, lb_SignSelected, li_DateSelected;
+
+	lb_SignSelected = false;
+	li_DateSelected = 0;
+
+	aVariable = window.document.UnpersonalizedFormName.UnpersonalizedDaySelector[window.document.UnpersonalizedFormName.UnpersonalizedDaySelector.selectedIndex].value;
+	if (false == isStringEmpty4UM(aVariable)) {
+		li_DateSelected ++;
+	}
+
+	aVariable = window.document.UnpersonalizedFormName.UnpersonalizedMonthSelector[window.document.UnpersonalizedFormName.UnpersonalizedMonthSelector.selectedIndex].value;
+	if (false == isStringEmpty4UM(aVariable)) {
+		li_DateSelected ++;
+	}
+
+	aVariable = window.document.UnpersonalizedFormName.UnpersonalizedYearSelector[window.document.UnpersonalizedFormName.UnpersonalizedYearSelector.selectedIndex].value;
+	if (false == isStringEmpty4UM(aVariable)) {
+		li_DateSelected ++;
+	}
+
+	aVariable = window.document.UnpersonalizedFormName.UnpersonalizedSignSelector[window.document.UnpersonalizedFormName.UnpersonalizedSignSelector.selectedIndex].value;
+	if (false == isStringEmpty4UM(aVariable)) {
+		lb_SignSelected = true;
+	}
+
+	if (0 < li_DateSelected && true == lb_SignSelected) {
+		alert('Please, choose between Zodiac sign and dates!');
+
+		return false;
+	}
+	if (0 < li_DateSelected && 3 > li_DateSelected) {
+		alert('Please, check your date!');
+
+		return false;
+	}
+	if (0 == li_DateSelected && false == lb_SignSelected) {
+	
+		alert('Please choose between Zodiac sign or birth date!');
+
+
+		return false;
+	}
+
+	return true;
+}
+function UnpersonalizedOnClick4Submit() {
+
+	if (UnpersonalizedSubmitValidation()) {
+		window.document.UnpersonalizedFormName.submit();
+	}
+}
+function CleanDateChoice() {
+
+	window.document.UnpersonalizedFormName.UnpersonalizedMonthSelector.selectedIndex=0;
+	window.document.UnpersonalizedFormName.UnpersonalizedDaySelector.selectedIndex=0;
+	
+	window.document.UnpersonalizedFormName.UnpersonalizedYearSelector.selectedIndex=60;
+
+}
+//---></script>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor=EAF1F4>
+	<form name="UnpersonalizedFormName" method="post" action="/web/20051125175045/http://astrocenter.astrology.msn.com//msn/DeptHoroscope.aspx?When=0&amp;Af=-1000&amp;VS=" onSubmit="return(UnpersonalizedSubmitValidation());">
+	<tr>
+		<td width=7></td>
+		<td valign=top>
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td height=10><div style="height:10px;"><spacer type="block" height="10" /></div></td>
+				</tr><tr>
+					<td class="T14TimBAq">Find Other Horoscopes</td>
+				</tr><tr>
+					<td height=2><div style="height:2px;"><spacer type="block" height="2" /></div></td>
+				</tr><tr>
+					<td>
+
+
+						<table width="100%" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td class="T11TahPu">Search by sign:</td>
+								<td></td>
+								<td class="T11TahPu">Search by birth date:</td>
+								<td></td>								
+							</tr><tr>
+								<td colspan=4 height=3><div style="height:3px;"><img src="images/spacer.gif" width=1 height=3></div></td>
+							</tr><tr>
+								<td>
+									<select name="UnpersonalizedSignSelector" class="P-A2" onchange="javascript:CleanDateChoice();">
+										<option value="">Sign</option>
+										<option value='0'>Aries</option><option value='1'>Taurus</option><option value='2'>Gemini</option><option value='3'>Cancer</option><option value='4'>Leo</option><option value='5'>Virgo</option><option value='6'>Libra</option><option value='7'>Scorpio</option><option value='8'>Sagittarius</option><option value='9'>Capricorn</option><option value='10'>Aquarius</option><option value='11'>Pisces</option>
+									</select>
+								</td>
+								<td class="T11TahBk"><img src="images/spacer.gif" width=2 height=1>or<img src="images/spacer.gif" width=2 height=1></td>
+								<td>
+									<NOBR><select name="UnpersonalizedMonthSelector" class="P-A2" onchange="window.document.UnpersonalizedFormName.UnpersonalizedSignSelector.selectedIndex=0;">
+										<option value="">Month</option>
+										<option value='1'>Jan</option><option value='2'>Feb</option><option value='3'>Mar</option><option value='4'>Apr</option><option value='5'>May</option><option value='6'>June</option><option value='7'>July</option><option value='8'>Aug</option><option value='9'>Sept</option><option value='10'>Oct</option><option value='11'>Nov</option><option value='12'>Dec</option>
+									</select><img src="images/spacer.gif" width=1 height=1><select name="UnpersonalizedDaySelector" class="P-A2" onchange="window.document.UnpersonalizedFormName.UnpersonalizedSignSelector.selectedIndex=0;">
+										<option value="">Day</option>
+										<option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option><option value='11'>11</option><option value='12'>12</option><option value='13'>13</option><option value='14'>14</option><option value='15'>15</option><option value='16'>16</option><option value='17'>17</option><option value='18'>18</option><option value='19'>19</option><option value='20'>20</option><option value='21'>21</option><option value='22'>22</option><option value='23'>23</option><option value='24'>24</option><option value='25'>25</option><option value='26'>26</option><option value='27'>27</option><option value='28'>28</option><option value='29'>29</option><option value='30'>30</option><option value='31'>31</option>
+									</select><img src="images/spacer.gif" width=1 height=1><select name="UnpersonalizedYearSelector" class="P-A2" onchange="window.document.UnpersonalizedFormName.UnpersonalizedSignSelector.selectedIndex=0;">
+										<option value="1900">1900</option><option value="1901">1901</option><option value="1902">1902</option><option value="1903">1903</option><option value="1904">1904</option><option value="1905">1905</option><option value="1906">1906</option><option value="1907">1907</option><option value="1908">1908</option><option value="1909">1909</option><option value="1910">1910</option><option value="1911">1911</option><option value="1912">1912</option><option value="1913">1913</option><option value="1914">1914</option><option value="1915">1915</option><option value="1916">1916</option><option value="1917">1917</option><option value="1918">1918</option><option value="1919">1919</option><option value="1920">1920</option><option value="1921">1921</option><option value="1922">1922</option><option value="1923">1923</option><option value="1924">1924</option><option value="1925">1925</option><option value="1926">1926</option><option value="1927">1927</option><option value="1928">1928</option><option value="1929">1929</option><option value="1930">1930</option><option value="1931">1931</option><option value="1932">1932</option><option value="1933">1933</option><option value="1934">1934</option><option value="1935">1935</option><option value="1936">1936</option><option value="1937">1937</option><option value="1938">1938</option><option value="1939">1939</option><option value="1940">1940</option><option value="1941">1941</option><option value="1942">1942</option><option value="1943">1943</option><option value="1944">1944</option><option value="1945">1945</option><option value="1946">1946</option><option value="1947">1947</option><option value="1948">1948</option><option value="1949">1949</option><option value="1950">1950</option><option value="1951">1951</option><option value="1952">1952</option><option value="1953">1953</option><option value="1954">1954</option><option value="1955">1955</option><option value="1956">1956</option><option value="1957">1957</option><option value="1958">1958</option><option value="1959">1959</option><option value="" Selected>Year</option><option value="1960">1960</option><option value="1961">1961</option><option value="1962">1962</option><option value="1963">1963</option><option value="1964">1964</option><option value="1965">1965</option><option value="1966">1966</option><option value="1967">1967</option><option value="1968">1968</option><option value="1969">1969</option><option value="1970">1970</option><option value="1971">1971</option><option value="1972">1972</option><option value="1973">1973</option><option value="1974">1974</option><option value="1975">1975</option><option value="1976">1976</option><option value="1977">1977</option><option value="1978">1978</option><option value="1979">1979</option><option value="1980">1980</option><option value="1981">1981</option><option value="1982">1982</option><option value="1983">1983</option><option value="1984">1984</option><option value="1985">1985</option><option value="1986">1986</option><option value="1987">1987</option><option value="1988">1988</option><option value="1989">1989</option><option value="1990">1990</option><option value="1991">1991</option><option value="1992">1992</option><option value="1993">1993</option><option value="1994">1994</option><option value="1995">1995</option><option value="1996">1996</option><option value="1997">1997</option><option value="1998">1998</option><option value="1999">1999</option><option value="2000">2000</option><option value="2001">2001</option><option value="2002">2002</option><option value="2003">2003</option><option value="2004">2004</option><option value="2005">2005</option>
+									</select>
+								</td>
+								<td align=right><input class="T11TahBk" type="submit" name="UnpersonalizedSubmitButton" value="Go"><img src="images/spacer.gif" width="7" height="1"></td>
+							</tr>
+						</table>
+
+
+					</td>
+				</tr><tr>
+					<td height=10><div style="height:10px;"><spacer type="block" height="10" /></div></td>
+				</tr>
+			</table>
+		</td>
+		<td width=7></td>
+	</tr>
+	</form>
+</table>
+<div style="height:2px;"><spacer type="block" height="2" /></div>
+
+<div style="height:10px;"><spacer type="block" height="10" /></div><!-- moreOnMSN2 -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td class="T14TimBAq">
+			More on MSN Astrology
+		</td>
+	</tr><tr>
+		<td colspan=2 height=2><div style="height:2px;"><spacer type="block" height="2" /></div></td>
+	</tr><tr>
+		<td colspan=2 height=1><img src="images/gradAq.gif" width=100% height=1></td>
+	</tr><tr>
+		<td colspan=2 height=10><div style="height:10px;"><spacer type="block" height="10" /></div></td>
+	</tr>
+</table>
+<table cellpadding="0" cellspacing="0" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><tr><td><a HREF="/web/20051125175045/http://g.msn.com/0US!s2.87892_34446/7.b8789/1??cm=MoreOnMSNDept-S"><img SRC="/web/20051125175045im_/http://sc.msn.com/5K/R9M+M!,%5DYQ430HZQ,7W%5D1A.jpg" WIDTH="60" HEIGHT="60" border="1" style="border-color:503562" ALT="© Getty Images"></img></a></td><td WIDTH="9"></td><td valign="top"><table cellpadding="0" cellspacing="0"><tr><td><a href="/web/20051125175045/http://g.msn.com/0US!s2.87892_34446/7.c8789/2??cm=MoreOnMSNDept-S" class="T12TimBPu">Family Get-togethers</a></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/spacer.gif" WIDTH="1" HEIGHT="3" ALT=""></img></td></tr><tr><td><a href="/web/20051125175045/http://g.msn.com/0US!s2.87892_34446/7.c8789/2??cm=MoreOnMSNDept-S" class="T11TahBk">Arm yourself with wisdom from the stars to make the most of time you spend with the ones you love (and don't!) this holiday</a></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/spacer.gif" WIDTH="1" HEIGHT="7" ALT=""></img></td></tr><tr><td><table cellpadding="0" cellspacing="0"><tr><td><a href="/web/20051125175045/http://g.msn.com/0US!s2.87892_34446/7.b8789/3??cm=MoreOnMSNDept-S" class="T12TimBPu">Sagittarius Fun Facts</a></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/spacer.gif" WIDTH="1" HEIGHT="3" ALT=""></img></td></tr><tr><td><a href="/web/20051125175045/http://g.msn.com/0US!s2.87892_34446/7.b8789/3??cm=MoreOnMSNDept-S" class="T11TahBk">Check out more about Sagittarius' love of fun and change ...</a></td></tr></table></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/spacer.gif" WIDTH="1" HEIGHT="5" ALT=""></img></td></tr><tr><td><table cellpadding="0" cellspacing="0"><tr><td><a href="/web/20051125175045/http://g.msn.com/0US!s2.87892_34446/7.c8789/4??cm=MoreOnMSNDept-S" class="T12TimBPu">Dating Help</a></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/spacer.gif" WIDTH="1" HEIGHT="3" ALT=""></img></td></tr><tr><td><a href="/web/20051125175045/http://g.msn.com/0US!s2.87892_34446/7.c8789/4??cm=MoreOnMSNDept-S" class="T11TahBk">Know your own and your love interest's turn ons &amp; offs? Check here for help with navigating treacherous dating waters</a></td></tr></table></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/spacer.gif" WIDTH="1" HEIGHT="5" ALT=""></img></td></tr><tr><td><table cellpadding="0" cellspacing="0"><tr><td><a href="/web/20051125175045/http://g.msn.com/0US!s2.87892_34446/7.b8789/5??cm=MoreOnMSNDept-S" class="T12TimBPu">Winterize Yourself</a></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/spacer.gif" WIDTH="1" HEIGHT="3" ALT=""></img></td></tr><tr><td><a href="/web/20051125175045/http://g.msn.com/0US!s2.87892_34446/7.b8789/5??cm=MoreOnMSNDept-S" class="T11TahBk">Don't let the winter blahs take hold of your health or attitude. Check out your sign for pick-me-ups this season</a></td></tr></table></td></tr></table>
+<div style="height:11px;"><spacer type="block" height="11" /></div><!--eshop -->
+<table width="100%" align="top" class="msnW" cellpadding="0" cellspacing="0">
+	<tr>
+		<td align=left><a class="T11TahGy">MSN shopping</a></td>
+	</tr><tr>
+		<td height=4><div style="height:4px;"><spacer type="block" height="4" /></div></td>
+	</tr><tr>
+		<td align=left>
+			<table width="100%" border="1" bordercolor=ADB5A5 bgcolor=FCFBF8 cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+<SCRIPT language = "JavaScript">
+<!-- //
+var fSucceed = false;
+// -->
+</SCRIPT>
+<SCRIPT language = "JavaScript" src="/web/20051125175045js_/http://shopping.msn.com/xmlbuddy/eShopOffer.aspx?formatType=-1&amp;ptnrData=1000&amp;iurl=DEPT&amp;styletype=0&amp;v=3&amp;ptnrId=33">
+</SCRIPT>
+<SCRIPT language = "JavaScript">
+<!-- //
+if (!fSucceed) 
+document.write('<A href="/web/20051125175045/http://shopping.msn.com"><FONT size="1" family="Verdana">MSN Shopping</FONT></A>'); 
+// -->
+</SCRIPT>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+									</td>
+									<td width=10><div style="width:10px;"><spacer type="block" width="10" /></div></td>
+									<td width=10><div style="width:10px;"><spacer type="block" width="10" /></div></td>
+									<td width=300 valign=top>
+			
+										<!-- What's New -->
+<!-- What's New -->
+<a href='/web/20051125175045/http://www.astrocenter.com/MSN/Dec%20Rom/Phone/Dec%20FC/06%20FC'></a>
+<table width="300" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td class="T14TimBAq">What's New</td>
+	</tr><tr>
+		<td colspan=2 height=2><div style="height:2px;"><spacer type="block" height="2" /></div></td>
+	</tr><tr>
+		<td colspan=2 height=1><img src="/web/20051125175045im_/http://www.astrocenter.com/MSN/images/gradAq.gif" width=100% height=1></td>
+	</tr><tr>
+		<td colspan=2 height=10><div style="height:10px;"><spacer type="block" height="10" /></div></td>
+	</tr>
+</table>
+<table width="300" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td width=68 valign=top>
+			<a href='/web/20051125175045/http://www.astrocenter.com/MSN/Presentation.aspx?Product=StEdFrMoRo'><img src="/web/20051125175045im_/http://www.astrocenter.com/msn/images/PubDyn/PictoProd_DecROM05.gif" alt="December Romance Forecast" width=57 height=57 border="0"></a>
+		</td><td valign=top>
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td align=left><a href='/web/20051125175045/http://www.astrocenter.com/MSN/Presentation.aspx?Product=StEdFrMoRo' class="T12TimBPu">December Romance Forecast</a></td>
+				</tr><tr>
+					<td colspan=2 height=2><div style="height:2px;"><spacer type="block" height="2" /></div></td>
+				</tr><tr>
+					<td><!--a class="T11TahBk" href='/web/20051125175045/http://www.astrocenter.com/MSN/Presentation.aspx?Product=StEdFrMoRo			'--><font class="T11TahBk">Star light, star bright. Is your soul mate in sight? Find out if you'll be snuggling with a sweetie this special season.</font><!--/a--></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+										<div style="height:7px;"><spacer type="block" height="7" /></div>
+
+										<!-- quickLinkFreeTools -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td colspan=2 height=3><div style="height:3px;"><spacer type="block" height="3" /></div></td>
+	</tr><tr>
+		<td>
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td class="T14TimBAq">
+			Quick Links
+		</td>
+	</tr><tr>
+		<td colspan=2 height=3><div style="height:3px;"><spacer type="block" height="3" /></div></td>
+	</tr><tr>
+		<td colspan=2 height=1><img src="images/gradAq.gif" width=75% height=1></td>
+	</tr><tr>
+		<td colspan=2 height=7><div style="height:7px;"><spacer type="block" height="7" /></div></td>
+	</tr>
+</table>
+<table cellpadding="0" cellspacing="0" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/bulletSq.gif" WIDTH="7" HEIGHT="7" ALT="" BORDER="0"></img></td><td WIDTH="9"></td><td><a href="/web/20051125175045/http://g.msn.com/0US!s4.87893_34446/10.a8789/1??cm=QuickLinks-S" class="T11TahBk">Funny Holiday eCards</a></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/spacer.gif" WIDTH="1" HEIGHT="5" ALT=""></img></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/bulletSq.gif" WIDTH="7" HEIGHT="7" ALT="" BORDER="0"></img></td><td WIDTH="9"></td><td><a href="/web/20051125175045/http://g.msn.com/0US!s4.87893_34446/10.b8789/2??cm=QuickLinks-S" class="T11TahBk">Job Hunt Help</a></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/spacer.gif" WIDTH="1" HEIGHT="5" ALT=""></img></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/bulletSq.gif" WIDTH="7" HEIGHT="7" ALT="" BORDER="0"></img></td><td WIDTH="9"></td><td><a href="/web/20051125175045/http://g.msn.com/0US!s4.87893_34446/10.b8789/3??cm=QuickLinks-S" class="T11TahBk">Free Psychic Love Reading</a></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/spacer.gif" WIDTH="1" HEIGHT="5" ALT=""></img></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/bulletSq.gif" WIDTH="7" HEIGHT="7" ALT="" BORDER="0"></img></td><td WIDTH="9"></td><td><a href="/web/20051125175045/http://g.msn.com/0US!s4.87893_34446/10.a8789/4??cm=QuickLinks-S" class="T11TahBk">Online Dating</a></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/spacer.gif" WIDTH="1" HEIGHT="5" ALT=""></img></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/bulletSq.gif" WIDTH="7" HEIGHT="7" ALT="" BORDER="0"></img></td><td WIDTH="9"></td><td><a href="/web/20051125175045/http://g.msn.com/0US!s4.87893_34446/10.d8789/5??cm=QuickLinks-S" class="T11TahBk">Mind, Body, &amp; Soul</a></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/spacer.gif" WIDTH="1" HEIGHT="5" ALT=""></img></td></tr></table>
+		</td><td>
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td class="T14TimBAq">
+			Free Tools
+		</td>
+	</tr><tr>
+		<td colspan=2 height=3><div style="height:3px;"><spacer type="block" height="3" /></div></td>
+	</tr><tr>
+		<td colspan=2 height=1><img src="images/gradAq.gif" width=100% height=1></td>
+	</tr><tr>
+		<td colspan=2 height=7><div style="height:7px;"><spacer type="block" height="7" /></div></td>
+	</tr>
+</table>
+<table cellpadding="0" cellspacing="0" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/bulletSq.gif" WIDTH="7" HEIGHT="7" ALT="" BORDER="0"></img></td><td WIDTH="9"></td><td><a href="/web/20051125175045/http://g.msn.com/0US!s8.87891_34446/6.a8789/1??cm=FreeTools-S" class="T11TahBk">Dream Dictionary</a></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/spacer.gif" WIDTH="1" HEIGHT="5" ALT=""></img></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/bulletSq.gif" WIDTH="7" HEIGHT="7" ALT="" BORDER="0"></img></td><td WIDTH="9"></td><td><a href="/web/20051125175045/http://g.msn.com/0US!s8.87891_34446/6.g8789/2??cm=FreeTools-S" class="T11TahBk">Free Daily Tarot</a></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/spacer.gif" WIDTH="1" HEIGHT="5" ALT=""></img></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/bulletSq.gif" WIDTH="7" HEIGHT="7" ALT="" BORDER="0"></img></td><td WIDTH="9"></td><td><a href="/web/20051125175045/http://g.msn.com/0US!s8.87891_34446/6.a8789/3??cm=FreeTools-S" class="T11TahBk">Your AstroProfile</a></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/spacer.gif" WIDTH="1" HEIGHT="5" ALT=""></img></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/bulletSq.gif" WIDTH="7" HEIGHT="7" ALT="" BORDER="0"></img></td><td WIDTH="9"></td><td><a href="/web/20051125175045/http://g.msn.com/0US!s8.87891_34446/6.f8789/4??cm=FreeTools-S" class="T11TahBk">Love Compatibility</a></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/spacer.gif" WIDTH="1" HEIGHT="5" ALT=""></img></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/bulletSq.gif" WIDTH="7" HEIGHT="7" ALT="" BORDER="0"></img></td><td WIDTH="9"></td><td><a href="/web/20051125175045/http://g.msn.com/0US!s8.87891_34446/6.g8789/5??cm=FreeTools-S" class="T11TahBk">Your Numerology</a></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/spacer.gif" WIDTH="1" HEIGHT="5" ALT=""></img></td></tr></table>
+		</td>
+	</tr>
+</table>
+<div style="height:9px;"><spacer type="block" height="9" /></div>
+
+										<!-- MSN Advertisement 300x250 -->
+										<table width="100%" cellpadding="0" cellspacing="0" border="0">
+											<tr>
+												<td class="T10TahGy" align=center>advertisement</td>
+											</tr><tr>
+												<td><iframe id="sidebar" border="0" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="300" height="250" src="/web/20051125175045if_/http://rad.msn.com/ADSAdClient31.dll?GetAd?PG=ASTROA?SC=SE?PS=33806?PI=7327?NA=1154?NC=1208?AP=1089"></iframe><div style="height:5px;" ><spacer type="block" height="5" /></div></td>
+											</tr><tr>
+												<td height=7><div style="height:7px;"><spacer type="block" height="7" /></div></td>
+											</tr>
+										</table>
+										
+										<!-- personalReadings -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td class="T14TimBAq">
+			Personal Readings
+		</td>
+	</tr><tr>
+		<td colspan=2 height=2><div style="height:2px;"><spacer type="block" height="2" /></div></td>
+	</tr><tr>
+		<td colspan=2 height=1><img src="images/gradAq.gif" width=100% height=1></td>
+	</tr><tr>
+		<td colspan=2 height=10><div style="height:10px;"><spacer type="block" height="10" /></div></td>
+	</tr>
+</table>
+<table cellpadding="0" cellspacing="0" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><tr><td><a HREF="/web/20051125175045/http://g.msn.com/0US!s0.87893_34446/9.c8789/1??cm=PersonalReading-S"><img SRC="/web/20051125175045im_/http://sc.msn.com/3N/NI4OBT+JI41D87K%7B-!-2EN.jpg" WIDTH="60" HEIGHT="60" border="1" style="border-color:503562" ALT="© Digital Vision"></img></a></td><td WIDTH="9"></td><td valign="top"><table cellpadding="0" cellspacing="0"><tr><td><a href="/web/20051125175045/http://g.msn.com/0US!s0.87893_34446/9.c8789/2??cm=PersonalReading-S" class="T12TimBPu">Email Advice</a></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/spacer.gif" WIDTH="1" HEIGHT="3" ALT=""></img></td></tr><tr><td><a href="/web/20051125175045/http://g.msn.com/0US!s0.87893_34446/9.c8789/2??cm=PersonalReading-S" class="T11TahBk">A unique service from our professional advisors to answer your life questions</a></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/spacer.gif" WIDTH="1" HEIGHT="7" ALT=""></img></td></tr><tr><td><table cellpadding="0" cellspacing="0"><tr><td><a href="/web/20051125175045/http://g.msn.com/0US!s0.87893_34446/9.a8789/3??cm=PersonalReading-S" class="T12TimBPu">Daily Star Email</a></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/spacer.gif" WIDTH="1" HEIGHT="3" ALT=""></img></td></tr><tr><td><a href="/web/20051125175045/http://g.msn.com/0US!s0.87893_34446/9.a8789/3??cm=PersonalReading-S" class="T11TahBk">A jam-packed extended overview, including your daily horoscope, astro-alerts, astro-affinities, and more</a></td></tr></table></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/spacer.gif" WIDTH="1" HEIGHT="5" ALT=""></img></td></tr><tr><td><table cellpadding="0" cellspacing="0"><tr><td><a href="/web/20051125175045/http://g.msn.com/0US!s0.87893_34446/9.a8789/4??cm=PersonalReading-S" class="T12TimBPu">Weekly Sky Email</a></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/spacer.gif" WIDTH="1" HEIGHT="3" ALT=""></img></td></tr><tr><td><a href="/web/20051125175045/http://g.msn.com/0US!s0.87893_34446/9.a8789/4??cm=PersonalReading-S" class="T11TahBk">A personalized &amp; comprehensive weekly report containing six forecasts and other popular features</a></td></tr></table></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/spacer.gif" WIDTH="1" HEIGHT="5" ALT=""></img></td></tr><tr><td><table cellpadding="0" cellspacing="0"><tr><td><a href="/web/20051125175045/http://g.msn.com/0US!s0.87893_34446/9.d8789/5??cm=PersonalReading-S" class="T12TimBPu">Free Psychic Love Reading</a></td></tr><tr><td><img SRC="/web/20051125175045im_/http://astrocenter.astrology.msn.com/msn/images/spacer.gif" WIDTH="1" HEIGHT="3" ALT=""></img></td></tr><tr><td><a href="/web/20051125175045/http://g.msn.com/0US!s0.87893_34446/9.d8789/5??cm=PersonalReading-S" class="T11TahBk">Will your flirting lead to something more? Find out with a free psychic love reading</a></td></tr></table></td></tr></table>
+<div style="height:11px;"><spacer type="block" height="11" /></div>
+			
+									</td>
+									<td width=9><div style="width:9px;"><spacer type="block" width="9" /></div></td>
+								</tr><tr>
+									<td height="20" colspan=6><spacer type="block" height="20"></spacer></td>
+								</tr>
+							</table>
+			
+							<table cellpadding="0" cellspacing="0">
+								<tr>
+									<td width="15"><div style="width:15px;"><spacer type="block" width="15" /></div></spacer>
+									<td width="100%" valign="bottom">
+										<font class="T11TahBk"><a href="/web/20051125175045/http://g.msn.com/US2/1?http://store.astrocenter.com/msn/store/specialTm.asp?Af=-1000&amp;VS=&amp;&amp;DI=32&amp;PI=7327&amp;PS=33806" class="T11TahBk">Center.com Terms of Service</a> | <a href="/web/20051125175045/http://g.msn.com/US2/1?http://store.astrocenter.com/msn/store/specialPri.asp?Af=-1000&amp;VS=&amp;&amp;DI=32&amp;PI=7327&amp;PS=33806" class="T11TahBk">Center.com Privacy Policy</a> |  Copyright 1999-2005 <a class="T11TahBk" href="/web/20051125175045/http://g.msn.com/US2/1?http://www.astrocenter.com/us/&amp;&amp;DI=32&amp;PI=7327&amp;PS=33806">Center.com</a>, Inc. - All Rights Reserved. </font>
+									</td>
+								</tr>
+							</table>
+							<table width="100%" border="0" cellpadding="0" cellspacing="0" class="msnW">
+								<tr><td height="15"><spacer type="block" height="15"></spacer></td></tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+<!-- CONTENT - STOP -->
+			</td>
+		</tr>
+	</table>
+
+
+	<table class="big7" width="650" height="20" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td valign="center" align="left" class="big1">&nbsp;&nbsp;&nbsp;<a href="/web/20051125175045/http://g.msn.com/0nwenus0/A18/15">Try MSN Internet Software for FREE!</a></td>
+		</tr>
+	</table>
+
+<script language="JavaScript">
+<!--
+function popUpFeedback(url) {
+sealWin=window.open(url,"win",'toolbar=0,location=0,directories=0,status=1,menubar=1,scrollbars=yes,resizable=1,width=780,height=580');
+self.name = "mainWin"; 
+}
+-->
+</script>
+
+	<div class="dMSNME_1">
+		<table class="big7" width="779" height="20" cellpadding="0" cellspacing="0">
+			<tr>
+				<td valign="center" align="left">&nbsp;&nbsp;&nbsp;<a href="/web/20051125175045/http://g.msn.com/0nwenus0/A18/07">MSN 
+						Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/web/20051125175045/http://g.msn.com/0nwenus0/A18/08">My 
+						MSN</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/web/20051125175045/http://g.msn.com/0nwenus0/A18/09">Hotmail</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/web/20051125175045/http://g.msn.com/0nwenus0/A18/11">Shopping</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/web/20051125175045/http://g.msn.com/0nwenus0/A18/12">Money</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/web/20051125175045/http://g.msn.com/0nwenus0/A18/13">People 
+						&amp; Chat</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/web/20051125175045/http://g.msn.com/0nwenus0/A18/10">Search</a></td>
+				<td class="fhelp" align="right"><a href="javascript:popUpFeedback('/web/20051125175045/http://support.msn.com/feedback.aspx?productkey=astrology&amp;CW=1');">Feedback</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:DoHelp();">Help</a>&nbsp;&nbsp;</td>
+			</tr>
+		</table>
+		<table class="terms" width="779" height="16" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td height="15">&nbsp;&nbsp;© 2005 Microsoft Corporation. All rights reserved.&nbsp;<a href="/web/20051125175045/http://g.msn.com/0nwenus0/A18/18">Terms of Use</a>&nbsp;<a href="/web/20051125175045/http://g.msn.com/0nwenus0/A18/19">Advertise</a>&nbsp;<a href="/web/20051125175045/http://g.msn.com/0nwenus0/A18/20">TRUSTe Approved Privacy Statement</a>&nbsp;<a href="/web/20051125175045/http://g.msn.com/0nwenus0/A18/21">GetNetWise</a></td>
+			</tr>
+		</table>
+	</div>
+
+	<!--OTP Ad -->
+	<script language="javascript" src="/web/20051125175045js_/http://rad.msn.com/ADSAdClient31.dll?GetAd?PG=ASTOTR?PS=33806?PI=7327?NA=1154?NC=1208?AP=1376"></script>
+
+</body>
+<!-- InstanceEnd --></html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 17:50:45 Nov 25, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 6:26:13 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

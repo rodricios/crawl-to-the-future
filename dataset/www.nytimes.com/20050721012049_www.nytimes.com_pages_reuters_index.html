@@ -1,0 +1,582 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"/> <html><head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app2.us.archive.org";archive_analytics.values.server_ms=3119;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<title>The New York Times: ReutersIndexTopStories</title><script type="text/JavaScript" src="/web/20050723234429js_/http://www.nytimes.com/js/csssniff.js"></script>
+<script type="text/JavaScript">
+<!--
+	
+	function nameIt() {
+		window.name = 'nytimesmain';
+		if (navigator.appName == "Microsoft Internet Explorer") {
+			document.all.globalsearchform.style.visibility = "visible";
+		}
+	}
+	
+	function pop_me_up2(pURL,name,features){
+		new_window = window.open(pURL,name,features);
+		new_window.focus();
+	}
+	
+	function changeImage(image_name,image_src) {
+   		document.images[image_name].src = image_src;
+	}
+	
+	function goToURL(obj){
+		var f = (obj.section) ? obj : obj.form;
+		var selected = f.section.selectedIndex;
+		var URL = f.section.options[selected].value;
+		if (URL != "") document.location = URL;
+		return false;
+	}
+	
+	if (window.self != window.top) { 
+		top.location.replace(window.location.href); 
+	}
+	
+//-->
+</script>
+<script language="JavaScript" src="/web/20050723234429js_/http://www.nytimes.com/js/browserSize.js" type="text/javascript">
+</script>
+<!--begin Tacoda-specific code -->
+<script src="/web/20050723234429js_/http://www.nytimes.com/js/Tacoda_AMS_DDC_Header.js"></script>
+<!--end Tacoda-specific code -->
+<meta name="description" content=""/>
+ 
+<script type="text/JavaScript">
+	var static_kw = "";
+	var dynamic_kw = "";
+	var google_contents = dynamic_kw + static_kw;
+	var google_ad_channel = "reuters_ReutersIndexTopStories";
+</script>
+<META NAME="HOMEPAGE_TEMPLATE_VERSION" CONTENT="300"></head><body marginheight="5" marginwidth="0" leftmargin="0" topmargin="5" bgcolor="#ffffff" link="#000066" alink="#990000" vlink="#444464">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.nytimes.com/pages/reuters/index.html";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "23";
+var displayMonth = "Jul";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.nytimes.com/pages/reuters/index.html" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20050723234429" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20050615030707/http://www.nytimes.com/pages/reuters/index.html" title="15 Jun 2005">JUN</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 23:44:29 Jul 23, 2005">JUL</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20050826001026/http://www.nytimes.com/pages/reuters/index.html" title="26 Aug 2005"><strong>AUG</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20050714010003/http://www.nytimes.com/pages/reuters/index.html" title="1:00:03 Jul 14, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 23:44:29 Jul 23, 2005">23</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20050728031743/http://www.nytimes.com/pages/reuters/index.html" title="3:17:43 Jul 28, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20040113050129/http://www.nytimes.com/pages/reuters/index.html" title="13 Jan 2004"><strong>2004</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 23:44:29 Jul 23, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20060813094934/http://www.nytimes.com/pages/reuters/index.html" title="13 Aug 2006"><strong>2006</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20050723234429*/http://www.nytimes.com/pages/reuters/index.html" title="See a list of every capture for this URL">2,134 captures</a>
+           <div class="r" title="Timespan for captures of this URL">18 Oct 00 - 29 Nov 14</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000113_2001:-1:01110001c784_2002:-1:090100035551_2003:-1:010001010100_2004:-1:100000000000_2005:6:003931577687_2006:-1:961603311033_2007:-1:413114113334_2008:-1:015411987015_2009:-1:455301000334_2010:-1:353310355544_2011:-1:441531998598_2012:-1:9887998869a9_2013:-1:a99ba99966ab_2014:-1:bbbbbfb9a110_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<NYT_HEADER version="1.0" type="main"> 
+<table width="768" border="0" cellpadding="0" cellspacing="0"><tr><td colspan="6" width="768" bgcolor="#ffffff" height="5"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="768" height="5" border="0"/></td></tr><tr><td width="8"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="8" height="5" border="0"/></td><td width="280" valign="bottom"><NYT_HEADER_IMAGE> <a href="/web/20050723234429/http://www.nytimes.com/pages/reuters/index.html"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/section/reuters/reutersindex.gif" width="231" height="25" border="0" alt="New York Times "/></a> </NYT_HEADER_IMAGE></td><td width="1" bgcolor="#000000"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"/></td><td width="6" rowspan="3"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="6" height="1" border="0"/></td><td width="468" rowspan="3"><!-- ADXINFO classification="banner" campaign="sheraton25-nyt4"--><iframe src="/web/20050723234429if_/http://view.atdmt.com/NYC/iview/nwyrkstw0660000048nyc/direct;wi.468;hi.60/01/2005.07.23.23.44.29?click=" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" allowtransparency="true" width="468" height="60">
+<script language="JavaScript" type="text/javascript">
+document.write('<a href="/web/20050723234429/http://clk.atdmt.com/NYC/go/nwyrkstw0660000048nyc/direct;wi.468;hi.60/01/2005.07.23.23.44.29" target="_blank"><img src="/web/20050723234429/http://view.atdmt.com/NYC/view/nwyrkstw0660000048nyc/direct;wi.468;hi.60/01/2005.07.23.23.44.29"/></a>');
+</script><noscript><a href="/web/20050723234429/http://clk.atdmt.com/NYC/go/nwyrkstw0660000048nyc/direct;wi.468;hi.60/01/2005.07.23.23.44.29" target="_blank"><img border="0" src="/web/20050723234429im_/http://view.atdmt.com/NYC/view/nwyrkstw0660000048nyc/direct;wi.468;hi.60/01/2005.07.23.23.44.29" /></a></noscript></iframe></td><td width="5" rowspan="3"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1" border="0"/></td></tr><tr><td width="8" height="1"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="8" height="1" border="0"/></td><td height="1" width="280" bgcolor="#000000"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"/></td><td width="1" bgcolor="#000000"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"/></td></tr><tr><td width="8"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="8" height="5" border="0"/></td><td width="280" valign="top"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="280" height="7" border="0"/><a href="/web/20050723234429/http://www.nytimes.com/"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/section/NytSectionHeader.gif" width="122" height="21" border="0" alt="The New York Times"/></a></td><td width="1" bgcolor="#000000"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"/></td></tr><tr><td colspan="6" width="768" bgcolor="#ffffff" height="7"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="768" height="7" border="0"/></td></tr><tr><td colspan="6" width="768" bgcolor="#000000" height="3"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="768" height="3" border="0"/></td></tr></table></NYT_HEADER><table border="0" width="768" cellspacing="0" cellpadding="0" valign="top" bgcolor="#ffffff"><tr><td width="98" rowspan="3" valign="top" align="left">
+<NYT_GLOBAL_NAV>
+<table width="98" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+<tr><td width="98"><a href="/web/20050723234429/http://www.nytimes.com/"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/global/global_nav/gn_home.gif" width="98" height="20" border="0" alt="Home"/></a><br><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"/><br></td></tr>		
+<tr><td id="clsButton1" class="classifiedBtn"><a href="/web/20050723234429/http://jobmarket.nytimes.com/pages/jobs/"><span>JOB MARKET</span></a></td></tr>
+<tr><td id="clsButton2" class="classifiedBtn"><a href="/web/20050723234429/http://www.nytimes.com/pages/realestate/index.html"><span>REAL ESTATE</span></a></td></tr>
+<tr><td id="clsButton3" class="classifiedBtn"><a href="/web/20050723234429/http://www.nytimes.com/pages/automobiles/index.html"><span>AUTOS</span></a></td></tr>
+<tr><td width="98"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/global/global_nav/gn_news.gif" width="98" height="20" alt="News"/><br></td></tr>
+<tr><td class="globalnav" width="98">
+<a href="/web/20050723234429/http://www.nytimes.com/pages/world/index.html">International</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/pages/national/index.html">National</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/pages/politics/index.html">Washington</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/pages/nyregion/index.html">New York/Region</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/pages/business/index.html">Business</a><br>
+<a href="/web/20050723234429/http://tech.nytimes.com/pages/technology/index.html">Technology</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/pages/science/index.html">Science</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/pages/health/index.html">Health</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/pages/sports/index.html">Sports</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/pages/education/index.html">Education</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/weather">Weather</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/pages/obituaries/index.html">Obituaries</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/pages/pageone/index.html">NYT Front Page</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/corrections.html">Corrections</a><br>
+</td></tr>
+<tr><td width="98"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/global/global_nav/gn_opinion.gif" width="98" height="20" alt="Opinion"/><br></td></tr>
+<tr><td class="globalnav" width="98">
+<a href="/web/20050723234429/http://www.nytimes.com/pages/opinion/index.html">Editorials/Op-Ed</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/pages/readersopinions/index.html">Readers' Opinions</a><br>
+<a href="/web/20050723234429/http://topics.nytimes.com/top/opinion/thepubliceditor/index.html">The Public Editor</a><br>
+</td></tr>
+
+<tr><td bgcolor="#999999"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"/></td></tr>
+<tr><td align="center" valign="middle">
+<IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="2"/><br>
+<font face="arial,helvetica,sans serif" size="1" color="#999999">Advertisement</font><br><NYT_NAV_AD>
+
+<!-- ADXINFO classification="box_86x60" campaign="nytnyt-Site4Day"--><A HREF="/web/20050723234429/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/reuters/index.html&amp;pos=Bottom3&amp;camp=nytnyt-Site4Day&amp;ad=86x60gif.gif&amp;goto=http%3A%2F%2Fwww%2Enytimes%2Ecom%2Ftravel%2F" target="_blank"><IMG SRC="/web/20050723234429im_/http://graphics8.nytimes.com/adx/images/ADS/11/69/ad.116914/86x60gif.gif" BORDER=0 ></A>
+
+</NYT_NAV_AD><br>
+<IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"/><br>
+</td></tr>
+
+<tr><td width="98"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/global/global_nav/gn_features.gif" width="98" height="20" alt="Features"/><br></td></tr>
+<tr><td class="globalnav" width="98">
+<a href="/web/20050723234429/http://www.nytimes.com/pages/arts/index.html">Arts</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/pages/books/index.html">Books</a><br>
+<a href="/web/20050723234429/http://movies.nytimes.com/">Movies</a><br>
+<a href="/web/20050723234429/http://theater.nytimes.com/">Theater</a><br>
+<a href="/web/20050723234429/http://travel.nytimes.com/">Travel</a><br>
+<a href="/web/20050723234429/http://travel2.nytimes.com/top/features/travel/destinations/unitedstates/newyork/newyorkcity/guide.html">NYC Guide</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/pages/dining/index.html">Dining & Wine</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/pages/garden/index.html">Home & Garden</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/pages/fashion/index.html">Fashion & Style</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/pages/crosswords/index.html">Crossword/Games</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/pages/cartoons/index.html">Cartoons</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/pages/magazine/index.html">Magazine</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/pages/weekinreview/index.html">Week in Review</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/pages/multimedia/index.html">Multimedia/Photos</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/learning/index.html">Learning Network</a><br>
+</td></tr>
+<tr><td width="98"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/global/global_nav/gn_services.gif" width="98" height="20" alt="Services"/><br></td></tr>
+<tr><td class="globalnav" width="98">
+<a href="/web/20050723234429/http://search.nytimes.com/search/">Archive</a><br>
+<a href="/web/20050723234429/http://listings.nytimes.com/classifiedsmarketplace/">Classifieds</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/college/index.html">College</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/personals">Personals</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/whitepapers/">White Papers</a><br>
+<a href="/web/20050723234429/http://www.nytbroadway.com/?thtrtx">Theater Tickets</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/nytstore/">NYT Store</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/services/nytmobile/">NYT Mobile</a><br>
+<a href="/web/20050723234429/http://www.nytdigital.com/">About NYTDigital</a><br>
+<a href="/web/20050723234429/http://www.nytdigital.com/work/job.html">Jobs at NYTDigital</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/adinfo/">Online Media Kit</a><br>
+</td></tr>
+<tr><td width="98"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/global/global_nav/gn_member_center.gif" width="98" height="20" alt="Member_Center"/><br></td></tr>
+<tr><td class="globalnav" width="98">
+<a href="/web/20050723234429/http://www.nytimes.com/mem/profile.html">Your Profile</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/mem/email.html">E-Mail Preferences</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/mem/tnt.html?incamp=tnt:globalnav">News Tracker</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/purchasehistory">Purchase History</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/membercenter/sitehelp.html">Site Help</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/ref/membercenter/help/privacy.html">Privacy Policy</a><br>
+</td></tr>
+<tr><td width="98"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/global/global_nav/gn_newspaper.gif" width="98" height="20" alt="Newspaper"/><br></td></tr>
+<tr><td class="globalnav" width="98">
+<a href="/web/20050723234429/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=homedelivery-globalnavlinktrack&amp;pos=Position2&amp;camp=homedelivery-globalnavlinktrack&amp;ad=blank.html&amp;goto=http://homedelivery.nytimes.com/HDS/SubscriptionT1.do?mode=SubscriptionT1%26ExternalMediaCode=W65AC">Get Home Delivery</a><br>
+<a href="/web/20050723234429/http://homedelivery.nytimes.com/">Customer Care</a><br>
+<a href="/web/20050723234429/http://www.nytimes.com/ee">Electronic Edition</a><br>
+<a href="/web/20050723234429/http://www.nytadvertising.com/" target="_blank">Media Kit</a><br>
+<a href="/web/20050723234429/http://www.nytco.com/community/">Community Affairs</a><br>
+</td></tr>
+</NYT_GLOBAL_NAV>
+<tr><td><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="3"/></td></tr>
+<tr><td bgcolor="#999999"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"/></td></tr>
+<tr><td><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="2"/></td></tr>	
+<tr><td class="globalnav">
+<a href="/web/20050723234429/http://www.nytimes.com/ref/membercenter/textversion.html">Text Version</a><br>
+</td></tr>
+<tr><td><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="3"/></td></tr>	
+<tr><td bgcolor="#999999"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1"/></td></tr>
+<tr><td class="globalnav">
+<IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="2"/>
+<br>
+<IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="2"/><br>
+</td></tr>
+<tr><td><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="3"/></td></tr>
+<tr><td bgcolor="#999999"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1""/></td></tr>
+<tr><td bgcolor="#CCCCCC" height="20"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="20""/></td></tr>
+<tr><td bgcolor="#CCCCCC">
+
+
+ 
+
+
+
+
+
+
+
+</td></tr>
+</table>					
+</td><td width="1" rowspan="3" bgcolor="#999999" valign="top"><br></td><td width="669" colspan="2" valign="top"><!--Global search start --> <map name="GlobalTools">
+<area shape="rect" coords="69,2,231,11" href="/web/20050723234429/http://www.nytimes.com/search/" alt="Go to Advanced Search/Archive" title="Go to Advanced Search/Archive">
+</map> <map name="GlobalToolsWithQuotes"> <area shape="rect" coords="69,2,231,11" href="/web/20050723234429/http://www.nytimes.com/search/" alt="Go to Advanced Search/Archive" title="Go to Advanced Search/Archive">
+<area shape="rect" coords="393,2,473,11" href="/web/20050723234429/http://www.nytimes.com/redirect/marketwatch/redirect.ctx?MW=http://marketwatch.nytimes.com/custom/nyt-com/html-companyprofile.asp" alt="Symbol Lookup" title="Symbol Lookup">
+</map> <table width="669" border="0" cellspacing="0" cellpadding="0">   <form method="GET" action="/web/20050723234429/http://query.nytimes.com/gst/sitesearch_selector.html" enctype="application/x-www-form-urlencoded"> <tr><td colspan="4"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="200" height="1" border="0" alt=" "/></td></tr><tr><td width="481" bgcolor="#E3E3E3" valign="top"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/global/global_search/tools_01.gif" width="481" height="13" border="0" usemap="#GlobalTools" alt="Search Options"></td><td rowspan="3" width="2" bgcolor="#E3E3E3" valign="top"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/global/global_search/tools_02.gif" width="2" height="45" alt="divide"/></td><td rowspan="2" width="185" bgcolor="#E3E3E3" valign="top">   
+		    <table width="185" border="0" cellspacing="0" cellpadding="0">
+	          <tr>
+	            <td width="185" valign="top" colspan="2"><img src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="7" height="5" border="0" alt=""/></td>
+	          </tr>
+	          <tr> 
+	            <td width="185" valign="top" colspan="2"><font face="arial, helvetica, sans-serif" color="#990000" size="1">&nbsp;&nbsp; <a href="/web/20050723234429/http://www.nytimes.com/auth/login?URI=http://">LOG IN </a></font></td>
+	          </tr>
+	          <tr> 
+	            <td colspan="2" width="185"><font face="arial, helvetica, sans-serif" color="#990000" size="1"><nobr>&nbsp;&nbsp; <a href="/web/20050723234429/http://www.nytimes.com/regi?URI=http://">REGISTER NOW.</a></nobr>&nbsp;&nbsp;It's Free!</font></td>
+	          </tr>
+	        </table>	  
+		        </td><td rowspan="3" width="1" bgcolor="#E3E3E3" valign="top"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/global/global_search/tools_05.gif" width="1" height="45"/></td></tr><tr><td width="481" bgcolor="#E3E3E3" valign="top"><table width="481" border="0" cellspacing="0" cellpadding="0" bgcolor="#E3E3E3"><tr><td width="7"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="7" height="3" border="0" alt=""/></td><td valign="middle" width="130"><INPUT type="text" name="query" size="20" value=""/></td><td width="7"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="7" height="3" border="0" alt=""/></td><td width="100" valign="middle">  <span id="globalsearchform"> <INPUT type="hidden" name="date_select" value="full"> <select name="type"> <option value="nyt"> NYT Since 1996 <option value="proquest"> NYT 1851-1995 <option value="google">Google/Web <option value="multimedia">Multimedia <option value="events">NYC Events <option value="venues">NYC Venues </select> </span> </td><td width="7"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="7" height="31" border="0" alt=""/></td><td width="74" valign="middle"><input value="Search" width="56" height="21" border="0" name="submit" alt="Submit" type="image" src="/web/20050723234429im_/http://graphics8.nytimes.com/images/global/global_search/search_button.gif"></td></form><form name="getquotes" action="/web/20050723234429/http://www.nytimes.com/redirect/marketwatch/redirect.ctx" method="get"><td width="156" valign="middle">   </td></form></tr></table></td></tr><tr><td width="481"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/global/global_search/tools_05.gif" width="481" height="1" alt=""/></td><td width="2"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/global/global_search/tools_05.gif" width="185" height="1" alt=""/></td></tr><tr><td width="669" height="5" colspan="4" bgcolor="#FFFFFF"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="200" height="5" border="0"/></td></tr></table><!--Global Search end --></td></tr><tr><td width="10"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="10" height="1000" border="0"/></td><td width="659" valign="top"><table width="659" border="0" cellpadding="0" cellspacing="0"><tr><td colspan="5" valign="top"><font size="-1"><p></p><p></p>07:38 p.m. (Updated every 10 minutes)<br><strong>July  23,  2005 </strong><p></p></font><font size="-1" color="#ab0000"><strong>TOP STORY FROM REUTERS</strong></font><br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/news/news-mideast.html"> <strong>Gaza Gunmen Kill Two Israelis as Rice Ends Visit</strong></a> <br>GAZA (Reuters) - Palestinian militants killed two Israelis near the Gaza border on Sunday as Secretary Condoleezza Rice departed the region after attempting to save a fragile ceasefire hindered by violence.<br><br><hr size="1"></td><td width="5" rowspan="2"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" height="1000" width="5" border="0"/></td><td width="1" rowspan="2" bgcolor="#999999"><br></td><td width="5" rowspan="2"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" height="1" width="5" border="0"/></td><td width="184" rowspan="2" align="left" valign="top"> <!-- ADXINFO classification="skyscraper" campaign="nytcirc-July2005b"--><SCRIPT LANGUAGE="JavaScript">
+   var movieWidth = 160;
+   var movieHeight = 600;
+   var swfSrc = "/web/20050723234429/http://www.nytimes.com/ads/circulation/160x600.swf?clickTAG=/web/20050723234429/http://www.nytimes.com/adx/bin/click.html/www.nytimes.com/pages/reuters/index.html/31777/Right3/nytcirc-July2005b/twoweeks_160x600.html/?/web/20050723234429/http://homedelivery.nytimes.com/HDS/SubscriptionT1.do?mode=SubscriptionT1%26ExternalMediaCode=W65AJ";
+   var altSrc = "/web/20050723234429/http://www.nytimes.com/ads/circulation/NAW009_twowks_30k_160x600.jpg";
+   var altClickThru = "/web/20050723234429/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&page=www.nytimes.com/pages/reuters/index.html&pos=Right3&camp=nytcirc-July2005b&ad=twoweeks_160x600.html&goto=/web/20050723234429/http://homedelivery.nytimes.com/HDS/SubscriptionT1.do?mode=SubscriptionT1%26ExternalMediaCode=W65AJ";
+</SCRIPT>
+<script language="JavaScript" src="/web/20050723234429js_/http://www.nytimes.com/ads/common/embed2.js"></script>
+<br><br> <!-- ADXINFO classification="feature_squares" campaign="nytstore-default"--><!-- begin promo box -->                                        
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td width="10" class="promoboxtitle"><img src="/web/20050723234429im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="10" height="20" alt="" /></td>
+	<!-- begin promo box title -->
+    <td width="100%" class="promoboxtitle" align="center" valign="center">NYT Store</td>
+    <!-- begin promo box title -->
+
+    <td width="10" class="promoboxtitle"><img src="/web/20050723234429im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="10" height="20" alt="" /></td>
+  </tr>
+  <tr>
+    <td width="100%" colspan="3" class="promoboxtext"><img src="/web/20050723234429im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="1" height="10" alt="" /></td></tr>                           
+                        
+  <!-- begin promo box item 1 -->
+  <tr>                    
+    <td width="10" class="promoboxtext"><img src="/web/20050723234429im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="10" height="1" alt="" /></td>
+    <td width="100%" class="promoboxtext" align="center">
+      <a href="/web/20050723234429/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/reuters/index.html&amp;pos=Middle5&amp;camp=nytstore-default&amp;ad=NSAP370-parkbenches.txt&amp;goto=http://www.nytimes.com/nytstore/photos/newyork/parks/NSAP370.html" target="_blank"><img src="/web/20050723234429im_/http://graphics8.nytimes.com/nytstore/images/products/photos/newyork/parks/NSAP370_thumb.jpg" width="90" height="90" alt="Photo: Park Benches, 2003" vspace="0" border="0"></a><br>
+      <span  class="smallbold">Photo: Park Benches, 2003</span><br>
+      <a href="/web/20050723234429/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/reuters/index.html&amp;pos=Middle5&amp;camp=nytstore-default&amp;ad=NSAP370-parkbenches.txt&amp;goto=http://www.nytimes.com/nytstore/photos/newyork/parks/NSAP370.html" target="_blank" class="promoboxtext"><strong>Learn More.</strong></a>
+    </td>
+    <td width="10" class="promoboxtext"><img src="/web/20050723234429im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="10" height="1" alt=""></td>
+  </tr>
+  <!-- end promo box item 1 -->
+    <tr><td width="100%" colspan="3" class="promoboxtext"><img src="/web/20050723234429im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="1" height="10" alt=""></td></tr>
+</table>
+<!-- end promo box --><br><br> <br><br> 
+
+
+
+
+
+<!--MARKETING MODULE STARTS HERE -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td align="left" valign="top" colspan="3" width="100%">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="left" valign="top"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_1b.gif" width="14" height="21" alt="" /></td>			
+<td align="center" valign="top" background="/web/20050723234429im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_2b.gif" width="100%"></td>
+<td align="left" valign="top"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_3b.gif" width="14" height="21" alt="" /></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="left" valign="top" background="/web/20050723234429im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_10.gif" width="4"></td>
+<td align="left" valign="top" width="100%"><div align="center"><a href="/web/20050723234429/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/reuters/index.html&amp;pos=Right1&amp;camp=nytnyt-marketingmoduleSAT&amp;ad=theater_072305.html&amp;goto=http://theater.nytimes.com/pages/theater/index.html%3Fmkt=theatergif" target="_new"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/marketing/2005module/images/h_theater2.gif" alt="Theater" width="130" height="15" border="0"></a><br><a href="/web/20050723234429/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/reuters/index.html&amp;pos=Right1&amp;camp=nytnyt-marketingmoduleSAT&amp;ad=theater_072305.html&amp;goto=http://theater.nytimes.com/pages/theater/index.html%3Fmkt=theaterurl" style="font-size:11px; font-family: arial, helvetica, sans-serif;" target="_new"><strong>nytimes.com/theater</strong></a></div><br>
+</td>
+<td align="right" valign="top" background="/web/20050723234429im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_09.gif"></td>
+</tr>
+<tr>
+<td align="left" valign="top" background="/web/20050723234429im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_10.gif" width="4"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="4"></td>
+<td align="left" valign="top" background="/web/20050723234429im_/http://graphics8.nytimes.com/marketing/2005module/images/theater_072305text.gif" width="100%"><a href="/web/20050723234429/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/reuters/index.html&amp;pos=Right1&amp;camp=nytnyt-marketingmoduleSAT&amp;ad=theater_072305.html&amp;goto=http://theater2.nytimes.com/2005/07/15/theater/reviews/15zino.html%3Fex=1137038400%26en=05afd4084a355249%26ei=5087%26mkt=theaterphotocaption" target="new"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="100%" height="46" border="0" alt="We're off to see the Wizard"></a></td>
+<td align="left" valign="top" background="/web/20050723234429im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_09.gif"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="4"></td>
+</tr>
+<tr>
+<td align="left" valign="top" background="/web/20050723234429im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_10.gif" width="4"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="4"></td>
+<td align="left" valign="top" background="/web/20050723234429im_/http://graphics8.nytimes.com/marketing/2005module/images/theater_072305photo.jpg" width="100%"><a href="/web/20050723234429/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/reuters/index.html&amp;pos=Right1&amp;camp=nytnyt-marketingmoduleSAT&amp;ad=theater_072305.html&amp;goto=http://theater2.nytimes.com/2005/07/15/theater/reviews/15zino.html%3Fex=1137038400%26en=05afd4084a355249%26ei=5087%26mkt=theaterphotocaption" target="new"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="100%" height="48" border="0" alt="We're off to see the Wizard"></a></td>
+<td align="left" valign="top" background="/web/20050723234429im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_09.gif"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="4"></td>
+</tr>
+<tr>
+<td align="left" valign="top" background="/web/20050723234429im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_10.gif" height="100%"></td>
+<td align="left" valign="top" width="100%" style="margin-top: 10px; margin-bottom: 10px;"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" class="spacer" width="100%" height="1" alt="" border="0" /></td>
+<td align="right" valign="top" background="/web/20050723234429im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_09.gif"></td>
+</tr>
+<tr>
+<td align="left" valign="top" background="/web/20050723234429im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_10.gif" height="100%"></td>
+<td align="left" valign="top" width="100%" style="font-size:11px; font-family: arial, helvetica, sans-serif; color:000000; padding-top:5px; padding-bottom:0px; padding-left:10px; padding-right: 9px;"><p style="margin-bottom: 3px;"><a href="/web/20050723234429/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/reuters/index.html&amp;pos=Right1&amp;camp=nytnyt-marketingmoduleSAT&amp;ad=theater_072305.html&amp;goto=http://theater2.nytimes.com/2005/07/15/theater/reviews/15zino.html%3Fex=1137038400%26en=05afd4084a355249%26ei=5087%26mkt=theaterphotocaption" target="_new"><strong>Why is "Wicked" called the 'king of the commercial theater?'</strong></a></p><br>Also in Theater:<br>
+<table width="100%">
+<tr>
+<td width="10" valign="top"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/marketing/2005module/images/bullet.gif" width="10" height="11"></td>
+<td width="100%" valign="top" style="font-size:11px; font-family: arial, helvetica, sans-serif; color:000000;"><a href="/web/20050723234429/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/reuters/index.html&amp;pos=Right1&amp;camp=nytnyt-marketingmoduleSAT&amp;ad=theater_072305.html&amp;goto=http://theater2.nytimes.com/2005/07/14/theater/reviews/14fata.html%3Fex=1137038400%26en=17e12d2df6354896%26ei=5087%26mkt=theaterlink1" target="_new">Corey Feldman as Michael Douglas?</a></td>
+</tr>
+<tr>
+<td width="10" valign="top"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/marketing/2005module/images/bullet.gif" width="10" height="11"></td>
+<td width="100%" valign="top" style="font-size:11px; font-family: arial, helvetica, sans-serif; color:000000;"><a href="/web/20050723234429/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/reuters/index.html&amp;pos=Right1&amp;camp=nytnyt-marketingmoduleSAT&amp;ad=theater_072305.html&amp;goto=http://theater2.nytimes.com/2005/07/12/theater/reviews/12prim.html%3Fex=1137038400%26en=5f7f2d46a05d7946%26ei=5087%26mkt=theaterlink2" target="_new">Primo Levi's memoir on stage</a></td>
+</tr>
+<tr>
+<td width="10" valign="top"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/marketing/2005module/images/bullet.gif" width="10" height="11"></td>
+<td width="100%" valign="top" style="font-size:11px; font-family: arial, helvetica, sans-serif; color:000000;"><a href="/web/20050723234429/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/reuters/index.html&amp;pos=Right1&amp;camp=nytnyt-marketingmoduleSAT&amp;ad=theater_072305.html&amp;goto=http://www.nytimes.com/mem/ticketwatch.html%3Fmkt=theaterlink3" target="_new">Great theater seats at great prices</a></td>
+</tr>
+</table>
+</td>
+<td align="right" valign="top" background="/web/20050723234429im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_09.gif"></td>
+</tr>	
+<tr>
+<td align="left" valign="top" colspan="3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" valign="top" ><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_15.gif" width="14" height="21" alt="" /></td>
+<td align="left" valign="top" background="/web/20050723234429im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_16.gif" width="100%"></td>
+<td align="left" valign="top" colspan="2"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/marketing/2005module/images/mm_17.gif" width="14" height="21" alt="" /></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--MARKETING MODULE ENDS -->
+
+<br><br> <br><br> </td></tr><tr><td valign="top"> <a href="/web/20050723234429/http://www.nytimes.com/pages/reuters/news/index.html"><strong><font size="-1" color="#ab0000">REUTERS NEWS</font></strong><br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/news/news-security-britain.html">British Police Admit Shooting Wrong Man</a> 6:38 p.m.  ET<br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/news/news-sport-cycling-tour-armstrong.html">No Regrets as Armstrong Eyes Victory, Retirement</a> 5:22 p.m.  ET<br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/news/news-rwanda-genocide-clinton.html">Clinton Regrets Personal Failure on Rwanda Genocide</a> 4:21 p.m.  ET<br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/news/news-security-britain-brazilian.html">Man Mistakenly Shot Dead in London May Be Brazilian</a> 3:54 p.m.  ET<br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/news/news-egypt-explosions.html">Egypt Will Not Give Into Bombers - Mubarak</a> 3:43 p.m.  ET<br><br> <a href="/web/20050723234429/http://www.nytimes.com/pages/reuters/news/index.html"><font size="-2"><u>MORE REUTERS NEWS</u></font><p></p><hr size="1"> <a href="/web/20050723234429/http://www.nytimes.com/pages/reuters/world/index.html"><strong><font size="-1" color="#ab0000">REUTERS INTERNATIONAL</font></strong><br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/international/international-mideast.html">Gaza Gunmen Kill Two Israelis as Rice Ends Visit</a> 7:02 p.m.  ET<br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/international/international-mideast-dead.html">Palestinian Gunmen Kill Two in Gaza - Military Source</a> 6:41 p.m.  ET<br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/international/international-security-britain.html">British Police Admit Shooting Wrong Man</a> 6:38 p.m.  ET<br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/international/international-spain-explosion.html">Spain Blames Galician Radicals for Bomb</a> 2:43 p.m.  ET<br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/international/international-egypt-explosions.html">Blasts Kill 88 in Egyptian Red Sea Resort</a> 2:02 p.m.  ET<br><br> <a href="/web/20050723234429/http://www.nytimes.com/pages/reuters/world/index.html"><font size="-2"><u>MORE REUTERS INTERNATIONAL</u></font><p></p><hr size="1"> <a href="/web/20050723234429/http://www.nytimes.com/pages/reuters/business/index.html"><strong><font size="-1" color="#ab0000">REUTERS BUSINESS</font></strong><br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/business/business-economy-fed-bush.html">List of Fed Board Candidates Grows</a> 5:59 p.m.  ET<br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/business/business-retail-walmart-sales-col.html">Wal - Mart Keeps July Sales Forecast</a> 5:44 p.m.  ET<br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/business/business-india-usa-nuclear.html">With Bush's Help, GE Courts Indian PM, Nuke Sector</a> 10:41 a.m.  ET<br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/business/business-retail-walmart-sales.html">Wal - Mart Keeps July Sales Forecast</a> 9:17 a.m.  ET<br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/business/business-column-stocks-outlook.html">Oil, Earnings and GDP May Trip Stocks</a> 9:08 a.m.  ET<br><br> <a href="/web/20050723234429/http://www.nytimes.com/pages/reuters/business/index.html"><font size="-2"><u>MORE REUTERS BUSINESS</u></font><p></p><hr size="1"> <a href="/web/20050723234429/http://www.nytimes.com/pages/reuters/technology/index.html"><strong><font size="-1" color="#ab0000">REUTERS TECHNOLOGY</font></strong><br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/technology/tech-tech-microsoft-windows.html">Microsoft to Debut 'Windows Vista'</a> 11:50 a.m.  ET<br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/technology/tech-tech-microsoft-windows.html">Microsoft to Debut 'Windows Vista'</a> 5:08 p.m.  ET<br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/technology/tech-celestica-stock.html">Celestica Stock Sinks on Warning, Estimate Cuts</a> 12:54 p.m.  ET<br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/technology/tech-trade-piracy-usa.html">Bush Creates New Post to Fight Global Piracy</a> 12:36 p.m.  ET<br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/technology/tech-media-game.html">Video Game Sex Scandal Stirs US Standards Debate</a> 11:33 a.m.  ET<br><br> <a href="/web/20050723234429/http://www.nytimes.com/pages/reuters/technology/index.html"><font size="-2"><u>MORE REUTERS TECHNOLOGY</u></font><p></p><hr size="1"> <a href="/web/20050723234429/http://www.nytimes.com/pages/reuters/sports/index.html"><strong><font size="-1" color="#ab0000">REUTERS SPORTS</font></strong><br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/sports/sports-golf-pga.html">Crane Holds on to Milwaukee Lead in Round Three</a> 5:13 p.m.  ET<br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/sports/sports-pga-players.html">Campbell and Daly Poised for Final Day Challenge</a> 2:30 p.m.  ET<br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/sports/sports-cycling-tour-armstrong.html">No Regrets for Armstrong as He Eyes Victory</a> 2:27 p.m.  ET<br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/sports/sports-horseracing-diamond.html">Record Breaker Azamour Lands King George</a> 1:24 p.m.  ET<br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/sports/sports-cycling-tour-saturday.html">Armstrong Scores Last Win in Tour Time Trial</a> 1:21 p.m.  ET<br><br> <a href="/web/20050723234429/http://www.nytimes.com/pages/reuters/sports/index.html"><font size="-2"><u>MORE REUTERS SPORTS</u></font><p></p><hr size="1"> <a href="/web/20050723234429/http://www.nytimes.com/pages/reuters/politics/index.html"><strong><font size="-1" color="#ab0000">REUTERS POLITICS</font></strong><br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/politics/politics-mideast.html">Gaza Gunmen Kill Two Israelis as Rice Ends Visit</a> 7:03 p.m.  ET<br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/politics/politics-bush-leak-democrats.html">Democrats Spotlight CIA Leak in Radio Address</a> 2:33 p.m.  ET<br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/politics/politics-india-usa-nuclear.html">With Bush's Help, GE Courts Indian PM, Nuke Sector</a> 10:40 a.m.  ET<br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/politics/politics-bush-court.html">Bush Upbeat on Roberts's Confirmation Prospects</a> 10:11 a.m.  ET<br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/politics/politics-bush-court.html">Supreme Court Nominee Roberts 'Hates Bullies'</a> 6:53 p.m.  ET<br><br> <a href="/web/20050723234429/http://www.nytimes.com/pages/reuters/politics/index.html"><font size="-2"><u>MORE REUTERS POLITICS</u></font><p></p><hr size="1"> <a href="/web/20050723234429/http://www.nytimes.com/pages/reuters/entertainment/index.html"><strong><font size="-1" color="#ab0000">REUTERS ENTERTAINMENT</font></strong><br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/arts/entertainment-leisure-vansant.html">Cobain's 'Last Days' Inspire Van Sant Movie</a> 11:52 a.m.  ET<br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/arts/entertainment-leisure-doors.html">Former Doors Drummer Wins Suit Against Bandmates</a> 9:25 p.m.  ET<br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/arts/entertainment-crime-sizemore.html">Actor Sizemore Ordered to Stay at Calif. Hospital</a> 8:24 p.m.  ET<br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/arts/entertainment-music-vegas.html">Bonnaroo Music Festival Sets Las Vegas Spinoff</a> 4:08 p.m.  ET<br> <a href="/web/20050723234429/http://www.nytimes.com/reuters/arts/entertainment-music-young.html">'Wind' Blowing Soon for Neil Young</a> 2:51 p.m.  ET<br><br> <a href="/web/20050723234429/http://www.nytimes.com/pages/reuters/entertainment/index.html"><font size="-2"><u>MORE REUTERS ENTERTAINMENT</u></font><p></p><hr size="1"></td><td width="5"> <br></td><td width="1" bgcolor="#999999"><br></td><td width="5"> <br></td><td width="100" valign="top"><!--add all promo html here.  no tables or images greater than 184 pixels. No HTML, HEAD or BODY tags needed. -->
+<font size=-1>Full reports from <nobr>The New York Times</nobr></font>
+<BR>
+<font size=-1><B><a href="/web/20050723234429/http://www.nytimes.com/pages/arts/index.html">Arts</a></b></font><br>
+<font size=-1><B><a href="/web/20050723234429/http://www.nytimes.com/pages/business/index.html">Business</a></b></font><br>
+<font size=-1><B><a href="/web/20050723234429/http://www.nytimes.com/pages/world/index.html">International</a></b></font><br>
+<font size=-1><B><a href="/web/20050723234429/http://www.nytimes.com/pages/national/index.html">National</a></b></font><br>
+<font size=-1><B><a href="/web/20050723234429/http://www.nytimes.com/pages/nyregion/index.html">New York Region</a></b></font><br>
+<font size=-1><B><a href="/web/20050723234429/http://www.nytimes.com/pages/politics/index.html">Politics</a></b></font><br>
+<font size=-1><B><a href="/web/20050723234429/http://www.nytimes.com/pages/sports/index.html">Sports</a></b></font><br>
+<font size=-1><B><a href="/web/20050723234429/http://www.nytimes.com/pages/technology/index.html">Technology</a></b></font><br>
+</font>
+<P>
+<!--end promo code. --></td></tr></table></td></tr><tr><td width="10"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="10" height="1" border="0"/></td><td width="659" valign="top"><NYT_FOOTER><table cellspacing="0" cellpadding="0" border="0" width="469"><tr><td align="center"><a href="/web/20050723234429/http://ads.nytimes.com/nytdstuck1122108707474.html"></a><br> 
+
+<br clear="all">
+<br clear="all">
+<br clear="all">
+
+<br></td></tr><tr><td align="center"> <a href="/web/20050723234429/http://www.nytimes.com/gst/nytheadlines.html">Add New York Times headlines to your site</a><br><br> <a href="/web/20050723234429/http://www.nytimes.com/rss">Add New York Times RSS feeds</a>&nbsp;<a href="/web/20050723234429/http://www.nytimes.com/rss"><IMG src="/web/20050723234429im_/http://graphics8.nytimes.com/services/xml/rss/images/xml_36x14.gif" height="14" width="36" border="0"></a><br><br><NYT_COPYRIGHT><font face="arial,helvetica,sans-serif" size="1"><a href="/web/20050723234429/http://www.nytimes.com/ref/membercenter/help/copyright.html">Copyright 2005</a>&nbsp;<a href="/web/20050723234429/http://www.nytco.com/">The New York Times Company</a></font><font size="2"> | </font><a href="/web/20050723234429/http://www.nytimes.com/ref/membercenter/help/privacy.html"><font face="arial,helvetica,sans-serif" size="1">Privacy Policy</font></a><font size="2"> | </font><a href="/web/20050723234429/http://www.nytimes.com/ref/membercenter/help/infoservdirectory.html"><font face="arial,helvetica,sans-serif" size="1">Contact Us</font></a><font size="2"> | </font><a href="/web/20050723234429/http://www.nytdigital.com/careers"><font face="arial,helvetica,sans-serif" size="1">Work for Us</font></a></NYT_COPYRIGHT></td></tr></table></NYT_FOOTER></td></tr></table>
+
+		<!-- SiteCatalyst code version: G.5.
+		Copyright 1997-2003 Omniture, Inc. More info available at
+		/web/20050723234429/http://www.omniture.com --><script language="JavaScript"><!--
+		var s_account="nytimesglobal"
+		var s_pageName="/pages/reuters/index.html"
+		var s_server=""
+		var s_channel=""
+		var s_pageType=""
+		var s_prop1="section front"
+		var s_prop2=""
+		var s_prop3=""
+		var s_prop4=""
+		var s_prop5=""
+		var s_prop6=""
+		var s_prop7=""
+		var s_prop8=""
+		var s_prop9=""
+		var s_prop10=""
+		var s_prop12=""
+		var s_prop13=""
+		var s_campaign=""
+		var s_state=""
+		var s_zip=""
+		var s_events=""
+		var s_products=""
+		var s_purchaseID=""
+		var s_eVar1=""
+		var s_eVar2=""
+		var s_eVar3=""
+		var s_eVar4=""
+		var s_eVar5=""
+		var s_eVar6=""
+		var s_eVar7=""
+		var s_eVar8=""
+		var s_eVar9=""
+		var s_eVar10=""
+		//--></script><script language="JavaScript" src="/web/20050723234429js_/http://graphics8.nytimes.com/js/s_code_sampling.js"></script>
+		<!-- End SiteCatalyst code version: G.5. -->
+
+		
+		<IMG SRC="/web/20050723234429im_/http://www.nytimes.com/adx/bin/clientside/dccb232Q2FUNQ24-SQ2BQ7BHQ23-NQ3FQ20XN3XQ23Q2BXQ23Q5C" height=1 width=1></body></html>
+
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 23:44:29 Jul 23, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 4:57:22 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

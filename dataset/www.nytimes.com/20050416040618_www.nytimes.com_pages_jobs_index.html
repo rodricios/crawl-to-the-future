@@ -1,0 +1,1074 @@
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app15.us.archive.org";archive_analytics.values.server_ms=4500;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="charset" content="iso-8859-1">
+<meta name="robots" content="noarchive">
+<META NAME="HOMEPAGE_TEMPLATE_VERSION" CONTENT="300">
+<script language="JavaScript">
+<!--
+ 
+	
+    function nameIt() {
+    	window.name = 'nytimesmain';
+    }
+     
+	function pop_me_up(pURL,features){ 
+		new_window = window.open(pURL, "popup_window", features);
+		new_window.focus();
+	}
+
+	function pop_me_up2(pURL,name,features){
+		new_window = window.open(pURL,name,features);
+		new_window.focus();
+	}
+
+	function changeImage(image_name,image_src) {
+   		document.images[image_name].src = image_src;
+	}
+
+	function goToURL(obj){
+		var f = (obj.section) ? obj : obj.form;
+		var selected = f.section.selectedIndex;
+		var URL = f.section.options[selected].value;
+		if (URL != "") document.location = URL;
+		return false;
+	}
+
+	if (window.self != window.top) { 
+		top.location.replace(window.location.pathname); 
+	}
+
+//-->
+</script>
+<script language="JavaScript" src="/web/20050416063837js_/http://www.nytimes.com/js/browserSize.js" type="text/javascript">
+</script>
+<!--begin Tacoda-specific code -->
+<script src="/web/20050416063837js_/http://www.nytimes.com/js/Tacoda_AMS_DDC_Header.js"></script>
+<!--end Tacoda-specific code -->
+<style>
+.smtext {font-family: arial, helvetica, sans-serif;font-size: 11px;}
+.nav {font-family: arial, helvetica, sans-serif;color: #000066;font-size: 11px;}
+.date {font-family: arial, helvetica, sans-serif;font-size: 10px;}
+.navlink {font-family: arial, helvetica, sans-serif;font-size: 11px;font-weight: 400;}
+.headline {font-family: times, times new roman, serif;font-size: 18px;font-weight: 600;}
+</style>
+
+<title>The New York Times Job Market - Search help wanted ads and post resumes</title>
+<meta name="description" content="Search job postings and ads, post resumes online, and get employment news. Find New York jobs and careers nationwide.  Employers can post new jobs or search resumes."/>
+<script type="text/JavaScript">
+	var google_contents = "job search, help wanted, new york jobs, post resume, post a job";
+</script>
+
+</head>
+<body marginheight="0" marginwidth="5" leftmargin="5" topmargin="0" link="#000066" bgcolor="#ffffff" alink="#990000" vlink="#444464">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.nytimes.com/pages/jobs/index.html";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "16";
+var displayMonth = "Apr";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.nytimes.com/pages/jobs/index.html" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20050416063837" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20040113034801/http://www.nytimes.com/pages/jobs/index.html" title="13 Jan 2004">JAN</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 6:38:37 Apr 16, 2005">APR</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20050517001519/http://www.nytimes.com/pages/jobs/index.html" title="17 May 2005"><strong>MAY</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20050415043046/http://www.nytimes.com/pages/jobs/index.html" title="4:30:46 Apr 15, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 6:38:37 Apr 16, 2005">16</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20050418042439/http://www.nytimes.com/pages/jobs/index.html" title="4:24:39 Apr 18, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20040113034801/http://www.nytimes.com/pages/jobs/index.html" title="13 Jan 2004"><strong>2004</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 6:38:37 Apr 16, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20060427020349/http://nytimes.com/pages/jobs/index.html" title="27 Apr 2006"><strong>2006</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20050416063837*/http://www.nytimes.com/pages/jobs/index.html" title="See a list of every capture for this URL">3,405 captures</a>
+           <div class="r" title="Timespan for captures of this URL">13 Jul 01 - 28 Dec 14</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:00000011ecb5_2002:-1:190001029784_2003:-1:111102110100_2004:-1:100000000000_2005:3:005baa6b8300_2006:-1:201304321043_2007:-1:323406343845_2008:-1:026532999314_2009:-1:226502100145_2010:-1:544321686888_2011:-1:7bb766abddef_2012:-1:eeedfeedbcdd_2013:-1:cccdcbba78bd_2014:-1:dcdcccaaaa78_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<table border="0" cellspacing="0" cellpadding="0" width="768" align="left" valign="top">
+<tr><td width="768" align="left">
+<!--Header start -->
+<NYT_HEADER>
+<table border="0" cellspacing="0" cellpadding="0" width="768" align="left" valign="top">
+<tr>
+<td width="184" align="left" valign="middle">
+<font class="smtext" size="-1" face="arial, helvetica, sans serif">&nbsp;
+Friday, April 15, 2005
+</font>
+</td>
+<td width="400" align="left" valign="top">
+<NYT_HEADER_IMAGE><a href="/web/20050416063837/http://www.nytimes.com/jobmarket/index.html"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/section/jobs/job_header.gif" width="400" height="61" border="0" alt="The New York Times: Job Market"/></a></NYT_HEADER_IMAGE>
+</td>
+<td width="184" valign="middle" align="right">
+<IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="184" height="1" border="0" alt=""/><br/>
+<!-- ADXINFO classification="text_ad" campaign="JOBpromo01-cla2"--><br><a href="/web/20050416063837/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/jobs/index.html&amp;pos=TopRight&amp;camp=JOBpromo01-cla2&amp;ad=Employers_4-4&amp;goto=http://www.nytimes.com/marketing/jobmarket/employercentral/postjob.html"><font class="smtext" color="#990000" face="arial">Employers: Post a Job today!</font></a>
+</td>
+</tr>
+<tr>
+<td width="768" colspan="3"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="3" border="0" alt=""/></td>
+</tr>
+</table>
+<br clear="all"/>
+</NYT_HEADER>
+<!--Header end -->
+</td></tr>
+<tr><td width="768" bgcolor="#000000">
+<IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="768" height="2" border="0" alt=""><br>
+</td></tr> 
+<tr><td width="768" align="left" valign="top">
+<!--Navigation start -->
+<table border="0" cellspacing="0" cellpadding="0" width="768" align="left" valign="top">
+<tr>
+<td width="95" height="24"><a href="/web/20050416063837/http://www.nytimes.com/" onmouseover="changeImage('nyt','http://graphics.nytimes.com/images/section/jobs/nyt_home_roll.gif')" onmouseout="changeImage('nyt','http://graphics.nytimes.com/images/section/jobs/nyt_home.gif')"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/section/jobs/nyt_home.gif" border="0" name="nyt" align="left" hspace="0" vspace="0" width="95" height="24" alt="NYTIMES.COM"/></a></td>
+<td width="110" height="24">
+<IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/section/jobs/jmarkt_home_roll.gif" border="0" name="jmarket" align="left" hspace="0" vspace="0" width="110" height="24" alt="JOB MARKET HOME"/> 
+</td>
+<td width="75" height="24">
+<a href="/web/20050416063837/http://jobs.nytimes.com/js.php?lookid=nyt" onmouseover="changeImage('findjob','http://graphics.nytimes.com/images/section/jobs/find_job_roll.gif')" onmouseout="changeImage('findjob','http://graphics.nytimes.com/images/section/jobs/find_job.gif')"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/section/jobs/find_job.gif" border="0" name="findjob" align="left" hspace="0" vspace="0" width="75" height="24" alt="FIND A JOB"/></a>
+</td>
+<td width="115" height="24"><a href="/web/20050416063837/http://jobs.nytimes.com/texis/jobseeker/resumeCenter.html" onmouseover="changeImage('resume','http://graphics.nytimes.com/images/section/jobs/post_resume_roll.gif')" onmouseout="changeImage('resume','http://graphics.nytimes.com/images/section/jobs/post_resume.gif')"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/section/jobs/post_resume.gif" border="0" name="resume" align="left" hspace="0" vspace="0" width="115" height="24" alt="POST YOUR RESUME"/></a></td>
+<td width="100" height="24"><a href="/web/20050416063837/http://jobs.nytimes.com/texis/jobseeker/jobTools.html" onmouseover="changeImage('mymrkt','http://graphics.nytimes.com/images/section/jobs/my_mrkt_roll.gif')" onmouseout="changeImage('mymrkt','http://graphics.nytimes.com/images/section/jobs/my_mrkt.gif')"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/section/jobs/my_mrkt.gif" border="0" name="mymrkt" align="left" hspace="0" vspace="0" width="100" height="24" alt="MY JOB MARKET"/></a></td>
+<td width="70" height="24">
+<a href="/web/20050416063837/http://interview.nytimes.com/" onmouseover="changeImage('tools','http://graphics.nytimes.com/images/section/jobs/tools_roll.gif')" onmouseout="changeImage('tools','http://graphics.nytimes.com/images/section/jobs/tools.gif')"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/section/jobs/tools.gif" border="0" name="tools" align="left" hspace="0" vspace="0" width="70" height="24" alt="JOB TOOLS"/></a>
+</td>
+<td width="75" height="24"><a href="/web/20050416063837/http://www.nytimes.com/marketing/jobmarket/employercentral/postjob.html" onmouseover="changeImage('post','http://graphics.nytimes.com/images/section/jobs/post_job_roll.gif')" onmouseout="changeImage('post','http://graphics.nytimes.com/images/section/jobs/post_job.gif')"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/section/jobs/post_job.gif" border="0" name="post" align="left" hspace="0" vspace="0" width="75" height="24" alt="POST A JOB"/></a></td>
+<td width="128" height="24"><a href="/web/20050416063837/http://www.nytimes.com/marketing/jobmarket/employercentral/index.html" onmouseover="changeImage('resources','http://graphics.nytimes.com/images/section/jobs/resources_roll.gif')" onmouseout="changeImage('resources','http://graphics.nytimes.com/images/section/jobs/resources.gif')"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/section/jobs/resources.gif" border="0" name="resources" align="left" hspace="0" vspace="0" width="128" height="24" alt="EMPLOYER RESOURCES"/></a></td>
+</tr>
+</table>
+<!--Navigation ends -->
+</td></tr>
+<tr><td width="768" align="left" valign="top">
+<!--Help start-->
+
+<table border="0" cellspacing="0" cellpadding="0" width="768">
+<tr>
+<td width="768" bgcolor="#666666" colspan="3"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" alt=""></td>
+</tr>
+<tr>
+<td colspan="3" background="/web/20050416063837im_/http://graphics8.nytimes.com/images/section/jobs/bg_header.gif"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="2" alt=""></td>
+</tr>
+<tr> 
+<td background="/web/20050416063837im_/http://graphics8.nytimes.com/images/section/jobs/bg_header.gif" width="10"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="10" height="1" alt=""></td>
+<td background="/web/20050416063837im_/http://graphics8.nytimes.com/images/section/jobs/bg_header.gif" valign="middle" class="small" width="720"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" alt=""></td>
+<td background="/web/20050416063837im_/http://graphics8.nytimes.com/images/section/jobs/bg_header.gif" height="27" width="38" align="right"><a href="/web/20050416063837/http://www.nytimes.com/marketing/jobmarket/help/index.html"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/section/jobs/btn_help.gif" width="38" height="19" border="0" hspace="5" alt="HELP"></a></td>
+</tr>
+<tr>
+<td bgcolor="#cccccc" colspan="3"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" alt=""></td>
+</tr>
+</table>
+ 
+<!--Help end -->
+</td></tr>
+<tr><td width="768" align="left" valign="top">
+<IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="768" height="10" alt="" border="0"><br>
+</td></tr>
+<tr><td width="768">
+<!--Body start -->
+<table border="0" cellspacing="0" cellpadding="0" width="768" align="left" valign="top">
+<!--top section start-->
+<tr><td width="768" colspan="3" valign="top">
+<table border="0" cellspacing="0" cellpadding="0" width="768" align="left" valign="top">
+<tr>
+<td width="412">
+<!--begin POST A JOB MODULE -->
+<table border="0" cellspacing="0" cellpadding="0" width="412">
+<tr>
+<td colspan="5"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="10" height="12" border="0" alt=""></td>
+</tr>
+<tr>
+<td colspan="5" bgcolor="#cccccc"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="10" height="1" border="0" alt=""></td>
+</tr>
+<tr>
+<td width="1" bgcolor="#cccccc"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="5" border="0" alt=""></td>
+<td width="5" bgcolor="#ffffff"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="5" border="0" alt=""></td>
+<td width="400" bgcolor="#ffffff"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="400" height="5" border="0" alt=""></td>
+<td width="5" bgcolor="#ffffff"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="5" border="0" alt=""></td>
+<td width="1" bgcolor="#cccccc"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="5" border="0" alt=""></td>
+</tr>
+<tr>
+<td width="1" bgcolor="#cccccc"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="10" border="0" alt=""></td>
+<td width="5" bgcolor="#ffffff"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="130" border="0" alt=""></td>
+<!--insert CONENT here -->
+<td width="400" align="left" valign="top">
+<!--begin CONTENT -->
+<table border="0" cellspacing="0" cellpadding="0" width="400" valign="top">
+<tbody><tr>
+<td colspan="4" bgcolor="#ffffff"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/section/jobs/jm_front_findajob_400x28.gif" width="400" height="28" border="0" alt="NYTimes.com Find a Job"><br>
+<IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="190" height="5" border="0" alt=""></td>
+</tr>
+<tr>
+<form ACTION="/web/20050416063837/http://jobs.nytimes.com/js.php" METHOD="GET" NAME="jobSearchForm">
+<INPUT TYPE="HIDDEN" NAME="lookid" VALUE="nyt">
+<INPUT TYPE="HIDDEN" NAME="view" VALUE="2">
+<INPUT TYPE="HIDDEN" NAME="qMatch" VALUE="all">
+<INPUT TYPE="HIDDEN" NAME="qSort" VALUE="smart">
+<td width="8" bgcolor="#ffffff"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="8" height="5" border="0" alt=""></td>
+<!--begin KEYWORD SEARCH AREA -->
+<td width="190" bgcolor="#ffffff" class="smtext"><font color="#669933"><strong>KEYWORD SEARCH:</strong></font><br>
+<IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="5" border="0" alt=""><br>
+<INPUT name="q" type="text" id="KeywordSearch" size="20" maxlength="200">
+<IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="3" height="1" border="0" alt="">
+<input width="26" height="19" border="0" alt="" type="image" src="/web/20050416063837im_/http://graphics8.nytimes.com/images/section/jobs/go.gif"><br>
+<font class="smtext"><a href="/web/20050416063837/http://jobs.nytimes.com/texis/jobseeker/agentCenter.html">Create E-mail Job Alert</a></font><br>
+<IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="3" height="10" border="0" alt=""><br>
+<IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/section/jobs/jm_icon_advanced_30x22.gif" width="30" height="22" border="0" alt="" align="middle"><a href="/web/20050416063837/http://jobs.nytimes.com/js.php?lookid=nyt">Advanced Job Search</a><br>
+<IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="3" height="3" border="0" alt=""><br>
+<IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/section/jobs/jm_icon_resume_30x22.gif" width="30" height="22" border="0" alt="" align="middle"><a href="/web/20050416063837/http://jobs.nytimes.com/texis/jobseeker/resumeCenter.html">Post Your R&#233;sum&#233;</a></td>
+<!--end KEYWORD SEARCH AREA -->
+<td width="20" bgcolor="#ffffff"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="10" height="5" border="0" alt=""></td>
+<!--begin INDUSTRIES IN DEPTH AREA -->
+<td width="190" class="smtext" valign="top" bgcolor="#ffffff"><font color="#999999"><strong>Industries in Depth</strong></font><br>
+<IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="3" border="0" alt=""><br>
+Find category specific job postings, news and tools.<br>
+<IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="5" border="0" alt=""><br>
+<table border="0" cellspacing="0" cellpadding="0" width="190">
+<table border="0" cellspacing="0" cellpadding="0" width="190">
+<tbody><tr>
+<td width="90" class="smtext">
+<font color="#669933">&#8226;</font> <a href="/web/20050416063837/http://www.nytimes.com/pages/jobs/jobs_education/index.html">Education</a><br>
+<font color="#669933">&#8226;</font> <a href="/web/20050416063837/http://www.nytimes.com/pages/jobs/jobs_executive/index.html">Executive</a><br>
+<font color="#669933">&#8226;</font> <a href="/web/20050416063837/http://www.nytimes.com/pages/jobs/jobs_finance/index.html">Finance</a><br>
+<font color="#669933">&#8226;</font> <a href="/web/20050416063837/http://www.nytimes.com/pages/jobs/jobs_healthcare/index.html">Healthcare</a></td>
+<td width="10"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="5" border="0" alt=""></td>
+<td width="90" class="smtext">
+<font color="#669933">&#8226;</font> <a href="/web/20050416063837/http://www.nytimes.com/pages/jobs/jobs_media/index.html">Media/Publishing</a><br>
+<font color="#669933">&#8226;</font> <a href="/web/20050416063837/http://www.nytimes.com/pages/jobs/jobs_sales/index.html">Sales</a><br>
+<font color="#669933">&#8226;</font> <a href="/web/20050416063837/http://www.nytimes.com/pages/jobs/jobs_technology/index.html">Technology/IT</a><br>
+<font color="#669933">&#8226;</font> <a href="/web/20050416063837/http://jobs.nytimes.com/js.php?lookid=nyt">Other</a></td>
+</tr>
+</table></td>
+<!--end INDUSTRIES IN DEPTH AREA -->
+</tr>
+</form>
+</tbody></table>
+<!--end CONTENT -->
+</td>
+<td width="5" bgcolor="#ffffff"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="10" border="0" alt=""></td>
+<td width="1" bgcolor="#cccccc"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="10" border="0" alt=""></td>
+</tr>
+<tr>
+<td width="1" bgcolor="#cccccc"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="5" border="0" alt=""></td>
+<td width="5" bgcolor="#ffffff"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="5" border="0" alt=""></td>
+<td width="400" bgcolor="#ffffff"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="400" height="10" border="0" alt=""></td>
+<td width="5" bgcolor="#ffffff"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="5" border="0" alt=""></td>
+<td width="1" bgcolor="#cccccc"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="5" border="0" alt=""></td>
+</tr>
+<tr>
+<td colspan="5" bgcolor="#cccccc"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="10" height="1" border="0" alt=""></td>
+</tr>
+</tbody></table>
+<!--end POST A JOB MODULE -->
+<br>
+<!--begin EMPLOYER RESOURCES MODULE -->
+<table border="0" cellspacing="0" cellpadding="0" width="412">
+<tbody><tr>
+<td colspan="5" bgcolor="#cccccc"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="10" height="1" border="0" alt=""></td>
+</tr>
+<tr>
+<td width="1" bgcolor="#cccccc"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="5" border="0" alt=""></td>
+<td width="5" bgcolor="#ffffff"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="5" border="0" alt=""></td>
+<td width="400" bgcolor="#ffffff"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="400" height="5" border="0" alt=""></td>
+<td width="5" bgcolor="#ffffff"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="5" border="0" alt=""></td>
+<td width="1" bgcolor="#cccccc"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="5" border="0" alt=""></td>
+</tr>
+<tr>
+<td width="1" bgcolor="#cccccc"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="10" border="0" alt=""></td>
+<td width="5" bgcolor="#ffffff"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="80" border="0" alt=""></td>
+<!--insert CONENT here -->
+<td width="400" align="left" valign="top">
+<!--begin CONTENT -->
+<table border="0" cellspacing="0" cellpadding="0" width="400">
+<tbody><tr>
+<td colspan="4" bgcolor="#ffffff"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/section/jobs/jm_front_employer_400x28.gif" width="400" height="28" border="0" alt="NYTimes.com Employer Resources"><br>
+<IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="190" height="5" border="0" alt=""></td>
+</tr>
+<tr>
+<td width="8" bgcolor="#ffffff"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="8" height="5" border="0" alt=""></td>
+<!--begin POST A JOB AREA -->
+<td width="182" bgcolor="#ffffff" class="smtext">
+<IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="3" height="10" border="0" alt=""><br>
+<IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/section/jobs/jm_icon_employer_30x30.gif" width="30" height="30" border="0" alt="" align="middle">
+<a href="/web/20050416063837/http://www.nytimes.com/marketing/jobmarket/employercentral/postjob.html"><strong>POST A JOB</strong></a><br>
+<IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="3" height="3" border="0" alt=""><br></td>
+<!--end POST A JOB AREA -->
+<td width="20" bgcolor="#ffffff"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="10" height="5" border="0" alt=""></td>
+<!--begin tools AREA -->
+<td width="190" class="smtext" valign="top" bgcolor="#ffffff"><font color="#999999"><strong>Tools</strong></font><br>
+<IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="2" border="0" alt=""><br>
+<font color="#7b96ae">&#8226;</font> <a href="/web/20050416063837/http://www.nytimes.com/marketing/jobmarket/employercentral/searchresumes.html">Search R&#233;sum&#233;s</a><br>
+<font color="#7b96ae">&#8226;</font> <a href="/web/20050416063837/http://www.nytimes.com/marketing/jobmarket/employercentral/index.html">Employer Log In</a><br>
+<font color="#7b96ae">&#8226;</font> <a href="/web/20050416063837/http://www.nytimes.com/marketing/jobmarket/employercentral/research.html">Job Market Research</a><br>
+</td>
+<!--end tools AREA -->
+</tr>
+</tbody></table>
+<!--end CONTENT -->
+</td>
+<td width="5" bgcolor="#ffffff"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="10" border="0" alt=""></td>
+<td width="1" bgcolor="#cccccc"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="10" border="0" alt=""></td>
+</tr>
+<tr>
+<td width="1" bgcolor="#cccccc"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="5" border="0" alt=""></td>
+<td width="5" bgcolor="#ffffff"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="5" border="0" alt=""></td>
+<td width="400" bgcolor="#ffffff"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="400" height="10" border="0" alt=""></td>
+<td width="5" bgcolor="#ffffff"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="5" border="0" alt=""></td>
+<td width="1" bgcolor="#cccccc"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="5" border="0" alt=""></td>
+</tr>
+<tr>
+<td colspan="5" bgcolor="#cccccc"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="10" height="1" border="0" alt=""></td>
+</tr>
+</tbody></table>
+<!--end EMPLOYER RESOURCES MODULE -->
+</td>
+<td width="20">
+<IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="20" height="1" border="0" alt=""><br>
+</td>
+<td width="336" valign="top">
+<table border="0" cellspacing="0" cellpadding="0" width="336">
+<tr>
+<td>
+<font class="date" color="#999999" face="arial, helvetica, sans-serif"><div align="center">Advertisement</div></font>
+<!-- ADXINFO classification="bigad" campaign="CIA05-cla2"--><A HREF="/web/20050416063837/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/pages/jobs/index.html&amp;pos=Middle2&amp;camp=CIA05-cla2&amp;ad=CIA-336&amp;goto=http%3A%2F%2Fwww%2Ecia%2Egov" target="_blank"><IMG SRC="/web/20050416063837im_/http://graphics8.nytimes.com/adx/images/ADS/08/85/ad.88512/CIA-336.gif" BORDER=0 ></A>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td></tr>
+<!--top section end -->
+<!--spacer row start -->
+<tr>
+<td width="196" valign="top">
+<table width="196" cellspacing="0" cellpadding="0" border="0" valign="top">
+<tr>
+<td width="196" height"20"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="20" alt="" border="0" hspace="0" vspace="0"/></td>
+</tr>
+<tr>
+<td width="196" height"1" bgcolor="#CDCDCD"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="196" height="1" alt="" border="0" hspace="0" vspace="0"/></td>
+</tr>
+</table>
+</td>
+<td width="20" valign="top">
+<IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="20" height="1" alt="" hspace="0" vspace="0" alt="" border="0">
+</td>
+<td width="552" valign="top">
+<table width="552" cellspacing="0" cellpadding="0" border="0" valign="top">
+<tr>
+<td width="552" height"20"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="552" height="20" alt="" border="0" hspace="0" vspace="0"/></td>
+</tr>
+<tr>
+<td width="552" height"1" bgcolor="#CDCDCD"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="552" height="1" alt="" border="0"/></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--category search/spacer row end -->
+<tr><td width="768" colspan="3" valign="top">
+<!--bottom section start -->
+<table border="0" cellspacing="0" cellpadding="0" width="768" align="left" valign="top">
+<tr>
+<td valign="top" width="196">
+<!--a column start -->
+<table border="0" cellpadding="0" cellspacing="0" width="196" valign="top">
+<tr> 
+<td bgcolor="#CDCDCD" width="1"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" alt="" border="0"></td>
+<td bgcolor="#FFFFFF" width="5"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="20" alt="" hspace="0" vspace="0"></td>
+<td align="center" bgcolor="#FFFFFF" width="184">
+<font class="smtext" face="arial" color="#666666"><b>
+Career Resources
+</b></font>
+</td>
+<td bgcolor="#FFFFFF" width="5"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="20" alt="" hspace="0" vspace="0"></td>
+<td bgcolor="#CDCDCD" width="1"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" alt="" border="0"></td>
+</tr>
+<tr> 
+<td colspan="5" bgcolor="#CDCDCD" height="1" width="196"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" height="1" alt="" border="0"></td>
+</tr>
+<tr> 
+<td bgcolor="#CDCDCD" width="1"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" alt="" border="0"></td>
+<td bgcolor="#F0F0F0" width="5"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" alt="" border="0"></td>
+<td bgcolor="#F0F0F0">
+<!--start resources -->
+<!--Start of DoubleClick Spotlight Tag: Please do not remove-->
+<!--Activity Name for this tag is:Landing page for ads :Job Market -->
+<!--Web site URL where tag should be placed: /web/20050416063837/http://www.nytimes.com/pages/jobs/index.html -->
+<!--This tag must be placed within the opening <body> tag, as close to the beginning of it as possible-->
+<!--Creation Date:1/11/2005 -->
+<SCRIPT language="JavaScript">
+var axel = Math.random()+"";
+var a = axel * 10000000000000;
+document.write('<IMG SRC="/web/20050416063837/http://ad.doubleclick.net/activity;src=1008221;type=jobse977;cat=landi200;ord='+ a + '?" WIDTH=1 HEIGHT=1 BORDER=0>');
+</SCRIPT>
+<NOSCRIPT>
+<IMG SRC="/web/20050416063837im_/http://ad.doubleclick.net/activity;src=1008221;type=jobse977;cat=landi200;ord=1" WIDTH=1 HEIGHT=1 BORDER=0>
+</NOSCRIPT>
+<!--End of DoubleClick Spotlight Tag: Please do not remove-->
+<br clear="all">
+<!--<a href="/web/20050416063837/http://www.nytimes.com/marketing/jobmarket/makeover/index.html"><img src="/web/20050416063837/http://www.nytimes.com/marketing/jobmarket/images/makeover_acolumn.gif" alt="Career Makeover Contest" border="0"></a><br><br clear="all">
+<font class="smtext" face="arial" color="#666666"><b>Coming Soon</b></font><br>
+<li type="square"><font class="smtext" color="#000066" face="arial"><a href="/web/20050416063837/http://www.nytimes.com/nursingfair">02/15: Nursing & Allied</a><Br>
+     <a href="/web/20050416063837/http://www.nytimes.com/nursingfair">Health Career Fair</a></li><br>
+<br clear="all">-->
+<font class="smtext" face="arial" color="#666666"><b>Job Market Help Wanted Tools</b></font>
+<br clear="all">
+<li type="square"><a href="/web/20050416063837/http://interview.nytimes.com/"><font class="smtext" color="#000066" face="arial">Take an Online Skills Interview</font></a></li><br>
+<li type="square"><a href="/web/20050416063837/http://www.nytimes.com/marketing/jobmarket/diversity/index.html"><font class="smtext" color="#000066" face="arial">Winning with Diversity</font></a></li><br>
+<li type="square"><a href="/web/20050416063837/http://www.nytimes.com/marketing/jobmarket/whitepapers/diversity/index.html"><font class="smtext" color="#000066" face="arial">Diversity White Paper</font></a></li><br>
+<li type="square"><a href="/web/20050416063837/http://listings.nytimes.com/businessopportunities/searchindex.asp"><font class="smtext" color="#000066" face="arial">Search Business Opportunities</font></a></li><br>
+<li type="square"><a href="/web/20050416063837/http://www.nytimes.com/marketing/jobmarket/tools/staffing.html"><font class="smtext" color="#000066" face="arial">Staffing Services Directory</font></a></li><br>
+<br clear="all">
+<font class="smtext" face="arial" color="#666666"><b>Career Services Ads</b></font> 
+<br clear="all">
+<font class="date" color="#999999" face="arial, helvetica, sans-serif">(Advertisements)</font><br clear="all">
+<li type="square"><a href="/web/20050416063837/http://www.diversitycareerexpos.com/redirects/Nevent_ny8-NYTl.htm" target=new><font class="smtext" color="#000066" face="arial">Career Fair - April 19 - Madison Square Garden</font></a></li><br>
+<li type="square"><a href="/web/20050416063837/http://www.careerskills.com/nyad2resp.asp" target=new><font class="smtext" color="#000066" face="arial">Employment Services (No Cost) and Training</font></a></li><br>
+<li type="square"><a href="/web/20050416063837/http://www.careerskills.com/nyadresp.asp" target=new><font class="smtext" color="#000066" face="arial">Free Employment & Training Services for NYC Residents</font></a></li><br>
+<li type="square"><a href="/web/20050416063837/http://www.career-resumes.com/cgi-bin/associate.cgi?a=NYTimes" target="new"><font class="smtext" color="#000066" face="arial">Resume Help - Free Critique</font></a></li><br>
+<li type="square"><a href="/web/20050416063837/http://ny.ce.com/index.html"><font class="smtext" color="#000066" face="arial">Courses and Programs</font></a></li><br>
+<li type="square"><a href="/web/20050416063837/http://ny.exec.ce.com/"><font class="smtext" color="#000066" face="arial">Executive Education</font></a></li><br>
+<li type="square"><a href="/web/20050416063837/http://www.vault.com/go/to.jsp?place=32861"><font class="smtext" color="#000066" face="arial">Vault Career Library</font></a></li><br>
+<li type="square"><a href="/web/20050416063837/http://www.wetfeet.com/cb/NewYorkTimes/listguides.asp?pxID=3349"><font class="smtext" color="#000066" face="arial">Wet Feet Insider Guides</font></a></li><br>
+<li type="square"><a href="/web/20050416063837/http://executiveagent.com/NewYorkTimes/index.html"><font class="smtext" color="#000066" face="arial">Premium Resume Distribution</font></a></li><br>
+<br clear="all">
+<!--AD MODULE TABLE STARTS HERE -->
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td align="left" valign="top" width="100%" bgcolor="434343"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/marketing/jobmarket/businessopps/images/biz/logo_header_biz.gif" alt="" width="160" height="24" border="0" /></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="100%" height="86" background= "/web/20050416063837im_/http://www.nytimes.com/marketing/jobmarket/businessopps/images/biz/bg_photo_biz.jpg"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="86" border="0" alt="" /></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="100%" height="86" style="border: 1px solid #E1E1E1; padding-left: 0px; padding-top: 0px; margin-bottom: 15px;">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td align="left" valign="top" width="100%" colspan="3"><a href="/web/20050416063837/http://www.nytimes.com/classifieds"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/marketing/jobmarket/businessopps/images/global/class_mplace.gif" alt="Classifieds Marketplace" width="158" height="52" border="0" /></a></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="100%" style="padding-left: 11px; padding-top: 11px; padding-right: 11px;" colspan="3"><a href="/web/20050416063837/http://listings.nytimes.com/businessopportunities/searchindex.asp"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/marketing/jobmarket/businessopps/images/biz/title_biz.gif" alt="Small Inns and Lodges" width="136" height="16" border="0" /></a></td>
+</tr>
+<script type="text/javascript">
+
+//-----
+
+function Search_Listings()
+
+{
+
+ 	document.TheNextPage.action="/web/20050416063837/http://listings.nytimes.com/businessopportunities/List_listings.asp"
+
+	document.TheNextPage.submit();
+
+}
+
+//-----
+
+</script>
+<form name="TheNextPage" method="post" action="/web/20050416063837/http://listings.nytimes.com/businessopportunities/List_listings.asp">
+<tr>
+<td align="left" valign="top" width="100%" colspan="3" style="padding-left: 11px; padding-top: 11px; padding-right: 11px;">
+<div style="float: left; padding-bottom: 3px;"><select name="SubCatId" style="width:142px; font-size:10px; font-face:arial, helvetica, san-serif;">
+<OPTION VALUE="">Select a Category</option>
+<option value="10">All Categories</option>
+<option value="123">Business & Financial Services</option>
+<option value="3410">   Business Connections</option>
+<option value="3400">   Business Opportunities</option>
+<option value="3460">   Business Services</option>
+<option value="3404">   Capital to Invest</option>
+<option value="3406">   Financing & Bus. Loans</option>
+<option value="3416">   Foreign Connections</option>
+<option value="3600">   Offerings to Buyers</option>
+<option value="3401">Business Opportunities/Franchise Display Ads</option>
+<option value="120">Food & Beverage</option>
+<option value="3428">   Food Stores</option>
+<option value="3432">   Liquor Stores</option>
+<option value="3434">   Luncheon & Stationery Stores</option>
+<option value="3440">   Restaurants, Bars & Clubs</option>
+<option value="125">Franchises & Partnerships</option>
+<option value="3442">   Departments & Concessions</option>
+<option value="3408">   Franchise,Distributorships,Lines Offrd.</option>
+<option value="3443">   Routes</option>
+<option value="127">Manufacturing</option>
+<option value="3418">   Manufacturing Facilities</option>
+<option value="3420">   Plants & Factories</option>
+<option value="3422">   Printing Plants &Machinery</option>
+<option value="128">Miscellaneous</option>
+<option value="3650">   Auction/Marshal Sales Misc.</option>
+<option value="3454">   Other Miscellaneous</option>
+<option value="124">Opportunities & Services Wanted</option>
+<option value="3700">   Business Opportunitiess Wanted</option>
+<option value="3500">   Buyersí Wants</option>
+<option value="3402">   Capital Wanted</option>
+<option value="3414">   Lines, Distributorships Wtd.</option>
+<option value="3456">   Wanted Miscellaneous</option>
+<option value="121">Retail</option>
+<option value="3425">   Electronic, Video Stores</option>
+<option value="3430">   Laundry & Cleaning Stores</option>
+<option value="3438">   Stores, Miscellaneous</option>
+<option value="3436">   Wearing Apparel Stores</option>
+<option value="126">Specialty Businesses</option>
+<option value="3446">   Auto Repair & Gas Stations</option>
+<option value="3424">   Beauty & Barber Shops</option>
+<option value="3450">   Camps & Schools</option>
+<option value="3426">   Pharmacies</option>
+<option value="3448">   Professional Practices</option>
+<option value="122">Travel & Real Estate </option>
+<option value="3462">   Florida Real Estate& Bus. Propositions</option>
+<option value="3444">   Hotels, Motels, Resorts & Inns</option>
+</SELECT>  </div>
+<div style="float: left;"><select name="RegionId" style="width:142px; font-size:10px; font-face:arial, helvetica, san-serif;">
+<OPTION VALUE="">Pick a Location</option>
+<option value="50000" >Alabama</option>
+<option value="51000" >Alaska</option>
+<option value="52000" >Arizona</option>
+<option value="53000" >Arkansas</option>
+<option value="54100" >California</option>
+<option value="55000" >Colorado</option>
+<option value="56000" >Connecticut</option>
+<option value="57000" >Delaware</option>
+<option value="59100" >Florida</option>
+<option value="60000" >Georgia</option>
+<option value="61000" >Hawaii</option>
+<option value="62000" >Idaho</option>
+<option value="63000" >Illinois</option>
+<option value="64000" >Indiana</option>
+<option value="65000" >Iowa</option>
+<option value="66000" >Kansas</option>
+<option value="67000" >Kentucky</option>
+<option value="68100" >Louisiana</option>
+<option value="69000" >Maine</option>
+<option value="70000" >Maryland</option>
+<option value="71200" >Massachusetts</option>
+<option value="72000" >Michigan</option>
+<option value="73000" >Minnesota</option>
+<option value="74000" >Mississippi</option>
+<option value="75000" >Missouri</option>
+<option value="76000" >Montana</option>
+<option value="77000" >Nebraska</option>
+<option value="78100" >Nevada</option>
+<option value="79000" >New Hampshire</option>
+<option value="80100" >New Jersey</option>
+<option value="81000" >New Mexico</option>
+<option value="2022" >New York</option>
+<option value="82400" >New York City Metro Area</option>
+<option value="83000" >North Carolina</option>
+<option value="84000" >North Datoka</option>
+<option value="85000" >Ohio</option>
+<option value="86000" >Oklahoma</option>
+<option value="87000" >Oregon</option>
+<option value="88000" >Pennsylvania</option>
+<option value="89000" >Rhode Island</option>
+<option value="90000" >South Carolina</option>
+<option value="91000" >South Dakota</option>
+<option value="92000" >Tennessee</option>
+<option value="93000" >Texas</option>
+<option value="94000" >Utah</option>
+<option value="95000" >Vermont</option>
+<option value="96000" >Virginia</option>
+<option value="97000" >Washington</option>
+<option value="58000" >Washington D.C.</option>
+<option value="98000" >West Virginia</option>
+<option value="99000" >Wisconsin</option>
+<option value="100000" >Wyoming</option>
+<option value="25" >International</option>
+<option value="50" >All Other Areas</option>
+</SELECT>		   </div></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="100%" colspan="3" style="padding-left: 11px; padding-right: 11px; padding-top: 11px;" padding-bottom: 10px;">
+<IMG src= "/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0" alt=""></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="54" style="padding-left: 11px; padding-right: 11px;"><a href="javascript:Search_Listings()"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/marketing/jobmarket/businessopps/images/biz/search_biz.gif" width="54" height="20" align="absmiddle" border="0" alt="Search" /></a></td>
+<td align="left" valign="top" width="1" style="background-image : URL(http://www.nytimes.com/marketing/jobmarket/businessopps/images/global/dots.gif);"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="20" border="0" alt="" /></td>
+<td align="left" valign="top" width="100%" style="padding-left: 11px; padding-right: 11px;"><a href="/web/20050416063837/https://placead.nytimes.com/default.asp?CategoryID=BIZOPS"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/marketing/jobmarket/businessopps/images/biz/post_ad_biz.gif" alt="Post An Ad" width="67" height="20" border="0" /></a></td>
+</tr>
+</form>
+<tr>
+<td align="left" valign="top" width="100%" colspan="3" style="padding-left: 11px; padding-top: 20px; padding-right: 11px;"><a href="/web/20050416063837/http://www.nytimes.com/classifieds"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/marketing/jobmarket/businessopps/images/biz/visit_url_biz.gif" alt="Visit NY Times Classifieds" width="138" height="20" border="0" /></a></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="100%" colspan="3" style="padding-left: 11px; padding-top: 1px; padding-right: 11px; padding-bottom: 30px;"><a href="/web/20050416063837/http://www.nytimes.com/pages/realestate/commercial/index.html" onmouseover="this.style.color='#990000';" onmouseout="this.style.color='#000066';" style="font-family: arial,helvetica,sans-serif; font-size: 11px; color: #000066;">Commerical Real Estate</a><br>
+<a href="/web/20050416063837/http://www.nytimes.com/classifieds" onmouseover="this.style.color='#990000';" onmouseout="this.style.color='#000066';" style="font-family: arial,helvetica,sans-serif; font-size: 11px; color: #000066;">Other Classifieds</a><br>
+<a href="/web/20050416063837/http://www.nytimes.com/classifieds" onmouseover="this.style.color='#990000';" onmouseout="this.style.color='#000066';" style="font-family: arial,helvetica,sans-serif; font-size: 11px; color: #000066; font-weight: bold;">More...</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--AD MODULE TABLE ENDS HERE -->
+<br clear="all">
+<if COND="Variables.asset:name=jobs">
+<then>
+<!--using form POST -->
+<FORM action="/web/20050416063837/http://domain2.com/page.asp" method="POST">
+<INPUT type="hidden" name="CID" value="<?=$CID?>">
+<INPUT type="hidden" name="KWD" value="<?=$KWD?>">
+<INPUT type="hidden" name="REF" value="<?=$REF?>">
+</FORM>
+<!--SendROI Tracking Code -->
+<SCRIPT LANGUAGE="JAVASCRIPT" SRC="/web/20050416063837js_/http://track.exactadvertising.com/script/v2_2.js"></SCRIPT>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+<!--
+SENDROI_TrackHit('5560052c-645f-4666-b25c-613d0d256075');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<IMG SRC="/web/20050416063837im_/http://track.exactadvertising.com/track.aspx?ckid=5560052c-645f-4666-b25c-613d0d256075">
+</NOSCRIPT>
+<!--End of SendROI Tracking Code -->
+<!--Tag for Activity Group: Job Market, Activity: Job Market Home -->
+<!--Start of DoubleClick Spotlight Tag: Please do not remove-->
+<!--Activity Name for this tag is:Job Market Home -->
+<!--Web site URL where tag should be placed: /web/20050416063837/http://www.nytimes.com/pages/jobs/index.html -->
+<!--Creation Date:12/30/2003 -->
+<SCRIPT language="JavaScript">
+var axel = Math.random()+"";
+var a = axel * 10000000000000;
+document.write('<IMG SRC="/web/20050416063837/http://ad.doubleclick.net/activity;src=701396;type=jobma692;cat=jbmkt414;ord=1;num='+ a + '?" WIDTH=1 HEIGHT=1 BORDER=0>');
+</SCRIPT>
+<NOSCRIPT>
+<IMG SRC="/web/20050416063837im_/http://ad.doubleclick.net/activity;src=701396;type=jobma692;cat=jbmkt414;ord=1;num=1" WIDTH=1 HEIGHT=1 BORDER=0>
+</NOSCRIPT>
+<!--End of DoubleClick Spotlight Tag: Please do not remove-->
+</then>
+</if>
+</td>
+<td bgcolor="#F0F0F0" width="5"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" alt="" border="0"></td>
+<td bgcolor="#CDCDCD" width="1"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" alt="" border="0"></td>
+</tr>
+<tr> 
+<td bgcolor="#CDCDCD" width="196" height="1" colspan="5"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" alt="" border="0"></td>
+</tr>
+</table>
+<!--a column ends -->
+</td>
+<td valign="top" width="20">
+<IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="20" height="1" border="0" alt=""><br>
+</td>
+<td valign="top" width="411">
+<!--b column start -->
+<!--sql to get values from the NYT_jobs_template -->
+<IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="5" border="0" alt=""><br>
+<IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/section/jobs/jobs_news.gif" width="140" height="20" alt="Job Market News" border="0" hspace="0" vspace="0"/><br><br>
+<!--ARTICLES START -->
+<table width="411" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" valign="top"><tr><td width="75" valign="top"><a href="/web/20050416063837/http://www.nytimes.com/2005/04/17/business/yourmoney/17advi.html"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/2005/04/15/arts/17advi.75.gif" width="75" height="75" border="0" align="right" alt="A Nip and Tuck for the Résumé"></a><br clear="all"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="75" height="1" border="0" align="left"></td><td width="10" valign="top"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="10" height="1" border="0"></td><td width="326" valign="top"><font color="#666666" size="-1"><strong>CAREER COUCH</strong></font><br><font face="Times New Roman,Times,Serif" color="#000066" size="+1"><strong><a href="/web/20050416063837/http://www.nytimes.com/2005/04/17/business/yourmoney/17advi.html">A Nip and Tuck for the Résumé</a></strong></font><br><font FACE="Times New Roman,Times,Serif" COLOR="#000000" SIZE="-1">By CHERYL DAHLE</font><br><font face="Times New Roman,Times,Serif" color="#000000">Is it unethical for job applicants to edit career credentials to camouflage their age?</font><br></td></tr><tr><td width="411" colspan="3" height="15"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="15" border="0"></td></tr></table><table width="411" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" valign="top"><tr><td width="75" valign="top"><a href="/web/20050416063837/http://www.nytimes.com/2005/04/17/jobs/17homefront.html"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/2005/04/17/nyregion/17homefront.75.jpg" width="75" height="75" border="0" align="right" alt="There's Networking, and There's Working"></a><br clear="all"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="75" height="1" border="0" align="left"></td><td width="10" valign="top"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="10" height="1" border="0"></td><td width="326" valign="top"><font color="#666666" size="-1"><strong>HOME FRONT</strong></font><br><font face="Times New Roman,Times,Serif" color="#000066" size="+1"><strong><a href="/web/20050416063837/http://www.nytimes.com/2005/04/17/jobs/17homefront.html">There's Networking, and There's Working</a></strong></font><br><font FACE="Times New Roman,Times,Serif" COLOR="#000000" SIZE="-1">By TANYA MOHN</font><br><font face="Times New Roman,Times,Serif" color="#000000">An empowerment course attempts to improve the self-esteem of unemployed and underemployed women.</font><br></td></tr><tr><td width="411" colspan="3" height="15"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="15" border="0"></td></tr></table><table width="411" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" valign="top"><tr><td width="75" valign="top"><a href="/web/20050416063837/http://www.nytimes.com/2005/04/17/business/yourmoney/17boss.html"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/2005/04/15/business/17boss.75.jpg" width="75" height="75" border="0" align="right" alt="Landing the Job He Wanted"></a><br clear="all"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="75" height="1" border="0" align="left"></td><td width="10" valign="top"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="10" height="1" border="0"></td><td width="326" valign="top"><font color="#666666" size="-1"><strong>THE BOSS</strong></font><br><font face="Times New Roman,Times,Serif" color="#000066" size="+1"><strong><a href="/web/20050416063837/http://www.nytimes.com/2005/04/17/business/yourmoney/17boss.html">Landing the Job He Wanted</a></strong></font><br><font FACE="Times New Roman,Times,Serif" COLOR="#000000" SIZE="-1">As told to AMY ZIPKIN.</font><br><font face="Times New Roman,Times,Serif" color="#000000">Dan Glickman, the president of the Motion Picture Association of America, talks about his experiences before taking on his new job.</font><br></td></tr><tr><td width="411" colspan="3" height="15"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="15" border="0"></td></tr></table><table width="411" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" valign="top"><tr><td width="75" valign="top"><a href="/web/20050416063837/http://www.nytimes.com/2005/04/10/business/yourmoney/10advi.html"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/2005/04/09/business/10advi.75.gif" width="75" height="75" border="0" align="right" alt="The Multinational as Cultural Chameleon"></a><br clear="all"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="75" height="1" border="0" align="left"></td><td width="10" valign="top"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="10" height="1" border="0"></td><td width="326" valign="top"><font color="#666666" size="-1"><strong>ARMCHAIR M.B.A.</strong></font><br><font face="Times New Roman,Times,Serif" color="#000066" size="+1"><strong><a href="/web/20050416063837/http://www.nytimes.com/2005/04/10/business/yourmoney/10advi.html">The Multinational as Cultural Chameleon</a></strong></font><br><font FACE="Times New Roman,Times,Serif" COLOR="#000000" SIZE="-1">By WILLIAM J. HOLSTEIN</font><br><font face="Times New Roman,Times,Serif" color="#000000">"You have to be French in France," an executive says. In the Mideast, being German helps.</font><br></td></tr><tr><td width="411" colspan="3" height="15"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="15" border="0"></td></tr></table>
+<table width="411" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td width="75" valign="top"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="75" height="1" border="0" alt="" align="right"></td>
+<td width="10" valign="top"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="10" height="1" border="0" alt=""></td>
+<td width="326" valign="top">
+<font color="#666666" size="-1"><strong>More Job Market News</strong></font>
+</td>
+</tr>
+<tr>
+<td width="75" valign="top"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="75" height="1" border="0" alt="" align="right"></td>
+<td width="10" valign="top"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="10" height="1" border="0" alt=""></td>
+<td width="326" valign="top">
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+<font FACE="Times New Roman,Times,Serif" SIZE="-1">&#149;&nbsp;<a href="/web/20050416063837/http://www.nytimes.com/2005/04/10/jobs/10wcol.html">At Tax Time, Thoughts of the Other Inevitable</a></font><br>
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+<font FACE="Times New Roman,Times,Serif" SIZE="-1">&#149;&nbsp;<a href="/web/20050416063837/http://www.nytimes.com/2005/04/10/business/worldbusiness/10boss.html">A Rocker Redux</a></font><br>
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+<font FACE="Times New Roman,Times,Serif" SIZE="-1">&#149;&nbsp;<a href="/web/20050416063837/http://www.nytimes.com/2005/04/10/jobs/10jmar.html">For the Well-Seasoned Lawyer, Age Discrimination Is Unlikely</a></font><br>
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+<font FACE="Times New Roman,Times,Serif" SIZE="-1">&#149;&nbsp;<a href="/web/20050416063837/http://www.nytimes.com/2005/04/03/jobs/03homefront.html">Where Setting Up Shop Just Got a Little Pricier</a></font><br>
+<!--NYT_DEBUG: start nytweb/sectionfront/GetAltWebserver -->
+<!--NYT_DEBUG: end nytweb/sectionfront/GetAltWebserver -->
+<font FACE="Times New Roman,Times,Serif" SIZE="-1">&#149;&nbsp;<a href="/web/20050416063837/http://www.nytimes.com/2005/04/03/business/03advi.html">Turning a Follower Into the Next Leader</a></font><br>
+</td>
+</tr>
+</table>
+<!--ARTICLES END -->
+<br>				  
+<br>
+<script type="text/javascript" language="JavaScript">
+<!--
+	var google_ad_client= 'nytimes_section_var';
+	var google_ad_width = '100%';
+	var google_ad_height = '180';
+	var google_ad_format = 'ca-nytimes_flex';
+	var google_safe = 'high';
+        
+// -->
+</script>
+<script type="text/javascript" language="JavaScript" src="/web/20050416063837js_/http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+<br>
+<!--b column end -->
+</td>
+<td valign="top" width="10">
+<IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="10" height="1" border="0" alt=""><br>
+</td>
+<td valign="top" width="1" bgcolor="#CDCDCD">
+<IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0" alt=""><br>
+</td>
+<td valign="top" width="10">
+<IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="10" height="1" border="0" alt=""><br>
+</td>
+<td valign="top" width="120">
+<!--c column start -->
+<!--this image fixs netscape problem --><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="120" height="5" border="0" alt=""><br>
+<!--Featured Jobs Ads -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img src="/web/20050416063837im_/http://graphics8.nytimes.com/ads/images/section/jobs/feat_jobs.gif"><br>
+<font class="date" color="#000066" face="arial, helvetica, sans-serif">
+<a class="a" href="/web/20050416063837/http://www.nytimes.com/marketing/jobmarket/help/featured.html" target="new">what's this?</a></font><br>
+<iframe width=120 height="800" src="/web/20050416063837if_/http://jobs.nytimes.com/jsfeatured.php?lookid=nytfj&amp;pp=7&amp;qRand=y" scrolling="no" frameborder=0> 
+<img src="/web/20050416063837im_/http://jobs.nytimes.com/jsfeatured.php?lookid=nytfj&amp;pp=7&amp;qRand=y"> 
+</iframe>
+<br>
+<!--Career Services Ads -->
+
+
+
+
+
+
+
+
+<!--c column end -->
+</td>
+</tr>
+</table>
+<!--bottom section end -->
+</td></tr>
+</table>
+<!--Body end -->
+</td></tr>
+<tr><td width="768">
+<!--Footer start -->
+<table border="0" cellspacing="0" cellpadding="0" width="768" align="left" valign="top">
+<tr><td bgcolor="#FFFFFF"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="768" height="20" alt="" border="0" hspace="0" vspace="0"/></td></tr>
+<tr><td bgcolor="#F0F0F0"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="768" height="5" alt="" border="0" hspace="0" vspace="0"/></td></tr>
+<tr>
+<td bgcolor="#F0F0F0" width="768" valign="middle">
+&nbsp;&nbsp;<a href="/web/20050416063837/http://www.nytimes.com/ref/membercenter/help/copyright.html"><font class="date" color="#000066" face="arial, helvetica, sans-serif">Copyright 2005 The New York Times Company</font></a>&nbsp;&nbsp;|&nbsp;&nbsp<a href="/web/20050416063837/http://www.nytimes.com/ref/membercenter/help/privacy.html"><font class="date" color="#000066" face="arial, helvetica, sans-serif">Privacy Policy</font></a>&nbsp;&nbsp;|&nbsp;&nbsp<a href="mailto:jobmarket@nytimes.com"><font class="date" color="#000066" face="arial, helvetica, sans-serif">Contact Us</font></a>
+</td>
+</tr>
+<tr><td bgcolor="#F0F0F0"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="768" height="7" alt="" border="0" hspace="0" vspace="0"/></td></tr>
+<tr><td bgcolor="#FFFFFF"><IMG src="/web/20050416063837im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="768" height="20" alt="" border="0" hspace="0" vspace="0"/></td></tr>
+</table>
+
+<!--Footer end -->
+</td></tr>
+</table>	
+<script language="JavaScript">
+if(Math.random()<0.9 && document.cookie.indexOf('dl_dn_seen')==-1) {document.cookie='dl_dn_seen=1'; document.write('<scr'+'ipt src="/web/20050416063837/http://amch.questionmarket.com/adsc/d0/485/0/decide.php?randnum='+Math.random()+'"></scr'+'ipt>');}
+</script>
+
+
+		<!-- SiteCatalyst code version: G.6.
+		Copyright 1997-2004 Omniture, Inc. More info available at
+		/web/20050416063837/http://www.omniture.com --><script language="JavaScript"><!--
+		var s_account="nytjobmarket"
+		var s_pageName=document.title.replace(/^the new york times/i, "NYT")
+		var s_server=""
+		var s_channel="job market"
+		var s_formOnPage=""
+		var s_pageType=""
+		var s_prop1="section front"
+		var s_prop2=""
+		var s_prop3=""
+		var s_prop4=""
+		var s_prop5=""
+		var s_prop6=""
+		var s_prop7=""
+		var s_prop8=""
+		var s_prop9=""
+		var s_prop10=""
+		var s_campaign=""
+		var s_state=""
+		var s_zip=""
+		var s_events=""
+		var s_products=""
+		var s_purchaseID=""
+		var s_eVar1=""
+		var s_eVar2=""
+		var s_eVar3=""
+		var s_eVar4=""
+		var s_eVar5=""
+		var s_eVar6=""
+		var s_eVar7=""
+		var s_eVar8=""
+		var s_eVar9=""
+		var s_eVar10=""
+		var s_code=' '//--></script>
+		<script language="JavaScript" src="/web/20050416063837js_/http://graphics8.nytimes.com/js/s_code_1to1.js"></script>
+		<script language="JavaScript"><!-- 
+		var s_wd=window,s_tm=new Date;if(s_code!=' '){s_code=s_dc(
+		s_account);if(s_code)document.write(s_code)}else
+		document.write('<im'+
+		'g src="http://'+s_account+'.112.2O7.net/b/ss/'+s_account+'/1/G.6--FB/s'+s_tm.getTime()+'?[AQB]'
+		+'&j=1.0&[AQE]" height="1" width="1" border="0" alt="" />')
+		//--></script><script language="JavaScript"><!-- 
+		if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+		//--></script><noscript><img 
+		src="/web/20050416063837im_/http://nytjobmarket.112.2o7.net/b/ss/nytjobmarket/1/G.6--NS/0" 
+		height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+		<!-- End SiteCatalyst code version: G.6. -->
+		
+
+		<!-- SiteCatalyst code version: G.5.
+		Copyright 1997-2003 Omniture, Inc. More info available at
+		/web/20050416063837/http://www.omniture.com --><script language="JavaScript"><!--
+		var s_account="nytimesglobal"
+		var s_pageName=document.title.replace(/^the new york times/i, "NYT")
+		var s_server=""
+		var s_channel="job market"
+		var s_pageType=""
+		var s_prop1="section front"
+		var s_prop2=""
+		var s_prop3=""
+		var s_prop4=""
+		var s_prop5=""
+		var s_prop6=""
+		var s_prop7=""
+		var s_prop8=""
+		var s_prop9=""
+		var s_prop10=""
+		var s_campaign=""
+		var s_state=""
+		var s_zip=""
+		var s_events=""
+		var s_products=""
+		var s_purchaseID=""
+		var s_eVar1=""
+		var s_eVar2=""
+		var s_eVar3=""
+		var s_eVar4=""
+		var s_eVar5=""
+		var s_eVar6=""
+		var s_eVar7=""
+		var s_eVar8=""
+		var s_eVar9=""
+		var s_eVar10=""
+		//--></script><script language="JavaScript" src="/web/20050416063837js_/http://graphics8.nytimes.com/js/s_code_sampling.js"></script>
+		<!-- End SiteCatalyst code version: G.5. -->
+
+		
+		
+</body>
+
+</html>
+
+
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 6:38:37 Apr 16, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 4:08:08 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

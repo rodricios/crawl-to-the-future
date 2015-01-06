@@ -1,0 +1,1217 @@
+<HTML>
+<HEAD>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app2.us.archive.org";archive_analytics.values.server_ms=1561;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<TITLE>CNN.com - World News</TITLE>
+
+	<!--CSSDATA:977235113-->
+	<SCRIPT src="/web/20001219144500js_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/virtual/2000/code/main.js" language="javascript"></SCRIPT>
+	<LINK rel="stylesheet" href="/web/20001219144500cs_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/virtual/2000/style/main.css" type="text/css">
+	<SCRIPT language="javascript" type="text/javascript">
+		<!--//
+		if ((navigator.platform=='MacPPC')&&(navigator.appVersion.substr(17,8) != "MSIE 5.0")) {document.write('<LINK rel="stylesheet" href="/virtual/2000/style/mainMac.css" type="text/css">')}
+		if (screen.width > 1200)	{document.write('<LINK rel="stylesheet" href="/virtual/2000/style/mainX.css" type="text/css">')}		
+		//-->
+	</SCRIPT>
+	<LINK rel="stylesheet" href="/web/20001219144500cs_/http://www6.cnn.com/virtual/2000/style/world.css" type="text/css">
+	<!--/CSSDATA-->
+
+<!--below script is for webcam pulldown--> 
+<script language="JavaScript">
+<!--
+
+function getPop(optnum) {
+
+if(optnum == 1) { 
+
+//Option 1 Popup
+openWindow('/interactive/webcam/frameset.london.exclude.html','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=510,height=400');
+
+}
+else if(optnum == 2) {
+
+//Option 2 Popup
+openWindow('/interactive/webcam/frameset.capetown.exclude.html','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=510,height=400');
+
+}
+else if(optnum == 3) {
+
+//Option 3 Popup
+openWindow('/interactive/webcam/frameset.redsq.exclude.html','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=510,height=400');
+
+}
+else if(optnum == 4) {
+
+//Option 4 Popup
+openWindow('/interactive/webcam/frameset.capcity.exclude.html','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=510,height=400');
+
+}
+else if(optnum == 5) {
+
+//Option 5 Popup
+openWindow('/interactive/webcam/frameset.inverness.exclude.html','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=510,height=400');
+
+}
+else if(optnum == 6) {
+
+//Option 6 Popup
+openWindow('/interactive/webcam/frameset.malecon.exclude.html','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=510,height=400');
+
+}
+
+}
+
+-->
+</script>
+
+
+
+
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www6.cnn.com/WORLD/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "19";
+var displayMonth = "Dec";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www6.cnn.com/WORLD/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20001219144500" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20001118072200/http://www6.cnn.com/WORLD" title="18 Nov 2000">NOV</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 14:45:00 Dec 19, 2000">DEC</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20010124165800/http://www.cnn.com/WORLD/" title="24 Jan 2001"><strong>JAN</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20001121125500/http://www5.cnn.com/WORLD" title="12:55:00 Nov 21, 2000"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 14:45:00 Dec 19, 2000">19</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20010124165800/http://www.cnn.com/WORLD/" title="16:58:00 Jan 24, 2001"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/19991018234556/http://www10.cnn.com/WORLD/" title="18 Oct 1999"><strong>1999</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 14:45:00 Dec 19, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20020124051008/http://www.cnn.com/world" title="24 Jan 2002"><strong>2002</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20001219144500*/http://www6.cnn.com/WORLD/" title="See a list of every capture for this URL">9,466 captures</a>
+           <div class="r" title="Timespan for captures of this URL">16 Jan 99 - 5 Jan 15</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:550000000200_2000:11:036664251461_2001:-1:11145421eefa_2002:-1:340101047884_2003:-1:040206130212_2004:-1:2203099a9999_2005:-1:a9aa9aab9898_2006:-1:983866676466_2007:-1:765565568815_2008:-1:353564678757_2009:-1:787666674655_2010:-1:332656898787_2011:-1:888877aaaccc_2012:-1:cbbbbbbddbcc_2013:-1:bdcccdccbacd_2014:-1:dcdccccccccd_2015:-1:800000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<a href="#ContentArea"><img src="/web/20001219144500im_/http://a388.g.akamai.net/7/388/21/fade2068e7503e/www.cnn.com/images/hub2000/1.gif" hspace="0" vspace="0" width="10" height="1" border="0" alt="Skip to main content" align="right"></a>
+
+<A NAME="TOP"></A>
+
+<table width="770" BORDER="0" cellspacing="0" cellpadding="0"><TR><TD COLSPAN="3" VALIGN="top">
+<!-- ================== promo & ad ================== -->
+<table border="0" width="600" cellspacing="0" cellpadding="0"><tr valign="top"><td width="120"><A HREF="/web/20001219144500/http://www6.cnn.com/event.ng/Type=click&amp;RunID=11075&amp;ProfileID=469&amp;AdID=15648&amp;GroupID=335&amp;FamilyID=1217&amp;TagValues=4.8.435.606.644.645.3654&amp;Redirect=http:%2F%2Fwww.cnn.com%2FTECH%2Fspace" target="_top"><img src="/web/20001219144500im_/http://a9.g.akamai.net/f/9/1162/1d/images.cnn.com/ads/advertiser/cnn/9910/space120_cnn.gif" border=0 height=60 width=120 alt=""></a><table width="100%" cellpadding=0 cellspacing=0 border=0><tr><td><font face="verdana,ARIAL,sans-serif" size=1><a href="/web/20001219144500/http://www6.cnn.com/event.ng/Type=click&amp;RunID=11075&amp;ProfileID=469&amp;AdID=15648&amp;GroupID=335&amp;FamilyID=1217&amp;TagValues=4.8.435.606.644.645.3654&amp;Redirect=http:%2F%2Fwww.cnn.com%2FTECH%2Fspace" target="_top">Click Here</a></font></td></tr></table></td><td width="12" align=right><a href="/web/20001219144500/http://www6.cnn.com/ads/e.market/"><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/ad.info.gif" width=7 height=60 border=0 alt="ad info"></a></td><td width="468"><A HREF="/web/20001219144500/http://www6.cnn.com/event.ng/Type=click&amp;RunID=12502&amp;ProfileID=37&amp;AdID=7098&amp;GroupID=18&amp;FamilyID=1178&amp;TagValues=4.8.312.435.594.606.3654&amp;Redirect=http:%2F%2Fcnnfn.cnn.com%2Fquickenonfn%2F" target="_top"><img src="/web/20001219144500im_/http://a95.g.akamai.net/f/95/1162/1d/images.cnn.com/ads/advertiser/cnnfn/9807/fn_quicken_5a_fs.gif" border=0 height=60 width=468 alt=""></a><table width="100%" cellpadding=0 cellspacing=0 border=0><tr><td align="right"><font face="verdana,ARIAL,sans-serif" size=1><a href="/web/20001219144500/http://www6.cnn.com/event.ng/Type=click&amp;RunID=12502&amp;ProfileID=37&amp;AdID=7098&amp;GroupID=18&amp;FamilyID=1178&amp;TagValues=4.8.312.435.594.606.3654&amp;Redirect=http:%2F%2Fcnnfn.cnn.com%2Fquickenonfn%2F" target="_top">Click Here</a></font></td></tr></table></td></tr></table>
+<!-- ================== /promo & ad ================== -->
+<HR NOSHADE WIDTH="600" SIZE="1" ALIGN="LEFT"></TD>
+<!-- ================== organizer ================== -->
+<td width="4" rowspan="2">&nbsp;</td>
+<td width="165" colspan=4 rowspan="2" valign="top" bgcolor="#dddddd">
+<!--include virtual="/virtual/2000/org/org.txt"-->
+<!-- BEGIN CNN SHOP INCLUDE -->
+
+
+<table width="165" border="0" cellpadding="0" cellspacing="0">
+<tr><td align="center">
+<a href="/web/20001219144500/http://www.cnn.com/event.ng/Type=click&amp;RunID=35886&amp;ProfileID=4195&amp;AdID=28548&amp;GroupID=1024&amp;FamilyID=7268&amp;TagValues=4.8.435.3654.4700.4701&amp;Redirect=http:%2F%2Fwww.cnnestore.com%2Fflowers.htm" onClick=window.open('/web/20001219144500/http://www.cnnestore.com/sweepstakes.htm','sweeps','scrollbars=yes,resizable=yes,width=500,height=450')><Img Src="/web/20001219144500im_/http://a24.g.akamai.net/f/24/1162/1h/images.cnn.com/ads/advertiser/cnn.store/0012/cnnholidcenter.gif" width="165" height="135" border="0"></a>
+</td>
+</tr>
+</table>
+
+
+<!-- END CNN SHOP INCLUDE  -->
+
+</td>
+<!-- ================== /organizer ================== -->
+</TR><TR><TD COLSPAN="3" VALIGN="bottom">
+<!-- ================== logo ================== -->
+<map name="clickregion">
+     <AREA SHAPE="POLY" HREF="/web/20001219144500/http://www6.cnn.com/WORLD/meast/" ALT="Middle East" COORDS="80,12, 82,15, 87,19, 90,17, 85,11, 81,12, 80,12">
+     <AREA SHAPE="POLY" HREF="/web/20001219144500/http://www6.cnn.com/ASIANOW/" ALT="Asia-pacific" COORDS="85,4, 91,2, 111,4, 107,22, 120,29, 119,39, 103,36, 89,15, 85,10, 85,4, 85,4">
+     <AREA SHAPE="POLY" HREF="/web/20001219144500/http://www6.cnn.com/WORLD/africa/" ALT="Africa" COORDS="80,37, 87,30, 87,20, 79,14, 72,14, 67,19, 71,24, 79,37, 80,37">
+     <AREA SHAPE="POLY" HREF="/web/20001219144500/http://www6.cnn.com/WORLD/europe/" ALT="Europe" COORDS="87,8, 83,1, 68,5, 72,14, 82,12, 87,9, 87,8">
+     <AREA SHAPE="POLY" HREF="/web/20001219144500/http://www6.cnn.com/WORLD/americas/" ALT="Americas" COORDS="72,1, 43,3, 37,7, 45,7, 42,13, 57,40, 64,26, 53,15, 73,1, 72,1">
+</map>
+
+<TABLE BORDER="0" WIDTH="600" CELLSPACING="0" CELLPADDING="0"><TR VALIGN="BOTTOM">
+
+<td width="167" align="left" valign="bottom"><A HREF="/web/20001219144500/http://www.cnn.com/"><img src="/web/20001219144500im_/http://a388.g.akamai.net/7/388/21/866499aaf3f4c0/www.cnn.com/images/hub2000/main/cnn.com.logo.gif" border=0 alt="CNN.com" WIDTH=167 HEIGHT=40 HSPACE=0 VSPACE=0 ALIGN="LEFT"></A></td><td>&nbsp;</td>
+
+<td width="311" align="left"><A HREF="/web/20001219144500/http://www6.cnn.com/WORLD/"><img src="/web/20001219144500im_/http://www6.cnn.com/images/2000/01/world.banner.gif" border=0 alt="World" WIDTH=310 HEIGHT=40 HSPACE=0 VSPACE=0 ALIGN="LEFT"></A></td>
+
+<TD width="122" ALIGN="RIGHT" VALIGN="BOTTOM"><A HREF="/web/20001219144500/http://www6.cnn.com/WORLD/"><IMG SRC="/web/20001219144500im_/http://www6.cnn.com/images/2000/01/smallmap.gif" ALT="world map" WIDTH="122" HEIGHT="41" BORDER="0" HSPACE="0" VSPACE="0" usemap="#clickregion"></A></TD>
+
+</TR></TABLE>
+<!-- ================== /logo ================== -->
+</td></tr>
+<!-- ================== blue bar ================== -->
+<TR><FORM><TD WIDTH=125 ALIGN=LEFT VALIGN=TOP BGCOLOR="#CCCCFF">
+<!-- ||||| CNN Sites ||||| -->
+<FONT face="verdana" size="1">
+<SELECT class="FormLt1" valign="middle" onChange="location=this.options[this.selectedIndex].value;">
+<OPTION>CNN Sites</OPTION>
+<OPTION value="http://cnn.com">CNN</OPTION>
+<OPTION value="http://europe.cnn.com">CNN Europe</OPTION>
+<OPTION value="http://cnnfn.com">CNNfn</OPTION>
+<OPTION value="http://cnnsi.com">CNNSI</OPTION>
+<OPTION value="http://mycnn.com">myCNN</OPTION>
+<OPTION value="http://cnnfyi.com">Education</OPTION>
+<OPTION value="http://cnn.com/allpolitics">AllPolitics</OPTION>
+<OPTION value="http://cnn.com/INDEX/languages/">Languages</OPTION>
+</SELECT>
+</FONT>
+<!-- ||||| CNN Sites ||||| -->
+</TD></FORM>
+
+<TD WIDTH="15" VALIGN="TOP" BGCOLOR="#666699">&nbsp;</TD>
+
+<TD WIDTH="460" ALIGN="LEFT" VALIGN="BOTTOM" BGCOLOR="#666699">
+<span class="RfStory"><a href="javascript:launchEditionPopup()" class="RfMain">Editions</a></span><span class="RfStory">&nbsp;|&nbsp;</span><SPAN class="RfStory"><A HREF="/web/20001219144500/http://my.cnn.com/" CLASS="RfStory">myCNN</A>&nbsp;|&nbsp;<A HREF="/web/20001219144500/http://www6.cnn.com/videoselect/" CLASS="RfStory">Video</A>&nbsp;|&nbsp;<A href="/web/20001219144500/http://www6.cnn.com/audioselect/" class="RfStory">Audio</A>&nbsp;|&nbsp;<A href="/web/20001219144500/http://headlinenews.cnn.com/" class="RfStory">Headline News Brief</A>&nbsp;|&nbsp;<A href="/web/20001219144500/http://email.cnn.com/member/login.page" CLASS="RfStory">Free E-mail</A>&nbsp;|&nbsp;<A href="/web/20001219144500/http://www6.cnn.com/feedback/" class="RfStory">Feedback</A></SPAN>
+</TD>
+<!-- ================== /blue bar ================== -->
+
+<!-- ================== newsnet ================== -->
+<td width="4" rowspan="3">&nbsp;</td><td width=1 bgcolor="#666666"
+rowspan=2><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 height=1 width=1></td>
+<td width="163" rowspan="2" valign="top" bgcolor="#FFFFFF">
+<table border=0 cellspacing=0 cellpadding=0 width=163>
+<tr><TD width=163 bgcolor="#FFFFFF"><table width=163 bgcolor="#FFFFFF" align="top" cellspacing=0 cellpadding=0 border=0>
+<tr><form><td bgcolor="#666666">
+<img src="/web/20001219144500im_/http://www6.cnn.com/images/hub2000/CNN.com.news.net2.gif" hspace=0 vspace=0 width=159 align="bottom" border=0 height=24 alt=""><br>
+<!-- ||||| CNN Sites ||||| -->
+<!--class="FormLt1"-->
+&nbsp;<SELECT valign="middle" onChange="location=this.options[this.selectedIndex].value;">
+<OPTION>CNN Sites</OPTION>
+<OPTION value="http://cnn.com">CNN</OPTION>
+<OPTION value="http://europe.cnn.com">CNN Europe</OPTION>
+<OPTION value="http://cnnfn.com">CNNfn</OPTION>
+<OPTION value="http://cnnsi.com">CNNSI</OPTION>
+<OPTION value="http://mycnn.com">myCNN</OPTION>
+<OPTION value="http://cnnfyi.com">CNNfyi</OPTION>
+<OPTION value="http://cnn.com/allpolitics">AllPolitics</OPTION>
+<OPTION value="http://cnn.com/INDEX/languages/">Languages</OPTION>
+</SELECT>
+<!-- ||||| CNN Sites ||||| -->
+<!--<span class="NNTxt">
+<br><br>
+</span>-->
+</td></form></tr><tr>
+<FORM action="/web/20001219144500/http://search.cnn.com/query.html" method="get" name="seek_nn" onsubmit="return validate(this);"><td bgcolor="#666666">
+<!-- ||||| CNN Search ||||| -->
+<!-- class="FormLt1" -->
+<SPAN class="FSnBSmLt"><br>&nbsp;&nbsp;Search<br></SPAN>
+&nbsp;<SELECT align="middle" name=sites>
+<OPTION value="CNN">CNN.com</OPTION>
+<OPTION value="CNNSI">CNNSI.com</OPTION>
+<OPTION value="CNNfn">CNNfn.com</OPTION>
+<!-- <OPTION value="TIME">TIME.com</OPTION> -->
+<OPTION value="Internet">The Web</OPTION>
+</SELECT><BR>
+<!-- class="FormLt1" -->
+&nbsp;<INPUT type="text" size="8" name=qt><SPAN class="FSnBSmLt"><BR><br></span>
+<!-- class="FormLt1" -->
+&nbsp;<INPUT type="submit" value="Find"><BR>
+<INPUT name=qc type=hidden  value="">
+<INPUT name=col type=hidden value=cnni>
+<INPUT name=qm type=hidden value=0>
+<INPUT name=st type=hidden value=1>
+<INPUT name=nh type=hidden value=10>
+<INPUT name=lk type=hidden value=1>
+<INPUT name=rf type=hidden value=1>
+<INPUT type=hidden name=look value="">
+<INPUT type=hidden name=key  value="">
+<INPUT type="hidden" name="search" value="0">
+<INPUT TYPE="HIDDEN" NAME="venue" VALUE="all">
+<INPUT TYPE="HIDDEN" NAME="keyword"  value="">
+<input type=hidden name=qp  value="">
+<input type=hidden name=comefrom value="izcb-search"><input type=hidden name=isp value=zcb>
+<!-- ||||| CNN Search ||||| -->
+</td></form>
+</tr>
+<tr>
+<td>
+<a href="/web/20001219144500/http://www6.cnn.com/"><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/cnn.com.logo.w.gray.top.gif" hspace=0 vspace=0 width=163 align="top" border=0 height=23 alt=""><br></a><table border=0 width="155" cellspacing=0 cellpadding=2><TR><TD><table border=0 width="100%" cellspacing=0 cellpadding=0><TR><TD width="2"><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" hspace=0 vspace=0 width="1" height="1" align=top border=0></td><td>
+<span CLASS="NNTxt">
+TOP STORIES<br><br>
+<a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/americas/12/19/mexico.volcano/index.html">Mexican volcano shows signs of another eruption</a><BR><BR>
+<a href="/web/20001219144500/http://www6.cnn.com/2000/WEATHER/12/19/weird.weather/index.html">Old Man Winter drops by -- two days early</a><BR><BR>
+<a href="/web/20001219144500/http://www6.cnn.com/cnnfn/2000/12/19/economy/fed_walkup/">Speculation abounds on Fed's next move</a><BR><BR>
+<a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/meast/12/19/mideast.02/index.html">Netanyahu rejects bid to challenge Barak in Israeli election</a><BR><BR>
+<span class="NNMore">(<a href="/web/20001219144500/http://www6.cnn.com/">MORE</A>)</span>
+</span>
+</td></tr></table>
+</td></tr></table>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#FFFFFF"><a href="/web/20001219144500/http://www6.cnn.com/cnnfn/"><img src="/web/20001219144500im_/http://www6.cnn.com/images/hub2000/fn.logo.gif" hspace=0 border=0 vspace=0 align="top" width=163 height=23 alt=""></a> 	
+<table border=0 width="155" cellspacing=0 cellpadding=3><TR><TD>
+<div class="NNTxt" style="">
+<a href="/web/20001219144500/http://www6.cnn.com/cnnfn/" style="color:#000000">BUSINESS</a><BR>
+<BR>
+<div style="width:155" CLASS="NNTxt">
+<a href="/web/20001219144500/http://www6.cnn.com/cnnfn/2000/12/18/economy/fed_walkup/">Will the Fed cut rates?</a><br><br><a href="/web/20001219144500/http://www6.cnn.com/cnnfn/2000/12/18/markets/markets_newyork/">Dow up, Nasdaq bleeds</a><br><br><a href="/web/20001219144500/http://www6.cnn.com/cnnfn/2000/12/18/markets/techwrap/">eToys shares hammered</a><br><br>
+</div>
+<span class="NNMore"><a href="/web/20001219144500/http://www6.cnn.com/cnnfn/">(MORE)</a>
+<BR><BR></span>
+</div>
+<table border=0 cellpadding=0 cellspacing=0 bgcolor=#EEEEEE width=155 align=center><tr><TD colspan=2><div class="FSnPSmDk">MARKETS</div></td><td colspan=2 align="right"><div class="FSnPSmDk">
+10:48am ET, 12/18</div></td></tr><tr><TD width=15><div class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/cnnfn/markets/dow.html">DJIA</a></div></td><td width=10><img src="/web/20001219144500im_/http://www6.cnn.com/images/1999/09/up.gif" width="7" height="7" vspace=0 hspace=0 align=middle></td><td align=left width=20><div class="FSnPSmDk">175.60</div></td><td align="right" width="110"><div class="FSnPSmDk">10610.50</div></td></tr>
+<tr><TD width=15><div class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/cnnfn/markets/nasdaq.html">NAS</a></div></td><td width=10><img src="/web/20001219144500im_/http://www6.cnn.com/images/1999/09/up.gif" width="7" height="7" vspace=0 hspace=0 align=middle></td><td align=left width=20><div class="FSnPSmDk">22.41</div></td><td align="right" width="110"><div class="FSnPSmDk">2675.68</div></td></tr>
+<tr><TD width=15><div class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/cnnfn/markets/sandp.html">S&P</a></div></td><td width=10><img src="/web/20001219144500im_/http://www6.cnn.com/images/1999/09/up.gif" width="7" height="7" vspace=0 hspace=0 align=middle></td><td align=left width=20><div class="FSnPSmDk">14.76</div></td><td align="right" width="110"><div class="FSnPSmDk">1326.91</div></td></tr>
+</table>
+
+
+
+<form action="/web/20001219144500/http://gw.cnnfn.com/search/GW" method="post"><input type="text" name="symbol" maxlength=38 size=5>&nbsp;<input type="hidden" name="search_button" value="quote"><input type="image" name="submit" src="/web/20001219144500im_/http://www6.cnn.com/images/hub2000/get.quote.gif" align="top" alt="get quote" width="35" height="21" hspace="0" vspace="0" border="0" border="0"></form>
+
+</td>
+</tr>
+</table>
+<a href="/web/20001219144500/http://www6.cnn.com/cnnsi"><img src="/web/20001219144500im_/http://www6.cnn.com/images/hub2000/si.logo.gif" border=0 vspace=0 hspace=0 align=top width=163 height=23 alt=""></a>
+<table border=0 width="100%" cellspacing=0 cellpadding=2><TR><TD>
+<span class="NNTxt">
+<a href="/web/20001219144500/http://www6.cnn.com/cnnsi" style="color:#000000">SPORTS</a><BR><br>
+<div style="width:155" CLASS="NNTxt">
+<a href="/web/20001219144500/http://www6.cnn.com/cnnsi/football/nfl/monday_qtrback">SI&#039;s Peter King: Monday Morning Quarterback</a><BR><BR>
+<a href="/web/20001219144500/http://www6.cnn.com/cnnsi/baseball/mlb/news/2000/12/18/marlins_johnson_ap">Marlins sign Charles Johnson to five-year deal</a><BR><BR>
+<a href="/web/20001219144500/http://www6.cnn.com/cnnsi/baseball/mlb/news/2000/12/18/whitesox_alomar_ap">White Sox fill Johnson&#039;s void by inking Alomar</a><BR><BR>
+
+</div>
+<span class="NNMore"><a href="/web/20001219144500/http://www6.cnn.com/cnnsi/">(MORE)</a><BR><BR></span>
+			<img src="/web/20001219144500im_/http://www6.cnn.com/images/icons/arrow.gif">&nbsp;<a href="/web/20001219144500/http://www6.cnn.com/cnnsi/scoreboards/">All Scoreboards</a></span>
+			</td>
+</tr>
+</table><FORM METHOD=GET ACTION="/web/20001219144500/http://weather.cnnaudience.com/cgi-bin/weather/redirect">
+<table width="163" border="0" cellspacing="0" cellpadding="0" align="top"><tr><td colspan=3><img src="/web/20001219144500im_/http://www6.cnn.com/images/hub2000/divider1.gif" hspace="0" width="163" vspace="0" border="0" height="11"></td></tr><tr><td width="1"><img src="/web/20001219144500im_/http://www6.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td><td><table cellspacing=0 cellpadding=2 border=0 width="100%"><TR><TD>
+<span class="NNTxt"><a href="/web/20001219144500/http://www6.cnn.com/WEATHER" style="color:#000000">WEATHER</a><br><br></span>
+<span CLASS="NNTxt">Enter your U.S. Zip:<BR></span><input type="text" size=5 name="zip"><input type="submit" value="go"><span CLASS="NNTxt"><br><a href="/web/20001219144500/http://www6.cnn.com/WEATHER/browse.html">Click here for U.S. States or world cities</a></span></td></tr></table></td><td width="1"><img src="/web/20001219144500im_/http://www6.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td></tr>
+</form></TABLE>
+</td></tr>
+<tr><td bgcolor="#FFFFFF">
+
+<table border=0 width="100%" cellspacing=0 cellpadding=0>
+<TR><TD colspan=3><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=1 hspace=1 border=0 width=1 height=1></td></tr><TR><TD colspan=3>
+<img src="/web/20001219144500im_/http://www6.cnn.com/images/hub2000/divider1.gif" hspace=0 vspace=0 width="163" height="11" align=top border=0>
+</td></tr>
+
+
+
+
+
+
+<tr><td width="1"><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td><td><table border=0 cellspacing=0 width="100%" cellpadding=2><TR><TD><a href="/web/20001219144500/http://www6.cnn.com/US/" class="NNTxt" style="color:#000000">U.S.</a><BR><br><div style="width:155" class="NNTxt"><a href="/web/20001219144500/http://www6.cnn.com/2000/WEATHER/12/19/weird.weather/index.html">Winter marches across U.S. two days ahead of schedule</a></div></td></tr></table></td><td width="1"><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td></tr>
+</table>
+
+
+
+
+<table border=0 width="100%" cellspacing=0 cellpadding=0>
+<TR><TD colspan=3><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=1 hspace=1 border=0 width=1 height=1></td></tr><TR><TD colspan=3>
+<img src="/web/20001219144500im_/http://www6.cnn.com/images/hub2000/divider1.gif" hspace=0 vspace=0 width="163" height="11" align=top border=0>
+</td></tr>
+
+
+
+
+
+
+<tr><td width="1"><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td><td><table border=0 cellspacing=0 width="100%" cellpadding=2><TR><TD><a href="/web/20001219144500/http://www6.cnn.com/ALLPOLITICS/" class="NNTxt" style="color:#000000">POLITICS</a><BR><br><div style="width:155" class="NNTxt"><a href="/web/20001219144500/http://www6.cnn.com/2000/ALLPOLITICS/stories/12/18/bush.wrap/index.html">Bush to meet with Clinton as Cabinet building continues</a></div></td></tr></table></td><td width="1"><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td></tr>
+</table>
+
+
+<table border=0 width="100%" cellspacing=0 cellpadding=0>
+<TR><TD colspan=3><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=1 hspace=1 border=0 width=1 height=1></td></tr><TR><TD colspan=3>
+<img src="/web/20001219144500im_/http://www6.cnn.com/images/hub2000/divider1.gif" hspace=0 vspace=0 width="163" height="11" align=top border=0>
+</td></tr>
+
+
+
+
+
+
+<tr><td width="1"><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td><td><table border=0 cellspacing=0 width="100%" cellpadding=2><TR><TD><a href="/web/20001219144500/http://www6.cnn.com/LAW/" class="NNTxt" style="color:#000000">LAW</a><BR><br><div style="width:155" class="NNTxt"><a href="/web/20001219144500/http://www6.cnn.com/2000/LAW/12/18/pinochet.intl/index.html">Chilean Supreme Court hears appeal in Pinochet case</a></div></td></tr></table></td><td width="1"><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td></tr>
+</table>
+
+
+<table border=0 width="100%" cellspacing=0 cellpadding=0>
+<TR><TD colspan=3><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=1 hspace=1 border=0 width=1 height=1></td></tr><TR><TD colspan=3>
+<img src="/web/20001219144500im_/http://www6.cnn.com/images/hub2000/divider1.gif" hspace=0 vspace=0 width="163" height="11" align=top border=0>
+</td></tr>
+
+
+
+
+
+
+<tr><td width="1"><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td><td><table border=0 cellspacing=0 width="100%" cellpadding=2><TR><TD><a href="/web/20001219144500/http://www6.cnn.com/TECH/" class="NNTxt" style="color:#000000">TECHNOLOGY</a><BR><br><div style="width:155" class="NNTxt"><a href="/web/20001219144500/http://www6.cnn.com/2000/TECH/computing/12/18/pentagon.cyberattacks.idg/index.html">Digital assault against Pentagon rises</a></div></td></tr></table></td><td width="1"><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td></tr>
+</table>
+
+
+<table border=0 width="100%" cellspacing=0 cellpadding=0>
+<TR><TD colspan=3><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=1 hspace=1 border=0 width=1 height=1></td></tr><TR><TD colspan=3>
+<img src="/web/20001219144500im_/http://www6.cnn.com/images/hub2000/divider1.gif" hspace=0 vspace=0 width="163" height="11" align=top border=0>
+</td></tr>
+
+
+
+
+
+
+<tr><td width="1"><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td><td><table border=0 cellspacing=0 width="100%" cellpadding=2><TR><TD><a href="/web/20001219144500/http://www6.cnn.com/SHOWBIZ/" class="NNTxt" style="color:#000000">ENTERTAINMENT</a><BR><br><div style="width:155" class="NNTxt"><a href="/web/20001219144500/http://www6.cnn.com/2000/SHOWBIZ/Movies/12/18/finding.forrester/index.html">Four veterans and a newcomer in 'Finding Forrester'</a></div></td></tr></table></td><td width="1"><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td></tr>
+</table>
+
+
+<table border=0 width="100%" cellspacing=0 cellpadding=0>
+<TR><TD colspan=3><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=1 hspace=1 border=0 width=1 height=1></td></tr><TR><TD colspan=3>
+<img src="/web/20001219144500im_/http://www6.cnn.com/images/hub2000/divider1.gif" hspace=0 vspace=0 width="163" height="11" align=top border=0>
+</td></tr>
+
+
+
+
+
+
+<tr><td width="1"><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td><td><table border=0 cellspacing=0 width="100%" cellpadding=2><TR><TD><a href="/web/20001219144500/http://www6.cnn.com/HEALTH/" class="NNTxt" style="color:#000000">HEALTH</a><BR><br><div style="width:155" class="NNTxt"><a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/africa/12/19/uganda.ebola.reut/index.html">Uganda Ebola cases fall steadily, death toll at 162</a></div></td></tr></table></td><td width="1"><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td></tr>
+</table>
+
+
+<table border=0 width="100%" cellspacing=0 cellpadding=0>
+<TR><TD colspan=3><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=1 hspace=1 border=0 width=1 height=1></td></tr><TR><TD colspan=3>
+<img src="/web/20001219144500im_/http://www6.cnn.com/images/hub2000/divider1.gif" hspace=0 vspace=0 width="163" height="11" align=top border=0>
+</td></tr>
+
+
+
+
+
+
+<tr><td width="1"><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td><td><table border=0 cellspacing=0 width="100%" cellpadding=2><TR><TD><a href="/web/20001219144500/http://www6.cnn.com/TRAVEL/" class="NNTxt" style="color:#000000">TRAVEL</a><BR><br><div style="width:155" class="NNTxt"><a href="/web/20001219144500/http://www6.cnn.com/2000/TRAVEL/NEWS/12/18/youngfliers.ap/index.html">22-year-old aviators circle Earth in Eisenhower-era plane</a></div></td></tr></table></td><td width="1"><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td></tr>
+</table>
+
+
+<table border=0 width="100%" cellspacing=0 cellpadding=0>
+<TR><TD colspan=3><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=1 hspace=1 border=0 width=1 height=1></td></tr><TR><TD colspan=3>
+<img src="/web/20001219144500im_/http://www6.cnn.com/images/hub2000/divider1.gif" hspace=0 vspace=0 width="163" height="11" align=top border=0>
+</td></tr>
+
+
+
+
+
+
+<tr><td width="1"><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td><td><table border=0 cellspacing=0 width="100%" cellpadding=2><TR><TD><a href="/web/20001219144500/http://www6.cnn.com/FOOD/" style="color:#000000" class="NNTxt">FOOD</a><BR><br><div style="width:155" class="NNTxt"><a href="/web/20001219144500/http://www6.cnn.com/2000/FOOD/news/12/19/biotech.food.ap/index.html">US-EU panel recommends labeling, tighter controls on biotech food</a></div></td></tr></table></td><td width="1"><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td></tr>
+</table>
+
+
+<table border=0 width="100%" cellspacing=0 cellpadding=0>
+<TR><TD colspan=3><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=1 hspace=1 border=0 width=1 height=1></td></tr><TR><TD colspan=3>
+<img src="/web/20001219144500im_/http://www6.cnn.com/images/hub2000/divider1.gif" hspace=0 vspace=0 width="163" height="11" align=top border=0>
+</td></tr>
+
+
+
+
+
+
+<tr><td width="1"><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td><td><table border=0 cellspacing=0 width="100%" cellpadding=2><TR><TD><a href="/web/20001219144500/http://www6.cnn.com/STYLE/" class="NNTxt" style="color:#000000">ARTS & STYLE</a><BR><br><div style="width:155" class="NNTxt"><a href="/web/20001219144500/http://www6.cnn.com/2000/STYLE/arts/12/18/taoist.art.ap/index.html">Chicago exhibit mirrors Taoist beliefs</a></div></td></tr></table></td><td width="1"><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 border=0 width=1 height=1></td></tr>
+</table>
+<br><hr noshade size=1 width="163"><span class="NNMore"><img src="/web/20001219144500im_/http://www6.cnn.com/images/icons/popup.gif" width="10" height="10" hspace=5 vspace=0> (<a href="javascript:openWindow('/desktop/frameset.exclude.html','desktopnews','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=260,height=380')">MORE HEADLINES</a>)</span>
+</td></tr></table>
+</td><td width=1 bgcolor="#666666" rowspan=2><img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/hub2000/1.gif" vspace=0 hspace=0 height=1 width=1></td>
+<!-- ================== /newsnet ================== -->
+</TR><TR VALIGN=TOP><TD WIDTH="125">
+<!-- ================== nav ================== -->
+
+<table width="125" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td colspan="2" width="125" valign="top" bgcolor="#CCCCFF"><div class="Navthreespaceindent">
+<a href="/web/20001219144500/http://www6.cnn.com/" class="NvSmBDk">MAINPAGE</a><br>
+</div></td></tr>
+<tr bgcolor="#CC0000"><td colspan="2"><img src="/web/20001219144500im_/http://a388.g.akamai.net/7/388/21/fade2068e7503e/www.cnn.com/images/hub2000/1.gif" width="1" height="2" border="0" hspace="0" vspace="0"></td></tr>
+<tr bgcolor="#CC0000"> 
+<td width="115"><div class="Threespaceindent"><a href="/web/20001219144500/http://www6.cnn.com/WORLD/" class="NvSmBLt">WORLD</a></div></td>
+<td width="10"><IMG src="/web/20001219144500im_/http://www6.cnn.com/images/2000/editions/arrow.left.gif" width="9" height="9" alt="*" hspace="0" vspace="0" border="0"></td>
+</tr>
+<tr bgcolor="#CC0000"><td colspan="2"><img src="/web/20001219144500im_/http://a388.g.akamai.net/7/388/21/fade2068e7503e/www.cnn.com/images/hub2000/1.gif" width="1" height="2" border="0" hspace="0" vspace="0"></td></tr>
+<tr><td bgcolor="#FFFFFF"><div class="Threespaceindent">
+<img src="/web/20001219144500im_/http://www6.cnn.com/images/2000/09/africa.gif" width=7 height=7 border=0 alt="">&nbsp;<a href="/web/20001219144500/http://www6.cnn.com/WORLD/africa" class="NvSmBDk">africa</a><br>
+<img src="/web/20001219144500im_/http://www6.cnn.com/images/2000/09/americas.gif" width=7 height=7 border=0 alt="">&nbsp;<a href="/web/20001219144500/http://www6.cnn.com/WORLD/americas" class="NvSmBDk">americas</a><br>
+<img src="/web/20001219144500im_/http://www6.cnn.com/images/2000/09/asia.gif" width=7 height=7 border=0 alt="">&nbsp;<a href="/web/20001219144500/http://www6.cnn.com/ASIANOW/" class="NvSmBDk">asia pacific</a><br>
+<img src="/web/20001219144500im_/http://www6.cnn.com/images/2000/09/europe.gif" width=7 height=7 border=0 alt="">&nbsp;<a href="/web/20001219144500/http://www6.cnn.com/WORLD/europe" class="NvSmBDk">europe</a><br>
+<img src="/web/20001219144500im_/http://www6.cnn.com/images/2000/09/middle.east.gif" width=7 height=7 border=0 alt="">&nbsp;<a href="/web/20001219144500/http://www6.cnn.com/WORLD/meast" class="NvSmBDk">middle east</a><br>
+</div></td></tr>					
+<tr bgcolor="#FFFFFF"><td colspan="2"><img src="/web/20001219144500im_/http://a388.g.akamai.net/7/388/21/fade2068e7503e/www.cnn.com/images/hub2000/1.gif" width="1" height="2" border="0" hspace="0" vspace="0"></td></tr>
+<tr>
+<td colspan="2" bgcolor="#ccccff" valign="top" width="125"><div class="Navthreespaceindent">
+<a href="/web/20001219144500/http://www6.cnn.com/US/" class="NvSmBDk">U.S.</a><br>	
+<a href="/web/20001219144500/http://www6.cnn.com/WEATHER/" class="NvSmBDk">WEATHER</a><br>
+<a href="/web/20001219144500/http://www6.cnn.com/cnnfn/" class="NvSmBDk">BUSINESS</a><br>
+<a href="/web/20001219144500/http://www6.cnn.com/cnnsi/" class="NvSmBDk">SPORTS</a><br>
+<a href="/web/20001219144500/http://www6.cnn.com/TECH/" class="NvSmBDk">TECHNOLOGY</a><br>	
+<a href="/web/20001219144500/http://www6.cnn.com/TECH/space/" class="NvSmBDk">SPACE</a><br>
+<a href="/web/20001219144500/http://www6.cnn.com/HEALTH/" class="NvSmBDk">HEALTH</a><br>
+<a href="/web/20001219144500/http://www6.cnn.com/SHOWBIZ/" class="NvSmBDk">ENTERTAINMENT</a><br>
+<a href="/web/20001219144500/http://www6.cnn.com/ALLPOLITICS/" class="NvSmBDk">POLITICS</a><br>						
+<a href="/web/20001219144500/http://www6.cnn.com/LAW/" class="NvSmBDk">LAW</a><br>
+<a href="/web/20001219144500/http://www6.cnn.com/CAREER/" class="NvSmBDk">CAREER</a><br>
+<a href="/web/20001219144500/http://www6.cnn.com/TRAVEL/" class="NvSmBDk">TRAVEL</a><br>
+<a href="/web/20001219144500/http://www6.cnn.com/FOOD/" class="NvSmBDk">FOOD</a><br>
+<a href="/web/20001219144500/http://www6.cnn.com/STYLE/" class="NvSmBDk">ARTS &amp; STYLE</a><br>
+<a href="/web/20001219144500/http://www6.cnn.com/books/" class="NvSmBDk">BOOKS</a><br>
+<a href="/web/20001219144500/http://www6.cnn.com/NATURE/" class="NvSmBDk">NATURE</a><br>
+<a href="/web/20001219144500/http://www6.cnn.com/SPECIALS/" class="NvSmBDk">IN-DEPTH</a><br>
+<a href="/web/20001219144500/http://www6.cnn.com/SPECIALS/views/" class="NvSmBDk">ANALYSIS</a><br>
+<a href="/web/20001219144500/http://www6.cnn.com/LOCAL/" class="NvSmBDk">LOCAL</a><br>			
+<span class="extraspace"><br></span>
+</div></td></tr>
+<tr bgcolor="#666699"><td colspan="2"><div class="Navthreespaceindent"><span class="NvSmBLt">EDITIONS:</span></div></td></tr>
+<tr> 
+<td colspan="2" bgcolor="#CCCCFF">
+<div class="Navthreespaceindent">
+<a href="/web/20001219144500/http://www.cnn.com/selectedition/europe/" class="NvSmPDk">CNN.com Europe</a><br>
+<span class="extraspace"><br></span>
+<a href="javascript:launchEditionPopup()" class="NvSmPDk">change default edition</a><br><br>
+</div>
+</td>
+</tr>
+<tr bgcolor="#666699"><td colspan="2"><div class="Navthreespaceindent"><span class="NvSmBLt">MULTIMEDIA:</span></div></td></tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCFF">
+<div class="Navthreespaceindent">
+<A HREF="/web/20001219144500/http://www6.cnn.com/videoselect/" class="NvSmPDk">video</A><br>
+<A HREF="/web/20001219144500/http://www6.cnn.com/video_vault/" class="NvSmPDk">video archive</A><br>
+<A HREF="/web/20001219144500/http://www6.cnn.com/audioselect/" class="NvSmPDk">audio</A><br>
+<A HREF="/web/20001219144500/http://www6.cnn.com/interactive/" class="NvSmPDk">multimedia showcase</A><br>
+<A href="/web/20001219144500/http://www6.cnn.com/SEARCH/quiz/quiz.html" class="NvSmPDk">news quiz</A><br>
+<A HREF="/web/20001219144500/http://www6.cnn.com/INDEX/services.html" class="NvSmPDk">more services</A><br><br>
+</div>
+</td>
+</tr>
+</table>
+<table border="0" width="125" cellspacing="0" cellpadding="0" bgcolor="#ccccff">
+<SCRIPT>
+function email()
+{
+address=document.emailform.emailinput.value;
+location='/web/20001219144500/http://www.cnn.com/EMAIL/index.html?'+address;
+}
+</SCRIPT>
+<tr bgcolor="#666699"><td><div class="Navthreespaceindent"><span class="NvSmBLt">E-MAIL:</span></div></td></tr>
+<tr> 
+<td><div class="Navthreespaceindent">
+<span class="NvSmPDk">Subscribe to one of our <a href="/web/20001219144500/http://www6.cnn.com/EMAIL/" class="NvSmPDk">news e-mail lists</a>.<br>Enter your address:</span>
+</div></td>
+</tr>
+<tr>
+<td><FORM name="emailform" onsubmit="email();return false;"><input type="text" name="emailinput" size="10" class="FormLt1">&nbsp;<input type="submit" value="go"></form></td>
+</tr>
+<tr bgcolor="#666699"><td width="125"><div class="Navthreespaceindent"><span class="NvSmBLt">DISCUSSION:</span></div></td></tr>
+<tr> 
+<td><div class="Navthreespaceindent">
+<A href="/web/20001219144500/http://community.cnn.com/" class="NvSmPDk">message boards</A><BR>
+<A href="/web/20001219144500/http://www6.cnn.com/chat/" class="NvSmPDk">chat</A><BR>
+<A href="/web/20001219144500/http://www6.cnn.com/feedback/" class="NvSmPDk">feedback</A><BR><BR>
+</div></td>
+</tr>
+<!--- CNN WEB SITES NAV --->
+<tr bgcolor="#666699"><td width="125"><div class="Navthreespaceindent"><span class="NvSmBLt">CNN WEB SITES:</span></div></td></tr>
+<tr><td bgcolor="#ccccff">
+<MAP name="sites">
+<AREA shape="rect" coords="64, 20, 121, 40" href="/web/20001219144500/http://www6.cnn.com/cnnfn/">
+<AREA shape="rect" coords="0, 20, 64, 40" href="/web/20001219144500/http://www6.cnn.com/ALLPOLITICS/">
+<AREA shape="rect" coords="64, 0, 121, 20" href="/web/20001219144500/http://www6.cnn.com/cnnsi/">
+<AREA shape="rect" coords="0, 0, 64, 20" href="/web/20001219144500/http://my.cnn.com/">
+</MAP>
+<IMG src="/web/20001219144500im_/http://a388.g.akamai.net/7/388/21/7223b3eca936a5/www.cnn.com/images/1999/09/cnn.website.gif" alt="CNN Websites" width=121 height=40 border=0 usemap="#sites"><br>
+</td>
+</tr>
+<tr> 
+<td><div class="Navthreespaceindent">
+<A href="/web/20001219144500/http://fyi.cnn.com/fyi/" class="NvSmPDk">CNNfyi.com</A><BR>
+<A href="/web/20001219144500/http://europe.cnn.com/" class="NvSmPDk">CNN.com Europe</A><BR>
+<A href="/web/20001219144500/http://www6.cnn.com/ASIANOW/" class="NvSmPDk">AsiaNow</A><BR>
+<A href="/web/20001219144500/http://www6.cnn.com/cnnes/" class="NvSmPDk">Spanish</A><BR>
+<A href="/web/20001219144500/http://www6.cnn.com/cnnpt/" class="NvSmPDk">Portuguese</A><BR>
+<A href="/web/20001219144500/http://www.cnn.de/" class="NvSmPDk">German</A><BR>
+<A href="/web/20001219144500/http://www.cnnitalia.it/" class="NvSmPDk">Italian</A><BR>
+<A href="/web/20001219144500/http://cnn.passagen.se/" class="NvSmPDk">Swedish</A><BR>
+<A href="/web/20001219144500/http://cnn.vg.no/" class="NvSmPDk">Norwegian</A><BR>
+<A href="/web/20001219144500/http://www.cnn.dk/" class="NvSmPDk">Danish</A><BR>
+<A href="/web/20001219144500/http://cnn.co.jp/" class="NvSmPDk">Japanese</A><BR>
+<A href="/web/20001219144500/http://www6.cnn.com/QUICKNEWS/chinese.html" class="NvSmPDk">Chinese Headlines</A><BR><BR>
+</div></td>
+</tr>
+<!--- /CNN WEB SITES NAV --->
+<!--TIME NAV -->
+<tr bgcolor="#666699"><td width="125"><div class="Navthreespaceindent"><span class="NvSmBLt">TIME INC. SITES:</span></div></td></tr>
+<tr> 
+<td align=center>
+<FORM name="pathfinder">
+<SELECT name="site" size=1 onchange ="goTW()">
+<OPTION value=""> Go To ... </OPTION>
+<OPTION value="http://www.pathfinder.com/time/">Time.com</OPTION>
+<OPTION value="http://www.pathfinder.com/people/">People</OPTION>
+<OPTION value="http://www.money.com/">Money</OPTION>
+<OPTION value="http://www.pathfinder.com/fortune/">Fortune</OPTION>
+<OPTION value="http://cgi.pathfinder.com/ew/">EW</OPTION>
+</SELECT>
+</td></FORM>
+</tr>
+<!--/TME NAV --> 
+<!--ON TV NAV -->
+<tr bgcolor="#666699"><td width="125"><div class="Navthreespaceindent"><span class="NvSmBLt">CNN NETWORKS:</span></div></td></tr>
+<tr><td>
+<map name="networks.map">
+	<area shape="rect" coords="1, 77, 125, 94" href="/web/20001219144500/http://www6.cnn.com/Airport">
+	<area shape="rect" coords="1, 58, 125, 74" href="/web/20001219144500/http://cnnradio.com/">
+	<area shape="rect" coords="1, 39, 125, 55" href="/web/20001219144500/http://headlinenews.cnn.com/">
+	<area shape="rect" coords="1, 20, 125, 36" href="/web/20001219144500/http://www6.cnn.com/CNNI/">
+	<area shape="rect" coords="1, 1, 125, 17" href="/web/20001219144500/http://www6.cnn.com/CNN/Programs/">
+</map>
+<img src="/web/20001219144500im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/0010/network.airport.gif" width=125 height=95 border=0 alt="Networks image" usemap="#networks.map">
+</td>
+</tr>
+<tr> 
+<td><div class="Navthreespaceindent">
+<A HREF="/web/20001219144500/http://www6.cnn.com/CNN/anchors_reporters/" class="NvSmPDk">CNN anchors</A><BR>
+<A HREF="/web/20001219144500/http://www6.cnn.com/TRANSCRIPTS/" class="NvSmPDk">transcripts</A><BR>
+<A HREF="/web/20001219144500/http://www6.cnn.com/LOCAL/coordinates/" class="NvSmPDk">Turner distribution</A><BR><BR>
+</div></td>
+</tr>
+<!--ON TV NAV -->
+<!-- SITE INFO NAV -->
+<tr bgcolor="#666699"><td width="125"><div class="Navthreespaceindent"><span class="NvSmBLt">SITE INFO:</span></div></td></tr>
+<tr> 
+<td><div class="Navthreespaceindent">
+<A HREF="/web/20001219144500/http://www6.cnn.com/feedback/help/" class="NvSmPDk">help</A><BR>
+<A HREF="/web/20001219144500/http://www6.cnn.com/INDEX/" class="NvSmPDk">contents</A><BR>
+<A HREF="/web/20001219144500/http://www6.cnn.com/SEARCH/" class="NvSmPDk">search</A><BR>
+<A HREF="/web/20001219144500/http://www6.cnn.com/ads/e.market/" class="NvSmPDk">ad info</A><BR>
+<A HREF="/web/20001219144500/http://www6.cnn.com/JOBS/" class="NvSmPDk">jobs</A><BR><BR>
+</div></td>
+</tr>
+<tr bgcolor="#666699"><td width="125"><div class="Navthreespaceindent"><span class="NvSmBLt">WEB SERVICES:</span></div></td></tr>
+</table>
+<BR>
+
+<table width="125" cellspacing="0" cellpadding="5" border="0" bgcolor="#dddddd">
+<tr><td bgcolor="#dddddd" align="center" valign="middle"><A HREF="/web/20001219144500/http://www.cnnestore.com/" class="NvSmBDk" style="color: #000099;">CNN e-store</A></td></tr></table>
+
+
+<center>
+
+<IMG SRC="/web/20001219144500im_/http://service.bfast.com/bfast/serve?bfmid=2181&amp;sourceid=11764categoryid=rn_booksearch3" BORDER="0" WIDTH="1" HEIGHT="1" NOSAVE ><table cellpadding="0" cellspacing="0" width="120" border="0"><tr><FORM ACTION="/web/20001219144500/http://www.cnn.com/event.ng/Type=click&amp;RunID=19077&amp;ProfileID=1040&amp;AdID=13956&amp;GroupID=369&amp;FamilyID=3095&amp;TagValues=4.8.435.1715.2430.3654&amp;Redirect=http:%2F%2Fservice.bfast.com%2Fbfast%2Fclick" ><INPUT TYPE="hidden" NAME="sourceid" VALUE="11764" ><INPUT TYPE="hidden" NAME="categoryid" VALUE="rn_booksearch"><INPUT TYPE="hidden" NAME="bfmid" VALUE="2181" ><td colspan="2" bgcolor="#3366cc" align="right"><a href="/web/20001219144500/http://www.cnn.com/event.ng/Type=click&amp;RunID=19077&amp;ProfileID=1040&amp;AdID=13956&amp;GroupID=369&amp;FamilyID=3095&amp;TagValues=4.8.435.1715.2430.3654&amp;Redirect=http:%2F%2Fservice.bfast.com%2Fbfast%2Fclick%3Fbfmid%3D2181%26sourceid%3D11764%26categoryid%3Dhomepage"><img src="/web/20001219144500im_/http://a1204.g.akamai.net/f/1204/1181/24h/www.affiliate.net/affnet/images/book_topA.gif" width=120 height=30 alt="" border="0"></a></td>
+</tr>
+<tr><font face="ARIAL, HELVETICA" size="-2">
+<td align="center" colspan="2"  valign="middle" bgcolor="#3366cc"><input type="text" name="userInput" size="13"></font></td>
+</tr>
+<tr><td height="30"align="center" valign="middle" bgcolor="#3366cc"><font size=-2 face="helvetica, arial, ms sans serif, sans-serif">
+<select name=choice>
+<option value=keywordsearch>Keyword
+<option value=titlesearch>Title
+<option value=authorsearch>Author
+</select></font></td><td height="30" valign="middle" bgcolor="#3366cc" align="center"><input type=image src="/web/20001219144500im_/http://a1204.g.akamai.net/f/1204/1181/24h/www.affiliate.net/affnet/images/blue_go.gif" border="0" height="24" width="24"></td></form></tr>
+</table>
+
+<BR><BR><a href="/web/20001219144500/http://www.cnn.com/event.ng/Type=click&amp;ProfileID=1040&amp;RunID=19077&amp;AdID=28385&amp;GroupID=369&amp;FamilyID=3095&amp;TagValues=4.8.435.1715.2430.3654&amp;Redirect=http:%2F%2Fportal.brodia.com%2Fchase%2Fservice%2Fapp_PromoSignUp.htm%3FrefID%3DA2f1ec774ebfd63d2339e6baa94a5c70b4ab12b72"><img src="/web/20001219144500im_/http://a46.g.akamai.net/f/46/1162/1d/images.cnn.com/ads/advertiser/chase/0012/FIVEDOLLAR120X90.GIF" WIDTH="120" HEIGHT="90" ALT="" border=0 ></a>
+
+</center>
+<!-- ================== /nav ================== -->
+</TD><TD WIDTH="15"><IMG SRC="/web/20001219144500im_/http://www6.cnn.com/images/1998/05/homepage/white.gif" WIDTH=15 HEIGHT=1 HSPACE=0 VSPACE=0 BORDER=0></TD>
+<TD WIDTH=460 VALIGN=TOP>
+<a name="ContentArea"></a>
+
+<!-- ================== content ================== -->
+<TABLE WIDTH="460" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+<tr valign="TOP" align="RIGHT"><td colspan="3">
+<span class="FSnPSmDk">Updated: <A HREF="/web/20001219144500/http://www6.cnn.com/almanac/daily/">
+09:11 a.m. EST (1411 GMT) -- 19 Dec 2000
+</A></span><br><BR CLEAR=ALL>
+</td></tr><TR VALIGN="TOP"><TD WIDTH=290> 
+
+
+<!--===========IMAGE============-->
+<a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/americas/12/19/mexico.volcano/index.html"><IMG SRC="/web/20001219144500im_/http://www6.cnn.com/2000/WORLD/americas/12/19/mexico.volcano/top.eruption.ap.jpg" ALT="Mexican volcano shows signs of another eruption" BORDER="0" height="170" width="280"></a><br clear=all>
+<!--===========/IMAGE===========-->
+<h3><a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/americas/12/19/mexico.volcano/index.html" class="t1">Mexican volcano shows signs of another eruption</a></h3>
+<P class="VSnP">Hours after it lit the Mexican night sky with a fountain of fire, the mighty Popocatepetl volcano threatened Tuesday to erupt again.<BR><BR>More than 2,400 members of the Mexican Army, assisted by federal police, worked through the night Monday to evacuate about 41,000 residents in 22 neighboring communities some 40 miles (65 kms) southeast of Mexico City.<BR></P>
+<p class="FSnBSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/americas/12/19/mexico.volcano/index.html">FULL STORY</a></p>
+
+
+
+</TD>
+	
+<td width=10>&nbsp;</td>
+	
+<td width=160>
+
+
+<a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/meast/12/19/mideast.02/index.html"><img src="/web/20001219144500im_/http://www6.cnn.com/2000/WORLD/meast/12/19/mideast.02/custom.top.netanyahu.reut.jpg" height="90" width="120" border="0" alt="feature story"></a><br>
+<span class="VSnP"><a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/meast/12/19/mideast.02/index.html">Netanyahu rejects bid to challenge Barak in Israeli election</a></span><HR noshade size=1>
+
+
+
+
+
+
+
+<span class="VSnP"><a href="/web/20001219144500/http://www6.cnn.com/2000/ASIANOW/southeast/12/19/indonesia.aceh.02.ap/index.html">Indonesia's president admits mistakes in Aceh visit</a></span><HR noshade size=1>
+
+
+
+
+
+
+
+<span class="VSnP"><a href="/web/20001219144500/http://www6.cnn.com/2000/ASIANOW/southeast/12/19/philippines.estrada.reut/index.html">Former ally testifies Estrada pocketed state funds</a></span><HR noshade size=1>
+
+
+
+
+
+
+
+<span class="VSnP"><a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/europe/12/19/turkey.prisons/index.html">Turkish police storm jails to break hunger strike</a></span><HR noshade size=1>
+
+
+
+
+
+<span class="VSnP"><a href="/web/20001219144500/http://www6.cnn.com/2000/ASIANOW/east/12/19/macau.anniversary.ap/index.html">Chinese police bar Falun Gong adherents in Macau</a></span>
+
+
+</td></TR></TABLE>
+
+<table width="460" cellpadding="2" cellspacing="0" border="0"><tr valign="TOP">
+<TD COLSPAN="5" WIDTH="460">
+	<HR WIDTH="460" NOSHADE SIZE="1" ALIGN="LEFT">
+
+<span class="BoxTxt">        <span class="FSnBSmDk">Regional news:</span> <A HREF="/web/20001219144500/http://www6.cnn.com/WORLD/africa/">Africa</A>, <A HREF="/web/20001219144500/http://www6.cnn.com/WORLD/americas/">Americas</A>, <A HREF="/web/20001219144500/http://www6.cnn.com/ASIANOW/">Asia Pacific</A>, <A HREF="/web/20001219144500/http://www6.cnn.com/WORLD/europe/">Europe</A>, <A HREF="/web/20001219144500/http://www6.cnn.com/WORLD/meast/">Middle East</A>
+		
+		<br><span class="FSnBSmDk">Non-English sites:</span>  <A HREF="/web/20001219144500/http://cnn.passagen.se/">P&#229; Svenska</A>, <A HREF="/web/20001219144500/http://cnn.vg.no/">P&#229; Norsk</A>, <A HREF="/web/20001219144500/http://www.cnndanmark.dk/">P&#229; Dansk</A>, <A HREF="/web/20001219144500/http://www6.cnn.com/cnnes/">en Espa&#241;ol</A>, <A HREF="/web/20001219144500/http://www6.cnn.com/cnnpt/">em Portugu&#234;s</A>, <A HREF="/web/20001219144500/http://www.cnnitalia.it/">Italiano</A>, <a href="/web/20001219144500/http://cnn.co.jp/">Japanese</a>, <a href="/web/20001219144500/http://www.n-tv.de/">auf Deutsch</a><BR>
+      <span class="FSnBSmDk">ElectionWatch:</span> <A HREF="/web/20001219144500/http://www6.cnn.com/WORLD/election.watch/">Information on the World's Elections from IFES.</A><br>
+       <span class="FSnBSmDk"> World Report:</span> <A HREF="/web/20001219144500/http://www6.cnn.com/WORLD/world.report/">Summary of perspectives from international broadcasters</A>
+</span>
+       <BR><BR>
+</TD></TR>
+<TR><td width="5" bgcolor="#ff6600">&nbsp;</td>
+<td width="220" bgcolor="#666666">&nbsp;<span class="BoxTitle">FASTER ACCESS:</span></td><td width="10">&nbsp;</td>
+<td width="5" bgcolor="#ff6600">&nbsp;</td>
+<td width="220" bgcolor="#666666">&nbsp;<span class="BoxTitle">IN-DEPTH SPECIALS:</span></B>
+	</TD>
+	</TR>
+	<TR VALIGN="TOP">
+<td width="226" colspan="2" BGCOLOR="#DDDDDD">
+<span class="BoxTxt">
+For quicker downloads, try our mirror site: &nbsp; <A HREF="/web/20001219144500/http://europe.cnn.com/">Europe</A>
+</span>
+</td><td width="10">&nbsp;</td>
+<td width="226" colspan="2" BGCOLOR="#DDDDDD">
+<A NAME="quickvote">&nbsp; </a>
+<span class="BoxTxt">
+<a href="/web/20001219144500/http://www6.cnn.com/SPECIALS/2000/israeli.elections/">Israel Election 2001</a>
+</span>
+</td></TR>
+</table>
+
+
+
+
+
+
+
+<br>
+
+<form><TABLE WIDTH="460" CELLPADDING="0" CELLSPACING="0" BORDER="0"><TR VALIGN="TOP"><TD align="center" WIDTH="25" BGCOLOR="#ff6600"><IMG SRC="/web/20001219144500im_/http://www6.cnn.com/images/icons/webcam.gif" align="center" hspace="3" vspace="3" WIDTH=14 HEIGHT=14></TD><td valign="middle" width="265" bgcolor="#DDDDDD">&nbsp; <span class="BoxTxt">Live Webcams: Traverse the world -- virtually</td><td bgcolor="#DDDDDD" valign="middle"><select onchange="getPop(this.options[selectedIndex].value)"><option value="0">Select a city</option><option value="1">London</option><option value="2">Capetown</option><option value="3">Moscow</option><option value="4">Edinburgh</option><option value="5">Inverness</option><option value="6">Puerto Vallarta</option></select></span></td></TR></TABLE></form>
+	
+<a name="fringe"></a>
+<TABLE WIDTH="460" CELLPADDING="0" CELLSPACING="0" BORDER="0"><TR VALIGN="TOP"><TD WIDTH="5" BGCOLOR="#ff6600">&nbsp;</TD><td width="455" bgcolor="#666666">&nbsp; <span class="BoxTitle">FRINGE:</span>
+</td></TR><TR BGCOLOR="#DDDDDD"><TD>&nbsp;</TD><TD WIDTH=420><ul class="BoxTxt">
+  <LI><a href="/web/20001219144500/http://www6.cnn.com/2000/ASIANOW/southeast/12/12/hongkong.india.fingernails.reut/index.html">World's longest fingernails up for bids in China</a></li>
+  <LI><a href="/web/20001219144500/http://www6.cnn.com/2000/STYLE/arts/12/15/terra.cotta.ap/index.html">Terra-cotta warriors create stir in Taiwan</a></li>
+  <LI><a href="/web/20001219144500/http://www6.cnn.com/2000/ASIANOW/south/12/15/life.india.marriages.reut/index.html">Too busy for love, Indians seek arranged marriages</a></li>
+  <LI><a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/europe/12/14/russia.tower/index.html">Plans to return Moscow TV tower to glory</a></li>
+</ul></TD></TR></TABLE>
+
+	
+<br><br>
+
+<!-- WORLD REGIONS -->	
+<table width="460" cellpadding="0" cellspacing="0" border="0"><tr valign="TOP"><td bgcolor="#333399" colspan=3><SPAN class="BoxTitle">&nbsp; MORE NEWS FROM AROUND THE WORLD:</SPAN></td></tr>
+		
+<tr valign="TOP"><td width=223><br>
+<map name="regions">
+     <AREA SHAPE="POLY" HREF="/web/20001219144500/http://www6.cnn.com/WORLD/meast/" ALT="Middele East" COORDS="129,56, 140,46, 131,35, 121,33, 110,39, 115,48, 122,49, 130,55, 129,56">
+     <AREA SHAPE="POLY" HREF="/web/20001219144500/http://www6.cnn.com/WORLD/europe/" ALT="Europe" COORDS="90,36, 113,35, 121,31, 130,35, 124,26, 132,24, 125,8, 103,4, 83,14, 90,38, 90,36">
+     <AREA SHAPE="POLY" HREF="/web/20001219144500/http://www6.cnn.com/ASIANOW/" ALT="Asia-pacific" COORDS="133,25, 127,12, 138,4, 199,12, 186,60, 206,73, 216,99, 201,105, 173,96, 126,26, 133,25, 133,25">
+     <AREA SHAPE="POLY" HREF="/web/20001219144500/http://www6.cnn.com/WORLD/africa/" ALT="Africa" COORDS="113,49, 121,50, 132,59, 129,88, 107,96, 79,52, 91,38, 111,40, 113,49, 113,49">
+     <AREA SHAPE="POLY" HREF="/web/20001219144500/http://www6.cnn.com/WORLD/americas/" ALT="Americas" COORDS="53,112, 0,17, 11,11, 90,1, 47,53, 72,74, 53,112, 53,112">
+</map>
+
+<a href="regions"><img src="/web/20001219144500im_/http://www6.cnn.com/WORLD/images/editions/world.map.gif" alt="World Regions map" align="left" width="223" height="113" border="0" hspace="0" vspace="0" usemap="#regions"></a>
+<br clear=all><br>
+
+<span class="FSnPMdDk">Click on the map for regional news
+</span>
+
+<!-- AFRICA -->
+<table cellpadding=0 cellspacing=0 border=0><tr><td colspan=2>
+<table width=65% cellpadding=0 cellspacing=0 bgcolor="#9c0000" border=0><tr><td>
+&nbsp; <a href="/web/20001219144500/http://www6.cnn.com/WORLD/africa/"><SPAN class="FSnBSmLt">AFRICA</span></a></TD><TD ALIGN="RIGHT"><a href="/web/20001219144500/http://www6.cnn.com/WORLD/africa/"><SPAN class="FSnPSmLt">more -&raquo;</span></a>&nbsp;
+</td></tr></table>  
+<br>
+</td></tr>
+
+<tr><td colspan=2>
+<span class="FSnBSmDk">	KAMPALA</span>
+<br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/africa/12/19/uganda.ebola.reut/index.html">Uganda Ebola cases fall steadily, death toll at 162</a></span></TD></TR>
+
+<tr><td colspan=2>
+<span class="FSnBSmDk">
+	</span><br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/africa/12/19/safrica.army.reut/index.html">S.African defense minister defends Mbeki 'target'</a></span></TD></TR>
+<tr><td colspan=2>
+<span class="FSnBSmDk">
+	GENEVA</span><br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/africa/12/19/guinea.refugees.ap/index.html">UNHCR hails plans to send troops to Guinea borders</a></span></TD></TR>
+<tr><td colspan=2>
+<span class="FSnBSmDk">
+	LAMBWE CHOMBA BORDER POST</span><br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/africa/12/18/congo.democratic.soldiers.reut/index.html">Congo troops say they were ordered to kill wounded comrades</a></span></TD></TR>
+<tr><td colspan=2>
+<span class="FSnBSmDk">
+	ALGIERS</span><br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/africa/12/18/algeria.violence.reut/index.html">Ramadan death toll in Algeria reaches 200</a></span></TD></TR>
+<tr><td colspan=2>
+<span class="FSnBSmDk">
+	KIGALI</span><br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/africa/12/18/rwanda.genocide.ap/index.html">Rwandans sentenced to life on genocide charges</a></span></TD></TR>
+
+</table>
+<!-- /AFRICA -->
+<br>
+<!-- EUROPE -->
+<table cellpadding=0 cellspacing=0 border=0><tr><td colspan=2>
+<table width=65% cellpadding=0 cellspacing=0 bgcolor="#006163" border=0><tr><td>
+&nbsp; <a href="/web/20001219144500/http://www6.cnn.com/WORLD/europe/"><SPAN class="FSnBSmLt">EUROPE</span></a></TD><TD ALIGN="RIGHT"><a href="/web/20001219144500/http://www6.cnn.com/WORLD/europe/"><SPAN class="FSnPSmLt">more -&raquo;</span></a>&nbsp;
+</td></tr></table>  
+<br>
+</td></tr>
+
+<tr><td colspan=2>
+<span class="FSnBSmDk">	Washington</span>
+<br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/europe/12/19/london.america/index.html">Trade war threat over Airbus superjumbo</a></span></TD></TR>
+
+<tr><td colspan=2>
+<span class="FSnBSmDk">	MOSCOW</span><br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/europe/12/19/moscow.berezovsky.ap/index.html">Oligarch 'to found' Russian rights group</a></span></TD></TR>
+<tr><td colspan=2>
+<span class="FSnBSmDk">	ISTANBUL</span><br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/europe/12/19/turkey.prisons/index.html">Turkish police storm jails</a></span></TD></TR>
+<tr><td colspan=2>
+<span class="FSnBSmDk">	MOSCOW</span><br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/europe/12/19/russia.assassination/index.html">Moscow deputy mayor survives shooting</a></span></TD></TR>
+<tr><td colspan=2>
+<span class="FSnBSmDk">	BRUSSELS</span><br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/europe/12/18/brussels.climate.02/index.html">U.S. rejects fresh climate talks</a></span></TD></TR>
+<tr><td colspan=2>
+<span class="FSnBSmDk">	COPENHAGEN</span><br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/SHOWBIZ/Music/12/19/copenhagen.oasis.ap/index.html">UK bands donate fees to stadium safety</a></span></TD></TR>
+
+</table>
+<!-- EUROPE -->
+</td><td width=14>&nbsp;</td><td width=223>
+<!-- ASIA -->
+<table cellpadding=0 cellspacing=0 border=0><tr><td colspan=2><br>
+<table width=65% cellpadding=0 cellspacing=0 bgcolor="#ce6131" border=0><tr><td>
+&nbsp; <a href="/web/20001219144500/http://www6.cnn.com/ASIANOW/"><SPAN class="FSnBSmLt">ASIA PACIFIC</span></a></TD><TD ALIGN="RIGHT"><a href="/web/20001219144500/http://www6.cnn.com/ASIANOW/"><SPAN class="FSnPSmLt">more -&raquo;</span></a>&nbsp;
+</td></tr></table>  
+<br>
+</td></tr>
+
+<tr><td colspan=2>
+<span class="FSnBSmDk">	BANDA ACEH</span>
+<br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/ASIANOW/southeast/12/19/indonesia.aceh.02.ap/index.html">Indonesia's president admits mistakes in Aceh visit</a></span></TD></TR>
+
+<tr><td colspan=2>
+<span class="FSnBSmDk">
+	MACAU</span><br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/ASIANOW/east/12/19/macau.anniversary.ap/index.html">Chinese police bar Falun Gong adherents in Macau</a></span></TD></TR>
+<tr><td colspan=2>
+<span class="FSnBSmDk">
+	MANILA</span><br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/ASIANOW/southeast/12/19/philippines.estrada.reut/index.html">Former ally testifies Estrada pocketed state funds</a></span></TD></TR>
+<tr><td colspan=2>
+<span class="FSnBSmDk">
+	NEW DELHI</span><br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/ASIANOW/south/12/19/india.pakistan.reut/index.html">India's Vajpayee says talks with Pakistan possible</a></span></TD></TR>
+<tr><td colspan=2>
+<span class="FSnBSmDk">
+	PARIS</span><br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/ASIANOW/southeast/12/19/cambodia.sonsann.reut/index.html">Former Cambodian prime minister Son Sann dies</a></span></TD></TR>
+<tr><td colspan=2>
+<span class="FSnBSmDk">
+	UNITED NATIONS</span><br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/ASIANOW/central/12/19/afghan.un.sanctions.reut/index.html">UN Council set to impose arms ban against Taliban</a></span></TD></TR>
+
+</table>
+<!-- /ASIA -->
+<br>
+<!-- AMERICAS -->
+<table cellpadding=0 cellspacing=0 border=0><tr><td colspan=2>
+<table width=65% cellpadding=0 cellspacing=0 bgcolor="#9c9a00" border=0><tr><td>
+&nbsp; <a href="/web/20001219144500/http://www6.cnn.com/WORLD/americas/"><SPAN class="FSnBSmLt">AMERICAS</span></a></TD><TD ALIGN="RIGHT"><a href="/web/20001219144500/http://www6.cnn.com/WORLD/americas/"><SPAN class="FSnPSmLt">more -&raquo;</span></a>&nbsp;
+</td></tr></table>
+<br>
+</td></tr>
+
+<tr><td colspan=2>
+<span class="FSnBSmDk">	MEXICO CITY</span>
+<br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/americas/12/19/mexico.volcano/index.html">Mexican volcano shows signs of another eruption</a></span></TD></TR>
+
+<tr><td colspan=2>
+<span class="FSnBSmDk">
+	SANTIAGO</span><br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/americas/12/18/chile.pinochet.03/index.html">Chilean Supreme Court could rule on Pinochet case this week</a></span></TD></TR>
+<tr><td colspan=2>
+<span class="FSnBSmDk">
+	BOGOTA</span><br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/americas/12/18/colombia.killing.reut/index.html">Nineteenth Colombian mayor killed this year</a></span></TD></TR>
+<tr><td colspan=2>
+<span class="FSnBSmDk">
+	WASHINGTON</span><br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/americas/12/18/economy.argentina.imf.reut/index.html">IMF unveils $39.7 billion debt deal for Argentina</a></span></TD></TR>
+<tr><td colspan=2>
+<span class="FSnBSmDk">
+	OTTAWA</span><br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/americas/12/18/canada.putin.02.ap/index.html">Canada hears Putin's criticism of U.S. missile defense, but not persuaded</a></span></TD></TR>
+<tr><td colspan=2>
+<span class="FSnBSmDk">
+	WALKERTON</span><br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/americas/12/18/canada.ecoli.ap/index.html">Figure at center of deadly Canadian E. coli contamination admits mistakes</a></span></TD></TR>
+
+</table>
+<!-- /AMERICAS -->
+<br>
+<!-- MIDDLE EAST -->
+<table cellpadding=0 cellspacing=0 border=0><tr><td colspan=2>
+<table width=65% cellpadding=0 cellspacing=0 bgcolor="#632808" border=0><tr><td>
+&nbsp; <a href="/web/20001219144500/http://www6.cnn.com/WORLD/meast/"><SPAN class="FSnBSmLt">MIDDLE EAST</span></a></TD><TD ALIGN="RIGHT"><a href="/web/20001219144500/http://www6.cnn.com/WORLD/meast/"><SPAN class="FSnPSmLt">more -&raquo;</span></a>&nbsp;
+</td></tr></table>
+<br>
+</td></tr>
+
+<tr><td colspan=2>
+<span class="FSnBSmDk">	JERUSALEM</span>
+<br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/meast/12/19/mideast.02/index.html">Netanyahu rejects bid to challenge Barak in Israeli election</a></span></TD></TR>
+
+<tr><td colspan=2>
+<span class="FSnBSmDk">
+	TEHRAN</span><br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/meast/12/18/iran.reform.reut/index.html">Iran's lame duck reformers seek truce with right</a></span></TD></TR>
+<tr><td colspan=2>
+<span class="FSnBSmDk">
+	BEIRUT</span><br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/meast/12/18/lebanon.syria.prisoners.reut/index.html">Lebanon releases more detainees returned by Syria</a></span></TD></TR>
+<tr><td colspan=2>
+<span class="FSnBSmDk">
+	BERLIN</span><br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/meast/12/18/germany.terroristtrial.ap/index.html">German court convicts Lebanese native in Berlin terrorist shootings</a></span></TD></TR>
+<tr><td colspan=2>
+<span class="FSnBSmDk">
+	NEW DELHI</span><br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/meast/12/18/india.jordan.ap/index.html">Jordan: Tighter sanctions against Iraq would increase suffering</a></span></TD></TR>
+<tr><td colspan=2>
+<span class="FSnBSmDk">
+	ISTANBUL</span><br></TD></TR>
+<TR><TD WIDTH=50>&nbsp;</TD>
+<TD><span class="FSnPSmDk"><a href="/web/20001219144500/http://www6.cnn.com/2000/WORLD/meast/12/18/turkey.pope.gunman.ap/index.html">Court sentences pope's gunman on robbery charge</a></span></TD></TR>
+
+</table>
+<!-- /MIDDLE EAST -->
+</td></tr></table>
+<!-- /WORLD REGIONS -->	
+<br>
+<table width="460" cellpadding="0" cellspacing="0" border="0"><tr valign="TOP"><TD WIDTH="5" BGCOLOR="#ff6600">&nbsp;</TD><td  BGCOLOR="#666666" width=455>&nbsp;  <SPAN class="BoxTitle">
+NEWS ARCHIVE:
+</SPAN>
+</TD></TR></TABLE>
+
+<!-- news archive -->
+
+<table width=460 cellpadding=0 cellspacing=1 bgcolor="#DDDDDD" border=0><tr align=center>
+<td width="20%"><span class="FSnBSmDk"><a href="/web/20001219144500/http://www6.cnn.com/WORLD/archive/archive-1.html" >Dec 18<br>
+Monday</a><span></td>
+<td width="20%"><span class="FSnBSmDk"><a href="/web/20001219144500/http://www6.cnn.com/WORLD/archive/archive-2.html" >Dec 17<br>
+Sunday</a><span></td>
+<td width="20%"><span class="FSnBSmDk"><a href="/web/20001219144500/http://www6.cnn.com/WORLD/archive/archive-3.html" >Dec 16<br>
+Saturday</a><span></td>
+<td width="20%"><span class="FSnBSmDk"><a href="/web/20001219144500/http://www6.cnn.com/WORLD/archive/archive-4.html" >Dec 15<br>
+Friday</a><span></td>
+<td width="20%"><span class="FSnBSmDk"><a href="/web/20001219144500/http://www6.cnn.com/WORLD/archive/archive-5.html" >Dec 14<br>
+Thursday</a><span></td>
+</tr></table>
+
+<!-- /news archive -->
+
+
+<br clear=all><br>
+<!-- ================== /content ================== -->
+
+<TABLE WIDTH="460" CELLPADDING="0" CELLSPACING="0" BORDER="0" align="center"><tr><td colspan=3><table CELLPADDING="0" CELLSPACING="0" BORDER="0" width=100%><TR><TD WIDTH="5" BGCOLOR="#ff6600">&nbsp;</TD><TD width=455 bgcolor="#666666">&nbsp;  <SPAN class="BoxTitle">LANGUAGE TRANSLATOR</SPAN></TD></TR></table></td></tr>
+<TR VALIGN="TOP" bgcolor="#DDDDDD"><TD WIDTH="10">&nbsp;</TD><TD WIDTH="236"><BR><SPAN class="BoxTxt">With the click of your mouse, the Babylon program can provide you with translations, definitions and conversions -- in any of nine languages. (Windows only)<BR><A HREF="/web/20001219144500/http://www.babylon.com/partners/cnn/">Download now.</A></SPAN><IMG SRC="/web/20001219144500im_/http://www6.cnn.com/TRAVEL/images/1998/05/dot.gif" WIDTH="236" HEIGHT="1" ALT=""></TD>
+<TD WIDTH="185" align="center" valign="middle"><BR><A HREF="/web/20001219144500/http://www.babylon.com/partners/cnn/"><SPAN class="FSnPSmDk">Free Download.</SPAN><IMG SRC="/web/20001219144500im_/http://www6.cnn.com/images/2000/02/babylon.logo.gif" ALT="Babylon" WIDTH="200" HEIGHT="32" BORDER="0" HSPACE="5" VSPACE="5"></A></TD></TR></TABLE>
+ 
+<!-- ================== search ================== -->
+<div align="center">
+<!-- search box -->
+
+<FORM action="/web/20001219144500/http://search.cnn.com/query.html" method="get" name="seek_bot" onsubmit="return validate(this);">
+<TABLE border=0 cellpadding=0 cellspacing=0 width="450" bgcolor="#666666">
+<TR><TD>&nbsp;<SPAN class="FSnBMdLt">Search</SPAN></TD><TD>
+<SELECT style="width:120px;" align="middle" name=sites>
+<OPTION value="CNN">CNN.com</OPTION>
+<OPTION value="CNNSI">CNNSI.com</OPTION>
+<OPTION value="CNNfn">CNNfn.com</OPTION>
+<!-- <OPTION value="TIME">TIME.com</OPTION> -->
+<OPTION value="Internet">The Web</OPTION>
+</SELECT>
+<INPUT name=qc type=hidden value=""><INPUT name=col type=hidden value=cnni><INPUT name=qm type=hidden value=0><INPUT name=st type=hidden value=1><INPUT name=nh type=hidden value=10><INPUT name=lk type=hidden value=1><INPUT name=rf type=hidden value=1><INPUT type=hidden name=look value=""><INPUT type=hidden name=key value=""><INPUT TYPE="HIDDEN" NAME="venue" VALUE="all"><INPUT TYPE="HIDDEN" NAME="keyword" value=""><input type=hidden name=qp value=""><input type=hidden name=comefrom value="izcb-search"><input type=hidden name=isp value=zcb></TD><TD><INPUT  style="width:120px;" type="text" name=qt size="25"></TD><TD><INPUT type="submit" value="Find"></TD></TR></TABLE></FORM>
+
+<!-- /search box -->
+
+</div>
+<!-- ================== /search ================== -->
+
+</TD></TR></TABLE>
+<HR NOSHADE WIDTH="770" SIZE="1" ALIGN="LEFT">
+<TABLE BORDER="0" WIDTH="600" CELLSPACING="0" CELLPADDING="0"><TR><TD WIDTH=125  VALIGN=TOP><a href="#top" class="BackToTop"> Back to the top</a></TD><TD WIDTH="15">&nbsp;</TD>
+<TD WIDTH="460" VALIGN=TOP><font face="Verdana, HELVETICA, ARIAL, sans-serif" size="1"><B>&#169; 2000 Cable News Network.</B> All Rights Reserved.<br><a href="/web/20001219144500/http://www6.cnn.com/interactive_legal.html">Terms</a> under which this service is provided to you.<br>Read our <A HREF="/web/20001219144500/http://www6.cnn.com/privacy.html">privacy guidelines</A>.</font><br>
+</TD></TR></TABLE>
+<img src="/web/20001219144500im_/http://www6.cnn.com/cookie.crumb" width="1" height="1">
+</BODY>
+</HTML>
+
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 14:45:00 Dec 19, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 3:25:40 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

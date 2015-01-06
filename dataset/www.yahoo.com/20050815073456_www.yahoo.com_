@@ -1,0 +1,824 @@
+<html><head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app16.us.archive.org";archive_analytics.values.server_ms=5199;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<script language=javascript>
+var now=new Date,t1=0,t2=0,t3=0,t4=0,t5=0,t6=0,cc='',ylp='';t1=now.getTime();
+</script>
+<title>Yahoo!</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l r (cz 1 lz 1 nz 1 oz 1 vz 1) gen true for "http://www.yahoo.com" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l r (n 0 s 0 v 0 l 0) gen true for "http://www.yahoo.com" r (n 0 s 0 v 0 l 0))'>
+<base href="/web/20050820013359/http://www.yahoo.com/_ylh=X3oDMTEwZGh2NmNjBF9TAzI3MTYxNDkEdGVzdAMwBHRtcGwDaW5kZXgtdGJs/" target=_top>
+<script language=javascript><!--
+lck='',sss=1124501639,ylp='p.gif?t=1124501639&_ylp=A0Je5iSHiAZDkHkA0DH1cSkA',_lcs='';
+--></script><script language=javascript>
+var _phppl="";var plink1='',plink2='',plink3='',eplinks='';if(plink1!='')_phppl=plink1+'|'+plink2+'|'+plink3+'|'+eplinks;
+var _toClose="",_toCloseNorgie="",blnk,bimg;
+function yg_cookie(){
+this.get=function(n){var s,e,v='',c=' '+document.cookie+';';if((s=c.indexOf((' '+n+'=')))>=0){if((e=c.indexOf(';',s))==-1)e=c.length;s+=n.length+2;v=unescape(c.substring(s, e));}return (v);}
+this.set=function(n,v,e){document.cookie=n+"="+escape(v)+";expires="+(new Date(e*1000)).toGMTString()+";path=/"+";domain=www.yahoo.com";}
+}
+var _yc = new yg_cookie();
+var b,d,l='',n='0',r,s,y;
+y=' '+document.cookie+';';
+if ((b=y.indexOf(' Y=v'))>=0) {
+y=y.substring(b,y.indexOf(';',b))+'&';
+if ((b=y.indexOf('l='))>=0) {
+l=y.substring(b+2,y.indexOf('&',b));
+if((b=y.indexOf('n='))>=0)n=y.substring(b+2,y.indexOf('&',b));
+}
+}
+d=new Date();
+s=Math.round(d.getTime()/1000);
+r=Math.round(parseInt(n,32)%1021);
+if (lck!=l||_yc.get("FPPL")!=_phppl) {
+document.write('<meta http-equiv="Expires" content="-1">');
+if (location.search.indexOf('r'+r+'=')!=1) {
+location.replace('http://'+location.hostname+location.pathname+'?r'+r+'='+s);
+}
+}
+</script>
+<style media=all>
+.ex{min-width:760px;width:47.5em}
+a:link{color:#039;text-decoration:none}
+a:visited{color:#800080;text-decoration:none}
+a:hover{color:#0353a5;text-decoration:underline}
+spacer{display:block}
+form{margin:0}
+</style>
+<script language=javascript>
+d=document;
+agt=navigator.userAgent.toLowerCase();
+win=((agt.indexOf("win")!=-1)||(agt.indexOf("16bit")!=-1));
+d.domain="yahoo.com";
+var _ie=0,now,mon,day,now,hour,min,ampm,time,str,tz,end,beg,_hdi=0;
+now=new Date(sss*1000);
+mon=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
+day=new Array("Sun","Mon","Tue","Wed","Thu","Fri","Sat");
+hour=now.getHours();
+min=now.getMinutes();
+ampm=(hour>=12)?"pm":"am";hour=(hour==0)?12:(hour>12)?hour-12:hour;
+min=(min<10)?"0"+min:min;
+tz="";
+time=hour+":"+min+ampm+tz+", <nobr>"+day[now.getDay()]+" "+mon[now.getMonth()]+" "+now.getDate()+"</nobr>";
+</script>
+<script language=javascript>
+function funld() {
+var img=new Image;
+now=new Date;
+t6=now.getTime();
+img.src='/web/20050820013359/http://www.yahoo.com/'+(ylp?ylp:'p.gif?t=0')+cc+'&ni='+document.images.length+'&sss='+sss+'&t1='+t1+'&d1='+(t2-t1)+'&d2='+(t3-t1)+'&d3='+(t4-t1)+'&d4='+(t5-t1)+'&d5='+(t6-t1);
+}
+window.onunload=funld;
+</script>
+</head>
+<body topmargin=7 marginheight=7 link=#003399 vlink=#800080>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.yahoo.com/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "20";
+var displayMonth = "Aug";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.yahoo.com/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20050820013359" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20050719081807/http://www.yahoo.com/" title="19 Jul 2005">JUL</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 1:33:59 Aug 20, 2005">AUG</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20050920102249/http://www.yahoo.com/" title="20 Sep 2005"><strong>SEP</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20050815073456/http://www.yahoo.com/" title="7:34:56 Aug 15, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 1:33:59 Aug 20, 2005">20</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20050822072954/http://www.yahoo.com/" title="7:29:54 Aug 22, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20040820012043/http://yahoo.com/" title="20 Aug 2004"><strong>2004</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 1:33:59 Aug 20, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20060820161108/http://www.yahoo.com/" title="20 Aug 2006"><strong>2006</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20050820013359*/http://www.yahoo.com/" title="See a list of every capture for this URL">40,805 captures</a>
+           <div class="r" title="Timespan for captures of this URL">17 Oct 96 - 6 Jan 15</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000314_1997:-1:121223210300_1998:-1:030001300001_1999:-1:243510001210_2000:-1:037587577803_2001:-1:2036cc9a9a97_2002:-1:100153666794_2003:-1:354545223646_2004:-1:555677767565_2005:7:576666678889_2006:-1:876856876677_2007:-1:878888788867_2008:-1:777887666777_2009:-1:878887777877_2010:-1:778888888889_2011:-1:999999999bbc_2012:-1:cccbcbbbbcbc_2013:-1:ccddddddccdd_2014:-1:eeeeeeefeeee_2015:-1:b00000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<center><font face=arial size=2>
+<table cellpadding=0 cellspacing=0 border=0 width=760>
+<tr>
+<td valign=top width=33><a href="r/20/*http://b.www.yahoo.com/module/plinks.php"><img src="/web/20050820013359im_/http://us.i1.yimg.com/us.yimg.com/i/ww/beta/edit_plink.gif" width=33 height=14 border=0 alt="Edit Personal Links"></a></td>
+<td valign=top align=center width=64><a href=r/25><img src="/web/20050820013359im_/http://us.i1.yimg.com/us.yimg.com/i/ww/bt1/125.gif" width=36 height=36 border=0 alt=""><br><nobr><font face=verdana size=-2 color=#000000>Finance</font></nobr></a>
+</td>
+<td valign=top align=center width=64><a href=r/3m><img src="/web/20050820013359im_/http://us.i1.yimg.com/us.yimg.com/i/ww/bt1/13441.gif" width=36 height=36 border=0 alt=""><br><nobr><font face=verdana size=-2 color=#000000>Music</font></nobr></a>
+</td>
+<td valign=top align=center width=64><a href=r/3u><img src="/web/20050820013359im_/http://us.i1.yimg.com/us.yimg.com/i/ww/bt1/1902.gif" width=36 height=36 border=0 alt=""><br><nobr><font face=verdana size=-2 color=#000000>Fantasy FB</font></nobr></a>
+</td>
+<td valign=top align=center width=232><img src="/web/20050820013359im_/http://us.a1.yimg.com/us.yimg.com/i/ww/beta/y3.gif" border=0 width=232  height=44 alt="Yahoo!"><script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['LG4YBNFJq2o-']='&U=13a4j7p9o%2fN%3dLG4YBNFJq2o-%2fC%3d289534.5461226.6542184.5322130%2fD%3dHEADR%2fB%3d2373001';
+</script><noscript><img width=1 height=1 alt="" src="/web/20050820013359im_/http://bc.us.yahoo.com/b?P=ilmei0Je5iTUdUPUQwUcZ2J8z_Hi0EMGiIcACMP2&amp;T=142kcf0v9%2fX%3d1124501639%2fE%3d2716149%2fR%3dyahoo_top%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d1491062617%2fQ%3d-1%2fS%3d1%2fJ%3d24E65E42&amp;U=13a4j7p9o%2fN%3dLG4YBNFJq2o-%2fC%3d289534.5461226.6542184.5322130%2fD%3dHEADR%2fB%3d2373001"></noscript></td>
+<td valign=top align=center width=64><a href=r/m1><img src="/web/20050820013359im_/http://us.i1.yimg.com/us.yimg.com/i/ww/bt1/ml.gif" width=36 height=36 border=0 alt=""><br><nobr><font face=verdana size=-2 color=#000000>Mail</font></nobr></a></td>
+<td valign=top align=center width=64><a href="/web/20050820013359/http://us.ard.yahoo.com/SIG=12kj1lasi/M=343258.6919106.7855883.6656942/D=yahoo_top/S=2716149:MHBTN/_ylt=AobLPJy.JOkcHYvhUueCfJf1cSkA/Y=YAHOO/EXP=1124508839/A=2899892/R=0/SIG=10m97m5i1/*http://my.yahoo.com/"><img src="/web/20050820013359im_/http://us.i1.yimg.com/us.yimg.com/i/ww/bt1/my.gif" width=45 height=36 border=0 alt=""><br><nobr><font face=verdana size=-2 color=#000000>My Yahoo!</font></nobr></a><script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['LW4YBNFJq2o-']='&U=13ag8hdrd%2fN%3dLW4YBNFJq2o-%2fC%3d343258.6919106.7855883.6656942%2fD%3dMHBTN%2fB%3d2899892';
+</script><noscript><img width=1 height=1 alt="" src="/web/20050820013359im_/http://bc.us.yahoo.com/b?P=ilmei0Je5iTUdUPUQwUcZ2J8z_Hi0EMGiIcACMP2&amp;T=1414sctt2%2fX%3d1124501639%2fE%3d2716149%2fR%3dyahoo_top%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d492806953%2fQ%3d-1%2fS%3d1%2fJ%3d24E65E42&amp;U=13ag8hdrd%2fN%3dLW4YBNFJq2o-%2fC%3d343258.6919106.7855883.6656942%2fD%3dMHBTN%2fB%3d2899892"></noscript></td>
+<td valign=top align=center width=64><a href=r/p1><img src="/web/20050820013359im_/http://us.i1.yimg.com/us.yimg.com/i/ww/bt1/msgt.gif" width=36 height=36 border=0 alt=""><br><nobr><font face=verdana size=-2 color=#000000>Messenger</font></nobr></a></td>
+<td valign=top width=33>&nbsp;</td>
+</tr>
+</table>
+<br>
+<table cellpadding=1 cellspacing=0 border=0 bgcolor=#99b9e3 width=760 class=ex><tr><td>
+<table cellpadding=5 cellspacing=0 border=0 bgcolor=#d2e4fc width=100%><tr>
+<td align=center><form name=sf1 style="margin-bottom:0" action=r/zz>
+<table cellpadding=0 cellspacing=0 border=0><tr>
+<td nowrap>
+<font face=arial size=-1><b>&nbsp; Search for:&nbsp;</b></font>
+</td>
+<td nowrap>
+<font face=arial size=-1>
+<input type=text size=30 name=p>&nbsp;
+<select name=u>
+<option value="http://search.yahoo.com/search?fr=FP-pull-web-t&ei=UTF-8&p=">on the Web</option>
+<option value="http://images.search.yahoo.com/search/images?fr=FP-pull-img-t&ei=UTF-8&p=">in Images</option>
+<option value="http://video.search.yahoo.com/search/video?fr=FP-pull-vid-t&ei=UTF-8&p=">in Video</option>
+<option value="http://search.yahoo.com/search/dir?fr=FP-pull-dir-t&ei=UTF-8&p=">in Directory</option>
+<option value="http://local.yahoo.com/results?fr=FP-pull-lcl-t&toggle=1&ei=UTF-8&stx=">in Local</option>
+<option value="http://news.search.yahoo.com/search/news?fr=FP-pull-news-t&ei=UTF-8&p=">in News</option>
+<option value="http://shopping.yahoo.com/search;_ylc=X3oDMTFncmo3bG5vBF9HA2dsb2JhbF9ncm91cARfUwMyNzE2MTQ5BHNlYwNzZWFyY2gEc2xrA2J1dHRvbg--?fr=FP-pull-prod-t&cop=mss&ei=UTF-8&p=">in Shopping</option>
+</select>
+<b><input name=sm type=submit value="Yahoo! Search"></b>&nbsp;&nbsp;
+</font>
+</td>
+<td align=left nowrap>
+<font face=arial size=-2>&#149; <a href=r/so>Advanced</a><br>&#149; <a href=r/mk>My Web <img src=/web/20050820013359im_/http://us.i1.yimg.com/us.yimg.com/i/ww/beta.gif width=17 height=5 border=0 vspace=1></a> &nbsp;</font>
+</td>
+</tr></table>
+</form><span style="margin-top:-1em"></span></td>
+</tr></table>
+</td></tr></table>
+<script language=javascript>
+now=new Date;
+t2=now.getTime();
+</script>
+<table cellpadding=0 cellspacing=0 border=0><tr><td height=10><spacer type=block width=1 height=10></td></tr></table>
+<table cellpadding=0 cellspacing=0 border=0 width=760 class=ex><tr>
+<td align=center>
+<font face=arial color=#666666 size=-1><TABLE cellSpacing=0 cellPadding=0 border=0><TR><TD noWrap><FONT face=arial size=-1><A href="/web/20050820013359/http://us.ard.yahoo.com/SIG=12k51hivh/M=323294.7027123.7948060.4317506/D=yahoo_top/S=2716149:HLINE/_ylt=AobLPJy.JOkcHYvhUueCfJf1cSkA/Y=YAHOO/EXP=1124508839/A=2932401/R=0/SIG=11m76h888/*http://donorschoose.org/index.php?normal_home_page=1"><B>DonorsChoose:</B></a> <A href="/web/20050820013359/http://us.ard.yahoo.com/SIG=12k51hivh/M=323294.7027123.7948060.4317506/D=yahoo_top/S=2716149:HLINE/_ylt=AobLPJy.JOkcHYvhUueCfJf1cSkA/Y=YAHOO/EXP=1124508839/A=2932401/R=1/SIG=1208kge50/*https://www.donorschoose.org/donors.php?action=direct_donation"> Help students learn by donating to a classroom in need</a>. <A href="/web/20050820013359/http://us.ard.yahoo.com/SIG=12k51hivh/M=323294.7027123.7948060.4317506/D=yahoo_top/S=2716149:HLINE/_ylt=AobLPJy.JOkcHYvhUueCfJf1cSkA/Y=YAHOO/EXP=1124508839/A=2932401/R=2/SIG=10q8svdf9/*http://donorschoose.org/">Take the Amazon challenge</A>.</FONT></TD></TR></TABLE></font>
+</td>
+</tr></table>
+<table cellpadding=0 cellspacing=0 border=0><tr><td height=10><spacer type=block width=1 height=10></td></tr></table>
+<script language=javascript>
+var r0='',ad=0,tnv=0,nv=0,fv=0,ie=0,done=0,cap=0,lan=0,auto=0,altp=0,trkb=0,trkc=0,t8=0,t9=0,t10=0;
+function tt(n,s,u) {
+var img=new Image;
+img.src='/web/20050820013359/http://srd.yahoo.com/'+(r0?r0.substring(r0.indexOf('/M=')+1,r0.length-5):'')+'N='+n+(cap+1)+(lan+1)+nv+'/id='+s+'/fv='+fv+'/'+Math.random()+'/*'+(u?u:'1');
+}
+</script>
+<script language=javascript>r0='/web/20050820013359/http://us.ard.yahoo.com/SIG=12iqagv6t/M=363485.6950726.7912742.3593767/D=yahoo_top/S=2716149:CAM/_ylt=AobLPJy.JOkcHYvhUueCfJf1cSkA/Y=YAHOO/EXP=1124508839/A=2923159/R=0/*';</script><script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['L24YBNFJq2o-']='&U=138vcqhka%2fN%3dL24YBNFJq2o-%2fC%3d363485.6950726.7912742.3593767%2fD%3dCAM%2fB%3d2923159';
+</script><noscript><img width=1 height=1 alt="" src="/web/20050820013359im_/http://bc.us.yahoo.com/b?P=ilmei0Je5iTUdUPUQwUcZ2J8z_Hi0EMGiIcACMP2&amp;T=1422stj0p%2fX%3d1124501639%2fE%3d2716149%2fR%3dyahoo_top%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d2266795089%2fQ%3d-1%2fS%3d1%2fJ%3d24E65E42&amp;U=138vcqhka%2fN%3dL24YBNFJq2o-%2fC%3d363485.6950726.7912742.3593767%2fD%3dCAM%2fB%3d2923159"></noscript><script language=javascript>
+var red=r0.substring(0,r0.length-5),key1='CRZY7' ,domain='www.yahoo.com',expires=172800000;
+var u1='/web/20050820013359/http://ad.doubleclick.net/click;h=v2|35B1|0|0|%2a|';
+var u2='|1;;%3f/web/20050820013359/http://www.vw.com/passat/120features.html';
+var urlw=u1+'u;19241124;0-0;0;11722372;8630-440|160;11595872|11613768'+u2;
+var urle=u1+'y;19241131;0-0;0;11722371;3823-300|100;11595877|11613773'+u2;
+var urlt=urle;
+var dir='/web/20050820013359/http://us.a1.yimg.com/us.yimg.com/a/1-/java/promotions/vw/050819/';
+trkb='/web/20050820013359/http://ad.doubleclick.net/imp;v1;f;19241131;0-0;0;11722371;300|100;11595877|11613773|1;;cs=r%3f/web/20050820013359/http://m.doubleclick.net/dot.gif';
+trkc='/web/20050820013359/http://ai080.insightexpressai.com/adServer/adServer.aspx?bannerID=5385&script=false&redir=/web/20050820013359/http://ai080.insightexpressai.com/adserver/1pixel.gif';
+var img1=dir+'w1.jpg';
+var img1w=440,img1h=160;
+var img1u=urlw;
+var img2=dir+'e1.gif';
+var img2w=300,img2h=100;
+var img2u=urle;
+var img3=dir+'w2.jpg';
+var img3w=440,img3h=160;
+var img3u=urlw;
+var txt1='Click to learn more';
+var txt1u=urlt;
+function jp0(r,s,u) {
+return red+'R='+r+(cap+1)+(lan+1)+nv+'/id='+s+(cap?'_cap':'_nocap')+(lan?'_lan':'_dial')+'/*'+u;
+}
+function jp(r,s,u) {
+return jp0(r,s,u);
+}
+function setCook(c,t) {
+var d=new Date;
+d.setTime(d.getTime()+expires);
+document.cookie=c+'=t='+t+'; expires='+d.toGMTString()+'; domain='+domain+'; path=/';
+}
+function getCook(c) {
+var a,s,e,v;
+a=' '+document.cookie+';';
+s=a.indexOf(' '+c+'=');
+if (s==-1) return 0;
+s+=c.length+2;
+e=a.indexOf(';',s);
+v=a.substring(s,e).split('=');
+return parseInt(v[1]);
+}
+var cook=getCook(key1);
+if (!cook) {
+setCook(key1,1);
+cook=getCook(key1);
+if (!cook) {
+done=1;
+} else {
+nv=1;
+}
+} else {
+cook++;
+if (cook> 1 ) done=1;
+setCook(key1,cook);
+nv=tnv=cook;
+if (nv>9) nv=9;
+}
+ad='vw1' ;
+</script>
+<table cellpadding=0 cellspacing=0 border=0 width=760 class=ex><tr>
+<td valign=top width=58% align=left>
+
+<table cellpadding=0 cellspacing=0 border=0 width=100% height=25 bgcolor=#D2E4FC><tr>
+<td valign=bottom rowspan=3 width=50 height=25 bgcolor=#ffffff><font face=arial size=-1><img src="/web/20050820013359im_/http://us.i1.yimg.com/us.yimg.com/i/ww/v5_mail_t2.gif" width=50 height=25></font></td>
+<td width=90% colspan=2 bgcolor=#ffffff>   <table cellpadding=0 cellspacing=0 border=0><tr><td height=5><spacer type=block width=1 height=5></td></tr></table>     </td>
+</tr><tr>
+<td bgcolor=#D2E4FC height=1>   <table cellpadding=0 cellspacing=0 border=0><tr><td height=1><spacer type=block width=1 height=1></td></tr></table>     </td>
+<td width=1 rowspan=2 nowrap> <spacer type=block width=1 height=1> </td>
+</tr><tr>
+<td bgcolor=#ffffff width=99%>
+<table cellpadding=1 cellspacing=0 border=0 width=100%><tr>
+<td nowrap><font face=arial size=-1 color=#000000>&nbsp;&nbsp;Check your mail status: <a href=r/l6 style="text-decoration:underline"><b>Sign In</b></a></font></td>
+<td nowrap align=right><font face=arial size=-1>Free mail: <a href=r/m7 style="text-decoration:underline"><b>Sign Up</b></a></font><font size=-2>&nbsp;&nbsp;&nbsp;</font></td>
+</tr></table>
+</td>
+</tr></table>
+<table cellpadding=1 cellspacing=0 border=0 bgcolor=#d2e4fc width=100%><tr><td>
+<table cellpadding=5 cellspacing=0 border=0 width=100%><tr>
+<td bgcolor=#f2f5f7 colspan=4>
+<table cellpadding=5 cellspacing=0 border=0 width=100%><tr>
+<td width=25%>
+<font face=arial size=-1>
+<a href=r/3t>360&#176; <img src="/web/20050820013359im_/http://us.i1.yimg.com/us.yimg.com/i/ww/beta.gif" vspace=4 width=17 height=5 border=0 alt=""></a><br>
+<a href=r/cr>Autos</a><br>
+<a href=r/sq>Finance</a><br>
+<a href=r/pl>Games</a><br>
+<a href=r/g3>GeoCities</a><br>
+<a href=r/gp>Groups</a><br>
+<a href=r/wm>Health</a>
+</font>
+</td>
+<td width=25%>
+<font face=arial size=-1>
+<a href=r/h1>Horoscopes</a><br>
+<a href=r/jb>HotJobs</a><br>
+<a href=r/0w>Local <img src=/web/20050820013359im_/http://us.i1.yimg.com/us.yimg.com/i/ww/new.gif vspace=4 width=14 height=5 border=0 alt=""></a><br>
+<a href=r/yg>Kids</a><br>
+<a href=r/m2>Mail</a><br>
+<a href=r/mp>Maps</a><br>
+<a href=r/oa>Mobile</a>
+</font>
+</td>
+<td width=25%>
+<font face=arial size=-1>
+<a href=r/mf>Movies</a><br>
+<a href=r/uf>Music</a><br>
+<a href=r/i2>My Yahoo!</a><br>
+<a href=r/dn>News</a><br>
+<a href=r/ps>People Search</a><br>
+<a href=r/pr>Personals</a><br>
+<a href=r/fo>Photos</a>
+</font>
+</td>
+<td width=25%>
+<font face=arial size=-1>
+<a href=r/r1>Real Estate</a><br>
+<a href=r/sh>Shopping</a><br>
+<a href=r/ys>Sports</a><br>
+<a href=r/ta>Travel</a><br>
+<a href=r/tg>TV</a><br>
+<a href=r/yp>Yellow Pages</a><br>
+</font>
+<font face=verdana size=-2><b><a href=r/xy>All Y! Services...</a></b></font>
+</td>
+</tr></table>
+</td>
+</tr></table>
+</td></tr></table>
+<table cellpadding=0 cellspacing=0 border=0><tr><td height=10><spacer type=block width=1 height=10></td></tr></table>
+<script language=javascript>
+if (ad) {
+document.write('<div id=adiv1');
+document.write('><table cellpadding=0 cellspacing=0 border=0 width=440><tr><td id=a_b>');
+var a_bh='<a href="'+jp(1,'wimg1',img1u)+'" onclick="play3();return false"><img src='+img1+' width='+img1w+' height='+img1h+' border=0></a>';
+if (auto)
+document.write(a_bh);
+else
+document.write('<a href="'+jp(2,'wimg3',img3u)+'"><img src='+img3+' width='+img3w+' height='+img3h+' border=0></a>');
+document.write('</td></tr></table></div>');
+document.write('<table cellpadding=0 cellspacing=0 border=0 width=440><tr><td align=center height=16><font face=verdana size=-2>');
+document.write('</font></td></tr></table>');
+}
+</script>
+<table cellpadding=0 cellspacing=0 border=0><tr><td height=10><spacer type=block width=1 height=10></td></tr></table>
+<table cellpadding=0 cellspacing=0 border=0 width=100%><tr>
+<td valign=top width=48%>
+<table cellpadding=1 cellspacing=0 border=0 bgcolor=#d2e4fc width=100%><tr><td>
+<table cellpadding=1 cellspacing=0 border=0 width=100%><tr><td nowrap width=70%><font size=-2>&nbsp;&nbsp;&nbsp;</font><b><a href=r/c9><font face=arial size=-1 color="#000000">Yahoo! Small Business</font></a></b></td><td nowrap align=right><font face=verdana size=-2><b></b></font><font size=-2>&nbsp;&nbsp;&nbsp;</font></td></tr></table>
+<table cellpadding=0 cellspacing=0 border=0 width=100% bgcolor=#ffffff><tr>
+<td valign=top>
+<table cellpadding=0 cellspacing=0 border=0><tr><td height=10><spacer type=block width=1 height=10></td></tr></table>
+<table cellpadding=0 cellspacing=0 border=0 width=100%><tr>
+<td width=5 rowspan=2>&nbsp;</td>
+<td valign=top><font face=arial size=-1><a href=r/h9>Web Hosting</a></font></td>
+<td valign=top><font face=arial size=-1><a href=r/e9>Sell Online</a></font></td>
+<td width=5 rowspan=2>&nbsp;</td>
+</tr><tr>
+<td><font face=arial size=-1><a href=r/d9>Domain Names</a><!-- SpaceID=2716149 loc=MM2 noad-spid -->
+</font></td>
+<td><font face=arial size=-1><a href=r/o9>Search Listings</a></font></td>
+</tr></table>
+<table cellpadding=0 cellspacing=0 border=0><tr><td height=10><spacer type=block width=1 height=10></td></tr></table>
+</td>
+</tr></table>
+</td></tr></table>
+</td>
+<td width=10> <spacer type=block width=10 height=1> </td>
+<td valign=top width=48%>
+<table cellpadding=1 cellspacing=0 border=0 bgcolor=#d2e4fc width=100%><tr><td>
+<table cellpadding=1 cellspacing=0 border=0 width=100%><tr><td nowrap width=70%><font size=-2>&nbsp;&nbsp;&nbsp;</font><b><a href=r/b9><font face=arial size=-1 color="#000000">Yahoo! Featured</font></a></b></td><td nowrap align=right><font face=verdana size=-2><b></b></font><font size=-2>&nbsp;&nbsp;&nbsp;</font></td></tr></table>
+<table cellpadding=10 cellspacing=0 border=0 width=100% bgcolor=#ffffff><tr>
+<td valign=top>
+<table cellpadding=0 cellspacing=0 border=0 width=100%><tr>
+<td><font face=arial size=-1><a href="/web/20050820013359/http://us.ard.yahoo.com/SIG=12ja32dvj/M=261627.4008225.7876266.3595621/D=yahoo_top/S=2716149:FPC1/_ylt=AobLPJy.JOkcHYvhUueCfJf1cSkA/Y=YAHOO/EXP=1124508839/A=2908343/R=0/SIG=11vughtts/*http://us.rd.yahoo.com/evt=34510/*http://promo.yahoo.com/sbc/">Yahoo! DSL</a></font></td>
+<td><font face=arial size=-1><a href="/web/20050820013359/http://us.ard.yahoo.com/SIG=12jsktd6b/M=261627.6827606.7770354.6326130/D=yahoo_top/S=2716149:TST1/_ylt=AobLPJy.JOkcHYvhUueCfJf1cSkA/Y=YAHOO/EXP=1124508839/A=2866526/R=0/SIG=10t21h6fi/*http://downloads.yahoo.com/">Downloads</a><script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['Mm4YBNFJq2o-']='&U=139rr1fja%2fN%3dMm4YBNFJq2o-%2fC%3d261627.6827606.7770354.6326130%2fD%3dTST1%2fB%3d2866526';
+</script><noscript><img width=1 height=1 alt="" src="/web/20050820013359im_/http://bc.us.yahoo.com/b?P=ilmei0Je5iTUdUPUQwUcZ2J8z_Hi0EMGiIcACMP2&amp;T=1412p00iu%2fX%3d1124501639%2fE%3d2716149%2fR%3dyahoo_top%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d533194243%2fQ%3d-1%2fS%3d1%2fJ%3d24E65E42&amp;U=139rr1fja%2fN%3dMm4YBNFJq2o-%2fC%3d261627.6827606.7770354.6326130%2fD%3dTST1%2fB%3d2866526"></noscript></font></td>
+</tr><tr>
+<td><font face=arial size=-1><a href="/web/20050820013359/http://us.ard.yahoo.com/SIG=12ju7gtmt/M=351034.6608705.7568495.3595627/D=yahoo_top/S=2716149:FPC4/_ylt=AobLPJy.JOkcHYvhUueCfJf1cSkA/Y=YAHOO/EXP=1124508839/A=2780539/R=0/SIG=13mgvrn8j/*http://football.fantasysports.yahoo.com?ovchn=YAH&amp;ovcpn=Front+Page&amp;ovcrn=FP+Premium+Services+Link&amp;ovrfd=YAH&amp;ovtac=AD">Fantasy Football</a></font></td>
+<td><font face=arial size=-1><a href=r/em>HotJobs</a></font></td>
+</tr></table>
+</td>
+</tr></table>
+</td></tr></table>
+</td>
+</tr></table>
+<table cellpadding=0 cellspacing=0 border=0><tr><td height=10><spacer type=block width=1 height=10></td></tr></table>
+<table cellpadding=1 cellspacing=0 border=0 bgcolor=#d2e4fc width=100%><tr><td>
+<table cellpadding=1 cellspacing=0 border=0 width=100%><tr><td nowrap width=70%><font size=-2>&nbsp;&nbsp;&nbsp;</font><b><a href=r/ye><font face=arial size=-1 color="#000000">Entertainment</font></a></b></td><td nowrap align=right><font face=verdana size=-2><b><a href=r/yf>&raquo; More Entertainment</a></b></font><font size=-2>&nbsp;&nbsp;&nbsp;</font></td></tr></table>
+<table cellpadding=10 cellspacing=0 border=0 width=100% bgcolor=#ffffff><tr>
+<td valign=top>
+<table cellpadding=0 cellspacing=0 border=0 width=100%><tr>
+<td valign=top><font face=verdana size=-2><a href=s/251095><img src="/web/20050820013359im_/http://us.i1.yimg.com/us.yimg.com/i/tv/eminem104.jpg" alt="Eminem" width=104 height=60 border=0><br><cite>Eminem in Rehab</cite></a>
+</font></td>
+<td rowspan=2 width=10>&nbsp;&nbsp;&nbsp;</td>
+<td width=90% valign=top><font face=arial size=-1>&#149;&nbsp;<a href=s/251092>Eminem enters rehab for medication dependency</a><br>&#149;&nbsp;<a href=s/251172>'Desperate Housewives' Marcia Cross engaged</a><br>&#149;&nbsp;<a href=s/251103>Monaco, O'Hurley sign on for televised 'dance-off'</a><br>&#149;&nbsp;<a href=s/220598>Today's TV Picks</a>  - <a href=s/239703>Comics</a> - <a href=s/220596>Daily Horoscopes</a><br></font></td>
+</tr></table>
+</td>
+</tr></table>
+</td></tr></table>
+<table cellpadding=0 cellspacing=0 border=0><tr><td height=10><spacer type=block width=1 height=10></td></tr></table>
+<table cellpadding=1 cellspacing=0 border=0 bgcolor=#d2e4fc width=100%><tr><td>
+<table cellpadding=1 cellspacing=0 border=0 width=100%><tr><td nowrap width=70%><font size=-2>&nbsp;&nbsp;&nbsp;</font><b><a href=r/z5><font face=arial size=-1 color="#000000">Buzz Log - What the world is searching for</font></a></b></td><td nowrap align=right><font face=verdana size=-2><b><a href=r/z6>&raquo; More Buzz</a></b></font><font size=-2>&nbsp;&nbsp;&nbsp;</font></td></tr></table>
+<table cellpadding=10 cellspacing=0 border=0 width=100% bgcolor=#ffffff><tr>
+<td valign=top>
+<table cellpadding=0 cellspacing=0 border=0 width=100%><tr>
+<td rowspan=2 valign=top><font face=verdana size=-2>
+<a href=s/251109 id=tpb><img width=104 height=60 src=/web/20050820013359im_/http://us.i1.yimg.com/us.yimg.com/i/buzz/2005/08/0818huntersthompsonfront.jpg alt="Hunter S. Thompson" border=0><br><cite>Gonzo's Goodbye</cite></a>
+</font></td>
+<td rowspan=2 width=10>&nbsp;&nbsp;&nbsp;</td>
+<td valign=top>
+<table cellpadding=0 cellspacing=0 border=0 width=100% class=bd><tr>
+<td colspan=2><font face=arial size=-1>
+Hunter S. Thompson goes out in style. We investigate searches on the gonzo journalist. <a href=s/251127><font face=verdana size=-2><b>More...</b></font></a>
+</font></td>
+</tr><tr>
+<td colspan=2><font face=verdana size=-2><b>Popular Search Movers</b></font></td>
+</tr><tr>
+<td valign=top width=50% class=lh><font face=verdana size=-2>
+1. <a href=s/251128>Hunter S. Thompson</a><br>
+2. <a href=s/251129>Fear and Loathing...</a>
+</font></td>
+<td valign=top width=50% class=lh><font face=verdana size=-2>
+3. <a href=s/251130>Johnny Depp</a>&nbsp;<br>
+4. <a href=s/251131>Lyle Lovett</a>
+</font></td>
+</tr></table>
+</td>
+</tr></table>
+</td>
+</tr></table>
+</td></tr></table>
+<table cellpadding=0 cellspacing=0 border=0><tr><td height=10><spacer type=block width=1 height=10></td></tr></table>
+<table cellpadding=1 cellspacing=0 border=0 bgcolor=#d2e4fc width=100%><tr><td>
+<table cellpadding=1 cellspacing=0 border=0 width=100%><tr><td nowrap width=70%><font size=-2>&nbsp;&nbsp;&nbsp;</font><b><a href=r/xd><font face=arial size=-1 color="#000000">Yahoo! Web Directory</font></a></b></td><td nowrap align=right><font face=verdana size=-2><b><a href=r/yd>&raquo; More Yahoo! Web Directory</a></b></font><font size=-2>&nbsp;&nbsp;&nbsp;</font></td></tr></table>
+<table cellpadding=10 cellspacing=0 border=0 width=100% bgcolor=#ffffff><tr>
+<td valign=top>
+<table cellpadding=0 cellspacing=0 border=0 width=100%><tr>
+<td width=25% valign=top><font face=arial size=-1>
+<a href=r/ar>Arts</a><br>
+<a href=r/bu>Business</a><br>
+<a href=r/ci>Computers</a>
+</font></td>
+<td width=25% valign=top><font face=arial size=-1>
+<a href=r/cu>Culture</a><br>
+<a href=r/ed>Education</a><br>
+<a href=r/en>Entertainment</a>
+</font></td>
+<td width=25% valign=top><font face=arial size=-1>
+<a href=r/he>Health</a><br>
+<a href=r/nm>News</a><br>
+<a href=r/rs>Recreation</a>
+</font></td>
+<td width=25% valign=top><font face=arial size=-1>
+<a href=r/rf>Reference</a><br>
+<a href=r/re>Regional</a><br>
+<a href=r/sc>Science</a>
+</font></td>
+</tr></table>
+</td>
+</tr></table>
+</td></tr></table>
+<table cellpadding=0 cellspacing=0 border=0><tr><td height=10><spacer type=block width=1 height=10></td></tr></table>
+<table cellpadding=1 cellspacing=0 border=0 bgcolor=#d2e4fc width=100%><tr><td>
+<table cellpadding=1 cellspacing=0 border=0 width=100%><tr><td nowrap width=70%><font size=-2>&nbsp;&nbsp;&nbsp;</font><b><a href=r/xz><font face=arial size=-1 color="#000000">More Yahoo! Services</font></a></b></td><td nowrap align=right><font face=verdana size=-2><b><a href=r/yz>&raquo; More Yahoo! Services</a></b></font><font size=-2>&nbsp;&nbsp;&nbsp;</font></td></tr></table>
+<table cellpadding=10 bgcolor=#ffffff cellspacing=0 border=0 width=100%><tr>
+<td valign=top>
+<table cellpadding=0 cellspacing=0 border=0 width=100%><tr>
+<td width=25% valign=top><font face=arial size=-1>
+<a href=r/a2>Auctions</a><br>
+<a href=r/ca>Calendar</a>
+</font></td>
+<td width=25% valign=top><font face=arial size=-1>
+<a href=r/yc>Chat</a><br>
+<a href=r/cf>Classifieds</a>
+</font></td>
+<td width=25% valign=top><font face=arial size=-1>
+<a href=r/eu>Education</a><br>
+<a href=r/gr>Greetings</a>
+</font></td>
+<td width=25% valign=top><font face=arial size=-1>
+<a href=r/pf>Members</a><br>
+<a href=r/pt>Pets</a>
+</font></td>
+</tr></table>
+</td>
+</tr></table>
+</td></tr></table>
+<table cellpadding=0 cellspacing=0 border=0><tr><td height=10><spacer type=block width=1 height=10></td></tr></table>
+</td>
+<td width=20 style="width:20px"><spacer type=block width=20 height=1></td>
+<script language=javascript>
+now=new Date;
+t3=now.getTime();
+</script>
+<td valign=top align=left width=39%>
+<script language=javascript>
+if (ad) {
+document.write('<div id=adiv2');
+document.write('>');
+document.write('<a href="'+jp(3,'eimg2',img2u)+'"><img border=0 src="'+img2+'" alt="'+txt1+'" height='+img2h+' width='+img2w+'></a>');
+document.write('</div><table cellspacing=0 cellpadding=2 border=0 width=100%><tr><td align=center><font face=verdana size=-2><b><a href="'+jp(5,'etxt1',txt1u)+'">'+txt1+'</a></b>');
+document.write('</font></td></tr></table>');
+}
+</script>
+<table cellpadding=0 cellspacing=0 border=0><tr><td height=10><spacer type=block width=1 height=10></td></tr></table>
+<table cellpadding=1 cellspacing=0 border=0 bgcolor=#9b72cf width=100%><tr><td>
+<table cellpadding=1 cellspacing=0 border=0 width=100%><tr><td nowrap width=70%><font size=-2>&nbsp;&nbsp;&nbsp;</font><b><a href=r/d2><font face=arial size=-1 color="#ffffff">In the News</font></a></b></td><td nowrap align=right><font face=verdana size=-2><font face=verdana size=-2 color="#ffffff"><script language=javascript>document.write(time);</script></font></font><font size=-2>&nbsp;&nbsp;&nbsp;</font></td></tr></table>
+<table cellpadding=10 cellspacing=0 border=0 width=100% bgcolor=#f1f1fd><tr>
+<td valign=top><font face=arial size=-1>
+&#149;&nbsp;<a href=s/240226>Palestinian leader promises better future</a><br>&#149;&nbsp;<a href=s/251238>Iraq rebuilding air force from ground up</a><br>&#149;&nbsp;<a href=s/251184>Merck Vioxx loss likely to increase lawsuits</a><br>&#149;&nbsp;<a href=s/251250>Papers portray Roberts as brash, conservative </a><br>&#149;&nbsp;<a href=s/251249>Canadian killed in possible Haiti kidnapping</a><br>&#149;&nbsp;<a href=s/251240>Hubble astrophysicist John Bacall dies at 70</a><br>&#149;&nbsp;<a href=s/251239>Dublin honors Thin Lizzy frontman with statue</a><br>&#149;&nbsp;<a href=s/2752>MLB</a> &#183; <a href=s/3541>NFL</a> &#183; <a href=s/3528>NBA</a> &#183; <a href=s/3529>NHL</a> &#183; <a href=s/9302>Tennis</a> &#183; <a href=s/59321>Soccer</a><br>
+<table cellpadding=0 cellspacing=0 border=0><tr><td height=5><spacer type=block width=1 height=5></td></tr></table>
+<table cellpadding=0 cellspacing=0 border=0 bgcolor="#cccccc" width=100%><tr><td height=1><spacer type=block width=1 height=1></td></tr></table>
+<table cellpadding=0 cellspacing=0 border=0><tr><td height=5><spacer type=block width=1 height=5></td></tr></table>
+<font face=verdana size=-3><b><a href=r/xn>News</a> &#183; <a href=r/me>Popular</a> &#183; <a href=r/s2>Sports</a> &#183; <a href=r/f2>Stocks</a></b></font>
+</font></td>
+</tr></table>
+</td></tr></table>
+<table cellpadding=0 cellspacing=0 border=0><tr><td height=10><spacer type=block width=1 height=10></td></tr></table>
+<table cellpadding=1 cellspacing=0 border=0 bgcolor=#9b72cf width=100%><tr><td>
+
+<table cellpadding=1 cellspacing=0 border=0 width=100%><tr><td nowrap width=70%><font size=-2>&nbsp;&nbsp;&nbsp;</font><b><font face=arial size=-1 color="#ffffff"><a href=r/wt><font color=ffffff>Weather</font></a> and <a href=r/mb><font color=ffffff>Traffic</font></a></font></b></td><td nowrap align=right><font face=verdana size=-2><b></b></font><font size=-2>&nbsp;&nbsp;&nbsp;</font></td></tr></table>
+<table cellpadding=10 cellspacing=0 border=0 width=100% bgcolor=#f1f1fd><tr>
+<td colspan=2 valign=top><font face=arial size=-1>
+<form action="r/w8/*http://weather.yahoo.com/search/weather2">
+<table cellpadding=0 cellspacing=0 border=0 width=100%><tr>
+<td colspan=2><font face=verdana size=-2><label for=z>Enter City or U.S. Zip Code</label></font></td>
+</tr><tr>
+<td colspan=2 height=5>
+<spacer type=block width=1 height=5>
+</td>
+</tr><tr>
+<td><img src="/web/20050820013359im_/http://us.i1.yimg.com/us.yimg.com/i/ww/trfc_bckt.gif" width=38 height=24></td>
+<td><font face=verdana size=-2><input type=text name=p> <input type=submit value=Go></font></td>
+</tr><tr>
+<td colspan=2 height=5>
+<spacer type=block width=1 height=5>
+</td>
+</tr><tr>
+<td colspan=2><table cellpadding=0 cellspacing=0 border=0 width=100%><tr>
+<td width=5><font face=verdana size=-2><input type=checkbox id=we name=sv value=on checked></font></td>
+<td><font face=verdana size=-2><label for=we>Save location on this page</label></font></td>
+</tr></table></td>
+<span style="margin-top:-1em"></span>
+</tr></table>
+</form>
+</font><span style="margin-top:-1em"></span></td>
+</tr></table>
+</td></tr></table>
+<table cellpadding=0 cellspacing=0 border=0><tr><td height=10><spacer type=block width=1 height=10></td></tr></table>
+<table cellpadding=1 cellspacing=0 border=0 bgcolor=#9b72cf width=100%><tr><td>
+<table cellpadding=1 cellspacing=0 border=0 width=100%><tr><td nowrap width=70%><font size=-2>&nbsp;&nbsp;&nbsp;</font><b><a href=r/0v><font face=arial size=-1 color="#ffffff">Marketplace</font></a></b></td><td nowrap align=right><font face=verdana size=-2><b></b></font><font size=-2>&nbsp;&nbsp;&nbsp;</font></td></tr></table>
+<table cellpadding=10 cellspacing=0 border=0 width=100% bgcolor=#f1f1fd><tr>
+<td valign=top><font face=arial size=-1>
+<table border=0 cellpadding=0 cellspacing=0 width="100%"><tr><td valign=top><a href="/web/20050820013359/http://us.ard.yahoo.com/SIG=12hgvhgbp/M=324118.6230298.7937147.4550529/D=yahoo_top/S=2716149:M5/_ylt=AobLPJy.JOkcHYvhUueCfJf1cSkA/Y=YAHOO/EXP=1124508839/A=2932375/R=0/SIG=13vl7au70/*https://www2.nextag.com/goto.jsp?p=2279&amp;search=b_refihistoric150k&amp;vers=679&amp;disc=y&amp;product=100000035&amp;loc=as&amp;tm=y&amp;url=%2Fst.jsp"><img src="/web/20050820013359im_/http://us.a1.yimg.com/us.yimg.com/a/1-/flash/promotions/nextag/050819/70illtA.gif" width=70 height=70 border=0></a></td><td width=8>&nbsp;</td><td valign=top><font face=arial size=-1><a href="/web/20050820013359/http://us.ard.yahoo.com/SIG=12hgvhgbp/M=324118.6230298.7937147.4550529/D=yahoo_top/S=2716149:M5/_ylt=AobLPJy.JOkcHYvhUueCfJf1cSkA/Y=YAHOO/EXP=1124508839/A=2932375/R=1/SIG=13vl7au70/*https://www2.nextag.com/goto.jsp?p=2279&amp;search=b_refihistoric150k&amp;vers=679&amp;disc=y&amp;product=100000035&amp;loc=as&amp;tm=y&amp;url=%2Fst.jsp">Refinance rates at historic lows</a><br><a href="/web/20050820013359/http://us.ard.yahoo.com/SIG=12hgvhgbp/M=324118.6230298.7937147.4550529/D=yahoo_top/S=2716149:M5/_ylt=AobLPJy.JOkcHYvhUueCfJf1cSkA/Y=YAHOO/EXP=1124508839/A=2932375/R=2/SIG=13vl7au70/*https://www2.nextag.com/goto.jsp?p=2279&amp;search=b_refihistoric150k&amp;vers=679&amp;disc=y&amp;product=100000035&amp;loc=as&amp;tm=y&amp;url=%2Fst.jsp">$150,000 mortgage for $494/mo</a>. Other loan amounts available. Up to 4 offers. Free in 60 sec.</font></td></tr></table><script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['NG4YBNFJq2o-']='&U=137o4102u%2fN%3dNG4YBNFJq2o-%2fC%3d324118.6230298.7937147.4550529%2fD%3dM5%2fB%3d2932375';
+</script><noscript><img width=1 height=1 alt="" src="/web/20050820013359im_/http://bc.us.yahoo.com/b?P=ilmei0Je5iTUdUPUQwUcZ2J8z_Hi0EMGiIcACMP2&amp;T=142qqbglk%2fX%3d1124501639%2fE%3d2716149%2fR%3dyahoo_top%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d4293595763%2fQ%3d-1%2fS%3d1%2fJ%3d24E65E42&amp;U=137o4102u%2fN%3dNG4YBNFJq2o-%2fC%3d324118.6230298.7937147.4550529%2fD%3dM5%2fB%3d2932375"></noscript><hr size=1 noshade><a href="/web/20050820013359/http://us.ard.yahoo.com/SIG=12hhpnupf/M=347396.6340820.7924984.5024130/D=yahoo_top/S=2716149:T5/_ylt=AobLPJy.JOkcHYvhUueCfJf1cSkA/Y=YAHOO/EXP=1124508839/A=2927758/R=0/SIG=11mo0hfjk/*http://www.achieveyourcareer.com/?refcode=2002052025">Get your online degree</a> - Bachelor's, Master's, PhD  - <a href="/web/20050820013359/http://us.ard.yahoo.com/SIG=12hhpnupf/M=347396.6340820.7924984.5024130/D=yahoo_top/S=2716149:T5/_ylt=AobLPJy.JOkcHYvhUueCfJf1cSkA/Y=YAHOO/EXP=1124508839/A=2927758/R=1/SIG=11mo0hfjk/*http://www.achieveyourcareer.com/?refcode=2002052025">Free info from top colleges</a>.<script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['NW4YBNFJq2o-']='&U=137f2jagt%2fN%3dNW4YBNFJq2o-%2fC%3d347396.6340820.7924984.5024130%2fD%3dT5%2fB%3d2927758';
+</script><noscript><img width=1 height=1 alt="" src="/web/20050820013359im_/http://bc.us.yahoo.com/b?P=ilmei0Je5iTUdUPUQwUcZ2J8z_Hi0EMGiIcACMP2&amp;T=1427fo13b%2fX%3d1124501639%2fE%3d2716149%2fR%3dyahoo_top%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d2305831164%2fQ%3d-1%2fS%3d1%2fJ%3d24E65E42&amp;U=137f2jagt%2fN%3dNW4YBNFJq2o-%2fC%3d347396.6340820.7924984.5024130%2fD%3dT5%2fB%3d2927758"></noscript><hr size=1 noshade><a href="/web/20050820013359/http://us.ard.yahoo.com/SIG=12h46itn4/M=361863.6874849.7925076.5024130/D=yahoo_top/S=2716149:T5/_ylt=AobLPJy.JOkcHYvhUueCfJf1cSkA/Y=YAHOO/EXP=1124508839/A=2933655/R=0/SIG=12phu8m1v/*http://www2.us.hsbc.com/1/2/3/personal/savings/savingsaccounts/onlinesavings?code=yh019">3.50% APY HSBC online savings account</a> - Over 6x the national average savings rate.<script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['Nm4YBNFJq2o-']='&U=137n5mrr8%2fN%3dNm4YBNFJq2o-%2fC%3d361863.6874849.7925076.5024130%2fD%3dT5%2fB%3d2933655';
+</script><noscript><img width=1 height=1 alt="" src="/web/20050820013359im_/http://bc.us.yahoo.com/b?P=ilmei0Je5iTUdUPUQwUcZ2J8z_Hi0EMGiIcACMP2&amp;T=142a9un7u%2fX%3d1124501639%2fE%3d2716149%2fR%3dyahoo_top%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d1422953952%2fQ%3d-1%2fS%3d1%2fJ%3d24E65E42&amp;U=137n5mrr8%2fN%3dNm4YBNFJq2o-%2fC%3d361863.6874849.7925076.5024130%2fD%3dT5%2fB%3d2933655"></noscript><hr size=1 noshade><a href="/web/20050820013359/http://us.ard.yahoo.com/SIG=12h22lk67/M=352297.6508191.7944421.5024130/D=yahoo_top/S=2716149:T5/_ylt=AobLPJy.JOkcHYvhUueCfJf1cSkA/Y=YAHOO/EXP=1124508839/A=2932636/R=0/SIG=11uv4flld/*http://clk.atdmt.com/COM/go/yhxxxbbo0090000003com/direct/01/">Blockbuster Online</a> - $17.99/month, free coupons, free shipping, no due dates.<script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['N24YBNFJq2o-']='&U=137tqe9uu%2fN%3dN24YBNFJq2o-%2fC%3d352297.6508191.7944421.5024130%2fD%3dT5%2fB%3d2932636';
+</script><noscript><img width=1 height=1 alt="" src="/web/20050820013359im_/http://bc.us.yahoo.com/b?P=ilmei0Je5iTUdUPUQwUcZ2J8z_Hi0EMGiIcACMP2&amp;T=142vioblv%2fX%3d1124501639%2fE%3d2716149%2fR%3dyahoo_top%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d3890441973%2fQ%3d-1%2fS%3d1%2fJ%3d24E65E42&amp;U=137tqe9uu%2fN%3dN24YBNFJq2o-%2fC%3d352297.6508191.7944421.5024130%2fD%3dT5%2fB%3d2932636"></noscript><tr><td colspan=2><font size=-1 face=arial><hr noshade size=1 color=d0d3f2><table width=100% cellspacing=0 cellpadding=1 border=0><tr><td valign="top" nowrap><font size="-1" face="arial"><b>Back to School Special</b></font></td><td valign="top" width="99%"><img src="/web/20050820013359im_/http://us.i1.yimg.com/us.yimg.com/i/mntl/sh/05q3/bus_trans.gif" alt="" width="18" height="15" border="0"></td></tr><tr><td colspan=2><font size="-1" face="arial"><a href=s/251004>Check out fall fashion trends for school</a>.<!-- SpaceID=2716149 loc=T8 noad-spid -->
+<script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['OG4YBNFJq2o-']='&U=12677am4s%2fN%3dOG4YBNFJq2o-%2fC%3d-2%2fD%3dT8%2fB%3d-2';
+</script><noscript><img width=1 height=1 alt="" src="/web/20050820013359im_/http://bc.us.yahoo.com/b?P=ilmei0Je5iTUdUPUQwUcZ2J8z_Hi0EMGiIcACMP2&amp;T=141na6ugg%2fX%3d1124501639%2fE%3d2716149%2fR%3dyahoo_top%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d290053820%2fQ%3d-1%2fS%3d1%2fJ%3d24E65E42&amp;U=12677am4s%2fN%3dOG4YBNFJq2o-%2fC%3d-2%2fD%3dT8%2fB%3d-2"></noscript></font></td></tr></table></font></td></tr>
+</font></td>
+</tr></table>
+</td></tr></table>
+<table cellpadding=0 cellspacing=0 border=0><tr><td height=10><spacer type=block width=1 height=10></td></tr></table>
+<table cellpadding=1 cellspacing=0 border=0 bgcolor=#9b72cf width=100%><tr><td>
+<table cellpadding=1 cellspacing=0 border=0 width=100%><tr><td nowrap width=70%><font size=-2>&nbsp;&nbsp;&nbsp;</font><b><a href=r/oc><font face=arial size=-1 color="#ffffff">Yahoo! Advertising Solutions</font></a></b></td><td nowrap align=right><font face=verdana size=-2><b></b></font><font size=-2>&nbsp;&nbsp;&nbsp;</font></td></tr></table>
+<table cellpadding=10 cellspacing=0 border=0 width=100% bgcolor=#f1f1fd><tr>
+<td valign=top>
+<table cellpadding=0 cellspacing=0 border=0 width=100%><tr>
+<td width=50% valign=top><font face=arial size=-1><a href=r/o3>Search Marketing</a><br>
+<a href=r/o4>Sponsored Search</a></font></td>
+<td width=50% valign=top><font face=arial size=-1><a href=r/o5>Local Ads</a><br>
+<a href=r/o7>Product Submit</a></font></td>
+</tr></table>
+<table cellpadding=0 cellspacing=0 border=0><tr>
+<td height=5><spacer type=block width=1 height=5></td>
+</tr></table>
+<font face=verdana size=-2><b><a href=r/di>&#187; More Advertising Solutions</a></b></font>
+</td>
+</tr></table>
+</td></tr></table>
+<table cellpadding=0 cellspacing=0 border=0><tr><td height=10><spacer type=block width=1 height=10></td></tr></table>
+<table cellpadding=1 cellspacing=0 border=0 bgcolor=#9b72cf width=100%><tr><td>
+<table cellpadding=1 cellspacing=0 border=0 width=100%><tr><td nowrap width=70%><font size=-2>&nbsp;&nbsp;&nbsp;</font><b><a href=r/wl><font face=arial size=-1 color="#ffffff">Yahoo! International</font></a></b></td><td nowrap align=right><font face=verdana size=-2><b></b></font><font size=-2>&nbsp;&nbsp;&nbsp;</font></td></tr></table>
+<table cellpadding=10 cellspacing=0 border=0 width=100% bgcolor=#f1f1fd><tr>
+<td valign=top>
+<table cellpadding=0 cellspacing=0 border=0 width=100%><tr><td width=33% valign=top><font face=arial size=-1><a href=r/ep>Y! en espa&ntilde;ol</a><br><a href=r/cc>China</a></font></td><td width=33% valign=top><font face=arial size=-1><a href=r/mx>Mexico</a><br><a href=r/uk>UK & Ireland</a></font></td><td width=33% valign=top><font face=arial size=-1><a href=r/id>India</a><br><a href=r/an>Australia & NZ</a></font></td></tr></table><table cellpadding=0 cellspacing=0 border=0><tr><td height=5><spacer type=block width=1 height=5></td></tr></table>
+<font face=verdana size=-2><b><a href=r/gy>&raquo; See all Y! international sites</a></b></font>
+</td>
+</tr></table>
+</td></tr></table>
+<table cellpadding=0 cellspacing=0 border=0><tr><td height=10><spacer type=block width=1 height=10></td></tr></table>
+</td>
+</tr></table>
+<table cellpadding=0 cellspacing=0 border=0><tr><td height=10><spacer type=block width=1 height=10></td></tr></table>
+<table cellpadding=0 cellspacing=0 border=0 width=760 class=ex><tr><td colspan=2>
+<table cellpadding=0 cellspacing=0 border=0 bgcolor="#cccccc" width=100%><tr><td height=1><spacer type=block width=1 height=1></td></tr></table>
+</td></tr></table>
+<table cellpadding=0 cellspacing=0 border=0 width=760 class=ex><tr>
+<td valign=top align=left width=90%><font face=arial size=-1 color=#666666>
+<a href=r/ad>How to Suggest a Site</a> |
+<a href=r/cp>Company Info</a> |
+<a href=r/pv>Privacy Policy</a> |
+<a href=r/ts>Terms of Service</a> |
+<a href=r/hr>Jobs</a> |
+<a href=r/ao>Advertise With Us</a> |
+<a href=r/hw>Help</a>
+<br>
+Copyright &copy; 2005 Yahoo! Inc. All rights reserved.
+<a href=r/cy>Copyright/IP Policy</a>.
+</font></td>
+<td valign=top align=right width=10%>
+<table border=0 cellspacing="0" cellpadding="0"><tr><td><a href="/web/20050820013359/http://us.ard.yahoo.com/SIG=12i3riph4/M=331696.6550468.7545790.6367092/D=yahoo_top/S=2716149:BC1/_ylt=AobLPJy.JOkcHYvhUueCfJf1cSkA/Y=YAHOO/EXP=1124508839/A=2773997/R=0/SIG=1113i4lob/*http://broadway.yahoo.com?loc=0"><img src="/web/20050820013359im_/http://us.a1.yimg.com/us.yimg.com/a/am/amex/btn_84x28_6.gif" width=84 height=28 border=0 alt=""></a></td></tr></table><script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['Om4YBNFJq2o-']='&U=138eb0mf7%2fN%3dOm4YBNFJq2o-%2fC%3d331696.6550468.7545790.6367092%2fD%3dBC1%2fB%3d2773997';
+</script><noscript><img width=1 height=1 alt="" src="/web/20050820013359im_/http://bc.us.yahoo.com/b?P=ilmei0Je5iTUdUPUQwUcZ2J8z_Hi0EMGiIcACMP2&amp;T=142o0fmcf%2fX%3d1124501639%2fE%3d2716149%2fR%3dyahoo_top%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d1434398155%2fQ%3d-1%2fS%3d1%2fJ%3d24E65E42&amp;U=138eb0mf7%2fN%3dOm4YBNFJq2o-%2fC%3d331696.6550468.7545790.6367092%2fD%3dBC1%2fB%3d2773997"></noscript></td>
+</tr></table>
+</font></center>
+<script language=javascript>
+var imgb=new Image;
+if (ad&&trkb) imgb.src=trkb;
+var imgc=new Image;
+if (ad&&trkc) imgc.src=trkc;
+if (ad) {
+if (cap) {
+if (lan) {
+tt(1,'load_cap_lan');
+} else {
+tt(2,'load_cap_dial');
+}
+} else {
+tt(3,'load_nocap');
+}
+} else {
+tt(5,'load_noad');
+}
+</script>
+<script language=javascript>d.sf1.p.focus();</script>
+<script language=javascript>
+now=new Date;
+t4=now.getTime();
+</script>
+</body>
+</html>
+<script language=javascript>
+if(window.yzq_p==null)document.write("<scr"+"ipt language=javascript src=/web/20050820013359/http://us.js1.yimg.com/us.yimg.com/lib/bc/bc_2.0.0.js></scr"+"ipt>");
+</script><script language=javascript>
+if(window.yzq_p)yzq_p('P=ilmei0Je5iTUdUPUQwUcZ2J8z_Hi0EMGiIcACMP2&T=13ts8nrke%2fX%3d1124501639%2fE%3d2716149%2fR%3dyahoo_top%2fK%3d5%2fV%3d1.1%2fW%3dJ%2fY%3dYAHOO%2fF%3d1480583216%2fS%3d1%2fJ%3d24E65E42');
+if(window.yzq_s)yzq_s();
+</script><noscript><img width=1 height=1 alt="" src="/web/20050820013359im_/http://bc.us.yahoo.com/b?P=ilmei0Je5iTUdUPUQwUcZ2J8z_Hi0EMGiIcACMP2&amp;T=141g7r8gb%2fX%3d1124501639%2fE%3d2716149%2fR%3dyahoo_top%2fK%3d5%2fV%3d3.1%2fW%3dJ%2fY%3dYAHOO%2fF%3d820683889%2fQ%3d-1%2fS%3d1%2fJ%3d24E65E42"></noscript>
+<!-- p5.www.scd.yahoo.com uncompressed Fri Aug 19 18:33:59 PDT 2005 -->
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 1:33:59 Aug 20, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 7:01:48 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

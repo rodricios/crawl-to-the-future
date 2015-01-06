@@ -1,0 +1,216 @@
+<html><head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app18.us.archive.org";archive_analytics.values.server_ms=3551;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<link rel="SHORTCUT ICON" href="/web/20051101013711im_/http://sc.msn.com/global/c/shs/favicon.ico" /><title>MSN Careers - Home</title><meta charset="utf-8" /><meta http-equiv="pics-label" content="(pics-1.1 &quot;http://www.icra.org/ratingsv02.html&quot; comment &quot;Single file v2.0&quot; l gen true for &quot;http://careers.msn.com&quot;  r (nz 1 vz 1 lz 1 oz 1 cz 1) &quot;http://www.rsac.org/ratingsv01.html&quot; l gen true for &quot;http://careers.msn.com&quot;  r (n 0 s 0 v 0 l 0))" /><meta name="keywords" content="job, jobs, job sites, job vacancies, find a job, search jobs, resume tips, job search engines, internet jobs, it jobs, computer jobs, retail jobs, healthcare jobs, sales jobs, finance jobs, engineering jobs, legal jobs, human resources jobs, HR jobs, admin jobs, customer support jobs, customer care jobs, career advice, careers, technology jobs, managerial jobs, diversity, equal opportunity, career search, job descriptions, temp jobs, part-time jobs, contractor jobs, careerbuilder, employee orientation, employee recruiting, employee relations, employee retention, employee screening, employees needed, employer resource, employer services, employment, employment agencies, employment agency, executive recruiting, executive search, find employees, for employers, head hunter, headhunter, hire, hiring, hiring agency, hr, hris, human resource, human resources, internet recruiting, job boards, job classifieds, job listings, job posting, jobposts, job recruiting, management recruiting, online recruiting, openings, performance review, placement, posting, postings, post jobs, post jobs online, post job openings, recruiter, recruiter resource, recruiters, recruiting, Recruiting, recruiting agency, recruiting resources, recruiting services, recruitment, recruitment agencies, retention, screening, sourcing, work" /><meta name="description" content="MSN Careers provides job seeker tools and content to help change or develop your career." /><link rel="stylesheet" type="text/css" href="/web/20051101013711cs_/http://sc.msn.com/global/css/nw/nw.css" /><link rel="stylesheet" type="text/css" href="/web/20051101013711cs_/http://sc.msn.com/css/careers/careers.css" /><script type="text/javascript" src="/web/20051101013711js_/http://sc.msn.com/global/scr/lg/hdr35.js">&nbsp;</script><script type="text/javascript" src="/web/20051101013711js_/http://sc.msn.com/global/scr/ph/hp26.js">&nbsp;</script><script type="text/javascript" src="/web/20051101013711js_/http://sc.msn.com/scr/car/careers.js">&nbsp;</script><base href="/web/20051101013711/http://g.msn.com/0US!s9.91441_302695/" /></head><body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://careers.msn.com/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "1";
+var displayMonth = "Nov";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://careers.msn.com/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20051101013711" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20051001010712/http://careers.msn.com/" title="1 Oct 2005">OCT</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 1:37:11 Nov 1, 2005">NOV</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20051201021922/http://careers.msn.com/" title="1 Dec 2005"><strong>DEC</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20051031023744/http://careers.msn.com/" title="2:37:44 Oct 31, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 1:37:11 Nov 1, 2005">1</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20051102024403/http://careers.msn.com/" title="2:44:03 Nov 2, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20041030082827/http://careers.msn.com/" title="30 Oct 2004"><strong>2004</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 1:37:11 Nov 1, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20061101014817/http://careers.msn.com/" title="1 Nov 2006"><strong>2006</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20051101013711*/http://careers.msn.com/" title="See a list of every capture for this URL">1,165 captures</a>
+           <div class="r" title="Timespan for captures of this URL">27 Nov 99 - 21 Oct 14</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000030_2000:-1:125045220022_2001:-1:3122373012b5_2002:-1:003012215240_2003:-1:031323211242_2004:-1:11302cccdaca_2005:10:cccbdddf8acd_2006:-1:cc7cb3561078_2007:-1:5867899aab9a_2008:-1:935720121444_2009:-1:181310201302_2010:-1:010021000100_2011:-1:000164732533_2012:-1:430221201231_2013:-1:308510231312_2014:-1:111002112200_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<div class="big7" style="width:779px;"><!-- LWBA26 --><img width="0" height="0" src="/web/20051101013711im_/http://c.msn.com/c.gif?na=1154&amp;nc=1192&amp;ps=10115&amp;di=491&amp;pi=7327&amp;TP=http%3a%2f%2fcareers.msn.com%2f" alt="" border="0" /></div><div class="dMSNME_1"><table width="779" height="25" cellpadding="0" cellspacing="0" class="big7"><tr><td align="left" valign="middle">&nbsp;&nbsp;<a href="59.a30/1??cm=Big6">MSN Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="59.a30/2??cm=Big6">My MSN</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="59.a30/3??cm=Big6">Hotmail</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="59.a30/4??cm=Big6">Shopping</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="59.a30/5??cm=Big6">Money</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="59.a30/6??cm=Big6">People &amp; Chat</a></td><td align="center"><span class="dMSNME_1"><A HREF="/web/20051101013711/http://login.passport.com/login.srf?lc=1033&amp;id=6528&amp;ru=http%3a%2f%2fcareers.msn.com%2f%3ftcru%3dhttp%253a%252f%252fcareers.msn.com%252f&amp;tw=14400&amp;kv=7&amp;ct=1130809031&amp;cb=0&amp;msppjph=1&amp;ver=2.1.6000.1&amp;tpf=2e9dbf0b234e6042ce713b9d973b7610"><IMG SRC="/web/20051101013711im_/http://www.passportimages.com/1033/signin.gif" CLASS="PassportSignIn" BORDER="0" ALT="Sign in to the Microsoft Passport Network" ID="idSI"/></A></span></td><td width="75" align="right">Web Search:</td><td width="180" align="left"><form method="get" action="/web/20051101013711/http://g.msn.com/0nwenus0/AP/16">&nbsp;&nbsp;<input type="text" name="q" size="14" maxlength="150" style="width:140px;" />&nbsp;<input type="submit" class="GoBtn" size="4" value="Go" /><input type="hidden" name="cp" value="1252" /><input type="hidden" name="FORM" value="AP" /></form></td></tr></table></div><table width="779" height="105" cellpadding="0" cellspacing="0" class="adsb"><tr><td align="center" valign="top"><br /><!--NOAD--><img src="/web/20051101013711im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A26"/></td></tr></table><table width="779" cellpadding="0" cellspacing="0" class="sf"><tr><td rowspan="2" width="118" class="sfl"><a href="58.b30/1??cm=sfLogo"><noscript><img border="0" width="118" height="35" src="/web/20051101013711im_/http://sc.msn.com/global/c/lg/msft_118x35.gif" alt="go to MSN.com" title="go to MSN.com" /></noscript><script language="javascript">logoImg("/web/20051101013711/http://sc.msn.com");</script></a></td><td rowspan="2" width="*" class="sfl" valign="bottom" nowrap="nowrap"><h2><a href="83.b1441/1??cm=sfSite">Careers</a></h2></td><td rowspan="3" width="113" class="sfm"><img src="/web/20051101013711im_/http://sc.msn.com/global/c/sf/sf_o.jpg" alt="" width="113" height="44" border="0" /></td><td width="458" class="sfr">&nbsp;</td><td height="10"></td></tr><tr><td rowspan="2" class="sfi" valign="bottom" align="right"><a href="javascript:SendMail();">Email a friend</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="55.a3024/2??cm=SharkfinToolsNewsletterLink-S">Newsletters</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:DoHelp();">Help</a></td><td height="26"></td></tr><tr><td colspan="2" class="sflb">&nbsp;</td><td height="9"></td></tr></table><table width="779" height="490" cellpadding="0" cellspacing="0" border="0" class="main"><tr><td width="130" valign="top" align="right" class="n130"><img src="/web/20051101013711im_/http://sc.msn.com/5E/C%60KU,RS7Y13,UOL!HN~~Q_.gif" border="0" alt="with CareerBuilder" title="with CareerBuilder" width="130" height="50" /><br /><div class="LoginLinks"><a href="53.a3024/1??cm=JoinLoginLinks-S">Join</a>&nbsp;&nbsp;&nbsp;<a href="53.a3024/2??cm=JoinLoginLinks-S">Sign in</a></div><table width="120" cellpadding="0" cellspacing="0" border="0" class="vnav"><tr class="hilight"><td>&nbsp;<img src="/web/20051101013711im_/http://sc.msn.com/global/c/sf/n.gif" border="0" width="7" height="7" /></td><td><a href="23.a3024/1??cm=NavigationMenu-S">Home</a></td></tr><tr><td>&nbsp;<img src="/web/20051101013711im_/http://sc.msn.com/global/c/sf/n.gif" border="0" width="7" height="7" /></td><td><a href="23.a3024/2??cm=NavigationMenu-S">Find a Job</a></td></tr><tr><td>&nbsp;<img src="/web/20051101013711im_/http://sc.msn.com/global/c/sf/n.gif" border="0" width="7" height="7" /></td><td><a href="23.a3024/3??cm=NavigationMenu-S">Post a Resume</a></td></tr><tr><td>&nbsp;<img src="/web/20051101013711im_/http://sc.msn.com/global/c/sf/n.gif" border="0" width="7" height="7" /></td><td><a href="23.e3024/4??cm=NavigationMenu-S">Job Alerts - NEW!</a></td></tr><tr><td>&nbsp;<img src="/web/20051101013711im_/http://sc.msn.com/global/c/sf/n.gif" border="0" width="7" height="7" /></td><td><a href="23.d3024/5??cm=NavigationMenu-S">My CareerBuilder</a></td></tr><tr><td>&nbsp;<img src="/web/20051101013711im_/http://sc.msn.com/global/c/sf/n.gif" border="0" width="7" height="7" /></td><td><a href="23.d3024/6??cm=NavigationMenu-S">Articles &amp; Advice</a></td></tr><tr><td>&nbsp;<img src="/web/20051101013711im_/http://sc.msn.com/global/c/sf/n.gif" border="0" width="7" height="7" /></td><td><a href="23.a3024/7??cm=NavigationMenu-S">Shopping</a></td></tr></table><div class="StyleBox1"><h1>For Employers</h1><div class="BulletList"><ul><li><a href="21.c3024/1??cm=BulletedLinks-S">Post a Job Now</a></li><li><a href="21.a3024/2??cm=BulletedLinks-S">Search the Resume Database</a></li></ul></div></div><div class="NLModule"><h3>MSN Careers</h3><h4>Newsletter Sign-Up</h4><form name="newsform" onsubmit="javascript:callinsite();return false;">
+	Your email address:<br /><input type="text" name="txtemail" size="12" value="" /><br /><br />
+	Preferred format:<br /><input type="radio" name="radiohtml" value="HTM" checked="1" />HTML (graphical)<br /><input type="radio" name="radiohtml" value="TXT" />Plain text<br /><input type="image" name="go" title="Click to Sign Up" onclick="javascript:callinsite();return false;" onmouseover="javascript:this.src='http://sc.msn.com/4H/SNW95+P3X~3J`42U]_3I38.gif';" onmouseout="javascript:this.src='http://sc.msn.com/5R/~4{O~{@NLE4W{G@V-8~410.gif';" align="right" src="/web/20051101013711im_/http://sc.msn.com/5R/~4%7BO~%7B@NLE4W%7BG@V-8~410.gif" border="0" width="20" height="20" style="cursor:Hand;" /><br /><a title="Learn More About Our Newsletters" href="/web/20051101013711/http://careers.msn.com/about.armx">Learn more</a><br /></form></div></td><td width="330" valign="top" align="left" class="p330"><iframe SCROLLING="NO" WIDTH="1" HEIGHT="1" FRAMEBORDER="0" FRAMESPACING="0" SRC="/web/20051101013711if_/http://rad.msn.com/ADSAdClient31.dll?GetAd=&amp;PG=CCHTE1&amp;AP=1402"></iframe><img src="/web/20051101013711im_/http://sc.msn.com/1Y/+%5D%602V%7D99%7BI1K+Q%7B!B3H%7BN8.gif" border="0" alt="Start Your Job Search Now (For testing)" title="Start Your Job Search Now (For testing)" width="315" height="36" /><br /><table cellpadding="0" cellspacing="0" border="0" class="tblTopLeft"><tr><td valign="top" class="td1"><img src="/web/20051101013711im_/http://sc.msn.com/1X/9U%602%60-%7D0+J1C8E3WY7PZP8.gif" border="0" alt="Quick Job Search" title="Quick Job Search" width="170" height="25" /><br /><form action="/web/20051101013711/http://g.msn.com/US4/101" method="get" id="QJSearch" name="QJSearch" onSubmit="SettingQJSCookie(document.getElementById('QSKWD').value,document.getElementById('QSCTY').value,document.getElementById('QSSTS').options[document.getElementById('QSSTS').selectedIndex].value,document.getElementById('QSJBT').options[document.getElementById('QSJBT').selectedIndex].value)"><input type="hidden" name="SiteID" value="CBMSN003" id="SiteID" /><input type="hidden" name="lr" value="CBMSN" id="lr" /><input type="hidden" name="sc_extcmp" value="JS_MSN_QSBox" /><div class="QJS"><strong>Enter Keyword(s):</strong><br /><div class="egCap">(i.e. job title, company name, etc.):</div><input type="text" name="QSKWD" id="QSKWD" class="QJSInput" /><br /><strong>Enter a City:</strong><br /><input type="text" name="QSCTY" id="QSCTY" class="QJSInput" /><br /><strong>Select a State:</strong><br /><select name="QSSTS" id="QSSTS"><option value="ALL,US">-All United States-</option><option value="AL,US">Alabama,US</option><option value="AK,US">Alaska,US</option><option value="AZ,US">Arizona,US</option><option value="AR,US">Arkansas,US</option><option value="CA,US">California,US</option><option value="CO,US">Colorado,US</option><option value="CT,US">Connecticut,US</option><option value="DE,US">Delaware,US</option><option value="DC,US">District of Columbia,US</option><option value="FL,US">Florida,US</option><option value="GA,US">Georgia,US</option><option value="HI,US">Hawaii,US</option><option value="ID,US">Idaho,US</option><option value="IL,US">Illinois,US</option><option value="IN,US">Indiana,US</option><option value="IA,US">Iowa,US</option><option value="KS,US">Kansas,US</option><option value="KY,US">Kentucky,US</option><option value="LA,US">Louisiana,US</option><option value="ME,US">Maine,US</option><option value="MD,US">Maryland,US</option><option value="MA,US">Massachusetts,US</option><option value="MI,US">Michigan,US</option><option value="MN,US">Minnesota,US</option><option value="MS,US">Mississippi,US</option><option value="MO,US">Missouri,US</option><option value="MT,US">Montana,US</option><option value="NE,US">Nebraska,US</option><option value="NV,US">Nevada,US</option><option value="NH,US">New Hampshire,US</option><option value="NJ,US">New Jersey,US</option><option value="NM,US">New Mexico,US</option><option value="NY,US">New York,US</option><option value="NC,US">North Carolina,US</option><option value="ND,US">North Dakota,US</option><option value="OH,US">Ohio,US</option><option value="OK,US">Oklahoma,US</option><option value="OR,US">Oregon,US</option><option value="PA,US">Pennsylvania,US</option><option value="RI,US">Rhode Island,US</option><option value="SC,US">South Carolina,US</option><option value="SD,US">South Dakota,US</option><option value="TN,US">Tennessee,US</option><option value="TX,US">Texas,US</option><option value="UT,US">Utah,US</option><option value="VT,US">Vermont,US</option><option value="VA,US">Virginia,US</option><option value="WA,US">Washington,US</option><option value="WV,US">West Virginia,US</option><option value="WI,US">Wisconsin,US</option><option value="WY,US">Wyoming,US</option><option value="ALL,CA">-All Canada-</option><option value="AB,CA">Alberta,CA</option><option value="BC,CA">British Columbia,CA</option><option value="MB,CA">Manitoba,CA</option><option value="NB,CA">New Brunswick,CA</option><option value="NF,CA">Newfoundland,CA</option><option value="NT,CA">Northwest Territories,CA</option><option value="NS,CA">Nova Scotia,CA</option><option value="ON,CA">Ontario,CA</option><option value="PE,CA">Prince Edward Island,CA</option><option value="PQ,CA">Quebec,CA</option><option value="SK,CA">Sasakatchewan,CA</option><option value="YT,CA">Yukon Territory,CA</option></select><br /><strong>Select a Category:</strong><br /><select name="QSJBT" id="QSJBT"><option value="All">&#xA0;&#x96;&#xA0;All Job Categories&#xA0;&#x96;&#xA0;</option><option value="JN001">Accounting</option><option value="JN002">Admin &amp; Clerical</option><option value="JN054">Automotive</option><option value="JN038">Banking</option><option value="JN053">Biotech</option><option value="JN019">Business Development</option><option value="JN043">Construction</option><option value="JN020">Consultant</option><option value="JN003">Customer Service</option><option value="JN021">Design</option><option value="JN027">Distribution  - Shipping</option><option value="JN031">Education</option><option value="JN004">Engineering</option><option value="JN022">Entry Level</option><option value="JN018">Executive</option><option value="JN017">Facilities</option><option value="JN005">Finance</option><option value="JN006">General Business</option><option value="JN051">General Labor</option><option value="JN046">Government</option><option value="JN055">Grocery</option><option value="JN023">Health Care</option><option value="JN040">Hospitality - Hotel</option><option value="JN007">Human Resources</option><option value="JN008">Information Technology</option><option value="JN056">Installation - Maint - Repair</option><option value="JN034">Insurance</option><option value="JN015">Inventory</option><option value="JN030">Legal</option><option value="JN041">Legal Admin</option><option value="JN037">Management</option><option value="JN029">Manufacturing</option><option value="JN009">Marketing</option><option value="JN047">Media - Journalism - Newspaper</option><option value="JN058">Nonprofit - Social Services</option><option value="JN050">Nurse</option><option value="JN010">Other</option><option value="JN049">Pharmaceutical</option><option value="JN024">Professional Services</option><option value="JN016">Purchasing -  Procurement</option><option value="JN025">QA - Quality Control</option><option value="JN057">Real Estate</option><option value="JN026">Research</option><option value="JN035">Restaurant - Food Service</option><option value="JN033">Retail</option><option value="JN011">Sales</option><option value="JN012">Science</option><option value="JN013">Skilled Labor - Trades</option><option value="JN028">Strategy - Planning</option><option value="JN014">Supply Chain</option><option value="JN048">Telecommunications</option><option value="JN032">Training</option><option value="JN044">Transportation</option><option value="JN045">Warehouse</option></select><br /><input type="submit" value="Search" /></div></form><script type="text/javascript">prePopQJS();</script><div class="QJSLinks"><div class="BulletList"><ul><li><a href="65.b9143/1??cm=Links-S">Search by Company</a></li><li><a href="65.c9143/2??cm=Links-S">Post a Resume</a></li></ul></div><a href="56.a9143/1??cm=QuickJobSearchToolAdvancedSearchImage-S"><img src="/web/20051101013711im_/http://sc.msn.com/4W/SYB@%7D%5BG%5BJ63SEX,+E5B0KS.gif" border="0" alt="Advanced Search" title="Advanced Search" width="102" height="27" /></a><br /></div><div class="StyleBox4"><img src="/web/20051101013711im_/http://sc.msn.com/3E/FQB9EH%5BQN%7B3-5N_1_KW8XZ.gif" border="0" alt="" title="" width="170" height="10" /><br /></div></td><td valign="top" class="td2"><div class="JobSearchRt"><div class="JobSearchIn"><div class="postresume"><h2><a href="76.b9143/2??cm=PostResumeFeed-S">Part Time Jobs</a></h2><div class="Abstract"><a href="76.b914376/1??cm=PostResumeFeed-S">Search part time jobs.</a></div></div><h2><a href="41.c3024/2??cm=SetupJobAlertFeed-S">Just Starting A Job Search?</a></h2><div class="Abstract"><a href="41.b302441/1??cm=SetupJobAlertFeed-S">Register today for job search help.</a></div><div class="FindJobsHeader"><h2><a href="66.b9143/1??cm=SeeLocalJobs-S">See Local Jobs</a></h2></div><div class="FindJobs"><div class="List"><a href="67.a9143/1??cm=FindJobs-S">Find jobs in your city.</a><br /><a href="67.a9143/2??cm=FindJobs-S">Select a City</a><br /></div></div><div class="NewJobs"><div class="NewJobsCity">See new jobs in</div><div class="List"><a href="63.b9143/1??cm=NewJobsCity-S">Different City?</a><br /></div></div><h2><a href="73.a9143/2??cm=ApplyHourlyJobsFeed-S">Apply Now to Hourly Jobs</a></h2><div class="Abstract"><a href="73.a914373/1??cm=ApplyHourlyJobsFeed-S">Quickly apply to the hourly paid jobs that match YOUR interests.</a></div></div></div></td></tr></table><table cellpadding="0" cellspacing="0" border="0" class="tblBotLeft"><tr><td valign="top" class="td1"><div class="FeaJob"><h2>Featured Job Category</h2><img src="/web/20051101013711im_/http://sc.msn.com/2H/2%5BK4D%7DA%60I73W-QDWZR+EHQ.jpg" border="0" alt="(c) Borland/PhotoLink/Getty Images" title="(c) Borland/PhotoLink/Getty Images" /><form><h1>Search 60,000+ Sales Jobs</h1><select onchange="window.location.href=this.options[this.selectedIndex].value" id="selSales" name="selSales"><option value="http://salesmarketing.msn.careerbuilder.com/?siteid=CBMSN1014&amp;sc_extcmp=JS_MSN_SubSMfeed">Select a City</option><option value="http://salesmarketing.msn.careerbuilder.com/sm.ic/Georgia_Atlanta/?siteid=CBMSN1014&amp;sc_extcmp=JS_MSN_SubSMfeed">Atlanta</option><option value="http://salesmarketing.msn.careerbuilder.com/sm.ic/Maryland_Baltimore/?siteid=CBMSN1014&amp;sc_extcmp=JS_MSN_SubSMfeed">Baltimore</option><option value="http://salesmarketing.msn.careerbuilder.com/sm.ic/Massachusetts_Boston/?siteid=CBMSN1014&amp;sc_extcmp=JS_MSN_SubSMfeed">Boston</option><option value="http://salesmarketing.msn.careerbuilder.com/sm.ic/Illinois_Chicago/?siteid=CBMSN1014&amp;sc_extcmp=JS_MSN_SubSMfeed">Chicago</option><option value="http://salesmarketing.msn.careerbuilder.com/sm.ic/Texas_Dallas/?siteid=CBMSN1014&amp;sc_extcmp=JS_MSN_SubSMfeed">Dallas</option><option value="http://salesmarketing.msn.careerbuilder.com/sm.ic/Michigan_Detroit/?siteid=CBMSN1014&amp;sc_extcmp=JS_MSN_SubSMfeed">Detroit</option><option value="http://salesmarketing.msn.careerbuilder.com/sm.ic/Florida_FortLauderdale/?siteid=CBMSN1014&amp;sc_extcmp=JS_MSN_SubSMfeed">Fort Lauderdale</option><option value="http://salesmarketing.msn.careerbuilder.com/sm.ic/Connecticut_Hartford/?siteid=CBMSN1014&amp;sc_extcmp=JS_MSN_SubSMfeed">Hartford</option><option value="http://salesmarketing.msn.careerbuilder.com/sm.ic/Texas_Houston/?siteid=CBMSN1014&amp;sc_extcmp=JS_MSN_SubSMfeed">Houston</option><option value="http://salesmarketing.msn.careerbuilder.com/sm.ic/Nevada_LasVegas/?siteid=CBMSN1014&amp;sc_extcmp=JS_MSN_SubSMfeed">Las Vegas</option><option value="http://salesmarketing.msn.careerbuilder.com/sm.ic/California_LosAngeles/?siteid=CBMSN1014&amp;sc_extcmp=JS_MSN_SubSMfeed">Los Angeles</option><option value="http://salesmarketing.msn.careerbuilder.com/sm.ic/Florida_Miami/?siteid=CBMSN1014&amp;sc_extcmp=JS_MSN_SubSMfeed">Miami</option><option value="http://salesmarketing.msn.careerbuilder.com/sm.ic/Connecticut_NewHaven/?siteid=CBMSN1014&amp;sc_extcmp=JS_MSN_SubSMfeed">New Haven</option><option value="http://salesmarketing.msn.careerbuilder.com/sm.ic/NewYork_NewYork/?siteid=CBMSN1014&amp;sc_extcmp=JS_MSN_SubSMfeed">New York</option><option value="http://salesmarketing.msn.careerbuilder.com/sm.ic/California_Oakland/?siteid=CBMSN1014&amp;sc_extcmp=JS_MSN_SubSMfeed">Oakland</option><option value="http://salesmarketing.msn.careerbuilder.com/sm.ic/Florida_Orlando/?siteid=CBMSN1014&amp;sc_extcmp=JS_MSN_SubSMfeed">Orlando</option><option value="http://salesmarketing.msn.careerbuilder.com/sm.ic/Pennsylvania_Philadelphia/?siteid=CBMSN1014&amp;sc_extcmp=JS_MSN_SubSMfeed">Philadelphia</option><option value="http://salesmarketing.msn.careerbuilder.com/sm.ic/California_SanFrancisco/?siteid=CBMSN1014&amp;sc_extcmp=JS_MSN_SubSMfeed">San Francisco</option><option value="http://salesmarketing.msn.careerbuilder.com/sm.ic/Washington_Seattle/?siteid=CBMSN1014&amp;sc_extcmp=JS_MSN_SubSMfeed">Seattle</option><option value="http://salesmarketing.msn.careerbuilder.com/sm.ic/DC_Washington/?siteid=CBMSN1014&amp;sc_extcmp=JS_MSN_SubSMfeed">Washington</option><option value="http://salesmarketing.msn.careerbuilder.com/?siteid=CBMSN1014&amp;sc_extcmp=JS_MSN_SubSMfeed">---------------</option><option value="http://salesmarketing.msn.careerbuilder.com/?siteid=CBMSN1014&amp;sc_extcmp=JS_MSN_SubSMfeed">More Search Options</option></select></form></div><div class="BulletList"><div class="BulletListTitle">Most Popular Categories</div><ul><li><a href="62.b9143/1??cm=MostPopularCategories-S">Accounting</a></li><li><a href="62.b9143/2??cm=MostPopularCategories-S">Admin &amp; Clerical</a></li><li><a href="62.b9143/3??cm=MostPopularCategories-S">Banking &amp; Finance</a></li><li><a href="62.b9143/4??cm=MostPopularCategories-S">Customer Service</a></li><li><a href="62.b9143/5??cm=MostPopularCategories-S">Engineering</a></li><li><a href="62.b9143/6??cm=MostPopularCategories-S">Healthcare</a></li><li><a href="62.b9143/7??cm=MostPopularCategories-S">Human Resources</a></li><li><a href="62.b9143/8??cm=MostPopularCategories-S">Information Technology</a></li><li><a href="62.b9143/9??cm=MostPopularCategories-S">Manufacturing</a></li><li><a href="62.b9143/10??cm=MostPopularCategories-S">Sales &amp; Marketing</a></li><li><a href="62.b9143/11??cm=MostPopularCategories-S">Search all categories ...</a></li></ul></div></td><td valign="top" class="td2"><div class="FeaEmp"><h1>Featured Employer</h1><h2><a href="75.c9143/2??cm=FeaturedEmployerFeed-S">GE</a></h2><div class="Abstract"><a href="75.c914375/1??cm=FeaturedEmployerFeed-S">GE Imagination at Work</a></div></div><h1>Tools &amp; Resources</h1><div class="BulletList"><ul><li><a href="43.d3024/1??cm=BulletedLinksFeed-S">Aim higher with your resume</a></li><li><a href="43.b3024/2??cm=BulletedLinksFeed-S">Get a resume that shines</a></li><li><a href="43.d3024/3??cm=BulletedLinksFeed-S">Start getting job offers</a></li></ul></div><h3>sponsored links</h3><h2><a href="42.c3024/2??cm=SponsoredFeed-S">Employers: Post Your Jobs Today</a></h2><div class="Abstract"><a href="42.b302442/1??cm=SponsoredFeed-S">Find qualified people quickly and efficiently with CareerBuilder.com! Learn more.</a></div></td></tr></table></td><td width="319" valign="top" class="r319"><img src="/web/20051101013711im_/http://sc.msn.com/4J/KQQOVWC!LT1_DAY%7DH8,9!I.gif" border="0" alt="Build Your Career" title="Build Your Career" width="318" height="36" /><br /><div class="RgtCol"><a href="77.b9226/2??cm=WhatsYourMarketValue-SC"><img src="/web/20051101013711im_/http://sc.msn.com/4%60/+V0%5D%5D%7D%7DFR63S31IOAF0VBT.jpg" border="0" alt="© Jon Feingersh/Masterfile" title="© Jon Feingersh/Masterfile" width="300" height="153" /></a><h2><a href="77.b9226/2??cm=WhatsYourMarketValue-SC">Words That Can Hurt Your Résumé</a></h2><div class="Abstract"><a href="77.b922677/1??cm=WhatsYourMarketValue-SC">When job seekers try to sell themselves to employers, they often load their résumés with empty words.  Be extra-careful before putting these 25 words in your résumé.  <strong>more...</strong></a></div><table cellpadding="0" cellspacing="0" border="0" class="MidTable"><tr><td valign="top" class="td1"><div class="BulletList"><div class="BulletListTitle">Inside MSN Careers</div><ul><li><a href="14.b9226/1??cm=LeftColumnInsideMSN-SC">Get a seasonal job </a></li><li><a href="14.a9226/2??cm=LeftColumnInsideMSN-SC">Job hunter horror stories</a></li><li><a href="14.a9226/3??cm=LeftColumnInsideMSN-SC">Cool jobs: Broadcasting</a></li><li><a href="14.a9226/4??cm=LeftColumnInsideMSN-SC">Add Careers links to your 'My MSN' page</a></li></ul></div></td><td valign="top" class="td2"><div class="BulletList"><div class="BulletListTitle">Life at Work</div><ul><li><a href="72.a9226/1??cm=RightColumnMoreOnMSN-SC">8 tips from working dads</a></li><li><a href="72.a9226/2??cm=RightColumnMoreOnMSN-SC">Become a better manager</a></li><li><a href="72.a9226/3??cm=RightColumnMoreOnMSN-SC">Survive a merger</a></li><li><a href="72.a9226/4??cm=RightColumnMoreOnMSN-SC">Advice for job hoppers</a></li><li><a href="72.a9226/5??cm=RightColumnMoreOnMSN-SC">Use your sick days wisely</a></li></ul></div></td></tr></table><div class="Eshop"><h3>MSN Shopping</h3><script language="javascript">var fSucceed = false;</script><script language="javascript" src="/web/20051101013711js_/http://shopping.msn.com/xmlbuddy/eShopOffer.aspx?iurl=Homepagemod&amp;ptnrData=4&amp;formatType=0&amp;v=3&amp;styletype=0&amp;Tracking=N&amp;ptnrId=4"></script><script language="javascript">if (!fSucceed)  document.write('<A href="/web/20051101013711/http://shopping.msn.com"><FONT size="1" family="Verdana">MSN Shopping</FONT></A>');</script></div><table cellpadding="0" cellspacing="0" border="0" class="tblAd"><tr><td valign="top" class="td1"><iframe src="/web/20051101013711if_/http://images.classesusa.com/msn-iframe/career-cross-link.html" border="0" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="300" height="140"></iframe></td></tr></table></div><script type="text/javascript">GetingCookie();</script></td></tr></table><table class="big7" width="779" height="20" cellpadding="0" cellspacing="0" border="0"><tr><td valign="middle" align="left" class="big1">&nbsp;&nbsp;<a href="55.a30/1?su=http://careers.msn.com/default.armx&amp;di=491&amp;&amp;cm=fTag">Try MSN Internet Software for FREE!</a></td></tr></table><div class="dMSNME_1"><table class="big7" width="779" height="20" cellpadding="0" cellspacing="0" border="0"><tr><td valign="middle" align="left">&nbsp;&nbsp;<a href="54.a30/1??cm=fBig7">MSN Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="54.a30/2??cm=fBig7">My MSN</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="54.a30/3??cm=fBig7">Hotmail</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="54.a30/4??cm=fBig7">Shopping</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="54.a30/5??cm=fBig7">Money</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="54.a30/6??cm=fBig7">People &amp; Chat</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="54.a30/7??cm=fBig7">Search</a></td><td class="fhelp" align="right"><a href="23.b3029/1?productkey=careers&amp;CW=1&amp;&amp;cm=FeedbackLink" target="_blank">Feedback</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:DoHelp();">Help</a>&nbsp;&nbsp;</td></tr></table></div><table class="terms" width="779" height="16" cellpadding="0" cellspacing="0" border="0"><tr><td height="15">&nbsp;&nbsp;© 2005 Microsoft Corporation. All rights reserved.&nbsp;<a href="56.a30/1??cm=fTerms">Terms of Use</a>&nbsp;<a href="56.a30/2??cm=fTerms">Advertise</a>&nbsp;<a href="56.a30/3??cm=fTerms">TRUSTe Approved Privacy Statement</a>&nbsp;<a href="56.a30/4??cm=fTerms">GetNetWise</a>&nbsp;<a href="56.b30/5??cm=fTerms">Anti-Spam Policy</a></td></tr></table><!--NOAD--><img src="/web/20051101013711im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A26"/></body></html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 1:37:11 Nov 1, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 6:19:39 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

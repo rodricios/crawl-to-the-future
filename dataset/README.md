@@ -4,16 +4,16 @@ Datasets - websites from 2000, 2005, 2010, and 2015
 This directory is where you'll find an on-going accumulation of
 websites from the following domains:
 
-* NYTimes - started
-* Reuters - started
-* CNN - started
-* Fox News
-* MSNBC
-* Yahoo News
-* Forbes
-* The Atlantic
-* The New Yorker
-* The Nation
+* [NYTimes](www.nytimes.com) - started
+* [Reuters](www.reuters.com)- started
+* [CNN](www.cnn.com) - started
+* [Fox News](www.foxnews.com) - started
+* [BBC](www.bbc.com) - started
+* MSNBC 
+* [Yahoo News](news.yahoo.com) - started
+* [Yahoo](www.yahoo.com) - started 
+* [Forbes](www.forbes.com) - started 
+* [MSN](www.msn.com) - started 
 * more domains yet to be listed
 
 Dataset Composition

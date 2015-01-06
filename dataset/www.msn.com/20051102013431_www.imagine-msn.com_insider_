@@ -1,0 +1,299 @@
+
+
+<html xml:lang="en" lang="en">
+
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app0.us.archive.org";archive_analytics.values.server_ms=2763;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<title>MSN Search Insider</title>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+  <LINK href="inside.css" rel=STYLESHEET TYPE=text/css>
+
+  <script>
+    var hl="search.msn.com/";
+    ht='http://';
+    d=document;
+    g="g.msn.com/0SEENUS/";
+    function sf(){location.href=ht+qf.f.value+encodeURIComponent(qf.q.value);return false;}
+  </script>
+
+  <BASE HREF="/web/20051102043253/http://www.imagine-msn.com/insider/">
+  <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+
+</head>
+
+<BODY bgcolor="#014E82" text="#FFFFFF">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.imagine-msn.com/insider/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "2";
+var displayMonth = "Nov";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.imagine-msn.com/insider/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20051102043253" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20051001033418/http://www.imagine-msn.com/insider/" title="1 Oct 2005">OCT</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 4:32:53 Nov 2, 2005">NOV</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20051203021145/http://www.imagine-msn.com/insider/" title="3 Dec 2005"><strong>DEC</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20051101014946/http://www.imagine-msn.com/insider/" title="1:49:46 Nov 1, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 4:32:53 Nov 2, 2005">2</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20051103033047/http://www.imagine-msn.com/insider/" title="3:30:47 Nov 3, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20041021042537/http://www.imagine-msn.com/insider/" title="21 Oct 2004"><strong>2004</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 4:32:53 Nov 2, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20061108013349/http://www.imagine-msn.com/insider/" title="8 Nov 2006"><strong>2006</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20051102043253*/http://www.imagine-msn.com/insider/" title="See a list of every capture for this URL">493 captures</a>
+           <div class="r" title="Timespan for captures of this URL">12 Oct 04 - 6 Jan 13</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:0000000002dd_2005:10:dcdcbbefbadd_2006:-1:c72922462051_2007:-1:131010222364_2008:-1:521243902005_2009:-1:133200000000_2010:-1:020100010101_2011:-1:010103132423_2012:-1:a22101211120_2013:-1:100000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+<table width="772" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top">
+    <td width="250" class="big6">
+      <a nowrap href="/web/20051102043253/http://g.msn.com/0nwenus0/AV/00">MSN Home</a> |
+      <a nowrap href="/web/20051102043253/http://g.msn.com/0nwenus0/AV/01">My MSN</a> |
+      <a nowrap href="/web/20051102043253/http://g.msn.com/0nwenus0/AV/02">Hotmail</a>
+    </td>
+    <td align=right class=container><a href="/web/20051102043253/http://www.imagine-msn.com/Insider/Mensa/">Think you’re smart? Take the Mensa Challenge!</a></td>
+  </tr>
+</table>
+
+<table width="772" cellpadding="0" cellspacing="0" class="sf" border="0">
+  <tr>
+    <td width="118" valign=bottom nowrap="nowrap"><a href="/web/20051102043253/http://www.msn.com/"><img border="0" width="118" height="35" src="images/msn_logo.gif" alt="http://www.msn.com/" title="http://www.msn.com/" /></a></td>
+    <td class="sfl" valign=bottom valign="middle" nowrap="nowrap">Search Insider</td>
+    <td width="113" class="sfm"><img src="images/space.gif" width="75" height="44" border="0" /></td>
+    <td class="sfi" valign="bottom" nowrap="nowrap">
+      <form class="search_form" id="searchweb" method="get" action="/web/20051102043253/http://search.msn.com/results.aspx">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td>&nbsp;</td>
+          <td nowrap="nowrap" class="search_label">Search the Web:&nbsp;
+            <input class="search_text" type="text" id="S1" name="q" size="30" maxlength="150"/>
+            <input type="hidden" name="cp" value="1252" />
+            <input type="hidden" name="FORM" value="SLIVE" /><input type="submit" class="search_btn" value="&nbsp;Search&nbsp;" />
+          </td>
+        </tr>
+      </table>
+      </form>
+    </td>
+    <td class="sfi" valign="bottom" align="right" width="100%" nowrap="nowrap">&nbsp;</td>
+  </tr>
+  <tr><td colspan="5"><img src="images/space.gif" height=8 width=100% border=0></td></tr>
+</table>
+
+
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="/web/20051102043253oe_/http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="772" height="520" id="searchLive" align="middle">
+  <param name="allowScriptAccess" value="always" />
+  <param name="movie" value="searchLive.swf?xmlurl=http://www.imagine-msn.com/insider/xml/SearchLive.xmlh&localizationXmlUrl=http://www.imagine-msn.com/insider/xml/Localization.xmlh&Duel=&hotlistsXmlUrl=http://www.imagine-msn.com/insider/xml/Hotlists.xmlh" />
+  <param name="quality" value="High" />
+  <embed src="searchLive.swf?xmlurl=http://www.imagine-msn.com/insider/xml/SearchLive.xmlh&amp;localizationXmlUrl=http://www.imagine-msn.com/insider/xml/Localization.xmlh&amp;Duel=&amp;hotlistsXmlUrl=http://www.imagine-msn.com/insider/xml/Hotlists.xmlh" quality="High" width="772" height="520" name="searchLive" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object>
+
+<br/>
+<table width="772" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top">
+    <td colspan="3" class="footer">
+      <div class="container">
+        <div class="ct">©2005 Microsoft Corporation.  All rights reserved.
+      &nbsp;&nbsp;<a href="/web/20051102043253/http://g.msn.com/0nwenus0/AV/18">Terms of Use</a>
+      &nbsp;&nbsp;<a href="/web/20051102043253/http://g.msn.com/0nwenus0/AV/19">Advertise</a>
+      &nbsp;&nbsp;<a href="/web/20051102043253/http://g.msn.com/0nwenus0/AV/20">TRUSTe Approved Privacy Statement</a>
+      &nbsp;&nbsp;<a href="/web/20051102043253/http://g.msn.com/0nwenus0/AV/21">Get NetWise</a>
+      &nbsp;&nbsp;<a href="/web/20051102043253/http://g.msn.com/0nwenus0/AV/24">Anti-Spam Policy</a>
+    </div>
+      </div>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 4:32:53 Nov 2, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 6:23:59 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

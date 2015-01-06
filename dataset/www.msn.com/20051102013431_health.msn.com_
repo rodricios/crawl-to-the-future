@@ -1,0 +1,225 @@
+<html><head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app13.us.archive.org";archive_analytics.values.server_ms=1974;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<link rel="SHORTCUT ICON" href="/web/20051102065609im_/http://sc.msn.com/global/c/shs/favicon.ico" /><title>MSN Health &amp; Fitness - Home</title><meta charset="utf-8" /><meta http-equiv="pics-label" content="(pics-1.1 &quot;http://www.icra.org/ratingsv02.html&quot; comment &quot;Single file v2.0&quot; l gen true for &quot;http://health.msn.com&quot;  r (nz 1 vz 1 lz 1 oz 1 cz 1) &quot;http://www.rsac.org/ratingsv01.html&quot; l gen true for &quot;http://health.msn.com&quot;  r (n 0 s 0 v 0 l 0))" /><meta name="keywords" content="ache, health, health information, medical information, health news, treatments, conditions, diseases, disorders, ailment, ambulatory, american health, arthritis, asthma, basic health, cancer, cardiovascular, pain, diet, nutrition, heart attack, stroke, fitnes information, fitness, healthy life, healthy tips, health tips, health articles" /><meta name="description" content="Find up-to-date health, diet and fitness information from sources you can trust. Featuring Mayo Clinic, Harvard, Healthwise, Health Day and more." /><link rel="stylesheet" type="text/css" href="/web/20051102065609cs_/http://sc.msn.com/css/hf/hf.css" /><link rel="stylesheet" type="text/css" href="/web/20051102065609cs_/http://sc.msn.com/css/hf/hfdept.css" /><script type="text/javascript" src="/web/20051102065609js_/http://sc.msn.com/global/scr/ph/hp26.js">&nbsp;</script><script type="text/javascript" src="/web/20051102065609js_/http://sc.msn.com/scr/hf/hf.js">&nbsp;</script><script type="text/javascript" src="/web/20051102065609js_/http://sc.msn.com/scr/hf/survey.js">&nbsp;</script><script type="text/javascript" src="/web/20051102065609js_/http://sc.msn.com/global/scr/lg/hdr35.js">&nbsp;</script><script type="text/javascript" src="/web/20051102065609js_/http://video.msn.com/js/vp.js">&nbsp;</script><base href="/web/20051102065609/http://g.msn.com/0US!s2.94161_942607/" /></head><body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://health.msn.com/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "2";
+var displayMonth = "Nov";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://health.msn.com/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20051102065609" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20051001120239/http://health.msn.com/" title="1 Oct 2005">OCT</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 6:56:09 Nov 2, 2005">NOV</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20051203045841/http://health.msn.com/" title="3 Dec 2005"><strong>DEC</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20051101012225/http://health.msn.com/" title="1:22:25 Nov 1, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 6:56:09 Nov 2, 2005">2</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20051102093911/http://health.msn.com/" title="9:39:11 Nov 2, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20041102054754/http://health.msn.com/" title="2 Nov 2004"><strong>2004</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 6:56:09 Nov 2, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20061105085209/http://health.msn.com/" title="5 Nov 2006"><strong>2006</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20051102065609*/http://health.msn.com/" title="See a list of every capture for this URL">1,524 captures</a>
+           <div class="r" title="Timespan for captures of this URL">2 Oct 99 - 26 Jun 13</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000220_2000:-1:032066120311_2001:-1:300358322693_2002:-1:200021004331_2003:-1:131405021423_2004:-1:11112accbbcb_2005:10:bcbbbddfbacd_2006:-1:ba7b368a66aa_2007:-1:87577999ac9a_2008:-1:866510010253_2009:-1:362210200202_2010:-1:010100040786_2011:-1:775476664665_2012:-1:6998a9600011_2013:-1:678aa9000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<div class="big7" style="width:779px;"><!-- LWBA25 --><img width="0" height="0" src="/web/20051102065609im_/http://c.msn.com/c.gif?na=1154&amp;nc=1223&amp;ps=10151&amp;di=378&amp;pi=7327&amp;TP=http%3a%2f%2fhealth.msn.com%2f" alt="" border="0" /></div><div class="dMSNME_1"><table width="779" height="25" cellpadding="0" cellspacing="0" class="big7"><tr><td align="left" valign="middle">&nbsp;&nbsp;<a href="59.a30/1??cm=Big6">MSN Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="59.a30/2??cm=Big6">My MSN</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="59.a30/3??cm=Big6">Hotmail</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="59.a30/4??cm=Big6">Shopping</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="59.a30/5??cm=Big6">Money</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="59.a30/6??cm=Big6">People &amp; Chat</a></td><td align="center"><span class="dMSNME_1"><A HREF="/web/20051102065609/http://login.passport.com/login.srf?lc=1033&amp;id=6528&amp;ru=http%3a%2f%2fhealth.msn.com%2f%3ftcru%3dhttp%253a%252f%252fhealth.msn.com%252f&amp;tw=14400&amp;kv=7&amp;ct=1130914569&amp;cb=0&amp;msppjph=1&amp;ver=2.1.6000.1&amp;tpf=ed426bbef70665df2ee1ed8b3d0c8e7f"><IMG SRC="/web/20051102065609im_/http://www.passportimages.com/1033/signin.gif" CLASS="PassportSignIn" BORDER="0" ALT="Sign in to the Microsoft Passport Network" ID="idSI"/></A></span></td><td width="75" align="right">Web Search:</td><td width="180" align="left"><form method="get" action="/web/20051102065609/http://g.msn.com/0nwenus0/A8/16">&nbsp;&nbsp;<input type="text" name="q" size="14" maxlength="150" style="width:140px;" />&nbsp;<input type="submit" class="GoBtn" size="4" value="Go" /><input type="hidden" name="cp" value="1252" /><input type="hidden" name="FORM" value="A8" /></form></td></tr></table></div><table width="779" height="105" cellpadding="0" cellspacing="0" class="adsb"><tr><td align="center" valign="top"><br /><!--NOAD--><img src="/web/20051102065609im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A25"/></td></tr></table><img alt="" width="1" height="1" border="0" src="/web/20051102065609im_/http://switch.atdmt.com/action/msn_health_en_US_home_page" /><table width="779" cellpadding="0" cellspacing="0" class="sf"><tr><td rowspan="2" width="118" class="sfl"><a href="58.b30/1??cm=sfLogo-S"><noscript><img border="0" width="118" height="35" src="/web/20051102065609im_/http://sc.msn.com/global/c/lg/msft_118x35.gif" alt="go to MSN.com" title="go to MSN.com" /></noscript><script language="javascript">logoImg("/web/20051102065609/http://sc.msn.com");</script></a></td><td rowspan="2" width="*" class="sfl" valign="bottom" nowrap="nowrap"><h2><a href="97.a9475/1??cm=sfSite-S">Health &amp; Fitness</a></h2></td><td rowspan="3" width="113" class="sfm"><img src="/web/20051102065609im_/http://sc.msn.com/global/c/sf/sf_db.jpg" alt="" width="113" height="44" border="0" /></td><td width="458" class="sfr">&nbsp;</td><td height="10"></td></tr><tr><td rowspan="2" class="sfi" valign="bottom" align="right"><a href="javascript:SendMail();">Email a friend</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="31.a9476/2??cm=NewsletterandHelpLink-S">Newsletter</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:DoHelp();">Help</a></td><td height="26"></td></tr><tr><td colspan="2" class="sflb">&nbsp;</td><td height="9"></td></tr></table><table width="779" height="490" cellpadding="0" cellspacing="0" border="0" class="main"><tr><td width="130" valign="top" align="right" class="n130" rowspan="2"><script type="text/javascript" language="javascript" src="/web/20051102065609js_/http://articles.health.msn.com/js/nmjs06.js"></script><table border="0" cellpadding="0" cellspacing="0" class="nmTS"><tr name="nmISns"><td id="nmb" name="nmb" nm_suf="" CM_sf="" nm_sn="nmISns" class="nmISDD"><a class="nmLS" href="35.b9364/1??cm=NavMenu-S">Home</a></td></tr><tr name="100000041"><td id="nmb" name="nmb" nm_suf="" CM_sf="" nm_sn="100000041" class="nmIS"><a class="nmLS" href="35.b9364/2??cm=NavMenu-S">Health Centers</a></td></tr><tr name="100000061"><td id="nmb" name="nmb" nm_suf="" CM_sf="" nm_sn="100000061" class="nmIS"><a class="nmLS" href="35.c9364/3??cm=NavMenu-S">Fitness</a></td></tr><tr name="100000057"><td id="nmb" name="nmb" nm_suf="" CM_sf="" nm_sn="100000057" class="nmIS"><a class="nmLS" href="35.c9364/4??cm=NavMenu-S">Diet &amp; Nutrition</a></td></tr><tr name="100000067"><td id="nmb" name="nmb" nm_suf="" CM_sf="" nm_sn="100000067" class="nmIS"><a class="nmLS" href="35.a9364/5??cm=NavMenu-S">Health News</a></td></tr><tr name="100000073"><td id="nmb" name="nmb" nm_suf="" CM_sf="" nm_sn="100000073" class="nmIS"><a class="nmLS" href="35.b9364/6??cm=NavMenu-S">Women's Health</a></td></tr><tr name="100000068"><td id="nmb" name="nmb" nm_suf="" CM_sf="" nm_sn="100000068" class="nmIS"><a class="nmLS" href="35.b9364/7??cm=NavMenu-S">Men's Health</a></td></tr><tr name="100000071"><td id="nmb" name="nmb" nm_suf="" CM_sf="" nm_sn="100000071" class="nmIS"><a class="nmLS" href="35.b9364/8??cm=NavMenu-S">Pregnancy &amp; Kids</a></td></tr><tr name="100000045"><td id="nmb" name="nmb" nm_suf="" CM_sf="" nm_sn="100000045" class="nmIS"><a class="nmLS" href="35.c9364/9??cm=NavMenu-S">Medical Encyclopedia</a></td></tr><tr name="100000060"><td id="nmb" name="nmb" nm_suf="" CM_sf="" nm_sn="100000060" class="nmIS"><a class="nmLS" href="35.c9364/10??cm=NavMenu-S">Drug Finder</a></td></tr></table><script>
+	var PSTaxonomy="10151", gEnabled=true, validDomains="~articles.health.msn.com~~www.articles.health.msn.com~", liveG="/web/20051102065609/http://g.msn.com/US07/1?", defaultG="/web/20051102065609/http://g.msn-ppe.com/US07/1?", liveEnv=false;
+	if (validDomains.indexOf("~"+location.hostname+"~")!=-1)
+	{
+		liveEnv=true;
+		defaultG=liveG;
+	}
+</script><script language="javascript">nm_init('/web/20051102065609/http://articles.health.msn.com/id/', '/');nm_data('nm_nm','/web/20051102065609/http://articles.health.msn.com/id/100000008/displaymode/1038');nm_local();</script><div class="GuidesNav"><h4>Special Guides</h4><div class="BulletList"><ul><li><a href="31.c12649/2??cm=SpecialGuides-SC">Bird Flu</a></li><li><a href="31.d12649/3??cm=SpecialGuides-SC">Cold and Flu</a></li><li><a href="31.e12649/4??cm=SpecialGuides-SC">Stop Smoking</a></li></ul></div><div class="DropNav"><form><select onchange="window.location.href=&quot;/web/20051102065609/http://g.msn.com/0US!s2.94161_942607/&quot; + this.options[this.selectedIndex].value"><option>More ...</option><option value="31.b12649/5??cm=SpecialGuides-SC">Aging Well</option><option value="31.c12649/6??cm=SpecialGuides-SC">Disaster Health &amp; Safety</option><option value="31.b12649/7??cm=SpecialGuides-SC">Prepped for Surgery</option><option value="31.a12649/8??cm=SpecialGuides-SC">Quickie Workouts</option></select></form></div></div><table cellpadding="0" cellspacing="0" border="0" class="Nlm"><tr><td class="td1"><h3>Health &amp; Fitness</h3></td></tr><tr><td class="td2">Newsletter  Sign-Up</td></tr><tr><td class="td3"><form name="newsform" onsubmit="javascript:callinsite();return false;"><p>Your email address:<br /><input type="text" class="text" name="txtemail" size="12" value="" /></p><p>Pick your favorites:
+	<table cellspacing="0" cellpadding="0" border="0" class="favorites"><tr><td class="icol"><input type="checkbox" name="check1" value="healthfitness" id="NLMcheck1" /></td><td class="tcol"><label for="NLMcheck1">Health &amp; Fitness</label></td></tr><tr><td class="icol"><input type="checkbox" name="check2" value="dietnutrition" id="NLMcheck2" /></td><td class="tcol"><label for="NLMcheck2">Diet &amp; Nutrition</label></td></tr></table></p><p>Preferred format:<br /><input type="radio" name="radiohtml" value="HTM" checked="1" id="NLMradio1" /><label for="NLMradio1">HTML (graphical)</label><br /><input type="radio" name="radiohtml" value="TXT" id="NLMradio2" /><label for="NLMradio2">Plain text</label><br /><input type="image" name="go" title="Click to Sign Up" onclick="javascript:callinsite();return false;" onmouseover="javascript:this.src='http://sc.msn.com/c/hf/GoROS.gif';" onmouseout="javascript:this.src='http://sc.msn.com/c/hf/GoRS.gif';" align="right" src="/web/20051102065609im_/http://sc.msn.com/c/hf/GoRS.gif" border="0" width="20" height="20" style="cursor:Hand;" /></p><a title="Learn More About Our Newsletters" href="/web/20051102065609/http://health.msn.com/about.armx">Learn more</a><br /></form></td></tr></table></td><td width="649" valign="top" align="left" class="t649" colspan="2"><div class="HPHdr"><div class="SHF"><form action="/web/20051102065609/http://articles.health.msn.com/" method="GET"><span class="SHFTxt">Search Health:</span><input type="text" name="qt" id="SHF" size="14" /><input type="hidden" name="id" value="100000214" /><input type="hidden" name="filter" value="msn_library_filter" /><input type="hidden" name="context" value="[context_search_context]" /><input type="hidden" name="x" value="13" /><input type="hidden" name="y" value="10" />&nbsp;<input type="submit" id="submit1" name="submit1" value="Go" /></form></div></div></td></tr><tr><td width="330" valign="top" class="p330"><div class="Chip"><a href="65.b9735/3??cm=HP_DIP"><img src="/web/20051102065609im_/http://sc.msn.com/2%5D/~L+KWB44E92OE_M7%7BR,83A.jpg" border="0" alt="© Photodisc/Getty Images" title="© Photodisc/Getty Images" width="305" height="166" /></a><h2><a href="65.b9735/3??cm=HP_DIP">Diabetes: The Benefits of Exercise</a></h2><div class="Abstract"><p><a href="65.b973565/1??cm=HP_DIP">Learn how a little bit of exercise could not only improve your physical health but also help control your diabetes.</a></p><ul><li><a href="65.b973565/2??cm=HP_DIP">Plus: How Exercise Benefits Blood Pressure</a></li></ul></div></div><iframe SCROLLING="NO" WIDTH="1" HEIGHT="1" FRAMEBORDER="0" FRAMESPACING="0" SRC="/web/20051102065609if_/http://rad.msn.com/ADSAdClient31.dll?GetAd=&amp;PG=HEATE1&amp;AP=1402"></iframe><table cellpadding="0" cellspacing="0" border="0" class="Nwtls"><tr><td valign="top" class="td1"><h4>Latest News</h4><div class="BulletList"><ul><li><a href="45.a12149/2??cm=HP_HealthDayNews_BulletList">Too Many Drug Trials Stopped Early</a></li><li><a href="45.b12149/4??cm=HP_HealthDayNews_BulletList">Kids With Neurological, Neuromuscular Diseases Need Flu Shot</a></li><li><a href="45.b12149/6??cm=HP_HealthDayNews_BulletList">New Technology Boosts Lung Cancer Treatment</a></li><li><a href="45.b12149/8??cm=HP_HealthDayNews_BulletList">Protein Helps Vitamin E Fight Cancer</a></li></ul></div><a href="71.c9737/1??cm=HP_HealthDayNews_MoreLink">More Health News ...</a><div class="msnbclnks"><h3>MSNBC Top Stories</h3><div class="BulletList"><ul><li><a href="/web/20051102065609/http://g.msn.com/0MN0RS9/1?http://www.msnbc.msn.com/id/7279844/did/9885176/&amp;&amp;HL=NFN&amp;CM=MSN&amp;CE=health">Nanotechnology may help treat cancer</a></li><li><a href="/web/20051102065609/http://g.msn.com/0MN0RS9/1?http://www.msnbc.msn.com/id/7279844/did/9883713/&amp;&amp;HL=NFN&amp;CM=MSN&amp;CE=health">Bush wants $7.1 billion to fight flu pandemic</a></li><li><a href="/web/20051102065609/http://g.msn.com/0MN0RS9/1?http://www.msnbc.msn.com/id/7279844/did/9885640/&amp;&amp;HL=NFN&amp;CM=MSN&amp;CE=health">Bird flu plan a good start, experts say</a></li></ul></div><a href="73.b9737/1??cm=HP_MSNBCNews_MoreLink">More from MSNBC ...</a></div></td><td valign="top" class="td2"><h4>Tools &amp; Resources</h4><div class="BulletList"><ul><li><a href="92.a12876/1??cm=HP_ToolsandResources_BulletList">Find a Therapist</a></li><li><a href="javascript:oMvsLink('19/64','c3e7b034-4942-46fc-9f17-766186a5ba79','0','Specials','Most Watched','/web/20051102065609/http://health.msn.com','994b254a-86f3-419a-9f60-62b077f40bcb,4fedbe7d-c2ea-480b-8310-084b42ac648c','','','');">Hoodia Plant: New Weight Loss Potion?</a></li><li><a href="92.c12876/3??cm=HP_ToolsandResources_BulletList">Online Prescriptions for Katrina Evacuees</a></li><li><a href="92.a12876/4??cm=HP_ToolsandResources_BulletList">BMI Calculator</a></li><li><a href="92.b12876/5??cm=HP_ToolsandResources_BulletList">Cold and Flu Guide</a></li><li><a href="92.a12876/6??cm=HP_ToolsandResources_BulletList">Due Date Calculator</a></li><li><a href="92.a12876/7??cm=HP_ToolsandResources_BulletList">Men's Sexual Health</a></li><li><a href="92.b12876/8??cm=HP_ToolsandResources_BulletList">Breast Cancer Support Groups</a></li><li><a href="92.b12876/9??cm=HP_ToolsandResources_BulletList">Tips to Quit Smoking</a></li><li><a href="92.c12876/10??cm=HP_ToolsandResources_BulletList">Facts on Alzheimer's</a></li><li><a href="92.c12876/11??cm=HP_ToolsandResources_BulletList">Alcohol: Truth &amp; Consequences</a></li><li><a href="92.b12876/12??cm=HP_ToolsandResources_BulletList">Men: Take this Quiz</a></li><li><a href="92.a12876/13??cm=HP_ToolsandResources_BulletList" class="hilight">All Health Tools ...</a></li></ul></div></td></tr></table><div class="HideAd" id="hideAd"><h1>advertisement</h1><!--NOAD--><img src="/web/20051102065609im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A25"/></div><script type="text/javascript">
+  if (document.getElementById("hideAd").innerHTML.indexOf("NOAD") != -1)
+    document.getElementById("hideAd").style.display = "none";
+</script><h4>Most Popular</h4><table cellpadding="0" cellspacing="0" border="0" class="ihrcTable"><tr><td class="tdL" valign="top"><a href="67.l10148/6??cm=HP_Spotlight_ImageandLinks"><img src="/web/20051102065609im_/http://sc.msn.com/KU/NEW9~_TG-%7DWO@%60HF,VT2.jpg" border="0" alt="© Photodisc/Getty Images" title="© Photodisc/Getty Images" width="85" height="85" /></a></td><td class="tdR" valign="top"><h4></h4><ul><li><a href="67.l1014867/1??cm=HP_Spotlight_ImageandLinks">Four Paths to Happiness</a></li><li><a href="67.k1014867/2??cm=HP_Spotlight_ImageandLinks">Get on the Exercise Express</a></li><li><a href="67.l1014867/3??cm=HP_Spotlight_ImageandLinks">Natural Weight Loss</a></li><li><a href="67.k1014867/4??cm=HP_Spotlight_ImageandLinks">Top Ten Smart Foods</a></li><li><a href="67.h1014867/5??cm=HP_Spotlight_ImageandLinks">Corrections</a><br /></li></ul></td></tr></table><table cellpadding="0" cellspacing="0" border="0" class="MoreOn"><tr><td valign="top" class="td1"><h4>More on MSN</h4><div class="BulletList"><ul><li><a href="86.a10909/1??cm=HP_MoreonMSN_BulletList">Pregnancy Panic on MSNBC</a></li><li><a href="86.a10909/2??cm=HP_MoreonMSN_BulletList">Find Your Favorite Recipe</a></li><li><a href="86.c10909/3??cm=HP_MoreonMSN_BulletList">What's Hot on MSN</a></li><li><a href="86.a10909/4??cm=HP_MoreonMSN_BulletList">Send a Birthday Laugh</a></li><li><a href="86.c10909/5??cm=HP_MoreonMSN_BulletList">Local Movie Listings</a></li></ul></div></td><td valign="top" class="td2"><h4>Top Searches</h4><div class="BulletList"><ul><li><a href="13.a9366/1??cm=HP_SearchTerms_BulletList">Statins</a></li><li><a href="13.d9366/2??cm=HP_SearchTerms_BulletList">Sexual Health</a></li><li><a href="13.f9366/3??cm=HP_SearchTerms_BulletList">Pregnancy</a></li><li><a href="13.g9366/4??cm=HP_SearchTerms_BulletList">Thyroid</a></li><li><a href="13.f9366/5??cm=HP_SearchTerms_BulletList">Lupus</a></li></ul></div></td></tr></table></td><td width="319" valign="top" class="r319"><div class="insideMSN"><img src="/web/20051102065609im_/http://sc.msn.com/1B/,D6X_BP3CQ1%7DZ%5B%7BNEH8ERS.gif" border="0" alt="Inside MSN Health &amp; Fitness" title="Inside MSN Health &amp; Fitness" width="320" height="27" /><br /></div><div class="HpRcol"><table cellpadding="0" cellspacing="0" border="0" class="Fhc"><tr><td valign="top" class="td1"><h4>Featured Health Centers</h4><table cellpadding="0" cellspacing="0" border="0" class="ihrcTable"><tr><td class="tdL" valign="top"><a href="0.a9938/2??cm=HeaderImageTitleAbstract-SC"><img src="/web/20051102065609im_/http://sc.msn.com/4J/%5BSC8ODGT9Q52U_9DKBJ03@.jpg" border="0" alt="© Alexandra Rowley/Photonica/Getty Images" title="© Alexandra Rowley/Photonica/Getty Images" width="85" height="85" /></a></td><td class="tdR" valign="top"><h4></h4><p><a href="0.a993800/1??cm=HeaderImageTitleAbstract-SC"><strong>Truth About Eggs</strong><br />Get the facts about eggs and it's impact on your cholesterol.</a></p></td></tr></table><h3>More Centers</h3><div class="hBulletList"><a href="14.a12186/1??cm=HP_HealthCenters_HorizontalMoreLinks">Headache &amp; Migraine</a>&nbsp;&bull; <a href="14.a12186/2??cm=HP_HealthCenters_HorizontalMoreLinks">Arthritis</a>&nbsp;&bull; <a href="14.a12186/3??cm=HP_HealthCenters_HorizontalMoreLinks">ADHD</a>&nbsp;&bull; <a href="14.b12186/4??cm=HP_HealthCenters_HorizontalMoreLinks">Mental Health</a>&nbsp;&bull; <a href="14.c12186/5??cm=HP_HealthCenters_HorizontalMoreLinks">Diabetes</a>&nbsp;&bull; <a href="14.c12186/6??cm=HP_HealthCenters_HorizontalMoreLinks">Alzheimer's Disease</a>&nbsp;&bull; <a href="14.c12186/7??cm=HP_HealthCenters_HorizontalMoreLinks">Breast Cancer</a>&nbsp;&bull; <a href="14.a12186/8??cm=HP_HealthCenters_HorizontalMoreLinks">Heartburn &amp; GERD</a>&nbsp;&bull; <a href="14.a12186/9??cm=HP_HealthCenters_HorizontalMoreLinks">Asthma</a>&nbsp;&bull; <a href="14.a12186/10??cm=HP_HealthCenters_HorizontalMoreLinks">Oral Care</a>&nbsp;&bull; <a href="14.c12186/11??cm=HP_HealthCenters_HorizontalMoreLinks">Prostate Cancer</a>&nbsp;&bull; <a href="14.a12186/12??cm=HP_HealthCenters_HorizontalMoreLinks">More Health Centers ...</a></div></td><td valign="top" class="td2"><p><a href="11.c984811/1??cm=HP_ThisWeekRight_VerticalLinks"><strong>Mental Health</strong><br />Learn what it is and what it isn't.</a><br /><a href="11.b984811/2??cm=HP_ThisWeekRight_VerticalLinks"><strong>Unleash Your Abs</strong><br />Men, get top tips for a rock solid six-pack.</a><br /><a href="11.c984811/3??cm=HP_ThisWeekRight_VerticalLinks"><strong>ADHD a Gift?</strong><br />Studies say many traits of ADHD can be expressions of deeper gifts.</a></p></td></tr></table><h1>advertisement</h1><!--NOAD--><img src="/web/20051102065609im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A25"/><h5>MSN Shopping</h5><script language="javascript">var fSucceed = false;</script><script language="javascript" src="/web/20051102065609js_/http://shopping.msn.com/xmlbuddy/eShopOffer.aspx?iurl=HOME&amp;ptnrData=100&amp;formatType=0&amp;v=3&amp;styletype=0&amp;Tracking=N&amp;ptnrId=11"></script><script language="javascript">if (!fSucceed)  document.write('<A href="/web/20051102065609/http://shopping.msn.com"><FONT size="1" family="Verdana">MSN Shopping</FONT></A>');</script></div></td></tr><tr><td width="130" class="DiscLeft"><div><a href="67.b9478/1??cm=LeftColumn-S">About Health &amp; Fitness</a></div></td><td width="649" colspan="2" class="DiscRight"><div>MSN Health &amp; Fitness does not provide medical or any other health care advice, diagnosis or treatment. <a href="24.b936624/1??cm=RightColumn-S">See additional information.</a></div></td></tr></table><table class="big7" width="779" height="20" cellpadding="0" cellspacing="0" border="0"><tr><td valign="middle" align="left" class="big1">&nbsp;&nbsp;<a href="55.a30/1?su=http://health.msn.com/default.armx&amp;di=378&amp;&amp;cm=fTag">Try MSN Internet Software for FREE!</a></td></tr></table><div class="dMSNME_1"><table class="big7" width="779" height="20" cellpadding="0" cellspacing="0" border="0"><tr><td valign="middle" align="left">&nbsp;&nbsp;<a href="54.a30/1??cm=fBig7">MSN Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="54.a30/2??cm=fBig7">My MSN</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="54.a30/3??cm=fBig7">Hotmail</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="54.a30/4??cm=fBig7">Shopping</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="54.a30/5??cm=fBig7">Money</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="54.a30/6??cm=fBig7">People &amp; Chat</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="54.a30/7??cm=fBig7">Search</a></td><td class="fhelp" align="right"><script language="javascript" src="/web/20051102065609js_/http://hp.msn.com/scr/op/ol-fdbkv3_r1.js"></script><a href="javascript:O_LC();">Feedback</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:DoHelp();">Help</a>&nbsp;&nbsp;</td></tr></table></div><table class="terms" width="779" height="16" cellpadding="0" cellspacing="0" border="0"><tr><td height="15">&nbsp;&nbsp;© 2005 Microsoft Corporation. All rights reserved.&nbsp;<a href="56.a30/1??cm=fTerms">Terms of Use</a>&nbsp;<a href="56.a30/2??cm=fTerms">Advertise</a>&nbsp;<a href="56.a30/3??cm=fTerms">TRUSTe Approved Privacy Statement</a>&nbsp;<a href="56.a30/4??cm=fTerms">GetNetWise</a>&nbsp;<a href="56.b30/5??cm=fTerms">Anti-Spam Policy</a></td></tr></table><!--NOAD--><img src="/web/20051102065609im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A25"/></body></html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 6:56:09 Nov 2, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 6:47:05 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

@@ -1,0 +1,1218 @@
+<!-- Vignette StoryServer 5.0 Tue Dec 27 09:34:21 2005 -->
+
+	 
+	   
+	<html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app14.us.archive.org";archive_analytics.values.server_ms=2761;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<title>FOXNews.com</title>
+<link rel="alternate" type="application/rss+xml" title="FOX News RSS" href="/xmlfeed/rss/0,4313,0,00.rss">
+<meta http-equiv="Pragma" content="no-cache">
+
+	<meta http-equiv=refresh content=600>
+	<LINK REL=STYLESHEET TYPE="text/css" HREF="/web/20051227145442cs_/http://www.foxnews.com/css/mainStyles2005.css">
+	<LINK REL=STYLESHEET TYPE="text/css" HREF="/web/20051227145442cs_/http://www.foxnews.com/css/rootStyles.css?v5">
+	<script language="JavaScript">
+		var fnDomain = '';
+		var section_id = 0;
+		var pageType = 'root';
+		 ranNum = new String (Math.random());
+		ranNum = ranNum.substring (2, 11);
+		document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="/js/main2005.js?'+ranNum+'"></SCR' + 'IPT>');
+		document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="/js/renderSection.js?'+ranNum+'"></SCR' + 'IPT>');
+		
+			document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="/js/sectiondata/0,4112,0,00.js?'+ranNum+'"></SCR' + 'IPT>');
+		 document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="/js/navData.js?'+ranNum+'"></SCR' + 'IPT>');
+		document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="/js/navScripts.js?'+ranNum+'"></SCR' + 'IPT>');
+		document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="/js/rootBizSection.js?'+ranNum+'"></SCR' + 'IPT>');
+		
+			document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="/js/accessScripts.js?'+ranNum+'"></SCR' + 'IPT>');
+			document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="/js/accessDataSite.js?'+ranNum+'"></SCR' + 'IPT>');
+		 </script>
+	<LINK REL="SHORTCUT ICON" HREF="/web/20051227145442im_/http://www.foxnews.com/images/fnc_icon.ico">
+	<script language="JavaScript">
+	
+		function isNumeric(number) {
+			for(var i=0; i < (number.length); i++) {
+				var c = number.charAt(i);
+				if ((c >= 0) && (c <= 9)) {
+					isNumber = true;
+				} else {
+					return false;
+					break;
+				}
+			}
+			return true;
+		}
+		function local_weather(frm) {
+			if (trim(frm.zip.value) == "") {
+				alert ("You must enter a zip code to check the weather.");
+				return false;
+			}
+		}
+	 </script>
+	
+	 
+		<SCRIPT LANGUAGE="JavaScript">
+			OAS_url = '/web/20051227145442/http://oas.foxnews.com/RealMedia/ads/';
+			OAS_sitepage = 'root.foxnews';
+			OAS_listpos = 'x96,Top,Frame1,Middle1,Middle2,Position1,Right1';
+			OAS_query = '';
+			OAS_target = '_top';
+			//end of configuration
+			OAS_version = 10;
+			OAS_rn = '001234567890'; OAS_rns = '1234567890';
+			OAS_rn = new String (Math.random()); OAS_rns = OAS_rn.substring (2, 11);
+			function OAS_NORMAL(pos) {
+			  document.write('<A HREF="' + OAS_url + 'click_nx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + '?' + OAS_query + '" TARGET=' + OAS_target + '>');
+			  document.write('<IMG SRC="' + OAS_url + 'adstream_nx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + '?' + OAS_query + '" BORDER=0></A>');
+			}
+		</SCRIPT>
+		<SCRIPT LANGUAGE=JavaScript1.1>
+			OAS_version = 11;
+			if ((navigator.userAgent.indexOf('Mozilla/3') != -1) || (navigator.userAgent.indexOf('Mozilla/4.0 WebTV') != -1))
+			  OAS_version = 10;
+			if (OAS_version >= 11)
+			  document.write('<SCR' + 'IPT LANGUAGE=JavaScript1.1 SRC="' + OAS_url + 'adstream_mjx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '?' + OAS_query + '"></SCR' + 'IPT>');
+		</SCRIPT>
+		<SCRIPT LANGUAGE="JavaScript">
+			document.write('');
+			function OAS_AD(pos) {
+			  if (OAS_version >= 11)
+			    OAS_RICH(pos);
+			  else
+			    OAS_NORMAL(pos);
+			}
+		</SCRIPT>
+	  
+	     <script language="JavaScript">
+
+
+	    function rightPromo() {
+		var rP = '<div id="rightPromoBox">';
+		
+			
+				rP += '<a href="'+fnDomain+'/web/20051227145442/http://www.foxnews.com/foxfan/index.html">';
+			 rP += '<img src="'+fnDomain+'/foxfan/images/rightpromo/bug_220x70_ffcentral_Dec26-2005-10:15.jpg" width=220 height=70 border=0>';
+			
+				rP += '</a>';
+			  rP += '</div>';
+		document.write(rP);
+	}
+	function fnctvPromo() {
+		var d = '<div onClick="window.location=\'/fnctv/index.html\'" style="cursor:pointer;cursor:hand;width:310px;height:75px;background-image:url(/images/toppromo/promo_yourworld.jpg);" align="center">';
+		d += '<div style="width:290px;padding-top:20px;font-size:14px;line-height:18px;color:#FFFFFF;font-weight:bolder;text-align:left;">';
+		d += unescape ('Big Gains for President Bush?') + '<br>' + unescape ('Tuesday, 4pm / 1am ET');
+		d += '</div></div>';
+		document.write(d);
+	}
+</script>
+	   <!--WEBSIDESTORY CODE HBX1.0 (Universal)-->
+<!--COPYRIGHT 1997-2005 WEBSIDESTORY,INC. ALL RIGHTS RESERVED. U.S.PATENT No. 6,393,479B1. MORE INFO:/web/20051227145442/http://websidestory.com/privacy-->
+<script language="javascript">
+// Initialize the temporary segment variables
+var this_segment = ""; // Set to the overnight hours segment by default
+// Do the time of day testing
+var date = new Date();
+var hours = date.getHours();
+if (hours == 5) { this_segment = "1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 6) { this_segment = "-1,2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 7) { this_segment = "-1,-2,3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 8) { this_segment = "-1,-2,-3,4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 9) { this_segment = "-1,-2,-3,-4,5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 10) { this_segment = "-1,-2,-3,-4,-5,6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 11) { this_segment = "-1,-2,-3,-4,-5,-6,7,-8,-9,-10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 12) { this_segment = "-1,-2,-3,-4,-5,-6,-7,8,-9,-10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 13) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,9,-10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 14) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 15) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,11,-12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 16) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,12,-13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 17) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,13,-14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 18) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,14,-15,-16,-17,-18,-19,-20"; }
+if (hours == 19) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,15,-16,-17,-18,-19,-20"; }
+if (hours == 20) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,16,-17,-18,-19,-20"; }
+if (hours == 21) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16,17,-18,-19,-20"; }
+if (hours == 22) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16,-17,18,-19,-20"; }
+if (hours == 23) { this_segment = "-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16,-17,-18,19,-20"; }
+
+var _hbEC=0,_hbE=new Array;function _hbEvent(a,b){b=_hbE[_hbEC++]=new Object();b._N=a;b._C=0;return b;}
+var hbx=_hbEvent("pv");hbx.vpc="HBX0100u";hbx.gn="tracking.foxnews.com";
+
+//BEGIN EDITABLE SECTION
+
+//OPTIONAL PAGE VARIABLES
+//ACTION SETTINGS
+hbx.fv="";//FORM VALIDATION MINIMUM ELEMENTS OR SUBMIT FUNCTION NAME
+hbx.lt="auto";//LINK TRACKING
+hbx.dlf="n";//DOWNLOAD FILTER
+hbx.dft="n";//DOWNLOAD FILE NAMING
+hbx.elf="n";//EXIT LINK FILTER
+
+//SEGMENTS AND FUNNELS
+hbx.seg=this_segment;//VISITOR SEGMENTATION
+
+//CONFIGURATION VARIABLES
+hbx.acct="DM550608D8WV01EN3";//ACCOUNT NUMBER(S)
+hbx.pndef="title";//DEFAULT PAGE NAME
+hbx.ctdef="full";//DEFAULT CONTENT CATEGORY
+
+hbx.pn="Root";//PAGE NAME(S)
+hbx.mlc=_hbxStrip("/");//MULTI-LEVEL CONTENT CATEGORY
+
+
+	//CUSTOM VARIABLES
+	hbx.ci="";//CUSTOMER ID
+	hbx.hc4=_hbxStrip("root")+"|"+_hbxStrip("Root");
+//END EDITABLE SECTION
+
+</script><script language="javascript1.1" defer src="/web/20051227145442js_/http://www.foxnews.com/js/hbx.js"></script>
+<!--END WEBSIDESTORY CODE-->  <SCRIPT LANGUAGE="JavaScript" src="/web/20051227145442js_/http://www.foxnews.com/js/dm_client.js"></script>
+	<SCRIPT LANGUAGE="JavaScript">
+		DM_addToLoc("section", escape("root"));
+		DM_tag();
+		var rsinetsegs = new Array();
+	</SCRIPT>
+	
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.foxnews.com/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "27";
+var displayMonth = "Dec";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.foxnews.com/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20051227145442" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20051127013330/http://www2.foxnews.com/" title="27 Nov 2005">NOV</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 14:54:42 Dec 27, 2005">DEC</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20060130232855/http://www.foxnews.com/" title="30 Jan 2006"><strong>JAN</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20051227033131/http://www.foxnews.com/" title="3:31:31 Dec 27, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 14:54:42 Dec 27, 2005">27</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20051230062010/http://www.foxnews.com/" title="6:20:10 Dec 30, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20041216115952/http://foxnews.com/" title="16 Dec 2004"><strong>2004</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 14:54:42 Dec 27, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20061227190423/http://foxnews.com" title="27 Dec 2006"><strong>2006</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20051227145442*/http://www.foxnews.com/" title="See a list of every capture for this URL">13,141 captures</a>
+           <div class="r" title="Timespan for captures of this URL">22 Oct 96 - 6 Jan 15</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000201_1997:-1:011101100000_1998:-1:110101000001_1999:-1:000400000110_2000:-1:000000110011_2001:-1:44617721bba7_2002:-1:070012788981_2003:-1:013313311313_2004:-1:531217777553_2005:11:264367666888_2006:-1:754957877777_2007:-1:665677567766_2008:-1:655655546575_2009:-1:575575676645_2010:-1:565676787888_2011:-1:9aa8899baccc_2012:-1:ccdcccccdcdd_2013:-1:cccccbbbbbdd_2014:-1:eddeeeeeefee_2015:-1:a00000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<NOSCRIPT><IMG SRC="/web/20051227145442im_/http://pix01.revsci.net/E05510/a3/0/0/0/0/0/0/0/0/0/noscript.gif"></NOSCRIPT>
+	<SCRIPT TYPE="text/javascript" SRC="/web/20051227145442js_/http://js.revsci.net/gateway/gw.js?csid=E05510" CHARSET="ISO-8859-1"></SCRIPT>
+	<SCRIPT TYPE="text/javascript">
+	// use rsinetsegs array from JSS call above.
+	var segQS = rsinetsegs.length > 0 ? "segs=" + rsinetsegs[0] : "";
+	for (var i = 1; i < rsinetsegs.length; i++)
+		segQS += ("&segs=" + rsinetsegs[i]);
+	</SCRIPT>
+	</head>
+
+<body bgcolor="#000099" marginwidth=0 marginheight=0 topmargin=0 leftmargin=0 onload="loader()">
+
+<table cellpadding=0 cellspacing=0 border=0 width=770>
+	
+	
+		<tr><td colspan=2 style="padding:5px 0px 5px 0px;"><div align="center" id="topAd" style="height:50px;width:770px;overflow:hidden;"><SCRIPT LANGUAGE="JavaScript">OAS_AD('x96');</SCRIPT></div></td></tr>
+	 <tr><td colspan=2>
+	
+	<div id="nav" style="background-color:#990000;"><script language="JavaScript">topNav();</script></div>
+<div id="logo"><a href="/web/20051227145442/http://www.foxnews.com/index.html"><img src="/web/20051227145442im_/http://www.foxnews.com/images/headers/fnc_logo05.gif" width=90 height=75 border=0></a></div>
+<div id="header">
+	<div style="width:680px;clear:both;">
+		<table cellpadding=0 cellspacing=0 border=0 width=680>
+			<tr>
+			<td valign="bottom" style="background-image:url(/web/20051227145442im_/http://www.foxnews.com/images/headers/sec_id_root3.gif);">
+			<table cellpadding=0 cellspacing=0 border=0 width=195>
+				<tr><td class="capblack" colspan=3 style="padding:0px 0px 1px 10px;"><script language="JavaScript">document.write(secTimeStamp);</script></td></tr>
+				<form method="get" name="searchForm" action="/web/20051227145442/http://search.foxnews.com/info.foxnws/redirs_all.htm" onSubmit="return searchSub(document.searchForm);">
+					<input type="hidden" name="pgtarg" value="wbsdogpile">
+					<input type="hidden" name="qcat" value="web">
+					<tr>
+					<td bgcolor="#000000" style="font-size:11px;color:white;padding:3px 4px 3px 4px;"><b>SEARCH</b></td>
+					<td bgcolor="#000000" align="center"><input type="text" size="15" name="qkw" maxlength="52" value="" class="searchInput" style="width:99px;"></td>
+					<td bgcolor="#000000" style="padding:3px 4px 3px 4px;"><input type="submit" value="GO" class="goBut"></td>
+					</tr>
+				</form>
+			</table>
+			</td>
+			<td><script language="JavaScript">fnctvPromo();</script></td>
+			   <td width=175 height=75><script language="JavaScript">showSitePromo();</script></td>
+			</tr>
+		</table>
+	</div>
+</div> </td></tr>
+	
+	 
+	 
+	
+	
+    <tr><td valign="top" colspan=2 style="padding:5px 5px 10px 5px;">
+		
+		<div id="bigLeft" style="width:555px;float:left;">
+			 
+				
+					  
+	       
+		   
+	       
+		  
+			      <div id="bigTop" style="width:555px;float:left;">
+
+
+	
+	 
+		    <div style="width:553px;">
+	<table cellpadding=0 cellspacing=0 border=0 width=553>
+		<tr>
+		<td style="padding:0px 6px 0px 0px;" valign="top">
+		 <div id="btRank1" style="width:245px;background-color:#FFFFFF;border:1px solid #000000;" align="center">
+			<div style="clear:both;height:10px;overflow:hidden;"></div>
+			
+				
+					<div style="clear:both;width:225;text-align:left;font-size:24px;"><b><a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179780,00.html">Baghdad March</a></b></div>
+				 <div style="clear:both;height:5px;overflow:hidden;"></div> 
+					<div style="clear:both;font-size:14px;text-align:left;width:225px;"><a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179780,00.html"><b>10,000 protest to demand unity government in Iraq</b></a></div>
+				 <div style="clear:both;height:10px;overflow:hidden;"></div>
+			 
+				<div style="font-size:12px;text-align:left;width:225px;">
+				<div style="float:right;width:90px;height:70px;padding-left:10px;"><a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179780,00.html"><img src="/web/20051227145442im_/http://www.foxnews.com/images/187889/2_14_122705_iraq.jpg" width=90 height=70 border=0></a></div> GI one of dozens killed in post-election attacks; Sunni Arabs, secular Shiites seek strong representation in government </div>
+				<div style="clear:both;height:10px;overflow:hidden;"></div>
+			 
+	<div style="padding-bottom:10px;width:225px;" class="btRelated">
+		<div style="clear:both;width:225px;text-align:left;"><b>Related Stories</b></div>
+		
+			<div style="float:left;width:20px;text-align:right;">&#149;</div>
+			<div style="float:right;width:200px;text-align:left;"><a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179768,00.html">Saddam's Kin: No Deal With U.S.</a></div>
+			<div style="clear:both;height:1px;width:225px;overflow:hidden;"></div>
+		
+			<div style="float:left;width:20px;text-align:right;">&#149;</div>
+			<div style="float:right;width:200px;text-align:left;"><a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179788,00.html">Saddam Hires More Lawyers</a></div>
+			<div style="clear:both;height:1px;width:225px;overflow:hidden;"></div>
+		 </div>
+ </div>
+		</td>
+		<td  valign="top" style="background-color:#FFFFFF;border:1px solid #000000;">
+		 <div id="btRank2" style="width:300px;" align="center">
+			<div class="handOver" style="width:300px;height:225px;overflow:hidden;background-image:url(/web/20051227145442im_/http://www.foxnews.com/images/187884/8_2_122705_rapalo3.jpg);" onClick="window.location='/story/0,2933,179778,00.html';">
+			
+				<script language="JavaScript">
+					document.write('<div align="center" style="width:300px;height:70px;font-size:24px;');
+					if (browser.toUpperCase() == "IE" && platform == "win")
+						document.write('filter:alpha(opacity=100,finishopacity=0,style=1,startx=0,starty=30,finishx=0,finishy=100);background-color:#000000;">');
+					else
+						document.write('overflow:hidden;background-image:url(/images/rede04/rootImgHead.png);">');
+					document.write('<div style="width:280px;filter:alpha(opacity=100);padding-top:10px;position:relative;"><b><a style="color:#FFFFFF;" href="/story/0,2933,179778,00.html">Recaptured</a></b></div>');
+					document.write('</div>');
+				</script>
+			 </div>
+			
+			
+			<div style="width:288;">
+				
+					<div style="padding-top:2px;text-align:right;" class="capblack">FNC</div>
+				 
+					<div style="padding-top:3px;text-align:left;" class="capblack">Reynaldo E. Rapalo during a perp walk in Miami, Fla.</div>
+				  
+					<div style="font-size:12px;padding-top:5px;text-align:left;">Rape suspect who used sheets to escape jail gets caught after being spotted near Miami video store</div>
+				 <div style="height:5px;overflow:hidden;"></div>
+			</div>
+			
+			 </div>
+		</td>
+		</tr>
+		 </table>
+	</div>
+</div>
+
+<script language="JavaScript">var numBTStories = 2;</script>
+      
+				
+					  
+				
+					  
+				
+					  
+				
+					  
+				
+					  
+				
+					     
+				
+				        
+				
+				        
+				
+				      
+					    
+				
+				        
+				
+				        
+				
+				      
+					     </div>
+		
+		<div style="width:200px;float:right;">
+		<table cellpadding=0 cellspacing=0 border=0 width=195>
+			<tr><td class="root200Tab">LATEST HEADLINES</td></tr>
+			<tr><td style="border:1px solid black;background-color:#FFFFFF">
+			<div id="rootLateHeads" class="rootScroll" style="height:250px;">
+				<script language="JavaScript">writeRootHeads(secHeadlines,3);</script>
+			</div>
+			</td></tr>
+		</table>
+		</div>
+	</td></tr>
+
+	
+		<tr><td colspan=2 align="center" style="padding-bottom:10px;"><div id="hide0" style="width:728px;height:90px;"><SCRIPT LANGUAGE="JavaScript">OAS_AD('Top');</SCRIPT></div></td></tr>
+	 <tr><td colspan=2 class="tab760"><div class="name">ONLY ON FOX</div><div class="spon"><img src="/web/20051227145442im_/http://www.foxnews.com/images/clear_dot.gif" width=150 height=20></div></td></tr>
+	<tr><td colspan=2 style="padding-bottom:10px;" align="center">
+		<table cellpadding=0 cellspacing=0 border=0 width=760>
+			<tr><td colspan=2 class="box450" align="center" style="padding-bottom:10px;">
+			<table cellpadding=0 cellspacing=0 border=0 width=730>
+				
+					<tr>
+					 
+						<td style="padding-top:10px;padding-right:45px;" valign="top">
+						<div class="onlyOnFox" style="width:185px;">
+						<b><a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179541,00.html">Rewind 2005: Year's Top Stories</a></b><br>
+						FOXNews.com revisits Jacko verdict, gas prices, Katrina and more  </div>
+						</td>
+						 
+						<td style="padding-top:10px;padding-right:45px;" valign="top">
+						<div class="onlyOnFox" style="width:185px;">
+						<b><a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179771,00.html">More Oblivions of 2005</a></b><br>
+						<b>Grrr!</b> Mike Straka's last column didn't have room for all of this year's idiots  </div>
+						</td>
+						 
+						<td style="padding-top:10px;" valign="top">
+						<div class="onlyOnFox" style="width:185px;">
+						<b><a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179769,00.html">Follow the Trail of Doughnuts</a></b><br>
+						<b>Out There:</b> Lotto burglary suspects' incriminating sweet tooths do them in  </div>
+						</td>
+						  </tr>
+				
+					<tr>
+					 
+						<td style="padding-top:10px;padding-right:45px;" valign="top">
+						<div class="onlyOnFox" style="width:185px;">
+						<b><a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179767,00.html">Reporting a Tragedy</a></b><br>
+						<b>Reporter's Notebook:</b> FOX News' Adam Housley remembers the tsunami  </div>
+						</td>
+						 
+						<td style="padding-top:10px;padding-right:45px;" valign="top">
+						<div class="onlyOnFox" style="width:185px;">
+						<b><a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179752,00.html">Home for the Holidays</a></b><br>
+						President Bush heads to Crawford ranch before tackling 2006 agenda  </div>
+						</td>
+						 
+						<td style="padding-top:10px;" valign="top">
+						<div class="onlyOnFox" style="width:185px;">
+						<b><a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179736,00.html">'They Are Not Alone'</a></b><br>
+						Former Ohio State student launches network for conservative collegians  </div>
+						</td>
+						  </tr>
+				 </table>
+			</td></tr>
+		</table>
+	</td></tr>
+			
+
+	
+		
+		<tr><td colspan=2 class="tab760"><div class="name">TODAY'S FEATURES</div><div class="spon"><img src="/web/20051227145442im_/http://www.foxnews.com/images/clear_dot.gif" width=150 height=20></div></td></tr>
+		
+		<tr><td colspan=2 style="padding:5px 0px 10px 0px;" align="center">
+		<div style="width:760px;">
+			<div style="float:left;width:503px;">
+				<script language="JavaScript">
+					writeFeature(0);
+					writeFeature(1);
+				</script>
+			</div>
+			<script language="JavaScript">writeFeature(2);</script>
+		</div>
+		</td></tr>
+		
+		
+			<tr>
+			<td style="padding:0px 10px 0px 5px;" valign="top">
+			<table cellpadding=0 cellspacing=0 border=0 width=450>
+			
+ <tr><td class="bizTab450"><div class="name">BUSINESS HEADLINES &amp; MARKETS</div><div class="spon"><img src="/web/20051227145442im_/http://www.foxnews.com/images/clear_dot.gif" width=90 height=20></div></td></tr>
+				<script language="JavaScript">
+				if (platform == "mac")
+					document.write('<tr><td class="bizNav"><a href="/business/index.html">BUSINESS</a> | <a href="/fnctv/index.html">TV</a> | <a href="javascript:popPort();">PORTFOLIO</a> | <a href="/business/economy/index.html">ECONOMY</a> | <a href="/business/fund/index.html">MUTUAL FUNDS</a> | <a href="/business/personalfinance/index.html">PERSONAL FINANCE</a></td></tr>');
+				else 
+					document.write('<tr><td class="bizNav"><a href="/business/index.html">BUSINESS</a> :: <a href="/fnctv/index.html">TV</a> :: <a href="javascript:popPort();">PORTFOLIO</a> :: <a href="/business/economy/index.html">ECONOMY</a> :: <a href="/business/fund/index.html">MUTUAL FUNDS</a> :: <a href="/business/personalfinance/index.html">PERSONAL FINANCE</a></td></tr>');
+				</script>
+				<tr><td class="box450" align="center">
+
+				<div id="bizContent" style="max-width:450px;overflow:hidden;">
+					<div class="deck" style="width:440px;padding-top:8px;border-top:0;border-bottom:0;">
+						<div style="float:left;width:190px;margin-left:3px;">
+						<table cellspacing=0 cellpadding=0 border=0 width=190>
+						 
+							    
+							   <tr valign=top class="rootHeads" style="padding:0;margin:0;"><td style="padding-right:3px;">&#149;</td><td style="padding-bottom:5px;"> <a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179750,00.html">Stores Slash Prices in Post-Christmas Shopping Blitz</a>  </td></tr>
+						
+							   <tr valign=top class="rootHeads" style="padding:0;margin:0;"><td style="padding-right:3px;">&#149;</td><td style="padding-bottom:5px;"> <a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179641,00.html">Dow Could Still Finish Year With Gain</a>  </td></tr>
+						
+							   <tr valign=top class="rootHeads" style="padding:0;margin:0;"><td style="padding-right:3px;">&#149;</td><td style="padding-bottom:5px;"> <a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179615,00.html">American Express Settles Cardholder Suit for $75M</a>  </td></tr>
+						
+							   <tr valign=top class="rootHeads" style="padding:0;margin:0;"><td style="padding-right:3px;">&#149;</td><td style="padding-bottom:5px;"> <a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179726,00.html">Report: Ex-Enron Exec Considering Plea Deal</a>  </td></tr>
+						
+							   <tr valign=top class="rootHeads" style="padding:0;margin:0;"><td style="padding-right:3px;">&#149;</td><td style="padding-bottom:5px;"> <a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179593,00.html">New Home Sales Tumble 11.3%, Biggest Decline in 12 Years</a>  </td></tr>
+						
+							   <tr valign=top class="rootHeads" style="padding:0;margin:0;"><td style="padding-right:3px;">&#149;</td><td style="padding-bottom:5px;"> <a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179590,00.html">Wal-Mart to Appeal $172M Lunch-Break Award</a>  </td></tr>
+						 <tr><td colspan=2 class="rootHeads" style="padding-bottom:10px;"><a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179750,00.html" style="color:#990000;">MORE BUSINESS HEADLINES</a></td></tr>
+						</table>
+						</div>
+						<div style="width:225px;float:right;margin-left:5px;margin-right:2px;margin-bottom:10px;">
+							<div style="width:225px;padding:1px 0;background-color:#00426F;color:#FFFFFF;font-size:11px;text-align:left;font-weight:bold;clear:both;">&nbsp;&nbsp;MARKET UPDATE</div>
+							<div style="width:217px;padding:3px;border:1px solid black;">
+							<script language="JavaScript">document.write(writeIndices());</script>
+							<div class="bizSearchText" style="text-align:left;padding-top:10px;">Stock and Fund Search</div>
+							
+							<div><table cellpadding=0 cellspacing=0 width=217><tr>
+							<form name="bizQuote" action="/web/20051227145442/http://www.foxnews.com/business/quote/index.html" method="GET" onSubmit="return subQuote(document.bizQuote);">
+							<td class="capblack" style="padding-right:5px;">Sponsored By<br/><script language="JavaScript">OAS_AD('Right1');</script></td>
+							<td valign="bottom"><input type="text" name="searchString" class="bizSearch" style="width:80px;height:20px;"></td>
+							 <td valign="bottom"><input type="submit" value="GO" style="width:35px;height:20px;" class="bizSubmit"/></td>
+							<input type="hidden" name="story" value="tickerLookup">
+							</form></tr></table></div>
+						</div>
+					</div>
+					</div>
+					<div class="bizBar">PORTFOLIO</div>
+					<div class="rootHeads" style="padding-bottom:5px;"><a href="javascript:popPort();" style="color:#000000;">Register now to track and analyze your investments in our free and easy-to-use portfolio tracker.</a></div>
+					<div class="bizBar">BULLS &amp; BEARS POLL</div>
+					<div class="rootHeads" style="padding-bottom:5px;"><a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179753,00.html#poll" style="color:#000000;">Vote for which Bulls &amp; Bears prediction is most likely to come true</a></div>
+				</div>
+				<div style="background-color:#00426F;padding:10px 0px 10px 0px;">
+					<div>
+					<table cellpadding=0 cellspacing=0 width=430>
+						<tr><td class="adHead"><div style="float:left;text-align:left;width:150px;">&nbsp;ADVERTISEMENTS</div> <div style="float:right;text-align:right;width:150px;"><a href="/web/20051227145442/http://foxnews.adsonar.com/" target="_blank">Advertise Here</a>&nbsp;</div></td></tr>
+						<tr><td><script type="text/javascript">adsonar_pid=206757;adsonar_ps=564677;adsonar_zw=430;adsonar_zh=100;adsonar_jv='ads.adsonar.com';</script><script language="JavaScript" src="/web/20051227145442js_/http://js.adsonar.com/js/adsonar.js"></script></td></tr>
+					</table>
+					</div>
+				</div>
+				</td></tr>
+				
+				<tr><td><div style="width:450px;height:10px;overflow:hidden;"></div></td></tr>
+				
+				<tr><td class="tab450"><div class="name"><a name="foxnews247">FOX NEWS 24/7</a></div><div class="spon"><a href="/web/20051227145442/http://clk.atdmt.com/VON/go/fxnwsvon0510000209von/direct/01/" target="_blank"><img src="/web/20051227145442im_/http://www.foxnews.com/images/outsiders/free_static_2499_90x20.gif" width=90 height=20 border=0></a></div></td></tr>
+				<tr><td class="box450" style="padding-top:10px;" align="center">
+				<div style="width:430px;">
+				  <div style="width:430px;">
+
+
+	
+	
+	   
+		     
+		 
+			     
+		<div class="deck" style="width:205px;float:left;text-align:left;">
+			<div style="padding-bottom:5px;width:205px;">
+			 
+				 
+					<a href="/web/20051227145442/http://www.foxnews.com/freedom" style="color:#990000;"><b>THE COST OF FREEDOM</b></a>
+				 <br>
+			 <a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179753,00.html"><b>The Cost of Freedom</b></a></div>
+			<div style="width:205px;">
+			
+				<div style="float:left;width:95;height:75px;">
+					<div style="width:90px;"><a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179753,00.html"><img src="/web/20051227145442im_/http://www.foxnews.com/images/109909/168_14_90_freedom_lastweek.jpg" width=90 height=70 border=0></a></div>
+					<script language="JavaScript">writeRootColSponsor('88');</script> </div>
+			 Miss a minute of this week's block? Here's your chance to catch up! </div>
+			 </div>
+		
+			  
+	
+	
+	   
+		
+			     
+		<div class="deck" style="width:205px;float:right;text-align:left;">
+			<div style="padding-bottom:5px;width:205px;">
+			 
+				 
+					<a href="/web/20051227145442/http://www.foxnews.com/oreilly" style="color:#990000;"><b>THE O'REILLY FACTOR</b></a>
+				 <br>
+			 <a href="javascript:videoPlayer('122105/views_oreilly_122105','Bill O\'Reilly\'s Talking Points','OReilly_Factor_Talking_Points','acc','O\'Reilly Factor','-1');"><b>Bill O'Reilly's Talking Points</b></a></div>
+			<div style="width:205px;">
+			
+				<div style="float:left;width:95;height:75px;">
+					<div style="width:90px;"><a href="javascript:videoPlayer('122105/views_oreilly_122105','Bill O\'Reilly\'s Talking Points','OReilly_Factor_Talking_Points','acc','O\'Reilly Factor','-1');"><img src="/web/20051227145442im_/http://www.foxnews.com/video2/images/90_vid_views_oreilly.jpg" width=90 height=70 border=0></a></div>
+					<script language="JavaScript">writeRootColSponsor('88');</script> </div>
+			 The Factor's New Year's resolutions... </div>
+			
+				<div style="clear:both;width:205px;height:1px;overflow:hidden;"> </div>
+				<div style="width:205px;">
+				 
+	
+	   
+		     
+		 
+			     &#8226; <b><a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179482,00.html">Read Talking Points</a></b>
+				 </div>
+			 </div>
+		
+			 <div style="clear:both;width:430px;height:10px;overflow:hidden;"></div>
+		 
+	
+	
+	   
+		
+			     
+		<div class="deck" style="width:205px;float:left;text-align:left;">
+			<div style="padding-bottom:5px;width:205px;">
+			 
+				 
+					<a href="/web/20051227145442/http://www.foxnews.com/cavuto" style="color:#990000;"><b>YOUR WORLD W/ NEIL CAVUTO</b></a>
+				 <br>
+			 <a href="javascript:videoPlayer('122305/cav_trump_122305','Donald Strikes Back','Your_World','acc','Business','-1');"><b>'The Donald' Strikes Back</b></a></div>
+			<div style="width:205px;">
+			
+				<div style="float:left;width:95;height:75px;">
+					<div style="width:90px;"><a href="javascript:videoPlayer('122305/cav_trump_122305','Donald Strikes Back','Your_World','acc','Business','-1');"><img src="/web/20051227145442im_/http://www.foxnews.com/video2/images/90_vid_cav_trump.jpg" width=90 height=70 border=0></a></div>
+					<script language="JavaScript">writeRootColSponsor('19');</script> </div>
+			 Real estate mogul Donald Trump responds to lawsuit filed by Barbara Corcoran </div>
+			
+				<div style="clear:both;width:205px;height:1px;overflow:hidden;"> </div>
+				<div style="width:205px;">
+				 
+	
+	   
+		     
+		 
+			     &#8226; <b><a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179665,00.html">Read the 'Your World' Interview</a></b>
+				 </div>
+			 </div>
+		
+			  
+	
+	
+	   
+		
+			     
+		<div class="deck" style="width:205px;float:right;text-align:left;">
+			<div style="padding-bottom:5px;width:205px;">
+			 
+				 
+					<a href="/web/20051227145442/http://www.foxnews.com/specialreport" style="color:#990000;"><b>SPECIAL REPORT W/ BRIT HUME</b></a>
+				 <br>
+			 <a href="javascript:videoPlayer('122305/views_hume_122305','Brit Hume\'s Grapevine','Special_Report_Grapevine','acc','Opinion','-1');"><b>Brit Hume's Grapevine</b></a></div>
+			<div style="width:205px;">
+			
+				<div style="float:left;width:95;height:75px;">
+					<div style="width:90px;"><a href="javascript:videoPlayer('122305/views_hume_122305','Brit Hume\'s Grapevine','Special_Report_Grapevine','acc','Opinion','-1');"><img src="/web/20051227145442im_/http://www.foxnews.com/video2/images/90_vid_grapevine.jpg" width=90 height=70 border=0></a></div>
+					<script language="JavaScript">writeRootColSponsor('22');</script> </div>
+			 Barbie's 'Unbearable Whiteness' goes under the college microscope </div>
+			
+				<div style="clear:both;width:205px;height:1px;overflow:hidden;"> </div>
+				<div style="width:205px;">
+				 
+	
+	   
+		     
+		 
+			     &#8226; <b><a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179670,00.html">Read the Grapevine</a></b>
+				 </div>
+			 </div>
+		
+			 <div style="clear:both;width:430px;height:10px;overflow:hidden;"></div>
+		 
+	
+	
+	   
+		
+			     
+		<div class="deck" style="width:205px;float:left;text-align:left;">
+			<div style="padding-bottom:5px;width:205px;">
+			 
+				 
+					<a href="/web/20051227145442/http://www.foxnews.com/bigstory" style="color:#990000;"><b>THE BIG STORY W/ JOHN GIBSON</b></a>
+				 <br>
+			 <a href="javascript:videoPlayer('122305/views_gibby_1730','John Gibson\'s My Word','Big_Story_My_Word','acc','Opinion','-1');"><b>John Gibson's My Word</b></a></div>
+			<div style="width:205px;">
+			
+				<div style="float:left;width:95;height:75px;">
+					<div style="width:90px;"><a href="javascript:videoPlayer('122305/views_gibby_1730','John Gibson\'s My Word','Big_Story_My_Word','acc','Opinion','-1');"><img src="/web/20051227145442im_/http://www.foxnews.com/video2/images/90_JohnVideoMonday.jpg" width=90 height=70 border=0></a></div>
+					<script language="JavaScript">writeRootColSponsor('21');</script> </div>
+			 Some blogs misquote me to build outrage </div>
+			
+				<div style="clear:both;width:205px;height:1px;overflow:hidden;"> </div>
+				<div style="width:205px;">
+				 
+	
+	   
+		     
+		 
+			     &#8226; <b><a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179642,00.html">Read My Word</a></b>
+				 </div>
+			 </div>
+		
+			  
+	
+	
+	   
+		
+			     
+		<div class="deck" style="width:205px;float:right;text-align:left;">
+			<div style="padding-bottom:5px;width:205px;">
+			 
+				 
+					<a href="/web/20051227145442/http://www.foxnews.com/ontherecord" style="color:#990000;"><b>ON THE RECORD W/ GRETA</b></a>
+				 <br>
+			 <a href="javascript:videoPlayer('122205/greta_hillary2_122105','Taking Action','On_the_Record','acc','On the Record','-1');"><b>Taking Action</b></a></div>
+			<div style="width:205px;">
+			
+				<div style="float:left;width:95;height:75px;">
+					<div style="width:90px;"><a href="javascript:videoPlayer('122205/greta_hillary2_122105','Taking Action','On_the_Record','acc','On the Record','-1');"><img src="/web/20051227145442im_/http://www.foxnews.com/video2/images/90_vid_greta_default.jpg" width=90 height=70 border=0></a></div>
+					<script language="JavaScript">writeRootColSponsor('27');</script> </div>
+			 Sen. Clinton on what needs to be done to prevent a repeat of the Katrina disaster </div>
+			
+				<div style="clear:both;width:205px;height:1px;overflow:hidden;"> </div>
+				<div style="width:205px;">
+				 
+	
+	   
+		     
+		 
+			     &#8226; <b><a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179791,00.html">Read Greta's Blog</a></b>
+				 </div>
+			 </div>
+		
+			 <div style="clear:both;width:430px;height:10px;overflow:hidden;"></div>
+		 </div>
+ </div>
+				</td></tr>
+				
+				<tr><td><div style="width:450px;height:10px;overflow:hidden;"></div></td></tr>
+
+				  <tr><td class="tab450"><div class="name">OTHER NEWS HEADLINES</div><div class="spon"><img src="/web/20051227145442im_/http://www.foxnews.com/images/clear_dot.gif" width=90 height=20></div></td></tr>
+				<tr><td class="box450" align="center">
+				<div style="width:430px;" class="deck">
+					
+					<div class="rootHeaders"><a href="/web/20051227145442/http://www.foxnews.com/politics/index.html">POLITICS</a></div>
+					<div class="rootHeads">
+					  
+						  &#149; <a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179779,00.html">Report: Entitlements Set to Grow in Future Budgets</a><p>
+					
+						  &#149; <a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179736,00.html">Network Aims to Help Harassed Campus Conservatives</a><p>
+					
+						  &#149; <a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179789,00.html">Textbooks Begin Judging Clinton Impeachment</a><p>
+					 </div>
+					<div class="rootHeads">
+						<a href="/web/20051227145442/http://www.foxnews.com/politics/index.html" style="color:#990000;">MORE POLITICS HEADLINES</a>
+						 
+							<script language="JavaScript">document.write(' | <a href="javascript:' + getVidLink(new accessVideo("122605/pol_powell_122605","OK with Eavesdropping","Powell supports decision to authorize NSA spy program","OK with Eavesdropping","/video2/images/90_vid_powell_122605.jpg","/video2/images/50_vid_powell_122605.jpg",-1,"FNL","acc","Politics")) + '" style="color:#990000;">VIDEO</a>');</script>  </div>
+
+					<div class="rootHeaders"><a href="/web/20051227145442/http://www.foxnews.com/technology/index.html">TECHNOLOGY</a></div>
+					<div class="rootHeads">
+					  
+						  &#149; <a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179759,00.html">Video Game Shuns NFL, Gets Violent</a><p>
+					
+						  &#149; <a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179674,00.html">Net Censorship and Democracy's Fall</a><p>
+					
+						  &#149; <a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179493,00.html">Technology Helping New York Commuters Cope With Strike</a><p>
+					 </div>
+					<div class="rootHeads">
+						<a href="/web/20051227145442/http://www.foxnews.com/technology/index.html" style="color:#990000;">MORE TECHNOLOGY HEADLINES</a>
+						 
+							<script language="JavaScript">document.write(' | <a href="javascript:' + getVidLink(new accessVideo("122505/usw_marks_122505","Target: Terror","Britain to use cameras to track every car on road","Target: Terror","/video2/images/90_vid_marks.jpg","/video2/images/50_usw_marks.jpg",-1,"FNL","acc","Tech")) + '" style="color:#990000;">VIDEO</a>');</script>  </div>
+					
+					<div class="rootHeaders"><a href="/web/20051227145442/http://www.foxnews.com/science/index.html">SCIENCE</a></div>
+					<div class="rootHeads">
+					  
+						  &#149; <a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179666,00.html">Scientists Predict What You'll Think of Next</a><p>
+					
+						  &#149; <a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179667,00.html">Older Elephants Smell Sexier</a><p>
+					
+						  &#149; <a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179755,00.html">Stem Cell Report Nears Completion</a><p>
+					 </div>
+					<div class="rootHeads">
+						<a href="/web/20051227145442/http://www.foxnews.com/science/index.html" style="color:#990000;">MORE SCIENCE HEADLINES</a>
+						 
+							<script language="JavaScript">document.write(' | <a href="javascript:' + getVidLink(new accessVideo("122405/sci_centanni_122405","Early Warning","White House issues national tsunami plan","Early Warning","/video2/images/90_vid_centanni.jpg","/video2/images/50_sci_centanni.jpg",-1,"Weekend_Live","acc","Science")) + '" style="color:#990000;">VIDEO</a>');</script>  </div>
+
+					<div class="rootHeaders">
+						<table cellpadding-0 cellspacing=0 width=430><tr>
+						<td style="font-size:14px;font-weight:bold;"><a href="/web/20051227145442/http://www.foxnews.com/health/index.html">HEALTH</a></td>
+						<td align="right"><a href="/web/20051227145442/http://foxnews.webmd.com/webmd_today/home/default?src=rss_foxnews_rtstatlogo" target="_blank"><img src="/web/20051227145442im_/http://www.foxnews.com/images/rede04/root_webmd2.gif" width=82 height=14 border=0></a></td>
+						</tr></table>
+					</div>
+					<div class="rootHeads">
+					  
+						  &#149; <a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179439,00.html">Lack of Human Immunity Makes Bird Flu More Worrisome</a><p>
+					
+						  &#149; <a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179553,00.html">Flu Vaccine: A Flop for the Elderly?</a><p>
+					
+						  &#149; <a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179437,00.html">Men Who Dance Well May Be More Desirable As Mates</a><p>
+					 </div>
+					<div class="rootHeads">
+						<a href="/web/20051227145442/http://www.foxnews.com/health/index.html" style="color:#990000;">MORE HEALTH HEADLINES</a>
+						 
+							<script language="JavaScript">document.write(' | <a href="javascript:' + getVidLink(new accessVideo("122605/health_housecall_122605","Sunday Housecall","Is low-dose iron good for old patients with anemia?","Sunday Housecall","/video2/images/90_vid_housecall_122605.jpg","/video2/images/50_vid_housecall_122605.jpg",-1,"FNL_Sunday_Housecall","acc","Health")) + '" style="color:#990000;">VIDEO</a>');</script>  </div>
+					
+					<div class="rootHeaders"><a href="/web/20051227145442/http://www.foxnews.com/foxlife/index.html">FOXLIFE</a></div>
+					<div class="rootHeads">
+					  
+						 
+							 
+								   &#149; <a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179771,00.html"><i>Strakalogue:</i> Grrr! Tom Cruise and More Oblivions of 2005</a><p>
+					
+						 
+							 
+								   &#149; <a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179786,00.html"><i>Fox411:</i> Lindsay Lohan Helps Knicks Break Streak?</a><p>
+					 &#149; <a href="/web/20051227145442/http://www.foxnews.com/foxlife/holiday/index.html">Holiday Gift Guide</a><p>
+					</div>
+					<div class="rootHeads">
+						<a href="/web/20051227145442/http://www.foxnews.com/foxlife/index.html" style="color:#990000;">MORE FOXLIFE HEADLINES</a>
+						 
+							<script language="JavaScript">document.write(' | <a href="javascript:' + getVidLink(new accessVideo("122605/vod_sharkattack_122605","Close Encounter","Surfer recounts battle with great white shark","Close Encounter","/video2/images/90_vid_sharkattack_122605.jpg","/video2/images/50_vid_sharkattack_122605.jpg",-1,"FNL","acc","Foxlife")) + '" style="color:#990000;">VIDEO</a>');</script>  </div>
+
+					<div class="rootHeaders"><a href="/web/20051227145442/http://www.foxnews.com/views/index.html">VIEWS</a></div>
+					<div class="rootHeads">
+					  
+						 
+							 
+								   &#149; <a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179777,00.html"><i>Martin Frost:</i> King George W. ?</a><p>
+					
+						 
+							 
+								   &#149; <a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179198,00.html"><i>Martin Frost:</i> An Encouraging Glimpse at the Future</a><p>
+					
+						 
+							 
+								   &#149; <a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179321,00.html"><i>ifeminists:</i> Campus Conscience Police?</a><p>
+					 </div>
+					<div class="rootHeads">
+						<a href="/web/20051227145442/http://www.foxnews.com/views/index.html" style="color:#990000;">MORE VIEWS HEADLINES</a>
+						 
+							<script language="JavaScript">document.write(' | <a href="javascript:' + getVidLink(new accessVideo("122305/views_hume_122305","Brit Hume's Grapevine","Barbie's 'Unbearable Whiteness' goes under the college microscope","Brit Hume&#39;s Grapevine","/video2/images/90_vid_grapevine.jpg","/video2/images/50_barbie.jpg",-1,"Special_Report_Grapevine","acc","Opinion")) + '" style="color:#990000;">VIDEO</a>');</script>  </div>
+
+					
+	        <div class="rootHeaders"><a href="/web/20051227145442/http://foxsports.foxnews.com/"><font style="font-style:italic;color:#990000;">NEW!</font> SPORTS</a></div>
+					<div class="rootHeads">
+                     &#149; <a href='/web/20051227145442/http://msn.foxsports.com/nfl/story/5191674' target='_blank'>Patriots Roll Over Jets In 'MNF' Finale </a><p>&#149; <a href='/web/20051227145442/http://msn.foxsports.com/nfl/story/5191614' target='_blank'>Colts Start Another Week Without Dungy</a><p>&#149; <a href='/web/20051227145442/http://msn.foxsports.com/nba/story/5197536' target='_blank'>Parker Cited For Impeding Traffic With Longoria</a><p> </div>
+					<div class="rootHeads" style="padding-bottom:10px;"><a href="/web/20051227145442/http://foxsports.foxnews.com/" style="color:#990000;">MORE SPORTS HEADLINES</a></div>
+				</div>
+				</td></tr>
+				
+				 <tr><td style="padding-top:10px;"><a href="/web/20051227145442/http://shop.ecompanystore.com/foxnews/FOX_shop.asp" target="_blank"><img src="/web/20051227145442im_/http://www.foxnews.com/images/450x40_fnshop.gif" width=450 height=40 border=0></a></td></tr>
+			
+				<tr><td><div style="width:450px;height:10px;overflow:hidden;"></div></td></tr>
+<tr><td class="tab450"><div class="name"><a name="blogs">FOX BLOGS</a></div><div class="spon"><a href="/web/20051227145442/http://clk.atdmt.com/VON/go/fxnwsvon0510000213von/direct/01/" target="_blank"><img src="/web/20051227145442im_/http://www.foxnews.com/images/outsiders/free_static_2499_90x20.gif" width=90 height=20 border=0></a></div></td></tr>
+<tr><td class="box450" style="padding:10px 0px 10px 0px;" align="center">
+<div style="width:430px;">
+
+
+	
+		
+			    
+	   
+		     
+		 
+			     <div class="deck" style="width:430px;clear:both;text-align:left;">
+		<a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179791,00.html" style="color:#990000;"><b>GRETAWIRE</b></a><br><b><a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179791,00.html">Cruel and Unusual?</a></b><br>California is set to execute a 76-year-old wheelchair-bound man<br><b><a href="/web/20051227145442/http://www.foxnews.com/ontherecord/index.html"><font class="pollfooter">Watch 'On the Record with Greta Van Susteren' weeknights at 10 p.m. ET</font></b></a> </div>
+	
+	<div style="clear:both;height:10px;width:430px;overflow:hidden;"></div>
+
+	
+		  
+	   
+		     
+		 
+			     <div class="deck" style="width:205px;float:left;text-align:left;">
+		<a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179567,00.html" style="color:#990000;"><b>FROM THE HEARTLAND</b></a><br><b><a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179567,00.html">What Makes a Hero?</a></b><br>Shining a spotlight on those who do extraordinary things </div>
+		
+			  
+	
+		  
+	   
+		     
+		 
+			     <div class="deck" style="width:205px;float:right;text-align:left;">
+		<a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,178932,00.html" style="color:#990000;"><b>HARRIGAN ON THE HUNT</b></a><br><b><a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,178932,00.html">Elections in Bolivia</a></b><br>Evo Morales supporters have painted their houses blue </div>
+		
+			 <div style="clear:both;width:430px;height:10px;overflow:hidden;"></div>
+		 
+	
+		  
+	   
+		     
+		 
+			     <div class="deck" style="width:205px;float:left;text-align:left;">
+		<a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179306,00.html" style="color:#990000;"><b>RICK'S RAMBLES</b></a><br><b><a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179306,00.html">Plane Down</a></b><br>They were heading home for the holidays...  </div>
+		
+			  
+	
+		  
+	   
+		     
+		 
+			     <div class="deck" style="width:205px;float:right;text-align:left;">
+		<a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179154,00.html" style="color:#990000;"><b>WILSON WATCH</b></a><br><b><a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,179154,00.html">Soap Box Sunday</a></b><br>'Weekend Live' viewers get their chance to spout off </div>
+		
+			 <div style="clear:both;width:430px;height:10px;overflow:hidden;"></div>
+		 
+	
+		  
+	       
+		 
+			     <div class="deck" style="width:205px;float:left;text-align:left;">
+		<a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,149646,00.html" style="color:#990000;"><b>SEAN HANNITY'S LINKS</b></a><br><b><a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,149646,00.html">Sites He Reads Daily</a></b><br>Also, check out some blogs that Hannity fans might enjoy reading </div>
+		
+			  
+	
+		  
+	       
+		 
+			     <div class="deck" style="width:205px;float:right;text-align:left;">
+		<a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,149645,00.html" style="color:#990000;"><b>ALAN COLMES' LINKS</b></a><br><b><a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,149645,00.html">From the Left</a></b><br>Check out these blogs that fans of Alan Colmes might enjoy </div>
+		
+			 <div style="clear:both;width:430px;height:10px;overflow:hidden;"></div>
+		 </div>
+</td></tr>
+ <tr><td><div style="width:450px;height:10px;overflow:hidden;"></div></td></tr>
+				
+				 <tr><td align="center" style="padding-bottom:20px;">
+				<table cellpadding=0 cellspacing=0 border=0 width=450 style="background-color:#000000;">
+					<form method="get" name="searchFormBot" action="/web/20051227145442/http://search.foxnews.com/info.foxnws/redirs_all.htm" onSubmit="return searchSub(document.searchFormBot);">
+						<input type="hidden" name="pgtarg" value="wbsdogpile">
+						<input type="hidden" name="qcat" value="web">
+						<tr>
+						<td style="font-size:11px;color:white;padding:3px 5px 3px 5px;"><b>SEARCH</b></td>
+						<td align="center"><input type="text" size="15" name="qkw" maxlength="52" value="" class="searchInput" style="width:350px;"></td>
+						<td style="padding:3px 5px 3px 5px;"><input type="submit" value="GO" class="goBut"></td>
+						</tr>
+					</form>
+				</table>
+				</td></tr>
+				  <tr><td align="center" style="padding-bottom:15px;" class="botNav">
+				<script language="JavaScript">document.write(botNav());</script>
+				</td></tr>
+			
+				<tr><td align="center" class="cap" style="padding-bottom:20px;">
+					 <script language="JavaScript">document.write(footer());</script>
+				</td></tr>
+			</table>
+	   		</td>
+			<td valign="top" style="padding-right:5px;">
+			<table cellpadding=0 cellspacing=0 border=0 width=300>
+
+	<tr><td class="adHead"><b>ADVERTISEMENT</b></tr>
+	<tr><td style="padding-bottom:10px;">
+	<div id="hide1" style="width:300px;height:250px;">
+		<SCRIPT LANGUAGE="JavaScript">OAS_AD('Frame1');</SCRIPT> </div>
+	</td></tr>
+	
+	   <script language="javascript">
+		function validateTip(){
+			var tipValue = document.getElementById('tipText').value;
+			while(tipValue.charCodeAt(0) <= 32)
+				tipValue = tipValue.substring(1);
+
+			if(tipValue.length <= 2){
+				alert('News tips may not be blank!');
+				return false;
+			} else {
+				return true;
+			}
+		}
+	</script>
+
+	<tr><td class="conTab"><div class="name" style="width:260px;">GOT A NEWS TIP? LET US KNOW.</div></td></tr>
+	<form name="tipsForm" action="/web/20051227145442/http://www.foxnews.com/cgi-bin/emailNewsTip.cgi" method="post" target="newsTip" onSubmit="javascript:if(validateTip())window.open('','newsTip','width=350,height=250,status=no,resizable=no,scrollbars=no'); else return false;">
+	<tr><td bgcolor="#ffffff" align="center" style="border:1px solid black;padding:10px 0px 10px 0px;">
+	<div style="width:280px;">
+		<div class="deck" style="padding-bottom:5px;text-align:left;"><strong>Send news tips to FOXNews.com</strong></div>
+		<div style="width:280px;"><textarea id=tipText name=tipText style="width:280px;height:60px;font-size:12px;border:1px solid black;padding:0;margin:0;"></textarea></div>
+		<div style="padding-top:7px;width:100px;clear:both;"><input type="submit" value="SUBMIT" style="width:100px;height:20px;border:1px solid black;background-color:#990000;color:#FFFFFF;font-size:11px;font-weight:bold;"></div>
+		<div class="deck" style="clear:both;padding-top:5px;width:280px;text-align:left;"><strong>Note</strong>: Your anonymity is guaranteed.</div>
+	</div>
+	</td></tr>
+	</form>
+	<tr><td><div class="conSpacer"></div></td></tr>
+
+	<script language="javascript">writeConsole(1);</script>
+
+	<tr><td><a href="/web/20051227145442/http://shop.ecompanystore.com/foxnews/FOX_shop.asp" target="_blank"><img src="/web/20051227145442im_/http://www.foxnews.com/images/300_100_fnshop_holiday.jpg" border=0></a></td></tr>
+	<tr><td><div class="conSpacer"></div></td></tr>
+
+	<tr><td class="conTab"><div class="name">GET YOUR WEATHER</div></td></tr>
+	<form name="weatherForm" onSubmit="return local_weather(document.weatherForm)" action="/web/20051227145442/http://www2.foxnews.com/weather/decide.asp" method="post">
+	<tr><td bgcolor="#ffffff" align="center" style="border:1px solid black;padding:10px 0px 10px 0px;">
+	<div style="width:280px;">
+		<div class="deck" style="padding-bottom:10px;text-align:left;">Type in your zip code to see your current conditions and five-day forecast.</div>
+		<div style="font-size:12px;width:200px;text-align:left;"><b>ZIP CODE</b></div>
+		<div style="padding-top:2px;width:200px;">
+			<div style="float:left;width:100px;"><input type="text" name="zip" maxlength=5 size=8 style="width:100px;height:18px;font-size:12px;border:1px solid black;"></div>
+			<div style="float:right;width:65px;"><input type="submit" value="SUBMIT" style="width:55px;height:20px;border:1px solid black;background-color:#990000;color:#FFFFFF;font-size:11px;font-weight:bold;"></div>
+		</div>
+		<div class="deck" style="clear:both;padding-top:10px;text-align:left;"><a href="/web/20051227145442/http://www2.foxnews.com/weather/weather_local.asp">Other Searches, Click Here</a></div>
+	</div>
+	</td></tr>
+	</form>
+	<tr><td><div class="conSpacer"></div></td></tr>
+ <script language="javascript">writeConsole(2);</script>
+	
+	<tr><td class="conTab">ON YOUR LOCAL FOX STATION</td></tr>
+	<tr><td bgcolor="#ffffff" align="center" style="border:1px solid black;padding-top:10px;">
+	<div style="width:280px;">
+		<div class="deck" style="width:180px;float:left;text-align:left;"><a href="/web/20051227145442/http://www.foxnews.com/fns/"><b>FOX News Sunday<br>w/ Chris Wallace</a></b><br><br><a href="/web/20051227145442/http://www.foxnews.com/story/0,2933,61653,00.html">Check your local listings</a></div>
+		<div style="width:90px;float:right;"><a href="/web/20051227145442/http://www.foxnews.com/fns/"><img src="/web/20051227145442im_/http://www.foxnews.com/images/rede04/90_70_chris_wallace.jpg" width=90 height=70 border=0></a></div>
+		<div style="clear:both;height:10px;width:280px;overflow:hidden;"></div>
+	</div>
+	</td></tr>
+
+	<tr><td><div class="conSpacer"></div></td></tr>
+	<tr><td class="conTab">FOX NEWS RADIO</td></tr>
+	<tr><td bgcolor="#ffffff" align="center" style="border:1px solid black;padding-top:10px;">
+	<div style="width:280px;">
+		<div class="deck" style="width:280px;float:left;text-align:left;"><a href="/web/20051227145442/http://www.foxnews.com/access/radio.html"><b>FOX News Radio</b></a></div>
+		<div style="clear:both;height:5px;width:280px;overflow:hidden;"></div>
+		<div class="deck" style="width:280px;float:left;text-align:left;"><a href="/web/20051227145442/http://www.foxnews.com/access/radio.html">National news coverage coast-to-coast</a></div>
+ <div style="clear:both;height:10px;width:280px;overflow:hidden;"></div>
+	</div>
+	<div style="width:280px;">
+		<div class="deck" style="width:180px;float:left;text-align:left;"><a href="/web/20051227145442/http://www.foxnews.com/tonysnow/"><b>Tony Snow</a></b><br><br><a href="/web/20051227145442/http://www.foxnews.com/tonysnow/">A radio revolution!<br>Find it now in your area</a></div>
+		<div style="width:90px;float:right;"><a href="/web/20051227145442/http://www.foxnews.com/tonysnow/"><img src="/web/20051227145442im_/http://www.foxnews.com/images/rede04/90_70_tony_snow.jpg" width=90 height=70 border=0></a></div>
+		<div style="clear:both;height:10px;width:280px;overflow:hidden;"></div>
+	</div>
+	<div style="width:280px;">
+		<div class="deck" style="width:180px;float:left;text-align:left;"><a href="/web/20051227145442/http://www.foxnews.com/johngibsonradio/"><b>John Gibson</a></b><br><br><a href="/web/20051227145442/http://www.foxnews.com/johngibsonradio/">The trouble begins...NOW!<br/>Find it now in your area</a></div>
+		<div style="width:90px;float:right;"><a href="/web/20051227145442/http://www.foxnews.com/johngibsonradio/"><img src="/web/20051227145442im_/http://www.foxnews.com/images/rede04/90_70_john_gibson.jpg" width=90 height=70 border=0></a></div>
+		<div style="clear:both;height:10px;width:280px;overflow:hidden;"></div>
+	</div>
+	<div style="width:280px;">
+		<div class="deck" style="width:180px;float:left;text-align:left;"><a href="/web/20051227145442/http://www.foxnews.com/alancolmesradio/"><b>Alan Colmes</b></a><br><br><a href="/web/20051227145442/http://www.foxnews.com/alancolmesradio/">Any opinion &#151; all the time!<br>Find it now in your area</a></div>
+		<div style="width:90px;float:right;"><a href="/web/20051227145442/http://www.foxnews.com/alancolmesradio/"><img src="/web/20051227145442im_/http://www.foxnews.com/images/rede04/90_70_alan_colmes.jpg" border=0 width=90 height=70></a></div>
+		<div style="clear:both;height:10px;width:280px;overflow:hidden;"></div>
+	</div>
+	</td></tr>
+
+	<tr><td><div class="conSpacer"></div></td></tr>
+	
+	 <tr><td style="padding-bottom:10px;"><a href="/web/20051227145442/http://www.foxnews.com/dayside/ticket_request.html"><img src="/web/20051227145442im_/http://www.foxnews.com/images/right_nav/bug_300x50_dayside.jpg" width=300 height=50 border=0></a></td></tr>
+	 </table>
+ </td>
+			</tr>
+			
+		 </table>
+
+
+	<div id="extraBox"></div>
+	<script language="JavaScript">
+		 buildNav();
+		
+			writePlayer();
+			rightPromo();
+		 </script>
+
+	<SCRIPT LANGUAGE="JavaScript">
+		var cookieName='foxsessionpop';
+		var myDomain='foxnews.com';
+		if(document.domain.indexOf(myDomain)==-1){myDomain='';}
+		if(myDomain.length>0){myDomain='domain=.'+myDomain+' ';}
+		var ck=document.cookie;
+		var id=ck.indexOf(cookieName);
+		if(id<0){
+			document.cookie= cookieName + '=' + cookieName + ';path=/;' + myDomain + ';';
+			document.write('<SCR' + 'IPT LANGUAGE="JavaScript1.1" SRC="' + OAS_url + 'adstream_jx.cgi/' + OAS_sitepage + '/1' + OAS_rns + '@x01!x01"></SCR' + 'IPT>');
+		}
+	</SCRIPT>
+</body>
+</html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 14:54:42 Dec 27, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 7:16:06 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

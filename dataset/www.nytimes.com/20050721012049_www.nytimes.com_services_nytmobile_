@@ -1,0 +1,745 @@
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"/>
+<html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app11.us.archive.org";archive_analytics.values.server_ms=2100;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<!--Knews2 Document -->
+<script language="JavaScript">
+if (document.layers) {
+document.write("<link rel='stylesheet' type='text/css'  href='/web/20050722082018/http://www.nytimes.com/css/article.ns.css'>");
+}
+else {
+document.write("<link rel='stylesheet' type='text/css'  href='/web/20050722082018/http://www.nytimes.com/css/article.css'>");
+}
+</script>
+<script language="JavaScript">
+<!--
+function nameIt() {
+    	window.name = 'nytimesmain';
+    }
+	function pop_me_up(pURL,features){ 
+		new_window = window.open(pURL, "popup_window", features);
+		new_window.focus();
+	}
+	function pop_me_up2(pURL,name,features){
+		new_window = window.open(pURL,name,features);
+		new_window.focus();
+	}
+	function changeImage(image_name,image_src) {
+   		document.images[image_name].src = image_src;
+	}
+	function goToURL(obj){
+		var f = (obj.section) ? obj : obj.form;
+		var selected = f.section.selectedIndex;
+		var URL = f.section.options[selected].value;
+		if (URL != "") document.location = URL;
+		return false;
+	}
+	if (window.self != window.top) { 
+		top.location.replace(window.location.pathname); 
+	}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+<!--Begin
+var day="";
+var month="";
+var myweekday="";
+var year="";
+mydate = new Date();
+myday = mydate.getDay();
+mymonth = mydate.getMonth();
+myweekday= mydate.getDate();
+weekday= myweekday;
+myyear= mydate.getFullYear();
+year = myyear
+if(myday == 0)
+day = " Sunday, "
+else if(myday == 1)
+day = " Monday, "
+else if(myday == 2)
+day = " Tuesday, "
+else if(myday == 3)
+day = " Wednesday, "
+else if(myday == 4)
+day = " Thursday, "
+else if(myday == 5)
+day = " Friday, "
+else if(myday == 6)
+day = " Saturday, "
+if(mymonth == 0) {
+month = "January "}
+else if(mymonth ==1)
+month = "February "
+else if(mymonth ==2)
+month = "March "
+else if(mymonth ==3)
+month = "April "
+else if(mymonth ==4)
+month = "May "
+else if(mymonth ==5)
+month = "June "
+else if(mymonth ==6)
+month = "July "
+else if(mymonth ==7)
+month = "August "
+else if(mymonth ==8)
+month = "September "
+else if(mymonth ==9)
+month = "October "
+else if(mymonth ==10)
+month = "November "
+else if(mymonth ==11)
+month = "December "
+// End -->
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</SCRIPT>
+<style> 
+A: link {color: #000066;} 
+A: hover {color: #990000;} 
+.date {font-family: arial, helvetica, sans-serif; font-size: 11px;} 
+.bodytext {font-family: arial, helvetica, sans-serif; font-size: 12px;} 
+.bodylink {font-family: arial, helvetica, sans-serif; color: #000066; font-size: 12px;} 
+.smtext {font-family: arial, helvetica, sans-serif; font-size: 10px;} 
+.adtext {font-family: arial, helvetica, sans-serif; font-size: 10px; color: #999999;} 
+.smlink {font-family: arial, helvetica, sans-serif; color: #000066; font-size: 10px;} 
+.footer {font-family: arial, helvetica, sans-serif; font-size: 10px;} 
+.footerlink {font-family: arial, helvetica, sans-serif; font-size: 10px; color: #000066;} 
+.sansbold {font-family: arial, helvetica, sans-serif;f ont-size: 11px; font-weight: 400;} 
+.header {font-family: Verdana, arial,helvetica,sans-serif; font-weight: bold; color: #FFFFFF; font-size: 10px;} 
+</style>
+
+<META NAME="HOMEPAGE_TEMPLATE_VERSION" CONTENT="300">
+<meta  name="ROBOTS" content="NOARCHIVE">
+<title>The New York Times > NYT Mobile</title>
+</head>
+<body  marginheight="0" marginwidth="5" leftmargin="5" topmargin="0" link="#000066" bgcolor="#ffffff" alink="#990000" vlink="#444464"  onload="nameIt();MM_preloadImages('images/pda_icon3_01-over.gif')">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.nytimes.com/services/nytmobile/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "22";
+var displayMonth = "Jul";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.nytimes.com/services/nytmobile/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20050722082018" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20050618075327/http://www.nytimes.com/services/nytmobile/" title="18 Jun 2005">JUN</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 8:20:18 Jul 22, 2005">JUL</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20050826215547/http://www.nytimes.com/services/nytmobile/" title="26 Aug 2005"><strong>AUG</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20050714075858/http://www.nytimes.com/services/nytmobile/" title="7:58:58 Jul 14, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 8:20:18 Jul 22, 2005">22</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20050723081553/http://www.nytimes.com/services/nytmobile/" title="8:15:53 Jul 23, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20040113061550/http://www.nytimes.com/services/nytmobile/" title="13 Jan 2004"><strong>2004</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 8:20:18 Jul 22, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20060806095707/http://www.nytimes.com/services/nytmobile/" title="6 Aug 2006"><strong>2006</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20050722082018*/http://www.nytimes.com/services/nytmobile/" title="See a list of every capture for this URL">605 captures</a>
+           <div class="r" title="Timespan for captures of this URL">17 Oct 00 - 28 Nov 14</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000127_2001:-1:30000000fd22_2002:-1:0b000003b980_2003:-1:000000000000_2004:-1:100000000000_2005:6:001a53549577_2006:-1:231704351046_2007:-1:622016013113_2008:-1:217501001001_2009:-1:116411010246_2010:-1:240110327641_2011:-1:222110106036_2012:-1:88517422026b_2013:-1:7a9899940020_2014:-1:100100100120_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<!--context ad reference Top5 -->
+<a name="top"></a>
+<table width="768" border="0" cellpadding="0">
+<tr>
+<td><nyt_header>
+<table width="768" cellspacing="0" cellpadding="0" border="0" align="left" valign="top">
+<tr> 
+<td width="184" align="left" valign="top">
+<!--NYT Logo -->
+<a href="/web/20050722082018/http://www.nytimes.com/"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/images/article/header/nytlogoleft_article.gif" width="184" height="40" align="left" border="0" alt="The New York Times"/></a></td>
+<td width="400" align="left" valign="top"><nyt_header_image><IMG src="images/sect_nytmobile.gif" width="400" height="40" border="0" alt="The New York Times National"/></nyt_header_image></td>
+<td width="179"><script>
+			document.write("<p align=right><font size=1 class=smtext>" + day);
+			document.write(month + myweekday + ", " + year + "</font>");
+			</script></td>
+<td width="5"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1" border="0" alt=""/></td>
+</tr>
+<tr> 
+<td colspan="4" bgcolor="#000000"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="3" border="0" alt=""/></td>
+</tr>
+<tr> 
+<td width="768" colspan="4"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="3" border="0" alt=""/></td>
+</tr>
+</table>
+<br clear="all">
+</nyt_header> 
+<table width="768" cellpadding="0" cellspacing="0" border="0">
+<tr> 
+<td width="5"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1" border="0" alt=""/></td>
+<td width="379" class="nav"> <IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="379" height="1" border="0" alt=""/><br>
+<a href="/web/20050722082018/http://www.nytimes.com/" class="small">Home</a> - <a href="/web/20050722082018/http://www.nytimes.com/ref/membercenter/help/siteindex.html" class="small">Site 
+Index</a> - <a href="/web/20050722082018/http://query.nytimes.com/search/advanced/" class="small">Site 
+Search/Archive</a> - <a href="/web/20050722082018/http://www.nytimes.com/membercenter/sitehelp.html" class="small">Help</a> 
+</td>
+<td width="379" class="nav" align="right"> <IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="379" height="1" border="0" alt=""/><br>
+<nobr></nobr><a href="/web/20050722082018/http://www.nytimes.com/membercenter" class="small">Member 
+Center</a> - <a href="/web/20050722082018/http://www.nytimes.com/logout" class="small">Log 
+Out</a> </td>
+<td width="5"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1" border="0" alt=""/></td>
+</tr>
+<tr> 
+<td colspan="4"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="768" height="3" border="0" alt=""/></td>
+</tr>
+<tr> 
+<td colspan="4" bgcolor="#000000"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0" alt=""/></td>
+</tr>
+</table>
+<table width="768" bgcolor="#F6F6F6" cellpadding="0" cellspacing="0" border="0">
+<tr> 
+<td width="5" background="/web/20050722082018im_/http://graphics.nytimes.com/images/global/bg_header.gif"> 
+<IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1" border="0" alt=""/></td>
+<td width="210" background="/web/20050722082018im_/http://graphics.nytimes.com/images/global/bg_header.gif"> 
+<table cellspacing="0" cellpadding="0" border="0">
+<form name="sectionform" onSubmit="return goToURL(this);">
+<tr> 
+<td valign="center"> <span class="small"> 
+<select name="section" onChange="goToURL(this);" class="small">
+<option >Go to a Section</option>
+<option>-----------------------</option>
+<option value="http://www.nytimes.com/pages/arts/index.html?gts">Arts</option>
+<option value="http://www.nytimes.com/pages/books/index.html?gts">Books</option>
+<option value="http://www.nytimes.com/pages/business/index.html?gts">Business</option>
+<option value="http://www.nytimes.com/pages/cartoons/index.html?gts">Cartoons</option>
+<option value="http://www.nytimes.com/corrections.html?gts">Corrections</option>
+<option value="http://www.nytimes.com/pages/crosswords/index.html?gts">Crossword/Games</option>
+<option value="http://www.nytimes.com/pages/dining/index.html?gts">Dining & Wine</option>
+<option value="http://www.nytimes.com/pages/opinion/index.html?gts">Editorials/Op-Ed</option>
+<option value="http://www.nytimes.com/pages/education/index.html?gts">Education</option>
+<option value="http://www.nytimes.com/pages/fashion/index.html?gts">Fashion & Style</option>
+<option value="http://www.nytimes.com/pages/health/index.html?gts">Health</option>
+<option value="http://www.nytimes.com/pages/garden/index.html?gts">Home & Garden</option>
+<option value="http://www.nytimes.com/pages/world/index.html?gts">International</option>
+<option value="http://www.nytimes.com/learning?gts">Learning Network</option>
+<option value="http://www.nytimes.com/pages/magazine/?gts">Magazine</option>
+<option value="http://movies.nytimes.com?gts">Movies</option>
+<option value="http://www.nytimes.com/pages/multimedia/index.html?gts">Multimedia/Photos</option>
+<option value="http://www.nytimes.com/top/features/travel/destinations/unitedstates/newyork/newyorkcity/index.html?gts">NYC 
+Guide</option>
+<option value="http://www.nytimes.com/pages/pageone/index.html?gts">NYT 
+Front Page</option>
+<option value="http://www.nytimes.com/pages/national/index.html?gts">National</option>
+<option value="http://www.nytimes.com/pages/nyregion/index.html?gts">New 
+York Region</option>
+<option value="http://www.nytimes.com/pages/obituaries/index.html?gts">Obituaries</option>
+<option value="http://www.nytimes.com/pages/readersopinions/index.html?gts">Readers' 
+Opinions</option>
+<option value="http://www.nytimes.com/pages/science/index.html?gts">Science</option>
+<option value="http://www.nytimes.com/pages/sports/index.html?gts">Sports</option>
+<option value="http://www.nytimes.com/pages/technology/index.html?gts">Technology</option>
+<option value="http://www.nytimes.com/pages/travel/index.html?gts">Travel</option>
+<option value="http://www.nytimes.com/pages/politics/index.html?gts">Washington</option>
+<option value="http://www.nytimes.com/weather/?gts">Weather</option>
+<option value="http://www.nytimes.com/pages/weekinreview/index.html?gts">Week 
+in Review</option>
+<option>-----------------------</option>
+<option value="http://www.nytimes.com/ref/membercenter/help/siteindex.html#services">Services</option>
+</select>
+</span> </td>
+<td width="5"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1" border="0" alt=""/></td>
+<td width="17" valign="center">
+<input width="28" height="21" border="0" name="image" alt="Go" type="image" src="/web/20050722082018im_/http://graphics8.nytimes.com/images/article/go_button.gif">
+</td>
+<td width="10"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="10" height="1" border="0" alt=""/></td>
+</tr>
+</form>
+</table>
+</td>
+<td width="130" align="center" background="/web/20050722082018im_/http://graphics.nytimes.com/images/global/bg_header.gif">	
+<IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="200" height="1" border="0" alt=""/> 
+</td>
+<td width="423" align="right" background="/web/20050722082018im_/http://graphics.nytimes.com/images/global/bg_header.gif">	
+<table border="0" cellspacing="0" cellpadding="0">
+<form action="/web/20050722082018/http://query.nytimes.com/search/query" method="get">
+<INPUT type="hidden" name="date" value="past30days"/>
+<tr> 
+<td valign="center" class="headerbold">Site Search:</td>
+<td width="5"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="31" border="0" alt=""/></td>
+<td valign="center"> 
+<INPUT type="text" size="14" name="query" class="small"/>
+</td>
+<td width="5"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="1" border="0" alt=""/></td>
+<td align="right" valign="middle">
+<input width="28" height="21" border="0" name="image" alt="Go" type="image" src="/web/20050722082018im_/http://graphics8.nytimes.com/images/article/go_button.gif">
+&nbsp;</td>
+<td width="3"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="3" height="1" border="0" alt=""/></td>
+</tr>
+</form>
+</table>
+</td>
+</tr>
+<tr> 
+<td colspan="4" bgcolor="#cccccc" width="768"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="768" height="1" border="0" alt=""/></td>
+</tr>
+</table>
+<table width="768" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td bgcolor="#CCCCCC">
+<div align="center"><!-- ADXINFO classification="leaderboard_728" campaign="nytnyt-college728x90"--><A HREF="/web/20050722082018/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/services/nytmobile/index.html&amp;pos=TopAd&amp;camp=nytnyt-college728x90&amp;ad=728x90A.jpg&amp;goto=http%3A%2F%2Fhomedelivery%2Enytimes%2Ecom%2FHDS%2FCollegeSearch%2Edo%3Fmode%3DSearchCollege%26who%3Dstud%26SELECTED%5FMENU%3D24%26SELECTED%5FMENU%5FPARENT%3D22%26ExternalMediaCode%3DSA3AA" target="_blank"><IMG SRC="/web/20050722082018im_/http://graphics8.nytimes.com/adx/images/ADS/11/24/ad.112423/728x90A.jpg" BORDER=0 ></A></div>
+</td>
+</tr>
+</table>
+<table width="768" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="598" valign="top"> <a href="/web/20050722082018/http://www.nytimes.com/" class="breadcrumb"> 
+</a> 
+<!--BEGIN outer table with gray rule -->
+<IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="160" height="20" alt="" /><br> 
+<table width="588" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td bgcolor="#CCCCCC" colspan="5"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="1" height="1" alt="" /></td>
+</tr>
+<tr> 
+<td bgcolor="#CCCCCC" width="1"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="1" height="20" alt="" /></td>
+<td width="14"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="14" height="20" alt="" /></td>
+<td width="558" align="left" valign="top"> 
+<div align="right">
+<!--BEGIN content nested table -->
+<table width="558" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<!--BEGIN breadcrumb --> 
+<td valign="middle" width="388" align="left" class="breadcrumb">
+<a href="/web/20050722082018/http://www.nytimes.com/"><strong>NYTimes.com</strong></a> > 
+<strong>NYT Mobile</strong>
+</td>
+<!--END breadcrumb -->
+<td valign="middle" width="170" align="right"> <a href="index2.html" onFocus="this.blur();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('pda1','','images/pda_icon3_01-over.gif',1)"><IMG name="pda1" border="0" src="images/pda_icon3_01.gif" 
+		  					width="156" height="40"></a> </td>
+</tr>
+</table>
+<!--begin MAIN CONTENT (3 COLUMNS) -->
+<table width="558" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td bgcolor="#FFFFFF" width="360">
+<!--begin COLUMN 1 -->
+<table width="360" border="0" align="left" cellpadding="0" cellspacing="0">
+<tr> 
+<td bgcolor="#CCCCCCC" colspan="3"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="1" height="1" alt="" /></td>
+</tr>
+<tr> 
+<td bgcolor="#CCCCCC" width="1"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="1" height="20" alt="" /></td>
+<td width="358" valign="top" bgcolor="E5EBE7"> <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="/web/20050722082018oe_/http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="358" height="160">
+<param name="movie" value="images/main2.swf">
+<param name="quality" value="high"><param name="LOOP" value="false">
+<embed src="images/main2.swf" width="358" height="160" loop="false" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"></embed></object> 
+<!- BEGIN nested text box -->
+<table width="358" border="0" cellspacing="0" cellpadding="0">
+<tr> 
+<td width="20">&nbsp;</td>
+<td width="318" valign="top"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="20" height="20" alt="" /></td>
+<td width="20">&nbsp;</td>
+</tr>
+<tr> 
+<td width="20"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="20" height="20" alt="" /></td>
+<td width="318" valign="top"> <font class="bodytext">Whether 
+you're at home or on the go, your wireless phone 
+can be your personal link to continuous news coverage 
+from The New York Times. Connect with NYTimes.com 
+Mobile News today and keep the latest news, business, 
+sports, movies as well as op-ed and editorial 
+updates right at your fingertips. Plus, you can 
+e-mail articles to your friends and use your favorite 
+New York Times photo as your cell phone's wallpaper.<br>
+<IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="20" height="10" alt="" /><br>
+<IMG src="images/small_header_learnmore.gif" width="225" height="20"><font class="bodytext"><br>
+&#149; <strong>How to Purchase and Download</strong><br>
+<font class="bodytext">
+<IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="20" height="1" alt="" />&#149; Verizon Wireless subscribers <a href="verizon1.html">Click Here</a><br>
+<IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="20" height="1" alt="" />&#149; Sprint PCS<sup>&#174;</sup> subscribers <a href="sprint1.html">Click Here</a></font><br>
+<font class="bodytext" color="E5EBE7">&#149; </font><br>
+&#149; <strong>Frequently Asked 
+Questions</strong><br>
+<IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="20" height="1" alt="" />&#149; Verizon Wireless subscribers <a href="verizon_faq.html">Click Here</a><br>
+<IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="20" height="1" alt="" />&#149; Sprint PCS<sup>&#174;</sup> subscribers <a href="sprint_faq.html">Click Here</a><br>
+<br>
+&#149; <a href="#" onClick="MM_openBrWindow('tour/flash.html','tour','width=270,height=410')"><strong>Take 
+a Tour</strong><br>
+</a><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="20" height="30" alt="" /><a href="#" onClick="MM_openBrWindow('tour/flash.html','tour','width=270,height=410')"><br>
+</a><font class="bodytext">WAP-enabled mobile 
+phone users <a href="wap.html">click here</a></font></font></font><br>
+</td>
+<td width="20"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="20" height="20" alt="" /></td>
+</tr>
+</table>
+<!- END nested text box -->
+<IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="20" height="20" alt="" /> 
+</td>
+<td bgcolor="#CCCCCC" width="1"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="1" height="20" alt="" /></td>
+</tr>
+<tr> 
+<td bgcolor="#CCCCCC" colspan="3"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="1" height="1" alt="" /></td>
+</tr>
+</table>
+<!--end COLUMN 1 -->
+</td>
+<!--begin COLUMN 2 -->
+<td bgcolor="#FFFFFF" width="14"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="14" height="10" alt="" /></td>
+<!--end COLUMN 2 -->
+<!--begin COLUMN 3 -->
+<td bgcolor="#FFFFFF" width="184" valign="top">
+<table width="184" border="0" align="left" cellpadding="0" cellspacing="0">
+<tr>
+<td bgcolor="#CCCCCC" colspan="3"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="1" height="1" alt="" /></td>
+</tr>
+<tr> 
+<td bgcolor="#CCCCCC" width="1"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="1" height="20" alt="" /></td>
+<td bgcolor="#FFFFFF" width="182">
+<table width="182" border="0" align="left" cellpadding="0" cellspacing="0">
+<tr>
+<td bgcolor="#FFFFFF" colspan="3"><IMG src="images/ccol_header_182x24.gif" width="182" height="24" alt="" /></td>
+</tr>
+<tr>
+<td bgcolor="#FFFFFF" width="14"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="14" height="1" alt="" /></td>
+<td bgcolor="#FFFFFF" width="154" class="bodytext">
+<IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="1" height="10" alt="" /><br>
+<a href="verizon_crossword.html"><IMG src="images/ccol_pic1_66x66.gif" width="66" height="66" alt="" align="right" border="0" /></a> 
+<font class="bodytext" color="336699"><strong>NYT 
+Crossword</strong></font><br>
+Solve today's puzzle on the go. You will 
+also have access to a week's worth of puzzles. 
+Get clued in, subscribe today! <a href="verizon_crossword.html"><nobr>Learn 
+More</nobr></a><br>
+<IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="1" height="20" alt="" /><br>
+<a href="wordplay.html"><IMG src="images/ccol_pic2_66x66.gif" width="66" height="66" alt="" align="right" border="0" /></a> 
+<font class="bodytext" color="336699"><strong>NYT 
+Word Challenge</strong></font><br>
+How quickly can you form words from scrambled 
+letters? This exciting new mobile word game 
+will test your wordplay. Coming soon, check 
+back shortly. <a href="wordplay.html"><nobr>Learn 
+More</nobr></a><br>
+<IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="1" height="10" alt="" />
+</td>
+<td bgcolor="#FFFFFF" width="14"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="14" height="1" alt="" /></td>
+</tr>
+</table>
+</td>
+<td bgcolor="#CCCCCC" width="1"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="1" height="20" alt="" /></td>
+</tr>
+<tr>
+<td bgcolor="#CCCCCC" colspan="3"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="1" height="1" alt="" /></td>
+</tr>
+</table>
+<!--end COLUMN 3 -->
+</td>
+<tr>
+</table>
+<!--begin MAIN CONTENT (3 COLUMNS) -->
+<!--END content nested table -->
+<font class="bodytext"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="20" height="14" alt="" /></font><font class="bodytext"> 
+</font> <br>
+</div>
+</td>
+<td width="14"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="14" height="20" alt="" /></td>
+<td bgcolor="#CCCCCC" width="1"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="1" height="20" alt="" /></td>
+</tr>
+<tr>
+<td bgcolor="#CCCCCC" colspan="5"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="1" height="1" alt="" /></td>
+</tr>
+</table>
+<!--END outer table with gray rule -->
+</td>
+<td width="120"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="20" height="20" alt="" /></td>
+<td width="160" valign="top" align="center"> <p><font face="Arial, Helvetica, Sans Serif" color="#999999" size="-2"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="10" height="15" alt="" />Advertisement</font><font face="Arial, Helvetica, Sans Serif" color="#999999" size="-2"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="10" height="15" alt="" /></font><br>
+<IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="160" height="5" alt="" /><br>
+<!-- ADXINFO classification="skyscraper" campaign="nytnyt-travel4"--><A HREF="/web/20050722082018/http://www.nytimes.com/adx/bin/adx_click.html?type=goto&amp;page=www.nytimes.com/services/nytmobile/index.html&amp;pos=Right3&amp;camp=nytnyt-travel4&amp;ad=G_160x600-B.gif&amp;goto=http%3A%2F%2Fwww%2Enytimes%2Ecom%2Fmem%2Fgreatgetaways%2Ehtml" target="_blank"><IMG SRC="/web/20050722082018im_/http://graphics8.nytimes.com/adx/images/ADS/11/29/ad.112939/G_160x600-B.gif" BORDER=0 width=160 height=600></A>
+<br>
+</p>
+</td>
+</tr>
+</table>
+<IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/ads/images/misc/spacer.gif" width="20" height="10" alt="" />
+<!--BEGIN footer -->
+<table width="768" cellpadding="0" cellspacing="0" border="0">
+<tr> 
+<td width="5" bgcolor="#E5E5E5"> <IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="5" height="25" border="0"/> 
+</td>
+<td width="763" bgcolor="#E5E5E5" class="footer"> <nyt_footer> <nyt_copyright> 
+<a href="/web/20050722082018/http://www.nytimes.com/ref/membercenter/help/copyright.html" class="footer">Copyright 
+2004</a>&nbsp;<a href="/web/20050722082018/http://www.nytco.com/" class="footer">The New 
+York Times Company</a> | <a href="/web/20050722082018/http://www.nytimes.com/" class="footer">Home</a> 
+| <a href="/web/20050722082018/http://www.nytimes.com/ref/membercenter/help/privacy.html" class="footer">Privacy 
+Policy</a> | <a href="/web/20050722082018/http://query.nytimes.com/search/advanced/" class="footer">Search</a> 
+| <a href="/web/20050722082018/http://www.nytimes.com/corrections.html" class="footer">Corrections</a> 
+| <a href="/web/20050722082018/http://www.nytimes.com/membercenter/sitehelp.html" class="footer">Help</a> 
+| <a href="#top" class="footer">Back to Top</a> </nyt_copyright> 
+<!--context ad reference Bottom8 -->
+</nyt_footer> </td>
+</tr>
+<tr> 
+<td width="593" colspan="2"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"/></td>
+</tr>
+<tr> 
+<td width="593" colspan="2" bgcolor="#B9B9B9"><IMG src="/web/20050722082018im_/http://graphics8.nytimes.com/images/misc/spacer.gif" width="1" height="1" border="0"/></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>&nbsp; </p>
+
+
+		<!-- SiteCatalyst code version: G.5.
+		Copyright 1997-2003 Omniture, Inc. More info available at
+		/web/20050722082018/http://www.omniture.com --><script language="JavaScript"><!--
+		var s_account="nytimesglobal"
+		var s_pageName="/services/nytmobile/index.html"
+		var s_server=""
+		var s_channel="nyt mobile"
+		var s_pageType=""
+		var s_prop1="other"
+		var s_prop2=""
+		var s_prop3=""
+		var s_prop4=""
+		var s_prop5=""
+		var s_prop6=""
+		var s_prop7=""
+		var s_prop8=""
+		var s_prop9=""
+		var s_prop10=""
+		var s_prop12=""
+		var s_prop13=""
+		var s_campaign=""
+		var s_state=""
+		var s_zip=""
+		var s_events=""
+		var s_products=""
+		var s_purchaseID=""
+		var s_eVar1=""
+		var s_eVar2=""
+		var s_eVar3=""
+		var s_eVar4=""
+		var s_eVar5=""
+		var s_eVar6=""
+		var s_eVar7=""
+		var s_eVar8=""
+		var s_eVar9=""
+		var s_eVar10=""
+		//--></script><script language="JavaScript" src="/web/20050722082018js_/http://graphics8.nytimes.com/js/s_code_sampling.js"></script>
+		<!-- End SiteCatalyst code version: G.5. -->
+
+		
+		
+</body>
+</html>
+
+
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 8:20:18 Jul 22, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 4:59:19 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

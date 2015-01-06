@@ -1,10 +1,12 @@
 """waybacktrack.py
 Use this to extract Way Back Machine's
 url-archives of any given domain!
+TODO: reiterate entire design!
 """
 import time
 import os
 import urllib2
+import random
 from math import ceil
 
 try:
@@ -12,14 +14,15 @@ try:
 except ImportError:
     from io import BytesIO
 
-
 from lxml import html
+from lxml.html import clean
 
 ARCHIVE_DOMAIN = "http://web.archive.org"
 
 CURR_DIR = os.path.dirname(__file__)
 
 DATASET_DIR = os.path.join(CURR_DIR, '../../dataset/')
+
 
 def archive_domain(domain, year, dir_path=DATASET_DIR,
                    percent=0, debug=False, throttle=1):
@@ -78,8 +81,12 @@ def archive_domain(domain, year, dir_path=DATASET_DIR,
 
     domain_snapshots = list(set(ia_parsed.xpath('//*[starts-with(@id,"' +
                                                 str(year) + '-")]//a/@href')))
-
-    span = 1 if percent <= 0 \
+    
+    #snapshot_age_span is a percentage of total snapshots to process from
+    #the given year
+    #ie. if percent is 100, and there are a total of 50 snapshots for
+    #www.cnn.com, we will crawl (to a depth of 1 atm) all 50 snapshots
+    snapshot_age_span = 1 if percent <= 0 \
            else len(domain_snapshots) - 1 \
            if percent >= 100 \
            else int(percent*len(domain_snapshots)/100)
@@ -95,15 +102,34 @@ def archive_domain(domain, year, dir_path=DATASET_DIR,
 
         print "Number of domain snapshots: ", len(domain_snapshots)
 
-        print "Number of domain snapshots to process: ", span
-
+        print "Number of domain snapshots to process: ", snapshot_age_span + 1
+        
+    random.shuffle(domain_snapshots)
+    
     forward_links = []
+    
+    next_snap = 0
+    
+    #for snapshot in domain_snapshots[:snapshot_age_span]:
+    for snapshot in domain_snapshots[:5]:
+        
+        curr_snapshot_flinks = get_forwardlink_snapshots(snapshot)
 
-    for snapshot in domain_snapshots[:span]:
-        forward_links.extend(get_forwardlink_snapshots(snapshot))
+        forward_links.extend(curr_snapshot_flinks)
+        
         if debug:
             print "snapshot url: ", snapshot
+            
+            print "forward link count: ", len(curr_snapshot_flinks)
 
+    
+    random.shuffle(forward_links)
+    
+    if debug:
+        print "total number of foward links to download: ", len(forward_links)
+        
+    random.shuffle(forward_links)
+    
     # archive forward links
     archived_links = []
     duds = []
@@ -119,23 +145,6 @@ def archive_domain(domain, year, dir_path=DATASET_DIR,
     return archived_links, duds
 
 
-def get_forwardlink_snapshots(parent_site):
-    """
-    @type index: string
-    @param index: the index.html page from which to extract forward links
-
-    @type year: int
-    @param year: the year to extract archives from
-    """
-
-    parsed_parent_site = html.parse(ARCHIVE_DOMAIN+parent_site)
-
-    all_forwardlinks = parsed_parent_site.xpath('//a[starts-with(@href,"' +
-                                                parent_site +'")]/@href')
-
-    return all_forwardlinks
-
-
 # I know I'm breaking so many rules by not seperating concerns
 def archive(page, year, dir_path, debug=False, throttle=1):
     """
@@ -143,18 +152,41 @@ def archive(page, year, dir_path, debug=False, throttle=1):
     satisfies the archival year specification
     ie. (2000, 2005, 2010)
     """
-
+    #files = [f for f in os.listdir(dir_path) if os.path.isfile(f)]
+    if debug:
+        print "requesting ", page
+            
+    page_file = page.rsplit('/web/')[1].replace('http://', '')
+    page_file = page_file.replace('/', '_').replace(':', '_')
+    page_file = page_file.replace('?', '_').replace('*','_')
+    
+    file_path = dir_path + page_file
+    if os.path.isfile(file_path):
+        if debug:
+            print "Already saved: ", page_file
+            print
+        return False
+    
     try:
         html_file = urllib2.urlopen(ARCHIVE_DOMAIN + page)
     except IOError:
+        if debug:
+            print "Failed to open request for ", ARCHIVE_DOMAIN + page
+            print
         return False
 
     if html_file.getcode() == 302:
+        if debug:
+            print "Got HTTP 302 response for ", ARCHIVE_DOMAIN + page
+            print
         return False
 
     html_string = str(html_file.read())
 
     if html_string.find("HTTP 302 response") != -1:
+        if debug:
+            print "Got HTTP 302 response for ", ARCHIVE_DOMAIN + page
+            print
         return False
 
     archival_year_spec = ARCHIVE_DOMAIN + '/web/' + str(year)
@@ -163,17 +195,9 @@ def archive(page, year, dir_path, debug=False, throttle=1):
 
     if page_url.startswith(archival_year_spec):
 
-        page_url = page_url.rsplit('/web/')[1].replace('http://', '')
-        page_url = page_url.replace('/', '_').replace(':', '_')
-        page_url = page_url.replace('?', '_')
-
-        file_path = dir_path + page_url
-
         if debug:
-            print "file name: ", page_url
-
-        #if not file_path.endswith('.html'):
-        #    file_path += ".html"
+            print "saving ", page_url
+            print
 
         with open(file_path, 'wb') as f:
             f.write(BytesIO(html_string).read())
@@ -183,3 +207,34 @@ def archive(page, year, dir_path, debug=False, throttle=1):
         return True
     else:
         return False
+
+
+def get_forwardlink_snapshots(parent_site):
+    """
+    @type index: string
+    @param index: the index.html page from which to extract forward links
+
+    @type year: int
+    @param year: the year to extract archives from
+    """
+    try:
+        parsed_parent_site = html.parse(ARCHIVE_DOMAIN+parent_site)
+    except IOError:
+        print "Did not get extract links in ", ARCHIVE_DOMAIN+parent_site
+        return []
+        
+    #cleaner = html.clean.Cleaner(scripts=True, javascript=True,style=True, kill_tags = ["img"])
+    cleaner = clean.Cleaner(scripts=True, javascript=True, comments=True,
+        style=True, meta=True, processing_instructions=True, embedded=True,
+        frames=True, forms=True, kill_tags=["noscript", "iframe", "img"])
+    
+    parsed_parent_site = cleaner.clean_html(parsed_parent_site)
+    
+    # spec archival year
+    # check to see if the archival year of a forwark link
+    # is that of the parent (ie. 2000|2005|2010)
+    all_forwardlinks = parsed_parent_site.xpath('//a[starts-with(@href,"' +
+                                                parent_site[:9] +'")]/@href')
+    
+    return all_forwardlinks
+

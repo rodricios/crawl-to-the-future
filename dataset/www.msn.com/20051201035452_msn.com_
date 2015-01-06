@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xml:lang="en-US" lang="en-US" xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app13.us.archive.org";archive_analytics.values.server_ms=2356;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="SHORTCUT ICON" content="http://hp.msn.com/global/c/shs/favicon.ico" /><title>MSN.com</title><style type="text/css">@import url("/web/20051201040047im_/http://stc.msn.com/br/gbl/css/2/USHP.css");@import url("/web/20051201040047im_/http://stc.msn.com/br/ushp/css/1/slideshow.css");@import url("/web/20051201040047im_/http://stc.msn.com/br/ushp/css/4/Override.css");</style><style type="text/css">@import url("/web/20051201040047im_/http://stc.msn.com/br/ushp/css/2/classic.css");</style><link class="theme simple" rel="alternate stylesheet" type="text/css" title="Simple White" href="http://stc.msn.com/br/ushp/css/1/simple.css" /><link class="theme classic" rel="alternate stylesheet" type="text/css" title="Classic Blue" href="about:blank" /><!--[if IE 7]><style type="text/css">@import url("/web/20051201040047/http://stc.msn.com/br/ushp/css/1/IE7.css");</style><![endif]--><script type="text/javascript" src="/web/20051201040047js_/http://stj.msn.com/br/gbl/js/1/MozCompat.js"></script><script type="text/javascript" src="/web/20051201040047js_/http://stj.msn.com/br/gbl/js/1/themes.js"></script><script type="text/javascript" src="/web/20051201040047js_/http://stj.msn.com/br/gbl/js/1/flash.js"></script><script type="text/javascript" src="/web/20051201040047js_/http://stj.msn.com/br/gbl/js/1/Navigation.js"></script><script type="text/javascript" src="/web/20051201040047js_/http://stj.msn.com/br/ushp/js/3/Home.js"></script></head><body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.msn.com/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "1";
+var displayMonth = "Dec";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.msn.com/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20051201040047" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20051101020340/http://www.msn.com/?" title="1 Nov 2005">NOV</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 4:00:47 Dec 1, 2005">DEC</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20060101060142/http://www.msn.com/" title="1 Jan 2006"><strong>JAN</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20051201035452/http://msn.com/" title="3:54:52 Dec 1, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 4:00:47 Dec 1, 2005">1</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20051201090110/http://www.msn.com/" title="9:01:10 Dec 1, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20041128004713/http://msn.com/" title="28 Nov 2004"><strong>2004</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 4:00:47 Dec 1, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20061201063311/http://www.msn.com/" title="1 Dec 2006"><strong>2006</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20051201040047*/http://www.msn.com/" title="See a list of every capture for this URL">24,825 captures</a>
+           <div class="r" title="Timespan for captures of this URL">22 Oct 96 - 6 Jan 15</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000201_1997:-1:010100000001_1998:-1:100000000002_1999:-1:120200000220_2000:-1:046476420513_2001:-1:40339b743897_2002:-1:101121056761_2003:-1:022312212423_2004:-1:432415556455_2005:11:677777787899_2006:-1:876856777778_2007:-1:989898899988_2008:-1:877787777757_2009:-1:788787877777_2010:-1:777777887888_2011:-1:898788876aab_2012:-1:cccbcccbbbbb_2013:-1:cbcdddccccde_2014:-1:edeeeeeeeeef_2015:-1:a00000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<div><img id="ctag" width="1" height="1" alt="" src="/web/20051201040047im_/http://c.msn.com/c.gif?di=340&amp;pi=7317&amp;ps=83527&amp;tp=http://www.msn.com/&amp;rf=" /></div><div id="omni"><!--SiteCatalyst code version: H.1.Copyright 1997-2005 Omniture, Inc. More info available at /web/20051201040047/http://www.omniture.com--><script type="text/javascript">var s_account="msnportalhome";</script><script type="text/javascript" src="/web/20051201040047js_/http://stj.msn.com/br/om/js/s_code.js"></script><script type="text/javascript" src="/web/20051201040047js_/http://stj.msn.com/br/ushp/js/3/Linktracking.js"></script><script type="text/javascript">s.linkInternalFilters="javascript:,";s.pageName="US Homepage";s.server="msn.com";s.channel="www.msn.com";s.prop1="Portal";s.prop2="en-US";s.prop3="V9.7";s.prop4="N";var s_code=s.t();if(s_code)document.write(s_code)</script><script type="text/javascript"><!--if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')//--></script><noscript><img src="/web/20051201040047im_/http://msnportalhome.112.2o7.net/b/ss/msnportalhome/1/H.1--NS/0" height="1" width="1" border="0" alt="" /></noscript><!--End SiteCatalyst code version: H.1.--></div><div id="wrapper" class="page1 region9"><div id="head"><div id="w3c" class="parent chrome1 single1"><div class="child c1 first"><h3>Why does MSN look like this?</h3><div class="linkabs1"><span><a href="/web/20051201040047/http://www.microsoft.com/windows/ie/default.mspx">Microsoft Internet Explorer website</a></span><p>Why does MSN look like this? Your browser cannot find our style and presentation information and as a result may not display the page properly. You are welcome to use the page as is, or upgrade your browser to its latest version which may address the problem. If you are using Microsoft Internet Explorer, go to the Microsoft Internet Explorer website to install the latest version. If you are using another browser, see the provider's website for more information. If you are using Internet Explorer for Mac, we recommend that you use another browser to have an optimal experience on MSN.</p></div></div></div><div id="promo" class="parent chrome1 double1 cf"><div class="child c1 first"><script type="text/javascript" src="/web/20051201040047js_/http://rad.msn.com/ADSAdClient31.dll?GetSAd=&amp;PG=MSN9UT"></script></div><div class="child c2 last"><div class="link"><a href="/web/20051201040047/http://shopping.msn.com/content/shp/?ctId=397">Holiday Gift Guide</a></div></div></div><div id="header2" class="parent chrome1 double1 cf"><div id="themes" class="child c1 first"><script type="text/javascript">Msn.Theme.WriteChoices('linklist9 cf','Change colors:')</script></div><div class="child c2 last"><ul class="linklist21 cf"><li class="first"><a href="#" onclick="return Msn.Home.SetHP(this)" id="mh" title="http://www.msn.com/">Make MSN my home page</a></li><li class="last"><a href="/web/20051201040047/http://www.msn.com/?lang=es-us">Español</a></li></ul></div></div><div id="header3" class="parent chrome1 triple6 cf"><div id="searchlogo" class="child c1 first"><div class="img"><img src="/web/20051201040047im_/http://hp.msn.com/global/c/lg/msft94.gif" alt="MSN.com" width="118" height="35" /></div></div><div id="searchcategory" class="child c2"><h3>Select a Category:</h3><ul class="linklist10 cf"><li class="first selected"><a href="/web/20051201040047/http://search.msn.com/results.aspx" title="Search the Web" onclick="return Msn.Home.TabClick(this)" onfocus="Msn.Home.TabFocus(this)">Web</a></li><li><a href="/web/20051201040047/http://search.msn.com/news/results.aspx" title="Search News" onclick="return Msn.Home.TabClick(this)" onfocus="Msn.Home.TabFocus(this)">News</a></li><li><a href="/web/20051201040047/http://search.msn.com/images/results.aspx" title="Search Images" onclick="return Msn.Home.TabClick(this)" onfocus="Msn.Home.TabFocus(this)">Images</a></li><li><a href="/web/20051201040047/http://toolbar.msn.com/desktop/results.aspx" title="Search Desktop" onclick="return Msn.Home.TabClick(this)" onfocus="Msn.Home.TabFocus(this)">Desktop</a></li><li><a href="/web/20051201040047/http://search.msn.com/encarta/results.aspx" title="Search Encarta" onclick="return Msn.Home.TabClick(this)" onfocus="Msn.Home.TabFocus(this)">Encarta</a></li><li class="last"><a href="/web/20051201040047/http://search.msn.com/local/results.aspx" id="new" title="Search Local" onclick="return Msn.Home.TabClick(this)" onfocus="Msn.Home.TabFocus(this)">Local</a></li></ul></div><div id="searchform" class="child c3 last"><form action="/web/20051201040047/http://search.msn.com/results.aspx" method="get" class="simple5" id="sf"><p>Search the Web</p><div><label for="sh" id="sl">Search the Web:</label><input id="sh" type="text" name="q" size="35" maxlength="150" accesskey="S" /><input type="hidden" name="FORM" value="MSNH" /><input type="hidden" id="sy" name="srch_type" value="0" /><input type="submit" class="button" value="Search" /></div></form></div></div></div><div id="page"><div id="nav" class="region2"><div id="navtop" class="parent chrome1 single1"><div class="child c1 first"><div class="link"><a href="/web/20051201040047/http://shopping.msn.com/content/shp/?ctid=623,ptnrid=164,ptnrdata=300310"><span>Shop for Gifts</span></a></div></div></div><div id="navnews" class="parent chrome1 single1"><h2>News &amp; Sports</h2><div class="child c1 first"><ul class="linklist1"><li class="first"><a href="/web/20051201040047/http://msnbc.com/">News</a></li><li><a href="/web/20051201040047/http://g.msn.com/0USHP/1030">Slate Magazine</a></li><li><a href="/web/20051201040047/http://msn.foxsports.com/">Sports by FOX Sports</a></li><li><a href="/web/20051201040047/http://video.msn.com/?f=msn-l">Video</a></li><li class="last"><a href="/web/20051201040047/http://weather.msn.com/">Weather</a></li></ul></div></div><div id="navlookitup" class="parent chrome1 single1"><h2>Look it Up</h2><div class="child c1 first"><ul class="linklist1"><li class="first"><a href="/web/20051201040047/http://local.msn.com/default.asp">City Guides</a></li><li><a href="/web/20051201040047/http://encarta.msn.com/">Encarta</a></li><li><a href="/web/20051201040047/http://mappoint.msn.com/">Maps &amp; Directions</a></li><li><a href="/web/20051201040047/http://www.whitepages.com/5050">White Pages</a></li><li class="last"><a href="/web/20051201040047/http://yellowpages.msn.com/">Yellow Pages</a></li></ul></div></div><div id="navliving" class="parent chrome1 single1"><h2>Living &amp; Finances</h2><div class="child c1 first"><ul class="linklist1"><li class="first"><a href="/web/20051201040047/http://autos.msn.com/default.aspx?src=autolink"> Autos </a></li><li><a href="/web/20051201040047/http://careers.msn.com/"> Careers &amp; Jobs </a></li><li><a href="/web/20051201040047/http://msn.match.com/index.asp?TrackingID=516163&amp;BannerID=543351"> Dating &amp; Personals </a></li><li><a href="/web/20051201040047/http://health.msn.com/"> Health &amp; Fitness </a></li><li><a href="/web/20051201040047/http://lifestyle.msn.com/">Lifestyle</a></li><li><a href="/web/20051201040047/http://moneycentral.msn.com/home.asp"> Money </a></li><li><a href="/web/20051201040047/http://realestate.msn.com/">Real Estate</a></li><li class="last"><a href="/web/20051201040047/http://www.expedia.com/pubspec/scripts/eap.asp?GOTO=EXPHOME&amp;eapid=7200-1"> Travel </a></li></ul></div></div><div id="naventertain" class="parent chrome1 single1"><h2>Entertainment</h2><div class="child c1 first"><ul class="linklist1"><li class="first"><a href="/web/20051201040047/http://games.msn.com/">Games</a></li><li><a href="/web/20051201040047/http://astrocenter.astrology.msn.com/msn/DeptHoroscope.aspx?When=0&amp;Af=-1000&amp;VS=">Horoscopes</a></li><li><a href="/web/20051201040047/http://movies.msn.com/">Movies  - NEW!</a></li><li><a href="/web/20051201040047/http://music.msn.com/">Music</a></li><li class="last"><a href="/web/20051201040047/http://tv.msn.com/">TV</a></li></ul></div></div><div id="navhotdeals" class="parent chrome1 single1"><h2>Shop</h2><div class="child c1 first"><ul class="linklist1"><li class="first"><a href="/web/20051201040047/http://www.expedia.com/pubspec/scripts/eap.asp?GOTO=DAILY&amp;PAGE=/flights/default.asp&amp;eapid=7201-1">Air Tickets</a></li><li><a href="/web/20051201040047/http://autos.msn.com/home/carresearch.aspx?src=msnhp">Autos - New and Used</a></li><li><a href="/web/20051201040047/http://realestate.msn.com/buying/">Buy a House</a></li><li><a href="/web/20051201040047/http://realestate.msn.com/rentals/">Rent an Apartment</a></li><li class="last"><a href="/web/20051201040047/http://shopping.msn.com/default/shp/?ptnrid=164,ptnrdata=300180">Shopping</a></li></ul></div></div><div id="navtech" class="parent chrome1 single1"><h2>Technology</h2><div class="child c1 first"><ul class="linklist1"><li class="first"><a href="/web/20051201040047/http://tech.msn.com/downloads">Downloads</a></li><li><a href="/web/20051201040047/http://www.microsoft.com/">Microsoft.com</a></li><li><a href="/web/20051201040047/http://update.microsoft.com/microsoftupdate">Microsoft Update</a></li><li class="last"><a href="/web/20051201040047/http://tech.msn.com/">Tech &amp; Gadgets</a></li></ul></div></div><div id="navpeople" class="parent chrome1 single1"><h2>People</h2><div class="child c1 first"><ul class="linklist1"><li class="first"><a href="/web/20051201040047/http://www.msn.americangreetings.com/index_msn.pd?&amp;source=msne140">Greeting Cards</a></li><li><a href="/web/20051201040047/http://groups.msn.com/">Groups &amp; Chat</a></li><li><a href="/web/20051201040047/http://kids.msn.com/">Kids</a></li><li class="last"><a href="/web/20051201040047/http://latino.msn.com/">Latino</a></li></ul></div></div><div id="navother" class="parent chrome1 single1"><div class="child c1 first"><ul class="linklist1"><li class="first"><a href="/web/20051201040047/http://special.msn.com/directory.armx">MSN Directory</a></li><li class="last"><a href="/web/20051201040047/http://www.msn.com/worldwide.aspx">MSN Worldwide</a></li></ul></div></div></div><div id="content"><div id="subhead" class="region8"></div><div id="area1" class="region4"><div id="date" class="parent chrome1 single1"><div class="child c1 first"><div class="link" ><a href="/web/20051201040047/http://encarta.msn.com/encnet/features/onthisday.aspx">Wednesday, November 30, 2005</a></div></div></div><div class="parent chrome7 single0"><div class="child c1 first"><div id="slideshow"><div id="slides" class="screen"><div id="slide1" class="child"><div class="linkedimg"><a href="/web/20051201040047/http://vwspincycle.msn.com/?playlist=garage&amp;GT1=7344"><img src="/web/20051201040047im_/http://stb.msn.com/i/58/5879FF8E77CF8D3A7AA562EF755CDE8.jpg" width="300" height="160" alt="'Garage Music' Barrage // Band playing in garage (© Cohen/Ostrow/Digital Vision/Getty Images)" /></a></div></div><div id="slide2" class="child"><div class="photolistset"><div class="photo" id="photohalf2"><a href="/web/20051201040047/http://articles.health.msn.com/id/100111839"><img src="/web/20051201040047im_/http://stb.msn.com/i/AF/AFF1A625E24DB76D5F89C67FF39AE9A.jpg" width="145" height="160" alt="10 Food Mistakes People Make // Woman drinking enhanced water (© Bernhard Lang/The Image Bank/Getty Images)" /></a></div><div class="list" id="listhalf2"><h4>TODAY ON MSN</h4><ul class="linklist16"><li class="first"><a href="/web/20051201040047/http://www.msnbc.msn.com/id/10265941/">Woman gets first partial face transplant</a></li><li><a href="/web/20051201040047/http://wine.msn.com/?article.aspx?aid=96&amp;GT1=7347">Choosing gift wines</a></li><li><a href="/web/20051201040047/http://special.msn.com/lifestyle/familyfun.armx?GT1=7382">Create new traditions</a></li><li class="last"><a href="/web/20051201040047/http://moneycentral.msn.com/loan/start.asp?iType=1&amp;GT1=7397">How much house will $300,000 buy in US?</a></li></ul></div></div></div><div id="slide3" class="child"><div class="linkedimg"><a href="/web/20051201040047/http://realestate.msn.com/rentals/Articleinman.aspx?cp-documentid=77746&amp;GT1=7403"><img src="/web/20051201040047im_/http://stb.msn.com/i/FF/FFDC5423BF1B3BA74AC53585BD901EF5.jpg" width="300" height="160" alt="Why Can't I Paint My Apartment? // Woman standing in room holding paint roller (© Richard Drury/The Image Bank/Getty Images)" /></a></div></div></div><div id="flipper" class="flipper"><ul class="linklist12 cf"><li class="first"><a href="#">&lt; back</a></li><li class="last"><a href="#">next &gt;</a></li></ul></div></div></div></div><div id="infopanenews" class="parent chrome6 triple5 cf"><div id="msnbc" class="child c1 first"><h3><a href="/web/20051201040047/http://msnbc.msn.com/">MSNBC NEWS</a></h3><ul class="linklist16"><li class="first"><a href="/web/20051201040047/http://www.msnbc.msn.com/id/10253079/">Bush: Iraq victory 'will take time'</a></li><li><a href="/web/20051201040047/http://www.msnbc.msn.com/id/10253286/">Hurricane season ends ... sort of</a></li><li class="last"><a href="/web/20051201040047/http://www.msnbc.msn.com/id/10260140/">Court steps into abortion case</a></li></ul></div><div id="smallpicnb" class="child c2"><div class="imglinkabs5"><a href="/web/20051201040047/http://movies.msn.com/movies/Undressed?GT1=7353"><img src="/web/20051201040047im_/http://stb.msn.com/i/36/36A8B4AAFA6401DBBF3FAA6D71798F9.jpg" width="70" height="70" alt="Mariah Carey (© Al Messerschmidt/WireImage.com)   " /></a><a href="/web/20051201040047/http://movies.msn.com/movies/Undressed?GT1=7353"><strong>Fashion flops</strong></a><p><a href="/web/20051201040047/http://movies.msn.com/movies/Undressed?GT1=7353">Mariah, Madge &amp; more misses </a></p></div></div><div id="foxsports" class="child c3 last"><h3><a href="/web/20051201040047/http://msn.foxsports.com/">SPORTS BY FOX SPORTS</a></h3><ul class="linklist16"><li class="first"><a href="/web/20051201040047/http://msn.foxsports.com/nba/story/5127532">NBA coach suspended</a></li><li class="last"><a href="/web/20051201040047/http://msn.foxsports.com/other/story/5121252">Wings' Fischer back in hospital</a></li></ul></div></div><div class="parent chrome7 single1"><div class="child c1 first"><div class="flashlinkedimg" id="spotlightv97"><a href="/web/20051201040047/http://g.msn.com/US20/3?http://local.msn.com&amp;&amp;DI=340&amp;CM=Spotlight_CityGuides_Nov05R1&amp;HL=diningdeals"><img src="/web/20051201040047im_/http://stb.msn.com/i/F7/F7834CC4C34B21E56E3D754FF2C1DB3.jpg" width="300" height="160" alt="MSN City Guides" /></a><script type="text/javascript">Msn.Flash.Build('/web/20051201040047/http://stb.msn.com/i/60/60A3A7C96FA5EBF5E73CFA54DCEFA8AB.swf', '6', 300, 160, 'spotlightv97');</script></div></div></div><div id="alsoonmsnv97" class="parent chrome5 double1 cf m37"><h2><a href="/web/20051201040047/http://special.msn.com/directory.armx">ALSO ON MSN</a></h2><div class="child c1 first"><div class="linkedimg"><a href="/web/20051201040047/http://special.msn.com/local/weekendplanner.armx?GT1=7345"><img src="/web/20051201040047im_/http://stb.msn.com/i/F2/F2B8B2FB9EDD21962222C9E628138BBC.jpg" width="70" height="70" alt="Celebrity facing fans (© Patrik Giardino/Corbis)" /></a></div></div><div class="child c2 last"><ul class="linklist16"><li class="first"><a href="/web/20051201040047/http://special.msn.com/local/weekendplanner.armx?GT1=7345"><strong>Celeb top spots: 19 cities</strong></a></li><li><a href="/web/20051201040047/http://autos.msn.com/research/compare/default.aspx?c=0&amp;n=6&amp;i=0&amp;tb=0&amp;ph1=t0&amp;ph2=t0&amp;dt=0&amp;v=t100715&amp;v=t102096&amp;v=t101930&amp;v=t101924&amp;v=t100810&amp;v=t100974&amp;GT1=7324">Compare 6 thrifty SUVs</a></li><li><a href="/web/20051201040047/http://whatsyourstory.msn.com/?src=msnhome&amp;GT1=7343">Blog: A mid-aged mindset</a></li><li><a href="/web/20051201040047/http://shopping.msn.com/results/shp/?collID=939,layout=grid,ptnrid=164,ptnrdata=300360&amp;GT1=7405">Shop wreaths, lights, décor </a></li><li class="last"><a href="/web/20051201040047/http://encarta.msn.com/encnet/departments/elearning/?page=liberalarts">Do liberal arts degrees pay? </a></li></ul></div></div><div id="videohighlightsv97" class="parent chrome5 double1 cf m37"><h2><a href="/web/20051201040047/http://video.msn.com/?f=msnhome">VIDEO HIGHLIGHTS</a></h2><div class="child c1 first"><div class="linkedimg"><a href="/web/20051201040047/http://video.msn.com/v/us/v.htm?g=1f9b8117-460c-4ac8-a245-82c7f9224543,a3e8a383-44f2-4d1f-95f3-7013e5cdb89d,bebfe2d8-00ce-4c7a-8422-e45653ec9ba8&amp;t=c150&amp;f=06/64&amp;p=News_Top"><img src="/web/20051201040047im_/http://stb.msn.com/i/D6/D634B7EAD32BDE91F6110E89C5EFC60.jpg" width="70" height="70" alt="Teddy bear cell phone (© MSNBC)" /></a></div></div><div class="child c2 last"><ul class="linklist16"><li class="first"><a href="/web/20051201040047/http://video.msn.com/v/us/v.htm?g=1f9b8117-460c-4ac8-a245-82c7f9224543,a3e8a383-44f2-4d1f-95f3-7013e5cdb89d,bebfe2d8-00ce-4c7a-8422-e45653ec9ba8&amp;t=c150&amp;f=06/64&amp;p=News_Top"><strong>Cell phones for kids?</strong></a></li><li><a href="/web/20051201040047/http://video.msn.com/v/us/v.htm?g=778eab4e-2e64-4eb7-b11f-e2679f4dc112,a3e8a383-44f2-4d1f-95f3-7013e5cdb89d,bebfe2d8-00ce-4c7a-8422-e45653ec9ba8&amp;t=c150&amp;f=06/64&amp;p=News_Top">'Cat dumper' tells story</a></li><li><a href="/web/20051201040047/http://video.msn.com/v/us/v.htm?g=15297a0a-0426-4061-a9e4-d7259d17d4d8,a3e8a383-44f2-4d1f-95f3-7013e5cdb89d,bebfe2d8-00ce-4c7a-8422-e45653ec9ba8&amp;t=c150&amp;f=06/64&amp;p=News_Top">Rodman on NBA &amp; book</a></li><li><a href="/web/20051201040047/http://video.msn.com/v/us/v.htm?g=85fe7d5e-0df4-4c31-bf71-c75c6859ab5f,24b57496-d9b5-49d9-8c96-def6783fedd6,6ccd2952-7f7d-4e25-9269-559acff1bbe0&amp;t=c86&amp;f=06/64&amp;p=Source_Today%20Show">Couric swallows a pillcam</a></li><li class="last"><a href="/web/20051201040047/http://video.msn.com/v/us/v.htm?g=07288854-4c22-40e8-a1cf-3e0c1aab527c,d0d9a0e7-7ba1-477f-be75-8d0b024e06a5,da6749cb-0304-4a2c-8d4b-72020494eb25&amp;t=c29&amp;f=06/64&amp;p=Source_CNBC">A guide to holiday tipping</a></li></ul></div></div><div id="entertainmentv97" class="parent chrome5 double1 cf m37"><h2><a href="/web/20051201040047/http://entertainment.msn.com/">ENTERTAINMENT</a></h2><div class="child c1 first"><div class="linkedimg"><a href="/web/20051201040047/http://movies.msn.com/movies/hitlist/11-29-05_4?GT1=7353"><img src="/web/20051201040047im_/http://stb.msn.com/i/FB/FB37744F81F352B89F2D4A8A57121E.jpg" width="70" height="70" alt="Nicole Kidman &amp; Russell Crowe (© Dan Peled/AP)" /></a></div></div><div class="child c2 last"><ul class="linklist16"><li class="first"><a href="/web/20051201040047/http://movies.msn.com/movies/hitlist/11-29-05_4?GT1=7353"><strong>Crowe &amp; Kidman team up again</strong></a></li><li><a href="/web/20051201040047/http://music.msn.com/music/article.aspx?news=208218&amp;GT1=7418">George Michael, partner to commit</a></li><li><a href="/web/20051201040047/http://entertainment.msn.com/music/article.aspx?news=208248&amp;GT1=7418">Jack White &amp; wife expecting baby</a></li><li><a href="/web/20051201040047/http://entertainment.msn.com/movies/hotgossip5?GT1=7353">Gossip: Paris' beau battles</a></li><li class="last"><a href="/web/20051201040047/http://movies.msn.com/movies/article.aspx?news=208254&amp;GT1=7353">Julia highest paid actress</a></li></ul></div></div><div id="localinfo" class="parent chrome5 single1"><h2><a href="/web/20051201040047/http://local.msn.com/">LOCAL INFORMATION</a></h2><div class="child c1 first"><form action="/web/20051201040047/http://g.msn.com/0USHP/37" method="get" class="simple1"><p> Find restaurants, bars, news, weather and more ... </p><div><label for="ziplookup">Enter ZIP code:</label><input id="ziplookup" type="text" name="zip" size="10" maxlength="5" accesskey="z" /><input type="submit" class="button" value="GO" /></div></form></div></div><div id="msnservices" class="parent chrome5 single1"><h2><a href="/web/20051201040047/http://join.msn.com/">MSN SERVICES</a></h2><div class="child c1 first"><ul class="linklist14 cf"><li class="first"><a href="/web/20051201040047/http://clk.atdmt.com/MSN/go/msnnkfrh0050000001msn/direct/01/?href=http://join.msn.com/?page=hotmail/gbb&amp;pgmarket=en-us&amp;ST=1&amp;xAPID=1983&amp;DI=1402">E-mail Solutions</a></li><li><a href="/web/20051201040047/http://clk.atdmt.com/MSN/go/msnnkims0110000001msn/direct/01/?href=http://join.msn.com/messenger/overview">MSN Messenger</a></li><li><a href="/web/20051201040047/http://clk.atdmt.com/MSN/go/msnnkbbd0050000001msn/direct/01/?href=https://broadband.msn.com">High-Speed Access</a></li><li><a href="/web/20051201040047/http://clk.atdmt.com/MSN/go/msnnkpmw0050000002msn/direct/01/?href=http://join.msn.com/?page=byoa/prem&amp;pgmarket=en-us&amp;ST=1&amp;xAPID=1983&amp;DI=1402">MSN Premium</a></li><li><a href="/web/20051201040047/http://clk.atdmt.com/MSN/go/msnnktoo0070000002msn/direct/01/?href=http://toolbar.msn.com">MSN Search Toolbar</a></li><li class="last"><a href="/web/20051201040047/http://clk.atdmt.com/MSN/go/msnnknbd0040000001msn/direct/01/?href=http://join.msn.com/?page=dialup/home&amp;pgmarket=en-us&amp;ST=1&amp;xAPID=1983&amp;DI=1402">MSN 9 Dial-up</a></li></ul></div></div></div><div id="area2" class="region4"><div id="big4" class="parent chrome1 single1"><div class="child c1 first"><ul class="linklist11" ><li class="first"><a href="/web/20051201040047/http://hotmail.msn.com/"><strong>HOTMAIL</strong></a></li><li><a href="/web/20051201040047/http://clk.atdmt.com/MSN/go/msnnkims0110000003msn/direct/01/?href=http://www.imagine-msn.com/messenger/default2.aspx?locale=en-us"><strong>MESSENGER</strong></a></li><li><a href="/web/20051201040047/http://my.msn.com/"><strong>MY MSN</strong></a></li><li class="last dMSNME_1"><span class="dMSNME_1"><a href="/web/20051201040047/http://login.passport.com/login.srf?lc=1033&amp;id=6528&amp;ru=http%3a%2f%2fwww.msn.com%2f&amp;tw=1800&amp;kv=7&amp;ct=1133409647&amp;ems=1&amp;ver=2.1.6000.1&amp;tpf=2f004044c41a74bcabf86997a5f920df" class="dMSNME_1">SIGN IN</a></span></li></ul></div></div><div id="ad1" class="parent chrome6 single1"><div class="child c1 first"><script type="text/javascript" src="/web/20051201040047js_/http://rad.msn.com/ADSAdClient31.dll?GetSAd=&amp;PG=MSNREC"></script></div></div><div id="adfeedback" class="parent chrome6 double1 cf"><div class="child c1 first"><div class="abs"><span>Advertisement</span></div></div><div class="child c2 last"><div class="link"><a href="/web/20051201040047/http://www.pdcsurveys.com/cgi-bin/p.pl?P=microsoft/67b16be3.htm" onclick="return Msn.Navigation.OpenNew(this)">Ad feedback </a></div></div></div><div id="shopping" class="parent chrome5 triple3 cf"><h2><a href="/web/20051201040047/http://g.msn.com/0AD0001U/756770.1??HCType=1&amp;CID=756770&amp;PG=SHPHDR">SHOPPING</a></h2><div class="child c1 first"><span class="linkedimglink3"><a href="/web/20051201040047/http://g.msn.com/0AD00029/809889.1??HCType=1&amp;CID=809889&amp;PG=SHPIMG"><img src="/web/20051201040047im_/http://stb.msn.com/i/4D/4D2BC21E3B1277F43759139D5481DE.gif" width="50" height="50" alt="$1 shipping at Overstock" /><span>$1 shipping at Overstock</span></a></span></div><div class="child c2"><ul class="linklist16"><li class="first"><a href="/web/20051201040047/http://g.msn.com/0AD00029/809890.1??HCType=1&amp;CID=809890&amp;PG=SHPTOP">KOHL'S: 50% off sale + free shipping</a></li><li><a href="/web/20051201040047/http://g.msn.com/0AD00029/809891.1??HCType=1&amp;CID=809891&amp;PG=SHPTXT">1-day deal - $20.99 reversible vest</a></li><li><a href="/web/20051201040047/http://g.msn.com/0AD00029/809892.1??HCType=1&amp;CID=809892&amp;PG=SHPTXT">Fun and unique stocking stuffers</a></li><li><a href="/web/20051201040047/http://g.msn.com/0AD00029/809893.1??HCType=1&amp;CID=809893&amp;PG=SHPTXT">600tc sheet set any size $49.98</a></li><li><a href="/web/20051201040047/http://g.msn.com/0AD00029/809894.1??HCType=1&amp;CID=809894&amp;PG=SHPTXT">Toys"R"Us - free ship &amp; hot deals</a></li><li class="last"><a href="/web/20051201040047/http://g.msn.com/0AD00029/809895.1??HCType=1&amp;CID=809895&amp;G=SHPTXT">Wal-Mart: 26" LCD HDTV, from $696</a></li></ul></div><div class="child c3 last"><ul class="linklist16"><li class="first">Great deals from Dell Home</li><li class="last"><a href="/web/20051201040047/http://g.msn.com/0AD00029/809896.1??HCType=1&amp;CID=809896&amp;PG=SHPSAD">$299 desktop and $499 notebook after savings at Dell Home</a></li></ul></div></div><div id="money" class="parent chrome5 quad8 cf"><h2><a href="/web/20051201040047/http://moneycentral.msn.com/home.asp">MONEY</a></h2><div class="child c1 first"><table class="stock" summary="" ><caption></caption><thead><tr><th abbr="" id="th1"></th><th class="currency" abbr="" id="th2"></th><th class="currency" abbr="" id="th3"></th></tr></thead><tbody><tr class="first"><td headers="th1"><a href="/web/20051201040047/http://moneycentral.msn.com/stock_quote?Symbol=$INDU">Dow</a></td><td class="currency" headers="th2">10,805.87</td><td class="currency" headers="th3"><span class="dn">
+								- 82.29</span></td></tr><tr><td headers="th1"><a href="/web/20051201040047/http://moneycentral.msn.com/stock_quote?Symbol=$COMPX">NASDAQ</a></td><td class="currency" headers="th2">2,232.82</td><td class="currency" headers="th3"><span class="up">
+								+ 0.11</span></td></tr><tr class="last"><td headers="th1"><a href="/web/20051201040047/http://moneycentral.msn.com/stock_quote?Symbol=$INX">S&amp;P</a></td><td class="currency" headers="th2">1,249.48</td><td class="currency" headers="th3"><span class="dn">
+								- 8.00</span></td></tr></tbody></table></div><div class="child c2"><form action="/web/20051201040047/http://g.msn.com/0USHP/28" method="get" class="simple1"><p>Quote Lookup</p><div><label for="getquote">Get Quote:</label><input id="getquote" type="text" name="Symbol" size="4" maxlength="100" /><input type="hidden" name="a" value="0" /><input type="submit" class="button" value="GO" /><cite>Quotes delayed 20 min.</cite></div></form></div><div class="child c3"><h3>Financial News</h3><ul class="linklist16"><li class="first"><a href="/web/20051201040047/http://moneycentral.msn.com/content/Insurance/Insureyourcar/P135061.asp">The least-safe cars of 2006</a></li><li><a href="/web/20051201040047/http://moneycentral.msn.com/content/Taxes/P131175.asp">31 days to save on your taxes</a></li><li class="last"><a href="/web/20051201040047/http://moneycentral.msn.com/content/P137240.asp">A hot retailer on sale for Christmas</a></li></ul></div><div class="child c4 last"><script type="text/javascript" src="/web/20051201040047js_/http://rad.msn.com/ADSAdClient31.dll?GetSAd=&amp;PG=MSNMMT"></script></div></div><div id="specials" class="parent chrome5 double1 cf m37"><h2><a href="/web/20051201040047/http://special.msn.com/specials.armx">MSN SPECIALS</a></h2><div class="child c1 first"><div class="linkedimg"><a href="/web/20051201040047/http://thewall.msn.com/?wallid=18&amp;GT1=7341"><img src="/web/20051201040047im_/http://stb.msn.com/i/C1/C1249E484E16D6564CEEEFF175174D7.jpg" width="70" height="70" alt="Glint on sunglasses (© Microsoft)" /></a></div></div><div class="child c2 last"><ul class="linklist16"><li class="first"><a href="/web/20051201040047/http://thewall.msn.com/?wallid=18&amp;GT1=7341"><strong>Leave your virtual tag</strong></a></li><li><a href="/web/20051201040047/http://special.msn.com/tech/yourtechuniverse.armx">10 dot-coms that flopped</a></li><li><a href="/web/20051201040047/http://tech.msn.com/guides/itdecision/default.aspx?GT1=7339">Surf Aid's software solution</a></li><li><a href="/web/20051201040047/http://music.msn.com/thescenario/bigtigger?GT1=7341">DJ Big Tigger spins R. Kelly</a></li><li class="last"><a href="/web/20051201040047/http://special.msn.com/network/05happyholidays.armx?GT1=7517">Stress-free shopping tips </a></li></ul></div></div><div id="searches" class="parent chrome5 double1 cf"><h2><a href="/web/20051201040047/http://www.imagine-msn.com/insider/">POPULAR SEARCHES</a></h2><div class="child c1 first"><h3>Top 5 Searches</h3><ol class="orderedlist1"><li class="first"><a href="/web/20051201040047/http://search.msn.com/news/results.aspx?FORM=MSNHM1&amp;q=World's%20ugliest%20dog">World's ugliest dog</a></li><li><a href="/web/20051201040047/http://search.msn.com/news/results.aspx?FORM=MSNHM1&amp;q=Jessica%20Simpson">Jessica Simpson</a></li><li><a href="/web/20051201040047/http://search.msn.com/images/results.aspx?FORM=MSNHM1&amp;q=Jodie%20Sweetin">Jodie Sweetin</a></li><li><a href="/web/20051201040047/http://search.msn.com/results.aspx?FORM=MSNHM1&amp;q=Edgar%20Cayce">Edgar Cayce</a></li><li class="last"><a href="/web/20051201040047/http://search.msn.com/news/results.aspx?q=Crying+statue&amp;FORM=MSNHMI1">Crying statue</a></li></ol></div><div class="child c2 last"><h3>Suggested Searches</h3><ul class="linklist16"><li class="first"><a href="/web/20051201040047/http://search.msn.com/news/results.aspx?q=Love+molecule&amp;FORM=MSNHM1">News: Love molecule</a></li><li><a href="/web/20051201040047/http://search.msn.com/images/results.aspx?q=Rock+formations&amp;FORM=MSNHM1">Rock formations</a></li><li><a href="/web/20051201040047/http://search.msn.com/news/results.aspx?q=Miniature+solar+system&amp;FORM=MSNHM1">Miniature solar system </a></li><li><a href="/web/20051201040047/http://search.msn.com/news/results.aspx?q=Sharp+objects&amp;FORM=MSNHM1">Sharp objects</a></li><li class="last"><a href="/web/20051201040047/http://search.msn.com/news/results.aspx?q=Catholic+limbo&amp;FORM=MSNHM1">Catholic limbo</a></li></ul></div></div><div class="parent chrome6 single1"><div class="child c1 first"><script type="text/javascript" src="/web/20051201040047js_/http://rad.msn.com/ADSAdClient31.dll?GetSAd=&amp;PG=MSNSUR"></script></div></div></div></div></div><div id="foot"><div class="parent chrome1 triple2 cf"><div class="child c1 first"><form action="/web/20051201040047/http://search.msn.com/results.aspx" method="get" class="simple5"><p>MSN Search</p><div><label for="footersearch">Search the Web:</label><input id="footersearch" type="text" name="q" size="35" maxlength="150" /><input type="hidden" name="FORM" value="MSNHBT" /><input type="submit" class="button" value="Search" /></div></form></div><div id="legal" class="child c2"><ul class="linklist8 cf"><li class="first">©2005 Microsoft</li><li><a href="/web/20051201040047/http://advertising.msn.com/home/home.asp">Advertise</a></li><li><a href="/web/20051201040047/http://privacy.msn.com/">Updated MSN Privacy</a></li><li><a href="/web/20051201040047/http://privacy.msn.com/tou/">Legal</a></li><li class="last">Quotes by Comstock</li></ul></div><div id="support" class="child c3 last"><ul class="linklist21 cf"><li class="first"><a href="/web/20051201040047/http://help.msn.com/en_us/frameset.asp?ini=msn_msncomv9.ini" onclick="return Msn.Navigation.OpenNew(this)">Help</a></li><li class="last"><a href="/web/20051201040047/http://ccc01.opinionlab.com/o.asp?id=hRwHyjaR" onclick="return Msn.Navigation.OpenNew(this)">Feedback</a></li></ul></div></div></div></div><script type="text/javascript" src="/web/20051201040047js_/http://stj.msn.com/br/gbl/js/1/ieminwidth.js"></script><script type="text/javascript" src="/web/20051201040047js_/http://stj.msn.com/br/ushp/js/1/slideshow.js"></script><script type="text/javascript" src="/web/20051201040047js_/http://stj.msn.com/br/ushp/js/1/HomeTail.js"></script></body></html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 4:00:47 Dec 1, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 6:24:56 Jan 6, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
