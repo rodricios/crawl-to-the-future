@@ -8,6 +8,9 @@ Structure of this project
   * [www.nytimes.com](dataset/www.nytimes.com)
   * [www.reuters.com](dataset/www.reuters.com)
   * [www.cnn.com](dataset/www.cnn.com)
+  * [www.cnn.com](dataset/www.cnn.com)
+  * [www.cnn.com](dataset/www.cnn.com)
+  * [www.cnn.com](dataset/www.cnn.com)
 2. [Crawlers](crawlers)
   * [**WayBack Machine**](crawlers/Way-Back) - only possible source and candidate for dataset
     * [The Archival Year](crawlers/Way-Back#the-archival-year) - First specification for a dataset built from WayBack archives
