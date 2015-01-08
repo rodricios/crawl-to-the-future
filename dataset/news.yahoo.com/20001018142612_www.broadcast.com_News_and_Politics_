@@ -1,0 +1,535 @@
+<html>
+<!-- ysx:78037173 -->
+<!-- 001109:0352 -->
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app3.us.archive.org";archive_analytics.values.server_ms=304;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<title>Yahoo! Events - News and Politics</title></head>
+<body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.broadcast.com/News_and_Politics/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "9";
+var displayMonth = "Nov";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.broadcast.com/News_and_Politics/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20001109101100" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20000815233251/http://broadcast.com/news_and_politics/" title="15 Aug 2000">AUG</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 10:11:00 Nov 9, 2000">NOV</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20001215090600/http://www.broadcast.com/news_and_politics/" title="15 Dec 2000"><strong>DEC</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20001019001645/http://www.broadcast.com/news_and_politics" title="0:16:45 Oct 19, 2000"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 10:11:00 Nov 9, 2000">9</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20001110080700/http://www.broadcast.com/news_and_politics/" title="8:07:00 Nov 10, 2000"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   1999
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 10:11:00 Nov 9, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20011109194733/http://www.broadcast.com/News_and_Politics/" title="9 Nov 2001"><strong>2001</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20001109101100*/http://www.broadcast.com/News_and_Politics/" title="See a list of every capture for this URL">291 captures</a>
+           <div class="r" title="Timespan for captures of this URL">10 May 00 - 5 Oct 13</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:10:000044120533_2001:-1:42030202ccfa_2002:-1:130101030211_2003:-1:030100020002_2004:-1:020200020201_2005:-1:020100000001_2006:-1:121001040111_2007:-1:010002000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000100_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<center>
+<table border=0 width=675 cellspacing=0 cellpadding=0><tr>
+<td width="1%"><a href=/web/20001109101100/http://broadcast.yahoo.com/><img src=/web/20001109101100im_/http://us.i1.yimg.com/us.yimg.com/i/bcast/events.gif width=245 height=33 alt="" border=0></a></td>
+<td><table border=0 cellspacing=0 cellpadding=0 width="100%">
+<tr><td align=right valign=bottom><font face=arial size="-1">
+<a href="/web/20001109101100/http://add.yahoo.com/fast/add?+Events">Suggest an Event</a> - 
+<a href=/web/20001109101100/http://fusion.yahoo.com/broadcast/index.html>Webcast an Event</a>  - 
+<a href=/web/20001109101100/http://www.yahoo.com/>Yahoo!</a> - 
+<a href=/web/20001109101100/http://help.yahoo.com/help/events/>Help</a></font></td></tr></table>
+<hr size=1 noshade></td></tr></table><br>
+<p><center>
+</center></p>
+<table border=0 cellpadding=4 cellspacing=0 width=675><tr><td valign=top bgcolor="#9999cc"><font size="+1" face=arial><b>Yahoo! Events - News and Politics</b></font></td>
+<td align=right bgcolor="#9999cc"><font face=arial size="-1"><b>Thursday Nov 9, 2000 -  5:11am ET</b></font></td></tr></table>
+<table border=0 cellpadding=4 cellspacing=0 width=675><tr><td colspan=5>
+<font size="-1" face="Arial"><a href="/web/20001109101100/http://www.broadcast.com/">Top</a> &gt; News and Politics</font></td></tr></table>
+<table border=0 width=675 cellspacing=4 cellpadding=0><tr>
+<!-- START LEFT COL -->
+<td valign=top bgcolor="#eeeeee" width=175>
+<table width=100% cellpadding=2 cellspacing=0 border=0 bgcolor="#9999cc"><tr align=center><td nowrap><font face=arial><b>Categories</b></font></td></tr></table>
+<table width="100%" cellpadding=2 cellspacing=3 border=0>
+<TR bgcolor=white><TD><font face=arial size="-1"><b><a href=Chats/>Chats</a></b></font></TD></TR>
+<TR bgcolor=white><TD><font face=arial size="-1"><b><a href=Shows/>Shows</a></b></font></TD></TR>
+<tr><td></td></tr>
+<TR bgcolor=white><TD><font face=arial size="-1"><b><a href=Top_Stories/>Top Stories</a></b></font></TD></TR>
+<TR bgcolor=white><TD><font face=arial size="-1"><b><a href=Politics/>Politics</a></b></font></TD></TR>
+<TR bgcolor=white><TD><font face=arial size="-1"><b><a href=World_News/>World News</a></b></font></TD></TR>
+<TR bgcolor=white><TD><font face=arial size="-1"><b><a href=Law/>Law</a></b></font></TD></TR>
+<TR bgcolor=white><TD><font face=arial size="-1"><b><a href=Issues/>Issues</a></b></font></TD></TR>
+<TR bgcolor=white><TD><font face=arial size="-1"><b><a href=Archived_Events/>Archived Events</a></b></font></TD></TR>
+</table><br>
+<table width="100%" cellpadding=2 cellspacing=0 border=0 bgcolor="#9999cc"><tr align="center"><td nowrap><font face=arial><b>Featured Broadcasts</b></font></td></tr></table>
+<table width="100%" cellpadding=2 cellspacing=3 border=0>
+<tr bgcolor=white><td nowrap><font face=arial size="-1"><b><a href="/web/20001109101100/http://rd.yahoo.com/bcst/radiolink/?http://radio.broadcast.com/">Radio</a></b></font></td></tr>
+<tr bgcolor=white><td nowrap><font face=arial size="-1"><b><a href="/web/20001109101100/http://www.broadcast.com/television/">Television</a></b></font></td></tr>
+<tr bgcolor=white><td nowrap><font face=arial size="-1"><b><a href="/web/20001109101100/http://www.broadcast.com/broadband/">Broadband</a></b></font></td></tr>
+<tr bgcolor=white><td nowrap><font face=arial size="-1"><b><a href="/web/20001109101100/http://www.broadcast.com/video/">Video</a></b></font></td></tr>
+<tr bgcolor=white><td nowrap><font face=arial size="-1"><b><a href="/web/20001109101100/http://www.broadcast.com/music/cd_jukebox/">CD Jukebox</a></b></font></td></tr>
+<tr bgcolor=white><td nowrap><font face=arial size="-1"><b><a href="/web/20001109101100/http://www.broadcast.com/audiobooks/">AudioBooks</a></b></font></td></tr></table>
+<table border=0 width="100%" cellpadding=2 cellspacing=0 bgcolor="#9999cc">
+<tr align=center><td nowrap><b><font face=arial>Help</font></b></td></tr></table>
+<table border=0 cellpadding=2 cellspacing=3 width="100%">
+<tr bgcolor=white><td nowrap><font face=arial size=-1><b><a href=/web/20001109101100/http://help.yahoo.com/help/events/>FAQ</a></b></font></td></tr>
+<tr bgcolor=white><td nowrap><font face=arial size=-1><b><a href=/web/20001109101100/http://help.yahoo.com/help/us/events/events-19.html>Test Your Player</a></b></font></td></tr>
+<tr bgcolor=white><td nowrap><font face=arial size=-1><b><a href=/web/20001109101100/http://help.yahoo.com/help/us/events/events-01.html>About Yahoo! Events</a></b></font></td></tr>
+<tr bgcolor=white><td nowrap><font face=arial size=-1><b><a href=/web/20001109101100/http://add.yahoo.com/fast/help/us/events/cgi_feedback>Contact Us</a></b>
+</font></td></tr></table></td>
+<!-- START MID COL -->
+<td width=340 valign=top>
+<form action="/web/20001109101100/http://search.broadcast.yahoo.com/search/bcst" method="GET">
+<table border=0 cellpadding=0 cellspacing=0 width="100%"><tr><td valign=middle align=center><input size=24 name=p><input type=submit value=search></td></tr></table></form>
+<table border=0 width="100%"><tr><td align=right><font face=arial size="-2">(all times Eastern)</font></td></tr></table>
+  
+<table border=0 width="100%" cellpadding=2 cellspacing=0>
+<tr><td bgcolor="#ccccff"><b><font face=arial>Top Stories</font></b></td></tr>
+  
+<tr valign=top><td><br>
+    
+<font face=arial size=2><b> <a href="/web/20001109101100/http://www.kcrw.org/grid/"><i>Morning Edition</i></a> - 
+6:00am</b>
+<img src="/web/20001109101100im_/http://us.i1.yimg.com/us.yimg.com/i/my/sound.gif" width=16 height=13 alt="" border=0>
+<br>
+<!-- Check for PROVIDER + REGISTRATION + COST fields -->
+<font size="-2" face=arial><i>
+NPR & KCRW&nbsp<font size="-2" face=arial><a href="/web/20001109101100/http://calendar.yahoo.com/?v=60&amp;TITLE=Morning+Edition&amp;URL=http://www.kcrw.org/grid/&amp;ST=20001109T060000Z-0500" target=calendar>Add to my calendar</a></font>
+</i></font>
+<br></font></td></tr>
+  
+<tr valign=top><td><br>
+    
+<font face=arial size=2><b> <a href="/web/20001109101100/http://news.mpr.org/programs/midmorning/"><i>Midmorning</i></a> - 
+10:00am</b>
+<img src="/web/20001109101100im_/http://us.i1.yimg.com/us.yimg.com/i/my/sound.gif" width=16 height=13 alt="" border=0>
+<br>
+<font size="-1" face=arial>Katerine Lanpher talks with policy makers, pundits, and analysts about topics in the news.</font>
+<!-- Check for PROVIDER + REGISTRATION + COST fields -->
+<font size="-2" face=arial><i>
+Minnesota Public Radio&nbsp<font size="-2" face=arial><a href="/web/20001109101100/http://calendar.yahoo.com/?v=60&amp;TITLE=Midmorning&amp;URL=http://news.mpr.org/programs/midmorning/&amp;ST=20001109T100000Z-0500" target=calendar>Add to my calendar</a></font>
+</i></font>
+<br></font></td></tr>
+  
+<tr valign=top><td><br>
+    
+<font face=arial size=2><b> <a href="/web/20001109101100/http://news.mpr.org/programs/midday/"><i>Midday</i></a> - 
+12:00pm</b>
+<img src="/web/20001109101100im_/http://us.i1.yimg.com/us.yimg.com/i/my/sound.gif" width=16 height=13 alt="" border=0>
+<br>
+<font size="-1" face=arial>Two hours of news and current affairs.</font>
+<!-- Check for PROVIDER + REGISTRATION + COST fields -->
+<font size="-2" face=arial><i>
+Minnesota Public Radio&nbsp<font size="-2" face=arial><a href="/web/20001109101100/http://calendar.yahoo.com/?v=60&amp;TITLE=Midday&amp;URL=http://news.mpr.org/programs/midday/&amp;ST=20001109T120000Z-0500" target=calendar>Add to my calendar</a></font>
+</i></font>
+<br></font></td></tr>
+  
+  
+<tr><td align=right><font face=arial size="-1"><a href="Top_Stories/"><b>More Top Stories...</b></a></font></td></tr>
+</table><br>
+<table border=0 width="100%" cellpadding=2 cellspacing=0>
+<tr><td bgcolor="#ccccff"><b><font face=arial>Politics</font></b></td></tr>
+  
+<tr valign=top><td><br>
+    
+<font face=arial size=2><b> <a href="/web/20001109101100/http://www.broadcast.com/news_and_politics/shows/the_john_gambling_show/"><i>The John Gambling Show</i></a> - 
+5:00am</b>
+<img src="/web/20001109101100im_/http://us.i1.yimg.com/us.yimg.com/i/my/sound.gif" width=16 height=13 alt="" border=0>
+<br>
+<font size="-1" face=arial>Discussions about the state of national affairs.</font>
+<!-- Check for PROVIDER + REGISTRATION + COST fields -->
+<font size="-2" face=arial><i>
+Yahoo! Broadcast&nbsp<font size="-2" face=arial><a href="/web/20001109101100/http://calendar.yahoo.com/?v=60&amp;TITLE=The+John+Gambling+Show&amp;URL=http://www.broadcast.com/news_and_politics/shows/the_john_gambling_show/&amp;ST=20001109T050000Z-0500" target=calendar>Add to my calendar</a></font>
+</i></font>
+<br></font></td></tr>
+  
+<tr valign=top><td><br>
+    
+<font face=arial size=2><b> <a href="/web/20001109101100/http://www.c-span.org/watch/cspan.asp"><i>Washington Journal</i></a> - 
+7:00am</b>
+<img src="/web/20001109101100im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13 alt="" border=0>
+<img src="/web/20001109101100im_/http://us.i1.yimg.com/us.yimg.com/i/my/sound.gif" width=16 height=13 alt="" border=0>
+<br>
+<font size="-1" face=arial>Daily call-in program featuring prominent government officials.</font>
+<!-- Check for PROVIDER + REGISTRATION + COST fields -->
+<font size="-2" face=arial><i>
+C-SPAN&nbsp<font size="-2" face=arial><a href="/web/20001109101100/http://calendar.yahoo.com/?v=60&amp;TITLE=Washington+Journal&amp;URL=http://www.c-span.org/watch/cspan.asp&amp;ST=20001109T070000Z-0500" target=calendar>Add to my calendar</a></font>
+</i></font>
+<br></font></td></tr>
+  
+<tr valign=top><td><br>
+    
+<font face=arial size=2><b> <a href="/web/20001109101100/http://www.workingforchange.com/radio/programming.cfm"><i>Between the Lines</i></a> - 
+8:00am</b>
+<img src="/web/20001109101100im_/http://us.i1.yimg.com/us.yimg.com/i/my/sound.gif" width=16 height=13 alt="" border=0>
+<br>
+<font size="-1" face=arial>Discussion of political and social issues with a focus on taking personal responsibility for the shape of America's democracy.</font>
+<!-- Check for PROVIDER + REGISTRATION + COST fields -->
+<font size="-2" face=arial><i>
+WAB&nbsp<font size="-2" face=arial><a href="/web/20001109101100/http://calendar.yahoo.com/?v=60&amp;TITLE=Between+the+Lines&amp;URL=http://www.workingforchange.com/radio/programming.cfm&amp;ST=20001109T080000Z-0500" target=calendar>Add to my calendar</a></font>
+</i></font>
+<br></font></td></tr>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<tr><td align=right><font face=arial size="-1"><a href="Politics/"><b>More Politics...</b></a></font></td></tr>
+</table><br>
+<table border=0 width="100%" cellpadding=2 cellspacing=0>
+<tr><td bgcolor="#ccccff"><b><font face=arial>World News</font></b></td></tr>
+  
+<tr valign=top><td><br>
+    
+<font face=arial size=2><b> <a href="/web/20001109101100/http://news.bbc.co.uk/hi/english/static/audio_video/programmes/crossing_continents/"><i>Crossing Continents</i></a> - 
+5:00am</b>
+<img src="/web/20001109101100im_/http://us.i1.yimg.com/us.yimg.com/i/my/sound.gif" width=16 height=13 alt="" border=0>
+<br>
+<font size="-1" face=arial>Stories that matter from around the world.</font>
+<!-- Check for PROVIDER + REGISTRATION + COST fields -->
+<font size="-2" face=arial><i>
+BBC&nbsp<font size="-2" face=arial><a href="/web/20001109101100/http://calendar.yahoo.com/?v=60&amp;TITLE=Crossing+Continents&amp;URL=http://news.bbc.co.uk/hi/english/static/audio_video/programmes/crossing_continents/&amp;ST=20001109T050000Z-0500" target=calendar>Add to my calendar</a></font>
+</i></font>
+<br></font></td></tr>
+  
+<tr valign=top><td><br>
+    
+<font face=arial size=2><b> <a href="/web/20001109101100/http://news.bbc.co.uk/hi/english/audiovideo/programmes/world_at_one/"><i>The World at One</i></a> - 
+7:00am</b>
+<img src="/web/20001109101100im_/http://us.i1.yimg.com/us.yimg.com/i/my/sound.gif" width=16 height=13 alt="" border=0>
+<br>
+<font size="-1" face=arial>Radio 4's news roundup.</font>
+<!-- Check for PROVIDER + REGISTRATION + COST fields -->
+<font size="-2" face=arial><i>
+BBC&nbsp<font size="-2" face=arial><a href="/web/20001109101100/http://calendar.yahoo.com/?v=60&amp;TITLE=The+World+at+One&amp;URL=http://news.bbc.co.uk/hi/english/audiovideo/programmes/world_at_one/&amp;ST=20001109T070000Z-0500" target=calendar>Add to my calendar</a></font>
+</i></font>
+<br></font></td></tr>
+  
+<tr valign=top><td><br>
+    
+<font face=arial size=2><b> <a href="/web/20001109101100/http://news.bbc.co.uk/hi/english/audiovideo/programmes/default.stm#news_and_analysis">BBC Television News</a> - 
+8:00am</b>
+<img src="/web/20001109101100im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13 alt="" border=0>
+<br>
+<font size="-1" face=arial>BBC One's main bulletins, with UK and international news. Latest segments available on demand.</font>
+<!-- Check for PROVIDER + REGISTRATION + COST fields -->
+<font size="-2" face=arial><i>
+BBC&nbsp<font size="-2" face=arial><a href="/web/20001109101100/http://calendar.yahoo.com/?v=60&amp;TITLE=BBC+Television+News&amp;URL=http://news.bbc.co.uk/hi/english/audiovideo/programmes/default.stm#news_and_analysis&amp;ST=20001109T080000Z-0500" target=calendar>Add to my calendar</a></font>
+</i></font>
+<br></font></td></tr>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<tr><td align=right><font face=arial size="-1"><a href="World_News/"><b>More World News...</b></a></font></td></tr>
+</table><br>
+<table border=0 width="100%" cellpadding=2 cellspacing=0>
+<tr><td bgcolor="#ccccff"><b><font face=arial>Law</font></b></td></tr>
+  
+<tr valign=top><td><br>
+    
+<font face=arial size=2><b> <a href="/web/20001109101100/http://www.cnn.com/CNN/Programs/burden.of.proof/"><i>Burden of Proof</i></a> - 
+12:30pm</b>
+<img src="/web/20001109101100im_/http://us.i1.yimg.com/us.yimg.com/i/my/sound.gif" width=16 height=13 alt="" border=0>
+<br>
+<font size="-1" face=arial>Legal analysts Greta Van Susteren and Roger Cossack discuss current events and trials.</font>
+<!-- Check for PROVIDER + REGISTRATION + COST fields -->
+<font size="-2" face=arial><i>
+CNN audioselect&nbsp<font size="-2" face=arial><a href="/web/20001109101100/http://calendar.yahoo.com/?v=60&amp;TITLE=Burden+of+Proof&amp;URL=http://www.cnn.com/CNN/Programs/burden.of.proof/&amp;ST=20001109T123000Z-0500" target=calendar>Add to my calendar</a></font>
+</i></font>
+<br></font></td></tr>
+  
+<tr valign=top><td><br>
+    
+<font face=arial size=2><b> <a href="/web/20001109101100/http://cnn.com/chat/burdenofproof.html"><i>Burden of Proof</i> Chat</a> - 
+12:30pm</b>
+<img src="/web/20001109101100im_/http://us.i1.yimg.com/us.yimg.com/i/bcast/chat.gif" width=22 height=13 alt="" border=0>
+<br>
+<font size="-1" face=arial>Chat about the day's topic.</font>
+<!-- Check for PROVIDER + REGISTRATION + COST fields -->
+<font size="-2" face=arial><i>
+CNN.com&nbsp<font size="-2" face=arial><a href="/web/20001109101100/http://calendar.yahoo.com/?v=60&amp;TITLE=Burden+of+Proof+Chat&amp;URL=http://cnn.com/chat/burdenofproof.html&amp;ST=20001109T123000Z-0500" target=calendar>Add to my calendar</a></font>
+</i></font>
+<br></font></td></tr>
+  
+<tr><td align=right><font face=arial size="-1"><a href="Law/"><b>More Law...</b></a></font></td></tr>
+</table><br>
+<table border=0 width="100%" cellpadding=2 cellspacing=0>
+<tr><td bgcolor="#ccccff"><b><font face=arial>Issues</font></b></td></tr>
+  
+<tr valign=top><td><br>
+    
+<font face=arial size=2><b> <a href="/web/20001109101100/http://www.broadcast.com/shows/mikegallagher/"><i>Mike Gallagher Show</i></a> - 
+9:00am</b>
+<img src="/web/20001109101100im_/http://us.i1.yimg.com/us.yimg.com/i/my/sound.gif" width=16 height=13 alt="" border=0>
+<br>
+<font size="-1" face=arial>Topics range from social issues to lifestyle discussions.</font>
+<!-- Check for PROVIDER + REGISTRATION + COST fields -->
+<br></font></td></tr>
+  
+<tr valign=top><td><br>
+    
+<font face=arial size=2><b> <a href="/web/20001109101100/http://www.rushlimbaugh.com/"><i>The Rush Limbaugh Show</i></a> - 
+12:00pm</b>
+<img src="/web/20001109101100im_/http://us.i1.yimg.com/us.yimg.com/i/my/sound.gif" width=16 height=13 alt="" border=0>
+<br>
+<font size="-1" face=arial>Conservative talk and opinion.</font>
+<!-- Check for PROVIDER + REGISTRATION + COST fields -->
+<font size="-2" face=arial><i>
+RushLimbaugh.com&nbsp<font size="-2" face=arial><a href="/web/20001109101100/http://calendar.yahoo.com/?v=60&amp;TITLE=The+Rush+Limbaugh+Show&amp;URL=http://www.Rushlimbaugh.com/&amp;ST=20001109T120000Z-0500" target=calendar>Add to my calendar</a></font>
+</i></font>
+<br></font></td></tr>
+  
+<tr valign=top><td><br>
+    
+<font face=arial size=2><b> <a href="/web/20001109101100/http://www.abcnews.go.com/onair/DailyNews/SamDonaldson_Index.html"><i>Sam Donaldson</i></a> - 
+12:30pm</b>
+<img src="/web/20001109101100im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13 alt="" border=0>
+<br>
+<font size="-1" face=arial>Discusses current events with newsmakers and industry experts.</font>
+<!-- Check for PROVIDER + REGISTRATION + COST fields -->
+<font size="-2" face=arial><i>
+abcNEWS.com&nbsp<font size="-2" face=arial><a href="/web/20001109101100/http://calendar.yahoo.com/?v=60&amp;TITLE=Sam+Donaldson&amp;URL=http://www.abcnews.go.com/onair/DailyNews/SamDonaldson_Index.html&amp;ST=20001109T123000Z-0500" target=calendar>Add to my calendar</a></font>
+</i></font>
+<br></font></td></tr>
+  
+  
+  
+  
+<tr><td align=right><font face=arial size="-1"><a href="Issues/"><b>More Issues...</b></a></font></td></tr>
+</table><br>
+<br></td>
+<!-- START RHS -->
+<td valign=top width=160>
+<table width="100%"><tr><td align=center>
+</td></tr></table><br>
+<center><FONT size=1>- advertisement -&nbsp;<BR></FONT></center>
+<table bgcolor=777777 border=0 cellpadding=1 cellspacing=1 width="100%"><tr><td>
+<table bgcolor="ffffcc" border=0 cellpadding=2 cellspacing=0 width="100%"> 
+<tr align=center><td nowrap><font face=arial><b>Broadcast Services</b></font>
+</td></tr></table> 
+<table border=0 cellpadding=2 cellspacing=0 width="100%" bgcolor="#ffffcc">
+<tr><td><b><font face=arial size="-1"><a href="/web/20001109101100/http://webevents.broadcast.com/businessweek/ebusiness">Business Week's e.biz Live</a></font></b><br>
+<font face=arial size=1>Convening a dynamic mix of visionaries, technologists, financiers, practitioners, and solution-seekers in an interactive, vision-stretching exchange, e.biz Live's mission is to enable participants to make bolder, better, smarter decisions about the e-businesses they create for tomorrow.</font></td></tr>
+<tr><td><b><font face=arial size="-1"><a href="/web/20001109101100/http://webevents.broadcast.com/arthurandersen/nov">Arthur Andersen Auditorium: Global Perspectives</a></font></b><br>
+<font face=arial size=1>Watch the Auditorium to hear "global perspectives" from Dr. Marvin Zonis, professor at the Graduate School of Business at the University of Chicago, who will discuss significant political and economic issues around the world.</font></td></tr>
+<tr><td align=right><font face=arial size=1><a href=/web/20001109101100/http://fusion.yahoo.com/broadcast/index.html><b>Webcast Your Next Event...</b></a></font></td></tr>
+</table>
+</td></tr></table><br>
+<br>
+</td></tr></table>
+<hr width=675 noshade size=1><font face=arial size=-2>
+Copyright © 2000 Yahoo! Inc. All rights reserved.<br>
+<a href=/web/20001109101100/http://help.yahoo.com/help/us/events/events-01.html>About Yahoo! Events</a> - 
+<a href=/web/20001109101100/http://privacy.yahoo.com/privacy/us/>Privacy Policy</a> - 
+<a href=/web/20001109101100/http://docs.yahoo.com/info/copyright/copyright.html>Copyright Policy</a> - 
+<a href=/web/20001109101100/http://docs.yahoo.com/info/terms/>Terms of Service</a> - 
+<a href=/web/20001109101100/http://fusion.yahoo.com/broadcast/index.html>Webcast an Event</a></font></center>
+</body>
+</html>
+  
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 10:11:00 Nov 9, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:57:29 Jan 7, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

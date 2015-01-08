@@ -1,0 +1,654 @@
+<html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app10.us.archive.org";archive_analytics.values.server_ms=132;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+<title>
+Stocks Whacked by IBM As Dow Tumbles
+</title>
+
+</head>
+<body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://dailynews.yahoo.com/h/nm/20001018/ts/markets_stocks_dc_11.html";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "27";
+var displayMonth = "Oct";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://dailynews.yahoo.com/h/nm/20001018/ts/markets_stocks_dc_11.html" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20001027205908" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Sep
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 20:59:08 Oct 27, 2000">OCT</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20001202190100/http://dailynews.yahoo.com/h/nm/20001018/ts/markets_stocks_dc_11.html" title="2 Dec 2000"><strong>DEC</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 20:59:08 Oct 27, 2000">27</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20001202190100/http://dailynews.yahoo.com/h/nm/20001018/ts/markets_stocks_dc_11.html" title="19:01:00 Dec 2, 2000"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   1999
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 20:59:08 Oct 27, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2001
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20001027205908*/http://dailynews.yahoo.com/h/nm/20001018/ts/markets_stocks_dc_11.html" title="See a list of every capture for this URL">3 captures</a>
+           <div class="r" title="Timespan for captures of this URL">27 Oct 00 - 3 Dec 00</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:9:000000000102_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<center>
+
+
+<!-- _JC_  HEADER -->
+
+<table cellpadding=2 cellspacing=0 BORDER=0 width="675">
+<tr>
+<td width="1%"><a href="/web/20001027205908/http://dailynews.yahoo.com/h/?u"><img src="/web/20001027205908im_/http://us.i1.yimg.com/us.yimg.com/i/dn/main4.gif" border=0 width=250 height=31 alt="Yahoo! News"></a></td>
+<td align="right" nowrap><a href="/web/20001027205908/http://dailynews.yahoo.com/"><font face="arial,helvetica" size=2>Home</font></a><font face="arial,helvetica" size=2> - <a href="/web/20001027205908/http://www.yahoo.com/">Yahoo!</a> - <a href="/web/20001027205908/http://my.yahoo.com/">My Yahoo!</a> - <a href="/web/20001027205908/http://alerts.yahoo.com/config/set_notification?.t=n">News Alerts</a> - <a href="/web/20001027205908/http://help.yahoo.com/help/news/">Help</a></font><br>
+<hr size=1 noshade></td>
+<td width="1%">
+<a href="/web/20001027205908/http://rd.yahoo.com/dailynews/?http://www.reuters.com/onlinemedia/">
+<!-- _JC_  LOGO -->
+<img src="/web/20001027205908im_/http://us.i1.yimg.com/us.yimg.com/i/dn/reuters5.gif" border=0 alt="Reuters New Media" width=137 height=30></a>
+<!-- _JC_  END LOGO -->
+</td>
+</tr>
+</table>
+<!-- _JC_  END HEADER -->
+
+<!-- _JC_  ADCALL -->
+<p>
+<table width=675 border=0 cellpadding=3>
+<tr>
+<td valign="middle">
+ <!-- SpaceID=0 robot -->
+
+</td>
+<td align="center">
+ <!-- SpaceID=0 robot -->
+
+</td>
+</tr>
+</table>
+<p>
+<!-- _JC_  END ADCALL -->
+
+
+<!-- _JC_  NAVIGATION -->
+<!-- _JC_  NAV -->
+<table border=0 cellspacing=0 cellpadding=0 width="675">
+<tr>
+<td colspan=2 align=center>
+<table border=0 cellspacing=0>
+<tr>
+<td align="center"><a href="/web/20001027205908/http://dailynews.yahoo.com/h/?u"><font size=2 face="arial,helvetica">Home</font></a>&nbsp;</td>
+<td align="center" bgcolor="#333366">&nbsp;<a href="/web/20001027205908/http://dailynews.yahoo.com/h/ts/?u"><font size=2 face="arial,helvetica" color="#eeeeff">Top&nbsp;Stories</font></a>&nbsp;</td>
+<td align="center">&nbsp;<a href="/web/20001027205908/http://dailynews.yahoo.com/h/bs/?u"><font size=2 face="arial,helvetica">Business</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001027205908/http://dailynews.yahoo.com/h/tc/?u"><font size=2 face="arial,helvetica">Tech</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001027205908/http://dailynews.yahoo.com/h/pl/?u"><font size=2 face="arial,helvetica">Politics</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001027205908/http://dailynews.yahoo.com/h/wl/?u"><font size=2 face="arial,helvetica">World</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001027205908/http://dailynews.yahoo.com/h/lo/?u"><font size=2 face="arial,helvetica">Local</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001027205908/http://dailynews.yahoo.com/h/en/?u"><font size=2 face="arial,helvetica" >Entertainment</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001027205908/http://dailynews.yahoo.com/h/sp/?u"><font size=2 face="arial,helvetica">Sports</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001027205908/http://dailynews.yahoo.com/h/sc/?u"><font size=2 face="arial,helvetica">Science</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001027205908/http://dailynews.yahoo.com/h/hl/?u"><font size=2 face="arial,helvetica">Health</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001027205908/http://news.yahoo.com/fc/?u"><font size=2 face="arial,helvetica">Full&nbsp;Coverage</font></a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr bgcolor="#333366">
+<td colspan=2>
+<table border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td height=5></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<!-- _JC_  NAV -->
+<!-- _JC_  END NAVIGATION -->
+
+<!-- _JC_  SECTION HEADER -->
+
+<table border=0 cellpadding=2 cellspacing=0 width="675">
+<tr bgcolor="#9999cc">
+<td><font face="arial,helvetica" size=4><b>
+Top Stories
+News</b>
+</font><font face="arial,helvetica" size=2> - updated
+ 4:27 PM ET Oct 27
+</font></td>
+<td width="1%">
+<table cellpadding=3 cellspacing=0><tr>
+<td bgcolor="#ccccff" nowrap><IMG src="/web/20001027205908im_/http://us.i1.yimg.com/us.yimg.com/i/my/my16.gif" width=16 height=16 border=0 align=left alt="My"><FONT face=arial size="-2">
+<a href="/web/20001027205908/http://rd.yahoo.com/addtomy/*http://edit.yahoo.com/config/set_news?.add=rt">Add to My Yahoo!</a></font></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td colspan=2><font face="Arial,Helvetica" size=2>
+ <a href=/web/20001027205908/http://dailynews.yahoo.com/h/ts/nm/?u><b>Reuters</b></a> &nbsp;| &nbsp;<a href=/web/20001027205908/http://dailynews.yahoo.com/h/ts/ap/?u>AP</a> &nbsp;| &nbsp;<a href=/web/20001027205908/http://dailynews.yahoo.com/h/ts/us/?u>AP U.S.</a> &nbsp;| &nbsp;<a href="/web/20001027205908/http://dailynews.yahoo.com/h/abc/ts/story.html">ABCNews</a> &nbsp;| &nbsp;<img src="/web/20001027205908im_/http://us.i1.yimg.com/us.yimg.com/i/auctions/cam.gif" width=15 height=15><a href="/web/20001027205908/http://dailynews.yahoo.com/h/g/ts/">Photos</a> &nbsp;| &nbsp;<img src="/web/20001027205908im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13><a href="/web/20001027205908/http://dailynews.yahoo.com/h/a/g/?u">Videos</a> &nbsp;
+</font></td>
+</tr>
+</table>
+<!-- _JC_  END SECTION HEADER -->
+
+<!-- _JC_  MAIN TABLE -->
+<table cellpadding=3 border=0 cellspacing=0 width="675">
+<tr valign="top">
+<td width=675>
+
+
+
+<!-- _JC_  SIDE -->
+
+<table border=0 cellpadding=2 cellspacing=0  width="200" align=right>
+<tr valign=top>
+<td valign="top" align=center>
+<table><tr><td><br></td></tr></table>
+<!-- _JC_  AD -->
+ 
+ <!-- SpaceID=0 robot -->
+
+<!-- _JC_  END AD -->
+
+<!-- _JC_  STOCKS -->
+<!-- _JC_  END STOCKS -->
+
+<!-- _JC_  FC -->
+ <p><table border=0 cellpadding=1 cellspacing=0  bgcolor="#9999cc" width="200"><tr valign=top><td><table border=0 cellpadding=3 cellspacing=0><tr bgcolor='#eeeecc'><td colspan=2>
+<font face="arial"><small><b><center><img height=16 width=16 src="/web/20001027205908im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"> Full Coverage</center></b></small></font></td></tr>
+<tr bgcolor=white><td colspan=2><font face="arial" size="-1"><center>In-depth coverage about <br><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://dailynews.yahoo.com/fc/Business/Stock_Markets/"><b>Stock Markets</b></a></center></font></td></tr>
+<!-- END -->
+<tr bgcolor=eeeeee><td colspan=2>
+<font face="arial"><small><b><center>Related News Stories</center></b></small></font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://dailynews.yahoo.com/h/nm/20001027/bs/people_stocks_dc_1.html">Floridian Wins $1 Million on Market Slump</a> - Reuters (Oct 27, 2000)</font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://dailynews.yahoo.com/h/is/20001026/bs/early_market_movers_stock_bellwethers_come_through_1.html">Early Market Movers: Stock Bellwethers Come Through</a> - Industry Standard/Yahoo! News (Oct 27, 2000)</font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://cnnfn.cnn.com/2000/10/27/europe/markets_europe/">European markets higher in broad-based rally</a> - CNN (Oct 27, 2000)</font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://cnnfn.cnn.com/2000/10/26/asia/markets_asia/">Asian markets end mixed; Tokyo, HK fall while techs boost Singapore</a> - CNN (Oct 27, 2000)</font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://news.bbc.co.uk/hi/english/business/newsid_993000/993766.stm">OM to make last minute announcement</a> - BBC (Oct 27, 2000)</font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://www.msnbc.com/news/481884.asp">Recent opening on Lucent bid raises concerns on wide spreads</a> - Wall St. Journal/MSNBC (Oct 27, 2000)</font></td></tr>
+<tr bgcolor=white><td colspan=2 align=right><font size="-1"><font size="-1" face="Arial,Helvetica"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://dailynews.yahoo.com/fc/Business/Stock_Markets/"><b>More...</b></a></font></font></td></tr><!-- END -->
+<tr bgcolor=eeeeee><td colspan=2>
+<font face="arial"><small><b><center>Magazine Articles</center></b></small></font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://www.businessweek.com/bwdaily/dnflash/oct2000/nf20001026_350.htm">The Tech Wreck: How Bad Is It?</a> - Business Week (Oct 26, 2000)</font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://www.businessweek.com/bwdaily/dnflash/oct2000/nf20001024_273.htm">"Settling into a More Sustainable Pace"</a> - interview with Investec Ernst's John Garrity - Business Week (Oct 25, 2000)</font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://www.nytimes.com/books/00/10/22/reviews/001022.22surowit.html">Attention, Shoppers</a> - book review of "The Fortune Tellers" - NY Times (registration req'd) (Oct 22, 2000)</font></td></tr>
+<tr bgcolor=white><td colspan=2 align=right><font size="-1"><font size="-1" face="Arial,Helvetica"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://dailynews.yahoo.com/fc/Business/Stock_Markets/"><b>More...</b></a></font></font></td></tr><!-- END -->
+<tr bgcolor=eeeeee><td colspan=2>
+<font face="arial"><small><b><center>Opinion & Editorials</center></b></small></font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://cbs.marketwatch.com/archive/20001027/news/current/Moses.htx?source=htx/http2_mw">Latest rebound looks positive</a> - CBS MarketWatch (Oct 27, 2000)</font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://dailynews.yahoo.com/h/wi/20001027/bs/daily_speculations_is_there_a_science_to_stocks__1.html">Is There a Science to Stocks?</a> - Worldly Investor/Yahoo! News (Oct 27, 2000)</font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://dailynews.yahoo.com/h/wi/20001027/bs/wake-up_call_wearing_longstockings_protected_investors_1.html">Wearing Longstockings Protected Investors</a> - Worldly Investor/Yahoo! News (Oct 27, 2000)</font></td></tr>
+<!-- END -->
+<tr bgcolor=eeeeee><td colspan=2>
+<font face="arial"><small><b><center>News Sources</center></b></small></font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://dailynews.yahoo.com/headlines/business/index.html">Yahoo! Business News</a></font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://www.bloomberg.com/markets/index.html">Bloomberg.com</a></font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://cbs.marketwatch.com/news/newsroom.htx">CBS MarketWatch</a></font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://www.cnbc.com">CNBC</a></font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://cnnfn.com/">CNNfn</a></font></td></tr>
+<!-- END -->
+<tr bgcolor=eeeeee><td colspan=2>
+<font face="arial"><small><b><center>Related Web Sites</center></b></small></font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://www.economics.tcd.ie/ser/1996/barret.htm">Stock Market Volatility- A Psychological Phenomenon?</a> - 1996 essay that looks at how psychological factors can live alongside standard economic influences in determining stock prices. By David Barrett.</font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://biz.yahoo.com/research/earncal/today.html">Company Earnings Calendar</a> - search by company ticker symbol, or see earnings releases on a day-by-day basis. From Yahoo! Finance.</font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://www.thomsoninvest.net/iwatch/cgi-bin/iw_page">Thomson I-Watch</a> - track institutional and retail buy and sell interest indicators on individual stocks, and industry and sector groups. From Thomson Investors Network.</font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://www.sec.gov/">US Securities and Exchange Commission</a> - charged with protecting investors and maintaining the integrity of the securities markets.</font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://www.morningstar.com/">Morningstar.Com</a> - providers of news and analyses on markets, stocks, and mutual funds, for the individual investor.</font></td></tr>
+<tr bgcolor=white><td colspan=2 align=right><font size="-1"><font size="-1" face="Arial,Helvetica"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://dailynews.yahoo.com/fc/Business/Stock_Markets/"><b>More...</b></a></font></font></td></tr><!-- END -->
+<tr bgcolor=eeeeee><td colspan=2>
+<font face="arial"><small><b><center>Related Full Coverage</center></b></small></font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://fullcoverage.yahoo.com/Full_Coverage/Business/Corporate_Earnings/">Earnings Reports</a></font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://headlines.yahoo.com/Full_Coverage/Business/Internet_Stocks/">Internet Stocks</a></font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://fullcoverage.yahoo.com/fc/Business/Initial_Public_Offerings/">Initial Public Offerings</a></font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://fullcoverage.yahoo.com/Full_Coverage/Business/Online_Investing/">Online Investing</a></font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://headlines.yahoo.com/Full_Coverage/Business/Federal_Reserve/">Federal Reserve</a></font></td></tr>
+<!-- END -->
+<tr bgcolor=eeeeee><td colspan=2>
+<font face="arial"><small><b><center>Yahoo! Categories</center></b></small></font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://dir.yahoo.com/Business_and_Economy/Finance_and_Investment/News_and_Media/Quotes/">Quotes</a></font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://dir.yahoo.com/Business_and_Economy/Finance_and_Investment/Exchanges/Stock_Exchanges/">Stock Exchanges</a></font></td></tr>
+<tr bgcolor=white><td valign=top width="2%"><b>&#183;</b></td><td width="98%" valign=top><font size="-1"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://dir.yahoo.com/Business/Finance_and_Investment/Reference_and_Guides/">Investment Reference and Guides</a></font></td></tr>
+<tr bgcolor=white><td colspan=2 align=right><font size="-1"><font size="-1" face="Arial,Helvetica"><a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/fc/*http://dailynews.yahoo.com/fc/Business/Stock_Markets/"><b>More...</b></a></font></font></td></tr><!-- END -->
+</table></td></tr></table>
+
+<!-- _JC_  END FC -->
+<p>
+
+ 
+ <table align=left bgcolor="#9999cc" border=0 cellpadding=0 cellspacing=0 hspace=10 vspace=5>
+<tr valign=top><td><table border=0 cellspacing=1 cellpadding=2 width="170"><tr valign=top><td  bgcolor="#ffffcc" align=center><IMG alt="" border=0 height=14 src="/web/20001027205908im_/http://us.yimg.com/i/mesg/conv_ic.gif" width=15>&nbsp;<font face="Arial,Helvetica" size=2><b>Speak your mind</b></font></td></tr>
+<tr><td width="170" valign="top" bgcolor="#FFFFFF" align=center><font face="Arial,Helvetica" size=2>Discuss this story with other people.<br>
+[<A href="/web/20001027205908/http://cnv.msg.yahoo.com/dir/Conversations/News/Top_Stories/markets_stocks_dc?url=http://dailynews.yahoo.com/h/nm/20001018/ts/markets%5fstocks%5fdc%5f11.html&amp;title=Stocks+Whacked+by+IBM+As+Dow+Tumbles&amp;ct=971878762&amp;c=2894012873808222659932485944&amp;a=1">Start a Conversation</A>]</font><br>
+<font face="Arial,Helvetica" size=1><b>(Requires <a href="/web/20001027205908/http://cnv.msg.yahoo.com/conv_needs.html">Yahoo! Messenger</a>)</b></font>
+</td></tr></table></td></tr></table>
+
+
+
+<table><tr><td><br></td></tr></table>
+</td></tr>
+</table>
+
+<!-- _JC_  END SIDE -->
+ <!-- Yahoo TimeStamp: 971878762 -->
+<b>Wednesday October 18 10:19 AM ET</b><br>
+<title>Stocks Whacked by IBM As Dow Tumbles</title>
+<font size=5><b>Stocks Whacked by IBM As Dow Tumbles</b></font>
+<p>
+<!-- TextStart -->
+<!-- MediaStart -->
+<table border=0 bgcolor="#000000" cellpadding=0 cellspacing=0 hspace=10 vspace=0 width=1 align=left><tr><td>
+<table border=0 cellpadding=3 cellspacing=1 width="100%"><!-- PhotoStart --><tr align=center><td bgcolor="#eeeeee">
+<a href="/web/20001027205908/http://dailynews.yahoo.com/h/p/nm/20001018/ts/mdf123633.html">
+<img src="/web/20001027205908im_/http://us.news1.yimg.com/us.yimg.com/p/nm/20001018/amdf123633.jpg" height=91 width=130 border=1 alt="Reuters Photo"><br><font size="-1"><small>Reuters Photo</small></font></a><br></td></tr><!-- PhotoEnd -->
+<!-- FCSlot --><!-- AVStart -->
+<script
+language="javascript">
+
+<!-- _JC_  JavaScript -->
+var remote = null
+function rs(n,u,w,h) {
+remote = window.open(u, n, 'width=' + w + ',height=' + h +',resizable=no,scrollbars=no');
+if (remote != null) {
+if (remote.opener == null)
+remote.opener = self;
+window.name = 'yahooNewsRoot';
+remote.location.href = u;
+}
+}
+</script>
+<tr align=center>
+<td bgcolor="#eeeeee">
+<center><small><font face="arial,helvetica">
+<b>Audio/Video</b></font>
+<br>
+<br>Reuters Market Report with Conway Gittens for October 18th.<br><b>(Reuters)</b><br>Windows&nbsp;Media&nbsp;-&nbsp;<a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001027205908/http://vision.yahoo.com/lc?&amp;p=news&amp;l=SAM&amp;a=0,30&amp;t=news&amp;sid=729836&amp;f=31042386&amp;m=wmv&amp;r=28&quot;,640,440);">28.8</a>, 
+<a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001027205908/http://vision.yahoo.com/lc?&amp;p=news&amp;l=SAM&amp;a=0,30&amp;t=news&amp;sid=729843&amp;f=31042386&amp;m=wmv&amp;r=56&quot;,640,440);">56</a>, 
+<a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001027205908/http://vision.yahoo.com/lc?&amp;p=news&amp;l=SAM&amp;a=0,30&amp;t=news&amp;sid=729837&amp;f=31042386&amp;m=wmv&amp;r=100&quot;,640,440);">100</a>, 
+<a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001027205908/http://vision.yahoo.com/lc?&amp;p=news&amp;l=SAM&amp;a=0,30&amp;t=news&amp;sid=729844&amp;f=31042386&amp;m=wmv&amp;r=220&quot;,640,440);">220</a>, 
+<a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001027205908/http://vision.yahoo.com/lc?&amp;p=news&amp;l=SAM&amp;a=0,30&amp;t=news&amp;sid=729842&amp;f=31042386&amp;m=wmv&amp;r=300&quot;,640,440);">300</a>, 
+<br><a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001027205908/http://vision.yahoo.com/lc?&amp;p=news&amp;l=SAM&amp;a=0,30&amp;t=news&amp;sid=729906&amp;f=31042386&amp;m=rnv&amp;r=any&quot;,640,440);">Realplayer&nbsp;G2</a>
+
+<hr size=0>
+<a href="/web/20001027205908/http://dailynews.yahoo.com/headlines/a/download.html">Download Players Here</a></small></center>
+</td></tr>
+
+<!-- AVEnd -->
+</table></td></tr></table><!-- MediaEnd -->
+
+<p>By Haitham Haddadin<p>NEW YORK (Reuters) - Stocks were bloodied in early trade
+Wednesday, with the blue-chip Dow industrials index plummeting
+more than 420 points at one point, putting it below 10,000, as
+disappointing sales by computing titan IBM reignited worries
+over corporate results.<p>Adding to the pressure was economic data showing
+consumer-level inflation grew last month above market
+expectations.<p>``IBM just confirms what other tech bellwethers were
+telling us,'' said Eric Barden, portfolio manager with First
+Austin Capital Management Inc. which oversees $50 million in
+assets in Austin, Texas. ``Earnings and revenue growth are
+disappointing and companies may be posting disappointing
+results for the foreseeable future.''<p>The Dow Jones industrial average was down 331.48 points, or
+3.29 percent, at 9,758.23, having plunged earlier to a session
+low of 9,654.64.<p>The broader Standard & Poor's 500 Index was down 31.57
+points, or 2.34 percent, at 1,318.40 and the technology-laced
+Nasdaq Composite Index fell 136.06 points, or 4.23 percent, to
+3,077.90.<p>IBM, which issued its results after the close Tuesday, also
+scaled back its outlook. IBM reported a 3 percent rise in
+third-quarter sales, to $21.8 billion while the Street was
+expecting sales of $22.4 billion. The weaker-than-expected
+revenue growth figures overshadowed an 18 percent rise in
+profit that met Wall Street estimates.<p>IBM shares fell 20 percent, off $22 at $91 on the New York
+Stock Exchange (<a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/manual/*http://search.news.yahoo.com/search/news?p=New%20York%0AStock%20Exchange&amp;c=&amp;n=10&amp;yn=c">news</a> - <a href="/web/20001027205908/http://rd.yahoo.com/DailyNews/manual/*http://search.yahoo.com/bin/search?p=York%20Stock%20Exchange">web sites</a>), lopping off as much as 130 points off the Dow.<p>
+<!-- MediaStart2 -->
+<table border=0 bgcolor="#000000" cellpadding=0 cellspacing=0 hspace=10 vspace=0 width=1 align=left><tr><td>
+<table border=0 cellpadding=3 cellspacing=1 width="100%"><!-- PhotoStart2 --><tr align=center><td bgcolor="#eeeeee">
+<a href="/web/20001027205908/http://dailynews.yahoo.com/h/p/nm/20001018/ts/ibm_shareprice_graphic.html">
+<img src="/web/20001027205908im_/http://us.news1.yimg.com/us.yimg.com/p/nm/20001018/ibm_shareprice_graphic_thumb.gif" height=130 width=120 border=0 alt="Reuters Photo"><br><font size="-1"><small>Reuters Photo</small></font></a><br></td></tr><!-- PhotoEnd2 -->
+</table></td></tr></table><!-- MediaEnd2 -->
+The pressure spread to related stocks, with Dow component
+Hewlett-Packard down $4-7/16 to $86-1/16.<p>The S&P Computer Hardware Index .SPCOMP) which tracks IBM
+and a host of other computer markers was off 9.81 percent.
+Among its components, Gateway Inc fell $2.47 to $47.35, Compaq
+Computer $1.65 to $22.10 -- both traded on the Big Board -- and
+on Nasdaq Sun Microsystems plunged $7-1/8 to $104-1/4 while
+Apple Computer fell $1-1/8 to $19.<p>A slew of corporate results are due Wednesday, one of the
+heavier corporate reporting days, with computing industry
+leaders like Microsoft Corp and Apple Computer or Internet
+titan America Online and aerospace giant Boeing Co. among those
+reporting.<p>The overall September consumer price index rose 0.5, while
+the core rate, which excludes volatile food and energy
+components, increased 0.3 percent. Economists polled by Reuters
+expected, on average, a 0.4 percent rise in the September CPI,
+compared to a 0.1 percent drop in August.<p>``The CPI came in a little higher than expected ... but I
+think it is shaded by the problems in the earnings,'' said Larry
+Wachtel of Prudential Securities. ``The CPI is secondary to
+that, it is a piling-on element, one more problem in a host of
+problems.''
+<!-- TextEnd -->
+<!-- TL --><p><center><font size=2 face=arial><a href="/web/20001027205908/http://mtf.news.yahoo.com/mailto?url=http%3A%2F%2Fdailynews.yahoo.com%2Fh%2Fnm%2F20001018%2Fts%2Fmarkets_stocks_dc_11.html&amp;title=Stocks%20Whacked%20by%20IBM%20As%20Dow%20Tumbles">Email this story</a>&nbsp;-&nbsp;<a href="/web/20001027205908/http://dailynews.yahoo.com/h/mt/?u"><font face="Arial,Helvetica" size=1><b>(View most popular)</b></font></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/web/20001027205908/http://dailynews.yahoo.com/htx/nm/20001018/ts/markets_stocks_dc_11.html">Printer-friendly format</a></font></center><!-- /TL -->
+<!-- MTFSID 0:2718085:7645365:7663531:7666521:27169517 -->
+
+<p><font face="Arial,Helvetica" size=3><b>Earlier Stories</b></font><br>
+<a href="/web/20001027205908/http://dailynews.yahoo.com/h/nm/20001018/ts/markets_stocks_dc_10.html">Dow Falls Below 10,000 on IBM Drop</a> <font size=-1>(October 18)</font><br>
+<a href="/web/20001027205908/http://dailynews.yahoo.com/h/nm/20001013/ts/markets_stocks_dc_9.html">Tech Stocks Roar Back</a> <font size=-1>(October 13)</font><br>
+<a href="/web/20001027205908/http://dailynews.yahoo.com/h/nm/20001013/ts/markets_stocks_dc_8.html">Stocks Explode Higher After Wrenching Sell-Off</a> <font size=-1>(October 13)</font><br>
+<a href="/web/20001027205908/http://dailynews.yahoo.com/h/nm/20001013/ts/markets_stocks_dc_7.html">Stocks Bounce After Wrenching Drop</a> <font size=-1>(October 13)</font><br>
+<a href="/web/20001027205908/http://dailynews.yahoo.com/h/nm/20001012/ts/markets_stocks_dc_6.html">Global Markets Rocked by Mideast Violence</a> <font size=-1>(October 12)</font><br>
+<a href="/web/20001027205908/http://dailynews.yahoo.com/h/nm/20001012/ts/markets_stocks_dc_5.html">Stocks Plunge to Year-Lows on Earnings, Oil Worries</a> <font size=-1>(October 12)</font><br>
+
+<p>
+
+<!-- _JC_  ARCHIVES DROPDOWN -->
+<table width="475" border=0>
+<tr valign="middle">
+<td width=200><font face="Arial,Helvetica" size=2><b>Archived Stories by Date:</b></font></td>
+<form name="form" action=/web/20001027205908/http://rc.yahoo.com/jump>
+<td align=left width=275>
+<select name="u" size=1>
+
+ <option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20001026/ts/index.html">Oct 26</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20001025/ts/index.html">Oct 25</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20001024/ts/index.html">Oct 24</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20001023/ts/index.html">Oct 23</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20001022/ts/index.html">Oct 22</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20001021/ts/index.html">Oct 21</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20001020/ts/index.html">Oct 20</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20001019/ts/index.html">Oct 19</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20001018/ts/index.html">Oct 18</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20001017/ts/index.html">Oct 17</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20001016/ts/index.html">Oct 16</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20001015/ts/index.html">Oct 15</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20001014/ts/index.html">Oct 14</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20001013/ts/index.html">Oct 13</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20001012/ts/index.html">Oct 12</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20001011/ts/index.html">Oct 11</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20001010/ts/index.html">Oct 10</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20001009/ts/index.html">Oct 09</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20001008/ts/index.html">Oct 08</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20001007/ts/index.html">Oct 07</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20001006/ts/index.html">Oct 06</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20001005/ts/index.html">Oct 05</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20001004/ts/index.html">Oct 04</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20001003/ts/index.html">Oct 03</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20001002/ts/index.html">Oct 02</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20001001/ts/index.html">Oct 01</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20000930/ts/index.html">Sep 30</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20000929/ts/index.html">Sep 29</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20000928/ts/index.html">Sep 28</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20000927/ts/index.html">Sep 27</option>
+<option value="http://dailynews.yahoo.com/h/ts/nm/story.html?s=v/nm/20000926/ts/index.html">Sep 26</option>
+
+
+</select><input type=submit value=Go></td></form>
+</tr></table>
+<!-- _JC_  END ARCHIVES DROPDOWN -->
+
+</td></tr></table>
+
+<br clear=all>
+
+<!-- _JC_  NEWS SEARCH -->
+<table cellpadding=2 cellspacing=0 border=0 width="675" >
+<tr valign="middle">
+<td bgcolor="#dcdcdc"><font face="Arial,Helvetica" size=2><b>Search News</b></font></td>
+</tr>
+<tr><form action="/web/20001027205908/http://search.news.yahoo.com/search/news"><td align="center">
+<input type=text size=25 name=p>
+<input type=submit value="Search">
+<a href="/web/20001027205908/http://search.news.yahoo.com/search/news/options"><font face="Arial,Helvetica" size=2>Advanced</font></a><br><small><b>Search:</b>&nbsp;<input type=radio name=c checked value="news">&nbsp;Stories&nbsp;&nbsp;<input type=radio name=c value="news_photos">&nbsp;Photos&nbsp;&nbsp;<input
+type=radio name=c value="fullcov">&nbsp;Full Coverage</small><input type=hidden name=n value=20></td></form></tr>
+</table>
+<!-- _JC_  END SEARCH -->
+
+
+<!-- _JC_  END MAIN TABLE -->
+
+<!-- _JC_  BOTTOM NAV -->
+<!-- _JC_  NAV -->
+<table border=0 cellspacing=0 cellpadding=0 width="675">
+<tr bgcolor="#333366">
+<td>
+<table border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td height=5></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="center">
+<table border=0 cellspacing=0>
+<tr>
+<td align="center"><a href="/web/20001027205908/http://dailynews.yahoo.com/h/?u"><font size=2 face="arial,helvetica">Home</font></a>&nbsp;</td>
+<td align="center" bgcolor="#333366">&nbsp;<a href="/web/20001027205908/http://dailynews.yahoo.com/h/ts/?u"><font size=2 face="arial,helvetica" color="#eeeeff">Top&nbsp;Stories</font></a>&nbsp;</td>
+<td align="center">&nbsp;<a href="/web/20001027205908/http://dailynews.yahoo.com/h/bs/?u"><font  size=2 face="arial,helvetica">Business</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001027205908/http://dailynews.yahoo.com/h/tc/?u"><font size=2 face="arial,helvetica">Tech</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001027205908/http://dailynews.yahoo.com/h/pl/?u"><font size=2 face="arial,helvetica">Politics</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001027205908/http://dailynews.yahoo.com/h/wl/?u"><font size=2 face="arial,helvetica">World</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001027205908/http://dailynews.yahoo.com/h/lo/?u"><font size=2 face="arial,helvetica">Local</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001027205908/http://dailynews.yahoo.com/h/en/?u"><font size=2 face="arial,helvetica">Entertainment</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001027205908/http://dailynews.yahoo.com/h/sp/?u"><font size=2 face="arial,helvetica">Sports</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001027205908/http://dailynews.yahoo.com/h/sc/?u"><font size=2 face="arial,helvetica">Science</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001027205908/http://dailynews.yahoo.com/h/hl/?u"><font size=2 face="arial,helvetica">Health</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001027205908/http://news.yahoo.com/fc/?u"><font size=2 face="arial,helvetica">Full&nbsp;Coverage</font></a></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<!-- _JC_  NAV -->
+
+<!-- _JC_  END BOTTOM NAV -->
+<hr size=0 width=675>
+<!-- _JC_  FOOTER -->
+<table width=675>
+<tr>
+<td valign="top" align="center">
+<font size=2>
+
+Copyright &copy; 2000 Yahoo! Inc.,
+and Reuters Limited. All rights reserved.<br>
+Republication or redistribution of Reuters content is expressly
+prohibited without the prior written consent of Reuters.<br>
+Reuters shall not be liable for any errors or delays in the content,
+or for any actions taken in reliance thereon.
+<br>
+<a href="/web/20001027205908/http://help.yahoo.com/help/news/"> Questions or Comments</a>
+<br>
+<a href="/web/20001027205908/http://privacy.yahoo.com/">Privacy Policy</a> -
+<a href="/web/20001027205908/http://docs.yahoo.com/info/terms/">Terms of Service</a>
+</font>
+</td></tr>
+</table>
+
+<!-- _JC_  END FOOTER -->
+</center>    
+</body>
+</html>
+ 
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 20:59:08 Oct 27, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:59:18 Jan 7, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

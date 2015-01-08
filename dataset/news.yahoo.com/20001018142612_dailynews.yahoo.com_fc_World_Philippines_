@@ -1,0 +1,433 @@
+<html><head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app0.us.archive.org";archive_analytics.values.server_ms=142;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<meta http-equiv="Cache-Control" content="no-cache"><meta http-equiv="Pragma" content="no-cache">
+<title>Yahoo! News Full Coverage-Political, Economic Turmoil in Philippines Over Gambling Scandal</title></head><body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://dailynews.yahoo.com/fc/World/Philippines";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "18";
+var displayMonth = "Oct";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://dailynews.yahoo.com/fc/World/Philippines" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20001018012828" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20000815074054/http://dailynews.yahoo.com/fc/World/Philippines/" title="15 Aug 2000">AUG</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 1:28:28 Oct 18, 2000">OCT</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20001201232300/http://dailynews.yahoo.com/fc/World/Philippines" title="1 Dec 2000"><strong>DEC</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20000815074054/http://dailynews.yahoo.com/fc/World/Philippines/" title="7:40:54 Aug 15, 2000"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 1:28:28 Oct 18, 2000">18</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20001201232300/http://dailynews.yahoo.com/fc/World/Philippines" title="23:23:00 Dec 1, 2000"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   1999
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 1:28:28 Oct 18, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20011108015315/http://dailynews.yahoo.com/fc/World/Philippines/" title="8 Nov 2001"><strong>2001</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20001018012828*/http://dailynews.yahoo.com/fc/World/Philippines" title="See a list of every capture for this URL">146 captures</a>
+           <div class="r" title="Timespan for captures of this URL">15 Aug 00 - 11 Jun 10</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:9:000000010108_2001:-1:10021303f4e9_2002:-1:120103030203_2003:-1:020111021202_2004:-1:121101010302_2005:-1:122120000003_2006:-1:110111020200_2007:-1:010100000100_2008:-1:100030000000_2009:-1:000000000001_2010:-1:001001000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<center>
+<table cellpadding=2 cellspacing=0 border=0 width=675><tr><td width="1%">
+<a href="/web/20001018012828/http://dailynews.yahoo.com/"><img src="/web/20001018012828im_/http://us.i1.yimg.com/us.yimg.com/i/dn/main4.gif" border=0 width=250 height=31 alt="Yahoo! News"></a></td>
+<td align=right nowrap><a href="/web/20001018012828/http://dailynews.yahoo.com/"><font face="arial,helvetica" size=2>Home</font></a><font face="arial,helvetica" size=2> - <a href="/web/20001018012828/http://www.yahoo.com/">Yahoo!</a> - <a href="/web/20001018012828/http://my.yahoo.com/">My Yahoo!</a> - <a href="/web/20001018012828/http://alerts.yahoo.com/config/set_notification?.t=n">News Alerts</a> - <a href="/web/20001018012828/http://help.yahoo.com/help/news/">Help</a></font><br><hr size=1 noshade></td></tr></table>
+<br>
+
+<br><br>
+<table border=0 cellspacing=0 cellpadding=0 width=675><tr>
+<td colspan=12 align=center><table border=0 cellspacing=0><tr>
+<td align=center><a href="/web/20001018012828/http://dailynews.yahoo.com/"><font size=2 face="arial,helvetica">Home</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001018012828/http://dailynews.yahoo.com/h/ts/"><font size=2 face="arial,helvetica">Top&nbsp;Stories</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001018012828/http://dailynews.yahoo.com/h/bs/"><font size=2 face="arial,helvetica">Business</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001018012828/http://dailynews.yahoo.com/h/tc/"><font size=2 face="arial,helvetica">Tech</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001018012828/http://dailynews.yahoo.com/h/pl/"><font size=2 face="arial,helvetica">Politics</font></a>&nbsp;</td>
+<td align=center bgcolor="#333366">&nbsp;<a href="/web/20001018012828/http://dailynews.yahoo.com/h/wl/"><font size=2 face="arial,helvetica" color="#eeeeff">World</font></a>&nbsp;</td>
+<td align=center>&nbsp;<a href="/web/20001018012828/http://dailynews.yahoo.com/h/lo/"><font size=2 face="arial,helvetica">Local</font></a></td>
+<td align=center>&nbsp;<a href="/web/20001018012828/http://dailynews.yahoo.com/h/en/"><font size=2 face="arial,helvetica">Entertainment</font></a></td>
+<td align=center>&nbsp;<a href="/web/20001018012828/http://dailynews.yahoo.com/h/sp/"><font size=2 face="arial,helvetica">Sports</font></a></td>
+<td align=center>&nbsp;<a href="/web/20001018012828/http://dailynews.yahoo.com/h/sc/"><font size=2 face="arial,helvetica">Science</font></a></td>
+<td align=center>&nbsp;<a href="/web/20001018012828/http://dailynews.yahoo.com/h/hl/"><font size=2 face="arial,helvetica">Health</font></a></td>
+<td align=center>&nbsp;<a href="/web/20001018012828/http://dailynews.yahoo.com/fc/"><font size=2 face="arial,helvetica">Full&nbsp;Coverage</font></a></td>
+</tr></table></td></tr>
+<tr bgcolor="#333366"><td colspan=12>
+<table border=0 cellspacing=0 cellpadding=0><tr><td height=5>
+</td></tr></table></td></tr></table>
+<table border=0 cellpadding=2 cellspacing=0 width=675><tr bgcolor="#9999cc">
+<td>&nbsp;<font face="arial,helvetica" size=4><b>
+World Full Coverage
+</b></font><font face="arial,helvetica" size=2> - updated Oct 17  5:21 PM EDT</font></td>
+</tr><tr valign=top>
+<td width="100%" align=left><img height=16 width=16 align=left src="/web/20001018012828im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"><font face="arial,helvetica" size="+1"><b>Political, Economic Turmoil in Philippines Over Gambling Scandal</b></font>&nbsp;</td></tr></table>
+<table cellpadding=0 cellspacing=0 width=675 border=0>
+<tr valign=top><td valign=top width=196 bgcolor="#eeeeee">
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td bgcolor="#eeeecc"><a name="Related_Full_Coverage">&nbsp;<font face="arial,helvetica" size=2><b>Related Full Coverage</b></font></a></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://dailynews.yahoo.com/fc/World/ASEAN/"><small>ASEAN</small></a></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://dailynews.yahoo.com/fc/Business/Asian_Economy/"><small>Third Asia-Europe Meeting in S. Korea</small></a></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://dailynews.yahoo.com/fc/World/Southern_Philippine_Conflict/"><small>S. Philippine Hostage Crisis</small></a></td></tr>
+<tr><td></td><td align=right>&nbsp;</td></tr></table><table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td bgcolor="#eeeecc"><a name="News_Sources">&nbsp;<font face="arial,helvetica" size=2><b>News Sources</b></font></a></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://asia.dailynews.yahoo.com/headlines/regional/philippines.html"><small>Yahoo! Asia/AFP</small></a></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://search.news.yahoo.com/search/news?p=philippines&amp;n=10&amp;c=news"><small>Yahoo! News Search</small></a></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://asia.biz.yahoo.com/news/regional/philippines.html"><small>Yahoo! Asia Finance: Philippines</small></a></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.abs-cbnnews.com/"><small>ABS-CBN</small></a></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.tribune.net.ph/"><small>Daily Tribune</small></a></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.filipinoexpress.com/"><small>Filipino Express</small></a></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.gmaquest.com/"><small>GMAQuest</small></a></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.mb.com.ph/"><small>Manila Bulletin</small></a></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.manilatimes.net/"><small>Manila Times</small></a></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.inquirer.net/"><small>Philippine Daily Inquirer</small></a></td></tr>
+<tr><td></td><td align=right><a href="/web/20001018012828/http://dailynews.yahoo.com/fc/World/Philippines/news_sources_1.html"><small>more</small></a>&nbsp;</td></tr></table><table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td bgcolor="#eeeecc"><a name="Magazine_Articles">&nbsp;<font face="arial,helvetica" size=2><b>Magazine Articles</b></font></a></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.cnn.com/ASIANOW/asiaweek/technology/2000/1013/tech.interview.html"><small>Hacking Takes a Holiday</small></a> - <small>Asiaweek</small><small> (Oct 10, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.cnn.com/ASIANOW/asiaweek/magazine/2000/1013/as.environment_sb1.html"><small>Thieves' Wood of Choice</small></a> - <small>Asiaweek</small><small> (Oct 10, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.cnn.com/ASIANOW/asiaweek/magazine/2000/1013/as.environment.html"><small>Going Against the Grain</small></a> - <small>Asiaweek</small><small> (Oct 10, 2000)</small></td></tr>
+<tr><td></td><td align=right><a href="/web/20001018012828/http://dailynews.yahoo.com/fc/World/Philippines/magazine_articles_1.html"><small>more</small></a>&nbsp;</td></tr></table><table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td bgcolor="#eeeecc"><a name="Opinion___Editorials">&nbsp;<font face="arial,helvetica" size=2><b>Opinion & Editorials</b></font></a></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.atimes.com/editor/BJ17Ba01.html"><small>Philippines: Stick it out, Pare</small></a> - <small>Asia Times Online</small><small> (Oct 16, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://asia.biz.yahoo.com/news/asian_markets/dowjones/article.html?s=asiafinance/news/001016/asian_markets/dowjones/INTERVIEW__Estrada_Accuser__1st_Pres_To_Take_Gaming_Money.html"><small>Estrada Accuser: 1st Pres To Take Gaming Money</small></a> - <small>Dow Jones Newswires</small><small> (Oct 16, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.inquirer.net/issues/oct2000/oct12/news/news_9.htm"><small>Bootlicking</small></a> - <small>Philippine Daily Inquirer</small><small> (Oct 12, 2000)</small></td></tr>
+<tr><td></td><td align=right><a href="/web/20001018012828/http://dailynews.yahoo.com/fc/World/Philippines/opinion___editorials_1.html"><small>more</small></a>&nbsp;</td></tr></table><table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td bgcolor="#eeeecc"><a name="Audio">&nbsp;<font face="arial,helvetica" size=2><b>Audio</b></font></a></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.webactive.com/rihurl.ram?file=webactive/pacifica/pac20001011.ra&amp;start='25:49.3'&amp;proto=pnm"><small>Philippine President Faces Impeachment on Gambling Charges</small></a> - <small>Pacifica</small><small> (Oct 11, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://news.bbc.co.uk/olmedia/825000/audio/_828227_mclean0400_1107.ram"><small>Hopes fade for Manila dump victims</small></a> - <small>BBC</small><small> (Jul 11, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://news.bbc.co.uk/olmedia/760000/audio/_764625_maclean0415.ram"><small>"The parachute was unopened"</small></a> - <small>BBC</small><small> (May 26, 2000)</small></td></tr>
+<tr><td></td><td align=right><a href="/web/20001018012828/http://dailynews.yahoo.com/fc/World/Philippines/audio_1.html"><small>more</small></a>&nbsp;</td></tr></table><table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td bgcolor="#eeeecc"><a name="Video">&nbsp;<font face="arial,helvetica" size=2><b>Video</b></font></a></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.abs-cbnnews.com/abs/precomp.nsf/ramagent?open&amp;VidID=/abs/inews-Sep2000.nsf/live/D8E8051F264C5E3E48256960007DE60E/%24file/marcos.rm"><small>Imeldific Greed</small></a> - <small>ABS-CBNNEWS.COM</small><small> (Sep 21, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.abs-cbnnews.com/abs/precomp.nsf/ramagent?open&amp;VidID=/abs/inews-Aug2000.nsf/live/78CA48A30D9510324825694B0070F357/%24file/tan1.avi.rm"><small>CA junks Tan's P25-B tax evasion case</small></a> - <small>ABS-CBNNEWS.COM</small><small> (Aug 31, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.itn.co.uk:8080/ramgen/000710/philippines.rm"><small>Twenty five die in rubbish tip horror</small></a> - <small>ITN</small><small> (Jul 10, 2000)</small></td></tr>
+<tr><td></td><td align=right><a href="/web/20001018012828/http://dailynews.yahoo.com/fc/World/Philippines/video_1.html"><small>more</small></a>&nbsp;</td></tr></table><table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td bgcolor="#eeeecc"><a name="Yahoo__Categories">&nbsp;<font face="arial,helvetica" size=2><b>Yahoo! Categories</b></font></a></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://dir.yahoo.com/regional/countries/philippines/government/"><small>Philippine Government</small></a></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://dir.yahoo.com/regional/countries/philippines/government/politics/"><small>Philippine Politics</small></a></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://dir.yahoo.com/Regional/Countries/Philippines/"><small>Philippines</small></a></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://dir.yahoo.com/Social_Science/Linguistics_and_Human_Languages/Languages/Specific_Languages/Tagalog/"><small>Tagalog</small></a></td></tr>
+<tr><td></td><td align=right>&nbsp;</td></tr></table>
+</td><td valign=top width=5></td>
+<td valign=top width=474>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td bgcolor="#eeeecc"><a name="News_Stories">&nbsp;<font face="arial,helvetica" size=3><b>News Stories</b></font></a></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://dailynews.yahoo.com/h/ap/20001017/wl/philippines_bribery_5.html">Resignation Calls Mount in Manila</a> - <small>AP</small><small> (Oct 17, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://asia.biz.yahoo.com/news/asian_markets/dowjones/article.html?s=asiafinance/news/001017/asian_markets/dowjones/Estrada_s_Popularity_Was_Growing_Before_Scandal_-Survey.html">Estrada's popularity was growing before scandal -Survey</a> - <small>Dow Jones Newswires</small><small> (Oct 17, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://news.bbc.co.uk/hi/english/world/asia-pacific/newsid_976000/976476.stm">Vice-president turns on Estrada</a> - <small>BBC</small><small> (Oct 17, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://dailynews.yahoo.com/h/ap/20001017/wl/philippines_bribery_4.html">Philippine VP To Oppose Estrada</a> - <small>AP</small><small> (Oct 17, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.nytimes.com/2000/10/17/world/17PHIL.html">Philippine Leader Tries to Withstand Buffeting From Scandal</a> - <small>NY Times (registration req'd)</small><small> (Oct 17, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.inquirer.net/issues/oct2000/oct17/news/news_12.htm">No coup, says Gringo</a> - <small>Philippine Daily Inquirer</small><small> (Oct 17, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.abs-cbnnews.com/ABS/INEWS-OCT2000.NSF/National/20001017037">Erap prevented me three times-- Singson</a> - <small>ABS-CBNNEWS.COM</small><small> (Oct 17, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.abs-cbnnews.com/ABS/INEWS-OCT2000.NSF/National/20001017027">Lakas-NUCD out to spread terrorism-- Estrada</a> - <small>ABS-CBNNEWS.COM</small><small> (Oct 17, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.mb.com.ph/MAIN/2000-10/MN101701.asp">Estrada says: No need to resort to martial law</a> - <small>The Manila Bulletin</small><small> (Oct 17, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.abs-cbnnews.com/abs/inews-oct2000.nsf/business/20001017010">Economic officials meet on damage brought by scandal</a> - <small>ABS-CBNNEWS.COM</small><small> (Oct 17, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://sg.dailynews.yahoo.com/headlines/asia/asiapulse/article.html?s=singapore/headlines/001017/asia/asiapulse/Philippines__Govt_Begins_Gambling_Corp_Privitization.html">Philippines Govt Begins Gambling Corp Privitization</a> - <small>Asia Pulse</small><small> (Oct 17, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.inquirer.net/issues/oct2000/oct17/news/news_5.htm">Governor, defense chief ask Estrada to quit</a> - <small>Philippine Daily Inquirer</small><small> (Oct 17, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.mb.com.ph/MAIN/2000-10/MN101702.asp">House firm, say leaders; 25 so far for impeachment</a> - <small>The Manila Bulletin</small><small> (Oct 17, 2000)</small></td></tr>
+<tr><td></td><td align=right><a href="/web/20001018012828/http://dailynews.yahoo.com/fc/World/Philippines/news_stories_1.html">more</a>&nbsp;</td></tr></table><table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td bgcolor="#eeeecc"><a name="Related_Web_Sites">&nbsp;<font face="arial,helvetica" size=3><b>Related Web Sites</b></font></a></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.abs-cbnnews.com/abs/inews-Sep2000.nsf/Specials/20000921134">Martial law Files</a> - <small>explains a brief history of the beginning and end of the martial law.</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.philcongress.com/">Philcongress.com</a> - <small>common site of the Senate and the House of Representatives. Includes a directory of senators and representatives, bills, articles, documents, and forums.</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://lcweb2.loc.gov/frd/cs/phtoc.html">U.S. Library of Congress Country Study - Philippines</a> - <small>excellent primer on the country; includes facts-at-a-glance and sections on history, society and government.</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.news.ops.gov.ph/">Office of the Press Secretary</a> - <small>daily updated news and photos presented by the government of the Philippines. Also includes information resources, statistical links, and news archive.</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.philippineupdate.com/">Philippine Political Update</a> - <small>news and views on Philippine politics.</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.erap.com/">President Joseph Ejercito Estrada</a> - <small>site has policy statements, news, a speech archive, audio and photos, and chat.</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.chanrobles.com/philsupremelaw.htm">Constitution of The Republic Of The Philippines</a> - <small>adopted in 1987.</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.sfgate.com/cgi-bin/article.cgi?file=/chronicle/archive/1999/07/06/MN17FP1.DTL">Long Wait for a Way Out</a> - <small>two-part series by San Francisco Chronicle reporter Benjamin Pimentel that examines President Estrada's first year in office.</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.filipino.com/">FilInfo</a> - <small>includes general information and comprehensive travel-oriented guide to the country.</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.asiasociety.org/publications/philippines/">New Directions in Domestic Policy and Foreign Relations</a> - <small>assessment of past and future political and economic reforms, from the Asia Society.</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001018012828/http://www.dfa.gov.ph/">Philippine Department of Foreign Affairs</a></td></tr>
+<tr><td></td><td align=right>&nbsp;</td></tr></table>
+<table border=0 cellpadding=2 cellspacing=0 width="100%">
+<tr valign=top><td align=center>
+<a href="/web/20001018012828/http://mtf.news.yahoo.com/mailto?url=http://dailynews.yahoo.com/fc/World/Philippines/&amp;title=Political,%20Economic%20Turmoil%20in%20Philippines%20Over%20Gambling%20Scandal&amp;prop=fc&amp;locale=us"><font face="arial,helvetica" size=2>Email this page</font></a> - <a href="/web/20001018012828/http://mtf.news.yahoo.com/h/mt/us/fc/?u"><font face="arial,helvetica" size=1><b>View most popular</b></font></a>
+</td></tr></table><p>
+<table border=0 cellpadding=2 cellspacing=0 width="100%">
+<tr valign=middle bgcolor="#eeeecc">
+<td><font face="arial,helvetica" size=3><b>&nbsp;Search Full Coverage</b></font></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%"><tr><td valign=top align=center><form action="/web/20001018012828/http://search.news.yahoo.com/search/news">
+<input type=text size=25 name=p><input type=submit value="Search">
+<a href="/web/20001018012828/http://search.news.yahoo.com/search/news/options"><font face="arial,helvetica" size=2>Advanced</font></a><br><small><b>Search:</b><input type=radio name=c value="news">&nbsp;Stories&nbsp;&nbsp;<input type=radio name=c value="news_photos">&nbsp;Photos&nbsp;&nbsp;<input type=radio name=c value="fullcov" checked>&nbsp;Full Coverage</small><input type=hidden name=n value=10>
+</form></td></tr></table> 
+</td></tr></table>
+<table border=0 cellspacing=0 cellpadding=0 width=675>
+<tr bgcolor="#333366"><td colspan=12>
+<table border=0 cellspacing=0 cellpadding=0><tr><td height=5>
+</td></tr></table></td></tr>
+<tr>
+<td colspan=12 align=center><table border=0 cellspacing=0><tr>
+<td align=center><a href="/web/20001018012828/http://dailynews.yahoo.com/"><font size=2 face="arial,helvetica">Home</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001018012828/http://dailynews.yahoo.com/h/ts/"><font size=2 face="arial,helvetica">Top&nbsp;Stories</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001018012828/http://dailynews.yahoo.com/h/bs/"><font size=2 face="arial,helvetica">Business</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001018012828/http://dailynews.yahoo.com/h/tc/"><font size=2 face="arial,helvetica">Tech</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001018012828/http://dailynews.yahoo.com/h/pl/"><font size=2 face="arial,helvetica">Politics</font></a>&nbsp;</td>
+<td align=center bgcolor="#333366">&nbsp;<a href="/web/20001018012828/http://dailynews.yahoo.com/h/wl/"><font size=2 face="arial,helvetica" color="#eeeeff">World</font></a>&nbsp;</td>
+<td align=center>&nbsp;<a href="/web/20001018012828/http://dailynews.yahoo.com/h/lo/"><font size=2 face="arial,helvetica">Local</font></a></td>
+<td align=center>&nbsp;<a href="/web/20001018012828/http://dailynews.yahoo.com/h/en/"><font size=2 face="arial,helvetica">Entertainment</font></a></td>
+<td align=center>&nbsp;<a href="/web/20001018012828/http://dailynews.yahoo.com/h/sp/"><font size=2 face="arial,helvetica">Sports</font></a></td>
+<td align=center>&nbsp;<a href="/web/20001018012828/http://dailynews.yahoo.com/h/sc/"><font size=2 face="arial,helvetica">Science</font></a></td>
+<td align=center>&nbsp;<a href="/web/20001018012828/http://dailynews.yahoo.com/h/hl/"><font size=2 face="arial,helvetica">Health</font></a></td>
+<td align=center>&nbsp;<a href="/web/20001018012828/http://dailynews.yahoo.com/fc/"><font size=2 face="arial,helvetica">Full&nbsp;Coverage</font></a></td>
+</tr></table></td></tr></table>
+<hr size=0 width=675>
+<table width=675><tr><td valign=top align=center>
+<font size=2><a href="mailto:full_coverage@yahoo-inc.com?subject=Suggestion">Submit links to Full&nbsp;Coverage</a><br>
+Copyright &copy; 2000 Yahoo! Inc. All Rights Reserved.&nbsp;&nbsp;<a href="/web/20001018012828/http://privacy.yahoo.com/">Privacy Policy</a>&nbsp;-&nbsp;<a href="/web/20001018012828/http://docs.yahoo.com/info/terms/">Terms of Service</a><br>
+Question? Comments? Send us <a href="mailto:full_coverage@yahoo-inc.com?subject=Comment">feedback</a>.</font>
+</td></tr></table></center></body></html>
+
+ 
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 1:28:28 Oct 18, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:59:25 Jan 7, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

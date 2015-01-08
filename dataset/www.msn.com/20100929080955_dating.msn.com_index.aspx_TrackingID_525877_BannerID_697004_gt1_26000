@@ -1,0 +1,1339 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<html>
+	<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app16.us.archive.org";archive_analytics.values.server_ms=366;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /><link href="/web/20101002062612cs_/http://dating.msn.com/styles/site/core.css?v=8.0.3917.22548" rel="stylesheet"/><link href="/web/20101002062612cs_/http://dating.msn.com/styles/site/legacy.css?v=8.0.3917.22548" rel="stylesheet"/><link href="/web/20101002062612cs_/http://dating.msn.com/styles/site/legacy.cssx?v=8.0.3917.22548" rel="stylesheet"/><script src="/web/20101002062612js_/http://dating.msn.com/scripts/jquery/current.js?v=8.0.3917.22548" language="Javascript"></script>
+
+<script src="/web/20101002062612js_/http://dating.msn.com/scripts/jquery/mods.js?v=8.0.3917.22548" language="Javascript"></script>
+<script src="/web/20101002062612js_/http://dating.msn.com/scripts/jquery/jquery.metadata.pack.js?v=8.0.3917.22548" language="Javascript"></script>
+<script src="/web/20101002062612js_/http://dating.msn.com/scripts/lib.json2.js?v=8.0.3917.22548" language="Javascript"></script><script src="/web/20101002062612js_/http://dating.msn.com/scripts/core.js?v=8.0.3917.22548" language="Javascript"></script><script src="/web/20101002062612js_/http://dating.msn.com/scripts/site/GoogleAnalytics.js?v=8.0.3917.22548" language="Javascript"></script>
+
+<script language="javascript">
+$jq.namespace('MatchCore');
+
+MatchCore.Application = {
+    ApplicationPath: '/',
+    ImageRoot: '/web/20101002062612/http://images.match.com/match/',
+    MediaRoot: '/web/20101002062612/http://av1.match.com/match/',
+    resolveUrl: function(url) {
+        return url.replace('~/', '/');
+    },
+    resolveImageUrl: function(url) {
+        if (url != null && url != undefined) {
+            return MatchCore.Application.ImageRoot + url;
+        }
+
+        return '';
+    },
+    resolveMediaUrl: function(url) {
+    	if (url != null && url != undefined) {
+    		return MatchCore.Application.MediaRoot + url;
+    	}
+
+    	return '';
+    }
+};
+</script>
+<script src="/web/20101002062612js_/http://dating.msn.com/scripts/cp/main.js?v=8.0.3917.22548" language="Javascript"></script>
+<script src="/web/20101002062612js_/http://dating.msn.com/scripts/cp/login.js?v=8.0.3917.22548" language="Javascript"></script>
+<script src="/web/20101002062612js_/http://dating.msn.com/scripts/cp/registration.js?v=8.0.3917.22548" language="Javascript"></script>
+<script src="/web/20101002062612js_/http://dating.msn.com/scripts/cp/quickSearch.js?v=8.0.3917.22548" language="Javascript"></script>
+<script src="/web/20101002062612js_/http://dating.msn.com/scripts/cp/promo.js?v=8.0.3917.22548" language="Javascript"></script>
+<script src="/web/20101002062612js_/http://dating.msn.com/scripts/site/ajaxGeo.js?v=8.0.3917.22548" language="Javascript"></script>
+<script src="/web/20101002062612js_/http://dating.msn.com/scripts/cp/geo.js?v=8.0.3917.22548" language="Javascript"></script>
+
+
+<link href="/web/20101002062612cs_/http://dating.msn.com/styles/cp/main.css?v=8.0.3917.22548" rel="stylesheet"/>
+
+<script language="javascript">
+	$jq(document).ready(function() {
+		MatchCore.CP.TrackingID(525877);
+		MatchCore.CP.PageID('cppp/msn/index.html');
+		MatchCore.CP.PageVersion(1);
+		MatchCore.CP.CpServer('/web/20101002062612/http://cp.match.com/');
+		MatchCore.CP.CpResourceRoot('/web/20101002062612/http://cp.match.com/cppp/resx/');
+		MatchCore.CP.Mauth('MAuth3~72099a63-8b30-4088-85dc-95eaca840d38~8e7911e2-1f7f-4675-9832-eb81be3345fd~aX5w6a9tk2jTHxbCplU6uHt/GzwGWn/8');
+		MatchCore.CP.CurrentUser.RegisteredDomain(false);
+		MatchCore.CP.CurrentUser.Handle('');
+		MatchCore.CP.CurrentUser.Registered(false);
+		MatchCore.CP.CurrentUser.Subscribed(false);
+		MatchCore.CP.CurrentUser.LoggedIn(false);
+		MatchCore.CP.CurrentUser.EmailAddress('');
+		
+		MatchCore.CP.CurrentUser.ready();
+		
+		MatchCore.CP.Promo.CurrentPromoID();
+		MatchCore.CP.Promo.SubscribeUrl('');
+		
+		var showMessages = false;
+		var serverMessages = [];
+		
+		if (showMessages) {
+			$jq(document).ready(function() {
+				MatchCore.CP.Messaging.show(serverMessages);
+			});
+		}
+
+		
+		
+		MatchCore.CP.ready();
+	});
+</script>
+
+
+<meta name="keywords" content="match.com, MSN dating & personals, free personals, singles, online dating site, dating, personals, love, local singles, match, matchmaker, christian, black, asian, jewish, gay, lesbian" />
+<meta name="description" content="MSN Dating & Personals with Match.com is a leading online dating site for singles to search through over 15 million users." />
+<script type="text/javascript" src="/web/20101002062612js_/http://cp.match.com/cppp/msn/js/google.js"></script>
+<script type="text/javascript" src="/web/20101002062612js_/http://cp.match.com/cppp/msn/jcarousel/js/jCarousel.js"></script>
+<script type="text/javascript" src="/web/20101002062612js_/http://cp.match.com/cppp/msn/jcarousel/js/jeasing.js"></script>
+<script type="text/javascript" src="/web/20101002062612js_/http://cp.match.com/cppp/msn/index/45347/45347.js"></script>
+<script src="/web/20101002062612js_/http://cp.match.com/cppp/msn/index/10157/chemistry/images/AC_RunActiveContent.js" language="javascript"></script>
+<script src="/web/20101002062612js_/http://cp.match.com/cppp/msn/index/10157/js/actionModule.js" language="javascript"></script>
+<script>
+$jq(document).ready( function() {
+	$jq('INPUT[@type="text"], INPUT[@type="password"]').addClass('inputField');
+	
+	$jq('.msnNav').each( function() {
+		var menuID = $jq.queryString.get('menuID');
+		if ( menuID == null ) menuID = '1';
+		$jq('.msnNav #item' + menuID).addClass('selected');
+	} );
+	
+	function fadeCpl() {
+		$jq("#thmCouples li").each( function() {
+			if ( $jq(this).hasClass("active") ) {
+				$jq(this).fadeTo("fast", 1);
+			} else {
+				$jq(this).fadeTo("fast", 0.5);
+			}
+		} );
+	}
+	
+	fadeCpl();
+	
+	var csCpl  = [];
+	csCpl["AN"] = "/web/20101002062612/http://msn.chemistry.com/cp/landing/42931?trackingid=516068&bannerid=2048798";
+	csCpl["SA"] = "/web/20101002062612/http://msn.chemistry.com/cp/landing/42930?trackingid=516068&bannerid=2048797";
+	csCpl["CJ"] = "/web/20101002062612/http://msn.chemistry.com/cp/landing/42927?trackingid=516068&bannerid=2048796";
+	$jq(".chemCplLnk").attr("href",csCpl["AN"]);
+
+	var cpServer= MatchCore.CP.CpServer();
+	
+	$jq("#thmCouples li").click( function() {
+		var cID = $jq(this).attr("id");
+		if ( $jq(this).hasClass("active") == false ) {
+			$jq("#thmCouples li").removeClass("active");
+			$jq(this).addClass("active");
+			fadeCpl();
+			$jq("#cplSuccess img").attr("src", ( cpServer + "cppp/msn/index/43067/43067cpl" + cID + ".jpg" ) );
+			$jq(".chemCplLnk").attr("href",csCpl[cID]);
+		}
+	} );
+
+} );
+</script>
+<link rel="stylesheet" href="/web/20101002062612cs_/http://dating.msn.com/stylesheets/msn/lib.msn.versionE.cssx" type="text/css" />
+<link href="/web/20101002062612cs_/http://cp.match.com/cppp/msn/index/16625/16625_index.css" rel="stylesheet" type="text/css" />
+<link href="/web/20101002062612cs_/http://cp.match.com/cppp/msn/index/43067/43067chem.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+@import url("/web/20101002062612im_/http://blstc.msn.com/br/gbl/css/10/gtl_sitegeneric.css");
+@import url("/web/20101002062612im_/http://blstc.msn.com/br/gbl/css/10/09.css");
+#page { height: 880px !important; }
+.page1 #nav, .page1 #content, .page1 #area1, .page1 #area2 { width:100%; }
+div.infobox p {
+	color:#333333;
+	font-size: 10px;
+	margin:0 8px 4px;
+}
+</style>
+<title>
+	Relationship advice and search tools for singles on MSN Dating &amp; Personals
+</title></head>
+
+	<body id="ctl00_pageBody" class="  ">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://dating.msn.com/index.aspx?TrackingID=525877&amp;BannerID=697004&amp;gt1=26000";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "2";
+var displayMonth = "Oct";
+var displayYear = "2010";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://dating.msn.com/index.aspx?TrackingID=525877&amp;BannerID=697004&amp;gt1=26000" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20101002062612" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Sep
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 6:26:12 Oct 2, 2010">OCT</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20101122102335/http://dating.msn.com/index.aspx?TrackingID=525877&amp;BannerID=697004&amp;gt1=26000" title="22 Nov 2010"><strong>NOV</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 6:26:12 Oct 2, 2010">2</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20101122102335/http://dating.msn.com/index.aspx?TrackingID=525877&amp;BannerID=697004&amp;gt1=26000" title="10:23:35 Nov 22, 2010"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2009
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 6:26:12 Oct 2, 2010">2010</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2011
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20101002062612*/http://dating.msn.com/index.aspx?TrackingID=525877&amp;BannerID=697004&amp;gt1=26000" title="See a list of every capture for this URL">2 captures</a>
+           <div class="r" title="Timespan for captures of this URL">2 Oct 10 - 22 Nov 10</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:9:000000000110_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+		
+    
+<h1>MSN Dating &amp; Personals with Match.com offers a successful online dating service assisting singles searching for a serious relationship.</h1>
+<div style="display:none;visibility:hidden;">
+	<!-- SiteCatalyst code version: H.1.
+Copyright 1997-2005 Omniture, Inc. More info available at
+/web/20101002062612/http://www.omniture.com -->
+	<script language="JavaScript">var s_account="msnportaldating";</script>
+	<script language="JavaScript" src="/web/20101002062612js_/http://blstj.msn.com/br/om/js/s_code.js"></script>
+	<script language="JavaScript">
+<!--
+s.linkInternalFilters="javascript:.msn.match.com";
+s.trackExternalLinks=true;
+s.pageName="Home";
+s.server="";
+s.channel="us.match";
+s.pageType="";
+s.prop1="MSN Dating and Personals US";
+s.prop2="en-us";
+s.prop3="Home";
+s.prop4="";
+s.prop5="Homepage";
+s.prop6="match.com";
+s.prop10="";
+s.evar10="";
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+	<script language="JavaScript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><img
+src="/web/20101002062612im_/http://msnportaldating.112.2o7.net/b/ss/msnportaldating/1/H.1--NS/0"
+height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+	<!-- End SiteCatalyst code version: H.1. -->
+</div>
+<div id="wrapper" class="page1 region9" style="width:972px;">
+	<div id="partnerHeader">
+		
+            <div id="ctl00_workarea_ctl12_ctl00_partnerHeader" class="partnerHeader">
+                <!--[if !IE]>--><script type="text/javascript" src="/web/20101002062612js_/http://cp.match.com/cppp/msn/js/lib.msn.cobrand.mozcompat.2010.js"></script><!--<![endif]-->
+
+<script type="text/javascript" src="/web/20101002062612js_/http://cp.match.com/cppp/msn/js/lib.msn.cobrand.core.2010.js"></script>
+<script type="text/javascript" src="/web/20101002062612js_/http://blstj.msn.com/br/gbl/js/2/report.js"></script>
+<script type="text/javascript" src="/web/20101002062612js_/http://blstj.msn.com/br/gbl/js/7/navigation.js"></script>
+<link href="/web/20101002062612cs_/http://cp.match.com/cppp/msn/css/lib.msn.cobrand.hdr.2010.css" rel="stylesheet" type="text/css" />
+
+<!-- BEGIN OMNITURE REPORTING -->
+
+<div id="reporting" style="display:none;"><img id="ctag" width="1" height="1" alt="" src="/web/20101002062612im_/http://c.msn.com/c.gif?di=2558&amp;pi=7327&amp;ps=66851&amp;tp=http://specials.msn.com/mopsdk/standard/dating/msnshell.aspx&amp;rf=" />
+	<div id="omni"> 
+		<script type="text/javascript">var s_account="msnportaldating";</script> 
+		<script type="text/javascript" src="/web/20101002062612js_/http://blstj.msn.com/br/om/js/s_code.js"></script> 
+		<script type="text/javascript">
+			var strPath = "";strPath = document.location.pathname;
+			if ( ( strPath != "/msn/index.aspx" ) && ( strPath != "/msn/article.aspx" ) ) {
+				s.linkInternalFilters="javascript:";
+				s.pageName=strPath;
+				s.channel="MSN Dating & Personals";
+				s.server="msn.com";
+				s.prop1="MSN Channels US";
+				s.prop2="en-US";
+				s.prop3="<blank>";
+				s.prop4="<blank>";
+				var s_code=s.t();
+				if(s_code)document.write(s_code);
+			}
+	  </script> 
+		<script type="text/javascript"><!--if(navigator.appVersion.indexOf("MSIE")>=0)document.write(unescape("%3C")+"\!-"+"-")//--></script>
+		<noscript>
+		<div><img src="/web/20101002062612im_/http://msnportaldating.112.2o7.net/b/ss/msnportaldating/1/H.1--NS/0" height="1" width="1" alt="" /></div>
+		</noscript>
+	</div>
+	<script type="text/javascript" src="/web/20101002062612js_/http://hp.msn.com/scr/op/ol-fdbkv3_r1.js"></script> 
+</div>
+<script language="javascript">var sRFVal=document.referrer;var imgTax = new Image();imgTax.src = "/web/20101002062612/http://c.msn.com/c.gif?PS=66851&PI=7327&DI=2558&NC=10009&NA=1154&TP=/web/20101002062612/http://msn.match.com/msn/index.aspx&RF=" + sRFVal;</script> 
+<script type="text/javascript" src="/web/20101002062612js_/http://blstj.msn.com/br/om/js/lt/lt.js"></script> 
+
+<!-- END OMNITURE REPORTING -->
+
+<div id="head">
+	<div class="parent chrome6 single1">
+		<div class="child c1 first">
+			<div class="msnhead1 cf">
+				<div id="brandnav"> 
+					<!-- BEGIN OF FEED SECTION -->
+					<ul id="xnav" class="noscript">
+						<li class="c1"><a href="/web/20101002062612/http://www.msnbc.msn.com/">News</a>
+							<div class="menucontainer">
+								<ul class="section">
+									<li class="first"><a href="/web/20101002062612/http://www.msnbc.msn.com/id/3032076/ns/health">Health News</a></li>
+									<li><a href="/web/20101002062612/http://local.msn.com/news.aspx">Local News</a></li>
+									<li><a href="/web/20101002062612/http://www.msnbc.msn.com/id/3096434/ns/msnbc_tv">MSNBC TV</a></li>
+									<li><a href="/web/20101002062612/http://www.msnbc.msn.com/id/3032553/ns/politics">Politics</a></li>
+									<li><a href="/web/20101002062612/http://www.msnbc.msn.com/id/3032118/ns/technology_and_science">Tech &amp; Science</a></li>
+									<li><a href="/web/20101002062612/http://today.msnbc.msn.com/">Today Show</a></li>
+									<li><a href="/web/20101002062612/http://www.msnbc.msn.com/id/3032525/ns/us_news">US News</a></li>
+									<li><a href="/web/20101002062612/http://www.msnbc.msn.com/id/8004316/?from=en-us_msnhp">Video</a></li>
+									<li><a href="/web/20101002062612/http://local.msn.com/weather.aspx"><strong>Weather</strong></a></li>
+									<li><a href="/web/20101002062612/http://www.msnbc.msn.com/id/3032507/ns/world_news">World News</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="c2"><a href="/web/20101002062612/http://entertainment.msn.com/">Entertainment</a>
+							<div class="menucontainer">
+								<ul class="section">
+									<li class="first"><a href="/web/20101002062612/http://wonderwall.msn.com/">Celebrities</a></li>
+									<li><a href="/web/20101002062612/http://entertainment.msn.com/news/?ipp=15">Entertainment News </a></li>
+									<li><a href="/web/20101002062612/http://zone.msn.com/en-us/home"><strong>Games</strong></a></li>
+									<li><a href="/web/20101002062612/http://movies.msn.com/">Movies</a></li>
+									<li><a href="/web/20101002062612/http://music.msn.com/">Music</a></li>
+									<li><a href="/web/20101002062612/http://movies.msn.com/new-on-dvd/movies/">New on DVD</a></li>
+									<li><a href="/web/20101002062612/http://entertainment.msn.com/superfans/"> Superfans</a></li>
+									<li><a href="/web/20101002062612/http://tv.msn.com/"> TV</a></li>
+									<li><a href="/web/20101002062612/http://entertainment.msn.com/video/?from=en-us_msnhp"> Video</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="c3"><a href="/web/20101002062612/http://msn.foxsports.com/">Sports</a>
+							<div class="menucontainer">
+								<ul class="section">
+									<li class="first"><a href="/web/20101002062612/http://msn.foxsports.com/golf">Golf</a></li>
+									<li><a href="/web/20101002062612/http://msn.foxsports.com/mlb"> MLB</a></li>
+									<li><a href="/web/20101002062612/http://msn.foxsports.com/nascar">NASCAR</a></li>
+									<li><a href="/web/20101002062612/http://msn.foxsports.com/nba">NBA</a></li>
+									<li><a href="/web/20101002062612/http://msn.foxsports.com/cbk"><strong>NCAA Basketball</strong></a></li>
+									<li><a href="/web/20101002062612/http://msn.foxsports.com/nfl">NFL</a></li>
+									<li><a href="/web/20101002062612/http://msn.foxsports.com/nhl">NHL</a></li>
+									<li><a href="/web/20101002062612/http://msn.foxsports.com/fantasy">Play Fantasy</a></li>
+									<li><a href="/web/20101002062612/http://msn.foxsports.com/foxsoccer">Soccer</a></li>
+									<li><a href="/web/20101002062612/http://msn.foxsports.com/video?from=en-us_msnhp">Video</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="c4"><a href="/web/20101002062612/http://moneycentral.msn.com/home.asp">Money</a>
+							<div class="menucontainer">
+								<ul class="section">
+									<li class="first"><a href="/web/20101002062612/http://autos.msn.com/">Autos</a></li>
+									<li><a href="/web/20101002062612/http://www.msnbc.msn.com/id/3032072/ns/business">Business News</a></li>
+									<li><a href="/web/20101002062612/http://msn.careerbuilder.com/?siteid=cbmsn_home&amp;sc_cmp1=JS_MSN_Home"><strong>Careers &amp; Jobs</strong></a></li>
+									<li><a href="/web/20101002062612/http://moneycentral.msn.com/investor/home.aspx">Investing</a></li>
+									<li><a href="/web/20101002062612/http://moneycentral.msn.com/personal-finance/">Personal Finance</a></li>
+									<li><a href="/web/20101002062612/http://moneycentral.msn.com/detail/stock_quote">Quotes</a></li>
+									<li><a href="/web/20101002062612/http://realestate.msn.com/">Real Estate</a></li>
+									<li><a href="/web/20101002062612/http://articles.moneycentral.msn.com/video/default.aspx?from=en-us_msnhp">Video</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="c5"><a href="/web/20101002062612/http://lifestyle.msn.com/">Lifestyle</a>
+							<div class="menucontainer">
+								<ul class="section">
+									<li class="first"><a href="/web/20101002062612/http://lifestyle.msn.com/your-look/">Beauty &amp; Fashion</a></li>
+									<li><a href="/web/20101002062612/http://www.delish.com/"> Cooking</a></li>
+									<li><a href="/web/20101002062612/http://lifestyle.msn.com/your-home/">Decor &amp; Organizing</a></li>
+									<li><a href="/web/20101002062612/http://health.msn.com/diet-and-fitness.aspx">Diet &amp; Fitness</a></li>
+									<li><a href="/web/20101002062612/http://health.msn.com/"><strong>Health</strong></a></li>
+									<li><a href="/web/20101002062612/http://astrocenter.astrology.msn.com/msn/DeptHoroscope.aspx?When=0&amp;Af=-1000&amp;VS">Horoscopes</a></li>
+									<li><a href="/web/20101002062612/http://lifestyle.msn.com/relationships/">Love &amp; Relationships</a></li>
+									<li><a href="/web/20101002062612/http://dating.msn.com/index.aspx?TrackingID=516163&amp;BannerID=670269">Online Dating</a></li>
+									<li><a href="/web/20101002062612/http://www.bing.com/travel/?cid=msn_nav_lifestyle&amp;FORM=MSNNAV"> Travel</a></li>
+									<li><a href="/web/20101002062612/http://lifestyle.msn.com/your-look/video/?from=en-us_msnhp">Video</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="c6 last fluid"><a href="/web/20101002062612/http://specials.msn.com/alphabet.aspx">More</a>
+							<div class="menucontainer">
+								<ul class="section">
+									<li class="first"><a href="/web/20101002062612/http://autos.msn.com/">Autos</a></li>
+									<li><a href="/web/20101002062612/http://my.msn.com/">My MSN</a></li>
+									<li><a href="/web/20101002062612/http://www.bing.com/videos/browse?from=en-us_msnhp">Video</a></li>
+									<li><a href="/web/20101002062612/http://careers.msn.com/">Careers &amp; Jobs</a></li>
+									<li><a href="/web/20101002062612/http://dating.msn.com/index.aspx?TrackingID=516163&amp;BannerID=670268">Personals</a></li>
+									<li><a href="/web/20101002062612/http://local.msn.com/weather.aspx">Weather</a></li>
+									<li><a href="/web/20101002062612/http://www.delish.com/">Delish</a></li>
+								</ul>
+								<ul class="section">
+									<li><a href="/web/20101002062612/http://moneycentral.msn.com/detail/stock_quote">Quotes</a></li>
+									<li><a href="/web/20101002062612/http://msn.whitepages.com/">White Pages</a></li>
+									<li><a href="/web/20101002062612/http://zone.msn.com/en-us/home">Games</a></li>
+									<li><a href="/web/20101002062612/http://realestate.msn.com/">Real Estate</a></li>
+									<li><a href="/web/20101002062612/http://wonderwall.msn.com/">Wonderwall</a></li>
+									<li><a href="/web/20101002062612/http://astrocenter.astrology.msn.com/">Horoscopes</a></li>
+									<li><a href="/web/20101002062612/http://www.bing.com/shopping?FORM=SHOPH2">Shopping</a></li>
+								</ul>
+								<ul class="section">
+									<li><a href="/web/20101002062612/http://yellowpages.msn.com/">Yellow Pages</a></li>
+									<li><a href="/web/20101002062612/http://local.msn.com/news.aspx">Local Edition</a></li>
+									<li><a href="/web/20101002062612/http://local.msn.com/gas-traffic.aspx">Traffic</a></li>
+									<li><a href="/web/20101002062612/https://secure.opinionlab.com/ccc01/o.asp?ID=WpkpVtTB"><strong>Feedback</strong></a></li>
+									<li><a href="/web/20101002062612/http://www.bing.com/maps/default.aspx?FORM=MSNNAV">Maps &amp; Directions</a></li>
+									<li><a href="/web/20101002062612/http://www.bing.com/travel/?cid=msn_nav_more&amp;FORM=MSNNAV">Travel</a></li>
+									<li><a href="/web/20101002062612/http://specials.msn.com/alphabet.aspx">Full MSN Index</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<!-- END OF FEED SECTION --> 
+					<span class="blogo"><a href="/web/20101002062612/http://www.bing.com/search?FORM=AX">Bing</a></span>
+					<ul id="big3" class="linklist9">
+						<li class="first"><a href="/web/20101002062612/http://hotmail.msn.com/">Hotmail</a></li>
+						<li id="msg"><a href="/web/20101002062612/http://download.live.com/?sku=messenger">Messenger</a></li>
+						<li class="last"><a href="/web/20101002062612/http://passport.match.com/passport/ppLogin.asp">Sign in</a></li>
+					</ul>
+				</div>
+				<div id="brand">
+					<div id="logo"><a href="/web/20101002062612/http://www.msn.com/"><img id="msnlogo" src="/web/20101002062612im_/http://blstc.msn.com/br/gbl/lg/1/t/msft.png" title="go to MSN.com" alt="go to MSN.com" /></a></div>
+					<form id="bingSearch" action="/web/20101002062612/http://www.bing.com/search" method="get" onSubmit="return Msn.Report.TrackForm(this)">
+						<div>
+							<label accesskey="s" for="q">Live search:</label>
+							<input type="hidden" name="FORM" value="AX" />
+							<div id="searchform">
+								<div class="searchinputarea">
+									<div class="searchinput">
+										<input type="text" id="q" name="q" maxlength="215" title="Search for" />
+									</div>
+									<div class="searchsubmit">
+										<input type="image" id="spyglass" src="/web/20101002062612im_/http://blstc.msn.com/br/gbl/css/10/decoration/searchicon_22x22.gif" title="Search" alt="Search" />
+									</div>
+								</div>
+								<div id="ntwscopes"></div>
+							</div>
+						</div>
+					</form>
+					<script type="text/javascript">Msn.SiteSearch.bind("#bingSearch",{searchParam:"q",searchParams:"",searchUrl:"",siteSearchOn:"false",helpertext:"",onepxgif:"/web/20101002062612/http://blstc.msn.com/br//gbl/css/10/decoration/t.gif"});</script>
+					<div id="optlinks" class="link"><img class="logo" src="/web/20101002062612im_/http://images.match.com/match/msn/cobrand/poweredby_Match.png" alt="powered by Match.com" /></div>
+				</div>
+			</div>
+			<div id="channeltitle"><strong><a href="/web/20101002062612/http://dating.msn.com/msn/index.aspx?mmrd=1">Dating &amp; Personals</a></strong><a id="hplink" href="/web/20101002062612/http://www.myhomemsn.com/">Make msn.com your home page</a></div>
+		</div>
+	</div>
+</div>
+
+            </div>
+        
+	</div>
+	<div id="page">
+		<div id="nav" class="msnNav">
+	<div class="parent chrome6 single1">
+		<div class="child c1 first">
+			<div class="nav3 cf">
+				<ul>
+					<li id="item1"><a href="/web/20101002062612/http://dating.msn.com/msn/index.aspx?menuid=1&amp;lid=413">Home</a></li>
+					<li><a href="/web/20101002062612/http://dating.msn.com/home/myhome.aspx?lid=413">My Match</a></li>
+					<li><a href="/web/20101002062612/http://msn.chemistry.com/index.aspx?trackingid=508259&amp;bannerid=2001968">Chemistry</a></li>
+					<li><a href="/web/20101002062612/http://match.esus.msn.com/channel/index.aspx?pg=channel&amp;tcid=-32611">En Espa&ntilde;ol</a></li>
+					<li class="last"><a href="/web/20101002062612/http://dating.msn.com/msn/article/articleindex.aspx">Article Index</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+		<div id="msnContent">
+			<div id="actionModule">
+				<h4 class="mLogo">Match.com</h4>
+				<h5 class="mIOTL">It's Okay to Look&trade;</h5>
+				<p id="mFormula">New ways to get matched plus the freedom to to search equals <strong>MORE SUCCESS</strong></p>
+				<div id="mnu"><span class="mnuSearch">SEARCH</span> <img src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_mnuDivide.gif" alt="|" /> <span class="mnuHIW">HOW
+						MATCH.COM WORKS</span> <img src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_mnuDivide.gif" alt="|" /> <span class="mnuSignIn">MEMBER
+						SIGN IN</span></div>
+				<div class="jcarousel-container jcarousel-container-horizontal">
+					<div class="jcarousel-centercontainer">
+						<div style="display: block;" class="jcarousel-prev jcarousel-prev-horizontal"><img src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_btnScrollLt.png" height="95" width="56" id="btnScrollLt" /></div>
+						<div class="jcarousel-centerfloat">
+							<div style="clear: both;" class="spot_carousel">
+		            <div class="sptltPic">
+			            <a href=""> 
+				            <img class="jcarousel-image-Large jcarousel-newsize" alt="" src="/web/20101002062612im_/http://images.match.com/match/s.gif" width="190" height="190" />
+			            </a>
+		            </div>
+								<div class="pnlSpotlightDetails">
+									<div class="sptltHandle"><a title="" href=""></a></div>
+									<div class="sptltDetails"></div>
+			            <a href="" class="btnViewProfile">View Profile &raquo;</a>
+		            </div>
+							</div>
+						</div>
+						<div style="display: block;" class="jcarousel-next jcarousel-next-horizontal"><img src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_btnScrollRt.png" height="95" width="56" id="btnScrollRt" /></div>
+					</div>
+					<div class="jcarousel-clip jcarousel-clip-horizontal">
+						<ul id="mycarousel" style="width:945px;left:0pt;" class="jcarousel-list jcarousel-list-horizontal">
+							<!-- The content will be dynamically loaded in here -->
+						</ul>
+					</div>
+				</div>
+				<div id="pnlHIW">
+					<div class="btnClose"><img src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_btnCloseHIW.gif" class="btnCloseHIW" /></div>
+					<div class="icnBrowse"><img src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_icnBrowse.gif" alt="Browse" /></div>
+					<div class="icnProfile"><img src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_icnProfile.gif" alt="Create" /></div>
+					<div class="icnEmail"><img src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_icnEmail.gif" alt="Subscribe" /></div>
+					<div class="pnlBrowse">
+						<h2>Browse</h2>
+						<p>With 20,000 members joining daily, someone's sure to catch your eye.. It's the perfect way to see what we're all
+							about and it's free.</p>
+					</div>
+					<div class="pnlProfile">
+						<h2>Create a Profile</h2>
+						<p>Next, become a member and create a free profile. It's how people know you're out there and ready to meet the right
+							one.</p>
+					</div>
+					<div class="pnlEmail">
+						<h2>Subscribe and Meet Your Match</h2>
+						<p>Your all-access pass. Start getting and sending emails. Our most successful way to meet someone.</p>
+					</div>
+					<div class="pnlStartNow"><a href="/web/20101002062612/http://dating.msn.com/search/index.aspx"><img src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_btnStartNow.gif" alt="Start Now »" /></a></div>
+				</div>
+				<div class="errorMessageSummary"></div>
+				<div id="pnlSearch">
+					<div id="formSearch">
+						<div id="pnlGender" class="drpdwn">
+							<label for="gc">I'm a </label>
+							<select name="gc" size="1" id="gc">
+								<option value="1">Man</option>
+								<option value="2" selected="selected">Woman</option>
+							</select>
+						</div>
+						<div id="pnlSeeking" class="drpdwn">
+							<label for="tr">Seeking a</label>
+							<select name="tr" size="1" id="tr">
+								<option value="1" selected="selected">Man</option>
+								<option value="2">Woman</option>
+							</select>
+						</div>
+						<div id="pnlAgeSeeking" class="drpdwn">
+							<label for="lage">Between ages </label>
+							<select name="lage" size="1" id="lage">
+								<option value="18" selected="selected">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+								<option value="24">24</option>
+								<option value="25" selected="selected">25</option>
+								<option value="26">26</option>
+								<option value="27">27</option>
+								<option value="28">28</option>
+								<option value="29">29</option>
+								<option value="30">30</option>
+								<option value="31">31</option>
+								<option value="32">32</option>
+								<option value="33">33</option>
+								<option value="34">34</option>
+								<option value="35">35</option>
+								<option value="36">36</option>
+								<option value="37">37</option>
+								<option value="38">38</option>
+								<option value="39">39</option>
+								<option value="40">40</option>
+								<option value="41">41</option>
+								<option value="42">42</option>
+								<option value="43">43</option>
+								<option value="44">44</option>
+								<option value="45">45</option>
+								<option value="46">46</option>
+								<option value="47">47</option>
+								<option value="48">48</option>
+								<option value="49">49</option>
+								<option value="50">50</option>
+								<option value="51">51</option>
+								<option value="52">52</option>
+								<option value="53">53</option>
+								<option value="54">54</option>
+								<option value="55">55</option>
+								<option value="56">56</option>
+								<option value="57">57</option>
+								<option value="58">58</option>
+								<option value="59">59</option>
+								<option value="60">60</option>
+								<option value="61">61</option>
+								<option value="62">62</option>
+								<option value="63">63</option>
+								<option value="64">64</option>
+								<option value="65">65</option>
+								<option value="66">66</option>
+								<option value="67">67</option>
+								<option value="68">68</option>
+								<option value="69">69</option>
+								<option value="70">70</option>
+								<option value="71">71</option>
+								<option value="72">72</option>
+								<option value="73">73</option>
+								<option value="74">74</option>
+								<option value="75">75</option>
+								<option value="76">76</option>
+								<option value="77">77</option>
+								<option value="78">78</option>
+								<option value="79">79</option>
+								<option value="80">80</option>
+								<option value="81">81</option>
+								<option value="82">82</option>
+								<option value="83">83</option>
+								<option value="84">84</option>
+								<option value="85">85</option>
+								<option value="86">86</option>
+								<option value="87">87</option>
+								<option value="88">88</option>
+								<option value="89">89</option>
+								<option value="90">90</option>
+								<option value="91">91</option>
+								<option value="92">92</option>
+								<option value="93">93</option>
+								<option value="94">94</option>
+								<option value="95">95</option>
+								<option value="96">96</option>
+								<option value="97">97</option>
+								<option value="98">98</option>
+								<option value="99">99</option>
+								<option value="100">100</option>
+								<option value="101">101</option>
+								<option value="102">102</option>
+								<option value="103">103</option>
+								<option value="104">104</option>
+								<option value="105">105</option>
+								<option value="106">106</option>
+								<option value="107">107</option>
+								<option value="108">108</option>
+								<option value="109">109</option>
+								<option value="110">110</option>
+								<option value="111">111</option>
+								<option value="112">112</option>
+								<option value="113">113</option>
+								<option value="114">114</option>
+								<option value="115">115</option>
+								<option value="116">116</option>
+								<option value="117">117</option>
+								<option value="118">118</option>
+								<option value="119">119</option>
+								<option value="120">120</option>
+							</select>
+							<label for="uage"> &amp; </label>
+							<select name="uage" size="1" id="uage">
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+								<option value="24">24</option>
+								<option value="25">25</option>
+								<option value="26">26</option>
+								<option value="27">27</option>
+								<option value="28">28</option>
+								<option value="29">29</option>
+								<option value="30">30</option>
+								<option value="31">31</option>
+								<option value="32">32</option>
+								<option value="33">33</option>
+								<option value="34">34</option>
+								<option value="35" selected="selected">35</option>
+								<option value="36">36</option>
+								<option value="37">37</option>
+								<option value="38">38</option>
+								<option value="39">39</option>
+								<option value="40">40</option>
+								<option value="41">41</option>
+								<option value="42">42</option>
+								<option value="43">43</option>
+								<option value="44">44</option>
+								<option value="45">45</option>
+								<option value="46">46</option>
+								<option value="47">47</option>
+								<option value="48">48</option>
+								<option value="49">49</option>
+								<option value="50">50</option>
+								<option value="51">51</option>
+								<option value="52">52</option>
+								<option value="53">53</option>
+								<option value="54">54</option>
+								<option value="55">55</option>
+								<option value="56">56</option>
+								<option value="57">57</option>
+								<option value="58">58</option>
+								<option value="59">59</option>
+								<option value="60">60</option>
+								<option value="61">61</option>
+								<option value="62">62</option>
+								<option value="63">63</option>
+								<option value="64">64</option>
+								<option value="65">65</option>
+								<option value="66">66</option>
+								<option value="67">67</option>
+								<option value="68">68</option>
+								<option value="69">69</option>
+								<option value="70">70</option>
+								<option value="71">71</option>
+								<option value="72">72</option>
+								<option value="73">73</option>
+								<option value="74">74</option>
+								<option value="75">75</option>
+								<option value="76">76</option>
+								<option value="77">77</option>
+								<option value="78">78</option>
+								<option value="79">79</option>
+								<option value="80">80</option>
+								<option value="81">81</option>
+								<option value="82">82</option>
+								<option value="83">83</option>
+								<option value="84">84</option>
+								<option value="85">85</option>
+								<option value="86">86</option>
+								<option value="87">87</option>
+								<option value="88">88</option>
+								<option value="89">89</option>
+								<option value="90">90</option>
+								<option value="91">91</option>
+								<option value="92">92</option>
+								<option value="93">93</option>
+								<option value="94">94</option>
+								<option value="95">95</option>
+								<option value="96">96</option>
+								<option value="97">97</option>
+								<option value="98">98</option>
+								<option value="99">99</option>
+								<option value="100">100</option>
+								<option value="101">101</option>
+								<option value="102">102</option>
+								<option value="103">103</option>
+								<option value="104">104</option>
+								<option value="105">105</option>
+								<option value="106">106</option>
+								<option value="107">107</option>
+								<option value="108">108</option>
+								<option value="109">109</option>
+								<option value="110">110</option>
+								<option value="111">111</option>
+								<option value="112">112</option>
+								<option value="113">113</option>
+								<option value="114">114</option>
+								<option value="115">115</option>
+								<option value="116">116</option>
+								<option value="117">117</option>
+								<option value="118">118</option>
+								<option value="119">119</option>
+								<option value="120">120</option>
+								<option value="121">121</option>
+							</select>
+						</div>
+						<div id="pnlPostal" class="txtbx">
+							<label for="pc">Near ZIP code</label>
+							<input name="pc" id="pc" type="text" />
+						</div>
+						<div id="pnlButton"> <img src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_btnSearch.gif" width="143" height="36" class="btnQuickSearch" />
+							<input type="hidden" name="dist" value="50" id="dist"/>
+							<input type="hidden" name="po" value="1" id="po"/>
+							<input type="hidden" name="cl" value="1" id="cl"/>
+							<input type="hidden" name="r2s" value="1" id="r2s"/>
+							<input type="hidden" name="cpp" value="floatingreg/msn/dnp_4395_msn_reg.html" id="cpp" />
+						</div>
+					</div>
+				</div>
+				<div id="pnlSignIn">
+					<div id="formLogin">
+						<div id="pnlHandle">
+							<label for="handle">Username:</label>
+							<input name="handle" id="handle" type="text" />
+						</div>
+						<div id="pnlPassword">
+							<label for="password">Password:</label>
+							<input name="password" id="password" type="password" />
+						</div>
+						<div id="pnlButton"> <img src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_btnSignIn.gif" alt="Sign In »" width="102" height="36" class="btnLogin" style="cursor:pointer;" /> </div>
+						<div id="pnlRemember">
+							<label for="rememberme">
+								<input name="rememberme" type="checkbox" id="rememberme" checked="checked" />
+								<span class="txtRemember">Remember me </span> </label>
+						</div>
+						<p id="pnlForgotPassword"><a href="/web/20101002062612/http://dating.msn.com/login/forgotpw.aspx?lid=108">Forgot your password?</a></p>
+					</div>
+				</div>
+			</div>
+			<div id="chemistryModule">
+				<h3 class="chemLogo">Chemistry.com from Match.com</h3>
+				<h2 class="cFormula">Personality insights plus deep understanding of each other equals <strong>GREAT FIRST DATES</strong></h2>
+				<div id="chemDoodle">
+					<p class="login"><a href="/web/20101002062612/http://msn.chemistry.com/login/login.aspx?trackingid=516068&amp;bannerid=2008010">Member Sign	in &raquo;</a></p>
+					<h3 class="doodle">Who will your doodle bring you?</h3>
+					<p class="pTest">This is just one of the many questions in our <br /><strong>personality test</strong> that helps us figure	out <br />what makes you tick and how you'll click.</p>
+					<h4 class="btnFind"><a href="/web/20101002062612/http://msn.chemistry.com/glp/landing/16619?trackingid=516068&amp;bannerid=2014531" class="chemCplLnk">Find Chemistry Now &raquo;</a></h4>
+				</div>
+				<div id="chemCouples">
+					<div id="cplSuccess"><a href="" class="chemCplLnk"><img src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/43067/43067cplAN.jpg" width="422" height="187" border="0" /></a></div>
+					<ul id="thmCouples">
+						<li id="AN" class="active"></li>
+						<li id="SA"></li>
+						<li id="CJ"></li>
+					</ul>
+				</div>
+			</div>
+			<div id="utilityModule">
+				<div id="adSlot1"><a href="/web/20101002062612/http://dating.msn.com/en-us/partner/msn/20400_5.html" target="_top"><img src="/web/20101002062612im_/http://cp.match.com/cppp/msn/ad/static/20400_5day.jpg" alt="Try out our 5 day FREE trial!" width="297" height="134" /></a></div>
+				<div id="adSlot2">
+					<iframe src="/web/20101002062612if_/http://dating.msn.com/cp/msn/ad/standard.html" width="297" height="134" frameborder="0" scrolling="no"></iframe>
+				</div>
+				<div id="msnMore" class="infobox">
+					<h3>More on MSN</h3><p><a href="/web/20101002062612/http://specials.msn.com/A-List/TV/Short-lived-TV-shows.aspx?cp-documentid=25584683&amp;imageindex=1&amp;ocid=xnetr1-1">TV shows that ended too soon</a></p><p><a href="/web/20101002062612/http://www.msnbc.msn.com/id/39415550/?ocid=xnetr1-2">For Germany, WWI finally ends on Sunday</a></p><p><a href="/web/20101002062612/http://deals.msn.com/?ocid=xnetr1-3">Find great shopping deals and sales</a></p><p><a href="/web/20101002062612/http://paralleluniverse.msn.com/the-guild?ocid=xnetr1-4">Shotgun 'cyber wedding' on 'The Guild'</a></p><p><a href="/web/20101002062612/http://www.bing.com/images/search?q=autumn+leaves&amp;FORM=MSNXNM&amp;ocid=xnetr1-5">Bing: Check out images of fall leaves</a></p>
+				</div>
+				<div id="msnTools" class="infobox">
+					<h3>Tools &amp; Resources</h3>
+					<p><a href="/web/20101002062612/http://dating.msn.com/help/contactus.aspx?lid=413">Contact Match.com</a></p>
+					<p><a href="/web/20101002062612/http://msn.chemistry.com/help/contact.aspx?trackingid=516068&amp;bannerid=2008008">Contact Chemistry.com</a></p>
+					<p><a href="/web/20101002062612/http://dating.msn.com/cp/msn/article/articleindex.html">Article Index</a></p>
+					<p><a href="/web/20101002062612/http://dating.msn.com/registration/privacystatement.aspx?lid=413">Match.com's Privacy Policy</a></p>
+					<p><a href="/web/20101002062612/http://dating.msn.com/help/helpdtl.aspx?sec=42&amp;lid=413">FAQs</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- BEGIN OF FOOTER SECTION -->
+	<div id="foot">
+		<div class="parent chrome6 single1">
+			<div class="child c1 first">
+				<div class="msnfoot1 cf">
+					<ul class="primary">
+						<li class="first"><a href="/web/20101002062612/http://go.microsoft.com/fwlink/?LinkId=74170">MSN Privacy</a></li>
+						<li><a href="/web/20101002062612/http://g.msn.com/0TO_/enus">Legal</a></li>
+						<li><a href="/web/20101002062612/http://advertising.msn.com/msn/">Advertise on MSN</a></li>
+						<li class="last"> Follow MSN on <a href="/web/20101002062612/http://www.followmsn.com/?ocid=TXT_MSNCH_DATING_FollowMSN">Facebook</a> | <a href="/web/20101002062612/http://www.followmsn.com/?ocid=TXT_MSNCH_DATING_FollowMSN">Twitter</a> | <a href="/web/20101002062612/http://rss.msn.com/">RSS</a> </li>
+					</ul>
+					<ul class="secondary">
+						<li class="first"><a href="/web/20101002062612/http://dating.msn.com/help/help.aspx?lid=413">Help</a></li>
+						<li><a href="/web/20101002062612/http://feedback.msn.com/">Feedback</a></li>
+						<li class="last"><a href="/web/20101002062612/http://g.msn.com/AIPRIV/en-us">About our ads</a></li>
+					</ul>
+					<div class="copyright"><span>&copy; 2010 Microsoft</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END OF FOOTER SECTION -->
+</div>
+<div class="startspotlight" style="display:none;"></div>
+
+<div style="display:none;">
+
+	<div style="clear: both;" class="spot_carousel sptlghtMale">
+		<div class="sptltPic">
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=4evrCurious&amp;uid=3NQC+7TE2Vb4IHPkrba4uA==&amp;lid=416"> 
+				<img class="imgBorder" src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_brdrSptLight.png"/> 
+				<img class="jcarousel-image" style="display:none;" alt="4evrCurious" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight100_24025.jpg" width="100" height="100" /> 
+				<img class="jcarousel-image-Large" alt="4evrCurious" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight200_24025.jpg" width="190" height="190" />
+			</a>
+		</div>
+		<div class="pnlSpotlightDetails">
+			<div class="sptltHandle"><a title="4evrCurious" href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=4evrCurious&amp;uid=3NQC+7TE2Vb4IHPkrba4uA==&amp;lid=416">4evrCurious</a></div>
+			<div class="sptltDetails">33-year-old man <br />
+											  Long Beach, CA </div>
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=4evrCurious&amp;uid=3NQC+7TE2Vb4IHPkrba4uA==&amp;lid=416" class="btnViewProfile">View Profile &raquo;</a>
+		</div>
+	</div>
+
+	<div style="clear: both;" class="spot_carousel sptlghtMale">
+		<div class="sptltPic">
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=oneniceguyjust4u&amp;uid=36u8eV7VG9D3R+7yKt01NQ==&amp;lid=416"> 
+				<img class="imgBorder" src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_brdrSptLight.png"/> 
+				<img class="jcarousel-image" style="display:none;" alt="oneniceguyjust4u" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight100_24026.jpg" width="100" height="100" /> 
+				<img class="jcarousel-image-Large" alt="oneniceguyjust4u" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight200_24026.jpg" width="190" height="190" />
+			</a>
+		</div>
+		<div class="pnlSpotlightDetails">
+			<div class="sptltHandle"><a title="oneniceguyjust4u" href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=oneniceguyjust4u&amp;uid=36u8eV7VG9D3R+7yKt01NQ==&amp;lid=416">oneniceguyjust4u</a></div>
+			<div class="sptltDetails">40-year-old man <br />
+											  Murrieta, CA </div>
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=oneniceguyjust4u&amp;uid=36u8eV7VG9D3R+7yKt01NQ==&amp;lid=416" class="btnViewProfile">View Profile &raquo;</a>
+		</div>
+	</div>
+
+	<div style="clear: both;" class="spot_carousel sptlghtMale">
+		<div class="sptltPic">
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=Fortdaddy10&amp;uid=CfXeCUNSM0fcW0zr3kv5QQ==&amp;lid=416"> 
+				<img class="imgBorder" src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_brdrSptLight.png"/> 
+				<img class="jcarousel-image" style="display:none;" alt="Fortdaddy10" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight100_24027.jpg" width="100" height="100" /> 
+				<img class="jcarousel-image-Large" alt="Fortdaddy10" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight200_24027.jpg" width="190" height="190" />
+			</a>
+		</div>
+		<div class="pnlSpotlightDetails">
+			<div class="sptltHandle"><a title="Fortdaddy10" href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=Fortdaddy10&amp;uid=CfXeCUNSM0fcW0zr3kv5QQ==&amp;lid=416">Fortdaddy10</a></div>
+			<div class="sptltDetails">33-year-old man <br />
+											  Portland, OR </div>
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=Fortdaddy10&amp;uid=CfXeCUNSM0fcW0zr3kv5QQ==&amp;lid=416" class="btnViewProfile">View Profile &raquo;</a>
+		</div>
+	</div>
+
+	<div style="clear: both;" class="spot_carousel sptlghtMale">
+		<div class="sptltPic">
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=iamthedon78&amp;uid=ziSH/nCd/lxd//XAW7htKQ==&amp;lid=416"> 
+				<img class="imgBorder" src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_brdrSptLight.png"/> 
+				<img class="jcarousel-image" style="display:none;" alt="iamthedon78" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight100_24028.jpg" width="100" height="100" /> 
+				<img class="jcarousel-image-Large" alt="iamthedon78" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight200_24028.jpg" width="190" height="190" />
+			</a>
+		</div>
+		<div class="pnlSpotlightDetails">
+			<div class="sptltHandle"><a title="iamthedon78" href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=iamthedon78&amp;uid=ziSH/nCd/lxd//XAW7htKQ==&amp;lid=416">iamthedon78</a></div>
+			<div class="sptltDetails">32-year-old man <br />
+											  Antioch, IL </div>
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=iamthedon78&amp;uid=ziSH/nCd/lxd//XAW7htKQ==&amp;lid=416" class="btnViewProfile">View Profile &raquo;</a>
+		</div>
+	</div>
+
+	<div style="clear: both;" class="spot_carousel sptlghtMale">
+		<div class="sptltPic">
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=tall_can_cook&amp;uid=ClPSFCXugoJWEYv6CoB7Pw==&amp;lid=416"> 
+				<img class="imgBorder" src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_brdrSptLight.png"/> 
+				<img class="jcarousel-image" style="display:none;" alt="tall_can_cook" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight100_24029.jpg" width="100" height="100" /> 
+				<img class="jcarousel-image-Large" alt="tall_can_cook" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight200_24029.jpg" width="190" height="190" />
+			</a>
+		</div>
+		<div class="pnlSpotlightDetails">
+			<div class="sptltHandle"><a title="tall_can_cook" href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=tall_can_cook&amp;uid=ClPSFCXugoJWEYv6CoB7Pw==&amp;lid=416">tall_can_cook</a></div>
+			<div class="sptltDetails">37-year-old man <br />
+											  Manhattan Beach, CA </div>
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=tall_can_cook&amp;uid=ClPSFCXugoJWEYv6CoB7Pw==&amp;lid=416" class="btnViewProfile">View Profile &raquo;</a>
+		</div>
+	</div>
+
+	<div style="clear: both;" class="spot_carousel sptlghtMale">
+		<div class="sptltPic">
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=wills281&amp;uid=hyqmQaBtjs45436lP2i2yQ==&amp;lid=416"> 
+				<img class="imgBorder" src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_brdrSptLight.png"/> 
+				<img class="jcarousel-image" style="display:none;" alt="wills281" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight100_24030.jpg" width="100" height="100" /> 
+				<img class="jcarousel-image-Large" alt="wills281" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight200_24030.jpg" width="190" height="190" />
+			</a>
+		</div>
+		<div class="pnlSpotlightDetails">
+			<div class="sptltHandle"><a title="wills281" href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=wills281&amp;uid=hyqmQaBtjs45436lP2i2yQ==&amp;lid=416">wills281</a></div>
+			<div class="sptltDetails">26-year-old man <br />
+											  Orlando, FL </div>
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=wills281&amp;uid=hyqmQaBtjs45436lP2i2yQ==&amp;lid=416" class="btnViewProfile">View Profile &raquo;</a>
+		</div>
+	</div>
+
+	<div style="clear: both;" class="spot_carousel sptlghtMale">
+		<div class="sptltPic">
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=panchomod&amp;uid=9WvKYCD7KdRJ1SZSky2K6A==&amp;lid=416"> 
+				<img class="imgBorder" src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_brdrSptLight.png"/> 
+				<img class="jcarousel-image" style="display:none;" alt="panchomod" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight100_24031.jpg" width="100" height="100" /> 
+				<img class="jcarousel-image-Large" alt="panchomod" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight200_24031.jpg" width="190" height="190" />
+			</a>
+		</div>
+		<div class="pnlSpotlightDetails">
+			<div class="sptltHandle"><a title="panchomod" href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=panchomod&amp;uid=9WvKYCD7KdRJ1SZSky2K6A==&amp;lid=416">panchomod</a></div>
+			<div class="sptltDetails">25-year-old man <br />
+											  Saint Paul, MN </div>
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=panchomod&amp;uid=9WvKYCD7KdRJ1SZSky2K6A==&amp;lid=416" class="btnViewProfile">View Profile &raquo;</a>
+		</div>
+	</div>
+
+	<div style="clear: both;" class="spot_carousel sptlghtMale">
+		<div class="sptltPic">
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=Saynt0&amp;uid=KFYKwbGrO5X9Ac49QKY87g==&amp;lid=416"> 
+				<img class="imgBorder" src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_brdrSptLight.png"/> 
+				<img class="jcarousel-image" style="display:none;" alt="Saynt0" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight100_24033.jpg" width="100" height="100" /> 
+				<img class="jcarousel-image-Large" alt="Saynt0" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight200_24033.jpg" width="190" height="190" />
+			</a>
+		</div>
+		<div class="pnlSpotlightDetails">
+			<div class="sptltHandle"><a title="Saynt0" href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=Saynt0&amp;uid=KFYKwbGrO5X9Ac49QKY87g==&amp;lid=416">Saynt0</a></div>
+			<div class="sptltDetails">26-year-old man <br />
+											  Boca Raton, FL </div>
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=Saynt0&amp;uid=KFYKwbGrO5X9Ac49QKY87g==&amp;lid=416" class="btnViewProfile">View Profile &raquo;</a>
+		</div>
+	</div>
+
+	<div style="clear: both;" class="spot_carousel sptlghtMale">
+		<div class="sptltPic">
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=realbubs&amp;uid=QQB14vKurgO8Wkpkypx7+g==&amp;lid=416"> 
+				<img class="imgBorder" src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_brdrSptLight.png"/> 
+				<img class="jcarousel-image" style="display:none;" alt="realbubs" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight100_24032.jpg" width="100" height="100" /> 
+				<img class="jcarousel-image-Large" alt="realbubs" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight200_24032.jpg" width="190" height="190" />
+			</a>
+		</div>
+		<div class="pnlSpotlightDetails">
+			<div class="sptltHandle"><a title="realbubs" href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=realbubs&amp;uid=QQB14vKurgO8Wkpkypx7+g==&amp;lid=416">realbubs</a></div>
+			<div class="sptltDetails">32-year-old man <br />
+											  Los Angeles, CA </div>
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=realbubs&amp;uid=QQB14vKurgO8Wkpkypx7+g==&amp;lid=416" class="btnViewProfile">View Profile &raquo;</a>
+		</div>
+	</div>
+
+	<div style="clear: both;" class="spot_carousel sptlghtMale">
+		<div class="sptltPic">
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=crazintellicool&amp;uid=eFEUmQjgZ5pATb2EYuXwZw==&amp;lid=416"> 
+				<img class="imgBorder" src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_brdrSptLight.png"/> 
+				<img class="jcarousel-image" style="display:none;" alt="crazintellicool" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight100_24034.jpg" width="100" height="100" /> 
+				<img class="jcarousel-image-Large" alt="crazintellicool" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight200_24034.jpg" width="190" height="190" />
+			</a>
+		</div>
+		<div class="pnlSpotlightDetails">
+			<div class="sptltHandle"><a title="crazintellicool" href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=crazintellicool&amp;uid=eFEUmQjgZ5pATb2EYuXwZw==&amp;lid=416">crazintellicool</a></div>
+			<div class="sptltDetails">36-year-old man <br />
+											  Smyrna, GA </div>
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=crazintellicool&amp;uid=eFEUmQjgZ5pATb2EYuXwZw==&amp;lid=416" class="btnViewProfile">View Profile &raquo;</a>
+		</div>
+	</div>
+
+
+
+	<div style="clear: both;" class="spot_carousel sptlghtFemale">
+		<div class="sptltPic">
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=toots_553&amp;uid=UhTVwqKWYRGZfPpDZBD6iw==&amp;lid=416"> 
+				<img class="imgBorder" src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_brdrSptLight.png"/> 
+				<img class="jcarousel-image" style="display:none;" alt="toots_553" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight100_24035.jpg" width="100" height="100" /> 
+				<img class="jcarousel-image-Large" alt="toots_553" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight200_24035.jpg" width="190" height="190" />
+			</a>
+		</div>
+		<div class="pnlSpotlightDetails">
+			<div class="sptltHandle"><a title="toots_553" href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=toots_553&amp;uid=UhTVwqKWYRGZfPpDZBD6iw==&amp;lid=416">toots_553</a></div>
+			<div class="sptltDetails">31-year-old woman <br />
+											  Jacksonville, FL </div>
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=toots_553&amp;uid=UhTVwqKWYRGZfPpDZBD6iw==&amp;lid=416" class="btnViewProfile">View Profile &raquo;</a>
+		</div>
+	</div>
+
+	<div style="clear: both;" class="spot_carousel sptlghtFemale">
+		<div class="sptltPic">
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=kwalker4091&amp;uid=czToizUtpj8HCq7VeBHgtA==&amp;lid=416"> 
+				<img class="imgBorder" src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_brdrSptLight.png"/> 
+				<img class="jcarousel-image" style="display:none;" alt="kwalker4091" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight100_24036.jpg" width="100" height="100" /> 
+				<img class="jcarousel-image-Large" alt="kwalker4091" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight200_24036.jpg" width="190" height="190" />
+			</a>
+		</div>
+		<div class="pnlSpotlightDetails">
+			<div class="sptltHandle"><a title="kwalker4091" href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=kwalker4091&amp;uid=czToizUtpj8HCq7VeBHgtA==&amp;lid=416">kwalker4091</a></div>
+			<div class="sptltDetails">31-year-old woman <br />
+											  District Heights, MD </div>
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=kwalker4091&amp;uid=czToizUtpj8HCq7VeBHgtA==&amp;lid=416" class="btnViewProfile">View Profile &raquo;</a>
+		</div>
+	</div>
+
+	<div style="clear: both;" class="spot_carousel sptlghtFemale">
+		<div class="sptltPic">
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=xoHauteCocoaxo&amp;uid=s1gZHlqLXZSCQvgPUAk/yA==&amp;lid=416"> 
+				<img class="imgBorder" src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_brdrSptLight.png"/> 
+				<img class="jcarousel-image" style="display:none;" alt="xoHauteCocoaxo" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight100_24037.jpg" width="100" height="100" /> 
+				<img class="jcarousel-image-Large" alt="xoHauteCocoaxo" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight200_24037.jpg" width="190" height="190" />
+			</a>
+		</div>
+		<div class="pnlSpotlightDetails">
+			<div class="sptltHandle"><a title="xoHauteCocoaxo" href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=xoHauteCocoaxo&amp;uid=s1gZHlqLXZSCQvgPUAk/yA==&amp;lid=416">xoHauteCocoaxo</a></div>
+			<div class="sptltDetails">22-year-old woman <br />
+											  Greensboro, NC </div>
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=xoHauteCocoaxo&amp;uid=s1gZHlqLXZSCQvgPUAk/yA==&amp;lid=416" class="btnViewProfile">View Profile &raquo;</a>
+		</div>
+	</div>
+
+	<div style="clear: both;" class="spot_carousel sptlghtFemale">
+		<div class="sptltPic">
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=bostongirl620&amp;uid=/AFWVqSIXzkSyXTMN7V5vw==&amp;lid=416"> 
+				<img class="imgBorder" src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_brdrSptLight.png"/> 
+				<img class="jcarousel-image" style="display:none;" alt="bostongirl620" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight100_24038.jpg" width="100" height="100" /> 
+				<img class="jcarousel-image-Large" alt="bostongirl620" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight200_24038.jpg" width="190" height="190" />
+			</a>
+		</div>
+		<div class="pnlSpotlightDetails">
+			<div class="sptltHandle"><a title="bostongirl620" href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=bostongirl620&amp;uid=/AFWVqSIXzkSyXTMN7V5vw==&amp;lid=416">bostongirl620</a></div>
+			<div class="sptltDetails">27-year-old woman <br />
+											  Richland, WA </div>
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=bostongirl620&amp;uid=/AFWVqSIXzkSyXTMN7V5vw==&amp;lid=416" class="btnViewProfile">View Profile &raquo;</a>
+		</div>
+	</div>
+
+	<div style="clear: both;" class="spot_carousel sptlghtFemale">
+		<div class="sptltPic">
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=PeriwinkleBlue73&amp;uid=gYOMHSv2WAd59ZKYcfDloQ==&amp;lid=416"> 
+				<img class="imgBorder" src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_brdrSptLight.png"/> 
+				<img class="jcarousel-image" style="display:none;" alt="PeriwinkleBlue73" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight100_24039.jpg" width="100" height="100" /> 
+				<img class="jcarousel-image-Large" alt="PeriwinkleBlue73" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight200_24039.jpg" width="190" height="190" />
+			</a>
+		</div>
+		<div class="pnlSpotlightDetails">
+			<div class="sptltHandle"><a title="PeriwinkleBlue73" href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=PeriwinkleBlue73&amp;uid=gYOMHSv2WAd59ZKYcfDloQ==&amp;lid=416">PeriwinkleBlue73</a></div>
+			<div class="sptltDetails">37-year-old woman <br />
+											  North Hollywood, CA </div>
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=PeriwinkleBlue73&amp;uid=gYOMHSv2WAd59ZKYcfDloQ==&amp;lid=416" class="btnViewProfile">View Profile &raquo;</a>
+		</div>
+	</div>
+
+	<div style="clear: both;" class="spot_carousel sptlghtFemale">
+		<div class="sptltPic">
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=LadyClass1&amp;uid=/gazJUK3TsrD3a/A5sH+KQ==&amp;lid=416"> 
+				<img class="imgBorder" src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_brdrSptLight.png"/> 
+				<img class="jcarousel-image" style="display:none;" alt="LadyClass1" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight100_24040.jpg" width="100" height="100" /> 
+				<img class="jcarousel-image-Large" alt="LadyClass1" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight200_24040.jpg" width="190" height="190" />
+			</a>
+		</div>
+		<div class="pnlSpotlightDetails">
+			<div class="sptltHandle"><a title="LadyClass1" href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=LadyClass1&amp;uid=/gazJUK3TsrD3a/A5sH+KQ==&amp;lid=416">LadyClass1</a></div>
+			<div class="sptltDetails">27-year-old woman <br />
+											  San Diego, CA </div>
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=LadyClass1&amp;uid=/gazJUK3TsrD3a/A5sH+KQ==&amp;lid=416" class="btnViewProfile">View Profile &raquo;</a>
+		</div>
+	</div>
+
+	<div style="clear: both;" class="spot_carousel sptlghtFemale">
+		<div class="sptltPic">
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=yah_mon&amp;uid=odWpRqc4LOUs3HLmzGDalQ==&amp;lid=416"> 
+				<img class="imgBorder" src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_brdrSptLight.png"/> 
+				<img class="jcarousel-image" style="display:none;" alt="yah_mon" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight100_24041.jpg" width="100" height="100" /> 
+				<img class="jcarousel-image-Large" alt="yah_mon" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight200_24041.jpg" width="190" height="190" />
+			</a>
+		</div>
+		<div class="pnlSpotlightDetails">
+			<div class="sptltHandle"><a title="yah_mon" href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=yah_mon&amp;uid=odWpRqc4LOUs3HLmzGDalQ==&amp;lid=416">yah_mon</a></div>
+			<div class="sptltDetails">28-year-old woman <br />
+											  Dallas, TX </div>
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=yah_mon&amp;uid=odWpRqc4LOUs3HLmzGDalQ==&amp;lid=416" class="btnViewProfile">View Profile &raquo;</a>
+		</div>
+	</div>
+
+	<div style="clear: both;" class="spot_carousel sptlghtFemale">
+		<div class="sptltPic">
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=jennileigh25&amp;uid=DRjznU6Z2eYr1p+y0jyqDw==&amp;lid=416"> 
+				<img class="imgBorder" src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_brdrSptLight.png"/> 
+				<img class="jcarousel-image" style="display:none;" alt="jennileigh25" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight100_24042.jpg" width="100" height="100" /> 
+				<img class="jcarousel-image-Large" alt="jennileigh25" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight200_24042.jpg" width="190" height="190" />
+			</a>
+		</div>
+		<div class="pnlSpotlightDetails">
+			<div class="sptltHandle"><a title="jennileigh25" href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=jennileigh25&amp;uid=DRjznU6Z2eYr1p+y0jyqDw==&amp;lid=416">jennileigh25</a></div>
+			<div class="sptltDetails">27-year-old woman <br />
+											  Spring, TX </div>
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=jennileigh25&amp;uid=DRjznU6Z2eYr1p+y0jyqDw==&amp;lid=416" class="btnViewProfile">View Profile &raquo;</a>
+		</div>
+	</div>
+
+	<div style="clear: both;" class="spot_carousel sptlghtFemale">
+		<div class="sptltPic">
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=carahaneline&amp;uid=1mUG3owDbsARWdVMTs57Fw==&amp;lid=416"> 
+				<img class="imgBorder" src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_brdrSptLight.png"/> 
+				<img class="jcarousel-image" style="display:none;" alt="carahaneline" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight100_24044.jpg" width="100" height="100" /> 
+				<img class="jcarousel-image-Large" alt="carahaneline" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight200_24044.jpg" width="190" height="190" />
+			</a>
+		</div>
+		<div class="pnlSpotlightDetails">
+			<div class="sptltHandle"><a title="carahaneline" href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=carahaneline&amp;uid=1mUG3owDbsARWdVMTs57Fw==&amp;lid=416">carahaneline</a></div>
+			<div class="sptltDetails">23-year-old woman <br />
+											  San Diego, CA </div>
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=carahaneline&amp;uid=1mUG3owDbsARWdVMTs57Fw==&amp;lid=416" class="btnViewProfile">View Profile &raquo;</a>
+		</div>
+	</div>
+
+	<div style="clear: both;" class="spot_carousel sptlghtFemale">
+		<div class="sptltPic">
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=TFaz24&amp;uid=txzMfCqaF60Fhed9ZIxQ9g==&amp;lid=416"> 
+				<img class="imgBorder" src="/web/20101002062612im_/http://cp.match.com/cppp/msn/index/10157/Action/images/10157_ActionIndex_brdrSptLight.png"/> 
+				<img class="jcarousel-image" style="display:none;" alt="TFaz24" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight100_24076.jpg" width="100" height="100" /> 
+				<img class="jcarousel-image-Large" alt="TFaz24" src="/web/20101002062612im_/http://images.match.com/match/matchscene/articles/spotlight200_24076.jpg" width="190" height="190" />
+			</a>
+		</div>
+		<div class="pnlSpotlightDetails">
+			<div class="sptltHandle"><a title="TFaz24" href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=TFaz24&amp;uid=txzMfCqaF60Fhed9ZIxQ9g==&amp;lid=416">TFaz24</a></div>
+			<div class="sptltDetails">23-year-old woman <br />
+											  Providence, RI </div>
+			<a href="/web/20101002062612/http://dating.msn.com/profile/showprofiledl.aspx?tp=ms&amp;handle=TFaz24&amp;uid=txzMfCqaF60Fhed9ZIxQ9g==&amp;lid=416" class="btnViewProfile">View Profile &raquo;</a>
+		</div>
+	</div>
+
+
+</div>
+
+
+			
+		
+
+<!-- 
+PC=30301
+SID=e611f9f0-7f9b-4412-83f8-6054d4d60daa
+Theme=80
+TrackingID=525877
+Server=52
+APPID=001
+RN=1387651 
+-->
+
+  <!-- PageTimer:00:00:00.1718673 -->
+ </body>
+</html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 6:26:12 Oct 2, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:13:33 Jan 7, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

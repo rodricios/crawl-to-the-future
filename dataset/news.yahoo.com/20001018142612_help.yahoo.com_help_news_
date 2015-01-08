@@ -1,0 +1,321 @@
+<html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app2.us.archive.org";archive_analytics.values.server_ms=275;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<title>Yahoo! Help - Yahoo! News</title>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+</head>
+<body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://help.yahoo.com/help/news";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "18";
+var displayMonth = "Oct";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://help.yahoo.com/help/news" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20001018115805" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20000815052758/http://help.yahoo.com/help/news/" title="15 Aug 2000">AUG</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 11:58:05 Oct 18, 2000">OCT</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20010124083300/http://help.yahoo.com/help/news/" title="24 Jan 2001"><strong>JAN</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20001018092721/http://help.yahoo.com/help/news" title="9:27:21 Oct 18, 2000"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 11:58:05 Oct 18, 2000">18</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20001109122300/http://help.yahoo.com/help/news" title="12:23:00 Nov 9, 2000"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/19991013032750/http://help.yahoo.com/help/news" title="13 Oct 1999"><strong>1999</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 11:58:05 Oct 18, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20011019004532/http://help.yahoo.com/help/news" title="19 Oct 2001"><strong>2001</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20001018115805*/http://help.yahoo.com/help/news" title="See a list of every capture for this URL">666 captures</a>
+           <div class="r" title="Timespan for captures of this URL">30 Apr 99 - 17 Nov 14</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000100000100_2000:9:000100010210_2001:-1:112101025efa_2002:-1:110102062694_2003:-1:011202020201_2004:-1:110108786767_2005:-1:688776686689_2006:-1:762924572255_2007:-1:754535454401_2008:-1:102010685001_2009:-1:010101010110_2010:-1:201201010102_2011:-1:110212120101_2012:-1:210021001110_2013:-1:201020111020_2014:-1:002000100010_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<center>
+<table border=0 cellpadding=0 cellspacing=0 width="585"><tr><td width="1%"><a href="/web/20001018115805/http://dailynews.yahoo.com/"><img border=0 src="/web/20001018115805im_/http://us.yimg.com/i/dn/main4.gif" alt="Yahoo! News" width=250 height=31></a></td><td valign=top align=right><font face="arial,helvetica" size=-1><a href="/web/20001018115805/http://www.yahoo.com/">Yahoo!</a> - <a href="/web/20001018115805/http://my.yahoo.com/">My Yahoo!</a></font><hr size=1 noshade></td></tr></table>
+<p>
+<table border=0 cellpadding=4 cellspacing=0 width=585>
+<tr><td bgcolor="#9999cc"><font face="Arial" color="#000000"
+size="+1"><b>Yahoo! News Help</b></font></td></tr>
+
+<tr><td><font face=arial size="-1"><b><a href="/web/20001018115805/http://dailynews.yahoo.com/">Yahoo! News</a></b> &gt; 
+  <b>News Help</b></font>
+</td></tr></table>
+
+<table border=0 cellpadding=0 cellspacing=0 width=585>
+<tr valign=top><td width="1%" bgcolor="#dcdcdc">
+<table border=0 cellspacing=0 cellpadding=2 width="100%"> 
+<!-- top 5 list -->
+<tr><td bgcolor="#ffffcc" colspan=2><font face="Arial"><b>Top&nbsp;5&nbsp;Questions</b></font></td></tr>
+<tr><td width="1%" valign=top><small><b>1.</b></small></td>
+<td><small><a href="/web/20001018115805/http://help.yahoo.com/help/us/news/news-03.html">How can I give feedback about coverage of a story?</a></small></td></tr>
+<tr><td width="1%" valign=top><small><b>2.</b></small></td>
+<td><small><a href="/web/20001018115805/http://help.yahoo.com/help/us/news/news-06.html">What should I do if news isn't updating?</a></small></td></tr>
+<tr><td width="1%" valign=top><small><b>3.</b></small></td>
+<td><small><a href="/web/20001018115805/http://help.yahoo.com/help/us/news/news-04.html">How do I find archived news?</a></small></td></tr>
+<tr><td width="1%" valign=top><small><b>4.</b></small></td>
+<td><small><a href="/web/20001018115805/http://help.yahoo.com/help/us/edit/">I can't sign in to My Yahoo!</a></small></td></tr>
+<tr><td width="1%" valign=top><small><b>5.</b></small></td>
+<td><small><a href="/web/20001018115805/http://help.yahoo.com/help/us/news/news-10.html">Where can I discuss the news with other people?</a></small></td></tr>
+<!-- end top 5 -->
+<tr><td colspan=2><hr width=180></td></tr>
+<!-- relevant links -->
+<tr><td bgcolor="#ffffcc" colspan=2>
+<font face=Arial><b>Related&nbsp;Links</b></font>
+</td></tr>
+<tr><td width="1%" valign=top align=right> &#183;</td>
+<td><small><a href="/web/20001018115805/http://headlines.yahoo.com/Full_Coverage/">Full Coverage</a></small></td></tr>
+<tr><td width="1%" valign=top align=right> &#183;</td>
+<td><small><a href="/web/20001018115805/http://weather.yahoo.com/">Yahoo! Weather</a></small></td></tr>
+<tr><td width="1%" valign=top align=right> &#183; </td>
+<td><small><a href="/web/20001018115805/http://help.yahoo.com/">Yahoo! Help Central</a></small></td></tr>
+<!-- end rel links -->
+<tr><td colspan=2>
+
+</td></tr></table>
+</td><td>&nbsp;</td>
+<td valign=top>
+<table border=0 cellspacing=0 cellpadding=2 width="100%">
+
+<!-- questions -->
+
+<tr><td bgcolor="#dcdcdc"><font face="Arial"><b>Finding News</b></font></td></tr>
+<tr><td valign=top><ul>
+<li><a href="/web/20001018115805/http://help.yahoo.com/help/us/news/news-01.html">What kinds of news can I find here?</a>
+<li><a href="/web/20001018115805/http://help.yahoo.com/help/us/news/news-02.html">How do I find news about a particular topic?</a>
+<li><a href="/web/20001018115805/http://help.yahoo.com/help/us/news/news-04.html">How long is news archived? How do I find the archives?</a>
+<li><a href="/web/20001018115805/http://help.yahoo.com/help/us/news/news-05.html">Why don't you report local news for my area?</a>
+</ul></td></tr>
+
+<tr><td bgcolor="#dcdcdc"><font face="Arial"><b>About Full Coverage</b></font></td></tr>
+<tr><td valign=top><ul>
+<li><a href="/web/20001018115805/http://help.yahoo.com/help/us/news/news-16.html">What is Full Coverage</a>
+<li><a href="/web/20001018115805/http://help.yahoo.com/help/us/news/news-17.html">How do I submit a link to Full Coverage</a>
+</ul></td></tr>
+
+<tr><td bgcolor="#dcdcdc"><font face="Arial"><b>About News Sources</b></font></td></tr>
+<tr><td valign=top><ul>
+<li><a href="/web/20001018115805/http://help.yahoo.com/help/us/news/news-03.html">What are your sources? How can I give them feedback?</a>
+<li><a href="/web/20001018115805/http://help.yahoo.com/help/us/news/news-06.html">How often is the news updated?</a>
+<li><a href="/web/20001018115805/http://help.yahoo.com/help/us/news/news-07.html">Can I use Yahoo! News stories on my site?</a>
+<li><a href="/web/20001018115805/http://help.yahoo.com/help/us/news/news-08.html">How do I submit a press release?</a>
+<li><a href="/web/20001018115805/http://help.yahoo.com/help/us/news/news-09.html">How is your business news indexed?</a>
+<li><a href="/web/20001018115805/http://help.yahoo.com/help/us/news/news-10.html">Where can I discuss the news with other people?</a>
+</ul></td></tr>
+
+<tr><td bgcolor="#dcdcdc"><font face="Arial"><b>About the Yahoo! News site</b></font></td></tr>
+<tr><td valign=top><ul>
+<li><a href="/web/20001018115805/http://help.yahoo.com/help/us/news/news-19.html">What's new on Yahoo! News?</a>
+<li><a href="/web/20001018115805/http://help.yahoo.com/help/us/news/news-11.html">What can I do with the left-side modules?</a>
+<li><a href="/web/20001018115805/http://help.yahoo.com/help/us/news/news-12.html">Where can I get the news with stock ticker symbols in the stories?</a>
+<li><a href="/web/20001018115805/http://help.yahoo.com/help/us/news/news-13.html">Where do I report an error, formatting problem or outdated story?</a>
+<li><a href="/web/20001018115805/http://help.yahoo.com/help/us/news/news-14.html">Can I receive stories via email?</a>
+</ul></td></tr>
+
+<tr><td bgcolor="#dcdcdc"><font face="Arial"><b>Audio and video on Yahoo! News</b></font></td></tr>
+<tr><td valign=top><ul>
+<li><a href="/web/20001018115805/http://help.yahoo.com/help/us/news/news-21.html">What kinds of audio and video can I get on Yahoo! News?</a>
+<li><a href="/web/20001018115805/http://help.yahoo.com/help/us/news/news-22.html">Who are your sources for audio and video news?</a>
+<li><a href="/web/20001018115805/http://help.yahoo.com/help/us/news/news-23.html">How is the audio and video on Yahoo! News organized?</a>
+<li><a href="/web/20001018115805/http://help.yahoo.com/help/us/news/news-24.html">Which audio and video players do I need?</a>
+<li><a href="/web/20001018115805/http://help.yahoo.com/help/us/news/news-25.html">What is the Yahoo! News player?</a>
+<li><a href="/web/20001018115805/http://help.yahoo.com/help/us/news/news-26.html">Where can I get more audio and video news?</a>
+</ul></td></tr>
+
+<!-- end_questions -->
+</table>
+</td></tr></table>
+<p>
+<hr width=585>
+<font size="-2" face="arial">
+Copyright &copy; 2000 <a href="/web/20001018115805/http://www.yahoo.com/">Yahoo!</a> Inc. All rights reserved. <a href="/web/20001018115805/http://docs.yahoo.com/info/terms/">Terms of Service</a> 
+</font></center>
+</body>
+</html>
+ 
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 11:58:05 Oct 18, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:55:45 Jan 7, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

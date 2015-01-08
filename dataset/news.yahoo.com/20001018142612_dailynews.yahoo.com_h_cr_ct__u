@@ -1,0 +1,566 @@
+<html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app16.us.archive.org";archive_analytics.values.server_ms=204;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+var remote = null
+function rs(n,u,w,h) {
+remote = window.open(u, n, 'width=' + w + ',height=' + h +',resizable=no,scrollbars=no');
+if (remote != null) {
+if (remote.opener == null)
+remote.opener = self;
+window.name = 'yahooNewsRoot';
+remote.location.href = u;
+}
+}
+
+function formHandler(form){
+var URL = document.form.u.options[document.form.u.selectedIndex].value;
+window.location.href = URL;
+}
+
+</SCRIPT>
+
+<title>Crimes and Trials - CourtTV </title>
+</head>
+<body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://dailynews.yahoo.com/h/cr/ct/?u";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "15";
+var displayMonth = "Nov";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://dailynews.yahoo.com/h/cr/ct/?u" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20001115051500" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Oct
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 5:15:00 Nov 15, 2000">NOV</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20010413114209/http://dailynews.yahoo.com/h/cr/ct/?u" title="13 Apr 2001"><strong>APR</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 5:15:00 Nov 15, 2000">15</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20001206234400/http://dailynews.yahoo.com/h/cr/ct/?u" title="23:44:00 Dec 6, 2000"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   1999
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 5:15:00 Nov 15, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20011116172434/http://dailynews.yahoo.com/h/cr/ct/?u" title="16 Nov 2001"><strong>2001</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20001115051500*/http://dailynews.yahoo.com/h/cr/ct/?u" title="See a list of every capture for this URL">272 captures</a>
+           <div class="r" title="Timespan for captures of this URL">15 Nov 00 - 30 Mar 05</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:10:000000000017_2001:-1:00010101efd7_2002:-1:210000000000_2003:-1:000100010001_2004:-1:000101000000_2005:-1:101000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<center>
+
+<!-- _JC_  HEADER -->
+
+<table cellpadding=2 cellspacing=0 BORDER=0 width="675">
+<tr>
+<td width="1%"><a href="/web/20001115051500/http://dailynews.yahoo.com/h/?u"><img src="/web/20001115051500im_/http://us.i1.yimg.com/us.yimg.com/i/dn/main4.gif" border=0 width=250 height=31 alt="Yahoo! News"></a></td>
+<td align="right" nowrap><a href="/web/20001115051500/http://dailynews.yahoo.com/"><font face="arial,helvetica" size=2>Home</font></a><font face="arial,helvetica" size=2> - <a href="/web/20001115051500/http://www.yahoo.com/">Yahoo!</a> - <a href="/web/20001115051500/http://my.yahoo.com/">My Yahoo!</a> - <a href="/web/20001115051500/http://alerts.yahoo.com/config/set_notification?.t=n">News Alerts</a> - <a href="/web/20001115051500/http://help.yahoo.com/help/news/">Help</a></font><br>
+<hr size=1 noshade></td>
+<td width="1%">
+<a href="/web/20001115051500/http://rd.yahoo.com/DailyNews/*http://www.courttv.com/">
+<!-- _JC_  LOGO -->
+<img src="/web/20001115051500im_/http://us.i1.yimg.com/us.yimg.com/i/dn/ctv.gif" border=0 alt="CourtTV" width=128 height=40></a>
+<!-- _JC_  END LOGO -->
+</td>
+</tr>
+</table>
+<!-- _JC_  END HEADER -->
+
+<!-- _JC_  ADCALL -->
+<p>
+<table width=675 border=0 cellpadding=3>
+<tr>
+<td valign="middle">
+ <!-- SpaceID=0 robot -->
+
+</td>
+<td align="center">
+ <!-- SpaceID=0 robot -->
+
+</td>
+</tr>
+</table>
+<p>
+<!-- _JC_  END ADCALL -->
+
+
+<!-- _JC_  NAVIGATION -->
+<table border=0 cellspacing=0 cellpadding=0 width="675">
+<tr>
+<td colspan=2 align=center>
+<table border=0 cellspacing=0>
+<tr>
+<td align="center"><a href="/web/20001115051500/http://dailynews.yahoo.com/h/?u"><font size=2 face="arial,helvetica">Home</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001115051500/http://dailynews.yahoo.com/h/ts/?u"><font size=2 face="arial,helvetica">Top&nbsp;Stories</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001115051500/http://dailynews.yahoo.com/h/bs/?u"><font size=2 face="arial,helvetica">Business</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001115051500/http://dailynews.yahoo.com/h/tc/?u"><font size=2 face="arial,helvetica">Tech</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001115051500/http://dailynews.yahoo.com/h/pl/?u"><font size=2 face="arial,helvetica">Politics</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001115051500/http://dailynews.yahoo.com/h/wl/?u"><font size=2 face="arial,helvetica">World</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001115051500/http://dailynews.yahoo.com/h/lo/?u"><font size=2 face="arial,helvetica">Local</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001115051500/http://dailynews.yahoo.com/h/en/?u"><font size=2 face="arial,helvetica" >Entertainment</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001115051500/http://dailynews.yahoo.com/h/sp/?u"><font size=2 face="arial,helvetica">Sports</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001115051500/http://dailynews.yahoo.com/h/sc/?u"><font size=2 face="arial,helvetica">Science</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001115051500/http://dailynews.yahoo.com/h/hl/?u"><font size=2 face="arial,helvetica">Health</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001115051500/http://dailynews.yahoo.com/fc/"><font size=2 face="arial,helvetica">Full&nbsp;Coverage</font></a>&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr bgcolor="#333366">
+<td colspan=2>
+<table border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td height=5></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<!-- _JC_  END NAVIGATION -->
+
+
+<!-- _JC_  SECTION HEADER -->
+
+<table border=0 cellpadding=2 cellspacing=0 width="675">
+<tr bgcolor="#9999cc">
+<td><font face="arial,helvetica" size=4><b>
+Crimes and Trials
+News</b>
+</font><font face="arial,helvetica" size=2> - updated
+ 5:45 PM ET Nov 13
+</font></td>
+<td width="1%">
+<table cellpadding=3 cellspacing=0><tr>
+<td bgcolor="#ccccff" nowrap><IMG src="/web/20001115051500im_/http://us.i1.yimg.com/us.yimg.com/i/my/my16.gif" width=16 height=16 border=0 align=left alt="My"><FONT face=arial size="-2">
+<a href="/web/20001115051500/http://srd.yahoo.com/addtomy/*http://edit.yahoo.com/config/set_news?.add=crtv">Add to My Yahoo!</a></font></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<!-- _JC_  END SECTION HEADER -->
+
+<!-- _JC_  MAIN TABLE -->
+<table cellpadding=3 border=0 cellspacing=0 width="675">
+<tr valign="top">
+<td width=200>
+<!-- _JC_  LEFT COLUMN -->
+
+<!-- _JC_  LEFT COLUMN -->
+<table border=0 cellpadding=3 cellspacing=0 width="100%">
+<tr bgcolor=ccccff><td><b><font face="arial,helvetica">
+Audio/Video</font></b></td></tr>
+<tr><td bgcolor="#eeeeee"><table cellspacing=0 cellpadding=2 width="100%" border=0><tr><td colspan=2 valign="top" bgcolor="#dcdcdc">
+<font size=2 face="Arial,Helvetica"><b>
+<a href="/web/20001115051500/http://dailynews.yahoo.com/h/a/g/ts/">Reuters Video</a>
+</b></font>
+</td></tr>
+ <tr><td width="1%" valign="top"><font size=2><img src="/web/20001115051500im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13></font></td><td>
+<a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001115051500/http://vision.yahoo.com/lc?&amp;p=news&amp;l=SAM&amp;a=0,30&amp;t=Israel%20WIlling%20To%20Postpone%20Deadline&amp;sid=706141&amp;f=31042383&amp;m=rnv&amp;r=any&quot;,640,440);"><font size=2>Israel WIlling To Postpone Deadline</font></a>
+</td></tr>
+
+<tr><td width="1%" valign="top"><font size=2><img src="/web/20001115051500im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13></font></td><td>
+<a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001115051500/http://vision.yahoo.com/lc?&amp;p=news&amp;l=SAM&amp;a=0,30&amp;t=Three%20Share%20Nobel%20For%20Medicine&amp;sid=703757&amp;f=31042451&amp;m=rnv&amp;r=any&quot;,640,440);"><font size=2>Three Share Nobel For Medicine</font></a>
+</td></tr>
+
+<tr><td width="1%" valign="top"><font size=2><img src="/web/20001115051500im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13></font></td><td>
+<a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001115051500/http://vision.yahoo.com/lc?&amp;p=news&amp;l=SAM&amp;a=0,30&amp;t=Kostunica%20Faces%20Challenge%20Of%20Reviving%20Yugoslavia&amp;sid=703393&amp;f=31042383&amp;m=rnv&amp;r=any&quot;,640,440);"><font size=2>Kostunica Faces Challenge Of Reviving Yugoslavia</font></a>
+</td></tr>
+
+<tr><td colspan=2 valign="top" bgcolor="#dcdcdc">
+<font size=2 face="Arial,Helvetica"><b>
+<a href="/web/20001115051500/http://dailynews.yahoo.com/npr/?http://www.npr.org">NPR</a>
+</b></font>
+</td></tr>
+ <tr><td valign=top><b><img src="/web/20001115051500im_/http://us.i1.yimg.com/us.yimg.com/i/my/sound.gif" width=16 height=13 border=0 alt="Audio"></b></td><td valign=top><small><a href="/web/20001115051500/http://www.yahoo.com/dailynews/npr/?http://www.npr.org/ramfiles/atcupdate/20001114.atcupdate.02.ram">Bush Clings to Florida Lead after Latest Tally</a></small></td></tr>
+<tr><td valign=top><b><img src="/web/20001115051500im_/http://us.i1.yimg.com/us.yimg.com/i/my/sound.gif" width=16 height=13 border=0 alt="Audio"></b></td><td valign=top><small><a href="/web/20001115051500/http://www.yahoo.com/dailynews/npr/?http://www.npr.org/ramfiles/atc/20001114.atc.15.ram">Protesters Demand Philippine President Quit</a></small></td></tr>
+<tr><td valign=top><b><img src="/web/20001115051500im_/http://us.i1.yimg.com/us.yimg.com/i/my/sound.gif" width=16 height=13 border=0 alt="Audio"></b></td><td valign=top><small><a href="/web/20001115051500/http://www.yahoo.com/dailynews/npr/?http://www.npr.org/ramfiles/atc/20001114.atc.16.ram">Terrorist on Stand at Lockerbie Trial</a></small></td></tr>
+<tr><td colspan=2 valign="top" bgcolor="#dcdcdc">
+<font size=2 face="Arial,Helvetica"><b>
+<a href="/web/20001115051500/http://dailynews.yahoo.com/h/a/g/yn/latest?u">Yahoo! News</a>
+</b></font>
+</td></tr>
+ <tr><td width="1%" valign="top">
+<font size=2><img src="/web/20001115051500im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13></font></td><td>
+<font size=2><a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001115051500/http://vision.yahoo.com/lc?t=news&amp;p=news&amp;l=SAM&amp;a=0,30&amp;id=600416&amp;f=33338352&amp;m=rnv&amp;r=any&amp;site=/web/20001115051500/http://news.yahoo.com/election2000/?u&quot;,100,100);">History on Hold While America Continues to Wait for Florida Recount</a> - WTVF, Nashville</font>
+</td></tr>
+
+<tr><td width="1%" valign="top">
+<font size=2><img src="/web/20001115051500im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13></font></td><td>
+<font size=2><a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001115051500/http://vision.yahoo.com/lc?t=news&amp;p=news&amp;l=SAM&amp;a=0,30&amp;id=442887&amp;f=33338352&amp;m=rnv&amp;r=any&amp;site=/web/20001115051500/http://news.yahoo.com/election2000/?u&quot;,100,100);">Deadline for Florida County Recounts Arrives, But No Results Yet</a> - KENS, San Antonio</font>
+</td></tr>
+
+<tr><td width="1%" valign="top">
+<font size=2><img src="/web/20001115051500im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13></font></td><td>
+<font size=2><a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001115051500/http://vision.yahoo.com/lc?t=news&amp;p=news&amp;l=SAM&amp;a=0,30&amp;id=589449&amp;f=33338352&amp;m=rnv&amp;r=any&amp;site=/web/20001115051500/http://news.yahoo.com/election2000/?u&quot;,100,100);">Florida Counties Kick It into High Gear To Complete Recount By Deadline</a> - WKMG, Orlando</font>
+</td></tr>
+
+<tr><td colspan=2 valign="top" bgcolor="#dcdcdc">
+<font size=2 face="Arial,Helvetica"><b>
+<a href="/web/20001115051500/http://www.abcnews.com/">ABCNews Radio</a>
+</b></font>
+</td></tr>
+<tr><td valign=top><b><img src="/web/20001115051500im_/http://us.i1.yimg.com/us.yimg.com/i/my/sound.gif" width=16 height=13 border=0 alt="Audio"></b></td><td valign=top><small><a href="/web/20001115051500/http://play.rbn.com/?abcradio/radionews/demand/abcnews.ra">Hourly Top Stories</a></small></td></tr>
+</table>
+
+</td></tr>
+</table><br>
+<table border=0 cellpadding=3 cellspacing=0 width="100%">
+<tr bgcolor=ccccff><td><b><font face="arial,helvetica">
+Resources</font></b></td></tr>
+<tr><td bgcolor="#eeeeee"><table cellspacing=0 cellpadding=2 width="100%" border=0><tr><td colspan=2 valign="top" bgcolor="#dcdcdc">
+<font size=2 face="Arial,Helvetica"><b>
+Community Tools
+</b></font>
+</td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001115051500/http://messages.yahoo.com/yahoo/Cultures___Community/Crime/index.html"><small>Message Boards</small></a></td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001115051500/http://dir.clubs.yahoo.com/Cultures___Community/Crime/"><small>Clubs</small></a></td></tr>
+<tr><td colspan=2 valign="top" bgcolor="#dcdcdc">
+<font size=2 face="Arial,Helvetica"><b>
+<a href="/web/20001115051500/http://dir.yahoo.com/Society_and_Culture/Crime/">Web Sites</a>
+</b></font>
+</td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001115051500/http://dir.yahoo.com/Society_and_Culture/Crime/Crimes/"><small>Types of Crimes</small></a></td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001115051500/http://dir.yahoo.com/Society_and_Culture/Crime/News_and_Media/"><small>Crime News and Media</small></a></td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001115051500/http://dir.yahoo.com/Government/Law/News_and_Media/"><small>Law News and Media</small></a></td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001115051500/http://dir.yahoo.com/Society_and_Culture/Crime/Correction_and_Rehabilitation/"><small>Correction and Rehabilitation</small></a></td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001115051500/http://dir.yahoo.com/Society_and_Culture/Crime/Crime_Prevention/"><small>Crime Prevention</small></a></td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001115051500/http://dir.yahoo.com/Society_and_Culture/Crime/Law_Enforcement/"><small>Law Enforcement</small></a></td></tr>
+<tr><td colspan=2 valign="top" bgcolor="#dcdcdc">
+<font size=2 face="Arial,Helvetica"><b>
+<a href="/web/20001115051500/http://www.broadcast.com/">Yahoo! Events</a>
+</b></font>
+</td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001115051500/http://www.broadcast.com/News_and_Politics/Issues/Crime/"><small>Crime</small></a></td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001115051500/http://www.broadcast.com/News_and_Politics/Trials/"><small>Trials</small></a></td></tr>
+</table>
+
+</td></tr>
+</table><br>
+
+<!-- _JC_  END RESOURCES -->
+
+</td>
+<!-- _JC_  END LEFT COLUMN -->
+
+
+<!-- _JC_  MAIN CONTENT-RIGHT 2 -->
+<td valign="top">
+<center><font face="arial,helvetica" size=2><b>
+<a href=/web/20001115051500/http://dailynews.yahoo.com/h/cr/ao/?u>APBNews.com</a> &nbsp;- &nbsp;CourtTV &nbsp;
+</b></font></center>
+<p>
+<!-- _JC_  MARKET SNAPSHOT -->
+<!-- _JC_  empty right hand -->
+<!-- _JC_  END MARKET SNAPSHOT -->
+
+<!-- _JC_  STORIES -->
+ <a href="/web/20001115051500/http://dailynews.yahoo.com/h/ct/20001113/cr/cliffhanger_court_tv_s_fred_graham_on_the_2000_elections_1.html"><b>Cliffhanger: Court TV's Fred Graham on the 2000 elections</b></a><br><font size=-1>Court TV Host:Our guest is going to be Court TV chief anchor and managing editor Fred Graham about this very unusual day in the history of presidential elections. Thanks for joining us, Fred.   </font> <br><br>
+<a href="/web/20001115051500/http://dailynews.yahoo.com/h/ct/20001113/cr/the_florida_vote_recount_1.html"><b>The Florida vote recount</b></a><br><font size=-1>Nov. 8, 2000, 6 p.m. ET (Court TV) &#151;    Court TV's Florida bureau chief Aletse Mellado analyzes the vote recount and election results in the state.  </font> <br><br>
+<a href="/web/20001115051500/http://dailynews.yahoo.com/h/ct/20001113/cr/the_battling_bills_a_look_at_the_2000_election_1.html"><b>The Battling Bills: A look at the 2000 election</b></a><br><font size=-1>Nov. 8, 2000, 5 p.m. (Court TV) &#151;   Republican Bill Palatucci and Democrat Bill Pascrell, III, debate the 2000 presidential election.   </font> <br><br>
+<a href="/web/20001115051500/http://dailynews.yahoo.com/h/ct/20001113/cr/state_rundown_crime_and_justice_ballot_proposals_across_the_country_3.html"><b>State Rundown: Crime and justice ballot proposals across the
+country</b></a><br><font size=-1>A number of crime and justice proposals appeared on ballots across the country on Election Day 2000. View CourtTV.com's breakdown of these issues.  </font> <br><br>
+<a href="/web/20001115051500/http://dailynews.yahoo.com/h/ct/20001113/cr/florida_sex_abuse_trial_will_be_a_he_said-she_said_4.html"><b>Florida sex abuse trial will be a he said-she said</b></a><br><font size=-1>SANFORD, Fla. (Court TV) &#151;   A Florida jury will soon decide if a drug counselor used his position of authority to coerce a female probationer into having a sexual encounter with him.   </font> <br><br>
+<a href="/web/20001115051500/http://dailynews.yahoo.com/h/ct/20001107/cr/arizona_v_jacqueline_caliri_the_second_br_spouse_killer_or_battered_wife_trial_2.html"><b>Arizona v. Jacqueline Caliri: The Second <br> Spouse Killer or
+Battered Wife Trial</b></a><br><font size=-1>PHOENIX, Ariz. (Court TV) &#151; For the second time, an Arizona jury will decide whether Jacqueline Caliri is a cold-blooded killer or a battered, misunderstood wife.   </font> <br><br>
+<a href="/web/20001115051500/http://dailynews.yahoo.com/h/ct/20001106/cr/timeline_of_the_shooting_1.html"><b>Timeline of the Shooting</b></a><br><font size=-1>Nov. 15, 1999, 9:45 p.m. : Cherica Adams and Rae Carruth see the film "The Bone Collector" at the Regal Cinemas in Charlotte. </font> <br><br>
+<a href="/web/20001115051500/http://dailynews.yahoo.com/h/ct/20001106/cr/leaked_documents_seem_to_bolster_prosecution_s_case_1.html"><b>Leaked documents seem to bolster prosecution's case</b></a><br><font size=-1>CHARLOTTE, N.C. (Court TV) &#151;   CHARLOTTE, N.C. (Court TV) &#151; Rae Carruth may have thought about having his pregnant girlfriend attacked, but he didn't kill her, a female friend of the former professional football player told police. </font> <br><br>
+<a href="/web/20001115051500/http://dailynews.yahoo.com/h/ct/20001106/cr/carruth_capital_murder_trial_the_statutes_1.html"><b>Carruth capital murder trial: The Statutes</b></a><br><font size=-1>Rae Carruth is charged with murder, conspiracy to commit murder and using an instrument to destroy an unborn child. Here are the state statutes he is accused of violating: </font> <br><br>
+<a href="/web/20001115051500/http://dailynews.yahoo.com/h/ct/20001103/cr/rae_carruth_playing_for_his_life_2.html"><b>Rae Carruth playing for his life</b></a><br><font size=-1>CHARLOTTE, N.C. (Court TV) &#151;   His football career may have fizzled before ever coming close to a Superbowl, but former Carolina Panther Rae Carruth now faces the ultimate challenge. He is on trial for his life. </font> <br><br>
+<font face="Arial,Helvetica" size=3><b>Earlier Stories</b></font><br>
+<a href="/web/20001115051500/http://dailynews.yahoo.com/h/ct/20001103/cr/on_the_field_carruth_struggled_to_regain_early_glory_1.html">On the field, Carruth struggled to regain early glory</a><br>
+<a href="/web/20001115051500/http://dailynews.yahoo.com/h/ct/20001103/cr/carruth_murder_trial_profiles_the_triggerman_1.html">Carruth murder trial profiles: The Triggerman</a><br>
+<a href="/web/20001115051500/http://dailynews.yahoo.com/h/ct/20001103/cr/carruth_murder_trial_profile_rae_carruth_1.html">Carruth murder trial profile: Rae Carruth</a><br>
+<a href="/web/20001115051500/http://dailynews.yahoo.com/h/ct/20001103/cr/carruth_murder_trial_profile_the_victim_1.html">Carruth murder trial profile: The Victim</a><br>
+<a href="/web/20001115051500/http://dailynews.yahoo.com/h/ct/20001103/cr/carruth_murder_trial_profile_the_child_1.html">Carruth murder trial profile: The Child</a><br>
+<a href="/web/20001115051500/http://dailynews.yahoo.com/h/ct/20001103/cr/carruth_murder_trial_profiles_the_co-defendants_1.html">Carruth murder trial profiles: The Co-Defendants</a><br>
+
+
+<!-- _JC_  END STORIES -->
+<p>
+
+<!-- _JC_  ARCHIVES DROPDOWN -->
+<table width="100%" border=0>
+<tr>
+<td width=200 valign=middle><font face="Arial,Helvetica" size=2><b>Archived Stories by Date:</b></font></td>
+<form name="form" action=/web/20001115051500/http://rc.yahoo.com/jump>
+<td valign=middle align=left width=275>
+<select name="u" size=1>
+ <option value="http://dailynews.yahoo.com/h/cr/ct/story.html?s=v/ct/20001109/cr/index.html">Nov 09</option>
+<option value="http://dailynews.yahoo.com/h/cr/ct/story.html?s=v/ct/20001107/cr/index.html">Nov 07</option>
+<option value="http://dailynews.yahoo.com/h/cr/ct/story.html?s=v/ct/20001106/cr/index.html">Nov 06</option>
+<option value="http://dailynews.yahoo.com/h/cr/ct/story.html?s=v/ct/20001103/cr/index.html">Nov 03</option>
+<option value="http://dailynews.yahoo.com/h/cr/ct/story.html?s=v/ct/20001031/cr/index.html">Oct 31</option>
+<option value="http://dailynews.yahoo.com/h/cr/ct/story.html?s=v/ct/20001027/cr/index.html">Oct 27</option>
+<option value="http://dailynews.yahoo.com/h/cr/ct/story.html?s=v/ct/20001026/cr/index.html">Oct 26</option>
+<option value="http://dailynews.yahoo.com/h/cr/ct/story.html?s=v/ct/20001024/cr/index.html">Oct 24</option>
+<option value="http://dailynews.yahoo.com/h/cr/ct/story.html?s=v/ct/20001023/cr/index.html">Oct 23</option>
+<option value="http://dailynews.yahoo.com/h/cr/ct/story.html?s=v/ct/20001020/cr/index.html">Oct 20</option>
+<option value="http://dailynews.yahoo.com/h/cr/ct/story.html?s=v/ct/20001019/cr/index.html">Oct 19</option>
+
+</select><input type=submit value=Go></td>
+</form>
+</tr></table>
+<!-- _JC_  END ARCHIVES DROPDOWN -->
+
+<!-- _JC_  NEWS SEARCH -->
+<table cellpadding=2 cellspacing=0 border=0 width="100%" >
+<tr valign="middle">
+<td bgcolor="#dcdcdc"><font face="Arial,Helvetica" size=2><b>News Search</b></font></td>
+</tr>
+<tr><form action="/web/20001115051500/http://search.news.yahoo.com/search/news"><td align="center">
+<input type=text size=25 name=p>
+<input type=submit value="Search">
+<a href="/web/20001115051500/http://search.news.yahoo.com/search/news/options"><font face="Arial,Helvetica" size=2>Advanced</font></a><br><small><b>Search:</b>&nbsp;<input
+type=radio name=c checked value="news">&nbsp;Stories&nbsp;&nbsp;<input
+type=radio name=c value="news_photos">&nbsp;Photos&nbsp;&nbsp;<input
+type=radio name=c value="fullcov">&nbsp;Full&nbsp;Coverage</small><input type=hidden name=n value=20></td></form></tr>
+</table>
+<!-- _JC_  END SEARCH -->
+
+</td>
+</tr>
+</table>
+<!-- _JC_  END MAIN TABLE -->
+
+<!-- _JC_  BOTTOM NAV -->
+<table border=0 cellspacing=0 cellpadding=0 width="675">
+<tr bgcolor="#333366">
+<td>
+<table border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td height=5></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="center">
+<table border=0 cellspacing=0>
+<tr>
+<td align="center"><a href="/web/20001115051500/http://dailynews.yahoo.com/h/?u"><font size=2 face="arial,helvetica">Home</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001115051500/http://dailynews.yahoo.com/h/ts/?u"><font size=2 face="arial,helvetica">Top&nbsp;Stories</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001115051500/http://dailynews.yahoo.com/h/bs/?u"><font  size=2 face="arial,helvetica">Business</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001115051500/http://dailynews.yahoo.com/h/tc/?u"><font size=2 face="arial,helvetica">Tech</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001115051500/http://dailynews.yahoo.com/h/pl/?u"><font size=2 face="arial,helvetica">Politics</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001115051500/http://dailynews.yahoo.com/h/wl/?u"><font size=2 face="arial,helvetica">World</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001115051500/http://dailynews.yahoo.com/h/lo/?u"><font size=2 face="arial,helvetica">Local</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001115051500/http://dailynews.yahoo.com/h/en/?u"><font size=2 face="arial,helvetica">Entertainment</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001115051500/http://dailynews.yahoo.com/h/sp/?u"><font size=2 face="arial,helvetica">Sports</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001115051500/http://dailynews.yahoo.com/h/sc/?u"><font size=2 face="arial,helvetica">Science</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001115051500/http://dailynews.yahoo.com/h/hl/?u"><font size=2 face="arial,helvetica">Health</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001115051500/http://dailynews.yahoo.com/fc/"><font size=2 face="arial,helvetica">Full&nbsp;Coverage</font></a>&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+</table>
+<!-- _JC_  END BOTTOM NAV -->
+<hr size=0 width=675>
+<!-- _JC_  FOOTER -->
+<table width=675>
+<tr>
+<td valign="top" align="center">
+<font size=2>
+
+Copyright &copy; 2000 <a href=/web/20001115051500/http://www.yahoo.com/>Yahoo!</a>
+and <a href="/web/20001115051500/http://rd.yahoo.com/DailyNews/*http://www.courttv.com/">Courtroom Television Network LLC</a>.
+All Rights Reserved.
+<a href="/web/20001115051500/http://help.yahoo.com/help/news/">Questions or Comments</a>
+<br>
+<a href="/web/20001115051500/http://privacy.yahoo.com/privacy/us/news">Privacy Policy</a> -
+<a href="/web/20001115051500/http://docs.yahoo.com/info/terms/">Terms of Service</a>
+</font></td>
+</tr></table>
+<!-- _JC_  END FOOTER -->
+</center>    
+</body>
+</html>
+ 
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 5:15:00 Nov 15, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:01:32 Jan 7, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

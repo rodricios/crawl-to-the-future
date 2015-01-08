@@ -1,0 +1,396 @@
+<html><head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app2.us.archive.org";archive_analytics.values.server_ms=213;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<meta http-equiv="Cache-Control" content="no-cache"><meta http-equiv="Pragma" content="no-cache">
+<title>Yahoo! News Full Coverage-MLB Playoffs</title></head><body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://dailynews.yahoo.com/fc/Sports/MLB_Playoffs";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "17";
+var displayMonth = "Oct";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://dailynews.yahoo.com/fc/Sports/MLB_Playoffs" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20001017181841" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Sep
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 18:18:41 Oct 17, 2000">OCT</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20001204051300/http://dailynews.yahoo.com/fc/Sports/MLB_Playoffs" title="4 Dec 2000"><strong>DEC</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20001017171853/http://dailynews.yahoo.com/fc/Sports/MLB_Playoffs" title="17:18:53 Oct 17, 2000"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 18:18:41 Oct 17, 2000">17</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20001109100500/http://dailynews.yahoo.com/fc/Sports/MLB_Playoffs" title="10:05:00 Nov 9, 2000"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   1999
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 18:18:41 Oct 17, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20011020055137/http://dailynews.yahoo.com/fc/Sports/MLB_Playoffs/" title="20 Oct 2001"><strong>2001</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20001017181841*/http://dailynews.yahoo.com/fc/Sports/MLB_Playoffs" title="See a list of every capture for this URL">52 captures</a>
+           <div class="r" title="Timespan for captures of this URL">17 Oct 00 - 3 Feb 03</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:9:000000000218_2001:-1:000000000df2_2002:-1:110000000010_2003:-1:010000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<center>
+<table cellpadding=2 cellspacing=0 border=0 width=675><tr><td width="1%">
+<a href="/web/20001017181841/http://dailynews.yahoo.com/"><img src="/web/20001017181841im_/http://us.i1.yimg.com/us.yimg.com/i/dn/main4.gif" border=0 width=250 height=31 alt="Yahoo! News"></a></td>
+<td align=right nowrap><a href="/web/20001017181841/http://dailynews.yahoo.com/"><font face="arial,helvetica" size=2>Home</font></a><font face="arial,helvetica" size=2> - <a href="/web/20001017181841/http://www.yahoo.com/">Yahoo!</a> - <a href="/web/20001017181841/http://my.yahoo.com/">My Yahoo!</a> - <a href="/web/20001017181841/http://alerts.yahoo.com/config/set_notification?.t=n">News Alerts</a> - <a href="/web/20001017181841/http://help.yahoo.com/help/news/">Help</a></font><br><hr size=1 noshade></td></tr></table>
+<br>
+
+<br><br>
+<table border=0 cellspacing=0 cellpadding=0 width=675><tr>
+<td colspan=12 align=center><table border=0 cellspacing=0><tr>
+<td align=center><a href="/web/20001017181841/http://dailynews.yahoo.com/"><font size=2 face="arial,helvetica">Home</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001017181841/http://dailynews.yahoo.com/h/ts/"><font size=2 face="arial,helvetica">Top&nbsp;Stories</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001017181841/http://dailynews.yahoo.com/h/bs/"><font size=2 face="arial,helvetica">Business</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001017181841/http://dailynews.yahoo.com/h/tc/"><font size=2 face="arial,helvetica">Tech</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001017181841/http://dailynews.yahoo.com/h/pl/"><font size=2 face="arial,helvetica">Politics</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001017181841/http://dailynews.yahoo.com/h/wl/"><font size=2 face="arial,helvetica">World</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001017181841/http://dailynews.yahoo.com/h/lo/"><font size=2 face="arial,helvetica">Local</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001017181841/http://dailynews.yahoo.com/h/en/"><font size=2 face="arial,helvetica">Entertainment</font></a>&nbsp;</td>
+<td align=center bgcolor="#333366">&nbsp;<a href="/web/20001017181841/http://dailynews.yahoo.com/h/sp/"><font size=2 face="arial,helvetica" color="#eeeeff">Sports</font></a>&nbsp;</td>
+<td align=center>&nbsp;<a href="/web/20001017181841/http://dailynews.yahoo.com/h/sc/"><font size=2 face="arial,helvetica">Science</font></a></td>
+<td align=center>&nbsp;<a href="/web/20001017181841/http://dailynews.yahoo.com/h/hl/"><font size=2 face="arial,helvetica">Health</font></a></td>
+<td align=center>&nbsp;<a href="/web/20001017181841/http://dailynews.yahoo.com/fc/"><font size=2 face="arial,helvetica">Full&nbsp;Coverage</font></a></td>
+</tr></table></td></tr>
+<tr bgcolor="#333366"><td colspan=12>
+<table border=0 cellspacing=0 cellpadding=0><tr><td height=5>
+</td></tr></table></td></tr></table>
+<table border=0 cellpadding=2 cellspacing=0 width=675><tr bgcolor="#9999cc">
+<td>&nbsp;<font face="arial,helvetica" size=4><b>
+Sports Full Coverage
+</b></font><font face="arial,helvetica" size=2> - updated Oct 17  1:45 PM EDT</font></td>
+</tr><tr valign=top>
+<td width="100%" align=left><img height=16 width=16 align=left src="/web/20001017181841im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"><font face="arial,helvetica" size="+1"><b>MLB Playoffs</b></font>&nbsp;</td></tr></table>
+<table cellpadding=0 cellspacing=0 width=675 border=0>
+<tr valign=top><td valign=top width=196 bgcolor="#eeeeee">
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td bgcolor="#eeeecc"><a name="Live_Audio">&nbsp;<font face="arial,helvetica" size=2><b>Live Audio</b></font></a></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://www.majorleaguebaseball.com/u/baseball/mlbcom/audio/game.htm"><small>Mariners v. Yankees</small></a> - <small>Tues Oct 17, 8pmET.</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://sports.yahoo.com/mlb/"><small>Yahoo! Sports: In progress scores</small></a></td></tr>
+<tr><td></td><td align=right>&nbsp;</td></tr></table><table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td bgcolor="#eeeecc"><a name="News_Sources">&nbsp;<font face="arial,helvetica" size=2><b>News Sources</b></font></a></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://sports.yahoo.com/mlb"><small>Yahoo! Sports: Major League Baseball</small></a></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://sportsillustrated.cnn.com/baseball/mlb/2000/postseason/"><small>CNNSI: Playoffs 2000</small></a></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://msnbc.com/news/spt/baseball/Playoffmatchups/default.htm"><small>MSNBC: Baseball Playoff Series</small></a></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://www.nydailynews.com/today/Metro_Sports/Baseball/"><small>New York Daily News: Baseball</small></a></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://www.newsday.com/"><small>New York Newsday</small></a></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://seattlep-i.nwsource.com/sports/"><small>Seattle P-I: Sports</small></a></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://www.postnet.com/sports"><small>St. Louis Post-Dispatch: Sports</small></a></td></tr>
+<tr><td></td><td align=right><a href="/web/20001017181841/http://dailynews.yahoo.com/fc/Sports/MLB_Playoffs/news_sources_1.html"><small>more</small></a>&nbsp;</td></tr></table><table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td bgcolor="#eeeecc"><a name="Columns">&nbsp;<font face="arial,helvetica" size=2><b>Columns</b></font></a></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://www.salon.com/news/sports/bounds/2000/10/17/subway/index.html?CP=YAH&amp;DN=110"><small>Save me, Alex Rodriguez -- Please don't make us suffer a Subway Series</small></a> - <small>Salon</small><small> (Oct 17, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://www.newsday.com/sports/daily/hey17.htm"><small>Bobby’s Kings of Queens Look Like World-Beaters</small></a> - <small>Newsday</small><small> (Oct 17, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://www.nydailynews.com/2000-10-17/Metro_Sports/Baseball/a-84614.asp"><small>With This Hand, Cards Real Bust</small></a> - <small>New York Daily News</small><small> (Oct 17, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://www.postnet.com/postnet/stories.nsf/Sports/6A1609B50735D3D68625697B001B1542?OpenDocument&amp;Headline=BERNIE%20MIKLASZ%3A%20Comatose%20Cards%20watch%20Mets%20turn%20them%20into%20tokens"><small>Comatose Cards watch Mets turn them into tokens</small></a> - <small>St. Louis Post-Dispatch</small><small> (Oct 17, 2000)</small></td></tr>
+<tr><td></td><td align=right><a href="/web/20001017181841/http://dailynews.yahoo.com/fc/Sports/MLB_Playoffs/columns_1.html"><small>more</small></a>&nbsp;</td></tr></table><table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td bgcolor="#eeeecc"><a name="Related_Full_Coverage">&nbsp;<font face="arial,helvetica" size=2><b>Related Full Coverage</b></font></a></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://fullcoverage.yahoo.com/fc/Sports/Baseball_Transactions"><small>Baseball Transactions</small></a></td></tr>
+<tr><td></td><td align=right>&nbsp;</td></tr></table><table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td bgcolor="#eeeecc"><a name="Yahoo__Categories">&nbsp;<font face="arial,helvetica" size=2><b>Yahoo! Categories</b></font></a></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://dir.yahoo.com/Recreation/Sports/Baseball/"><small>Baseball</small></a></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://dir.yahoo.com/Recreation/Sports/Baseball/Major_League_Baseball__MLB_/"><small>Major League Baseball (MLB)</small></a></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://dir.yahoo.com/Recreation/Sports/Baseball/Major_League_Baseball__MLB_/Teams/"><small>MLB Teams</small></a></td></tr>
+<tr><td></td><td align=right>&nbsp;</td></tr></table><table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td bgcolor="#eeeecc"><a name="More_Links___">&nbsp;<font face="arial,helvetica" size=2><b>More Links...</b></font></a></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://dailynews.yahoo.com/fc/Sports/MLB_Playoffs/usenet.html"><small>Usenet</small></a></td></tr></table>
+</td><td valign=top width=5></td>
+<td valign=top width=474>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td bgcolor="#eeeecc"><a name="Latest_Developments">&nbsp;<font face="arial,helvetica" size=3><b>Latest Developments</b></font></a></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td valign=top colspan=2>
+<a href="/web/20001017181841/http://dailynews.yahoo.com/h/p/nm/20001016/sp/imdf18450.html"><img src="/web/20001017181841im_/http://us.news1.yimg.com/us.yimg.com/p/nm/20001016/aimdf18450.jpg" width=87 height=130 alt="Yahoo! Photo" border=1 hspace=5 vspace=5 align=right></a><b><a href="/web/20001017181841/http://dailynews.yahoo.com/h/ap/20001017/sp/bbn_nl_playoffs_32.html">Mets 7, Cardinals 0</a></b><br>(AP) - Mike Hampton and the Mets did their part. Now it's up to the Yankees to give New York the Subway Series the city has been waiting for since 1956. Hampton pitched a three-hitter Monday night and New York started a clinching party that could carry over to the Bronx as the Mets beat the St. Louis Cardinals 7-0 and won the NL championship series 4-1. <A href="/web/20001017181841/http://dailynews.yahoo.com/h/ap/20001017/sp/bbn_nl_playoffs_32.html">More</a>... <small><A href="/web/20001017181841/http://sports.yahoo.com/mlb/scores/20001016/stlnym.html"> [- Box Score -]</a></small> <ul><li><a href="/web/20001017181841/http://dailynews.yahoo.com/h/ap/20001017/sp/bbn_nl_champions_1.html">National League Champions Since 1876</a> <i><small>(AP)</small></i></ul></td></tr>
+
+<tr><td></td><td align=right>&nbsp;</td></tr></table><table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td bgcolor="#eeeecc"><a name="News_Stories">&nbsp;<font face="arial,helvetica" size=3><b>News Stories</b></font></a></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://www.nydailynews.com/2000-10-17/Metro_Sports/Baseball/a-84572.asp">Tired? Joe Insists Bombers Are Flying</a> - <small>New York Daily News</small><small> (Oct 17, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://www.newsday.com/sports/daily/mets17.htm">The 7 Train Is Ready</a> - <small>Newsday</small><small> (Oct 17, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://www.nydailynews.com/today/Metro_Sports/Baseball/a-84618.asp">Mets Ride 7 Into Series</a> - <small>New York Daily News</small><small> (Oct 17, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://www.postnet.com/postnet/stories.nsf/Sports/094AF9543774AF138625697B00110AB1?OpenDocument&amp;Headline=CARDS%20GO%20FIVE%20AND%20OUT%20IN%20NLCS">Cards Go Five And Out In NLCS</a> - <small>St. Louis Post-Dispatch</small><small> (Oct 17, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://www.postnet.com/postnet/stories.nsf/Sports/FD0C4449BB374B058625697B001F511B?OpenDocument&amp;Headline=Teammates%20tell%20Payton%20that%20Veres%20wouldn't%20throw%20at%20him">Teammates tell Payton that Veres wouldn't throw at him</a> - <small>St. Louis Post-Dispatch</small><small> (Oct 17, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://www.boston.com/dailyglobe2/291/sports/Next_stop_the_Series%2b.shtml">Next stop: the Series</a> - <small>Boston Globe</small><small> (Oct 17, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://dailynews.yahoo.com/h/ap/20001017/sp/bbn_nl_playoffs_mvp_3.html">Mets' Hampton Is Named MVP</a> - <small>AP</small><small> (Oct 17, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://www.nydailynews.com/2000-10-17/Metro_Sports/Baseball/a-84603.asp">Ankiel Wild Again, but Cards Feel He'll Be Fine</a> - <small>New York Daily News</small><small> (Oct 17, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://dailynews.yahoo.com/h/ap/20001017/sp/bbn_nl_playoffs_piazza_2.html">Piazza Pays Off on Mets Investment</a> - <small>AP</small><small> (Oct 17, 2000)</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://dailynews.yahoo.com/h/ap/20001017/sp/bbn_nl_playoffs_cardinals_17.html">First-Inning Troubles Plagued Cards</a> - <small>AP</small><small> (Oct 17, 2000)</small></td></tr>
+<tr><td></td><td align=right><a href="/web/20001017181841/http://dailynews.yahoo.com/fc/Sports/MLB_Playoffs/news_stories_1.html">more</a>&nbsp;</td></tr></table><table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td bgcolor="#eeeecc"><a name="Team_Web_Sites">&nbsp;<font face="arial,helvetica" size=3><b>Team Web Sites</b></font></a></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://www.majorleaguebaseball.com/">Major League Baseball</a> - <small>official site.</small></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://www.mets.com/">New York Mets</a></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://www.yankees.com/">New York Yankees</a></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://www.mariners.org/">Seattle Mariners</a></td></tr>
+<tr><td width="2%" valign=top> - </td>
+<td width="98%"><a href="/web/20001017181841/http://www.stlcardinals.com/">St. Louis Cardinals</a></td></tr>
+<tr><td></td><td align=right>&nbsp;</td></tr></table>
+<table border=0 cellpadding=2 cellspacing=0 width="100%">
+<tr valign=top><td align=center>
+<a href="/web/20001017181841/http://mtf.news.yahoo.com/mailto?url=http://dailynews.yahoo.com/fc/Sports/MLB_Playoffs/&amp;title=MLB%20Playoffs&amp;prop=fc&amp;locale=us"><font face="arial,helvetica" size=2>Email this page</font></a> - <a href="/web/20001017181841/http://mtf.news.yahoo.com/h/mt/us/fc/?u"><font face="arial,helvetica" size=1><b>View most popular</b></font></a>
+</td></tr></table><p>
+<table border=0 cellpadding=2 cellspacing=0 width="100%">
+<tr valign=middle bgcolor="#eeeecc">
+<td><font face="arial,helvetica" size=3><b>&nbsp;Search Full Coverage</b></font></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%"><tr><td valign=top align=center><form action="/web/20001017181841/http://search.news.yahoo.com/search/news">
+<input type=text size=25 name=p><input type=submit value="Search">
+<a href="/web/20001017181841/http://search.news.yahoo.com/search/news/options"><font face="arial,helvetica" size=2>Advanced</font></a><br><small><b>Search:</b><input type=radio name=c value="news">&nbsp;Stories&nbsp;&nbsp;<input type=radio name=c value="news_photos">&nbsp;Photos&nbsp;&nbsp;<input type=radio name=c value="fullcov" checked>&nbsp;Full Coverage</small><input type=hidden name=n value=10>
+</form></td></tr></table> 
+</td></tr></table>
+<table border=0 cellspacing=0 cellpadding=0 width=675>
+<tr bgcolor="#333366"><td colspan=12>
+<table border=0 cellspacing=0 cellpadding=0><tr><td height=5>
+</td></tr></table></td></tr>
+<tr>
+<td colspan=12 align=center><table border=0 cellspacing=0><tr>
+<td align=center><a href="/web/20001017181841/http://dailynews.yahoo.com/"><font size=2 face="arial,helvetica">Home</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001017181841/http://dailynews.yahoo.com/h/ts/"><font size=2 face="arial,helvetica">Top&nbsp;Stories</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001017181841/http://dailynews.yahoo.com/h/bs/"><font size=2 face="arial,helvetica">Business</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001017181841/http://dailynews.yahoo.com/h/tc/"><font size=2 face="arial,helvetica">Tech</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001017181841/http://dailynews.yahoo.com/h/pl/"><font size=2 face="arial,helvetica">Politics</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001017181841/http://dailynews.yahoo.com/h/wl/"><font size=2 face="arial,helvetica">World</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001017181841/http://dailynews.yahoo.com/h/lo/"><font size=2 face="arial,helvetica">Local</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001017181841/http://dailynews.yahoo.com/h/en/"><font size=2 face="arial,helvetica">Entertainment</font></a>&nbsp;</td>
+<td align=center bgcolor="#333366">&nbsp;<a href="/web/20001017181841/http://dailynews.yahoo.com/h/sp/"><font size=2 face="arial,helvetica" color="#eeeeff">Sports</font></a>&nbsp;</td>
+<td align=center>&nbsp;<a href="/web/20001017181841/http://dailynews.yahoo.com/h/sc/"><font size=2 face="arial,helvetica">Science</font></a></td>
+<td align=center>&nbsp;<a href="/web/20001017181841/http://dailynews.yahoo.com/h/hl/"><font size=2 face="arial,helvetica">Health</font></a></td>
+<td align=center>&nbsp;<a href="/web/20001017181841/http://dailynews.yahoo.com/fc/"><font size=2 face="arial,helvetica">Full&nbsp;Coverage</font></a></td>
+</tr></table></td></tr></table>
+<hr size=0 width=675>
+<table width=675><tr><td valign=top align=center>
+<font size=2><a href="mailto:full_coverage@yahoo-inc.com?subject=Suggestion">Submit links to Full&nbsp;Coverage</a><br>
+Copyright &copy; 2000 Yahoo! Inc. All Rights Reserved.&nbsp;&nbsp;<a href="/web/20001017181841/http://privacy.yahoo.com/">Privacy Policy</a>&nbsp;-&nbsp;<a href="/web/20001017181841/http://docs.yahoo.com/info/terms/">Terms of Service</a><br>
+Question? Comments? Send us <a href="mailto:full_coverage@yahoo-inc.com?subject=Comment">feedback</a>.</font>
+</td></tr></table></center></body></html>
+
+ 
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 18:18:41 Oct 17, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:56:04 Jan 7, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

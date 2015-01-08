@@ -1,0 +1,471 @@
+<html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app15.us.archive.org";archive_analytics.values.server_ms=630;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<title>Yahoo! Alerts</title>
+</head>
+<body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://alerts.yahoo.com/config/set_notification?.t=n";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "6";
+var displayMonth = "Jul";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://alerts.yahoo.com/config/set_notification?.t=n" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20000706200305" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20000605210218/http://alerts.yahoo.com/config/set_notification?.t=n" title="5 Jun 2000">JUN</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 20:03:05 Jul 6, 2000">JUL</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20010610163447/http://alerts.yahoo.com/config/set_notification?.t=n" title="10 Jun 2001"><strong>JUN</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20000621161019/http://alerts.yahoo.com/config/set_notification?.t=n" title="16:10:19 Jun 21, 2000"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 20:03:05 Jul 6, 2000">6</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20010610163447/http://alerts.yahoo.com/config/set_notification?.t=n" title="16:34:47 Jun 10, 2001"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   1999
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 20:03:05 Jul 6, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20010917010815/http://alerts.yahoo.com/config/set_notification?.t=n" title="17 Sep 2001"><strong>2001</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20000706200305*/http://alerts.yahoo.com/config/set_notification?.t=n" title="See a list of every capture for this URL">447 captures</a>
+           <div class="r" title="Timespan for captures of this URL">26 Aug 99 - 17 Nov 14</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000010010_2000:6:003144100000_2001:-1:000001002fea_2002:-1:310000033582_2003:-1:010101010101_2004:-1:010101110101_2005:-1:011300012302_2006:-1:338782674862_2007:-1:04178a221700_2008:-1:100000000101_2009:-1:010001001010_2010:-1:101020101010_2011:-1:301121401210_2012:-1:198020101210_2013:-1:301110102000_2014:-1:000000001010_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<center>
+
+
+<table border=0 width="600" cellspacing=0 cellpadding=0>
+<tr><td valign=middle width="1%">
+<a href="/web/20000706200305/http://dailynews.yahoo.com/"><img src="/web/20000706200305im_/http://us.yimg.com/i/dn/main4.gif" width="250" height="31" alt="Yahoo! News" border="0"></a>
+</td><td valign=middle>
+<table border=0 cellspacing=0 cellpadding=0 width="100%"><tr>
+<td align=left valign=bottom>&nbsp;</td>
+<td align=right valign=bottom><font face=arial size="-1"><A href="/web/20000706200305/http://dailynews.yahoo.com/">Home</A> - <A href="/web/20000706200305/http://www.yahoo.com/">Yahoo!</A> - <A href="/web/20000706200305/http://my.yahoo.com/">My Yahoo!</A> - <a href="/web/20000706200305/http://help.yahoo.com/help/alerts/">Help</a></font>
+</td></tr></table>
+<hr size=1>
+</td></tr></table>
+
+<table border=0 width="600" cellspacing=0 cellpadding=10>
+<tr><td align=center>
+<!-- SpaceID=0 robot -->
+</td></tr>
+</table>
+
+<table cellpadding=2 cellspacing=0 border=0 width="600"><tr bgcolor="#dcdcdc"><td><font face=Arial size=-1><b>Hello [Guest]</b></font></td><td align=right><font face=Arial size=-1><a href="/web/20000706200305/http://login.yahoo.com/config/login?.src=ntfy&amp;.done=http://alerts.yahoo.com/config/set_notification%3f.t=n">Sign In</a></font></td></tr></table>
+
+
+<TABLE border=0 CELLSPACING=0 cellpadding=3 WIDTH="600">
+<TR BGCOLOR="#9999cc">
+<td valign=middle>
+    <big><font face=arial><b>Yahoo! News - Alerts</b></font></big>
+  </td>
+  <td valign=middle align=right>&nbsp;
+    </td></tr>
+</table>
+
+
+
+<small><br></small>
+
+
+<table border=0 width=600 cellpadding=0 cellspacing=2>
+<tr>
+<td valign=top bgcolor="#eeeeee" align=center width=180>
+
+<table border=0 width="100%" cellpadding=2 cellspacing=0>
+<tr>
+<td bgcolor="#dcdcdc" valign=middle align=left>
+<b><font face=arial>View Alerts</font></b>
+</td>
+</tr>
+</table>
+
+<table bgcolor=#dcdcdc cellpadding=1 cellspacing=0 border=0 width="100%"><tr><td>
+<table bgcolor=#eeeeee cellpadding=4 cellspacing=0 border=0 width="100%">
+<tr>
+<td align=center valign=top><a href="/web/20000706200305/http://alerts.yahoo.com/config/set_notification"><font face=arial size=-1><b>All Alerts</b></font></a></td>
+</tr>
+</table>
+</td></tr></table>
+
+<table bgcolor=#dcdcdc cellpadding=1 cellspacing=0 border=0 width="100%"><tr><td>
+<table bgcolor=#eeeeee cellpadding=4 cellspacing=0 border=0 width="100%">
+<tr>
+<td align=center valign=top><a href="/web/20000706200305/http://alerts.yahoo.com/config/set_notification?.t=a"><font face=arial size=-1><b>Auctions Alerts</b></font></a></td>
+</tr>
+</table>
+</td></tr></table>
+
+<table bgcolor=#dcdcdc cellpadding=1 cellspacing=0 border=0 width="100%"><tr><td>
+<table bgcolor=#eeeeee cellpadding=4 cellspacing=0 border=0 width="100%">
+<tr>
+<td align=center valign=top><a href="/web/20000706200305/http://alerts.yahoo.com/config/set_notification?.t=c&amp;.s=p"><font face=arial size=-1><b>Personals Alerts</b></font></a></td>
+</tr>
+</table>
+</td></tr></table>
+
+<table bgcolor=#dcdcdc cellpadding=1 cellspacing=0 border=0 width="100%"><tr><td>
+<table bgcolor=#eeeeee cellpadding=4 cellspacing=0 border=0 width="100%">
+<tr>
+<td align=center valign=top><a href="/web/20000706200305/http://alerts.yahoo.com/config/set_notification?.t=c&amp;.s=a"><font face=arial size=-1><b>Autos Alerts</b></font></a></td>
+</tr>
+</table>
+</td></tr></table>
+
+<table bgcolor=#dcdcdc cellpadding=1 cellspacing=0 border=0 width="100%"><tr><td>
+<table bgcolor=#ffffcc cellpadding=4 cellspacing=0 border=0 width="100%">
+<tr>
+<td align=center valign=top><font face=arial size=-1><b>News Alerts</b></font></td>
+</tr>
+</table>
+</td></tr></table>
+
+<table bgcolor=#dcdcdc cellpadding=1 cellspacing=0 border=0 width="100%"><tr><td>
+<table bgcolor=#eeeeee cellpadding=4 cellspacing=0 border=0 width="100%">
+<tr>
+<td align=center valign=top><a href="/web/20000706200305/http://alerts.yahoo.com/config/set_notification?.t=p"><font face=arial size=-1><b>Sports Alerts</b></font></a></td>
+</tr>
+</table>
+</td></tr></table>
+
+<table bgcolor=#dcdcdc cellpadding=1 cellspacing=0 border=0 width="100%"><tr><td>
+<table bgcolor=#eeeeee cellpadding=4 cellspacing=0 border=0 width="100%">
+<tr>
+<td align=center valign=top><a href="/web/20000706200305/http://alerts.yahoo.com/config/set_notification?.t=t"><font face=arial size=-1><b>Traffic Alerts</b></font></a></td>
+</tr>
+</table>
+</td></tr></table>
+
+<table bgcolor=#dcdcdc cellpadding=1 cellspacing=0 border=0 width="100%"><tr><td>
+<table bgcolor=#eeeeee cellpadding=4 cellspacing=0 border=0 width="100%">
+<tr>
+<td align=center valign=top>&nbsp;</td>
+</tr>
+</table>
+</td></tr></table>
+
+<table border=0 width="100%" cellpadding=2 cellspacing=0>
+<tr>
+<td bgcolor="#dcdcdc" valign=middle align=left>
+<b><font face=arial>Options</font></b>
+</td>
+</tr>
+</table>
+<table border=0 width="100%" cellpadding=2 cellspacing=0>
+<tr>
+<td valign=top><font size=-1 face=arial><a href="/web/20000706200305/http://edit.yahoo.com/config/set_profile?.emailOnly=1&amp;.done=http://alerts.yahoo.com/config/set_notification?.t=n">Edit Email Addresses</a></font>
+</td>
+</tr>
+<tr>
+<td valign=top><font size=-1 face=arial><a href="/web/20000706200305/http://mobile.yahoo.com/wireless/listdevice?.done=http://alerts.yahoo.com/config/set_notification?.t=n">Edit Mobile Devices</a></font>
+</td>
+</tr>
+
+<tr>
+<td valign=top>&nbsp;
+</td>
+</tr>
+</table>
+
+<table border=0 width="100%" cellpadding=2 cellspacing=0>
+<tr>
+<td bgcolor="#dcdcdc" valign=middle align=left>
+<b><font face=arial>Other Resources</font></b>
+</td>
+</tr>
+</table>
+
+<table border=0 width="100%" cellpadding=2 cellspacing=0>
+
+<tr>
+<td valign=top><font size=-1 face=arial><a href="/web/20000706200305/http://mail.yahoo.com/">Y! Mail</a> - free web-based email</font></td>
+</tr>
+<tr>
+<td valign=top><font size=-1 face=arial><a href="/web/20000706200305/http://messenger.yahoo.com/">Y! Messenger</a> - instant messaging and alerts</font>
+</td>
+</tr>
+<tr>
+<td valign=top><font size=-1 face=arial><a href="/web/20000706200305/http://mobile.yahoo.com/">Y! Mobile</a> - Yahoo! on your phone or pager</font></td>
+</tr>
+
+</table>
+
+
+
+</td>
+
+<td>&nbsp;&nbsp;&nbsp;</td>
+
+<td width=415 valign=top>
+
+
+
+
+
+
+
+<table border=0 width="100%" cellpadding=2 cellspacing=0>
+<tr>
+<td bgcolor="#dcdcdc" valign=middle align=left>
+<b><font face=arial>About News Alerts</font></b>
+</td>
+</tr>
+
+<tr>
+<td valign=top>
+<table border=0 cellpadding=3 cellspacing=0>
+<tr><td>
+<font size=-1 face=arial>
+Receive news by email. Create an alert
+below and Yahoo! will notify you when a news article matches your interest.
+You'll receive the headline and summary via email, and can click to read
+the full story.
+</font>
+</td></tr></table>
+</td></tr>
+
+
+<tr><td>
+<font size=-1>You must be signed in to create an alert.
+<a href="/web/20000706200305/http://login.yahoo.com/config/login?.src=ntfy&amp;.done=http://alerts.yahoo.com/config/set_notification%3f.t=n">Sign In</a>.
+</font>
+</td></tr>
+
+</table>
+
+<p>
+
+
+<table border=0 width="100%" cellpadding=2 cellspacing=0>
+<tr>
+<td bgcolor="#dcdcdc" valign=middle align=left colspan=3><font face=arial><b>My Alerts</b></font></td>
+<td bgcolor="#dcdcdc" valign=middle align=right>&nbsp;</td></tr>
+<tr bgcolor="#ffffcc">
+<td><font face="Arial" size=-1>Alert Name</font></td>
+<td><font face="Arial" size=-1>Type</font></td>
+<td><font face="Arial" size=-1>Delivery</font></td>
+<td align=right><font face="Arial" size=-1>Edit|Del</font></td>
+</tr>
+<tr>
+    <td colspan="4"><i>Subscribe to Yahoo! Alerts. <a href="/web/20000706200305/http://login.yahoo.com/config/login?.src=ntfy&amp;.done=http://alerts.yahoo.com/config/set_notification%3f.t=n">Sign In</a> or <a href="/web/20000706200305/http://login.yahoo.com/config/login?.src=ntfy&amp;.done=http://alerts.yahoo.com/config/set_notification%3f.t=n">Register</a> now.</i></td> </tr>
+</table>
+
+
+
+
+<table cellpadding=0 cellspacing=0 border=0 width="100%">
+<tr>
+<td>
+<hr size=1>
+</td>
+</tr>
+<tr><td><font size=-1 face=arial><b>Tip:</b> Click on the bell to turn an alert on or off.</font></td></tr>
+<tr><td height=4></td></tr>
+<tr>
+<td valign=top><font face=arial size=-1>
+<img src="/web/20000706200305im_/http://us.yimg.com/i/not/bell.gif" width=20 height=12 border="0">&nbsp;=&nbsp;Alert&nbsp;Is&nbsp;On<br>
+<img src="/web/20000706200305im_/http://us.yimg.com/i/not/bell_ia.gif" width=20 height=12 border="0">&nbsp;=&nbsp;Alert&nbsp;Is&nbsp;Off
+</font></td>
+</tr>
+<tr><td><hr size=1></td></tr>
+
+
+</table>
+
+
+
+
+</td>
+</tr>
+</table>
+
+</center>
+<p>
+<p><center><hr width="600" size=1 noshade><table border=0 cellpadding=0 cellspacing=0><tr><td align=center valign=bottom width="100%"><font size="-2" face=arial>Copyright &copy; 1994-2000 Yahoo! Inc. All rights reserved.<a href="/web/20000706200305/http://docs.yahoo.com/info/terms/" target=_top>Terms of Service</a><br><b>NOTICE: We collect personal information on this site.<br>To learn more about how we use your information, see our <a href="/web/20000706200305/http://docs.yahoo.com/docs/info/privacy.html" target=_top>Privacy Policy</a></b></font></td></tr></table></center></body>
+</html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 20:03:05 Jul 6, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:59:21 Jan 7, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

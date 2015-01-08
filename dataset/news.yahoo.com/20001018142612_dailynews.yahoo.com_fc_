@@ -1,0 +1,526 @@
+<html><head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app16.us.archive.org";archive_analytics.values.server_ms=864;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<meta http-equiv="Cache-Control" content="no-cache"><meta http-equiv="Pragma" content="no-cache">
+<title>Yahoo! News Full Coverage</title></head><body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://dailynews.yahoo.com/fc";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "18";
+var displayMonth = "Oct";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://dailynews.yahoo.com/fc" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20001018220147" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20000815053319/http://dailynews.yahoo.com/fc/" title="15 Aug 2000">AUG</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 22:01:47 Oct 18, 2000">OCT</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20001201060800/http://dailynews.yahoo.com/fc" title="1 Dec 2000"><strong>DEC</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20000815053319/http://dailynews.yahoo.com/fc/" title="5:33:19 Aug 15, 2000"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 22:01:47 Oct 18, 2000">18</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20001018233332/http://dailynews.yahoo.com/fc" title="23:33:32 Oct 18, 2000"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   1999
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 22:01:47 Oct 18, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20011019013637/http://dailynews.yahoo.com/fc/" title="19 Oct 2001"><strong>2001</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20001018220147*/http://dailynews.yahoo.com/fc" title="See a list of every capture for this URL">449 captures</a>
+           <div class="r" title="Timespan for captures of this URL">15 Aug 00 - 27 Jul 10</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:9:000000010228_2001:-1:21122212efe8_2002:-1:120002011411_2003:-1:010102110102_2004:-1:100104120511_2005:-1:344610010115_2006:-1:362303362322_2007:-1:020200121611_2008:-1:010111101001_2009:-1:000000000100_2010:-1:010000100000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<center>
+<table cellpadding=2 cellspacing=0 border=0 width=675><tr><td width="1%">
+<a href="/web/20001018220147/http://dailynews.yahoo.com/"><img src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/main4.gif" border=0 width=250 height=31 alt="Yahoo! News"></a></td>
+<td align=right nowrap><a href="/web/20001018220147/http://dailynews.yahoo.com/"><font face="arial,helvetica" size=2>Home</font></a><font face="arial,helvetica" size=2> - <a href="/web/20001018220147/http://www.yahoo.com/">Yahoo!</a> - <a href="/web/20001018220147/http://my.yahoo.com/">My Yahoo!</a> - <a href="/web/20001018220147/http://alerts.yahoo.com/config/set_notification?.t=n">News Alerts</a> - <a href="/web/20001018220147/http://help.yahoo.com/help/news/">Help</a></font><br><hr size=1 noshade></td></tr></table>
+<br>
+
+<br><br>
+<table border=0 cellspacing=0 cellpadding=0 width=675><tr>
+<td colspan=12 align=center><table border=0 cellspacing=0><tr>
+<td align=center><a href="/web/20001018220147/http://dailynews.yahoo.com/"><font size=2 face="arial,helvetica">Home</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001018220147/http://dailynews.yahoo.com/h/ts/"><font size=2 face="arial,helvetica">Top&nbsp;Stories</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001018220147/http://dailynews.yahoo.com/h/bs/"><font size=2 face="arial,helvetica">Business</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001018220147/http://dailynews.yahoo.com/h/tc/"><font size=2 face="arial,helvetica">Tech</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001018220147/http://dailynews.yahoo.com/h/pl/"><font size=2 face="arial,helvetica">Politics</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001018220147/http://dailynews.yahoo.com/h/wl/"><font size=2 face="arial,helvetica">World</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001018220147/http://dailynews.yahoo.com/h/lo/"><font size=2 face="arial,helvetica">Local</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001018220147/http://dailynews.yahoo.com/h/en/"><font size=2 face="arial,helvetica">Entertainment</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001018220147/http://dailynews.yahoo.com/h/sp/"><font size=2 face="arial,helvetica">Sports</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001018220147/http://dailynews.yahoo.com/h/sc/"><font size=2 face="arial,helvetica">Science</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001018220147/http://dailynews.yahoo.com/h/hl/"><font size=2 face="arial,helvetica">Health</font></a>&nbsp;</td>
+<td align=center bgcolor="#333366">&nbsp;<a href="/web/20001018220147/http://dailynews.yahoo.com/fc/"><font size=2 face="arial,helvetica" color="#eeeeff">Full&nbsp;Coverage</font></a>&nbsp;</td>
+</tr></table></td></tr>
+<tr bgcolor="#333366"><td colspan=12>
+<table border=0 cellspacing=0 cellpadding=0><tr><td height=5>
+</td></tr></table></td></tr></table>
+<table border=0 cellpadding=2 cellspacing=0 width=675><tr bgcolor="#9999cc">
+<td>&nbsp;<font face="arial,helvetica" size=4><b>
+Top Stories Full Coverage
+</b></font><font face="arial,helvetica" size=2> - updated Oct 18  5:58 PM EDT</font></td>
+</tr></table><br>
+<table cellpadding=0 cellspacing=0 width=675 border=0>
+<tr valign=top><td valign=top width=675>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td bgcolor="#eeeecc"><a name="Top_Stories">&nbsp;<font face="arial,helvetica" size=3><b>Top Stories</b></font></a></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/US/Presidential_Election_2000/">Bush, Gore Meet In Final Debate</a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  5:50 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%" bgcolor="#eeeeee"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/World/Middle_East_Peace_Process/">Mideast Leaders Order Truce; Some Clashes Continue</a></td><td width="45%" align=right bgcolor="#eeeeee">&nbsp;<small><nobr>Oct 18  5:12 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/US/Governor_Mel_Carnahan/">Missouri Mourns Gov. Carnahan's Death </a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  5:14 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%" bgcolor="#eeeeee"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/World/Uganda/">Source of Ugandan Ebola Found</a></td><td width="45%" align=right bgcolor="#eeeeee">&nbsp;<small><nobr>Oct 18  3:40 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/US/USS_Cole/">USS Cole Victims Mourned</a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  4:43 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%" bgcolor="#eeeeee"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Local/LA_County_General_Strike/">L.A. Transit Strike Settled</a></td><td width="45%" align=right bgcolor="#eeeeee">&nbsp;<small><nobr>Oct 18  1:30 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/World/Yugoslavia/">Kostunica Wins Montenegro Promise</a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  4:39 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%" bgcolor="#eeeeee"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Science/Space_Shuttle/">Astronauts Go On Fourth Spacewalk</a></td><td width="45%" align=right bgcolor="#eeeeee">&nbsp;<small><nobr>Oct 18  1:16 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Sports/MLB_Playoffs/">Yankees, Mets Head For Subway Series</a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  4:56 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td></td><td></td><td align=right>&nbsp;</td></tr></table> 
+</td></tr>
+<tr><td valign=top>
+<table cellpadding=0 cellspacing=0 width=675 border=0>    
+<tr> 
+<td width=336 valign=top>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td bgcolor="#eeeecc"><a name="US">&nbsp;<font face="arial,helvetica" size=2><b>US</b></font></a></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/US/Presidential_Election_2000/"><small>Bush, Gore Meet In Final Debate</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  5:50 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/US/USS_Cole/"><small>USS Cole Victims Mourned</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  4:43 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/US/Public_Transportation/"><small>Amtrak Says High-Speed Train to Run Dec. 11</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  4:15 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/US/Social_Security/"><small>Social Security Benefits To Rise 3.5% In Next Year</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  9:22 AM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/US/African_American_News/"><small>African American News</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  2:00 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/US/Criminal_Justice/"><small>Criminal Justice</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 17  9:02 AM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/US/Governor_Mel_Carnahan/"><small>Missouri Mourns Gov. Carnahan's Death </small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  5:14 PM&nbsp;EDT</nobr></small></td></tr><tr><td valign=top colspan=3 align=right><font face="Arial,Helvetica" size=2><b><a href="/web/20001018220147/http://fullcoverage.yahoo.com/fc/US/">All U.S. Full Coverage...</a></b></font></td></tr>
+<tr><td></td><td></td><td align=right>&nbsp;</td></tr></table>
+</td>
+<td width=3>&nbsp;</td>
+<td width=336 valign=top>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td bgcolor="#eeeecc"><a name="World">&nbsp;<font face="arial,helvetica" size=2><b>World</b></font></a></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/World/Middle_East_Peace_Process/"><small>Mideast Leaders Order Truce; Some Clashes Continue</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  5:12 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/World/Uganda/"><small>Source of Ugandan Ebola Found</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  3:40 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/World/Yugoslavia/"><small>Kostunica Wins Montenegro Promise</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  4:39 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/World/Nigeria/"><small>Death Toll Mounts in Ethnic Clashes Around Lagos</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  4:23 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/World/Northern_Ireland_Conflict/"><small>Violence in Northern Ireland </small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 17  5:19 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/World/Osama_Bin_Laden/"><small>Osama Bin Laden</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 17  6:00 AM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/World/Peru/"><small>Peruvians Rally For Fujimori Ouster </small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18 10:59 AM&nbsp;EDT</nobr></small></td></tr><tr><td valign=top colspan=3 align=right><font face="Arial,Helvetica" size=2><b><a href="/web/20001018220147/http://fullcoverage.yahoo.com/fc/World/">All World Full Coverage...</a></b></font></td></tr>
+<tr><td></td><td></td><td align=right>&nbsp;</td></tr></table>
+</td>
+</tr>
+<tr>
+<td width=336 valign=top>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td bgcolor="#eeeecc"><a name="Business">&nbsp;<font face="arial,helvetica" size=2><b>Business</b></font></a></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Business/Stock_Markets/"><small>Dow Closes Below 10,000 Mark, First Time Since March</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  4:28 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Business/Corporate_Earnings/"><small>Corporate Earnings</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  1:45 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Business/Oil_and_Gas/"><small>Oil and Gas</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  1:39 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Business/Telecommunications/"><small>Telecom Industry News</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  3:21 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Business/US_Economy/"><small>U.S. Economy</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  1:27 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Business/AOL___Time_Warner_Deal/"><small>AOL-Time Warner Merger</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 16  6:27 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/World/European_Monetary_Union/"><small>Euro and the European Monetary Union</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  9:37 AM&nbsp;EDT</nobr></small></td></tr><tr><td valign=top colspan=3 align=right><font face="Arial,Helvetica" size=2><b><a href="/web/20001018220147/http://fullcoverage.yahoo.com/fc/business/">All Business Full Coverage...</a></b></font></td></tr>
+<tr><td></td><td></td><td align=right>&nbsp;</td></tr></table>
+</td>
+<td width=3>&nbsp;</td>
+<td width=336 valign=top>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td bgcolor="#eeeecc"><a name="Tech">&nbsp;<font face="arial,helvetica" size=2><b>Tech</b></font></a></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Tech/Digital_Music/"><small>MP3.com Reaches Tentative Pact with Publishers </small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  4:01 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Tech/Domain_Names_and_Registration/"><small>Domain Names and Registration</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 17  5:09 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Tech/Handheld_and_Palmtop_Computers/"><small>Handheld and Palmtop Computers</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 17  8:39 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Tech/Internet_and_World_Wide_Web/"><small>Internet and World Wide Web</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 17  8:29 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Tech/Semiconductors_and_Computer_Chips/"><small>Semiconductors and Computer Chips</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  9:02 AM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Tech/Wireless_Communications_Devices/"><small>Wireless Communications Devices</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  8:59 AM&nbsp;EDT</nobr></small></td></tr><tr><td valign=top colspan=3 align=right><font face="Arial,Helvetica" size=2><b><a href="/web/20001018220147/http://fullcoverage.yahoo.com/fc/Tech/">All Tech Full Coverage...</a></b></font></td></tr>
+<tr><td></td><td></td><td align=right>&nbsp;</td></tr></table>
+</td>
+</tr>
+<tr>
+<td width=336 valign=top>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td bgcolor="#eeeecc"><a name="Science">&nbsp;<font face="arial,helvetica" size=2><b>Science</b></font></a></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Science/Space_Shuttle/"><small>Astronauts Go On Fourth Spacewalk</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  1:16 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Science/Environment_and_Nature_News/"><small>Environment & Nature News</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  5:53 AM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Science/Meteors_and_Asteroids/"><small>Meteors and Asteroids</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 16  9:30 AM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Science/Anthropology_and_Archaeology/"><small>Anthropology and Archaeology</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 17  1:17 AM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Science/Astronomy_and_Space_News/"><small>Astronomy and Space News</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18 12:40 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Science/Genetically_Modified_Food/"><small>Genetically Modified Food Debate</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 17  7:29 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Science/Hubble_Telescope/"><small>Hubble Telescope and Chandra Observatory</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 13  4:29 PM&nbsp;EDT</nobr></small></td></tr><tr><td valign=top colspan=3 align=right><font face="Arial,Helvetica" size=2><b><a href="/web/20001018220147/http://fullcoverage.yahoo.com/fc/Science/">All Science Full Coverage...</a></b></font></td></tr>
+<tr><td></td><td></td><td align=right>&nbsp;</td></tr></table>  
+</td>
+<td width=3>&nbsp;</td>
+<td width=336 valign=top>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td bgcolor="#eeeecc"><a name="Health">&nbsp;<font face="arial,helvetica" size=2><b>Health</b></font></a></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Health/AIDS___HIV/"><small>AIDS - HIV News</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18 12:47 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/US/Abortion_Rights_Debate/"><small>Abortion Rights Debate</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  1:45 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/World/Uganda/"><small>Source of Ugandan Ebola Found</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  3:40 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Health/Diet_and_Nutrition/"><small>Diet and Nutrition</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  7:47 AM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Health/Prostate_Cancer/"><small>Prostate Cancer</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 13  2:48 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Health/Heart_Disease/"><small>Heart Disease</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 17 10:43 AM&nbsp;EDT</nobr></small></td></tr><tr><td valign=top colspan=3 align=right><font face="Arial,Helvetica" size=2><b><a href="/web/20001018220147/http://fullcoverage.yahoo.com/fc/health/">All Health Full Coverage...</a></b></font></td></tr>
+<tr><td></td><td></td><td align=right>&nbsp;</td></tr></table> 
+</td>
+</tr>
+<tr>
+<td width=336 valign=top>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td bgcolor="#eeeecc"><a name="Entertainment">&nbsp;<font face="arial,helvetica" size=2><b>Entertainment</b></font></a></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Entertainment/Beauty_Pageants/"><small>Miss Hawaii Wins Miss America Crown</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 16  5:50 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Entertainment/Actors_Strike/"><small>Actors' Strike</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  7:34 AM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Entertainment/Fall_TV_Schedule/"><small>2000 Fall Television Season</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 17  3:04 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Entertainment/Madonna/"><small>Madonna Wins Internet Domain Dispute</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 17  5:09 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Entertainment/Fashion_and_Modeling/"><small>Fashion and Modeling</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 17  6:54 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Entertainment/Game_Consoles/"><small>Game Consoles</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 16 11:28 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Entertainment/Harry_Potter/"><small>'Harry Potter' Series</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 17  2:08 PM&nbsp;EDT</nobr></small></td></tr><tr><td valign=top colspan=3 align=right><font face="Arial,Helvetica" size=2><b><a href="/web/20001018220147/http://fullcoverage.yahoo.com/fc/Entertainment/">All Entertainment Full Coverage...</a></b></font></td></tr>
+<tr><td></td><td></td><td align=right>&nbsp;</td></tr></table>  
+</td>
+<td width=3>&nbsp;</td>
+<td width=336 valign=top>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td bgcolor="#eeeecc"><a name="Sports">&nbsp;<font face="arial,helvetica" size=2><b>Sports</b></font></a></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Sports/MLB_Playoffs/"><small>Yankees, Mets Head For Subway Series</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  4:56 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Sports/Paralympics/"><small>Paralympics 2000</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  3:11 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Sports/Alonzo_Mourning/"><small>Heat's Mourning To Miss NBA Season</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 17 11:05 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Sports/Hockey/"><small>Colorado Goalie Roy Becomes All-Time Wins Leader </small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18 11:03 AM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Sports/Soccer/"><small>Soccer News</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  2:10 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Sports/Drugs_in_Sports/"><small>Drugs in Sports</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 17  2:13 PM&nbsp;EDT</nobr></small></td></tr><tr><td valign=top colspan=3 align=right><font face="Arial,Helvetica" size=2><b><a href="/web/20001018220147/http://fullcoverage.yahoo.com/fc/Sports/">All Sports Full Coverage...</a></b></font></td></tr>
+<tr><td></td><td></td><td align=right>&nbsp;</td></tr></table>
+</td>
+</tr>
+<tr> 
+<td width=336 valign=top>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td bgcolor="#eeeecc"><a name="Crime">&nbsp;<font face="arial,helvetica" size=2><b>Crime</b></font></a></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/US/School_Violence/"><small>School Violence</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 15 10:46 AM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/US/Criminal_Justice/"><small>Criminal Justice</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 17  9:02 AM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/US/Hate_Crimes/"><small>Hate Crimes</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 15 11:29 AM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/US/Police_and_Law_Enforcement/"><small>Law Enforcement Issues</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 16  8:51 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/US/Prisons/"><small>Prison Issues</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 16  9:02 PM&nbsp;EDT</nobr></small></td></tr><tr><td valign=top colspan=3 align=right><font face="Arial,Helvetica" size=2><b><a href="/web/20001018220147/http://fullcoverage.yahoo.com/fc/crime/">All Crime Full Coverage...</a></b></font></td></tr>
+<tr><td></td><td></td><td align=right>&nbsp;</td></tr></table>
+</td>
+<td width=3>&nbsp;</td>
+<td width=336 valign=top>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr>
+<td bgcolor="#eeeecc"><a name="Local">&nbsp;<font face="arial,helvetica" size=2><b>Local</b></font></a></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%">
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Local/LA_County_General_Strike/"><small>L.A. Transit Strike Settled</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  1:30 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Local/NY_Arab_Jewish_Relations/"><small>NY Arab Jewish Relations</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 16  3:57 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/US/Governor_Mel_Carnahan/"><small>Missouri Mourns Gov. Carnahan's Death </small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  5:14 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/US/NY_Senate_Race/"><small>New York Senate Race</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  4:30 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Local/Twin_Cities_Transportation/"><small>Twin Cities Begins Ramp Meter Study</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 17  3:09 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Health/West_Nile_Virus/"><small>West Nile Virus</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 17 12:42 PM&nbsp;EDT</nobr></small></td></tr>
+<tr><td width="2%" valign=top><img height=16 width=16 align=left src="/web/20001018220147im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif"></td>
+<td width="53%"><a href="/web/20001018220147/http://dailynews.yahoo.com/fc/Local/Silicon_Valley/"><small>Silicon Valley</small></a></td><td width="45%" align=right>&nbsp;<small><nobr>Oct 18  1:18 PM&nbsp;EDT</nobr></small></td></tr><tr><td valign=top colspan=3 align=right><font face="Arial,Helvetica" size=2><b><a href="/web/20001018220147/http://fullcoverage.yahoo.com/fc/local/">All Local Full Coverage...</a></b></font></td></tr>
+<tr><td></td><td></td><td align=right>&nbsp;</td></tr></table> 
+</td>
+</tr>
+</table>
+</td></tr>
+<tr valign=top><td>
+<table border=0 cellpadding=2 cellspacing=0 width=675>
+<tr valign=middle bgcolor="#eeeecc">
+<td><font face="arial,helvetica" size=3><b>&nbsp;Search Full Coverage</b></font></td></tr></table>
+<table cellpadding=2 cellspacing=0 border=0 width="100%"><tr><td valign=top align=center><form action="/web/20001018220147/http://search.news.yahoo.com/search/news">
+<input type=text size=25 name=p><input type=submit value="Search">
+<a href="/web/20001018220147/http://search.news.yahoo.com/search/news/options"><font face="arial,helvetica" size=2>Advanced</font></a><br><small><b>Search:</b><input type=radio name=c value="news">&nbsp;Stories&nbsp;&nbsp;<input type=radio name=c value="news_photos">&nbsp;Photos&nbsp;&nbsp;<input type=radio name=c value="fullcov" checked>&nbsp;Full Coverage</small><input type=hidden name=n value=10>
+</form></td></tr></table> 
+</td></tr></table>
+<table border=0 cellspacing=0 cellpadding=0 width=675>
+<tr bgcolor="#333366"><td colspan=12>
+<table border=0 cellspacing=0 cellpadding=0><tr><td height=5>
+</td></tr></table></td></tr>
+<tr>
+<td colspan=12 align=center><table border=0 cellspacing=0><tr>
+<td align=center><a href="/web/20001018220147/http://dailynews.yahoo.com/"><font size=2 face="arial,helvetica">Home</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001018220147/http://dailynews.yahoo.com/h/ts/"><font size=2 face="arial,helvetica">Top&nbsp;Stories</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001018220147/http://dailynews.yahoo.com/h/bs/"><font size=2 face="arial,helvetica">Business</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001018220147/http://dailynews.yahoo.com/h/tc/"><font size=2 face="arial,helvetica">Tech</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001018220147/http://dailynews.yahoo.com/h/pl/"><font size=2 face="arial,helvetica">Politics</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001018220147/http://dailynews.yahoo.com/h/wl/"><font size=2 face="arial,helvetica">World</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001018220147/http://dailynews.yahoo.com/h/lo/"><font size=2 face="arial,helvetica">Local</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001018220147/http://dailynews.yahoo.com/h/en/"><font size=2 face="arial,helvetica">Entertainment</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001018220147/http://dailynews.yahoo.com/h/sp/"><font size=2 face="arial,helvetica">Sports</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001018220147/http://dailynews.yahoo.com/h/sc/"><font size=2 face="arial,helvetica">Science</font></a>&nbsp;</td>
+<td align=center><a href="/web/20001018220147/http://dailynews.yahoo.com/h/hl/"><font size=2 face="arial,helvetica">Health</font></a>&nbsp;</td>
+<td align=center bgcolor="#333366">&nbsp;<a href="/web/20001018220147/http://dailynews.yahoo.com/fc/"><font size=2 face="arial,helvetica" color="#eeeeff">Full&nbsp;Coverage</font></a>&nbsp;</td>
+</tr></table></td></tr></table>
+<hr size=0 width=675>
+<table width=675><tr><td valign=top align=center>
+<font size=2><a href="mailto:full_coverage@yahoo-inc.com?subject=Suggestion">Submit links to Full&nbsp;Coverage</a><br>
+Copyright &copy; 2000 Yahoo! Inc. All Rights Reserved.&nbsp;&nbsp;<a href="/web/20001018220147/http://privacy.yahoo.com/">Privacy Policy</a>&nbsp;-&nbsp;<a href="/web/20001018220147/http://docs.yahoo.com/info/terms/">Terms of Service</a><br>
+Question? Comments? Send us <a href="mailto:full_coverage@yahoo-inc.com?subject=Comment">feedback</a>.</font>
+</td></tr></table></center></body></html>
+
+ 
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 22:01:47 Oct 18, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:57:10 Jan 7, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

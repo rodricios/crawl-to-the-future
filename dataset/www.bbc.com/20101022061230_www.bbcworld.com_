@@ -1,0 +1,807 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app14.us.archive.org";archive_analytics.values.server_ms=297;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<!--Designed and Devloped by Graphico New Media Ltd Web:www.graphico.co.uk
+Email:info@graphico.co.uk Tel:+44 (0) 1635 522810-->
+<meta NAME="AUTHOR" Content="Designed and Developed by Graphico New Media Ltd">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>BBC World News Front Page</title>
+<link type="text/css" rel="stylesheet" href="../CSS/Common.css">
+</head>
+<body bgcolor="#FFFFFF">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.bbcworldnews.com/Pages/default.aspx";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "16";
+var displayMonth = "Oct";
+var displayYear = "2010";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.bbcworldnews.com/Pages/default.aspx" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20101016071641" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20100915051730/http://www.bbcworldnews.com/Pages/default.aspx" title="15 Sep 2010">SEP</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 7:16:41 Oct 16, 2010">OCT</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20101121055349/http://www.bbcworldnews.com/Pages/default.aspx" title="21 Nov 2010"><strong>NOV</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20101013104641/http://www.bbcworldnews.com/Pages/default.aspx" title="10:46:41 Oct 13, 2010"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 7:16:41 Oct 16, 2010">16</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20101024182255/http://www.bbcworldnews.com/Pages/default.aspx" title="18:22:55 Oct 24, 2010"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20091006080417/http://www.bbcworldnews.com/Pages/default.aspx" title="6 Oct 2009"><strong>2009</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 7:16:41 Oct 16, 2010">2010</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20111025003813/http://www.bbcworldnews.com/Pages/default.aspx" title="25 Oct 2011"><strong>2011</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20101016071641*/http://www.bbcworldnews.com/Pages/default.aspx" title="See a list of every capture for this URL">636 captures</a>
+           <div class="r" title="Timespan for captures of this URL">23 Apr 07 - 12 Dec 14</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000111002000_2008:-1:000000dfdb5a_2009:-1:478731010120_2010:9:067cea885577_2011:-1:8978754255bb_2012:-1:bbea64685436_2013:-1:862623324111_2014:-1:331020124101_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<iframe src="javascript:'';" id="ecos_iframe" style="position:absolute; left: 0px; top: 0px; width: 1px; height: 1px; visibility: hidden;" title=""></iframe><iframe src="javascript:'';" id="ecos_iframe2" style="position:absolute; left: 0px; top: 0px; width: 1px; height: 1px; visibility: hidden;" title=""></iframe><div id="ecos_surveylayer" style="position:absolute; left: 0px; top: 0px; width: 1px; height: 1px; visibility: hidden;" title="Visitor Survey (dynamically generated)"></div><script language="Javascript" type="text/javascript">
+<!--
+/*** eCustomerOpinions survey code v4.1.2 ****/
+/* Copyright (c) 2007 eDigitalResearch Ltd   */
+/* Please refer to our Terms & Conditions    */
+/* for conditions of use.                    */
+/* Do NOT modify this code unless directed   */
+/* to do so by a member of eDigitalResearch  */
+/* staff.                                    */
+/*********************************************/
+
+var ecos_data = '';
+var ecos_data2 = '';
+var ecos_data3 = '';
+var ecos_test = 0;
+
+var ecos_sid = 145775928;
+var ecos_host = 'ecustomeropinions.com';
+var ecos_ver = '412';
+var ecos_go = 0;
+var ecos_pu = 0;
+var ecos_hm = 0;
+var ecos_pm = 0;
+var ecos_survey_size_x = 550;
+var ecos_survey_size_y = 400;
+var ecos_jscode = '';
+var ecos_runjs = 'ecos_run();';
+
+
+var brok = false;
+if (parseInt(navigator.appVersion.charAt(0)) >= 4)
+	brok = true;
+
+
+function buildurl(destpage) {
+	var ecos_url = ecos_host + '/popup/' + destpage + '.php?sid=' + ecos_sid;
+
+	ecos_url = ((document.location.protocol == 'https:') ? 'https://' : 'http://') + ecos_url;
+
+	if (ecos_test > 0)
+		ecos_url = ecos_url + '&test=1';
+
+	ecos_url += '&v=' + ecos_ver + '&r=' + Math.round(Math.random() * 100000);
+
+	var myvar2 = '';
+	myvar = window.location.href;
+
+	var icount = 0;
+	for (i=0; i<myvar.length; i++) {
+		if (myvar.charAt(i) == '/')
+			icount++;
+		if (icount >= 3)
+			myvar2 += myvar.charAt(i);
+	};
+
+	if (ecos_data.length > 0)	ecos_url += '&data=' + ecos_data;
+	if (ecos_data2.length > 0)	ecos_url += '&data2=' + ecos_data2;
+	if (ecos_data3.length > 0)	ecos_url += '&data3=' + ecos_data3;
+
+	if ((screen.width > 0) && (screen.height > 0))
+		ecos_url += '&xres=' + screen.width + '&yres=' + screen.height;
+
+	if (screen.colordepth > 0)
+		ecos_url += '&depth=' + screen.colordepth;
+
+	ecos_url += '&url=' + escape(myvar2.substring(0,100));
+	ecos_url += '&referrer=' + escape(document.referrer.substring(0,100));
+
+	return ecos_url;
+};
+
+
+function ecos_popup_popup() {
+	
+	var ua = navigator.userAgent;
+	if ((ua.indexOf('NT 5.1') > 0) && (ua.indexOf(' SV1') > 0))
+		return false;
+	
+	var sw = window.open(buildurl('survey'), 'surveywin', 'location=0,toolbar=no,width=' + ecos_survey_size_x + ',height=' + ecos_survey_size_y + ',directories=no,status=no,scrollbars=yes,resizable=yes');
+	
+	if ((ecos_pu) && (sw))
+		sw.blur();
+	
+	return sw;
+}
+
+
+function ecos_popup_layer() {
+	if (!document.getElementById)
+		return false;
+	
+	var url = buildurl('layer') + '&inlayer=1';
+	var t = '<SCR' + 'IPT LANGUAGE="Javascript" SRC="' + url + '"></SCR' + 'IPT>';
+	
+	var b, a = document.getElementById("ecos_iframe2");
+	if (a.contentDocument)
+		b = a.contentDocument;
+	else if (a.contentWindow)
+		b = a.contentWindow.document;
+	else if (a.document)
+		b = a.document;
+	else
+		return false;
+	
+	b.open();
+	b.write(t);
+	b.close();
+	
+	return true;
+}
+
+
+function ecos_layer_run() {
+	eval(ecos_jscode);
+}
+
+
+function ecos_layer_gono() {
+	document.getElementById('ecos_surveylayer').style.visibility = 'hidden';
+};
+
+
+function ecos_layer_gosurveysize() {
+	ecos_layer_gono();
+	var full_survey_url = buildurl('survey') + '&doneperm=1';
+	sw = window.open(full_survey_url, 'surveywin',
+		'location=0,toolbar=no,width=' + ecos_survey_size_x + ',height=' + ecos_survey_size_y + ',directories=no,status=no,scrollbars=yes,resizable=yes');
+	if ((ecos_pu) && (sw))
+		sw.blur();
+	return sw;
+};
+
+
+function ecos_layer_golater() {
+	sw = ecos_layer_gosurveysize();
+	if (sw)
+		sw.blur();
+	return sw;
+};
+
+
+var runcounter = 0;
+function ecos_popup() {
+	
+	if (document.getElementById)
+		if (!document.getElementById("ecos_iframe"))
+			if (runcounter < 10) {
+				runcounter++;
+				setTimeout('ecos_popup()', 100);
+				return;
+			};
+	
+	if (ecos_go) {
+		
+		switch (ecos_pm) {
+		case 0 : ecos_popup_popup(); break;
+		case 1 : ecos_popup_layer(); break;
+		case 2 : if (!ecos_popup_popup()) ecos_popup_layer(); break;
+		case 3 : if (!ecos_popup_layer()) ecos_popup_popup();
+		};
+	};
+};
+
+
+function ecos_run() {
+	if (ecos_go) {
+		if (ecos_hm == 0)
+			ecos_popup();
+		else if ((ecos_hm == 1) && (brok)) {
+			ecos_pm = 0;
+			window.onunload = ecos_popup;
+		};
+	};
+};
+
+
+function ecos_i() {
+	eval(ecos_runjs);
+};
+
+
+var runcounter2 = 0;
+function ecos_load() {
+	var a, b;
+	if (!(a = document.getElementById("ecos_iframe"))) {
+		if (++runcounter2 < 10)
+			setTimeout('ecos_load()', 100);
+		return;
+	};
+	
+	var t = '<SCR' + 'IPT LANGUAGE="Javascript" SRC="' + buildurl('i') + '"></SCR' + 'IPT>';
+	if (a.contentDocument)
+		b = a.contentDocument;
+	else if (a.contentWindow)
+		b = a.contentWindow.document;
+	else if (a.document)
+		b = a.document;
+	if (b) {
+		b.open();
+		b.write(t);
+		b.close();
+	};
+};
+
+
+if ((document.getElementById) && (window.frames)) {
+	ecos_load();
+} else {
+	ecos_img = new Image;
+	ecos_img.src = buildurl('i') + '&nosup=1';
+};
+
+
+// -->
+</script><noscript><img src="/web/20101016071641im_/https://ecustomeropinions.com/popup/img.php?sid=145775928&amp;nojs=1" border="0" width="1" height="1" alt="" /><a href="/web/20101016071641/https://ecustomeropinions.com/popup/noscript.php?sid=145775928&amp;nojs=1">We would like your feedback, please fill in our survey</a></noscript>
+<!-- OAS SETUP begin --> 
+<SCRIPT LANGUAGE=JavaScript> 
+<!-- 
+//configuration 
+OAS_url ='/web/20101016071641/http://ads.bbcworld.com/RealMedia/ads/'; 
+OAS_listpos = 'Position1,Left,Top,Right,TopRight'; 
+OAS_query = '?'; 
+OAS_sitepage = 'www.bbcworld.com/frontpage'; 
+//end of configuration 
+OAS_version = 10; 
+OAS_rn = '001234567890'; OAS_rns = '1234567890'; 
+OAS_rn = new String (Math.random()); OAS_rns = OAS_rn.substring (2, 11); 
+function OAS_NORMAL(pos) {  
+document.write('<A HREF="' + OAS_url + 'click_nx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + OAS_query + '" TARGET=_top>'); 
+document.write('<IMG SRC="' + OAS_url + 'adstream_nx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + OAS_query + '" BORDER=0 ALT="Click!"></A>'); 
+} 
+//--> 
+</SCRIPT> 
+<SCRIPT LANGUAGE=JavaScript1.1> 
+<!-- 
+OAS_version = 11; 
+if (navigator.userAgent.indexOf('Mozilla/3') != -1) 
+OAS_version = 10; 
+if (OAS_version >= 11) 
+document.write('<SCRIPT LANGUAGE=JavaScript1.1 SRC="' + OAS_url + 'adstream_mjx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + OAS_query + '"><\/SCRIPT>'); 
+//--> 
+</SCRIPT> 
+<SCRIPT LANGUAGE='JavaScript'> 
+<!--  
+document.write(''); 
+function OAS_AD(pos) { 
+if (OAS_version >= 11 && typeof(OAS_RICH)!='undefined') 
+OAS_RICH(pos); 
+else 
+OAS_NORMAL(pos); 
+} 
+//--> 
+</SCRIPT> 
+<!-- OAS SETUP end --> 
+
+
+<!-- OAS AD 'Position1/2' begin --> 
+<SCRIPT LANGUAGE='JavaScript'> 
+<!-- 
+OAS_AD('Position1'); 
+//--> 
+</SCRIPT> 
+<!-- OAS AD 'Position1/2' end --> 
+
+
+ 
+<center><a name="top" id="top"></a>
+<div style="width:770px; background-image:url('Images/border-background.jpg'); padding-left: 5px; padding-right: 5px; background-repeat:repeat-y">
+
+<div class="header">
+	<div><img src="../Pages/Images/banner-new.jpg" alt="BBC World News Banner" border="0" usemap="#Map" id="imgTabs" /></div>
+	<map name="Map">
+		<area shape="rect" coords="405,10,445,20" href="/web/20101016071641/http://www.bbc.com/" alt="BBC Home">
+		<area shape="rect" coords="450,10,490,20" href="/web/20101016071641/http://news.bbc.co.uk/" alt="BBC News">
+		<area shape="rect" coords="495,10,535,20" href="/web/20101016071641/http://news.bbc.co.uk/sport/" alt="BBC Sport">
+		<area shape="rect" coords="545,10,565,20" href="/web/20101016071641/http://www.bbc.co.uk/tv/" alt="BBC TV">
+		<area shape="rect" coords="570,10,615,20" href="/web/20101016071641/http://www.bbc.co.uk/radio/" alt="BBC Radio">
+		<area shape="rect" coords="620,10,675,20" href="/web/20101016071641/http://www.bbc.co.uk/weather/" alt="BBC Weather">
+		<area shape="rect" coords="685,10,755,20" href="/web/20101016071641/http://www.bbc.co.uk/worldservice/languages/" alt="BBC Languages">
+	</map>	
+</div><!-- Start: Advert top -->
+
+<div style="width:760px;text-align:center;padding-left:15px;padding-right:30px" align="center">
+	<table width="50%"><tr><td>
+	
+		<!-- OAS AD 'Top/2' begin -->
+		<SCRIPT language="JavaScript">
+		<!--
+			OAS_AD('Top');
+		//-->
+		</SCRIPT>
+		<!-- OAS AD 'Top/2' end -->
+	
+		<A href="../Pages/AdvertiseWithUs.aspx" style="float:right;"><img id="imgAdLinkTop" src="Images/Adverts/advertisement.gif" alt="Advertise with Us" border="0" /></A>
+	</td></tr></table>
+</div>
+<!-- End: Advert top -->
+  <table width="760" cellpadding="0" cellspacing="0">
+    <tr>
+		<td bgcolor="#E6E7E8" valign="top" width="120">
+			<div id="navPanel">
+<table border="0" width="115">
+	<tr>
+		<td class="navPageLinks">BBC World News</td>
+	</tr><tr>
+		<td><img src="Images/NavSeparator.gif" alt="----------" align="right"></td>
+	</tr><tr>
+		<td class="navPageLinks"><A href="/web/20101016071641/http://www.bbcworldnews.com/Pages/ProgrammeHighlights.aspx">Programme Highlights</a></td>
+	</tr><tr>
+		<td class="navPageLinks"><A href="/web/20101016071641/http://www.bbcworldnews.com/Pages/Schedules.aspx">Schedules</a></td>
+	</tr><tr>
+		<td class="navPageLinks"><A href="/web/20101016071641/http://www.bbcchannelpartners.com/worldnews/where_to_watch.aspx">Where To Watch</a></td>
+	</tr><tr>
+		<td class="navPageLinks"><A href="/web/20101016071641/http://www.bbcworldnews.com/Pages/AdvertiseWithUs.aspx">Advertise With Us</a></td>
+	</tr><tr>
+		<td class="navPageLinks"><A href="/web/20101016071641/http://www.bbcworldnews.com/Pages/PressOffice.aspx">Press Office</a></td>
+	</tr><tr>
+		<td class="navPageLinks"><A href="/web/20101016071641/http://www.bbcworldnews.com/Pages/About.aspx">About<br />BBC World News</a></td>
+	</tr><tr>
+		<td class="navPageLinks"><A href="/web/20101016071641/http://www.bbcchannelpartners.com/worldnews/images">Image Library</a></td>
+	</tr><tr>
+		<td class="navPageLinks"><A href="/web/20101016071641/http://www.bbcworldnews.com/Pages/ContactUsDepartments.aspx">Contact Us</a></td>
+	</tr><tr>
+		<td><img src="Images/NavSeparator.gif" alt="----------" align="right"></td>
+	</tr><tr>
+		<td class="navNoneLinkHeading">HEADLINES</td>
+	</tr><tr>
+		<td class="navPageLinks"><A href="/web/20101016071641/http://www.bbc.co.uk/news">World News</a></td>
+	</tr><tr>
+		<td class="navPageLinks"><A href="/web/20101016071641/http://www.bbc.co.uk/business">Business News</a></td>
+	</tr><tr>
+		<td class="navPageLinks"><A href="/web/20101016071641/http://www.bbc.co.uk/sport">Latest Sport</a></td>
+	</tr>
+</table>
+			<br />
+			</div>
+
+<div align="right">
+	<a href="../Pages/AdvertiseWithUs.aspx">
+		<img id="imgAdLinkLeft" src="Images/Adverts/advertisement.gif" alt="Advertise with Us" border="0" /></a>
+	<div style="WIDTH:120px; HEIGHT:120px">
+		
+		<!-- OAS AD 'Left/2' begin -->
+		<SCRIPT LANGUAGE='JavaScript'>
+		<!--
+		OAS_AD('Left');
+		//-->
+		</SCRIPT>
+		<!-- OAS AD 'Left/2' end -->
+		
+	</div>
+</div>
+      </td>
+		<td width="10"></td>
+		<td valign="top" align="left" width="630">
+			<table width="630" cellpadding="0" cellspacing="0">
+<!-- Start: Bread crumb -->
+				<tr>
+					<td width="100%" colspan="5">
+						<div class="CrumbContainer">
+						<table width="100%" bgcolor="#e6e7e8">
+							<tr>
+								<td><div class="CrumbTrail">
+BBC World News Front Page
+								</div></td>
+							</tr>
+						</table>
+						</div>
+					</td>
+				</tr>
+<!-- End: Bread crumb -->
+				<tr>
+<!-- Start: Main content -->
+					<td width="416" colspan="1" valign="top">
+						<div id="MainContent">
+
+<form id="mainForm" method="post" action="/web/20101016071641/http://www.bbcworldnews.com/Pages/default.aspx">
+<input type="hidden" name="__VIEWSTATE" value="dDwtNTgxNzczNDgyO3Q8O2w8aTwxPjs+O2w8dDw7bDxpPDA+Oz47bDx0PDtsPGk8MT47aTwzPjtpPDU+Oz47bDx0PDtsPGk8MD47PjtsPHQ8cDxwPGw8VmlzaWJsZTs+O2w8bzx0Pjs+Pjs+O2w8aTwxPjtpPDM+O2k8NT47PjtsPHQ8cDxwPGw8SW1hZ2VVcmw7QWx0ZXJuYXRlVGV4dDs+O2w8fi9QYWdlcy9JbWFnZXMvQXNzZXRzL2EzNmNjMjg1LWZmNDAtNGEwMS1hYjA1LWExZjYxNDBiN2MyMy5qcGc7VGhlIFJlY29yZCBFdXJvcGU7Pj47Pjs7Pjt0PHA8bDxUZXh0Oz47bDxUaGUgUmVjb3JkIEV1cm9wZSBTcGVjaWFsOz4+Ozs+O3Q8cDxsPFRleHQ7PjtsPFVTIFNlY3JldGFyeSBvZiBTdGF0ZSBIaWxsYXJ5IENsaW50b24gYW5kIENhdGhlcmluZSBBc2h0b24sIHRoZSBFVeKAmXMgSGlnaCBSZXByZXNlbnRhdGl2ZSBvbiBGb3JlaWduIFBvbGljeSwgYXJlIGludGVydmlld2VkIHRvZ2V0aGVyIGJ5IFNoaXJpbiBXaGVlbGVyIGluIEJydXNzZWxzIGZvciB0aGlzIHNwZWNpYWwgZWRpdGlvbi47Pj47Oz47Pj47Pj47dDw7bDxpPDA+Oz47bDx0PHA8cDxsPFdpZHRoO0JvcmRlcldpZHRoO0NlbGxQYWRkaW5nO0NlbGxTcGFjaW5nO18hU0I7PjtsPDE8NDE2cHg+OzE8MHB4PjtpPDA+O2k8MD47aTwzOTM1MDQ+Oz4+Oz47Oz47Pj47dDw7bDxpPDA+Oz47bDx0PHA8cDxsPFdpZHRoO0JvcmRlcldpZHRoO0NlbGxQYWRkaW5nO0NlbGxTcGFjaW5nO18hU0I7PjtsPDE8NDE2cHg+OzE8MHB4PjtpPDA+O2k8MD47aTwzOTM1MDQ+Oz4+Oz47Oz47Pj47Pj47Pj47Pj47PmcN7QhVKoyaA8T/ryYVahzNq/I9" />
+<table id="Main" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td>
+	
+
+<table id="announcement_uiPnlAnnouncement" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td>
+
+<table id="Teasers1_TableTeaser" cellspacing="0" cellpadding="0" border="0" style="border-width:0px;width:416px;border-collapse:collapse;">
+	<tr>
+		<td class="BorderBottom10pxPad" colspan="2" style="width:203px;padding-top:1px;">
+			<a href="Announcement.aspx">		<img id="announcement_uiTeaserImage" src="Images/Assets/a36cc285-ff40-4a01-ab05-a1f6140b7c23.jpg" alt="The Record Europe" border="0" />
+			</a>
+		</td>
+		<td class="BorderBottom10pxPad" style="width:10px;"></td>
+		<td class="BorderBottom10pxPad" colspan="2" style="width:203px;">
+			<div class="fpTeaserHeader1"><a href="Announcement.aspx">The Record Europe Special</a></div>
+			<div class="fpTeaserRegularLarge">US Secretary of State Hillary Clinton and Catherine Ashton, the EU’s High Representative on Foreign Policy, are interviewed together by Shirin Wheeler in Brussels for this special edition.</div>
+		</td>
+	</tr>
+</table>
+<br />
+
+	</td></tr></table>
+
+<table id="Teasers1_TableTeaser" cellspacing="0" cellpadding="0" border="0" width="416">
+		<tr>
+			<td class="BorderBottom10pxPad" colspan="2" width="203" style="padding-top:1px;"><a href="Programme.aspx?id=343"><img src="/web/20101016071641im_/http://www.bbcworldnews.com/Pages/Images/Assets/41a41240-3337-4dde-9850-9345cceb8041.jpg" border="0" width="203" height="152" alt="My Country" /></a>
+</td><td class="BorderBottom10pxPad" width="10"></td><td class="BorderBottom10pxPad" colspan="2" width="203"><div class="fpTeaserHeader1"><a href="Programme.aspx?id=343">My Country: Nigeria</a></div>
+<div class="fpTeaserRegularLarge">Showcasing documentaries made by local film-makers. This week the series travels to Nigeria.</div>
+</td>
+		</tr><tr>
+			<td class="fpTeaserGap" width="66"><a href="Programme.aspx?id=254"><img src="/web/20101016071641im_/http://www.bbcworldnews.com/Pages/Images/Assets/daedc9bf-e8ba-4caf-9626-570043604314.jpg" border="0" width="66" height="49" alt="Evan Davis" /></a>
+</td><td class="fpTeaserWithLeftGap" width="137"><div class="fpTeaserHeader2"><a href="Programme.aspx?id=254">The Bottom Line</a></div>
+<div class="fpTeaserRegular" style="font-size:11.5px;" >Explore the issues behind business and finance with Evan Davis and guests </div>
+</td><td class="BorderBottom20pxPad" width="10"></td><td class="fpTeaserGap" width="66"><a href="ProgrammeMultiFeature.aspx?id=106"><img src="/web/20101016071641im_/http://www.bbcworldnews.com/Pages/Images/Assets/02289875-4f11-477b-9b88-ba6d2c323feb.jpg" border="0" width="66" height="49" alt="Our World" /></a>
+</td><td class="fpTeaserWithLeftGap" width="137"><div class="fpTeaserHeader2"><a href="ProgrammeMultiFeature.aspx?id=106">Our World</a></div>
+<div class="fpTeaserRegular" style="font-size:11.5px;" >Showcasing BBC journalism at its best with programmes that expose and evaluate global topics</div>
+</td>
+		</tr><tr>
+			<td class="fpTeaserGap" width="66"><a href="Programme.aspx?id=393"><img src="/web/20101016071641im_/http://www.bbcworldnews.com/Pages/Images/Assets/15512860-fd06-4096-a465-6ef13dfb090b.jpg" border="0" width="66" height="49" alt="Fiona Foster" /></a>
+</td><td class="fpTeaserWithLeftGap" width="137"><div class="fpTeaserHeader2"><a href="Programme.aspx?id=393">Fast:track</a></div>
+<div class="fpTeaserRegular" style="font-size:11.5px;" >More than just a travel show, fast:track delivers the latest travel news from the industry itself</div>
+</td><td class="BorderBottom20pxPad" width="10"></td><td class="fpTeaserGap" width="66"><a href="Programme.aspx?id=24"><img src="/web/20101016071641im_/http://www.bbcworldnews.com/Pages/Images/Assets/70c30a50-3375-4a83-8efd-700a896d1fe7.jpg" border="0" width="66" height="49" alt="Dateline London" /></a>
+</td><td class="fpTeaserWithLeftGap" width="137"><div class="fpTeaserHeader2"><a href="Programme.aspx?id=24">Dateline London</a></div>
+<div class="fpTeaserRegular" style="font-size:11.5px;" >Dateline London speaks to foreign correspondents currently posted in London who look at events in the UK through outsiders' eyes.</div>
+</td>
+		</tr>
+	</table>
+<BR>
+<TABLE class=fpStaticText id=tableFP1 width=416 border=0>
+  <TR>
+    <TD width=203>
+      <DIV class=fpStaticTextHeader><A href="ProgrammeHighlights.aspx">PROGRAMME 
+      HIGHLIGHTS</A></DIV>
+      <DIV class=fpStaticTextRegular><A href="ProgrammeHighlights.aspx">What's 
+      on BBC World News</A></DIV></TD>
+    <TD width=10></TD>
+    <TD width=203>
+      <DIV class=fpStaticTextHeader><A href="Schedules.aspx">SCHEDULES</A></DIV>
+      <DIV class=fpStaticTextRegular><A href="Schedules.aspx">Full BBC World News TV 
+      listings</A></DIV></TD></TR></TABLE><BR>
+<table id="Promos1_TablePromo" cellspacing="0" cellpadding="0" border="0" width="416">
+		<tr>
+			<td class="fpPromoGapImage" width="66"><a href="/web/20101016071641/http://www.bbcglobalminds.com/Portal/default.aspx" target="_blank"><img src="/web/20101016071641im_/http://www.bbcworldnews.com/Pages/Images/Assets/61c81e3b-7c22-4777-84de-96a8d2aa7a65.gif" border="0" width="66" height="66" alt="Tell us what you think" /></a></td><td class="fpPromoGap" width="137"><div class="fpPromoTitle"><a href="/web/20101016071641/http://www.bbcglobalminds.com/Portal/default.aspx" target="_blank">Join the Viewer Panel</a></div><div class="fpPromoRegular">Click here tell us what you think of these programmes and the channel.</div></td><td class="fpPromoGap" width="10"></td><td class="fpPromoGapImage" width="66"><a href="/web/20101016071641/http://bbcworldnews.netprophetsglobal.com/subscribe.aspx" target="_blank"><img src="/web/20101016071641im_/http://www.bbcworldnews.com/Pages/Images/Assets/b4e6a4f3-9c03-40f6-bc59-a2d18c50cc32.jpg" border="0" width="66" height="66" alt="alt tag linked" /></a></td><td class="fpPromoGap" width="137"><div class="fpPromoTitle"><a href="/web/20101016071641/http://bbcworldnews.netprophetsglobal.com/subscribe.aspx" target="_blank">e-guide</a></div><div class="fpPromoRegular">Click here to subscribe <BR />to the<BR />The World Agenda e-guide</div></td>
+		</tr>
+	</table>
+<BR><!--
+	<TABLE class="tableFP2" width="416" border="0">
+		<TR>
+			<TD width="100%" colSpan="2">
+				<DIV class="fpTopStoriesHeaderGrey">HEADLINES</DIV>
+			</TD>
+		</TR>
+		<TR>
+			<TD class="fpStaticTextGap" width="66"><A href="News.aspx">
+					<img id="Image1" src="Images/Static/news_world_6649.gif" alt="Headlines" border="0" /></A></TD>
+			<TD class="TdFivePixelGapLeftOnly" width="350">
+				<DIV class="fpStaticTextRegular"><A href="News.aspx">The latest international headlines</A></DIV>
+			</TD>
+		</TR>
+	</TABLE>
+	-->
+<TABLE class=tableFP2 width=416 border=0>
+<!-- SH 20100721 - updated URLs -->
+  <TR>
+    <TD colSpan=5>
+      <DIV class=fpTopStoriesHeaderGrey>HEADLINES</DIV></TD></TR>
+  <TR>
+    <TD width=203 colSpan=2>
+      <DIV class=fpStaticTextHeader>WORLD NEWS</DIV></TD>
+    <TD width=10>&nbsp;</TD>
+    <TD width=203 colSpan=2>
+      <DIV class=fpStaticTextHeader>BUSINESS NEWS</DIV></TD></TR>
+  <TR>
+    <TD width=66><IMG height=49 alt="" 
+      src="Images/Teasers/Small/news_world_6649.gif" width=66></TD>
+    <TD width=137>
+      <DIV class=fpStaticTextRegular><A href="/web/20101016071641/http://www.bbc.co.uk/news">The 
+      latest news from around the world</A></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD width=66><IMG height=49 alt="" 
+      src="Images/Teasers/Small/news_business_6649.gif" width=66></TD>
+    <TD width=137>
+      <DIV class=fpStaticTextRegular><A href="/web/20101016071641/http://www.bbc.co.uk/business">The 
+      latest international business headlines</A></DIV></TD></TR>
+  <TR>
+    <TD width=203 colSpan=2>
+      <DIV class=fpStaticTextHeader>SPORT NEWS</DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD width=203 colSpan=2>&nbsp;</TD></TR>
+  <TR>
+    <TD width=66><IMG height=49 alt="" 
+      src="Images/Teasers/Small/news_sport_6649.gif" width=66></TD>
+    <TD width=137>
+      <DIV class=fpStaticTextRegular><A href="/web/20101016071641/http://www.bbc.co.uk/sport">The 
+      latest from the world of sport</A></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD width=66>&nbsp;</TD>
+    <TD>&nbsp;</TD></TR></TABLE>
+
+</td></tr></table></form>
+
+						</div>
+					</td>
+<!-- End: Main content -->
+					<td width="10" colspan="1"> </td>
+<!-- Start: Right advert -->
+					<td width="204" colspan="1" valign="top" style="padding-top:3px;">
+
+<div style="width:180px; height:160px" align="left">
+
+	<!-- OAS AD 'Right/2' begin -->
+	<SCRIPT language="JavaScript">
+	<!--
+		OAS_AD('TopRight');
+	//-->
+	</SCRIPT>
+	<!-- OAS AD 'Right/2' end -->
+
+</div>
+
+<div style="width:120px;" align="left">
+	<a href="../Pages/AdvertiseWithUs.aspx">
+		<img id="imgAdLinkRight" src="Images/Adverts/advertisement.gif" alt="Advertise with Us" align="Right" border="0" /></a>
+</div>
+<div style="width:120px; height:600px" align="left">
+
+	<!-- OAS AD 'Right/2' begin -->
+	<SCRIPT language="JavaScript">
+	<!--
+		OAS_AD('Right');
+	//-->
+	</SCRIPT>
+	<!-- OAS AD 'Right/2' end -->
+
+</div>
+					</td>
+<!-- End: Right advert -->
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+
+<br />
+<table id="tableFooter1" cellpadding="0" cellspacing="0" width="760" border="0">
+	<tr>
+		<td width="760" colspan="3" bgcolor="#9a9997">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="90" valign="top">
+			<div class="footer">
+				<a href="Copyright.aspx" class="footer" target="_blank">
+				<img id="imgCopyright" src="../Pages/Images/Buttons/copyright.gif" alt="Copyright information" border="0" /> MMVI</a>
+			</div>
+		</td>
+		<td width="580" rowspan="2" align="center"><br />
+			<p class="footerCenter"><a href="default.aspx" class="footerCenter">BBC World News Front Page</a> | 
+			<a href="ContactUsDepartments.aspx" class="footerCenter">Contact Us</a> | 
+			<a href="TermsAndConditions.aspx" class="footerCenter">Terms &amp; Conditions</a></p>
+		</td>
+		<td width="90" valign="top" align="right">
+			<div class="footer"><a href="#top" class="footer">Back to top
+				<img id="imgFooterGotoTop"src="../Pages/Images/backtotop.gif" alt="Go to top of page" border="0" /></a>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+
+<!-- Analytics code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "/web/20101016071641/https://ssl." : "/web/20101016071641/http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3468857-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script></center></body>
+</html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 7:16:41 Oct 16, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:12:15 Jan 7, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

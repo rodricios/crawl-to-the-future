@@ -1,0 +1,353 @@
+<html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app0.us.archive.org";archive_analytics.values.server_ms=225;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<title>
+Yahoo! How-To
+</title>
+</head>
+<body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://howto.yahoo.com/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "15";
+var displayMonth = "Aug";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://howto.yahoo.com/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20000815052809" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20000706231915/http://howto.yahoo.com/" title="6 Jul 2000">JUL</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 5:28:09 Aug 15, 2000">AUG</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20001014211329/http://howto.yahoo.com/" title="14 Oct 2000"><strong>OCT</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20000706231915/http://howto.yahoo.com/" title="23:19:15 Jul 6, 2000"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 5:28:09 Aug 15, 2000">15</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20001014211329/http://howto.yahoo.com/" title="21:13:29 Oct 14, 2000"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/19990427194449/http://howto.yahoo.com/" title="27 Apr 1999"><strong>1999</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 5:28:09 Aug 15, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20010917015837/http://howto.yahoo.com/" title="17 Sep 2001"><strong>2001</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20000815052809*/http://howto.yahoo.com/" title="See a list of every capture for this URL">311 captures</a>
+           <div class="r" title="Timespan for captures of this URL">12 May 98 - 22 Sep 14</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000010000001_1999:-1:120200000210_2000:7:004052210111_2001:-1:237310102ef9_2002:-1:202020001010_2003:-1:100101010010_2004:-1:010013022010_2005:-1:121110000111_2006:-1:221203352752_2007:-1:220052422301_2008:-1:010100000003_2009:-1:010010001010_2010:-1:100101100000_2011:-1:100100201201_2012:-1:010010200100_2013:-1:001000100001_2014:-1:000100101000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<center><img width=460 height=52 
+border=0 src="/web/20000815052809im_/http://howto.yahoo.com/images/ht_head.gif" alt="Yahoo! How-To?">
+<br>
+<table border="0" cellpadding="0" cellspacing="5" width="530">
+<tr>
+<td valign=top colspan=3><CENTER><FONT SIZE="3" FACE="arial"><B>A&nbsp;&nbsp; T u t o r i a l&nbsp;&nbsp; f o r&nbsp;&nbsp; W e b&nbsp;&nbsp; S u r f e r s</B></FONT></CENTER><BR></td>
+</tr>
+<tr>
+<td valign=top width=165>
+<table border=0 width="100%" cellpadding="4">
+<tr>
+<td bgcolor="#A0B8C8">
+<font face=arial><b>Need Specifics?</b></font>
+</td>
+</tr>
+<tr>
+<td align=left valign=top>
+<FONT SIZE="-1">If you're looking for detailed help on specific Yahoo! features, make sure to bookmark <A HREF="/web/20000815052809/http://help.yahoo.com/">Yahoo! Help Central</A>.</FONT></td>
+</tr>
+<tr>
+<td bgcolor="#A0B8C8">
+<font face=arial><b>A Word from...</b></font>
+</td>
+</tr>
+<tr>
+<td align=left valign=top>
+<FONT SIZE="-1">Before diving in to the How-To, take a minute to read a <A HREF="/web/20000815052809/http://howto.yahoo.com/message/">message from our founders</A>, David Filo and Jerry Yang.</FONT></td>
+</tr>
+<tr>
+<td colspan=2>
+</td>
+</tr>
+<tr>
+<td bgcolor="#A0B8C8">
+<font face=arial><b>Resources:</b></font>
+</td>
+</tr>
+<tr>
+<td align=left valign=top>
+<A HREF="/web/20000815052809/http://howto.yahoo.com/resources/"><B>Main Menu</B></A><br>
+<FONT SIZE=-1 FACE="Arial, Helvetica"><B>&nbsp;&#183;&nbsp;</B><A HREF="/web/20000815052809/http://howto.yahoo.com/resources/tips_and_tricks/">Tips and Tricks</A><BR>
+<B>&nbsp;&#183;&nbsp;</B><A HREF="/web/20000815052809/http://howto.yahoo.com/resources/glossary/">The Glossary</A><BR>
+<B>&nbsp;&#183;&nbsp;</B><A HREF="/web/20000815052809/http://howto.yahoo.com/resources/index/">The Index</A><BR>
+<B>&nbsp;&#183;&nbsp;</B><A HREF="/web/20000815052809/http://howto.yahoo.com/resources/web_guides/">Web Guides</A><BR>
+<B>&nbsp;&#183;&nbsp;</B><A HREF="/web/20000815052809/http://howto.yahoo.com/resources/html_guides/">HTML Guides</A></FONT>
+</td>
+</tr>
+</table>
+</td>
+<td bgcolor=gray valign=bottom width=1><hr size=0></td>
+<td valign=top width=365>
+<table border=0 width="100%" cellpadding="4">
+<tr>
+<td bgcolor="#ffffcc" colspan=2>
+<font face=arial><b>Learn&nbsp;about&nbsp;the Internet:</b></font>
+</td>
+</tr>
+<tr>
+<td valign=top width="50%">
+<b><A HREF="/web/20000815052809/http://howto.yahoo.com/chapters/1/1.html">Welcome to the Web</A></b><br>
+<FONT SIZE="-1">We're glad you're here...</FONT><p>
+<b><A HREF="/web/20000815052809/http://howto.yahoo.com/chapters/2/1.html">Find It Online</A></b><br>
+<FONT SIZE="-1">Needles in the haystack...</FONT><p>
+<b><A HREF="/web/20000815052809/http://howto.yahoo.com/chapters/3/1.html">The Art of Surfing</A></b><br>
+<FONT SIZE="-1">Online exploration...</FONT><p>
+</td>
+<td width="50%" valign=top>
+	
+<b><A HREF="/web/20000815052809/http://howto.yahoo.com/chapters/4/1.html">News on the Net</A></b><br>
+<FONT SIZE="-1">Timely resources...</FONT><p>
+<b><A HREF="/web/20000815052809/http://howto.yahoo.com/chapters/5/1.html">Weekend Webbing</A></b><br>
+<FONT SIZE="-1">Fun and games...</FONT><p>
+<b><A HREF="/web/20000815052809/http://howto.yahoo.com/chapters/6/1.html">Getting Involved</A></b><br>
+<FONT SIZE="-1">Join the 'Net community...</FONT><P>
+</td>
+</tr>
+<tr>
+<td colspan=2>
+</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" colspan=2>
+<font face=arial><b>Learn&nbsp;about&nbsp;Yahoo!:</b></font>
+</td>
+</tr>
+<tr>
+<td valign=top width="50%">
+<b><A HREF="/web/20000815052809/http://howto.yahoo.com/chapters/7/1.html">Searching Yahoo!</A></b><br>
+<FONT SIZE="-1">How to find stuff...</FONT><p>
+<b><A HREF="/web/20000815052809/http://howto.yahoo.com/chapters/8/1.html">Browsing Yahoo!</A></b><br>
+<FONT SIZE="-1">Just looking around...</FONT><p>
+<b><A HREF="/web/20000815052809/http://howto.yahoo.com/chapters/9/1.html">Customizing Yahoo!</A></b><br>
+<FONT SIZE="-1">Have it your way...</FONT><P>
+</td>
+<td width="50%" valign=top>
+<b><A HREF="/web/20000815052809/http://howto.yahoo.com/chapters/10/1.html">Suggesting a Site</A></b><br>
+<FONT SIZE="-1">Help us build Yahoo!...</FONT><p>
+<b><A HREF="/web/20000815052809/http://help.yahoo.com/">Yahoo! Help Central</A></b><br>
+<FONT SIZE="-1">Commonly asked questions...</FONT><P>
+<b><A HREF="/web/20000815052809/http://howto.yahoo.com/infodesk/">Yahoo! Features</A></b><br>
+<FONT SIZE="-1">Browse our sites by topic...</FONT><P>
+</td>
+</tr>
+
+
+</table>
+</td>
+</tr>
+</table>
+<HR WIDTH=520 SIZE=1 NOSHADE>
+<TABLE WIDTH=520 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+
+<TD><FONT SIZE="-1"><P>To go through this tutorial sequentially, start
+with <A HREF="/web/20000815052809/http://howto.yahoo.com/chapters/1/1.html">Welcome to the
+Web</A>. If you'd rather just look around, feel free to browse any of the
+chapters or resources; they should still make sense when read
+individually.  To quickly find information on specific topics or features,
+use the <a href="/web/20000815052809/http://howto.yahoo.com/resources/index/">Index</a>,
+located in the <A HREF="/web/20000815052809/http://howto.yahoo.com/resources/">Resources</A>
+section.</P></FONT></TD></TR></TABLE>
+
+<HR WIDTH=520 SIZE="1"
+NOSHADE> 
+
+<font size=-2 face=arial>Copyright &copy; 2000 
+Yahoo! Inc. All Rights Reserved.</font><P>
+<B><A HREF=/web/20000815052809/http://www.yahoo.com/>Return to Yahoo!</A></B></CENTER>
+
+</body>
+</html>
+
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 5:28:09 Aug 15, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:52:29 Jan 7, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

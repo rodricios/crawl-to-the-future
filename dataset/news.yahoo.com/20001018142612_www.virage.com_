@@ -1,0 +1,408 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+    "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en-US">
+<head profile="http://www.virage.com/metadata.html">
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app10.us.archive.org";archive_analytics.values.server_ms=232;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+    <title>Virage, Inc.</title>
+    <meta http-equiv="Content-type" content="text/html; charset=US-ASCII">
+    <meta http-equiv="Content-language" content="en-US">
+    <meta http-equiv="Content-style-type" content="text/css">
+    <meta http-equiv="Content-script-type" content="text/javascript">
+    <meta http-equiv="target" content="virage">
+	<meta http-equiv="reply-to" content="webmaster@virage.com">
+    <meta name="Author" content="Virage Inc." scheme="Content Author">
+    <meta name="Generator" content="Bobby Law" scheme="HTML Coder">
+    <meta name="Date" content="2000-03-28T11:08:47-08:00" scheme="http://www.w3.org/TR/NOTE-datetime" >
+    <meta name="Copyright" content="Copyright 2000 by Virage, Inc.">
+    <meta name="Classification" content="Home page">
+    <meta name="Description" content="Virage offers video indexing, video search software, and video search services that transform traditional video into searchable, interactive Internet content">
+    <meta name="Keywords" content="Internet Video Guide, Video Application Server, Virage Application Services, ControlCenter, FaceLogger, video search, VideoLogger, AudioLogger, video indexing, visual information retrieval, VIR, searchable video, video search, video cataloger, speech to text, ABCNews, CNET, CSPAN, Campaign 2000">
+    <meta name="Robots" content="all" scheme="http://info.webcrawler.com/mak/projects/robots/meta-user.html">
+    <link rel="Stylesheet" href="viragefrontpage-web.css" type="text/css" title="Virage Web Site Style">
+    <link rel="Copyright" href="http://www.virage.com/copyrights.html"
+        type="text/html" title="Virage Copyright and Trademark Information">
+    <style type="text/css"><!--
+    --></style>
+    <script type="text/javascript" src="virage-web.js"></script>
+    
+</head>
+<body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.virage.com/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "18";
+var displayMonth = "Oct";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.virage.com/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20001018024314" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20000815053719/http://www.virage.com/" title="15 Aug 2000">AUG</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 2:43:14 Oct 18, 2000">OCT</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20001202060800/http://www.virage.com/" title="2 Dec 2000"><strong>DEC</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20001014045238/http://www.virage.com/" title="4:52:38 Oct 14, 2000"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 2:43:14 Oct 18, 2000">18</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20001202060800/http://www.virage.com/" title="6:08:00 Dec 2, 2000"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/19990429154506/http://www.virage.com/" title="29 Apr 1999"><strong>1999</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 2:43:14 Oct 18, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20020124220451/http://www.virage.com/" title="24 Jan 2002"><strong>2002</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20001018024314*/http://www.virage.com/" title="See a list of every capture for this URL">317 captures</a>
+           <div class="r" title="Timespan for captures of this URL">20 Dec 96 - 18 Dec 14</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000002_1997:-1:100100100000_1998:-1:200000000001_1999:-1:230200000000_2000:9:000153310201_2001:-1:1042e7000000_2002:-1:100210111020_2003:-1:022121111201_2004:-1:01011c8b3000_2005:-1:00000000006c_2006:-1:f62902410314_2007:-1:643213212b00_2008:-1:000010000112_2009:-1:110000000040_2010:-1:346111010000_2011:-1:013120222121_2012:-1:000011000000_2013:-1:121322232310_2014:-1:100010210001_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<script type="text/javascript"><!--
+MM_preloadImages('images/grafx_nav_fp_companyon.gif','#company');
+MM_preloadImages('images/grafx_nav_fp_productson.gif','#products');
+MM_preloadImages('images/grafx_nav_fp_serviceson.gif','#services');
+MM_preloadImages('images/grafx_nav_fp_newson.gif','#news');
+MM_preloadImages('images/grafx_nav_fp_customerson.gif','#customers');
+MM_preloadImages('images/grafx_nav_fp_partnerson.gif','#partners');
+MM_preloadImages('images/grafx_nav_fp_developerson.gif','#developers');
+MM_preloadImages('images/grafx_nav_fp_supporton.gif','#support');
+MM_preloadImages('images/grafx_nav_fp_showcaseon.gif','#showcase')
+MM_preloadImages('images/grafx_fp_vidsearch1_playon.gif','#abcbutton')  //new
+MM_preloadImages('images/grafx_fp_vidsearch2_playon.gif','#cnetbutton')
+MM_preloadImages('images/grafx_fp_vidsearch3_playon.gif','#videosearch3button')
+MM_preloadImages('images/grafx_fp_vidsearch4_playon.gif','#videosearch4button')
+MM_preloadImages('images/grafx_fp_vidsearch5_playon.gif','#yahoobutton')
+// --></script>
+
+<table width="656" border="0" cellpadding="0" cellspacing="0">
+<tr> 
+<td width="267" height="60" rowspan="2"><img src="images/grafx_fpviragelogotag.png" width="267" height="60" border="0" alt="Virage logo and tagline"></td>
+<td width="69" height="60" rowspan="2" background="images/grafx_fp_bluespacer.png"><img src="images/grafx_spacer.gif" width="69" height="60" border="0"></td>
+<td width="320" height="38" colspan="4"><img src="images/grafx_fpquote.png" width="320" height="38" border="0" alt="Reuters quote"></td>
+</tr>
+<tr> 
+<td width="150" height="22" background="images/grafx_fp_bluespacer.png"><img src="images/grafx_spacer.gif" width="150" height="22" border="0"></td>
+<td width="40" height="22"><a href="company/jobs.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('document.jobs','document.jobs','images/grafx_fpjobs-over.png','#jobs')"><img name="jobs" border="0" src="images/grafx_fpjobs.png" width="40" height="22"></a></td>
+<td width="76" height="22"><a href="contact/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('document.contactus','document.contactus','images/grafx_fpcontactus-over.png','#contactus')"><img name="contactus" border="0" src="images/grafx_fpcontactus.png" width="76" height="22"></a></td>
+<td width="54" height="22"><a href="sitemap/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('document.sitemap','document.sitemap','images/grafx_fpsitemap-over.png','#sitemap')"><img name="sitemap" border="0" src="images/grafx_fpsitemap.png" width="54" height="22"></a></td>
+</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="658" summary="none">
+<tr>
+<td><img src="images/grafx_spacer.gif" width="655" height="3" border="0"></td>
+</tr>
+<tr>
+<td valign="top"><img src="images/grafx_spacer.gif" width="1" height="1"><a href="company/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('document.company','document.company','images/nav_fp_companyon.gif','#company')"><img name="company" border="0" src="images/nav_fp_company.gif" width="80" height="26"></a><a href="ir/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('document.invrel','document.invrel','images/nav_fp_invrelon.gif','#ir')"><img name="invrel" border="0" src="images/nav_fp_invrel.gif" width="101" height="26"></a><a href="products/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('document.products','document.products','images/nav_fp_productson.gif','#products')"><img name="products" border="0" src="images/nav_fp_products.gif" width="55" height="26"></a><a href="services/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('document.services','document.services','images/nav_fp_serviceson.gif','#services')"><img name="services" border="0" src="images/nav_fp_services.gif" width="51" height="26"></a><a href="news/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('document.news','document.news','images/nav_fp_newson.gif','#news')"><img name="news" border="0" src="images/nav_fp_news.gif" width="85" height="26"></a><a href="customers/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('document.customers','document.customers','images/nav_fp_customerson.gif','#customers')"><img name="customers" border="0" src="images/nav_fp_customers.gif" width="118" height="26"></a><a href="partners/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('document.partners','document.partners','images/nav_fp_partnerson.gif','#partners')"><img name="partners" border="0" src="images/nav_fp_partners.gif" width="53" height="26"></a><a href="support/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('document.support','document.support','images/nav_fp_supporton.gif','#support')"><img name="support" border="0" src="images/nav_fp_support.gif" width="50" height="26"></a><a href="showcase/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('document.showcase','document.showcase','images/nav_fp_showcaseon.gif','#showcase')"><img name="showcase" border="0" src="images/nav_fp_showcase.gif" width="62" height="26"></a></td>
+</tr>
+<tr>
+<td><img src="images/grafx_spacer.gif" width="655" height="2" border="0"></td>
+</tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="657">
+<tr> 
+<td colspan="2"><img src="images/grafx_spacer.gif" width="2" height="1" border="0"></td>
+<td><img src="images/grafx_spacer.gif" width="146" height="1" border="0"></td>
+<td><img src="images/grafx_spacer.gif" width="13" height="1" border="0"></td>
+<td><img src="images/grafx_spacer.gif" width="5" height="1" border="0"></td>
+<td><img src="images/grafx_spacer.gif" width="160" height="1" border="0"></td>
+<td><img src="images/grafx_spacer.gif" width="5" height="1" border="0"></td>
+<td><img src="images/grafx_spacer.gif" width="160" height="1" border="0"></td>
+<td><img src="images/grafx_spacer.gif" width="5" height="1" border="0"></td>
+<td><img src="images/grafx_spacer.gif" width="14" height="1" border="0"></td>
+<td colspan="2"><img src="images/grafx_spacer.gif" width="145" height="1" border="0"></td>
+</tr>
+<tr> </tr>
+<tr> 
+<td rowspan="10" valign="top"><img src="images/grafx_fp_frame_leftvfade1.gif" width="1" height="507" border="0"></td>
+<td colspan="13"><img src="images/grafx_fp_frame_horiztop.gif" width="657" height="1" border="0"></td>
+</tr>
+<tr> 
+<td rowspan="2" valign="top"><img src="images/grafx_fp_frame_leftvfade2.gif" width="1" height="262" border="0"></td>
+<td valign="top" rowspan="2" class="tableleftquarter"> 
+<p><img src="images/grafx_fp_safetosyndicate.png" width="138" height="34" alt="Safe to Syndicate" border="0"><br>
+</p>
+<!-- for popups, use the following...
+
+<a href="#" onClick="window.open('url','name','status,height=,width=,scrollbars=,resizable=,toolbar=');" onMouseOver="window.status='Click here to play video'; return true" onMouseOut="window.status=''; return true"><img src=""></a>
+
+-->
+<div align="center"><a href="#" onClick="window.open('/web/20001018024314/http://yahoo.virage.com/cgi-bin/visearch?user=yahoo&amp;squery=%2BClipID:12+%2BVideoAsset:c2k100300_1830&amp;template=play.html&amp;ccstart=1135733&amp;ccstop=1208733&amp;query=+ClipCandidate%3AGeorge+W%2E+Bush','ProducerClip','status,height=425,width=305,scrollbars=no,resizable=no,toolbar=no');" onMouseOver="window.status='Click here to play video'; return true" onMouseOut="window.status=''; return true"><img src="/web/20001018024314im_/http://yahoo.virage.com/yahoo/icon/c2k100300_1830/400.jpg" width="96" height="72" border="0" alt="Click here to Play"></a><br><br>
+<a href="#" onClick="window.open('/web/20001018024314/http://yahoo.virage.com/cgi-bin/visearch?user=yahoo&amp;squery=%2BClipID:12+%2BVideoAsset:c2k100300_1830&amp;template=play.html&amp;ccstart=1135733&amp;ccstop=1208733&amp;query=+ClipCandidate%3AGeorge+W%2E+Bush','ProducerClip','status,height=425,width=305,scrollbars=no,resizable=no,toolbar=no');" onMouseOver="window.status='Click here to play video'; return true" onMouseOut="window.status=''; return true"><img src="images/grafx_button_clickforvideo.png" border="0" alt="Click for video" width="111" height="21"></a></div><br>
+<span style="font-size: 10px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px"><b>C-SPAN 
+can tell you:</b> The Virage platform ensures <a href="showcase/index.html">controlled, 
+secure syndication</a> of their content. For over a year, more than 30 sites have 
+been receiving daily updates of C-SPAN's syndicated video.</span></td>
+<td rowspan="2" colspan="7" width="362" valign="top"><a href="company/index.html" onMouseOver="window.status='The Business of Streaming Video Starts Here...'; return true;"><img src="images/photo_fp_hdnews-runners.jpg" width="362" height="128" border="0" alt="The Business of Streaming Video Starts Here..."><br>
+<img src="images/photo_fp_hdnews-runners2.jpg" width="362" height="175" border="0"></a></td>
+<td rowspan="2" width="146" valign="top" style="background:#ffcc33"> 
+
+<p class="tablebody"><span class="titlebold11px">Virage Video Goes Wireless</span><br>
+<span style="font-size: 10px">Virage and C-SPAN bring coverage of the Campaign 2000 presidential debates
+to the Internet and to <a href="news/oct_2000_cspan.html">handheld wireless PDAs</a>, such as the Palm VII.</span></p>
+
+<p class="tablebody"><span class="titlebold11px">Microsoft Studios Turn to Virage</span><br>
+<span style="font-size: 10px">Microsoft's media production arm, which operates 
+one of the world's most advanced video production facilities, selects 
+<a href="news/sept_2000_microsoftstudios.html">Virage to deploy strategic video</a>.</span></p>
+
+
+</td>
+<td rowspan="2" valign="top"><img src="images/grafx_fp_frame_rightvfade.gif" width="1" height="262" border="0"></td>
+<td rowspan="9"><img src="images/grafx_spacer.gif" width="1" height="506" border="0"></td>
+</tr>
+<tr> 
+<td height="304"><img src="images/grafx_spacer.gif" width="1" height="148" border="0"></td>
+</tr>
+<tr> </tr>
+<tr><!-- applet area --> 
+<td colspan="12" background: #333333"><applet code="hscroll.class" width="653" height="21" codebase="java/">
+<param name="bgcolor" value="51,51,51">
+<param name="desc0" value="||||Join us at Streaming Media Europe, October 10-12|||||||||||||||||||||||||||||||||||||">
+<param name="desc1" value="||||Come see us at Government Video Technology, November 29-30|||||||||||||||||||||||||||||||||||||">
+<param name="desc2" value="||||Virage Enables Business 2.0 to Bring Television to the Internet|||||||||||||||||||||||||||||||||||||">
+<param name="desc3" value="|||| Intel&reg to Resell Virage Services |||||||||||||||||||||||||||||||||||||">
+<param name="desturl0" value="news/events.html">
+<param name="desturl1" value="news/events.html">
+<param name="desturl2" value="news">
+<param name="desturl3" value="news">
+<param name="fontstyle" value="bold">
+<param name="Notice" value="Horizontal Marquee, Copyright (c) 1998, OpenCube Inc.">
+<param name="pausemargin" value="4">
+<param name="scrolldelay" value="40">
+<param name="scrolljump" value="2">
+<param name="fontface" value="Helvetica">
+<param name="size" value="12">
+<param name="hlcolor" value="255,204,102">
+<param name="textcolor" value="204,204,255">
+<param name="onsbtext" value="Virage Inc.">
+<param name="offsbtext" value="Virage Inc.">
+<param name="yoffset" value="3">
+</applet></td>
+</tr>
+<tr></tr>
+<tr> 
+<td colspan="12"><img src="images/grafx_spacer.gif" width="655" height="7" border="0"></td>
+</tr>
+<tr> 
+<td colspan="3"><img src="images/grafx_fp_hdr_focusproducts.gif" width="161" height="17" alt="Focus on Products"></td>
+<td valign="top" style="background:#d6efe7"><img src="images/grafx_spacer.gif" width="5" height="1" border="0"></td>
+<td><img src="images/grafx_fp_hdr_zoomservice3.gif" width="160" height="17" alt="Zoom in on Service"></td>
+<td valign="top" style="background:#f7efe7"><img src="images/grafx_spacer.gif" width="5" height="1" border="0"></td>
+<td><img src="images/grafx_fp_hdr_success3.gif" width="160" height="17"></td>
+<td valign="top" style="background:#efe7f7" width="5"><img src="images/grafx_spacer.gif" width="5" height="1" border="0"></td>
+<td colspan="4"><img src="images/grafx_fp_hdr_spotlight.gif" width="160" height="17" alt="Spotlight"></td>
+<td><img src="images/grafx_spacer.gif" width="1" height="17" border="0"></td>
+</tr>
+
+<tr> 
+<td colspan="3" valign="top" width="160" class="tablebody" background="images/grafx_bg_gradientpix.gif"><span style="font-size: 10px; font-weight: bold"><a href="products/controlcenter.html" onMouseOver="window.status='Introducing the Virage ControlCenter!'; return true" onMouseOut="window.status='Virage Inc.'; return true"><span style="color: #993333">
+Introducing Virage ControlCenter!</span></a> <span style="font-weight: normal">Discover the power of scheduling simplicity with our new workflow application for remotely managing, controlling and automating your multiple VideoLogger deployment with maximum efficiency. </span></span></td>
+<td width="5" valign="top"><img src="images/grafx_spacer.gif" width="5" height="93" border="0"></td>
+<td valign="top" width="160" class="tablebody" background="images/grafx_bg_gradientpix.gif"><span style="font-size: 10px; font-weight: bold"><a href="services/index.html" onMouseOver="window.status='Virage SmartEncode, application hosting, and syndication'; return true" onMouseOut="window.status='Virage Inc.'; return true"><span style="color: #993333">Virage 
+SmartEncode&#153;, application hosting, and syndication:</span></a> <span style="font-weight: normal">The 
+web video experts at Virage provide a comprehensive service that does everything 
+you need to seamlessly integrate or syndicate streaming video on the Web.</span></span></td>
+
+<td width="5" valign="top"><img src="images/grafx_spacer.gif" width="5" height="93" border="0"></td>
+<td width="160" valign="top" class="tablebody" background="images/grafx_bg_gradientpix.gif"><span style="font-size: 10px; font-weight: bold"><a href="customers/success_stories.html" onMouseOver="window.status='Virage-enabled applications from broadcast to broadband'; return true" onMouseOut="window.status='Virage Inc.'; return true"><span style="color: #993333">Virage-enabled 
+applications from broadcast to broadband:</span></a> <span style="font-weight: normal">Read 
+on to see how Virage is helping our customers manage, distribute and publish video 
+to the Internet and throughout their companies.</span></span></td>
+
+<td width="5" valign="top"><img src="images/grafx_spacer.gif" width="5" height="93" border="0"></td>
+<td colspan="4" valign="top" width="160" class="tablebody" background="images/grafx_bg_gradientpix.gif"><span style="font-size: 10px; font-weight: bold"><a href="products/smartencode.html" onMouseOver="window.status='SmartEncode'; return true" onMouseOut="window.status='Virage Inc.'; return true"><span style="color: #993333">
+Start with SmartEncode&#153;:</span></a><span style="font-weight: normal"> The Virage SmartEncode process is the most efficient and cost-effective way to transform video into web-ready content. Using SmartEncode, video can be encoded and indexed at the same time. Read on to learn more.</span></span></td>
+</tr>
+</table>
+<table width="657" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center">
+<hr noshade width="657" size="1">
+<span style="font-size: 10px">&copy;&nbsp;2000 by Virage, Inc. All rights reserved. <a href="copyrights.html" onMouseOver="window.status='Trademarks &amp; Copyrights'; return true" target="virage">Trademarks and Copyrights</a>.</span></td></tr></table>
+</body>
+</html>
+
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 2:43:14 Oct 18, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:59:03 Jan 7, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

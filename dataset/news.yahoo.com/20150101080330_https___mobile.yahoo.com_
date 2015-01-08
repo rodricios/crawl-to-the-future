@@ -1,0 +1,624 @@
+<!DOCTYPE HTML>
+<html class="" >
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app13.us.archive.org";archive_analytics.values.server_ms=394;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<script type="text/javascript">var MOJITO_INIT=new Date().getTime();</script>
+
+
+<meta name="creator" content="Yahoo! Mojito ">
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/web/20150101162121cs_/https://s.yimg.com/zz/combo?kx/yucs/uh3/uh/1132/css/uh_non_mail-min.css&amp;kx/yucs/uh_common/meta/3/css/meta-min.css&amp;kx/yucs/uh3/top-bar/321/css/no_icons-min.css&amp;kx/yucs/uh3/top-bar/321/css/topbar_persistent-min.css&amp;kx/yucs/uh3/search/css/588/blue_border-min.css&amp;kx/yucs/uh3/uh/1132/css/uh_ssl-min.css"/>
+<link rel="stylesheet" type="text/css" href="/web/20150101162121cs_/https://s.yimg.com/um/rollup_landingpage_css_*_0_739079.css"/>
+<title>Yahoo for Mobile. Your favorite Yahoo services, on your phone.</title>
+<meta name="keywords" content="Yahoo, Yahoo!, Internet, Mobile, Apps, iOS, iPhone, iPad, Android, Windows, Email, Mail, Weather, News, Search, Flickr, Photos, Sports, Finance, Local, Maps, Fantasy, Screen, News Digest">
+<meta name="description" content="Make Yahoo Mobile your starting point to the mobile Internet. oneSearch, Email, Mail, Weather, News, Search, Flickr, Photos, Sports, Finance, Local, Maps, social networks">
+
+
+
+</head>
+<body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "https://mobile.yahoo.com/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "1";
+var displayMonth = "Jan";
+var displayYear = "2015";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="https://mobile.yahoo.com/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20150101162121" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20141130212151/https://mobile.yahoo.com/" title="30 Nov 2014">NOV</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 16:21:21 Jan 1, 2015">JAN</td>
+		<td class="f" nowrap="nowrap">
+		
+		    Feb
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20141231153233/https://mobile.yahoo.com/" title="15:32:33 Dec 31, 2014"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 16:21:21 Jan 1, 2015">1</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20150102164634/https://mobile.yahoo.com/" title="16:46:34 Jan 2, 2015"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20140101153336/http://mobile.yahoo.com/" title="1 Jan 2014"><strong>2014</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 16:21:21 Jan 1, 2015">2015</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2016
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20150101162121*/https://mobile.yahoo.com/" title="See a list of every capture for this URL">3,387 captures</a>
+           <div class="r" title="Timespan for captures of this URL">3 Mar 00 - 7 Jan 15</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:002142010210_2001:-1:002221003dd7_2002:-1:101020013120_2003:-1:021112110201_2004:-1:10102abbbbbb_2005:-1:babbbcceaacd_2006:-1:b8292468446a_2007:-1:baaacbabab29_2008:-1:a999aa300418_2009:-1:663111167999_2010:-1:988577677988_2011:-1:897795878787_2012:-1:aa89aa9a9aba_2013:-1:a9776797b9de_2014:-1:ecccbdefddcc_2015:0:600000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+<style type="text/css">
+.container{
+    background-image: url(/web/20150101162121im_/https://s.yimg.com/um/a1b0d20b4866686bba2e5b9ae0755666.jpg);
+    min-height: 825px;
+}
+.main{
+   top: 44%;
+}
+</style>
+<!--[if lte IE 8]>
+<style type="text/css">
+.container{
+    height: 726px;
+    background-position: top center;
+    filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='')";
+}
+.content{
+    top: 0;
+    margin-top: 100px;
+}
+</style>
+<![endif]-->
+<!--[if IE 6]>
+<style type="text/css">
+.main {
+    width: 970px;
+}
+</style>
+<![endif]-->
+<style>#yucs{width:100% !important;min-width:970px}.yucs-fl-right{margin-right:10px}.yucs-fl-left{margin-left:10px}#yucsHead.ua-ie{background-color:#000}#yucsHead,#yucsHead.ua-ie9{background-color:rgba(0,0,0,0.75);_background-color:black;min-width:970px}#yucsHead .yucs-mc{background-color:transparent}#yuhead-help-panel .yucs-acct-link{white-space:nowrap}#yucs #yucs-logo{width:150px !important;height:34px !important}#yucs #yucs-logo div{width:94px !important;margin:0 auto !important}.lt #yucs-logo div{background-position:-121px center !important}#yucs-logo a{margin-left:-13px !important}#yucs-search{margin:8px 0 0 10px !important}</style><style>#yucs-top-home .yucs-top-txt {text-indent: 0px; margin-left: 20px;}
+#y-nav .yom-nav {padding-top: 0px;}
+
+#ysp-search-assist .bd {display:none;}
+#ysp-search-assist h4 {padding-left: 8px;}
+
+#yfi-portfolios-multi-quotes #y-nav, #yfi-portfolios-multi-quotes #navigation, #yfi-portfolios-multi-quotes .y-nav-legobg, 
+#yfi-portfolios-my-portfolios #y-nav, #yfi-portfolios-my-portfolios #navigation, #yfi-portfolios-my-portfolios .y-nav-legobg 
+{width : 100%; }
+
+#bodyID #yg-uh-space {}
+#bodyID #yg-uh {margin-top: 0px;}</style> <div id="yucsHead" class="yucs-mobile yucs-en-us  yucs-standard"><!-- meta --><div id="yucs-meta" data-authstate="signedout" data-cobrand="standard" data-crumb="TMtu6vyu.s/" data-mc-crumb="qOM/J4iH3Hj" data-gta="i5sRYXNUgH2" data-device="desktop" data-experience="" data-firstname="" data-flight="1420129281" data-forcecobrand="standard" data-guid="" data-host="mobile.yahoo.com" data-https="1" data-languagetag="en-us" data-property="mobile" data-protocol="https" data-shortfirstname="" data-shortuserid="" data-status="active" data-spaceid="151500462" data-test_id="" data-userid="" data-stickyheader="true" data-headercollapse='' ></div><!-- /meta --><div id="yucs-comet" style="display:none;"></div><div id="yucs-disclaimer" class="yucs-disclaimer yucs-activate yucs-hide yucs-property-mobile yucs-fcb- " data-dsstext="Want a better search experience? {dssLink}Set your Search to Yahoo{linkEnd}" data-dsstext-mobile="Search Less, Find More" data-dsstext-mobile-ok="OK" data-dsstext-mobile-set-search="Set Search to Yahoo" data-ylt-link="https://search.yahoo.com/searchset?pn=" data-ylt-dssbarclose="/" data-ylt-dssbaropen="/" data-linktarget="_top" data-lang="en-us" data-property="mobile" data-device="Desktop" data-close-txt="Close this window" data-maybelater-txt = "Maybe Later" data-killswitch = "0" data-host="mobile.yahoo.com" data-spaceid="151500462" data-pn="rtb0ZsVt4pH" data-pn-en-ca-mobile="z8/tXWpibYv" data-pn-de-de-mobile="w83EkgNg5Bx" data-pn-es-es-mobile="LeHawFnRHvS" data-pn-fr-fr-mobile="p7bXskXnDdh" data-pn-en-in-mobile="Wl/pgwBm8F9" data-pn-it-it-mobile="3m2XCTsWUeX" data-pn-en-us-mobile="rtb0ZsVt4pH" data-pn-en-sg-mobile="9qJ59NbT5Tj" data-pn-en-gb-mobile="2DVRy52V2fd" data-pn-en-us-tablet="Dv2MHRmPM7g" data-news-search-yahoo-com="aTQwahkxX8q" data-answers-search-yahoo-com="h1q8fXZThZY" data-finance-search-yahoo-com="0JApBYjIAwl" data-images-search-yahoo-com="BhlFBEDI7zN" data-video-search-yahoo-com="EGGPtXNfWut" data-sports-search-yahoo-com="AxRzdC1XvNf" data-shopping-search-yahoo-com="bOHVZ55eUaB" data-shopping-yahoo-com="bOHVZ55eUaB" data-us-qa-trunk-news-search-yahoo-com ="aTQwahkxX8q" data-dss="1"></div> <div id="yucs-top-bar" class='yucs-ps' ><div id='yucs-top-inner'><ul id="yucs-top-list"><li id="yucs-top-home"><a href="/web/20150101162121/https://www.yahoo.com/" ><span class="sp yucs-top-ico"></span>Home</a></li><li id="yucs-top-mail"><a href="/web/20150101162121/https://mail.yahoo.com/?.intl=us&amp;.lang=en-US&amp;.src=ym" >Mail</a></li><li id="yucs-top-search"><a href="/web/20150101162121/https://search.yahoo.com/search" >Search</a></li><li id="yucs-top-news"><a href="/web/20150101162121/http://news.yahoo.com/" >News</a></li><li id="yucs-top-sports"><a href="/web/20150101162121/http://sports.yahoo.com/" >Sports</a></li><li id="yucs-top-finance"><a href="/web/20150101162121/http://finance.yahoo.com/" >Finance</a></li><li id="yucs-top-weather"><a href="/web/20150101162121/https://weather.yahoo.com/" >Weather</a></li><li id="yucs-top-games"><a href="/web/20150101162121/https://games.yahoo.com/" >Games</a></li><li id="yucs-top-answers"><a href="/web/20150101162121/https://answers.yahoo.com/" >Answers</a></li><li id="yucs-top-screen"><a href="/web/20150101162121/https://screen.yahoo.com/" >Screen</a></li><li id="yucs-top-flickr"><a href="/web/20150101162121/https://www.flickr.com/" >Flickr</a></li><li id="yucs-top-mobile"><a href="/web/20150101162121/https://mobile.yahoo.com/" >Mobile</a></li><li id='yucs-more' class='yucs-menu yucs-more-activate' data-ylt="/"><a href="/web/20150101162121/http://everything.yahoo.com/" id='yucs-more-link'>More<span class="sp yucs-top-ico"></span></a><div id='yucs-top-menu'><div class="yui3-menu-content"><ul class="yucs-hide yucs-leavable"><li id='yucs-top-celebrity'><a href="/web/20150101162121/https://celebrity.yahoo.com/" >Celebrity</a></li><li id='yucs-top-movies'><a href="/web/20150101162121/https://www.yahoo.com/movies" >Movies</a></li><li id='yucs-top-music'><a href="/web/20150101162121/https://www.yahoo.com/music" >Music</a></li><li id='yucs-top-tv'><a href="/web/20150101162121/https://tv.yahoo.com/" >TV</a></li><li id='yucs-top-groups'><a href="/web/20150101162121/https://groups.yahoo.com/" >Groups</a></li><li id='yucs-top-health'><a href="/web/20150101162121/https://www.yahoo.com/health" >Health</a></li><li id='yucs-top-style'><a href="/web/20150101162121/https://www.yahoo.com/style" >Style</a></li><li id='yucs-top-beauty'><a href="/web/20150101162121/https://www.yahoo.com/beauty" >Beauty</a></li><li id='yucs-top-food'><a href="/web/20150101162121/https://www.yahoo.com/food" >Food</a></li><li id='yucs-top-parenting'><a href="/web/20150101162121/https://www.yahoo.com/parenting" >Parenting</a></li><li id='yucs-top-diy'><a href="/web/20150101162121/https://www.yahoo.com/diy" >DIY</a></li><li id='yucs-top-tech'><a href="/web/20150101162121/https://www.yahoo.com/tech" >Tech</a></li><li id='yucs-top-shopping'><a href="/web/20150101162121/http://shopping.yahoo.com/" >Shopping</a></li><li id='yucs-top-travel'><a href="/web/20150101162121/https://www.yahoo.com/travel" >Travel</a></li><li id='yucs-top-autos'><a href="/web/20150101162121/https://autos.yahoo.com/" >Autos</a></li><li id='yucs-top-homes'><a href="/web/20150101162121/https://homes.yahoo.com/own-rent/" >Homes</a></li></ul></div></div></li></ul></div><style>#yucs-top-ff-promo { position:absolute; right:0; right:auto\9; left:950px\9; right:auto\9\0; left:auto\9\0; margin-right:18px; display:block; white-space: nowrap; z-index:15001;}#yucs-top-ff-promo img { border: none; height: 15px; width: 15px;}#yucs-top-ff-promo a span { text-decoration: none; display: inline-block;}#yucs-ff-img { vertical-align: middle; padding-right: 4px;}@media screen and (max-width:1150px) { #yucs-top-bar #yucs-top-ff-promo { right: auto; left:950px; }}</style><li id='yucs-top-ff-promo' class="yucs-hide"><a href="/web/20150101162121/https://www.mozilla.org/firefox/new/?utm_source=yahoo&amp;utm_medium=referral&amp;utm_content=uh&amp;utm_campaign=y-upgrade-new-firefox" target="_blank"><img id="yucs-ff-img" data-imageloader-src='https://s.yimg.com/kx/yucs/uh3s/promo-ff/1/images/ff_icon-compressed.png' width="15" height="15" alt="Firefox" src='/web/20150101162121im_/https://s.yimg.com/g/images/spaceball.gif'/ >Upgrade to the new Firefox<span>&nbsp;&raquo;</span></a></li><script> var s = false, m, ua = window.navigator.userAgent.toLowerCase(); m = ua.match(/firefox\/(\d+)/); if (!m || (m && m[1] && parseInt(m[1]) < 34)) { if (ua.indexOf('version') >= 0 && ua.indexOf('crios') < 0) { s = true; } if (!s) { m = document.getElementById('yucs-top-ff-promo'); m.className = m.className.replace(/yucs-hide/g,''); setTimeout(function() { var s = document.getElementById('yucs-ff-img'), m = s.getAttribute('data-imageloader-src'); s.setAttribute('src', m); }, 500); } }</script></div><div id="yucs" class="yucs yucs-mc lt yucs-b2 yog-grid" data-lang="en-us" data-property="mobile" data-flight="1420129281" data-linktarget="_top" data-uhvc="/"> <div class="yucs-fl-left yog-cp">   <div id="yucs-logo"> <style> #yucs #yucs-logo-ani { width:119px ; height:34px; background-image:url(/web/20150101162121im_/https://s.yimg.com/rz/l/yahoo_mobile_en-US_f_pw_119x34.png) ; _background-image:url(/web/20150101162121im_/https://s.yimg.com/rz/l/yahoo_mobile_en-US_f_pw_119x34.gif) ; *left: 0px; display:block ; visibility: visible; position: relative; clip: auto; } .lt #yucs-logo-ani { background-position: 100% 0px !important; } .lt #yucs[data-property='mail'] #yucs-logo-ani { background-position: -350px 0px !important; } #yucs-logo { margin-top:0px!important; padding-top: 11px; width: 120px; } #yucs[data-property='homes'] #yucs-logo { width: 102px; } .advisor #yucs-link-ani { left: 21px !important; } #yucs #yucs-logo a {margin-left: 0!important;}#yucs #yucs-link-ani {width: 100% !important;} @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and ( min--moz-device-pixel-ratio: 2), only screen and ( -o-min-device-pixel-ratio: 2/1), only screen and ( min-device-pixel-ratio: 2), only screen and ( min-resolution: 192dpi), only screen and ( min-resolution: 2dppx) { #yucs #yucs-logo-ani { background-image: url(/web/20150101162121im_/https://s.yimg.com/rz/l/yahoo_mobile_en-US_f_pw_119x34_2x.png) !important; background-size: 243px 34px; } } </style> <div> <a id="yucs-logo-ani" class="" href="/web/20150101162121/https://mobile.yahoo.com/" target="_top" data-alg=""> Yahoo! Mobile </a> </div> <img id="imageCheck" src="/web/20150101162121im_/https://s.yimg.com/os/mit/media/m/base/images/transparent-1093278.png" alt=""/> </div><noscript><style>#yucs #yucs-logo-ani {visibility: visible;position: relative;clip: auto;}</style></noscript> <div id="yucs-search" style="width: 570px; display: block;" class='yucs-one_button yucs-search-activate'> <form role="search" class="yucs-search yucs-activate" target="_top" action="/web/20150101162121/https://search.yahoo.com/search" method="get"> <table role="presentation"> <tbody role="presentation"> <tr role="presentation"> <td class="yucs-form-input" role="presentation"> <div id="yucs-input_wrap"> <input autocomplete="off" class="yucs-search-input" name="p" type="search" aria-describedby="mnp-search_box" data-yltvsearch="/" data-yltvsearchsugg="/" data-satype="mini" data-gosurl="https://search.yahoo.com/sugg/ss/gossip-us_ss/" data-pubid="" data-maxresults="10" data-resize=" " id="mnp-search_box" />  </div> </td><td NOWRAP class="yucs-form-btn" role="presentation"><div id="yucs-web_search_button_wrapper" class="yucs-search-buttons"><div class="yucs-shadow"><div class="yucs-gradient"></div></div><button id="yucs-search_button" class="yucs-action_btn yucs-wsearch-button" type="submit">Search Web</button></div></td></tr> </tbody> </table> <input type="hidden" name="type" value="1button" data-ylk="slk:yhstype-hddn;itc:1;"/> <input type="hidden" id="fr" name="fr" value="uh3_mobile_web_gs" />   </form> <div id="yucs-satray" class="sa-tray sa-hidden" data-wstext="Search Web for: " data-wsearch="https://search.yahoo.com/search" data-vfr="" data-vsearch="https://search.yahoo.com/search" data-vstext= "Search News for: " > </div></div></div><div class="yucs-fl-right"> <div id="yucs-profile" class="yucs-profile yucs-signedout"> <a id="yucs-menu_link_profile_signed_out" href="/web/20150101162121/https://login.yahoo.com/config/login?.src=mob&amp;.intl=us&amp;.lang=en-US&amp;.done=https://mobile.yahoo.com/" target="_top" rel="nofollow" class="sp yucs-fc" aria-label="Profile"> </a> <div id="yucs-profile_text" class="yucs-fc"> <a id="yucs-login_signIn" href="/web/20150101162121/https://login.yahoo.com/config/login?.src=mob&amp;.intl=us&amp;.lang=en-US&amp;.done=https://mobile.yahoo.com/" target="_top" rel="nofollow" class="yucs-fc"> Sign In </a> </div></div><div class="yucs-mail_link yucs-mailpreview-ancestor"><a id="yucs-mail_link_id" class="sp yltasis yucs-fc" href="/web/20150101162121/https://mail.yahoo.com/?.intl=us&amp;.lang=en-US&amp;.src=ym" rel="nofollow" target="_top"> Mail </a><div class="yucs-mail-preview-panel yucs-menu yucs-hide" data-mail-txt="Mail" data-uri-scheme="http" data-uri-path="ucs.query.yahoo.com/v1/console/yql" data-mail-view="Go to Mail" data-mail-help-txt="Help" data-mail-help-url="http://help.yahoo.com/l/us/yahoo/mail/ymail/" data-mail-loading-txt="Loading..." data-languagetag="en-us" data-mrd-crumb="hM4jHpjLCej" data-authstate="signedout" data-middleauth-signin-text="Click here to view your mail" data-popup-login-url="https://login.yahoo.com/config/login_verify2?.pd=c%3DOIVaOGq62e5hAP8Tv..nr5E3&.src=sc" data-middleauthtext="You have {count} new messages." data-yltmessage-link="http://mrd.mail.yahoo.com/msg?mid={msgID}&fid=Inbox&src=uh&.crumb=hM4jHpjLCej" data-yltviewall-link="https://mail.yahoo.com/" data-yltpanelshown="/" data-ylterror="/" data-ylttimeout="/" data-generic-error="We're unable to preview your mail.<br>Go to Mail." data-nosubject="[No Subject]" data-timestamp='short'></div></div> <div id="yucs-help" class="yucs-activate yucs-help yucs-menu_nav"> <a id="yucs-help_button" class="sp yltasis" href="javascript:void(0);" aria-label="Help" rel="nofollow"> <em class="yucs-hide yucs-menu_anchor">Help</em> </a> <div id="yucs-help_inner" class="yucs-hide yucs-menu yucs-hm-activate" data-yltmenushown="/"> <span class="sp yucs-dock"></span> <ul id="yuhead-help-panel"> <li><a class="yucs-acct-link" href="/web/20150101162121/https://edit.yahoo.com/mc2.0/eval_profile?.intl=us&amp;.lang=en-US&amp;.done=https://mobile.yahoo.com/&amp;.src=mob&amp;.intl=us&amp;.lang=en-US" target="_top">Account Info</a></li> <li><a href="/web/20150101162121/https://help.yahoo.com/kb/index?page=product&amp;y=PROD_MOBILE&amp;locale=en_US&amp;pir=oYI18TtibUntkEJqFhJOAiw116zSyJ7KUTRdl3k-" rel="nofollow" >Help</a></li>  </ul> </div></div>  <div id="yucs-network_link"><a id="yucs-home_link" href="/web/20150101162121/https://www.yahoo.com/" rel="nofollow" target="_top"><em class="sp">Yahoo</em><span class="yucs-fc">Home</span></a></div>       </div>  </div> <div id="yUnivHead" class="yucs-hide"><!-- empty --></div><div id="yhelp_container" class="yui3-skin-sam"></div></div><!-- alert --><!-- /alert -->
+<div id="yui_3_10_3_1_1418908171865_49779412">
+</div>
+
+<div class="container track" id="yui_3_10_3_1_1418908171865_49779475">
+
+<div class="content intl-us font-color-black">
+        <div class="main">
+            <h1><em>Yahoo Apps</em><br /> Mobile made beautiful.</h1>
+            <p>Select an app to explore:</p>
+            
+            <ul class="appList line1">
+                
+                    <li class=" first">
+                    <a href="/web/20150101162121/https://mobile.yahoo.com/mail/" title="See more detail about Yahoo Mail app." data-ylk="sec:apps; slk:mail;">
+                            <img src="/web/20150101162121im_/https://s.yimg.com/um/dc54d1c793ab16326c8772a154ddf17f.gif" class="mail-icon img-sprite" />
+                            <span>Mail</span>
+                        </a>
+                    </li>
+                
+                    <li class="">
+                    <a href="/web/20150101162121/https://mobile.yahoo.com/weather/" title="See more detail about Yahoo Weather app." data-ylk="sec:apps; slk:weather;">
+                            <img src="/web/20150101162121im_/https://s.yimg.com/um/dc54d1c793ab16326c8772a154ddf17f.gif" class="weather-icon img-sprite" />
+                            <span>Weather</span>
+                        </a>
+                    </li>
+                
+                    <li class="">
+                    <a href="/web/20150101162121/https://mobile.yahoo.com/yahoo/" title="See more detail about Yahoo app." data-ylk="sec:apps; slk:yahoo;">
+                            <img src="/web/20150101162121im_/https://s.yimg.com/um/dc54d1c793ab16326c8772a154ddf17f.gif" class="yahoo-icon img-sprite" />
+                            <span>Yahoo</span>
+                        </a>
+                    </li>
+                
+                    <li class="">
+                    <a href="/web/20150101162121/https://mobile.yahoo.com/search/" title="See more detail about Yahoo Search app." data-ylk="sec:apps; slk:search;">
+                            <img src="/web/20150101162121im_/https://s.yimg.com/um/dc54d1c793ab16326c8772a154ddf17f.gif" class="search-icon img-sprite" />
+                            <span>Search</span>
+                        </a>
+                    </li>
+                
+                    <li class="">
+                    <a href="/web/20150101162121/https://mobile.yahoo.com/finance/" title="See more detail about Yahoo Finance app." data-ylk="sec:apps; slk:finance;">
+                            <img src="/web/20150101162121im_/https://s.yimg.com/um/dc54d1c793ab16326c8772a154ddf17f.gif" class="finance-icon img-sprite" />
+                            <span>Finance</span>
+                        </a>
+                    </li>
+                
+            </ul>
+            <ul class="appList line2">
+                
+                    <li class="">
+                    <a href="/web/20150101162121/https://mobile.yahoo.com/sports/" title="See more detail about Yahoo Sports app." data-ylk="sec:apps; slk:sports;">
+                            <img src="/web/20150101162121im_/https://s.yimg.com/um/dc54d1c793ab16326c8772a154ddf17f.gif" class="sports-icon img-sprite" />
+                            <span>Sports</span>
+                        </a>
+                    </li>
+                
+                    <li class="">
+                    <a href="/web/20150101162121/https://mobile.yahoo.com/fantasy/" title="See more detail about Yahoo Fantasy app." data-ylk="sec:apps; slk:fantasy;">
+                            <img src="/web/20150101162121im_/https://s.yimg.com/um/dc54d1c793ab16326c8772a154ddf17f.gif" class="fantasy-icon img-sprite" />
+                            <span>Fantasy</span>
+                        </a>
+                    </li>
+                
+                    <li class="">
+                    <a href="/web/20150101162121/https://mobile.yahoo.com/screen/" title="See more detail about Yahoo Screen app." data-ylk="sec:apps; slk:screen;">
+                            <img src="/web/20150101162121im_/https://s.yimg.com/um/dc54d1c793ab16326c8772a154ddf17f.gif" class="screen-icon img-sprite" />
+                            <span>Screen</span>
+                        </a>
+                    </li>
+                
+                    <li class="">
+                    <a href="/web/20150101162121/https://mobile.yahoo.com/newsdigest/" title="See more detail about Yahoo News Digest app." data-ylk="sec:apps; slk:newsdigest;">
+                            <img src="/web/20150101162121im_/https://s.yimg.com/um/dc54d1c793ab16326c8772a154ddf17f.gif" class="newsdigest-icon img-sprite" />
+                            <span>News Digest</span>
+                        </a>
+                    </li>
+                
+                    <li class="">
+                    <a href="/web/20150101162121/https://mobile.yahoo.com/flickr/" title="See more detail about Flickr app." data-ylk="sec:apps; slk:flickr;">
+                            <img src="/web/20150101162121im_/https://s.yimg.com/um/dc54d1c793ab16326c8772a154ddf17f.gif" class="flickr-icon img-sprite" />
+                            <span>Flickr</span>
+                        </a>
+                    </li>
+                
+            </ul>
+            <ul class="appList line3">
+                
+                    <li class=" last">
+                    <a href="/web/20150101162121/https://mobile.yahoo.com/aviate/" title="See more detail about Yahoo Aviate app." data-ylk="sec:apps; slk:aviate;">
+                            <img src="/web/20150101162121im_/https://s.yimg.com/um/dc54d1c793ab16326c8772a154ddf17f.gif" class="aviate-icon img-sprite" />
+                            <span>Aviate</span>
+                        </a>
+                    </li>
+                
+            </ul>
+            
+        </div>
+    </div>
+
+</div>
+<!--[if lte IE 8]>
+<script>
+    document.createElement('footer');
+</script>
+<![endif]-->
+<footer id="yui_3_10_3_1_1418908171865_49779474" class="track intl-us">
+    <div id="country-module" class="yui3-skin-sam country-overlay-parent">
+        <a href="javascript: void(0);" data-ylk="sec: countries; slk:more;">
+            <span class="intl-flag intl-padding shared-sprite us">&nbsp</span>
+            United States
+            <i class="shared-sprite up-beak"></i>
+        </a>
+        <i class="shared-sprite down-white-beak" style="display: none;"></i>
+        <div class="country-selector-overlay yui3-overlay-loading">
+            
+            <ul class="ul-intl">
+                
+                <li>
+                <a href="/web/20150101162121/https://ar.mobile.yahoo.com/" data-ylk="sec: countries; slk:ar;">
+                        <span class="intl-flag intl-padding shared-sprite ar">&nbsp</span>
+                        Argentina
+                    </a>
+                </li>
+                
+                <li>
+                <a href="/web/20150101162121/https://au.mobile.yahoo.com/" data-ylk="sec: countries; slk:au;">
+                        <span class="intl-flag intl-padding shared-sprite au">&nbsp</span>
+                        Australia
+                    </a>
+                </li>
+                
+                <li>
+                <a href="/web/20150101162121/https://br.mobile.yahoo.com/" data-ylk="sec: countries; slk:br;">
+                        <span class="intl-flag intl-padding shared-sprite br">&nbsp</span>
+                        Brasil
+                    </a>
+                </li>
+                
+                <li>
+                <a href="/web/20150101162121/https://ca.mobile.yahoo.com/" data-ylk="sec: countries; slk:ca;">
+                        <span class="intl-flag intl-padding shared-sprite ca">&nbsp</span>
+                        Canada
+                    </a>
+                </li>
+                
+                <li>
+                <a href="/web/20150101162121/https://de.mobile.yahoo.com/" data-ylk="sec: countries; slk:de;">
+                        <span class="intl-flag intl-padding shared-sprite de">&nbsp</span>
+                        Deutschland
+                    </a>
+                </li>
+                
+                <li>
+                <a href="/web/20150101162121/https://es.mobile.yahoo.com/" data-ylk="sec: countries; slk:es;">
+                        <span class="intl-flag intl-padding shared-sprite es">&nbsp</span>
+                        España
+                    </a>
+                </li>
+                
+                <li>
+                <a href="/web/20150101162121/https://fr.mobile.yahoo.com/" data-ylk="sec: countries; slk:fr;">
+                        <span class="intl-flag intl-padding shared-sprite fr">&nbsp</span>
+                        France
+                    </a>
+                </li>
+                
+                <li>
+                <a href="/web/20150101162121/https://gr.mobile.yahoo.com/" data-ylk="sec: countries; slk:gr;">
+                        <span class="intl-flag intl-padding shared-sprite gr">&nbsp</span>
+                        Greece
+                    </a>
+                </li>
+                
+                <li>
+                <a href="/web/20150101162121/https://in.mobile.yahoo.com/" data-ylk="sec: countries; slk:in;">
+                        <span class="intl-flag intl-padding shared-sprite in">&nbsp</span>
+                        India
+                    </a>
+                </li>
+                
+            </ul>
+            
+            <ul class="ul-intl">
+                
+                <li>
+                <a href="/web/20150101162121/https://id.mobile.yahoo.com/" data-ylk="sec: countries; slk:id;">
+                        <span class="intl-flag intl-padding shared-sprite id">&nbsp</span>
+                        Indonesia
+                    </a>
+                </li>
+                
+                <li>
+                <a href="/web/20150101162121/https://it.mobile.yahoo.com/" data-ylk="sec: countries; slk:it;">
+                        <span class="intl-flag intl-padding shared-sprite it">&nbsp</span>
+                        Italia
+                    </a>
+                </li>
+                
+                <li>
+                <a href="/web/20150101162121/https://my.mobile.yahoo.com/" data-ylk="sec: countries; slk:my;">
+                        <span class="intl-flag intl-padding shared-sprite my">&nbsp</span>
+                        Malaysia
+                    </a>
+                </li>
+                
+                <li>
+                <a href="/web/20150101162121/https://mx.mobile.yahoo.com/" data-ylk="sec: countries; slk:mx;">
+                        <span class="intl-flag intl-padding shared-sprite mx">&nbsp</span>
+                        México
+                    </a>
+                </li>
+                
+                <li>
+                <a href="/web/20150101162121/https://nz.mobile.yahoo.com/" data-ylk="sec: countries; slk:nz;">
+                        <span class="intl-flag intl-padding shared-sprite nz">&nbsp</span>
+                        New Zealand
+                    </a>
+                </li>
+                
+                <li>
+                <a href="/web/20150101162121/https://ph.mobile.yahoo.com/" data-ylk="sec: countries; slk:ph;">
+                        <span class="intl-flag intl-padding shared-sprite ph">&nbsp</span>
+                        Philippines
+                    </a>
+                </li>
+                
+                <li>
+                <a href="/web/20150101162121/https://qc.mobile.yahoo.com/" data-ylk="sec: countries; slk:qc;">
+                        <span class="intl-flag intl-padding shared-sprite qc">&nbsp</span>
+                        Québec
+                    </a>
+                </li>
+                
+                <li>
+                <a href="/web/20150101162121/https://ro.mobile.yahoo.com/" data-ylk="sec: countries; slk:ro;">
+                        <span class="intl-flag intl-padding shared-sprite ro">&nbsp</span>
+                        România
+                    </a>
+                </li>
+                
+                <li>
+                <a href="/web/20150101162121/https://sg.mobile.yahoo.com/" data-ylk="sec: countries; slk:sg;">
+                        <span class="intl-flag intl-padding shared-sprite sg">&nbsp</span>
+                        Singapore
+                    </a>
+                </li>
+                
+            </ul>
+            
+            <ul class="ul-intl">
+                
+                <li>
+                <a href="/web/20150101162121/https://za.mobile.yahoo.com/" data-ylk="sec: countries; slk:za;">
+                        <span class="intl-flag intl-padding shared-sprite za">&nbsp</span>
+                        South Africa
+                    </a>
+                </li>
+                
+                <li>
+                <a href="/web/20150101162121/https://th.mobile.yahoo.com/" data-ylk="sec: countries; slk:th;">
+                        <span class="intl-flag intl-padding shared-sprite th">&nbsp</span>
+                        Thailand
+                    </a>
+                </li>
+                
+                <li>
+                <a href="/web/20150101162121/https://uk.mobile.yahoo.com/" data-ylk="sec: countries; slk:uk;">
+                        <span class="intl-flag intl-padding shared-sprite uk">&nbsp</span>
+                        UK &amp; Ireland
+                    </a>
+                </li>
+                
+                <li>
+                <a href="/web/20150101162121/https://us.mobile.yahoo.com/" data-ylk="sec: countries; slk:us;">
+                        <span class="intl-flag intl-padding shared-sprite us">&nbsp</span>
+                        United States
+                    </a>
+                </li>
+                
+                <li>
+                <a href="/web/20150101162121/https://vn.mobile.yahoo.com/" data-ylk="sec: countries; slk:vn;">
+                        <span class="intl-flag intl-padding shared-sprite vn">&nbsp</span>
+                        Việt Nam
+                    </a>
+                </li>
+                
+                <li>
+                <a href="/web/20150101162121/https://tw.mobile.yahoo.com/" data-ylk="sec: countries; slk:tw;">
+                        <span class="intl-flag intl-padding shared-sprite tw">&nbsp</span>
+                        台灣
+                    </a>
+                </li>
+                
+                <li>
+                <a href="/web/20150101162121/https://hk.mobile.yahoo.com/" data-ylk="sec: countries; slk:hk;">
+                        <span class="intl-flag intl-padding shared-sprite hk">&nbsp</span>
+                        香港
+                    </a>
+                </li>
+                
+                <li>
+                <a href="/web/20150101162121/https://maktoob.mobile.yahoo.com/" data-ylk="sec: countries; slk:maktoob;">
+                        <span class="intl-flag intl-padding shared-sprite maktoob">&nbsp</span>
+                        الشرق الأوسط
+                    </a>
+                </li>
+                
+                <li>
+                <a href="/web/20150101162121/https://espanol.mobile.yahoo.com/" data-ylk="sec: countries; slk:espanol;">
+                        <span class="intl-flag intl-padding shared-sprite espanol">&nbsp</span>
+                        Países hispanos
+                    </a>
+                </li>
+                
+            </ul>
+            
+        </div>
+    </div>
+    <div id="footer-items">
+        <ul>
+            
+            <li class="footer-item ">&nbsp<a href="/web/20150101162121/http://info.yahoo.com/privacy/us/yahoo/" data-ylk="sec: footer; slk:privacy;">Privacy</a>&nbsp</li>
+            
+            <li class="footer-item ">&nbsp<a href="/web/20150101162121/http://info.yahoo.com/legal/us/yahoo/utos/terms/" data-ylk="sec: footer; slk:terms;">Terms</a>&nbsp</li>
+            
+            <li class="footer-item ">&nbsp<a href="/web/20150101162121/http://help.yahoo.com/kb/index?page=product&amp;y=PROD_MOBILE" data-ylk="sec: footer; slk:help;">Help</a>&nbsp</li>
+            
+            <li class="footer-item last">&nbsp<a href="/web/20150101162121/http://info.yahoo.com/" data-ylk="sec: footer; slk:aboutYahoo;">About Yahoo</a>&nbsp</li>
+            
+        </ul>
+    </div>
+</footer>
+
+
+
+<script>(function(){function e(e,t,n,r){e&&e.addEventListener?e.addEventListener(t,n,r):e&&e.attachEvent&&e.attachEvent("on"+t,n)}function t(e,t,n,r){if(e&&e.removeEventListener)try{e.removeEventListener(t,n,r)}catch(i){}else e&&e.detachEvent&&e.detachEvent("on"+t,n)}var n=window,r=document,i=function(){function i(){setTimeout(function(){var e,s;for(e=0,s=r.length;e<s;e++)r[e]();t(n,"load",i)},0)}var r=[];return e(n,"load",i),{add:function(e){r.push(e)}}}(),s=function(){function o(){function c(){var e,t,r,i,s;if(--l<=0&&n.YUI){n.YUI.applyConfig({bootstrap:!0});for(e=0,t=n.YUI.Env.instances.length;e<t;e++)i=n.YUI.Env.instances[e],i.applyConfig({bootstrap:!0});for(e=0,t=n.YUI.Env.pendingUseCalls.length;e<t;e++)r=n.YUI.Env.pendingUseCalls.shift(),i=r.shift(),s=r.concat(),s.pop(),i.log('[YUI.add] Invoking Y.use("'+s.join('","')+'", function () {...}) ['+i.id+"]"),i.use.apply(i,r)}}function h(){/loaded|complete/.test(this.readyState)&&(this.onreadystatechange=null,c())}var i,o,u,a=r.getElementsByTagName("script")[0],f=a.parentNode,l=e.length;for(i=0,o=e.length;i<o;i++)u=r.createElement("script"),s?u.onreadystatechange=h:u.onload=u.onerror=c,u.type="text/javascript",u.src=e[i],f.insertBefore(u,a);t=!0,e=[]}var e=[],t=!1,s=/MSIE/.test(navigator.userAgent);return i.add(o),{js:function(){var n=Array.prototype.slice.call(arguments,0);e=e.concat(n),t&&o()}}}();YUI=function(e){return{use:function(){var t=Array.prototype.slice.call(arguments);YUI.Env.pending.push([e].concat(t))}}},YUI.config={doc:document},YUI.Env={mods:{},pending:[],add:e,remove:t},YUI.add=function(e,t,n,r){YUI.Env.mods[e]={name:e,fn:t,version:n,details:r||{}}},YUI.applyConfig=function(e){YUI.pendingApplyConfig=e},YUI.OnloadHandlerQueue=i,YUI.SimpleLoader=s})();YUI.SimpleLoader.js('/web/20150101162121/https://s.yimg.com/zz/combo?um/loader-app_4be19d.js&um/loader-app-base_en-US_a40b3f.js&um/loader-yui3-resolved_9e5b9e.js&um/loader-app-resolved_2aa423.js', '/web/20150101162121/https://s.yimg.com/ss/rapid-3.12.1.js', '/web/20150101162121/https://s.yimg.com/ss/rapidworker-1.1.js', '/web/20150101162121/https://s.yimg.com/um/rollup_landingpage_js_*_0_97d9bc.js');YUI.applyConfig({"base":"/web/20150101162121/https://s.yimg.com/zz","comboBase":"/web/20150101162121/https://s.yimg.com/zz/combo?","comboSep":"&","root":"yui:3.10.1/build/","fetchCSS":true,"combine":true,"debug":true,"logLevel":"error","groups":{"app":{"combine":true,"maxURLLength":1024,"base":"/web/20150101162121/https://s.yimg.com/","comboBase":"/web/20150101162121/https://s.yimg.com/zz/combo?","comboSep":"&","root":"um/"}},"logLevelOrder":["debug","mojito","info","warn","error","none"],"lang":"en-US"});
+    YUI().use('mojito-client','HeaderMojitBinderIndex','FooterMojitBinderIndex', function(Y) {
+    window.YMojito = { client: new Y.mojito.Client({"context":{"runtime":"client","site":"","device":"","lang":"en-US","langs":"en,en","region":"","jurisdiction":"","bucket":"","flavor":"","tz":"","protocol":"https","intl":"us","intlOffset":0},"binderMap":{"yui_3_10_3_1_1418908171865_49779412":{"name":"HeaderMojitBinderIndex","action":"index","type":"HeaderMojit","viewId":"yui_3_10_3_1_1418908171865_49779412","instanceId":"yui_3_10_3_1_1418908170200_2141705","data":{"headerjs":"/web/20150101162121/https://s.yimg.com/zz/combo?kx/yucs/uh3/uh/1078/js/uh-min.js\\u0026kx/yucs/uh3/uh/1078/js/gallery-jsonp-min.js\\u0026kx/yucs/uh3/uh/1078/js/menu_utils_v3-min.js\\u0026kx/yucs/uh3/uh/1078/js/localeDateFormat-min.js\\u0026kx/yucs/uh3/uh/1078/js/timestamp_library_v2-min.js\\u0026kx/yucs/uh3/uh/1104/js/logo_debug-min.js\\u0026kx/yucs/uh3/switch-theme/6/js/switch_theme-min.js\\u0026kx/yucs/uhc/meta/55/js/meta-min.js\\u0026kx/yucs/uh_common/beacon/18/js/beacon-min.js\\u0026kx/ucs/comet/js/77/cometd-yui3-min.js\\u0026kx/ucs/comet/js/77/conn-min.js\\u0026kx/ucs/comet/js/77/dark-test-min.js\\u0026kx/yucs/uh3/disclaimer/331/js/disclaimer_seed-min.js\\u0026kx/yucs/uh3/top-bar/321/js/top_bar_v3-min.js\\u0026kx/yucs/uh3/top-bar/321/js/persistent-min.js\\u0026kx/yucs/uh3/search/598/js/search-min.js\\u0026kx/yucs/uh3/help/83/js/help_menu_v3-min.js"}},"yui_3_10_3_1_1418908171865_49779474":{"name":"FooterMojitBinderIndex","action":"index","type":"FooterMojit","viewId":"yui_3_10_3_1_1418908171865_49779474","instanceId":"yui_3_10_3_1_1418908170200_2141706","data":{"spaceid":151500462}}},"appConfig":{"middleware":["mojito-handler-static","mojito-parser-body","mojito-parser-cookies","mojito-contextualizer","mojito-handler-tunnel","mojito-router","middleware/myc-protocol.js","middleware/myc-intl.js","middleware/mojito-ult.js","mojito-handler-dispatcher"],"yui":{},"staticHandling":{"appName":"app_root","forceUpdate":true,"prefix":"static"},"shaker":{"tasks":{"js":{"jslint":false,"jsminify":{"config":{"mangle":true,"squeeze":true}}},"css":{"csslint":false,"cssminify":{"yuicompress":true}}},"routeRollups":{"module":"mojitrollup","rollups":{"landingpage":["HeaderMojit.index","FooterMojit.index","AppLandingPageMojit.index"],"detailpage":["HeaderMojit.index","FooterMojit.index","DetailPageMojit.index"],"mobileapps":["MobileAppsMojit.index"]}},"locations":{"mobstor":{"mobstorConfig":{"protocol":"https","prefix":"um","ycs":"s.yimg.com/um/","host":"myc.zenfs.com","proxy":{"host":"yca-proxy.corp.yahoo.com","port":3128},"certificate":"yahoo.mobstor.client.myc.prod"}}},"settings":{"serveLocation":"mobstor","inline":true,"serveJs":{"combo":true,"position":"bottom"},"serveCss":{"position":"top","combo":true}}},"specs":{"htmlframe":{"type":"ShakerMYCFrameMojit","config":{"deploy":true,"assets":{"top":{"blob":["\\u003Cmeta http-equiv=\\u0022Content-Type\\u0022 content=\\u0022text/html; charset=utf-8\\u0022\\u003E"]},"bottom":{"js":["/web/20150101162121/https://s.yimg.com/ss/rapid-3.12.1.js","/web/20150101162121/https://s.yimg.com/ss/rapidworker-1.1.js"]}},"child":{"config":{"children":{"pixel":{"type":"PixelMojit","action":"index"},"header":{"type":"HeaderMojit","action":"index"},"footer":{"type":"FooterMojit","action":"index"}}}}}},"landingpage":{"base":"htmlframe","config":{"child":{"type":"AppLandingPageMojit"},"assets":{"top":{"blob":[]}}}},"detailpage":{"base":"htmlframe","config":{"child":{"type":"DetailPageMojit","config":{}},"assets":{"top":{"blob":["\\u003Cmeta http-equiv=\\u0022Content-Type\\u0022 content=\\u0022text/html; charset=utf-8\\u0022\\u003E"],"js":[]}}}},"mobileapps":{"base":"htmlframe","config":{"child":{"type":"MobileAppsMojit"}}},"tunnelProxy":{"type":"TunnelProxy"}},"i13n":{"routes":{"home":{"spaceid":151500462,"path":"/"},"sports":{"spaceid":151500464,"path":"/sports"},"football":{"spaceid":151500464,"path":"/football"},"weather":{"spaceid":151500465,"path":"/weather"},"flickr":{"spaceid":151500466,"path":"/flickr"},"yahoo":{"spaceid":151500467,"path":"/yahoo"},"fantasy":{"spaceid":151500468,"path":"/fantasy"},"mail":{"spaceid":151500469,"path":"/mail"},"messenger":{"spaceid":151500470,"path":"/messenger"},"finance":{"spaceid":151500471,"path":"/finance"},"fantasy baseball":{"spaceid":151500472,"path":"/fantasy-baseball"},"search":{"spaceid":151500473,"path":"/search"},"screen":{"spaceid":151500474,"path":"/screen"},"newsdigest":{"spaceid":151500475,"path":"/newsdigest"},"cricket":{"spaceid":151500476,"path":"/cricket"},"others":{"spaceid":151500462,"path":"*"}},"pageParams":{"rel":"2013_redesign","prop":"1601"}},"actionTimeout":60000,"tunnelPrefix":"/tunnel","viewEngine":null},"routes":{"iucookie iframe":{"verbs":["get"],"path":"/iucookie/?","call":"iucookie.index"},"detailpage":{"verbs":["get"],"path":"/:appName/?","regex":{"appName":"weather|mail|yahoo|messenger|sports|finance|flickr|fantasy|search|screen|cricket|newsdigest|football|sevennews|plus7|fango|food|tvguide|auctions|deals|attlive|atthome|attmail|wireless/mymobile|aviate|poker|pool|aviate/text_me|sevensport|fantasysports|news"},"call":"detailpage.index","params":{"appName":"{appName}"}},"detailpage store":{"verbs":["get"],"path":"/:appName/store/?","regex":{"appName":"weather|mail|yahoo|messenger|sports|finance|flickr|fantasy|search|screen|cricket|newsdigest|football|sevennews|plus7|fango|food|tvguide|auctions|deals|atthome|attlive|attmail|aviate|poker|pool|sevensport|fantasysports|news"},"call":"detailpage.gotoStore","params":{"appName":"{appName}"}},"landingpage":{"verbs":["get"],"path":"/","call":"landingpage.index"},"landingpage redirect":{"verbs":["get"],"path":"/:something","regex":{"something":".*"},"params":{"something":"{something}"},"call":"landingpage.index"}},"page":{"data":{}}}) };
+        });</script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 16:21:21 Jan 1, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:30:31 Jan 7, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

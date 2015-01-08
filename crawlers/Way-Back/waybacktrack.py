@@ -108,10 +108,8 @@ def archive_domain(domain, year, dir_path=DATASET_DIR,
     
     forward_links = []
     
-    next_snap = 0
-    
     #for snapshot in domain_snapshots[:snapshot_age_span]:
-    for snapshot in domain_snapshots[:5]:
+    for snapshot in domain_snapshots[:2]:
         
         curr_snapshot_flinks = get_forwardlink_snapshots(snapshot)
 
@@ -156,9 +154,9 @@ def archive(page, year, dir_path, debug=False, throttle=1):
     if debug:
         print "requesting ", page
             
-    page_file = page.rsplit('/web/')[1].replace('http://', '')
-    page_file = page_file.replace('/', '_').replace(':', '_')
-    page_file = page_file.replace('?', '_').replace('*','_')
+    page_file = page.rsplit('/web/')[1].replace('http://', '').replace('-','_')
+    page_file = page_file.replace('/', '_').replace(':', '_').replace('&','_')
+    page_file = page_file.replace('?', '_').replace('*','_').replace('=','_')
     
     file_path = dir_path + page_file
     if os.path.isfile(file_path):
@@ -198,11 +196,17 @@ def archive(page, year, dir_path, debug=False, throttle=1):
         if debug:
             print "saving ", page_url
             print
+            
+        try:
+            with open(file_path, 'wb') as f:
+                f.write(BytesIO(html_string).read())
 
-        with open(file_path, 'wb') as f:
-            f.write(BytesIO(html_string).read())
-
-        time.sleep(throttle)
+            time.sleep(throttle)
+            
+        except IOError as e:
+            if debug:
+                print "Got error: ", e
+            return False
 
         return True
     else:

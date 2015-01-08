@@ -1,0 +1,861 @@
+
+<HTML><HEAD>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app3.us.archive.org";archive_analytics.values.server_ms=205;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<TITLE>Yahoo! Notizie</TITLE><META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache"></HEAD>
+<body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://it.news.yahoo.com/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "18";
+var displayMonth = "Oct";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://it.news.yahoo.com/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20001018011743" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20000817181716/http://it.news.yahoo.com//" title="17 Aug 2000">AUG</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 1:17:43 Oct 18, 2000">OCT</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20001201205400/http://it.news.yahoo.com/" title="1 Dec 2000"><strong>DEC</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20001017221544/http://it.news.yahoo.com/" title="22:15:44 Oct 17, 2000"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 1:17:43 Oct 18, 2000">18</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20001109075900/http://it.news.yahoo.com/" title="7:59:00 Nov 9, 2000"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   1999
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 1:17:43 Oct 18, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20011018020648/http://it.news.yahoo.com/" title="18 Oct 2001"><strong>2001</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20001018011743*/http://it.news.yahoo.com/" title="See a list of every capture for this URL">1,166 captures</a>
+           <div class="r" title="Timespan for captures of this URL">29 Nov 99 - 4 Nov 14</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000010_2000:9:104145020316_2001:-1:05720410bfea_2002:-1:201020112011_2003:-1:021112001212_2004:-1:011008889887_2005:-1:98889aab879a_2006:-1:884823563144_2007:-1:474665445601_2008:-1:110010000013_2009:-1:000000210311_2010:-1:200000020430_2011:-1:200200112110_2012:-1:401020110201_2013:-1:011110220100_2014:-1:020001010010_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<CENTER><TABLE WIDTH=90% CELLPADDING=0 CELLSPACING=8 BORDER=0><TR><TD>
+<table border=0 cellpadding=0 cellspacing=0 width="100%"><tr><td valign=middle width="1%">
+<a href=/web/20001018011743/http://it.news.yahoo.com/><img border=0 src="/web/20001018011743im_/http://eur.i1.yimg.com/eur.yimg.com/i/it/g/it_news4.gif" alt="Yahoo! Notizie" width=265 height=40></a>
+</td><td valign=top align=right><FONT face=arial SIZE=-1><A HREF=/web/20001018011743/http://it.news.yahoo.com/>Pagina principale</A> - <a href=/web/20001018011743/http://it.yahoo.com/>Yahoo!</a> - <A HREF=/web/20001018011743/http://it.docs.yahoo.com/info/aiuto.html>Aiuto</A></FONT><hr size=1 noshade></td></tr></table>
+</TD></TR></TABLE>
+<center>
+
+<!-- SpaceID=0 robot -->
+
+</center>
+<p>
+<TABLE WIDTH=90% BORDER=0 CELLPADDING=0 CELLSPACING=8><TR><TD COLSPAN=3><TABLE WIDTH=100% BORDER=0 BGCOLOR=9999CC CELLSPACING=0><TR><TD>
+<table cellspacing=0 cellpadding=4 width="100%" border=0>
+<tr>
+<td valign=middle bgcolor="#9999cc">
+<font face=arial size="+1"><b>
+Yahoo! Notizie
+</b></font>
+</td>
+<td valign=middle align=right bgcolor="#9999cc">
+<font face=arial>Martedì 17 Ottobre 2000, 19:28</font>
+</td>
+</tr>
+</table>
+<center>
+<TABLE width="100%" BGCOLOR=FFFFCC BORDER=0 CELLPADDING=2 CELLSPACING=0>
+<TR ALIGN=CENTER>
+<TD><FONT SIZE=-1 FACE=arial><A HREF=/web/20001018011743/http://it.news.yahoo.com/>In&nbsp;primo&nbsp;piano</A></FONT></TD>
+<TD><FONT SIZE=-1 FACE=arial><A HREF=/web/20001018011743/http://it.news.yahoo.com/1/>In&nbsp;Italia</A></FONT></TD>
+<TD><FONT SIZE=-1 FACE=arial><A HREF=/web/20001018011743/http://it.news.yahoo.com/2/>Politica</A></FONT></TD>
+<TD><FONT SIZE=-1 FACE=arial><A HREF=/web/20001018011743/http://it.news.yahoo.com/3/>Economia</A></FONT></TD>
+<TD><FONT SIZE=-1 FACE=arial><A HREF=/web/20001018011743/http://it.news.yahoo.com/4/>Esteri</A></FONT></TD>
+<TD><FONT SIZE=-1 FACE=arial><A HREF=/web/20001018011743/http://it.news.yahoo.com/5/>Hi-tech</A></FONT></TD>
+<TD><FONT SIZE=-1 FACE=arial><A HREF=/web/20001018011743/http://it.news.yahoo.com/9/>Spettacolo</A></FONT></TD>
+<TD><FONT SIZE=-1 FACE=arial><A HREF=/web/20001018011743/http://it.news.yahoo.com/15/>Salute</A></FONT></TD>
+<TD><FONT SIZE=-1 FACE=arial><A HREF=/web/20001018011743/http://it.sports.yahoo.com/>Sport</A></FONT></TD>
+</TR>
+</TABLE>
+</center>
+</TD></TR></TABLE></TD></TR>
+<tr align=center>
+<td valign=top align=left bgcolor=eeeeee>
+<TABLE WIDTH=140 CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<TR BGCOLOR="#CCCCFF"><TD><FONT FACE=arial>&nbsp;<B>Cerca notizie</B></FONT></TD></TR>
+<TR><TD>
+<TABLE CELLPADDING=0 CELLSPACING=4 BORDER=0>
+<form method=get action="/web/20001018011743/http://search.yahoo.it/search/news_it">
+<TR><TD><input size=13 name=p></TD></TR>
+<TR><TD><input type=submit value="Cerca"><input type=hidden name=n value=10></TD></TR>
+</form>
+</TABLE>
+</TD></TR>
+<TR BGCOLOR="#CCCCFF"><TD><A HREF="/web/20001018011743/http://it.my.yahoo.com/"><img align=right border=0 height=15 width=49 src="/web/20001018011743im_/http://a1.g.a.yimg.com/7/1/31/000/us.yimg.com/i/it/my/edit2.gif" alt="Personalizza le notizie"></A><FONT FACE=arial>&nbsp;<B>Il Mio Yahoo!</B></FONT></TD></TR>
+<TR><TD>
+<TABLE CELLPADDING=0 CELLSPACING=4 BORDER=0><TR><TD>
+<FONT FACE=arial SIZE=-1><A HREF="/web/20001018011743/http://it.my.yahoo.com/"><b>Personalizza le notizie</b></A><BR>
+Scegli le tue notizie, le previsioni meteorologiche, i risultati sportivi, e tanto altro!<BR>&nbsp;</FONT>
+</TD></TR></TABLE>
+</TD></TR>
+<tr align=center>
+<td width="100%" valign=top align=left bgcolor="#eeeeee">
+<TABLE WIDTH="100%" CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<TR BGCOLOR="#CCCCFF"><TD width="100%"><FONT FACE="arial"><B>Yahoo! Meteo</B></FONT></TD></TR>
+<tr><td bgcolor="#eeeeee" width="100%">
+<table bgcolor="#eeeeee" width="100%">
+<tr><td width="100%">
+<tr><td><a href=/web/20001018011743/http://it.weather.yahoo.com/626/index_c.html><small>Milano</small></a></td><td align=right><small>12...22 C</small></td><td align=right><small><img height=24 width=32 src=/web/20001018011743im_/http://eur.i1.yimg.com/us.yimg.com/i/we/my/70.gif alt="Nebbia"></small></td></tr>
+<tr><td><a href=/web/20001018011743/http://it.weather.yahoo.com/641/index_c.html><small>Venezia</small></a></td><td align=right><small>12...17 C</small></td><td align=right><small><img height=24 width=32 src=/web/20001018011743im_/http://eur.i1.yimg.com/us.yimg.com/i/we/my/82.gif alt="Pioggia"></small></td></tr>
+<tr><td><a href=/web/20001018011743/http://it.weather.yahoo.com/622/index_c.html><small>Firenze</small></a></td><td align=right><small>14...19 C</small></td><td align=right><small><img height=24 width=32 src=/web/20001018011743im_/http://eur.i1.yimg.com/us.yimg.com/i/we/my/69.gif alt="Molto nuvoloso"></small></td></tr>
+<tr><td><a href=/web/20001018011743/http://it.weather.yahoo.com/637/index_c.html><small>Roma</small></a></td><td align=right><small>13...20 C</small></td><td align=right><small><img height=24 width=32 src=/web/20001018011743im_/http://eur.i1.yimg.com/us.yimg.com/i/we/my/85.gif alt="Soleggiato"></small></td></tr>
+<tr><td><a href=/web/20001018011743/http://it.weather.yahoo.com/627/index_c.html><small>Napoli</small></a></td><td align=right><small>9...21 C</small></td><td align=right><small><img height=24 width=32 src=/web/20001018011743im_/http://eur.i1.yimg.com/us.yimg.com/i/we/my/66.gif alt="Parzialmente nuvoloso"></small></td></tr>
+
+</td></tr>
+<tr><td align=center colspan=3 width="100%"><SMALL><B><A HREF="/web/20001018011743/http://it.weather.yahoo.com/">Tutte le città</A></B></SMALL><br>&nbsp;
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+<TR BGCOLOR="#CCCCFF"><TD><FONT FACE=arial>&nbsp;<B>Categorie Yahoo!</B></FONT></TD></TR>
+<TR><TD>
+<TABLE CELLPADDING=0 CELLSPACING=4 BORDER=0>
+<TR VALIGN=top><TD><B>·</B></TD>
+<td valign=top>
+<A HREF="/web/20001018011743/http://it.dir.yahoo.com/Attualita_e_media/"><FONT SIZE="-1"><b>Attualità e media</b></FONT></a>
+</td>
+</tr>
+<tr>
+<td valign=top>
+<b>·</b>
+</td><td valign=top>
+<A HREF="/web/20001018011743/http://it.dir.yahoo.com/Attualita_e_media/Giornali/"><FONT SIZE="-1">Giornali</FONT></a>
+</td>
+</tr>
+<tr>
+<td valign=top>
+<b>·</b>
+</td><td valign=top>
+<A HREF="/web/20001018011743/http://it.dir.yahoo.com/Attualita_e_media/Riviste/"><FONT SIZE="-1">Riviste</FONT></a>
+</td>
+</tr>
+<tr><td valign=top>
+<b>·</b></td><td valign=top>
+<A HREF="/web/20001018011743/http://it.dir.yahoo.com/Attualita_e_media/Meteo/"><FONT SIZE="-1">Previsioni meteo</FONT></a>
+</td></TR>
+<tr>
+<td valign=top>
+<b>·</b>
+</td><td valign=top>
+<A HREF="/web/20001018011743/http://it.dir.yahoo.com/Attualita_e_media/Per_area_geografica/Regioni_italiane/"><FONT SIZE="-1">Informazione regionale</FONT></a>
+</td></tr><tr><td valign=top>
+<b>·</b>
+</td>
+<td valign=top>
+<A HREF="/web/20001018011743/http://it.dir.yahoo.com/Attualita_e_media/Televisione/"><FONT SIZE="-1">Televisione</FONT></a>
+</td></tr>
+<tr><td valign=top>
+<b>·</b>
+</td><td valign=top>
+<A HREF="/web/20001018011743/http://it.dir.yahoo.com/Attualita_e_media/Radio/"><FONT SIZE="-1">Radio</FONT></a>
+</td>
+</tr>
+<tr><td valign=top>
+<b>·</b>
+</td><td valign=top>
+<A HREF="/web/20001018011743/http://it.dir.yahoo.com/Affari_e_economia/Aziende/Attualita_e_media/Agenzie_di_stampa/"><FONT SIZE="-1">Agenzie di stampa</FONT></a>
+</td>
+</tr>
+<tr><td valign=top>
+<b>·</b>
+</td><td valign=top>
+<A HREF="/web/20001018011743/http://it.dir.yahoo.com/Attualita_e_media/Umorismo_e_satira/"><FONT SIZE="-1">Umorismo e satira</FONT></a>
+</td>
+</tr>
+</TABLE>
+<form method="post" action="/web/20001018011743/http://it.polls.yahoo.com/public/archives/2125107916/p-itne-52">
+<input type="hidden" name="m" value="v">
+<table width="200" cellpadding=4 cellspacing=0 border=0>
+<tr bgcolor="#ccccff">
+<td colspan=2 valign=top>
+<font face="arial,helvetica"><b>Yahoo! Sondaggi</b></font>
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td colspan=2 valign=top>
+<font face="arial,helvetica" size="-1"><b>Domanda</b> La tua cucina preferita:</font>
+</td></tr>
+<tr bgcolor="#eeeeee">
+<td valign=middle align=center width="1%">
+<input type="radio" name=uc value="1">
+</td>
+<td width="99%" align=left valign=middle><font face="arial,helvetica" size="-1">mediterranea</font></td></tr>
+<tr bgcolor="#eeeeee">
+<td valign=middle align=center width="1%">
+<input type="radio" name=uc value="2">
+</td>
+<td width="99%" align=left valign=middle><font face="arial,helvetica" size="-1">cinese</font></td></tr>
+<tr bgcolor="#eeeeee">
+<td valign=middle align=center width="1%">
+<input type="radio" name=uc value="3">
+</td>
+<td width="99%" align=left valign=middle><font face="arial,helvetica" size="-1">giapponese</font></td></tr>
+<tr bgcolor="#eeeeee">
+<td valign=middle align=center width="1%">
+<input type="radio" name=uc value="4">
+</td>
+<td width="99%" align=left valign=middle><font face="arial,helvetica" size="-1">thai</font></td></tr>
+<tr bgcolor="#eeeeee">
+<td valign=middle align=center width="1%">
+<input type="radio" name=uc value="5">
+</td>
+<td width="99%" align=left valign=middle><font face="arial,helvetica" size="-1">indiana</font></td></tr>
+<tr bgcolor="#eeeeee">
+<td valign=middle align=center width="1%">
+<input type="radio" name=uc value="6">
+</td>
+<td width="99%" align=left valign=middle><font face="arial,helvetica" size="-1">messicana</font></td></tr>
+<tr bgcolor="#eeeeee">
+<td valign=middle align=center width="1%">
+<input type="radio" name=uc value="7">
+</td>
+<td width="99%" align=left valign=middle><font face="arial,helvetica" size="-1">greca</font></td></tr>
+<tr bgcolor="#eeeeee">
+<td valign=middle align=center width="1%">
+<input type="radio" name=uc value="8">
+</td>
+<td width="99%" align=left valign=middle><font face="arial,helvetica" size="-1">afrodisiaca</font></td></tr>
+<tr bgcolor="#eeeeee">
+<td valign=middle align=center width="1%">
+<input type="radio" name=uc value="9">
+</td>
+<td width="99%" align=left valign=middle><font face="arial,helvetica" size="-1">vegetariana</font></td></tr>
+<tr bgcolor="#eeeeee">
+<td valign=middle align=center width="1%">
+<input type="radio" name=uc value="10">
+</td>
+<td width="99%" align=left valign=middle><font face="arial,helvetica" size="-1">altro</font></td></tr>
+<tr bgcolor="#eeeeee">
+<td colspan=2 align=center>
+<font face="arial,helvetica" size="-1">
+<input type=submit value="Invia il mio voto" name=".add">
+<br>
+<small><a href="/web/20001018011743/http://it.polls.yahoo.com/public/archives/2125107916/p-itne-52?m=r">Visualizza i risultati senza votare</a></small>
+</font></td>
+</tr>
+</table>
+</form>
+</TD></TR>
+</TABLE>
+</td>
+<TD VALIGN=TOP>
+<TABLE BGCOLOR="#CCCCCC" WIDTH="100%" CELLPADDING=1 CELLSPACING=0 BORDER=0>
+ <TR><TD>
+ <TABLE WIDTH="100%" CELLPADDING=2 CELLSPACING=0 BORDER=0>
+ <TR BGCOLOR="#EEEEEE">
+ <TD><FONT FACE=arial><B>In Italia</B></FONT></TD>
+ <TD ALIGN=right><FONT FACE=arial SIZE=-1>
+Aggiornato
+alle 15:59
+ </FONT></TD>
+ </TR>
+ <TR>
+ <TD BGCOLOR="#FFFFFF" COLSPAN=2><FONT FACE=arial SIZE="-1">
+ </FONT></TD>
+ </TR>
+ </TABLE></TD>
+ </TR>
+</TABLE>
+<TABLE WIDTH="100%" CELLPADDING=0 CELLSPACING=4 BORDER=0>
+ <TR VALIGN=top>
+ <TD>
+<li>
+ <A HREF="/web/20001018011743/http://it.news.yahoo.com/001017/2/p1i8.html">Euro Scende Sotto 85 Gli Cents; In Ribasso Anche a New York </A>
+<font size="-2">(ANSA)</font>
+<li>
+ <A HREF="/web/20001018011743/http://it.news.yahoo.com/001017/14/p1h8.html">Maltempo: Lombardia, Per Paura Po e Ticino 11.000 Evacuati</A>
+<font size="-2">(AGI)</font>
+<li>
+ <A HREF="/web/20001018011743/http://it.news.yahoo.com/001017/14/p1h7.html">Maltempo: v.Aosta, Arrivati Soccorsi Dalla Francia</A>
+<font size="-2">(AGI)</font>
+</td></tr>
+<tr>
+<td align=right >
+<FONT FACE="arial" SIZE="-1"><B><A HREF="/web/20001018011743/http://it.news.yahoo.com/1/">Altre notizie<TT>...</TT></A></B></FONT></TD>
+</TR>
+</TABLE>
+<P>
+<TABLE BGCOLOR="#CCCCCC" WIDTH="100%" CELLPADDING=1 CELLSPACING=0 BORDER=0>
+ <TR><TD>
+ <TABLE WIDTH="100%" CELLPADDING=2 CELLSPACING=0 BORDER=0>
+ <TR BGCOLOR="#EEEEEE">
+ <TD><FONT FACE=arial><B>Politica</B></FONT></TD>
+ <TD ALIGN=right><FONT FACE=arial SIZE=-1>
+Aggiornato
+alle 15:50
+ </FONT></TD>
+ </TR>
+ <TR>
+ <TD BGCOLOR="#FFFFFF" COLSPAN=2><FONT FACE=arial SIZE="-1">
+ </FONT></TD>
+ </TR>
+ </TABLE></TD>
+ </TR>
+</TABLE>
+<TABLE WIDTH="100%" CELLPADDING=0 CELLSPACING=4 BORDER=0>
+ <TR VALIGN=top>
+ <TD>
+<li>
+ <A HREF="/web/20001018011743/http://it.news.yahoo.com/001017/1/p1i5.html">Margherita: Democratici-sdi, Sintonia Si' Ma Per Ora Intesa No</A>
+<font size="-2">(ADN Kronos)</font>
+<li>
+ <A HREF="/web/20001018011743/http://it.news.yahoo.com/001017/14/p1gx.html">Amato: Errore Sinistra Ostacolare Privato Nel Welfare</A>
+<font size="-2">(AGI)</font>
+<li>
+ <A HREF="/web/20001018011743/http://it.news.yahoo.com/001017/14/p1gl.html">Maltempo: Regioni Chiedono Autonomia In Gestione Eventi</A>
+<font size="-2">(AGI)</font>
+</td></tr>
+<tr>
+<td align=right >
+<FONT FACE="arial" SIZE="-1"><B><A HREF="/web/20001018011743/http://it.news.yahoo.com/2/">Altre notizie<TT>...</TT></A></B></FONT></TD>
+</TR>
+</TABLE>
+<P>
+<TABLE BGCOLOR="#CCCCCC" WIDTH="100%" CELLPADDING=1 CELLSPACING=0 BORDER=0>
+ <TR><TD>
+ <TABLE WIDTH="100%" CELLPADDING=2 CELLSPACING=0 BORDER=0>
+ <TR BGCOLOR="#EEEEEE">
+ <TD><FONT FACE=arial><B>Economia</B></FONT></TD>
+ <TD ALIGN=right><FONT FACE=arial SIZE=-1>
+Aggiornato
+alle 16:01
+ </FONT></TD>
+ </TR>
+ <TR>
+ <TD BGCOLOR="#FFFFFF" COLSPAN=2><FONT FACE=arial SIZE="-1">
+ </FONT></TD>
+ </TR>
+ </TABLE></TD>
+ </TR>
+</TABLE>
+<TABLE WIDTH="100%" CELLPADDING=0 CELLSPACING=4 BORDER=0>
+ <TR VALIGN=top>
+ <TD>
+<li>
+ <A HREF="/web/20001018011743/http://it.news.yahoo.com/001017/60/p1i9.html">Wall Street Ingrana La Retromarcia</A>
+<font size="-2">(WallStreetItalia
+)</font>
+<li>
+ <A HREF="/web/20001018011743/http://it.news.yahoo.com/001017/57/p1i2.html">Torna il denaro su Unicredito e S.Paolo</A>
+<font size="-2">(Spystocks)</font>
+<li>
+ <A HREF="/web/20001018011743/http://it.news.yahoo.com/001017/57/p1i1.html">Immsi e Gabetti brillano tra gli immobiliari</A>
+<font size="-2">(Spystocks)</font>
+</td></tr>
+<tr>
+<td align=right >
+<FONT FACE="arial" SIZE="-1"><B><A HREF="/web/20001018011743/http://it.news.yahoo.com/3/">Altre notizie<TT>...</TT></A></B></FONT></TD>
+</TR>
+</TABLE>
+<P>
+<TABLE BGCOLOR="#CCCCCC" WIDTH="100%" CELLPADDING=1 CELLSPACING=0 BORDER=0>
+ <TR><TD>
+ <TABLE WIDTH="100%" CELLPADDING=2 CELLSPACING=0 BORDER=0>
+ <TR BGCOLOR="#EEEEEE">
+ <TD><FONT FACE=arial><B>Esteri</B></FONT></TD>
+ <TD ALIGN=right><FONT FACE=arial SIZE=-1>
+Aggiornato
+alle 15:59
+ </FONT></TD>
+ </TR>
+ <TR>
+ <TD BGCOLOR="#FFFFFF" COLSPAN=2><FONT FACE=arial SIZE="-1">
+ </FONT></TD>
+ </TR>
+ </TABLE></TD>
+ </TR>
+</TABLE>
+<TABLE WIDTH="100%" CELLPADDING=0 CELLSPACING=4 BORDER=0>
+ <TR VALIGN=top>
+ <TD>
+<li>
+ <A HREF="/web/20001018011743/http://it.news.yahoo.com/001017/2/p1ia.html">Deraglia Treno a Londra: 6 Morti; Molti Feriti. Vagoni Capovolti </A>
+<font size="-2">(ANSA)</font>
+<li>
+ <A HREF="/web/20001018011743/http://it.news.yahoo.com/001017/2/p1h4.html">Nesi,Possibile Apertura Argini Po; Per Allagare Zone Non Abitate </A>
+<font size="-2">(ANSA)</font>
+<li>
+ <A HREF="/web/20001018011743/http://it.news.yahoo.com/001017/2/p1h1.html">Arafat a Barak: Attuare Accordo; Israele Lo Rispetti Alla Lettera </A>
+<font size="-2">(ANSA)</font>
+</td></tr>
+<tr>
+<td align=right >
+<FONT FACE="arial" SIZE="-1"><B><A HREF="/web/20001018011743/http://it.news.yahoo.com/4/">Altre notizie<TT>...</TT></A></B></FONT></TD>
+</TR>
+</TABLE>
+<P>
+<TABLE BGCOLOR="#CCCCCC" WIDTH="100%" CELLPADDING=1 CELLSPACING=0 BORDER=0>
+ <TR><TD>
+ <TABLE WIDTH="100%" CELLPADDING=2 CELLSPACING=0 BORDER=0>
+ <TR BGCOLOR="#EEEEEE">
+ <TD><FONT FACE=arial><B>Hi-tech</B></FONT></TD>
+ <TD ALIGN=right><FONT FACE=arial SIZE=-1>
+Aggiornato
+alle 16:00
+ </FONT></TD>
+ </TR>
+ <TR>
+ <TD BGCOLOR="#FFFFFF" COLSPAN=2><FONT FACE=arial SIZE="-1">
+ </FONT></TD>
+ </TR>
+ </TABLE></TD>
+ </TR>
+</TABLE>
+<TABLE WIDTH="100%" CELLPADDING=0 CELLSPACING=4 BORDER=0>
+ <TR VALIGN=top>
+ <TD>
+<li>
+ <A HREF="/web/20001018011743/http://it.news.yahoo.com/001017/61/p1hu.html"> Novità Sony</A>
+<font size="-2">(VNUnet
+)</font>
+<li>
+ <A HREF="/web/20001018011743/http://it.news.yahoo.com/001017/61/p1hs.html"> Una scheda "etnica"</A>
+<font size="-2">(VNUnet
+)</font>
+<li>
+ <A HREF="/web/20001018011743/http://it.news.yahoo.com/001017/61/p1ht.html"> Digital channel</A>
+<font size="-2">(VNUnet
+)</font>
+</td></tr>
+<tr>
+<td align=right >
+<FONT FACE="arial" SIZE="-1"><B><A HREF="/web/20001018011743/http://it.news.yahoo.com/5/">Altre notizie<TT>...</TT></A></B></FONT></TD>
+</TR>
+</TABLE>
+<P>
+<TABLE BGCOLOR="#CCCCCC" WIDTH="100%" CELLPADDING=1 CELLSPACING=0 BORDER=0>
+ <TR><TD>
+ <TABLE WIDTH="100%" CELLPADDING=2 CELLSPACING=0 BORDER=0>
+ <TR BGCOLOR="#EEEEEE">
+ <TD><FONT FACE=arial><B>Spettacolo</B></FONT></TD>
+ <TD ALIGN=right><FONT FACE=arial SIZE=-1>
+Aggiornato
+alle 16:03
+ </FONT></TD>
+ </TR>
+ <TR>
+ <TD BGCOLOR="#FFFFFF" COLSPAN=2><FONT FACE=arial SIZE="-1">
+ </FONT></TD>
+ </TR>
+ </TABLE></TD>
+ </TR>
+</TABLE>
+<TABLE WIDTH="100%" CELLPADDING=0 CELLSPACING=4 BORDER=0>
+ <TR VALIGN=top>
+ <TD>
+<li>
+ <A HREF="/web/20001018011743/http://it.news.yahoo.com/001017/33/p1ig.html">Radio Deejay : " SALA GIOCKEY " dalle 16 alle 18</A>
+<font size="-2">(Il GiornaleRadio)</font>
+<li>
+ <A HREF="/web/20001018011743/http://it.news.yahoo.com/001017/33/p1i7.html">Musica : " ORGY, NUOVO ALBUM E MEGA-PARTY "</A>
+<font size="-2">(Il GiornaleRadio)</font>
+<li>
+ <A HREF="/web/20001018011743/http://it.news.yahoo.com/001017/52/p1hq.html">Un australiano in Europa</A>
+<font size="-2">(TimeOut
+)</font>
+</td></tr>
+<tr>
+<td align=right >
+<FONT FACE="arial" SIZE="-1"><B><A HREF="/web/20001018011743/http://it.news.yahoo.com/9/">Altre notizie<TT>...</TT></A></B></FONT></TD>
+</TR>
+</TABLE>
+<P>
+<TABLE BGCOLOR="#CCCCCC" WIDTH="100%" CELLPADDING=1 CELLSPACING=0 BORDER=0>
+ <TR><TD>
+ <TABLE WIDTH="100%" CELLPADDING=2 CELLSPACING=0 BORDER=0>
+ <TR BGCOLOR="#EEEEEE">
+ <TD><FONT FACE=arial><B>Salute</B></FONT></TD>
+ <TD ALIGN=right><FONT FACE=arial SIZE=-1>
+Aggiornato
+alle 16:00
+ </FONT></TD>
+ </TR>
+ <TR>
+ <TD BGCOLOR="#FFFFFF" COLSPAN=2><FONT FACE=arial SIZE="-1">
+ </FONT></TD>
+ </TR>
+ </TABLE></TD>
+ </TR>
+</TABLE>
+<TABLE WIDTH="100%" CELLPADDING=0 CELLSPACING=4 BORDER=0>
+ <TR VALIGN=top>
+ <TD>
+<li>
+ <A HREF="/web/20001018011743/http://it.news.yahoo.com/001017/43/p1ho.html">Chirurgia estetica all'asta</A>
+<font size="-2">(Xagena)</font>
+<li>
+ <A HREF="/web/20001018011743/http://it.news.yahoo.com/001017/43/p1d3.html">Mortalità causata dalla varicella prima dell'introduzione del vaccino</A>
+<font size="-2">(Xagena)</font>
+<li>
+ <A HREF="/web/20001018011743/http://it.news.yahoo.com/001017/43/p16g.html">Il trattamento con Simvastatina in pazienti con cardiopatia ischemica è sicuro e riduce la mortalità a 8 anni.</A>
+<font size="-2">(Xagena)</font>
+</td></tr>
+<tr>
+<td align=right >
+<FONT FACE="arial" SIZE="-1"><B><A HREF="/web/20001018011743/http://it.news.yahoo.com/15/">Altre notizie<TT>...</TT></A></B></FONT></TD>
+</TR>
+</TABLE>
+<P>
+<TABLE BGCOLOR="#CCCCCC" WIDTH="100%" CELLPADDING=1 CELLSPACING=0 BORDER=0>
+ <TR><TD>
+ <TABLE WIDTH="100%" CELLPADDING=2 CELLSPACING=0 BORDER=0>
+ <TR BGCOLOR="#EEEEEE">
+ <TD><FONT FACE=arial><B>Sport</B></FONT></TD>
+ <TD ALIGN=right><FONT FACE=arial SIZE=-1>
+Aggiornato
+alle 16:01
+ </FONT></TD>
+ </TR>
+ <TR>
+ <TD BGCOLOR="#FFFFFF" COLSPAN=2><FONT FACE=arial SIZE="-1">
+ </FONT></TD>
+ </TR>
+ </TABLE></TD>
+ </TR>
+</TABLE>
+<TABLE WIDTH="100%" CELLPADDING=0 CELLSPACING=4 BORDER=0>
+ <TR VALIGN=top>
+ <TD>
+<li>
+ <A HREF="/web/20001018011743/http://it.sports.yahoo.com/001017/5/p1i3.html">Coppa Soporta: difficile inizio per Imola</A>
+<font size="-2">(CanaleSport)</font>
+<li>
+ <A HREF="/web/20001018011743/http://it.sports.yahoo.com/001017/19/p1if.html">Inter, Macellari il grintoso</A>
+<font size="-2">(Datasport)</font>
+<li>
+ <A HREF="/web/20001018011743/http://it.sports.yahoo.com/001017/19/p1i6.html">Aumenteranno i controlli antidoping nello sci</A>
+<font size="-2">(Datasport)</font>
+</td></tr>
+<tr>
+<td align=right >
+<FONT FACE="arial" SIZE="-1"><B><A HREF="/web/20001018011743/http://it.sports.yahoo.com/">Altre notizie<TT>...</TT></A></B></FONT></TD>
+</TR>
+</TABLE>
+<P>
+</TD>
+<TD valign=top align=left>
+<table><tr><td>
+<TABLE BGCOLOR="#9999CC" WIDTH=172 CELLPADDING=1 CELLSPACING=0 BORDER=0><TR><TD>
+<TABLE WIDTH="100%" CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<TR BGCOLOR="#CCCCFF"><TD><FONT FACE=arial>&nbsp;<B>Temi d'attualità</B></FONT></TD></TR>
+<TR BGCOLOR="#FFFFFF"><TD>
+<TABLE CELLPADDING=0 CELLSPACING=4 BORDER=0>
+<tr>
+<td valign=top>
+<b>·</b>
+</td><td valign=top>
+<A HREF="/web/20001018011743/http://it.fc.yahoo.com/l/londra.html"><FONT SIZE="-1">Londra, deraglia treno: 6 morti e diversi feriti</FONT></a>
+</td></tr>
+<tr>
+<td valign=top>
+<b>·</b>
+</td><td valign=top>
+<A HREF="/web/20001018011743/http://it.fc.yahoo.com/m/maltempo.html"><FONT SIZE="-1">Maltempo al Nord, cresce il numero delle vittime</FONT></a>
+</td></tr>
+<tr>
+<td valign=top>
+<b>·</b>
+</td><td valign=top>
+<A HREF="/web/20001018011743/http://it.fc.yahoo.com/i/israele.html"><FONT SIZE="-1">Medioriente: vertice di Sharm el Sheik</FONT></a>
+</td></tr>
+<tr>
+<td valign=top>
+<b>·</b>
+</td><td valign=top>
+<A HREF="/web/20001018011743/http://it.fc.yahoo.com/g/grandefratello.html"><FONT SIZE="-1"><b>Il Grande Fratello</b></FONT></a>
+</td></tr>
+<tr>
+<td valign=top>
+<b>·</b>
+</td><td valign=top>
+<A HREF="/web/20001018011743/http://it.fc.yahoo.com/e/elisabetta.html"><FONT SIZE="-1">Regina Elisabetta, oggi in visita dal Papa</FONT></a>
+</td></tr>
+<tr>
+<td valign=top>
+<b>·</b>
+</td><td valign=top>
+<A HREF="/web/20001018011743/http://it.fc.yahoo.com/s/salonenautico.html"><FONT SIZE="-1">Il Salone Nautico di Genova</FONT></a>
+</td></tr>
+<tr>
+<td valign=top>
+<b>·</b></td>
+<td valign=top><a href="/web/20001018011743/http://it.fc.yahoo.com/index.html"><FONT SIZE="-1">Altro...</font></a></td>
+</tr>
+</TABLE>
+</TD></TR>
+</TABLE>
+</TD></TR></TABLE>
+<P>
+</td></tr>
+<tr><td>
+<TABLE BGCOLOR="#9999CC" WIDTH=172 CELLSPACING=0 BORDER=0><TR><TD>
+<TABLE WIDTH="100%" CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<TR BGCOLOR="#CCCCFF"><TD><FONT FACE=arial>&nbsp;<B>Yahoo! Finanza</B></FONT></TD></TR>
+<TR BGCOLOR=white><TD><TABLE CELLPADDING=0 CELLSPACING=4 BORDER=0>
+<form action="/web/20001018011743/http://it.finance.yahoo.com/q">
+<TR VALIGN=top><TD align=center>
+<input size=10 name=s>
+<br><input type=submit value="Cerca dati">
+</td></tr>
+<tr><td align=center><small> <a href="/web/20001018011743/http://it.finance.yahoo.com/q?s=@MIB30.MI">Blue Chips</a> - <a href="/web/20001018011743/http://it.finance.yahoo.com/q?s=@MIDEX.MI">Titoli Midex</a><br><a href="/web/20001018011743/http://it.finance.yahoo.com/q?s=@DAX30.FX&amp;f=snlcvi">Dax30</a> - <a href="/web/20001018011743/http://it.finance.yahoo.com/q?s=+350000.PA+@350000.PA&amp;d=s">Cac40</a> - <a href="/web/20001018011743/http://uk.finance.yahoo.com/q?s=@UKX.L">Ftse100</a></small></td></tr>
+</form>
+</table></TD></TR></TABLE></TD></TR></TABLE>
+</td></tr>
+<P>
+<tr><td>
+<TABLE BGCOLOR="#9999CC" WIDTH=172 CELLPADDING=1 CELLSPACING=0 BORDER=0><TR><TD>
+<TABLE WIDTH="100%" CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<TR BGCOLOR="#CCCCFF"><TD><FONT FACE=arial>&nbsp;<B>Yahoo! Mobile</B></FONT></TD></TR>
+<TR BGCOLOR="#FFFFFF"><TD>
+<TABLE CELLPADDING=0 CELLSPACING=4 BORDER=0>
+<tr>
+<td valign=top>
+<FONT FACE=arial SIZE=-1><A HREF="/web/20001018011743/http://it.mobile.yahoo.com/"><b>Yahoo! sul tuo cellulare</b></A><BR>
+Notizie, previsioni meteorologiche, risultati sportivi, quotazioni... direttamente sul tuo cellulare Wap!<BR>&nbsp;</FONT>
+</TD></TR></TABLE>
+</TD></TR>
+</TABLE>
+</TD></TR></TABLE>
+<tr><td>
+<TABLE BGCOLOR="#9999CC" WIDTH=172 CELLPADDING=1 CELLSPACING=0 BORDER=0><TR><TD>
+<TABLE WIDTH="100%" CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<TR BGCOLOR="#CCCCFF"><TD><FONT FACE=arial>&nbsp;<B>Yahoo!Sport</B></FONT></TD></TR>
+<TR BGCOLOR="#FFFFFF"><TD>
+<TABLE CELLPADDING=0 CELLSPACING=4 BORDER=0>
+<tr>
+<td valign=top>
+<B>·</B></TD>
+<TD><A HREF=/web/20001018011743/http://it.sports.yahoo.com/foot/><SMALL>Calcio</SMALL></A></TD></TR>
+<TR VALIGN=top><TD><B>·</B></TD>
+<TD><A HREF=/web/20001018011743/http://it.sports.yahoo.com/f1/><SMALL>Formula 1</SMALL></A></TD></TR>
+<TR VALIGN=top><TD><B>·</B></TD>
+<TD><A HREF=/web/20001018011743/http://it.sports.yahoo.com/basket/><SMALL>Basket</SMALL></A></TD></TR>
+<TR VALIGN=top><TD><B>·</B></TD>
+<TD><A HREF=/web/20001018011743/http://it.sports.yahoo.com/tennis/><SMALL>Tennis</SMALL></A></TD></TR>
+<TR VALIGN=top><TD><B>·</B></TD>
+<TD><A HREF=/web/20001018011743/http://it.sports.yahoo.com/cycl/><SMALL>Ciclismo</SMALL></A></TD></TR>
+<TR VALIGN=top><TD><B>·</B></TD>
+<TD><A HREF=/web/20001018011743/http://it.sports.yahoo.com/><SMALL>Altro...</SMALL></A></TD></TR>
+</TABLE>
+</TD></TR>
+</TD></TR>
+</TABLE>
+</TD></TR></TABLE>
+</td></tr>
+</table>
+</TD></TR></TABLE><P><hr width=90% SIZE=1 NOSHADE>
+<HR WIDTH=90% SIZE=1 NOSHADE><SMALL>
+<center>
+<FONT SIZE=-2 FACE=Arial>Copyright
+© 2000 Yahoo! Inc. Tutti i diritti riservati
+<br>
+NOTA: Le informazioni raccolte su questo sito vengono conservate da Yahoo!. <br>Per saperne di più su come vengono utilizzati i tuoi dati vedi la sezione
+<A HREF=/web/20001018011743/http://it.docs.yahoo.com/info/privacy.html>Yahoo e la tua privacy</A> -<br> <a href=/web/20001018011743/http://it.docs.yahoo.com/info/utos.html>
+Condizioni per l'utilizzo del servizio</A> - <A HREF="mailto:webmaster@it.yahoo-inc.com">Domande o suggerimenti?</A><br>
+<p>
+Copyright &copy; 2000 ADN Kronos<BR>
+Copyright &copy; 2000 AGI<BR>
+Copyright &copy; 2000 ANSA<BR>
+Copyright &copy; 2000 CanaleSport<BR>
+Copyright &copy; 2000 Datasport.<BR>
+Copyright © 2000 Giornale
+<BR>
+Copyright © 2000 Xagena
+<BR>
+Copyright &copy; 2000 Spystocks<BR>
+Copyright © 2000 TimeOut
+<BR>
+Copyright © 2000 VNUnet
+<BR>
+Copyright © 2000 WallStreetItalia
+<BR>
+</SMALL></CENTER></BODY></HTML>
+
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 1:17:43 Oct 18, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:59:45 Jan 7, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

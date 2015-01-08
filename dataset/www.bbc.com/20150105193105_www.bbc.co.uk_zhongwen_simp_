@@ -1,0 +1,1754 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" id="responsive-news">
+<head >
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app15.us.archive.org";archive_analytics.values.server_ms=245;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>新闻主页 - BBC Chinese</title>
+    <meta name="description" content="BBC中文网，电邮新闻，新闻，时事，专栏文章，音频，视频，图辑，分析评论。" />
+
+    <meta name="x-country" content="us" />
+    <meta name="x-audience" content="Domestic" />
+    <link rel="canonical" href="http://www.bbc.co.uk/zhongwen/simp/" />
+
+
+    
+    <meta name="apple-mobile-web-app-title" content="BBC News" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57"    href="http://static.bbci.co.uk/news/1.55.2536/apple-touch-icon-57x57-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"    href="http://static.bbci.co.uk/news/1.55.2536/apple-touch-icon-72x72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"  href="http://static.bbci.co.uk/news/1.55.2536/apple-touch-icon-114x114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"  href="http://static.bbci.co.uk/news/1.55.2536/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" href="http://static.bbci.co.uk/news/1.55.2536/apple-touch-icon.png" />
+    <meta name="application-name" content="BBC News" />
+    <meta name="msapplication-TileImage" content="http://static.bbci.co.uk/news/1.55.2536/windows-eight-icon-144x144.png" />
+    <meta name="msapplication-TileColor" content="#CC0101" />
+    <meta http-equiv="cleartype" content="on" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#cc0101">
+    
+    <script>
+        (function() {
+            if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+                var msViewportStyle = document.createElement("style");
+                msViewportStyle.appendChild(
+                    document.createTextNode("@-ms-viewport{width:auto!important}")
+                );
+                document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+            }
+        })();
+    </script>
+    
+           <meta name="viewport" content="width=device-width, initial-scale=1.0" />     <!--orb.ws.require.lib--> <script type="text/javascript">/*<![CDATA[*/ if (typeof window.define !== 'function' || typeof window.require !== 'function') { document.write('<script class="js-require-lib" src="/web/20150105212505/http://static.bbci.co.uk/frameworks/requirejs/lib.js"><'+'/script>'); } /*]]>*/</script> <script type="text/javascript" class="js-require-conf">  bbcRequireMap = {"jquery-1":"/web/20150105212505/http://static.bbci.co.uk/frameworks/jquery/0.3.0/sharedmodules/jquery-1.7.2", "jquery-1.4":"/web/20150105212505/http://static.bbci.co.uk/frameworks/jquery/0.3.0/sharedmodules/jquery-1.4", "jquery-1.9":"/web/20150105212505/http://static.bbci.co.uk/frameworks/jquery/0.3.0/sharedmodules/jquery-1.9.1", "swfobject-2":"/web/20150105212505/http://static.bbci.co.uk/frameworks/swfobject/0.1.10/sharedmodules/swfobject-2", "demi-1":"/web/20150105212505/http://static.bbci.co.uk/frameworks/demi/0.10.0/sharedmodules/demi-1", "gelui-1":"/web/20150105212505/http://static.bbci.co.uk/frameworks/gelui/0.9.13/sharedmodules/gelui-1", "cssp!gelui-1/overlay":"/web/20150105212505/http://static.bbci.co.uk/frameworks/gelui/0.9.13/sharedmodules/gelui-1/overlay.css", "istats-1":"/web/20150105212505/http://static.bbci.co.uk/frameworks/istats/0.23.1/modules/istats-1", "relay-1":"/web/20150105212505/http://static.bbci.co.uk/frameworks/relay/0.2.6/sharedmodules/relay-1", "clock-1":"/web/20150105212505/http://static.bbci.co.uk/frameworks/clock/0.1.9/sharedmodules/clock-1", "canvas-clock-1":"/web/20150105212505/http://static.bbci.co.uk/frameworks/clock/0.1.9/sharedmodules/canvas-clock-1", "cssp!clock-1":"/web/20150105212505/http://static.bbci.co.uk/frameworks/clock/0.1.9/sharedmodules/clock-1.css", "jssignals-1":"/web/20150105212505/http://static.bbci.co.uk/frameworks/jssignals/0.3.6/modules/jssignals-1", "jcarousel-1":"/web/20150105212505/http://static.bbci.co.uk/frameworks/jcarousel/0.1.10/modules/jcarousel-1", "bump-3":"//emp.bbci.co.uk/emp/bump-3/bump-3"}; require({ baseUrl: '/web/20150105212505/http://static.bbci.co.uk/', paths: bbcRequireMap, waitSeconds: 30 }); </script>   <script type="text/javascript">/*<![CDATA[*/ if (typeof bbccookies_flag === 'undefined') { bbccookies_flag = 'ON'; } showCTA_flag = true; cta_enabled = (showCTA_flag && (bbccookies_flag === 'ON') ); (function(){var e="ckns_policy",m="Thu, 01 Jan 1970 00:00:00 GMT",k={ads:true,personalisation:true,performance:true,necessary:true};function f(p){if(f.cache[p]){return f.cache[p]}var o=p.split("/"),q=[""];do{q.unshift((o.join("/")||"/"));o.pop()}while(q[0]!=="/");f.cache[p]=q;return q}f.cache={};function a(p){if(a.cache[p]){return a.cache[p]}var q=p.split("."),o=[];while(q.length&&"|co.uk|com|".indexOf("|"+q.join(".")+"|")===-1){if(q.length){o.push(q.join("."))}q.shift()}f.cache[p]=o;return o}a.cache={};function i(o,t,p){var z=[""].concat(a(window.location.hostname)),w=f(window.location.pathname),y="",r,x;for(var s=0,v=z.length;s<v;s++){r=z[s];for(var q=0,u=w.length;q<u;q++){x=w[q];y=o+"="+t+";"+(r?"domain="+r+";":"")+(x?"path="+x+";":"")+(p?"expires="+p+";":"");bbccookies.set(y,true)}}}window.bbccookies={_setEverywhere:i,cookiesEnabled:function(){var o="ckns_testcookie"+Math.floor(Math.random()*100000);this.set(o+"=1");if(this.get().indexOf(o)>-1){g(o);return true}return false},set:function(o){return document.cookie=o},get:function(){return document.cookie},_setPolicy:function(o){return h.apply(this,arguments)},readPolicy:function(o){return b.apply(this,arguments)},_deletePolicy:function(){i(e,"",m)},isAllowed:function(){return true},_isConfirmed:function(){return c()!==null},_acceptsAll:function(){var o=b();return o&&!(j(o).indexOf("0")>-1)},_getCookieName:function(){return d.apply(this,arguments)},_showPrompt:function(){var o=(!this._isConfirmed()&&window.cta_enabled&&this.cookiesEnabled()&&!window.bbccookies_disable);return(window.orb&&window.orb.fig)?o&&(window.orb.fig("no")||window.orb.fig("ck")):o}};bbccookies._getPolicy=bbccookies.readPolicy;function d(p){var o=(""+p).match(/^([^=]+)(?==)/);return(o&&o.length?o[0]:"")}function j(o){return""+(o.ads?1:0)+(o.personalisation?1:0)+(o.performance?1:0)}function h(r){if(typeof r==="undefined"){r=k}if(typeof arguments[0]==="string"){var o=arguments[0],q=arguments[1];if(o==="necessary"){q=true}r=b();r[o]=q}else{if(typeof arguments[0]==="object"){r.necessary=true}}var p=new Date();p.setYear(p.getFullYear()+1);p=p.toUTCString();bbccookies.set(e+"="+j(r)+";domain=bbc.co.uk;path=/;expires="+p+";");bbccookies.set(e+"="+j(r)+";domain=bbc.com;path=/;expires="+p+";");return r}function l(o){if(o===null){return null}var p=o.split("");return{ads:!!+p[0],personalisation:!!+p[1],performance:!!+p[2],necessary:true}}function c(){var o=new RegExp("(?:^|; ?)"+e+"=(\\d\\d\\d)($|;)"),p=document.cookie.match(o);if(!p){return null}return p[1]}function b(o){var p=l(c());if(!p){p=k}if(o){return p[o]}else{return p}}function g(o){return document.cookie=o+"=;expires="+m+";"}function n(){var o='<script type="text/javascript" src="/web/20150105212505/http://static.bbci.co.uk/frameworks/bbccookies/0.6.6/script/bbccookies.js"><\/script>';if(window.bbccookies_flag==="ON"&&!bbccookies._acceptsAll()&&!window.bbccookies_disable){document.write(o)}}n()})(); /*]]>*/</script> <script type="text/javascript">/*<![CDATA[*/
+(function(){window.fig=window.fig||{};window.fig.manager={include:function(a){a=a||window;var e=a.document,g=e.cookie,b=g.match(/(?:^|; ?)ckns_orb_fig=([^;]+)/);if(!b&&g.indexOf("ckns_orb_nofig=1")>-1){this.setFig(a,{no:1})}else{if(b){b=this.deserialise(decodeURIComponent(RegExp.$1));this.setFig(a,b)}e.write('<script src="/web/20150105212505/https://ssl.bbc.co.uk/frameworks/fig/1/fig.js"><'+"/script>")}},confirm:function(a){a=a||window;if(a.orb&&a.orb.fig&&a.orb.fig("no")){this.setNoFigCookie(a)}if(a.orb===undefined||a.orb.fig===undefined){this.setFig(a,{no:1});this.setNoFigCookie(a)}},setNoFigCookie:function(a){a.document.cookie="ckns_orb_nofig=1; expires="+new Date(new Date().getTime()+1000*60*10).toGMTString()+";"},setFig:function(a,b){(function(){var c=b;a.orb=a.orb||{};a.orb.fig=function(d){return(arguments.length)?c[d]:c}})()},deserialise:function(b){var a={};b.replace(/([a-z]{2}):([0-9]+)/g,function(){a[RegExp.$1]=+RegExp.$2});return a}}})();fig.manager.include();/*]]>*/</script>
+ 
+<!--[if (gt IE 8) | (IEMobile)]><!-->
+<link rel="stylesheet" href="/web/20150105212505cs_/http://static.bbci.co.uk/frameworks/barlesque/2.82.1/orb/4/style/orb.css">
+<!--<![endif]-->
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" href="/web/20150105212505/http://static.bbci.co.uk/frameworks/barlesque/2.82.1/orb/4/style/orb-ie.css">
+<![endif]-->
+
+  <script type="text/javascript">/*<![CDATA[*/ (function(undefined){if(!window.bbc){window.bbc={}}var ROLLING_PERIOD_DAYS=30;window.bbc.Mandolin=function(id,segments,opts){var now=new Date().getTime(),storedItem,DEFAULT_START=now,DEFAULT_RATE=1,COOKIE_NAME="ckpf_mandolin";opts=opts||{};this._id=id;this._segmentSet=segments;this._store=new window.window.bbc.Mandolin.Storage(COOKIE_NAME);this._opts=opts;this._rate=(opts.rate!==undefined)?+opts.rate:DEFAULT_RATE;this._startTs=(opts.start!==undefined)?new Date(opts.start).getTime():new Date(DEFAULT_START).getTime();this._endTs=(opts.end!==undefined)?new Date(opts.end).getTime():daysFromNow(ROLLING_PERIOD_DAYS);this._signupEndTs=(opts.signupEnd!==undefined)?new Date(opts.signupEnd).getTime():this._endTs;this._segment=null;if(typeof id!=="string"){throw new Error("Invalid Argument: id must be defined and be a string")}if(Object.prototype.toString.call(segments)!=="[object Array]"){throw new Error("Invalid Argument: Segments are required.")}if(opts.rate!==undefined&&(opts.rate<0||opts.rate>1)){throw new Error("Invalid Argument: Rate must be between 0 and 1.")}if(this._startTs>this._endTs){throw new Error("Invalid Argument: end date must occur after start date.")}if(!(this._startTs<this._signupEndTs&&this._signupEndTs<=this._endTs)){throw new Error("Invalid Argument: SignupEnd must be between start and end date")}removeExpired.call(this,now);var overrides=window.bbccookies.get().match(/ckns_mandolin_setSegments=([^;]+)/);if(overrides!==null){eval("overrides = "+decodeURIComponent(RegExp.$1)+";");if(overrides[this._id]&&this._segmentSet.indexOf(overrides[this._id])==-1){throw new Error("Invalid Override: overridden segment should exist in segments array")}}if(overrides!==null&&overrides[this._id]){this._segment=overrides[this._id]}else{if((storedItem=this._store.getItem(this._id))){this._segment=storedItem.segment}else{if(this._startTs<=now&&now<this._signupEndTs&&now<=this._endTs&&this._store.isEnabled()===true){this._segment=pick(segments,this._rate);if(opts.end===undefined){this._store.setItem(this._id,{segment:this._segment})}else{this._store.setItem(this._id,{segment:this._segment,end:this._endTs})}log.call(this,"mandolin_segment")}}}log.call(this,"mandolin_view")};window.bbc.Mandolin.prototype.getSegment=function(){return this._segment};function log(actionType,params){var that=this;require(["istats-1"],function(istats){istats.log(actionType,that._id+":"+that._segment,params?params:{})})}function removeExpired(expires){var items=this._store.getItems(),expiresInt=+expires;for(var key in items){if(items[key].end!==undefined&&+items[key].end<expiresInt){this._store.removeItem(key)}}}function getLastExpirationDate(data){var winner=0,rollingExpire=daysFromNow(ROLLING_PERIOD_DAYS);for(var key in data){if(data[key].end===undefined&&rollingExpire>winner){winner=rollingExpire}else{if(+data[key].end>winner){winner=+data[key].end}}}return(winner)?new Date(winner):new Date(rollingExpire)}window.bbc.Mandolin.prototype.log=function(params){log.call(this,"mandolin_log",params)};window.bbc.Mandolin.prototype.convert=function(params){log.call(this,"mandolin_convert",params);this.convert=function(){}};function daysFromNow(n){var endDate;endDate=new Date().getTime()+(n*60*60*24)*1000;return endDate}function pick(segments,rate){var picked,min=0,max=segments.length-1;if(typeof rate==="number"&&Math.random()>rate){return null}do{picked=Math.floor(Math.random()*(max-min+1))+min}while(picked>max);return segments[picked]}window.bbc.Mandolin.Storage=function(name){validateCookieName(name);this._cookieName=name;this._isEnabled=(bbccookies.isAllowed(this._cookieName)===true&&bbccookies.cookiesEnabled()===true)};window.bbc.Mandolin.Storage.prototype.setItem=function(key,value){var storeData=this.getItems();storeData[key]=value;this.save(storeData);return value};window.bbc.Mandolin.Storage.prototype.isEnabled=function(){return this._isEnabled};window.bbc.Mandolin.Storage.prototype.getItem=function(key){var storeData=this.getItems();return storeData[key]};window.bbc.Mandolin.Storage.prototype.removeItem=function(key){var storeData=this.getItems();delete storeData[key];this.save(storeData)};window.bbc.Mandolin.Storage.prototype.getItems=function(){return deserialise(this.readCookie(this._cookieName)||"")};window.bbc.Mandolin.Storage.prototype.save=function(data){window.bbccookies.set(this._cookieName+"="+encodeURIComponent(serialise(data))+"; expires="+getLastExpirationDate(data).toUTCString()+";")};window.bbc.Mandolin.Storage.prototype.readCookie=function(name){var nameEq=name+"=",ca=window.bbccookies.get().split("; "),i,c;validateCookieName(name);for(i=0;i<ca.length;i++){c=ca[i];if(c.indexOf(nameEq)===0){return decodeURIComponent(c.substring(nameEq.length,c.length))}}return null};function serialise(o){var str="";for(var p in o){if(o.hasOwnProperty(p)){str+='"'+p+'"'+":"+(typeof o[p]==="object"?(o[p]===null?"null":"{"+serialise(o[p])+"}"):'"'+o[p].toString()+'"')+","}}return str.replace(/,\}/g,"}").replace(/,$/g,"")}function deserialise(str){var o;str="{"+str+"}";if(!validateSerialisation(str)){throw"Invalid input provided for deserialisation."}eval("o = "+str);return o}var validateSerialisation=(function(){var OBJECT_TOKEN="<Object>",ESCAPED_CHAR='"\\n\\r\\u2028\\u2029\\u000A\\u000D\\u005C',ALLOWED_CHAR="([^"+ESCAPED_CHAR+"]|\\\\["+ESCAPED_CHAR+"])",KEY='"'+ALLOWED_CHAR+'+"',VALUE='(null|"'+ALLOWED_CHAR+'*"|'+OBJECT_TOKEN+")",KEY_VALUE=KEY+":"+VALUE,KEY_VALUE_SEQUENCE="("+KEY_VALUE+",)*"+KEY_VALUE,OBJECT_LITERAL="({}|{"+KEY_VALUE_SEQUENCE+"})",objectPattern=new RegExp(OBJECT_LITERAL,"g");return function(str){if(str.indexOf(OBJECT_TOKEN)!==-1){return false}while(str.match(objectPattern)){str=str.replace(objectPattern,OBJECT_TOKEN)}return str===OBJECT_TOKEN}})();function validateCookieName(name){if(name.match(/ ,;/)){throw"Illegal name provided, must be valid in browser cookie."}}})(); /*]]>*/</script>  <script type="text/javascript">  document.documentElement.className += (document.documentElement.className? ' ' : '') + 'orb-js';  fig.manager.confirm(); </script> <script src="/web/20150105212505js_/http://static.bbci.co.uk/frameworks/barlesque/2.82.1/orb/4/script/orb/api.min.js"></script> <script type="text/javascript"> window.orb_masthead_test = new bbc.Mandolin( 'orb_masthead', ['simple', 'control'], { rate: 6/1000, start: new Date('09/22/2014 08:00:00 GMT'), /* format: mm/dd/yyyy hh:mm:ss */ signupEnd: new Date('09/24/2014 08:00:00 GMT'), end: new Date('10/06/2014 08:00:00 GMT') } ); </script>   <script type="text/javascript"> /*<![CDATA[*/ function oqsSurveyManager(w, flag) { if (flag !== 'OFF') { w.document.write('<script type="text/javascript" src="/web/20150105212505/http://static.bbci.co.uk/frameworks/barlesque/2.82.1/orb/4/script/vendor/edr.js"><'+'/script>'); } } oqsSurveyManager(window, 'ON'); /*]]>*/ </script>             <!-- BBCDOTCOM template: responsive webservice  -->
+        <!-- BBCDOTCOM head --><script type="text/javascript"> /*<![CDATA[*/ var _sf_startpt = (new Date()).getTime(); /*]]>*/ </script><style type="text/css">.bbccom_display_none{display:none;}</style><script type="text/javascript"> /*<![CDATA[*/ var googletag = googletag || {}; googletag.cmd = googletag.cmd || []; var bbcdotcom = false; (function(){ if(typeof require !== 'undefined') { require({ paths:{ "bbcdotcom":"/web/20150105212505/http://static.bbci.co.uk/bbcdotcom/0.3.296/script" } }); } })(); /*]]>*/ </script><script type="text/javascript"> /*<![CDATA[*/ var bbcdotcom = { advert: { write: function () {}, show: function () {}, isActive: function () { return false; }, layout: function() { return { reset: function() {} } } }, config: { init: function() {}, isActive: function() {}, setSections: function() {}, setAdsEnabled: function() {}, setAssetPrefix: function() {}, setConfig: function() {} }, survey: { init: function(){ return false; } }, data: {}, init: function() {}, objects: function(str) { return false; }, locale: { set: function() {} }, setAdKeyValue: function() {}, utils: { addHtmlTagClass: function() {} }, addLoadEvent: function() {} }; /*]]>*/ </script><script type="text/javascript"> /*<![CDATA[*/ if (typeof orb !== 'undefined' && typeof orb.fig === 'function') { if (orb.fig('ad') && orb.fig('uk') == 0) { bbcdotcom.data = { ads: (orb.fig('ad') ? 1 : 0), stats: (orb.fig('uk') == 0 ? 1 : 0), statsProvider: orb.fig('ap') }; } } else { document.write('<script type="text/javascript" src="'+('https:' == document.location.protocol ? '/web/20150105212505/https://ssl.bbc.com' : '/web/20150105212505/http://tps.bbc.com')+'/wwscripts/data">\x3C/script>'); } /*]]>*/ </script><script type="text/javascript"> /*<![CDATA[*/ if (typeof orb === 'undefined' || typeof orb.fig !== 'function') { bbcdotcom.data = { ads: bbcdotcom.data.a, stats: bbcdotcom.data.b, statsProvider: bbcdotcom.data.c }; } if (bbcdotcom.data.ads == 1) { document.write('<script type="text/javascript" src="'+('https:' == document.location.protocol ? '/web/20150105212505/https://ssl.bbc.co.uk' : '/web/20150105212505/http://www.bbc.co.uk')+'/wwscripts/flag">\x3C/script>'); } /*]]>*/ </script><script type="text/javascript"> /*<![CDATA[*/ if (window.bbcdotcom && (typeof bbcdotcom.flag == 'undefined' || (typeof bbcdotcom.data.ads !== 'undefined' && bbcdotcom.flag.a != 1))) { bbcdotcom.data.ads = 0; } if (/[?|&]ads-debug/.test(window.location.href) || document.cookie.indexOf('ads-debug') !== -1) { bbcdotcom.data.ads = 1; bbcdotcom.data.stats = 1; } if (window.bbcdotcom && (bbcdotcom.data.ads == 1 || bbcdotcom.data.stats == 1)) { bbcdotcom.assetPrefix = "/web/20150105212505/http://static.bbci.co.uk/bbcdotcom/0.3.296/"; document.write('<link rel="stylesheet" type="text/css" href="/web/20150105212505/http://static.bbci.co.uk/bbcdotcom/0.3.296/style/orb/bbccom.css" />'); (function() { var useSSL = 'https:' == document.location.protocol; var src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js'; document.write('<scr' + 'ipt src="' + src + '">\x3C/script>'); })(); if (typeof navigator !== 'undefined' && typeof navigator.userAgent !== 'undefined' && navigator.userAgent.indexOf('MSIE 7.0') !== -1 ) { document.write('<link rel="stylesheet" type="text/css" href="/web/20150105212505/http://static.bbci.co.uk/bbcdotcom/0.3.296/style/orb/bbccom-ie7.css" />'); } if (/(sandbox|int)(.dev)*.bbc.co*/.test(window.location.href) || /[?|&]ads-debug/.test(window.location.href)) { document.write('<script type="text/javascript" src="/web/20150105212505/http://static.bbci.co.uk/bbcdotcom/0.3.296/script/orb/individual.js">\x3C/script>'); } else { document.write('<script type="text/javascript" src="/web/20150105212505/http://static.bbci.co.uk/bbcdotcom/0.3.296/script/orb/bbcdotcom.js">\x3C/script>'); } if(/[\\?&]ads=([^&#]*)/.test(window.location.href)) { document.write('<script type="text/javascript" src="/web/20150105212505/http://static.bbci.co.uk/bbcdotcom/0.3.296/script/orb/adverts/adSuites.js">\x3C/script>'); } } /*]]>*/ </script><script type="text/javascript"> /*<![CDATA[*/ if (window.bbcdotcom && (bbcdotcom.data.ads == 1 || bbcdotcom.data.stats == 1)) { var bbcdotcomConfig = {"adExclusions":"","adFormat":"standard","adKeyword":"","adMode":"smart","adsEnabled":false,"appAnalyticsSections":"","asyncEnabled":false,"disableInitialLoad":false,"advertInfoPageUrl":"/web/20150105212505/http://www.bbc.co.uk\/faqs\/online\/adverts_general","advertisementText":"Advertisement","analyticsEnabled":true,"appName":"tabloid","assetPrefix":"/web/20150105212505/http://static.bbci.co.uk\/bbcdotcom\/0.3.296\/","customAdParams":[],"customStatsParams":[],"headline":"","id":"","inAssociationWithText":"In association with","keywords":"","language":"","orbTransitional":false,"outbrainEnabled":true,"palEnv":"live","productName":"","sections":[],"siteCatalystEnabled":true,"slots":"","sponsoredByText":"Sponsored by","summary":"","type":"","staticBase":"\/bbcdotcom","staticHost":"/web/20150105212505/http://static.bbci.co.uk","staticVersion":"0.3.296","staticPrefix":"/web/20150105212505/http://static.bbci.co.uk\/bbcdotcom\/0.3.296","dataHttp":"tps.bbc.com","dataHttps":"ssl.bbc.com","flagHttp":"www.bbc.co.uk","flagHttps":"ssl.bbc.co.uk","analyticsHttp":"sa.bbc.com","analyticsHttps":"ssa.bbc.com"}; bbcdotcom.config.init(bbcdotcomConfig, bbcdotcom.data, window.location, window.document); bbcdotcom.config.setAssetPrefix("/web/20150105212505/http://static.bbci.co.uk/bbcdotcom/0.3.296/"); document.write('<!--[if IE 7]><script type="text/javascript">bbcdotcom.config.setIE7(true);\x3C/script><![endif]-->'); document.write('<!--[if IE 8]><script type="text/javascript">bbcdotcom.config.setIE8(true);\x3C/script><![endif]-->'); } /*]]>*/ </script>             <script type="text/javascript">/*<![CDATA[*/ window.istats = (window.istats || {}); (istats.head = function(w,d) { w.istats._linkTracked = w.istats._trackingCookie = decodeURIComponent( (d.cookie.match(/\bsa_labels=([^;]+)/)||[]).pop() || '' ); var host = w.location.host, m = host.match(/(bbc(?:\.co\.uk|\.com))$/i); d.cookie = 'sa_labels=; expires=Thu, 01 Jan 1970 00:00:01 GMT; domain=' + (m? m[1] : host) + '; path=/'; })(window,document); /*]]>*/</script>  <script type="text/javascript"> /* <![CDATA[ */ define('id-statusbar-config', { 'translation_signedout': "登录", 'translation_signedin': "你的帐户", 'use_overlay' : false, 'signin_url' : "/web/20150105212505/https://ssl.bbc.co.uk/id/zh-Hans-CN/signin?ptrt=http%3A%2F%2Fwww.bbc.co.uk%2Fzhongwen%2Fsimp", 'locale' : "zh-Hans-CN", 'policyname' : "", 'ptrt' : "/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp" }); /* ]]> */ </script>  <script type="text/javascript"> (function () { if (! window.require) { throw new Error('idcta: could not find require'); } var map = {}; map['idapp-1'] = '/web/20150105212505/http://static.bbci.co.uk/idapp/0.63.26/modules/idapp/idapp-1'; map['idcta/idcta-1'] = '/web/20150105212505/http://static.bbci.co.uk/id/0.24.7/modules/idcta/idcta-1'; map['idcta/idCookie'] = '/web/20150105212505/http://static.bbci.co.uk/id/0.24.7/modules/idcta/idCookie'; map['idcta/overlayManager'] = '/web/20150105212505/http://static.bbci.co.uk/id/0.24.7/modules/idcta/overlayManager'; require({paths: map}); define('id-config', {"idapp":{"version":"0.63.26","hostname":"ssl.bbc.co.uk","insecurehostname":"www.bbc.co.uk","tld":"bbc.co.uk"},"idtranslations":{"version":"0.29.1"},"identity":{"baseUrl":"/web/20150105212505/https://talkback.live.bbc.co.uk\/identity"},"pathway":{"name":null,"staticAssetUrl":"/web/20150105212505/http://static.bbci.co.uk\/idapp\/0.63.26\/modules\/idapp\/idapp-1\/View.css"}}); })(); </script>                
+        <link type="text/css" rel="stylesheet" href="/web/20150105212505cs_/http://static.bbci.co.uk/news/1.55.2536/stylesheets/services/zhongwen/core.css" />
+    <!--[if lt IE 9]>
+        <link type="text/css" rel="stylesheet" href="/web/20150105212505/http://static.bbci.co.uk/news/1.55.2536/stylesheets/services/zhongwen/old-ie.css" />
+        <script src="/web/20150105212505/http://static.bbci.co.uk/news/1.55.2536/js/vendor/html5shiv/html5shiv.js"></script>
+    <![endif]-->
+ <script id="news-loader"> if (document.getElementById("responsive-news")) { window.bbcNewsResponsive = true; } var isIE = (function() { var undef, v = 3, div = document.createElement('div'), all = div.getElementsByTagName('i'); while ( div.innerHTML = '<!--[if gt IE ' + (++v) + ']><i></i><![endif]-->', all[0] ); return v > 4 ? v : undef; }()); var modernDevice = 'querySelector' in document && 'localStorage' in window && 'addEventListener' in window, forceCore = document.cookie.indexOf('ckps_force_core') !== -1, holepunched = isIE > 6 && document.getElementById('js-holepunched'); window.cutsTheMustard = (modernDevice && !forceCore) || holepunched; if (window.cutsTheMustard) { document.documentElement.className += ' ctm'; var insertPoint = document.getElementById('news-loader'), config = {"asset":{"asset_id":"10088408","asset_uri":"\/zhongwen\/simp\/front_page","first_created":{"date":"2009-08-14 11:14:34","timezone_type":3,"timezone":"UTC"},"last_updated":{"date":"2015-01-05 21:06:31","timezone_type":3,"timezone":"UTC"},"options":{"isBreakingNews":false,"allowAdvertising":false,"suitableForSyndication":false},"section":{"name":"\u65b0\u95fb\u4e3b\u9875","id":"homepage","uri":"\/zhongwen\/simp","urlIdentifier":"\/zhongwen\/simp"},"edition":"Domestic","audience":null,"iStats_counter_name":null,"type":"IDX"},"smpBrand":null,"staticHost":"/web/20150105212505/http://static.bbci.co.uk","environment":"live","locatorVersion":"dev","pathPrefix":"\/zhongwen","jsPath":"/web/20150105212505/http://static.bbci.co.uk\/news\/1.55.2536\/js","cssPath":"/web/20150105212505/http://static.bbci.co.uk\/news\/1.55.2536\/stylesheets\/services\/zhongwen","cssPostfix":"","dynamic":null,"features":{"localnews":true,"video":true,"liveeventcomponent":true,"mediaassetpage":true,"travel":true,"gallery":true,"rollingnews":true,"rumanalytics":true,"sportstories":true,"radiopromo":true,"fromothernewssites":true,"locallive":true,"weather":true},"features2":{"audio":true,"character_variants":true,"config_based_layout":true,"enhanced_gallery":true,"breaking_news":true,"responsive_survey_banner":true,"most_popular":true,"most_popular_tabs":true,"features_and_analysis":false,"follow_us":true,"comments":true,"comments_enhanced":true,"routing":true,"igor_device_redirect":false,"beta_label":false,"rum":true,"pulse_survey":true,"orb":true,"site_catalyst":true,"top_stories_promo":true,"variation_home":true,"timezone":true,"share_tools":true,"contact_form":true,"archive_fallback":true,"nav":true,"ws_newsletter":true,"enable_audio_on_stories":true},"configuration":{"showtimestamp":"1","showweather":"","showsport":"1","showolympics":"1","showfeaturemain":"1","showsitecatalyst":"1","candyplatform":"EnhancedMobile","showmap":"1","showwatchlisten":"","showspecialreports":"1","videotopiccandyid":"topics\/video","showvideofeedsections":"","showmaprelatedmedia":"1","showmapmostwatched":"","showmaptopstories":"1","showstorytopstories":"","showstoryfeaturesandanalysis":"1","showstorymostpopular":"","showgallery":"1","cms":"topcat"},"pollingHost":"/web/20150105212505/http://polling.bbc.co.uk","service":"zhongwen","locale":"zh-Hans","locatorHost":null,"locatorFlagPole":true,"local":{"allowLocationLookup":true},"isWorldService":true,"rumAnalytics":{"server":"/web/20150105212505/http://ingest.rum.bbc.co.uk","key":"news","edition":"zhongwen_simp","use_variants":"on"},"isChannelPage":false,"suitenameMap":"bbcchinese","languageVariant":"simp","commentsHost":"/web/20150105212505/http://feeds.bbci.co.uk"}; config.configuration['get'] = function (key) { return this[key.toLowerCase()]; };   var bootstrapUI=function(){var e=function(){if(navigator.userAgent.match(/(Android (2.0|2.1))|(Nokia)|(OSRE\/)|(Opera (Mini|Mobi))|(w(eb)?OSBrowser)|(UCWEB)|(Windows Phone)|(XBLWP)|(ZuneWP)/))return!1;if(navigator.userAgent.match(/MSIE 10.0/))return!0;var e,t=document,n=t.head||t.getElementsByTagName("head")[0],r=t.createElement("style"),s=t.implementation||{hasFeature:function(){return!1}};r.type="text/css",n.insertBefore(r,n.firstChild),e=r.sheet||r.styleSheet;var i=s.hasFeature("CSS2","")?function(t){if(!e||!t)return!1;var n=!1;try{e.insertRule(t,0),n=!/unknown/i.test(e.cssRules[0].cssText),e.deleteRule(e.cssRules.length-1)}catch(r){}return n}:function(t){return e&&t?(e.cssText=t,0!==e.cssText.length&&!/unknown/i.test(e.cssText)&&0===e.cssText.replace(/\r+|\n+/g,"").indexOf(t.split(" ")[0])):!1};return i('@font-face{ font-family:"font";src:"font.ttf"; }')}();e&&(document.getElementsByTagName("html")[0].className+=" ff");var t,n,r,s,i,a,o={},u=function(){t=window.innerWidth,n=window.innerHeight},c=function(e){var t=document.createElement("link");t.setAttribute("rel","stylesheet"),t.setAttribute("type","text/css"),t.setAttribute("href",r+e+s+".css"),t.setAttribute("media",a[e]),i.parentNode.insertBefore(t,i),delete a[e]},f=function(e,r,s){r&&!s&&(t>=r||n>=r)&&c(e),s&&!r&&(s>=t||s>=n)&&c(e),r&&s&&(t>=r||n>=r)&&(s>=t||s>=n)&&c(e)},l=function(e){if(o[e])return o[e];var t=e.match(/\(min\-width:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/),n=e.match(/\(max\-width:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/),r=t&&parseFloat(t[1])||null,s=n&&parseFloat(n[1])||null;return o[e]=[r,s],o[e]},h=function(){var e=0;for(var t in a)e++;return e},d=function(){h()||window.removeEventListener("resize",m,!1);for(var e in a){var t=a[e],n=l(t);f(e,n[0],n[1])}},m=function(){u(),d()},v=function(e,t){a=e,r=t.path+("/"!==t.path.substr(-1)?"/":""),s=t.postfix,i=t.insertBefore,u(),d(),window.addEventListener("resize",m,!1)};return{stylesheetLoaderInit:v}}(); bootstrapUI.stylesheetLoaderInit({ 'compact': '(max-width: 599px)', 'tablet' : '(min-width: 600px)', 'wide' : '(min-width: 1008px)' }, { path: '/web/20150105212505/http://static.bbci.co.uk/news/1.55.2536/stylesheets/services/zhongwen', postfix: '', insertBefore: insertPoint }); var loadRequire = function(){ var js_paths = {"jquery-1.9":"vendor\/jquery-1\/jquery","jquery-1":"/web/20150105212505/http://static.bbci.co.uk\/frameworks\/jquery\/0.3.0\/sharedmodules\/jquery-1.7.2","demi-1":"/web/20150105212505/http://static.bbci.co.uk\/frameworks\/demi\/0.10.0\/sharedmodules\/demi-1","swfobject-2":"/web/20150105212505/http://static.bbci.co.uk\/frameworks\/swfobject\/0.1.10\/sharedmodules\/swfobject-2","jquery":"vendor\/jquery-2\/jquery.min","domReady":"vendor\/require\/domReady","translation":"module\/translations\/zh-Hans","bump-3":"\/\/emp.bbci.co.uk\/emp\/bump-3\/bump-3"};  js_paths.navigation = 'module/nav/navManager';  requirejs.config({ baseUrl: '/web/20150105212505/http://static.bbci.co.uk/news/1.55.2536/js', map: { 'vendor/locator': { 'module/bootstrap': 'vendor/locator/bootstrap', 'locator/stats': 'vendor/locator/stats', 'locator/locatorView': 'vendor/locator/locatorView' } }, paths: js_paths, waitSeconds: 30 }); define('config', function () { return config; });             require(['compiled/all'], function() {
+     require(['module/base', 'domReady'], function (base, domReady) { domReady(function () { base.init();   require(['module/index'], function(page) { page.init(); });  }); });             });
+     };  loadRequire();   } </script>  <script type="text/javascript"> /*<![CDATA[*/ bbcdotcom.init({adsToDisplay:['']}); /*]]>*/ </script>  
+                
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
+</head>
+<!--[if IE]><body id="asset-type-idx" class="ie device--feature"><![endif]-->
+<!--[if !IE]>--><body id="asset-type-idx" class="device--feature">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.bbc.co.uk/zhongwen/simp";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "5";
+var displayMonth = "Jan";
+var displayYear = "2015";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.bbc.co.uk/zhongwen/simp" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20150105212505" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20141205020948/http://www.bbc.co.uk/zhongwen/simp" title="5 Dec 2014">DEC</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 21:25:05 Jan 5, 2015">JAN</td>
+		<td class="f" nowrap="nowrap">
+		
+		    Feb
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20150105165628/http://www.bbc.co.uk/zhongwen/simp" title="16:56:28 Jan 5, 2015"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 21:25:05 Jan 5, 2015">5</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20150106125937/http://www.bbc.co.uk/zhongwen/simp" title="12:59:37 Jan 6, 2015"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20140105085007/http://www.bbc.co.uk/zhongwen/simp/" title="5 Jan 2014"><strong>2014</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 21:25:05 Jan 5, 2015">2015</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2016
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20150105212505*/http://www.bbc.co.uk/zhongwen/simp" title="See a list of every capture for this URL">3,287 captures</a>
+           <div class="r" title="Timespan for captures of this URL">26 Sep 09 - 7 Jan 15</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000005110_2010:-1:232778abbbbb_2011:-1:aa8966abbddd_2012:-1:dcdcddddddee_2013:-1:dddb99cccbdf_2014:-1:eccccdcbdddd_2015:0:900000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<!--<![endif]-->
+    <div class="direction" >
+
+             <!-- BBCDOTCOM bodyFirst --><div id="bbccom_interstitial" class="bbccom_display_none"><script type="text/javascript"> /*<![CDATA[*/ if (window.bbcdotcom && bbcdotcom.config.isActive('ads')) { googletag.cmd.push(function() { googletag.display('bbccom_interstitial'); }); } /*]]>*/ </script></div><div id="bbccom_wallpaper" class="bbccom_display_none"><script type="text/javascript"> /*<![CDATA[*/ if (window.bbcdotcom && bbcdotcom.config.isActive('ads')) { if (bbcdotcom.config.isAsync()) { googletag.cmd.push(function() { googletag.display('bbccom_wallpaper'); }); } else { googletag.display("wallpaper"); } } /*]]>*/ </script></div><script type="text/javascript"> /*<![CDATA[*/ if (window.bbcdotcom && bbcdotcom.config.isActive('ads')) { document.write(unescape('%3Cscript id="gnlAdsEnabled" class="bbccom_display_none"%3E%3C/script%3E')); } if (window.bbcdotcom && bbcdotcom.config.isActive('analytics')) { document.write(unescape('%3Cscript id="gnlAnalyticsEnabled" class="bbccom_display_none"%3E%3C/script%3E')); } /*]]>*/ </script> <div id="blq-global"> <div id="blq-pre-mast">  </div> </div>  <script type="text/html" id="blq-bbccookies-tmpl"><![CDATA[ <section> <div id="bbccookies" class="bbccookies-banner orb-banner-wrapper bbccookies-d"> <div id="bbccookies-prompt" class="orb-banner b-g-p b-r b-f"> <h2 class="orb-banner-title"> Cookies on the BBC website </h2> <p class="orb-banner-content" dir="ltr"> We use cookies to ensure that we give you the best experience on our website.<span class="bbccookies-international-message"> We also use cookies to ensure we show you advertising that is relevant to you.</span> If you continue without changing your settings, we'll assume that you are happy to receive all cookies on the BBC website. However, if you would like to, you can change your cookie settings at any time. </p> <ul class="orb-banner-options"> <li id="bbccookies-continue"> <button type="button" id="bbccookies-continue-button">Continue</button> </li> <li id="bbccookies-settings"> <a href="/privacy/cookies/managing/cookie-settings.html">Change settings</a> </li> <li id="bbccookies-more"><a href="/privacy/cookies/bbc">Find out more</a></li></ul> </div> </div> </section> ]]></script> <script type="text/javascript">/*<![CDATA[*/ (function(){if(bbccookies._showPrompt()){var g=document,b=g.getElementById("blq-pre-mast"),e=g.getElementById("blq-bbccookies-tmpl"),a,f;if(b&&g.createElement){a=g.createElement("div");f=e.innerHTML;f=f.replace("<"+"![CDATA[","").replace("]]"+">","");a.innerHTML=f;b.appendChild(a);blqCookieContinueButton=g.getElementById("bbccookies-continue-button");blqCookieContinueButton.onclick=function(){a.parentNode.removeChild(a);return false};bbccookies._setPolicy()}var c=g.getElementById("bbccookies");if(c&&!window.orb.fig("uk")){c.className=c.className.replace(/\bbbccookies-d\b/,"");c.className=c.className+(" bbccookies-w")}}})(); /*]]>*/</script>   <script type="text/javascript">/*<![CDATA[*/ bbcFlagpoles_istats = 'ON'; istatsTrackingUrl = '//sa.bbc.co.uk/bbc/bbc/s?name=zhongwen.simp.page&cps_asset_id=10088408&page_type=Index&section=%2Fzhongwen%2Fsimp&first_pub=2009-08-14T11%3A14%3A34%2B00%3A00&last_editorial_update=2015-01-05T21%3A06%3A31%2B00%3A00&for_nation=us&pal_route=chinese_variant&ml_name=barlesque&app_type=responsive&language=zh-Hans-CN&ml_version=0.23.1&pal_webapp=tabloid&prod_name=zhongwen&app_name=zhongwen'; if (window.istats_countername) { istatsTrackingUrl = istatsTrackingUrl.replace(/([?&]name=)[^&]+/ig, '$1' + istats_countername); } (function() { if ( /\bIDENTITY=/.test(document.cookie) ) { istatsTrackingUrl += '&bbc_identity=1'; } var c = (document.cookie.match(/\bckns_policy=(\d\d\d)/)||[]).pop() || ''; istatsTrackingUrl += '&bbc_mc=' + (c? 'ad'+c.charAt(0)+'ps'+c.charAt(1)+'pf'+c.charAt(2) : 'not_set'); if ( /\bckns_policy=\d\d0/.test(document.cookie) ) { istatsTrackingUrl += '&ns_nc=1'; } var screenWidthAndHeight = 'unavailable'; if (window.screen && screen.width && screen.height) { screenWidthAndHeight = screen.width + 'x' + screen.height; } istatsTrackingUrl += ('&screen_resolution=' + screenWidthAndHeight); istatsTrackingUrl += '&blq_s=4d&blq_r=2.7&blq_v=worldservice'; })(); /*]]>*/</script>  <!-- Begin iStats 20100118 (UX-CMC 1.1009.3) --> <script type="text/javascript">/*<![CDATA[*/ (function() { window.istats || (istats = {}); var cookieDisabled = (document.cookie.indexOf('NO-SA=') != -1), hasCookieLabels = (document.cookie.indexOf('sa_labels=') != -1), hasClickThrough = /^#sa-(.*?)(?:-sa(.*))?$/.test(document.location.hash), runSitestat = !cookieDisabled && !hasCookieLabels && !hasClickThrough && !istats._linkTracked; if (runSitestat && bbcFlagpoles_istats === 'ON') { sitestat(istatsTrackingUrl); } else { window.ns_pixelUrl = istatsTrackingUrl; /* used by Flash library to track */ } function sitestat(n){var j=document,f=j.location,b="";if(j.cookie.indexOf("st_ux=")!=-1){var k=j.cookie.split(";");var e="st_ux",h=document.domain,a="/";if(typeof ns_!="undefined"&&typeof ns_.ux!="undefined"){e=ns_.ux.cName||e;h=ns_.ux.cDomain||h;a=ns_.ux.cPath||a}for(var g=0,f=k.length;g<f;g++){var m=k[g].indexOf("st_ux=");if(m!=-1){b="&"+unescape(k[g].substring(m+6))}}document.cookie=e+"=; expires="+new Date(new Date().getTime()-60).toGMTString()+"; path="+a+"; domain="+h}ns_pixelUrl=n;n=ns_pixelUrl+"&ns__t="+(new Date().getTime())+"&ns_c="+((j.characterSet)?j.characterSet:j.defaultCharset)+"&ns_ti="+escape(j.title)+b+"&ns_jspageurl="+escape(f&&f.href?f.href:j.URL)+"&ns_referrer="+escape(j.referrer);if(n.length>2000&&n.lastIndexOf("&")){n=n.substring(0,n.lastIndexOf("&")+1)+"ns_cut="+n.substring(n.lastIndexOf("&")+1,n.lastIndexOf("=")).substring(0,40)}(j.images)?new Image().src=n:j.write('<p><i'+'mg src="'+n+'" height="1" width="1" alt="" /></p>')}; })(); /*]]>*/</script> <noscript><p style="position: absolute; top: -999em;"><img src="/web/20150105212505im_/http://sa.bbc.co.uk/bbc/bbc/s?name=zhongwen.simp.page&amp;cps_asset_id=10088408&amp;page_type=Index&amp;section=%2Fzhongwen%2Fsimp&amp;first_pub=2009-08-14T11%3A14%3A34%2B00%3A00&amp;last_editorial_update=2015-01-05T21%3A06%3A31%2B00%3A00&amp;for_nation=us&amp;pal_route=chinese_variant&amp;ml_name=barlesque&amp;app_type=responsive&amp;language=zh-Hans-CN&amp;ml_version=0.23.1&amp;pal_webapp=tabloid&amp;prod_name=zhongwen&amp;app_name=zhongwen&amp;blq_js_enabled=0&amp;blq_s=4d&amp;blq_r=2.7&amp;blq_v=worldservice" height="1" width="1" alt="" /></p></noscript> <!-- End iStats (UX-CMC) -->   <!--[if (gt IE 8) | (IEMobile)]><!--> <header id="orb-banner" role="banner"> <!--<![endif]--> <!--[if (lt IE 9) & (!IEMobile)]> <![if (IE 8)]> <header id="orb-banner" role="banner" class="orb-old-ie orb-ie8"> <![endif]> <![if (IE 7)]> <header id="orb-banner" role="banner" class="orb-old-ie orb-ie7"> <![endif]> <![if (IE 6)]> <header id="orb-banner" role="banner" class="orb-old-ie orb-ie6"> <![endif]> <![endif]--> <div id="orb-header"  class="orb-nav-pri orb-nav-pri-white orb-nav-empty"  data-max-w="0"  data-max-d="0"  > <script type="text/javascript"> (function(){var h=document.getElementById('orb-header');if(/bbc\.co\.uk$/i.test(location.hostname)&&orb_masthead_test.getSegment()=='simple'&&(location.pathname===''||location.pathname==='/'||location.pathname==='/frameworks/test/mandolin/acceptance'&&h.setAttribute)){h.setAttribute('data-max-w','0');h.setAttribute('data-max-d','0');}}()); </script> <div class="orb-nav-pri-container b-r b-g-p"> <div class="orb-nav-section orb-nav-blocks"> <a href="/web/20150105212505/http://www.bbc.co.uk/"> <img  src="/web/20150105212505im_/http://static.bbci.co.uk/frameworks/barlesque/2.82.1/orb/4/img/bbc-blocks-dark.png" width="84" height="24" alt="BBC" /> </a> </div> <section> <div class="orb-skip-links"> <h2>浏览协助链接</h2> <ul>  <li><a href="#page">直接跳到内容</a></li>  <li><a id="orb-accessibility-help" href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/institutional/2011/04/111111_accessibility">浏览协助</a></li> </ul> </div> </section>  <div class="orb-nav-section orb-nav-id orb-nav-focus orb-nav-id-default">     <a id="idcta-link" href="/web/20150105212505/https://ssl.bbc.co.uk/id/zh-Hans-CN/status?ptrt=http%3A%2F%2Fwww.bbc.co.uk%2Fzhongwen%2Fsimp"><img id="idcta-image" src="/web/20150105212505im_/http://static.bbci.co.uk/id/0.24.7/img/bbcid_orb_signin_dark.png" alt="" width="18" height="18" /><span id="idcta-username">BBC iD</span></a>           </div>  <nav role="navigation" class="orb-nav"> <div class="orb-nav-section orb-nav-links orb-nav-focus" id="orb-nav-links"> <h2>BBC导航</h2> <ul>    <li  class="orb-nav-news orb-d"  > <a href="/web/20150105212505/http://www.bbc.co.uk/news/">News</a> </li>    <li  class="orb-nav-newsdotcom orb-w"  > <a href="/web/20150105212505/http://www.bbc.com/news/">News</a> </li>    <li  class="orb-nav-sport"  > <a href="/web/20150105212505/http://www.bbc.co.uk/sport/">Sport</a> </li>    <li  class="orb-nav-weather"  > <a href="/web/20150105212505/http://www.bbc.co.uk/weather/">Weather</a> </li>    <li  class="orb-nav-radio"  > <a href="/web/20150105212505/http://www.bbc.co.uk/worldserviceradio/">Radio</a> </li>    <li  class="orb-nav-arts orb-d"  > <a href="/web/20150105212505/http://www.bbc.co.uk/arts/">Arts</a> </li>    <li  class="orb-nav-fullaz orb-d"  > <a href="/web/20150105212505/http://www.bbc.co.uk/a-z/">Full A-Z</a> </li>    <li id="orb-nav-more"><a href="#orb-footer" data-alt="更多">选项（英文)<span class="orb-icon orb-icon-arrow"></span></a></li> </ul> </div> </nav> <div class="orb-nav-section orb-nav-search"> <a href="/web/20150105212505/http://search.bbc.co.uk/search?scope=chinesesimp"> <img  src="/web/20150105212505im_/http://static.bbci.co.uk/frameworks/barlesque/2.82.1/orb/4/img/orb-search-dark.png" width="18" height="18" alt="检索BBC内容" /> </a> <form class="b-f" id="orb-search-form" role="search" method="get" action="/web/20150105212505/http://search.bbc.co.uk/search" accept-charset="utf-8"> <div>  <input type="hidden" name="uri" value="/zhongwen/simp" />   <input type="hidden" name="scope" id="orb-search-scope" value="chinesesimp" />  <label for="orb-search-q">检索BBC内容</label> <input id="orb-search-q" type="text" name="q" placeholder="检索" /> <input type="image" id="orb-search-button" src="/web/20150105212505im_/http://static.bbci.co.uk/frameworks/barlesque/2.82.1/orb/4/img/orb-search-dark.png" width="17" height="17" alt="检索BBC内容" /> </div> </form> </div> </div> <div id="orb-panels"  class="orb-ws-panels"  > <script type="text/template" id="orb-panel-template"><![CDATA[ <div id="orb-panel-<%= panelname %>" class="orb-panel" aria-labelledby="orb-nav-<%= panelname %>"> <div class="orb-panel-content b-g-p b-r"> <%= panelcontent %> </div> </div> ]]></script> </div> </div> </header> <!-- Styling hook for shared modules only --> <div id="orb-modules">             
+    <div id="site-container">
+    
+    
+            <div class="site-brand site-brand--height" role="banner">
+            <div class="site-brand-inner site-brand-inner--height">
+                <nav class="navigation navigation--primary">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp" id="brand">
+    <img class="brand__logo" src="/web/20150105212505im_/http://static.bbci.co.uk/news/1.55.2536/img/brand/zhongwen.png" alt="BBC Zhongwen"/>
+    </a>
+                                        <a class="script-toggle" href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/trad/" data-variant="trad">繁</a>
+                    <a href="#core-navigation" class="navigation__section navigation__section--core" data-event="header" role="navigation" aria-label="Zhongwen">
+                        分类                    </a>
+                                    </nav>
+            </div>
+                        
+
+<div class="navigation navigation--wide">
+    <ul class="navigation-wide-list" role="navigation" aria-label="Zhongwen" data-panel-id="js-navigation-panel-primary">
+                    <li class="selected">
+                <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp" class="navigation-wide-list__link navigation-arrow--open">
+                    <span>主页</span>
+                </a>
+                 <span class="off-screen"></span>            </li>
+                    <li>
+                <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/world" class="navigation-wide-list__link">
+                    <span>国际</span>
+                </a>
+                            </li>
+                    <li>
+                <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/chinese_news" class="navigation-wide-list__link">
+                    <span>两岸</span>
+                </a>
+                            </li>
+                    <li>
+                <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/uk" class="navigation-wide-list__link">
+                    <span>英国</span>
+                </a>
+                            </li>
+                    <li>
+                <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/indepth" class="navigation-wide-list__link">
+                    <span>评论</span>
+                </a>
+                            </li>
+                    <li>
+                <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/science" class="navigation-wide-list__link">
+                    <span>科技</span>
+                </a>
+                            </li>
+                    <li>
+                <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/business" class="navigation-wide-list__link">
+                    <span>财经</span>
+                </a>
+                            </li>
+                    <li>
+                <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/topics/picture_gallery" class="navigation-wide-list__link">
+                    <span>图辑</span>
+                </a>
+                            </li>
+                    <li>
+                <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/topics/audio" class="navigation-wide-list__link">
+                    <span>音频材料</span>
+                </a>
+                            </li>
+                    <li>
+                <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/topics/video" class="navigation-wide-list__link">
+                    <span>视频材料</span>
+                </a>
+                            </li>
+                    <li>
+                <a href="/web/20150105212505/http://www.bbc.co.uk/ukchina/simp" class="navigation-wide-list__link navigation-wide-list__link--last">
+                    <span>BBC英伦网</span>
+                </a>
+                            </li>
+            </ul>
+</div>
+
+                    </div>
+    
+    
+    
+                
+
+         <div id="page" class="configurable index">                         <div class="page__head">
+                                                                            <div class="index-tabs__container">
+    <ul id="index-tabs" class="tabs">
+        <li class="open top-stories-tab" data-event="topstories">
+            <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp">
+                头条新闻
+            </a>
+        </li>
+        <li class="top-stories-tab" data-event="mostread">
+            <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/popular/read" data-fetch-url="/zhongwen/simp/popular/read.fragment" class="fetch">
+                最多人阅读内容
+            </a>
+        </li>
+    </ul>
+</div>
+                                                                        </div>
+             <div id="index-panels" class="container panels"> <div class="panel panel-1 open" role="main">       <h1 class="index-title index-title--redundant index-title--front-page" id="comp-index-title" data-index-title-meta={"id":"comp-index-title","type":"index-title","handler":"indexTitle","deviceGroups":null,"opts":{"alwaysVisible":false,"onFrontPage":true},"template":"index-title"}>BBC Zhongwen 新闻主页</h1>
+         <div class="container--primary-and-secondary-columns column-clearfix">                         <div class="column--primary">
+                                                                            
+<script type="text/html" id="orb-pulse-tmpl"><![CDATA[
+    <section>
+        <div id="pulse-container" class="pulse-banner orb-banner-wrapper">
+            <div class="orb-banner b-g-p b-r b-f">
+                <div class="orb-banner-inner">
+                    <h2 class="orb-banner-title">请告诉我们你的想法。</h2>
+                    <div class="orb-banner-content">
+                        <p>我们非常注重改善网站提供的服务。你的意见我们非常珍惜。</p>
+                        <p class="pulse-question">你可以拿出几分钟时间跟我们分享你对这个网站的看法吗？</p>
+                    </div>
+                    <ul class="orb-banner-options">
+                        <li><a href="{{pulseaccepthref}}" id="pulse-accept">可以</a></li>
+                        <li><button type="button" id="pulse-reject">不可以</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+]]></script>
+
+<script>
+require(['module/pulseSurvey'], function(pulse) {
+    pulse.init('zhongwen', {"override":false,"probability":150});
+});
+</script>
+                                                                                            <div id="top-stories" class="top-stories " data-comp-meta={"id":"comp-top-stories-top-stories","type":"top-stories-top-stories","handler":"topStories","deviceGroups":null,"opts":{"cps_group_names":["breaking-news-1","top-story-1","top-story-2"]},"template":"\/component\/top-stories"}>
+    <h2 class="off-screen">头条新闻</h2>
+    <div class="top-stories__stories">
+                <div class="hard-news-unit hard-news-unit--high faux-block-link">
+
+        <h3 class="hard-news-unit__headline">
+            <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/china/2015/01/150105_china_rareearth" class="hard-news-unit__headline-link">
+                受世贸败诉影响 中国取消稀土配额政策
+            </a>
+        </h3>
+
+            <div class="hard-news-unit__image">
+                    <div class="responsive-image responsive-image--16by9">
+                            <img src="/web/20150105212505im_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2012/06/21/120621052554_cn_rare_earth_512x288_spl_nocredit.jpg" class="responsive-image__image js-image-replace" alt="" width="512" height="288" />
+                    </div>
+            </div>
+
+        <div class="hard-news-unit__body">
+            <p class="hard-news-unit__summary">中国在世界贸易组织就中国的稀土出口管理措施终裁败诉之后，中国取消了稀土出口配额。</p>
+                <ul class="mini-info-list">
+                    <li class="mini-info-list__item">                    <div class="date date--v2" data-seconds="1420471564" data-datetime="2015年 1月 5日">2015年 1月 5日</div>
+</li>
+                </ul>
+        </div>
+
+
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/china/2015/01/150105_china_rareearth" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 受世贸败诉影响 中国取消稀土配额政策</a>
+</div>
+                <div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2014/05/30/140530143824_tsarnaev_boston_bombing_512x288_ap_nocredit.jpg" data-width="512" data-height="288" data-alt="特萨尔纳伊夫兄弟"></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2014/05/30/140530143824_tsarnaev_boston_bombing_512x288_ap_nocredit.jpg" class="responsive-image__image js-image-replace" alt="特萨尔纳伊夫兄弟" width="512" height="288" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/world/2015/01/150105_boston_bombing_jury" class="hard-news-unit__headline-link">
+                        波士顿马拉松爆炸案开始挑选陪审团成员
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">该案嫌疑人焦哈尔·特萨尔纳伊夫 , 涉嫌在2013年4月用自制炸弹造成三人死亡，260多人受伤。</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1420488457" data-datetime="2015年 1月 5日">2015年 1月 5日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/world/2015/01/150105_boston_bombing_jury" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 波士顿马拉松爆炸案开始挑选陪审团成员</a>
+</div>
+                <div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2014/07/08/140708114157_madonna_512x288_bbc_nocredit.jpg" data-width="512" data-height="288" data-alt="麦当娜"></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2014/07/08/140708114157_madonna_512x288_bbc_nocredit.jpg" class="responsive-image__image js-image-replace" alt="麦当娜" width="512" height="288" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/world/2015/01/150105_madonna_images" class="hard-news-unit__headline-link">
+                        麦当娜为网上名人“束缚”形象辩护 
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">这些显示带状物缠面的图像是由她的影迷将缎带贴在名人照片脸部制作并发布在社交媒体上。</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1420491912" data-datetime="2015年 1月 5日">2015年 1月 5日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/world/2015/01/150105_madonna_images" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 麦当娜为网上名人“束缚”形象辩护 </a>
+</div>
+        </div>
+</div>
+
+
+
+
+
+                                                                                                                                                                                                                            <div id="comp-small-promo-group" class="small-promo-group small-promo-group--reveal">
+        <h2 class="group-title">
+            <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/topics/video" class="group-title__link">视频</a>
+            
+        </h2>
+    <div class="small-promo-group__body promo-unit-spacer">
+        <div class="small-image-promo faux-block-link">
+            <div class="small-image-promo__image">
+                    <div class="responsive-image responsive-image--16by9">
+                            <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105143447_foot_512x288_bbc_nocredit.jpg" data-width="512" data-height="288" data-alt=""></div>
+                            <!--[if lt IE 9]>
+                                <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105143447_foot_512x288_bbc_nocredit.jpg" class="responsive-image__image js-image-replace" alt="" width="512" height="288" />
+                            <![endif]-->
+                            <div class="responsive-image__label">
+                                        
+                                        <span class="icon video"><span class="off-screen"> 视频</span></span>
+                                    <span class="responsive-image__label-text">2:37</span>
+                            </div>
+                    </div>
+            </div>
+            <div class="small-image-promo__label">
+                <div class="small-image-promo__label-icon"></div>
+                2:37 视频
+            </div>
+            <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/multimedia/2015/01/150105_vid_alternative_prosthetics" class="small-image-promo__title">视频：打造个性化假肢的魅力</a>
+                <ul class="mini-info-list">
+                    <li class="mini-info-list__item">                    <div class="date date--v2" data-seconds="1420469958" data-datetime="2015年 1月 5日">2015年 1月 5日</div>
+</li>
+                </ul>
+            <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/multimedia/2015/01/150105_vid_alternative_prosthetics" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 视频：打造个性化假肢的魅力</a>
+        </div>
+        <div class="small-image-promo faux-block-link">
+            <div class="small-image-promo__image">
+                    <div class="responsive-image responsive-image--16by9">
+                            <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/04/150104113249_airasia_512x288_airasia_nocredit.jpg" data-width="512" data-height="288" data-alt="airasia"></div>
+                            <!--[if lt IE 9]>
+                                <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/04/150104113249_airasia_512x288_airasia_nocredit.jpg" class="responsive-image__image js-image-replace" alt="airasia" width="512" height="288" />
+                            <![endif]-->
+                            <div class="responsive-image__label">
+                                        
+                                        <span class="icon video"><span class="off-screen"> 视频</span></span>
+                                    <span class="responsive-image__label-text">0:32</span>
+                            </div>
+                    </div>
+            </div>
+            <div class="small-image-promo__label">
+                <div class="small-image-promo__label-icon"></div>
+                0:32 视频
+            </div>
+            <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/multimedia/2015/01/150104_vid_airasia_debris" class="small-image-promo__title">视频：爪哇海面的疑似QZ8501残骸画面</a>
+                <ul class="mini-info-list">
+                    <li class="mini-info-list__item">                    <div class="date date--v2" data-seconds="1420371761" data-datetime="2015年 1月 4日">2015年 1月 4日</div>
+</li>
+                </ul>
+            <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/multimedia/2015/01/150104_vid_airasia_debris" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 视频：爪哇海面的疑似QZ8501残骸画面</a>
+        </div>
+        <div class="small-image-promo faux-block-link">
+            <div class="small-image-promo__image">
+                    <div class="responsive-image responsive-image--16by9">
+                            <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/01/150101144712_shanghai_512x288_shanghai_nocredit.jpg" data-width="512" data-height="288" data-alt="上海"></div>
+                            <!--[if lt IE 9]>
+                                <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/01/150101144712_shanghai_512x288_shanghai_nocredit.jpg" class="responsive-image__image js-image-replace" alt="上海" width="512" height="288" />
+                            <![endif]-->
+                            <div class="responsive-image__label">
+                                        
+                                        <span class="icon video"><span class="off-screen"> 视频</span></span>
+                                    <span class="responsive-image__label-text">2:18</span>
+                            </div>
+                    </div>
+            </div>
+            <div class="small-image-promo__label">
+                <div class="small-image-promo__label-icon"></div>
+                2:18 视频
+            </div>
+            <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/multimedia/2015/01/150101_vid_shanghai_stamped_reactions" class="small-image-promo__title">视频：上海居民谈除夕践踏事故</a>
+                <ul class="mini-info-list">
+                    <li class="mini-info-list__item">                    <div class="date date--v2" data-seconds="1420125534" data-datetime="2015年 1月 1日">2015年 1月 1日</div>
+</li>
+                </ul>
+            <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/multimedia/2015/01/150101_vid_shanghai_stamped_reactions" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 视频：上海居民谈除夕践踏事故</a>
+        </div>
+    </div>
+</div>
+                                                                                                                                                                                                                                    <div id="more-top-stories" class="stories-group" data-comp-meta={"id":"comp-stories-group","type":"stories-group","handler":"storiesGroup","deviceGroups":null,"opts":{"cps_group_names":["top-story-3","top-story-4"],"css_id":"more-top-stories","story_limit":8},"template":"tabloid\/tabloid-shared:\/component\/stories-group.spv"}>
+        <h2 class="group-title">
+                            其它新闻                    </h2>
+        <div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105181353_luwei_murdoch_512x288_xinhua_nocredit.jpg" data-width="512" data-height="288" data-alt=""></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105181353_luwei_murdoch_512x288_xinhua_nocredit.jpg" class="responsive-image__image js-image-replace" alt="" width="512" height="288" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/china/2015/01/150105_luwei_murdoch_beijing" class="hard-news-unit__headline-link">
+                        中国网信办主任鲁炜北京会见默多克
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">中国官方媒体并没有透露两人会谈的详情，有分析认为这样的会面“形式大于内容”。</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1420482489" data-datetime="2015年 1月 5日">2015年 1月 5日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/china/2015/01/150105_luwei_murdoch_beijing" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 中国网信办主任鲁炜北京会见默多克</a>
+</div>
+<div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105151047_euro_512x288_getty_nocredit.jpg" data-width="512" data-height="288" data-alt="欧元"></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105151047_euro_512x288_getty_nocredit.jpg" class="responsive-image__image js-image-replace" alt="欧元" width="512" height="288" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/business/2015/01/150105_euro_low" class="hard-news-unit__headline-link">
+                        欧元兑美元价格下跌至九年来最低点
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">欧洲中央银行行长德拉吉此前表示，欧洲央行可能会很快开始购买政府债券，实施量化宽松政策。</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1420471243" data-datetime="2015年 1月 5日">2015年 1月 5日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/business/2015/01/150105_euro_low" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 欧元兑美元价格下跌至九年来最低点</a>
+</div>
+<div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105164055_ed_miliband_labour_party_512x288_afp_nocredit.jpg" data-width="512" data-height="288" data-alt="英国工党领袖米利班德"></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105164055_ed_miliband_labour_party_512x288_afp_nocredit.jpg" class="responsive-image__image js-image-replace" alt="英国工党领袖米利班德" width="512" height="288" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/uk/2015/01/150105_uk_election" class="hard-news-unit__headline-link">
+                        英国选战打响 工党新年开炮还击
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">定于今年五月举行的英国大选选战新年伊始提前开战。</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1420477320" data-datetime="2015年 1月 5日">2015年 1月 5日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/uk/2015/01/150105_uk_election" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 英国选战打响 工党新年开炮还击</a>
+</div>
+<div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105132550_11.gif" data-width="512" data-height="288" data-alt="方正集团是由北京大学在1986年出资40万元人民币创办的"></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105132550_11.gif" class="responsive-image__image js-image-replace" alt="方正集团是由北京大学在1986年出资40万元人民币创办的" width="512" height="288" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/china/2015/01/150105_beijinguniversity_foundergroup" class="hard-news-unit__headline-link">
+                        北大方正集团三主管被要求“协助调查”
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">北京大学属下的方正集团1月5日（周一）发表声明，证实该集团董事长魏新、首席执行官李友及总裁兼首席财务官余丽“应相关部门要求协助调查”。</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1420467417" data-datetime="2015年 1月 5日">2015年 1月 5日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/china/2015/01/150105_beijinguniversity_foundergroup" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 北大方正集团三主管被要求“协助调查”</a>
+</div>
+<div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105145537_1_512x288__nocredit.jpg" data-width="512" data-height="288" data-alt=""></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105145537_1_512x288__nocredit.jpg" class="responsive-image__image js-image-replace" alt="" width="512" height="288" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/world/2015/01/150105_australia_fire" class="hard-news-unit__headline-link">
+                        澳消防部门力争在灾难性天气前控制山火
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">澳大利亚南部的消防人员正在争分夺秒，希望抢在高温和大风助长更强火势之前控制丛林大火。</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1420470320" data-datetime="2015年 1月 5日">2015年 1月 5日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/world/2015/01/150105_australia_fire" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 澳消防部门力争在灾难性天气前控制山火</a>
+</div>
+<div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105104627_xibei1_512x288_xibeidaxuexiandaixueyuan_nocredit.jpg" data-width="512" data-height="288" data-alt=""></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105104627_xibei1_512x288_xibeidaxuexiandaixueyuan_nocredit.jpg" class="responsive-image__image js-image-replace" alt="" width="512" height="288" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/china/2015/01/150105_xibeidaxue" class="hard-news-unit__headline-link">
+                        西北大学学院称踩踏证明管理正确引声讨
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">西北大学现代学院的声明引起各界的愤怒和声讨，另外媒体还质疑该院校树脸谱为校董的雅典娜雕像的做法。</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1420457301" data-datetime="2015年 1月 5日">2015年 1月 5日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/china/2015/01/150105_xibeidaxue" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 西北大学学院称踩踏证明管理正确引声讨</a>
+</div>
+<div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105122038_1_512x288__nocredit.jpg" data-width="512" data-height="288" data-alt=""></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105122038_1_512x288__nocredit.jpg" class="responsive-image__image js-image-replace" alt="" width="512" height="288" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/world/2015/01/150105_france_russia" class="hard-news-unit__headline-link">
+                        法总统表示若谈判有进展须解除对俄制裁
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">法国总统奥朗德说，如果本月关于乌克兰危机的谈判有进展，他希望解除西方国家对俄罗斯的制裁。</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1420466345" data-datetime="2015年 1月 5日">2015年 1月 5日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/world/2015/01/150105_france_russia" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 法总统表示若谈判有进展须解除对俄制裁</a>
+</div>
+<div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105095827_airasia_black_boxes_search_512x288_reuters_nocredit.jpg" data-width="512" data-height="288" data-alt="随着爪哇海域天气条件的好转，搜寻失事亚航客机“黑匣子”的工作继续进行。"></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105095827_airasia_black_boxes_search_512x288_reuters_nocredit.jpg" class="responsive-image__image js-image-replace" alt="随着爪哇海域天气条件的好转，搜寻失事亚航客机“黑匣子”的工作继续进行。" width="512" height="288" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/world/2015/01/150105_airasia_blackbox" class="hard-news-unit__headline-link">
+                        亚航空难: 继续搜寻失事客机“黑匣子”
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">随着爪哇海域天气条件的好转，搜寻失事亚航客机“黑匣子”的工作继续进行。此外，救援队已经搜寻到37具遇难者遗体。</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1420467121" data-datetime="2015年 1月 5日">2015年 1月 5日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/world/2015/01/150105_airasia_blackbox" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 亚航空难: 继续搜寻失事客机“黑匣子”</a>
+</div>
+    </div>
+                                                                                                    <div id="" class="stories-group" data-comp-meta={"id":"comp-stories-group","type":"stories-group","handler":"storiesGroup","deviceGroups":null,"opts":{"cps_group_names":["column-1"],"title_url":"\/zhongwen\/simp\/indepth","story_limit":4},"template":"tabloid\/tabloid-shared:\/component\/stories-group.spv"}>
+        <h2 class="group-title">
+                            <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/indepth" class="group-title__link">时事专栏</a>
+                    </h2>
+        <div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105175738_china_economy_512x288_ap_nocredit.jpg" data-width="512" data-height="288" data-alt="中国北京的一个建筑工地标语"></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105175738_china_economy_512x288_ap_nocredit.jpg" class="responsive-image__image js-image-replace" alt="中国北京的一个建筑工地标语" width="512" height="288" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/focus_on_china/2015/01/150105_cr_china_2015_economy" class="hard-news-unit__headline-link">
+                        点评中国：新年经济增长靠什么？
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">中国在2015年能做到让消费代替投资成为经济增长的主要驱动力吗？</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1420481389" data-datetime="2015年 1月 5日">2015年 1月 5日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/focus_on_china/2015/01/150105_cr_china_2015_economy" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 点评中国：新年经济增长靠什么？</a>
+</div>
+<div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/03/150103091949_b_512x288_reuters_nocredit.jpg" data-width="512" data-height="288" data-alt="波斯尼亚的三位国家主席"></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/03/150103091949_b_512x288_reuters_nocredit.jpg" class="responsive-image__image js-image-replace" alt="波斯尼亚的三位国家主席" width="512" height="288" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/world/2015/01/150103_world_outlook_bosnian_politics" class="hard-news-unit__headline-link">
+                        国际纵横：波黑共和国的三个主席
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">在波斯尼亚-黑塞哥维那联邦共和国，如果你说想见一见主席的话，马上就会有人反问你：“哪一位？”</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1420277555" data-datetime="2015年 1月 3日">2015年 1月 3日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/world/2015/01/150103_world_outlook_bosnian_politics" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 国际纵横：波黑共和国的三个主席</a>
+</div>
+<div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2014/12/16/141216145219_food_banks_512x288_l_nocredit.jpg" data-width="512" data-height="288" data-alt=""></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2014/12/16/141216145219_food_banks_512x288_l_nocredit.jpg" class="responsive-image__image js-image-replace" alt="" width="512" height="288" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/uk/2015/01/150102_britain_focus_food_banks" class="hard-news-unit__headline-link">
+                        漫话英伦：新年 百万饿肚子的英国人
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">4百万英国人在等着领救济粮中迎来了新年。世界富国俱乐部中的英国，为何这么多人食不果腹？</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1420191552" data-datetime="2015年 1月 2日">2015年 1月 2日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/uk/2015/01/150102_britain_focus_food_banks" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 漫话英伦：新年 百万饿肚子的英国人</a>
+</div>
+    </div>
+                                                                                                    <div id="press-review-uk" class="stories-group" data-comp-meta={"id":"comp-stories-group","type":"stories-group","handler":"storiesGroup","deviceGroups":null,"opts":{"cps_group_names":["press-review-1"],"css_id":"press-review-uk","title_url":"\/zhongwen\/simp\/press_review","story_limit":3},"template":"tabloid\/tabloid-shared:\/component\/stories-group.spv"}>
+        <h2 class="group-title">
+                            <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/press_review" class="group-title__link">英媒看中国</a>
+                    </h2>
+        <div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2014/12/25/141225025925_cn_hongkong_occupy_christmas_02_512x288_epa_nocredit.jpg" data-width="512" data-height="288" data-alt="香港"></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2014/12/25/141225025925_cn_hongkong_occupy_christmas_02_512x288_epa_nocredit.jpg" class="responsive-image__image js-image-replace" alt="香港" width="512" height="288" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/press_review/2015/01/150105_press_hk_tycoons" class="hard-news-unit__headline-link">
+                        社会动荡可能促香港富豪移资海外
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">《金融时报》报道说，香港的富豪们经历了动荡的2014年，这增加了他们考虑把资产移向海外的可能。</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1420468546" data-datetime="2015年 1月 5日">2015年 1月 5日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/press_review/2015/01/150105_press_hk_tycoons" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 社会动荡可能促香港富豪移资海外</a>
+</div>
+<div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/04/150104221231_tiger_512x288_getty_nocredit.jpg" data-width="512" data-height="288" data-alt=""></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/04/150104221231_tiger_512x288_getty_nocredit.jpg" class="responsive-image__image js-image-replace" alt="" width="512" height="288" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/press_review/2015/01/150104_press_review" class="hard-news-unit__headline-link">
+                        富裕中国人与虎“谋”皮骨
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">周日的英国报纸关注中国复星购买地中海俱乐部以及野生动物保护情况。</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1420410109" data-datetime="2015年 1月 4日">2015年 1月 4日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/press_review/2015/01/150104_press_review" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 富裕中国人与虎“谋”皮骨</a>
+</div>
+<div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2014/04/10/140410090450_china_512x288_reuters_nocredit.jpg" data-width="512" data-height="288" data-alt="中国连云港"></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2014/04/10/140410090450_china_512x288_reuters_nocredit.jpg" class="responsive-image__image js-image-replace" alt="中国连云港" width="512" height="288" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/press_review/2014/12/141228_press_review" class="hard-news-unit__headline-link">
+                        中国——影响世界经济的五大因素之一
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">英国《观察家报》刊登文章，列举2015年影响世界经济的五大因素：俄罗斯和乌克兰、石油、中国、美国和欧元区。</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1419766463" data-datetime="2014年 12月 28日">2014年 12月 28日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/press_review/2014/12/141228_press_review" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 中国——影响世界经济的五大因素之一</a>
+</div>
+    </div>
+                                                                                                    <div id="fooc" class="stories-group" data-comp-meta={"id":"comp-stories-group","type":"stories-group","handler":"storiesGroup","deviceGroups":null,"opts":{"cps_group_names":["fooc-1"],"css_id":"fooc","title_url":"\/zhongwen\/simp\/fooc","story_limit":3},"template":"tabloid\/tabloid-shared:\/component\/stories-group.spv"}>
+        <h2 class="group-title">
+                            <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/fooc" class="group-title__link">记者来鸿</a>
+                    </h2>
+        <div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105090818_11_512x288_bbc_nocredit.jpg" data-width="512" data-height="288" data-alt=""></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105090818_11_512x288_bbc_nocredit.jpg" class="responsive-image__image js-image-replace" alt="" width="512" height="288" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/fooc/2015/01/150105_fooc_putinpower" class="hard-news-unit__headline-link">
+                        普京—权力冲昏了头脑？
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">掌权15年，普京在国际间依然强悍，在国内人气持续高涨。俄罗斯四面楚歌，“全能神汉”还能挺多久？面临怎样变数？</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1420450491" data-datetime="2015年 1月 5日">2015年 1月 5日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/fooc/2015/01/150105_fooc_putinpower" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 普京—权力冲昏了头脑？</a>
+</div>
+<div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2014/12/19/141219084850_cosmetic_surgery_512x288_z_nocredit.jpg" data-width="512" data-height="288" data-alt=""></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2014/12/19/141219084850_cosmetic_surgery_512x288_z_nocredit.jpg" class="responsive-image__image js-image-replace" alt="" width="512" height="288" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/fooc/2014/12/141219_fooc_cosmetic_surgery" class="hard-news-unit__headline-link">
+                        韩国人迷整容 中国人不示弱
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">手术刀下，幸福唾手可得？整容“韩流”还吸引来大批“爱美”的中国客。不过，整容不成成毁容怎么办？</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1418984344" data-datetime="2014年 12月 19日">2014年 12月 19日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/fooc/2014/12/141219_fooc_cosmetic_surgery" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 韩国人迷整容 中国人不示弱</a>
+</div>
+<div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2014/12/18/141218085541_somalia_512x288__nocredit.jpg" data-width="512" data-height="288" data-alt=""></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2014/12/18/141218085541_somalia_512x288__nocredit.jpg" class="responsive-image__image js-image-replace" alt="" width="512" height="288" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/fooc/2014/12/141218_fooc_affair_between_two_countries" class="hard-news-unit__headline-link">
+                        两个国家  不寻常的爱情？
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">摩加迪沙，土耳其国旗比索马里国旗还多！素来不爱外国人的索马里怎么能和土耳其建立紧密关系？非常之爱，动机何在？</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1418893513" data-datetime="2014年 12月 18日">2014年 12月 18日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/fooc/2014/12/141218_fooc_affair_between_two_countries" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 两个国家  不寻常的爱情？</a>
+</div>
+    </div>
+                                                                                                    <div id="human-interest" class="stories-group" data-comp-meta={"id":"comp-stories-group","type":"stories-group","handler":"storiesGroup","deviceGroups":null,"opts":{"cps_group_names":["human-interest-1"],"css_id":"human-interest","story_limit":3},"template":"tabloid\/tabloid-shared:\/component\/stories-group.spv"}>
+        <h2 class="group-title">
+                            大千世界                    </h2>
+        <div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/04/150104091020_jex_1895575_de53_i640.jpg" data-width="640" data-height="360" data-alt="美国肯塔基州埃迪维尔附近应急部门车辆进入丛林搜索坠毁小型飞机（3/1/2015）"></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/04/150104091020_jex_1895575_de53_i640.jpg" class="responsive-image__image js-image-replace" alt="美国肯塔基州埃迪维尔附近应急部门车辆进入丛林搜索坠毁小型飞机（3/1/2015）" width="640" height="360" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/world/2015/01/150104_us_plane_crash_girl" class="hard-news-unit__headline-link">
+                        美国七岁空难遗孤冷夜徒步求救引赞叹
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">美国一架小型飞机在肯塔基州坠毁后，唯一幸存的7岁女孩严冬下徒步求救，其勇敢引来赞叹。</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1420362851" data-datetime="2015年 1月 4日">2015年 1月 4日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/world/2015/01/150104_us_plane_crash_girl" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 美国七岁空难遗孤冷夜徒步求救引赞叹</a>
+</div>
+<div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/02/150102143315_cancer_death_512x288_bbc_nocredit.jpg" data-width="512" data-height="288" data-alt="癌症病人"></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/02/150102143315_cancer_death_512x288_bbc_nocredit.jpg" class="responsive-image__image js-image-replace" alt="癌症病人" width="512" height="288" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/uk/2015/01/150102_life_cancer_death" class="hard-news-unit__headline-link">
+                        英医学专家称“患癌是最好死法”引发争议
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">世界著名学术刊物《英国医学杂志》前主编表示，在生命结束之前有机会反思人生，这一点非常重要。他敦促慈善组织和医学界“不要再浪费几十亿英镑的资金试图治愈癌症”。</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1420208795" data-datetime="2015年 1月 2日">2015年 1月 2日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/uk/2015/01/150102_life_cancer_death" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 英医学专家称“患癌是最好死法”引发争议</a>
+</div>
+<div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/02/150102141619_gold_fish_512x288__nocredit.jpg" data-width="512" data-height="288" data-alt="金鱼"></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/02/150102141619_gold_fish_512x288__nocredit.jpg" class="responsive-image__image js-image-replace" alt="金鱼" width="512" height="288" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/uk/2015/01/150102_life_gold_fish_operation" class="hard-news-unit__headline-link">
+                        小金鱼便秘很痛苦 主人花300英镑手术抢救
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">日前英国一位主人发现自己的宠物金鱼便秘，花费300英镑到兽医中心为其解难。</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1420208813" data-datetime="2015年 1月 2日">2015年 1月 2日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/uk/2015/01/150102_life_gold_fish_operation" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 小金鱼便秘很痛苦 主人花300英镑手术抢救</a>
+</div>
+    </div>
+                                                                                                    <div id="comments-on-china" class="stories-group" data-comp-meta={"id":"comp-stories-group","type":"stories-group","handler":"storiesGroup","deviceGroups":null,"opts":{"cps_group_names":["user-comment-1"],"css_id":"comments-on-china","title_url":"\/zhongwen\/simp\/comments_on_china","story_limit":3},"template":"tabloid\/tabloid-shared:\/component\/stories-group.spv"}>
+        <h2 class="group-title">
+                            <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/comments_on_china" class="group-title__link">大家谈中国</a>
+                    </h2>
+        <div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105103851_11_512x288_xinhua_nocredit.jpg" data-width="512" data-height="288" data-alt="无论是暗访，还是其他方式的检查手段，都不该成为一种默契游戏，或是“谍战片”。"></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105103851_11_512x288_xinhua_nocredit.jpg" class="responsive-image__image js-image-replace" alt="无论是暗访，还是其他方式的检查手段，都不该成为一种默契游戏，或是“谍战片”。" width="512" height="288" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/comments_on_china/2015/01/150105_coc_unannouncedvisit" class="hard-news-unit__headline-link">
+                        迎检工作岂能成为“谍战片”
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">包括暗访在内的各种检查工作，都是十分平常的监督方式，只要被检查的单位做好本职工作，本没有什么好惧怕的，也犯不着使用什么特殊手段去防范。</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1420468707" data-datetime="2015年 1月 5日">2015年 1月 5日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/comments_on_china/2015/01/150105_coc_unannouncedvisit" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 迎检工作岂能成为“谍战片”</a>
+</div>
+<div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/01/150101102629_11_512x288_bbc_nocredit.jpg" data-width="512" data-height="288" data-alt="呼格吉勒图父母李三仁、尚爱云展示内蒙古高院的国家赔偿决定书（新华社图片31/12/2014）"></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/01/150101102629_11_512x288_bbc_nocredit.jpg" class="responsive-image__image js-image-replace" alt="呼格吉勒图父母李三仁、尚爱云展示内蒙古高院的国家赔偿决定书（新华社图片31/12/2014）" width="512" height="288" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/comments_on_china/2015/01/150101_coc_huge_payout" class="hard-news-unit__headline-link">
+                        冤杀案不能止于206万元国家赔偿
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">那些故意枉法、有意违法的相关执法人员，冤案背后指使者，更应该为此承担责任！当局必须给全体公众一个说法！</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1420107511" data-datetime="2015年 1月 1日">2015年 1月 1日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/comments_on_china/2015/01/150101_coc_huge_payout" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 冤杀案不能止于206万元国家赔偿</a>
+</div>
+<div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2011/08/17/110817111409_jp_schools512x288_nocredit.jpg" data-width="512" data-height="288" data-alt=""></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2011/08/17/110817111409_jp_schools512x288_nocredit.jpg" class="responsive-image__image js-image-replace" alt="" width="512" height="288" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/comments_on_china/2014/12/141230_coc_chinaschool" class="hard-news-unit__headline-link">
+                        孩子穿打补丁裤上学丢谁的脸？
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">孩子穿打补丁裤上学承传了传统节俭美德，不是此学生给班级丢了脸，而是老师失去了节俭传统美德观念给班级丢了脸，需要炮轰。</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1419934214" data-datetime="2015年 12月 30日">2015年 12月 30日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/comments_on_china/2014/12/141230_coc_chinaschool" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 孩子穿打补丁裤上学丢谁的脸？</a>
+</div>
+    </div>
+                                                                                                    <div id="" class="stories-group" data-comp-meta={"id":"comp-stories-group","type":"stories-group","handler":"storiesGroup","deviceGroups":null,"opts":{"asset_id":"simp\/world","title_url":"\/zhongwen\/simp\/world","is_flattened":true,"story_limit":1},"template":"tabloid\/tabloid-shared:\/component\/stories-group.spv"}>
+        <h2 class="group-title">
+                            <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/world" class="group-title__link">国际新闻</a>
+                    </h2>
+        <div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2014/07/08/140708114157_madonna_512x288_bbc_nocredit.jpg" data-width="512" data-height="288" data-alt="麦当娜"></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2014/07/08/140708114157_madonna_512x288_bbc_nocredit.jpg" class="responsive-image__image js-image-replace" alt="麦当娜" width="512" height="288" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/world/2015/01/150105_madonna_images" class="hard-news-unit__headline-link">
+                        麦当娜为网上名人“束缚”形象辩护 
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">这些显示带状物缠面的图像是由她的影迷将缎带贴在名人照片脸部制作并发布在社交媒体上。</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1420491912" data-datetime="2015年 1月 5日">2015年 1月 5日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/world/2015/01/150105_madonna_images" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 麦当娜为网上名人“束缚”形象辩护 </a>
+</div>
+    </div>
+                                                                                                    <div id="" class="stories-group" data-comp-meta={"id":"comp-stories-group","type":"stories-group","handler":"storiesGroup","deviceGroups":null,"opts":{"asset_id":"simp\/chinese_news","title_url":"\/zhongwen\/simp\/chinese_news","is_flattened":true,"story_limit":1},"template":"tabloid\/tabloid-shared:\/component\/stories-group.spv"}>
+        <h2 class="group-title">
+                            <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/chinese_news" class="group-title__link">两岸三地</a>
+                    </h2>
+        <div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105181353_luwei_murdoch_512x288_xinhua_nocredit.jpg" data-width="512" data-height="288" data-alt=""></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105181353_luwei_murdoch_512x288_xinhua_nocredit.jpg" class="responsive-image__image js-image-replace" alt="" width="512" height="288" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/china/2015/01/150105_luwei_murdoch_beijing" class="hard-news-unit__headline-link">
+                        中国网信办主任鲁炜北京会见默多克
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">中国官方媒体并没有透露两人会谈的详情，有分析认为这样的会面“形式大于内容”。</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1420482489" data-datetime="2015年 1月 5日">2015年 1月 5日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/china/2015/01/150105_luwei_murdoch_beijing" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 中国网信办主任鲁炜北京会见默多克</a>
+</div>
+    </div>
+                                                                                                    <div id="" class="stories-group" data-comp-meta={"id":"comp-stories-group","type":"stories-group","handler":"storiesGroup","deviceGroups":null,"opts":{"asset_id":"simp\/uk","title_url":"\/zhongwen\/simp\/uk","is_flattened":true,"story_limit":1},"template":"tabloid\/tabloid-shared:\/component\/stories-group.spv"}>
+        <h2 class="group-title">
+                            <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/uk" class="group-title__link">英国动态</a>
+                    </h2>
+        <div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105150914_miliband_640x360_bbc_nocredit.jpg" data-width="640" data-height="360" data-alt=""></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105150914_miliband_640x360_bbc_nocredit.jpg" class="responsive-image__image js-image-replace" alt="" width="640" height="360" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/ukchina/simp/uk_life/2015/01/150105_life_uk_election_start" class="hard-news-unit__headline-link">
+                        英国选战打响 工党新年开炮还击
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">英国五月大选选战新年开战；工党回击保守党有关预算案的批评“虚伪”。</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1420470863" data-datetime="2015年 1月 5日">2015年 1月 5日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/ukchina/simp/uk_life/2015/01/150105_life_uk_election_start" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 英国选战打响 工党新年开炮还击</a>
+</div>
+    </div>
+                                                                                                    <div id="" class="stories-group" data-comp-meta={"id":"comp-stories-group","type":"stories-group","handler":"storiesGroup","deviceGroups":null,"opts":{"asset_id":"simp\/science","title_url":"\/zhongwen\/simp\/science","is_flattened":true,"story_limit":1},"template":"tabloid\/tabloid-shared:\/component\/stories-group.spv"}>
+        <h2 class="group-title">
+                            <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/science" class="group-title__link">科技健康</a>
+                    </h2>
+        <div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/02/150102071125_cancer_cells___512x288_spl.jpg" data-width="512" data-height="288" data-alt=""></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/02/150102071125_cancer_cells___512x288_spl.jpg" class="responsive-image__image js-image-replace" alt="" width="512" height="288" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/science/2015/01/150102_cancer_bad_luck" class="hard-news-unit__headline-link">
+                        研究：大多数癌症的发生是因为“运气不好”
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">美国霍普金斯大学的研究人员相信组织细胞再生时突变可能是导致癌症的主要原因。</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1420196291" data-datetime="2015年 1月 2日">2015年 1月 2日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/science/2015/01/150102_cancer_bad_luck" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 研究：大多数癌症的发生是因为“运气不好”</a>
+</div>
+    </div>
+                                                                                                    <div id="" class="stories-group" data-comp-meta={"id":"comp-stories-group","type":"stories-group","handler":"storiesGroup","deviceGroups":null,"opts":{"asset_id":"simp\/business","title_url":"\/zhongwen\/simp\/business","is_flattened":true,"story_limit":1},"template":"tabloid\/tabloid-shared:\/component\/stories-group.spv"}>
+        <h2 class="group-title">
+                            <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/business" class="group-title__link">金融财经</a>
+                    </h2>
+        <div class="hard-news-unit hard-news-unit--regular faux-block-link">
+
+
+
+                <div class="hard-news-unit__image">
+                        <div class="responsive-image responsive-image--16by9">
+                                <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105151047_euro_512x288_getty_nocredit.jpg" data-width="512" data-height="288" data-alt="欧元"></div>
+                                <!--[if lt IE 9]>
+                                    <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/200/amz/worldservice/live/assets/images/2015/01/05/150105151047_euro_512x288_getty_nocredit.jpg" class="responsive-image__image js-image-replace" alt="欧元" width="512" height="288" />
+                                <![endif]-->
+                        </div>
+                </div>
+            <div class="hard-news-unit__body">
+                <h3 class="hard-news-unit__headline">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/business/2015/01/150105_euro_low" class="hard-news-unit__headline-link">
+                        欧元兑美元价格下跌至九年来最低点
+                    </a>
+                </h3>
+                <p class="hard-news-unit__summary">欧洲中央银行行长德拉吉此前表示，欧洲央行可能会很快开始购买政府债券，实施量化宽松政策。</p>
+                    <ul class="mini-info-list">
+                        <li class="mini-info-list__item">                        <div class="date date--v2" data-seconds="1420471243" data-datetime="2015年 1月 5日">2015年 1月 5日</div>
+</li>
+                    </ul>
+            </div>
+
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/business/2015/01/150105_euro_low" class="faux-block-link__overlay-link" tabindex="-1" aria-hidden="true">阅读全文 欧元兑美元价格下跌至九年来最低点</a>
+</div>
+    </div>
+                                                                                            <div id="academy-cojo-link" class="group-title-component">
+    <h2 class="group-title">
+    <a href="/web/20150105212505/http://www.bbc.co.uk/academy/chinese-simp" class="group-title__link">BBC新闻学院</a>
+</h2></div>
+                                                                                            <div id="" class="group-title-component">
+    <h2 class="group-title">
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/institutional/2013/04/111111_partners_list" class="group-title__link">BBC中文网合作伙伴</a>
+</h2></div>
+                                                                                            <div id="" class="group-title-component">
+    <h2 class="group-title">
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/institutional/2013/02/130215_proxy_notice" class="group-title__link">浏览协助</a>
+</h2></div>
+                                                                                                                                                                        </div>
+                                     <div class="column--secondary">
+                                                                                
+<div class="features-and-analysis" id="comp-features-and-analysis" >
+    <h2 class="features-and-analysis__title">
+                    特别推荐            </h2>
+    <div class="features-and-analysis__stories promo-unit-spacer">
+                        <div class="features-and-analysis__story">
+            <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/focus_on_china/2015/01/150105_cr_china_2015_economy" class="bold-image-promo">
+    <div class="bold-image-promo__image">
+                <div class="responsive-image responsive-image--16by9">
+                        <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/304/amz/worldservice/live/assets/images/2015/01/05/150105175738_china_economy_512x288_ap_nocredit.jpg" data-width="512" data-height="288" data-alt="中国北京的一个建筑工地标语"></div>
+                        <!--[if lt IE 9]>
+                            <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/304/amz/worldservice/live/assets/images/2015/01/05/150105175738_china_economy_512x288_ap_nocredit.jpg" class="responsive-image__image js-image-replace" alt="中国北京的一个建筑工地标语" width="512" height="288" />
+                        <![endif]-->
+                </div>
+    </div>
+    <h3 class="bold-image-promo__title">点评中国：新年经济增长靠什么？</h3>
+    
+</a>
+        </div>
+                            <div class="features-and-analysis__story">
+            <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/china/2015/01/150105_ana_zhaoziyanghuyaobang" class="bold-image-promo">
+    <div class="bold-image-promo__image">
+                <div class="responsive-image responsive-image--16by9">
+                        <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/304/amz/worldservice/live/assets/images/2015/01/05/150105101612_11_512x288_bbc_nocredit.jpg" data-width="512" data-height="288" data-alt="赵紫阳胡耀邦"></div>
+                        <!--[if lt IE 9]>
+                            <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/304/amz/worldservice/live/assets/images/2015/01/05/150105101612_11_512x288_bbc_nocredit.jpg" class="responsive-image__image js-image-replace" alt="赵紫阳胡耀邦" width="512" height="288" />
+                        <![endif]-->
+                </div>
+    </div>
+    <h3 class="bold-image-promo__title">观察：两位中共前总书记的不同命运</h3>
+    
+</a>
+        </div>
+                            <div class="features-and-analysis__story">
+            <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/press_review/2015/01/150105_press_hk_tycoons" class="bold-image-promo">
+    <div class="bold-image-promo__image">
+                <div class="responsive-image responsive-image--16by9">
+                        <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/304/amz/worldservice/live/assets/images/2014/12/25/141225025925_cn_hongkong_occupy_christmas_02_512x288_epa_nocredit.jpg" data-width="512" data-height="288" data-alt="香港"></div>
+                        <!--[if lt IE 9]>
+                            <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/304/amz/worldservice/live/assets/images/2014/12/25/141225025925_cn_hongkong_occupy_christmas_02_512x288_epa_nocredit.jpg" class="responsive-image__image js-image-replace" alt="香港" width="512" height="288" />
+                        <![endif]-->
+                </div>
+    </div>
+    <h3 class="bold-image-promo__title">英媒：社会动荡可能促香港富豪移资海外</h3>
+    
+</a>
+        </div>
+                            <div class="features-and-analysis__story">
+            <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/fooc/2015/01/150105_fooc_putinpower" class="bold-image-promo">
+    <div class="bold-image-promo__image">
+                <div class="responsive-image responsive-image--16by9">
+                        <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/304/amz/worldservice/live/assets/images/2015/01/05/150105090818_11_512x288_bbc_nocredit.jpg" data-width="512" data-height="288" data-alt=""></div>
+                        <!--[if lt IE 9]>
+                            <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/304/amz/worldservice/live/assets/images/2015/01/05/150105090818_11_512x288_bbc_nocredit.jpg" class="responsive-image__image js-image-replace" alt="" width="512" height="288" />
+                        <![endif]-->
+                </div>
+    </div>
+    <h3 class="bold-image-promo__title">记者来鸿：普京—权力冲昏了头脑？</h3>
+    
+</a>
+        </div>
+                            <div class="features-and-analysis__story">
+            <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/china/2015/01/150105_china_patent" class="bold-image-promo">
+    <div class="bold-image-promo__image">
+                <div class="responsive-image responsive-image--16by9">
+                        <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/304/amz/worldservice/live/assets/images/2015/01/05/150105012310_china_c919_airliner_512x288_xinhua_nocredit.jpg" data-width="512" data-height="288" data-alt=""></div>
+                        <!--[if lt IE 9]>
+                            <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/304/amz/worldservice/live/assets/images/2015/01/05/150105012310_china_c919_airliner_512x288_xinhua_nocredit.jpg" class="responsive-image__image js-image-replace" alt="" width="512" height="288" />
+                        <![endif]-->
+                </div>
+    </div>
+    <h3 class="bold-image-promo__title">中国努力提高专利发明数量推动产业升级</h3>
+    
+</a>
+        </div>
+                            <div class="features-and-analysis__story">
+            <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/world/2015/01/150105_japan_yonaguni_military" class="bold-image-promo">
+    <div class="bold-image-promo__image">
+                <div class="responsive-image responsive-image--16by9">
+                        <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/304/amz/worldservice/live/assets/images/2015/01/05/150105055044_yonaguni_512x288_bbc_nocredit.jpg" data-width="512" data-height="288" data-alt=""></div>
+                        <!--[if lt IE 9]>
+                            <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/304/amz/worldservice/live/assets/images/2015/01/05/150105055044_yonaguni_512x288_bbc_nocredit.jpg" class="responsive-image__image js-image-replace" alt="" width="512" height="288" />
+                        <![endif]-->
+                </div>
+    </div>
+    <h3 class="bold-image-promo__title">日本与那国岛民为中日军事对立矛盾</h3>
+    
+</a>
+        </div>
+                            <div class="features-and-analysis__story">
+            <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/multimedia/2015/01/150105_gal_new_york_police_liu" class="bold-image-promo">
+    <div class="bold-image-promo__image">
+                <div class="responsive-image responsive-image--16by9">
+                        <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/304/amz/worldservice/live/assets/images/2015/01/05/150105034607_cn_liu_wenjian_funeral_08_reuters_i640.jpg" data-width="640" data-height="360" data-alt="警员背向直播白思豪讲话的大屏幕（4/1/2015）"></div>
+                        <!--[if lt IE 9]>
+                            <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/304/amz/worldservice/live/assets/images/2015/01/05/150105034607_cn_liu_wenjian_funeral_08_reuters_i640.jpg" class="responsive-image__image js-image-replace" alt="警员背向直播白思豪讲话的大屏幕（4/1/2015）" width="640" height="360" />
+                        <![endif]-->
+                </div>
+    </div>
+    <h3 class="bold-image-promo__title">图辑：刘文健出殡纽约警察再次背对白思豪</h3>
+    
+</a>
+        </div>
+                            <div class="features-and-analysis__story">
+            <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/press_review/2015/01/150104_press_review" class="bold-image-promo">
+    <div class="bold-image-promo__image">
+                <div class="responsive-image responsive-image--16by9">
+                        <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/304/amz/worldservice/live/assets/images/2015/01/04/150104221231_tiger_512x288_getty_nocredit.jpg" data-width="512" data-height="288" data-alt=""></div>
+                        <!--[if lt IE 9]>
+                            <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/304/amz/worldservice/live/assets/images/2015/01/04/150104221231_tiger_512x288_getty_nocredit.jpg" class="responsive-image__image js-image-replace" alt="" width="512" height="288" />
+                        <![endif]-->
+                </div>
+    </div>
+    <h3 class="bold-image-promo__title">英媒：富裕中国人与虎“谋”皮骨</h3>
+    
+</a>
+        </div>
+                            <div class="features-and-analysis__story">
+            <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/world/2015/01/150104_us_plane_crash_girl" class="bold-image-promo">
+    <div class="bold-image-promo__image">
+                <div class="responsive-image responsive-image--16by9">
+                        <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/304/amz/worldservice/live/assets/images/2015/01/04/150104091020_jex_1895575_de53_i640.jpg" data-width="640" data-height="360" data-alt="美国肯塔基州埃迪维尔附近应急部门车辆进入丛林搜索坠毁小型飞机（3/1/2015）"></div>
+                        <!--[if lt IE 9]>
+                            <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/304/amz/worldservice/live/assets/images/2015/01/04/150104091020_jex_1895575_de53_i640.jpg" class="responsive-image__image js-image-replace" alt="美国肯塔基州埃迪维尔附近应急部门车辆进入丛林搜索坠毁小型飞机（3/1/2015）" width="640" height="360" />
+                        <![endif]-->
+                </div>
+    </div>
+    <h3 class="bold-image-promo__title">美国七岁空难遗孤冷夜徒步求救引赞叹</h3>
+    
+</a>
+        </div>
+                            <div class="features-and-analysis__story">
+            <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/china/2015/01/150103_china_stateowned_corporation_salary" class="bold-image-promo">
+    <div class="bold-image-promo__image">
+                <div class="responsive-image responsive-image--16by9">
+                        <div class="responsive-image__image js-delayed-image-load" data-src="/web/20150105212505oe_/http://ichef.bbci.co.uk/news/ws/304/amz/worldservice/live/assets/images/2015/01/03/150103082503_petrochina_flag_512x288_reuters_nocredit.jpg" data-width="512" data-height="288" data-alt="中石油等一类央企，负责人往往具有双重身份，即既是企业职业经理人，又是行政级别较高的国家公务员，因此既有高管薪酬，也享受高官待遇。"></div>
+                        <!--[if lt IE 9]>
+                            <img src="/web/20150105212505/http://ichef.bbci.co.uk/news/ws/304/amz/worldservice/live/assets/images/2015/01/03/150103082503_petrochina_flag_512x288_reuters_nocredit.jpg" class="responsive-image__image js-image-replace" alt="中石油等一类央企，负责人往往具有双重身份，即既是企业职业经理人，又是行政级别较高的国家公务员，因此既有高管薪酬，也享受高官待遇。" width="512" height="288" />
+                        <![endif]-->
+                </div>
+    </div>
+    <h3 class="bold-image-promo__title">中国72家央企负责人正式实施降薪并公开薪酬</h3>
+    
+</a>
+        </div>
+                </div>
+</div>
+                                                                                            
+    <div class="podcasts">
+        <h2 class="podcast__title">
+                <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/indepth/cluster_podcasts" class="group-title__link">播客精选</a>
+        </h2>
+        <ul class="podcast-list">
+                <li class="podcast-list__item">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/institutional/2011/05/111111_pod_of_the_day.shtml" class="podcast-list__item-link">
+                                
+                                <span class="icon podcast"></span>
+                        <span class="podcast-list__item-label">新闻播客（普通话）</span>
+                    </a>
+                </li>
+                <li class="podcast-list__item">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/institutional/2011/04/111111_newsweek_podcast.shtml" class="podcast-list__item-link">
+                                
+                                <span class="icon podcast"></span>
+                        <span class="podcast-list__item-label">“时事一周”（粤语）</span>
+                    </a>
+                </li>
+                <li class="podcast-list__item">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/ukchina/simp/services/2009/08/000000_podcast_studyuk.shtml" class="podcast-list__item-link">
+                                
+                                <span class="icon podcast"></span>
+                        <span class="podcast-list__item-label">  “留学英国” 播客（普通话）</span>
+                    </a>
+                </li>
+        </ul>
+    </div>
+
+
+                                                                                                
+<div class="radio-promotion">
+    <h2 class="group-title"><a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/indepth/cantonese_radio" class="group-title__link">音频材料</a></h2>
+
+    
+    <ul class="radio-promotion-list">
+                    <li class="radio-promotion-list-item">
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/multimedia/2015/01/150105_cant_coc_audio" class="radio-promotion-list__link">
+            
+    <span class="icon audio"><span class="off-screen"> 音频</span></span>
+            <span class="radio-promotion__label">节目重温：中国人看中国（粤语）</span>
+                    <span class="radio-promotion-list__programme-duration">5:55</span>
+            </a>
+</li>
+                            <li class="radio-promotion-list-item">
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/multimedia/2015/01/150105_fooc_audio" class="radio-promotion-list__link">
+            
+    <span class="icon audio"><span class="off-screen"> 音频</span></span>
+            <span class="radio-promotion__label">节目重温：记者来鸿（粤语）</span>
+                    <span class="radio-promotion-list__programme-duration">4:52</span>
+            </a>
+</li>
+                            <li class="radio-promotion-list-item">
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/multimedia/2015/01/150105_cant_scitech_audio" class="radio-promotion-list__link">
+            
+    <span class="icon audio"><span class="off-screen"> 音频</span></span>
+            <span class="radio-promotion__label">节目重温：科技脉搏（粤语）</span>
+                    <span class="radio-promotion-list__programme-duration">3:52</span>
+            </a>
+</li>
+                            <li class="radio-promotion-list-item">
+    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/multimedia/2014/11/141124_cant_scitech_audio" class="radio-promotion-list__link">
+            
+    <span class="icon audio"><span class="off-screen"> 音频</span></span>
+            <span class="radio-promotion__label">节目重温：科技脉搏（粤语）</span>
+                    <span class="radio-promotion-list__programme-duration">3:45</span>
+            </a>
+</li>
+                    </ul>
+</div>
+
+                                                                                                    <div id=comp-most-popular
+            class="hidden"
+            data-comp-meta={"id":"comp-most-popular","type":"most-popular","handler":"mostPopular","deviceGroups":["group3","group4"],"opts":{"loading_strategy":"post_load","device_groups":["group3","group4"]},"template":"\/component\/most-popular"}>
+        </div>                                                                                            <div id="comp-follow-us" class="follow-us">
+    <h2 class="follow-us__title">BBC中文网</h2>
+    <ul class="follow-us__list">
+                    <li class="follow-us__list-item follow-us__list-item--social">
+                <a href="/web/20150105212505/http://www.youtube.com/bbczhongwen" class="follow-us__list-item-link follow-us__list-item-link--youtube">YouTube 频道</a>
+            </li>
+                    <li class="follow-us__list-item follow-us__list-item--social">
+                <a href="/web/20150105212505/http://twitter.com/bbcchinese" class="follow-us__list-item-link follow-us__list-item-link--twitter">Twitter 网页</a>
+            </li>
+                    <li class="follow-us__list-item follow-us__list-item--social">
+                <a href="/web/20150105212505/http://www.facebook.com/bbcchinese" class="follow-us__list-item-link follow-us__list-item-link--facebook">Facebook 网页</a>
+            </li>
+            </ul>
+
+            <div class="spacer"></div>
+        <div class="hr"></div>
+
+        <h3 class="follow-us__subtitle">服务专区</h3>
+        <ul class="follow-us__list">
+                            <li class="follow-us__list-item follow-us__list-item--block">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/institutional/2014/09/111112_email_news" class="follow-us__list-item-link">
+                        <span class="follow-us__list-item-icon icon icon--large icon--newsletter"></span>
+                        <span class="follow-us__list-item-label">订阅电邮新闻</span>
+                    </a>
+                </li>
+                            <li class="follow-us__list-item follow-us__list-item--block">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/index.xml" class="follow-us__list-item-link">
+                        <span class="follow-us__list-item-icon icon icon--large icon--rss"></span>
+                        <span class="follow-us__list-item-label">RSS服务</span>
+                    </a>
+                </li>
+                    </ul>
+    </div>
+                                                                        </div>
+             </div>         </div>  <div class="panel panel-2" role="complementary"> <div id="most-popular-placeholder"></div> </div>  </div> </div> 
+
+
+<div id="news-banner__outer-container" class="news-banner__outer-container">
+    <section id="news-banner" data-comp-meta={"id":"comp-responsive-survey-banner","type":"responsive-survey-banner","handler":"responsiveSurveyBanner","deviceGroups":null,"opts":[],"template":"responsive-survey-banner"} class="news-banner {{isExplainerBannerFixed}} responsive-survey-banner">
+        <div class="news-banner__inner">
+            <div class="news-banner__content">
+                <h2 class="news-banner__title">你对本网站有何看法，请点击此处告诉我们。</h2>
+            </div>
+            <div class="news-banner__options">
+                <a href="/web/20150105212505/http://six.surveys.com/projects/UKC20120084A/default.asp?fromsrc=news.bbc.co.uk/zhongwen/simp" id="responsive-survey__take-me-there" class="news-banner__survey {{explainerSurveyDisplay}}">
+                    点击前往                </a>
+                <a href="#" id="responsive-survey__go-back" class="news-banner__goback">
+                    不再显示此信息                </a>
+            </div>
+        </div>
+        <button id="responsive-survey__dismiss" class="news-banner__dismiss" aria-hidden="true"></button>
+    </section>
+</div>
+
+  
+
+<div id="core-navigation" class="navigation--footer">
+    
+    <nav id="navigation--bottom" class="navigation navigation--bottom " role="navigation" aria-label="Zhongwen">
+        <ul class="navigation--bottom__toplevel">
+                            <li class="navigation-core-title">分类</li>
+                                        <li class="selected ">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp" class="navigation-arrow--open">
+                        <span>主页</span>
+                    </a>
+                     <span class="off-screen"></span>                                    </li>
+                            <li class="">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/world" class="">
+                        <span>国际</span>
+                    </a>
+                                                        </li>
+                            <li class="">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/chinese_news" class="">
+                        <span>两岸</span>
+                    </a>
+                                                        </li>
+                            <li class="">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/uk" class="">
+                        <span>英国</span>
+                    </a>
+                                                        </li>
+                            <li class="">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/indepth" class="">
+                        <span>评论</span>
+                    </a>
+                                                        </li>
+                            <li class="">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/science" class="">
+                        <span>科技</span>
+                    </a>
+                                                        </li>
+                            <li class="">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/business" class="">
+                        <span>财经</span>
+                    </a>
+                                                        </li>
+                            <li class="">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/topics/picture_gallery" class="">
+                        <span>图辑</span>
+                    </a>
+                                                        </li>
+                            <li class="">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/topics/audio" class="">
+                        <span>音频材料</span>
+                    </a>
+                                                        </li>
+                            <li class="">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/topics/video" class="">
+                        <span>视频材料</span>
+                    </a>
+                                                        </li>
+                            <li class="">
+                    <a href="/web/20150105212505/http://www.bbc.co.uk/ukchina/simp" class="">
+                        <span>BBC英伦网</span>
+                    </a>
+                                                        </li>
+                    </ul>
+    </nav>
+</div>
+   </div><!-- closes #site-container -->      </div> <div id="orb-footer"  class="orb-footer orb-footer-grey" > <aside role="complementary"> <div id="orb-aside" class="orb-nav-sec b-r b-g-p"> <div class="orb-footer-inner" role="navigation"> <h2 class="orb-footer-lead">BBC导航</h2>  <div class="orb-footer-primary-links"> <ul>    <li  class="orb-nav-news orb-d"  > <a href="/web/20150105212505/http://www.bbc.co.uk/news/">News</a> </li>    <li  class="orb-nav-newsdotcom orb-w"  > <a href="/web/20150105212505/http://www.bbc.com/news/">News</a> </li>    <li  class="orb-nav-sport"  > <a href="/web/20150105212505/http://www.bbc.co.uk/sport/">Sport</a> </li>    <li  class="orb-nav-weather"  > <a href="/web/20150105212505/http://www.bbc.co.uk/weather/">Weather</a> </li>    <li  class="orb-nav-radio"  > <a href="/web/20150105212505/http://www.bbc.co.uk/worldserviceradio/">Radio</a> </li>    <li  class="orb-nav-arts orb-d"  > <a href="/web/20150105212505/http://www.bbc.co.uk/arts/">Arts</a> </li>    <li  class="orb-nav-fullaz orb-d"  > <a href="/web/20150105212505/http://www.bbc.co.uk/a-z/">Full A-Z</a> </li>    </ul> </div> </div> </div> </aside> <footer role="contentinfo"> <div id="orb-contentinfo" class="orb-nav-sec b-r b-g-p"> <div class="orb-footer-inner"> <ul>        <li  > <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/institutional/2011/04/111111_terms">使用条款</a> </li>    <li  > <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/institutional/2011/04/111111_about_us">关于BBC</a> </li>    <li  > <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/institutional/2011/04/111111_privacypolicy">隐私政策</a> </li>    <li  > <a href="/web/20150105212505/http://www.bbc.co.uk/privacy/cookies/managing/cookie-settings.html">Cookies</a> </li>    <li  > <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/institutional/2011/04/111111_accessibility">浏览协助</a> </li>    <li  > <a href="/web/20150105212505/http://www.bbc.co.uk/guidance/">家长指引</a> </li>    <li  > <a href="/web/20150105212505/http://www.bbc.co.uk/zhongwen/simp/institutional/2011/04/111111_feedback">与BBC联络</a> </li>    <li  class=" orb-w"  > <a href="/web/20150105212505/http://www.bbc.co.uk/bbc.com/furtherinformation/">Further Information</a> </li>    </ul> <small> <span class="orb-hilight">Copyright &copy; 2015 BBC.</span> BBC不为非BBC网站内容负责。 <a href="/web/20150105212505/http://www.bbc.co.uk/help/web/links/" class="orb-hilight">我们对外部链接/链接政策的处理办法</a> </small> </div> </div> </footer> </div>  <script type="text/javascript"> document.write('<' + 'script id="orb-js-script" data-assetpath="/web/20150105212505/http://static.bbci.co.uk/frameworks/barlesque/2.82.1/orb/4/" src="/web/20150105212505/http://static.bbci.co.uk/frameworks/barlesque/2.82.1/orb/4/script' + (( document.cookie.indexOf('ckns_debugorbjs') > -1 )? '-debug' : '') + '/orb.js"><' + '/script>'); </script>   <script type="text/javascript"> if (typeof require !== 'undefined') { require(['istats-1'], function(istats){ istats.track('external', { region: document.getElementsByTagName('body')[0] }); istats.track('download', { region: document.getElementsByTagName('body')[0] }); }); } </script>              <script> var isNokiaS40 = navigator.userAgent.match(/Series40; Nokia/); if (!window.cutsTheMustard || isNokiaS40) { img = document.createElement('img'); img.src = '/web/20150105212505/http://sa.bbc.com/b/ss/bbcwglobalprod,bbcchinese/1/JS-1.2.1/s79569018?gn=ws%3A%3Am%2Fzhongwen%2Fsimp%2Ffront_page&ev=event2&c25=BBC%7CRD%7Cgroup0&c45=zhongwen&v20=js-e%7Cimg&c6=ws%3A%3Ahomepage&c5=ws%3A%3AINDEX'; img.className = 'tracking-image-nonctm'; document.body.appendChild(img); } </script> <noscript> <img class="tracking-image-nonjs" src="/web/20150105212505im_/http://sa.bbc.com/b/ss/bbcwglobalprod,bbcchinese/5/04111387?gn=ws%3A%3Am%2Fzhongwen%2Fsimp%2Ffront_page&amp;ev=event2&amp;c25=BBC%7CRD%7Cgroup0&amp;c45=zhongwen&amp;v20=js-d%7Cimg&amp;c6=ws%3A%3Ahomepage&amp;c5=ws%3A%3AINDEX" height="5" width="5" alt="" /> </noscript>    <script> window.old_onload = window.onload; window.onload = function() { if(window.old_onload) { window.old_onload(); } window.loaded = true; }; </script>   </body> </html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 21:25:05 Jan 5, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:50:22 Jan 7, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

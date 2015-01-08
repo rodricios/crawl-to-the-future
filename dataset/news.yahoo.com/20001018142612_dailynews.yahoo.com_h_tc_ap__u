@@ -1,0 +1,646 @@
+<html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app2.us.archive.org";archive_analytics.values.server_ms=235;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+var remote = null
+function rs(n,u,w,h) {
+remote = window.open(u, n, 'width=' + w + ',height=' + h +',resizable=no,scrollbars=no');
+if (remote != null) {
+if (remote.opener == null)
+remote.opener = self;
+window.name = 'yahooNewsRoot';
+remote.location.href = u;
+}
+}
+
+function formHandler(form){
+var URL = document.form.u.options[document.form.u.selectedIndex].value;
+window.location.href = URL;
+}
+
+</SCRIPT>
+
+<title>Technology - Associated Press </title>
+</head>
+<body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://dailynews.yahoo.com/h/tc/ap/?u";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "6";
+var displayMonth = "Dec";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://dailynews.yahoo.com/h/tc/ap/?u" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20001206090000" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Nov
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 9:00:00 Dec 6, 2000">DEC</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20010321021302/http://dailynews.yahoo.com/h/tc/ap/?u" title="21 Mar 2001"><strong>MAR</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 9:00:00 Dec 6, 2000">6</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20001206100800/http://dailynews.yahoo.com/h/tc/ap/?u" title="10:08:00 Dec 6, 2000"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   1999
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 9:00:00 Dec 6, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20011206201427/http://dailynews.yahoo.com/h/tc/ap/?u" title="6 Dec 2001"><strong>2001</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20001206090000*/http://dailynews.yahoo.com/h/tc/ap/?u" title="See a list of every capture for this URL">292 captures</a>
+           <div class="r" title="Timespan for captures of this URL">6 Dec 00 - 13 Jul 07</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:11:000000000006_2001:-1:00310001fed8_2002:-1:210101010001_2003:-1:010100010101_2004:-1:010101001100_2005:-1:010100000002_2006:-1:000000001101_2007:-1:010100200000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<center>
+
+<!-- _JC_  HEADER -->
+
+<table cellpadding=2 cellspacing=0 BORDER=0 width="675">
+<tr>
+<td width="1%"><a href="/web/20001206090000/http://dailynews.yahoo.com/h/?u"><img src="/web/20001206090000im_/http://us.i1.yimg.com/us.yimg.com/i/dn/main4.gif" border=0 width=250 height=31 alt="Yahoo! News"></a></td>
+<td align="right" nowrap><a href="/web/20001206090000/http://dailynews.yahoo.com/"><font face="arial,helvetica" size=2>Home</font></a><font face="arial,helvetica" size=2> - <a href="/web/20001206090000/http://www.yahoo.com/">Yahoo!</a> - <a href="/web/20001206090000/http://my.yahoo.com/">My Yahoo!</a> - <a href="/web/20001206090000/http://alerts.yahoo.com/config/set_notification?.t=n">News Alerts</a> - <a href="/web/20001206090000/http://help.yahoo.com/help/news/">Help</a></font><br>
+<hr size=1 noshade></td>
+<td width="1%">
+<a href="/web/20001206090000/http://rd.yahoo.com/DailyNews/*http://www.ap.org/">
+<!-- _JC_  LOGO -->
+<img src="/web/20001206090000im_/http://us.i1.yimg.com/us.yimg.com/i/dn/ap4.gif" border=0 alt="Associated Press" width=170 height=40></a>
+<!-- _JC_  END LOGO -->
+</td>
+</tr>
+</table>
+<!-- _JC_  END HEADER -->
+
+<!-- _JC_  ADCALL -->
+<p>
+<table width=675 border=0 cellpadding=3>
+<tr>
+<td valign="middle">
+ <!-- SpaceID=0 robot -->
+
+</td>
+<td align="center">
+ <!-- SpaceID=0 robot -->
+
+</td>
+</tr>
+</table>
+<p>
+<!-- _JC_  END ADCALL -->
+
+
+<!-- _JC_  NAVIGATION -->
+<!-- _JC_  NAV -->
+<table border=0 cellspacing=0 cellpadding=0 width="675">
+<tr>
+<td colspan=2 align=center>
+<table border=0 cellspacing=0>
+<tr>
+<td align="center"><a href="/web/20001206090000/http://dailynews.yahoo.com/h/?u"><font size=2 face="arial,helvetica">Home</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001206090000/http://dailynews.yahoo.com/h/ts/?u"><font size=2 face="arial,helvetica">Top&nbsp;Stories</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001206090000/http://dailynews.yahoo.com/h/bs/?u"><font size=2 face="arial,helvetica">Business</font></a>&nbsp;</td>
+<td align="center" bgcolor="#333366">&nbsp;<a href="/web/20001206090000/http://dailynews.yahoo.com/h/tc/?u"><font size=2 face="arial,helvetica"  color="#eeeeff">Tech</font></a>&nbsp;</td>
+<td align="center">&nbsp;<a href="/web/20001206090000/http://dailynews.yahoo.com/h/pl/?u"><font size=2 face="arial,helvetica">Politics</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001206090000/http://dailynews.yahoo.com/h/wl/?u"><font size=2 face="arial,helvetica">World</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001206090000/http://dailynews.yahoo.com/h/lo/?u"><font size=2 face="arial,helvetica">Local</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001206090000/http://dailynews.yahoo.com/h/en/?u"><font size=2 face="arial,helvetica">Entertainment</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001206090000/http://dailynews.yahoo.com/h/sp/?u"><font size=2 face="arial,helvetica">Sports</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001206090000/http://dailynews.yahoo.com/h/sc/?u"><font size=2 face="arial,helvetica">Science</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001206090000/http://dailynews.yahoo.com/h/hl/?u"><font size=2 face="arial,helvetica">Health</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001206090000/http://news.yahoo.com/fc/?u"><font size=2 face="arial,helvetica">Full&nbsp;Coverage</font></a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr bgcolor="#333366">
+<td colspan=2>
+<table border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td height=5></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<!-- _JC_  NAV -->
+<!-- _JC_  END NAVIGATION -->
+
+
+<!-- _JC_  SECTION HEADER -->
+
+<table border=0 cellpadding=2 cellspacing=0 width="675">
+<tr bgcolor="#9999cc">
+<td><font face="arial,helvetica" size=4><b>
+Technology
+News</b>
+</font><font face="arial,helvetica" size=2> - updated
+ 9:45 PM ET Dec 5
+</font></td>
+<td width="1%">
+<table cellpadding=3 cellspacing=0><tr>
+<td bgcolor="#ccccff" nowrap><IMG src="/web/20001206090000im_/http://us.i1.yimg.com/us.yimg.com/i/my/my16.gif" width=16 height=16 border=0 align=left alt="My"><FONT face=arial size="-2">
+<a href="/web/20001206090000/http://rd.yahoo.com/addtomy/*http://edit.yahoo.com/config/set_news?.add=aprc">Add to My Yahoo!</a></font></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<!-- _JC_  END SECTION HEADER -->
+
+<!-- _JC_  MAIN TABLE -->
+<table cellpadding=3 border=0 cellspacing=0 width="675">
+<tr valign="top">
+<td width=200>
+<!-- _JC_  LEFT COLUMN -->
+
+<!-- _JC_  LEFT COLUMN -->
+<table border=0 cellpadding=1 cellspacing=0 width="100%" bgcolor="#9999cc"><tr valign=top><td valign="top"> <table border=0 cellpadding=3 cellspacing=0 width="100%"><tr bgcolor="#eeeecc"><td colspan=2 align=center>
+<img height=16 width=16 src="/web/20001206090000im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif">
+<font face="arial,helvetica"><b>Full Coverage</b></font><br><font size=1 face="arial,helvetica"></font></td></tr>
+<tr bgcolor="white">
+<td valign="top" width="1%">
+<b>&#183;</b></td><td width="99%" valign=top><a href="/web/20001206090000/http://dailynews.yahoo.com/fc/Tech/Computer_Viruses/"><font size=2>Computer Viruses</font></a></td></tr>
+<tr bgcolor="white">
+<td valign="top" width="1%">
+<b>&#183;</b></td><td width="99%" valign=top><a href="/web/20001206090000/http://dailynews.yahoo.com/fc/Tech/Cybercrime_and_Internet_Fraud/"><font size=2>Cybercrime and Internet Fraud</font></a></td></tr>
+<tr bgcolor="white">
+<td valign="top" width="1%">
+<b>&#183;</b></td><td width="99%" valign=top><a href="/web/20001206090000/http://dailynews.yahoo.com/fc/Tech/Digital_and_Interactive_Television/"><font size=2>Digital and Interactive TV</font></a></td></tr>
+<tr bgcolor="white">
+<td valign="top" width="1%">
+<b>&#183;</b></td><td width="99%" valign=top><a href="/web/20001206090000/http://dailynews.yahoo.com/fc/Tech/Linux/"><font size=2>Linux</font></a></td></tr>
+<tr bgcolor="white">
+<td valign="top" width="1%">
+<b>&#183;</b></td><td width="99%" valign=top><a href="/web/20001206090000/http://dailynews.yahoo.com/fc/Tech/Semiconductors_and_Computer_Chips/"><font size=2>Semiconductors and Computer Chips</font></a></td></tr>
+<tr bgcolor="white">
+<td valign="top" width="1%">
+<b>&#183;</b></td><td width="99%" valign=top><a href="/web/20001206090000/http://dailynews.yahoo.com/fc/Tech/Wireless_Communications_Devices/"><font size=2>Wireless Communications Devices</font></a></td></tr>
+<tr><td align=right colspan=2 bgcolor="#ffffff">
+<a href="/web/20001206090000/http://dailynews.yahoo.com/fc/Tech/"><font face="arial,helvetica" size=2><b>All Tech Full Coverage</b></font></a></td></tr>
+</table>
+</td></tr></table><br>
+<table border=0 cellpadding=3 cellspacing=0 width="100%">
+<tr bgcolor=ccccff><td><b><font face="arial,helvetica">
+Audio/Video</font></b></td></tr>
+<tr><td bgcolor="#eeeeee"><table cellspacing=0 cellpadding=2 width="100%" border=0><tr><td colspan=2 valign="top" bgcolor="#dcdcdc">
+<font size=2 face="Arial,Helvetica"><b>
+<a href="/web/20001206090000/http://rd.yahoo.com/dailynews/fvarchive/?http://vision.yahoo.com/">Yahoo! FinanceVision</a>
+</b></font>
+</td></tr>
+ <tr><td valign=top><img src=/web/20001206090000im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif height=13 width=14></td><td valign=top><font size="-1"><a href='javascript:rs(&quot;fv&quot;,&quot;/web/20001206090000/http://rd.yahoo.com/dailynews/fv/?/web/20001206090000/http://vision.yahoo.com/lc?id=935567&amp;aid=2646&quot;,300,240);'>Daily Tech Wrap</a></font></td></tr>
+<tr><td valign=top><img src=/web/20001206090000im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif height=13 width=14></td><td valign=top><font size="-1"><a href='javascript:rs(&quot;fv&quot;,&quot;/web/20001206090000/http://rd.yahoo.com/dailynews/fv/?/web/20001206090000/http://vision.yahoo.com/lc?id=935562&amp;aid=2644&quot;,300,240);'>New Products Report</a></font></td></tr>
+<tr><td valign=top><img src=/web/20001206090000im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif height=13 width=14></td><td valign=top><font size="-1"><a href='javascript:rs(&quot;fv&quot;,&quot;/web/20001206090000/http://rd.yahoo.com/dailynews/fv/?/web/20001206090000/http://vision.yahoo.com/lc?id=935120&amp;aid=2630&quot;,300,240);'>ATI All-in-Wonder Radeon</a></font></td></tr>
+<tr><td colspan=2 valign="top" bgcolor="#dcdcdc">
+<font size=2 face="Arial,Helvetica"><b>
+<a href="/web/20001206090000/http://dailynews.yahoo.com/h/a/g/bs/?u">Reuters Video</a>
+</b></font>
+</td></tr>
+ <tr><td width="1%" valign="top"><font size=2><img src="/web/20001206090000im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13></font></td><td>
+<a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001206090000/http://vision.yahoo.com/lc?&amp;p=news&amp;l=SAM&amp;a=0,30&amp;t=news&amp;sid=935728&amp;f=31042386&amp;m=rnv&amp;r=any&quot;,100,100);"><font size=2>Reuters Market Report with John Russell For December 5</font></a>
+</td></tr>
+
+<tr><td width="1%" valign="top"><font size=2><img src="/web/20001206090000im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13></font></td><td>
+<a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001206090000/http://vision.yahoo.com/lc?&amp;p=news&amp;l=SAM&amp;a=0,30&amp;t=news&amp;sid=935612&amp;f=31042386&amp;m=rnv&amp;r=any&quot;,100,100);"><font size=2>Reuters Consumer Report with Amanda Stultz for December 5</font></a>
+</td></tr>
+
+<tr><td width="1%" valign="top"><font size=2><img src="/web/20001206090000im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13></font></td><td>
+<a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001206090000/http://vision.yahoo.com/lc?&amp;p=news&amp;l=SAM&amp;a=0,30&amp;t=news&amp;sid=932969&amp;f=31042386&amp;m=rnv&amp;r=any&quot;,100,100);"><font size=2>Reuters Consumer Report with Amanda Stultz for December 4th</font></a>
+</td></tr>
+
+<tr><td colspan=2 valign="top" bgcolor="#dcdcdc">
+<font size=2 face="Arial,Helvetica"><b>
+<a href="/web/20001206090000/http://dailynews.yahoo.com/npr/?http://www.npr.org">NPR</a>
+</b></font>
+</td></tr>
+ <tr><td valign=top><b><img src="/web/20001206090000im_/http://us.i1.yimg.com/us.yimg.com/i/my/sound.gif" width=16 height=13 border=0 alt="Audio"></b></td><td valign=top><small><a href="/web/20001206090000/http://www.yahoo.com/dailynews/npr/?http://www.npr.org/ramfiles/atc/20001205.atc.16.ram">Pepsico Buys Quaker Oats</a></small></td></tr>
+<tr><td valign=top><b><img src="/web/20001206090000im_/http://us.i1.yimg.com/us.yimg.com/i/my/sound.gif" width=16 height=13 border=0 alt="Audio"></b></td><td valign=top><small><a href="/web/20001206090000/http://www.yahoo.com/dailynews/npr/?http://www.npr.org/ramfiles/me/20001205.me.03.ram">More Colleges Offer Degrees Online</a></small></td></tr>
+<tr><td colspan=2 valign="top" bgcolor="#dcdcdc">
+<font size=2 face="Arial,Helvetica"><b>
+<a href="/web/20001206090000/http://dailynews.yahoo.com/h/a/g/yn/latest?u">Yahoo! News</a>
+</b></font>
+</td></tr>
+ <tr><td width="1%" valign="top">
+<font size=2><img src="/web/20001206090000im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13></font></td><td>
+<font size=2><a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001206090000/http://vision.yahoo.com/lc?t=news&amp;p=news&amp;l=SAM&amp;a=0,30&amp;sid=934539&amp;f=33338352&amp;m=rnv&amp;r=any&amp;site=/web/20001206090000/http://dailynews.yahoo.com/h/nm/20001204/ts/mideast_leadall_dc_575.html&quot;,100,100);">Arafat Furious after Israeli Helicopter Fires Rockets into Bethlehem</a> - KTLA, Los Angeles</font>
+</td></tr>
+
+<tr><td width="1%" valign="top">
+<font size=2><img src="/web/20001206090000im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13></font></td><td>
+<font size=2><a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001206090000/http://vision.yahoo.com/lc?t=news&amp;p=news&amp;l=SAM&amp;a=0,30&amp;sid=934495&amp;f=33338352&amp;m=rnv&amp;r=any&amp;site=/web/20001206090000/http://dailynews.yahoo.com/h/nm/20001205/ts/election_bush_dc_10.html&quot;,100,100);">Victory for Bush as Gore Campaign is Denied a Key Vote Recount</a> - KTLA, Los Angeles</font>
+</td></tr>
+
+<tr><td width="1%" valign="top">
+<font size=2><img src="/web/20001206090000im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13></font></td><td>
+<font size=2><a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001206090000/http://vision.yahoo.com/lc?t=news&amp;p=news&amp;l=SAM&amp;a=0,30&amp;id=588107&amp;f=33338352&amp;m=rnv&amp;r=any&amp;site=/web/20001206090000/http://dailynews.yahoo.com/h/nm/20001204/pl/election_court_dc_26.html&quot;,100,100);">Al Gore Pleads His Case to the American People as Florida Court Hands Down Ruling</a> - WPTY, Memphis</font>
+</td></tr>
+
+<tr><td colspan=2 valign="top" bgcolor="#dcdcdc">
+<font size=2 face="Arial,Helvetica"><b>
+<a href="/web/20001206090000/http://www.abcnews.com/">ABCNews Radio</a>
+</b></font>
+</td></tr>
+<tr><td valign=top><b><img src="/web/20001206090000im_/http://us.i1.yimg.com/us.yimg.com/i/my/sound.gif" width=16 height=13 border=0 alt="Audio"></b></td><td valign=top><small><a href="/web/20001206090000/http://play.rbn.com/?abcradio/radionews/demand/business.ra">Hourly Top Stories</a></small></td></tr>
+</table>
+
+</td></tr>
+</table><br>
+<table border=0 cellpadding=3 cellspacing=0 width="100%">
+<tr bgcolor=ccccff><td><b><font face="arial,helvetica">
+Resources</font></b></td></tr>
+<tr><td bgcolor="#eeeeee"><table cellspacing=0 cellpadding=2 width="100%" border=0><tr><td colspan=2 valign="top" bgcolor="#dcdcdc">
+<font size=2 face="Arial,Helvetica"><b>
+Community Tools
+</b></font>
+</td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001206090000/http://messages.yahoo.com/yahoo/Computers___Internet/index.html"><small>Message Boards</small></a></td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001206090000/http://conversations.yahoo.com/dir/Conversations/News/Tech/"><small>Conversations</small></a></td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001206090000/http://chat.yahoo.com/?room=Computers%20Lobby::1600326587"><small>Chat</small></a></td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001206090000/http://dir.clubs.yahoo.com/Computers___Internet/"><small>Clubs</small></a></td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001206090000/http://www.broadcast.com/Computers_and_Technology/"><small>Net Events</small></a></td></tr>
+<tr><td colspan=2 valign="top" bgcolor="#dcdcdc">
+<font size=2 face="Arial,Helvetica"><b>
+<a href="/web/20001206090000/http://dir.yahoo.com/Computers_and_Internet/">Web Sites</a>
+</b></font>
+</td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001206090000/http://dir.yahoo.com/Computers_and_Internet/Hardware/"><small>Hardware</small></a></td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001206090000/http://dir.yahoo.com/Recreation/Games/Computer_Games/Shareware/"><small>Shareware</small></a></td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001206090000/http://dir.yahoo.com/Computers_and_Internet/Software/"><small>Software</small></a></td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001206090000/http://dir.yahoo.com/News_and_Media/Technology/"><small>Technology News</small></a></td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001206090000/http://dir.yahoo.com/Computers/Internet/World_Wide_Web/"><small>World Wide Web</small></a></td></tr>
+<tr><td colspan=2 valign="top" bgcolor="#dcdcdc">
+<font size=2 face="Arial,Helvetica"><b>
+<a href="/web/20001206090000/http://broadcast.com/Computers_and_Technology/">Yahoo! Events</a>
+</b></font>
+</td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001206090000/http://broadcast.com/Computers_and_Technology/Internet/"><small>Internet</small></a></td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001206090000/http://broadcast.com/Computers_and_Technology/Personal_Computers/"><small>Personal Computers</small></a></td></tr>
+</table>
+
+</td></tr>
+</table><br>
+
+<!-- _JC_  END RESOURCES -->
+
+</td>
+<!-- _JC_  END LEFT COLUMN -->
+
+
+<!-- _JC_  MAIN CONTENT-RIGHT 2 -->
+<td valign="top">
+<center><font face="arial,helvetica" size=2><b>
+<a href=/web/20001206090000/http://dailynews.yahoo.com/h/tc/nm/?u>Reuters</a> &nbsp;- &nbsp;<a href=/web/20001206090000/http://dailynews.yahoo.com/h/tc/cn/?u>CNET</a> &nbsp;- &nbsp;<a href=/web/20001206090000/http://dailynews.yahoo.com/h/tc/wr/?u>Internet&nbsp;Report</a> &nbsp;- &nbsp;<a href=/web/20001206090000/http://dailynews.yahoo.com/h/tc/zd/?u>ZDNet</a> &nbsp;- &nbsp;<a href=/web/20001206090000/http://dailynews.yahoo.com/h/tc/mc/?u>MacCentral</a> &nbsp;- &nbsp;AP &nbsp;
+</b></font></center>
+<p>
+<!-- _JC_  MARKET SNAPSHOT -->
+<!-- _JC_  empty right hand -->
+<!-- _JC_  END MARKET SNAPSHOT -->
+
+<!-- _JC_  STORIES -->
+ <a href="/web/20001206090000/http://dailynews.yahoo.com/h/ap/20001205/tc/high_tech_cities_1.html"><b>Bay Area Cities High on High Tech</b></a><br><font size=-1>San Jose may be the No. 1 provider of jobs in the high-tech sector, as new study finds, but other U.S. cities are rapidly catching up. </font><!-- FCStart -->
+<nobr><img border=0 src=/web/20001206090000im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif
+width=16 height=16 align="absbottom">
+<a href="/web/20001206090000/http://dailynews.yahoo.com/fc/Local/Silicon_Valley/"><font size=2>Full&nbsp;Coverage</font></a></nobr>
+<!-- FCEnd -->
+<br><br>
+<a href="/web/20001206090000/http://dailynews.yahoo.com/h/ap/20001205/el/recount_web_wars_1.html"><b>Bush, Gore Backers Spar on Internet</b></a><br><font size=-1>The Republicans and Democrats are launching Web pages and starting e-petitions to garner support in Florida for their candidate - George W. Bush or Al Gore. </font><br><br>
+<a href="/web/20001206090000/http://dailynews.yahoo.com/h/ap/20001205/tc/doubleclick_layoffs_2.html"><b>DoubleClick Cuts Workforce</b></a><br><font size=-1>DoubleClick Inc., the nation's largest Internet advertising agency, cut more than 120 employees from its workforce this week, the latest sign of belt-tightening in an industry experiencing growing pains. </font><br><br>
+<a href="/web/20001206090000/http://dailynews.yahoo.com/h/ap/20001205/tc/tsr_wireless_bankruptcy_1.html"><b>Report: TSR Declares Bankruptcy</b></a><br><font size=-1>TSR Wireless, a pager service provider and retailer of wireless devices, has reportedly declared bankruptcy and halted business, leaving 2.5 million subscribers in limbo and 1,700 people jobless. </font><!-- FCStart -->
+<nobr><img border=0 src=/web/20001206090000im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif
+width=16 height=16 align="absbottom">
+<a href="/web/20001206090000/http://dailynews.yahoo.com/fc/Business/Telecommunications/"><font size=2>Full&nbsp;Coverage</font></a></nobr>
+<!-- FCEnd -->
+<br><br>
+<a href="/web/20001206090000/http://dailynews.yahoo.com/h/ap/20001205/tc/mymp3_returns_1.html"><b>MP3.com Restores Listening Service</b></a><br><font size=-1>MP3.com restored its beleaguered music locker service Tuesday, seven months after lawsuits from record labels and music publishers forced its shutdown. </font><!-- FCStart -->
+<nobr><img border=0 src=/web/20001206090000im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif
+width=16 height=16 align="absbottom">
+<a href="/web/20001206090000/http://dailynews.yahoo.com/fc/Tech/Digital_Music/"><font size=2>Full&nbsp;Coverage</font></a></nobr>
+<!-- FCEnd -->
+<br><br>
+<a href="/web/20001206090000/http://dailynews.yahoo.com/h/ap/20001205/tc/apple_outlook_3.html"><b>Apple Warns of Earnings Slowdown</b></a><br><font size=-1>Apple Computer Inc. became the latest personal-computer maker to warn of disappointing earnings, saying Tuesday that first-quarter results will fall well short of Wall Street's expectations because of a drastic slowdown in sales. </font><!-- FCStart -->
+<nobr><img border=0 src=/web/20001206090000im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif
+width=16 height=16 align="absbottom">
+<a href="/web/20001206090000/http://dailynews.yahoo.com/fc/Business/Corporate_Earnings/"><font size=2>Full&nbsp;Coverage</font></a></nobr>
+<!-- FCEnd -->
+<br><br>
+<a href="/web/20001206090000/http://dailynews.yahoo.com/h/ap/20001205/tc/keystroke_evidence_1.html"><b>Computer Data Key to Racketeer Case</b></a><br><font size=-1>In a case that could test the limits of FBI surveillance in the Information Age, an alleged racketeer is going to trial on evidence gathered by agents who rigged his computer and monitored his every keystroke. </font><br><br>
+<a href="/web/20001206090000/http://dailynews.yahoo.com/h/ap/20001205/tc/no_free_internet_2.html"><b>ISPs Find Free Internet Costs Them</b></a><br><font size=-1>Online search portal AltaVista on Sunday will cut off some 3 million users from its free Internet access service, the latest sign that freebies over the Web do not always pay. </font><!-- FCStart -->
+<nobr><img border=0 src=/web/20001206090000im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif
+width=16 height=16 align="absbottom">
+<a href="/web/20001206090000/http://dailynews.yahoo.com/fc/Business/ISP_News/"><font size=2>Full&nbsp;Coverage</font></a></nobr>
+<!-- FCEnd -->
+<br><br>
+<a href="/web/20001206090000/http://dailynews.yahoo.com/h/ap/20001205/tc/lucent_spinoff_name_2.html"><b>Lucent Names Next Spinoff Company</b></a><br><font size=-1>The semiconductor and optical components business that Lucent Technologies plans to spin off as an independent company will be named Agere Systems. </font><br><br>
+<a href="/web/20001206090000/http://dailynews.yahoo.com/h/ap/20001205/tc/microsoft_digital_anvil_1.html"><b>Microsoft To Buy Digital Anvil</b></a><br><font size=-1>Microsoft Corp. is planning to purchase Digital Anvil, an Austin, Texas-based developer of computer games. </font><!-- FCStart -->
+<nobr><img border=0 src=/web/20001206090000im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif
+width=16 height=16 align="absbottom">
+<a href="/web/20001206090000/http://dailynews.yahoo.com/fc/Business/Microsoft_News/"><font size=2>Full&nbsp;Coverage</font></a></nobr>
+<!-- FCEnd -->
+<br><br>
+<p><font face="Arial,Helvetica" size=3><b>Earlier Stories</b></font><br>
+
+<a href="/web/20001206090000/http://dailynews.yahoo.com/h/ap/20001205/tc/china_internet_1.html">AT&T Plans China Internet Venture</a><br>
+<a href="/web/20001206090000/http://dailynews.yahoo.com/h/ap/20001205/tc/schools_zapped_2.html">Co. Cancels Free Computers Program</a><br>
+<a href="/web/20001206090000/http://dailynews.yahoo.com/h/ap/20001205/tc/china_telecoms_1.html">China To Tighten Web Regulation</a><br>
+<a href="/web/20001206090000/http://dailynews.yahoo.com/h/ap/20001205/tc/internet_pets_2.html">Pets.com To Sell Domain Name</a><br>
+<a href="/web/20001206090000/http://dailynews.yahoo.com/h/ap/20001205/tc/virtual_preemies_2.html">Preemie Parents Have Virtual Visits</a><br>
+<a href="/web/20001206090000/http://dailynews.yahoo.com/h/ap/20001204/tc/amazon_privacy_2.html">Groups Seek To Restrict Amazon.Com</a><br>
+<a href="/web/20001206090000/http://dailynews.yahoo.com/h/ap/20001204/tc/exciteathome_ugc_1.html">ExciteAtHome Calls Off Joint Venture</a><br>
+<a href="/web/20001206090000/http://dailynews.yahoo.com/h/ap/20001204/tc/knightridder_internet_1.html">Knight Ridder Subsidiary Cuts Jobs</a><br>
+<a href="/web/20001206090000/http://dailynews.yahoo.com/h/ap/20001204/tc/design_magazine_1.html">Ex-Wired Publisher Eyes Magazine</a><br>
+<a href="/web/20001206090000/http://dailynews.yahoo.com/h/ap/20001204/tc/customs_shopping_1.html">Customs Cautions Internet Shoppers</a><br>
+<a href="/web/20001206090000/http://dailynews.yahoo.com/h/ap/20001204/tc/portugal_telecom_1.html">Portugal Telecom Raises $630 Million</a><br>
+
+
+
+<!-- _JC_  END STORIES -->
+<p>
+
+<!-- _JC_  ARCHIVES DROPDOWN -->
+<table width="100%" border=0>
+<tr>
+<td width=200 valign=middle><font face="Arial,Helvetica" size=2><b>Archived Stories by Date:</b></font></td>
+<form name="form" action=/web/20001206090000/http://rc.yahoo.com/jump>
+<td valign=middle align=left width=275>
+<select name="u" size=1>
+ <option value="http://dailynews.yahoo.com/h/tc/ap/story.html?s=v/ap/20001205/tc/index.html">Dec 05</option>
+<option value="http://dailynews.yahoo.com/h/tc/ap/story.html?s=v/ap/20001204/tc/index.html">Dec 04</option>
+<option value="http://dailynews.yahoo.com/h/tc/ap/story.html?s=v/ap/20001203/tc/index.html">Dec 03</option>
+<option value="http://dailynews.yahoo.com/h/tc/ap/story.html?s=v/ap/20001202/tc/index.html">Dec 02</option>
+<option value="http://dailynews.yahoo.com/h/tc/ap/story.html?s=v/ap/20001201/tc/index.html">Dec 01</option>
+<option value="http://dailynews.yahoo.com/h/tc/ap/story.html?s=v/ap/20001130/tc/index.html">Nov 30</option>
+<option value="http://dailynews.yahoo.com/h/tc/ap/story.html?s=v/ap/20001129/tc/index.html">Nov 29</option>
+<option value="http://dailynews.yahoo.com/h/tc/ap/story.html?s=v/ap/20001128/tc/index.html">Nov 28</option>
+<option value="http://dailynews.yahoo.com/h/tc/ap/story.html?s=v/ap/20001127/tc/index.html">Nov 27</option>
+<option value="http://dailynews.yahoo.com/h/tc/ap/story.html?s=v/ap/20001126/tc/index.html">Nov 26</option>
+<option value="http://dailynews.yahoo.com/h/tc/ap/story.html?s=v/ap/20001125/tc/index.html">Nov 25</option>
+<option value="http://dailynews.yahoo.com/h/tc/ap/story.html?s=v/ap/20001124/tc/index.html">Nov 24</option>
+<option value="http://dailynews.yahoo.com/h/tc/ap/story.html?s=v/ap/20001123/tc/index.html">Nov 23</option>
+<option value="http://dailynews.yahoo.com/h/tc/ap/story.html?s=v/ap/20001122/tc/index.html">Nov 22</option>
+<option value="http://dailynews.yahoo.com/h/tc/ap/story.html?s=v/ap/20001121/tc/index.html">Nov 21</option>
+
+</select><input type=submit value=Go></td>
+</form>
+</tr></table>
+<!-- _JC_  END ARCHIVES DROPDOWN -->
+
+<!-- _JC_  NEWS SEARCH -->
+<table cellpadding=2 cellspacing=0 border=0 width="100%" >
+<tr valign="middle">
+<td bgcolor="#dcdcdc"><font face="Arial,Helvetica" size=2><b>News Search</b></font></td>
+</tr>
+<tr><form action="/web/20001206090000/http://search.news.yahoo.com/search/news"><td align="center">
+<input type=text size=25 name=p>
+<input type=submit value="Search">
+<a href="/web/20001206090000/http://search.news.yahoo.com/search/news/options"><font face="Arial,Helvetica" size=2>Advanced</font></a><br><small><b>Search:</b>&nbsp;<input
+type=radio name=c checked value="news">&nbsp;Stories&nbsp;&nbsp;<input
+type=radio name=c value="news_photos">&nbsp;Photos&nbsp;&nbsp;<input
+type=radio name=c value="fullcov">&nbsp;Full&nbsp;Coverage</small><input type=hidden name=n value=20></td></form></tr>
+</table>
+<!-- _JC_  END SEARCH -->
+
+</td>
+</tr>
+</table>
+<!-- _JC_  END MAIN TABLE -->
+
+<!-- _JC_  BOTTOM NAV -->
+<!-- _JC_  NAV -->
+<table border=0 cellspacing=0 cellpadding=0 width="675">
+<tr bgcolor="#333366">
+<td>
+<table border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td height=5></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="center">
+<table border=0 cellspacing=0>
+<tr>
+<td align="center"><a href="/web/20001206090000/http://dailynews.yahoo.com/h/?u"><font size=2 face="arial,helvetica">Home</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001206090000/http://dailynews.yahoo.com/h/ts/?u"><font size=2 face="arial,helvetica">Top&nbsp;Stories</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001206090000/http://dailynews.yahoo.com/h/bs/?u"><font  size=2 face="arial,helvetica">Business</font></a>&nbsp;</td>
+<td align="center" bgcolor="#333366">&nbsp;<a href="/web/20001206090000/http://dailynews.yahoo.com/h/tc/?u"><font size=2 face="arial,helvetica" color="#eeeeff">Tech</font></a>&nbsp;</td>
+<td align="center">&nbsp;<a href="/web/20001206090000/http://dailynews.yahoo.com/h/pl/?u"><font size=2 face="arial,helvetica">Politics</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001206090000/http://dailynews.yahoo.com/h/wl/?u"><font size=2 face="arial,helvetica">World</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001206090000/http://dailynews.yahoo.com/h/lo/?u"><font size=2 face="arial,helvetica">Local</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001206090000/http://dailynews.yahoo.com/h/en/?u"><font size=2 face="arial,helvetica">Entertainment</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001206090000/http://dailynews.yahoo.com/h/sp/?u"><font size=2 face="arial,helvetica">Sports</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001206090000/http://dailynews.yahoo.com/h/sc/?u"><font size=2 face="arial,helvetica">Science</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001206090000/http://dailynews.yahoo.com/h/hl/?u"><font size=2 face="arial,helvetica">Health</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001206090000/http://news.yahoo.com/fc/?u"><font size=2 face="arial,helvetica">Full&nbsp;Coverage</font></a></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<!-- _JC_  NAV -->
+<!-- _JC_  END BOTTOM NAV -->
+<hr size=0 width=675>
+<!-- _JC_  FOOTER -->
+<table width=675>
+<tr>
+<td valign="top" align="center">
+<font size=2>
+
+Copyright &copy; 2000 The Associated Press.
+All rights reserved. 
+<br>
+The information contained in the AP News report may not be published,
+broadcast, rewritten or redistributed without the prior written
+authority of The Associated Press.
+<a href="/web/20001206090000/http://help.yahoo.com/help/news/">Questions or Comments</a>
+<br>
+<a href="/web/20001206090000/http://privacy.yahoo.com/privacy/us/news">Privacy Policy</a> -
+<a href="/web/20001206090000/http://docs.yahoo.com/info/terms/">Terms of Service</a>
+</font></td>
+</tr></table>
+<!-- _JC_  END FOOTER -->
+</center>    
+</body>
+</html>
+ 
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 9:00:00 Dec 6, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:56:12 Jan 7, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

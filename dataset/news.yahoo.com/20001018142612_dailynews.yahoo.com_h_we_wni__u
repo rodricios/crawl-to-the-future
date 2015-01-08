@@ -1,0 +1,598 @@
+<html><head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app12.us.archive.org";archive_analytics.values.server_ms=326;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<title>Yahoo!
+Weather 
+News
+</title>
+<!-- _JC_  JAVASCRIPT FOR ARCHIVE DROP DOWN -->
+<SCRIPT LANGUAGE="JavaScript">
+<!-- _JC_  Begin -->
+var remote = null
+function rs(n,u,w,h) {
+remote = window.open(u, n, 'width=' + w + ',height=' + h +',resizable=no,scrollbars=no');
+if (remote != null) {
+if (remote.opener == null)
+remote.opener = self;
+window.name = 'yahooNewsRoot';
+remote.location.href = u;
+}
+}
+
+function formHandler(form){
+var URL = document.form.u.options[document.form.u.selectedIndex].value;
+window.location.href = URL;
+}
+
+<!-- _JC_  End -->
+</SCRIPT>
+<!-- _JC_  END JAVASCRIPT FOR ARCHIVE DROP DOWN -->
+</head><body
+bgcolor=ffffff>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://dailynews.yahoo.com/h/we/wni/?u";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "18";
+var displayMonth = "Oct";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://dailynews.yahoo.com/h/we/wni/?u" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20001018014740" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Sep
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 1:47:40 Oct 18, 2000">OCT</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20001201185900/http://dailynews.yahoo.com/h/we/wni/?u" title="1 Dec 2000"><strong>DEC</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 1:47:40 Oct 18, 2000">18</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20001201185900/http://dailynews.yahoo.com/h/we/wni/?u" title="18:59:00 Dec 1, 2000"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   1999
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 1:47:40 Oct 18, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20011020004310/http://dailynews.yahoo.com/h/we/wni/?u" title="20 Oct 2001"><strong>2001</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20001018014740*/http://dailynews.yahoo.com/h/we/wni/?u" title="See a list of every capture for this URL">152 captures</a>
+           <div class="r" title="Timespan for captures of this URL">18 Oct 00 - 30 Jan 05</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:9:000000000107_2001:-1:00110001fc94_2002:-1:010001000101_2003:-1:000000110000_2004:-1:010200000010_2005:-1:100000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<center><table
+border=0
+width="620"
+cellspacing=0
+cellpadding=0><tr><td
+valign=middle
+width="1%"><a
+href="/web/20001018014740/http://weather.yahoo.com/"><img
+src="/web/20001018014740im_/http://us.yimg.com/i/we/ma4.gif"
+alt="Yahoo
+Weather"
+border=0
+width=306
+height=40></A></td><td
+valign=middle><table
+border=0
+cellspacing=0
+cellpadding=0
+width="100%"><tr><td
+align=right
+valign=bottom
+nowrap><font
+face="Arial,Helvetica"
+size=-1><A
+HREF="/web/20001018014740/http://my.yahoo.com/">Customize</A>
+-
+<A
+HREF="/web/20001018014740/http://www.yahoo.com/">Yahoo!
+Home</A>
+-
+<A
+HREF="/web/20001018014740/http://help.yahoo.com/help/weather/">Help</A></font></td></tr></table><hr
+size=0
+noshade></td><td><a
+href="/web/20001018014740/http://rd.yahoo.com/DailyNews/*http://www.wni.com/"><img
+src="/web/20001018014740im_/http://us.yimg.com/i/we/co/wni.gif"
+hspace=2
+width=143
+height=40
+border=0
+alt="Weathernews
+Inc."></a></td></tr></table><p><table
+border=0><tr><td
+valign=middle>
+ <!-- SpaceID=0 robot -->
+
+</td><td
+align=center>
+ <!-- SpaceID=0 robot -->
+
+</td></tr></table>
+<p><p><table
+border=0
+cellspacing=0
+cellpadding=2
+width="620"><tr><td
+bgcolor=9999cc><font
+face="arial,helvetica"
+size=+1><b>Yahoo!
+Weather
+News</b></font><font
+face="arial,helvetica">
+-
+updated
+ 7:19 PM ET Oct 17
+</font></td><td
+align=right
+bgcolor=9999cc><table
+cellpadding=3
+cellspacing=0><tr
+valign=top><td
+align=center
+valign=middle
+bgcolor=ccccff><font
+face="arial"
+size="-1"><a
+href="/web/20001018014740/http://rd.yahoo.com/addtomy/*http://edit.yahoo.com/config/set_news?.add=wthr"><IMG
+align=left
+src="/web/20001018014740im_/http://us.yimg.com/i/my/my16.gif"
+width=16
+height=16
+border=0
+alt="My">Add
+to
+My
+Yahoo!</a></font></td></tr></table></td></tr><tr><td
+colspan=2
+valign=top
+width="620"><font
+face="arial"
+size="-1"><b><a
+href="/web/20001018014740/http://weather.yahoo.com/">Weather</a>
+&gt;
+News
+and
+Features</b></font></td></tr></table>
+<table
+width=620
+cellspacing=0
+cellpadding=0
+border=0
+align=center><tr><td
+valign=top
+width=160>
+
+<!-- _JC_  LEFTHAND -->
+<table
+cellspacing=0
+width=160
+cellpadding=4
+align=right
+bgcolor=ffffff><tr><td><table
+border=0
+cellpadding=3
+cellspacing=0
+width="100%"><tr
+bgcolor=dcdcdc><td><b><font
+face="arial,helvetica">Your
+Weather</font></b></td></tr><tr><td>
+<form
+method=get
+action="/web/20001018014740/http://search.weather.yahoo.com/weather/query.cgi">
+<font
+size="-1">Enter
+Zip
+or
+City</font>
+<INPUT
+TYPE="text"
+NAME="q"
+VALUE=""
+size="12"><br><font
+size=-1><input
+type=submit
+value=Search
+size="10"></font>
+<FONT
+SIZE=2><br>
+(e.g.
+95135
+<B>or</B>
+San
+Francisco
+<B>or</B>
+
+San
+Francisco,
+CA)
+</FONT>
+</form>
+</td>
+</tr></table><table
+border=0
+cellpadding=3
+cellspacing=0
+width="100%"><tr
+bgcolor=dcdcdc><td><b><font
+face="arial,helvetica">Full
+Coverage</font></b></td></tr><tr><td><table
+border=0><tr><td
+valign=top><b>&#183;</b></td><td
+valign=top><a
+href="/web/20001018014740/http://fullcoverage.yahoo.com/Full_Coverage/Science/Environment_and_Nature_News"><small>Environment
+and
+Nature
+News</small></a></td></tr><tr><td
+valign=top><b>&#183;</b></td><td
+valign=top><a
+href="/web/20001018014740/http://fullcoverage.yahoo.com/Full_Coverage/World/Global_Warming"><small>Global
+Warming</small></a></td></tr><tr><td
+valign=top><b>&#183;</b></td><td
+valign=top><a
+href="/web/20001018014740/http://fullcoverage.yahoo.com/Full_Coverage/US/Severe_Weather"><small>U.S.
+Severe
+Weather</small></a></td></tr></table></td></tr></table><table
+border=0
+cellpadding=3
+cellspacing=0
+width="100%"><tr
+bgcolor=dcdcdc><td><b><font
+face="arial,helvetica">Yahoo!
+Categories</font></b></td></tr><tr><td><table
+border=0><tr><td
+valign=top><b>&#183;</b></td><td
+valign=top><a
+href="/web/20001018014740/http://dir.yahoo.com/Science/Earth_Sciences/Meteorology/Maps_and_Observations/"><small>Maps
+and
+Observations</small></a></td></tr><tr><td
+valign=top><b>&#183;</b></td><td
+valign=top><a
+href="/web/20001018014740/http://dir.yahoo.com/Science/Earth_Sciences/Meteorology/"><small>Meteorology</small></a></td></tr><tr><td
+valign=top><b>&#183;</b></td><td
+valign=top><a
+href="/web/20001018014740/http://dir.yahoo.com/Science/Earth_Sciences/Meteorology/Storm_Chasing/"><small>Storm
+Chasing</small></a></td></tr><tr><td
+valign=top><b>&#183;</b></td><td
+valign=top><a
+href="/web/20001018014740/http://dir.yahoo.com/News_and_Media/Weather/"><small>Weather
+News</small></a></td></tr><tr><td
+valign=top><b>&#183;</b></td><td
+valign=top><a
+href="/web/20001018014740/http://dir.yahoo.com/Science/Earth_Sciences/Meteorology/Weather_Phenomena/"><small>Weather
+Phenomena</small></a></td></tr></table></td></tr></table><table
+border=0
+cellpadding=3
+cellspacing=0
+width="100%"><tr
+bgcolor=dcdcdc><td><b><font
+face="arial,helvetica">Related
+Links</font></b></td></tr><tr><td><table
+border=0><tr><td
+valign=top><b>&#183;</b></td><td
+valign=top><a
+href="/web/20001018014740/http://www.intellicast.com/"><small>Intellicast</small></a></td></tr><tr><td
+valign=top><b>&#183;</b></td><td
+valign=top><a
+href="/web/20001018014740/http://www.nws.noaa.gov/"><small>National
+Weather
+Service</small></a></td></tr><tr><td
+valign=top><b>&#183;</b></td><td
+valign=top><a
+href="/web/20001018014740/http://www.usatoday.com/weather/wfront.htm"><small>USA
+Today
+Weather</small></a></td></tr><tr><td
+valign=top><b>&#183;</b></td><td
+valign=top><a
+href="/web/20001018014740/http://www.weather.com/twc/homepage.twc"><small>Weather
+Channel</small></a></td></tr><tr><td
+valign=top><b>&#183;</b></td><td
+valign=top><a
+href="/web/20001018014740/http://cirrus.sprl.umich.edu/wxnet/"><small>WeatherNet</small></a></td></tr></table></td></tr></table></td></tr></table>
+<!-- _JC_  END LEFTHAND -->
+
+</td><td><table
+width=460
+cellspacing=0
+cellpadding=0><tr><td>&nbsp;</td><td
+valign=top
+width="100%">
+ <!-- SpaceID=0 robot -->
+
+<!-- _JC_  STORIES -->
+ <a href="/web/20001018014740/http://dailynews.yahoo.com/h/wni/20001017/we/u_s_forecast_summary_october_17_new_england_new_rain__2.html"><b>U.S. Forecast Summary, October 17: New England. New Rain.</b></a><br><font size=-1>Tonight's Weather in the West:  Strong ridging over Wyoming has resulted in sunny skies and pleasant conditions throughout Wyoming south - into Utah and Colorado and east - into Nevada, California and Arizona. </font> <br><br>
+<a href="/web/20001018014740/http://dailynews.yahoo.com/h/wni/20001017/we/u_s_forecast_summary_october_18_new_england_more_new_rain__2.html"><b>U.S. Forecast Summary, October 18: New England. More New
+Rain.</b></a><br><font size=-1>Wednesday&#146;s Weather in the West: The high pressure cell over Wyoming will relax today - as low pressure moves onshore across Washington and Oregon - and this disturbance will spread clouds, valley rain and mountain snow - over Washington, Oregon, Idaho and Western Montana. </font> <br><br>
+<a href="/web/20001018014740/http://dailynews.yahoo.com/h/wni/20001017/we/world_forecast_summary_october_17_michael_to_visit_bermuda__2.html"><b>World Forecast Summary, October 17: "Michael" To Visit
+Bermuda?</b></a><br><font size=-1>The Western Atlantic: Tropical Storm "Michael" is strengthening - and the center of the storm is now about 450 miles West-Southwest of Bermuda. The system has been nearly stationary - but a slow North-Northeastward motion is expected to begin by Thursday. "Michael's" current maximum sustained winds are near 50 mph - with higher gusts - and further strengthening is forecast through Thursday. </font> <br><br>
+<a href="/web/20001018014740/http://dailynews.yahoo.com/h/wni/20001017/we/u_s_forecast_summary_october_17_n_e_south_start_your_umbrellas_2.html"><b>U.S. Forecast Summary, October 17: N.E./South: Start Your
+Umbrellas</b></a><br><font size=-1>Today's Weather in the West: High pressure remained strong over Wyoming this morning - and weak disturbance overriding this ridge - has spread occasional clouds across Northern Idaho and Montana. </font> <br><br>
+<a href="/web/20001018014740/http://dailynews.yahoo.com/h/wni/20001017/we/u_s_forecast_summary_october_18_it_s_the_south_n_e_again_2.html"><b>U.S. Forecast Summary, October 18: It's The South & N.E.
+Again</b></a><br><font size=-1>Wednesday&#146;s Weather in the West: Onshore movement of the next Pacific disturbance - will return showers to Washington and part of Oregon Tuesday night - and this precip will then push east - into Idaho by Wednesday morning - and into Montana by early afternoon. </font> <br><br>
+<a href="/web/20001018014740/http://dailynews.yahoo.com/h/wni/20001017/we/world_forecast_summary_october_17_michael_not_that_kinda_angel_2.html"><b>World Forecast Summary, October 17: "Michael." Not That Kinda
+Angel</b></a><br><font size=-1>The Western Atlantic: Tropical Depression "Thirteen" has now strengthened into Tropical Storm "Michael" - and is nearly stationary off the Southeast U.S. coast - approximately 400 miles West-Southwest of Bermuda. Maximum sustained winds are now around 40 mph - with gusts up to 50 mph. "Michael" is expected to be influenced by a fairly weak trough - coming from the mainland U.S. This trough will allow the storm to move toward the Northeast - in another 36 to 48 hours. At this time, it doesn't appear that Tropical Storm "Michael" will be any danger to Bermuda. </font> <br><br>
+<a href="/web/20001018014740/http://dailynews.yahoo.com/h/wni/20001017/we/ask_the_weather_guru_just_plain_rain_2.html"><b>Ask the Weather Guru: Just Plain Rain</b></a><br><font size=-1>Hi Guru: Can you tell me how many days it rained in Leechburg., Pennsylvania &#150; from July, 2000 &#150; to August 11th, 2000? And on which days did it rain? Thank you, Beth. </font> <br><br>
+<a href="/web/20001018014740/http://dailynews.yahoo.com/h/wni/20001017/we/weather_records_it_s_the_maine_caribou_2.html"><b>Weather Records: It's The Maine Caribou</b></a><br><font size=-1>Record Lows for Tuesday, October 17: </font> <br><br>
+<a href="/web/20001018014740/http://dailynews.yahoo.com/h/wni/20001017/we/this_day_in_weather_history_1781_ma_146_nature_enlists_in_local_militia_2.html"><b>This Day in Weather History: 1781. Ma&#146; Nature Enlists In Local
+Militia</b></a><br><font size=-1>On October 17th, 1781 &#150; it was looking pretty good for the up-start Colonials &#150; who had been fighting their war of independence &#150; against an army that, prior to the war &#150; was touted world-wide &#150; as the finest fighting force on the face of the planet: the British. </font> <br><br>
+<a href="/web/20001018014740/http://dailynews.yahoo.com/h/wni/20001017/we/weather_pros_147_fog_the_continuing_saga_148__2.html"><b>Weather Pros: &#147;Fog. The Continuing Saga.&#148;</b></a><br><font size=-1>If you didn&#146;t know: one of the three most common ways that &#147;fog&#148; forms &#150; is by the process known as &#147;Radiational.&#148; This is sometimes called &#147;Valley&#148; fog &#150; since valleys and other enclosed, or low-lying areas are so often inclined to get the stuff. </font> <br><br>
+<font face="Arial,Helvetica" size=3><b>Earlier Stories</b></font><br>
+<a href="/web/20001018014740/http://dailynews.yahoo.com/h/wni/20001016/we/u_s_forecast_summary_october_16_thunder_in_the_south_2.html">U.S. Forecast Summary, October 16: Thunder In The South</a><br>
+<a href="/web/20001018014740/http://dailynews.yahoo.com/h/wni/20001016/we/u_s_forecast_summary_october_17_northeast_magnetize_your_umbrellas_2.html">U.S. Forecast Summary, October 17: Northeast: Magnetize Your
+Umbrellas</a><br>
+<a href="/web/20001018014740/http://dailynews.yahoo.com/h/wni/20001016/we/world_forecast_summary_october_16_heads_up_india_2.html">World Forecast Summary, October 16: Heads Up India</a><br>
+<a href="/web/20001018014740/http://dailynews.yahoo.com/h/wni/20001016/we/u_s_forecast_summary_october_16_just_try_to_stay_dry_2.html">U.S. Forecast Summary, October 16: Just Try To Stay Dry</a><br>
+<a href="/web/20001018014740/http://dailynews.yahoo.com/h/wni/20001016/we/u_s_forecast_summary_october_17_we_be_mostly_damp_2.html">U.S. Forecast Summary, October 17: We Be Mostly Damp</a><br>
+<a href="/web/20001018014740/http://dailynews.yahoo.com/h/wni/20001016/we/world_forecast_summary_october_16_a_bengal_tiger_2.html">World Forecast Summary, October 16: A Bengal Tiger</a><br>
+<a href="/web/20001018014740/http://dailynews.yahoo.com/h/wni/20001016/we/ask_the_weather_guru_how_145_bout_some_turkey_dumplin_146__2.html">Ask the Weather Guru: How &#145;Bout Some Turkey, Dumplin&#146;?</a><br>
+<a href="/web/20001018014740/http://dailynews.yahoo.com/h/wni/20001016/we/this_day_in_weather_history_1913_on_the_docket_of_the_bay_2.html">This Day in Weather History: 1913. On The Docket Of The Bay</a><br>
+<a href="/web/20001018014740/http://dailynews.yahoo.com/h/wni/20001016/we/weather_pros_hi_welcome_to_147_fog_week_148__2.html">Weather Pros: Hi. Welcome to &#147;Fog Week&#148;</a><br>
+<a href="/web/20001018014740/http://dailynews.yahoo.com/h/wni/20001015/we/u_s_forecast_summary_oct_15_pressure-packed_south_2.html">U.S. Forecast Summary, Oct. 15: Pressure-Packed South</a><br>
+<a href="/web/20001018014740/http://dailynews.yahoo.com/h/wni/20001015/we/u_s_forecast_summary_sept_16_rain_washes_northwest_northeast_2.html">U.S. Forecast Summary, Sept. 16: Rain Washes Northwest, Northeast</a><br>
+
+
+<!-- _JC_  END STORIES -->
+<p>
+<hr
+size=0><p>
+<!-- _JC_  ARCHIVES DROPDOWN -->
+<table width="100%" border=0>
+<tr>
+<td width=180 valign=bottom><font face="Arial,Helvetica" size=2><b>Archived Stories by Date:</b></font></td>
+<form name="form" action=/web/20001018014740/http://rc.yahoo.com/jump>
+<td valign=bottom align=left width=295>
+<select name="u" size=1 onChange="formHandler()">
+ <option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20001016/we/index.html">Oct 16</option>
+<option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20001015/we/index.html">Oct 15</option>
+<option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20001014/we/index.html">Oct 14</option>
+<option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20001013/we/index.html">Oct 13</option>
+<option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20001012/we/index.html">Oct 12</option>
+<option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20001011/we/index.html">Oct 11</option>
+<option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20001010/we/index.html">Oct 10</option>
+<option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20001009/we/index.html">Oct 09</option>
+<option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20001008/we/index.html">Oct 08</option>
+<option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20001007/we/index.html">Oct 07</option>
+<option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20001006/we/index.html">Oct 06</option>
+<option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20001005/we/index.html">Oct 05</option>
+<option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20001004/we/index.html">Oct 04</option>
+<option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20001003/we/index.html">Oct 03</option>
+<option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20001002/we/index.html">Oct 02</option>
+<option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20001001/we/index.html">Oct 01</option>
+<option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20000930/we/index.html">Sep 30</option>
+<option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20000929/we/index.html">Sep 29</option>
+<option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20000928/we/index.html">Sep 28</option>
+<option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20000927/we/index.html">Sep 27</option>
+<option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20000926/we/index.html">Sep 26</option>
+<option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20000925/we/index.html">Sep 25</option>
+<option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20000924/we/index.html">Sep 24</option>
+<option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20000923/we/index.html">Sep 23</option>
+<option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20000922/we/index.html">Sep 22</option>
+<option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20000921/we/index.html">Sep 21</option>
+<option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20000920/we/index.html">Sep 20</option>
+<option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20000919/we/index.html">Sep 19</option>
+<option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20000918/we/index.html">Sep 18</option>
+<option value="http://dailynews.yahoo.com/h/we/wni/story.html?s=v/wni/20000917/we/index.html">Sep 17</option>
+
+</select><input type=submit value=Go></td>
+</form>
+</tr></table>
+<!-- _JC_  END ARCHIVES DROPDOWN -->
+
+<!-- _JC_  NEWS SEARCH -->
+<table cellpadding=2 cellspacing=0 border=0 width="100%" >
+<tr valign="middle">
+<td bgcolor="#dcdcdc"><font face="Arial,Helvetica" size=2><b>News Search</b></font></td>
+</tr>
+<tr><form action="/web/20001018014740/http://search.news.yahoo.com/search/news"><td align="center">
+<input type=text size=25 name=p>
+<input type=submit value="Search">
+<a href="/web/20001018014740/http://search.news.yahoo.com/search/news/options"><font face="Arial,Helvetica" size=2>Advanced</font></a><br><small><b>Search:</b>&nbsp;<input
+type=radio name=c checked value="news">&nbsp;Stories&nbsp;&nbsp;<input
+type=radio name=c value="news_photos">&nbsp;Photos&nbsp;&nbsp;<input
+type=radio name=c value="fullcov">&nbsp;Full&nbsp;Coverage</small><input type=hidden name=n value=20></td></form></tr>
+</table>
+<!-- _JC_  END SEARCH -->
+
+</td></tr></table></td></tr></table><center><table
+width=620
+border=0><tr><td
+align=center><hr
+size=0
+width=620><small><a
+href=/web/20001018014740/http://help.yahoo.com/help/news/>Questions
+or
+Comments</a><br></small><small><center>Copyright
+&copy;
+2000
+<a
+href=/web/20001018014740/http://www.yahoo.com/>Yahoo!</a>
+and
+<a
+href="/web/20001018014740/http://www.wni.com/">Weathernews
+Inc.</a>
+All
+rights
+reserved.</center></small></td></tr></table></center></center></body></html> 
+ 
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 1:47:40 Oct 18, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:59:41 Jan 7, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

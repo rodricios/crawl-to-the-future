@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app3.us.archive.org";archive_analytics.values.server_ms=339;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+    <script>(function(k){if(typeof(k)==="undefined"){k={}}if(typeof(k.performance)==="undefined"){k.performance={}}k.performance.userTimingJsNow=false;k.performance.userTimingJsNowPrefixed=false;k.performance.userTimingJsUserTiming=false;k.performance.userTimingJsUserTimingPrefixed=false;k.performance.userTimingJsPerformanceTimeline=false;k.performance.userTimingJsPerformanceTimelinePrefixed=false;var f=[];var b=[];var d=null;var g,e;if(typeof(k.performance.now)!=="function"){k.performance.userTimingJsNow=true;b=["webkitNow","msNow","mozNow"];for(g=0;g<b.length;g++){if(typeof(k.performance[b[g]])==="function"){k.performance.now=k.performance[b[g]];k.performance.userTimingJsNowPrefixed=true;break}}var l=+(new Date());if(k.performance.timing&&k.performance.timing.navigationStart){l=k.performance.timing.navigationStart}if(typeof(k.performance.now)!=="function"){if(Date.now){k.performance.now=function(){return Date.now()-l}}else{k.performance.now=function(){return +(new Date())-l}}}}var h=function(){};var a=function(){};var o=[];var n=false;if(typeof(k.performance.getEntries)!=="function"){k.performance.userTimingJsPerformanceTimeline=true;f=["webkit","moz"];b=["getEntries","getEntriesByName","getEntriesByType"];for(g=0;g<b.length;g++){for(e=0;e<f.length;e++){d=f[e]+b[g].substr(0,1).toUpperCase()+b[g].substr(1);if(typeof(k.performance[d])==="function"){k.performance[b[g]]=k.performance[d];k.performance.userTimingJsPerformanceTimelinePrefixed=true}}}h=function(i){o.push(i);if(i.entryType==="measure"){n=true}};var c=function(){if(!n){return}o.sort(function(j,i){return j.startTime-i.startTime});n=false};a=function(j,i){g=0;while(g<o.length){if(o[g].entryType!==j){g++;continue}if(typeof(i)!=="undefined"&&o[g].name!==i){g++;continue}o.splice(g,1)}};if(typeof(k.performance.getEntries)!=="function"){k.performance.getEntries=function(){c();return o.slice(0)}}if(typeof(k.performance.getEntriesByType)!=="function"){k.performance.getEntriesByType=function(j){if(typeof(j)==="undefined"||(j!=="mark"&&j!=="measure")){return[]}if(j==="measure"){c()}var i=[];for(g=0;g<o.length;g++){if(o[g].entryType===j){i.push(o[g])}}return i}}if(typeof(k.performance.getEntriesByName)!=="function"){k.performance.getEntriesByName=function(j,p){if(p&&p!=="mark"&&p!=="measure"){return[]}if(typeof(p)!=="undefined"&&p==="measure"){c()}var i=[];for(g=0;g<o.length;g++){if(typeof(p)!=="undefined"&&o[g].entryType!==p){continue}if(o[g].name===j){i.push(o[g])}}return i}}}if(typeof(k.performance.mark)!=="function"){k.performance.userTimingJsUserTiming=true;f=["webkit","moz","ms"];b=["mark","measure","clearMarks","clearMeasures"];for(g=0;g<b.length;g++){for(e=0;e<f.length;e++){d=f[e]+b[g].substr(0,1).toUpperCase()+b[g].substr(1);if(typeof(k.performance[d])==="function"){k.performance[b[g]]=k.performance[d];k.performance.userTimingJsUserTimingPrefixed=true}}}var m={};if(typeof(k.performance.mark)!=="function"){k.performance.mark=function(j){var i=k.performance.now();if(typeof(j)==="undefined"){throw new SyntaxError("Mark name must be specified")}if(k.performance.timing&&j in k.performance.timing){throw new SyntaxError("Mark name is not allowed")}if(!m[j]){m[j]=[]}m[j].push(i);h({entryType:"mark",name:j,startTime:i,duration:0})}}if(typeof(k.performance.clearMarks)!=="function"){k.performance.clearMarks=function(i){if(!i){m={}}else{m[i]=[]}a("mark",i)}}if(typeof(k.performance.measure)!=="function"){k.performance.measure=function(r,s,p){var i=k.performance.now();if(!r){throw new Error("Measure must be specified")}if(!s){h({entryType:"measure",name:r,startTime:0,duration:i});return}var j=0;if(k.performance.timing&&s in k.performance.timing){if(s!=="navigationStart"&&k.performance.timing[s]===0){throw new Error(s+" has a timing of 0")}j=k.performance.timing[s]-k.performance.timing.navigationStart}else{if(s in m){j=m[s][m[s].length-1]}else{throw new Error(s+" mark not found")}}var q=i;if(p){q=0;if(k.performance.timing&&p in k.performance.timing){if(p!=="navigationStart"&&k.performance.timing[p]===0){throw new Error(p+" has a timing of 0")}q=k.performance.timing[p]-k.performance.timing.navigationStart}else{if(p in m){q=m[p][m[p].length-1]}else{throw new Error(p+" mark not found")}}}var t=q-j;h({entryType:"measure",name:r,startTime:j,duration:t})}}if(typeof(k.performance.clearMeasures)!=="function"){k.performance.clearMeasures=function(i){a("measure",i)}}}if(typeof define!=="undefined"&&define.amd){define([],function(){return k.performance})}else{if(typeof module!=="undefined"&&typeof(module.exports)!=="undefined"){module.exports=k.performance}}}(typeof(window)!=="undefined"?window:undefined));</script>
+    <script>performance.mark('headStart');</script>
+    
+    
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Battle of the Ants</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+    
+<meta property="og:type" content="article">
+<meta property="og:title" content="Battle of the Ants" />
+<meta property="og:description" content="Which is the most notorious ant species on earth?" />
+
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    </script>
+    <link href="./static/css/common.1685.css" rel="stylesheet" type="text/css" />
+    
+  <link href="./static/css/story.1685.css" rel="stylesheet" type="text/css" />
+  
+    <link rel="stylesheet" type="text/css" href="/web/20150105202030cs_/http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic|Open+Sans:400italic,700italic,400,700">
+  
+  
+    <style>#story-body .text-over-media-background-image {min-width: 0;min-height: 0;}</style>
+
+<style type="text/css">
+html,body{font-family:Helmet,Freesans,Helvetica,Arial,sans-serif}.story-footer{display:none}.story a,.story a:hover,.story a:active{color:#7a0000}.story ul{padding:0}.story ul li{list-style:none}.story .section,.story .caption{color:#1e1e1e;font-family:Helmet,Freesans,Helvetica,Arial,sans-serif}.story .caption{margin-top:10px;opacity:.8;font-size:14px;line-height:1.384}.story .main-column{font-size:18px;padding:36px 30px 80px}.story .section-header{background-color:transparent;z-index:5;border:none;box-shadow:none;position:fixed;top:0;z-index:1101;width:240px;height:35px}.story .section-header .header-panel .header-placeholder .header-sub-title{display:none}.story .section-header .header-panel.header-logo-panel{top:6px;left:6px}.story .section-header .header-panel.header-logo-panel .header-logo{width:auto;height:auto}.story .section-header .header-panel.header-logo-panel .header-logo-link .text-area{background-color:rgba(255,255,255,0.8)}.story .section-header .header-panel.header-social-panel{display:none}.story .icon-menu:before{border-color:#fff}.story .section-navigation{height:38px;top:0;position:fixed;padding-left:220px}.story .section-navigation a,.story .section-navigation a:visited{color:#fff;position:relative;line-height:35px;font-size:16px;line-height:1;height:38px;padding:10px 1.1% 0;margin-right:1.5%;font-weight:normal}.story .section-navigation a.active,.story .section-navigation a:visited.active{border-bottom:3px solid #cc0101}.story .section-navigation a:hover,.story .section-navigation a:visited:hover,.story .section-navigation a:focus,.story .section-navigation a:visited:focus,.story .section-navigation a:active,.story .section-navigation a:visited:active{color:#fff}.story .section-navigation a:last-child,.story .section-navigation a:visited:last-child{margin-right:20px}.story .section-text-over-media .text{min-width:80%}.story .section-text-over-media .text.top{top:10%}.story .section-text-over-media .text.left{left:5%}.story .section-text-over-media .text.bottom{bottom:15% !important}.story .section-text-over-media .text.right{right:5%}.story .section-text-over-media .text.center.top{top:10%}.story .section-text-over-media .text.center.left{left:5%}.story .section-text-over-media .text.center.right{right:5%}.story .section-text-over-media .text.center.bottom{bottom:15% !important}.story .section-text-over-media .text-inner{font-family:Helmet,Freesans,Helvetica,Arial,sans-serif;line-height:1.05;letter-spacing:-0.0425em;font-weight:bold}.story .section-text-over-media .text-over-media-caption{color:#fff}.story .section-text-over-media.has-text .background-overlay{background-color:rgba(0,0,0,0.25)}.story .section-title{margin-top:38px}body.editor .story .section-title{margin-top:38px}body.editor .story .section-title .text-inner{max-width:100%}.story .section-title .text-inner{max-width:1400px;margin:0 auto}.story .section-title .story-title{font-family:Helmet,Freesans,Helvetica,Arial,sans-serif;line-height:1;letter-spacing:-0.0425em;padding-top:0}.story .section-title .story-heading{letter-spacing:-0.03em;font-weight:normal}.story .section-title .story-metadata{font-family:Helmet,Freesans,Helvetica,Arial,sans-serif;letter-spacing:0;font-size:24px;background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAMAAADzN3VRAAAAUVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////8IN+deAAAAGnRSTlMA4E7lWZiA/rnzT3j2oF5qTPyRVrHwlcHDtEEq3x8AAABoSURBVCjP1ZE3EoAwEAMXm5xMDvr/Q6kxRw9qNXO3ktCb+L6TQxgljQHym+NrWCQtUPv7tQ7mVesMXfSn7WHSBH0bExwwnAPsT7YGgMagThzgEitPBmRm0iolrewOSsqXdoqt+Ndyhi6cCjmhs1pJ+QAAAABJRU5ErkJggg==') center bottom no-repeat;padding-bottom:28px;font-size:15px}.story .section-title .story-metadata em{color:#fff !important}.story .st-block[data-type=Quote] .st-block__inner,.story .quote-block{border:none}.story .st-block[data-type=Quote] .st-block__inner .quote-cite,.story .quote-block .quote-cite{margin-left:50px}.story .st-block[data-type=Quote] .st-block__inner .quote-cite:before,.story .quote-block .quote-cite:before{display:none}.story .st-block[data-type=Quote] .st-block__inner .st-input-label{margin-left:50px;margin-top:30px}.story .st-block[data-type=Quote] .st-block__inner .st-input-label .label-text{display:none}.story .st-block[data-type=Quote] .st-block__inner blockquote,.story blockquote{margin:0;position:relative;color:#000;font-family:Georgia,Times,serif;font-weight:normal;font-style:italic;width:100%;text-align:left;font-size:32px;line-height:1.3;padding-left:50px;padding-right:4%}.story .st-block[data-type=Quote] .st-block__inner blockquote:before,.story blockquote:before{display:block;position:absolute;content:'';top:-8px;left:0;width:40px;height:40px;background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKoAAACnCAMAAAC2NjduAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGBQTFRFAAAA////JiYm9fX1NjY22traZmZmqKiodXV1uLi47OzszMzMEhISioqKgYGBCgoK5OTkXFxcm5ubGhoaU1NTwsLCQkJCS0tLkpKS8PDw+fn59/f3/v7+AgIC/Pz8BQUFx3iX7AAAAAJ0Uk5T/wDltzBKAAAD1klEQVR42uzaiXLiMBAE0LHBJzY+wBCDSf7/LzepzZ0Qd5tW1aZ29AFdT0gaSRYW/ZpmTv3HqWWx3e9WYuBj6HGnpE6beh/bUxNS30Jl1DFLd/bSVNQy695CNdSkPjzYuyahPoZe3ocKqKt+bZ/a7dTxa+jN1CFtzMTUaei+Cb2Nuqpj+67dRB2vhN5CHbeVmZpaXg1dTr2eeQO1zJuroUupP2UuprY/hi6j3t9VZmrqqf45dBF1WJvJqUM8E7qAWnZmcmo7H8pT+8rk1OkOCGWp5dFMTm0PSChJLXampxaVyamn3ExOhUMZarI2PRUPJahDZXpq0Ziemj2YntpfTE/dmsmpU86EgtRTanrquTM9dTyYnlqSoRB1XJueWsamp65YKUKlu49QVwfTU3kpQD3z0nkqP1AA9XQ0PXVJ92ep09701EXdn6XmFoCaWgBqZgGovQWgbpoA1OEhALXdmZ7aVqanntemp64Wh/5ETS0AdW8BqAuXlMVpNqnX6VPodWq5ZE5V+z6J1BO16t5CTTNSh3ozzWxT9C51OX4MNcFIVXkC3E/o0Hb+MYgcqbhHjqgJV6bX/Rl5t2JG6rIfsKsUU6ceugF7YmOGv2vR66kg9Av1hF8mdgX8cLAThH6h1nBoOsJfJ7aKUFtaUmP4J31cqOiaigfiORg9pKbMZzR0m85XxMt1Ap7SttQzJPjJp6Ye2fcBpNFRIv1EBfvPSRON9BM1DyAFZ+qs9CN1bAJIy0Yj/UiFampHPqFANTWNOOoJ2VOqkpOekdBdSVKh3b8nf1Ro988ikoqcfg7sWx8SeoxIaguENgkpRSpV07LUWrNQ+UUFhho1VPGJpQJHyviepSJDdRcFGH90oRoz/k0ZYPybkabG+uqvDTVmqApWugFCB5oKlOp4Yql3QGhEUzv5OQU7/tY8dX6rvrSsdKqUoYZPVXpPRaYqEWr4VOXHH5iqOU/tAqx/ZKpmPBUogPRUjSpp6DO1BI6/tLTVhj5Th/nUPU0tVCfVD9Q+wPkPWVVbnpoLN0DmVl3wVOADCP+/ROCbcslTY+FeHeEbILVU/1LPIfYqoKqseeomRAHYiPtvaFlJaWom7r+hqTlN7cX9N7QC8mW1Fvff0NtaT1Nzcf8tRLGGD2s9TwVOaxuaepQeAV+owL6S0NS1eLM29LRabLD2equdgA+rGRj6jmq69npUWAlDnepUpzrVqU51qlOd6lSnOtWpTnWqU53qVKc61alOdapTnepUpzrVqU51qlOd6lSnOtWpTnWqU53qVKc61alOdapTnXqF+iuaU/9z6h8BBgCb2UXuDqi0mgAAAABJRU5ErkJggg==') no-repeat center;background-size:100% auto}.story .st-block[data-type=Quote] .st-block__inner blockquote p,.story blockquote p{line-height:1.3;margin:0 auto 30px}.story .block.cite{margin:3% 0 10%;width:100%;font-family:Helmet,Freesans,Helvetica,Arial,sans-serif;color:#404040;text-align:left;font-size:14px;line-height:1.384}.story .scrollmation-two-column .scrollmation-slide{padding-top:60px}@media (max-width:1100px){.story .icon-menu{display:none}.story .section-header{background-color:rgba(44,44,44,0.9);width:100%;height:38px;top:0}.story .section-header .header-panel.header-logo-panel{left:15px}.story .section-header .small-menu{margin-top:-10px;height:auto;width:auto;margin-right:-15px;padding:0}.story .section-header .small-menu a{display:block;height:38px;width:44px;border-left:1px solid #666}.story .section-header .small-menu a:before{display:block;position:absolute;content:'';top:0;left:0;background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAQAAAAxWje/AAABIElEQVR4AZ3QIUhzYQCF4TN0TMPCmjLkFyxr2hRcMGgyWGyr2hc0KRgsglGjTUEQMVgMxsWVgWFg+Q1rKzJkDia+hiGe7/qh1/uc/oYjiWVC+yiyMj3cFUJICHGO6/MvErjEvTDjgelE/RoltkJoD3lA7BBaRbZxHnCPFJKBPG1cm7wF6oTWUTIg1gjtotGY4hl3i2IBcYPrUSZ28StzxAPM0sddIESV0CHyCd8BoSpjtHBPTP4UmOA/rkWd0CaKBGwbhN5w9yge8N3h3IBKmkCFAXHHKE1AHBHToZg2UKTDdzWUNiBqJDVQioCtgRuy8NfAPEO+nKJ0Ad8Jn7qUsgRKdBnZQlkCYhuAJrmsgRxN3llEWQNiiTOUIWAr/Bb4AENa/PnNY+efAAAAAElFTkSuQmCC') no-repeat center;background-size:50% auto;width:100%;height:100%}.story .section-header .small-menu a:hover,.story .section-header .small-menu a:active,.story .section-header .small-menu a:focus{text-decoration:none}.story .section-header .small-menu a img{display:none}.story .navigation .menu-overlay{top:38px}.story .section-navigation{top:38px;padding:0;box-shadow:none;height:auto}.story .section-navigation a,.story .section-navigation a:visited{padding:12px 8px;border-bottom:1px solid rgba(255,255,255,0.1);opacity:1;margin:0}.story .section-navigation a:last-child,.story .section-navigation a:visited:last-child{margin:0;border:none}.story .section-navigation a.active,.story .section-navigation a:visited.active{background:transparent;border-bottom:1px solid rgba(255,255,255,0.1)}}@media (max-width:755px){.story .main-column{font-size:16px;line-height:1.375;padding-left:0;padding-right:0}.story .caption{font-size:13px}.story .scrollmation-background .two-column-grid{background:transparent}.story .scrollmation-background .scrollmation-slides:after{display:none}.story .section-title{margin-top:38px}.story .section-title .text{width:90%}.story .section-title .story-heading{padding:5px 0}.story .section-title .story-metadata{font-size:14px;bottom:10px}.story .st-block[data-type=Quote] .st-block__inner blockquote,.story blockquote{font-size:24px;padding-left:36px}.story .st-block[data-type=Quote] .st-block__inner blockquote:before,.story blockquote:before{width:26px;height:26px;top:-2px}.story .block.cite{font-size:13px}}.bbc_shorthand_footer{font-family:Arial,serif;font-size:14px;max-width:944px;margin-left:auto;margin-right:auto;padding:0 30px;position:static}.bbc_shorthand_footer *{position:static;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}.bbc_shorthand_footer h2{font-weight:bold;font-size:1.8em;margin:.5em 0}.bbc_shorthand_footer h3{font-weight:bold;font-size:1.4em;border-bottom:1px solid #000;padding-bottom:10px}.bbc_shorthand_footer div{padding:20px 0;margin:0}.bbc_shorthand_footer-credits{width:60%;float:left}.bbc_shorthand_footer-credits dl{line-height:1.4}.bbc_shorthand_footer-credits dt{font-weight:bold;width:12em;float:left}.bbc_shorthand_footer-credits dd{margin-left:12em}.bbc_shorthand_footer-share{width:25%;float:right;padding:20px 0}.bbc_shorthand_footer-more{clear:both;background-color:#ededed;margin:0;padding:5px 30px 20px}.bbc_shorthand_footer-more .bbc_shorthand_footer-more-inner{max-width:900px;margin:0 auto;padding:0}.bbc_shorthand_footer-more ul{padding:0}.bbc_shorthand_footer-more ul li{display:inline-block;vertical-align:top;text-align:left;width:30%;margin-right:1%}.bbc_shorthand_footer-more ul:last-child{margin-right:0}.bbc_shorthand_footer-more ul img{display:block;width:100%}.bbc_shorthand_footer-more ul span{display:block;font-size:22px;padding:15px;background-color:#cf0000;min-height:135px}.bbc_shorthand_footer-more ul a{color:#fff;text-decoration:none}.bbc_shorthand_footer-more ul a:hover{color:#cdcdcd}.ns__share{overflow:hidden;clear:both;padding:0 !important;margin:0 !important;zoom:1;list-style:none;font-family:sans-serif}.ns__share .share__title{font-size:24px}.ns__share .share__title a{letter-spacing:normal;font-weight:normal;font-size:.5em}.ns__share .share__tools{margin:.5em -0.25em;overflow:hidden;zoom:1}.ns__share ul li.share__tool{background-image:none;padding:0;margin-right:.25em;margin-left:.25em}.ns__share .share__tool{float:left;margin-bottom:.5em;width:100%;padding-left:.25em;padding-right:.25em;box-sizing:border-box}.ns__share .share__tool a{background-color:#615f5d;display:block;height:40px;overflow:hidden;text-align:center;font-size:16px;line-height:40px;font-weight:bold;color:#fff}.ns__share .share__tool a span{display:block}.ns__share .share__tool--facebook a,.ns__share .share__tool--twitter a{background:#615f5d url("/web/20150105202030im_/http://news.bbcimg.co.uk/news/special/2014/newsspec_6862/english/css/f/share_tools.png") no-repeat}.ns__share .share__tool--facebook a span,.ns__share .share__tool--twitter a span{text-indent:-5000px}.ns__share .share__tool--facebook a{background-color:#3c5a98;background-position:center -106px}.ns__share .share__tool--facebook a:hover{background-color:#4e71b9}.ns__share .share__tool--twitter a{background-color:#47c7fa;background-position:center -148px}.ns__share .share__tool--twitter a:hover{background-color:#79d6fb}.ns__share .share__tool--email a{text-decoration:none;padding-top:14px;padding-bottom:4px;height:22px;line-height:1}.ns__share .share__tool--email a span{display:inline;color:#fff;font-size:1em;font-weight:bold;padding:3px 0 3px 28px;background:transparent url("/web/20150105202030im_/http://news.bbcimg.co.uk/news/special/2014/newsspec_6862/english/css/f/share_tools.png") 0 2px no-repeat}.ns__share .share__tool--email a:hover{text-decoration:none;background-color:#7b7976}@media (max-width:849px) and (min-width:545px){.ns__share .share__tool{width:30%}}.ns__desktop .ns__share .share__title{padding-top:12px;padding-right:16px;float:left}.ns__desktop .ns__share .share__tools{padding-top:6px;margin:0;float:left}.ns__desktop .ns__share .share__tool{width:25px}.ns__desktop .ns__share .share__tool a{height:25px}.ns__desktop .ns__share .share__tool--facebook a{background-position:0 -42px}.ns__desktop .ns__share .share__tool--facebook a:hover{background-color:#3c5a98;background-position:0 -67px}.ns__desktop .ns__share .share__tool--twitter a{background-position:-24px -42px}.ns__desktop .ns__share .share__tool--twitter a:hover{background-color:#47c7fa;background-position:-24px -67px}.ns__desktop .ns__share .share__tool--email{width:100px}.ns__desktop .ns__share .share__tool--email a{text-decoration:none;padding-top:4px;padding-bottom:8px;height:13px;line-height:1}.ns__desktop .ns__share .share__tool--email a span{font-size:.95em;font-weight:normal;background-position:0 3px}.ns__desktop .ns__share .share__tool--email a:hover{text-decoration:none;background-color:#7b7976}#orb-footer{font-size:65%;font-family:Arial,Helvetica,freesans,sans-serif}.orb-footer-grey,.orb-footer-grey .orb-footer-inner,.orb-footer-grey .orb-footer-inner a,.orb-footer-grey{border-color:#949494}.orb-footer-grey,.orb-footer-grey a,.orb-footer-grey small{color:#fff}.orb-footer-grey{background-color:#4c4c4c}.orb-footer{border-top:1px solid #ccc}.orb-footer a:hover{color:#fff;text-decoration:underline}.orb-footer aside{display:block}.orb-footer h2{margin:0;padding:0}#orb-aside{padding-top:0;font-weight:bold}#orb-aside .orb-footer-inner{padding-top:0;border:0}.orb-footer-primary-links{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline}.b-g-p,.b-r .b-g-p{padding:0 8px}.orb-nav-sec{padding-top:.65em;font-size:1.3em;line-height:3.2;color:#333}.orb-nav-sec .orb-hilight{font-weight:bold}.orb-nav-sec .orb-footer-inner{padding-top:1.6em;border-top:1px solid #ccc}.orb-nav-sec ul{list-style-type:none;overflow:hidden;margin-left:-8px;padding:0;margin-top:0;margin-bottom:0}.orb-nav-sec ul li{float:left;min-width:50%}.orb-nav-sec ul li a{display:block;border-right:1px solid #ccc;margin-left:8px;padding-right:8px;text-decoration:none}.orb-location-w .orb-w,.orb-location-d .orb-d{display:block}#orb-contentinfo{padding-top:2.83em;line-height:2.3}#orb-contentinfo .orb-footer-inner ul li a{border:none}#orb-contentinfo small{display:block;padding:1em 0;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}@media screen and (min-width:480px){.b-g-p{padding:0 16px}.orb-nav-sec li{min-width:33.33%}}@media screen and (max-width:1007px) and (min-width:600px){.orb-nav-sec .orb-footer-inner h2 img{width:84px;height:24px}.orb-nav-sec ul{margin-left:-16px}.orb-nav-sec ul li{min-width:25%}.orb-nav-sec ul li:nth-of-type(4n) a{border:0}.orb-nav-sec ul li a{padding-right:16px;margin-left:16px}}@media screen and (min-width:1008px){.b-g-p,.b-r .b-g-p{max-width:976px;margin:0 auto;padding:0 15px}.b-g-m,.b-r .b-g-m{max-width:976px;margin:0 auto}.orb-nav-sec .orb-footer-inner .orb-footer-promo-loaded{border-bottom:1px solid #ccc;margin-bottom:1.23em}.orb-nav-sec .orb-footer-inner h2 img{width:84px;height:24px}.orb-nav-sec ul{margin-left:-16px}.orb-nav-sec ul li{min-width:16.667%}.orb-nav-sec ul li:nth-child(6n) a{border:0}.orb-nav-sec ul li a{padding-right:16px;margin-left:16px}#orb-footer-promo{display:block}}@media (max-width:850px){.bbc_shorthand_footer-credits,.bbc_shorthand_footer-share{float:none;width:100%}}@media (max-width:624px){.bbc_shorthand_footer{padding-right:15px;padding-left:15px}.bbc_shorthand_footer div{margin:0}.bbc_shorthand_footer-credits dt{width:9em}.bbc_shorthand_footer-credits dd{margin-left:9em}.b-g-p,.b-r .b-g-p{padding:0 15px}.bbc_shorthand_footer-more{padding-right:15px;padding-left:15px}.bbc_shorthand_footer-more ul li{display:block;position:relative;margin:0 auto 15px;width:100%}.bbc_shorthand_footer-more ul li:last-child{margin-bottom:0}.bbc_shorthand_footer-more ul li a{display:block}.bbc_shorthand_footer-more ul li img{width:47%}.bbc_shorthand_footer-more ul li span{width:53%;position:absolute;right:0;top:0;bottom:0;font-size:16px;padding:10px;min-height:0}}@media (max-width:404px){.bbc_shorthand_footer-credits dt{float:none;margin-top:.5em}.bbc_shorthand_footer-credits dd{margin-left:0}}
+</style>
+  
+  
+
+  <style type="text/css" id="custom-css">
+    .section-title .background-overlay {
+    background-color:rgba(0,0,0,.3);
+}
+  </style>
+
+
+    
+      <script   type="text/javascript" src="./static/js/head.1685.js" charset="utf-8"></script>
+    
+    <!--[if IE 8]>
+      <script>
+        videojs.options.flash.swf = "./static/components/videojs/video-js.swf"
+      </script>
+    <![endif]-->
+    
+<script>(function(p, w, de) {
+  'use strict';
+  p.mark('startImages');
+
+  var assets;
+  try {
+    assets = JSON.parse('[[\u0022title\u0022, {\u0022portrait\u0022: null, \u0022media_type\u0022: \u0022image\u0022, \u0022landscape\u0022: {\u0022width\u0022: 1048, \u0022ratio\u0022: 1.7792869269949065, \u0022high_res_image\u0022: \u0022./media/yellow_crazy_ant_antweb_high_res_crop\u002Dhr.jpg\u0022, \u0022medium_res_image\u0022: \u0022./media/yellow_crazy_ant_antweb_high_res_crop\u002Dmr.jpg\u0022, \u0022low_res_image\u0022: \u0022./media/yellow_crazy_ant_antweb_high_res_crop\u002Dlr.jpg\u0022, \u0022height\u0022: 589}}], [\u0022scrollmation\u002Dbackground\u0022, {\u0022portrait\u0022: null, \u0022media_type\u0022: \u0022image\u0022, \u0022landscape\u0022: {\u0022width\u0022: 4288, \u0022ratio\u0022: 1.5056179775280898, \u0022high_res_image\u0022: \u0022./media/01294479\u002Dhr_1.jpg\u0022, \u0022medium_res_image\u0022: \u0022./media/01294479\u002Dmr_1.jpg\u0022, \u0022low_res_image\u0022: \u0022./media/01294479\u002Dlr_1.jpg\u0022, \u0022height\u0022: 2848}}], [\u0022text\u002Dover\u002Dmedia\u0022, {\u0022portrait\u0022: null, \u0022media_type\u0022: \u0022image\u0022, \u0022landscape\u0022: {\u0022width\u0022: 1786, \u0022ratio\u0022: 1.7788844621513944, \u0022high_res_image\u0022: \u0022./media/big_headed_ant_3_antweb_crop\u002Dhr.jpg\u0022, \u0022medium_res_image\u0022: \u0022./media/big_headed_ant_3_antweb_crop\u002Dmr.jpg\u0022, \u0022low_res_image\u0022: \u0022./media/big_headed_ant_3_antweb_crop\u002Dlr.jpg\u0022, \u0022height\u0022: 1004}}], [\u0022scrollmation\u002Dbackground\u0022, {\u0022portrait\u0022: null, \u0022media_type\u0022: \u0022image\u0022, \u0022landscape\u0022: {\u0022width\u0022: 5400, \u0022ratio\u0022: 1.520698394818361, \u0022high_res_image\u0022: \u0022./media/01438241\u002Dhr_1.jpg\u0022, \u0022medium_res_image\u0022: \u0022./media/01438241\u002Dmr_1.jpg\u0022, \u0022low_res_image\u0022: \u0022./media/01438241\u002Dlr_1.jpg\u0022, \u0022height\u0022: 3551}}], [\u0022text\u002Dover\u002Dmedia\u0022, {\u0022portrait\u0022: null, \u0022media_type\u0022: \u0022image\u0022, \u0022landscape\u0022: {\u0022width\u0022: 1115, \u0022ratio\u0022: 1.7783094098883572, \u0022high_res_image\u0022: \u0022./media/argentine_ant_4_high_res_crop\u002Dhr.jpg\u0022, \u0022medium_res_image\u0022: \u0022./media/argentine_ant_4_high_res_crop\u002Dmr.jpg\u0022, \u0022low_res_image\u0022: \u0022./media/argentine_ant_4_high_res_crop\u002Dlr.jpg\u0022, \u0022height\u0022: 627}}], [\u0022scrollmation\u002Dbackground\u0022, {\u0022portrait\u0022: null, \u0022media_type\u0022: \u0022image\u0022, \u0022landscape\u0022: {\u0022width\u0022: 6300, \u0022ratio\u0022: 1.5, \u0022high_res_image\u0022: \u0022./media/c0127929\u002Dcrazy_ant_paratrechina_longicornis_\u002Dspl\u002Dhr_1.jpg\u0022, \u0022medium_res_image\u0022: \u0022./media/c0127929\u002Dcrazy_ant_paratrechina_longicornis_\u002Dspl\u002Dmr_1.jpg\u0022, \u0022low_res_image\u0022: \u0022./media/c0127929\u002Dcrazy_ant_paratrechina_longicornis_\u002Dspl\u002Dlr_1.jpg\u0022, \u0022height\u0022: 4200}}], [\u0022text\u002Dover\u002Dmedia\u0022, {\u0022portrait\u0022: null, \u0022media_type\u0022: \u0022image\u0022, \u0022landscape\u0022: {\u0022width\u0022: 786, \u0022ratio\u0022: 1.7782805429864252, \u0022high_res_image\u0022: \u0022./media/little_fire_ant_5_antweb\u002Dhr.jpg\u0022, \u0022medium_res_image\u0022: \u0022./media/little_fire_ant_5_antweb\u002Dmr.jpg\u0022, \u0022low_res_image\u0022: \u0022./media/little_fire_ant_5_antweb\u002Dlr.jpg\u0022, \u0022height\u0022: 442}}], [\u0022scrollmation\u002Dbackground\u0022, {\u0022portrait\u0022: null, \u0022media_type\u0022: \u0022image\u0022, \u0022landscape\u0022: {\u0022width\u0022: 1920, \u0022ratio\u0022: 1.7777777777777777, \u0022high_res_image\u0022: \u0022./media/01459273_1920x1080_ba\u002Dhr_1.jpg\u0022, \u0022medium_res_image\u0022: \u0022./media/01459273_1920x1080_ba\u002Dmr_1.jpg\u0022, \u0022low_res_image\u0022: \u0022./media/01459273_1920x1080_ba\u002Dlr_1.jpg\u0022, \u0022height\u0022: 1080}}], [\u0022text\u002Dover\u002Dmedia\u0022, {\u0022portrait\u0022: null, \u0022media_type\u0022: \u0022image\u0022, \u0022landscape\u0022: {\u0022width\u0022: 1502, \u0022ratio\u0022: 1.7796208530805686, \u0022high_res_image\u0022: \u0022./media/red_imported_fire_ant_antweb2_high_res_crop\u002Dhr.jpg\u0022, \u0022medium_res_image\u0022: \u0022./media/red_imported_fire_ant_antweb2_high_res_crop\u002Dmr.jpg\u0022, \u0022low_res_image\u0022: \u0022./media/red_imported_fire_ant_antweb2_high_res_crop\u002Dlr.jpg\u0022, \u0022height\u0022: 844}}], [\u0022scrollmation\u002Dbackground\u0022, {\u0022portrait\u0022: null, \u0022media_type\u0022: \u0022image\u0022, \u0022landscape\u0022: {\u0022width\u0022: 1920, \u0022ratio\u0022: 1.7777777777777777, \u0022high_res_image\u0022: \u0022./media/55256321\u002Dmegacephala17_crop\u002Dhr_1.jpg\u0022, \u0022medium_res_image\u0022: \u0022./media/55256321\u002Dmegacephala17_crop\u002Dmr_1.jpg\u0022, \u0022low_res_image\u0022: \u0022./media/55256321\u002Dmegacephala17_crop\u002Dlr_1.jpg\u0022, \u0022height\u0022: 1080}}], [\u0022media\u0022, {\u0022poster\u0022: {\u0022ratio\u0022: 1.5056179775280898, \u0022text\u0022: \u0022\u0022, \u0022object_id\u0022: null, \u0022section_resource_uri\u0022: null, \u0022width\u0022: 4288, \u0022position\u0022: 1, \u0022portrait\u0022: null, \u0022media_type\u0022: \u0022image\u0022, \u0022height\u0022: 2848, \u0022id\u0022: 24580, \u0022landscape\u0022: {\u0022width\u0022: 4288, \u0022ratio\u0022: 1.5056179775280898, \u0022high_res_image\u0022: \u0022./media/01319135\u002Dhr.jpg\u0022, \u0022medium_res_image\u0022: \u0022./media/01319135\u002Dmr.jpg\u0022, \u0022low_res_image\u0022: \u0022./media/01319135\u002Dlr.jpg\u0022, \u0022image\u0022: \u0022./media/01319135.jpg\u0022, \u0022id\u0022: 18978, \u0022height\u0022: 2848}, \u0022resource_uri\u0022: \u0022/api/v1/image/24580/\u0022}, \u0022video_files\u0022: [{\u0022filename\u0022: \u0022./media/hdv_earth_ant_1.mp4\u0022, \u0022encoding\u0022: \u0022video/mp4\u0022, \u0022id\u0022: 1385, \u0022media_resource_uri\u0022: \u0022/api/v1/video/24581/\u0022, \u0022resource_uri\u0022: \u0022/api/v1/video\u002Dfile/1385/\u0022}, {\u0022filename\u0022: \u0022./media/hdv_earth_ant_1.webm\u0022, \u0022encoding\u0022: \u0022video/webm\u0022, \u0022id\u0022: 1386, \u0022media_resource_uri\u0022: \u0022/api/v1/video/24581/\u0022, \u0022resource_uri\u0022: \u0022/api/v1/video\u002Dfile/1386/\u0022}], \u0022fallback\u0022: {\u0022ratio\u0022: 1.8028169014084507, \u0022text\u0022: \u0022\u0022, \u0022object_id\u0022: null, \u0022section_resource_uri\u0022: null, \u0022width\u0022: 1280, \u0022position\u0022: 1, \u0022portrait\u0022: null, \u0022media_type\u0022: \u0022image\u0022, \u0022height\u0022: 710, \u0022id\u0022: 24579, \u0022landscape\u0022: {\u0022width\u0022: 1280, \u0022ratio\u0022: 1.8028169014084507, \u0022high_res_image\u0022: \u0022./media/placeholder\u002Dhr.jpg\u0022, \u0022medium_res_image\u0022: \u0022./media/placeholder\u002Dmr.jpg\u0022, \u0022low_res_image\u0022: \u0022./media/placeholder\u002Dlr.jpg\u0022, \u0022image\u0022: \u0022./media/placeholder.jpg\u0022, \u0022id\u0022: 18977, \u0022height\u0022: 710}, \u0022resource_uri\u0022: \u0022/api/v1/image/24579/\u0022}, \u0022media_type\u0022: \u0022video\u0022}], [\u0022scrollmation\u002Dbackground\u0022, {\u0022portrait\u0022: null, \u0022media_type\u0022: \u0022image\u0022, \u0022landscape\u0022: {\u0022width\u0022: 1920, \u0022ratio\u0022: 1.7777777777777777, \u0022high_res_image\u0022: \u0022./media/55256322\u002Dgracilipes14_crop\u002Dhr_1.jpg\u0022, \u0022medium_res_image\u0022: \u0022./media/55256322\u002Dgracilipes14_crop\u002Dmr_1.jpg\u0022, \u0022low_res_image\u0022: \u0022./media/55256322\u002Dgracilipes14_crop\u002Dlr_1.jpg\u0022, \u0022height\u0022: 1080}}]]')
+  } catch(e) {}
+
+  var AssetPreloader = {
+    assets: assets,
+    vw: w.innerWidth || de.clientWidth,
+    vh: w.innerHeight || de.clientHeight
+  };
+  AssetPreloader.isPortrait = AssetPreloader.vh > AssetPreloader.vw;
+  AssetPreloader.twoColumnScrollmationRes = (AssetPreloader.vw < 755) ? 'low' : 'medium';
+
+  // Calculate which resolution images we want
+  if (AssetPreloader.vw < 755) {
+    AssetPreloader.res = 'low';
+  } else if (AssetPreloader.vw < 1400) {
+    AssetPreloader.res = 'medium';
+  } else if (AssetPreloader.vw > 1400) {
+    AssetPreloader.res = 'high';
+  }
+
+  /**
+   * Copyright (c) Mozilla Foundation /web/20150105202030/http://www.mozilla.org/
+   * This code is available under the terms of the MIT License
+   */
+  if (!Array.prototype.forEach) { Array.prototype.forEach = function(fun /*, thisp*/) { var len = this.length >>> 0; if (typeof fun != "function") { throw new TypeError(); } var thisp = arguments[1]; for (var i = 0; i < len; i++) { if (i in this) { fun.call(thisp, this[i], i, this); } } }; }
+
+  AssetPreloader.loadImage = function(image, res, sectionType, onLoad) {
+    if (image.media_type !== 'image') {
+      return;
+    }
+
+    var img = new Image();
+    var orientation = (AssetPreloader.isPortrait && image.portrait !== null) ? 'portrait' : 'landscape';
+    img.src = image[orientation][res + '_res_image'];
+    img.onload = function() {
+      p.mark(sectionType + 'ImageLoaded');
+      onLoad();
+    };
+  }
+
+  var VIDEO_FILE_TYPES = {
+    'video/mp4': 'h264',
+    'video/webm': 'webm'
+  }
+
+  AssetPreloader.loadVideo = function(videoFiles, onLoad) {
+    if (!Modernizr.video) {
+      return false;
+    }
+
+    var video = document.createElement('video');
+    for (var i = 0, l = videoFiles.length; i < l; i++) {
+      var videoFile = videoFiles[i];
+      var videoType = VIDEO_FILE_TYPES[videoFile.encoding];
+
+      if (Modernizr.video[videoType] === 'probably') {
+        video.src = videoFile.filename;
+        video.addEventListener('canplaythrough', function() {
+          onLoad();
+        });
+        video.load();
+        break;
+      }
+    }
+  }
+
+  AssetPreloader.createSectionLoadingTracker = function(trackerName, imagesLength) {
+    p.mark(trackerName+'Loading');
+    var imagesLoaded = 0;
+
+    return function() {
+      imagesLoaded += 1;
+
+      if (imagesLoaded === imagesLength) {
+        p.mark(trackerName + 'Loaded');
+      }
+    };
+  }
+
+  AssetPreloader.createTimingMeasures = function(trackerName) {
+    return function() {
+      try {
+        p.measure(trackerName + 'LoadedTime', trackerName + 'Loading', trackerName + 'Loaded');
+        p.measure(trackerName + 'EndTime', 'fetchStart', trackerName + 'Loaded');
+      } catch(e) {}
+    };
+  }
+
+  var SectionLoaders = AssetPreloader.SectionLoaders = {};
+  SectionLoaders['text-over-media'] = function(sectionMedia, res, sectionType, loadingTracker) {
+    sectionMedia = sectionMedia[0];
+    if (sectionMedia.media_type === 'image') {
+      AssetPreloader.loadImage(sectionMedia, res, sectionType, loadingTracker);
+    } else if (sectionMedia.media_type === 'video') {
+      AssetPreloader.loadVideo(sectionMedia.video_files, loadingTracker);
+    }
+  };
+
+  SectionLoaders['title'] = SectionLoaders['text-over-media'];
+
+  SectionLoaders['scrollmation-two-column'] = function(sectionMedia, res, sectionType, loadingTracker) {
+    res = AssetPreloader.twoColumnScrollmationRes;
+    sectionMedia.forEach(function(media) {
+      AssetPreloader.loadImage(media, res, sectionType, loadingTracker);
+    });
+  };
+
+  SectionLoaders['scrollmation-background'] = function(sectionMedia, res, sectionType, loadingTracker) {
+    sectionMedia.forEach(function(media) {
+      AssetPreloader.loadImage(media, res, sectionType, loadingTracker);
+    });
+  };
+
+  SectionLoaders['media'] = function(sectionMedia, res, sectionType, loadingTracker) {
+    res = 'medium';
+    if ('poster' in sectionMedia[0]) {
+      AssetPreloader.loadImage(sectionMedia[0].poster, res, sectionType, loadingTracker);
+    }
+  };
+
+  AssetPreloader.loadSectionAssets = function(section, i) {
+    var sectionType = section[0];
+    var sectionMedia = section.slice(1);
+    var sectionMediaLength = sectionMedia.length;
+    // Number is padded with a zero where required
+    // Incremented so we start at one and not zero
+    var sectionNumber = (i+1 < 10) ? '0' + (i+1) : i+1;
+    var trackerName = 's' + sectionNumber;
+    var loadingTracker = AssetPreloader.createSectionLoadingTracker(trackerName, sectionMediaLength);
+
+    SectionLoaders[sectionType](sectionMedia, AssetPreloader.res, sectionType, loadingTracker);
+
+    if (window.addEventListener) {
+      window.addEventListener('load', AssetPreloader.createTimingMeasures(trackerName));
+    } else if (window.attachEvent) {
+      window.attachEvent('onload', AssetPreloader.createTimingMeasures(trackerName));
+    }
+  };
+
+  AssetPreloader.loadAssets = function(assets) {
+    if (!assets) { return; }
+    assets.forEach(AssetPreloader.loadSectionAssets);
+  };
+
+  AssetPreloader.loadAssets(AssetPreloader.assets);
+
+  p.mark('endImages');
+  p.measure('imagesTime', 'startImages', 'endImages');
+
+  window.AssetPreloader = AssetPreloader;
+}(window.performance, window, document.documentElement));</script>
+
+
+    <script>
+      if (document.documentElement && Device.isMacRetinaChrome()) {
+        document.documentElement.className += ' mac-retina-chrome';
+      }
+    </script>
+
+    <script src="/web/20150105202030js_/http://www.bbc.co.uk/frameworks/fig/1/fig.js"></script>
+    <script src="./static/js/adRegionCheck.js"></script>
+
+    <script>performance.mark('headEnd');</script>
+  </head>
+
+  <body class="" id="story-body">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.bbc.com/earth/bespoke/story/20140908-battle-of-the-ants/index.html";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "5";
+var displayMonth = "Jan";
+var displayYear = "2015";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.bbc.com/earth/bespoke/story/20140908-battle-of-the-ants/index.html" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20150105202030" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20141030083444/http://www.bbc.com/earth/bespoke/story/20140908-battle-of-the-ants/index.html" title="30 Oct 2014">OCT</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 20:20:30 Jan 5, 2015">JAN</td>
+		<td class="f" nowrap="nowrap">
+		
+		    Feb
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20141030083444/http://www.bbc.com/earth/bespoke/story/20140908-battle-of-the-ants/index.html" title="8:34:44 Oct 30, 2014"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 20:20:30 Jan 5, 2015">5</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+               
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2014
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 20:20:30 Jan 5, 2015">2015</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2016
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20150105202030*/http://www.bbc.com/earth/bespoke/story/20140908-battle-of-the-ants/index.html" title="See a list of every capture for this URL">8 captures</a>
+           <div class="r" title="Timespan for captures of this URL">7 Oct 14 - 5 Jan 15</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000700_2015:0:100000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+  
+    
+  <script>
+  performance.mark('sectionsStart');
+  </script>
+  <article class="story">
+    
+    
+      <div class="navigation">
+        <div class="menu-overlay"></div>
+        <nav class="section-navigation hide-when-small">
+        
+          <a href="#one-957" class="section-navigator">1</a>
+        
+          <a href="#two-2785" class="section-navigator">2</a>
+        
+          <a href="#three-3202" class="section-navigator">3</a>
+        
+          <a href="#four-3203" class="section-navigator">4</a>
+        
+          <a href="#five-3214" class="section-navigator">5</a>
+        
+        </nav>
+      </div>
+    
+    <div class="sections-list">
+      <div id="header-967" class="section section-header">
+  <div class="header-panel header-logo-panel">
+    
+      <a href="/web/20150105202030/http://www.bbc.com/earth" title="">
+        <img class="header-logo" src="./media/bbc-earth-logo_3.png" alt="" />
+      </a>
+    
+  </div>
+
+  <div class="header-panel header-social-panel">
+    <ul class="header-social-list">
+      
+
+      
+    </ul>
+  </div>
+
+  <div class="small-menu nav-required" >
+    <a href="#">
+      <i class="icon-menu"></i>
+    </a>
+  </div>
+</div>
+<script>
+  performance.mark('titleStart');
+</script>
+
+
+  <style>
+    .section-title-957 {
+      background-image: url(./media/yellow_crazy_ant_antweb_high_res_crop-hr.jpg);
+    }
+
+    .lt-ie9 .section-title-957 {
+      -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./media/yellow_crazy_ant_antweb_high_res_crop-hr.jpg', sizingMethod='scale')";
+    }
+
+    @media (max-width: 755px){
+      .section-title-957 {
+        background-image: url(./media/yellow_crazy_ant_antweb_high_res_crop-lr.jpg);
+      }
+    }
+    @media (min-width: 755px) and (max-width: 1400px) {
+      .section-title-957 {
+        background-image: url(./media/yellow_crazy_ant_antweb_high_res_crop-mr.jpg);
+      }
+    }
+    
+  </style>
+
+
+<div id="one-957" class="section section-text-over-media section-title section-title-957" data-viewport-height>
+  <div class="text title-inner center center">
+      <h1 class="story-title text-inner large">Battle of the Ants</h1>
+      <h2 class="story-heading text-inner x-large">Which is the most notorious ant species on earth?</h2>
+  </div>
+
+  <div class="story-metadata center">By Ella Davies<br />September 2014</div>
+
+  <div class="background-overlay">
+    
+  </div>
+</div>
+
+<script>
+  ViewportHeight.attachTo(document.getElementById('one-957'));
+  if ('performance' in window) {
+    window.performance.mark('titleEnd');
+  }
+</script>
+<div id="custom-html-578" class="section section-html ad-wrapper hidden">
+    <style>
+    .ad-wrapper.hidden {
+        display: none;
+    }
+    .section-html {
+        background-color:#eee;
+        padding: 5px 0 10px;
+    }
+    .ad-text {
+        text-align:center;
+        font-family: Arial, sans-serif;
+        font-size:10px;
+        font-weight:normal;
+        text-transform:uppercase;
+        margin: 0 0 5px;
+        color:#666;
+    }
+    .ad-section {
+        display:block;
+        margin: 0 auto;
+        text-align:center;
+    }
+    .ad-section div {
+        margin: 0 auto;
+    }
+    .ad a:hover {
+        border:none;
+    }
+    .ad-section.mpu {
+        display:none;
+    }
+    @media (max-width: 1000px) {
+        .ad-section.mpu {
+            display:block;
+        }
+       .ad-section.leaderboard, #ebContractedPanelRef, #eyeContractedDiv, #ebPushdownRef, #eyePushDiv, .ad.leaderboard embed {
+            display:none!important;
+        }
+    }
+</style>
+
+<div class="ad-section leaderboard">
+<h5 class="ad-text">Advertisement</h5>
+<!-- BBC.Com Live Site Earth/Shorthand -->
+<script type="text/javascript">
+  var ord = window.ord || Math.floor(Math.random() * 1e16),
+          fig = window.orb.fig();
+  if(!fig.uk) {
+    document.write('<script type="text/javascript" src="/web/20150105202030/http://ad.doubleclick.net/N4817/adj/bbcearth.com/shorthand;sz=728x90,970x90,970x250;asset_type=shorthand;tile=1;ord=' + ord + '?"><\/script>');
+  }
+</script>
+</div>
+
+</div><div id="onea-1185" class="section section-scrollmation scrollmation-background section-scrollmation-1185 text-left" data-scrollmation-container=".section-scrollmation-1185" data-scrollmation="background" data-viewport-height data-viewport-height-property="min-height">
+  
+    <div class="tiny-scrollmation vh66"></div>
+    <style>
+      .section-scrollmation-1185 .tiny-scrollmation {
+        background-image: url(./media/01294479-lr_1.jpg);
+        background-position: right;
+      }
+    </style>
+  
+
+  <div class="two-column-grid">
+    <div class="column column-left main-column scrollmation-text">
+      <div class="block text-block"><p>Do you think you could win a fight with an ant?</p>
+<p>Ants are very small. Ants seem innocuous. But what if you were confronted by an ant that was known to act, well, a little crazy?</p>
+<p>What if you realised that the ant could bite? And not only bite, but inflict so much pain upon you that it would feel like your skin was on fire?</p>
+<p>Would you be unnerved if the ant you met had a reputation for conquering all around it – an ant so successful at battling its way through the world, that it had been given a name, 'invicta', that literally means 'unconquerable', 'invincible' or ‘undefeated’?</p>
+<p>And might you think again if the ant in front of you was actually backed up by a million others, which together had resisted all human efforts to exterminate them?</p>
+<p>Is that a fight with an ant you could win?</p>
+<p>The question is less ridiculous than it first sounds, because around the world, animals and people are being confronted by rogue populations of biting, dominant, invasive, colonising and all-conquering species of ant. </p></div><div class="block html-block"><style>
+.ad-inline.mpu {
+    margin: 0 auto;
+    text-align: center;
+}
+</style>
+
+<div class="ad-wrapper hidden">
+<h5 class="ad-text">Advertisement</h5>
+<div class="ad-inline mpu">
+<!-- BBC.Com Live Site Earth/Shorthand -->
+<script type="text/javascript">
+  var ord = window.ord || Math.floor(Math.random() * 1e16),
+          fig = window.orb.fig();
+  if(!fig.uk) {
+    document.write('<script type="text/javascript" src="/web/20150105202030/http://ad.doubleclick.net/N4817/adj/bbcearth.com/shorthand;sz=300x250,300x600;asset_type=shorthand;tile=2;ord=' + ord + '?"><\/script>');
+  }
+</script>
+</div>
+</div>
+    </div><div class="block text-block"><p>And they are losing the battle.</p>
+<p>Just a handful of ant species in particular are to blame. </p>
+<p>Of the estimated 14,000 species of ant, only half of have been studied in any detail. Most of these diverse species live in social colonies with a rigid caste system. The queen's role is to reproduce, she is the mother of the colony. Drones are fertile males that service the queen while princesses are her fertile daughters that will establish new colonies. The rest are the queen's sterile daughters that defend the colony as soldiers or provide food, maintenance and care as workers.</p>
+<p>The best known ant species have remarkable adaptations to their environments, such as the famous leafcutter ants that carry 50 times their bodyweight, fetching pieces of leaf to use as fertiliser for nourishing fungus. In honeypot ant colonies, specially adapted workers known as repletes store sugar and protein solutions in their swollen abdomens which can grow to the size of a cherry. Slavemaker ants are named for their habit of shirking the hard work,instead capturing the pupae of other colonies to raise as slave workers.</p>
+<p>These tiny insects are incredibly tough: fire ants can form rafts to float on flood waters, species in Canada produce their own anti-freeze to survive at below -20C, while the desert ants of the Sahara forage in searing 60C heat.</p>
+<p>Such evolutionary adaptations are fascinating; but in the wrong place they are just the advantage needed to dominate an ecosystem, with devastating consequences.</p>
+<p>A few ant species have adapted so well to new environments that they are called 'tramp ants' due to their ability to move freely around the world. </p>
+<p>They have become both famous and feared, for wreaking billions of dollars worth of damage and pushing other species to the brink of extinction.</p>
+<p>These ‘tramp ant’ species are so organised and efficient they are causing concern around the globe; earning inclusion on the International Union for the Conservation of Nature's (IUCN) list of the 100 most invasive species.</p>
+<p>Welcome to the battle of the ants, where people and animals are going to head to head with the Argentine ant, big-headed ant, red imported fire ant, little fire ant and yellow crazy ant, which together vie for the title of world’s worst.</p></div>
+    </div>
+  </div>
+
+  <div class="scrollmation-slides-wrapper">
+    <div class="scrollmation-slides scrollmation" data-scrollmation-slides>
+      
+        <aside class="scrollmation-background-container">
+          
+            <img src="./media/01294479-lr_1.jpg" data-min-width-1001="./media/01294479-mr_1.jpg" data-min-width-1401="./media/01294479-hr_1.jpg" data-scrollmation-slide data-autoscale-anchor="right" width="4288" height="2848">
+          
+
+          
+        </aside>
+      
+    </div>
+  </div>
+</div><style>
+  
+    .section-text-over-media-2785 {
+      background-image: url(./media/big_headed_ant_3_antweb_crop-hr.jpg);
+    }
+
+    .lt-ie9 .section-text-over-media-2785 {
+      -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./media/big_headed_ant_3_antweb_crop-hr.jpg', sizingMethod='scale')";
+    }
+
+    @media (max-width: 755px){
+      .section-text-over-media-2785 {
+        background-image: url(./media/big_headed_ant_3_antweb_crop-lr.jpg);
+      }
+    }
+    @media (min-width: 755px) and (max-width: 1400px) {
+      .section-text-over-media-2785 {
+        background-image: url(./media/big_headed_ant_3_antweb_crop-mr.jpg);
+      }
+    }
+    
+  
+</style>
+
+<div id="two-2785" class="section section-text-over-media section-text-over-image section-text-over-media-2785 has-text" data-viewport-height>
+  <div class="text text-over-media-inner center center normal">
+    
+      <h2 class="text-inner">
+        World domination
+      </h2>
+    
+  </div>
+
+  <div class="background-overlay">
+    
+  </div>
+
+  
+
+  <img alt="" data-src="./media/big_headed_ant_3_antweb_crop-hr.jpg" class="section-background-image text-over-media-background-image retina-only">
+</div>
+
+<script>
+(function() {
+  var section = document.getElementById('two-2785');
+
+  // Chrome on MacBook Retina
+  if (Device.isMacRetinaChrome()) {
+    var backgroundImage = document.querySelector('#two-2785 .section-background-image');
+    backgroundImage.src = backgroundImage.dataset.src;
+    backgroundImage.style.display = 'block';
+    section.style.backgroundImage = 'none';
+  }
+
+  ViewportHeight.attachTo(section);
+}());
+</script>
+<div id="twoa-1362" class="section section-scrollmation scrollmation-background section-scrollmation-1362 text-right" data-scrollmation-container=".section-scrollmation-1362" data-scrollmation="background" data-viewport-height data-viewport-height-property="min-height">
+  
+    <div class="tiny-scrollmation vh66"></div>
+    <style>
+      .section-scrollmation-1362 .tiny-scrollmation {
+        background-image: url(./media/01438241-lr_1.jpg);
+        background-position: left;
+      }
+    </style>
+  
+
+  <div class="two-column-grid">
+    <div class="column column-right main-column scrollmation-text">
+      <div class="block text-block"><p>How each of these ants have travelled from their native homes is easy to explain, but impossible to reverse. Their tiny size made it easy to stow on board trading ships as long ago as the 18th Century. To this day, despite much tighter biocontrols in shipping and air-freight, they can still be overlooked and hitch a ride in containers with food, furniture and vegetation.</p>
+<p>What is remarkable is how these versatile insects have adapted to rapidly establish themselves in new territories.</p>
+<p>Most people are familiar with the phenomenon of flying ants – when fertile princesses and drones take to the wing in swarms to mate. Successfully mated females then set up new colonies. That demonstrates that many ants have a natural empire-building instinct. But several of the most invasive species have adapted to take the risk out of this reproductive strategy.</p>
+<p>From humble beginnings living along the Paraná River in South America, Argentine ants (<em>Linepithema humile</em>) have now spread to every single continent in the world except Antarctica.</p>
+<p>This global invasion was made possible partly by the ants' unusual camaraderie.</p>
+<p>Researchers have found that invasive Argentine ant queens are actually tolerant of fertile princesses setting up as additional breeders within a colony. By breeding in an existing colony, princesses immediately have a willing army of workers to help to raise their broods, which results in the rapid expansion of the ants' population.</p>
+<p>Argentine ants are not unique in this behaviour, it has been observed in a number of invasive ant species and is referred to as a polygene colony.</p>
+<p>Another trick exhibited by invaders is to establish new colonies via budding. This is when a fertile female leaves on foot with a number of workers, rather than the riskier option of trying to survive the rigours of a nuptial flight to find a mate, then begin a colony from scratch as a lone parent.</p>
+<p>Whereas ants are usually fiercely territorial, Argentine ants are curiously peace-loving towards their neighbours - provided they are family. Invasive Argentine ants live harmoniously in enormous super colonies that stretch up to 6,000 kilometres along the coastlines of the Mediterranean, California and western Japan.</p>
+<p>Researchers even found that when members of these geographically separated colonies were introduced to each other, they showed remarkably low levels of aggression.</p>
+<p>Scientists point to these results as evidence that humans have actually fostered this family connection by repeatedly introducing Argentine ants from around the world to one another through global trade.</p>
+<p>Unfortunately, the isolated parts of the world where we benefit most from trade are also some of the most vulnerable to these unwitting biological exchanges. Many islands have no native ant populations so when invading ants arrive they establish unhindered and at alarming rates.</p>
+<p>Yellow crazy ants (<em>Anoplolepis gracilipes</em>), thought to originate in West Africa and identifiable by their long golden legs and chaotic movements when disturbed, first invaded Christmas island in the Indian Ocean in the 1930s.</p>
+<p>The island is known for its diverse fauna and flora including the distinctive red land crabs. But at the turn of the millennium researchers found the ants had invaded 28% of the island's rainforest. They recorded the highest known density of foraging ants ever, with 2000 ants per square metre within the ant supercolonies. The average spreading speed of the supercolonies was calculated at 3m per day, the equivalent of 1.1km per year.</p>
+<p>More ants have been transported to the Pacific islands than any other biogeographic region, according to the IUCN's Invasive Species Specialist Group.</p>
+<p>The little fire ant (<em>Wasmannia auropunctata</em>), also known as the electric ant for its painful and long-lasting sting, has been named as the greatest invasive threat in the region. Originally from mainland Central and South America, it has spread to six island groups with devastating consequences for endemic island species, including the famous Galapagos tortoises.</p>
+<p>The ants kill tortoise hatchlings and target the eyes and clocae (or rear opening) of adults. On the islands of Hawaii, where there were no native ant species to stop their spread, residents are warned that little fire ants can blind pets with their stings.</p></div>
+    </div>
+  </div>
+
+  <div class="scrollmation-slides-wrapper">
+    <div class="scrollmation-slides scrollmation" data-scrollmation-slides>
+      
+        <aside class="scrollmation-background-container">
+          
+            <img src="./media/01438241-lr_1.jpg" data-min-width-1001="./media/01438241-mr_1.jpg" data-min-width-1401="./media/01438241-hr_1.jpg" data-scrollmation-slide data-autoscale-anchor="left" width="5400" height="3551">
+          
+
+          
+        </aside>
+      
+    </div>
+  </div>
+</div><style>
+  
+    .section-text-over-media-3202 {
+      background-image: url(./media/argentine_ant_4_high_res_crop-hr.jpg);
+    }
+
+    .lt-ie9 .section-text-over-media-3202 {
+      -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./media/argentine_ant_4_high_res_crop-hr.jpg', sizingMethod='scale')";
+    }
+
+    @media (max-width: 755px){
+      .section-text-over-media-3202 {
+        background-image: url(./media/argentine_ant_4_high_res_crop-lr.jpg);
+      }
+    }
+    @media (min-width: 755px) and (max-width: 1400px) {
+      .section-text-over-media-3202 {
+        background-image: url(./media/argentine_ant_4_high_res_crop-mr.jpg);
+      }
+    }
+    
+  
+</style>
+
+<div id="three-3202" class="section section-text-over-media section-text-over-image section-text-over-media-3202 has-text" data-viewport-height>
+  <div class="text text-over-media-inner center center normal">
+    
+      <h2 class="text-inner">
+        Up for a fight
+      </h2>
+    
+  </div>
+
+  <div class="background-overlay">
+    
+  </div>
+
+  
+
+  <img alt="" data-src="./media/argentine_ant_4_high_res_crop-hr.jpg" class="section-background-image text-over-media-background-image retina-only">
+</div>
+
+<script>
+(function() {
+  var section = document.getElementById('three-3202');
+
+  // Chrome on MacBook Retina
+  if (Device.isMacRetinaChrome()) {
+    var backgroundImage = document.querySelector('#three-3202 .section-background-image');
+    backgroundImage.src = backgroundImage.dataset.src;
+    backgroundImage.style.display = 'block';
+    section.style.backgroundImage = 'none';
+  }
+
+  ViewportHeight.attachTo(section);
+}());
+</script>
+<div id="threea-1363" class="section section-scrollmation scrollmation-background section-scrollmation-1363 text-right" data-scrollmation-container=".section-scrollmation-1363" data-scrollmation="background" data-viewport-height data-viewport-height-property="min-height">
+  
+    <div class="tiny-scrollmation vh66"></div>
+    <style>
+      .section-scrollmation-1363 .tiny-scrollmation {
+        background-image: url(./media/c0127929-crazy_ant_paratrechina_longicornis_-spl-lr_1.jpg);
+        background-position: left;
+      }
+    </style>
+  
+
+  <div class="two-column-grid">
+    <div class="column column-right main-column scrollmation-text">
+      <div class="block text-block"><p>This level of aggression is a common theme among invasive ants, whose first activity in a new neighbourhood is to oust the competition.</p>
+<p>Arguably the most aggressive tramp ant species is the red imported fire ant (<em>Solenopsis invicta</em>), originally from South America, but now found in North America, Australia, China, Hong Kong, Taiwan, the Philippines and some Pacific and Caribbean islands.</p>
+<p>Known by its sinister-sounding acronym RIFA, the species is infamous for its burning sting. In attack mode the ants swarm, biting the threat or prey to get a good grip and then inserting the stinger on their abdomen - usually several times to leave a circular pattern of pain. The sting injects a necrotising venom that breaks down flesh and in humans this can result in blistered spots and pustules or can even trigger a dangerous allergic reaction.</p>
+<p>Big-headed ants (<em>Pheidole megacephala</em>) from southern Africa use a different tactic, relying on the super-sized heads and jaws of their major workers.</p>
+<p>Researchers investigating how the invasive ants repel native army ants in Mexico also found that the big-headed species employ a kind of chemical warfare. During a clash, the big-headed ants transfer a chemical compound to their foes which acts as a form of disguise. When the army ants return to their nest they are not recognised by their own kind and are killed as intruders.</p>
+<p>Scientists studying such secretions have discovered they are often the deciding weapon in wars between ant species. In clashes with other invaders RIFA are known to overpower Argentine ants with their venomous sting but they are no match for their original South American neighbours, the tawny crazy ants (<em>Nylanderia fulva</em>).</p>
+<p>Also known by the alias “Raspberry crazy ants” (after the exterminator that discovered them in Texas, US), tawny crazy ants use a defensive trick common to many other species: they spray a poisonous jet of chemicals containing formic acid at any threats. The spray burns and blinds.</p>
+<p>Tawny crazy ants will even rub this acid over themselves after a clash with RIFA - it appears to work as an antidote to neutralise their enemies' stings.</p>
+<p>All this aggression has far-reaching consequences.</p>
+<p>Invading ants can displace more than 90% of native ant species, causing enormous disruption to the balance of ecosystems.</p>
+<p>In California, Blainville's horned lizards have lost their main food source after native ants were overwhelmed by Argentine ants. Local conservationists are concerned by the sharp decline in lizard populations linked directly to this dietary change.</p>
+<p>Christmas Island's crabs are more directly terrorised by the acid sprays of yellow crazy ants, which have killed 15-20 million of the crustaceans in the past two decades, according to Australian government figures. The crabs are described as a keystone species that help to recycle detritus and replace nutrients in the soil, so any decline has a knock-on effect for the whole island.</p>
+<p>Yellow crazy ants have invaded numerous vulnerable islands, including the Johnson Atoll where they pose a significant threat to ground-nesting birds. They have also been linked to reduced reproductive success for reptiles and mammals where they have  run the native animals out of established breeding grounds.</p>
+<p>On the islands of Hawaii, the big-headed ant has been linked to the extinction of the copper striped blue-tailed skink plus several lowland beetle species and land snails.</p>
+<p>Yet possibly the worst reputation for disrupting native vertebrates belongs to the RIFA which “negatively impact at least fourteen bird species, thirteen reptile species, one fish species and two small mammal species” in the US through competition, predation and stinging, according to the Invasive Species Specialist Group researchers.</p></div>
+    </div>
+  </div>
+
+  <div class="scrollmation-slides-wrapper">
+    <div class="scrollmation-slides scrollmation" data-scrollmation-slides>
+      
+        <aside class="scrollmation-background-container">
+          
+            <img src="./media/c0127929-crazy_ant_paratrechina_longicornis_-spl-lr_1.jpg" data-min-width-1001="./media/c0127929-crazy_ant_paratrechina_longicornis_-spl-mr_1.jpg" data-min-width-1401="./media/c0127929-crazy_ant_paratrechina_longicornis_-spl-hr_1.jpg" data-scrollmation-slide data-autoscale-anchor="left" width="6300" height="4200">
+          
+
+          
+        </aside>
+      
+    </div>
+  </div>
+</div><style>
+  
+    .section-text-over-media-3203 {
+      background-image: url(./media/little_fire_ant_5_antweb-hr.jpg);
+    }
+
+    .lt-ie9 .section-text-over-media-3203 {
+      -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./media/little_fire_ant_5_antweb-hr.jpg', sizingMethod='scale')";
+    }
+
+    @media (max-width: 755px){
+      .section-text-over-media-3203 {
+        background-image: url(./media/little_fire_ant_5_antweb-lr.jpg);
+      }
+    }
+    @media (min-width: 755px) and (max-width: 1400px) {
+      .section-text-over-media-3203 {
+        background-image: url(./media/little_fire_ant_5_antweb-mr.jpg);
+      }
+    }
+    
+  
+</style>
+
+<div id="four-3203" class="section section-text-over-media section-text-over-image section-text-over-media-3203 has-text" data-viewport-height>
+  <div class="text text-over-media-inner center center normal">
+    
+      <h2 class="text-inner">
+        Devouring prey
+      </h2>
+    
+  </div>
+
+  <div class="background-overlay">
+    
+  </div>
+
+  
+
+  <img alt="" data-src="./media/little_fire_ant_5_antweb-hr.jpg" class="section-background-image text-over-media-background-image retina-only">
+</div>
+
+<script>
+(function() {
+  var section = document.getElementById('four-3203');
+
+  // Chrome on MacBook Retina
+  if (Device.isMacRetinaChrome()) {
+    var backgroundImage = document.querySelector('#four-3203 .section-background-image');
+    backgroundImage.src = backgroundImage.dataset.src;
+    backgroundImage.style.display = 'block';
+    section.style.backgroundImage = 'none';
+  }
+
+  ViewportHeight.attachTo(section);
+}());
+</script>
+<div id="foura-1364" class="section section-scrollmation scrollmation-background section-scrollmation-1364 text-right" data-scrollmation-container=".section-scrollmation-1364" data-scrollmation="background" data-viewport-height data-viewport-height-property="min-height">
+  
+    <div class="tiny-scrollmation vh66"></div>
+    <style>
+      .section-scrollmation-1364 .tiny-scrollmation {
+        background-image: url(./media/01459273_1920x1080_ba-lr_1.jpg);
+        background-position: left;
+      }
+    </style>
+  
+
+  <div class="two-column-grid">
+    <div class="column column-right main-column scrollmation-text">
+      <div class="block text-block"><p>While some invasive ant species are content with scaring off the locals, carnivorous fire ants prefer a protein-rich diet. So they actively prey on anything unable to defend itself. The bulk of their diet is insect larvae, spiders, snails and other invertebrates but expands to include vulnerable newborn mammals and reptile and bird hatchlings where the opportunity presents itself.</p>
+<p>Alternative energy-rich snacks favoured by some ants are the fatty appendages of certain seeds known as elaiosomes. Although the ants eat the elaiosomes, the seeds are left untouched and effectively dispersed when they are stashed in underground larders by the ants. A number of ant species provide this mutually beneficial service in the biodiverse fynbos grassland of South Africa.</p>
+<p>However, Argentine ants, which have invaded parts of the region, do not. As well as neglecting this gardening task, the careless invaders have driven out two native seed-dispersing ant species, with significant consequences for the local plant community.</p>
+<p>Similarly, invasive ants can upset native pollination systems.</p>
+<p>Argentine ants in South Africa can apparently harvest close to half the available nectar before native pollinators such as bees get a chance to feed. In Hawaii they have driven out many native pollinators further endangering rare plants such as the silversword.</p>
+<p>Red imported fire ants seemingly disregard nectar collection altogether. This actually delivers a double blow to the plants’ health. Some have evolved to lure pollinating ants in with nectar, but these insects are devoured by the red imported fire ants, destroying the plants’ ability to reproduce.</p>
+<p>Because of this, exotic ants have occasionally been welcomed for their ability to control insect pests on crops. Little fire ants are moved between cocoa plantations in Gabon and Cameroon, and yellow crazy ants were once used as a so-called biological control for cocoa crops in Papua New Guinea.</p>
+<p>But while in both these cases there has been no recorded damage to the environment by the ants, the insects' own 'agricultural' activities can cause considerable issues.</p>
+<p>A number of ant species are referred to as ‘farmers’, because they protect and encourage tiny 'herds' of other insects. Tramp ants will do the same, encouraging pest species such as aphids, scale insects and mealybugs. The invaders effectively farm these plant-destroying insects, protecting them from predators. In return, the ants feast on sugary honeydew exuded by their ‘livestock’.</p>
+<p>But aphids, scale insects and mealybugs are themselves voracious eaters, sucking sap from the plants upon which they live, destroying them. If they produce more honeydew than the ants can eat, the excess sugary solution can encourage mould to grow on vegetation, leading to further degradation as seen in the forest canopy of Christmas Island.</p></div>
+    </div>
+  </div>
+
+  <div class="scrollmation-slides-wrapper">
+    <div class="scrollmation-slides scrollmation" data-scrollmation-slides>
+      
+        <aside class="scrollmation-background-container">
+          
+            <img src="./media/01459273_1920x1080_ba-lr_1.jpg" data-min-width-1001="./media/01459273_1920x1080_ba-mr_1.jpg" data-min-width-1401="./media/01459273_1920x1080_ba-hr_1.jpg" data-scrollmation-slide data-autoscale-anchor="left" width="1920" height="1080">
+          
+
+          
+        </aside>
+      
+    </div>
+  </div>
+</div><style>
+  
+    .section-text-over-media-3214 {
+      background-image: url(./media/red_imported_fire_ant_antweb2_high_res_crop-hr.jpg);
+    }
+
+    .lt-ie9 .section-text-over-media-3214 {
+      -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./media/red_imported_fire_ant_antweb2_high_res_crop-hr.jpg', sizingMethod='scale')";
+    }
+
+    @media (max-width: 755px){
+      .section-text-over-media-3214 {
+        background-image: url(./media/red_imported_fire_ant_antweb2_high_res_crop-lr.jpg);
+      }
+    }
+    @media (min-width: 755px) and (max-width: 1400px) {
+      .section-text-over-media-3214 {
+        background-image: url(./media/red_imported_fire_ant_antweb2_high_res_crop-mr.jpg);
+      }
+    }
+    
+  
+</style>
+
+<div id="five-3214" class="section section-text-over-media section-text-over-image section-text-over-media-3214 has-text" data-viewport-height>
+  <div class="text text-over-media-inner center center normal">
+    
+      <h2 class="text-inner">
+        Wreaking financial havoc
+      </h2>
+    
+  </div>
+
+  <div class="background-overlay">
+    
+  </div>
+
+  
+
+  <img alt="" data-src="./media/red_imported_fire_ant_antweb2_high_res_crop-hr.jpg" class="section-background-image text-over-media-background-image retina-only">
+</div>
+
+<script>
+(function() {
+  var section = document.getElementById('five-3214');
+
+  // Chrome on MacBook Retina
+  if (Device.isMacRetinaChrome()) {
+    var backgroundImage = document.querySelector('#five-3214 .section-background-image');
+    backgroundImage.src = backgroundImage.dataset.src;
+    backgroundImage.style.display = 'block';
+    section.style.backgroundImage = 'none';
+  }
+
+  ViewportHeight.attachTo(section);
+}());
+</script>
+<div id="fivea-1373" class="section section-scrollmation scrollmation-background section-scrollmation-1373 text-right" data-scrollmation-container=".section-scrollmation-1373" data-scrollmation="background" data-viewport-height data-viewport-height-property="min-height">
+  
+    <div class="tiny-scrollmation vh66"></div>
+    <style>
+      .section-scrollmation-1373 .tiny-scrollmation {
+        background-image: url(./media/55256321-megacephala17_crop-lr_1.jpg);
+        background-position: left;
+      }
+    </style>
+  
+
+  <div class="two-column-grid">
+    <div class="column column-right main-column scrollmation-text">
+      <div class="block text-block"><p>While some crops benefit from introduced ants, others can be destroyed.</p>
+<p>In Australia, where invading yellow crazy ants were first discovered in 2001, the government considers the insects a major threat to farming – disturbing the root systems of crops with nests, encouraging sooty mould, burning farm workers and blinding livestock. The country spent AUS $3.4 million to control the pests in the first ten years of their invasion. </p>
+<p>In addition to affecting agriculture, invasive ants can have a direct impact on people’s everyday lives.</p>
+<p>Where supercolonies build their nests, roads and pavements are disturbed which inflates maintenance bills. They also chew through drainage pipes and in a bizarre bit of behaviour that has puzzled scientists, several species of tramp ant are inexplicably attracted to our electrical infrastructure (see following video). The damage caused by fire ants to electrical and communications equipment is estimated to cost the US state of Texas $146.5 million per year and now another species is joining the melee.</p>
+<p>Tawny crazy ants have caused a stir in recent years across the southern states of the US with their ability to create havoc by infesting electrical appliances.</p>
+<p>Once inside they chew through the insulation on cables and short out circuits by bridging electrical contacts. When they receive an electric shock they emit a pheromone which brings their colony mates running to their defence, resulting in air-conditioning units, personal computers and even traffic light control boxes inundated with fried insect corpses.</p>
+<p>When they're not acting as gremlins in the machine, these particular invaders favour a tight space for nesting and have been discovered en masse in the engines of cars and under floorboards.</p>
+<p>Argentine ants and big-headed ants meanwhile will enter homes in search of our oily, sweet foods.</p>
+<p>Both little fire ants and red imported fire ants prefer the open-air where the former nest in crevices and the latter build nest mounds on lawns and roadside verges. Although ants are often the uninvited guests at a picnic, when they pack such a venomous sting as these species, professional exterminators are often called to intervene.</p>
+<p>Research conducted by Texas Tech University, in Lubbock, Texas revealed that fire ants cost the state over $1 billion every year in damages and expenditure on pest control. The USDA’s Agricultural Research Service says that it is impossible to fully calculate the cost of invasive ants, but its entomologists guess the eventual bill to be “many billions of dollars, if anyone could find a way to add it up.”</p>
+<p>It's a lucrative business if you're a pest controller but there is concern about how insecticides could negatively alter the natural ecological balance. To reduce collateral damage, pest controllers often use baits to attract the ants to a final carbohydrate feast laced with poison.</p>
+<p>While some instead advocate the use of the ants' natural predators, such as parasitic phorid flies that deliver a ghoulish death by laying their eggs in fire ants, others are wary about the risks of introducing more exotic species.</p>
+<p>To truly rid an environment of these invaders, near-military operations have been executed.</p>
+<p>Twice in the last dozen years helicopters have dropped bait on Christmas Island in an attempt to kill off the yellow crazy ants. These missions have proven a success, reducing ant abundance by over 98% within four weeks of the operation, but such expensive emergency measures aren’t sustainable.</p></div>
+    </div>
+  </div>
+
+  <div class="scrollmation-slides-wrapper">
+    <div class="scrollmation-slides scrollmation" data-scrollmation-slides>
+      
+        <aside class="scrollmation-background-container">
+          
+            <img src="./media/55256321-megacephala17_crop-lr_1.jpg" data-min-width-1001="./media/55256321-megacephala17_crop-mr_1.jpg" data-min-width-1401="./media/55256321-megacephala17_crop-hr_1.jpg" data-scrollmation-slide data-autoscale-anchor="left" width="1920" height="1080">
+          
+
+          
+        </aside>
+      
+    </div>
+  </div>
+</div><style>
+  
+</style>
+
+<div id="fiveb-380" class="section section-media section-media-video section-media-380" data-viewport-height data-video-player data-viewport-height-ignore-orientation="portrait">
+  
+    
+      <video class="video-js vjs-default-skin" controls preload="none" poster="./media/01319135-mr.jpg" width="100%" height="100%" data-ratio="1.77777777778">
+        
+          <source src="http://static.bbcverticals.com/earth/shorthand/20140917/hdv_earth_ant_1.mp4" type="video/mp4"/>
+        
+          <source src="http://static.bbcverticals.com/earth/shorthand/20140917/hdv_earth_ant_1.webm" type="video/webm"/>
+        
+      </video>
+    
+  
+
+  
+
+
+  
+</div>
+
+<script>
+  ViewportHeight.attachTo(document.getElementById('fiveb-380'));
+</script><div id="scrollmation-background-1375" class="section section-scrollmation scrollmation-background section-scrollmation-1375 text-left" data-scrollmation-container=".section-scrollmation-1375" data-scrollmation="background" data-viewport-height data-viewport-height-property="min-height">
+  
+    <div class="tiny-scrollmation vh66"></div>
+    <style>
+      .section-scrollmation-1375 .tiny-scrollmation {
+        background-image: url(./media/55256322-gracilipes14_crop-lr_1.jpg);
+        background-position: right;
+      }
+    </style>
+  
+
+  <div class="two-column-grid">
+    <div class="column column-left main-column scrollmation-text">
+      <div class="block text-block"><p>There is still some hope that nature will take care of itself.</p>
+<p>In recent years, scientists have recorded a collapse in Argentine ant numbers in 40% of sites studied in New Zealand, which mirrors the decline in yellow crazy ants witnessed in the Seychelles.</p>
+<p>Although there is no concrete conclusion for why these ant armies have begun to decline, researchers suggest it could be a result of inbreeding or an inability to adapt to environmental conditions, such as increased rainfall.</p>
+<p>But each of these ‘tramp’ ants remains a massive threat to biologic diversity and economies around the world.</p>
+<p>And each is deserving of its notoriety.</p>
+<p>In the southern hemisphere, the yellow crazy ant's reputation for destruction and its fearsome jets of acid make it public enemy number one, particularly given the recent decline of the rival Argentine ant.</p>
+<p>Across the islands of the Pacific, the little fire ant is the species that strikes dread into the hearts of conservationists and residents alike.</p>
+<p>The oversized jaws of big headed ant workers look threatening close up.</p>
+<p>But ultimately, with an unparalleled appetite for aggression and a billion dollar charge for criminal damage, the red imported fire ant is currently the least-wanted ant on the planet. </p>
+<p>What remains to be seen is how long the red imported fire ant will continue to dominate, and whether the tawny crazy ant's newly discovered invulnerability to its competitor's sting will see it rise to the top of the least wanted list.</p>
+<p><strong>Photography credits:</strong></p>
+<p><em>Head on images, in order, of the <a href="/web/20150105202030/http://www.antweb.org/bigPicture.do?code=casent0171031&amp;shot=h&amp;number=1&amp;project=allantwebants">yellow crazy ant</a> (credit Eli Sarnat), <a href="/web/20150105202030/http://www.antweb.org/bigPicture.do?name=casent0199152&amp;shot=h&amp;number=1">big headed ant</a> (credit Adam Lazarus), <a href="/web/20150105202030/http://www.antweb.org/bigPicture.do?name=casent0006020&amp;shot=h&amp;number=1">Argentine ant</a> (credit April Nobile), <a href="/web/20150105202030/http://www.antweb.org/bigPicture.do?name=casent0171093&amp;shot=h&amp;number=1">little fire ant</a> (credit Eli Sarnat), and <a href="/web/20150105202030/http://www.antweb.org/bigPicture.do?name=fmnhins0000062895&amp;shot=h&amp;number=1">red imported fire ant</a> (credit Gracen Brilmyer), are taken from Antweb (<a href="/web/20150105202030/http://www.antweb.org/">www.AntWeb.org</a>) and used under a Creative Commons licence.</em></p>
+<p><em>AntWeb is hosted and supported by <a href="/web/20150105202030/http://www.calacademy.org/">The California Academy of Sciences</a>.</em></p>
+<p><em>The image of leaf cutter ants carrying sections of coloured leaves is credited to Bence Mate / <a href="/web/20150105202030/http://www.naturepl.com/">Nature Picture Library</a>.</em></p>
+<p><em>The credit for the image of an Argentine ant worker next to a queen goes to Visuals Unlimited / <a href="/web/20150105202030/http://www.naturepl.com/">Nature Picture Library</a>.</em></p>
+<p><em>The image of <a href="/web/20150105202030/https://www.sciencephoto.com/media/456528/view">crazy ants drinking from nectaries on the underside of a leaf</a> is credited to Alex Wild / <a href="/web/20150105202030/https://www.sciencephoto.com/">Science Picture Library</a>.</em></p>
+<p><em>The image of a shuttle fly in flight above red imported fire ants is credited to Michael Durham / <a href="/web/20150105202030/http://www.naturepl.com/">Nature Picture Library</a>.</em></p>
+<p><em>The credit for images of the soldier and worker <a href="/web/20150105202030/http://www.alexanderwild.com/Ants/Taxonomic-List-of-Ant-Genera/Pheidole/i-Ghf8PQR">big headed ant</a> and <a href="/web/20150105202030/http://www.alexanderwild.com/Ants/Taxonomic-List-of-Ant-Genera/Anoplolepis/i-SmrCr4b/A">upturned yellow crazy ant</a> goes to <a href="/web/20150105202030/http://www.alexanderwild.com/">Alex Wild</a>.</em></p>
+<p><em>The video poster image of the <a href="/web/20150105202030/http://www.naturepl.com/bin/npl.dll/go?a=disp&amp;pt=1&amp;t=us%5Csr-loadersearch.html&amp;si=88022F9AA0844F3ABF3C33FE187611&amp;usp=0&amp;_spb=0&amp;_spe=0&amp;_spw=0&amp;mw=2&amp;_collection=&amp;_type=&amp;se=40&amp;_filterori=&amp;_sfqcode=&amp;searchtext=red%20fire%20ant">r</a>ed imported fire ant standing on a leaf is credited to Edwin Giesbers / <a href="/web/20150105202030/http://www.naturepl.com/">Nature Picture Library</a>.</em></p></div>
+    </div>
+  </div>
+
+  <div class="scrollmation-slides-wrapper">
+    <div class="scrollmation-slides scrollmation" data-scrollmation-slides>
+      
+        <aside class="scrollmation-background-container">
+          
+            <img src="./media/55256322-gracilipes14_crop-lr_1.jpg" data-min-width-1001="./media/55256322-gracilipes14_crop-mr_1.jpg" data-min-width-1401="./media/55256322-gracilipes14_crop-hr_1.jpg" data-scrollmation-slide data-autoscale-anchor="right" width="1920" height="1080">
+          
+
+          
+        </aside>
+      
+    </div>
+  </div>
+</div>
+    </div>
+  </article>
+  <script>
+  performance.mark('sectionsEnd');
+  </script>
+
+
+    
+<footer>
+  
+<div class="story-footer">
+    <div class="return-to-top">
+        <div class="up-arrow">
+            <a href="#one-957" class="section-navigator">
+                <img src="./static/img/chevron-v1.png"/>
+            </a>
+        </div>
+        <div class="up">
+            <a href="#one-957" class="section-navigator">TOP</a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="/web/20150105202030/http://www.shorthand.com/"> <img src="./static/img/created-with-shorthand.png"/></a>
+    </div>
+</div>
+
+</footer>
+
+    <script   type="text/javascript" src="./static/js/common.1685.js" charset="utf-8"></script>
+
+    
+  <script   type="text/javascript" src="./static/js/story.1685.js" charset="utf-8"></script>
+  <script>
+    //TODO: use dfd when autoscale has happened
+    setTimeout(function() {
+      $(window).resize();
+    }, 500);
+    Response.create({
+      "prop": "width",
+      'prefix': 'min-width-',
+      "breakpoints": [1001, 1401]
+    });
+  </script>
+
+  
+
+  <script>
+    
+      ga('create', 'UA-47973230-2', 'bbc.com');
+      ga('send', 'pageview');
+    
+
+    ga('create', 'UA-42055132-1', {'name': 'shorthand' });
+    ga('shorthand.send', 'pageview', {
+      'dimension1': 967,
+      'dimension2': 236,
+      'metric1':967,
+      'metric2':236
+    });
+
+    $(window).on('load', function() {
+      try {
+        performance.measure('startTitleTime', 'fetchStart', 'titleStart');
+        performance.measure('endTitleTime', 'fetchStart', 'titleEnd');
+
+        performance.measure('titleImageLoadedTime', 'fetchStart', 'titleImageLoaded');
+
+        performance.measure('elapsedHeadTime', 'headStart', 'headEnd');
+        performance.measure('endHeadTime', 'fetchStart', 'headEnd');
+
+        performance.measure('sectionsStartTime', 'fetchStart', 'sectionsStart');
+        performance.measure('sectionsEndTime', 'fetchStart', 'sectionsEnd');
+        performance.measure('elapsedSectionsTime', 'sectionsStart', 'sectionsEnd');
+      } catch (e) {}
+    });
+  </script>
+  
+    <script type="text/javascript">
+(function() {
+  'use strict';
+
+  function autoscaleImages() {
+    $('.text-over-media-background-image').autoscale({ mode: 'cover' });
+  }
+
+  if (Device.isMacRetinaChrome()) {
+    $(autoscaleImages);
+    $(window).on('load', autoscaleImages);
+  }
+
+}());
+
+</script>
+  
+
+  
+  </body>
+</html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 20:20:30 Jan 5, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:44:26 Jan 7, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

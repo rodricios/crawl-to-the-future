@@ -1,0 +1,404 @@
+<html><head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app14.us.archive.org";archive_analytics.values.server_ms=2929;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<title>Yahoo!</title><base href=/web/20001204165200/http://www.yahoo.com/><meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.rsac.org/ratingsv01.html" l gen true for "http://www.yahoo.com" r (n 0 s 0 v 0 l 0))'></head><body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www4.yahoo.com/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "4";
+var displayMonth = "Dec";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www4.yahoo.com/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20001204165200" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20001027203334/http://www.yahoo.com/" title="27 Oct 2000">OCT</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 16:52:00 Dec 4, 2000">DEC</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20010124000500/http://www.yahoo.com/" title="24 Jan 2001"><strong>JAN</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20001203181400/http://www1.yahoo.com/" title="18:14:00 Dec 3, 2000"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 16:52:00 Dec 4, 2000">4</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20001206220800/http://www2.yahoo.com/" title="22:08:00 Dec 6, 2000"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/19991116151216/http://www4.yahoo.com/" title="16 Nov 1999"><strong>1999</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 16:52:00 Dec 4, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20011204181703/http://www.yahoo.com/" title="4 Dec 2001"><strong>2001</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20001204165200*/http://www4.yahoo.com/" title="See a list of every capture for this URL">40,899 captures</a>
+           <div class="r" title="Timespan for captures of this URL">17 Oct 96 - 7 Jan 15</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000314_1997:-1:121223210300_1998:-1:030001300001_1999:-1:243510001210_2000:11:037587577803_2001:-1:2036cc9a9a97_2002:-1:100153666794_2003:-1:354545223646_2004:-1:555677767565_2005:-1:576666678889_2006:-1:876856876677_2007:-1:878888788867_2008:-1:777887666777_2009:-1:878887777877_2010:-1:778888888889_2011:-1:999999999bbc_2012:-1:cccbcbbbbcbc_2013:-1:ccddddddccdd_2014:-1:eeeeeeefeeee_2015:-1:b00000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<center><form action=/web/20001204165200/http://search.yahoo.com/bin/search><map name=m><area coords="11,0,73,52" href=r/a1><area coords="74,0,142,52" href=r/p1><area coords="143,0,212,52" href=r/m1><area coords="462,0,531,52" href=r/wn><area coords="532,0,600,52" href=r/i1><area coords="601,0,665,52" href=r/hw></map><img width=674 height=53 border=0 usemap="#m" src=/web/20001204165200im_/http://us.a1.yimg.com/us.yimg.com/i/ww/m5v4.gif alt=Yahoo><br><table border=0 cellspacing=0 cellpadding=3 width=640><tr><td align=center width=205>
+<!-- nosend 0 ads1  --><a href="/web/20001204165200/http://www.yahoo.com/homet/?http://mail.yahoo.com"><b>Yahoo! Mail</b></a><br>free email for life</td><td align=center><a href="/web/20001204165200/http://messenger.yahoo.com/"><img width=230 height=33 src="/web/20001204165200im_/http://us.a1.yimg.com/us.yimg.com/a/ya/yahoopager/messenger/messengerpromo.gif" alt="Yahoo! Messenger" border=0></a></td><td align=center width=205><a href="/web/20001204165200/http://www.yahoo.com/shome/?http://www.yahoo.com/bin/set">Make Yahoo!<br>your home page</a></td></tr><tr><td colspan=3 align=center><input size=30 name=p>
+<input type=submit value=Search> <a href=r/so>advanced search</a></td></tr></table><table border=0 cellspacing=0 cellpadding=3 width=640><tr><td nowrap align=center><a href="/web/20001204165200/http://www.yahoo.com/homet/?http://auctions.yahoo.com"><b>Yahoo! Auctions</b></a> - millions of items - <a href="/web/20001204165200/http://www.yahoo.com/homet/?http://list.auctions.yahoo.com/26318-category.html">autos</a>, <a href="/web/20001204165200/http://www.yahoo.com/homet/?http://list.auctions.yahoo.com/26844-category-leaf.html">PlayStation</a>, <a href="/web/20001204165200/http://www.yahoo.com/homet/?http://list.auctions.yahoo.com/23557-category.html">PDAs</a>, <a href="/web/20001204165200/http://www.yahoo.com/homet/?http://list.auctions.yahoo.com/23562-category.html">digital cameras</a>, <a href="/web/20001204165200/http://www.yahoo.com/homet/?http://list.auctions.yahoo.com/25466-category.html">Barbie</a>, <a href="/web/20001204165200/http://www.yahoo.com/homet/?http://list.auctions.yahoo.com/50622-category.html">watches</a>, <a href="/web/20001204165200/http://www.yahoo.com/homet/?http://list.auctions.yahoo.com/40291-category-leaf.html">'N Sync</a>...</td></tr><tr><td nowrap align=center><small><b>Shop</b>&nbsp;
+<a href=r/a2>Auctions</a> &#183;
+<a href=r/cf>Classifieds</a> &#183;
+<a href=r/pp>PayDirect</a> &#183;
+<a href=r/sh>Shopping</a> &#183;
+<a href=r/ta>Travel</a> &#183;
+<a href=r/yp>Yellow Pgs</a> &#183;
+<a href=r/mp>Maps</a>
+&nbsp;
+<b>Media</b>&nbsp;
+<a href=r/sq><b>Finance/Quotes</b></a> &#183;
+<a href=r/dn>News</a> &#183;
+<a href=r/ys>Sports</a> &#183;
+<a href=r/wt>Weather</a><br><b>Connect</b>&nbsp;
+<a href=r/yc>Chat</a> &#183;
+<a href=r/ub>Clubs</a> &#183;
+<a href=r/xp>Experts</a> &#183;
+<a href=r/gc>GeoCities</a> &#183;
+<a href=r/gr>Greetings</a> &#183;
+<a href=r/iv>Invites</a> &#183;
+<a href=r/m2><b>Mail</b></a> &#183;
+<a href=r/pf>Members</a> &#183;
+<a href=r/p2>Messenger</a> &#183;
+<a href=r/oa>Mobile</a> &#183;
+<a href=r/pr>Personals</a> &#183;
+<a href=r/ps>People Search</a><br><b>Personal</b>&nbsp;
+<a href=r/ab>Addr Book</a> &#183;
+<a href=r/bc>Briefcase</a> &#183;
+<a href=r/ca>Calendar</a> &#183;
+<a href=r/i2><b>My Yahoo!</b></a> &#183;
+<a href=r/fo>Photos</a>
+&nbsp;
+<b>Fun</b>&nbsp;
+<a href=r/pl><b>Games</b></a> &#183;
+<a href=r/yg>Kids</a> &#183;
+<a href=r/mf>Movies</a> &#183;
+<a href=r/uf>Music</a> &#183;
+<a href=r/rd>Radio</a> &#183;
+<a href=r/tg><b>TV</b></a>
+&nbsp;
+&nbsp;
+<a href=r/xy><b>more...</b></a></small></td></tr></table><table border=0 cellspacing=7 cellpadding=2><tr><td valign=top align=center><table bgcolor=cc3333 cellpadding=1 cellspacing=0 border=0 width="100%">
+<tr>
+<td>
+<table cellpadding=1 cellspacing=0 border=0 width=100%>
+<tr>
+<td bgcolor=ffffff align=center>
+<table cellspacing=0 cellpadding=2 border=0 width="100%"><tr><td align=center bgcolor=32CD32><table cellspacing=0 cellpadding=2 border=0 width="100%"><tr><td align=center bgcolor=ffffff><table cellspacing=0 border=0 width="100%"><tr><td align=center colspan=4><img src="/web/20001204165200im_/http://us.a1.yimg.com/us.yimg.com/i/ww/gift1.gif" width=21 height=21 align=top> <font face=arial><a href=/web/20001204165200/http://www.yahoo.com/r/s/1><b>Yahoo! Shopping</b></a></font><small> &nbsp; Thousands of stores. Millions of products.</small></td></tr><tr><td colspan=2><font face=arial size=2><b>Departments</b></font></td><td><font face=arial size=2><b>Stores</b></font></td><td><font face=arial size=2><b>Features</b></font></td></tr><tr><td valign=top width="22%"><small>
+&#183; <a href=r/s/2>Apparel</a><br>
+&#183; <a href=r/s/3>Beauty</a><br>
+&#183; <a href=r/s/15>Books</a><br>
+&#183; <a href=r/s/4>Computers</a><br>
+&#183; <a href=r/s/9>DVD/Video</a><br>
+</small></td><td valign=top width="20%"><small>
+&#183; <a href=r/s/5>Electronics</a><br>
+&#183; <a href=r/s/16>Gifts</a><br>
+&#183; <a href=r/s/17>Jewelry</a><br>
+&#183; <a href=r/s/7>Music</a><br>
+&#183; <a href=r/s/8>Toys</a><br>
+</small></td><td valign=top width="31%"><small>&#183; <a href=r/s/eb>Eddie Bauer</a><br>&#183; <a href=r/s/gap>Gap</a><br>&#183; <a href=r/s/macys>Macy's</a><br>&#183; <a href=r/s/vs>Victoria's Secret</a><br>&#183; <a href=r/s/dell>Dell</a><br></small></td><td valign=top width="27%"><small>
+&#183; <a href=r/s/hol>Holiday Center</a><br>
+&#183; <a href=r/s/gr>The Grinch</a><br>
+&#183; <a href=r/s/bsb>Backstreet Boys</a><br>
+&#183; <a href=r/s/whot>Scooters</a><br>
+&#183; <a href=r/s/sv>ShoppingVision</a><br>
+</small></td></tr></table></td></tr></table></td></tr></table>
+</td></tr></table></td></tr></table>
+<p><table border=0 cellspacing=0 cellpadding=4><tr><td valign=top nowrap><small><font size=3 face=arial><a href=r/ar><b>Arts & Humanities</b></a></font><br><a href=r/li>Literature</a>,
+<a href=r/ph>Photography</a>...<br><br><font size=3 face=arial><a href=r/bu><b>Business & Economy</b></a></font><br><a href=r/bb>B2B</a>,
+<a href=r/fi>Finance</a>,
+<a href=r/bs>Shopping</a>,
+<a href=r/jo>Jobs</a>...<br><br><font size=3 face=arial><a href=r/ci><b>Computers & Internet</b></a></font><br><a href=r/in>Internet</a>,
+<a href=r/ww>WWW</a>,
+<a href=r/sf>Software</a>,
+<a href=r/ga>Games</a>...<br><br><font size=3 face=arial><a href=r/ed><b>Education</b></a></font><br><a href=r/un>College and University</a>,
+<a href=r/k2>K-12</a>...<br><br><font size=3 face=arial><a href=r/en><b>Entertainment</b></a></font><br><a href=r/cl>Cool Links</a>,
+<a href=r/mo>Movies</a>,
+<a href=r/hu>Humor</a>,
+<a href=r/mu>Music</a>...<br><br><font size=3 face=arial><a href=r/go><b>Government</b></a></font><br><a href=r/el>Elections</a>,
+<a href=r/mi>Military</a>,
+<a href=r/la>Law</a>,
+<a href=r/tx>Taxes</a>...<br><br><font size=3 face=arial><a href=r/he><b>Health</b></a></font><br><a href=r/md>Medicine</a>,
+<a href=r/ds>Diseases</a>,
+<a href=r/dg>Drugs</a>,
+<a href=r/ft>Fitness</a>...</small></td><td valign=top nowrap><small><font size=3 face=arial><a href=r/nm><b>News & Media</b></a></font><br><a href=r/fc>Full Coverage</a>,
+<a href=r/nw>Newspapers</a>,
+<a href=r/tv>TV</a>...<br><br><font size=3 face=arial><a href=r/rs><b>Recreation & Sports</b></a></font><br><a href=r/sp>Sports</a>,
+<a href=r/tr>Travel</a>,
+<a href=r/au>Autos</a>,
+<a href=r/od>Outdoors</a>...<br><br><font size=3 face=arial><a href=r/rf><b>Reference</b></a></font><br><a href=r/lb>Libraries</a>,
+<a href=r/dc>Dictionaries</a>,
+<a href=r/qt>Quotations</a>...<br><br><font size=3 face=arial><a href=r/re><b>Regional</b></a></font><br><a href=r/ct>Countries</a>,
+<a href=r/rg>Regions</a>,
+<a href=r/us>US States</a>...<br><br><font size=3 face=arial><a href=r/sc><b>Science</b></a></font><br><a href=r/am>Animals</a>,
+<a href=r/as>Astronomy</a>,
+<a href=r/eg>Engineering</a>...<br><br><font size=3 face=arial><a href=r/ss><b>Social Science</b></a></font><br><a href=r/ac>Archaeology</a>,
+<a href=r/ec>Economics</a>,
+<a href=r/lg>Languages</a>...<br><br><font size=3 face=arial><a href=r/cu><b>Society & Culture</b></a></font><br><a href=r/pe>People</a>,
+<a href=r/ev>Environment</a>,
+<a href=r/rl>Religion</a>...</small></td></tr></table></td>
+<td align=right valign=top width=200><table bgcolor=3366cc border=0 cellspacing=0><tr><td><table bgcolor=ffffff cellpadding=2 cellspacing=0 border=0><tr><td align=center bgcolor=e0d0b0 nowrap colspan=2><table border=0 cellspacing=0 cellpadding=0 width=180><tr><td align=center><font face=arial size=2><b>In the News</b></font></td></tr></table></td></tr><tr><td colspan=2><table cellpadding=0 cellspacing=0 border=0><tr><td valign=top><b>&nbsp;&#183;&nbsp;</b></td><td width=100%><small><a href="/web/20001204165200/http://www.yahoo.com/homer/?http://dailynews.yahoo.com/fc/US/Presidential_Election_2000/">Presidential candidates await crucial court rulings</a></small></td></tr><tr><td valign=top><b>&nbsp;&#183;&nbsp;</b></td><td><small><a href="/web/20001204165200/http://www.yahoo.com/homer/?http://dailynews.yahoo.com/fc/Business/Quaker_Oats/">PepsiCo to acquire Quaker Oats</a></small></td></tr><tr><td valign=top><b>&nbsp;&#183;&nbsp;</b></td><td><small><a href="/web/20001204165200/http://www.yahoo.com/homer/?http://movies.yahoo.com">Weekend's top movies</a> </small></td></tr><tr><td valign=top><b>&nbsp;&#183;&nbsp;</b></td><td><small><a href="/web/20001204165200/http://www.yahoo.com/homer/?http://sports.yahoo.com/nfl/">NFL</a>, <a href="/web/20001204165200/http://www.yahoo.com/homer/?http://sports.yahoo.com/ncaaf/">College football</a>, <a href="/web/20001204165200/http://www.yahoo.com/homer/?http://sports.yahoo.com/nba/">NBA</a></small></td></tr><tr><td align=right colspan=2><a href=r/xn><small>more...</small></a></td></tr></table></td></tr><tr><td align=center bgcolor=e0d0b0 colspan=2><font face=arial size=2><b>Marketplace</b></font></td></tr><tr><td colspan=2><table cellpadding=0 cellspacing=0 border=0><tr><td valign=top><b>&nbsp;&#183;&nbsp;</b></td><td width=100%><small><a href="/web/20001204165200/http://www.yahoo.com/homer/?http://travel.yahoo.com">Y! Travel</a> - buy tickets, check arrival times</small></td></tr><tr><td valign=top><b>&nbsp;&#183;&nbsp;</b></td><td><small><font color=ff0020>new!</font> <a href="/web/20001204165200/http://www.yahoo.com/homer/?http://paydirect.yahoo.com/">Yahoo! PayDirect</a> - send and receive money online</small></td></tr><tr><td valign=top><b>&nbsp;&#183;&nbsp;</b></td><td><small><a href="/web/20001204165200/http://www.yahoo.com/homer/?http://store.yahoo.com">Y! Store</a> - build an online store in 10 minutes</small></td></tr></table></td></tr><tr><td align=center bgcolor=e0d0b0 colspan=2><font face=arial size=2><b>Broadcast Events</b></font></td></tr><tr><td colspan=2><table cellpadding=0 cellspacing=0 border=0><tr><td valign=top><b>&nbsp;&#183;&nbsp;</b></td><td width=100%><small>7:30pm ET : <a href="/web/20001204165200/http://www.yahoo.com/homer/?http://nba.broadcast.com/audiolp/index.asp?loc=yahoo">Clippers vs. Knicks</a></small></td></tr><tr><td valign=top><b>&nbsp;&#183;&nbsp;</b></td><td><small>8pm : <a href="/web/20001204165200/http://www.yahoo.com/homer/?http://www.broadcast.com/entertainment_and_arts/music/rock_and_pop/artists/neil_young_listening_party/">Neil Young listening party</a></small></td></tr><tr><td valign=top><b>&nbsp;&#183;&nbsp;</b></td><td><small>9pm : <a href="/web/20001204165200/http://www.yahoo.com/homer/?http://www.nfl.com/tvradio/gameaudio/">Chiefs vs. Patriots</a></small></td></tr><tr><td align=right colspan=2><a href=r/xb><small>more...</small></a></td></tr></table></td></tr><tr><td align=center bgcolor=e0d0b0 colspan=2><font face=arial size=2><b>Inside Yahoo!</b></font></td></tr><tr><td colspan=2><table cellpadding=0 cellspacing=0 border=0><tr><td valign=top><b>&nbsp;&#183;&nbsp;</b></td><td width=100%><small><a href="/web/20001204165200/http://www.yahoo.com/homer/?http://movies.yahoo.com">Y! Movies</a> - <a href="/web/20001204165200/http://www.yahoo.com/homer/?http://movies.yahoo.com/shop?d=hv&amp;cf=info&amp;id=1804133342">102 Dalmatians</a>, <a href="/web/20001204165200/http://www.yahoo.com/homer/?http://movies.yahoo.com/shop?d=hv&amp;cf=info&amp;id=1802761041">Unbreakable</a>, <a href="/web/20001204165200/http://www.yahoo.com/homer/?http://movies.yahoo.com/shop?d=hv&amp;cf=info&amp;id=1804090603">The Grinch</a>, <a href="/web/20001204165200/http://www.yahoo.com/homer/?http://movies.yahoo.com/shop?d=hv&amp;cf=info&amp;id=1802953393">Rugrats</a></small></td></tr><tr><td valign=top><b>&nbsp;&#183;&nbsp;</b></td><td><small><a href="/web/20001204165200/http://www.yahoo.com/homer/?http://invites.yahoo.com">Y! Invites</a> - plan your holiday party</small></td></tr><tr><td valign=top><b>&nbsp;&#183;&nbsp;</b></td><td><small><a href="/web/20001204165200/http://www.yahoo.com/homer/?http://radio.yahoo.com">Yahoo! Radio</a> - tune in to your favorite station</small></td></tr><tr><td valign=top><b>&nbsp;&#183;&nbsp;</b></td><td><small><a href="/web/20001204165200/http://www.yahoo.com/homer/?http://photos.yahoo.com/">Y! Photos</a> - post your pics online</small></td></tr></table></td></tr></table></td></tr></table></td></tr></table><hr noshade size=1 width=640><table border=0 cellspacing=0><tr><td><small><b>Local Yahoo!s</b></small></td></tr><tr><td nowrap><small><i>Europe</i> :
+<a href=r/dk>Denmark</a> -
+<a href=r/fr>France</a> -
+<a href=r/de>Germany</a> -
+<a href=r/it>Italy</a> -
+<a href=r/no>Norway</a> -
+<a href=r/es>Spain</a> -
+<a href=r/se>Sweden</a> -
+<a href=r/uk>UK & Ireland</a></small></td></tr><tr><td nowrap><small><i>Asia Pacific</i> :
+<a href=r/ai>Asia</a> -
+<a href=r/an>Australia & NZ</a> -
+<a href=r/cc>China</a> -
+<a href=r/hk>HK</a> -
+<a href=r/id>India</a> -
+<a href=r/jp>Japan</a> -
+<a href=r/kr>Korea</a> -
+<a href=r/sg>Singapore</a> -
+<a href=r/tw>Taiwan</a></small></td></tr><tr><td nowrap><small><i>Americas</i> :
+<a href=r/ag>Argentina</a> -
+<a href=r/br>Brazil</a> -
+<a href=r/cd>Canada</a> -
+<a href=r/cn>Chinese</a> -
+<a href=r/mx>Mexico</a> -
+<a href=r/ep>Spanish</a></small></td></tr><tr><td nowrap><small><i>U.S. Cities</i> :
+<a href=r/at>Atlanta</a> -
+<a href=r/bo>Boston</a> -
+<a href=r/ch>Chicago</a> -
+<a href=r/df>Dallas/FW</a> -
+<a href=r/lo>LA</a> -
+<a href=r/ny>NYC</a> -
+<a href=r/ba>SF Bay</a> -
+<a href=r/wd>Wash. DC</a> -
+<a href=r/mm><b>more...</b></a></small></td></tr><tr><td><small>&nbsp;</small></td></tr><tr><td><small><b>More Yahoo!s</b></small></td></tr><tr><td valign=top><small><i>Guides</i> :
+<a href=r/ya>Autos</a> -
+<a href=r/em>Careers</a> -
+<a href=r/yh>Health</a> -
+<a href=r/lv>Living</a> -
+<a href=r/ou>Outdoors</a> -
+<a href=r/pt>Pets</a> -
+<a href=r/yr>Real Estate</a> -
+<a href=r/k1>Yahooligans!</a></small></td></tr><tr><td nowrap><small><i>Entertainment</i> :
+<a href=r/ho>Astrology</a> -
+<a href=r/yb>Events</a> -
+<a href=r/g2>Games</a> -
+<a href=r/mv>Movies</a> -
+<a href=r/rk>Music</a> -
+<a href=r/ra>Radio</a> -
+<a href=r/t2>TV</a> -
+<a href=r/ye>more</a></small></td></tr><tr><td nowrap><small><i>Finance</i> :
+<a href=r/bk>Banking</a> -
+<a href=r/b2>Bill Pay</a> -
+<a href=r/is>Insurance</a> -
+<a href=r/ln>Loans</a> -
+<a href=r/tc>Taxes</a> -
+<a href=r/fv>Live market coverage</a> -
+<a href=r/f2>more</a></small></td></tr><tr><td nowrap><small><i>Local</i> :
+<a href=r/c2>Classifieds</a> -
+<a href=r/le>Events</a> -
+<a href=r/ld>Lodging</a> -
+<a href=r/m3>Maps</a> -
+<a href=r/rt>Restaurants</a> -
+<a href=r/y2>Yellow Pages</a> -
+<a href=r/l2>more</a></small></td></tr><tr><td nowrap><small><i>News</i> :
+<a href=r/d2>Top Stories</a> -
+<a href=r/bn>Business</a> -
+<a href=r/gn>Entertainment</a> -
+<a href=r/lt>Lottery</a> -
+<a href=r/sw>Politics</a> -
+<a href=r/s2>Sports</a> -
+<a href=r/tn>Technology</a> -
+<a href=r/w2>Weather</a></small></td></tr><tr><td nowrap><small><i>Publishing</i> :
+<a href=r/b3>Briefcase</a> -
+<a href=r/u2>Clubs</a> -
+<a href=r/ex>Experts</a> -
+<a href=r/iv>Invites</a> -
+<a href=r/f3>Photos</a> -
+<a href=r/g3>Home Pages</a> -
+<a href=r/m4>Message Boards</a></small></td></tr><tr><td nowrap><small><i>Small Business</i> :
+<a href=r/fe>Business Marketplace</a> -
+<a href=r/sb>Small Business Center</a> -
+<a href=r/s3>Store Building</a> -
+<a href=r/ws>Website Hosting</a></small></td></tr><tr><td nowrap><small><i>Access Yahoo! via</i> : <a href=r/pa>Pagers</a>, <a href=r/pd>PDAs</a>, <a href=r/we>Web-enabled Phones</a> and <a href=r/vo>Voice (1-800-My-Yahoo)</a></small></td></tr><tr><td>&nbsp;</td></tr><tr><td align=center><small><a href=r/hs>Make Yahoo! your homepage</a></small></td></tr></table><hr noshade size=1 width=640><small><a href=r/ad>How to Suggest a Site</a> -
+<a href=r/cp>Company Info</a> -
+<a href=r/cy>Copyright Policy</a> -
+<a href=r/ts>Terms of Service</a> -
+<a href=r/cb>Contributors</a> -
+<a href=r/hr>Jobs</a> -
+<a href=r/ao>Advertising</a><p>Copyright &copy; 2000 Yahoo! Inc. All rights reserved.</small><br><a href=r/pv>Privacy Policy</a></form></center></body></html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 16:52:00 Dec 4, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:52:25 Jan 7, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

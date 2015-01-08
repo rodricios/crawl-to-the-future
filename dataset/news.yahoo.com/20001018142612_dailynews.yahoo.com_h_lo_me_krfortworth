@@ -1,0 +1,516 @@
+<html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app0.us.archive.org";archive_analytics.values.server_ms=185;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+var remote = null
+function rs(n,u,w,h) {
+remote = window.open(u, n, 'width=' + w + ',height=' + h +',resizable=no,scrollbars=no');
+if (remote != null) {
+if (remote.opener == null)
+remote.opener = self;
+window.name = 'yahooNewsRoot';
+remote.location.href = u;
+}
+}
+
+function formHandler(form){
+var URL = document.form.u.options[document.form.u.selectedIndex].value;
+window.location.href = URL;
+}
+
+</SCRIPT>
+
+<title>Local - Fort Worth Star-Telegram </title>
+</head>
+<body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://dailynews.yahoo.com/h/lo/me/krfortworth";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "9";
+var displayMonth = "Nov";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://dailynews.yahoo.com/h/lo/me/krfortworth" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20001109185900" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Oct
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 18:59:00 Nov 9, 2000">NOV</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20010306181303/http://dailynews.yahoo.com/h/lo/me/krfortworth" title="6 Mar 2001"><strong>MAR</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 18:59:00 Nov 9, 2000">9</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20001206181300/http://dailynews.yahoo.com/h/lo/me/krfortworth" title="18:13:00 Dec 6, 2000"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   1999
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 18:59:00 Nov 9, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20020125114609/http://dailynews.yahoo.com/h/lo/me/krfortworth" title="25 Jan 2002"><strong>2002</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20001109185900*/http://dailynews.yahoo.com/h/lo/me/krfortworth" title="See a list of every capture for this URL">24 captures</a>
+           <div class="r" title="Timespan for captures of this URL">9 Nov 00 - 11 Nov 04</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:10:000000000019_2001:-1:002101011200_2002:-1:110000000100_2003:-1:000100000100_2004:-1:000000000010_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<center>
+
+<!-- _JC_  HEADER -->
+
+<table cellpadding=2 cellspacing=0 BORDER=0 width="675">
+<tr>
+<td width="1%"><a href="/web/20001109185900/http://dailynews.yahoo.com/h/?u"><img src="/web/20001109185900im_/http://us.i1.yimg.com/us.yimg.com/i/dn/main4.gif" border=0 width=250 height=31 alt="Yahoo! News"></a></td>
+<td align="right" nowrap><a href="/web/20001109185900/http://dailynews.yahoo.com/"><font face="arial,helvetica" size=2>Home</font></a><font face="arial,helvetica" size=2> - <a href="/web/20001109185900/http://www.yahoo.com/">Yahoo!</a> - <a href="/web/20001109185900/http://my.yahoo.com/">My Yahoo!</a> - <a href="/web/20001109185900/http://alerts.yahoo.com/config/set_notification?.t=n">News Alerts</a> - <a href="/web/20001109185900/http://help.yahoo.com/help/news/">Help</a></font><br>
+<hr size=1 noshade></td>
+<td width="1%">
+<a href="/web/20001109185900/http://rd.yahoo.com/DailyNews/knightridder/krdallas/brand/*http://www.star-telegram.com/">
+<!-- _JC_  LOGO -->
+<img src="/web/20001109185900im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fwst.gif" border=0 alt="Fort Worth Star-Telegram" width=157 height=24></a>
+<!-- _JC_  END LOGO -->
+</td>
+</tr>
+</table>
+<!-- _JC_  END HEADER -->
+
+<!-- _JC_  ADCALL -->
+<p>
+<table width=675 border=0 cellpadding=3>
+<tr>
+<td valign="middle">
+ <!-- SpaceID=0 robot -->
+
+</td>
+<td align="center">
+ <!-- SpaceID=0 robot -->
+
+</td>
+</tr>
+</table>
+<p>
+<!-- _JC_  END ADCALL -->
+
+
+<!-- _JC_  NAVIGATION -->
+<!-- _JC_  NAV -->
+<table border=0 cellspacing=0 cellpadding=0 width="675">
+<tr>
+<td colspan=2 align=center>
+<table border=0 cellspacing=0>
+<tr>
+<td align="center"><a href="/web/20001109185900/http://dailynews.yahoo.com/h/?u"><font size=2 face="arial,helvetica">Home</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001109185900/http://dailynews.yahoo.com/h/ts/?u"><font size=2 face="arial,helvetica">Top&nbsp;Stories</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001109185900/http://dailynews.yahoo.com/h/bs/?u"><font size=2 face="arial,helvetica">Business</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001109185900/http://dailynews.yahoo.com/h/tc/?u"><font size=2 face="arial,helvetica">Tech</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001109185900/http://dailynews.yahoo.com/h/pl/?u"><font size=2 face="arial,helvetica">Politics</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001109185900/http://dailynews.yahoo.com/h/wl/?u"><font size=2 face="arial,helvetica">World</font></a>&nbsp;</td>
+<td align="center" bgcolor="#333366">&nbsp;<a href="/web/20001109185900/http://dailynews.yahoo.com/h/lo/?u"><font size=2 face="arial,helvetica"  color="#eeeeff">Local</font></a>&nbsp;</td>
+<td align="center">&nbsp;<a href="/web/20001109185900/http://dailynews.yahoo.com/h/en/?u"><font size=2 face="arial,helvetica">Entertainment</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001109185900/http://dailynews.yahoo.com/h/sp/?u"><font size=2 face="arial,helvetica">Sports</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001109185900/http://dailynews.yahoo.com/h/sc/?u"><font size=2 face="arial,helvetica">Science</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001109185900/http://dailynews.yahoo.com/h/hl/?u"><font size=2 face="arial,helvetica">Health</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001109185900/http://news.yahoo.com/fc/?u"><font size=2 face="arial,helvetica">Full&nbsp;Coverage</font></a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr bgcolor="#333366">
+<td colspan=2>
+<table border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td height=5></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<!-- _JC_  NAV -->
+<!-- _JC_  END NAVIGATION -->
+
+
+<!-- _JC_  SECTION HEADER -->
+
+<table border=0 cellpadding=2 cellspacing=0 width="675">
+<tr bgcolor="#9999cc">
+<td><font face="arial,helvetica" size=4><b>
+Local
+News</b>
+</font><font face="arial,helvetica" size=2> - updated
+ 7:00 AM ET Nov 9
+</font></td>
+<td width="1%">
+<table cellpadding=3 cellspacing=0><tr>
+<td bgcolor="#ccccff" nowrap><IMG src="/web/20001109185900im_/http://us.i1.yimg.com/us.yimg.com/i/my/my16.gif" width=16 height=16 border=0 align=left alt="My"><FONT face=arial size="-2">
+<a href="/web/20001109185900/http://rd.yahoo.com/addtomy/*http://edit.yahoo.com/config/set_news?.add=knifortworth">Add to My Yahoo!</a></font></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<!-- _JC_  END SECTION HEADER -->
+
+<!-- _JC_  MAIN TABLE -->
+<table cellpadding=3 border=0 cellspacing=0 width="675">
+<tr valign="top">
+<td width=200>
+<!-- _JC_  LEFT COLUMN -->
+
+<!-- _JC_  LEFT COLUMN -->
+<table border=0 cellpadding=3 cellspacing=0 width="100%">
+<tr bgcolor=ccccff><td><b><font face="arial,helvetica">
+Traffic</font></b></td></tr>
+<tr><td bgcolor="#eeeeee"><table cellspacing=0 cellpadding=2 width="100%" border=0><tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001109185900/http://traffic.yahoo.com/traffic/Dallas_Fort_Worth/Downtown_Dallas/"><small>Live Traffic Reports</small></a></td></tr>
+</table>
+
+</td></tr>
+</table><br>
+<table border=0 cellpadding=3 cellspacing=0 width="100%">
+<tr bgcolor=ccccff><td><b><font face="arial,helvetica">
+Scoreboard</font></b></td></tr>
+<tr><td bgcolor=eeeeee><table border=0> <tr><td colspan=5><b><small>TODAY</small></b></td></tr>
+<tr><td valign=top colspan=5><i><font size="-1">no games for selected teams</font></i></td></tr><tr><td colspan=5><b><small>YESTERDAY</small></b></td></tr>
+<tr align=right valign=top><td align=left><small><a href=/web/20001109185900/http://sports.yahoo.com/nba/>NBA</a></small></td><td align=left><small><b>Vancouver</b>&nbsp;vs.<br>Dallas</small></td><td><small><b>101</b><br>74</small></td><td>&nbsp;</td><td><small><a href=/web/20001109185900/http://sports.yahoo.com/nba/recaps/20001108/vandal.html>F</a></small></td></tr>
+</table>
+</td></tr>
+</table><br>
+<table border=0 cellpadding=3 cellspacing=0 width="100%">
+<tr bgcolor=ccccff><td><b><font face="arial,helvetica">
+Weather</font></b></td></tr>
+<tr><td bgcolor=eeeeee><table border=0> <tr><td><a href=/web/20001109185900/http://weather.yahoo.com/forecast/Dallas_TX_US_f.html><small>Dallas, TX</small></a></td><td align=right><small>34...54 F</small></td><td align=right><small><img height=24 width=32 src=/web/20001109185900im_/http://us.yimg.com/i/we/my/85.gif alt="Sunny"></small></td></tr>
+<tr><td><a href=/web/20001109185900/http://weather.yahoo.com/forecast/Arlington_TX_US_f.html><small>Arlington, TX</small></a></td><td align=right><small>36...54 F</small></td><td align=right><small><img height=24 width=32 src=/web/20001109185900im_/http://us.yimg.com/i/we/my/85.gif alt="Sunny"></small></td></tr>
+</table>
+</td></tr>
+</table><br>
+<table border=0 cellpadding=3 cellspacing=0 width="100%">
+<tr bgcolor=ccccff><td><b><font face="arial,helvetica">
+Lottery</font></b></td></tr>
+<tr><td bgcolor=eeeeee><table border=0> <tr><td colspan=2 bgcolor="#dcdcdc"><a href="/web/20001109185900/http://lottery.yahoo.com/lottery/texas.html"><b><font face="Arial" size="-1">Texas</font></b></a>&nbsp;</td></tr>
+<tr><td colspan=2><small><b>Pick 3</b></small></td></tr><tr><td valign=top><i><small>Nov 6</i></small></td><td align=right><small>6-4-8</small></td></tr>
+<tr><td colspan=2><small><b>Million</b></small></td></tr><tr><td valign=top><i><small>Nov 3</i></small></td><td align=right><small>50-62-78-83</small></td></tr>
+<tr><td colspan=2><small><b>Cash 5</b></small></td></tr><tr><td valign=top><i><small>Nov 6</i></small></td><td align=right><small>8-15-23-29-35</small></td></tr>
+<tr><td colspan=2><small><b>Lotto</b></small></td></tr><tr><td valign=top><i><small>Nov 4</i></small></td><td align=right><small>19-21-27-39-48-50</small></td></tr>
+<tr><td colspan=2><center><small><a href="/web/20001109185900/http://lottery.yahoo.com/lottery/texas.html">Payouts</a>&nbsp; | &nbsp;<a href="/web/20001109185900/http://lottery.yahoo.com/lottery/?http://www.lottonet.com/statepages/Texas.html">Archives</a></small></center><br></td></tr>
+</table>
+</td></tr>
+</table><br>
+
+<!-- _JC_  END RESOURCES -->
+
+</td>
+<!-- _JC_  END LEFT COLUMN -->
+
+
+<!-- _JC_  MAIN CONTENT-RIGHT 2 -->
+<td valign="top">
+<center><font face="arial,helvetica" size=2><b>
+<a href=/web/20001109185900/http://dailynews.yahoo.com/h/lo/me/da/ktvt/?u>KTVT-TV&nbsp;Metroplex</a> &nbsp;- &nbsp;Star-Telegram &nbsp;
+</b></font></center>
+<p>
+<!-- _JC_  MARKET SNAPSHOT -->
+<!-- _JC_  empty right hand -->
+<!-- _JC_  END MARKET SNAPSHOT -->
+
+<!-- _JC_  STORIES -->
+ <a href="/web/20001109185900/http://dailynews.yahoo.com/h/krfortworth/20001109/lo/it_s_up_to_florida_recount_starts_gore_can_t_win_without_state_1.html"><b>It's up to Florida: Recount starts; Gore can't win without state</b></a><br><font size=-1>Charting a new course in political history Wednesday, authorities in Florida began recounting the votes of nearly 6 million citizens who hold the fate of two presidential candidates in their hands.</font> <br><br>
+<a href="/web/20001109185900/http://dailynews.yahoo.com/h/krfortworth/20001109/lo/media_muddle_tv_newspapers_stumbled_in_efforts_to_keep_up_with_volatile_election_night_returns_from_florida_1.html"><b>Media Muddle: TV, newspapers stumbled in efforts to keep up with volatile Election Night returns from Florida</b></a><br><font size=-1>FORT WORTH -- By 8 a.m. Wednesday, several convenience stores had sold out their stacks of newspapers and were calling the Star-Telegram for more copies.</font> <br><br>
+<a href="/web/20001109185900/http://dailynews.yahoo.com/h/krfortworth/20001109/lo/tight_race_talk_of_town_in_tarrant_1.html"><b>Tight race talk of town in Tarrant</b></a><br><font size=-1>Many put on pajamas and propped up on pillows to watch one of the closest elections in modern political history.</font> <br><br>
+<a href="/web/20001109185900/http://dailynews.yahoo.com/h/krfortworth/20001109/lo/teens_words_no_gloves_youths_talk_tough_about_voting_process_1.html"><b>Teens' words; no gloves; Youths talk tough about voting process</b></a><br><font size=-1>Most high school students aren't old enough to vote, but that didn't stop them from rehashing Tuesday's presidential election, which was still undecided Wednesday.</font> <br><br>
+<a href="/web/20001109185900/http://dailynews.yahoo.com/h/krfortworth/20001109/lo/emotions_run_deep_in_parker_county_courthouse_carter_draws_20_years_for_4_deaths_1.html"><b>Emotions run deep in Parker County Courthouse; Carter draws 20 years for 4 deaths</b></a><br><font size=-1>WEATHERFORD -- On December 19, 1998, four teen-age girls headed down Ranger Highway, where they found themselves staring into the headlights of a pickup driven by Rickey Carter.</font> <br><br>
+<a href="/web/20001109185900/http://dailynews.yahoo.com/h/krfortworth/20001109/lo/aikman_gets_in_full_practice_hopes_to_start_sunday_1.html"><b>Aikman gets in full practice, hopes to start Sunday</b></a><br><font size=-1>IRVING -- Troy Aikman is back, no pun intended.</font> <br><br>
+<a href="/web/20001109185900/http://dailynews.yahoo.com/h/krfortworth/20001109/lo/notebook_cowboys_are_really_hurting_defensive_tackle_leon_lett_is_out_6-8_weeks_after_spraining_a_knee_ligament__1.html"><b>Notebook: Cowboys are really hurting; Defensive tackle Leon Lett is out 6-8 weeks after spraining a knee ligament.</b></a><br><font size=-1>IRVING -- Lamenting a rash of recent season-ending injuries on Monday, Cowboys owner Jerry Jones referred to his team as "snakebit."</font> <br><br>
+<a href="/web/20001109185900/http://dailynews.yahoo.com/h/krfortworth/20001108/lo/bush_gore_locked_in_one_of_closest_presidential_elections_in_recent_history_1.html"><b>Bush, Gore locked in one of closest presidential elections in recent history</b></a><br><font size=-1>With vote-rich Florida too close to call, Gov. George W. Bush and Vice President Al Gore were locked in a seesaw battle for the White House after midnight Tuesday, with neither conceding defeat or declaring victory.</font> <br><br>
+<a href="/web/20001109185900/http://dailynews.yahoo.com/h/krfortworth/20001108/lo/nader_still_uncertain_of_5_gave_green_party_big_boost_1.html"><b>Nader, still uncertain of 5%, gave Green Party big boost</b></a><br><font size=-1>WASHINGTON -- Ralph Nader set out to shake up the establishment in Election 2000, and he did.</font> <br><br>
+<a href="/web/20001109185900/http://dailynews.yahoo.com/h/krfortworth/20001108/lo/tarrant_county_sheriff_anderson_defeats_perry_aims_to_improve_relations_1.html"><b>Tarrant County Sheriff: Anderson defeats Perry, aims to improve relations</b></a><br><font size=-1>FORT WORTH -- Tarrant County's next sheriff is an Arlington police officer who became a familiar face four years ago after stepping before TV cameras to announce the slaying of a young girl, snatched from her bike and dumped in a creek bed.</font> <br><br>
+<font face="Arial,Helvetica" size=3><b>Earlier Stories</b></font><br>
+<a href="/web/20001109185900/http://dailynews.yahoo.com/h/krfortworth/20001108/lo/all_the_way_around_the_tables_and_out_the_door_1.html">All the way around the tables and out the door</a><br>
+<a href="/web/20001109185900/http://dailynews.yahoo.com/h/krfortworth/20001108/lo/fort_worth_school_board_president_being_treated_for_cancerous_tumor_1.html">Fort Worth school board president being treated for cancerous tumor</a><br>
+<a href="/web/20001109185900/http://dailynews.yahoo.com/h/krfortworth/20001108/lo/jones_ponders_future_the_cowboys_owner_starting_to_contemplate_a_team_without_troy_aikman_at_quarterback__1.html">Jones ponders future; The Cowboys' owner starting to contemplate a team without Troy Aikman at quarterback.</a><br>
+<a href="/web/20001109185900/http://dailynews.yahoo.com/h/krfortworth/20001108/lo/working_vacation_break_from_spring_break_pays_off_for_cowboys_assistant_robinson_1.html">Working Vacation: Break from spring break pays off for Cowboys assistant Robinson</a><br>
+<a href="/web/20001109185900/http://dailynews.yahoo.com/h/krfortworth/20001107/lo/election_day_drama_--_bush_gore_still_locked_in_dead_heat_1.html">Election Day drama -- Bush, Gore still locked in dead heat</a><br>
+<a href="/web/20001109185900/http://dailynews.yahoo.com/h/krfortworth/20001107/lo/three_states_may_give_clue_of_who_wins_1.html">Three states may give clue of who wins</a><br>
+<a href="/web/20001109185900/http://dailynews.yahoo.com/h/krfortworth/20001107/lo/bush_wins_metroplex_student_vote_governor_amasses_67_percent_landslide_in_mock_election_1.html">Bush wins Metroplex student vote; governor amasses 67 percent landslide in mock election</a><br>
+<a href="/web/20001109185900/http://dailynews.yahoo.com/h/krfortworth/20001107/lo/doctors_say_e_r_at_risk_at_jps_concerns_raised_about_low_staffing_1.html">Doctors say E.R. at risk at JPS; concerns raised about low staffing</a><br>
+<a href="/web/20001109185900/http://dailynews.yahoo.com/h/krfortworth/20001107/lo/some_stores_pull_drugs_after_warning_fda_advises_against_use_of_ingredient_in_appetite_suppressants_decongestants_1.html">Some stores pull drugs after warning; FDA advises against use of ingredient in appetite suppressants, decongestants</a><br>
+<a href="/web/20001109185900/http://dailynews.yahoo.com/h/krfortworth/20001107/lo/buckle_up_rough_road_ahead_for_cowboys_ismail_teague_out_for_year_1.html">Buckle up. Rough road ahead for Cowboys; Ismail, Teague out for year</a><br>
+<a href="/web/20001109185900/http://dailynews.yahoo.com/h/krfortworth/20001107/lo/campo_to_continue_fight_until_playoffs_impossible_1.html">Campo to continue fight until playoffs impossible</a><br>
+
+
+<!-- _JC_  END STORIES -->
+<p>
+
+<!-- _JC_  ARCHIVES DROPDOWN -->
+<table width="100%" border=0>
+<tr>
+<td width=200 valign=middle><font face="Arial,Helvetica" size=2><b>Archived Stories by Date:</b></font></td>
+<form name="form" action=/web/20001109185900/http://rc.yahoo.com/jump>
+<td valign=middle align=left width=275>
+<select name="u" size=1>
+ <option value="http://dailynews.yahoo.com/h/lo/krfortworth/story.html?s=v/krfortworth/20001108/lo/index.html">Nov 08</option>
+<option value="http://dailynews.yahoo.com/h/lo/krfortworth/story.html?s=v/krfortworth/20001107/lo/index.html">Nov 07</option>
+<option value="http://dailynews.yahoo.com/h/lo/krfortworth/story.html?s=v/krfortworth/20001106/lo/index.html">Nov 06</option>
+<option value="http://dailynews.yahoo.com/h/lo/krfortworth/story.html?s=v/krfortworth/20001105/lo/index.html">Nov 05</option>
+<option value="http://dailynews.yahoo.com/h/lo/krfortworth/story.html?s=v/krfortworth/20001104/lo/index.html">Nov 04</option>
+<option value="http://dailynews.yahoo.com/h/lo/krfortworth/story.html?s=v/krfortworth/20001103/lo/index.html">Nov 03</option>
+<option value="http://dailynews.yahoo.com/h/lo/krfortworth/story.html?s=v/krfortworth/20001102/lo/index.html">Nov 02</option>
+
+</select><input type=submit value=Go></td>
+</form>
+</tr></table>
+<!-- _JC_  END ARCHIVES DROPDOWN -->
+
+<!-- _JC_  NEWS SEARCH -->
+<table cellpadding=2 cellspacing=0 border=0 width="100%" >
+<tr valign="middle">
+<td bgcolor="#dcdcdc"><font face="Arial,Helvetica" size=2><b>News Search</b></font></td>
+</tr>
+<tr><form action="/web/20001109185900/http://search.news.yahoo.com/search/news"><td align="center">
+<input type=text size=25 name=p>
+<input type=submit value="Search">
+<a href="/web/20001109185900/http://search.news.yahoo.com/search/news/options"><font face="Arial,Helvetica" size=2>Advanced</font></a><br><small><b>Search:</b>&nbsp;<input
+type=radio name=c checked value="news">&nbsp;Stories&nbsp;&nbsp;<input
+type=radio name=c value="news_photos">&nbsp;Photos&nbsp;&nbsp;<input
+type=radio name=c value="fullcov">&nbsp;Full&nbsp;Coverage</small><input type=hidden name=n value=20></td></form></tr>
+</table>
+<!-- _JC_  END SEARCH -->
+
+</td>
+</tr>
+</table>
+<!-- _JC_  END MAIN TABLE -->
+
+<!-- _JC_  BOTTOM NAV -->
+<!-- _JC_  NAV -->
+<table border=0 cellspacing=0 cellpadding=0 width="675">
+<tr bgcolor="#333366">
+<td>
+<table border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td height=5></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="center">
+<table border=0 cellspacing=0>
+<tr>
+<td align="center"><a href="/web/20001109185900/http://dailynews.yahoo.com/h/?u"><font size=2 face="arial,helvetica">Home</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001109185900/http://dailynews.yahoo.com/h/ts/?u"><font size=2 face="arial,helvetica">Top&nbsp;Stories</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001109185900/http://dailynews.yahoo.com/h/bs/?u"><font  size=2 face="arial,helvetica">Business</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001109185900/http://dailynews.yahoo.com/h/tc/?u"><font size=2 face="arial,helvetica">Tech</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001109185900/http://dailynews.yahoo.com/h/pl/?u"><font size=2 face="arial,helvetica">Politics</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001109185900/http://dailynews.yahoo.com/h/wl/?u"><font size=2 face="arial,helvetica">World</font></a>&nbsp;</td>
+<td align="center" bgcolor="#333366">&nbsp;<a href="/web/20001109185900/http://dailynews.yahoo.com/h/lo/?u"><font size=2 color="#eeeeff" face="arial,helvetica">Local</font></a>&nbsp;</td>
+<td align="center">&nbsp;<a href="/web/20001109185900/http://dailynews.yahoo.com/h/en/?u"><font size=2 face="arial,helvetica">Entertainment</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001109185900/http://dailynews.yahoo.com/h/sp/?u"><font size=2 face="arial,helvetica">Sports</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001109185900/http://dailynews.yahoo.com/h/sc/?u"><font size=2 face="arial,helvetica">Science</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001109185900/http://dailynews.yahoo.com/h/hl/?u"><font size=2 face="arial,helvetica">Health</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001109185900/http://news.yahoo.com/fc/?u"><font size=2 face="arial,helvetica">Full&nbsp;Coverage</font></a></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<!-- _JC_  NAV -->
+<!-- _JC_  END BOTTOM NAV -->
+<hr size=0 width=675>
+<!-- _JC_  FOOTER -->
+<table width=675>
+<tr>
+<td valign="top" align="center">
+<font size=2>
+
+Copyright &copy; 2000 <a href=/web/20001109185900/http://www.yahoo.com/>Yahoo!</a>
+, <a href="/web/20001109185900/http://rd.yahoo.com/DailyNews/knightridder/krdallas/brand/*http://www.star-telegram.com/">Fort Worth Star-Telegram</a>
+and  <a href="/web/20001109185900/http://rd.yahoo.com/DailyNews/knightridder/krdallas/brand/*http://www.knightridder.com/">KnightRidder.com</a>.
+<a href="/web/20001109185900/http://help.yahoo.com/help/news/">Questions or Comments</a>
+<br>
+<a href="/web/20001109185900/http://privacy.yahoo.com/privacy/us/news">Privacy Policy</a> -
+<a href="/web/20001109185900/http://docs.yahoo.com/info/terms/">Terms of Service</a>
+</font></td>
+</tr></table>
+<!-- _JC_  END FOOTER -->
+</center>    
+</body>
+</html>
+ 
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 18:59:00 Nov 9, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:01:21 Jan 7, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

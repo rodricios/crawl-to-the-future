@@ -1,0 +1,635 @@
+<html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app18.us.archive.org";archive_analytics.values.server_ms=170;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+var remote = null
+function rs(n,u,w,h) {
+remote = window.open(u, n, 'width=' + w + ',height=' + h +',resizable=no,scrollbars=no');
+if (remote != null) {
+if (remote.opener == null)
+remote.opener = self;
+window.name = 'yahooNewsRoot';
+remote.location.href = u;
+}
+}
+
+function formHandler(form){
+var URL = document.form.u.options[document.form.u.selectedIndex].value;
+window.location.href = URL;
+}
+
+</SCRIPT>
+
+<title>Health - Reuters </title>
+</head>
+<body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://dailynews.yahoo.com/h/hl/nm?u";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "21";
+var displayMonth = "Oct";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://dailynews.yahoo.com/h/hl/nm?u" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20001021224001" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Sep
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 22:40:01 Oct 21, 2000">OCT</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20001206232900/http://dailynews.yahoo.com/h/hl/nm/?u" title="6 Dec 2000"><strong>DEC</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 22:40:01 Oct 21, 2000">21</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20001206232900/http://dailynews.yahoo.com/h/hl/nm/?u" title="23:29:00 Dec 6, 2000"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   1999
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 22:40:01 Oct 21, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20011021230936/http://dailynews.yahoo.com/h/hl/nm/?u" title="21 Oct 2001"><strong>2001</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20001021224001*/http://dailynews.yahoo.com/h/hl/nm?u" title="See a list of every capture for this URL">303 captures</a>
+           <div class="r" title="Timespan for captures of this URL">21 Oct 00 - 27 Oct 09</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:9:000000000107_2001:-1:00210000efd9_2002:-1:110001010100_2003:-1:010101010101_2004:-1:010001010200_2005:-1:010100000001_2006:-1:010011000100_2007:-1:010100000000_2008:-1:010000000000_2009:-1:000000000100_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<center>
+
+<!-- _JC_  HEADER -->
+
+<table cellpadding=2 cellspacing=0 BORDER=0 width="675">
+<tr>
+<td width="1%"><a href="/web/20001021224001/http://dailynews.yahoo.com/h/?u"><img src="/web/20001021224001im_/http://us.i1.yimg.com/us.yimg.com/i/dn/main4.gif" border=0 width=250 height=31 alt="Yahoo! News"></a></td>
+<td align="right" nowrap><a href="/web/20001021224001/http://dailynews.yahoo.com/"><font face="arial,helvetica" size=2>Home</font></a><font face="arial,helvetica" size=2> - <a href="/web/20001021224001/http://www.yahoo.com/">Yahoo!</a> - <a href="/web/20001021224001/http://my.yahoo.com/">My Yahoo!</a> - <a href="/web/20001021224001/http://alerts.yahoo.com/config/set_notification?.t=n">News Alerts</a> - <a href="/web/20001021224001/http://help.yahoo.com/help/news/">Help</a></font><br>
+<hr size=1 noshade></td>
+<td width="1%">
+<a href="/web/20001021224001/http://rd.yahoo.com/dailynews/?http://www.reuters.com/onlinemedia/">
+<!-- _JC_  LOGO -->
+<img src="/web/20001021224001im_/http://us.i1.yimg.com/us.yimg.com/i/dn/reuters5.gif" border=0 alt="Reuters New Media" width=137 height=30></a>
+<!-- _JC_  END LOGO -->
+</td>
+</tr>
+</table>
+<!-- _JC_  END HEADER -->
+
+<!-- _JC_  ADCALL -->
+<p>
+<table width=675 border=0 cellpadding=3>
+<tr>
+<td valign="middle">
+ <!-- SpaceID=0 robot -->
+
+</td>
+<td align="center">
+ <!-- SpaceID=0 robot -->
+
+</td>
+</tr>
+</table>
+<p>
+<!-- _JC_  END ADCALL -->
+
+
+<!-- _JC_  NAVIGATION -->
+<!-- _JC_  NAV -->
+<table border=0 cellspacing=0 cellpadding=0 width="675">
+<tr>
+<td colspan=2 align=center>
+<table border=0 cellspacing=0>
+<tr>
+<td align="center"><a href="/web/20001021224001/http://dailynews.yahoo.com/h/?u"><font size=2 face="arial,helvetica">Home</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001021224001/http://dailynews.yahoo.com/h/ts/?u"><font size=2 face="arial,helvetica">Top&nbsp;Stories</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001021224001/http://dailynews.yahoo.com/h/bs/?u"><font size=2 face="arial,helvetica">Business</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001021224001/http://dailynews.yahoo.com/h/tc/?u"><font size=2 face="arial,helvetica">Tech</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001021224001/http://dailynews.yahoo.com/h/pl/?u"><font size=2 face="arial,helvetica">Politics</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001021224001/http://dailynews.yahoo.com/h/wl/?u"><font size=2 face="arial,helvetica">World</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001021224001/http://dailynews.yahoo.com/h/lo/?u"><font size=2 face="arial,helvetica">Local</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001021224001/http://dailynews.yahoo.com/h/en/?u"><font size=2 face="arial,helvetica" >Entertainment</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001021224001/http://dailynews.yahoo.com/h/sp/?u"><font size=2 face="arial,helvetica">Sports</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001021224001/http://dailynews.yahoo.com/h/sc/?u"><font size=2 face="arial,helvetica">Science</font></a>&nbsp;</td>
+<td align="center" bgcolor="#333366">&nbsp;<a href="/web/20001021224001/http://dailynews.yahoo.com/h/hl/?u"><font size=2 face="arial,helvetica" color="#eeeeff">Health</font></a>&nbsp;</td>
+<td align="center">&nbsp;<a href="/web/20001021224001/http://news.yahoo.com/fc/?u"><font size=2 face="arial,helvetica">Full&nbsp;Coverage</font></a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr bgcolor="#333366">
+<td colspan=2>
+<table border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td height=5></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<!-- _JC_  NAV -->
+<!-- _JC_  END NAVIGATION -->
+
+
+<!-- _JC_  SECTION HEADER -->
+
+<table border=0 cellpadding=2 cellspacing=0 width="675">
+<tr bgcolor="#9999cc">
+<td><font face="arial,helvetica" size=4><b>
+Health
+News</b>
+</font><font face="arial,helvetica" size=2> - updated
+ 1:30 PM ET Oct 20
+</font></td>
+<td width="1%">
+<table cellpadding=3 cellspacing=0><tr>
+<td bgcolor="#ccccff" nowrap><IMG src="/web/20001021224001im_/http://us.i1.yimg.com/us.yimg.com/i/my/my16.gif" width=16 height=16 border=0 align=left alt="My"><FONT face=arial size="-2">
+<a href="/web/20001021224001/http://rd.yahoo.com/addtomy/*http://edit.yahoo.com/config/set_news?.add=rh">Add to My Yahoo!</a></font></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<!-- _JC_  END SECTION HEADER -->
+
+<!-- _JC_  MAIN TABLE -->
+<table cellpadding=3 border=0 cellspacing=0 width="675">
+<tr valign="top">
+<td width=200>
+<!-- _JC_  LEFT COLUMN -->
+
+<!-- _JC_  LEFT COLUMN -->
+<table border=0 cellpadding=1 cellspacing=0 width="100%" bgcolor="#9999cc"><tr valign=top><td valign="top"> <table border=0 cellpadding=3 cellspacing=0 width="100%"><tr bgcolor="#eeeecc"><td colspan=2 align=center>
+<img height=16 width=16 src="/web/20001021224001im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif">
+<font face="arial,helvetica"><b>Full Coverage</b></font><br><font size=1 face="arial,helvetica"></font></td></tr>
+<tr bgcolor="white">
+<td valign="top" width="1%">
+<b>&#183;</b></td><td width="99%" valign=top><a href="/web/20001021224001/http://dailynews.yahoo.com/fc/Health/AIDS___HIV/"><font size=2>AIDS - HIV News</font></a></td></tr>
+<tr bgcolor="white">
+<td valign="top" width="1%">
+<b>&#183;</b></td><td width="99%" valign=top><a href="/web/20001021224001/http://dailynews.yahoo.com/fc/US/Abortion_Rights_Debate/"><font size=2>Abortion Rights Debate</font></a></td></tr>
+<tr bgcolor="white">
+<td valign="top" width="1%">
+<b>&#183;</b></td><td width="99%" valign=top><a href="/web/20001021224001/http://dailynews.yahoo.com/fc/World/Uganda/"><font size=2>Experts Help Battle Ugandan Ebola Outbreak</font></a></td></tr>
+<tr bgcolor="white">
+<td valign="top" width="1%">
+<b>&#183;</b></td><td width="99%" valign=top><a href="/web/20001021224001/http://dailynews.yahoo.com/fc/Health/Diet_and_Nutrition/"><font size=2>Diet and Nutrition</font></a></td></tr>
+<tr bgcolor="white">
+<td valign="top" width="1%">
+<b>&#183;</b></td><td width="99%" valign=top><a href="/web/20001021224001/http://dailynews.yahoo.com/fc/Health/Prostate_Cancer/"><font size=2>Prostate Cancer</font></a></td></tr>
+<tr bgcolor="white">
+<td valign="top" width="1%">
+<b>&#183;</b></td><td width="99%" valign=top><a href="/web/20001021224001/http://dailynews.yahoo.com/fc/Health/Heart_Disease/"><font size=2>Heart Disease</font></a></td></tr>
+<tr><td align=right colspan=2 bgcolor="#ffffff">
+<a href="/web/20001021224001/http://dailynews.yahoo.com/fc/Health/"><font face="arial,helvetica" size=2><b>All Health Full Coverage</b></font></a></td></tr>
+</table>
+</td></tr></table><br>
+<table border=0 cellpadding=3 cellspacing=0 width="100%">
+<tr bgcolor=ccccff><td><b><font face="arial,helvetica">
+Audio/Video</font></b></td></tr>
+<tr><td bgcolor=eeeeee><table cellspacing=0 cellpadding=2 width="100%" border=0><tr><td colspan=2 valign="top" bgcolor="#dcdcdc">
+<font size=2 face="Arial,Helvetica"><b>
+<a href="/web/20001021224001/http://dailynews.yahoo.com/h/a/g/latest/?u">Reuters Video</a>
+</b></font>
+</td></tr>
+ <tr><td width="1%" valign="top"><font size=2><img src="/web/20001021224001im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13></font></td><td>
+<a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001021224001/http://vision.yahoo.com/lc?&amp;p=news&amp;l=SAM&amp;a=0,30&amp;t=Israel%20WIlling%20To%20Postpone%20Deadline&amp;sid=706141&amp;f=31042383&amp;m=rnv&amp;r=any&quot;,640,440);"><font size=2>Israel WIlling To Postpone Deadline</font></a>
+</td></tr>
+
+<tr><td width="1%" valign="top"><font size=2><img src="/web/20001021224001im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13></font></td><td>
+<a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001021224001/http://vision.yahoo.com/lc?&amp;p=news&amp;l=SAM&amp;a=0,30&amp;t=Floods%20In%20Bangladesh%20Devastate%20Millions&amp;sid=706053&amp;f=31042388&amp;m=rnv&amp;r=any&quot;,640,440);"><font size=2>Floods In Bangladesh Devastate Millions</font></a>
+</td></tr>
+
+<tr><td width="1%" valign="top"><font size=2><img src="/web/20001021224001im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13></font></td><td>
+<a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001021224001/http://vision.yahoo.com/lc?&amp;p=news&amp;l=SAM&amp;a=0,30&amp;t=Russia%20Trying%20To%20Calm%20Mideast%20Unrest&amp;sid=705934&amp;f=31042388&amp;m=rnv&amp;r=any&quot;,640,440);"><font size=2>Russia Trying To Calm Mideast Unrest</font></a>
+</td></tr>
+
+<tr><td colspan=2 valign="top" bgcolor="#dcdcdc">
+<font size=2 face="Arial,Helvetica"><b>
+<a href="/web/20001021224001/http://dailynews.yahoo.com/h/a/g/npr/ts/?u">NPR</a>
+</b></font>
+</td></tr>
+ <tr><td valign=top><b><img src="/web/20001021224001im_/http://us.i1.yimg.com/us.yimg.com/i/my/sound.gif" width=16 height=13 border=0 alt="Audio"></b></td><td valign=top><small><a href="/web/20001021224001/http://www.yahoo.com/dailynews/npr/?http://www.npr.org/ramfiles/wesat/20001021.wesat.01.ram">Arabs Meet Amid Fresh Mideast Violence</a></small></td></tr>
+<tr><td valign=top><b><img src="/web/20001021224001im_/http://us.i1.yimg.com/us.yimg.com/i/my/sound.gif" width=16 height=13 border=0 alt="Audio"></b></td><td valign=top><small><a href="/web/20001021224001/http://www.yahoo.com/dailynews/npr/?http://www.npr.org/ramfiles/wesat/20001021.wesat.03.ram">Navy Changes Details in Cole Attack</a></small></td></tr>
+<tr><td valign=top><b><img src="/web/20001021224001im_/http://us.i1.yimg.com/us.yimg.com/i/my/sound.gif" width=16 height=13 border=0 alt="Audio"></b></td><td valign=top><small><a href="/web/20001021224001/http://www.yahoo.com/dailynews/npr/?http://www.npr.org/ramfiles/wesat/20001020.wesat.11.ram">Yankees, Mets Meet in Subway Series</a></small></td></tr>
+<tr><td colspan=2 valign="top" bgcolor="#dcdcdc">
+<font size=2 face="Arial,Helvetica"><b>
+<a href="/web/20001021224001/http://dailynews.yahoo.com/h/a/g/yn/hl?u">Yahoo! News</a>
+</b></font>
+</td></tr>
+ <tr><td width="1%" valign="top">
+<font size=2><img src="/web/20001021224001im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13></font></td><td>
+<font size=2><a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001021224001/http://vision.yahoo.com/lc?t=news&amp;p=news&amp;l=SAM&amp;a=0,30&amp;id=589456&amp;f=33338352&amp;m=rnv&amp;r=any&quot;,640,440);">Football Player Has Brain Surgery After Vicious Hit</a> - WKMG, Orlando</font>
+</td></tr>
+
+<tr><td width="1%" valign="top">
+<font size=2><img src="/web/20001021224001im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13></font></td><td>
+<font size=2><a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001021224001/http://vision.yahoo.com/lc?t=news&amp;p=news&amp;l=SAM&amp;a=0,30&amp;sid=760123&amp;f=33338352&amp;m=rnv&amp;r=any&quot;,640,440);">Texas Health Commissioner Under Fire for Racial Remarks</a> - KHOU, Houston</font>
+</td></tr>
+
+<tr><td width="1%" valign="top">
+<font size=2><img src="/web/20001021224001im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13></font></td><td>
+<font size=2><a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001021224001/http://vision.yahoo.com/lc?t=news&amp;p=news&amp;l=SAM&amp;a=0,30&amp;sid=760064&amp;f=33338352&amp;m=rnv&amp;r=any&quot;,640,440);">Study Shows Smog Adversly Affects Development of Children</a> - KTLA, Los Angeles</font>
+</td></tr>
+
+<tr><td colspan=2 valign="top" bgcolor="#dcdcdc">
+<font size=2 face="Arial,Helvetica"><b>
+<a href="/web/20001021224001/http://www.abcnews.com/">ABCNews Radio</a>
+</b></font>
+</td></tr>
+<tr><td valign=top><b><img src="/web/20001021224001im_/http://us.i1.yimg.com/us.yimg.com/i/my/sound.gif" width=16 height=13 border=0 alt="Audio"></b></td><td valign=top><small><a href="/web/20001021224001/http://play.rbn.com/?abcradio/radionews/demand/abcnews.ra">Hourly Top Stories</a></small></td></tr>
+</table>
+
+</td></tr>
+</table><br>
+<table border=0 cellpadding=3 cellspacing=0 width="100%">
+<tr bgcolor=ccccff><td><b><font face="arial,helvetica">
+Resources</font></b></td></tr>
+<tr><td bgcolor=eeeeee><table cellspacing=0 cellpadding=2 width="100%" border=0><tr><td colspan=2 valign="top" bgcolor="#dcdcdc">
+<font size=2 face="Arial,Helvetica"><b>
+Community Tools
+</b></font>
+</td></tr>
+<tr><td valign=top bgcolor=eeeeee><b>&#183;</b></td><td valign=top bgcolor=eeeeee><a href="/web/20001021224001/http://messages.yahoo.com/yahoo/Health___Wellness/index.html"><small>Message Boards</small></a></td></tr>
+<tr><td valign=top bgcolor=eeeeee><b>&#183;</b></td><td valign=top bgcolor=eeeeee><a href="/web/20001021224001/http://conversations.yahoo.com/dir/Conversations/News/Health"><small>Conversations</small></a></td></tr>
+<tr><td valign=top bgcolor=eeeeee><b>&#183;</b></td><td valign=top bgcolor=eeeeee><a href="/web/20001021224001/http://chat/?room=Health%20Lobby::1600326510"><small>Chat</small></a></td></tr>
+<tr><td valign=top bgcolor=eeeeee><b>&#183;</b></td><td valign=top bgcolor=eeeeee><a href="/web/20001021224001/http://dir.clubs.yahoo.com/Health___Wellness/"><small>Clubs</small></a></td></tr>
+<tr><td valign=top bgcolor=eeeeee><b>&#183;</b></td><td valign=top bgcolor=eeeeee><a href="/web/20001021224001/http://www.broadcast.com/Health_and_Fitness/"><small>Net Events</small></a></td></tr>
+<tr><td colspan=2 valign="top" bgcolor="#dcdcdc">
+<font size=2 face="Arial,Helvetica"><b>
+<a href="/web/20001021224001/http://dir.yahoo.com/Health/">Web Sites</a>
+</b></font>
+</td></tr>
+<tr><td valign=top bgcolor=eeeeee><b>&#183;</b></td><td valign=top bgcolor=eeeeee><a href="/web/20001021224001/http://dir.yahoo.com/Health/Diseases_and_Conditions/"><small>Diseases and Conditions</small></a></td></tr>
+<tr><td valign=top bgcolor=eeeeee><b>&#183;</b></td><td valign=top bgcolor=eeeeee><a href="/web/20001021224001/http://dir.yahoo.com/Health/Fitness/"><small>Fitness</small></a></td></tr>
+<tr><td valign=top bgcolor=eeeeee><b>&#183;</b></td><td valign=top bgcolor=eeeeee><a href="/web/20001021224001/http://dir.yahoo.com/Health/Medicine/"><small>Medicine</small></a></td></tr>
+<tr><td valign=top bgcolor=eeeeee><b>&#183;</b></td><td valign=top bgcolor=eeeeee><a href="/web/20001021224001/http://dir.yahoo.com/Health/Mental_Health/"><small>Mental Health</small></a></td></tr>
+<tr><td valign=top bgcolor=eeeeee><b>&#183;</b></td><td valign=top bgcolor=eeeeee><a href="/web/20001021224001/http://dir.yahoo.com/Health/Nutrition/"><small>Nutrition</small></a></td></tr>
+<tr><td colspan=2 valign="top" bgcolor="#dcdcdc">
+<font size=2 face="Arial,Helvetica"><b>
+<a href="/web/20001021224001/http://broadcast.com/">Yahoo! Events</a>
+</b></font>
+</td></tr>
+<tr><td valign=top bgcolor=eeeeee><b>&#183;</b></td><td valign=top bgcolor=eeeeee><a href="/web/20001021224001/http://broadcast.com/Health_and_Fitness/Diseases_and_Conditions/"><small>Diseases and Conditions</small></a></td></tr>
+<tr><td valign=top bgcolor=eeeeee><b>&#183;</b></td><td valign=top bgcolor=eeeeee><a href="/web/20001021224001/http://broadcast.com/Health_and_Fitness/Drugs_and_Medications/"><small>Drugs and Medications</small></a></td></tr>
+<tr><td valign=top bgcolor=eeeeee><b>&#183;</b></td><td valign=top bgcolor=eeeeee><a href="/web/20001021224001/http://broadcast.com/Health_and_Fitness/"><small>Health and Fitness</small></a></td></tr>
+</table>
+
+</td></tr>
+</table><br>
+
+<!-- _JC_  END RESOURCES -->
+
+</td>
+<!-- _JC_  END LEFT COLUMN -->
+
+
+<!-- _JC_  MAIN CONTENT-RIGHT 2 -->
+<td valign="top">
+<center><font face="arial,helvetica" size=2><b>
+Reuters &nbsp;- &nbsp;<a href=/web/20001021224001/http://dailynews.yahoo.com/h/hl/hsn/?u>HealthSCOUT</a> <img width=28 height=11 src="/web/20001021224001im_/http://us.i1.yimg.com/us.yimg.com/i/new2.gif">&nbsp;- &nbsp;<a href=/web/20001021224001/http://dailynews.yahoo.com/h/hl/ap/?u>AP</a> &nbsp;- &nbsp;<a href="/web/20001021224001/http://health.yahoo.com/">Yahoo!&nbsp;Health</a> &nbsp;
+</b></font></center>
+<p>
+<!-- _JC_  MARKET SNAPSHOT -->
+<!-- _JC_  empty right hand -->
+<!-- _JC_  END MARKET SNAPSHOT -->
+
+<!-- _JC_  STORIES -->
+ <a href="/web/20001021224001/http://dailynews.yahoo.com/h/nm/20001020/hl/golf_2.html"><b>Golf May Be Good for Heart Disease</b></a><br><font size=-1>A round of golf may be just what the doctor ordered for heart disease patients, a German study suggests. </font><br><br>
+<a href="/web/20001021224001/http://dailynews.yahoo.com/h/nm/20001020/hl/sick_3.html"><b>Most Sick Days Not for the Sick</b></a><br><font size=-1>Calling in sick has more to do with being well in six out of every 10 cases, according to a study released on Thursday. </font><br><br>
+<a href="/web/20001021224001/http://dailynews.yahoo.com/h/nm/20001020/hl/ballet_4.html"><b>Ballet As Injury-Prone As Football, Wrestling</b></a><br><font size=-1>It may look pretty, but ballet is more like a contact sport when it comes to injury risk, researchers report. And the risk seems to come from both physical and psychological stress. </font><br><br>
+<a href="/web/20001021224001/http://dailynews.yahoo.com/h/nm/20001020/hl/obesity_8.html"><b>Diet Doctors Chew Fat Over Obesity</b></a><br><font size=-1>Two of America's leading diet doctors faced off on Thursday in a sometimes acrimonious debate over the best way to solve one of the nation's most vexing medical problems: the country's staggering rate of obesity. </font><!-- FCStart -->
+<nobr><img border=0 src=/web/20001021224001im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif
+width=16 height=16 align="absbottom">
+<a href="/web/20001021224001/http://dailynews.yahoo.com/fc/Health/Obesity_and_Weight_Issues/"><font size=2>Full&nbsp;Coverage</font></a></nobr>
+<!-- FCEnd -->
+<br><br>
+<a href="/web/20001021224001/http://dailynews.yahoo.com/h/nm/20001020/hl/estrogen_1.html"><b>Estrogen Breakdown Affects Breast Cancer Risk</b></a><br><font size=-1>How a woman's body processes the hormone estrogen may affect her risk of developing breast cancer, new research suggests. </font><br><br>
+<a href="/web/20001021224001/http://dailynews.yahoo.com/h/nm/20001020/hl/abortion_10.html"><b>Congress Wrangles Over Abortion Measure</b></a><br><font size=-1>US lawmakers wrangling over a $14.9 billion foreign spending bill on Thursday became bogged down over the perennial problem of US assistance for family planning groups that advocate abortion rights overseas. </font><!-- FCStart -->
+<nobr><img border=0 src=/web/20001021224001im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif
+width=16 height=16 align="absbottom">
+<a href="/web/20001021224001/http://dailynews.yahoo.com/fc/US/Abortion_Rights_Debate/"><font size=2>Full&nbsp;Coverage</font></a></nobr>
+<!-- FCEnd -->
+<br><br>
+<a href="/web/20001021224001/http://dailynews.yahoo.com/h/nm/20001020/hl/heart_30.html"><b>Heart Massage Device Effective Outside Hospital</b></a><br><font size=-1>An early study of a device that can be inserted into the chest to allow direct heart massage to treat a cardiac arrest before the patient reaches the hospital suggests that the device can restore normal blood flow, French researchers reported here. </font><br><br>
+<a href="/web/20001021224001/http://dailynews.yahoo.com/h/nm/20001020/hl/cancer_47.html"><b>Canada's Poor More Likely to Survive Cancer</b></a><br><font size=-1>Compared with their counterparts north of the border, middle-class and upper-middle-class US residents have similar odds of surviving cancer. However, America's less well-off residents do not fare as well as those in Canada, according to new study findings. </font><!-- FCStart -->
+<nobr><img border=0 src=/web/20001021224001im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif
+width=16 height=16 align="absbottom">
+<a href="/web/20001021224001/http://dailynews.yahoo.com/fc/Health/Breast_Cancer/"><font size=2>Full&nbsp;Coverage</font></a></nobr>
+<!-- FCEnd -->
+<br><br>
+<a href="/web/20001021224001/http://dailynews.yahoo.com/h/nm/20001020/hl/dysfunction_2.html"><b>Treatment Promising for Erectile Dysfunction</b></a><br><font size=-1>Preliminary trials with a synthetic version of a hormone produced in the brain have enabled men with erectile dysfunction to maintain an erection, researchers report. </font><br><br>
+<a href="/web/20001021224001/http://dailynews.yahoo.com/h/nm/20001020/hl/aging_3.html"><b>Emotional Health Increases with Age</b></a><br><font size=-1>Although the body inevitably withers with age, new research suggests people's emotional health only gets better over time. </font><br><br>
+<p><font face="Arial,Helvetica" size=3><b>Earlier Stories</b></font><br>
+
+<a href="/web/20001021224001/http://dailynews.yahoo.com/h/nm/20001020/hl/biking_2.html">Mountain Biking Could Impair Men's Fertility</a><br>
+<a href="/web/20001021224001/http://dailynews.yahoo.com/h/nm/20001020/hl/birth_1.html">Cesarean Section Best for Breech Babies</a><br>
+<a href="/web/20001021224001/http://dailynews.yahoo.com/h/nm/20001020/hl/insurance_3.html">Democrats Slam GOP Health Tax Change</a><br>
+<a href="/web/20001021224001/http://dailynews.yahoo.com/h/nm/20001020/hl/medicare_4.html">Republicans Unveil Medicare ``Giveback'' Bill</a><br>
+<a href="/web/20001021224001/http://dailynews.yahoo.com/h/nm/20001020/hl/polio_4.html">UK Recalls Polio Vaccine</a><br>
+<a href="/web/20001021224001/http://dailynews.yahoo.com/h/nm/20001019/hl/reflux_1.html">Acid Reflux Induces Symptoms in Asthmatics</a><br>
+<a href="/web/20001021224001/http://dailynews.yahoo.com/h/nm/20001019/hl/children_2.html">American Parents Misinformed About Child Development</a><br>
+<a href="/web/20001021224001/http://dailynews.yahoo.com/h/nm/20001019/hl/bypass_1.html">Depression Predicts Chest Pain After Bypass</a><br>
+<a href="/web/20001021224001/http://dailynews.yahoo.com/h/nm/20001019/hl/vaccine_1.html">AIDS Vaccine Shows Promise in Monkeys</a><br>
+<a href="/web/20001021224001/http://dailynews.yahoo.com/h/nm/20001019/hl/ritalin_1.html">Ritalin Treats Chronic Fatigue in Cirrhosis Patients</a><br>
+<a href="/web/20001021224001/http://dailynews.yahoo.com/h/nm/20001019/hl/women_2.html">Women at Higher Risk After Heart Surgery</a><br>
+
+
+
+<!-- _JC_  END STORIES -->
+<p>
+
+<!-- _JC_  ARCHIVES DROPDOWN -->
+<table width="100%" border=0>
+<tr>
+<td width=200 valign=middle><font face="Arial,Helvetica" size=2><b>Archived Stories by Date:</b></font></td>
+<form name="form" action=/web/20001021224001/http://rc.yahoo.com/jump>
+<td valign=middle align=left width=275>
+<select name="u" size=1>
+ <option value="http://dailynews.yahoo.com/h/hl/nm/story.html?s=v/nm/20001019/hl/index.html">Oct 19</option>
+<option value="http://dailynews.yahoo.com/h/hl/nm/story.html?s=v/nm/20001018/hl/index.html">Oct 18</option>
+<option value="http://dailynews.yahoo.com/h/hl/nm/story.html?s=v/nm/20001017/hl/index.html">Oct 17</option>
+<option value="http://dailynews.yahoo.com/h/hl/nm/story.html?s=v/nm/20001016/hl/index.html">Oct 16</option>
+<option value="http://dailynews.yahoo.com/h/hl/nm/story.html?s=v/nm/20001014/hl/index.html">Oct 14</option>
+<option value="http://dailynews.yahoo.com/h/hl/nm/story.html?s=v/nm/20001013/hl/index.html">Oct 13</option>
+<option value="http://dailynews.yahoo.com/h/hl/nm/story.html?s=v/nm/20001012/hl/index.html">Oct 12</option>
+<option value="http://dailynews.yahoo.com/h/hl/nm/story.html?s=v/nm/20001011/hl/index.html">Oct 11</option>
+<option value="http://dailynews.yahoo.com/h/hl/nm/story.html?s=v/nm/20001010/hl/index.html">Oct 10</option>
+<option value="http://dailynews.yahoo.com/h/hl/nm/story.html?s=v/nm/20001009/hl/index.html">Oct 09</option>
+<option value="http://dailynews.yahoo.com/h/hl/nm/story.html?s=v/nm/20001006/hl/index.html">Oct 06</option>
+<option value="http://dailynews.yahoo.com/h/hl/nm/story.html?s=v/nm/20001005/hl/index.html">Oct 05</option>
+<option value="http://dailynews.yahoo.com/h/hl/nm/story.html?s=v/nm/20001004/hl/index.html">Oct 04</option>
+<option value="http://dailynews.yahoo.com/h/hl/nm/story.html?s=v/nm/20001003/hl/index.html">Oct 03</option>
+<option value="http://dailynews.yahoo.com/h/hl/nm/story.html?s=v/nm/20001002/hl/index.html">Oct 02</option>
+<option value="http://dailynews.yahoo.com/h/hl/nm/story.html?s=v/nm/20000929/hl/index.html">Sep 29</option>
+<option value="http://dailynews.yahoo.com/h/hl/nm/story.html?s=v/nm/20000928/hl/index.html">Sep 28</option>
+<option value="http://dailynews.yahoo.com/h/hl/nm/story.html?s=v/nm/20000927/hl/index.html">Sep 27</option>
+<option value="http://dailynews.yahoo.com/h/hl/nm/story.html?s=v/nm/20000926/hl/index.html">Sep 26</option>
+<option value="http://dailynews.yahoo.com/h/hl/nm/story.html?s=v/nm/20000925/hl/index.html">Sep 25</option>
+<option value="http://dailynews.yahoo.com/h/hl/nm/story.html?s=v/nm/20000922/hl/index.html">Sep 22</option>
+<option value="http://dailynews.yahoo.com/h/hl/nm/story.html?s=v/nm/20000921/hl/index.html">Sep 21</option>
+<option value="http://dailynews.yahoo.com/h/hl/nm/story.html?s=v/nm/20000920/hl/index.html">Sep 20</option>
+<option value="http://dailynews.yahoo.com/h/hl/nm/story.html?s=v/nm/20000919/hl/index.html">Sep 19</option>
+
+</select><input type=submit value=Go></td>
+</form>
+</tr></table>
+<!-- _JC_  END ARCHIVES DROPDOWN -->
+
+<!-- _JC_  NEWS SEARCH -->
+<table cellpadding=2 cellspacing=0 border=0 width="100%" >
+<tr valign="middle">
+<td bgcolor="#dcdcdc"><font face="Arial,Helvetica" size=2><b>News Search</b></font></td>
+</tr>
+<tr><form action="/web/20001021224001/http://search.news.yahoo.com/search/news"><td align="center">
+<input type=text size=25 name=p>
+<input type=submit value="Search">
+<a href="/web/20001021224001/http://search.news.yahoo.com/search/news/options"><font face="Arial,Helvetica" size=2>Advanced</font></a><br><small><b>Search:</b>&nbsp;<input
+type=radio name=c checked value="news">&nbsp;Stories&nbsp;&nbsp;<input
+type=radio name=c value="news_photos">&nbsp;Photos&nbsp;&nbsp;<input
+type=radio name=c value="fullcov">&nbsp;Full&nbsp;Coverage</small><input type=hidden name=n value=20></td></form></tr>
+</table>
+<!-- _JC_  END SEARCH -->
+
+</td>
+</tr>
+</table>
+<!-- _JC_  END MAIN TABLE -->
+
+<!-- _JC_  BOTTOM NAV -->
+<!-- _JC_  NAV -->
+<table border=0 cellspacing=0 cellpadding=0 width="675">
+<tr bgcolor="#333366">
+<td>
+<table border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td height=5></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="center">
+<table border=0 cellspacing=0>
+<tr>
+<td align="center"><a href="/web/20001021224001/http://dailynews.yahoo.com/h/?u"><font size=2 face="arial,helvetica">Home</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001021224001/http://dailynews.yahoo.com/h/ts/?u"><font size=2 face="arial,helvetica">Top&nbsp;Stories</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001021224001/http://dailynews.yahoo.com/h/bs/?u"><font  size=2 face="arial,helvetica">Business</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001021224001/http://dailynews.yahoo.com/h/tc/?u"><font size=2 face="arial,helvetica">Tech</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001021224001/http://dailynews.yahoo.com/h/pl/?u"><font size=2 face="arial,helvetica">Politics</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001021224001/http://dailynews.yahoo.com/h/wl/?u"><font size=2 face="arial,helvetica">World</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001021224001/http://dailynews.yahoo.com/h/lo/?u"><font size=2 face="arial,helvetica">Local</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001021224001/http://dailynews.yahoo.com/h/en/?u"><font size=2 face="arial,helvetica">Entertainment</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001021224001/http://dailynews.yahoo.com/h/sp/?u"><font size=2 face="arial,helvetica">Sports</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001021224001/http://dailynews.yahoo.com/h/sc/?u"><font size=2 face="arial,helvetica">Science</font></a>&nbsp;</td>
+<td align="center" bgcolor="#333366">&nbsp;<a href="/web/20001021224001/http://dailynews.yahoo.com/h/hl/?u"><font size=2 face="arial,helvetica" color="#eeeeff">Health</font></a>&nbsp;</td>
+<td align="center">&nbsp;<a href="/web/20001021224001/http://news.yahoo.com/fc/?u"><font size=2 face="arial,helvetica">Full&nbsp;Coverage</font></a></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<!-- _JC_  NAV -->
+<!-- _JC_  END BOTTOM NAV -->
+<hr size=0 width=675>
+<!-- _JC_  FOOTER -->
+<table width=675>
+<tr>
+<td valign="top" align="center">
+<font size=2>
+
+Copyright &copy; 2000 Yahoo! Inc.,
+and Reuters Limited. All rights reserved.<br>
+Republication or redistribution of Reuters content is expressly
+prohibited without the prior written consent of Reuters.<br>
+Reuters shall not be liable for any errors or delays in the content,
+or for any actions taken in reliance thereon.
+<br>
+<a href="/web/20001021224001/http://help.yahoo.com/help/news/"> Questions or Comments</a>
+<br>
+<a href="/web/20001021224001/http://privacy.yahoo.com/">Privacy Policy</a> -
+<a href="/web/20001021224001/http://docs.yahoo.com/info/terms/">Terms of Service</a>
+</font></td>
+</tr></table>
+<!-- _JC_  END FOOTER -->
+</center>    
+</body>
+</html>
+ 
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 22:40:01 Oct 21, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:00:15 Jan 7, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

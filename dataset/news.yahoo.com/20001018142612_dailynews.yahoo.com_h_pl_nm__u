@@ -1,0 +1,737 @@
+<html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app2.us.archive.org";archive_analytics.values.server_ms=286;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+<!-- _JC_  JAVASCRIPT FOR ARCHIVE DROP DOWN -->
+<SCRIPT LANGUAGE="JavaScript">
+<!-- _JC_  Begin -->
+var remote = null
+function rs(n,u,w,h) {
+remote = window.open(u, n, 'width=' + w + ',height=' + h +',resizable=no,scrollbars=no');
+if (remote != null) {
+if (remote.opener == null)
+remote.opener = self;
+window.name = 'yahooNewsRoot';
+remote.location.href = u;
+}
+}
+
+function formHandler(form){
+var URL = document.form.u.options[document.form.u.selectedIndex].value;
+window.location.href = URL;
+}
+
+
+function mini_yahooSubmit()
+{
+    var which;
+    var candidate;
+    var query;
+
+  // Get the keywords value
+      query = document.searchform.elements[5].value;
+
+  // Get the candidate value
+      which = document.searchform.candidate.selectedIndex;
+    candidate = document.searchform.candidate[which].value;
+  if ( candidate != "none" )
+  {
+      query += " ClipCandidate:" + candidate;
+  }
+
+
+  // Stuff the constructed query value into the query field
+      document.searchform.elements[2].value = query;
+}
+</script>
+
+<!-- _JC_  End -->
+</SCRIPT>
+<!-- _JC_  END JAVASCRIPT FOR ARCHIVE DROP DOWN -->
+
+<title>Politics - Reuters </title>
+</head>
+<body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://dailynews.yahoo.com/h/pl/nm/?u";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "5";
+var displayMonth = "Dec";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://dailynews.yahoo.com/h/pl/nm/?u" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20001205082300" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Nov
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 8:23:00 Dec 5, 2000">DEC</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20010317222149/http://dailynews.yahoo.com/h/pl/nm/?u" title="17 Mar 2001"><strong>MAR</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 8:23:00 Dec 5, 2000">5</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20001205093000/http://dailynews.yahoo.com/h/pl/nm/?u" title="9:30:00 Dec 5, 2000"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   1999
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 8:23:00 Dec 5, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20011205192258/http://dailynews.yahoo.com/h/pl/nm/?u" title="5 Dec 2001"><strong>2001</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20001205082300*/http://dailynews.yahoo.com/h/pl/nm/?u" title="See a list of every capture for this URL">309 captures</a>
+           <div class="r" title="Timespan for captures of this URL">5 Dec 00 - 7 Apr 07</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:11:000000000006_2001:-1:00310101efd9_2002:-1:100001010101_2003:-1:010101010100_2004:-1:010101010100_2005:-1:000100000001_2006:-1:110101101101_2007:-1:010100000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<center>
+
+<!-- _JC_  HEADER -->
+
+<table cellpadding=2 cellspacing=0 BORDER=0 width="675">
+<tr>
+<td width="1%"><a href="/web/20001205082300/http://dailynews.yahoo.com/h/?u"><img src="/web/20001205082300im_/http://us.i1.yimg.com/us.yimg.com/i/dn/main4.gif" border=0 width=250 height=31 alt="Yahoo! News"></a></td>
+<td align="right" nowrap><a href="/web/20001205082300/http://dailynews.yahoo.com/"><font face="arial,helvetica" size=2>Home</font></a><font face="arial,helvetica" size=2> - <a href="/web/20001205082300/http://www.yahoo.com/">Yahoo!</a> - <a href="/web/20001205082300/http://my.yahoo.com/">My Yahoo!</a> - <a href="/web/20001205082300/http://alerts.yahoo.com/config/set_notification?.t=n">News Alerts</a> - <a href="/web/20001205082300/http://help.yahoo.com/help/news/">Help</a></font><br>
+<hr size=1 noshade></td>
+<td width="1%">
+<a href="/web/20001205082300/http://rd.yahoo.com/dailynews/?http://www.reuters.com/onlinemedia/">
+<!-- _JC_  LOGO -->
+<img src="/web/20001205082300im_/http://us.i1.yimg.com/us.yimg.com/i/dn/reuters5.gif" border=0 alt="Reuters Media" width=137 height=30></a>
+<!-- _JC_  END LOGO -->
+</td>
+</tr>
+</table>
+<!-- _JC_  END HEADER -->
+
+<!-- _JC_  ADCALL -->
+<p>
+<center>
+<table cellpadding=3 border=0 cellspacing=0 width="675">
+<tr>
+<td>
+ <!-- SpaceID=0 robot -->
+
+</td>
+<td align=center>
+ <!-- SpaceID=0 robot -->
+
+</td>
+</tr>
+</table>
+</center>
+<p>
+<!-- _JC_  END ADCALL -->
+
+
+<!-- _JC_  NAVIGATION -->
+<!-- _JC_  NAV -->
+<table border=0 cellspacing=0 cellpadding=0 width="675">
+<tr>
+<td colspan=2 align=center>
+<table border=0 cellspacing=0>
+<tr>
+<td align="center"><a href="/web/20001205082300/http://dailynews.yahoo.com/h/?u"><font size=2 face="arial,helvetica">Home</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001205082300/http://dailynews.yahoo.com/h/ts/?u"><font size=2 face="arial,helvetica">Top&nbsp;Stories</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001205082300/http://dailynews.yahoo.com/h/bs/?u"><font size=2 face="arial,helvetica">Business</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001205082300/http://dailynews.yahoo.com/h/tc/?u"><font size=2 face="arial,helvetica">Tech</font></a>&nbsp;</td>
+<td align="center" bgcolor="#333366">&nbsp;<a href="/web/20001205082300/http://dailynews.yahoo.com/h/pl/?u"><font size=2 face="arial,helvetica"  color="#eeeeff">Politics</font></a>&nbsp;</td>
+<td align="center">&nbsp;<a href="/web/20001205082300/http://dailynews.yahoo.com/h/wl/?u"><font size=2 face="arial,helvetica">World</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001205082300/http://dailynews.yahoo.com/h/lo/?u"><font size=2 face="arial,helvetica">Local</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001205082300/http://dailynews.yahoo.com/h/en/?u"><font size=2 face="arial,helvetica">Entertainment</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001205082300/http://dailynews.yahoo.com/h/sp/?u"><font size=2 face="arial,helvetica">Sports</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001205082300/http://dailynews.yahoo.com/h/sc/?u"><font size=2 face="arial,helvetica">Science</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001205082300/http://dailynews.yahoo.com/h/hl/?u"><font size=2 face="arial,helvetica">Health</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001205082300/http://news.yahoo.com/fc/?u"><font size=2 face="arial,helvetica">Full&nbsp;Coverage</font></a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr bgcolor="#333366">
+<td colspan=2>
+<table border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td height=5></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<!-- _JC_  NAV -->
+<!-- _JC_  END NAVIGATION -->
+
+
+<!-- _JC_  SECTION HEADER -->
+
+<table border=0 cellpadding=2 cellspacing=0 width="675">
+<tr bgcolor="#9999cc">
+<td><font face="arial,helvetica" size=4><b>
+Politics
+News</b>
+</font><font face="arial,helvetica" size=2> - updated
+ 3:12 AM ET Dec 5
+</font></td>
+<td width="1%">
+<table cellpadding=3 cellspacing=0><tr>
+<td bgcolor="#ccccff" nowrap><IMG src="/web/20001205082300im_/http://us.i1.yimg.com/us.yimg.com/i/my/my16.gif" width=16 height=16 border=0 align=left alt="My"><FONT face=arial size="-2">
+<a href="/web/20001205082300/http://rd.yahoo.com/addtomy/*http://edit.yahoo.com/config/set_news?.add=rp">Add to My Yahoo!</a></font></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<!-- _JC_  END SECTION HEADER -->
+
+<!-- _JC_  MAIN TABLE -->
+<table cellpadding=3 border=0 cellspacing=0 width="675">
+<tr valign="top">
+<td width=200>
+<!-- _JC_  LEFT COLUMN -->
+
+<!-- _JC_  LEFT COLUMN -->
+<table border=0 cellpadding=1 cellspacing=0 width="100%" bgcolor="#9999cc"><tr valign=top><td valign="top"> <table border=0 cellpadding=3 cellspacing=0 width="100%"><tr bgcolor="#eeeecc"><td colspan=2 align=center>
+<img height=16 width=16 src="/web/20001205082300im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif">
+<font face="arial,helvetica"><b>Full Coverage</b></font><br><font size=1 face="arial,helvetica"></font></td></tr>
+<tr bgcolor="white">
+<td valign="top" width="1%">
+<b>&#183;</b></td><td width="99%" valign=top><a href="/web/20001205082300/http://dailynews.yahoo.com/fc/US/Presidential_Election_2000/"><font size=2>Fla. Judge Rejects Gore Election Challenge</font></a></td></tr>
+<tr bgcolor="white">
+<td valign="top" width="1%">
+<b>&#183;</b></td><td width="99%" valign=top><a href="/web/20001205082300/http://dailynews.yahoo.com/fc/Science/Environment_and_Nature_News/"><font size=2>Clinton Acts To Defend Hawaii Coral</font></a></td></tr>
+<tr bgcolor="white">
+<td valign="top" width="1%">
+<b>&#183;</b></td><td width="99%" valign=top><a href="/web/20001205082300/http://dailynews.yahoo.com/fc/US/US_Elections/"><font size=2>Senate May Be Split 50-50 Between GOP, Democrats</font></a></td></tr>
+<tr bgcolor="white">
+<td valign="top" width="1%">
+<b>&#183;</b></td><td width="99%" valign=top><a href="/web/20001205082300/http://dailynews.yahoo.com/fc/US/USS_Cole/"><font size=2>USS Cole Probe</font></a></td></tr>
+<tr bgcolor="white">
+<td valign="top" width="1%">
+<b>&#183;</b></td><td width="99%" valign=top><a href="/web/20001205082300/http://dailynews.yahoo.com/fc/US/Alaska_Airlines_Crash/"><font size=2>FAA Proposes Alaska Air Fines </font></a></td></tr>
+<tr bgcolor="white">
+<td valign="top" width="1%">
+<b>&#183;</b></td><td width="99%" valign=top><a href="/web/20001205082300/http://dailynews.yahoo.com/fc/US/Health_Care_Debate/"><font size=2>Health Care Debate</font></a></td></tr>
+</table>
+</td></tr></table><br>
+<table border=0 cellpadding=3 cellspacing=0 width="100%">
+<tr bgcolor=ccccff><td><b><font face="arial,helvetica">
+Video Search</font></b></td></tr>
+<tr><td bgcolor="#eeeeee"><table cellspacing=0 cellpadding=2 width="100%" border=0></table>
+
+</td></tr>
+<tr><td bgcolor="#eeeeee"><table border=0 width="100%"><tr><form name=searchform action="/web/20001205082300/http://yahoo.virage.com/cgi-bin/visearch" onSubmit="mini_yahooSubmit()"><td valign=top> <center> <font face="Arial,Helvetica" size=2><b>Search Election Video</b></font><br><input type=hidden name=user value="yahoo"> <input type=hidden name=template value="template.html"> <input type=hidden name=query value=""> <font face="arial,helvetica" size=2>-Select a Name-</font><BR> <SELECT NAME="candidate"> <OPTION VALUE="none">any candidate <OPTION VALUE="Lamar Alexander">Lamar Alexander <OPTION VALUE="Gary Bauer">Gary Bauer <OPTION VALUE="Sam Berry">Sam Berry <OPTION VALUE="Bill Bradley">Bill Bradley <OPTION VALUE="Harry Browne">Harry Browne <OPTION VALUE="Pat Buchanan">Pat Buchanan <OPTION VALUE="George W. Bush">George W. Bush <OPTION VALUE="Elizabeth Dole">Elizabeth Dole <OPTION VALUE="Steve Forbes">Steve Forbes <OPTION VALUE="Al Gore">Al Gore <OPTION VALUE="John Hagelin">John Hagelin <OPTION VALUE="Heather Anne Harder">Heather A. Harder <OPTION VALUE="Orrin Hatch">Orrin Hatch <OPTION VALUE="Larry Hines">Larry Hines <OPTION VALUE="John Kasich">John Kasich <OPTION VALUE="Alan Keyes">Alan Keyes <OPTION VALUE="Lyndon LaRouche">Lyndon LaRouche <OPTION VALUE="John McCain">John McCain <OPTION VALUE="David McReynolds">David McReynolds <OPTION VALUE="Ralph Nader">Ralph Nader <OPTION VALUE="Howard Phillips">Howard Phillips <OPTION VALUE="Dan Quayle">Dan Quayle <OPTION VALUE="Bob Smith">Bob Smith <OPTION VALUE="Donald Trump">Donald Trump </SELECT> <br> <font face="arial,helvetica" size=2>-Enter Search Terms-</font><br> <font face="arial,helvetica" size=1><b>Example: 'education' </b></FONT> <input type="hidden" name="page" value="1"><br> <INPUT TYPE="text" NAME="keywords" SIZE="15"><br> <INPUT TYPE="submit" VALUE="Search" name="search"> <br> <a href="/web/20001205082300/http://www.virage.com/" target="_blank"><IMG SRC="/web/20001205082300im_/http://us.i1.yimg.com/us.yimg.com/i/dn/virage_logo.jpg" WIDTH="70" HEIGHT="25" BORDER="0" ALT="Virage" vspace=1 hspace=1></a><a href="/web/20001205082300/http://www.cspan.org/" target="_blank"><IMG SRC="/web/20001205082300im_/http://us.i1.yimg.com/us.yimg.com/i/dn/cspan_logo.jpg" WIDTH="70" HEIGHT="25" BORDER="0" ALT="C-Span" HSPACE="1" vspace=1></a> </center> </td></form></tr></table></td></tr>
+</table><br>
+<table border=0 cellpadding=3 cellspacing=0 width="100%">
+<tr bgcolor=ccccff><td><b><font face="arial,helvetica">
+Audio/Video</font></b></td></tr>
+<tr><td bgcolor="#eeeeee"><table cellspacing=0 cellpadding=2 width="100%" border=0><tr><td colspan=2 valign="top" bgcolor="#dcdcdc">
+<font size=2 face="Arial,Helvetica"><b>
+<a href="/web/20001205082300/http://dailynews.yahoo.com/h/a/g/latest/?u">Reuters Video</a>
+</b></font>
+</td></tr>
+ <tr><td width="1%" valign="top"><font size=2><img src="/web/20001205082300im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13></font></td><td>
+<a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001205082300/http://vision.yahoo.com/lc?&amp;p=news&amp;l=SAM&amp;a=0,30&amp;t=news&amp;sid=933372&amp;f=31042383&amp;m=rnv&amp;r=any&quot;,100,100);"><font size=2>Judge Rules Against Gore Recount Plea</font></a>
+</td></tr>
+
+<tr><td width="1%" valign="top"><font size=2><img src="/web/20001205082300im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13></font></td><td>
+<a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001205082300/http://vision.yahoo.com/lc?&amp;p=news&amp;l=SAM&amp;a=0,30&amp;t=news&amp;sid=932953&amp;f=31042388&amp;m=rnv&amp;r=any&quot;,100,100);"><font size=2>Netanyahu Mulling Another Political Run</font></a>
+</td></tr>
+
+<tr><td width="1%" valign="top"><font size=2><img src="/web/20001205082300im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13></font></td><td>
+<a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001205082300/http://vision.yahoo.com/lc?&amp;p=news&amp;l=SAM&amp;a=0,30&amp;t=news&amp;sid=932624&amp;f=31042383&amp;m=rnv&amp;r=any&quot;,100,100);"><font size=2>Shuttle Space Walkers Hoist Solar Panels In Place</font></a>
+</td></tr>
+
+<tr><td colspan=2 valign="top" bgcolor="#dcdcdc">
+<font size=2 face="Arial,Helvetica"><b>
+<a href="/web/20001205082300/http://dailynews.yahoo.com/h/a/g/npr/ts?u">NPR</a>
+</b></font>
+</td></tr>
+ <tr><td valign=top><b><img src="/web/20001205082300im_/http://us.i1.yimg.com/us.yimg.com/i/my/sound.gif" width=16 height=13 border=0 alt="Audio"></b></td><td valign=top><small><a href="/web/20001205082300/http://www.yahoo.com/dailynews/npr/?http://www.npr.org/ramfiles/atc/20001204.atc.02.ram">Supreme Court sets aside Florida high court ruling on election</a></small></td></tr>
+<tr><td valign=top><b><img src="/web/20001205082300im_/http://us.i1.yimg.com/us.yimg.com/i/my/sound.gif" width=16 height=13 border=0 alt="Audio"></b></td><td valign=top><small><a href="/web/20001205082300/http://www.yahoo.com/dailynews/npr/?http://www.npr.org/ramfiles/atc/20001204.atc.01.ram">Fla. Court Denies Gore's Recount Call</a></small></td></tr>
+<tr><td colspan=2 valign="top" bgcolor="#dcdcdc">
+<font size=2 face="Arial,Helvetica"><b>
+<a href="/web/20001205082300/http://dailynews.yahoo.com/h/a/g/yn/pl?u">Yahoo! News</a>
+</b></font>
+</td></tr>
+ <tr><td width="1%" valign="top">
+<font size=2><img src="/web/20001205082300im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13></font></td><td>
+<font size=2><a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001205082300/http://vision.yahoo.com/lc?t=news&amp;p=news&amp;l=SAM&amp;a=0,30&amp;sid=925700&amp;f=33338352&amp;m=rnv&amp;r=any&quot;,100,100);">US Supreme Court Prepares for Investigation into Presidential Stalemate</a> - WPVI, Philadelphia</font>
+</td></tr>
+
+<tr><td width="1%" valign="top">
+<font size=2><img src="/web/20001205082300im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13></font></td><td>
+<font size=2><a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001205082300/http://vision.yahoo.com/lc?t=news&amp;p=news&amp;l=SAM&amp;a=0,30&amp;sid=925621&amp;f=33338352&amp;m=rnv&amp;r=any&quot;,100,100);">Florida Judge Undecided on Recount Requested by Gore</a> - KTLA, Los Angeles</font>
+</td></tr>
+
+<tr><td width="1%" valign="top">
+<font size=2><img src="/web/20001205082300im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13></font></td><td>
+<font size=2><a href="javascript: rs(&quot;videoWin&quot;,&quot;/web/20001205082300/http://vision.yahoo.com/lc?t=news&amp;p=news&amp;l=SAM&amp;a=0,30&amp;id=474479&amp;f=33338352&amp;m=rnv&amp;r=any&quot;,100,100);">Republican Controlled Legislature Makes Moves in Florida</a> - KHOU, Houston</font>
+</td></tr>
+
+<tr><td colspan=2 valign="top" bgcolor="#dcdcdc">
+<font size=2 face="Arial,Helvetica"><b>
+<a href="/web/20001205082300/http://www.abcnews.com/">ABCNews Radio</a>
+</b></font>
+</td></tr>
+<tr><td valign=top><b><img src="/web/20001205082300im_/http://us.i1.yimg.com/us.yimg.com/i/my/sound.gif" width=16 height=13 border=0 alt="Audio"></b></td><td valign=top><small><a href="/web/20001205082300/http://play.rbn.com/?abcradio/radionews/demand/abcnews.ra">Hourly Top Stories</a></small></td></tr>
+</table>
+
+</td></tr>
+</table><br>
+<table border=0 cellpadding=3 cellspacing=0 width="100%">
+<tr bgcolor=ccccff><td><b><font face="arial,helvetica">
+Resources</font></b></td></tr>
+<tr><td bgcolor="#eeeeee"><table cellspacing=0 cellpadding=2 width="100%" border=0><tr><td colspan=2 valign="top" bgcolor="#dcdcdc">
+<font size=2 face="Arial,Helvetica"><b>
+Community Tools
+</b></font>
+</td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001205082300/http://messages.yahoo.com/yahoo/Government___Politics/index.html"><small>Message Boards</small></a></td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001205082300/http://conversations.yahoo.com/dir/Conversations/News/Politics/"><small>Conversations</small></a></td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001205082300/http://chat.yahoo.com/?room=Politics%20Lobby::1600326535"><small>Chat</small></a></td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001205082300/http://dir.clubs.yahoo.com/Government___Politics/"><small>Clubs</small></a></td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001205082300/http://www.broadcast.com/News_and_Politics/Politics/"><small>Net Events</small></a></td></tr>
+<tr><td colspan=2 valign="top" bgcolor="#dcdcdc">
+<font size=2 face="Arial,Helvetica"><b>
+<a href="/web/20001205082300/http://dir.yahoo.com/Government/Politics/">Web Sites</a>
+</b></font>
+</td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001205082300/http://dir.yahoo.com/Government/U_S__Government/Politics/"><small>U.S. Politics</small></a></td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001205082300/http://dir.yahoo.com/Government/Politics/Elections/"><small>Elections</small></a></td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001205082300/http://dir.yahoo.com/Government/Politics/Elections/Browse_By_Region/U_S__States/"><small>U.S. Elections</small></a></td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001205082300/http://dir.yahoo.com/Government/"><small>Government</small></a></td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001205082300/http://dir.yahoo.com/Government/U_S__Government/"><small>U.S. Government</small></a></td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001205082300/http://dir.yahoo.com/Government/Politics/Parties/By_Country/United_States/"><small>U.S. Parties</small></a></td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001205082300/http://dir.yahoo.com/Government/Politics/News_and_Media/"><small>Political News</small></a></td></tr>
+<tr><td colspan=2 valign="top" bgcolor="#dcdcdc">
+<font size=2 face="Arial,Helvetica"><b>
+<a href="/web/20001205082300/http://broadcast.com/News_and_Politics/Politics/">Yahoo! Events</a>
+</b></font>
+</td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001205082300/http://www.broadcast.com/News_and_Politics/Archived_Events/"><small>Archived Events</small></a></td></tr>
+<tr><td valign=top bgcolor="#eeeeee"><b>&#183;</b></td><td valign=top bgcolor="#eeeeee"><a href="/web/20001205082300/http://broadcast.com/News_and_Politics/Archived_Events/Politics/2000_US_Presidential_Elections/"><small>Election 2000</small></a></td></tr>
+</table>
+
+</td></tr>
+</table><br>
+
+<!-- _JC_  END RESOURCES -->
+
+</td>
+<!-- _JC_  END LEFT COLUMN -->
+
+
+<!-- _JC_  MAIN CONTENT-RIGHT 2 -->
+<td valign="top">
+<center><font face="arial,helvetica" size=2><b>
+Reuters &nbsp;- &nbsp;<a href=/web/20001205082300/http://dailynews.yahoo.com/h/pl/ap/?u>AP</a> &nbsp;- &nbsp;<a href=/web/20001205082300/http://dailynews.yahoo.com/h/pl/el/?u>Elections</a> &nbsp;- &nbsp;<a href=/web/20001205082300/http://dailynews.yahoo.com/h/pl/ab/?u>ABCNews</a> &nbsp;- &nbsp;<img src="/web/20001205082300im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13><a href="/web/20001205082300/http://dailynews.yahoo.com/h/a/g/yn/pl/?u">Videos</a> &nbsp;
+</b></font></center>
+<p>
+<!-- _JC_  MARKET SNAPSHOT -->
+<!-- _JC_  POLITICS TOOLS -->
+<table align=right width=170 border=0 cellpadding=2>
+<tr valign=top>
+<td bgcolor="#eeeeee">
+
+
+
+
+<table border=0 cellpadding=2
+width="100%">
+<tr bgcolor="#DCDCDC">
+<td><font face="arial,helvetica" size=2><b>Find
+Your Reps</b></font></td>
+</tr>
+<tr><form action="/web/20001205082300/http://politics.yahoo.com/freps">
+<td>
+<small>Enter your 9 digit Zip:</small>
+<INPUT NAME="zip5" SIZE=5 maxlength=5><b>-</b>
+<INPUT NAME="zip4" SIZE=4 maxlength=4 value="">
+<INPUT type=submit
+value=Go>
+</td></form></tr>
+<tr>
+<td><small>Don't know your 9 digit Zip?
+<b><a href="/web/20001205082300/http://politics.yahoo.com/freps">Search by address</a></b></small></td>
+</tr>
+</table>
+
+<table border=0 cellpadding=2 width="100%">
+<tr bgcolor="#DCDCDC">
+<td colspan=2><font face="arial,helvetica" size=2><b>Politics Features</b></font></td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td valign=top><b>&#183;</b></td>
+<td valign=top>
+<a href="/web/20001205082300/http://politics.yahoo.com/"><small>Yahoo!
+Politics</small></a></td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td valign=top><b>&#183;</b></td>
+<td valign=top><a
+href="/web/20001205082300/http://politics.yahoo.com/politics/State_and_Local/"><small>State and Local Government</small></a></td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td valign=top><b>&#183;</b></td>
+<td valign=top><a href="/web/20001205082300/http://politics.yahoo.com/politics/Supreme_Court/"><small>Supreme Court News</small></a></td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td valign=top><b>&#183;</b></td>
+<td valign=top><a
+href="/web/20001205082300/http://politics.yahoo.com/politics/White_House/"><small>White House News</small></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- _JC_  POLITICS TOOLS -->
+<!-- _JC_  END MARKET SNAPSHOT -->
+
+<!-- _JC_  STORIES -->
+ <a href="/web/20001205082300/http://dailynews.yahoo.com/h/nm/20001205/pl/election_court_dc_27.html"><b>Top Court Sets Aside Bush-Gore Vote Ruling</b></a><!-- AVIconStart -->&nbsp;<img src="/web/20001205082300im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13 border=0 alt="With Multimedia"><!-- AVIconEnd --><br><font size=-1>The U.S. Supreme Court set aside a ruling that extended the deadline for hand-counted Florida ballots that Democrat Al Gore needs to win the White House, but kept alive in state court the case vital to the vice president's future. </font><!-- FCStart -->
+<nobr><img border=0 src=/web/20001205082300im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif
+width=16 height=16 align="absbottom">
+<a href="/web/20001205082300/http://dailynews.yahoo.com/fc/US/Presidential_Election_2000/"><font size=2>Full&nbsp;Coverage</font></a></nobr>
+<!-- FCEnd -->
+<br><br>
+<a href="/web/20001205082300/http://dailynews.yahoo.com/h/nm/20001205/pl/election_bush_dc_110.html"><b>Bush Very Cautiously Inches Closer to White House</b></a><br><font size=-1>A month after the U.S. presidential election and 24 hours after a major legal victory, Republican George W. Bush on Tuesday inched closer to the White House with a sense of relief but ``a great deal of vigilance.'' </font><!-- FCStart -->
+<nobr><img border=0 src=/web/20001205082300im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif
+width=16 height=16 align="absbottom">
+<a href="/web/20001205082300/http://dailynews.yahoo.com/fc/US/Presidential_Election_2000/"><font size=2>Full&nbsp;Coverage</font></a></nobr>
+<!-- FCEnd -->
+<br><br>
+<a href="/web/20001205082300/http://dailynews.yahoo.com/h/nm/20001204/pl/election_challenge_dc_25.html"><b>Florida Judge Rejects Gore Election Challenge</b></a><!-- AVIconStart -->&nbsp;<img src="/web/20001205082300im_/http://us.i1.yimg.com/us.yimg.com/i/my/v.gif" width=14 height=13 border=0 alt="With Multimedia"><!-- AVIconEnd --><br><font size=-1>A Florida judge on Monday rejected Democrat Al Gore's bid to overturn the certified result of the presidential election in Florida that gave a narrow victory to Republican George W. Bush. </font><!-- FCStart -->
+<nobr><img border=0 src=/web/20001205082300im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif
+width=16 height=16 align="absbottom">
+<a href="/web/20001205082300/http://dailynews.yahoo.com/fc/US/Presidential_Election_2000/"><font size=2>Full&nbsp;Coverage</font></a></nobr>
+<!-- FCEnd -->
+<br><br>
+<a href="/web/20001205082300/http://dailynews.yahoo.com/h/nm/20001204/pl/election_democrats_dc_7.html"><b>Democrats Support Gore Appeal to Fla. Supreme Court</b></a><br><font size=-1>Democratic lawmakers on Monday threw their support behind Vice President Al Gore as his lawyers vowed to appeal a ruling from a Florida judge rejecting Gore's legal challenge to the certified result of the U.S. presidential election in Florida. </font><br><br>
+<a href="/web/20001205082300/http://dailynews.yahoo.com/h/nm/20001204/pl/election_transition_dc_9.html"><b>Agency Declines to Provide Transition Funds</b></a><br><font size=-1>The U.S. government agency responsible for providing transition funds and office space to the next administration stuck to its guns on Monday at a Congressional hearing, insisting it cannot do either until it is clear who has won the White House. </font><!-- FCStart -->
+<nobr><img border=0 src=/web/20001205082300im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif
+width=16 height=16 align="absbottom">
+<a href="/web/20001205082300/http://dailynews.yahoo.com/fc/US/Presidential_Election_2000/"><font size=2>Full&nbsp;Coverage</font></a></nobr>
+<!-- FCEnd -->
+<br><br>
+<a href="/web/20001205082300/http://dailynews.yahoo.com/h/nm/20001204/pl/election_gore_dc_112.html"><b>Gore Plans Transition; Aide Discounts Court Ruling</b></a><br><font size=-1>Vice President Al Gore headed for his ceremonial White House office on Monday to plan his transition to the presidency, as his top spokesman discounted the impact of a U.S. Supreme Court ruling on Florida votes. </font><!-- FCStart -->
+<nobr><img border=0 src=/web/20001205082300im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif
+width=16 height=16 align="absbottom">
+<a href="/web/20001205082300/http://dailynews.yahoo.com/fc/US/Presidential_Election_2000/"><font size=2>Full&nbsp;Coverage</font></a></nobr>
+<!-- FCEnd -->
+<br><br>
+<a href="/web/20001205082300/http://dailynews.yahoo.com/h/nm/20001205/pl/congress_leadall_dc_3.html"><b>Congress Returns for Lame-Duck Session</b></a><br><font size=-1>As lawmakers return for a post-election session on Tuesday to complete the overdue budget, the Senate faces the tough task of figuring out how to deal with a 50-50 split between Republicans and Democrats. </font><!-- FCStart -->
+<nobr><img border=0 src=/web/20001205082300im_/http://us.i1.yimg.com/us.yimg.com/i/dn/fc.gif
+width=16 height=16 align="absbottom">
+<a href="/web/20001205082300/http://dailynews.yahoo.com/fc/US/US_Elections/"><font size=2>Full&nbsp;Coverage</font></a></nobr>
+<!-- FCEnd -->
+<br><br>
+<a href="/web/20001205082300/http://dailynews.yahoo.com/h/nm/20001204/pl/cheney_doctor_dc_1.html"><b>Doctor Says Cheney May Face Another Heart 'Event'</b></a><br><font size=-1>Republican vice presidential nominee Dick Cheney, who suffered his fourth heart attack last month, is very likely to have another heart ``event'' at some point, the top cardiologist at the Cleveland Clinic said in an interview broadcast on Monday by ABC News. </font><br><br>
+<a href="/web/20001205082300/http://dailynews.yahoo.com/h/nm/20001204/pl/bush_pentagon_dc_1.html"><b>Bush Eyes Football Hero to Head Navy--Newsletter</b></a><br><font size=-1>A former football star could score a top Pentagon post should Republican George W. Bush become the next U.S. president, according to Aviation Week magazine. </font><br><br>
+<a href="/web/20001205082300/http://dailynews.yahoo.com/h/nm/20001204/pl/clinton_christmas_dc_1.html"><b>Clintons Comb Attic for White House Holiday Decor</b></a><br><font size=-1>President Clinton and first lady Hillary Rodham Clinton hauled their old Christmas ornaments out of storage to set a nostalgic theme for their last holiday season at the White House. </font><br><br>
+<p><font face="Arial,Helvetica" size=3><b>Earlier Stories</b></font><br>
+
+<a href="/web/20001205082300/http://dailynews.yahoo.com/h/nm/20001204/pl/election_california_dc_1.html">Calif. Lawmaker Sets New Drive for Electronic Voting</a><br>
+<a href="/web/20001205082300/http://dailynews.yahoo.com/h/nm/20001204/pl/election_legislature_dc_7.html">No Decision Monday on Florida Legislative Move</a><br>
+<a href="/web/20001205082300/http://dailynews.yahoo.com/h/nm/20001204/pl/africa_usa_dc_1.html">Albright to Visit Africa, Europe This Month</a><br>
+<a href="/web/20001205082300/http://dailynews.yahoo.com/h/nm/20001204/pl/election_iowa_dc_1.html">Iowa Officially Certifies Gore Winner in That State</a><br>
+<a href="/web/20001205082300/http://dailynews.yahoo.com/h/nm/20001204/pl/election_appeal_dc_1.html">Gore Attorney Appeals Florida Judge's Ruling</a><br>
+<a href="/web/20001205082300/http://dailynews.yahoo.com/h/nm/20001204/pl/bush_surgery_dc_1.html">Former President Bush to Have Hip Surgery</a><br>
+<a href="/web/20001205082300/http://dailynews.yahoo.com/h/nm/20001204/pl/clinton_coral_dc_2.html">Clinton Creates Vast Hawaiian Coral-Reef Preserve</a><br>
+<a href="/web/20001205082300/http://dailynews.yahoo.com/h/nm/20001204/pl/election_newmexico_dc_6.html">New Mexico Republicans Seeking Selected Ballot Reviews</a><br>
+<a href="/web/20001205082300/http://dailynews.yahoo.com/h/nm/20001204/pl/election_cheney_dc_22.html">White House Belittles Cheney for Recession Comment</a><br>
+<a href="/web/20001205082300/http://dailynews.yahoo.com/h/nm/20001204/pl/pinochet_usa_dc_1.html">U.S. Applauds Pinochet Detention in Chile</a><br>
+<a href="/web/20001205082300/http://dailynews.yahoo.com/h/nm/20001204/pl/election_florida_dc_3.html">Fla. Supreme Court to Meet Monday on Recount Case</a><br>
+
+
+
+<!-- _JC_  END STORIES -->
+<p>
+
+<!-- _JC_  ARCHIVES DROPDOWN -->
+<table width="100%" border=0>
+<tr>
+<td width=200 valign=middle><font face="Arial,Helvetica" size=2><b>Archived Stories by Date:</b></font></td>
+<form name="form" action=/web/20001205082300/http://rc.yahoo.com/jump>
+<td valign=middle align=left width=275>
+<select name="u" size=1>
+ <option value="http://dailynews.yahoo.com/h/pl/nm/story.html?s=v/nm/20001204/pl/index.html">Dec 04</option>
+<option value="http://dailynews.yahoo.com/h/pl/nm/story.html?s=v/nm/20001203/pl/index.html">Dec 03</option>
+<option value="http://dailynews.yahoo.com/h/pl/nm/story.html?s=v/nm/20001202/pl/index.html">Dec 02</option>
+<option value="http://dailynews.yahoo.com/h/pl/nm/story.html?s=v/nm/20001201/pl/index.html">Dec 01</option>
+<option value="http://dailynews.yahoo.com/h/pl/nm/story.html?s=v/nm/20001130/pl/index.html">Nov 30</option>
+<option value="http://dailynews.yahoo.com/h/pl/nm/story.html?s=v/nm/20001129/pl/index.html">Nov 29</option>
+<option value="http://dailynews.yahoo.com/h/pl/nm/story.html?s=v/nm/20001128/pl/index.html">Nov 28</option>
+<option value="http://dailynews.yahoo.com/h/pl/nm/story.html?s=v/nm/20001127/pl/index.html">Nov 27</option>
+<option value="http://dailynews.yahoo.com/h/pl/nm/story.html?s=v/nm/20001126/pl/index.html">Nov 26</option>
+<option value="http://dailynews.yahoo.com/h/pl/nm/story.html?s=v/nm/20001125/pl/index.html">Nov 25</option>
+<option value="http://dailynews.yahoo.com/h/pl/nm/story.html?s=v/nm/20001124/pl/index.html">Nov 24</option>
+<option value="http://dailynews.yahoo.com/h/pl/nm/story.html?s=v/nm/20001123/pl/index.html">Nov 23</option>
+<option value="http://dailynews.yahoo.com/h/pl/nm/story.html?s=v/nm/20001122/pl/index.html">Nov 22</option>
+<option value="http://dailynews.yahoo.com/h/pl/nm/story.html?s=v/nm/20001121/pl/index.html">Nov 21</option>
+<option value="http://dailynews.yahoo.com/h/pl/nm/story.html?s=v/nm/20001120/pl/index.html">Nov 20</option>
+<option value="http://dailynews.yahoo.com/h/pl/nm/story.html?s=v/nm/20001119/pl/index.html">Nov 19</option>
+<option value="http://dailynews.yahoo.com/h/pl/nm/story.html?s=v/nm/20001118/pl/index.html">Nov 18</option>
+<option value="http://dailynews.yahoo.com/h/pl/nm/story.html?s=v/nm/20001117/pl/index.html">Nov 17</option>
+<option value="http://dailynews.yahoo.com/h/pl/nm/story.html?s=v/nm/20001116/pl/index.html">Nov 16</option>
+<option value="http://dailynews.yahoo.com/h/pl/nm/story.html?s=v/nm/20001115/pl/index.html">Nov 15</option>
+
+</select><input type=submit value=Go></td>
+</form>
+</tr></table>
+<!-- _JC_  END ARCHIVES DROPDOWN -->
+
+<!-- _JC_  NEWS SEARCH -->
+<table cellpadding=2 cellspacing=0 border=0 width="100%" >
+<tr valign="middle">
+<td bgcolor="#dcdcdc"><font face="Arial,Helvetica" size=2><b>News Search</b></font></td>
+</tr>
+<tr><form action="/web/20001205082300/http://search.news.yahoo.com/search/news"><td align="center">
+<input type=text size=25 name=p>
+<input type=submit value="Search">
+<a href="/web/20001205082300/http://search.news.yahoo.com/search/news/options"><font face="Arial,Helvetica" size=2>Advanced</font></a><br><small><b>Search:</b>&nbsp;<input
+type=radio name=c checked value="news">&nbsp;Stories&nbsp;&nbsp;<input
+type=radio name=c value="news_photos">&nbsp;Photos&nbsp;&nbsp;<input
+type=radio name=c value="fullcov">&nbsp;Full&nbsp;Coverage</small><input type=hidden name=n value=20></td></form></tr>
+</table>
+<!-- _JC_  END SEARCH -->
+
+</td>
+</tr>
+</table>
+<!-- _JC_  END MAIN TABLE -->
+
+<!-- _JC_  BOTTOM NAV -->
+<!-- _JC_  NAV -->
+<table border=0 cellspacing=0 cellpadding=0 width="675">
+<tr bgcolor="#333366">
+<td>
+<table border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td height=5></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="center">
+<table border=0 cellspacing=0>
+<tr>
+<td align="center"><a href="/web/20001205082300/http://dailynews.yahoo.com/h/?u"><font size=2 face="arial,helvetica">Home</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001205082300/http://dailynews.yahoo.com/h/ts/?u"><font size=2 face="arial,helvetica">Top&nbsp;Stories</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001205082300/http://dailynews.yahoo.com/h/bs/?u"><font  size=2 face="arial,helvetica">Business</font></a>&nbsp;</td>
+<td align="center"><a href="/web/20001205082300/http://dailynews.yahoo.com/h/tc/?u"><font size=2 face="arial,helvetica">Tech</font></a>&nbsp;</td>
+<td align="center" bgcolor="#333366">&nbsp;<a href="/web/20001205082300/http://dailynews.yahoo.com/h/pl/?u"><font size=2 color="#eeeeff" face="arial,helvetica">Politics</font></a>&nbsp;</td>
+<td align="center">&nbsp;<a href="/web/20001205082300/http://dailynews.yahoo.com/h/wl/?u"><font size=2 face="arial,helvetica">World</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001205082300/http://dailynews.yahoo.com/h/lo/?u"><font size=2 face="arial,helvetica">Local</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001205082300/http://dailynews.yahoo.com/h/en/?u"><font size=2 face="arial,helvetica">Entertainment</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001205082300/http://dailynews.yahoo.com/h/sp/?u"><font size=2 face="arial,helvetica">Sports</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001205082300/http://dailynews.yahoo.com/h/sc/?u"><font size=2 face="arial,helvetica">Science</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001205082300/http://dailynews.yahoo.com/h/hl/?u"><font size=2 face="arial,helvetica">Health</font></a></td>
+<td align="center">&nbsp;<a href="/web/20001205082300/http://news.yahoo.com/fc/?u"><font size=2 face="arial,helvetica">Full&nbsp;Coverage</font></a></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<!-- _JC_  NAV -->
+<!-- _JC_  END BOTTOM NAV -->
+<hr size=0 width=675>
+<!-- _JC_  FOOTER -->
+<table width=675>
+<tr>
+<td valign="top" align="center">
+<font size=2>
+
+Copyright &copy; 2000 Yahoo! Inc.,
+and Reuters Limited. All rights reserved.<br>
+Republication or redistribution of Reuters content is expressly
+prohibited without the prior written consent of Reuters.<br>
+Reuters shall not be liable for any errors or delays in the content,
+or for any actions taken in reliance thereon.
+<a href="/web/20001205082300/http://help.yahoo.com/help/news/">Questions or Comments</a>
+<br>
+<a href="/web/20001205082300/http://privacy.yahoo.com/privacy/us/news">Privacy Policy</a> -
+<a href="/web/20001205082300/http://docs.yahoo.com/info/terms/">Terms of Service</a>
+</font></td>
+</tr></table>
+<!-- _JC_  END FOOTER -->
+</center>    
+</body>
+</html>
+ 
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 8:23:00 Dec 5, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:58:23 Jan 7, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
