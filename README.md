@@ -6,8 +6,14 @@ Structure of this project
 
 1. [Datasets](dataset) - currently only data from the year 2000
   * [www.nytimes.com](dataset/www.nytimes.com)
-  * [www.reuters.com](dataset/www.reuters.com)
   * [www.cnn.com](dataset/www.cnn.com)
+  * [www.bbc.com](dataset/www.bbc.com)
+  * [news.yahoo.com](dataset/news.yahoo.com)
+  * [www.msn.com](dataset/www.msn.com)
+  * [www.yahoo.com](dataset/www.yahoo.com)
+  * [www.reuters.com](dataset/www.reuters.com)
+  * [www.foxnews.com](dataset/www.foxnews.com)
+  * [www.forbes.com](dataset/www.forbes.com)
 2. [Crawlers](crawlers)
   * [**WayBack Machine**](crawlers/Way-Back) - only possible source and candidate for dataset
     * [The Archival Year](crawlers/Way-Back#the-archival-year) - First specification for a dataset built from WayBack archives
