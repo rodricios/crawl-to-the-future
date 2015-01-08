@@ -4,7 +4,7 @@ crawl to the future
 Structure of this project
 -------------------------
 
-1. [Datasets](dataset) - currently only data from the year 2000
+1. [Datasets](dataset) - covers years 2000, 2005, 2010, 2015 - read more about this below
   * [www.nytimes.com](dataset/www.nytimes.com)
   * [www.cnn.com](dataset/www.cnn.com)
   * [www.bbc.com](dataset/www.bbc.com)
@@ -23,6 +23,19 @@ Structure of this project
     * [Part II](crawlers/Crawling-Google/README.md#part-ii) - Google Search By Year
 
 ---
+
+Update 1/8/2015
+---------------
+
+I've been able to gather enough HTML files to begin the process of extracting the "content." 
+This process consists of using automatic methods of extraction, followed by manual curation -
+making sure the title or *by <author>* line are present in the final content, for example. 
+
+This repo may likely not get updated with the raw, freshly-downloaded dumps as I've been doing. Instead, 
+I will filter out many HTML's currently in the dataset before updating the repo. Soon after that, I'll add
+a new directory containing the extracted-text files, and finally we'll be that much closer to starting 
+our experiments :)
+
 
 Where am I? What year is this?
 ------------------------------
