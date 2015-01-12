@@ -1,0 +1,330 @@
+<HTML>
+<HEAD>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app12.us.archive.org";archive_analytics.values.server_ms=170;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<TITLE> BBC News | Feedback</TITLE>
+<META HTTP-EQUIV="expires" CONTENT="now">
+<META HTTP-EQUIV="pragma" CONTENT="no-cache">
+<META name="keywords" content="BBC news world uk international foreign british online service">
+<LINK TYPE="text/css" REL="stylesheet" HREF="/web/20001018103518cs_/http://news.bbc.co.uk/stylesheets/globalstylesheet.css">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#000066" ALINK="#000066" VLINK="#000066">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://news.bbc.co.uk/hi/english/static/feedback/default.stm";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "18";
+var displayMonth = "Oct";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://news.bbc.co.uk/hi/english/static/feedback/default.stm" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20001018103518" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20000815052751/http://news.bbc.co.uk/hi/english/static/feedback/default.stm" title="15 Aug 2000">AUG</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 10:35:18 Oct 18, 2000">OCT</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20001207062300/http://news.bbc.co.uk/hi/english/static/feedback/default.stm" title="7 Dec 2000"><strong>DEC</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20000815052751/http://news.bbc.co.uk/hi/english/static/feedback/default.stm" title="5:27:51 Aug 15, 2000"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 10:35:18 Oct 18, 2000">18</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20001207062300/http://news.bbc.co.uk/hi/english/static/feedback/default.stm" title="6:23:00 Dec 7, 2000"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/19991013061350/http://news.bbc.co.uk/hi/english/static/feedback/default.stm" title="13 Oct 1999"><strong>1999</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 10:35:18 Oct 18, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20011023110640/http://news.bbc.co.uk/hi/english/static/feedback/default.stm" title="23 Oct 2001"><strong>2001</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20001018103518*/http://news.bbc.co.uk/hi/english/static/feedback/default.stm" title="See a list of every capture for this URL">782 captures</a>
+           <div class="r" title="Timespan for captures of this URL">6 Dec 98 - 9 Nov 14</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000002_1999:-1:110200000100_2000:9:010011010101_2001:-1:10110001fad8_2002:-1:050001003421_2003:-1:011101010001_2004:-1:010106300000_2005:-1:000100005132_2006:-1:230212232103_2007:-1:521001020100_2008:-1:001100635402_2009:-1:121000000000_2010:-1:000001125444_2011:-1:5524349a9799_2012:-1:9aa9a9999bb9_2013:-1:546754241203_2014:-1:113000253510_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+<TABLE BORDER="0" bordercolor="#3333cc" CELLPADDING="0" CELLSPACING="0" WIDTH="600">
+<TR><TD COLSPAN=3 CLASS="toprightnav" HEIGHT=15 ALIGN=RIGHT VALIGN=TOP><IMG SRC="/web/20001018103518im_/http://news.bbc.co.uk/furniture/v2/whead_l.gif" ALT="BBC Online Network" WIDTH=140 HEIGHT=11 ALIGN="LEFT"><A href="/web/20001018103518/http://news.bbc.co.uk/text_only.stm">low graphics version</a> | <A HREF="/web/20001018103518/http://news.bbc.co.uk/hi/english/static/feedback/default.stm">feedback</A> | <A HREF="/web/20001018103518/http://news.bbc.co.uk/hi/english/static/help/default.stm">help</A></TD></TR>
+<TR><TD COLSPAN=3><IMG SRC="/web/20001018103518im_/http://news.bbc.co.uk/furniture/front_banner.gif" WIDTH=600 HEIGHT=38 ALT="BBC News Online"></TD></TR>
+
+
+
+<TR> 
+<TD WIDTH=100><IMG SRC="/web/20001018103518im_/http://news.bbc.co.uk/furniture/nothing.gif" WIDTH=100 HEIGHT=3></TD>
+<TD WIDTH=5><IMG SRC="/web/20001018103518im_/http://news.bbc.co.uk/furniture/nothing.gif" WIDTH=5 HEIGHT=3></TD>
+<TD WIDTH=495><IMG SRC="/web/20001018103518im_/http://news.bbc.co.uk/furniture/nothing.gif" WIDTH=495 HEIGHT=3></TD>
+
+</TR>
+
+<TR>
+<TD VALIGN=TOP>
+
+<!--(START)-Navigation-->
+<!--NewsOnLineQLX-->
+
+<TABLE BORDER="0" CELLPADDING=0 CELLSPACING=0 WIDTH=100>
+<TR ALIGN=RIGHT>
+<TD CLASS="rootSection"><A HREF="/web/20001018103518/http://news.bbc.co.uk/default.stm" CLASS="index">Front Page</A>&nbsp;<BR><A HREF="/web/20001018103518/http://news.bbc.co.uk/hi/english/world/default.stm" CLASS="index">World</A>&nbsp;<BR><A HREF="/web/20001018103518/http://news.bbc.co.uk/hi/english/uk/default.stm" CLASS="index">UK</A>&nbsp;<BR><A HREF="/web/20001018103518/http://news.bbc.co.uk/hi/english/uk_politics/default.stm" CLASS="index">UK Politics</A>&nbsp;<BR><A HREF="/web/20001018103518/http://news.bbc.co.uk/hi/english/business/default.stm" CLASS="index">Business</A>&nbsp;<BR><A HREF="/web/20001018103518/http://news.bbc.co.uk/hi/english/sci/tech/default.stm" CLASS="index">Sci/Tech</A>&nbsp;<BR><A HREF="/web/20001018103518/http://news.bbc.co.uk/hi/english/health/default.stm" CLASS="index">Health</A>&nbsp;<BR><A HREF="/web/20001018103518/http://news.bbc.co.uk/hi/english/education/default.stm" CLASS="index">Education</A>&nbsp;<BR><A HREF="/web/20001018103518/http://news.bbc.co.uk/hi/english/entertainment/default.stm" CLASS="index"><SPAN CLASS="tighter">Entertainment</SPAN></A>&nbsp;<BR><A HREF="/web/20001018103518/http://news.bbc.co.uk/hi/english/talking_point/default.stm" CLASS="index">Talking Point</A>&nbsp;<BR>
+<A HREF="/web/20001018103518/http://news.bbc.co.uk/hi/english/static/in_depth/default.stm" CLASS="index">In Depth</A><BR>
+<A HREF="/web/20001018103518/http://news.bbc.co.uk/hi/english/audiovideo/default.stm" CLASS="index">AudioVideo</A>&nbsp;<BR></TD>
+</TR>
+</TABLE>
+<A HREF="/web/20001018103518/http://news.bbc.co.uk/sport/default.stm"><IMG SRC="/web/20001018103518im_/http://news.bbc.co.uk/furniture/nav/to_bbc_sport.gif" WIDTH="100" HEIGHT="18" BORDER="0" VSPACE="10"></A>
+
+<!--(END)-Navigation-->
+</TD>
+<TD><IMG SRC="/web/20001018103518im_/http://news.bbc.co.uk/furniture/nothing.gif" WIDTH=5 HEIGHT=1></TD>
+<TD VALIGN=TOP>
+<!--STORY BODY COMPONENT GOES HERE-->
+
+<FONT SIZE=3 COLOR=#CC3300><B CLASS="hot"><SPAN CLASS="size5b">FEEDBACK</SPAN></B></FONT>
+<BR><IMG SRC="images/red_pixel.gif" ALT="" WIDTH=500 HEIGHT=1 VSPACE=2><BR>
+
+<FONT SIZE=5><B CLASS="size7b">Feedback</B></FONT>
+<FONT SIZE=2><SPAN CLASS="size2">
+<P>
+<B>Take Part in BBC News On Line</B><BR>
+Don't just read the news, be an active part of BBC News Online. You can publish your comments on the news in <A HREF="/web/20001018103518/http://news.bbc.co.uk/hi/english/talking_point/default.stm">Talking Point</A>. 
+
+<P>
+<B>Let us know what you think.</B><BR>
+We try hard to make BBC News Online the best news site on the Web. Your views on what we're doing and how we could make things even better are important to us. So if there's anything you want to say, please e-mail us at <A HREF="mailto:newsonline@bbc.co.uk">newsonline@bbc.co.uk</A>. 
+
+<P>
+<B>Help Us To Help You.</B>
+<BR>
+If you have a question for us, please check our <A HREF="../Help/FAQ.stm">Frequently Asked Questions (FAQ) page</A> - you'll find lots of answers and information there. If you want to e-mail us, please choose from the options below. This will help us deal with your enquiry as quickly as possible.
+<UL>
+<LI><A HREF="suggestions_form.stm">Suggestions</A></LI>
+<LI><A HREF="complaints_form.stm">Complaints</A></LI>
+<LI><A HREF="factual_errors_form.stm">Factual Errors</A></LI>
+</UL>
+<P>
+<B>Site Problems</B>
+<BR>
+If you're having difficulty using BBC News Online, send us a detailed description of the problem and we'll try to help. We're not able to deal with general technical enquiries, just specific site difficulties. We'll get back to you as soon as we can, but our response time may vary, depending on the number of queries we're getting.
+Before you e-mail us check out our <A HREF="../Help/FAQ.stm">FAQs</A>.
+<UL>
+<LI><A HREF="site_problems_form.stm">Site Problems</A></LI>
+</UL>
+<P>
+<B>Comments and Questions about the BBC and its Programmes.</B>
+<BR>
+If you have a general question about the BBC please visit <A HREF="/web/20001018103518/http://www.bbc.co.uk/info">'All about your BBC'</A>, our information site.
+If you wish to make a comment about other BBC issues please <BR>e-mail us
+<A HREF="/web/20001018103518/http://www.bbc.co.uk/info/contact/feedback.shtml">here</A>.
+
+</SPAN></FONT></TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH=600 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR><!-- black line row -->
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=600 BGCOLOR="#FFFFFF" COLSPAN=3><HR ALIGN="LEFT" SIZE="1" WIDTH="595" COLOR="#000000" NOSHADE></TD>
+</TR>
+<TR>
+<TD WIDTH=90 ALIGN=RIGHT VALIGN=TOP><A HREF="/web/20001018103518/http://news.bbc.co.uk/hi/english/static/copyright.htm"><IMG BORDER="0" SRC="/web/20001018103518im_/http://news.bbc.co.uk/furniture/copyright_bbc.gif" WIDTH=73 HEIGHT=17></A></TD>
+<TD WIDTH=10><IMG SRC="/web/20001018103518im_/http://news.bbc.co.uk/furniture/nothing.gif" WIDTH=1 HEIGHT=1></TD>
+<TD CLASS="footer" WIDTH=500 ALIGN=LEFT VALIGN=TOP><B CLASS="footerarrow">^^&nbsp;</B><A CLASS="index" HREF="#top">Back to top</A><BR><BR>
+<A CLASS="index" HREF="/web/20001018103518/http://news.bbc.co.uk/default.stm">News Front Page</A> | <A CLASS="index" HREF="/web/20001018103518/http://news.bbc.co.uk/hi/english/world/default.stm">World</A> | <A CLASS="index" HREF="/web/20001018103518/http://news.bbc.co.uk/hi/english/uk/default.stm">UK</A> | <A CLASS="index" HREF="/web/20001018103518/http://news.bbc.co.uk/hi/english/uk_politics/default.stm">UK Politics</A> | <A CLASS="index" HREF="/web/20001018103518/http://news.bbc.co.uk/hi/english/business/default.stm">Business</A> | <A CLASS="index" HREF="/web/20001018103518/http://news.bbc.co.uk/hi/english/sci/tech/default.stm">Sci/Tech</A> | <A CLASS="index" HREF="/web/20001018103518/http://news.bbc.co.uk/hi/english/health/default.stm">Health</A> | <A CLASS="index" HREF="/web/20001018103518/http://news.bbc.co.uk/hi/english/education/default.stm">Education</A> | <A CLASS="index" HREF="/web/20001018103518/http://news.bbc.co.uk/hi/english/entertainment/default.stm">Entertainment</A> | <A CLASS="index" HREF="/web/20001018103518/http://news.bbc.co.uk/hi/english/static/in_depth/default.stm">In-Depth </A> | <A CLASS="index" HREF="/web/20001018103518/http://news.bbc.co.uk/hi/english/talking_point/default.stm">Talking Point</A> | <A CLASS="index" HREF="/web/20001018103518/http://news.bbc.co.uk/hi/english/audiovideo/default.stm">Audio/Video</A><BR>&nbsp;
+<BR>
+<B><SPAN STYLE="color : #CCCCCC;">----------------------------------------------------------------------------------</SPAN>
+<BR>
+<A CLASS="footer" HREF="/web/20001018103518/http://news.bbc.co.uk/sport/default.stm">>To BBC Sport</A></B>
+</TD>
+</TR>
+</TABLE>
+
+
+
+
+
+
+<LINK TYPE="text/css" REL="stylesheet" HREF="/web/20001018103518cs_/http://news.bbc.co.uk/stylesheets/globalstylesheet.css">
+
+</BODY>
+</HTML>
+
+
+
+
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 10:35:18 Oct 18, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 4:24:35 Jan 8, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

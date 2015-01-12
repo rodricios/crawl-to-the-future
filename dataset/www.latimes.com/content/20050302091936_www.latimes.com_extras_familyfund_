@@ -1,0 +1,458 @@
+<html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app2.us.archive.org";archive_analytics.values.server_ms=344;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<title>Los Angeles Times Family Fund</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!--write stylesheets based on browser detect-->
+<script src="scripts.js">
+</script>
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#6BBBBD" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="preloadImages();">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.latimes.com/extras/familyfund/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "2";
+var displayMonth = "Mar";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.latimes.com/extras/familyfund/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20050302053901" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20050126134241/http://www.latimes.com/extras/familyfund/" title="26 Jan 2005">JAN</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 5:39:01 Mar 2, 2005">MAR</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20050405233508/http://www.latimes.com/extras/familyfund/" title="5 Apr 2005"><strong>APR</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20050223140626/http://www.latimes.com/extras/familyfund/" title="14:06:26 Feb 23, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 5:39:01 Mar 2, 2005">2</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20050308112049/http://www.latimes.com/extras/familyfund/" title="11:20:49 Mar 8, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20040222185514/http://www.latimes.com/extras/familyfund" title="22 Feb 2004"><strong>2004</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 5:39:01 Mar 2, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20060425083012/http://www.latimes.com/extras/familyfund/" title="25 Apr 2006"><strong>2006</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20050302053901*/http://www.latimes.com/extras/familyfund/" title="See a list of every capture for this URL">1,037 captures</a>
+           <div class="r" title="Timespan for captures of this URL">14 Mar 02 - 23 Dec 14</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:0011052badb2_2003:-1:010101020201_2004:-1:110205193313_2005:2:974c20005222_2006:-1:020102611111_2007:-1:020023010321_2008:-1:010111102012_2009:-1:012010020101_2010:-1:002230744330_2011:-1:153101022acd_2012:-1:edeceeddebee_2013:-1:efdeeededcdd_2014:-1:eded50010001_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<!--begin latimes.com header table including navBar as include-->
+<table bgcolor="#003366" width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr><a name="top"></a> 
+    <td>
+      <!-- BEGIN logo -->
+      <a href="/web/20050302053901/http://www.latimes.com/"><img src="/web/20050302053901im_/http://www.latimes.com/extras/images/latimesAdBug.gif" width="181" height="46" vspace="10" border="0"></a></td>
+    <td align=RIGHT nowrap> 
+      <!-- Top 468x60 banner -->
+<a href="/web/20050302053901/https://myaccount.latimes.com/index.jsp"><img src="images/manage_acct_468x60.gif" width="468" height="60" border="0"></a>
+      <img src="images/spacer.gif" width="4" height="1"></td>
+  </tr>
+  <tr> 
+    <td colspan="2">
+      <!-- BEGIN TOP NAV BAR (include) --><table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000">
+  <tr> 
+    <td><a href="/web/20050302053901/http://www.latimes.com/extras/familyfund/"><img src="/web/20050302053901im_/http://www.latimes.com/extras/images/familyNav_01.gif" width="230" height="24" border="0"></a></td>
+    <td align="right"><img src="/web/20050302053901im_/http://www.latimes.com/extras/images/familyNav_map.gif" width="220" height="24" usemap="#Map" border="0"><map name="Map"><area shape="rect" coords="2,4,122,22" href="/web/20050302053901/http://www.latimes.com/extras/summercamp/"><area shape="rect" coords="125,4,215,25" href="/web/20050302053901/http://www.latimes.com/extras/holidayfund/"></map></td>
+  </tr>
+</table><!-- END TOP NAV BAR (include) -->
+    </td>
+  </tr>
+</table>
+<!--end latimes.com header table-->
+<!--begin main content table-->
+<center>
+  <table width=714 border=0 cellpadding=0 cellspacing=0>
+    <tr valign="top"> 
+      <td width="168" bgcolor=#DBCE9F> <table width=168 border=0 cellpadding=0 cellspacing=0>
+          <tr> 
+            <td> <img src="images/spacer.gif" width=168 height=68></td>
+          </tr>
+          <tr> 
+            <td> <img src="images/nav_01.gif" width=168 height=31></td>
+          </tr>
+          <tr> 
+            <td> <a href="/web/20050302053901/http://www.latimes.com/extras/summercamp/"
+				onmouseover="changeImages('nav_02', 'images/nav_02_over.gif'); return true;"
+				onmouseout="changeImages('nav_02', 'images/nav_02.gif'); return true;"> 
+              <img name="nav_02" src="images/nav_02.gif" width=168 height=43 border=0></a></td>
+          </tr>
+          <tr> 
+            <td> <a href="/web/20050302053901/http://www.latimes.com/extras/holidayfund/"
+				onmouseover="changeImages('nav_03', 'images/nav_03_over.gif'); return true;"
+				onmouseout="changeImages('nav_03', 'images/nav_03.gif'); return true;"> 
+              <img name="nav_03" src="images/nav_03.gif" width=168 height=29 border=0></a></td>
+          </tr>
+          <tr> 
+            <td> <a href="/web/20050302053901/http://www.latimes.com/extras/donoradvisedgiving/"
+				onmouseover="changeImages('nav_04', 'images/nav_04_over.gif'); return true;"
+				onmouseout="changeImages('nav_04', 'images/nav_04.gif'); return true;"> 
+              <img name="nav_04" src="images/nav_04.gif" width=168 height=43 border=0></a></td>
+          </tr>
+          <tr> 
+            <td bgcolor=#B9716B> <img src="images/spacer.gif" width=168 height=9></td>
+          </tr>
+        </table></td>
+      <td width="376" bgcolor=#FFFFFF> <table width=420 border=0 cellpadding=0 cellspacing=0>
+          <tr> 
+            <td> <img src="images/head_02.gif" width="420" height="68"></td>
+          </tr>
+          <tr> 
+            <td nowrap><img src="images/indexPic.jpg" width="420" height="155"></td>
+          </tr>
+          <tr> 
+            <td width="420" class="main"> 
+              <h1>The Mission</h1>
+                 The mission of the Los Angeles 
+                Times Family Fund, a fund of the McCormick Tribune Foundation, 
+                is to improve the lives of disadvantaged children and youth in 
+                Los Angeles, Orange, Riverside, San Bernardino and Ventura counties.<br>
+                <br>
+                <img src="images/pic_01.jpg" width="110" height="90" class="picLeft">Each 
+                year, the Los Angeles Times Family Fund conducts three fundraising 
+                campaigns &#8211; the Summer Camp Campaign, the Holiday Campaign 
+                and the Donor Advised Giving Program. Los Angeles Times readers 
+                and employees, foundations, corporations and concerned citizens 
+                make contributions to the campaigns. Funds raised are matched 
+                50 cents on the dollar by the McCormick Tribune Foundation.*<br>
+                <br>
+                Donations and matching funds are granted through the Los Angeles 
+                Times Family Fund to youth-serving nonprofit organizations that 
+                provide food, clothing, shelter, early literacy and arts programs, 
+                summer camp scholarships, services for developmentally delayed 
+                and disabled children and programs to prevent youth violence, 
+                teen pregnancy and drug abuse. The Times and the Foundation absorb 
+                all administrative and fundraising costs, so 100% of all donations 
+                and the entire matching funds are awarded to nonprofit agencies.<br>
+                <br>
+                <img src="images/pic_03.jpg" width="110" height="90" class="picRight">Since
+                its inception, the Los Angeles Times Family Fund has awarded
+                over 550 youth-focused grants totaling more than $9.1 million.
+                 In addition, the Family Fund has conducted fundraising campaigns
+                
+                and awarded $3.4 million in grants to organizations that provide
+                 assistance and relief to victims of September 11, 2001 and the
+                
+                Southern California wildfires in October 2003.<br>
+                <br>
+                To learn more about the Los Angeles Times Family Fund, call 1-800 
+                LA TIMES, ext. 75771. 
+                <h1><a href="/web/20050302053901/http://www.latimes.com/extras/summercamp/">Summer Camp Campaign</a></h1>
+                Since 1954, Los Angeles Times readers and employees, foundations, 
+                corporations and concerned citizens like you have pooled their 
+                resources to send over 380,000 disadvantaged children and youth 
+                to summer camp. By providing camp scholarship donations, you help 
+                kids, ages 7-17, develop a sense of confidence and control over 
+                their lives. Camp is a place where a positive perspective can 
+                finally be discovered &#8211; an experience thousands of young 
+                people will carry with them long after the last nature hike, sing-a-long 
+                or marshmallow roast.<br>
+                <br>
+              For more information, <a href="/web/20050302053901/http://www.latimes.com/extras/summercamp/">click 
+              here</a> or call 1-800 LA TIMES, ext. 75771. 
+              <h1><a href="/web/20050302053901/http://www.latimes.com/extras/holidayfund/">Holiday Campaign</a></h1>
+                <img src="images/pic_04.jpg" width="110" height="90" class="picLeft">In 
+                2000, the Los Angeles Times Family Fund, a fund of the McCormick 
+                Tribune Foundation, launched an annual Holiday Campaign to raise 
+                funds to improve the lives of disadvantaged children and youth. 
+                By contributing to the Holiday Campaign, you help low-income children 
+                by meeting their most basic needs...food, clothing and shelter. 
+                In addition, your donation provides early literacy and arts programs, 
+                services for developmentally delayed and disabled children and 
+                programs to prevent youth violence, teen pregnancy and drug abuse.<br>
+                <br>
+              For more information, <a href="/web/20050302053901/http://www.latimes.com/extras/holidayfund/">click 
+              here</a> or call 1-800 LA TIMES, ext. 75771. 
+              <h1><a href="/web/20050302053901/http://www.latimes.com/extras/donoradvisedgiving/">Donor Advised Giving Program</a></h1>
+                 In 2003, the 
+                Los Angeles Times Family Fund piloted the Donor Advised Giving
+                  Program (DAG), an innovative online fundraising program. Nonprofit
+                 
+                organizations apply to become DAG participants and selected organizations
+                  that meet the Family Fund&#8217;s giving guidelines participate.
+                The McCormick Tribune Foundation matches contributions 50 cents
+                on the dollar.* Since its inception, more than $339,000 in donations
+                and matching funds have been granted to youth-serving nonprofit
+                organizations.<br>
+                <br>
+              For more information, <a href="/web/20050302053901/http://www.latimes.com/extras/donoradvisedgiving/">click 
+              here</a> or call 1-800 LA TIMES, ext. 75771.<br>
+                <br>
+                <span class="disclaimer"><br>
+                *The McCormick Tribune Foundation sets an annual fundraising matching 
+                cap.</span> <br>
+                <br>
+                <a href="#top">Top</a> <br>
+                <br>
+            </td>
+          </tr>
+        </table></td>
+      <td width="126" bgcolor=#DBCE9F> <table width="126" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td><img src="images/head_03.gif" width="126" height="68"></td>
+          </tr>
+          <tr> 
+            <td><img src="images/donate_01.gif" width="126" height="29"></td>
+          </tr>
+          <tr> 
+            <td><table width="100%" border="0" cellspacing="8" cellpadding="0">
+                <tr> 
+                  <td><img src="images/bullet.gif" width="9" height="9"></td>
+                  <td><a href="/web/20050302053901/https://mccormicktribune.org/donations/startapp.aspx?campaignid=3">Summer Camp<br>
+                  Campaign</a></td>
+                </tr>
+                <tr> 
+                  <td><img src="images/bullet.gif" width="9" height="9"></td>
+                  <td><a href="/web/20050302053901/https://mccormicktribune.org/donations/startapp.aspx?campaignid=4">Holiday Campaign</a></td>
+                </tr>
+                <tr> 
+                  <td><img src="images/bullet.gif" width="9" height="9"></td>
+                  <td>Donor Advised<br>
+                  Giving Program</td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr> 
+            <td><img src="images/donate_02.gif" width="126" height="29"></td>
+          </tr>
+          <tr> 
+            <td><table width="100%" border="0" cellspacing="8" cellpadding="0">
+                <tr> 
+                  <td>We thank the Louise A. Tarble Estate and the Witherbee
+                    Family Trust and Survivor's Trust for their legacy support
+                  of the Family Fund.</td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr> 
+            <td><img src="images/donate_03.gif" width="126" height="29"></td>
+          </tr>
+          <tr> 
+            <td><table width="100%" border="0" cellspacing="8" cellpadding="0">
+                <tr> 
+                  <td>Call 1-800 LA TIMES, ext. 75771 </td>
+                </tr>
+              </table></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!--end content table-->
+</center>
+<!-- SAGE -->
+<script language="JavaScript">
+	var st_v=1.0; var st_pg=""; var st_ci="703"; 
+	var st_di="d001"; var st_dd="st.sageanalyst.net"; 
+	var st_tai="v:1.2.1";
+	var st_ai="";	
+</script>
+<script language="JavaScript1.1"><!--
+	st_v=1.1;
+//--></script>
+<script language="JavaScript1.2"><!--
+	st_v=1.2;
+//--></script>
+<script language="JavaScript1.1" src="/web/20050302053901js_/http://st.sageanalyst.net/tag-703.js">	
+</script>
+<script language="JavaScript">
+	if (st_v==1.0) {
+		var st_uj;
+		var st_dn = (new Date()).getTime();
+		var st_rf = escape(document.referrer);
+		st_uj = "//"+st_dd+"/"+st_dn+"/JS?ci="+st_ci+"&di="+st_di+
+		"&pg="+st_pg+"&rf="+st_rf+"&jv="+st_v+"&tai="+st_tai+"&ai="+st_ai;
+		var iXz = new Image();
+		iXz.src = st_uj;
+	}
+</script>
+<noscript>
+<img src="/web/20050302053901im_/http://st.sageanalyst.net/NS?ci=703&amp;di=d001&amp;pg=&amp;ai=">
+</noscript>
+</body>
+</html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 5:39:01 Mar 2, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 6:55:07 Jan 12, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

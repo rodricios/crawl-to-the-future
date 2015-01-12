@@ -1,0 +1,81 @@
+
+                                
+                                
+                                
+                                    
+                                    
+                                    Reporting from Phoenix — 
+                        
+                    
+                    Eighty demonstrators against Arizona's tough-on-illegal-immigration policies trickled out of jails here Friday, as a local sheriff continued one of his controversial operations that critics contend targets Latinos.The protesters had been arrested Thursday, the day the state's controversial immigration law took effect and Maricopa County Sheriff Joe Arpaio launched his 17th sweep against illegal immigrants.
+                                                                                   
+                                        
+                                    
+                                        » Don't miss a thing. Get breaking news alerts delivered to your inbox.
+                                            
+                                        
+                                        
+                                    
+                                    On Friday, Arpaio announced that three illegal immigrants were arrested in the sweep. During such operations, his deputies stop people for sometimes minor violations and check their immigration status.A federal judge had barred most of the immigration law, SB 1070, from being implemented, but that didn't stop hundreds of protesters from filling the streets and engaging in civil disobedience Thursday. Twenty-three were arrested at Arpaio's main downtown jail for blocking the entrance. Their demonstration forced the sheriff to delay his sweep for several hours.Activists on Friday boasted that they had slowed down the tough-talking Arpaio."Families were not separated; the community was not terrorized," said Carlos Garcia of civil rights group Puente, who was among those arrested outside the jail.Friday afternoon, several activists blocked the command center Arpaio set up for his sweep, leading to more arrests for civil disobedience. "They want to go to jail, so that's where they're going," the sheriff said. "They want to keep coming, we'll lock them up."Also Friday, Gov. Jan Brewer said the Legislature might "tweak" SB 1070 when it convenes in January to address concerns about the law raised by U.S. District Judge Susan Bolton.For example, Bolton singled out a provision requiring that every person arrested in the state be held until their immigration status is determined. Brewer's lawyer conceded that the sentence was "inartfully" written and should apply only to suspected illegal immigrants.The state appealed Bolton's ruling Thursday, asking the 9th U.S. Circuit Court of Appeals in San Francisco to expedite the process because of the "irreparable harm Arizona is suffering as a result of unchecked unlawful immigration."Arizona officials hoped for a hearing in September. But late Friday the appeals court issued a two-page order rejecting the request and said the hearing would take place the week of Nov. 1.The law was already significantly narrowed once before in response to pressure from opponents. After Brewer signed the legislation in April, she accepted last-minute revisions from the Legislature. The bill would have required police to determine the immigration status of people they interact with who they suspect are in the country illegally. As enacted, the law requires them to check only people they stop and believe are illegal immigrants.nicholas.riccardi@latimes.com
+                                    
+
+
+  var afterLoginLocation = '';
+  var defaultLocation = $('articlePromoLink').href;
+  var wasClicked = false;
+  if (!!window.carnival) { 
+	  new memberNav(
+	    '#articlePromoLink', 
+	    function() { //user is logged in
+	      if(!!afterLoginLocation && afterLoginLocation != '' && afterLoginLocation != 'default'){
+	        $('articlePromoLink').onclick = function(){ carnival.utils.listener.fire('_carnival_'+afterLoginLocation); wasClicked = true; return false; }
+        }
+	    }, 
+	    function(){ //user is not logged in
+	      if(!!afterLoginLocation && afterLoginLocation != ''){
+	        $('articlePromoLink').onclick = function(){ 
+  	        carnival.utils.popUp(carnival.configuration('hostname')+
+  	        carnival.configuration('userPath')+
+  	        '/popupsignon.html?callbackUrl='+
+  	        carnival.utils.cleanLocation());
+  	        wasClicked = true;
+  	        return false;
+  	      }
+	      }
+	    }
+	  ).writeNav(); 
+	  carnival.user.afterLogin(
+	    function(){
+	      if(!!afterLoginLocation && afterLoginLocation != '' && afterLoginLocation != 'default'){
+	        carnival.utils.listener.fire('_carnival_'+afterLoginLocation);
+	      } else if(wasClicked){
+	        window.location = defaultLocation;
+	      }
+	    }
+	  );
+	}
+
+
+Reporting from Phoenix — 
+
+Eighty demonstrators against Arizona's tough-on-illegal-immigration policies trickled out of jails here Friday, as a local sheriff continued one of his controversial operations that critics contend targets Latinos.
+
+The protesters had been arrested Thursday, the day the state's controversial immigration law took effect and Maricopa County Sheriff Joe Arpaio launched his 17th sweep against illegal immigrants.
+
+A federal judge had barred most of the immigration law, SB 1070, from being implemented, but that didn't stop hundreds of protesters from filling the streets and engaging in civil disobedience Thursday. Twenty-three were arrested at Arpaio's main downtown jail for blocking the entrance. Their demonstration forced the sheriff to delay his sweep for several hours.
+
+Activists on Friday boasted that they had slowed down the tough-talking Arpaio.
+
+"Families were not separated; the community was not terrorized," said Carlos Garcia of civil rights group Puente, who was among those arrested outside the jail.
+
+Friday afternoon, several activists blocked the command center Arpaio set up for his sweep, leading to more arrests for civil disobedience. "They want to go to jail, so that's where they're going," the sheriff said. "They want to keep coming, we'll lock them up."
+
+Also Friday, Gov. Jan Brewer said the Legislature might "tweak" SB 1070 when it convenes in January to address concerns about the law raised by U.S. District Judge Susan Bolton.
+
+For example, Bolton singled out a provision requiring that every person arrested in the state be held until their immigration status is determined. Brewer's lawyer conceded that the sentence was "inartfully" written and should apply only to suspected illegal immigrants.
+
+The state appealed Bolton's ruling Thursday, asking the 9th U.S. Circuit Court of Appeals in San Francisco to expedite the process because of the "irreparable harm Arizona is suffering as a result of unchecked unlawful immigration."
+
+Arizona officials hoped for a hearing in September. But late Friday the appeals court issued a two-page order rejecting the request and said the hearing would take place the week of Nov. 1.
+
+The law was already significantly narrowed once before in response to pressure from opponents. After Brewer signed the legislation in April, she accepted last-minute revisions from the Legislature. The bill would have required police to determine the immigration status of people they interact with who they suspect are in the country illegally. As enacted, the law requires them to check only people they stop and believe are illegal immigrants.

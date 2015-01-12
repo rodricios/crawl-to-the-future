@@ -1,0 +1,1392 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-US">
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app19.us.archive.org";archive_analytics.values.server_ms=149;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+
+                            <link rel="stylesheet" href="/web/20100209055312cs_/http://l.yimg.com/b/news/combo/D7H8FL9F?http%3A//l.yimg.com/d/combo%3Fuh/15/css/uh-1.0.28.css&amp;story/assets/css/1.0.4/generic/story.css" type="text/css"></link>
+                        
+
+                    <link rel="canonical" href="http://news.yahoo.com/s/csm/20100205/cm_csm/278383"></link>
+                
+    
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
+    <meta name="description" content="When the New Orleans Saints march into Miami to clash with the Indianapolis Colts in Sundayâs Super Bowl XLIV, Big Easy residents will be sporting black and gold T-shirts emboldened with the teamâs unofficial âFinish Strongâ mission, shouting at their flat-screen TVs, and praying for victory.">
+    <meta name="keywords" content="French Quarter,Drew Brees,Minnesota Vikings,National Football League,Super Bowl,Op/Ed,The Christian Science Monitor">
+    
+    <title>Who dat! New Orleans Saints fans are ready to finish strong. - Yahoo! News</title>   
+
+    
+</head>
+
+<body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://news.yahoo.com/s/csm/20100205/cm_csm/278383";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "9";
+var displayMonth = "Feb";
+var displayYear = "2010";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://news.yahoo.com/s/csm/20100205/cm_csm/278383" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20100209055312" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Jan
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 5:53:12 Feb 9, 2010">FEB</td>
+		<td class="f" nowrap="nowrap">
+		
+		    Mar
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 5:53:12 Feb 9, 2010">9</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20100211055916/http://news.yahoo.com/s/csm/20100205/cm_csm/278383" title="5:59:16 Feb 11, 2010"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2009
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 5:53:12 Feb 9, 2010">2010</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2011
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20100209055312*/http://news.yahoo.com/s/csm/20100205/cm_csm/278383" title="See a list of every capture for this URL">2 captures</a>
+           <div class="r" title="Timespan for captures of this URL">9 Feb 10 - 11 Feb 10</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:1:020000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+    <script type="text/javascript">document.body.className = 'js';</script>
+
+    <div id="doc4" class="yui-t6">
+
+        <a href="#navigation" class="shortcut">Skip to navigation &raquo;</a>
+        <a href="#bd" class="shortcut">Skip to content &raquo;</a>
+    
+        <div id="hd">
+        
+            <div class="mod ad mod-first ad_header" role="banner">
+    <div class="bd">
+            <!-- Ad Keywords: Miami; gold; hurricane; victims; Crime; corruption; franchise; home; It; it; America; survivors; San;-->
+<!-- SpaceID=0 robot -->
+    </div>
+</div>
+
+        
+            <div id="navigation" role="navigation">
+    <ul id="navigation-primary" class="ult-section primary">
+                <li class="ult-position active">
+            <a href="/web/20100209055312/http://news.yahoo.com/" class="first" mapleUltParams="sec=tn">Home</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209055312/http://news.yahoo.com/us" mapleUltParams="sec=tn">U.S.</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209055312/http://news.yahoo.com/business" mapleUltParams="sec=tn">Business</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209055312/http://news.yahoo.com/world" mapleUltParams="sec=tn">World</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209055312/http://news.yahoo.com/entertainment" mapleUltParams="sec=tn">Entertainment</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209055312/http://news.yahoo.com/sports" mapleUltParams="sec=tn">Sports</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209055312/http://news.yahoo.com/technology" mapleUltParams="sec=tn">Tech</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209055312/http://news.yahoo.com/politics" mapleUltParams="sec=tn">Politics</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209055312/http://news.yahoo.com/science" mapleUltParams="sec=tn">Science</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209055312/http://news.yahoo.com/health" mapleUltParams="sec=tn">Health</a>
+        </li>
+                <li class="ult-position active">
+            <a href="/web/20100209055312/http://news.yahoo.com/opinion" mapleUltParams="sec=tn">Opinion</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209055312/http://news.yahoo.com/most-popular" mapleUltParams="sec=tn">Most Popular</a>
+        </li>
+            </ul><!-- end: .primary -->
+
+        <ul id="navigation-secondary" class="ult-section secondary">
+                <li class="ult-position">
+            <a href="/web/20100209055312/http://news.yahoo.com/video" class="first" mapleUltParams="sec=sn">Video</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209055312/http://news.yahoo.com/photos" mapleUltParams="sec=sn">Photos</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209055312/http://news.yahoo.com/blog" mapleUltParams="sec=sn">Blog</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209055312/http://news.yahoo.com/local" mapleUltParams="sec=sn">Local</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209055312/http://news.yahoo.com/odd" mapleUltParams="sec=sn">Odd News</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209055312/http://news.yahoo.com/comics" mapleUltParams="sec=sn">Comics</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209055312/http://weather.yahoo.com/" mapleUltParams="sec=sn">Weather</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209055312/http://news.yahoo.com/travel" mapleUltParams="sec=sn">Travel</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209055312/http://news.yahoo.com/you-witness" mapleUltParams="sec=sn">You Witness News</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209055312/http://news.yahoo.com/page/sitemap" mapleUltParams="sec=sn">Site Index</a>
+        </li>
+            </ul><!-- end: .secondary -->
+    </div><!-- end: #navigation -->
+
+            
+            <div id="yn-popular-searches" class="mod">
+    <h3>Popular Searches:</h3>
+    <div class="popular-searches">
+        <ul>
+                        <li class="first">
+                <a href="/web/20100209055312/http://news.search.yahoo.com/news/search?p=super+bowl+commercials" tabindex="-1">super bowl commercials</a>
+            </li>
+                        <li>
+                <a href="/web/20100209055312/http://news.search.yahoo.com/news/search?p=charlie+sheen" tabindex="-1">charlie sheen</a>
+            </li>
+                        <li>
+                <a href="/web/20100209055312/http://news.search.yahoo.com/news/search?p=danica+patrick" tabindex="-1">danica patrick</a>
+            </li>
+                        <li>
+                <a href="/web/20100209055312/http://news.search.yahoo.com/news/search?p=dow+jones" tabindex="-1">dow jones</a>
+            </li>
+                        <li>
+                <a href="/web/20100209055312/http://news.search.yahoo.com/news/search?p=toyota+recall" tabindex="-1">toyota recall</a>
+            </li>
+                        <li>
+                <a href="/web/20100209055312/http://news.search.yahoo.com/news/search?p=keira+knightley" tabindex="-1">keira knightley</a>
+            </li>
+                        <li>
+                <a href="/web/20100209055312/http://news.search.yahoo.com/news/search?p=dear+john" tabindex="-1">dear john</a>
+            </li>
+                        <li>
+                <a href="/web/20100209055312/http://news.search.yahoo.com/news/search?p=super+bowl+2010+commercials" tabindex="-1">super bowl 2010 commercials</a>
+            </li>
+                        <li>
+                <a href="/web/20100209055312/http://news.search.yahoo.com/news/search?p=iran" tabindex="-1">iran</a>
+            </li>
+                        <li>
+                <a href="/web/20100209055312/http://news.search.yahoo.com/news/search?p=peyton+manning" tabindex="-1">peyton manning</a>
+            </li>
+                        <li>
+                <a href="/web/20100209055312/http://news.search.yahoo.com/news/search?p=betty+white" tabindex="-1">betty white</a>
+            </li>
+                        <li>
+                <a href="/web/20100209055312/http://news.search.yahoo.com/news/search?p=boy+scouts" tabindex="-1">boy scouts</a>
+            </li>
+                        <li>
+                <a href="/web/20100209055312/http://news.search.yahoo.com/news/search?p=new+orleans+saints" tabindex="-1">new orleans saints</a>
+            </li>
+                        <li>
+                <a href="/web/20100209055312/http://news.search.yahoo.com/news/search?p=tiger+woods" tabindex="-1">tiger woods</a>
+            </li>
+                        <li>
+                <a href="/web/20100209055312/http://news.search.yahoo.com/news/search?p=michael+jackson" tabindex="-1">michael jackson</a>
+            </li>
+                        <li>
+                <a href="/web/20100209055312/http://news.search.yahoo.com/news/search?p=snickers" tabindex="-1">snickers</a>
+            </li>
+                        <li>
+                <a href="/web/20100209055312/http://news.search.yahoo.com/news/search?p=john+murtha" tabindex="-1">john murtha</a>
+            </li>
+                        <li>
+                <a href="/web/20100209055312/http://news.search.yahoo.com/news/search?p=david+letterman" tabindex="-1">david letterman</a>
+            </li>
+                        <li>
+                <a href="/web/20100209055312/http://news.search.yahoo.com/news/search?p=space+shuttle+endeavor" tabindex="-1">space shuttle endeavor</a>
+            </li>
+                        <li>
+                <a href="/web/20100209055312/http://news.search.yahoo.com/news/search?p=roger+daltrey" tabindex="-1">roger daltrey</a>
+            </li>
+                    </ul>
+    </div>
+    <form action="/web/20100209055312/http://news.search.yahoo.com/news/search" method="get" role="search">
+        <input type="hidden" name="ei" value="UTF-8"/>
+        <ul>
+            <li class="search-type yn-menu">
+                <a href="#" class="menu-trigger">search menu</a>
+                <div class="menu-bd">
+                    <fieldset class="menu-content">
+                        <legend>Search Type</legend>
+                        
+                        <span>Choose a search type from the items below</span>
+
+                        <input type="radio" name="c" value="" id="search_all" checked="checked">                        
+                        <label for="search_all" class="first">All News</label>
+
+                        <input type="radio" name="c" value="yahoo_news" id="search_ynews">                        
+                        <label for="search_ynews">Yahoo! News Only</label>
+
+                        <input type="radio" name="c" value="images" id="search_images">                        
+                        <label for="search_images">News Photos</label>
+
+                        <input type="radio" name="c" value="av" id="search_av">                        
+                        <label for="search_av">Video/Audio</label>
+                    </fieldset>
+                </div>
+            </li>
+            <li class="search-text"><input type="text" name="p" value=""></li>
+            <li class="search-submit"><span><button type="submit"><span>News Search</span></button></span></li>
+            <li><a href="/web/20100209055312/http://news.search.yahoo.com/news/advanced" class="advanced-search">Advanced Search</a></li>
+        </ul>
+    </form>
+</div>
+
+            
+                <div id="banner-ad">
+        <div class="bd">
+            <!-- SpaceID=0 robot -->
+        </div>
+    </div>
+
+
+            
+
+        </div>
+        
+        <div id="bd">
+                
+            <div id="yui-main">
+        
+                <div class="yui-b" role="main">
+     
+                    
+
+<div id="yn-story" class="ult-section mod ">
+
+    <div class="hd">
+    
+        <div id="yn-story-columnist-hd">
+        <h3>Opinion</h3>
+    <h4>Christian Science Monitor</h4>
+</div>
+
+        
+            <h1 id="yn-story-title">Who dat! New Orleans Saints fans are ready to finish strong.</h1>
+        <a href="/web/20100209055312/http://us.rd.yahoo.com/dailynews/csm/brand/SIG=114211ceu/**http%3A%2F%2Fwww.csmonitor.com%2F" id="yn-prvdlink" class="provider-logo ult-section" mapleUltParams="sec=yn-prvdlink">
+        <img src="/web/20100209055312im_/http://l.yimg.com/a/i/us/nws/2008/news/us/assets/common/images/transparent.png" width="115" height="27" alt="The Christian Science Monitor" class="lzbg" style="background-image: url(/web/20100209055312im_/http://l.yimg.com/a/i/us/nws/p/csm_logo_115.jpg);">    </a>
+    
+        
+        	
+	<div id="yup-container"></div>
+	<script type="text/javascript">
+		
+		if(!YAHOO){var YAHOO = {};}
+		
+		 YAHOO.BuzzWidgetTries = 0;
+		
+		(function(){
+		    if(YAHOO && YAHOO.util && YAHOO.util.Event && YAHOO.Media && YAHOO.Media.Buzz){
+		   (function(){ var buzz = new YAHOO.Media.Buzz("buzz-top",{"sync":"buzz-bottom","countPosition":"after","fetchCount":false,"loc_strings":{"buzz_up":"Buzz up!","buzzed":"Buzzed!","one_vote":"{0} vote","n_votes":"{0} votes"}});buzz.onSuccess.subscribe(function(){ if(YAHOO.Updates){ YAHOO.Updates.Disclosure.showDialog({"container":"yup-container","source":"buzz","type":"buzzUp","lang":"en-US"}); } }); })();(function(){ var buzz = new YAHOO.Media.Buzz("buzz-bottom",{"sync":"buzz-top","countPosition":"after","fetchCount":true,"loc_strings":{"buzz_up":"Buzz up!","buzzed":"Buzzed!","one_vote":"{0} vote","n_votes":"{0} votes"}});buzz.onSuccess.subscribe(function(){ if(YAHOO.Updates){ YAHOO.Updates.Disclosure.showDialog({"container":"yup-container","source":"buzz","type":"buzzUp","lang":"en-US"}); } }); })();    
+		    } else if(YAHOO.BuzzWidgetTries < 10000) {
+		        YAHOO.BuzzWidgetTries += 500;
+		        setTimeout(arguments.callee, 500);
+		    }
+		})();	
+	
+	</script>
+    <ul id="top" class="tools mod ult-section">
+            <li class="buzz ult-position">
+	
+					
+		<form method="post" action="/web/20100209055312/http://buzz.yahoo.com/vote/" class="buzz" id="buzz-top">
+			<input type="hidden" name="publisherurn" value="y_news">
+			<input type="hidden" name="guid" value="csm/20100205/278383">
+			<input type="hidden" name=".done" value="/article/y_news/csm/20100205/278383">
+			<input type="hidden" name="assettype" value="article">
+			<input type="hidden" name="votetype" value="1">
+			<input type="hidden" name="from" value="orion">
+			<input type="hidden" name="key" value="d7bfe">
+			<input type="hidden" name=".crumb" value="">
+			<input type="hidden" name="logged" value="0">
+			<button type="submit">Buzz up!<span class="right"></span></button>
+		</form>
+		
+		            </li>
+            <li class="send yn-menu yn-menu2 ult-position">
+                <a href="/web/20100209055312/http://m2f.news.yahoo.com/mailto/?prop=news&amp;locale=us&amp;url=http%3A%2F%2Fnews.yahoo.com%2Fs%2Fcsm%2F20100205%2Fcm_csm%2F278383&amp;title=Who+dat%21+New+Orleans+Saints+fans+are+ready+to+finish+strong.&amp;h1=csm/20100205/cm_csm/278383&amp;h2=T&amp;h3=2328" class="menu-hd1 ult-nofollow" mapleUltParams="sec=top">Send</a>
+                <div class="menu-bd">
+                    <div class="menu-content">
+                        <ul>
+                            <li>
+                                <a href="/web/20100209055312/http://m2f.news.yahoo.com/mailto/?prop=news&amp;locale=us&amp;url=http%3A%2F%2Fnews.yahoo.com%2Fs%2Fcsm%2F20100205%2Fcm_csm%2F278383&amp;title=Who+dat%21+New+Orleans+Saints+fans+are+ready+to+finish+strong.&amp;h1=csm/20100205/cm_csm/278383&amp;h2=T&amp;h3=2328" class="email" mapleUltParams="sec=top">Email</a>
+                            </li>
+                            <li class="hide">
+                                <a href="/web/20100209055312/http://news.yahoo.com/s/csm/20100205/cm_csm/278383" class="im ult-nofollow" mapleUltParams="sec=top"><abbr title="Yahoo! Instant Messenger">IM</abbr></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="share yn-menu yn-menu2 ult-position">
+                <a href="/web/20100209055312/http://delicious.com/save?url=http://news.yahoo.com/s/csm/20100205/cm_csm/278383&amp;title=Who+dat%21+New+Orleans+Saints+fans+are+ready+to+finish+strong.+-+Yahoo%21+News" class="menu-hd1 ult-nofollow" mapleUltPriority="1000" mapleUltParams="sec=top">Share</a>
+                <div class="menu-bd">
+                    <div class="menu-content">
+                        <ul>
+                            <li>
+                                <a href="/web/20100209055312/http://delicious.com/save?url=http://news.yahoo.com/s/csm/20100205/cm_csm/278383&amp;title=Who+dat%21+New+Orleans+Saints+fans+are+ready+to+finish+strong.+-+Yahoo%21+News" class="delicious ult-nofollow" mapleUltPriority="1000"  onclick="if (navigator.userAgent.indexOf('MSIE') &gt; 0){window.location.href=this.href}else{delsave=window.open(this.href+'&amp;noui=1','delSave','location=yes,links=no,scrollbars=no,toolbar=no,height=375,width=700');}; return false;"  mapleUltParams="sec=top">Delicious</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100209055312/http://digg.com/submit?phase=2&amp;url=http://news.yahoo.com/s/csm/20100205/cm_csm/278383" class="digg popup" mapleUltParams="sec=top">Digg</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100209055312/http://www.facebook.com/sharer.php?u=http://news.yahoo.com/s/csm/20100205/cm_csm/278383&amp;t=Who+dat%21+New+Orleans+Saints+fans+are+ready+to+finish+strong.+-+Yahoo%21+News" class="facebook popup" mapleUltParams="sec=top">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100209055312/http://cgi.fark.com/cgi/fark/farkit.pl?u=http://news.yahoo.com/s/csm/20100205/cm_csm/278383&amp;h=Who+dat%21+New+Orleans+Saints+fans+are+ready+to+finish+strong.+-+Yahoo%21+News" class="fark popup" mapleUltParams="sec=top">Fark</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100209055312/http://www.newsvine.com/_tools/seed&amp;save?u=http://news.yahoo.com/s/csm/20100205/cm_csm/278383&amp;h=Who+dat%21+New+Orleans+Saints+fans+are+ready+to+finish+strong.+-+Yahoo%21+News" class="newsvine popup" mapleUltParams="sec=top">Newsvine</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100209055312/http://reddit.com/submit?url=http://news.yahoo.com/s/csm/20100205/cm_csm/278383" class="reddit popup" mapleUltParams="sec=top">Reddit</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100209055312/http://www.stumbleupon.com/submit?url=http://news.yahoo.com/s/csm/20100205/cm_csm/278383&amp;title=Who+dat%21+New+Orleans+Saints+fans+are+ready+to+finish+strong.+-+Yahoo%21+News" class="stumbleupon popup" mapleUltParams="sec=top">StumbleUpon</a>
+                            </li>                         
+                            <li>
+                                <a href="/web/20100209055312/http://technorati.com/faves?sub=addfavbtn&amp;add=http://news.yahoo.com/s/csm/20100205/cm_csm/278383" class="technorati popup" mapleUltParams="sec=top">Technorati</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100209055312/http://twitter.com/home?status=http://news.yahoo.com/s/csm/20100205/cm_csm/278383&amp;title=Who+dat%21+New+Orleans+Saints+fans+are+ready+to+finish+strong.+-+Yahoo%21+News" class="twitter popup" mapleUltParams="sec=top">Twitter</a>
+                            </li>                               
+                            <li>
+                                <a href="/web/20100209055312/http://myweb2.search.yahoo.com/myresults/bookmarklet?t=Who+dat%21+New+Orleans+Saints+fans+are+ready+to+finish+strong.+-+Yahoo%21+News&amp;u=http://news.yahoo.com/s/csm/20100205/cm_csm/278383&amp;ei=UTF-8&amp;ts=1265694792" class="yahoo-bookmarks popup" mapleUltParams="sec=top">Yahoo!&nbsp;Bookmarks</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="print last ult-position">
+                <a href="/web/20100209055312/http://news.yahoo.com/s/csm/20100205/cm_csm/278383/print" mapleUltParams="sec=top">Print</a>
+            </li>
+                    </ul><!-- end: .tools -->
+
+	
+        
+        
+        
+    </div><!-- end: .hd -->
+    
+    <div class="bd" role="main" aria-labelledby="yn-story-title">
+        
+            <div id="yn-story-related-media">
+        
+                
+                <div class="secondary-media ult-section">
+                
+                            
+            
+                                        
+            
+        <div id="yn-story-columnist-bd" class="ult-section">
+                <h3 class="first">
+            More  from  Christian Science Monitor:
+        </h3>
+        
+        <ul class="list list4">
+                        <li class="first">
+                <a href="/web/20100209055312/http://news.yahoo.com/s/csm/20100208/cm_csm/278970" mapleUltParams="sec=yn_columnist_r">Ukraine election result -- a balancing act</a>
+            </li>
+                        <li class="">
+                <a href="/web/20100209055312/http://news.yahoo.com/s/csm/20100208/cm_csm/278477" mapleUltParams="sec=yn_columnist_r">Big banks are too big – and unproductive</a>
+            </li>
+                        <li class="">
+                <a href="/web/20100209055312/http://news.yahoo.com/s/csm/20100208/cm_csm/278883" mapleUltParams="sec=yn_columnist_r">Twitter doesn’t start a revolution, people do</a>
+            </li>
+                        <li class="">
+                <a href="/web/20100209055312/http://news.yahoo.com/s/csm/20100208/cm_csm/278873" mapleUltParams="sec=yn_columnist_r">Boy Scouts: a century of promoting virtue</a>
+            </li>
+                    </ul>
+        <a href="/web/20100209055312/http://news.yahoo.com/i/2328" class="more" mapleUltParams="sec=yn_columnist_r">More &raquo;</a>
+                
+            </div>
+                 
+        </div><!-- end .secondary-media -->
+                
+    </div><!-- end .related-media -->
+
+
+
+    
+        
+<div class="byline">
+        <cite class="vcard">
+        By John Christian Hoyle        <span class="fn org">John Christian Hoyle</span>
+    </cite>
+    &ndash;
+    <abbr title="2010-02-05T07:56:54-0800" class="timedate">Fri&nbsp;Feb&nbsp;5, 10:56&nbsp;am&nbsp;ET</abbr></div><!-- end .byline -->
+
+
+
+            <div class="yn-story-content">
+                <p>Mobile, Ala. &ndash; 
+When the <span class="yshortcuts" id="lw_1265389483_0">New Orleans Saints march</span> into <span class="yshortcuts" id="lw_1265389483_1">Miami</span> to clash with the <span class="yshortcuts" id="lw_1265389483_2">Indianapolis Colts</span> in Sunday’s <span class="yshortcuts" id="lw_1265389483_3">Super Bowl XLIV</span>, Big Easy residents will be sporting black and gold T-shirts emboldened with the team’s unofficial “Finish Strong” mission, shouting at their flat-screen TVs, and praying for victory. More important, however, they will be reveling in the reality that their team, the aptly named Saints, will serve as ambassadors and symbols of a city reborn. </p>
+                <p>I grew up in <span class="yshortcuts" id="lw_1265389483_4">New Orleans</span>. I’m a life-long Saints fan. And I can tell you: We may be a feel-good story, but we don’t want your sympathetic smiles – we want to win.</p>
+                <p>Like a bowl full of <span class="yshortcuts" id="lw_1265389483_5">Bananas Foster</span> from Brennan’s restaurant in the <span class="yshortcuts" id="lw_1265389483_6">French Quarter</span>, the city’s recovery story is more rich and nuanced than the clichés that so many misinformed sportswriters, bloggers, and TV talking heads have been peddling this week to hype the game. </p>
+                <p>For a time, the Saints and the refurbished Superdome came to symbolize the indomitable hope for a city struggling to recover from <span class="yshortcuts" id="lw_1265389483_7">hurricane Katrina</span>. That narrative played out three years ago, however. The tired metaphor of a team serving as a distraction for a troubled city is also out-of-touch. What about the assertion that the Saints simply deserve to win because of the immeasurable tragedy the city has been through? Please â€“ thatâ€™s patronizing, at best.</p>
+                <p>Furthermore, the Saints are also not a symbol of rebuilding efforts. Instead, they reflect what already has been rebuilt â€“ over the course of more than four long years of gritty hard work and sweat and a formidable resolve among residents to build a new and improved New Orleans.Â </p>
+                <p>Crescent City residents have grown weary of being portrayed as helpless and sometimes hapless victims. Sure, every New Orleanian can recite impassioned Katrina stories that would make <span class="yshortcuts" id="lw_1265389483_8">Anne Rice</span> squeamish and <span class="yshortcuts" id="lw_1265389483_9">Emeril Lagasse</span> lose his appetite. </p>
+                <p>Yet all of us can also recall an equal number of stories that chronicle the reconstruction of homes and neighbors and strangers who helped one another â€“ not to mention that comfortable feeling we got the first time we ordered a shrimp poâ€™ boy when our favorite eatery reopened after the storm.</p>
+                <p>No doubt there is more to accomplish. Public schools remain troubled. Crime and corruption still infest the city. Some neighborhoods may never come back. Yet the tangible and metaphorical progress that has unfolded is nothing short of astounding. And the Saints domination over opponents this season and earning, through hard work, a shot at a <span class="yshortcuts" id="lw_1265389483_10">Super Bowl</span> title exemplify this, particularly given the franchise’s history. </p>
+                <p>For the longest time, the Saints were the “Ain’ts” – punch lines around the <span class="yshortcuts" id="lw_1265389483_11">National Football League</span> and punching bags for other squads. As a kid, my dad and I used to sit next to folks who wore brown bags over their heads at home games in the Superdome. It took three decades for the Saints to finally win a playoff game, and a majority of those woeful seasons were fraught with losing records. Yet here they are, Super Bowl contenders for the first time.</p>
+                <p>Like the Saints, the city has, and continues to, reverse its fortunes. I will never forget driving my pickup truck into the city after the storm, hands trembling as I clutched the steering wheel. I could not believe my eyes. Entire neighborhoods ruined. Mounds of trash everywhere. But it was the smell of rot loitering in the air that I found most disturbing. At that time I thought <span class="yshortcuts" id="lw_1265389483_12">New Orleans</span> was finished. I couldn’t have been more wrong. If anything, the storm shored up the city’s determination, making folks who were able to stay love New Orleans more than ever.</p>
+                <p>The city is not depressed. In fact, a recent study found that Louisiana residents – an eccentric, fun-loving, and loyal-to-the-bone bunch – were the happiest in America. </p>
+                <p><span class="yshortcuts" id="lw_1265389483_13">New Orleans folks</span> are finally witnessing the fruits of progress. Homes, churches, roads, businesses, schools, and relationships have been reestablished with deep roots and firm foundations. Now, like the Saints, the city’s residents are eager to showcase their own victories. Book a trip – you’ll see. </p>
+                <p>All across the Gulf Coast, people feel a soulful connection with the team because many of its marquee players remind them of themselves: survivors, misfits, and castoffs. There are too many back stories to delve into, but take team captain and quarterback <span class="yshortcuts" id="lw_1265389483_14">Drew Brees</span>, whose bum shoulder led him to be discarded by the <span class="yshortcuts" id="lw_1265389483_15">San Diego Chargers</span>. Other teams passed on him, too, but not the Saints. They embraced him and he embraced New Orleans, its culture and people.</p>
+                <p>“I think you can draw so many parallels between our team and city, but in reality, we kind of leaned on each other in order to survive and in order to get to where we are now,” Brees said after his team defeated <span class="yshortcuts" id="lw_1265389483_16">Brett Favre</span>’s <span class="yshortcuts" id="lw_1265389483_17">Minnesota Vikings</span> in the NFC Championship. “It hasn’t always been easy and we’ve had to fight through plenty of adversity just like this city has.”</p>
+                <p><span class="yshortcuts" id="lw_1265389483_18">The Saints</span> go into the <span class="yshortcuts" id="lw_1265389483_19">Super Bowl</span> as 5-1/2-point underdogs. Of course this is familiar territory, as they have been in that position since the team was founded in 1966. If, however, the team puts forth the kind of effort that <span class="yshortcuts" id="lw_1265389483_20">New Orleans residents</span> have seen since Katrina’s waters rolled back, it won’t matter what the Colts throw at them. As Saints fans would say, “Who dat!” </p>
+                <p>John Christian Hoyle, a lifelong Saints fan, will watch the Super Bowl with his family at his sister’s home in New Orleans. </p>
+                <p>---</p>
+                <p>Want to join the conversation? Follow us on <span class="yshortcuts" id="lw_1265389483_21">Facebook</span>.</p>
+            </div>
+        
+        
+    </div><!-- end: .bd -->
+    
+    <div class="ft">
+
+            <div id="yn-story-related-searches" class="ult-section">
+        <h3>Related Searches:</h3>
+        <ul>
+                            <li>
+                    <a href="/web/20100209055312/http://news.search.yahoo.com/news/search?p=french+quarter" mapleUltParams="sec=yn_related_searches">french quarter</a>
+                </li>
+                            <li>
+                    <a href="/web/20100209055312/http://news.search.yahoo.com/news/search?p=drew+brees" mapleUltParams="sec=yn_related_searches">drew brees</a>
+                </li>
+                            <li>
+                    <a href="/web/20100209055312/http://news.search.yahoo.com/news/search?p=minnesota+vikings" mapleUltParams="sec=yn_related_searches">minnesota vikings</a>
+                </li>
+                            <li>
+                    <a href="/web/20100209055312/http://news.search.yahoo.com/news/search?p=national+football+league" mapleUltParams="sec=yn_related_searches">national football league</a>
+                </li>
+                            <li class="last">
+                    <a href="/web/20100209055312/http://news.search.yahoo.com/news/search?p=super+bowl" mapleUltParams="sec=yn_related_searches">super bowl</a>
+                </li>
+                    </ul>
+    </div>
+
+
+        <div id="yn-story-share">
+            
+            
+                <ul id="bottom" class="tools mod ult-section">
+            <li class="buzz ult-position">
+	
+					
+		<form method="post" action="/web/20100209055312/http://buzz.yahoo.com/vote/" class="buzz" id="buzz-bottom">
+			<input type="hidden" name="publisherurn" value="y_news">
+			<input type="hidden" name="guid" value="csm/20100205/278383">
+			<input type="hidden" name=".done" value="/article/y_news/csm/20100205/278383">
+			<input type="hidden" name="assettype" value="article">
+			<input type="hidden" name="votetype" value="1">
+			<input type="hidden" name="from" value="orion">
+			<input type="hidden" name="key" value="d7bfe">
+			<input type="hidden" name=".crumb" value="">
+			<input type="hidden" name="logged" value="0">
+			<button type="submit">Buzz up!<span class="right"></span></button>
+		</form>
+		
+		            </li>
+            <li class="send yn-menu yn-menu2 ult-position">
+                <a href="/web/20100209055312/http://m2f.news.yahoo.com/mailto/?prop=news&amp;locale=us&amp;url=http%3A%2F%2Fnews.yahoo.com%2Fs%2Fcsm%2F20100205%2Fcm_csm%2F278383&amp;title=Who+dat%21+New+Orleans+Saints+fans+are+ready+to+finish+strong.&amp;h1=csm/20100205/cm_csm/278383&amp;h2=T&amp;h3=2328" class="menu-hd1 ult-nofollow" mapleUltParams="sec=bottom">Send</a>
+                <div class="menu-bd">
+                    <div class="menu-content">
+                        <ul>
+                            <li>
+                                <a href="/web/20100209055312/http://m2f.news.yahoo.com/mailto/?prop=news&amp;locale=us&amp;url=http%3A%2F%2Fnews.yahoo.com%2Fs%2Fcsm%2F20100205%2Fcm_csm%2F278383&amp;title=Who+dat%21+New+Orleans+Saints+fans+are+ready+to+finish+strong.&amp;h1=csm/20100205/cm_csm/278383&amp;h2=T&amp;h3=2328" class="email" mapleUltParams="sec=bottom">Email</a>
+                            </li>
+                            <li class="hide">
+                                <a href="/web/20100209055312/http://news.yahoo.com/s/csm/20100205/cm_csm/278383" class="im ult-nofollow" mapleUltParams="sec=bottom"><abbr title="Yahoo! Instant Messenger">IM</abbr></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="share yn-menu yn-menu2 ult-position">
+                <a href="/web/20100209055312/http://delicious.com/save?url=http://news.yahoo.com/s/csm/20100205/cm_csm/278383&amp;title=Who+dat%21+New+Orleans+Saints+fans+are+ready+to+finish+strong.+-+Yahoo%21+News" class="menu-hd1 ult-nofollow" mapleUltPriority="1000" mapleUltParams="sec=bottom">Share</a>
+                <div class="menu-bd">
+                    <div class="menu-content">
+                        <ul>
+                            <li>
+                                <a href="/web/20100209055312/http://delicious.com/save?url=http://news.yahoo.com/s/csm/20100205/cm_csm/278383&amp;title=Who+dat%21+New+Orleans+Saints+fans+are+ready+to+finish+strong.+-+Yahoo%21+News" class="delicious ult-nofollow" mapleUltPriority="1000"  onclick="if (navigator.userAgent.indexOf('MSIE') &gt; 0){window.location.href=this.href}else{delsave=window.open(this.href+'&amp;noui=1','delSave','location=yes,links=no,scrollbars=no,toolbar=no,height=375,width=700');}; return false;"  mapleUltParams="sec=bottom">Delicious</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100209055312/http://digg.com/submit?phase=2&amp;url=http://news.yahoo.com/s/csm/20100205/cm_csm/278383" class="digg popup" mapleUltParams="sec=bottom">Digg</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100209055312/http://www.facebook.com/sharer.php?u=http://news.yahoo.com/s/csm/20100205/cm_csm/278383&amp;t=Who+dat%21+New+Orleans+Saints+fans+are+ready+to+finish+strong.+-+Yahoo%21+News" class="facebook popup" mapleUltParams="sec=bottom">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100209055312/http://cgi.fark.com/cgi/fark/farkit.pl?u=http://news.yahoo.com/s/csm/20100205/cm_csm/278383&amp;h=Who+dat%21+New+Orleans+Saints+fans+are+ready+to+finish+strong.+-+Yahoo%21+News" class="fark popup" mapleUltParams="sec=bottom">Fark</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100209055312/http://www.newsvine.com/_tools/seed&amp;save?u=http://news.yahoo.com/s/csm/20100205/cm_csm/278383&amp;h=Who+dat%21+New+Orleans+Saints+fans+are+ready+to+finish+strong.+-+Yahoo%21+News" class="newsvine popup" mapleUltParams="sec=bottom">Newsvine</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100209055312/http://reddit.com/submit?url=http://news.yahoo.com/s/csm/20100205/cm_csm/278383" class="reddit popup" mapleUltParams="sec=bottom">Reddit</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100209055312/http://www.stumbleupon.com/submit?url=http://news.yahoo.com/s/csm/20100205/cm_csm/278383&amp;title=Who+dat%21+New+Orleans+Saints+fans+are+ready+to+finish+strong.+-+Yahoo%21+News" class="stumbleupon popup" mapleUltParams="sec=bottom">StumbleUpon</a>
+                            </li>                         
+                            <li>
+                                <a href="/web/20100209055312/http://technorati.com/faves?sub=addfavbtn&amp;add=http://news.yahoo.com/s/csm/20100205/cm_csm/278383" class="technorati popup" mapleUltParams="sec=bottom">Technorati</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100209055312/http://twitter.com/home?status=http://news.yahoo.com/s/csm/20100205/cm_csm/278383&amp;title=Who+dat%21+New+Orleans+Saints+fans+are+ready+to+finish+strong.+-+Yahoo%21+News" class="twitter popup" mapleUltParams="sec=bottom">Twitter</a>
+                            </li>                               
+                            <li>
+                                <a href="/web/20100209055312/http://myweb2.search.yahoo.com/myresults/bookmarklet?t=Who+dat%21+New+Orleans+Saints+fans+are+ready+to+finish+strong.+-+Yahoo%21+News&amp;u=http://news.yahoo.com/s/csm/20100205/cm_csm/278383&amp;ei=UTF-8&amp;ts=1265694792" class="yahoo-bookmarks popup" mapleUltParams="sec=bottom">Yahoo!&nbsp;Bookmarks</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="print last ult-position">
+                <a href="/web/20100209055312/http://news.yahoo.com/s/csm/20100205/cm_csm/278383/print" mapleUltParams="sec=bottom">Print</a>
+            </li>
+                    </ul><!-- end: .tools -->
+
+	
+        </div>
+        
+    </div><!-- end .ft -->
+
+</div><!-- end: #story -->
+
+<script type="text/javascript">
+(function() {
+
+    /**
+     * YUI function to get all elements by class name
+     * getElementsByClass
+     */
+    function getElementsByClass(className, tag, root) {
+        tag = tag || '*';    
+        root = (typeof root == 'string') ? document.getElementById(root) : root || document;
+    
+        var nodes = [],
+            elements = root.getElementsByTagName(tag),
+            re = new RegExp('(?:^|\\s+)' + className + '(?:\\s+|$)');
+    
+        for (var i = 0, len = elements.length; i < len; ++i) {
+            if ( re.test(elements[i].className) ) {
+                nodes[nodes.length] = elements[i];
+            }
+        }
+        return nodes;
+    }
+    
+    /**
+     * This code displays the expand button as the page loads. This prevents any lag in displaying
+     * the button if the page takes a long time to load. If the user clicks the button before the page
+     * loads then we just show the full story without animation. Thus, preventing the full implementation
+     * from loading.
+     */
+    var story = document.getElementById('yn-story');
+    var related = document.getElementById('yn-story-related-media');
+    var expandCookie = '0';
+    
+    if (
+        // make sure read-more-toggle flag exists
+        (story && story.className.indexOf('read-more-toggle') != -1) &&
+        // if user preference is 0 then collapse story
+        expandCookie == '0' && 
+        // make sure hash is not set
+        window.location.hash!='#full'
+       )
+    {
+        var buttonHeight = 18;
+        var defaultHeight = 406;
+        var heightLimit = 200;
+        var host = document.location.host;
+        var path = document.location.pathname;
+        var bd = getElementsByClass('bd','div',story)[0];
+        
+        // Figure out min height for story container based on the heights of the related media and primary media containers
+        if (related)
+        {                
+            // do height calculations if related height is larger than default minHeight
+            if (related.offsetHeight > defaultHeight) {
+            
+                // if primary exists then use that height, otherwise use related
+                var obj = getElementsByClass('primary-media','div',related)[0];
+                if (!obj) obj = related;
+                
+                // set height from primary or related container
+                minHeight = parseInt(obj.offsetHeight, 10);
+                
+                // if the minheight is smaller than default, then set it to default
+                if (
+                    (minHeight < defaultHeight) &&
+                    !document.getElementById('yn-story-main-media') && 
+                    !document.getElementById('yn-story-minor-media')
+                   )
+                {
+                    minHeight = defaultHeight;
+                }
+            } else {
+                minHeight = defaultHeight;
+            }
+        } else {
+            minHeight = defaultHeight;
+        }
+        
+        // add height of buttons to min height
+        minHeight += buttonHeight;
+            
+        // make sure there is enough story to hide
+        if ((bd.offsetHeight - minHeight) > heightLimit)
+        {
+            // set overflow and height
+            bd.style.height = minHeight + "px";
+            bd.className += " overflow";
+            story.className += " read-closed";
+            
+            // add read more expand button
+            var div = document.createElement('div');
+            div.className = 'read-more read-more-expand';
+            div.innerHTML = '<a href="http://'+host+path+'" id="yn-bodycontrol" class="ult-nofollow ult-section" accesskey="m" title="Press CTRL + SHIFT + M to toggle" mapleUltPriority="1000"><em><span>Read Full Article</span></em></a>';
+    
+            // we have to handle the case where a user might click the button before our YUI script loads
+            // if so, remove the height and overflow setting then hide the button, also add #full hash to url so
+            // if script eventually is loaded it doesnt recreate the buttons and collapse the story
+            div.onclick = function(ev) {
+                var e = ev || window.event;
+                
+                // show full story
+                bd.style.height = 'auto';
+                bd.className = bd.className.replace('overflow','expanded');
+                story.className = story.className.replace('read-closed','');
+                
+                // hide the toggle button
+                div.className += ' hide';
+                
+                // disable link follow
+                if (e.preventDefault) {
+                    e.preventDefault();
+                } else {
+                    e.returnValue = false;
+                }
+            }
+            
+            // add div to document
+            bd.appendChild(div);
+        }
+    
+    }
+
+})();
+</script>
+
+<div id="yn-story-related-content" class="yui-g mod related-content-style">
+
+        
+        <div id="yn-r-b-right" class="yui-u first ult-section">
+    
+        <h3>More...</h3>
+        
+        <ul class="list list4 list6 size1">
+                        <li class="first video">
+                <a href="/web/20100209055312/http://us.rd.yahoo.com/dailynews/external/fox_news/av_fox_cm/277b435ea8d28344dd723f650d45c7e4/35040576/*http://news.yahoo.com/video/opinion-15749653/18042566" class="showtt" rel=":fox_news:20100209:av_fox_cm:_yahoonewsvideo_opinion132716_mondays_live_wire__18042563" mapleUltParams="sec=yn-r-b-right;slk=vid-un-link;staid=/fox_news/20100209/av_fox_cm/_yahoonewsvideo_opinion132716_mondays_live_wire__18042563">
+                                        <strong>Opinion Video:</strong> 
+                                        GVS Live Wire: 2/8                </a>
+                
+                                <cite>
+                    <a href="/web/20100209055312/http://news.yahoo.com/i/3056" mapleUltParams="sec=yn-r-b-right;slk=vid-un-provider;staid=/fox_news/20100209/av_fox_cm/_yahoonewsvideo_opinion132716_mondays_live_wire__18042563">FOX News</a>
+                </cite>
+                            </li>
+                        <li class="video">
+                <a href="/web/20100209055312/http://us.rd.yahoo.com/dailynews/external/fox_news/av_fox_cm/9700e70c4aa7218aecd7278f2078b10b/35039204/*http://news.yahoo.com/video/opinion-15749653/18039525" class="showtt" rel=":fox_news:20100209:av_fox_cm:_yahoonewsvideo_opinion132260_where_to_go_when_banks_say_no__18039517" mapleUltParams="sec=yn-r-b-right;slk=vid-un-link;staid=/fox_news/20100209/av_fox_cm/_yahoonewsvideo_opinion132260_where_to_go_when_banks_say_no__18039517">
+                                        <strong>Opinion Video:</strong> 
+                                        Where to Go When Banks Say No                </a>
+                
+                                <cite>
+                    <a href="/web/20100209055312/http://news.yahoo.com/i/3056" mapleUltParams="sec=yn-r-b-right;slk=vid-un-provider;staid=/fox_news/20100209/av_fox_cm/_yahoonewsvideo_opinion132260_where_to_go_when_banks_say_no__18039517">FOX News</a>
+                </cite>
+                            </li>
+                        <li class="video">
+                <a href="/web/20100209055312/http://us.rd.yahoo.com/dailynews/external/fox_news/av_fox_cm/9df798de249b5a35c3d1afbef0da1189/35037316/*http://news.yahoo.com/video/opinion-15749653/18036623" class="showtt" rel=":fox_news:20100208:av_fox_cm:_yahoonewsvideo_opinion132617_lessons_from_selfdestructing_companies__18036614" mapleUltParams="sec=yn-r-b-right;slk=vid-un-link;staid=/fox_news/20100208/av_fox_cm/_yahoonewsvideo_opinion132617_lessons_from_selfdestructing_companies__18036614">
+                                        <strong>Opinion Video:</strong> 
+                                        Preventing Leadership Failure                </a>
+                
+                                <cite>
+                    <a href="/web/20100209055312/http://news.yahoo.com/i/3056" mapleUltParams="sec=yn-r-b-right;slk=vid-un-provider;staid=/fox_news/20100208/av_fox_cm/_yahoonewsvideo_opinion132617_lessons_from_selfdestructing_companies__18036614">FOX News</a>
+                </cite>
+                            </li>
+                    </ul>
+        
+    </div>
+    </div><!-- end .related -->
+
+
+
+
+
+
+
+<div class="mod mod3">
+    <div class="yui-gb yui-gb1">
+        <div class="yui-u first">
+            <div id="yn-channel" class="mod ult-section mod-first">
+    <div class="hd">
+        <h3>Most Viewed - Opinion</h3>
+    </div>
+    <div class="bd">
+        <ul class="list list4">
+                            <li class="ult-position first">
+                    <a href="/web/20100209055312/http://news.yahoo.com/s/huffpost/20100207/cm_huffpost/452614" class="showtt" rel=":huffpost:20100207:cm_huffpost:452614" mapleUltParams="sec=yn-channel;staid=huffpost/20100207/452614" >Tim Geithner Calls Out Scott Brown For Stimulus Criticism</a>
+                    <cite>HuffingtonPost.com</cite>
+                </li>
+                            <li class="ult-position">
+                    <a href="/web/20100209055312/http://news.yahoo.com/s/realclearpolitics/20100207/cm_rcp/populist_constitutionalism_amp_the_tea_parties" class="showtt" rel=":realclearpolitics:20100207:cm_rcp:populist_constitutionalism_amp_the_tea_parties" mapleUltParams="sec=yn-channel;staid=realclearpolitics/20100207/populist_constitutionalism_amp_the_tea_parties" >Populist Constitutionalism & the Tea Parties</a>
+                    <cite>RealClearPolitics.com</cite>
+                </li>
+                            <li class="ult-position">
+                    <a href="/web/20100209055312/http://news.yahoo.com/s/csm/20100208/cm_csm/278477" class="showtt" rel=":csm:20100208:cm_csm:278477" mapleUltParams="sec=yn-channel;staid=csm/20100208/278477" >Big banks are too big – and unproductive</a>
+                    <cite>The Christian Science Monitor</cite>
+                </li>
+                            <li class="ult-position">
+                    <a href="/web/20100209055312/http://news.yahoo.com/s/thenation/20100208/cm_thenation/1527969" class="showtt" rel=":thenation:20100208:cm_thenation:1527969" mapleUltParams="sec=yn-channel;staid=thenation/20100208/1527969" >John Murtha: The Old Soldier Who Said &quot;Bring the Troops Home&quot;</a>
+                    <cite>The Nation</cite>
+                </li>
+                            <li class="ult-position">
+                    <a href="/web/20100209055312/http://news.yahoo.com/s/csm/20100208/cm_csm/278883" class="showtt" rel=":csm:20100208:cm_csm:278883" mapleUltParams="sec=yn-channel;staid=csm/20100208/278883" >Twitter doesn’t start a revolution, people do</a>
+                    <cite>The Christian Science Monitor</cite>
+                </li>
+                    </ul>
+        <a href="/web/20100209055312/http://news.yahoo.com/most-popular/viewed/opinion" class="more size1" mapleUltParams="sec=yn-channel" >All Most Viewed&nbsp;&raquo;</a>
+    </div>
+</div>
+
+            
+            
+        </div>
+        <div class="yui-u">
+            
+<div id="yn-daily-features" class="mod ult-section mod-first">
+    <div class="hd">
+        <h3>Daily Features</h3>
+    </div>
+    <div class="bd">
+        <ul class="list list2 size1">
+            <li class="first">
+                <a href="/web/20100209055312/http://news.yahoo.com/comics/100208/cx_dilbert_umedia/20100802"><img src="/web/20100209055312im_/http://l.yimg.com/a/i/us/nws/2008/news/us/assets/common/images/transparent.png" width="201" height="62" alt="Comic" class="lzbg" style="background-image: url(/web/20100209055312im_/http://d.yimg.com/b/util/anysize/200x-1209600,http%3A%2F%2Fd.yimg.com%2Fa%2Fp%2Fumedia%2F20100208%2Fcp.b4f8f96553ed4e814cb994fc32702fa5.gif%3Fx%3D201%26y%3D62%26q%3D85%26sig%3DyhyBG_cTKzV7pEsuWBp4RA--);"></a>
+                <a href="/web/20100209055312/http://news.yahoo.com/comics" class="more">All Comics &raquo;</a>
+            </li>
+            <li>
+    <h4>Opinions &amp; Editorials: <a href="/web/20100209055312/http://news.yahoo.com/i/742">Diverse views on news from the right, left, and center.</a></h4>
+    <a href="/web/20100209055312/http://news.yahoo.com/i/742" class="more">All Opinion &raquo;</a> 
+</li>            <!-- -->        </ul>
+    </div>
+</div>
+
+                <div class="ad-links mod">
+                <div id="darla-ad__REC" class="ft darla_ad"></div>
+            </div>
+
+            
+        </div>
+        <div class="yui-u last">
+            <div id="yn-linkbox" class="mod mod-first ult-section">
+        <div class="hd">
+        <h3>More From</h3>
+    </div>
+        <div class="bd">
+                <a href="/web/20100209055312/http://www.csmonitor.com/" class="logo" mapleUltParams="sec=yn-linkbox">
+            <img src="/web/20100209055312im_/http://d.yimg.com/a/i/us/nws/p/csm_logo_115.jpg?x=115&amp;y=27&amp;q=85&amp;sig=j8lV7icOKxtGXiLUf7Ye3A--" alt="Christian Science Monitor">
+        </a>
+            
+        <ul class="list list4">
+                        <li class="ult-position first">
+                <a href="/web/20100209055312/http://us.rd.yahoo.com/dailynews/csm/linkbox_csm_oped///SIG=13gr7jspe/*http://www.csmonitor.com/Commentary/the-monitors-view/2010/0208/Ukraine-election-result-a-balancing-act?s=yaho" mapleUltParams="sec=yn-linkbox" >Ukraine election result -- a balancing act</a>
+            </li>
+                        <li class="ult-position">
+                <a href="/web/20100209055312/http://us.rd.yahoo.com/dailynews/csm/linkbox_csm_oped///SIG=13be1jkjo/*http://www.csmonitor.com/Commentary/Opinion/2010/0208/Twitter-doesn-t-start-a-revolution-people-do?s=yaho" mapleUltParams="sec=yn-linkbox" >Twitter doesn’t start a revolution, people do</a>
+            </li>
+                        <li class="ult-position">
+                <a href="/web/20100209055312/http://us.rd.yahoo.com/dailynews/csm/linkbox_csm_oped///SIG=13757b581/*http://www.csmonitor.com/Commentary/Opinion/2010/0208/Boy-Scouts-a-century-of-promoting-virtue?s=yaho" mapleUltParams="sec=yn-linkbox" >Boy Scouts: a century of promoting virtue</a>
+            </li>
+                        <li class="ult-position">
+                <a href="/web/20100209055312/http://us.rd.yahoo.com/dailynews/csm/linkbox_csm_oped///SIG=13opdu6gn/*http://www.csmonitor.com/Commentary/Opinion/2010/0205/China-is-aiming-at-America-s-soft-underbelly-the-Internet?s=yaho" mapleUltParams="sec=yn-linkbox" >China is aiming at America’s soft underbelly: the Internet</a>
+            </li>
+                    </ul>
+    </div>      
+    </div><!-- end .mod -->
+
+            
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+                    
+
+        
+                    
+                    
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                </div><!-- end: .yui-b -->
+        
+            </div><!-- end: #yui-main -->
+        
+            <div id="sidebar" class="yui-b" role="complementary">
+            
+                <div id="yn-top-stories" class="mod ult-section mod-first">
+    <div class="hd">
+        <h3>Top Stories</h3>
+    </div>
+    <div class="bd">
+                    <ul class="list list4 size2">
+                <li class="first  "><a href="/web/20100209055312/http://news.yahoo.com/s/ap/iran_nuclear" class="showtt yltasis" rel=":ap:iran_nuclear" mapleUltParams="sec=yn_top_stories;asset=ap/20100209/iran_nuclear;cpos=1;"> Iran moves closer to nuke warhead capacity</a></li><li class=" "><a href="/web/20100209055312/http://news.yahoo.com/s/ap/20100209/ap_on_bi_ge/us_health_care_overhaul" class="showtt yltasis" rel=":ap:20100209:ap_on_bi_ge:us_health_care_overhaul" mapleUltParams="sec=yn_top_stories;asset=ap/20100209/us_health_care_overhaul;cpos=2;"> Obama's health care summit: Just for show?</a></li><li class=" "><a href="/web/20100209055312/http://news.yahoo.com/s/ap/20100209/ap_on_re_us/us_ny_governor" class="showtt yltasis" rel=":ap:20100209:ap_on_re_us:us_ny_governor" mapleUltParams="sec=yn_top_stories;asset=ap/20100209/us_ny_governor;cpos=3;"> AP Interview: NY's Paterson lashes back at rumors</a></li><li class=" "><a href="/web/20100209055312/http://news.yahoo.com/s/ap/20100209/ap_on_re_us/us_obit_murtha" class="showtt yltasis" rel=":ap:20100209:ap_on_re_us:us_obit_murtha" mapleUltParams="sec=yn_top_stories;asset=ap/20100209/us_obit_murtha;cpos=4;"> Rep. John Murtha, voice for veterans, dies at 77</a></li><li class=" "><a href="/web/20100209055312/http://news.yahoo.com/s/ap/20100209/ap_on_re_us/us_winter_weather" class="showtt yltasis" rel=":ap:20100209:ap_on_re_us:us_winter_weather" mapleUltParams="sec=yn_top_stories;asset=ap/20100209/us_winter_weather;cpos=5;"> Seats at a premium on planes, trains out of DC</a></li><li class=" "><a href="/web/20100209055312/http://news.yahoo.com/s/ap/20100209/ap_on_bi_ge/ml_dubai_tallest_building" class="showtt yltasis" rel=":ap:20100209:ap_on_bi_ge:ml_dubai_tallest_building" mapleUltParams="sec=yn_top_stories;asset=ap/20100209/ml_dubai_tallest_building;cpos=6;"> World's tallest tower closed a month after opening</a></li><li class=" "><a href="/web/20100209055312/http://news.yahoo.com/s/ap/20100209/ap_on_en_mu/us_michael_jackson_doctor" class="showtt yltasis" rel=":ap:20100209:ap_on_en_mu:us_michael_jackson_doctor" mapleUltParams="sec=yn_top_stories;asset=ap/20100209/us_michael_jackson_doctor;cpos=7;"> Michael Jackson's doctor pleads not guilty</a></li>            </ul>
+            </div>
+    <div class="ft">
+        <a href="/web/20100209055312/http://news.yahoo.com/top-stories" class="yltasis">More Top Stories &raquo;</a>
+    </div>
+</div>
+
+<div id="darla-ad__LREC" class="mod ad darla_ad mod-first"></div>
+    
+
+<div id="sponsored-links" class="mod ult-section">
+    <div class="hd">
+        <h3>Sponsored Links</h3>
+    </div>
+    <div class="bd">
+        <ul>
+                        <li class="ult-position first">
+                <a href="/web/20100209055312/http://rc.us-east.srv.overture.com/d/sr/?xargs=20AKkWdil1pHEjEngwBPB7zpBkKyNkS6cPEHchVhTTZuXJ9N2fdGEpWkDvwIC2LUBVFDI0wyqctVy6ddDYWnuc8P58QsR6KgrZHp_38z4rQNoi__ZyL7w42y-EmYUIGhCihAHnNRsdsYYkpuhoQpK-KEcrcsJvgKCOHHV2sHx-l765AkGXtzN3ji7rNFHp93_uNy_GXXWRnYJcJ-2eI6HyIvWXLugO0cY07qoD_zu6GorgnQI155J-sKY.000000024d786683" class="yltasis">Buy Stocks - $4 Fee at ShareBuilder</a>
+                No Account or Investment Minimums. $50 Account Bonus! Don’t miss out.                <a href="/web/20100209055312/http://rc.us-east.srv.overture.com/d/sr/?xargs=20AKkWdil1pHEjEngwBPB7zpBkKyNkS6cPEHchVhTTZuXJ9N2fdGEpWkDvwIC2LUBVFDI0wyqctVy6ddDYWnuc8P58QsR6KgrZHp_38z4rQNoi__ZyL7w42y-EmYUIGhCihAHnNRsdsYYkpuhoQpK-KEcrcsJvgKCOHHV2sHx-l765AkGXtzN3ji7rNFHp93_uNy_GXXWRnYJcJ-2eI6HyIvWXLugO0cY07qoD_zu6GorgnQI155J-sKY.000000024d786683" class="host yltasis">www.sharebuilder.com</a>
+            </li>
+                        <li class="ult-position">
+                <a href="/web/20100209055312/http://rc.us-east.srv.overture.com/d/sr/?xargs=20ABi3z7rJxqHXtaes2EM2MiTM9HF8IT4XmT_pViolkxruz4HzYNhXn-ZEUv34t8-RwKZzkrVA_DXYCE_WyPrFwGkAvMhxloVKnbwIoj97vozH22v2BpzHp5j5xLgCrZ9rWR5Kd17tpJYa5CPH_e6jp336VmYUc-qAdsU_TN3WxklIL0wSXLV4gcxiBplsxahUw8QXq82wfaMpIALMMbsfMIZevdiFW8putHe18WY2_M9zeKB7rJs4Nz4LhOGpvaJaZQ.000000024d786683" class="yltasis">Refinance Now at 3.4% APR</a>
+                $160,000 mortgage under $752/mo. Free. No Obligation. Get 4 quotes now.                <a href="/web/20100209055312/http://rc.us-east.srv.overture.com/d/sr/?xargs=20ABi3z7rJxqHXtaes2EM2MiTM9HF8IT4XmT_pViolkxruz4HzYNhXn-ZEUv34t8-RwKZzkrVA_DXYCE_WyPrFwGkAvMhxloVKnbwIoj97vozH22v2BpzHp5j5xLgCrZ9rWR5Kd17tpJYa5CPH_e6jp336VmYUc-qAdsU_TN3WxklIL0wSXLV4gcxiBplsxahUw8QXq82wfaMpIALMMbsfMIZevdiFW8putHe18WY2_M9zeKB7rJs4Nz4LhOGpvaJaZQ.000000024d786683" class="host yltasis">MortgageRefinance.LendGo.com</a>
+            </li>
+                        <li class="ult-position">
+                <a href="/web/20100209055312/http://rc.us-east.srv.overture.com/d/sr/?xargs=20ADnLzZVtGA1UCL955l3789B6MAb3VEz7vPu-SVYza68frVqzAS6WEfD5gevrTG-DEhmKcAJIuc6IdjvnoCKmMn-skKIkdcUAY0KO1TrF4MK6KTK9QF4VvUQofTTUPIHRmfSgqCxJvwAqUzgnEb_p2VDIBSJz4pdQS403uyufp1uXOe18FyNEWEN3_e7Xl5tne7bU4DrLQ9_fbSToUo0OkCnyVWOkpnmnZFhiC6hELqUZa8wv-rOva2E.000000024d786683" class="yltasis">Super Cheap Home Insurance</a>
+                Get Discount Homeowners Insurance Online – Rates from $20 / Month.                <a href="/web/20100209055312/http://rc.us-east.srv.overture.com/d/sr/?xargs=20ADnLzZVtGA1UCL955l3789B6MAb3VEz7vPu-SVYza68frVqzAS6WEfD5gevrTG-DEhmKcAJIuc6IdjvnoCKmMn-skKIkdcUAY0KO1TrF4MK6KTK9QF4VvUQofTTUPIHRmfSgqCxJvwAqUzgnEb_p2VDIBSJz4pdQS403uyufp1uXOe18FyNEWEN3_e7Xl5tne7bU4DrLQ9_fbSToUo0OkCnyVWOkpnmnZFhiC6hELqUZa8wv-rOva2E.000000024d786683" class="host yltasis">Discount-Home-Insurance.org</a>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+<div id="yn-featured" class="mod ult-section">
+    <div class="hd">
+        <h3>Featured</h3>
+    </div>
+    <div class="bd">
+        <ul>
+            <li class="first"><a href="/web/20100209055312/http://education.yahoo.net/degrees/articles/featured_more_education_more_money.html"><img width="67" height="67" alt="Yahoo! Education" src="/web/20100209055312im_/http://l.yimg.com/a/p/us/news/editorial/3/60/360c7649c3d60fc06c055c9d4240afb9.jpeg"/></a>
+<div><a href="/web/20100209055312/http://education.yahoo.net/degrees/articles/featured_more_education_more_money.html">Double your salary</a>Find out how to get the salary you deserve.</div></li><li><a href="/web/20100209055312/http://education.yahoo.net/degrees/articles/featured_ten_hot_home_office_jobs.html"><img width="67" height="67" alt="Yahoo! Education" src="/web/20100209055312im_/http://l.yimg.com/a/p/us/news/editorial/b/f2/bf24249f2cf982acfd6257334fd53654.jpeg"/></a>
+<div><a href="/web/20100209055312/http://education.yahoo.net/degrees/articles/featured_ten_hot_home_office_jobs.html">Stop paying for gas</a>Find out what the top 10 work from home jobs are.</div></li>        </ul>
+    </div>
+</div>
+
+
+<div id="yn-vitality" class="mod ult-section">
+    <div class="hd">
+	   <h3><span>Yahoo!</span>Updates</h3>
+    </div>
+    <div class="bd pagination">
+		<ul class="tabs">
+			<li id="vitality__connections" class="pagination-nav"><a href="#updates-conn"><span>My Connections</span></a></li>
+			<li id="vitality__everyone" class="pagination-nav"><a href="#updates-everyone"><span>Everyone</span></a></li>
+		</ul>
+    	<div class="pagination-bd">
+            <div id="pagination-bd-vitality__connections">
+                
+<div id="yn-vitality-connections" class="my-connections no-updates">
+	<div class="hd"></div>
+	
+	<div class="bd">
+		<div class="updates-invite updates-login"><div class="updates-icon"></div>		<p><a href="/web/20100209055312/https://login.yahoo.com/config/login_verify2?.src=yn&amp;.done=http://news.yahoo.com/" class="signin">Sign In</a> <span>to see what your Connections are up to on Yahoo! News.</span></p>
+		<p>New User? <a href="/web/20100209055312/https://edit.yahoo.com/registration?.intl=us&amp;new=1&amp;.src=yn&amp;.done=http://news.yahoo.com/" class="signup">Sign Up</a></p></div>
+	</div>
+	<div class="ft"></div>
+</div>
+
+            </div>
+            <div id="pagination-bd-vitality__everyone" style="display: none;">
+                
+<div id="yn-vitality-everyone" class="everyone">
+	<div class="hd"></div>
+	<div class="updates-invite updates-login"><div class="updates-icon"></div>		<p><a href="/web/20100209055312/https://login.yahoo.com/config/login_verify2?.src=yn&amp;.done=http://news.yahoo.com/" class="signin">Sign In</a> <span>to see what your Connections are up to on Yahoo! News.</span></p>
+		<p>New User? <a href="/web/20100209055312/https://edit.yahoo.com/registration?.intl=us&amp;new=1&amp;.src=yn&amp;.done=http://news.yahoo.com/" class="signup">Sign Up</a></p></div>
+	<div class="bd">
+		<ul class="hfeed hslice"><li class="header today"><h4>Today</h4></li>			<li class="hentry first">
+						
+				<a href="/web/20100209055312/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aeun7m4e/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0NW1xczVmBElfYWd1aWQDTkE1TURNUFNIT0lPSkZON0I0NzI0U01QQkUESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkA2VlNTE3YTEwZDIzMzJhM2VlNzFiOTI5MjkzNzEzNTAwBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rmdhge2/**http%3A//profiles.yahoo.com/u/NA5MDMPSHOIOJFN7B4724SMPBE" class="avatar"><img width="32" height="32" alt="goto Jack's profile" src="/web/20100209055312im_/http://l.yimg.com/us.yimg.com/i/identity/nopic_48.gif"></a>
+				<div class="update entry-content">
+					<p class="vcard author"><a href="/web/20100209055312/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aeun7m4e/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0NW1xczVmBElfYWd1aWQDTkE1TURNUFNIT0lPSkZON0I0NzI0U01QQkUESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkA2VlNTE3YTEwZDIzMzJhM2VlNzFiOTI5MjkzNzEzNTAwBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rmdhge2/**http%3A//profiles.yahoo.com/u/NA5MDMPSHOIOJFN7B4724SMPBE" class="fn nickname url">Jack</a> buzzed up: <a href="/web/20100209055312/http://news.yahoo.com/s/ap/20100208/ap_on_bi_ge/us_health_care_overhaul" class="entry-title bookmark">Obama&#39;s health care summit: Just for show?      (AP)</a></p>  <p class="updated">2 seconds ago <span class="value">2010-02-08T21:52:06-08:00</span></p>
+				</div>
+			</li>
+					<li class="hentry">
+						
+				<a href="/web/20100209055312/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aedv40jt/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0NDAzNnJkBElfYWd1aWQDT0pEWE1YTTIzTzNXRU8yRlpPSFc0TlA0V1kESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkA2I0NGM2YjVhNmY0MmY4ZDIwY2M2MzJhOTNkNTZjNTEyBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rted6dr/**http%3A//profiles.yahoo.com/u/OJDXMXM23O3WEO2FZOHW4NP4WY" class="avatar"><img width="32" height="32" alt="goto Pappy's profile" src="/web/20100209055312im_/http://a323.yahoofs.com/coreid/4ab1861bid5dzul5re4/ty9TXO4heraiIEnqvAmfXUfXKg--/2/tn48.jpg?ciAAToMBJLh6syI_"></a>
+				<div class="update entry-content">
+					<p class="vcard author"><a href="/web/20100209055312/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aedv40jt/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0NDAzNnJkBElfYWd1aWQDT0pEWE1YTTIzTzNXRU8yRlpPSFc0TlA0V1kESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkA2I0NGM2YjVhNmY0MmY4ZDIwY2M2MzJhOTNkNTZjNTEyBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rted6dr/**http%3A//profiles.yahoo.com/u/OJDXMXM23O3WEO2FZOHW4NP4WY" class="fn nickname url">Pappy</a> buzzed up: <a href="/web/20100209055312/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1b3knphvi/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0NDAzNnJkBElfYWd1aWQDT0pEWE1YTTIzTzNXRU8yRlpPSFc0TlA0V1kESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkA2I0NGM2YjVhNmY0MmY4ZDIwY2M2MzJhOTNkNTZjNTEyBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=12gj6fnk7/**http%3A//buzz.yahoo.com/article/1%3Ay_news%3A5564169127e8df5a8fd57b1add7becd8" class="entry-title bookmark">Astronauts inspect shuttle on way to space station         (AP)</a></p>  <p class="updated">5 seconds ago <span class="value">2010-02-08T21:52:03-08:00</span></p>
+				</div>
+			</li>
+					<li class="hentry">
+						
+				<a href="/web/20100209055312/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aegt8g59/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0ZHBwbzg5BElfYWd1aWQDRDNDUVM3NU1RVEVDNlFQU0VRRFlINjdZSDQESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzMzOTgwZDI5ZjY1NDQzNGY1YTg3ZDQwNGFkM2FhMzMzBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rvl8uqm/**http%3A//profiles.yahoo.com/u/D3CQS75MQTEC6QPSEQDYH67YH4" class="avatar"><img width="32" height="32" alt="goto sonjamarie2's profile" src="/web/20100209055312im_/http://avatars.zenfs.com/users/1AGuq7prbAAEB94FBCI2bZVsB.medium.png"></a>
+				<div class="update entry-content">
+					<p class="vcard author"><a href="/web/20100209055312/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aegt8g59/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0ZHBwbzg5BElfYWd1aWQDRDNDUVM3NU1RVEVDNlFQU0VRRFlINjdZSDQESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzMzOTgwZDI5ZjY1NDQzNGY1YTg3ZDQwNGFkM2FhMzMzBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rvl8uqm/**http%3A//profiles.yahoo.com/u/D3CQS75MQTEC6QPSEQDYH67YH4" class="fn nickname url">sonjamarie2</a> buzzed up: <a href="/web/20100209055312/http://news.yahoo.com/s/nm/20100208/lf_nm_life/us_religion_health" class="entry-title bookmark">Being religious may not make you healthier after all      (Reuters)</a></p>  <p class="updated">6 seconds ago <span class="value">2010-02-08T21:52:02-08:00</span></p>
+				</div>
+			</li>
+					<li class="hentry">
+						
+				<a href="/web/20100209055312/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aea2mojs/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0Z2ZhYmkyBElfYWd1aWQDWERJM0lMMkVHQUJXN0JWUUlNQVRKMzNYN0kESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzVlOTEzYWQxODc4OTg3ZTAxNjBhMTVkNjljYmU1NjBlBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11r5uo8c7/**http%3A//profiles.yahoo.com/u/XDI3IL2EGABW7BVQIMATJ33X7I" class="avatar"><img width="32" height="32" alt="goto roadwarriorsbaby!'s profile" src="/web/20100209055312im_/http://l.yimg.com/us.yimg.com/i/identity/nopic_48.gif"></a>
+				<div class="update entry-content">
+					<p class="vcard author"><a href="/web/20100209055312/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aea2mojs/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0Z2ZhYmkyBElfYWd1aWQDWERJM0lMMkVHQUJXN0JWUUlNQVRKMzNYN0kESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzVlOTEzYWQxODc4OTg3ZTAxNjBhMTVkNjljYmU1NjBlBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11r5uo8c7/**http%3A//profiles.yahoo.com/u/XDI3IL2EGABW7BVQIMATJ33X7I" class="fn nickname url">roadwarriorsbaby!</a> buzzed up: <a href="/web/20100209055312/http://news.yahoo.com/s/ap/20100209/ap_on_re_us/us_obit_murtha" class="entry-title bookmark">Rep. John Murtha, voice for veterans, dies at 77      (AP)</a></p>  <p class="updated">20 seconds ago <span class="value">2010-02-08T21:51:48-08:00</span></p>
+				</div>
+			</li>
+					<li class="hentry last">
+						
+				<a href="/web/20100209055312/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1ae39c0m5/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0aWtuYW9xBElfYWd1aWQDSElOSjdPV0ZQWk9NWjZONFhYN01QQlhZQ1UESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkA2QxN2I4ZWY3NTU0NmM3ZTQ3OTg4ZDNkYTMxM2ZjNzYwBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11r6ooj91/**http%3A//profiles.yahoo.com/u/HINJ7OWFPZOMZ6N4XX7MPBXYCU" class="avatar"><img width="32" height="32" alt="goto Banmu's profile" src="/web/20100209055312im_/http://a323.yahoofs.com/coreid/4a486896i1603zul5sp1/CaBzlNUzeqgSP5QZ54vUNaht6Vyu/2/tn48.jpg?ciAAToMB_YSVDDV9"></a>
+				<div class="update entry-content">
+					<p class="vcard author"><a href="/web/20100209055312/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1ae39c0m5/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0aWtuYW9xBElfYWd1aWQDSElOSjdPV0ZQWk9NWjZONFhYN01QQlhZQ1UESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkA2QxN2I4ZWY3NTU0NmM3ZTQ3OTg4ZDNkYTMxM2ZjNzYwBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11r6ooj91/**http%3A//profiles.yahoo.com/u/HINJ7OWFPZOMZ6N4XX7MPBXYCU" class="fn nickname url">Banmu</a> buzzed up: <a href="/web/20100209055312/http://news.yahoo.com/s/nm/20100208/lf_nm_life/us_religion_health" class="entry-title bookmark">Being religious may not make you healthier after all      (Reuters)</a></p>  <p class="updated">24 seconds ago <span class="value">2010-02-08T21:51:44-08:00</span></p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="ft"> <a href="/web/20100209055312/http://profiles.yahoo.com/settings/updates/" class="settings">Manage My Updates</a></div>
+</div>
+
+            </div>
+    	</div>
+    </div>
+</div>
+
+<div id="darla-ad__LREC2" class="mod ad darla_ad mod-first"></div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            
+            </div><!-- end: #sidebar -->
+        
+        </div><!-- end: #bd -->
+    
+        <div id="ft">
+   
+   <div id="yn_ft_nav" class="ult-section nav">
+       <h6>Yahoo! News Navigation</h6>
+       <ul>
+           <li class="ult-position first"><a href="/web/20100209055312/http://news.yahoo.com/">Home</a></li>
+           <li class="ult-position"><a href="/web/20100209055312/http://news.yahoo.com/us"><abbr title="United States">U.S.</abbr></a></li>
+           <li class="ult-position"><a href="/web/20100209055312/http://news.yahoo.com/business">Business</a></li>
+           <li class="ult-position"><a href="/web/20100209055312/http://news.yahoo.com/world">World</a></li>
+           <li class="ult-position"><a href="/web/20100209055312/http://news.yahoo.com/entertainment">Entertainment</a></li>
+           <li class="ult-position"><a href="/web/20100209055312/http://news.yahoo.com/sports">Sports</a></li>
+           <li class="ult-position"><a href="/web/20100209055312/http://news.yahoo.com/technology">Tech</a></li>
+           <li class="ult-position"><a href="/web/20100209055312/http://news.yahoo.com/politics">Politics</a></li>
+           <li class="ult-position"><a href="/web/20100209055312/http://news.yahoo.com/science">Science</a></li>
+           <li class="ult-position"><a href="/web/20100209055312/http://news.yahoo.com/health">Health</a></li>
+           <li class="ult-position"><a href="/web/20100209055312/http://news.yahoo.com/travel">Travel</a></li>
+           <li class="ult-position"><a href="/web/20100209055312/http://news.yahoo.com/i/964">Most Popular</a></li>
+           <li class="ult-position"><a href="/web/20100209055312/http://news.yahoo.com/odd">Odd News</a></li>
+           <li class="ult-position"><a href="/web/20100209055312/http://news.yahoo.com/opinion">Opinion</a></li>
+       </ul>
+   </div><!-- end: .nav -->
+   
+   <div id="yn_ft_services" class="ult-section services">
+       <h6>News Services</h6>
+       <ul>
+           <li class="ult-position rss first"><a href="/web/20100209055312/http://news.yahoo.com/rss"><abbr title="Really Simple Syndication">RSS</abbr></a></li>
+           <li class="ult-position"><a href="/web/20100209055312/http://beta.alerts.yahoo.com/main.php?view=create_news_step1&amp;.done=http://news.yahoo.com">News Alerts</a></li>
+           <li class="ult-position"><a href="/web/20100209055312/http://beta.alerts.yahoo.com/main.php?view=create_weather">Weather Alerts</a></li>
+           <li class="ult-position"><a href="/web/20100209055312/http://news.yahoo.com/badges/headlines">Add Yahoo! Headlines to Your Site</a></li>
+           <li class="ult-position"><a href="/web/20100209055312/http://news.yahoo.com/page/sitemap">Site Map</a></li>
+           <li class="ult-position"><a href="/web/20100209055312/http://help.yahoo.com/l/us/yahoo/news/">Help</a></li>
+           <li class="ult-position"><a href="/web/20100209055312/http://suggestions.yahoo.com/?prop=news">Feedback</a></li>
+       </ul>
+       
+          </div><!-- end: .services -->
+   
+</div><!-- end: #ft -->
+           
+
+        
+        <div id="copyright" class="mod" role="contentinfo">
+    <p>Copyright &copy; 2010 <a href=/web/20100209055312/http://us.rd.yahoo.com/dailynews/csm/brand/SIG=114211ceu/**http%3A%2F%2Fwww.csmonitor.com%2F class=regs>The Christian Science Monitor</a><br></p>
+</div>
+
+    
+        <div class="mod ad ad_footer" role="contentinfo">
+    <div class="bd">
+            <!-- Ad Keywords: Miami; gold; hurricane; victims; Crime; corruption; franchise; home; It; it; America; survivors; San;-->
+<!-- SpaceID=0 robot -->
+    </div>
+</div>
+
+    
+    </div><!-- end: #doc4 -->
+    
+    
+
+                            <script type="text/javascript" src="/web/20100209055312js_/http://l.yimg.com/b/news/combo/D7H8FL9F?http%3A//l.yimg.com/d/combo%3Fuh/15/js/uh-1.0.20.js&amp;story/assets/js/1.0.3/generic/story.js"></script>
+                        
+
+                            <script type="text/javascript">
+                            YAHOO.util.Event.addListener(window, 'load', function() {
+                                // Start contextual shortcuts widget
+                                var config = {
+                                    url : '/news/common/api/en-US/NEWS/storycontextualshortcut;id=csm:20100205:cm_csm:278383?format=json',
+                                    css : '/web/20100209055312/http://d.yimg.com/jq/css/cs_3.5.0.css',
+                                    js : '/web/20100209055312/http://d.yimg.com/jq/js/ysc_csc_news.js'
+                                }
+                                YAHOO.News.Shortcuts.init(config);
+                            });
+                            </script>
+                        
+    
+    <div class="mod ad ad_misc_ad">
+    <div class="bd">
+            <!-- Ad Keywords: Miami; gold; hurricane; victims; Crime; corruption; franchise; home; It; it; America; survivors; San;-->
+<!-- SpaceID=0 robot -->
+    </div>
+</div>
+
+    
+    <div class="mod ad ad_survey_ad">
+    <div class="bd">
+            <!-- Ad Keywords: Miami; gold; hurricane; victims; Crime; corruption; franchise; home; It; it; America; survivors; San;-->
+<!-- SpaceID=0 robot -->
+    </div>
+</div>
+
+    
+    
+    
+</body>
+</html>
+
+
+
+
+<!-- news:story-us:0:Success -->
+<!-- fe22.story.media.ac4.yahoo.com uncompressed Mon Feb  8 21:53:11 PST 2010 -->
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 5:53:12 Feb 9, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:57:51 Jan 11, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

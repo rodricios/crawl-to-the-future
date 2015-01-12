@@ -109,7 +109,7 @@ def archive_domain(domain, year, dir_path=DATASET_DIR,
     forward_links = []
     
     #for snapshot in domain_snapshots[:snapshot_age_span]:
-    for snapshot in domain_snapshots[:2]:
+    for snapshot in domain_snapshots[:3]:
         
         curr_snapshot_flinks = get_forwardlink_snapshots(snapshot)
 

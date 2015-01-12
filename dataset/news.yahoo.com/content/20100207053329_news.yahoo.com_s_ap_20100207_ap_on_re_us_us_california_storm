@@ -1,0 +1,1430 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-US">
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app14.us.archive.org";archive_analytics.values.server_ms=160;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+
+                            <link rel="stylesheet" href="/web/20100210104045cs_/http://l.yimg.com/b/news/combo/D7H8FL9F?http%3A//l.yimg.com/d/combo%3Fuh/15/css/uh-1.0.28.css&amp;story/assets/css/1.0.4/generic/story.css" type="text/css"></link>
+                        
+
+                    <link rel="canonical" href="http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm"></link>
+                
+    
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
+    <meta name="description" content="Residents evacuated from foothill communities deluged by weekend mudslides north of Los Angeles were allowed to return home Sunday as crews moved debris and cleared catch basins in anticipation of more rain later in the week.">
+    <meta name="keywords" content="Los Angeles County Sheriff,Los Angeles,La Canada Flintridge,U.S. National,AP">
+    
+    <title>Evacuees return to LA-area homes swamped with mud - Yahoo! News</title>   
+
+    
+</head>
+
+<body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "10";
+var displayMonth = "Feb";
+var displayYear = "2010";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20100210104045" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Jan
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 10:40:45 Feb 10, 2010">FEB</td>
+		<td class="f" nowrap="nowrap">
+		
+		    Mar
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 10:40:45 Feb 10, 2010">10</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20100211030643/http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm" title="3:06:43 Feb 11, 2010"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2009
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 10:40:45 Feb 10, 2010">2010</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2011
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20100210104045*/http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm" title="See a list of every capture for this URL">7 captures</a>
+           <div class="r" title="Timespan for captures of this URL">10 Feb 10 - 18 Feb 10</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:1:070000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+    <script type="text/javascript">document.body.className = 'js';</script>
+
+    <div id="doc4" class="yui-t6">
+
+        <a href="#navigation" class="shortcut">Skip to navigation &raquo;</a>
+        <a href="#bd" class="shortcut">Skip to content &raquo;</a>
+    
+        <div id="hd">
+        
+            <div class="mod ad mod-first ad_header" role="banner">
+    <div class="bd">
+            <!-- Ad Keywords: home; Canada; it; weather; help; government; house; It;-->
+<!-- SpaceID=0 robot -->
+    </div>
+</div>
+
+        
+            <div id="navigation" role="navigation">
+    <ul id="navigation-primary" class="ult-section primary">
+                <li class="ult-position">
+            <a href="/web/20100210104045/http://news.yahoo.com/" class="first" mapleUltParams="sec=tn">Home</a>
+        </li>
+                <li class="ult-position active">
+            <a href="/web/20100210104045/http://news.yahoo.com/us" mapleUltParams="sec=tn">U.S.</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210104045/http://news.yahoo.com/business" mapleUltParams="sec=tn">Business</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210104045/http://news.yahoo.com/world" mapleUltParams="sec=tn">World</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210104045/http://news.yahoo.com/entertainment" mapleUltParams="sec=tn">Entertainment</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210104045/http://news.yahoo.com/sports" mapleUltParams="sec=tn">Sports</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210104045/http://news.yahoo.com/technology" mapleUltParams="sec=tn">Tech</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210104045/http://news.yahoo.com/politics" mapleUltParams="sec=tn">Politics</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210104045/http://news.yahoo.com/science" mapleUltParams="sec=tn">Science</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210104045/http://news.yahoo.com/health" mapleUltParams="sec=tn">Health</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210104045/http://news.yahoo.com/opinion" mapleUltParams="sec=tn">Opinion</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210104045/http://news.yahoo.com/most-popular" mapleUltParams="sec=tn">Most Popular</a>
+        </li>
+            </ul><!-- end: .primary -->
+
+        <ul id="navigation-secondary" class="ult-section secondary">
+                <li class="ult-position">
+            <a href="/web/20100210104045/http://news.yahoo.com/video/us" class="first" mapleUltParams="sec=sn">U.S. Video</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210104045/http://news.yahoo.com/local-news" mapleUltParams="sec=sn">Local News</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210104045/http://news.yahoo.com/us/education" mapleUltParams="sec=sn">Education</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210104045/http://news.yahoo.com/us/religion" mapleUltParams="sec=sn">Religion</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210104045/http://news.yahoo.com/politics" mapleUltParams="sec=sn">Politics</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210104045/http://news.yahoo.com/us/crimes-trials" mapleUltParams="sec=sn">Crimes and Trials</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210104045/http://news.yahoo.com/topics" mapleUltParams="sec=sn">Topics</a>
+        </li>
+            </ul><!-- end: .secondary -->
+    </div><!-- end: #navigation -->
+
+            
+            <div id="yn-popular-searches" class="mod">
+    <h3>Popular Searches:</h3>
+    <div class="popular-searches">
+        <ul>
+                        <li class="first">
+                <a href="/web/20100210104045/http://news.search.yahoo.com/news/search?p=angelina+jolie" tabindex="-1">angelina jolie</a>
+            </li>
+                        <li>
+                <a href="/web/20100210104045/http://news.search.yahoo.com/news/search?p=ellen+degeneres" tabindex="-1">ellen degeneres</a>
+            </li>
+                        <li>
+                <a href="/web/20100210104045/http://news.search.yahoo.com/news/search?p=nancy+kerrigan" tabindex="-1">nancy kerrigan</a>
+            </li>
+                        <li>
+                <a href="/web/20100210104045/http://news.search.yahoo.com/news/search?p=american+idol" tabindex="-1">american idol</a>
+            </li>
+                        <li>
+                <a href="/web/20100210104045/http://news.search.yahoo.com/news/search?p=deadliest+catch" tabindex="-1">deadliest catch</a>
+            </li>
+                        <li>
+                <a href="/web/20100210104045/http://news.search.yahoo.com/news/search?p=cornelia+marie" tabindex="-1">cornelia marie</a>
+            </li>
+                        <li>
+                <a href="/web/20100210104045/http://news.search.yahoo.com/news/search?p=captain+phil+harris" tabindex="-1">captain phil harris</a>
+            </li>
+                        <li>
+                <a href="/web/20100210104045/http://news.search.yahoo.com/news/search?p=iran" tabindex="-1">iran</a>
+            </li>
+                        <li>
+                <a href="/web/20100210104045/http://news.search.yahoo.com/news/search?p=china" tabindex="-1">china</a>
+            </li>
+                        <li>
+                <a href="/web/20100210104045/http://news.search.yahoo.com/news/search?p=sports+illustrated+swimsuit" tabindex="-1">sports illustrated swimsuit</a>
+            </li>
+                        <li>
+                <a href="/web/20100210104045/http://news.search.yahoo.com/news/search?p=lil+wayne" tabindex="-1">lil wayne</a>
+            </li>
+                        <li>
+                <a href="/web/20100210104045/http://news.search.yahoo.com/news/search?p=lost" tabindex="-1">lost</a>
+            </li>
+                        <li>
+                <a href="/web/20100210104045/http://news.search.yahoo.com/news/search?p=toyota+recall" tabindex="-1">toyota recall</a>
+            </li>
+                        <li>
+                <a href="/web/20100210104045/http://news.search.yahoo.com/news/search?p=tiger+woods" tabindex="-1">tiger woods</a>
+            </li>
+                        <li>
+                <a href="/web/20100210104045/http://news.search.yahoo.com/news/search?p=michelle+obama" tabindex="-1">michelle obama</a>
+            </li>
+                        <li>
+                <a href="/web/20100210104045/http://news.search.yahoo.com/news/search?p=jackie+collins" tabindex="-1">jackie collins</a>
+            </li>
+                        <li>
+                <a href="/web/20100210104045/http://news.search.yahoo.com/news/search?p=super+bowl+commercials" tabindex="-1">super bowl commercials</a>
+            </li>
+                        <li>
+                <a href="/web/20100210104045/http://news.search.yahoo.com/news/search?p=brooklyn+decker" tabindex="-1">brooklyn decker</a>
+            </li>
+                        <li>
+                <a href="/web/20100210104045/http://news.search.yahoo.com/news/search?p=louisa+ball" tabindex="-1">louisa ball</a>
+            </li>
+                        <li>
+                <a href="/web/20100210104045/http://news.search.yahoo.com/news/search?p=andy+roddick" tabindex="-1">andy roddick</a>
+            </li>
+                    </ul>
+    </div>
+    <form action="/web/20100210104045/http://news.search.yahoo.com/news/search" method="get" role="search">
+        <input type="hidden" name="ei" value="UTF-8"/>
+        <ul>
+            <li class="search-type yn-menu">
+                <a href="#" class="menu-trigger">search menu</a>
+                <div class="menu-bd">
+                    <fieldset class="menu-content">
+                        <legend>Search Type</legend>
+                        
+                        <span>Choose a search type from the items below</span>
+
+                        <input type="radio" name="c" value="" id="search_all" checked="checked">                        
+                        <label for="search_all" class="first">All News</label>
+
+                        <input type="radio" name="c" value="yahoo_news" id="search_ynews">                        
+                        <label for="search_ynews">Yahoo! News Only</label>
+
+                        <input type="radio" name="c" value="images" id="search_images">                        
+                        <label for="search_images">News Photos</label>
+
+                        <input type="radio" name="c" value="av" id="search_av">                        
+                        <label for="search_av">Video/Audio</label>
+                    </fieldset>
+                </div>
+            </li>
+            <li class="search-text"><input type="text" name="p" value=""></li>
+            <li class="search-submit"><span><button type="submit"><span>News Search</span></button></span></li>
+            <li><a href="/web/20100210104045/http://news.search.yahoo.com/news/advanced" class="advanced-search">Advanced Search</a></li>
+        </ul>
+    </form>
+</div>
+
+            
+                <div id="banner-ad">
+        <div class="bd">
+            <!-- SpaceID=0 robot -->
+        </div>
+    </div>
+
+
+            
+
+        </div>
+        
+        <div id="bd">
+                
+            <div id="yui-main">
+        
+                <div class="yui-b" role="main">
+     
+                    
+<div class="promobar mod promobar-top_bar">
+
+    <div class="normal blue">
+        <div class="bd">
+            <a href="/web/20100210104045/http://www.weather.com/newscenter/?par=yahoo&amp;site=www.yahoo.com&amp;promo=top&amp;cm_ven=Yahoo&amp;cm_cat=www.yahoo.com&amp;cm_pla=weatherpage&amp;cm_ite=Other" class="media"><img src="/web/20100210104045im_/http://l.yimg.com/a/p/us/news/editorial/0/bd/0bdc052135d41557cce37703b3baed9d.jpeg" width="58" height="39" alt=""></a>
+            <h4><a href="/web/20100210104045/http://www.weather.com/newscenter/?par=yahoo&amp;site=www.yahoo.com&amp;promo=top&amp;cm_ven=Yahoo&amp;cm_cat=www.yahoo.com&amp;cm_pla=weatherpage&amp;cm_ite=Other"><strong>WINTER WALLOP:</strong>Get the latest updates on storms in the Midwest and Mid-Atlantic</a></h4>
+            <a href="/web/20100210104045/http://www.weather.com/newscenter/?par=yahoo&amp;site=www.yahoo.com&amp;promo=top&amp;cm_ven=Yahoo&amp;cm_cat=www.yahoo.com&amp;cm_pla=weatherpage&amp;cm_ite=Other"></a>
+        </div><!-- end bd -->
+    </div>    
+        
+</div>
+
+<div id="yn-story" class="ult-section mod ">
+
+    <div class="hd">
+    
+        
+        
+            <h1 id="yn-story-title">Evacuees return to LA-area homes swamped with mud</h1>
+        <a href="/web/20100210104045/http://us.rd.yahoo.com/dailynews/ap/brand/SIG=11f589428/**http%3A%2F%2Fwww.ap.org%2Ftermsandconditions" id="yn-prvdlink" class="provider-logo ult-section" mapleUltParams="sec=yn-prvdlink">
+        <img src="/web/20100210104045im_/http://l.yimg.com/a/i/us/nws/2008/news/us/assets/common/images/transparent.png" width="106" height="27" alt="AP" class="lzbg" style="background-image: url(/web/20100210104045im_/http://l.yimg.com/a/i/us/nws/p/ap_logo_106.png);">    </a>
+    
+        
+        	
+	<div id="yup-container"></div>
+	<script type="text/javascript">
+		
+		if(!YAHOO){var YAHOO = {};}
+		
+		 YAHOO.BuzzWidgetTries = 0;
+		
+		(function(){
+		    if(YAHOO && YAHOO.util && YAHOO.util.Event && YAHOO.Media && YAHOO.Media.Buzz){
+		   (function(){ var buzz = new YAHOO.Media.Buzz("buzz-top",{"sync":"buzz-bottom","countPosition":"after","fetchCount":false,"loc_strings":{"buzz_up":"Buzz up!","buzzed":"Buzzed!","one_vote":"{0} vote","n_votes":"{0} votes"}});buzz.onSuccess.subscribe(function(){ if(YAHOO.Updates){ YAHOO.Updates.Disclosure.showDialog({"container":"yup-container","source":"buzz","type":"buzzUp","lang":"en-US"}); } }); })();(function(){ var buzz = new YAHOO.Media.Buzz("buzz-bottom",{"sync":"buzz-top","countPosition":"after","fetchCount":true,"loc_strings":{"buzz_up":"Buzz up!","buzzed":"Buzzed!","one_vote":"{0} vote","n_votes":"{0} votes"}});buzz.onSuccess.subscribe(function(){ if(YAHOO.Updates){ YAHOO.Updates.Disclosure.showDialog({"container":"yup-container","source":"buzz","type":"buzzUp","lang":"en-US"}); } }); })();    
+		    } else if(YAHOO.BuzzWidgetTries < 10000) {
+		        YAHOO.BuzzWidgetTries += 500;
+		        setTimeout(arguments.callee, 500);
+		    }
+		})();	
+	
+	</script>
+    <ul id="top" class="tools mod ult-section">
+            <li class="buzz ult-position">
+	
+					
+		<form method="post" action="/web/20100210104045/http://buzz.yahoo.com/vote/" class="buzz" id="buzz-top">
+			<input type="hidden" name="publisherurn" value="y_news">
+			<input type="hidden" name="guid" value="ap/20100207/us_california_storm">
+			<input type="hidden" name=".done" value="/article/y_news/ap/20100207/us_california_storm">
+			<input type="hidden" name="assettype" value="article">
+			<input type="hidden" name="votetype" value="1">
+			<input type="hidden" name="from" value="orion">
+			<input type="hidden" name="key" value="29965">
+			<input type="hidden" name=".crumb" value="">
+			<input type="hidden" name="logged" value="0">
+			<button type="submit">Buzz up!<span class="right"></span></button>
+		</form>
+		
+		            </li>
+            <li class="send yn-menu yn-menu2 ult-position">
+                <a href="/web/20100210104045/http://m2f.news.yahoo.com/mailto/?prop=news&amp;locale=us&amp;url=http%3A%2F%2Fnews.yahoo.com%2Fs%2Fap%2F20100207%2Fap_on_re_us%2Fus_california_storm&amp;title=Evacuees+return+to+LA-area+homes+swamped+with+mud&amp;h1=ap/20100207/ap_on_re_us/us_california_storm&amp;h2=T&amp;h3=519" class="menu-hd1 ult-nofollow" mapleUltParams="sec=top">Send</a>
+                <div class="menu-bd">
+                    <div class="menu-content">
+                        <ul>
+                            <li>
+                                <a href="/web/20100210104045/http://m2f.news.yahoo.com/mailto/?prop=news&amp;locale=us&amp;url=http%3A%2F%2Fnews.yahoo.com%2Fs%2Fap%2F20100207%2Fap_on_re_us%2Fus_california_storm&amp;title=Evacuees+return+to+LA-area+homes+swamped+with+mud&amp;h1=ap/20100207/ap_on_re_us/us_california_storm&amp;h2=T&amp;h3=519" class="email" mapleUltParams="sec=top">Email</a>
+                            </li>
+                            <li class="hide">
+                                <a href="/web/20100210104045/http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm" class="im ult-nofollow" mapleUltParams="sec=top"><abbr title="Yahoo! Instant Messenger">IM</abbr></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="share yn-menu yn-menu2 ult-position">
+                <a href="/web/20100210104045/http://delicious.com/save?url=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm&amp;title=Evacuees+return+to+LA-area+homes+swamped+with+mud+-+Yahoo%21+News" class="menu-hd1 ult-nofollow" mapleUltPriority="1000" mapleUltParams="sec=top">Share</a>
+                <div class="menu-bd">
+                    <div class="menu-content">
+                        <ul>
+                            <li>
+                                <a href="/web/20100210104045/http://delicious.com/save?url=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm&amp;title=Evacuees+return+to+LA-area+homes+swamped+with+mud+-+Yahoo%21+News" class="delicious ult-nofollow" mapleUltPriority="1000"  onclick="if (navigator.userAgent.indexOf('MSIE') &gt; 0){window.location.href=this.href}else{delsave=window.open(this.href+'&amp;noui=1','delSave','location=yes,links=no,scrollbars=no,toolbar=no,height=375,width=700');}; return false;"  mapleUltParams="sec=top">Delicious</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100210104045/http://digg.com/submit?phase=2&amp;url=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm" class="digg popup" mapleUltParams="sec=top">Digg</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100210104045/http://www.facebook.com/sharer.php?u=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm&amp;t=Evacuees+return+to+LA-area+homes+swamped+with+mud+-+Yahoo%21+News" class="facebook popup" mapleUltParams="sec=top">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100210104045/http://cgi.fark.com/cgi/fark/farkit.pl?u=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm&amp;h=Evacuees+return+to+LA-area+homes+swamped+with+mud+-+Yahoo%21+News" class="fark popup" mapleUltParams="sec=top">Fark</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100210104045/http://www.newsvine.com/_tools/seed&amp;save?u=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm&amp;h=Evacuees+return+to+LA-area+homes+swamped+with+mud+-+Yahoo%21+News" class="newsvine popup" mapleUltParams="sec=top">Newsvine</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100210104045/http://reddit.com/submit?url=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm" class="reddit popup" mapleUltParams="sec=top">Reddit</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100210104045/http://www.stumbleupon.com/submit?url=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm&amp;title=Evacuees+return+to+LA-area+homes+swamped+with+mud+-+Yahoo%21+News" class="stumbleupon popup" mapleUltParams="sec=top">StumbleUpon</a>
+                            </li>                         
+                            <li>
+                                <a href="/web/20100210104045/http://technorati.com/faves?sub=addfavbtn&amp;add=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm" class="technorati popup" mapleUltParams="sec=top">Technorati</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100210104045/http://twitter.com/home?status=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm&amp;title=Evacuees+return+to+LA-area+homes+swamped+with+mud+-+Yahoo%21+News" class="twitter popup" mapleUltParams="sec=top">Twitter</a>
+                            </li>                               
+                            <li>
+                                <a href="/web/20100210104045/http://myweb2.search.yahoo.com/myresults/bookmarklet?t=Evacuees+return+to+LA-area+homes+swamped+with+mud+-+Yahoo%21+News&amp;u=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm&amp;ei=UTF-8&amp;ts=1265798444" class="yahoo-bookmarks popup" mapleUltParams="sec=top">Yahoo!&nbsp;Bookmarks</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="print last ult-position">
+                <a href="/web/20100210104045/http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm/print" mapleUltParams="sec=top">Print</a>
+            </li>
+                    </ul><!-- end: .tools -->
+
+	
+        
+        
+        
+    </div><!-- end: .hd -->
+    
+    <div class="bd" role="main" aria-labelledby="yn-story-title">
+        
+            <div id="yn-story-related-media">
+        
+                <div class="primary-media">
+        
+            <div id="yn-story-main-media" class="ult-section yn-style1">
+        <div class="photo-big">
+        <a href="/web/20100210104045/http://news.yahoo.com/nphotos/Heather-McLaughlin-23-right-looks-neighbor-Dale-Reavis-helps-clean/photo//100207/480/e6d208fe220c41e4bba4f47f57aca187//s:/ap/20100207/ap_on_re_us/us_california_storm" class="media " mapleUltParams="sec=yn_r_top_photo;staid=/100207/480/e6d208fe220c41e4bba4f47f57aca187">
+            <img src="/web/20100210104045im_/http://d.yimg.com/a/p/ap/20100207/capt.e6d208fe220c41e4bba4f47f57aca187.aptopix_california_storm_cajr102.jpg?x=213&amp;y=149&amp;xc=1&amp;yc=1&amp;wc=409&amp;hc=286&amp;q=85&amp;sig=esSVla6qymFIqC2i0mcSJg--" width="213" height="149" alt="Heather McLaughlin, 23, right, looks on as neighbor Dale Reavis helps clean up">
+            
+                    </a>
+        
+        <cite class="caption">
+        AP&nbsp;&ndash;&nbsp;Heather McLaughlin, 23, right, looks on as neighbor Dale Reavis helps clean up McLaughlin's home after&nbsp;&hellip;        </cite>
+    </div>
+    
+        
+</div><!-- end #main-media -->                
+            
+            
+        <div id="yn-story-minor-media">
+    
+        <ul id="yn-story-related-links" class="list2 list6 size1 ult-section">
+        <li class="ult-position first slideshow">
+                <a href="/web/20100210104045/http://news.yahoo.com/nphotos/Calif-Storms/ss/events/us/101409califstorms" class="media media1" mapleUltParams="sec=yn_r_3slot_slideshow;slk=sli-ev-thumb;staid=events/us/101409califstorms/index">
+            <img src="/web/20100210104045im_/http://d.yimg.com/a/p/ap/20100210/thumb.d611e0255fbd42129b4cc7ad3e4434ef.california_storm_carh105.jpg?x=50&amp;y=50&amp;xc=23&amp;yc=1&amp;wc=86&amp;hc=86&amp;q=85&amp;sig=qkbx1WOwqimkXKXbQ2VLbw--" width="50" height="50" alt="Calif. Storms">
+            
+                    </a>
+                
+        <a href="/web/20100210104045/http://news.yahoo.com/nphotos/Calif-Storms/ss/events/us/101409califstorms" mapleUltParams="sec=yn_r_3slot_slideshow;slk=sli-ev-link;staid=events/us/101409califstorms/index"><strong>Slideshow:</strong>Calif. Storms</a>
+            </li>
+        <li class="ult-position  video">
+                <a href="/web/20100210104045/http://us.rd.yahoo.com/dailynews/external/wcom/av_wcom_forc/ef1fa3c06d7d45bf4b8d6c6e55fe36dd/35050814/*http://news.yahoo.com/video/weather-15749664/18057284" class="media media1" mapleUltParams="sec=yn_r_3slot_video;slk=vid-ev-thumb;staid=/wcom/20100209/av_wcom_forc/_yahoonewsvideo_weather_national020910b_18057276">
+            <img src="/web/20100210104045im_/http://d.yimg.com/a/p/weathercom/20100210/videolthumb.9f928b36c1d7cf245d61de770d90675e.jpg?x=50&amp;y=50&amp;xc=91&amp;yc=1&amp;wc=230&amp;hc=230&amp;q=85&amp;sig=pEnP.rmYue4shEsLt.Lfug--" width="50" height="50" alt="National Forecast">
+            
+            <span>Play Video</span>        </a>
+                
+        <a href="/web/20100210104045/http://us.rd.yahoo.com/dailynews/external/wcom/av_wcom_forc/ef1fa3c06d7d45bf4b8d6c6e55fe36dd/35050814/*http://news.yahoo.com/video/weather-15749664/18057284" mapleUltParams="sec=yn_r_3slot_video;slk=vid-ev-link;staid=/wcom/20100209/av_wcom_forc/_yahoonewsvideo_weather_national020910b_18057276"><strong>Weather Forecast Video:</strong>National Forecast</a>
+                <cite><a href="/web/20100210104045/http://news.yahoo.com/i/2648" mapleUltParams="sec=yn_r_3slot_video;slk=vid-ev-provider;staid=/wcom/20100209/av_wcom_forc/_yahoonewsvideo_weather_national020910b_18057276">weather.com</a></cite>
+            </li>
+        <li class="ult-position  video">
+                <a href="/web/20100210104045/http://us.rd.yahoo.com/dailynews/external/accuweather/av_accuweather/fd4d6b6bc74c34eabd667170d020352b/35044259/*http://news.yahoo.com/video/weather-15749664/18047759" class="media media1" mapleUltParams="sec=yn_r_3slot_video;slk=vid-ev-thumb;staid=/accuweather/20100209/av_accuweather/_yahoonewsvideo_weather20100209075500_bn1w_prowide_yahoo_mp4__18047757">
+            <img src="/web/20100210104045im_/http://d.yimg.com/a/p/accuweathercom/20100210/vidlthumb.cffbb1ea25d7269b2e1000ef6ca805ae.jpg?x=50&amp;y=50&amp;xc=14&amp;yc=1&amp;wc=78&amp;hc=78&amp;q=85&amp;sig=qAmgNh4N4.NL06jmcxnsZQ--" width="50" height="50" alt="Today&#39;s Weather Briefing">
+            
+            <span>Play Video</span>        </a>
+                
+        <a href="/web/20100210104045/http://us.rd.yahoo.com/dailynews/external/accuweather/av_accuweather/fd4d6b6bc74c34eabd667170d020352b/35044259/*http://news.yahoo.com/video/weather-15749664/18047759" mapleUltParams="sec=yn_r_3slot_video;slk=vid-ev-link;staid=/accuweather/20100209/av_accuweather/_yahoonewsvideo_weather20100209075500_bn1w_prowide_yahoo_mp4__18047757"><strong>Weather Forecast Video:</strong>Today&#39;s Weather Briefing</a>
+                <cite><a href="/web/20100210104045/http://news.yahoo.com/video/accuweather" mapleUltParams="sec=yn_r_3slot_video;slk=vid-ev-provider;staid=/accuweather/20100209/av_accuweather/_yahoonewsvideo_weather20100209075500_bn1w_prowide_yahoo_mp4__18047757">AccuWeather</a></cite>
+            </li>
+    </ul>
+        
+            
+    </div>
+                                    
+        </div><!-- end .primary-media -->
+                
+                
+    </div><!-- end .related-media -->
+
+
+
+    
+        
+<div class="byline">
+        <cite class="vcard">
+        By RAQUEL MARIA DILLON, Associated Press Writers        <span class="fn org">Raquel Maria Dillon, Associated Press Writers</span>
+    </cite>
+    &ndash;
+    <abbr title="2010-02-07T15:37:48-0800" class="timedate">Sun&nbsp;Feb&nbsp;7, 6:37&nbsp;pm&nbsp;ET</abbr></div><!-- end .byline -->
+
+
+
+            <div class="yn-story-content">
+                <p>LA CANADA FLINTRIDGE, Calif. &ndash; Residents evacuated from foothill communities deluged by weekend mudslides north of <span class="yshortcuts" id="lw_1265624876_0">Los Angeles</span> were allowed to return home Sunday as crews moved debris and cleared catch basins in anticipation of more rain later in the week.</p>
+                <p>The final evacuation order was lifted for about 70 homes in the Paradise Valley area of <span class="yshortcuts" id="lw_1265624876_1">La Canada Flintridge</span>, said <span class="yshortcuts" id="lw_1265624876_2">Los Angeles County Sheriff</span>'s Deputy Guillermina Saldana. Only residents with valid identification were allowed back into the neighborhood that was choked with a thick layer of mud and debris during a pummeling rain early Saturday.</p>
+                <p>Forty-three homes in the <span class="yshortcuts" id="lw_1265624876_3">La Canada Flintridge area</span> were damaged and 500 more evacuated Saturday after mud and water overflowed basins and surged into streets, taking furniture, cars and concrete barriers with it. Nine houses were declared unsafe to enter. About 25 vehicles were damaged.</p>
+                <p>"In my 20 years of fire service, this is the first time I've seen this much devastation caused by a weather system," <span class="yshortcuts" id="lw_1265624876_4">Los Angeles County Fire Battalion Chief Mike Brown</span> said while walking past suburban homes with thigh-deep mud in their yards.</p>
+                <p><span class="yshortcuts" id="lw_1265624876_5">Los Angeles County public works</span> crews used bulldozers and other heavy machinery to move boulders, scoop out catch basins and clear roads.</p>
+                <p>"That series of storms two weeks ago, we took about 300,000 <span class="yshortcuts" id="lw_1265624876_6">cubic yards</span> of material out of our debris basins," L.A. County Department of Public Works spokesman <span class="yshortcuts" id="lw_1265624876_7">Bob Spencer</span> said. "This is going to be about the same."</p>
+                <p>The mayor of La Canada Flintridge, Laura Olhasso, said Sunday the U.S. Forest Service should pay to help remove the mud and debris that came down the mountains from <span class="yshortcuts" id="lw_1265624876_8">federal land</span> denuded by wildfires.</p>
+                <p>"The federal government is not taking responsibility for the flow of mud that came from its property," Olhassa said. "They say there's nothing they can do to keep it from flowing, then they need to help clean it up. They need to be responsible property owners."</p>
+                <p>Olhasso said the city has received "no assurances" of help from federal authorities.</p>
+                <p>"This is potentially a threat for the next three to five years, which is how long they say it could be before the vegetation grows back," she said.</p>
+                <p><span class="yshortcuts" id="lw_1265624876_9">Gov. Arnold Schwarzenegger</span> toured the area Sunday, stopping to talk to reporters in front of a house where flowing mud left a mark on the wall at least 5 feet above the ground.</p>
+                <p>Schwarzenegger hugged a tearful resident whose voice broke as she told him her entire first floor was inundated with at least 2 feet of mud. Karineh Mangassarian told the governor she wanted crews to start digging her house out immediately.</p>
+                <p>"I want to save my house, but by the time the city gets here it will be too late," Mangassarian said outside her home, where mud reached up to the mailbox. One small rose bush poked out with a couple of pink blooms that withstood the rain.</p>
+                <p>Schwarzenegger said the three county sites set aside for mud disposal might not be enough.</p>
+                <p>"They need to clean up this area as quickly as possible from the mud. They need permits for a fourth dumping site, disposal site, which have to come from the federal government and the state," the governor said. "We all have to work together to help the people whose homes were damaged."</p>
+                <p>The sun was shining Sunday on barren mountaintops scarred by last summer's fires, but forecasters say more rain could arrive by Tuesday.</p>
+                <p>Some residents complained they were not told to get out until the brunt of the damage was done &mdash; unlike during <span class="yshortcuts" id="lw_1265624876_10">heavy rains</span> in January when officials repeatedly warned foothill communities to be on alert.</p>
+                <p><span class="yshortcuts" id="lw_1265624876_11">Los Angeles County Fire Chief Michael Freeman</span> said by the time officials saw how serious the storm was, it was too late to order evacuations for some and it was determined that it would be safer for them to take shelter in their homes.
+<p>
+"We are operating just like everyone else, based on weather predictions," Freeman said.
+<p>
+About 800 homes across <span class="yshortcuts" id="lw_1265624876_12">Los Angeles County</span> were evacuated, but most were allowed to return home late Saturday as another round of expected rains proved tame and moved on quickly.
+<p>
+A crew of about 100 yellow-vested church volunteers brought shovels Sunday to help residents clear out the muck from yards and garages and living rooms.
+<p>
+Katherine Markgraf walked through a house belonging to her mother, Pat Andersen, pointing out where they might be able to retrieve valuables and mementos from underneath at least three feet of mud. A violent mud flow dragged Anderson's car through the garage wall into her neighbor's yard.
+<p>
+"It's just stuff," she reminded herself, gently crying as she carried a mud-streaked antique chair out onto the patio.
+<p>
+___
+<p>
+Associated Press Writer Christopher Weber contributed to this report.</p>
+            </div>
+        
+        
+    </div><!-- end: .bd -->
+    
+    <div class="ft">
+
+            <div id="yn-story-related-searches" class="ult-section">
+        <h3>Related Searches:</h3>
+        <ul>
+                            <li>
+                    <a href="/web/20100210104045/http://news.search.yahoo.com/news/search?p=los+angeles+county+sheriff" mapleUltParams="sec=yn_related_searches">los angeles county sheriff</a>
+                </li>
+                            <li>
+                    <a href="/web/20100210104045/http://news.search.yahoo.com/news/search?p=los+angeles" mapleUltParams="sec=yn_related_searches">los angeles</a>
+                </li>
+                            <li class="last">
+                    <a href="/web/20100210104045/http://news.search.yahoo.com/news/search?p=la+canada+flintridge" mapleUltParams="sec=yn_related_searches">la canada flintridge</a>
+                </li>
+                    </ul>
+    </div>
+
+
+        <div id="yn-story-share">
+            
+            
+                <ul id="bottom" class="tools mod ult-section">
+            <li class="buzz ult-position">
+	
+					
+		<form method="post" action="/web/20100210104045/http://buzz.yahoo.com/vote/" class="buzz" id="buzz-bottom">
+			<input type="hidden" name="publisherurn" value="y_news">
+			<input type="hidden" name="guid" value="ap/20100207/us_california_storm">
+			<input type="hidden" name=".done" value="/article/y_news/ap/20100207/us_california_storm">
+			<input type="hidden" name="assettype" value="article">
+			<input type="hidden" name="votetype" value="1">
+			<input type="hidden" name="from" value="orion">
+			<input type="hidden" name="key" value="29965">
+			<input type="hidden" name=".crumb" value="">
+			<input type="hidden" name="logged" value="0">
+			<button type="submit">Buzz up!<span class="right"></span></button>
+		</form>
+		
+		            </li>
+            <li class="send yn-menu yn-menu2 ult-position">
+                <a href="/web/20100210104045/http://m2f.news.yahoo.com/mailto/?prop=news&amp;locale=us&amp;url=http%3A%2F%2Fnews.yahoo.com%2Fs%2Fap%2F20100207%2Fap_on_re_us%2Fus_california_storm&amp;title=Evacuees+return+to+LA-area+homes+swamped+with+mud&amp;h1=ap/20100207/ap_on_re_us/us_california_storm&amp;h2=T&amp;h3=519" class="menu-hd1 ult-nofollow" mapleUltParams="sec=bottom">Send</a>
+                <div class="menu-bd">
+                    <div class="menu-content">
+                        <ul>
+                            <li>
+                                <a href="/web/20100210104045/http://m2f.news.yahoo.com/mailto/?prop=news&amp;locale=us&amp;url=http%3A%2F%2Fnews.yahoo.com%2Fs%2Fap%2F20100207%2Fap_on_re_us%2Fus_california_storm&amp;title=Evacuees+return+to+LA-area+homes+swamped+with+mud&amp;h1=ap/20100207/ap_on_re_us/us_california_storm&amp;h2=T&amp;h3=519" class="email" mapleUltParams="sec=bottom">Email</a>
+                            </li>
+                            <li class="hide">
+                                <a href="/web/20100210104045/http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm" class="im ult-nofollow" mapleUltParams="sec=bottom"><abbr title="Yahoo! Instant Messenger">IM</abbr></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="share yn-menu yn-menu2 ult-position">
+                <a href="/web/20100210104045/http://delicious.com/save?url=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm&amp;title=Evacuees+return+to+LA-area+homes+swamped+with+mud+-+Yahoo%21+News" class="menu-hd1 ult-nofollow" mapleUltPriority="1000" mapleUltParams="sec=bottom">Share</a>
+                <div class="menu-bd">
+                    <div class="menu-content">
+                        <ul>
+                            <li>
+                                <a href="/web/20100210104045/http://delicious.com/save?url=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm&amp;title=Evacuees+return+to+LA-area+homes+swamped+with+mud+-+Yahoo%21+News" class="delicious ult-nofollow" mapleUltPriority="1000"  onclick="if (navigator.userAgent.indexOf('MSIE') &gt; 0){window.location.href=this.href}else{delsave=window.open(this.href+'&amp;noui=1','delSave','location=yes,links=no,scrollbars=no,toolbar=no,height=375,width=700');}; return false;"  mapleUltParams="sec=bottom">Delicious</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100210104045/http://digg.com/submit?phase=2&amp;url=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm" class="digg popup" mapleUltParams="sec=bottom">Digg</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100210104045/http://www.facebook.com/sharer.php?u=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm&amp;t=Evacuees+return+to+LA-area+homes+swamped+with+mud+-+Yahoo%21+News" class="facebook popup" mapleUltParams="sec=bottom">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100210104045/http://cgi.fark.com/cgi/fark/farkit.pl?u=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm&amp;h=Evacuees+return+to+LA-area+homes+swamped+with+mud+-+Yahoo%21+News" class="fark popup" mapleUltParams="sec=bottom">Fark</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100210104045/http://www.newsvine.com/_tools/seed&amp;save?u=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm&amp;h=Evacuees+return+to+LA-area+homes+swamped+with+mud+-+Yahoo%21+News" class="newsvine popup" mapleUltParams="sec=bottom">Newsvine</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100210104045/http://reddit.com/submit?url=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm" class="reddit popup" mapleUltParams="sec=bottom">Reddit</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100210104045/http://www.stumbleupon.com/submit?url=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm&amp;title=Evacuees+return+to+LA-area+homes+swamped+with+mud+-+Yahoo%21+News" class="stumbleupon popup" mapleUltParams="sec=bottom">StumbleUpon</a>
+                            </li>                         
+                            <li>
+                                <a href="/web/20100210104045/http://technorati.com/faves?sub=addfavbtn&amp;add=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm" class="technorati popup" mapleUltParams="sec=bottom">Technorati</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100210104045/http://twitter.com/home?status=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm&amp;title=Evacuees+return+to+LA-area+homes+swamped+with+mud+-+Yahoo%21+News" class="twitter popup" mapleUltParams="sec=bottom">Twitter</a>
+                            </li>                               
+                            <li>
+                                <a href="/web/20100210104045/http://myweb2.search.yahoo.com/myresults/bookmarklet?t=Evacuees+return+to+LA-area+homes+swamped+with+mud+-+Yahoo%21+News&amp;u=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm&amp;ei=UTF-8&amp;ts=1265798444" class="yahoo-bookmarks popup" mapleUltParams="sec=bottom">Yahoo!&nbsp;Bookmarks</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="print last ult-position">
+                <a href="/web/20100210104045/http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_california_storm/print" mapleUltParams="sec=bottom">Print</a>
+            </li>
+                    </ul><!-- end: .tools -->
+
+	
+        </div>
+        
+    </div><!-- end .ft -->
+
+</div><!-- end: #story -->
+
+<script type="text/javascript">
+(function() {
+
+    /**
+     * YUI function to get all elements by class name
+     * getElementsByClass
+     */
+    function getElementsByClass(className, tag, root) {
+        tag = tag || '*';    
+        root = (typeof root == 'string') ? document.getElementById(root) : root || document;
+    
+        var nodes = [],
+            elements = root.getElementsByTagName(tag),
+            re = new RegExp('(?:^|\\s+)' + className + '(?:\\s+|$)');
+    
+        for (var i = 0, len = elements.length; i < len; ++i) {
+            if ( re.test(elements[i].className) ) {
+                nodes[nodes.length] = elements[i];
+            }
+        }
+        return nodes;
+    }
+    
+    /**
+     * This code displays the expand button as the page loads. This prevents any lag in displaying
+     * the button if the page takes a long time to load. If the user clicks the button before the page
+     * loads then we just show the full story without animation. Thus, preventing the full implementation
+     * from loading.
+     */
+    var story = document.getElementById('yn-story');
+    var related = document.getElementById('yn-story-related-media');
+    var expandCookie = '0';
+    
+    if (
+        // make sure read-more-toggle flag exists
+        (story && story.className.indexOf('read-more-toggle') != -1) &&
+        // if user preference is 0 then collapse story
+        expandCookie == '0' && 
+        // make sure hash is not set
+        window.location.hash!='#full'
+       )
+    {
+        var buttonHeight = 18;
+        var defaultHeight = 406;
+        var heightLimit = 200;
+        var host = document.location.host;
+        var path = document.location.pathname;
+        var bd = getElementsByClass('bd','div',story)[0];
+        
+        // Figure out min height for story container based on the heights of the related media and primary media containers
+        if (related)
+        {                
+            // do height calculations if related height is larger than default minHeight
+            if (related.offsetHeight > defaultHeight) {
+            
+                // if primary exists then use that height, otherwise use related
+                var obj = getElementsByClass('primary-media','div',related)[0];
+                if (!obj) obj = related;
+                
+                // set height from primary or related container
+                minHeight = parseInt(obj.offsetHeight, 10);
+                
+                // if the minheight is smaller than default, then set it to default
+                if (
+                    (minHeight < defaultHeight) &&
+                    !document.getElementById('yn-story-main-media') && 
+                    !document.getElementById('yn-story-minor-media')
+                   )
+                {
+                    minHeight = defaultHeight;
+                }
+            } else {
+                minHeight = defaultHeight;
+            }
+        } else {
+            minHeight = defaultHeight;
+        }
+        
+        // add height of buttons to min height
+        minHeight += buttonHeight;
+            
+        // make sure there is enough story to hide
+        if ((bd.offsetHeight - minHeight) > heightLimit)
+        {
+            // set overflow and height
+            bd.style.height = minHeight + "px";
+            bd.className += " overflow";
+            story.className += " read-closed";
+            
+            // add read more expand button
+            var div = document.createElement('div');
+            div.className = 'read-more read-more-expand';
+            div.innerHTML = '<a href="http://'+host+path+'" id="yn-bodycontrol" class="ult-nofollow ult-section" accesskey="m" title="Press CTRL + SHIFT + M to toggle" mapleUltPriority="1000"><em><span>Read Full Article</span></em></a>';
+    
+            // we have to handle the case where a user might click the button before our YUI script loads
+            // if so, remove the height and overflow setting then hide the button, also add #full hash to url so
+            // if script eventually is loaded it doesnt recreate the buttons and collapse the story
+            div.onclick = function(ev) {
+                var e = ev || window.event;
+                
+                // show full story
+                bd.style.height = 'auto';
+                bd.className = bd.className.replace('overflow','expanded');
+                story.className = story.className.replace('read-closed','');
+                
+                // hide the toggle button
+                div.className += ' hide';
+                
+                // disable link follow
+                if (e.preventDefault) {
+                    e.preventDefault();
+                } else {
+                    e.returnValue = false;
+                }
+            }
+            
+            // add div to document
+            bd.appendChild(div);
+        }
+    
+    }
+
+})();
+</script>
+
+<div id="yn-story-related-content" class="yui-g mod related-content-style">
+
+        
+        <div id="yn-r-b-right" class="yui-u first ult-section">
+    
+        <h3>More...</h3>
+        
+        <ul class="list list4 list6 size1">
+                        <li class="first video">
+                <a href="/web/20100210104045/http://us.rd.yahoo.com/dailynews/external/accuweather/av_accuweather/315964c924a2621fd700fc8ea061b398/35001597/*http://news.yahoo.com/video/weather-15749664/17987541" class="showtt" rel=":accuweather:20100205:av_accuweather:_yahoonewsvideo_weather20100205073500_bn2_pro_yahoo_mp4__17987539" mapleUltParams="sec=yn-r-b-right;slk=vid-ev-link;staid=/accuweather/20100205/av_accuweather/_yahoonewsvideo_weather20100205073500_bn2_pro_yahoo_mp4__17987539">
+                                        <strong>Video:</strong> 
+                                        Storm Outlook for Today                </a>
+                
+                                <cite>
+                    <a href="/web/20100210104045/http://news.yahoo.com/video/accuweather" mapleUltParams="sec=yn-r-b-right;slk=vid-ev-provider;staid=/accuweather/20100205/av_accuweather/_yahoonewsvideo_weather20100205073500_bn2_pro_yahoo_mp4__17987539">AccuWeather</a>
+                </cite>
+                            </li>
+                        <li class="video">
+                <a href="/web/20100210104045/http://us.rd.yahoo.com/dailynews/external/accuweather/av_accuweather/be9c4f023bfab1795afdfc5be758fc19/34989437/*http://news.yahoo.com/video/weather-15749664/17970662" class="showtt" rel=":accuweather:20100204:av_accuweather:_yahoonewsvideo_weather20100204090500_bn5w_prowide_yahoo_mp4__17970660" mapleUltParams="sec=yn-r-b-right;slk=vid-ev-link;staid=/accuweather/20100204/av_accuweather/_yahoonewsvideo_weather20100204090500_bn5w_prowide_yahoo_mp4__17970660">
+                                        <strong>Video:</strong> 
+                                        Elliot&#39;s Elaboration                </a>
+                
+                                <cite>
+                    <a href="/web/20100210104045/http://news.yahoo.com/video/accuweather" mapleUltParams="sec=yn-r-b-right;slk=vid-ev-provider;staid=/accuweather/20100204/av_accuweather/_yahoonewsvideo_weather20100204090500_bn5w_prowide_yahoo_mp4__17970660">AccuWeather</a>
+                </cite>
+                            </li>
+                        <li class="video">
+                <a href="/web/20100210104045/http://us.rd.yahoo.com/dailynews/external/accuweather/av_accuweather/4ef37a2820e1701794c5c44781222cea/34988502/*http://news.yahoo.com/video/weather-15749664/17969611" class="showtt" rel=":accuweather:20100204:av_accuweather:_yahoonewsvideo_weather20100204073500_bn3_pro_yahoo_mp4__17969608" mapleUltParams="sec=yn-r-b-right;slk=vid-ev-link;staid=/accuweather/20100204/av_accuweather/_yahoonewsvideo_weather20100204073500_bn3_pro_yahoo_mp4__17969608">
+                                        <strong>Video:</strong> 
+                                        Storm Outlook for Tomorrow                </a>
+                
+                                <cite>
+                    <a href="/web/20100210104045/http://news.yahoo.com/video/accuweather" mapleUltParams="sec=yn-r-b-right;slk=vid-ev-provider;staid=/accuweather/20100204/av_accuweather/_yahoonewsvideo_weather20100204073500_bn3_pro_yahoo_mp4__17969608">AccuWeather</a>
+                </cite>
+                            </li>
+                    </ul>
+        
+    </div>
+    </div><!-- end .related -->
+
+
+
+
+
+
+
+<div class="mod mod3">
+    <div class="yui-gb yui-gb1">
+        <div class="yui-u first">
+            <div id="yn-channel" class="mod ult-section mod-first">
+    <div class="hd">
+        <h3>Most Viewed - U.S.</h3>
+    </div>
+    <div class="bd">
+        <ul class="list list4">
+                            <li class="ult-position first">
+                    <a href="/web/20100210104045/http://news.yahoo.com/s/afp/20100210/wl_afp/usweatherstorm" class="showtt" rel=":afp:20100210:wl_afp:usweatherstorm" mapleUltParams="sec=yn-channel;staid=afp/20100210/usweatherstorm" >Fresh snow misery hits US east coast</a>
+                    <cite>AFP</cite>
+                </li>
+                            <li class="ult-position">
+                    <a href="/web/20100210104045/http://news.yahoo.com/s/ap/20100210/ap_on_re_us/us_winter_weather" class="showtt" rel=":ap:20100210:ap_on_re_us:us_winter_weather" mapleUltParams="sec=yn-channel;staid=ap/20100210/us_winter_weather" >Round 2: Snow slams Mid-Atlantic, points north</a>
+                    <cite>AP</cite>
+                </li>
+                            <li class="ult-position">
+                    <a href="/web/20100210104045/http://news.yahoo.com/s/ap/20100210/ap_on_re_us/us_senator_assault" class="showtt" rel=":ap:20100210:ap_on_re_us:us_senator_assault" mapleUltParams="sec=yn-channel;staid=ap/20100210/us_senator_assault" >NY senator who dragged girlfriend fights expulsion</a>
+                    <cite>AP</cite>
+                </li>
+                            <li class="ult-position">
+                    <a href="/web/20100210104045/http://news.yahoo.com/s/ap/20100210/ap_on_re_us/us_seventies_slayings_trial" class="showtt" rel=":ap:20100210:ap_on_re_us:us_seventies_slayings_trial" mapleUltParams="sec=yn-channel;staid=ap/20100210/us_seventies_slayings_trial" >Cross-examination begins for serial murder suspect</a>
+                    <cite>AP</cite>
+                </li>
+                            <li class="ult-position">
+                    <a href="/web/20100210104045/http://news.yahoo.com/s/ap/20100210/ap_on_re_us/us_california_storm" class="showtt" rel=":ap:20100210:ap_on_re_us:us_california_storm" mapleUltParams="sec=yn-channel;staid=ap/20100210/us_california_storm" >Storm dumps rain, hail, snow in SoCal</a>
+                    <cite>AP</cite>
+                </li>
+                    </ul>
+        <a href="/web/20100210104045/http://news.yahoo.com/most-popular/viewed/us" class="more size1" mapleUltParams="sec=yn-channel" >All Most Viewed&nbsp;&raquo;</a>
+    </div>
+</div>
+
+            
+            
+        </div>
+        <div class="yui-u">
+            
+<div id="yn-daily-features" class="mod ult-section mod-first">
+    <div class="hd">
+        <h3>Daily Features</h3>
+    </div>
+    <div class="bd">
+        <ul class="list list2 size1">
+            <li class="first">
+                <a href="/web/20100210104045/http://news.yahoo.com/comics/100210/cx_bornloser_umedia/20101002"><img src="/web/20100210104045im_/http://l.yimg.com/a/i/us/nws/2008/news/us/assets/common/images/transparent.png" width="201" height="58" alt="Comic" class="lzbg" style="background-image: url(/web/20100210104045im_/http://d.yimg.com/b/util/anysize/200x-1209600,http%3A%2F%2Fd.yimg.com%2Fa%2Fp%2Fumedia%2F20100210%2Fcp.6c8c6607d2bbd406c88a292d1dc7a74c.gif%3Fx%3D201%26y%3D58%26q%3D85%26sig%3DQZ05hcGvcUdrZ7HwvXtf8g--);"></a>
+                <a href="/web/20100210104045/http://news.yahoo.com/comics" class="more">All Comics &raquo;</a>
+            </li>
+            <li>
+    <h4>Opinions &amp; Editorials: <a href="/web/20100210104045/http://news.yahoo.com/i/742">Diverse views on news from the right, left, and center.</a></h4>
+    <a href="/web/20100210104045/http://news.yahoo.com/i/742" class="more">All Opinion &raquo;</a> 
+</li>            <!-- -->        </ul>
+    </div>
+</div>
+
+                <div class="ad-links mod">
+                <div id="darla-ad__REC" class="ft darla_ad"></div>
+            </div>
+
+            
+        </div>
+        <div class="yui-u last">
+                <div id="yn-elseweb" class="mod ult-section mod-first">
+        <div class="hd">
+            <h3>Elsewhere on the Web</h3>
+        </div>
+        <div class="bd">
+            <ul class="list">
+                                    <li class="ult-position first">
+                    	<a href="/web/20100210104045/http://us.rd.yahoo.com/dailynews/external/abc/rss_abc_us/spaceshuttleendeavourpullsinatspacestation/35054318/SIG=128fddtsc/*http://feeds.abcnews.com/click.phdo?i=379312fe11dbb2ca81f8725592ffa850" mapleUltParams="sec=yn-elseweb" ><strong>ABC News: </strong>Space Shuttle Endeavour Pulls in at Space Station</a>
+                    </li>
+                                    <li class="ult-position">
+                    	<a href="/web/20100210104045/http://us.rd.yahoo.com/dailynews/external/npr_rss/rss_npr_us/httpwwwnprorgtemplatesstorystoryphpstoryid123409454ampft1ampf1003/35054207/SIG=12c3fapm2/*http://www.npr.org/templates/story/story.php?storyId=123409454&amp;ft=1&amp;f=1003" mapleUltParams="sec=yn-elseweb" ><strong>NPR: </strong>$7.2 Billion For Broadband Is Largely Unallocated</a>
+                    </li>
+                                    <li class="ult-position">
+                    	<a href="/web/20100210104045/http://us.rd.yahoo.com/dailynews/external/mcclatchy_rss/rss_mcclatchy_us/httpwwwmcclatchydccomhomepagestory84129html/35051694/SIG=11mr3qnpk/*http://www.mcclatchydc.com/homepage/story/84129.html" mapleUltParams="sec=yn-elseweb" ><strong>McClatchy Newspapers: </strong>Vote on Obama labor nominee spells trouble for unions</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+
+
+            
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+                    
+
+        
+                    
+                    
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                </div><!-- end: .yui-b -->
+        
+            </div><!-- end: #yui-main -->
+        
+            <div id="sidebar" class="yui-b" role="complementary">
+            
+                <div id="yn-top-stories" class="mod ult-section">
+    <div class="hd">
+        <h3>Top Stories</h3>
+    </div>
+    <div class="bd">
+                    <ul class="list list4 size2">
+                <li class="first  "><a href="/web/20100210104045/http://news.yahoo.com/s/ap/20100210/ap_on_bi_ge/as_japan_honda_recall" class="showtt yltasis" rel=":ap:20100210:ap_on_bi_ge:as_japan_honda_recall" mapleUltParams="sec=yn_top_stories;ccode=mostpopular;asset=ap/20100210/as_japan_honda_recall;cpos=1;"> Honda adds 437,000 cars to global air bag recall<!-- COKE --></a></li><li class=" "><a href="/web/20100210104045/http://news.yahoo.com/s/ap/20100210/ap_on_re_as/as_afghan_avalanche" class="showtt yltasis" rel=":ap:20100210:ap_on_re_as:as_afghan_avalanche" mapleUltParams="sec=yn_top_stories;ccode=mostpopular;asset=ap/20100210/as_afghan_avalanche;cpos=2;"> Officials: Afghan avalanches kill 157 people<!-- COKE --></a></li><li class=" "><a href="/web/20100210104045/http://news.yahoo.com/s/ap/20100210/ap_on_re_us/us_winter_weather" class="showtt yltasis" rel=":ap:20100210:ap_on_re_us:us_winter_weather" mapleUltParams="sec=yn_top_stories;ccode=mostpopular;asset=ap/20100210/us_winter_weather;cpos=3;"> Round 2: Snow slams Mid-Atlantic, points north<!-- COKE --></a></li><li class=" "><a href="/web/20100210104045/http://news.yahoo.com/s/ap/20100210/ap_on_re_mi_ea/ml_iran_militia_rising" class="showtt yltasis" rel=":ap:20100210:ap_on_re_mi_ea:ml_iran_militia_rising" mapleUltParams="sec=yn_top_stories;ccode=mostpopular;asset=ap/20100210/ml_iran_militia_rising;cpos=4;"> Iran rewards Basij militia with political clout<!-- COKE --></a></li><li class=" "><a href="/web/20100210104045/http://news.yahoo.com/s/ap/20100210/ap_on_sc/us_space_shuttle" class="showtt yltasis" rel=":ap:20100210:ap_on_sc:us_space_shuttle" mapleUltParams="sec=yn_top_stories;ccode=mostpopular;asset=ap/20100210/us_space_shuttle;cpos=5;"> Space shuttle Endeavour pulls in at space station<!-- COKE --></a></li><li class=" "><a href="/web/20100210104045/http://news.yahoo.com/s/ap/20100210/ap_on_bi_ge/eu_earns_arcelormittal" class="showtt yltasis" rel=":ap:20100210:ap_on_bi_ge:eu_earns_arcelormittal" mapleUltParams="sec=yn_top_stories;ccode=mostpopular;asset=ap/20100210/eu_earns_arcelormittal;cpos=6;"> ArcelorMittal posts $1.07 billion Q4 profit<!-- COKE --></a></li><li class=" "><a href="/web/20100210104045/http://news.yahoo.com/s/ap/20100210/ap_on_bi_ge/us_retail_sales_january" class="showtt yltasis" rel=":ap:20100210:ap_on_bi_ge:us_retail_sales_january" mapleUltParams="sec=yn_top_stories;ccode=mostpopular;asset=ap/20100210/us_retail_sales_january;cpos=7;"> New report: Consumers spent modestly in January<!-- COKE --></a></li>            </ul>
+            </div>
+    <div class="ft">
+        <a href="/web/20100210104045/http://news.yahoo.com/i/2372" class="yltasis">More Top Stories &raquo;</a>
+    </div>
+</div>
+
+<div id="darla-ad__LREC" class="mod ad darla_ad mod-first"></div>
+    
+
+<div id="sponsored-links" class="mod ult-section">
+    <div class="hd">
+        <h3>Sponsored Links</h3>
+    </div>
+    <div class="bd">
+        <ul>
+                        <li class="ult-position first">
+                <a href="/web/20100210104045/http://rc.us-east.srv.overture.com/d/sr/?xargs=20AGWAnRb1USNTkNsjx_RALtiGxgD5nShFUJ91y5_HrX-MKEAhfs0AF0mgDV7N0yF4VQ6rCfokNvzkDIcY5WSniR70EC0SetArhJ3dEO4nVFPg7dVwNZSRo3wxTc65Kq6J3GBcKjueRek6K9d67U9cTiNLZFVN_y1EpX9Nd2KLuk-F3r1JaHIM_LEF_5_S2zuxayp6hd8ebPOIQ1XFI5RAABuzZclec_X4yOg2Shew_woF.000000013d2555fb" class="yltasis">Refinance Now at 4.1% Fixed</a>
+                No hidden fees-4.4% APR! No obligation. Get 4 free quotes. No SSN req.                <a href="/web/20100210104045/http://rc.us-east.srv.overture.com/d/sr/?xargs=20AGWAnRb1USNTkNsjx_RALtiGxgD5nShFUJ91y5_HrX-MKEAhfs0AF0mgDV7N0yF4VQ6rCfokNvzkDIcY5WSniR70EC0SetArhJ3dEO4nVFPg7dVwNZSRo3wxTc65Kq6J3GBcKjueRek6K9d67U9cTiNLZFVN_y1EpX9Nd2KLuk-F3r1JaHIM_LEF_5_S2zuxayp6hd8ebPOIQ1XFI5RAABuzZclec_X4yOg2Shew_woF.000000013d2555fb" class="host yltasis">MortgageRefinance.LendGo.com</a>
+            </li>
+                        <li class="ult-position">
+                <a href="/web/20100210104045/http://rc.us-east.srv.overture.com/d/sr/?xargs=20AGRkGGzlHgXD1Pqf63hkPUs-a_UeFl8budh9BoyHMP7DWkiE_pErBFfJ8dZHU_W-7MQFHCP_DZ5fMKM3Cwwb5L-Af5GvrqICAKbIt4LcN5SpRJicDGSUDAVZjVDITFupcibdRYidPxvfpyudvRLQIlF0chpPP4Q5Wqp53mj4nao-oTExIHg9lpjQKlBAqnOah0F-9mV30ynoB84KRSvDayRjbdbEkasIPJd6-TAMkzeuyBeVEyQiDbg.000000013d2555fb" class="yltasis">Online College Degrees</a>
+                Enjoy Online College Convenience! 100's of Career-Advancing Degrees.                <a href="/web/20100210104045/http://rc.us-east.srv.overture.com/d/sr/?xargs=20AGRkGGzlHgXD1Pqf63hkPUs-a_UeFl8budh9BoyHMP7DWkiE_pErBFfJ8dZHU_W-7MQFHCP_DZ5fMKM3Cwwb5L-Af5GvrqICAKbIt4LcN5SpRJicDGSUDAVZjVDITFupcibdRYidPxvfpyudvRLQIlF0chpPP4Q5Wqp53mj4nao-oTExIHg9lpjQKlBAqnOah0F-9mV30ynoB84KRSvDayRjbdbEkasIPJd6-TAMkzeuyBeVEyQiDbg.000000013d2555fb" class="host yltasis">Education.NexTag.com/Online-Degrees</a>
+            </li>
+                        <li class="ult-position">
+                <a href="/web/20100210104045/http://rc.us-east.srv.overture.com/d/sr/?xargs=20AGRkGGzlHgXD_JiMCdxdCX1IEbrXRAzVqCX5SthAPN67Zzl0mlOPNGwjdhXmyhE60jadgwsT09tI_CR06hxYNLdiWEDLDWEFdg3Oeo9WLYU0NOtLUu6gYXI_abmUCKEObofo31uSZnQWNbpFM4NNTV1_5zvHebTF6YaTpA0ylqxek9l4y-c_TGEo5ZOatrhs1_QsgJA2_WFO7S-l9QL_E7fQXXTG6ZVhuCAnXsyvR0_ZyBeVEyQiDbg.000000013d2555fb" class="yltasis">Donate Your Car</a>
+                Any Condition! Fast, Easy, & Tax Deductible. Choose Your Charity Now.                <a href="/web/20100210104045/http://rc.us-east.srv.overture.com/d/sr/?xargs=20AGRkGGzlHgXD_JiMCdxdCX1IEbrXRAzVqCX5SthAPN67Zzl0mlOPNGwjdhXmyhE60jadgwsT09tI_CR06hxYNLdiWEDLDWEFdg3Oeo9WLYU0NOtLUu6gYXI_abmUCKEObofo31uSZnQWNbpFM4NNTV1_5zvHebTF6YaTpA0ylqxek9l4y-c_TGEo5ZOatrhs1_QsgJA2_WFO7S-l9QL_E7fQXXTG6ZVhuCAnXsyvR0_ZyBeVEyQiDbg.000000013d2555fb" class="host yltasis">www.giveaclik.org/Donate</a>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+<div id="yn-featured" class="mod ult-section">
+    <div class="hd">
+        <h3>Featured</h3>
+    </div>
+    <div class="bd">
+        <ul>
+            <li class="first"><a href="/web/20100210104045/http://abcnews.go.com/Business/PersonalFinance/weather-forecast-wall-street/story?id=9757635&amp;cid=yahoo_pitchlist"><img width="67" height="67" alt="" src="/web/20100210104045im_/http://d.yimg.com/a/p/us/news/editorial/9/85/985dca93dbf4df880556b83b57317d71.jpeg"/></a><div><a href="/web/20100210104045/http://abcnews.go.com/Business/PersonalFinance/weather-forecast-wall-street/story?id=9757635&amp;cid=yahoo_pitchlist">Forecasts for finance</a>Wall Street relies on meteorologists, too.<a href="/web/20100210104045/http://abcnews.go.com/" style="font-size:13px;font-weight:normal;">&raquo; More from ABC News</a></div></li><li><a href="/web/20100210104045/http://www.usnews.com/news/washington-whispers/slideshows/10-keys-to-an-obama-comeback"><img width="67" height="67" alt="" src="/web/20100210104045im_/http://l.yimg.com/a/p/us/news/editorial/3/46/34643ae2c63e2402374fb0117bf6d61b.jpeg"/></a><div><a href="/web/20100210104045/http://www.usnews.com/news/washington-whispers/slideshows/10-keys-to-an-obama-comeback">10 keys for Obama</a>Can Obama come back as Reagan and Clinton did?<a href="/web/20100210104045/http://www.usnews.com/sections/news/index.html" style="font-size:13px;font-weight:normal;">&raquo; More from U.S. News</a></div></li><li><a href="/web/20100210104045/http://www.thedailybeast.com/blogs-and-stories/2010-02-08/justice-clinton/?cmpid=p_yahoo"><img width="67" height="67" alt="" src="/web/20100210104045im_/http://l.yimg.com/a/p/us/news/editorial/b/6f/b6fd5f1f41d41c14bbadc66a1816c025.jpeg"/></a><div><a href="/web/20100210104045/http://www.thedailybeast.com/blogs-and-stories/2010-02-08/justice-clinton/?cmpid=p_yahoo">Justice Clinton?</a>Retirements could persuade Hillary to take a high-court seat.<a href="/web/20100210104045/http://www.thedailybeast.com/" style="font-size:13px;font-weight:normal;">&raquo; More from The Daily Beast</a></div></li>        </ul>
+    </div>
+</div>
+
+<div id="promo-education" class="mod promo">
+    <div class="hd">
+        <h3>Education<span>Yahoo</span></h3>
+    </div>
+    <div class="bd">
+        <div class="headlines">
+            <div class="hd"></div>
+            <div class="bd">
+                <ul>
+                    <li class="first"><a href="/web/20100210104045/http://education.yahoo.net/articles/5_stable_tech_jobs.htm?kid=MQNB"><img width="67" height="67" alt="Yahoo! Education" src="/web/20100210104045im_/http://l.yimg.com/a/p/us/news/editorial/6/75/675bd06b0accd9d08ec8a7cdfce2e0b7.jpeg"/></a>
+<div><a href="/web/20100210104045/http://education.yahoo.net/articles/5_stable_tech_jobs.htm?kid=MQNB">Outsource Proof Jobs</a>Learn which jobs won’t be shipped overseas - even in a recession.</div></li><li><a href="/web/20100210104045/http://education.yahoo.net/articles/flexible_jobs.htm?kid=MQND"><img width="67" height="67" alt="Yahoo! Education" src="/web/20100210104045im_/http://l.yimg.com/a/p/us/news/editorial/a/7b/a7b32590a4dbfb0fe479d8bdffd0717a.jpeg"/></a>
+<div><a href="/web/20100210104045/http://education.yahoo.net/articles/flexible_jobs.htm?kid=MQND">Want Career Flexibility?</a>Break out of the "9-to-5" mold. Check out this list of top 5 flexible jobs.</div></li>                </ul>
+            </div>
+            <div class="ft"></div>
+        </div>
+    </div>
+</div>
+
+<div id="yn-vitality" class="mod ult-section">
+    <div class="hd">
+	   <h3><span>Yahoo!</span>Updates</h3>
+    </div>
+    <div class="bd pagination">
+		<ul class="tabs">
+			<li id="vitality__connections" class="pagination-nav"><a href="#updates-conn"><span>My Connections</span></a></li>
+			<li id="vitality__everyone" class="pagination-nav"><a href="#updates-everyone"><span>Everyone</span></a></li>
+		</ul>
+    	<div class="pagination-bd">
+            <div id="pagination-bd-vitality__connections">
+                
+<div id="yn-vitality-connections" class="my-connections no-updates">
+	<div class="hd"></div>
+	
+	<div class="bd">
+		<div class="updates-invite updates-login"><div class="updates-icon"></div>		<p><a href="/web/20100210104045/https://login.yahoo.com/config/login_verify2?.src=yn&amp;.done=http://news.yahoo.com/" class="signin">Sign In</a> <span>to see what your Connections are up to on Yahoo! News.</span></p>
+		<p>New User? <a href="/web/20100210104045/https://edit.yahoo.com/registration?.intl=us&amp;new=1&amp;.src=yn&amp;.done=http://news.yahoo.com/" class="signup">Sign Up</a></p></div>
+	</div>
+	<div class="ft"></div>
+</div>
+
+            </div>
+            <div id="pagination-bd-vitality__everyone" style="display: none;">
+                
+<div id="yn-vitality-everyone" class="everyone">
+	<div class="hd"></div>
+	<div class="updates-invite updates-login"><div class="updates-icon"></div>		<p><a href="/web/20100210104045/https://login.yahoo.com/config/login_verify2?.src=yn&amp;.done=http://news.yahoo.com/" class="signin">Sign In</a> <span>to see what your Connections are up to on Yahoo! News.</span></p>
+		<p>New User? <a href="/web/20100210104045/https://edit.yahoo.com/registration?.intl=us&amp;new=1&amp;.src=yn&amp;.done=http://news.yahoo.com/" class="signup">Sign Up</a></p></div>
+	<div class="bd">
+		<ul class="hfeed hslice"><li class="header today"><h4>Today</h4></li>			<li class="hentry first">
+						
+				<a href="/web/20100210104045/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1ae9f9rtu/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0ZHRxOGdkBElfYWd1aWQDNjRCQkxJSVFVVUY3NlJFTlBTWk9RSDJXVlkESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzAzMzBhYzgyYzQwODc4MTgyMzJmNzcwNmE0MmU2M2E1BElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rbucent/**http%3A//profiles.yahoo.com/u/64BBLIIQUUF76RENPSZOQH2WVY" class="avatar"><img width="32" height="32" alt="goto Tom's profile" src="/web/20100210104045im_/http://l.yimg.com/us.yimg.com/i/identity/nopic_48.gif"></a>
+				<div class="update entry-content">
+					<p class="vcard author"><a href="/web/20100210104045/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1ae9f9rtu/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0ZHRxOGdkBElfYWd1aWQDNjRCQkxJSVFVVUY3NlJFTlBTWk9RSDJXVlkESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzAzMzBhYzgyYzQwODc4MTgyMzJmNzcwNmE0MmU2M2E1BElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rbucent/**http%3A//profiles.yahoo.com/u/64BBLIIQUUF76RENPSZOQH2WVY" class="fn nickname url">Tom</a> buzzed up: <a href="/web/20100210104045/http://news.yahoo.com/s/ap/20100210/ap_on_re_mi_ea/ml_iran_militia_rising" class="entry-title bookmark">Iran rewards Basij militia with political clout      (AP)</a></p>  <p class="updated">56 seconds ago <span class="value">2010-02-10T02:37:42-08:00</span></p>
+				</div>
+			</li>
+					<li class="hentry">
+						
+				<a href="/web/20100210104045/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aeac5vo4/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0c21iZWdqBElfYWd1aWQDRFdESEZVVkhXUE5DWENYMlBDSVg1QVE1N1UESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzA3NmQ2ZGU2Mzk1OGJjM2ViNDZlNjk3Nzc2MDJmNTc3BElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11ruaqi86/**http%3A//profiles.yahoo.com/u/DWDHFUVHWPNCXCX2PCIX5AQ57U" class="avatar"><img width="32" height="32" alt="goto Carol's profile" src="/web/20100210104045im_/http://l.yimg.com/us.yimg.com/i/identity/nopic_48.gif"></a>
+				<div class="update entry-content">
+					<p class="vcard author"><a href="/web/20100210104045/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aeac5vo4/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0c21iZWdqBElfYWd1aWQDRFdESEZVVkhXUE5DWENYMlBDSVg1QVE1N1UESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzA3NmQ2ZGU2Mzk1OGJjM2ViNDZlNjk3Nzc2MDJmNTc3BElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11ruaqi86/**http%3A//profiles.yahoo.com/u/DWDHFUVHWPNCXCX2PCIX5AQ57U" class="fn nickname url">Carol</a> buzzed up: <a href="/web/20100210104045/http://news.yahoo.com/s/ap/20100210/ap_on_el_ge/us_democrats_wilder_kaine" class="entry-title bookmark">Former Va. governor urges DNC chairman&#39;s firing      (AP)</a></p>  <p class="updated">1 minute ago <span class="value">2010-02-10T02:37:25-08:00</span></p>
+				</div>
+			</li>
+					<li class="hentry">
+						
+				<a href="/web/20100210104045/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aeonckij/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0aDRhdWRoBElfYWd1aWQDRUxKWlRFN1NLRDJHQVJSWUJRVEpGU0Q3RVUESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkA2M5NjVmZWRkOGUwNGM0NWUxY2ZjMGE3ODdlMDVhODZkBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rhvvghi/**http%3A//profiles.yahoo.com/u/ELJZTE7SKD2GARRYBQTJFSD7EU" class="avatar"><img width="32" height="32" alt="goto jose's profile" src="/web/20100210104045im_/http://l.yimg.com/us.yimg.com/i/identity/nopic_48.gif"></a>
+				<div class="update entry-content">
+					<p class="vcard author"><a href="/web/20100210104045/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aeonckij/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0aDRhdWRoBElfYWd1aWQDRUxKWlRFN1NLRDJHQVJSWUJRVEpGU0Q3RVUESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkA2M5NjVmZWRkOGUwNGM0NWUxY2ZjMGE3ODdlMDVhODZkBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rhvvghi/**http%3A//profiles.yahoo.com/u/ELJZTE7SKD2GARRYBQTJFSD7EU" class="fn nickname url">jose</a> buzzed up: <a href="/web/20100210104045/http://news.yahoo.com/s/ap/20100210/ap_on_re_mi_ea/ml_iran_militia_rising" class="entry-title bookmark">Iran rewards Basij militia with political clout      (AP)</a></p>  <p class="updated">1 minute ago <span class="value">2010-02-10T02:37:24-08:00</span></p>
+				</div>
+			</li>
+					<li class="hentry">
+						
+				<a href="/web/20100210104045/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1ae0me6jl/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0MW9ycTgxBElfYWd1aWQDSEhHTVU3STVBNUVOSk83UU5ETU1DVEFHQ0UESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkA2UyOGI1NDAwNTE1MTFkMTkwYzUzYmFiODFkODY5Yjc4BElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rdifotb/**http%3A//profiles.yahoo.com/u/HHGMU7I5A5ENJO7QNDMMCTAGCE" class="avatar"><img width="32" height="32" alt="goto Crystal star's profile" src="/web/20100210104045im_/http://avatars.zenfs.com/users/1NpzPg5kwAAEDtQOcDMbziCIxqJ4NtucW.medium.png"></a>
+				<div class="update entry-content">
+					<p class="vcard author"><a href="/web/20100210104045/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1ae0me6jl/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0MW9ycTgxBElfYWd1aWQDSEhHTVU3STVBNUVOSk83UU5ETU1DVEFHQ0UESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkA2UyOGI1NDAwNTE1MTFkMTkwYzUzYmFiODFkODY5Yjc4BElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rdifotb/**http%3A//profiles.yahoo.com/u/HHGMU7I5A5ENJO7QNDMMCTAGCE" class="fn nickname url">Crystal star</a> buzzed up: <a href="/web/20100210104045/http://news.yahoo.com/s/ynews/20100209/ts_ynews/ynews_ts1122" class="entry-title bookmark">Mystery swirls around George W. Bush &#39;Miss me yet?&#39; billboard</a></p>  <p class="updated">2 minutes ago <span class="value">2010-02-10T02:35:47-08:00</span></p>
+				</div>
+			</li>
+					<li class="hentry last">
+						
+				<a href="/web/20100210104045/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aec813ki/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0dmJuOGprBElfYWd1aWQDWjU0WE9TTExFSVRQUEc0WlZFRk02QlNMUVEESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzViZjAxMDk1M2RjZWQ5MGYxYjQ2MWEwZjg1MGEyYWY5BElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11ro8l545/**http%3A//profiles.yahoo.com/u/Z54XOSLLEITPPG4ZVEFM6BSLQQ" class="avatar"><img width="32" height="32" alt="goto Jack's profile" src="/web/20100210104045im_/http://l.yimg.com/us.yimg.com/i/identity/nopic_48.gif"></a>
+				<div class="update entry-content">
+					<p class="vcard author"><a href="/web/20100210104045/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aec813ki/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0dmJuOGprBElfYWd1aWQDWjU0WE9TTExFSVRQUEc0WlZFRk02QlNMUVEESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzViZjAxMDk1M2RjZWQ5MGYxYjQ2MWEwZjg1MGEyYWY5BElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11ro8l545/**http%3A//profiles.yahoo.com/u/Z54XOSLLEITPPG4ZVEFM6BSLQQ" class="fn nickname url">Jack</a> buzzed up: <a href="/web/20100210104045/http://news.yahoo.com/s/ap/20100210/ap_on_re_la_am_ca/cb_haiti_mystery_patient" class="entry-title bookmark">Doctor says vendor may have been in rubble 27 days      (AP)</a></p>  <p class="updated">3 minutes ago <span class="value">2010-02-10T02:35:23-08:00</span></p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="ft"> <a href="/web/20100210104045/http://profiles.yahoo.com/settings/updates/" class="settings">Manage My Updates</a></div>
+</div>
+
+            </div>
+    	</div>
+    </div>
+</div>
+
+<div id="darla-ad__LREC2" class="mod ad darla_ad mod-first"></div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            
+            </div><!-- end: #sidebar -->
+        
+        </div><!-- end: #bd -->
+    
+        <div id="ft">
+   
+   <div id="yn_ft_nav" class="ult-section nav">
+       <h6>Yahoo! News Navigation</h6>
+       <ul>
+           <li class="ult-position first"><a href="/web/20100210104045/http://news.yahoo.com/">Home</a></li>
+           <li class="ult-position"><a href="/web/20100210104045/http://news.yahoo.com/us"><abbr title="United States">U.S.</abbr></a></li>
+           <li class="ult-position"><a href="/web/20100210104045/http://news.yahoo.com/business">Business</a></li>
+           <li class="ult-position"><a href="/web/20100210104045/http://news.yahoo.com/world">World</a></li>
+           <li class="ult-position"><a href="/web/20100210104045/http://news.yahoo.com/entertainment">Entertainment</a></li>
+           <li class="ult-position"><a href="/web/20100210104045/http://news.yahoo.com/sports">Sports</a></li>
+           <li class="ult-position"><a href="/web/20100210104045/http://news.yahoo.com/technology">Tech</a></li>
+           <li class="ult-position"><a href="/web/20100210104045/http://news.yahoo.com/politics">Politics</a></li>
+           <li class="ult-position"><a href="/web/20100210104045/http://news.yahoo.com/science">Science</a></li>
+           <li class="ult-position"><a href="/web/20100210104045/http://news.yahoo.com/health">Health</a></li>
+           <li class="ult-position"><a href="/web/20100210104045/http://news.yahoo.com/travel">Travel</a></li>
+           <li class="ult-position"><a href="/web/20100210104045/http://news.yahoo.com/i/964">Most Popular</a></li>
+           <li class="ult-position"><a href="/web/20100210104045/http://news.yahoo.com/odd">Odd News</a></li>
+           <li class="ult-position"><a href="/web/20100210104045/http://news.yahoo.com/opinion">Opinion</a></li>
+       </ul>
+   </div><!-- end: .nav -->
+   
+   <div id="yn_ft_services" class="ult-section services">
+       <h6>News Services</h6>
+       <ul>
+           <li class="ult-position rss first"><a href="/web/20100210104045/http://news.yahoo.com/rss"><abbr title="Really Simple Syndication">RSS</abbr></a></li>
+           <li class="ult-position"><a href="/web/20100210104045/http://beta.alerts.yahoo.com/main.php?view=create_news_step1&amp;.done=http://news.yahoo.com">News Alerts</a></li>
+           <li class="ult-position"><a href="/web/20100210104045/http://beta.alerts.yahoo.com/main.php?view=create_weather">Weather Alerts</a></li>
+           <li class="ult-position"><a href="/web/20100210104045/http://news.yahoo.com/badges/headlines">Add Yahoo! Headlines to Your Site</a></li>
+           <li class="ult-position"><a href="/web/20100210104045/http://news.yahoo.com/page/sitemap">Site Map</a></li>
+           <li class="ult-position"><a href="/web/20100210104045/http://help.yahoo.com/l/us/yahoo/news/">Help</a></li>
+           <li class="ult-position"><a href="/web/20100210104045/http://suggestions.yahoo.com/?prop=news">Feedback</a></li>
+       </ul>
+       
+          </div><!-- end: .services -->
+   
+</div><!-- end: #ft -->
+           
+
+        
+        <div id="copyright" class="mod" role="contentinfo">
+    <p>Copyright &copy; 2010 The Associated Press. All rights reserved. The information contained in the AP News report may not be published, broadcast, rewritten or redistributed without the prior written authority of The Associated Press.
+
+<br></p>
+</div>
+
+    
+        <div class="mod ad ad_footer" role="contentinfo">
+    <div class="bd">
+            <!-- Ad Keywords: home; Canada; it; weather; help; government; house; It;-->
+<!-- SpaceID=0 robot -->
+    </div>
+</div>
+
+    
+    </div><!-- end: #doc4 -->
+    
+    
+
+                            <script type="text/javascript" src="/web/20100210104045js_/http://l.yimg.com/b/news/combo/D7H8FL9F?http%3A//l.yimg.com/d/combo%3Fuh/15/js/uh-1.0.20.js&amp;story/assets/js/1.0.3/generic/story.js"></script>
+                        
+
+                            <script type="text/javascript">
+                            YAHOO.util.Event.addListener(window, 'load', function() {
+                                // Start contextual shortcuts widget
+                                var config = {
+                                    url : '/news/common/api/en-US/NEWS/storycontextualshortcut;id=ap:20100207:ap_on_re_us:us_california_storm?format=json',
+                                    css : '/web/20100210104045/http://d.yimg.com/jq/css/cs_3.5.0.css',
+                                    js : '/web/20100210104045/http://d.yimg.com/jq/js/ysc_csc_news.js'
+                                }
+                                YAHOO.News.Shortcuts.init(config);
+                            });
+                            </script>
+                        
+    
+    <div class="mod ad ad_misc_ad">
+    <div class="bd">
+            <!-- Ad Keywords: home; Canada; it; weather; help; government; house; It;-->
+<!-- SpaceID=0 robot -->
+    </div>
+</div>
+
+    
+    <div class="mod ad ad_survey_ad">
+    <div class="bd">
+            <!-- Ad Keywords: home; Canada; it; weather; help; government; house; It;-->
+<!-- SpaceID=0 robot -->
+    </div>
+</div>
+
+    
+    
+    
+</body>
+</html>
+
+
+
+
+<!-- news:story-us:0:Success -->
+<!-- fe9.story.media.ac4.yahoo.com uncompressed Wed Feb 10 02:40:44 PST 2010 -->
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 10:40:45 Feb 10, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:56:23 Jan 11, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

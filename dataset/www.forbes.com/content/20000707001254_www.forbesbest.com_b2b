@@ -1,0 +1,662 @@
+
+<html>
+
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app0.us.archive.org";archive_analytics.values.server_ms=203;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<!-- Forbes (month-day-year) Title -->
+
+<title>Forbes (7-17-00) Best of the Web</title>
+<!-- meta tags -->
+<meta NAME="description" CONTENT>
+<meta NAME="feature" CONTENT="index page">
+<meta NAME="section" CONTENT="Best of the Web/B2B">
+<meta NAME="Volume&amp;number" CONTENT="">
+<meta NAME="TOC byline" CONTENT="">
+<meta NAME="TOC title" CONTENT="">
+<meta NAME="byline" CONTENT="">
+<meta NAME="Subjects" CONTENT="{SUBJECTS}">
+<meta NAME="Companies" CONTENT="{COMPANIES}">
+<meta NAME="Ticker" CONTENT="{TICKERS}">
+<meta NAME="Pagenum" CONTENT="0">
+<meta NAME="Editor" CONTENT="{EDITOR}">
+<!--EDITED BY SECTION-->
+<meta NAME="Title" CONTENT="Forbes.com Best of the Web/ B2B">
+<meta NAME="SideHead" CONTENT="">
+<meta NAME="SideByline" CONTENT="">
+<meta NAME="SideSubjects" CONTENT="">
+<meta NAME="publication" CONTENT="Forbes">
+<SCRIPT LANGUAGE="JavaScript" SRC="/web/20000815055940js_/http://www.forbesbest.com/tool/javascript/AdTag.js"></SCRIPT>
+
+   <SCRIPT LANGUAGE=JAVASCRIPT TYPE="TEXT/JAVASCRIPT">
+	<!-- Hide script from old browsers
+
+	function newWindow() {
+		mapWin = window.open('/b2b/0100/map.htm', 'mapWin', 'width=750,height=550')
+	}
+
+	// End hiding script from old browsers -->
+	</SCRIPT>
+	
+	
+</HEAD>
+
+<body BGCOLOR="#333366" LINK="#0000CC" ALINK="0000FF" VLINK="#000066">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.forbesbest.com/b2b/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "15";
+var displayMonth = "Aug";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.forbesbest.com/b2b/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20000815055940" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Jul
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 5:59:40 Aug 15, 2000">AUG</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20001109225700/http://www.forbesbest.com/b2b" title="9 Nov 2000"><strong>NOV</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20000815053219/http://www.forbesbest.com/b2b" title="5:32:19 Aug 15, 2000"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 5:59:40 Aug 15, 2000">15</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20000815061924/http://forbesbest.com/b2b/" title="6:19:24 Aug 15, 2000"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   1999
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 5:59:40 Aug 15, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20011017190602/http://www.forbesbest.com/b2b/" title="17 Oct 2001"><strong>2001</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20000815055940*/http://www.forbesbest.com/b2b/" title="See a list of every capture for this URL">49 captures</a>
+           <div class="r" title="Timespan for captures of this URL">15 Aug 00 - 29 Apr 05</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:7:000000030030_2001:-1:102103000111_2002:-1:010201020101_2003:-1:110200011102_2004:-1:010212020202_2005:-1:021100000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<!-- Ad Here -->
+<SCRIPT LANGUAGE="JavaScript">
+OutputAdTag('Banner', 'BOW');
+</SCRIPT>
+<NOSCRIPT>
+<A TARGET="BLANK" HREF="/web/20000815055940/http://ads.forbes.net/click.ng/Creative=Banner&amp;SpaceDesc=BOW">
+<IMG border=0 SRC="/web/20000815055940im_/http://ads.forbes.net/image.ng/Creative=Banner&amp;SpaceDesc=BOW"></A>
+</NOSCRIPT>
+<!-- /Ad Here -->
+
+
+<p>
+                                     
+<!--left frame--> 
+<TABLE  ALIGN=LEFT BORDER=0 CELLSPACING=0 CELLPADDING=3 WIDTH=100>
+<TR BGCOLOR="#CCCCCC">
+<TD>
+
+<SCRIPT LANGUAGE="Javascript">
+
+
+var ThisURL = document.URL;
+ThisURL = ThisURL.toUpperCase();
+if ((ThisURL.indexOf("FORBES.STOCKSMART") > 0) || (ThisURL.indexOf("209.220.90.98") > 0)  || (ThisURL.indexOf("FORBESFINDER") > 0)) 
+{
+	document.write('<A HREF="/web/20000815055940/http://www.forbes.com">');
+}
+else
+{
+	document.write('<A HREF="/web/20000815055940/http://www.forbes.com/">');
+} 
+
+
+function DoSubmit() {
+	iquery = document.SearchForm.i.value;
+        //alert(iquery)
+	if ((iquery.length > 253) || (iquery == "") || (iquery == "Search Term") || (iquery == "Enter term and select search category below"))  {
+		window.location = "/web/20000815055940/http://www.forbesfinder.com";
+                return false;
+	} else {
+	if (document.SearchForm.Sopt[0].checked==1) {
+		document.SearchForm.action = "/web/20000815055940/http://www.forbesfinder.com/forbessearch/search.asp";
+		document.SearchForm.q1.value = document.SearchForm.i.value;
+		document.SearchForm.MT.value = document.SearchForm.i.value;
+		document.SearchForm.RD.value = "DM";
+	} else {
+		document.SearchForm.action = "/web/20000815055940/http://www.forbesfinder.com/WebSearch/finder/forbesfinder.asp";
+		document.SearchForm.q1.value = document.SearchForm.i.value;
+		document.SearchForm.MT.value = document.SearchForm.i.value;
+		document.SearchForm.RD.value = "AN";
+	}	
+	document.SearchForm.submit();
+	return true;
+	}
+}
+
+
+function SubmitUrl1() 
+{ 
+  
+var urlStr = '/web/20000815055940/http://markets2.forbes.com/Stock_delay_report.asp?Symbol='+document.Inputform.Symbol.value+'&Timespan='+document.Inputform.Timespan.value;
+var newWindow=window.open(urlStr,"_top");
+}
+
+
+function writedate(){
+	var m = new Date();
+	var d = m.getDate();
+	var y = m.getFullYear();
+	var mo = m.getMonth(); 
+	if (mo==0){	
+		monthname = "January";
+	} else if (mo==1){
+		monthname = "February";
+	} else if (mo==2){
+		monthname = "March";
+	} else if (mo==3){
+		monthname = "April";
+	} else if (mo==4){
+		monthname = "May";
+	} else if (mo==5){
+		monthname = "June";
+	} else if (mo==6){
+		monthname = "July";
+	} else if (mo==7){
+		monthname = "August";
+	} else if (mo==8){
+		monthname = "September";
+	} else if (mo==9){
+		monthname = "October";
+	} else if (mo==10){
+		monthname = "November";
+	} else if (mo==11){
+		monthname = "December";
+	}
+	document.write(monthname + " " + d + ",  " + y);
+}
+
+
+function clearInputField(inputField) {
+	inputField.value = "";
+	}
+
+//-->
+</script>
+
+
+<A HREF="/web/20000815055940/http://www.forbes.com/"><IMG SRC="/web/20000815055940im_/http://www.forbes.com/tool/images/f_com.gif"  BORDER=0></A><BR>
+<FONT SIZE="-2" FACE="helvetica,arial,sans-serif" COLOR="0000FF">
+<SCRIPT LANGUAGE="Javascript">
+writedate()
+</script>
+</FONT>
+<FONT SIZE="-2" FACE="verdana,helvetica,arial,sans-serif" COLOR="000066">
+<P>
+<A HREF="/web/20000815055940/https://commerce.cdsfulfillment.com/FRB/subscriptions.cgi"><IMG SRC="/web/20000815055940im_/http://www.forbes.com/tool/toolbox/promo/images/sub3.gif" WIDTH="114" HEIGHT="25" BORDER="0" ALT="Subscribe to Forbes" VSPACE="2"></a><BR><A HREF="/web/20000815055940/http://www.forbes.com/subscribeindex.htm">Subscriber&nbsp;Services</A><B>
+<P>
+<!--Search-->  
+<FORM NAME="SearchForm" action="" METHOD="GET" onSubmit='DoSubmit()'>
+<INPUT type="hidden" name="act.search" value="1">
+<INPUT type="hidden" name="q1" value="">
+<INPUT type="hidden" name="RD" value="">
+<INPUT type="hidden" name="MT" value="">
+<INPUT type="hidden" name="s" value="">
+<INPUT type="hidden" name="sort" value="Meta_fdcinktomidate">
+<INPUT type="hidden" name="sortorder" value="[d]">
+<INPUT type="hidden" name="newsearch" value="">
+<INPUT type="hidden" name="catalog" value="">
+<INPUT TYPE="hidden" NAME=t VALUE=SEARCH>
+<INPUT TYPE="hidden" NAME=fpage VALUE="1">
+<INPUT TYPE=hidden NAME=HTMLQueryForm VALUE="http://www.forbesfinder.com/websearch/finder/inkresults.asp">
+<P>
+<FONT SIZE="-1">
+<A HREF="/web/20000815055940/http://www.forbesfinder.com/" TITLE="Click to search the web">FORBESFINDER</a></FONT>&#153;
+<INPUT TYPE='text' NAME='i' SIZE='13' MAXSIZE='65' Value="Search Term" onfocus="clearInputField(document.SearchForm.i)";>&nbsp;<A HREF="javascript:DoSubmit();">Go!</A></B><BR><INPUT type=radio name="Sopt" checked>Forbes.com
+<INPUT type=hidden name="leftsearch" value="forbes.com"><br> 
+<INPUT type=radio name="Sopt">Entire Web<B>
+
+</FORM>
+<!--endsearch-->  
+
+
+<P><FORM METHOD="POST" NAME="Inputform" ACTION="javascript:SubmitUrl1()">
+<!--begin quote form-->
+Stocks<BR>
+<INPUT type=text name="Symbol"  value="symbol" size=12 onfocus="clearInputField(document.Inputform.Symbol);">&nbsp;<a href="javascript:SubmitUrl1()">Go!</A><br>
+<INPUT Type="Hidden" Name="Timespan" Value="260" >
+<!--end quote form-->
+<A HREF="/web/20000815055940/http://markets.forbes.com/forbes/Markets_Update.html" TITLE="In depth market data, quotes & charts">Market Detail</A>
+</FORM>
+<P>
+<FORM METHOD = "post" action="/web/20000815055940/http://www.forbes.com/tool/toolbox/lipper/tickersearch.asp"  name=val2>
+<!--Begin quote form-->
+<A HREF="/web/20000815055940/http://www.forbes.com/funds/" TITLE="Forbes Mutual Fund Center">Mutual&nbsp;Funds</A><BR>
+
+<INPUT NAME="TICKER" VALUE="symbol" SIZE=8 MAXLENGTH=10 onfocus="clearInputField(document.val2.TICKER);">&nbsp;<A HREF="javascript:document.val2.submit();">Go!</A><br>
+</B><A HREF="/web/20000815055940/http://www.forbes.com/tool/toolbox/lipper/alpha.asp?value2=A" TITLE="Find a fund symbol">Symbol lookup</A><B>
+<!--end quote form-->
+<P></FORM>
+<!--end quote form-->
+<A HREF="/web/20000815055940/http://www.forbes.com/tool/html/publications.htm" TITLE="Forbes, Forbes ASAP, Forbes FYI and more...">Magazines/Archives</A><P>
+<A HREF="/web/20000815055940/http://www.forbes.com/departments/" TITLE="Editorial content for the current week">News&nbsp;Departments</A><P>
+<A HREF="/web/20000815055940/http://www.forbes.com/tool/html/letters/index.htm" TITLE="Letters to Forbes.com and Forbes magazine">Letters&nbsp;to&nbsp;the&nbsp;Editor</A><P>
+<A HREF="/web/20000815055940/http://www.forbes.com/tool/html/toolbox.htm" TITLE="Forbes' famous annual rankings">Forbes&nbsp;Lists</A><BR>
+&nbsp;&nbsp;&nbsp;<A HREF="/web/20000815055940/http://www.forbes.com/tool/toolbox/rich400" TITLE="400 Richest Americans">Richest&nbsp;Americans</A><BR>
+&nbsp;&nbsp;&nbsp;<A HREF="/web/20000815055940/http://www.forbes.com/tool/toolbox/celeb100" TITLE="100 Most Powerful Celebrities">Celebrity&nbsp;100</A><BR>
+&nbsp;&nbsp;&nbsp;<A HREF="/web/20000815055940/http://www.forbes.com/tool/toolbox/billnew" TITLE="The World's Billionaires">Richest&nbsp;Worldwide</A><BR>
+&nbsp;&nbsp;&nbsp;<A HREF="/web/20000815055940/http://www.forbes.com/tool/toolbox/forbes500s" TITLE="Ranking of the top corporations">500&nbsp;Companies</A><BR>
+&nbsp;&nbsp;&nbsp;<A HREF="/web/20000815055940/http://www.forbes.com/tool/toolbox/bestplaces" TITLE="Forbes report on metro areas">Best&nbsp;Places</A><BR>
+&nbsp;&nbsp;&nbsp;<A HREF="/web/20000815055940/http://www.forbes.com/tool/html/toolbox.htm" TITLE="more of Forbes' famous annual rankings">more...</A><P>
+<A HREF="/web/20000815055940/http://www.forbes.com/tool/html/toolbox2.htm" TITLE="Calculate tax liability, college costs, and more...">Calculators</A><BR>
+<A HREF="/web/20000815055940/http://www.forbes.com/tool/html/toolbox3.htm" TITLE="Find financial information">Financial&nbsp;Tools</A>
+<P>
+<FORM ACTION="/web/20000815055940/http://www.forbes.com/asp/join.asp" METHOD=POST name=Newsletter>
+Free&nbsp;Newsletter<BR>
+<INPUT TYPE=text NAME="eMail" VALUE="your email" SIZE=10 onfocus="clearInputField(document.Newsletter.eMail);">&nbsp;<A HREF="javascript:document.Newsletter.submit();">Go!</A>
+</FORM>
+<P>
+<!--<A HREF="/web/20000815055940/http://www.forbes.com/rtrnewswire/current/index.asp">News</A><P>-->
+<A HREF="/web/20000815055940/http://ragingbull.forbes.com/" TITLE="Post your own comments">Chat/Message&nbsp;Boards</A><P>
+<A HREF="/web/20000815055940/http://www.forbes.com/contact" TITLE="Contact information and services">Contact&nbsp;Forbes.com</A><P>
+<A HREF="/web/20000815055940/http://www.forbes.com/helpcenter/faq.htm" TITLE="Customer service, FAQ, sitemap">Help</A><P>
+</B><P>
+<!-- Ad Here -->
+<SCRIPT LANGUAGE="JavaScript">
+OutputAdTag('homepagelogo', 'nav_tile');
+</SCRIPT>
+<NOSCRIPT>
+<A TARGET="_blank" HREF="/web/20000815055940/http://ads.forbes.net/click.ng/Creative=homepagelogo&amp;SpaceDesc=nav_tile">
+<IMG BORDER=0 SRC="/web/20000815055940im_/http://ads.forbes.net/image.ng/Creative=homepagelogo&amp;SpaceDesc=nav_tile"></A>
+</NOSCRIPT>
+<!-- /Ad Here -->
+
+
+
+</FONT></TD>
+</TR>
+
+
+</TABLE>
+<!--end left frame-->
+
+
+
+
+
+ <img SRC="/web/20000815055940im_/http://www.forbesbest.com/tool/assets/images/clear_pixel.gif" WIDTH="10" HEIGHT="600" BORDER="0"
+ALIGN="LEFT"> </p>
+
+<table BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="60%" ALIGN="LEFT">
+  <tr VALIGN="TOP"><script language="JavaScript">
+<!-- hide from JavaScript-challenged browsers
+var cachebuster = parseInt(Math.random() * 1e8);
+document.write("<img height=1 width=1 src='/web/20000815055940/http://switch.avenuea.com/action/forbes_bestofweb/" + cachebuster + "'>");
+// end hide --> </script>
+    <td BGCOLOR="FFFFFF"><table BORDER="0" WIDTH="100%" CELLSPACING="0" CELLPADDING="5">
+      <tr VALIGN="top">
+        <td BGCOLOR="000000" WIDTH="2%">&nbsp;</td>
+        <td><p align="center"><font SIZE="-1" FACE="verdana,helvetica,arial"><img
+        SRC="/web/20000815055940im_/http://www.forbesbest.com/images/b2b.gif" ALT="B2B" WIDTH="80" HEIGHT="72" HSPACE="5"
+        ALIGN="right"><img SRC="/web/20000815055940im_/http://www.forbesbest.com/images/bow.gif" ALT="Best of The Web" WIDTH="295" HEIGHT="57"
+        VSPACE="10" BORDER="0"> </p>
+        <hr SIZE="1" WIDTH="100%" noshade>
+        <table BORDER="0" CELLPADDING="3" CELLSPACING="5" ALIGN="RIGHT">
+          <tr>
+            <td ALIGN="RIGHT"><img SRC="/web/20000815055940im_/http://www.forbesbest.com/b2b/0100//images/b2bcover.gif" ALT="Best of the Web/ B2B" WIDTH="100"
+            HEIGHT="128" BORDER="1"></td>
+          </tr>
+          <tr>
+            <td ALIGN="RIGHT"><font SIZE="-1" FACE="verdana,helvetica,arial"><b><a HREF="/web/20000815055940/http://www.forbesbest.com/b2b/0100/">Current
+            Stories</a></b></font></td>
+          </tr>
+          <tr>
+            <td ALIGN="RIGHT"><a HREF="mailto:editors@forbesbest.com"><font SIZE="-1" FACE="verdana,helvetica,arial"><b>Contact the Editors</b></font></a></td>
+          </tr>
+            <tr>
+            <td ALIGN="RIGHT"><A HREF="/web/20000815055940/http://www.forbesbest.com/bow/index.asp"><font SIZE="-1" FACE="verdana,helvetica,arial"><b>Best&nbsp;of&nbsp;the Web<BR>Consumer Reviews</b></font></a></td>
+          </tr>
+           <tr>
+            <td ALIGN="RIGHT"><A HREF="/web/20000815055940/http://www.forbesbest.com/b2bsurvey/index.asp"><font SIZE="-1" FACE="verdana,helvetica,arial"><b>B2B Survey</b></font></a></td>
+          </tr>
+          <tr>
+            <td ALIGN="RIGHT"><A HREF="javascript:newWindow()"><IMG SRC="/web/20000815055940im_/http://www.forbesbest.com/b2b/0100/images/b2bicon.gif" WIDTH="148" HEIGHT="30" BORDER="0"></a></td>
+          </tr>        
+       </table>
+        <p><b>Select a section:</b></p>
+        <p> </p>
+        <form action="/web/20000815055940/http://www.forbesbest.com/b2b/asp/industry.asp" method="Post" id="form1" name="form1">
+          <p><select NAME="industries" size="1">
+            <option value
+            ="Aerospace+%26+Defense">Aerospace & Defense</option>
+            <option value
+            ="Agriculture">Agriculture</option>
+            <option value
+            ="Automotive">Automotive</option>
+            <option value
+            ="Chemicals">Chemicals</option>
+            <option value
+            ="Computers+%26+Electronics">Computers & Electronics</option>
+            <option value
+            ="Construction+%26+Building">Construction & Building</option>
+            <option value
+            ="Enablers">Enablers</option>
+            <option value
+            ="Energy+%26+Utilities">Energy & Utilities</option>
+            <option value
+            ="Excess+Inventory">Excess Inventory</option>
+            <option value
+            ="Financial+Services">Financial Services</option>
+            <option value
+            ="Food+%26+Beverage">Food & Beverage</option>
+            <option value
+            ="Hospitality+%26+Travel">Hospitality & Travel</option>
+            <option value
+            ="Industrial+Equipment">Industrial Equipment</option>
+            <option value
+            ="Logistics+%26+Transportation">Logistics & Transportation</option>
+            <option value
+            ="Maintenance%2C+Repair+%26+Operations">Maintenance, Repair & Operations</option>
+            <option value
+            ="Media+%26+Advertising">Media & Advertising</option>
+            <option value
+            ="Medical">Medical</option>
+            <option value
+            ="Metals">Metals</option>
+            <option value
+            ="Miscellaneous">Miscellaneous</option>
+            <option value
+            ="Printing+%26+Paper">Printing & Paper</option>
+            <option value
+            ="Real+Estate">Real Estate</option>
+            <option value
+            ="Restaurants+%26+Food+Service">Restaurants & Food Service</option>
+            <option value
+            ="Restaurants+%26+Food+Services">Restaurants & Food Services</option>
+            <option value
+            ="Retailing">Retailing</option>
+            <option value
+            ="Small+Business">Small Business</option>
+            <option value
+            ="Telecom">Telecom</option>
+          </select> <input TYPE="SUBMIT" VALUE="Go"> </p>
+        </form>
+        <p><b><font SIZE="+1">T</font></b>he B2B horse race is off, and just out of the starting gate are more than 1,000 Web marketplaces that have been announced in the past year or so. On the following pages our editors have conferred with industry experts to come up with a handicapping of B2B companies. The result is 200 of the most promising B2Bs in each of 25 different industries. Each company was judged on its strategy, its execution, its financial staying power and its Web site. Most of the exchanges that made our list are already open for business. A few, however, are little more than bold plans with lots of potential. As older established companies enter the race, it will be increasingly difficult to tell the real B2Bs from the B2B wannabes. Expect this list to change significantly in a year's time. New exchanges will be formed, mergers will combine others and many of the bold announcements we've heard will fail to materialize.
+<P>
+   <B>Business Models Marketplace:  </B>Exchanges, auctions, MROs, and online communities.
+   <BR><B>Enabler: </B> Firm that provides the technology and expertise for creating B2B marketplaces and applications.
+   <BR><B>ASP: </B> Application Service Provider. Companies that run and host software for other companies who access it over the Web.
+           <p></font>&nbsp;</td>
+      </tr>
+</tr>
+
+    </table>
+    <p align="center"><!-- Ad Here -->
+<SCRIPT LANGUAGE="JavaScript">
+OutputAdTag('Banner', 'ForbesEditorial');
+</SCRIPT>
+<NOSCRIPT>
+<A TARGET="BLANK" HREF="/web/20000815055940/http://ads.forbes.net/click.ng/Creative=Banner&amp;SpaceDesc=ForbesEditorial">
+<IMG border=0 SRC="/web/20000815055940im_/http://ads.forbes.net/image.ng/Creative=Banner&amp;SpaceDesc=ForbesEditorial"></A>
+</NOSCRIPT>
+<!-- /Ad Here -->
+ </p>
+    <p align="center">
+<script language = 'javascript'>
+<!--
+function openDownload() {
+
+remote =window.open('','TheRemote',"toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizable=1,height=500,width=305");		
+remote.location.href = "/download.htm";
+		
+		
+}
+
+
+//-->
+</script>
+
+
+<HR SIZE="1" WIDTH="100%" noshade>
+<CENTER>
+<FONT FACE="VERDANA,HELVETICA" SIZE="-2"><B><A HREF = "javascript:openDownload()">Download logo for your web site</A></B><P>
+
+<A HREF="/web/20000815055940/http://www.forbes.com/">Home</A>
+
+</FONT>&nbsp;&#183;&nbsp;
+<FONT FACE="VERDANA,HELVETICA" SIZE="-2">
+<A HREF="/web/20000815055940/http://www.forbes.com/tool/html/sitemap.htm">Sitemap</A></FONT>
+
+<!-- &nbsp;&#183;&nbsp;
+<FONT FACE="VERDANA,HELVETICA" SIZE="-2">
+<A HREF="/tool/html/help.htm">Help</A> -->
+
+</FONT>&nbsp;&#183;&nbsp;
+<FONT FACE="VERDANA,HELVETICA" SIZE="-2">
+<A HREF="/web/20000815055940/http://www.forbesfinder.com/">Search</A>
+
+
+</FONT>&nbsp;&#183;&nbsp;
+<FONT FACE="VERDANA,HELVETICA" SIZE="-2">
+<A HREF="/web/20000815055940/http://www.forbes.com/contact">Contact Us</A><P>
+<A HREF="/web/20000815055940/http://www.forbes.com/webdir/">Advertisers' Directory</A>
+</FONT>&nbsp;&#183;&nbsp;
+
+<FONT FACE="VERDANA,HELVETICA" SIZE="-2">
+<A HREF="/web/20000815055940/http://www.forbes.com/adbanners/mediajump" TARGET="_top">Ad Information</A>
+<P><FONT FACE="VERDANA,HELVETICA" SIZE="-2">
+&#153;
+&copy; 2000 Forbes.com
+<FONT FACE="VERDANA,HELVETICA" SIZE="-2">
+<A HREF="/web/20000815055940/http://www.forbes.com/tool/html/legal_disclaimer.htm">Terms, Conditions and Notices</A>
+<P><FONT FACE="VERDANA,HELVETICA" SIZE="-2">
+<A HREF="/web/20000815055940/http://www.forbes.com/tool/html/privacy_state.htm">Privacy Statement</A> 
+</font>
+</CENTER>
+<P>
+&nbsp;
+ </p>
+    <p align="center">&nbsp;</td>
+  </tr>
+</table>
+
+<p><img SRC="/web/20000815055940im_/http://www.forbesbest.com/tool/assets/images/clear_pixel.gif" WIDTH="10" HEIGHT="1000" BORDER="0"
+ALIGN="LEFT"> <!-- Ad Here -->
+<SCRIPT LANGUAGE="JavaScript">
+OutputAdTag('Column', 'BOW_TOC');
+</SCRIPT>
+<NOSCRIPT>
+<A TARGET="BLANK" HREF="/web/20000815055940/http://ads.forbes.net/click.ng/Creative=Column&amp;SpaceDesc=BOW_TOC">
+<IMG border=0 SRC="/web/20000815055940im_/http://ads.forbes.net/image.ng/Creative=Column&amp;SpaceDesc=BOW_TOC"></A>
+</NOSCRIPT>
+<!-- /Ad Here -->
+ </p>
+
+<p><!-- Ad Here -->
+<SCRIPT LANGUAGE="JavaScript">
+OutputAdTag('Button', 'BOW');
+</SCRIPT>
+<NOSCRIPT>
+<A TARGET="BLANK" HREF="/web/20000815055940/http://ads.forbes.net/click.ng/Creative=Button&amp;SpaceDesc=BOW">
+<IMG border=0 SRC="/web/20000815055940im_/http://ads.forbes.net/image.ng/Creative=Button&amp;SpaceDesc=BOW"></A>
+</NOSCRIPT>
+<!-- /Ad Here -->
+ </p>
+</body>
+</html>
+
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 5:59:40 Aug 15, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 3:30:11 Jan 8, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

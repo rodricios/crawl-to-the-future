@@ -1,0 +1,239 @@
+<html><head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app15.us.archive.org";archive_analytics.values.server_ms=735;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<title>Electronic Telegraph</title></head><body bgcolor="#ffffff" text="#000066" link="#0033ff" vlink="#6699ff" alink="#ff0000">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.telegraph.co.uk/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "19";
+var displayMonth = "Dec";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.telegraph.co.uk/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20001219170700" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20001026160935/http://www1.telegraph.co.uk/" title="26 Oct 2000">OCT</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 17:07:00 Dec 19, 2000">DEC</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20010503163650/http://www.telegraph.co.uk/" title="3 May 2001"><strong>MAY</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20001219165200/http://www.telegraph.co.uk/" title="16:52:00 Dec 19, 2000"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 17:07:00 Dec 19, 2000">19</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20010503163650/http://www.telegraph.co.uk/" title="16:36:50 May 3, 2001"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/19990503172455/http://www1.telegraph.co.uk/" title="3 May 1999"><strong>1999</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 17:07:00 Dec 19, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20020123024423/http://www.telegraph.co.uk/" title="23 Jan 2002"><strong>2002</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20001219170700*/http://www.telegraph.co.uk/" title="See a list of every capture for this URL">18,202 captures</a>
+           <div class="r" title="Timespan for captures of this URL">3 Dec 98 - 11 Jan 15</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000003_1999:-1:321110000000_2000:11:003033111301_2001:-1:0000a9732796_2002:-1:110111167431_2003:-1:011102111102_2004:-1:410117888787_2005:-1:888999985679_2006:-1:b74856665576_2007:-1:653456366766_2008:-1:555666876556_2009:-1:686666676777_2010:-1:778568888989_2011:-1:9aaa99bccccd_2012:-1:eeecddddddde_2013:-1:edddedcdddee_2014:-1:edeeeeefeede_2015:-1:b00000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<center><table width="600" border="0" cellpadding="0" cellspacing="0">  <tr>    <td valign="top" align="right" width="122">      <A href="/web/20001219170700/http://www.telegraph.co.uk/et?ac=000000000005892&amp;rtmo=lvlonukt&amp;atmo=0x0RisJq&amp;pg=/home.html"><img src="/web/20001219170700im_/http://www.telegraph.co.uk/graphics/title3/etlogo120_w.gif" alt="Electronic Telegraph" height="21" width="122" border="0"></a></td><td valign="top" width="478"><img src="/web/20001219170700im_/http://www.telegraph.co.uk/graphics/title3/pionstrap2.gif" width="468" height="21" alt="Electronic Telegraph" border="0"></td></tr>    <tr>    <td valign="top" width="122"><img src="/web/20001219170700im_/http://www.telegraph.co.uk/graphics/title3/spacer.gif" border="0" alt=" " width="122" height="1"></td>    <td align="left" width="478"><!--<img src="/graphics/title3/navbar.gif" height="44" width="468" border="0" alt="See text menu at bottom of page">--><p></td></tr></table> <table width="600" border="0" cellpadding="0" cellspacing="0"><tr><td width="122" align="right" valign="top"><img src="/web/20001219170700im_/http://www.telegraph.co.uk/graphics/title3/spacer.gif" border="0" alt=" " width="122" height="1"></td><td><img src="/web/20001219170700im_/http://www.telegraph.co.uk/graphics/title3/spacer.gif" border="0" alt=" " width="8" height="1"></td><td align="left" width="460"><img src="/web/20001219170700im_/http://www.telegraph.co.uk/graphics/title3/spacer.gif" border="0" alt=" " width="460" height="3"></tr><tr> <td width="122" align="left" valign="top">      <!-- start HELP table -->      <img src="/web/20001219170700im_/http://www.telegraph.co.uk/graphics/title3/spacer.gif" border="0" alt=" " width="122" height="1"></td>   <td valign="top" colspan="2" width="470">      <table border="0" cellpadding="0" cellspacing="0" border="0" width="470">        <tr><td valign="top"><img src="/web/20001219170700im_/http://www.telegraph.co.uk/graphics/title3/spacer.gif" border="0" alt=" " width="4" height="1"></td><td valign="top"><font face="helvetica,arial,geneva">
+
+<H2>The Electronic Telegraph server is temporarily unavailable</H2>
+
+<P>
+Please try again in a few minutes.
+
+
+<p>
+&nbsp
+<p>
+</td></tr></TABLE> 
+
+	
+	
+	
+</td></tr><tr><td></td><td valign="top" colspan="2">
+<img src="/web/20001219170700im_/http://www.telegraph.co.uk/graphics/title3/pageend_w.gif" width="469" height="10" border="0"><br>
+</td></tr></table>
+
+</center>
+</body>
+</html>
+
+
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 17:07:00 Dec 19, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 6:22:03 Jan 12, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

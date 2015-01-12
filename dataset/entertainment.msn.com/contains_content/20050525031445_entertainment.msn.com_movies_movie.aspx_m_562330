@@ -1,0 +1,648 @@
+
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app0.us.archive.org";archive_analytics.values.server_ms=171;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://entertainment.msn.com/movies/movie.aspx?m=562330";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "6";
+var displayMonth = "Jun";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://entertainment.msn.com/movies/movie.aspx?m=562330" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20050606081416" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20040924173454/http://entertainment.msn.com/movies/movie.aspx?m=562330" title="24 Sep 2004">SEP</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 8:14:16 Jun 6, 2005">JUN</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20060104204212/http://entertainment.msn.com/movies/movie.aspx?m=562330" title="4 Jan 2006"><strong>JAN</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20040924173454/http://entertainment.msn.com/movies/movie.aspx?m=562330" title="17:34:54 Sep 24, 2004"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 8:14:16 Jun 6, 2005">6</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20060104204212/http://entertainment.msn.com/movies/movie.aspx?m=562330" title="20:42:12 Jan 4, 2006"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2004
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 8:14:16 Jun 6, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20060904101607/http://entertainment.msn.com/movies/movie.aspx?m=562330" title="4 Sep 2006"><strong>2006</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20050606081416*/http://entertainment.msn.com/movies/movie.aspx?m=562330" title="See a list of every capture for this URL">15 captures</a>
+           <div class="r" title="Timespan for captures of this URL">28 Jun 04 - 17 May 08</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000001001000_2005:5:000001000000_2006:-1:200010001100_2007:-1:010101010100_2008:-1:010010000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<noscript><meta http-equiv=refresh content="0;url=/web/20050606081416/http://entertainment.msn.com/help/requirements.aspx"></noscript><script>var imgssearch = new Array(3);imgssearch[0] = new Image();imgssearch[0].src = '/web/20050606081416/http://entimg.msn.com/i/ms/bt_go.gif';imgssearch[1] = new Image();imgssearch[1].src = '/web/20050606081416/http://entimg.msn.com/i/ms/bt_go_o.gif';imgssearch[2] = new Image();imgssearch[2].src = '/web/20050606081416/http://entimg.msn.com/i/ms/bt_go_d.gif';</script><script>var imgPre="/web/20050606081416/http://entimg.msn.com";var meetsReqs=false;var indefli=false;var serviceid=0;var rpsub=false;var pcontr=false;
+</script>
+<title>MSN - Movies: Crash</title><script src="/web/20050606081416js_/http://entimg.msn.com/script/msnent2918.js"></script><script>function SF(func) { try { if(eval('window.' + func) != null) { return true; } else { return false; } } catch(e) { alert('Failed exec:'+code+'\r\n'+e.description); } return false; }function GE(v) { if(document.all) { return document.all[v]; } return document.getElementById(v); }window.name='MSNMusic';</script>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<meta name="Name" content="Movie">
+		<link rel="stylesheet" href="/web/20050606081416cs_/http://entimg.msn.com/styles/e2918.css" rev="stylesheet" type="text/css">
+		<style>
+			.ctb { padding: 1px 10px 1px 10px; }
+			.lstbx2 { padding: 10px 0px 10px 0px;}
+			.lstbx3 { padding: 10px 0px 10px 0px; }
+			.cntbl { padding-right: 10px; }
+			.listbx { width: 300px; font-family: tahoma; font-size: 8pt; }
+			.btnst { font-size: 8pt; width: 140px; }
+			
+			.addr { padding-right: 10px; text-align: center; vertical-align: middle; }
+					.hd {font-size: 10pt; font-weight: bold; color: #a60105 }
+					a.hd:link {color: #a60105;text-decoration: underline }
+					a.hd:visited {color: #a60105;text-decoration: underline }
+					a.hd:hover {color: #a60105;text-decoration: underline }
+			.bp50 { padding-bottom: 50px; }
+			.bp2 { padding-bottom: 2px; }
+			.shbtn { margin-top: 2px; font-family: tahoma; font-size: 8pt; }
+			.errb { padding: 5px 10px 5px 10px; }
+			.entry { width: 300px; font-family: tahoma; font-size: 8pt; }
+			.butn { font-family: tahoma; font-size: 8pt; text-align: left;}
+			.tprp5 { padding-top: 5px; padding-right: 5px; text-align: left;}
+			.pntl { width: 80px; text-align: left;}
+			.pntr { width: 80px; text-align: right;}
+			.pntm { text-align: center;}
+			.sel { text-align: right; vertical-align: bottom; padding-top: 5px;}
+			.ibx1	{ width:220px; font-size: 8pt }
+			.rbx1	{ width:65px; font-size: 8pt }
+			.txa1	{ width:400px; font-size: 8pt }
+			.sbx1	{ width:103px; font-size: 8pt }
+			.mbbg { margin-right: 1px }
+			.brbg { border-right: 1px solid #fff }
+			.galtbTest{border:none 1px red;padding-top:10px;padding-right:5px;}
+		</style>
+	</HEAD>
+	<body>
+	<script>	var pageId = "56694";	var domaindId = "2253";	var propertyId = "56656";	var gServer = "/web/20050606081416/http://g.msn.com/1ETCLT01/1";	var timeOut = "3";	var backoffTime = "1";</script><script src="/web/20050606081416js_/http://entimg.msn.com/script/tracking.js"></script><img  id="clickTarget" style="display:none" src="/web/20050606081416im_/http://entimg.msn.com/i/sp.gif" onReadyStateChange="if(SF('ctStateChange')) ctStateChange();" >	
+	<center>
+	<table class="sbtb" cellspacing="0" cellpadding="0" border="0">
+	<tr>
+		<td><!--BeginAd(ENTMVB,SuperBanner)--><!--NOAD--><img src="/web/20050606081416im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A55"/><!--EndAd--></td>
+	</tr>
+</table><table class="tp10" cellspacing="0" cellpadding="0" border="0" width="780">
+	<tr>
+		<td><table class="hdpos" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td width="118"><a onclick="if(SF('h')) return h(this,'cm=&amp;ce=0');" href="/web/20050606081416/http://g.msn.com/0nwenus0/A5/00"><script type="text/javascript" src="/web/20050606081416js_/http://sc.msn.com/global/scr/lg/hdrPOS.js">&nbsp;</script><noscript><img src="/web/20050606081416im_/http://sc.msn.com/global/c/lgpos/msft_pos.gif" alt="MSN Home" border=0 style="height:35px;width:118px;" /></noscript><script type="text/javascript">logoImg("/web/20050606081416/http://sc.msn.com");</script></a></td><td class="hdrtxt" valign="Bottom"><a onclick="if(SF('h')) return h(this,'cm=&amp;ce=0');" href="/web/20050606081416/http://movies.msn.com/">Movies</a></td>
+			</tr><tr>
+				<td class="sbhdsp" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=&amp;ce=0');" href="/web/20050606081416/http://entertainment.msn.com/">entertainment</a></td>
+			</tr>
+		</table></td><td align="Right"><table cellspacing="1" cellpadding="0" border="0">
+			<tr>
+				<td class="hdnvc" TABINDEX="0" onmouseover="this.className='hdnvch'" onmouseout="this.className='hdnvc'" onclick="if(SF('u')) u('/web/20050606081416/http://music.msn.com','cm=&amp;ce=0'); else location.href='/web/20050606081416/http://music.msn.com';" onkeypress="if(SF('u')) u('http://music.msn.com','cm=&amp;ce=0'); else location.href='http://music.msn.com';">Music</td><td class="hdnvc" TABINDEX="0" onmouseover="this.className='hdnvch'" onmouseout="this.className='hdnvc'" onclick="if(SF('u')) u('/web/20050606081416/http://radio.msn.com','cm=&amp;ce=0'); else location.href='/web/20050606081416/http://radio.msn.com';" onkeypress="if(SF('u')) u('http://radio.msn.com','cm=&amp;ce=0'); else location.href='http://radio.msn.com';">Radio</td><td class="hdnvch" TABINDEX="0" onclick="if(SF('u')) u('/web/20050606081416/http://movies.msn.com','cm=&amp;ce=0'); else location.href='/web/20050606081416/http://movies.msn.com';" onkeypress="if(SF('u')) u('http://movies.msn.com','cm=&amp;ce=0'); else location.href='http://movies.msn.com';">Movies</td><td class="hdnvc" TABINDEX="0" onmouseover="this.className='hdnvch'" onmouseout="this.className='hdnvc'" onclick="if(SF('u')) u('/web/20050606081416/http://tv.msn.com','cm=&amp;ce=0'); else location.href='/web/20050606081416/http://tv.msn.com';" onkeypress="if(SF('u')) u('http://tv.msn.com','cm=&amp;ce=0'); else location.href='http://tv.msn.com';">TV</td><td class="hdnvc" TABINDEX="0" onmouseover="this.className='hdnvch'" onmouseout="this.className='hdnvc'" onclick="if(SF('u')) u('/web/20050606081416/http://music.msn.com/musicvideos/','cm=&amp;ce=0'); else location.href='/web/20050606081416/http://music.msn.com/musicvideos/';" onkeypress="if(SF('u')) u('http://music.msn.com/musicvideos/','cm=&amp;ce=0'); else location.href='http://music.msn.com/musicvideos/';">Video</td>
+			</tr>
+		</table></td>
+	</tr>
+</table><span style="display:none;"><img width=0 height=0 src="/web/20050606081416im_/http://c.msn.com/c.gif?ps=56694&amp;pi=56656&amp;di=2253&amp;rf=&amp;gt1=m562330"></span>
+	<table class="sbout" cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td align="Center"><table class="ftb" cellspacing="0" cellpadding="0" border="0" width="779">
+			<tr>
+				<td><table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td><form id=PageFindForm method=GET action='/web/20050606081416/http://entertainment.msn.com/search/'><span class="lnk1">Search by:</span></td><td><label for="tp"><span style=display:none>Select search type</span></label><select name="tp" id="tp" class="fpd">
+							<option value="5">movie</option>
+							<option value="4">person</option>
+							<option value="6">theater</option>
+						</select></td><td><label for="ss"><span style=display:none>Enter your search query</span></label><input name="ss" id="ss" type="text" class="fib" VCARD_NAME="SearchText" maxlength="45" /></td><td><span><img title="Go" TABINDEX="0" onmouseover="if(SF('nbs')) nbs(imgssearch[1]);" onmouseout="if(SF('nbs')) nbs(imgssearch[0]);" onmousedown="if(SF('nbs')) nbs(imgssearch[2]);" onmouseup="if(SF('nbs')) { nbs(imgssearch[0]); document.forms[&quot;PageFindForm&quot;].submit();}" onkeydown="if(event.keyCode == 13 || event.keyCode == 32 ){if(SF('nbs')) nbs(imgssearch[2]);}" onkeyup="if(event.keyCode == 13 || event.keyCode == 32 ){if(SF('nbs')) { nbs(imgssearch[0]);document.forms[&quot;PageFindForm&quot;].submit(); }}" src="/web/20050606081416im_/http://entimg.msn.com/i/ms/bt_go.gif" alt="" border="0" style="cursor:hand;" /></span></td>
+					</tr>
+				</table></td><td></form></td><td align="Right"><table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td align="Right"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td><a class="SignInLinkClass" onclick="if(SF('h')) return h(this,'cm=&amp;ce=0');" href="/web/20050606081416/http://login.passport.com/login.srf?lc=1033&amp;id=31948&amp;ru=http%3a%2f%2fentertainment.msn.com%2fMovies%2fmovie.aspx%3fm%3d562330&amp;tw=7200&amp;fs=1&amp;kv=6&amp;ct=1118045655&amp;cb=returl%3dhttp%253a%252f%252fentertainment.msn.com%252fMovies%252fmovie.aspx%253fm%253d562330&amp;kpp=3&amp;ver=2.1.6000.1&amp;tpf=e3348c7bcb40f9c5901365d8e78c8c52">Sign&nbsp;In</a></td><td></td>
+							</tr>
+						</table></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+	<table class="brtb" cellspacing="0" cellpadding="0" border="0" width="780">
+	<tr>
+		<td><table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td><a class="lnk3" onclick="if(SF('h')) return h(this,'cm=&amp;ce=0');" href="/web/20050606081416/http://entertainment.msn.com/movies">MSN MOVIES</a></td><td class="blt3">&#052;</td><td><span class="lnk3">Crash</span></td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+		
+		<table cellpadding=0 cellspacing=0 border=0 class="ntbm">
+			<tr>
+				<td valign=top align=center>
+					<span id="spanFocus">
+					<table cellpadding=0 cellspacing=0 border=0 width=180 class=mbbg>
+						<tr>
+							<td width=15></td>
+							<td width=150></td>
+							<td width=15 style="padding-left:5px;"><img height=10 width=10 src=/web/20050606081416im_/http://entertainment.msn.com/i/ms/c_ur_b5.gif border=0></td>
+						</tr>
+						<tr><td width=15></td><td style="padding:5px 0px 15px 0px;"><table class="bp10" cellspacing="0" cellpadding="0" border="0" width="150">
+	<tr>
+		<td><img title="©Lions Gate Films" src="/web/20050606081416im_/http://entimg.msn.com/i/150/mo/9/Crash_150x225.jpg" alt="©Lions Gate Films" border="0" height="225" width="150" /></td>
+	</tr><tr>
+		<td><table class="bp2" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td>Rate this movie</td>
+			</tr><tr>
+				<td><table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td><span style="cursor:hand" RTP=8 RID=562330 AVG=4><img src="/web/20050606081416im_/http://entimg.msn.com/i/r_sc_4.gif" width="64" height="12"/></span></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table></td>
+	</tr><tr>
+		<td><table class="bp2" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td>Critic Rating</td>
+			</tr><tr>
+				<td><img src="/web/20050606081416im_/http://entimg.msn.com/i/r_sr_4.gif" width="64" height="12"/></td>
+			</tr>
+		</table></td>
+	</tr>
+</table></td><td></td></tr>
+						<tr>
+							<td width=15 style="padding-right:5px;"><img height=10 width=10 src=/web/20050606081416im_/http://entertainment.msn.com/i/ms/c_bl_b5.gif border=0></td>
+							<td width=150></td>
+							<td width=15></td>
+						</tr>
+					</table>
+					</span>
+					<table cellpadding=0 cellspacing=0 border=0 width=180 class=mnbg style="border-top:solid 1px #ffffff;">
+						<tr>
+							<td width=15 style="padding-right:0px;"><img height=10 width=10 src=/web/20050606081416im_/http://entertainment.msn.com/i/ms/C_ul_b5.gif border=0></td>
+							<td width=130></td>
+							<td width=15></td>
+						</tr>
+						<tr>
+							<td width=15></td>	
+							<td width=150 style="padding:0px 0px 15px 0px;"><table cellspacing="0" cellpadding="0" border="0" width="150">
+	<tr>
+		<td><span class="lnk3">More About this Movie:</span></td>
+	</tr>
+</table><table class="tp5" cellspacing="0" cellpadding="0" border="0" width="150">
+	<tr>
+		<td class="lnk6">Main Page</td>
+	</tr><tr>
+		<td class="lnk6"><a title="Movie showtimes" class="lnk6" href="/web/20050606081416/http://entertainment.msn.com/movies/movie.aspx?m=562330&amp;mp=s">Showtimes</a></td>
+	</tr><tr>
+		<td class="lnk6"><a title="Read user reviews of this movie" class="lnk6" href="/web/20050606081416/http://entertainment.msn.com/movies/movie.aspx?m=562330&amp;mp=r">User Reviews</a></td>
+	</tr><tr>
+		<td class="lnk6"><a title="Write a review for this movie" class="lnk6" href="/web/20050606081416/http://entertainment.msn.com/movies/movie.aspx?m=562330&amp;mp=w">Write Review</a></td>
+	</tr><tr>
+		<td class="lnk6"><a title="See the complete list of cast and crew members" class="lnk6" href="/web/20050606081416/http://entertainment.msn.com/movies/movie.aspx?m=562330&amp;mp=c">Cast & Crew</a></td>
+	</tr>
+</table></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td width=15 style="padding-right:0px;"><img height=10 width=10 src=/web/20050606081416im_/http://entertainment.msn.com/i/ms/C_bl_b5.gif border=0></td>
+							<td width=130></td>
+							<td width=15></td>
+						</tr>
+					</table>
+					<table cellpadding=0 cellspacing=0 border=0 width=180 style="border-top:solid 1px #ffffff;">
+						<tr>
+							<td width=15></td>	
+							<td width=150 style="padding:0px 0px 15px 0px;">
+									
+										<table class="mh_outer" cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td><table class="mh_inner" cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr>
+				<td><span class="lnk3">Movie Essentials</span></td>
+			</tr>
+		</table></td>
+	</tr>
+</table><table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr>
+				<td class="tp5" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=MOVIEESSENTIAL&amp;ce=1');" href="/web/20050606081416/http://entertainment.msn.com/comingsoon/">Coming Soon</a></td>
+			</tr><tr>
+				<td class="tp5" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=MOVIEESSENTIAL&amp;ce=2');" href="/web/20050606081416/http://entertainment.msn.com/nowplaying/">In Theaters</a></td>
+			</tr><tr>
+				<td class="tp5" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=MOVIEESSENTIAL&amp;ce=3');" href="/web/20050606081416/http://entertainment.msn.com/movies/dvd">New on DVD</a></td>
+			</tr><tr>
+				<td class="tp5" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=MOVIEESSENTIAL&amp;ce=4');" href="/web/20050606081416/http://entertainment.msn.com/movies/netcal/?netcal=251"> Movie Reviews</a></td>
+			</tr><tr>
+				<td class="tp5" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=MOVIEESSENTIAL&amp;ce=5');" href="/web/20050606081416/http://entertainment.msn.com/gossip/">Hot Gossip</a></td>
+			</tr><tr>
+				<td class="tp5" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=MOVIEESSENTIAL&amp;ce=6');" href="/web/20050606081416/http://entertainment.msn.com/interviews/">Interviews</a></td>
+			</tr><tr>
+				<td class="tp5" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=MOVIEESSENTIAL&amp;ce=7');" href="/web/20050606081416/http://entertainment.msn.com/photos/">Photo Galleries</a></td>
+			</tr><tr>
+				<td class="tp5" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=MOVIEESSENTIAL&amp;ce=8');" href="/web/20050606081416/http://entertainment.msn.com/newsletter">Get Newsletter</a></td>
+			</tr><tr>
+				<td class="tp5" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=MOVIEESSENTIAL&amp;ce=9');" href="/web/20050606081416/http://www.blockbuster.com/acctmgmt/displayPromoRegistration.action?siteId=msn&amp;pc=msn001&amp;refId=0100000002&amp;channel=Movies&amp;subChannel=sub&amp;LPlink=/homepages/displayPage.action?channel1=Sign+In+Sign+Up%26channel2=MSN%26nav=false">Rent from Blockbuster</a></td>
+			</tr><tr>
+				<td class="tp5" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=MOVIEESSENTIAL&amp;ce=10');" href="/web/20050606081416/http://entertainment.msn.com/movies/moviedownloads">Download from CinemaNow</a></td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+									
+							</td>
+							<td></td>
+						</tr>
+					</table>
+					<table cellpadding=0 cellspacing=0 border=0 width=180 style="border-top:solid 1px #ffffff;">
+						<tr>
+							<td width=15></td>
+							<td ><hr style="height:1px;margin:-5 0 5 0;color:#e6e6e6"></td>	
+							<td width=15> </td>
+						</tr>
+						<tr>
+							<td width=15></td>	
+							<td width=150 style="padding:0px 0px 15px 0px;">
+								
+									<table cellspacing="0" cellpadding="0" border="0">
+	<tr>
+		<td class="lnk3">msn movies newsletter</td>
+	</tr><tr>
+		<td><a title="Subscribe to MSN Movies Newsletter" onclick="if(SF('h')) return h(this,'cm=MOVIE_NEWSLETTER_SUB&amp;ce=1');" href="/web/20050606081416/http://entertainment.msn.com/newsletter"><img title="Subscribe to MSN Movies Newsletter" onmouseover="this.src='http://entimg.msn.com/i/ms/bt_sub_h.gif'" onmouseout="this.src='http://entimg.msn.com/i/ms/bt_sub_s.gif'" onmousedown="this.src='http://entimg.msn.com/i/ms/bt_sub_d.gif';" onmouseup="this.src='http://entimg.msn.com/i/ms/bt_sub_s.gif'" src="/web/20050606081416im_/http://entimg.msn.com/i/ms/bt_sub_s.gif" alt="" border="0" style="cursor:hand;margin-top:5px" /></a></td>
+	</tr>
+</table> 
+								
+							</td>
+							<td></td>
+						</tr>
+					</table>
+				</td>
+				<td valign=top align=center class="brbg">
+					<table cellpadding=0 cellspacing=0 border=0 width="100%">
+					<tr>
+						<td width=10 ><img height=10 width=10 src=/web/20050606081416im_/http://entertainment.msn.com/i/ms/C_ul_g.gif border=0></td>
+						<td width=100%></td>
+						
+					</tr>
+					<table>
+					<table cellpadding=0 cellspacing=0 border=0 style="width: 437px; padding: 0px 15px 10px 15px;">
+						<span id="spanMovieSpotlight">
+						<tr>
+							<td class="wbb">
+								
+							</td>
+						</tr>
+						</span>
+						<span id="spanMovieInfo">
+						<tr>
+							<td class="wbb">
+								<table class="bp10" cellspacing="0" cellpadding="0" border="0" width="379">
+	<tr>
+		<td><span class="txt4">Crash</span></td>
+	</tr>
+</table><table class="bp15" cellspacing="0" cellpadding="0" border="0" width="379">
+	<tr>
+		<td><table class="bp2" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td>R, Drama, 1hr&nbsp;52min</td>
+			</tr><tr>
+				<td>Opened on May 6, 2005</td>
+			</tr><tr>
+				<td><a onclick="if(SF('h')) return h(this,'cm=&amp;ce=0');" href="/web/20050606081416/http://entertainment.msn.com/celebs/celeb.aspx?c=365028">Sandra Bullock</a>, <a onclick="if(SF('h')) return h(this,'cm=&amp;ce=0');" href="/web/20050606081416/http://entertainment.msn.com/celebs/celeb.aspx?c=253264">Don Cheadle</a>, <a onclick="if(SF('h')) return h(this,'cm=&amp;ce=0');" href="/web/20050606081416/http://entertainment.msn.com/celebs/celeb.aspx?c=187048">Matt Dillon</a>&nbsp;&nbsp;<a class="lnk4" href="/web/20050606081416/http://entertainment.msn.com/movies/movie.aspx?m=562330&amp;mp=c">...more</a></td>
+			</tr>
+		</table></td>
+	</tr><tr>
+		<td><a onclick="if(SF('h')) return h(this,'cm=&amp;ce=0');" href="javascript:oMvsLink('01','e5fe17b6-fbfa-4f0f-86c3-b0140b303457','','','','','','','','Entertainment_Movies');"><script src="/web/20050606081416js_/http://video.msn.com/js/vp.js"></script> <img src="/web/20050606081416im_/http://entimg.msn.com/i/icon/btplay.gif" style="margin-bottom: -3px"> Watch the trailer</a></td>
+	</tr><tr>
+		<td><a onclick="if(SF('h')) return h(this,'cm=&amp;ce=0');" href="javascript:oMvsLink('01','d2e378b5-36e7-4156-8173-d873ed0d3068','','','','','','','','Entertainment_Movies');">Clip: "The Best Friend I've Got"</a> | <a onclick="if(SF('h')) return h(this,'cm=&amp;ce=0');" href="/web/20050606081416/http://entertainment.msn.com/movies/gallery.aspx?gallery=7898">Movie premiere</a> | <a onclick="if(SF('h')) return h(this,'cm=&amp;ce=0');" href="/web/20050606081416/http://entertainment.msn.com/movies/gallery.aspx?gallery=7966">Movie stills</a></td>
+	</tr><tr>
+		<td><span><span class="" id="_ctl70_cl" style="display:inline">A Brentwood housewife and her DA husband… a Persian store owner… two police detectives, who are also lovers… an African-American television director and his wife… a Mexican locksmith… two car-jackers… a rookie cop… a middle-aged Korean couple…they all live in Los Angeles. And, during the next 36 hours, they will all collide… 'Crash' takes a provocative, unflinching look at the complexities racial tolerance in contemporary America. Diving headlong into the melting pot of post-9/11 Los Angeles, this urban drama tracks the volatile intersections of multi-ethnic characters as they struggle to overcome their fears while ... <a onclick="_ctl70_cl.style.display='none'; _ctl70_ex.style.display='inline'; return false; " href="#" class="lnk4"><b>Read more</b></a></span>
+		<span class="" id="_ctl70_ex" style="display:none">A Brentwood housewife and her DA husband… a Persian store owner… two police detectives, who are also lovers… an African-American television director and his wife… a Mexican locksmith… two car-jackers… a rookie cop… a middle-aged Korean couple…they all live in Los Angeles. And, during the next 36 hours, they will all collide… 'Crash' takes a provocative, unflinching look at the complexities racial tolerance in contemporary America. Diving headlong into the melting pot of post-9/11 Los Angeles, this urban drama tracks the volatile intersections of multi-ethnic characters as they struggle to overcome their fears while careening in and out of one another's lives. In the gray area between black and white, victim and aggressor, there are no easy answers. <a onclick="_ctl70_ex.style.display='none'; _ctl70_cl.style.display='inline';  return false; " href="#" class="lnk4"><br><br><b>Hide full summary</b></a></span>
+		</span></td>
+	</tr>
+</table>
+							</td>
+						</tr>
+						</span>
+						<span id="spanGallery">
+						<tr>
+							<td class="wbb">
+									
+									<table class="tp5" cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td><table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr>
+				<td class="hc1"><span class="lnk3">Top Photo Galleries</span></td>
+			</tr>
+		</table></td>
+	</tr>
+</table><table cellspacing="0" cellpadding="0" border="0">
+	<tr>
+		<td class="galtbTest" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td align="Left" valign="Top" width="15"><a class="imgActive" onclick="if(SF('h')) return h(this,'cm=RELATEDGALLERY&amp;ce=1');" href="/web/20050606081416/http://entertainment.msn.com/movies/gallery.aspx?gallery=8275"><img src="/web/20050606081416im_/http://entimg.msn.com/i/gal/CinderellaMan/1_75x75.jpg" width="75" height="75"border="0" alt="©Universal" ></a></td>
+			</tr><tr>
+				<td class="t5r2" align="Left" valign="Top"><a class="lnk1" onclick="if(SF('h')) return h(this,'cm=RELATEDGALLERY&amp;ce=2');" href="/web/20050606081416/http://entertainment.msn.com/movies/gallery.aspx?gallery=8275">'Cinderella Man' Stills</a></td>
+			</tr><tr>
+				<td class="t5r2" valign="Top">The new drama from director Ron Howard</td>
+			</tr>
+		</table></td><td class="galtbTest" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td align="Left" valign="Top" width="15"><a class="imgActive" onclick="if(SF('h')) return h(this,'cm=RELATEDGALLERY&amp;ce=3');" href="/web/20050606081416/http://entertainment.msn.com/movies/gallery.aspx?gallery=8228"><img src="/web/20050606081416im_/http://entimg.msn.com/i/wi/05/05/23/118156/5081843_t.jpg" width="75" height="75"border="0" alt="©Steve Granitz/WireImage.com" ></a></td>
+			</tr><tr>
+				<td class="t5r2" align="Left" valign="Top"><a class="lnk1" onclick="if(SF('h')) return h(this,'cm=RELATEDGALLERY&amp;ce=4');" href="/web/20050606081416/http://entertainment.msn.com/movies/gallery.aspx?gallery=8228">'Cinderella Man' Premiere</a></td>
+			</tr><tr>
+				<td class="t5r2" valign="Top">Crowe, Zellweger, and cast attend the film's premiere</td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+								
+							</td>
+						</tr>
+						</span>
+						<tr>
+							<td  class="wbbtp10">
+								<table cellspacing="0" cellpadding="0" border="0" width="377">
+	<tr>
+		<td><span class="lnk3">Local Showtimes & Tickets</span></td>
+	</tr>
+</table><table class="tp5" cellspacing="0" cellpadding="0" border="0" width="377">
+	<tr>
+		<td><form tabindex=1 taborder=1 id=entry method=post action=/web/20050606081416/http://entertainment.msn.com/showtimes/default.aspx><input type=hidden name=redir value="/movies/movie.aspx?m=562330"><table class="tprp5" cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr>
+				<td><label for="entval" style="display:none">Enter your zipcode or your city and state</label>Enter your location by <span class="lnk3">ZIP Code</span>&nbsp;&nbsp;or&nbsp;&nbsp;<span class="lnk3">City, State</span>&nbsp;&nbsp;or&nbsp;&nbsp;<span class="lnk3">Cross-Street, City</span></td>
+			</tr><tr>
+				<td><input id=entval name=entval maxlength=40 type=text class=entry>&nbsp;&nbsp;<input type=submit value=Go class=butn></td>
+			</tr><tr>
+				<td></form>&nbsp;<span>(e.g. "98052", "Redmond, WA" or "40th & 156th, Redmond")</span><script language=javascript>window.setTimeout('DFCS();', 1000); function DFCS() { var en = GE('entval'); if(en != null) { if(en.length > 0) { if(en[0].tagName == 'SELECT') en[0].focus(); else en[1].focus(); } else { en.focus(); } } }</script></td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+								
+							</td>
+						</tr>
+						<span id="spanOvertureLinks">
+						<tr>
+							<td class="wbbtp10" style="padding-bottom: 20px">
+								<table cellspacing="0" cellpadding="0" border="0" width="379">
+	<tr>
+		<td><span class="lnk3">Sponsored Sites</span></td>
+	</tr>
+</table><table cellspacing="0" cellpadding="0" border="0" width="379">
+	<tr>
+		<td class="tp10"><a href="/web/20050606081416/http://www61.overture.com/d/sr/?xargs=15KPjg1z9SjoK9k7PyMPiIRvydhRlLitvhrpQkEcImQsodpW1iD%5FV8GuCuxIMXC7A4pGGDj6PXpLIUKqi8jfj%2DTUiZSWO5F7y5gdeA2IhJP6nQJLcj9cdQwI6Y6Y43OXoPEQ%5FQHKi74Z3ac9v4PX5dr%5FZ3wByR%2DvZrwM%2DwwOcIUsOs1VF6%2DlvTIZsF5Khc87q1Ie4fGOsBwOzqy2X6QKxhw91zmeSgPyQSPmj3tS1f8iP0KTcJ0t%2D8D497vcT5n%5FyYGpIJr%2Do6MhnG%2DfQz2CSXyXqYyfhlQnn3j6UFyGI0dKz0Ykyp%5Fh1t66PchfTSIconx3CsRJ6GQzjhMhMlIxswXxPCDE%5FIZhhc7x%2DHbZFYeNes%2DieoRryPCzZHMxFFsYb2NZtFvWKQkWc7ZDPGAvqE%5FGcNJKA%2Dj0HuonfEqgo4g5pn6sf9OoAV7djf7RKGBX4L%2DB2v0oyjU6XB%2DwEf4TIj4fEGHsNZkKwDwjwa%2DgDd%5F8eT4Y1N95YXecue8ntevfbjPFw1SoL6&amp;yargs=www.veloz.com">Stop your Computer from Crashing</a><span><br>If your computer is slowing down or crashing, get a free scan of your computer to make sure it is not infected. Scan now and get a fully functional popup blocker and spam blocker for free.</span><span class="shead"> (www.veloz.com)</span></td>
+	</tr><tr>
+		<td class="tp10"><a href="/web/20050606081416/http://www61.overture.com/d/sr/?xargs=15KPjg19NSiYK9k7PyMPiIRvydnxtPzc6qoZM%5FUc8sQ8sPry5zAr8icfKD35w7CfM6v1eO06PAvKh5bKS%5F0bufEXrOEQDNDOH5UL%5F02tJpI6zVW9dPgLso0Lnkn4dOKi5%5FFmOwetC3nu3KKdH6KTwyioIBvmib9YQaxsjExJRsF8vazgAhr%2DDhEb13teMkgMnDKZ4IQrRTeM%5FaxnfUI8Q5v9Fy5p7VT1MSWi%5FT7Gp%5Fqinx0ANMxfeQKYIJ6YXLm4%2DcbOOPmq1dHkKFqIRd2H%2Dfz3mdyIxrIDjBhLBQllcMXe%2DFIDnQ2lR74biM3ayEd51u7XL%2DCpTPVAiXbEN7YkFvW73rPFHIY2w%5F4AjnItcCL5zs9379Xt7eUn1yDQZfq7znfI5C9U%2DZkGFjCXDaF9KWtVzlBdo%2Dh0y6%5FxXXvxx017Emyc%5FdLNhduYKEh0HBXG1TsAm5pIjmC67AjF9QjGECy6lISpRN1alJkRp29j7PjaaOqtgu0eU%2E&amp;yargs=music.channel.aol.com">Crash at AOL Music</a><span><br>Listen to the latest rock, pop, country, rap, and other music, buy CDs, watch music videos, download songs and more at AOL Music.</span><span class="shead"> (music.channel.aol.com)</span></td>
+	</tr><tr>
+		<td class="tp10"><a href="/web/20050606081416/http://www61.overture.com/d/sr/?xargs=15KPjg1zJSjYK9k7PyMPiIRvydhRlLisLyp4ktS84qRMsNry9yArcmc%5FGYxdosT%5FI0uVffrYPjibIVWJOZ54%5FvYWqbR1XdKNPAs%5FWw2IhJMaygWNFShbV6hv%5Fq6vBbPnldOzqkeqa6mu7KQeeqv0977okLzx%2DPrvxvwc%2DglJ5qHb7R3FR7%5F1zVIJsSr9ldjMnEIJsJP7Iget3rklKVA%2D9WmYUhLNieTXhRJSqj4WwNq1mGIkRHkZaOKd5L6u2I7oKfH5CM7apeGUDi%5FPEQ6G3n3%2Dqu%2Du46ay%2DPieNpql8ET678Ejypi34pvvKLssK7KtpnyDemX46aGnL%2DZ0tzagEIEqDkbgqKbHdvs0DYLdRLIov%5FuXuoQ8jmACEnfFcf5s22OMIQpQDLzCwOWiTcGMCVtXIKbI03jke2zDTYvyIqyqFz77WOcopOuJfByASDWQD%2DjzD98Nj6Bs%2DSvFcMun06z8gMH99FlOpVvypAo3GM3vLfpd5KsMBUFqL9qHYmy%5FTwLRMjKPLRVodrQ9ZpcgaMD7HQAew%2E&amp;yargs=www.overstock.com">Crash - Only $4.59</a><span><br>Make Overstock.com your one-stop-shop for your media needs. Find the latest book, movie, music and gaming titles at deep discounts. Flat-rate shipping. Overstock.com - Your Online Outlet.</span><span class="shead"> (www.overstock.com)</span></td>
+	</tr>
+</table>
+							</td>
+						</tr>
+						</span>
+						<span id="spanMovieReleases">
+						<tr>
+							<td class="wbbtp10">
+								
+							</td>
+						</tr>
+						</span>
+						<span id="spanMovieSeries">
+						<tr>
+							<td class="wbbtp10">
+								
+							</td>
+						</tr>
+						</span>
+						
+						
+						<span id="spanMovieCritic">
+						<tr>
+							<td class="wbbtp10">
+								
+							</td>
+						</tr>
+						</span>
+						
+						
+						
+						
+						
+					</table>
+				</td>
+				<td valign=top align=center>
+					<table cellpadding=0 cellspacing=0 border=0 style="width: 160px; padding: 0px 0px 10px 0px;">
+						<tr>
+							<td align=center>
+								<span id="spanRightAd"><!--BeginAd(ENTMOS,SkyScraperBanner)--><!--NOAD--><img src="/web/20050606081416im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A55"/><!--EndAd--><br><br>
+								<span id="amgLogo"><img src="/web/20050606081416im_/http://entimg.msn.com/i/ms/amg_logo.gif" width="31" height="11"border="0" alt="Music Data Courtesy of AMG" ></span></span>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<table class="ftout" cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td align="Center"><table cellspacing="0" cellpadding="0" border="0" width="780">
+			<tr>
+				<td><table cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tr>
+						<td><table class="ftrtbi2" cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td><span class="lnk1">&copy;2005 Microsoft</span></td><td><span class="blt1">&#159</span></td><td><a class="lnk4" onclick="if(SF('h')) return h(this,'cm=&amp;ce=0');" href="/web/20050606081416/http://entertainment.msn.com/music/providers.aspx">Partners</a><span class="lnk4">&nbsp;&amp;&nbsp;</span><a class="lnk4" onclick="if(SF('h')) return h(this,'cm=&amp;ce=0');" href="/web/20050606081416/http://g.msn.com/0nwenus0/A5/19" target="_new">Advertisers</a></td><td><span class="blt1">&#159</span></td><td><a class="lnk4" onclick="if(SF('h')) return h(this,'cm=&amp;ce=0');" href="/web/20050606081416/http://g.msn.com/0nwenus0/a5/20" target="_new">Privacy</a><span class="lnk4">&nbsp;&amp;&nbsp;</span><a class="lnk4" onclick="if(SF('h')) return h(this,'cm=&amp;ce=0');" href="/web/20050606081416/http://g.msn.com/0nwenus0/a5/18" target="_new">Legal</a></td>
+							</tr>
+						</table></td><td align="Right"><table class="ftrtbi2" cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td><span class="lnk4"><a class="lnk4" href="mailto:?subject=MSN%20-%20Movies%3a%20Crash&amp;body=I%20found%20this%20on%20MSN%20Entertainment%20and%20thought%20you%20might%20be%20interested%20in%20it.%0d%0a%0d%0aClick%20this%20link%3a%0d%0ahttp%3a%2f%2fentertainment.msn.com%2fMovies%2fmovie.aspx%3fm%3d562330%0d%0a">Email This Page</a></span></td><td><span class="blt1">&#159</span></td><td><a class="lnk4" onclick="if(SF('h')) return h(this,'cm=&amp;ce=0');" href="/web/20050606081416/http://entertainment.msn.com/help/movies/">Customer Service</a></td>
+							</tr>
+						</table></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table></td>
+	</tr>
+</table><a class="txt2" onclick="var win = window.open(); win.document.open(); win.document.writeln('Machine Code: A55 - Date: 2005-06-06T01:14:16-07&lt;br&gt;&lt;br&gt;Page URL: ' + escape(document.URL)); return false;" href="#">Page Information</a>
+		</center>
+	</body>
+</HTML>
+
+<script>if(window.sdd){sHS();}</script><script>window.onunload = Rsn; function Rsn() {window.name = 'notmine';} if(SF('SetupRatings')) SOL(SetupRatings); if(SF('cklnch')) SOL(cklnch); if(SF('chkbb')) SOL(chkbb);</script><span id=clipSpan></span>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 8:14:16 Jun 6, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:40:54 Jan 11, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

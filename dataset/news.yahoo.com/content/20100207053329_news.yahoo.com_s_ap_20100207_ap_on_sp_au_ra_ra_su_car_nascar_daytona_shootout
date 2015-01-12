@@ -1,0 +1,1662 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-US">
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app14.us.archive.org";archive_analytics.values.server_ms=255;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+
+                            <link rel="stylesheet" href="/web/20100210011034cs_/http://l.yimg.com/b/news/combo/D7H8FL9F?http%3A//l.yimg.com/d/combo%3Fuh/15/css/uh-1.0.28.css&amp;story/assets/css/1.0.4/generic/story.css" type="text/css"></link>
+                        
+
+                    <link rel="canonical" href="http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout"></link>
+                
+    
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
+    <meta name="description" content="Kevin Harvick started Speedweeks in bed, started the Budweiser Shootout in a backup car and started the final few laps out of the lead.">
+    <meta name="keywords" content="Tony Stewart,Joey Logano,Clint Bowyer,Richard Childress Racing,Daytona 500,Sports,AP">
+    
+    <title>Harvick repeats as Budweiser Shootout winner - Yahoo! News</title>   
+
+    
+</head>
+
+<body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "10";
+var displayMonth = "Feb";
+var displayYear = "2010";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20100210011034" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Jan
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 1:10:34 Feb 10, 2010">FEB</td>
+		<td class="f" nowrap="nowrap">
+		
+		    Mar
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 1:10:34 Feb 10, 2010">10</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20100211055915/http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout" title="5:59:15 Feb 11, 2010"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2009
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 1:10:34 Feb 10, 2010">2010</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2011
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20100210011034*/http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout" title="See a list of every capture for this URL">4 captures</a>
+           <div class="r" title="Timespan for captures of this URL">10 Feb 10 - 14 Feb 10</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:1:040000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+    <script type="text/javascript">document.body.className = 'js';</script>
+
+    <div id="doc4" class="yui-t6">
+
+        <a href="#navigation" class="shortcut">Skip to navigation &raquo;</a>
+        <a href="#bd" class="shortcut">Skip to content &raquo;</a>
+    
+        <div id="hd">
+        
+            <div class="mod ad mod-first ad_header" role="banner">
+    <div class="bd">
+            <!-- Ad Keywords: flu; it; sprint; It;-->
+<!-- SpaceID=0 robot -->
+    </div>
+</div>
+
+        
+            <div id="navigation" role="navigation">
+    <ul id="navigation-primary" class="ult-section primary">
+                <li class="ult-position">
+            <a href="/web/20100210011034/http://news.yahoo.com/" class="first" mapleUltParams="sec=tn">Home</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210011034/http://news.yahoo.com/us" mapleUltParams="sec=tn">U.S.</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210011034/http://news.yahoo.com/business" mapleUltParams="sec=tn">Business</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210011034/http://news.yahoo.com/world" mapleUltParams="sec=tn">World</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210011034/http://news.yahoo.com/entertainment" mapleUltParams="sec=tn">Entertainment</a>
+        </li>
+                <li class="ult-position active">
+            <a href="/web/20100210011034/http://news.yahoo.com/sports" mapleUltParams="sec=tn">Sports</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210011034/http://news.yahoo.com/technology" mapleUltParams="sec=tn">Tech</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210011034/http://news.yahoo.com/politics" mapleUltParams="sec=tn">Politics</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210011034/http://news.yahoo.com/science" mapleUltParams="sec=tn">Science</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210011034/http://news.yahoo.com/health" mapleUltParams="sec=tn">Health</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210011034/http://news.yahoo.com/opinion" mapleUltParams="sec=tn">Opinion</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210011034/http://news.yahoo.com/most-popular" mapleUltParams="sec=tn">Most Popular</a>
+        </li>
+            </ul><!-- end: .primary -->
+
+        <ul id="navigation-secondary" class="ult-section secondary">
+                <li class="ult-position">
+            <a href="/web/20100210011034/http://news.yahoo.com/video/sports" class="first" mapleUltParams="sec=sn">Sports Video</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210011034/http://news.yahoo.com/sports/football" mapleUltParams="sec=sn">Football</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210011034/http://news.yahoo.com/sports/baseball" mapleUltParams="sec=sn">Baseball</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210011034/http://news.yahoo.com/sports/basketball" mapleUltParams="sec=sn">Basketball</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210011034/http://news.yahoo.com/sports/college" mapleUltParams="sec=sn">College</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210011034/http://news.yahoo.com/sports/soccer" mapleUltParams="sec=sn">Soccer</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210011034/http://news.yahoo.com/sports/cycling" mapleUltParams="sec=sn">Cycling</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210011034/http://news.yahoo.com/sports/hockey" mapleUltParams="sec=sn">Hockey</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210011034/http://news.yahoo.com/sports/tennis" mapleUltParams="sec=sn">Tennis</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210011034/http://news.yahoo.com/sports/golf" mapleUltParams="sec=sn">Golf</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210011034/http://news.yahoo.com/sports/boxing" mapleUltParams="sec=sn">Boxing</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210011034/http://news.yahoo.com/sports/motor-sports" mapleUltParams="sec=sn">Motor Sports</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100210011034/http://news.yahoo.com/sports/olympics" mapleUltParams="sec=sn">Olympics</a>
+        </li>
+            </ul><!-- end: .secondary -->
+    </div><!-- end: #navigation -->
+
+            
+            <div id="yn-popular-searches" class="mod">
+    <h3>Popular Searches:</h3>
+    <div class="popular-searches">
+        <ul>
+                        <li class="first">
+                <a href="/web/20100210011034/http://news.search.yahoo.com/news/search?p=lil+wayne" tabindex="-1">lil wayne</a>
+            </li>
+                        <li>
+                <a href="/web/20100210011034/http://news.search.yahoo.com/news/search?p=david+letterman" tabindex="-1">david letterman</a>
+            </li>
+                        <li>
+                <a href="/web/20100210011034/http://news.search.yahoo.com/news/search?p=super+bowl+commercials" tabindex="-1">super bowl commercials</a>
+            </li>
+                        <li>
+                <a href="/web/20100210011034/http://news.search.yahoo.com/news/search?p=abe+vigoda" tabindex="-1">abe vigoda</a>
+            </li>
+                        <li>
+                <a href="/web/20100210011034/http://news.search.yahoo.com/news/search?p=american+idol" tabindex="-1">american idol</a>
+            </li>
+                        <li>
+                <a href="/web/20100210011034/http://news.search.yahoo.com/news/search?p=ringo+starr" tabindex="-1">ringo starr</a>
+            </li>
+                        <li>
+                <a href="/web/20100210011034/http://news.search.yahoo.com/news/search?p=lost" tabindex="-1">lost</a>
+            </li>
+                        <li>
+                <a href="/web/20100210011034/http://news.search.yahoo.com/news/search?p=iran" tabindex="-1">iran</a>
+            </li>
+                        <li>
+                <a href="/web/20100210011034/http://news.search.yahoo.com/news/search?p=michelle+obama" tabindex="-1">michelle obama</a>
+            </li>
+                        <li>
+                <a href="/web/20100210011034/http://news.search.yahoo.com/news/search?p=tiger+woods" tabindex="-1">tiger woods</a>
+            </li>
+                        <li>
+                <a href="/web/20100210011034/http://news.search.yahoo.com/news/search?p=andy+roddick" tabindex="-1">andy roddick</a>
+            </li>
+                        <li>
+                <a href="/web/20100210011034/http://news.search.yahoo.com/news/search?p=china" tabindex="-1">china</a>
+            </li>
+                        <li>
+                <a href="/web/20100210011034/http://news.search.yahoo.com/news/search?p=sri+lanka" tabindex="-1">sri lanka</a>
+            </li>
+                        <li>
+                <a href="/web/20100210011034/http://news.search.yahoo.com/news/search?p=sports+illustrated+swimsuit" tabindex="-1">sports illustrated swimsuit</a>
+            </li>
+                        <li>
+                <a href="/web/20100210011034/http://news.search.yahoo.com/news/search?p=danica+patrick" tabindex="-1">danica patrick</a>
+            </li>
+                        <li>
+                <a href="/web/20100210011034/http://news.search.yahoo.com/news/search?p=model+brooklyn+decker" tabindex="-1">model brooklyn decker</a>
+            </li>
+                        <li>
+                <a href="/web/20100210011034/http://news.search.yahoo.com/news/search?p=north+korea" tabindex="-1">north korea</a>
+            </li>
+                        <li>
+                <a href="/web/20100210011034/http://news.search.yahoo.com/news/search?p=toyota+recall" tabindex="-1">toyota recall</a>
+            </li>
+                        <li>
+                <a href="/web/20100210011034/http://news.search.yahoo.com/news/search?p=john+murtha" tabindex="-1">john murtha</a>
+            </li>
+                        <li>
+                <a href="/web/20100210011034/http://news.search.yahoo.com/news/search?p=bachelor" tabindex="-1">bachelor</a>
+            </li>
+                    </ul>
+    </div>
+    <form action="/web/20100210011034/http://news.search.yahoo.com/news/search" method="get" role="search">
+        <input type="hidden" name="ei" value="UTF-8"/>
+        <ul>
+            <li class="search-type yn-menu">
+                <a href="#" class="menu-trigger">search menu</a>
+                <div class="menu-bd">
+                    <fieldset class="menu-content">
+                        <legend>Search Type</legend>
+                        
+                        <span>Choose a search type from the items below</span>
+
+                        <input type="radio" name="c" value="" id="search_all" checked="checked">                        
+                        <label for="search_all" class="first">All News</label>
+
+                        <input type="radio" name="c" value="yahoo_news" id="search_ynews">                        
+                        <label for="search_ynews">Yahoo! News Only</label>
+
+                        <input type="radio" name="c" value="images" id="search_images">                        
+                        <label for="search_images">News Photos</label>
+
+                        <input type="radio" name="c" value="av" id="search_av">                        
+                        <label for="search_av">Video/Audio</label>
+                    </fieldset>
+                </div>
+            </li>
+            <li class="search-text"><input type="text" name="p" value=""></li>
+            <li class="search-submit"><span><button type="submit"><span>News Search</span></button></span></li>
+            <li><a href="/web/20100210011034/http://news.search.yahoo.com/news/advanced" class="advanced-search">Advanced Search</a></li>
+        </ul>
+    </form>
+</div>
+
+            
+                <div id="banner-ad">
+        <div class="bd">
+            <!-- SpaceID=0 robot -->
+        </div>
+    </div>
+
+
+            
+
+        </div>
+        
+        <div id="bd">
+                
+            <div id="yui-main">
+        
+                <div class="yui-b" role="main">
+     
+                    
+<div class="promobar mod promobar-top_bar">
+
+    <div class="normal blue">
+        <div class="bd">
+            <a href="/web/20100210011034/http://sports.yahoo.com/nfl" class="media"><img src="/web/20100210011034im_/http://l.yimg.com/a/p/us/news/editorial/4/97/497b95d570d1befd16204be94acf90e0.jpeg" width="58" height="39" alt=""></a>
+            <h4><a href="/web/20100210011034/http://sports.yahoo.com/nfl"><strong>SUPER BOWL:</strong>Yahoo! Sports' complete coverage includes stats and blogs</a></h4>
+            <a href="/web/20100210011034/http://sports.yahoo.com/nfl"></a>
+        </div><!-- end bd -->
+    </div>    
+        
+</div>
+
+<div id="yn-story" class="ult-section mod ">
+
+    <div class="hd">
+    
+        
+        
+            <h1 id="yn-story-title">Harvick repeats as Budweiser Shootout winner</h1>
+        <a href="/web/20100210011034/http://us.rd.yahoo.com/dailynews/ap/brand/SIG=11f589428/**http%3A%2F%2Fwww.ap.org%2Ftermsandconditions" id="yn-prvdlink" class="provider-logo ult-section" mapleUltParams="sec=yn-prvdlink">
+        <img src="/web/20100210011034im_/http://l.yimg.com/a/i/us/nws/2008/news/us/assets/common/images/transparent.png" width="106" height="27" alt="AP" class="lzbg" style="background-image: url(/web/20100210011034im_/http://l.yimg.com/a/i/us/nws/p/ap_logo_106.png);">    </a>
+    
+        
+        	
+	<div id="yup-container"></div>
+	<script type="text/javascript">
+		
+		if(!YAHOO){var YAHOO = {};}
+		
+		 YAHOO.BuzzWidgetTries = 0;
+		
+		(function(){
+		    if(YAHOO && YAHOO.util && YAHOO.util.Event && YAHOO.Media && YAHOO.Media.Buzz){
+		   (function(){ var buzz = new YAHOO.Media.Buzz("buzz-top",{"sync":"buzz-bottom","countPosition":"after","fetchCount":false,"loc_strings":{"buzz_up":"Buzz up!","buzzed":"Buzzed!","one_vote":"{0} vote","n_votes":"{0} votes"}});buzz.onSuccess.subscribe(function(){ if(YAHOO.Updates){ YAHOO.Updates.Disclosure.showDialog({"container":"yup-container","source":"buzz","type":"buzzUp","lang":"en-US"}); } }); })();(function(){ var buzz = new YAHOO.Media.Buzz("buzz-bottom",{"sync":"buzz-top","countPosition":"after","fetchCount":true,"loc_strings":{"buzz_up":"Buzz up!","buzzed":"Buzzed!","one_vote":"{0} vote","n_votes":"{0} votes"}});buzz.onSuccess.subscribe(function(){ if(YAHOO.Updates){ YAHOO.Updates.Disclosure.showDialog({"container":"yup-container","source":"buzz","type":"buzzUp","lang":"en-US"}); } }); })();    
+		    } else if(YAHOO.BuzzWidgetTries < 10000) {
+		        YAHOO.BuzzWidgetTries += 500;
+		        setTimeout(arguments.callee, 500);
+		    }
+		})();	
+	
+	</script>
+    <ul id="top" class="tools mod ult-section">
+            <li class="buzz ult-position">
+	
+					
+		<form method="post" action="/web/20100210011034/http://buzz.yahoo.com/vote/" class="buzz" id="buzz-top">
+			<input type="hidden" name="publisherurn" value="y_news">
+			<input type="hidden" name="guid" value="ap/20100207/car_nascar_daytona_shootout">
+			<input type="hidden" name=".done" value="/article/y_news/ap/20100207/car_nascar_daytona_shootout">
+			<input type="hidden" name="assettype" value="article">
+			<input type="hidden" name="votetype" value="1">
+			<input type="hidden" name="from" value="orion">
+			<input type="hidden" name="key" value="c3f4f">
+			<input type="hidden" name=".crumb" value="">
+			<input type="hidden" name="logged" value="0">
+			<button type="submit">Buzz up!<span class="right"></span></button>
+		</form>
+		
+		            </li>
+            <li class="send yn-menu yn-menu2 ult-position">
+                <a href="/web/20100210011034/http://m2f.news.yahoo.com/mailto/?prop=news&amp;locale=us&amp;url=http%3A%2F%2Fnews.yahoo.com%2Fs%2Fap%2F20100207%2Fap_on_sp_au_ra_ra_su%2Fcar_nascar_daytona_shootout&amp;title=Harvick+repeats+as+Budweiser+Shootout+winner&amp;h1=ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout&amp;h2=T&amp;h3=563" class="menu-hd1 ult-nofollow" mapleUltParams="sec=top">Send</a>
+                <div class="menu-bd">
+                    <div class="menu-content">
+                        <ul>
+                            <li>
+                                <a href="/web/20100210011034/http://m2f.news.yahoo.com/mailto/?prop=news&amp;locale=us&amp;url=http%3A%2F%2Fnews.yahoo.com%2Fs%2Fap%2F20100207%2Fap_on_sp_au_ra_ra_su%2Fcar_nascar_daytona_shootout&amp;title=Harvick+repeats+as+Budweiser+Shootout+winner&amp;h1=ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout&amp;h2=T&amp;h3=563" class="email" mapleUltParams="sec=top">Email</a>
+                            </li>
+                            <li class="hide">
+                                <a href="/web/20100210011034/http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout" class="im ult-nofollow" mapleUltParams="sec=top"><abbr title="Yahoo! Instant Messenger">IM</abbr></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="share yn-menu yn-menu2 ult-position">
+                <a href="/web/20100210011034/http://delicious.com/save?url=http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout&amp;title=Harvick+repeats+as+Budweiser+Shootout+winner+-+Yahoo%21+News" class="menu-hd1 ult-nofollow" mapleUltPriority="1000" mapleUltParams="sec=top">Share</a>
+                <div class="menu-bd">
+                    <div class="menu-content">
+                        <ul>
+                            <li>
+                                <a href="/web/20100210011034/http://delicious.com/save?url=http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout&amp;title=Harvick+repeats+as+Budweiser+Shootout+winner+-+Yahoo%21+News" class="delicious ult-nofollow" mapleUltPriority="1000"  onclick="if (navigator.userAgent.indexOf('MSIE') &gt; 0){window.location.href=this.href}else{delsave=window.open(this.href+'&amp;noui=1','delSave','location=yes,links=no,scrollbars=no,toolbar=no,height=375,width=700');}; return false;"  mapleUltParams="sec=top">Delicious</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100210011034/http://digg.com/submit?phase=2&amp;url=http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout" class="digg popup" mapleUltParams="sec=top">Digg</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100210011034/http://www.facebook.com/sharer.php?u=http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout&amp;t=Harvick+repeats+as+Budweiser+Shootout+winner+-+Yahoo%21+News" class="facebook popup" mapleUltParams="sec=top">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100210011034/http://cgi.fark.com/cgi/fark/farkit.pl?u=http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout&amp;h=Harvick+repeats+as+Budweiser+Shootout+winner+-+Yahoo%21+News" class="fark popup" mapleUltParams="sec=top">Fark</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100210011034/http://www.newsvine.com/_tools/seed&amp;save?u=http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout&amp;h=Harvick+repeats+as+Budweiser+Shootout+winner+-+Yahoo%21+News" class="newsvine popup" mapleUltParams="sec=top">Newsvine</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100210011034/http://reddit.com/submit?url=http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout" class="reddit popup" mapleUltParams="sec=top">Reddit</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100210011034/http://www.stumbleupon.com/submit?url=http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout&amp;title=Harvick+repeats+as+Budweiser+Shootout+winner+-+Yahoo%21+News" class="stumbleupon popup" mapleUltParams="sec=top">StumbleUpon</a>
+                            </li>                         
+                            <li>
+                                <a href="/web/20100210011034/http://technorati.com/faves?sub=addfavbtn&amp;add=http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout" class="technorati popup" mapleUltParams="sec=top">Technorati</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100210011034/http://twitter.com/home?status=http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout&amp;title=Harvick+repeats+as+Budweiser+Shootout+winner+-+Yahoo%21+News" class="twitter popup" mapleUltParams="sec=top">Twitter</a>
+                            </li>                               
+                            <li>
+                                <a href="/web/20100210011034/http://myweb2.search.yahoo.com/myresults/bookmarklet?t=Harvick+repeats+as+Budweiser+Shootout+winner+-+Yahoo%21+News&amp;u=http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout&amp;ei=UTF-8&amp;ts=1265764234" class="yahoo-bookmarks popup" mapleUltParams="sec=top">Yahoo!&nbsp;Bookmarks</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="print last ult-position">
+                <a href="/web/20100210011034/http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout/print" mapleUltParams="sec=top">Print</a>
+            </li>
+                    </ul><!-- end: .tools -->
+
+	
+        
+        
+        
+    </div><!-- end: .hd -->
+    
+    <div class="bd" role="main" aria-labelledby="yn-story-title">
+        
+            <div id="yn-story-related-media">
+        
+                <div class="primary-media">
+        
+            <div id="yn-story-main-media" class="ult-section yn-style1">
+        <div class="">
+        <a href="/web/20100210011034/http://news.yahoo.com/nphotos/Tony-Stewart-Daytona-International-Speedway-Kevin-Harvick/photo//100207/483/4c279606e06b47a69affa34b29ec0211//s:/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout" class="media " mapleUltParams="sec=yn_r_top_photo;staid=/100207/483/4c279606e06b47a69affa34b29ec0211">
+            <img src="/web/20100210011034im_/http://d.yimg.com/a/p/ap/20100207/capt.4c279606e06b47a69affa34b29ec0211.nascar_daytona_auto_racing__fljb126.jpg?x=213&amp;y=154&amp;xc=1&amp;yc=1&amp;wc=409&amp;hc=296&amp;q=85&amp;sig=vbRDoBiYsERThbiZeg6bYA--" width="213" height="154" alt="Kevin Harvick (29( and Tony Stewart (14) race for position during the NASCAR">
+            
+                    </a>
+        
+        <cite class="caption">
+        AP&nbsp;&ndash;&nbsp;Kevin Harvick (29( and Tony Stewart (14) race for position during the NASCAR Sprint Cup Series Budweiser&nbsp;&hellip;        </cite>
+    </div>
+    
+        
+</div><!-- end #main-media -->                
+            
+            
+                                    
+        </div><!-- end .primary-media -->
+                
+                
+    </div><!-- end .related-media -->
+
+
+
+    
+        
+<div class="byline">
+        <cite class="vcard">
+        By JENNA FRYER, AP Auto Racing Writer        <span class="fn org">Jenna Fryer, Ap Auto Racing Writer</span>
+    </cite>
+    &ndash;
+    <abbr title="2010-02-07T04:18:56-0800" class="timedate">Sun&nbsp;Feb&nbsp;7, 7:18&nbsp;am&nbsp;ET</abbr></div><!-- end .byline -->
+
+
+
+            <div class="yn-story-content">
+                <p>DAYTONA BEACH, Fla. &ndash; <span class="yshortcuts" id="lw_1265545150_0">Kevin Harvick</span> started Speedweeks in bed, started the <span class="yshortcuts" id="lw_1265545150_1">Budweiser Shootout</span> in a backup car and started the final few laps out of the lead.</p>
+                <p>After all that, he ended up in Victory Lane.</p>
+                <p>Again.</p>
+                <p>Harvick won the exhibition race for the second consecutive year by moving from fourth to first and passing leader <span class="yshortcuts" id="lw_1265545150_2">Greg Biffle</span> with two laps remaining in Saturday night's kickoff race to Speedweeks. Biffle's wreck moments later ended the race under caution, giving Harvick his first win since the Shootout victory a year ago.</p>
+                <p>He hasn't won a <span class="yshortcuts" id="lw_1265545150_3">points race</span> since the 2007 season-opening <span class="yshortcuts" id="lw_1265545150_4">Daytona 500</span>, and was not ready to proclaim his Shootout victory a precursor for a possible repeat in next week's 500.</p>
+                <p>"I know we started last year the same way," he said of the 2009 Shootout win &mdash; the lone bright spot in an otherwise abysmal season for Harvick and all of <span class="yshortcuts" id="lw_1265545150_5">Richard Childress Racing</span>.</p>
+                <p>And, the way he started Speedweeks was a reminder of just how topsy-turvy the 11 days in Daytona can be.</p>
+                <p>He was battling the flu and too ill to travel to Daytona on Thursday for Shootout practice, so teammate <span class="yshortcuts" id="lw_1265545150_6">Clint Bowyer</span> drove the Chevrolet in the first session. Then it was marred by a seven-car accident that destroyed the No. 29, forcing RCR to pull out its backup car.</p>
+                <p><span class="yshortcuts" id="lw_1265545150_7">Jeff Burton</span> practiced that for Harvick, who was able to get to Daytona in time for Friday's 500 practice. That got rained out after just two laps.</p>
+                <p>So Harvick was all too aware of the bizarre things that can happen between now and the Feb. 14 race.</p>
+                <p>"I've been here enough times now that you know this can be a funny week and it can mess with you," he said. "Time after time, hour by hour can bring something unexpected, just like getting sick to start the week. That's not something that you can plan for. And wrecking a car in the first practice with somebody else driving it.</p>
+                <p>"There's just so many things, so many different variables that can get thrown at you this week. This place can knock you down as fast as it can pick you up. You've got to be able to maintain even keel and be able to keep that focus ... because strange things happen."</p>
+                <p>There wasn't much in Harvick's way once the race began Saturday night. Although no one could touch pole-sitter <span class="yshortcuts" id="lw_1265545150_8">Carl Edwards</span> in the first 25-lap segment, Harvick clearly had a strong car and told his team during the break that if he could get out front, no one would catch him.</p>
+                <p>He was right, too. But Michael Waltrip's accident with five laps left brought out a caution that forced a change of strategy. Harvick wanted to pit, but lost the lead when Biffle and <span class="yshortcuts" id="lw_1265545150_9">Kasey Kahne</span> decided to stay on the track.</p>
+                <p>Harvick led most of the 24-car field down pit road, took two tires, and restarted in fourth for the two-lap sprint to the end. He quickly pulled out of line to dive underneath Biffle and claim the lead. He was pulling away when <span class="yshortcuts" id="lw_1265545150_10">Jeff Gordon</span> rammed into the back of Biffle, triggering an eight-car accident behind the leader.</p>
+                <p><span class="yshortcuts" id="lw_1265545150_11">NASCAR</span> waited several moments before calling caution, presumably to see if the wreckage cleared and the race could end under green. Instead, Harvick passed under the yellow flag and won under caution. Kahne finished second and <span class="yshortcuts" id="lw_1265545150_12">Jamie McMurray</span> was third.</p>
+                <p>"For us all to win together, it kind of gives you that team bonding and a little bit of swagger in your step that everybody knows they can win," he said. "We got beat down in the middle a little bit last year and we kind of built that up as we got toward the end of the year. But there's nothing like slinging Budweiser in Victory Lane.</p>
+                <p>"It just gives those guys confidence and gives us everybody that confidence that we've done it a lot and we can still do it a lot."
+<p>
+There was some confusion, though, as to the rules of the finish. Although NASCAR told drivers in the pre-race meeting there would be just one attempt at a green-flag finish, several drivers believed they saw on television that the race must end under green.
+<p>
+"I did see that I think on TV it said it must end under green," McMurray said. "But, I mean, they would have just kept wrecking."
+<p>
+Harvick was reluctant to celebrate over the radio because he was confused by the procedure.
+<p>
+"I was a little bit off kilter on that one," he admitted. "I read something somewhere that the race will end under green. Maybe it was just on a TV telecast as I was delusional sleeping in bed. I don't know. Maybe I dreamed it."
+<p>
+<span class="yshortcuts" id="lw_1265545150_13">Kyle Busch</span> finished fourth and was followed by <span class="yshortcuts" id="lw_1265545150_14">Denny Hamlin</span>, <span class="yshortcuts" id="lw_1265545150_15">Brian Vickers</span> and <span class="yshortcuts" id="lw_1265545150_16">Joey Logano</span>. Gordon was eighth, while <span class="yshortcuts" id="lw_1265545150_17">Tony Stewart</span> and <span class="yshortcuts" id="lw_1265545150_18">Juan Pablo Montoya</span> rounded out the top 10.
+<p>
+The race had high expectations because of NASCAR's offseason decision to loosen up the rules and allow bump-drafting. The message sent to drivers was "Have at it, boys," and most everyone expected a wild race.
+<p>
+Instead, it was fairly calm and most of the activity was limited to single-car accidents. That took some drivers by surprise, especially since it took less than 30 minutes of practice Thursday for a multi-car accident to tear up several cars.
+<p>
+"It was an anticlimactic ending, that's for sure," Hamlin said.</p>
+            </div>
+        
+        
+    </div><!-- end: .bd -->
+    
+    <div class="ft">
+
+            <div id="yn-story-related-searches" class="ult-section">
+        <h3>Related Searches:</h3>
+        <ul>
+                            <li>
+                    <a href="/web/20100210011034/http://news.search.yahoo.com/news/search?p=tony+stewart" mapleUltParams="sec=yn_related_searches">tony stewart</a>
+                </li>
+                            <li>
+                    <a href="/web/20100210011034/http://news.search.yahoo.com/news/search?p=joey+logano" mapleUltParams="sec=yn_related_searches">joey logano</a>
+                </li>
+                            <li>
+                    <a href="/web/20100210011034/http://news.search.yahoo.com/news/search?p=clint+bowyer" mapleUltParams="sec=yn_related_searches">clint bowyer</a>
+                </li>
+                            <li>
+                    <a href="/web/20100210011034/http://news.search.yahoo.com/news/search?p=richard+childress+racing" mapleUltParams="sec=yn_related_searches">richard childress racing</a>
+                </li>
+                            <li class="last">
+                    <a href="/web/20100210011034/http://news.search.yahoo.com/news/search?p=daytona+500" mapleUltParams="sec=yn_related_searches">daytona 500</a>
+                </li>
+                    </ul>
+    </div>
+
+
+        <div id="yn-story-share">
+            
+            
+                <ul id="bottom" class="tools mod ult-section">
+            <li class="buzz ult-position">
+	
+					
+		<form method="post" action="/web/20100210011034/http://buzz.yahoo.com/vote/" class="buzz" id="buzz-bottom">
+			<input type="hidden" name="publisherurn" value="y_news">
+			<input type="hidden" name="guid" value="ap/20100207/car_nascar_daytona_shootout">
+			<input type="hidden" name=".done" value="/article/y_news/ap/20100207/car_nascar_daytona_shootout">
+			<input type="hidden" name="assettype" value="article">
+			<input type="hidden" name="votetype" value="1">
+			<input type="hidden" name="from" value="orion">
+			<input type="hidden" name="key" value="c3f4f">
+			<input type="hidden" name=".crumb" value="">
+			<input type="hidden" name="logged" value="0">
+			<button type="submit">Buzz up!<span class="right"></span></button>
+		</form>
+		
+		            </li>
+            <li class="send yn-menu yn-menu2 ult-position">
+                <a href="/web/20100210011034/http://m2f.news.yahoo.com/mailto/?prop=news&amp;locale=us&amp;url=http%3A%2F%2Fnews.yahoo.com%2Fs%2Fap%2F20100207%2Fap_on_sp_au_ra_ra_su%2Fcar_nascar_daytona_shootout&amp;title=Harvick+repeats+as+Budweiser+Shootout+winner&amp;h1=ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout&amp;h2=T&amp;h3=563" class="menu-hd1 ult-nofollow" mapleUltParams="sec=bottom">Send</a>
+                <div class="menu-bd">
+                    <div class="menu-content">
+                        <ul>
+                            <li>
+                                <a href="/web/20100210011034/http://m2f.news.yahoo.com/mailto/?prop=news&amp;locale=us&amp;url=http%3A%2F%2Fnews.yahoo.com%2Fs%2Fap%2F20100207%2Fap_on_sp_au_ra_ra_su%2Fcar_nascar_daytona_shootout&amp;title=Harvick+repeats+as+Budweiser+Shootout+winner&amp;h1=ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout&amp;h2=T&amp;h3=563" class="email" mapleUltParams="sec=bottom">Email</a>
+                            </li>
+                            <li class="hide">
+                                <a href="/web/20100210011034/http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout" class="im ult-nofollow" mapleUltParams="sec=bottom"><abbr title="Yahoo! Instant Messenger">IM</abbr></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="share yn-menu yn-menu2 ult-position">
+                <a href="/web/20100210011034/http://delicious.com/save?url=http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout&amp;title=Harvick+repeats+as+Budweiser+Shootout+winner+-+Yahoo%21+News" class="menu-hd1 ult-nofollow" mapleUltPriority="1000" mapleUltParams="sec=bottom">Share</a>
+                <div class="menu-bd">
+                    <div class="menu-content">
+                        <ul>
+                            <li>
+                                <a href="/web/20100210011034/http://delicious.com/save?url=http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout&amp;title=Harvick+repeats+as+Budweiser+Shootout+winner+-+Yahoo%21+News" class="delicious ult-nofollow" mapleUltPriority="1000"  onclick="if (navigator.userAgent.indexOf('MSIE') &gt; 0){window.location.href=this.href}else{delsave=window.open(this.href+'&amp;noui=1','delSave','location=yes,links=no,scrollbars=no,toolbar=no,height=375,width=700');}; return false;"  mapleUltParams="sec=bottom">Delicious</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100210011034/http://digg.com/submit?phase=2&amp;url=http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout" class="digg popup" mapleUltParams="sec=bottom">Digg</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100210011034/http://www.facebook.com/sharer.php?u=http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout&amp;t=Harvick+repeats+as+Budweiser+Shootout+winner+-+Yahoo%21+News" class="facebook popup" mapleUltParams="sec=bottom">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100210011034/http://cgi.fark.com/cgi/fark/farkit.pl?u=http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout&amp;h=Harvick+repeats+as+Budweiser+Shootout+winner+-+Yahoo%21+News" class="fark popup" mapleUltParams="sec=bottom">Fark</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100210011034/http://www.newsvine.com/_tools/seed&amp;save?u=http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout&amp;h=Harvick+repeats+as+Budweiser+Shootout+winner+-+Yahoo%21+News" class="newsvine popup" mapleUltParams="sec=bottom">Newsvine</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100210011034/http://reddit.com/submit?url=http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout" class="reddit popup" mapleUltParams="sec=bottom">Reddit</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100210011034/http://www.stumbleupon.com/submit?url=http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout&amp;title=Harvick+repeats+as+Budweiser+Shootout+winner+-+Yahoo%21+News" class="stumbleupon popup" mapleUltParams="sec=bottom">StumbleUpon</a>
+                            </li>                         
+                            <li>
+                                <a href="/web/20100210011034/http://technorati.com/faves?sub=addfavbtn&amp;add=http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout" class="technorati popup" mapleUltParams="sec=bottom">Technorati</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100210011034/http://twitter.com/home?status=http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout&amp;title=Harvick+repeats+as+Budweiser+Shootout+winner+-+Yahoo%21+News" class="twitter popup" mapleUltParams="sec=bottom">Twitter</a>
+                            </li>                               
+                            <li>
+                                <a href="/web/20100210011034/http://myweb2.search.yahoo.com/myresults/bookmarklet?t=Harvick+repeats+as+Budweiser+Shootout+winner+-+Yahoo%21+News&amp;u=http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout&amp;ei=UTF-8&amp;ts=1265764234" class="yahoo-bookmarks popup" mapleUltParams="sec=bottom">Yahoo!&nbsp;Bookmarks</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="print last ult-position">
+                <a href="/web/20100210011034/http://news.yahoo.com/s/ap/20100207/ap_on_sp_au_ra_ra_su/car_nascar_daytona_shootout/print" mapleUltParams="sec=bottom">Print</a>
+            </li>
+                    </ul><!-- end: .tools -->
+
+	
+        </div>
+        
+    </div><!-- end .ft -->
+
+</div><!-- end: #story -->
+
+<script type="text/javascript">
+(function() {
+
+    /**
+     * YUI function to get all elements by class name
+     * getElementsByClass
+     */
+    function getElementsByClass(className, tag, root) {
+        tag = tag || '*';    
+        root = (typeof root == 'string') ? document.getElementById(root) : root || document;
+    
+        var nodes = [],
+            elements = root.getElementsByTagName(tag),
+            re = new RegExp('(?:^|\\s+)' + className + '(?:\\s+|$)');
+    
+        for (var i = 0, len = elements.length; i < len; ++i) {
+            if ( re.test(elements[i].className) ) {
+                nodes[nodes.length] = elements[i];
+            }
+        }
+        return nodes;
+    }
+    
+    /**
+     * This code displays the expand button as the page loads. This prevents any lag in displaying
+     * the button if the page takes a long time to load. If the user clicks the button before the page
+     * loads then we just show the full story without animation. Thus, preventing the full implementation
+     * from loading.
+     */
+    var story = document.getElementById('yn-story');
+    var related = document.getElementById('yn-story-related-media');
+    var expandCookie = '0';
+    
+    if (
+        // make sure read-more-toggle flag exists
+        (story && story.className.indexOf('read-more-toggle') != -1) &&
+        // if user preference is 0 then collapse story
+        expandCookie == '0' && 
+        // make sure hash is not set
+        window.location.hash!='#full'
+       )
+    {
+        var buttonHeight = 18;
+        var defaultHeight = 406;
+        var heightLimit = 200;
+        var host = document.location.host;
+        var path = document.location.pathname;
+        var bd = getElementsByClass('bd','div',story)[0];
+        
+        // Figure out min height for story container based on the heights of the related media and primary media containers
+        if (related)
+        {                
+            // do height calculations if related height is larger than default minHeight
+            if (related.offsetHeight > defaultHeight) {
+            
+                // if primary exists then use that height, otherwise use related
+                var obj = getElementsByClass('primary-media','div',related)[0];
+                if (!obj) obj = related;
+                
+                // set height from primary or related container
+                minHeight = parseInt(obj.offsetHeight, 10);
+                
+                // if the minheight is smaller than default, then set it to default
+                if (
+                    (minHeight < defaultHeight) &&
+                    !document.getElementById('yn-story-main-media') && 
+                    !document.getElementById('yn-story-minor-media')
+                   )
+                {
+                    minHeight = defaultHeight;
+                }
+            } else {
+                minHeight = defaultHeight;
+            }
+        } else {
+            minHeight = defaultHeight;
+        }
+        
+        // add height of buttons to min height
+        minHeight += buttonHeight;
+            
+        // make sure there is enough story to hide
+        if ((bd.offsetHeight - minHeight) > heightLimit)
+        {
+            // set overflow and height
+            bd.style.height = minHeight + "px";
+            bd.className += " overflow";
+            story.className += " read-closed";
+            
+            // add read more expand button
+            var div = document.createElement('div');
+            div.className = 'read-more read-more-expand';
+            div.innerHTML = '<a href="http://'+host+path+'" id="yn-bodycontrol" class="ult-nofollow ult-section" accesskey="m" title="Press CTRL + SHIFT + M to toggle" mapleUltPriority="1000"><em><span>Read Full Article</span></em></a>';
+    
+            // we have to handle the case where a user might click the button before our YUI script loads
+            // if so, remove the height and overflow setting then hide the button, also add #full hash to url so
+            // if script eventually is loaded it doesnt recreate the buttons and collapse the story
+            div.onclick = function(ev) {
+                var e = ev || window.event;
+                
+                // show full story
+                bd.style.height = 'auto';
+                bd.className = bd.className.replace('overflow','expanded');
+                story.className = story.className.replace('read-closed','');
+                
+                // hide the toggle button
+                div.className += ' hide';
+                
+                // disable link follow
+                if (e.preventDefault) {
+                    e.preventDefault();
+                } else {
+                    e.returnValue = false;
+                }
+            }
+            
+            // add div to document
+            bd.appendChild(div);
+        }
+    
+    }
+
+})();
+</script>
+
+<div id="yn-story-related-content" class="yui-g mod related-content-style">
+
+        
+        <div id="yn-r-b-right" class="yui-u first ult-section">
+    
+        <h3>More...</h3>
+        
+        <ul class="list list4 list6 size1">
+                        <li class="first video">
+                <a href="/web/20100210011034/http://us.rd.yahoo.com/dailynews/external/reutersav/av_reuters_all/279193ab85638cbfe02c39eb423a0da3/35045174/*http://news.yahoo.com/video/sports-15749645/18048995" class="showtt" rel=":reutersav:20100209:av_reuters_all:_yahoonewsvideo_sports_sport_ukiedata_rtrs_olympicsroggewa20100209_143542_xml__18048988" mapleUltParams="sec=yn-r-b-right;slk=vid-un-link;staid=/reutersav/20100209/av_reuters_all/_yahoonewsvideo_sports_sport_ukiedata_rtrs_olympicsroggewa20100209_143542_xml__18048988">
+                                        <strong>Sports Video:</strong> 
+                                        Olympics&#39; Rogge warns Russia                </a>
+                
+                                <cite>
+                    <a href="/web/20100210011034/http://news.yahoo.com/video/reuters" mapleUltParams="sec=yn-r-b-right;slk=vid-un-provider;staid=/reutersav/20100209/av_reuters_all/_yahoonewsvideo_sports_sport_ukiedata_rtrs_olympicsroggewa20100209_143542_xml__18048988">Reuters</a>
+                </cite>
+                            </li>
+                        <li class="video">
+                <a href="/web/20100210011034/http://us.rd.yahoo.com/dailynews/external/ysportsvid/av_ysports/8f2354f354aa493d1d3b83ab1ed5f745/35047284/*http://news.yahoo.com/video/sports-15749645/18052079" class="showtt" rel=":ysportsvid:20100208:av_ysports:_yahoonewsvideo_sports_junior020810_18052062" mapleUltParams="sec=yn-r-b-right;slk=vid-un-link;staid=/ysportsvid/20100208/av_ysports/_yahoonewsvideo_sports_junior020810_18052062">
+                                        <strong>Sports Video:</strong> 
+                                        NASCAR: Will Junior Bounce Back?                </a>
+                
+                                <cite>
+                    <a href="/web/20100210011034/http://news.yahoo.com/i/3013" mapleUltParams="sec=yn-r-b-right;slk=vid-un-provider;staid=/ysportsvid/20100208/av_ysports/_yahoonewsvideo_sports_junior020810_18052062">Yahoo! Sports</a>
+                </cite>
+                            </li>
+                        <li class="video">
+                <a href="/web/20100210011034/http://us.rd.yahoo.com/dailynews/external/au7/av_au7_ts/46046f68db042fd349ba6bf1b550a751/35043203/*http://news.yahoo.com/video/sports-15749645/18046356" class="showtt" rel=":au7:20100209:av_au7_ts:_yahoonewsvideo_sports6781980_02091800wav8__18046352" mapleUltParams="sec=yn-r-b-right;slk=vid-un-link;staid=/au7/20100209/av_au7_ts/_yahoonewsvideo_sports6781980_02091800wav8__18046352">
+                                        <strong>Sports Video:</strong> 
+                                        7News: Race over                </a>
+                
+                                <cite>
+                    <a href="/web/20100210011034/http://news.yahoo.com/video/australia-7-news" mapleUltParams="sec=yn-r-b-right;slk=vid-un-provider;staid=/au7/20100209/av_au7_ts/_yahoonewsvideo_sports6781980_02091800wav8__18046352">Australia 7 News</a>
+                </cite>
+                            </li>
+                    </ul>
+        
+    </div>
+    </div><!-- end .related -->
+
+
+
+
+
+
+
+<div class="mod mod3">
+    <div class="yui-gb yui-gb1">
+        <div class="yui-u first">
+            <div id="yn-channel" class="mod ult-section mod-first">
+    <div class="hd">
+        <h3>Most Viewed - Sports</h3>
+    </div>
+    <div class="bd">
+        <ul class="list list4">
+                            <li class="ult-position first">
+                    <a href="/web/20100210011034/http://news.yahoo.com/s/ap/20100209/ap_on_sp_ot/us_fea_fashion_sports_illustrated" class="showtt" rel=":ap:20100209:ap_on_sp_ot:us_fea_fashion_sports_illustrated" mapleUltParams="sec=yn-channel;staid=ap/20100209/us_fea_fashion_sports_illustrated" >SI swimsuit edition puts Roddick's wife on cover</a>
+                    <cite>AP</cite>
+                </li>
+                            <li class="ult-position">
+                    <a href="/web/20100210011034/http://news.yahoo.com/s/ap/20100210/ap_on_sp_ot/us_nancy_kerrigan_s_father" class="showtt" rel=":ap:20100210:ap_on_sp_ot:us_nancy_kerrigan_s_father" mapleUltParams="sec=yn-channel;staid=ap/20100210/us_nancy_kerrigan_s_father" >Kerrigan family disputes autopsy report on father</a>
+                    <cite>AP</cite>
+                </li>
+                            <li class="ult-position">
+                    <a href="/web/20100210011034/http://news.yahoo.com/s/ap/20100209/ap_on_sp_ot/us_super_bowl_parade" class="showtt" rel=":ap:20100209:ap_on_sp_ot:us_super_bowl_parade" mapleUltParams="sec=yn-channel;staid=ap/20100209/us_super_bowl_parade" >Parade for Saints gives New Orleans more euphoria</a>
+                    <cite>AP</cite>
+                </li>
+                            <li class="ult-position">
+                    <a href="/web/20100210011034/http://news.yahoo.com/s/ap/20100208/ap_on_sp_fo_ne/fbn_nfl_future" class="showtt" rel=":ap:20100208:ap_on_sp_fo_ne:fbn_nfl_future" mapleUltParams="sec=yn-channel;staid=ap/20100208/fbn_nfl_future" >NFL future: Spotlight off the field</a>
+                    <cite>AP</cite>
+                </li>
+                            <li class="ult-position">
+                    <a href="/web/20100210011034/http://news.yahoo.com/s/ap/20100209/ap_on_sp_bk_ga_su/bkn_spurs_lakers" class="showtt" rel=":ap:20100209:ap_on_sp_bk_ga_su:bkn_spurs_lakers" mapleUltParams="sec=yn-channel;staid=ap/20100209/bkn_spurs_lakers" >Lakers beat Spurs 101-89 without Bryant, Bynum</a>
+                    <cite>AP</cite>
+                </li>
+                    </ul>
+        <a href="/web/20100210011034/http://news.yahoo.com/most-popular/viewed/sports" class="more size1" mapleUltParams="sec=yn-channel" >All Most Viewed&nbsp;&raquo;</a>
+    </div>
+</div>
+
+            
+            
+        </div>
+        <div class="yui-u">
+            
+<div id="yn-daily-features" class="mod ult-section mod-first">
+    <div class="hd">
+        <h3>Daily Features</h3>
+    </div>
+    <div class="bd">
+        <ul class="list list2 size1">
+            <li class="first">
+                <a href="/web/20100210011034/http://news.yahoo.com/comics/uclickcomics/20100209/cx_nq_uc/nq20100209"><img src="/web/20100210011034im_/http://l.yimg.com/a/i/us/nws/2008/news/us/assets/common/images/transparent.png" width="201" height="64" alt="Comic" class="lzbg" style="background-image: url(/web/20100210011034im_/http://d.yimg.com/b/util/anysize/200x-1209600,http%3A%2F%2Fd.yimg.com%2Fa%2Fp%2Fuc%2F20100209%2Flnq100209.gif%3Fx%3D201%26y%3D64%26q%3D85%26sig%3DSqQR96pHtdvIrBPE2K4yAw--);"></a>
+                <a href="/web/20100210011034/http://news.yahoo.com/comics" class="more">All Comics &raquo;</a>
+            </li>
+            <li>
+    <h4>Opinions &amp; Editorials: <a href="/web/20100210011034/http://news.yahoo.com/i/742">Diverse views on news from the right, left, and center.</a></h4>
+    <a href="/web/20100210011034/http://news.yahoo.com/i/742" class="more">All Opinion &raquo;</a> 
+</li>            <!-- -->        </ul>
+    </div>
+</div>
+
+                <div class="ad-links mod">
+                <div id="darla-ad__REC" class="ft darla_ad"></div>
+            </div>
+
+            
+        </div>
+        <div class="yui-u last">
+                <div id="yn-elseweb" class="mod ult-section mod-first">
+        <div class="hd">
+            <h3>Elsewhere on the Web</h3>
+        </div>
+        <div class="bd">
+            <ul class="list">
+                                    <li class="ult-position first">
+                    	<a href="/web/20100210011034/http://us.rd.yahoo.com/dailynews/external/abc/rss_abc_sp/deathofnancykerrigansdadahomicide/35047537/SIG=128pb1462/*http://feeds.abcnews.com/click.phdo?i=c58ece1f80e3b13deb3be8434c53b8b1" mapleUltParams="sec=yn-elseweb" ><strong>ABC News: </strong>Death of Nancy Kerrigan&#39;s Dad a Homicide</a>
+                    </li>
+                                    <li class="ult-position">
+                    	<a href="/web/20100210011034/http://us.rd.yahoo.com/dailynews/external/abc/rss_abc_sp/vancouvergamesofficialsconfidentcypressready/35050708/SIG=128g8kjl5/*http://feeds.abcnews.com/click.phdo?i=e3af64fb5d369c66d2de5170ee24efbb" mapleUltParams="sec=yn-elseweb" ><strong>ABC News: </strong>Vancouver Games Officials Confident Cypress Ready</a>
+                    </li>
+                                    <li class="ult-position">
+                    	<a href="/web/20100210011034/http://us.rd.yahoo.com/dailynews/external/abc/rss_abc_sp/strainedrelationshipwithfatherfortopusskier/35050443/SIG=1280s50g6/*http://feeds.abcnews.com/click.phdo?i=87c441c70dcbec902daaa38d5cf4b1a3" mapleUltParams="sec=yn-elseweb" ><strong>ABC News: </strong>Strained Relationship With Father for Top US Skier</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+
+
+            
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+                    
+
+        
+                    
+                    
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                </div><!-- end: .yui-b -->
+        
+            </div><!-- end: #yui-main -->
+        
+            <div id="sidebar" class="yui-b" role="complementary">
+            
+                <div id="yn-top-stories" class="mod ult-section">
+    <div class="hd">
+        <h3>Top Stories</h3>
+    </div>
+    <div class="bd">
+                    <ul class="list list4 size2">
+                <li class="first  "><a href="/web/20100210011034/http://news.yahoo.com/s/ap/us_obama_bipartisanship" class="showtt yltasis" rel=":ap:us_obama_bipartisanship" mapleUltParams="sec=yn_top_stories;ccode=mostpopular;asset=ap/20100210/us_obama_bipartisanship;cpos=1;"> Despite all the nice talk, partisanship reigns<!-- COKE --></a></li><li class=" "><a href="/web/20100210011034/http://news.yahoo.com/s/ap/iran_nuclear" class="showtt yltasis" rel=":ap:iran_nuclear" mapleUltParams="sec=yn_top_stories;ccode=mostpopular;asset=ap/20100210/iran_nuclear;cpos=2;"> Iran boosts nuclear enrichment, drawing warnings<!-- COKE --></a></li><li class=" "><a href="/web/20100210011034/http://news.yahoo.com/s/ap/us_super_bowl_parade" class="showtt yltasis" rel=":ap:us_super_bowl_parade" mapleUltParams="sec=yn_top_stories;ccode=mostpopular;asset=ap/20100209/us_super_bowl_parade;cpos=3;"> Parade for Saints gives New Orleans more euphoria<!-- COKE --></a></li><li class=" "><a href="/web/20100210011034/http://news.yahoo.com/s/ap/20100209/ap_on_re_eu/eu_vatican_intrigue" class="showtt yltasis" rel=":ap:20100209:ap_on_re_eu:eu_vatican_intrigue" mapleUltParams="sec=yn_top_stories;ccode=mostpopular;asset=ap/20100209/eu_vatican_intrigue;cpos=4;"> Italian Catholic scandal draws in Pope Benedict<!-- COKE --></a></li><li class=" "><a href="/web/20100210011034/http://news.yahoo.com/s/ap/20100209/ap_on_bi_ge/us_senate_nlrb" class="showtt yltasis" rel=":ap:20100209:ap_on_bi_ge:us_senate_nlrb" mapleUltParams="sec=yn_top_stories;ccode=mostpopular;asset=ap/20100209/us_senate_nlrb;cpos=5;"> GOP blocks Obama labor board nominee<!-- COKE --></a></li><li class=" "><a href="/web/20100210011034/http://news.yahoo.com/s/ap/20100209/ap_on_el_ho/us_murtha_seat" class="showtt yltasis" rel=":ap:20100209:ap_on_el_ho:us_murtha_seat" mapleUltParams="sec=yn_top_stories;ccode=mostpopular;asset=ap/20100209/us_murtha_seat;cpos=6;"> Murtha's death sets stage for marquee House race<!-- COKE --></a></li><li class=" "><a href="/web/20100210011034/http://news.yahoo.com/s/ap/20100209/ap_on_bi_ge/us_health_insurer_rate_hike" class="showtt yltasis" rel=":ap:20100209:ap_on_bi_ge:us_health_insurer_rate_hike" mapleUltParams="sec=yn_top_stories;ccode=mostpopular;asset=ap/20100209/us_health_insurer_rate_hike;cpos=7;"> Anthem asked to justify rate hike in California<!-- COKE --></a></li>            </ul>
+            </div>
+    <div class="ft">
+        <a href="/web/20100210011034/http://news.yahoo.com/i/2372" class="yltasis">More Top Stories &raquo;</a>
+    </div>
+</div>
+
+<div id="darla-ad__LREC" class="mod ad darla_ad mod-first"></div>
+    
+
+<div id="sponsored-links" class="mod ult-section">
+    <div class="hd">
+        <h3>Sponsored Links</h3>
+    </div>
+    <div class="bd">
+        <ul>
+                        <li class="ult-position first">
+                <a href="/web/20100210011034/http://rc.us-east.srv.overture.com/d/sr/?xargs=20ADnLzZVtGA1U86nAEMLpohjhgXm6-Ir1mWGxoN6zZayvqL-BSmbOaad9bZXwaGsjnCm9ROg8_mmztF5IZ-acZdKzpY4NcW49HSJvkJqLmlBtWoCC4wCr2OBfE0nkYEnQTwLHIeyjrUqJQsO7c2SUvfPT0g1e7wBHjMd_baSXKGx052wc9q63MvWNWPB_j_URjr9xkbBIr0f_tmha9BucUB12KRZp0JmBKj5f8kXiiqnthheIujXBnQw.00000001d6a6ae12" class="yltasis">NASCAR Tickets & Packages</a>
+                Daytona 500, Richmond, Bristol, Charlotte packages.                <a href="/web/20100210011034/http://rc.us-east.srv.overture.com/d/sr/?xargs=20ADnLzZVtGA1U86nAEMLpohjhgXm6-Ir1mWGxoN6zZayvqL-BSmbOaad9bZXwaGsjnCm9ROg8_mmztF5IZ-acZdKzpY4NcW49HSJvkJqLmlBtWoCC4wCr2OBfE0nkYEnQTwLHIeyjrUqJQsO7c2SUvfPT0g1e7wBHjMd_baSXKGx052wc9q63MvWNWPB_j_URjr9xkbBIr0f_tmha9BucUB12KRZp0JmBKj5f8kXiiqnthheIujXBnQw.00000001d6a6ae12" class="host yltasis">www.broachsportstours.com</a>
+            </li>
+                        <li class="ult-position">
+                <a href="/web/20100210011034/http://rc.us-east.srv.overture.com/d/sr/?xargs=20ACJsSc6xgQyLVGJSpY6WhdD3zv94ARgQnTGB9d7rsbrao-Xs8Efw4wjGmX5NTThSDweDMCebLpSDWUNDgL_b4Yf0LKDxL2CjJNEZqNTkuXLxLPX2CJ_omg_drUSzfJVkCKIpIyPppz5JcmDOV2z9JvYttzqb5FV8a54ToRQeAEm6tqIJ4nEOkNdYyDRx5MpuwMgmoPycvW_2K5YDWM4ac3ng_raZxACfaTCMRNACQ2T9EnjD2CY1pRc.00000001d6a6ae12" class="yltasis">DIRECTV NASCAR HotPass</a>
+                Get NASCAR HotPass Free in 2009 w/ DIRECTV 150 ch $34.99/mo (1yr) pkg.                <a href="/web/20100210011034/http://rc.us-east.srv.overture.com/d/sr/?xargs=20ACJsSc6xgQyLVGJSpY6WhdD3zv94ARgQnTGB9d7rsbrao-Xs8Efw4wjGmX5NTThSDweDMCebLpSDWUNDgL_b4Yf0LKDxL2CjJNEZqNTkuXLxLPX2CJ_omg_drUSzfJVkCKIpIyPppz5JcmDOV2z9JvYttzqb5FV8a54ToRQeAEm6tqIJ4nEOkNdYyDRx5MpuwMgmoPycvW_2K5YDWM4ac3ng_raZxACfaTCMRNACQ2T9EnjD2CY1pRc.00000001d6a6ae12" class="host yltasis">www.directv.com</a>
+            </li>
+                        <li class="ult-position">
+                <a href="/web/20100210011034/http://rc.us-east.srv.overture.com/d/sr/?xargs=20AHqU-kNeFTIv7zZgq3Yt4bIGB4vd_riCz4dG_-l-L-KQOVpVCK1o9aZn-8eoB6aAymTVk7WdkjhzNPSfavZuWbNwAKWnboXdH6Tcw1_hyncG6EEmpOEyrX-zf7dL-SMAGOpZ7qYXS_U4Ym9KOgBKU0sSpoDfPO3q8OolIu_Ydo5GpkpNkpgsHEA59MPqNfskn_8aaOUQnarEqHM-ld6h_lyzcHhT54xFpIZANDOgcz17EouypHbbUjw.00000001d6a6ae12" class="yltasis">Car Insurance in Seattle</a>
+                Free, fast and easy car insurance quote comparison in Seattle.                <a href="/web/20100210011034/http://rc.us-east.srv.overture.com/d/sr/?xargs=20AHqU-kNeFTIv7zZgq3Yt4bIGB4vd_riCz4dG_-l-L-KQOVpVCK1o9aZn-8eoB6aAymTVk7WdkjhzNPSfavZuWbNwAKWnboXdH6Tcw1_hyncG6EEmpOEyrX-zf7dL-SMAGOpZ7qYXS_U4Ym9KOgBKU0sSpoDfPO3q8OolIu_Ydo5GpkpNkpgsHEA59MPqNfskn_8aaOUQnarEqHM-ld6h_lyzcHhT54xFpIZANDOgcz17EouypHbbUjw.00000001d6a6ae12" class="host yltasis">AutoCarInsurance.org/Seattle</a>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+<div id="yn-featured" class="mod ult-section">
+    <div class="hd">
+        <h3>Featured</h3>
+    </div>
+    <div class="bd">
+        <ul>
+            <li class="first"><a href="/web/20100210011034/http://news.yahoo.com/s/ynews/20100201/ts_ynews/ynews_ts1097"><img width="67" height="67" alt="" src="/web/20100210011034im_/http://l.yimg.com/a/p/us/news/editorial/c/cf/ccfe0c8066be96e314cf147274f37544.jpeg" /></a>
+<div><a href="/web/20100210011034/http://news.yahoo.com/s/ynews/20100201/ts_ynews/ynews_ts1097">Shaun White: White Hot</a>All eyes are on Shaun White to bring home the gold again.<a href="/web/20100210011034/http://www.cbsnews.com/sections/60minutes/main3415.shtml" style="font-size:13px;font-weight:normal;">&raquo; More from '60 Minutes'</a></div></li><li><a href="/web/20100210011034/http://sports.yahoo.com/nba"><img width="67" height="67" alt="" src="/web/20100210011034im_/http://l.yimg.com/a/p/us/news/editorial/7/e4/7e45ccb585ae2016daa9ee8b764a2da6.jpeg"/></a><div><a href="/web/20100210011034/http://sports.yahoo.com/nba">NBA</a>Yahoo! Sports' complete coverage includes photos and stats.<a href="/web/20100210011034/http://sports.yahoo.com/nba/scoreboard" style="font-size:13px;font-weight:normal;">&raquo; Scoreboard</a></div></li><li><a href="/web/20100210011034/http://news.yahoo.com/nphotos/Olympic-Torch/ss/events/sp/110709olympictorch"><img width="67" height="67" alt="Olympic Torch Slideshow" src="/web/20100210011034im_/http://l.yimg.com/a/p/us/news/editorial/5/e9/5e9ac4d92515369a06cd3846d7d312b6.jpeg"/></a>
+<div><a href="/web/20100210011034/http://news.yahoo.com/nphotos/Olympic-Torch/ss/events/sp/110709olympictorch">Eternal flame</a>Follow the torch relay on Yahoo! News.</div></li>        </ul>
+    </div>
+</div>
+
+<div id="promo-education" class="mod promo">
+    <div class="hd">
+        <h3>Education<span>Yahoo</span></h3>
+    </div>
+    <div class="bd">
+        <div class="headlines">
+            <div class="hd"></div>
+            <div class="bd">
+                <ul>
+                    <li class="first"><a href="/web/20100210011034/http://education.yahoo.net/articles/no_job_satisfaction-.htm?kid=MQNL"><img width="67" height="67" alt="Education"src="/web/20100210011034im_/http://l.yimg.com/a/p/us/news/editorial/7/59/759ccf57f0a6494011dd3d528c69aa94.jpeg"/></a>
+<div><a href="/web/20100210011034/http://education.yahoo.net/articles/no_job_satisfaction-.htm?kid=MQNL">No Job Satisfaction?</a>Find the quality of life you deserve with these satisfying careers that pay.</div></li><li><a href="/web/20100210011034/http://education.yahoo.net/articles/financial_aid_guide.htm?kid=MQNO"><img width="67" height="67" alt="Education" src="/web/20100210011034im_/http://l.yimg.com/a/p/us/news/editorial/3/4d/34dc2704053270ab4dd5f38c2133fea3.jpeg"/></a>
+<div><a href="/web/20100210011034/http://education.yahoo.net/articles/financial_aid_guide.htm?kid=MQNO">Financial Aid Guide</a>Get the inside scoop on applying for financial aid with this easy to use guide. </div></li>                </ul>
+            </div>
+            <div class="ft"></div>
+        </div>
+    </div>
+</div>
+
+<div id="yn-vitality" class="mod ult-section">
+    <div class="hd">
+	   <h3><span>Yahoo!</span>Updates</h3>
+    </div>
+    <div class="bd pagination">
+		<ul class="tabs">
+			<li id="vitality__connections" class="pagination-nav"><a href="#updates-conn"><span>My Connections</span></a></li>
+			<li id="vitality__everyone" class="pagination-nav"><a href="#updates-everyone"><span>Everyone</span></a></li>
+		</ul>
+    	<div class="pagination-bd">
+            <div id="pagination-bd-vitality__connections">
+                
+<div id="yn-vitality-connections" class="my-connections no-updates">
+	<div class="hd"></div>
+	
+	<div class="bd">
+		<div class="updates-invite updates-login"><div class="updates-icon"></div>		<p><a href="/web/20100210011034/https://login.yahoo.com/config/login_verify2?.src=yn&amp;.done=http://news.yahoo.com/" class="signin">Sign In</a> <span>to see what your Connections are up to on Yahoo! News.</span></p>
+		<p>New User? <a href="/web/20100210011034/https://edit.yahoo.com/registration?.intl=us&amp;new=1&amp;.src=yn&amp;.done=http://news.yahoo.com/" class="signup">Sign Up</a></p></div>
+	</div>
+	<div class="ft"></div>
+</div>
+
+            </div>
+            <div id="pagination-bd-vitality__everyone" style="display: none;">
+                
+<div id="yn-vitality-everyone" class="everyone">
+	<div class="hd"></div>
+	<div class="updates-invite updates-login"><div class="updates-icon"></div>		<p><a href="/web/20100210011034/https://login.yahoo.com/config/login_verify2?.src=yn&amp;.done=http://news.yahoo.com/" class="signin">Sign In</a> <span>to see what your Connections are up to on Yahoo! News.</span></p>
+		<p>New User? <a href="/web/20100210011034/https://edit.yahoo.com/registration?.intl=us&amp;new=1&amp;.src=yn&amp;.done=http://news.yahoo.com/" class="signup">Sign Up</a></p></div>
+	<div class="bd">
+		<ul class="hfeed hslice"><li class="header today"><h4>Today</h4></li>			<li class="hentry first">
+						
+				<a href="/web/20100210011034/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1ae101st1/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0cnZkOWk3BElfYWd1aWQDVEwzSVdBRjdQSEFSTEVTNjJPUlE3TktUTFkESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzA0MWRjZmNmZTA1M2ExMThlODg1MGE0NWE5ZWU4YTM3BElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11ratgonl/**http%3A//profiles.yahoo.com/u/TL3IWAF7PHARLES62ORQ7NKTLY" class="avatar"><img width="32" height="32" alt="goto Marcus's profile" src="/web/20100210011034im_/http://l.yimg.com/us.yimg.com/i/identity/nopic_48.gif"></a>
+				<div class="update entry-content">
+					<p class="vcard author"><a href="/web/20100210011034/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1ae101st1/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0cnZkOWk3BElfYWd1aWQDVEwzSVdBRjdQSEFSTEVTNjJPUlE3TktUTFkESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzA0MWRjZmNmZTA1M2ExMThlODg1MGE0NWE5ZWU4YTM3BElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11ratgonl/**http%3A//profiles.yahoo.com/u/TL3IWAF7PHARLES62ORQ7NKTLY" class="fn nickname url">Marcus</a> buzzed up: <a href="/web/20100210011034/http://news.yahoo.com/s/ynews/20100209/ts_ynews/ynews_ts1122" class="entry-title bookmark">Mystery swirls around George W. Bush &#39;Miss me yet?&#39; billboard</a></p>  <p class="updated">8 seconds ago <span class="value">2010-02-09T17:07:51-08:00</span></p>
+				</div>
+			</li>
+					<li class="hentry">
+						
+				<a href="/web/20100210011034/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1ae45bfal/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0MjFqcmYwBElfYWd1aWQDR0c0UlRSVE9GUExDNzdTUTZCQ1NWUEFNNEUESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzAzOThmMmIyODI1ZTAwNWMxODEwYmRmNWU1NDhhYzE5BElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rkur8sn/**http%3A//profiles.yahoo.com/u/GG4RTRTOFPLC77SQ6BCSVPAM4E" class="avatar"><img width="32" height="32" alt="goto Maureen's profile" src="/web/20100210011034im_/http://a323.yahoofs.com/coreid/4b5e34cbi60ezul8re4/Eh.jf8wler9GCI_iZAf3__ooPR1WMEBc/3/tn48.jpg?ciAAToMBT8VSKTA."></a>
+				<div class="update entry-content">
+					<p class="vcard author"><a href="/web/20100210011034/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1ae45bfal/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0MjFqcmYwBElfYWd1aWQDR0c0UlRSVE9GUExDNzdTUTZCQ1NWUEFNNEUESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzAzOThmMmIyODI1ZTAwNWMxODEwYmRmNWU1NDhhYzE5BElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rkur8sn/**http%3A//profiles.yahoo.com/u/GG4RTRTOFPLC77SQ6BCSVPAM4E" class="fn nickname url">Maureen</a> buzzed up: <a href="/web/20100210011034/http://news.yahoo.com/s/ap/20100209/ap_on_re_us/us_winter_weather" class="entry-title bookmark">Snow shuts down federal government, life goes on      (AP)</a></p>  <p class="updated">10 seconds ago <span class="value">2010-02-09T17:07:49-08:00</span></p>
+				</div>
+			</li>
+					<li class="hentry">
+						
+				<a href="/web/20100210011034/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1ae03huev/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0cTVjNGoxBElfYWd1aWQDUTVLTTRUU1c3NDdRUlhOS0ZTR1dQQUZNRFEESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzMyOTE2ZDc4ZjY1NGE0NjNmZDdkZjE4NzVkZDEyNmFkBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rpherre/**http%3A//profiles.yahoo.com/u/Q5KM4TSW747QRXNKFSGWPAFMDQ" class="avatar"><img width="32" height="32" alt="goto mr j's profile" src="/web/20100210011034im_/http://l.yimg.com/us.yimg.com/i/identity/nopic_48.gif"></a>
+				<div class="update entry-content">
+					<p class="vcard author"><a href="/web/20100210011034/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1ae03huev/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0cTVjNGoxBElfYWd1aWQDUTVLTTRUU1c3NDdRUlhOS0ZTR1dQQUZNRFEESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzMyOTE2ZDc4ZjY1NGE0NjNmZDdkZjE4NzVkZDEyNmFkBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rpherre/**http%3A//profiles.yahoo.com/u/Q5KM4TSW747QRXNKFSGWPAFMDQ" class="fn nickname url">mr j</a> buzzed up: <a href="/web/20100210011034/http://news.yahoo.com/s/ap/20100209/ap_on_re_mi_ea/ml_iran" class="entry-title bookmark">Iran sentences another activist to death      (AP)</a></p>  <p class="updated">11 seconds ago <span class="value">2010-02-09T17:07:48-08:00</span></p>
+				</div>
+			</li>
+					<li class="hentry">
+						
+				<a href="/web/20100210011034/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aen5kbf7/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0Z29rYTMwBElfYWd1aWQDN1ZUQlZYSFhST1lZREJFWldCSFYzREQ3UE0ESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzg4ZjBlYWZmOTkwMGI1M2EyNGM4NDc1OWE4MTE4MjNlBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rsoqugp/**http%3A//profiles.yahoo.com/u/7VTBVXHXROYYDBEZWBHV3DD7PM" class="avatar"><img width="32" height="32" alt="goto Teri's profile" src="/web/20100210011034im_/http://l.yimg.com/us.yimg.com/i/identity/nopic_48.gif"></a>
+				<div class="update entry-content">
+					<p class="vcard author"><a href="/web/20100210011034/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aen5kbf7/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0Z29rYTMwBElfYWd1aWQDN1ZUQlZYSFhST1lZREJFWldCSFYzREQ3UE0ESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzg4ZjBlYWZmOTkwMGI1M2EyNGM4NDc1OWE4MTE4MjNlBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rsoqugp/**http%3A//profiles.yahoo.com/u/7VTBVXHXROYYDBEZWBHV3DD7PM" class="fn nickname url">Teri</a> buzzed up: <a href="/web/20100210011034/http://news.yahoo.com/s/ynews/20100209/ts_ynews/ynews_ts1122" class="entry-title bookmark">Mystery swirls around George W. Bush &#39;Miss me yet?&#39; billboard</a></p>  <p class="updated">14 seconds ago <span class="value">2010-02-09T17:07:45-08:00</span></p>
+				</div>
+			</li>
+					<li class="hentry last">
+						
+				<a href="/web/20100210011034/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aeqrmcka/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0MjRhN2g5BElfYWd1aWQDUFNPUlZSQkZSN0ZGWUFZM1ZPQjdaQURFWE0ESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzVjMDJlZDAxMGUyNjA4NGM0NzJiZTM4NTQ1NTRiODEwBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11r3shunu/**http%3A//profiles.yahoo.com/u/PSORVRBFR7FFYAY3VOB7ZADEXM" class="avatar"><img width="32" height="32" alt="goto Finn's profile" src="/web/20100210011034im_/http://l.yimg.com/us.yimg.com/i/identity/nopic_48.gif"></a>
+				<div class="update entry-content">
+					<p class="vcard author"><a href="/web/20100210011034/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aeqrmcka/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0MjRhN2g5BElfYWd1aWQDUFNPUlZSQkZSN0ZGWUFZM1ZPQjdaQURFWE0ESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzVjMDJlZDAxMGUyNjA4NGM0NzJiZTM4NTQ1NTRiODEwBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11r3shunu/**http%3A//profiles.yahoo.com/u/PSORVRBFR7FFYAY3VOB7ZADEXM" class="fn nickname url">Finn</a> buzzed up: <a href="/web/20100210011034/http://news.yahoo.com/s/ynews/20100209/ts_ynews/ynews_ts1122" class="entry-title bookmark">Mystery swirls around George W. Bush &#39;Miss me yet?&#39; billboard</a></p>  <p class="updated">15 seconds ago <span class="value">2010-02-09T17:07:44-08:00</span></p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="ft"> <a href="/web/20100210011034/http://profiles.yahoo.com/settings/updates/" class="settings">Manage My Updates</a></div>
+</div>
+
+            </div>
+    	</div>
+    </div>
+</div>
+
+<div id="promo-sports" class="mod promo">
+    <div class="hd">
+        <h3><span>Yahoo!</span><a href="/web/20100210011034/http://sports.yahoo.com/">Sports</a></h3>
+    </div>
+    <div class="bd pagination">
+        <ul class="pagination-nav-list">
+                            <li id="sports__nba" class="first pagination-nav active">
+                    <a href="/web/20100210011034/http://sports.yahoo.com/nba" class="ult-nofollow">
+                        NBA                    </a>
+                </li>
+                            <li id="sports__nhl" class="pagination-nav">
+                    <a href="/web/20100210011034/http://sports.yahoo.com/nhl" class="ult-nofollow">
+                        NHL                    </a>
+                </li>
+                            <li id="sports__ncaab" class="pagination-nav">
+                    <a href="/web/20100210011034/http://sports.yahoo.com/ncaab" class="ult-nofollow">
+                        NCAAB                    </a>
+                </li>
+                            <li id="sports__ten" class="pagination-nav">
+                    <a href="/web/20100210011034/http://sports.yahoo.com/ten" class="ult-nofollow">
+                        Tennis                    </a>
+                </li>
+                            <li id="sports__ncaaw" class="pagination-nav">
+                    <a href="/web/20100210011034/http://sports.yahoo.com/ncaaw" class="ult-nofollow">
+                        NCAAW                    </a>
+                </li>
+                            <li id="sports__golf" class="pagination-nav">
+                    <a href="/web/20100210011034/http://sports.yahoo.com/golf" class="ult-nofollow">
+                        Golf                    </a>
+                </li>
+                            <li id="sports__nascar" class="pagination-nav">
+                    <a href="/web/20100210011034/http://sports.yahoo.com/nascar" class="ult-nofollow">
+                        NASCAR                    </a>
+                </li>
+                    </ul>
+        <div class="pagination-bd">
+                            <div id="pagination-bd-sports__nba">
+                    <div class="headlines">
+                        <h4>Headlines</h4>
+                        <ul>
+                                                            <li>
+                                                                        <div class="noimage-headline">
+                                        <a href="/web/20100210011034/http://sports.yahoo.com/nba/news?slug=ap-lakers-bryantout&amp;prov=ap&amp;type=lgns">Bryant unsure about playing in All-Star game</a>
+                                        Kobe Bryant isn&#39;t sure if he&#39;ll play in this&nbsp;&hellip;                                    </div>
+                                </li>
+                                                            <li>
+                                                                        <div class="noimage-headline">
+                                        <a href="/web/20100210011034/http://sports.yahoo.com/nba/news?slug=ap-warriors-ellis&amp;prov=ap&amp;type=lgns">Monta Ellis has mild left knee sprain</a>
+                                        The Golden State Warriors say star guard Monta Ellis&nbsp;&hellip;                                    </div>
+                                </li>
+                                                            <li>
+                                                                        <div class="noimage-headline">
+                                        <a href="/web/20100210011034/http://sports.yahoo.com/nba/news?slug=ap-76ers-iversonout&amp;prov=ap&amp;type=lgns">Iverson out for at least 2 more games</a>
+                                        Philadelphia 76ers guard Allen Iverson will miss the team&#39;s&nbsp;&hellip;                                    </div>
+                                </li>
+                                                    </ul>
+                    </div>
+                    <div class="more-sports">
+                                                <h4>More NBA:</h4>
+                        <ul>
+                            <li><a href="/web/20100210011034/http://sports.yahoo.com/nba/morenews">Headlines</a></li><li><a href="/web/20100210011034/http://sports.yahoo.com/nba/expertscorner">Analysis</a></li><li class="last"><a href="/web/20100210011034/http://sports.yahoo.com/nba/rumors">Rumors</a></li>                        </ul>
+                    </div>
+                </div>
+                            <div id="pagination-bd-sports__nhl" style="display: none;">
+                    <div class="headlines">
+                        <h4>Headlines</h4>
+                        <ul>
+                                                            <li>
+                                                                        <div class="noimage-headline">
+                                        <a href="/web/20100210011034/http://sports.yahoo.com/nhl/news?slug=ap-rangers-gaborikinjured&amp;prov=ap&amp;type=lgns">Gaborik's knee cut by skate in Rangers practice</a>
+                                        Marian Gaborik limped off at practice on Tuesday after&nbsp;&hellip;                                    </div>
+                                </li>
+                                                            <li>
+                                                                        <div class="noimage-headline">
+                                        <a href="/web/20100210011034/http://sports.yahoo.com/nhl/news?slug=ap-nhl-europe&amp;prov=ap&amp;type=lgns">6 NHL teams to open 2010-11 season in Europe</a>
+                                        Six NHL teams will open the 2010-11 season in&nbsp;&hellip;                                    </div>
+                                </li>
+                                                            <li>
+                                                                        <div class="noimage-headline">
+                                        <a href="/web/20100210011034/http://sports.yahoo.com/nhl/news?slug=ap-ducks-getzlafinjured&amp;prov=ap&amp;type=lgns">Ducks' Getzlaf sprains left ankle</a>
+                                        Ducks center Ryan Getzlaf sprained his left ankle during&nbsp;&hellip;                                    </div>
+                                </li>
+                                                    </ul>
+                    </div>
+                    <div class="more-sports">
+                                                <h4>More NHL:</h4>
+                        <ul>
+                            <li><a href="/web/20100210011034/http://sports.yahoo.com/nhl/morenews">Headlines</a></li><li><a href="/web/20100210011034/http://sports.yahoo.com/nhl/expertscorner">Analysis</a></li><li class="last"><a href="/web/20100210011034/http://sports.yahoo.com/nhl/rumors">Rumors</a></li>                        </ul>
+                    </div>
+                </div>
+                            <div id="pagination-bd-sports__ncaab" style="display: none;">
+                    <div class="headlines">
+                        <h4>Headlines</h4>
+                        <ul>
+                                                            <li>
+                                                                        <div class="noimage-headline">
+                                        <a href="/web/20100210011034/http://rivals.yahoo.com/ncaab/recap?gid=201002080636&amp;prov=ap">No. 4 Villanova gets past No. 5 West Virginia</a>
+                                        Scottie Reynolds didn&#39;t have any memorable games against West&nbsp;&hellip;                                    </div>
+                                </li>
+                                                            <li>
+                                                                        <div class="noimage-headline">
+                                        <a href="/web/20100210011034/http://rivals.yahoo.com/ncaab/recap?gid=201002080585&amp;prov=ap">Top-ranked Kansas stifles sinking Texas 80-68</a>
+                                        Kansas gave Texas a lesson in not only what&nbsp;&hellip;                                    </div>
+                                </li>
+                                                            <li>
+                                                                        <div class="noimage-headline">
+                                        <a href="/web/20100210011034/http://sports.yahoo.com/top/news?slug=ap-pac-10expansion&amp;prov=ap&amp;type=lgns">Pac-10 considering possible expansion</a>
+                                        Pac-10 commissioner Larry Scott said Tuesday that the window&nbsp;&hellip;                                    </div>
+                                </li>
+                                                    </ul>
+                    </div>
+                    <div class="more-sports">
+                                                <h4>More NCAAB:</h4>
+                        <ul>
+                            <li><a href="/web/20100210011034/http://sports.yahoo.com/ncaab/morenews">Headlines</a></li><li><a href="/web/20100210011034/http://sports.yahoo.com/ncaab/expertscorner">Analysis</a></li><li class="last"><a href="/web/20100210011034/http://sports.yahoo.com/ncaab/rumors">Rumors</a></li>                        </ul>
+                    </div>
+                </div>
+                            <div id="pagination-bd-sports__ten" style="display: none;">
+                    <div class="headlines">
+                        <h4>Headlines</h4>
+                        <ul>
+                                                            <li>
+                                                                        <div class="noimage-headline">
+                                        <a href="/web/20100210011034/http://sports.yahoo.com/ten/news?slug=ap-rotterdam&amp;prov=ap&amp;type=lgns">Djokovic, Youzhny advance; Llodra, Ljubicic lose</a>
+                                        Top-seeded Novak Djokovic had a winning return to the&nbsp;&hellip;                                    </div>
+                                </li>
+                                                            <li>
+                                                                        <div class="noimage-headline">
+                                        <a href="/web/20100210011034/http://sports.yahoo.com/ten/news?slug=ap-paris&amp;prov=ap&amp;type=lgns">Oudin advances to 2nd round in Paris</a>
+                                        Melanie Oudin of the United States beat Sorana Cirstea&nbsp;&hellip;                                    </div>
+                                </li>
+                                                            <li>
+                                                                        <div class="noimage-headline">
+                                        <a href="/web/20100210011034/http://sports.yahoo.com/ten/news?slug=ap-mcenroe-federer&amp;prov=ap&amp;type=lgns">McEnroe says Federer is best men's player ever</a>
+                                        John McEnroe thinks Roger Federer is the best men&#39;s&nbsp;&hellip;                                    </div>
+                                </li>
+                                                    </ul>
+                    </div>
+                    <div class="more-sports">
+                                                <h4>More Tennis:</h4>
+                        <ul>
+                            <li><a href="/web/20100210011034/http://sports.yahoo.com/ten/morenews">Headlines</a></li><li><a href="/web/20100210011034/http://sports.yahoo.com/ten/expertscorner">Analysis</a></li><li class="last"><a href="/web/20100210011034/http://sports.yahoo.com/ten/rumors">Rumors</a></li>                        </ul>
+                    </div>
+                </div>
+                            <div id="pagination-bd-sports__ncaaw" style="display: none;">
+                    <div class="headlines">
+                        <h4>Headlines</h4>
+                        <ul>
+                                                            <li>
+                                                                        <div class="noimage-headline">
+                                        <a href="/web/20100210011034/http://rivals.yahoo.com/ncaaw/news?slug=ap-rutgers-stringer-suspended&amp;prov=ap&amp;type=lgns">Rutgers suspends Stringer for a game</a>
+                                        Rutgers suspended Hall of Fame women&#39;s basketball coach C.&nbsp;&hellip;                                    </div>
+                                </li>
+                                                            <li>
+                                                                        <div class="noimage-headline">
+                                        <a href="/web/20100210011034/http://rivals.yahoo.com/ncaaw/news?slug=ap-t25-unbeatennebraska&amp;prov=ap&amp;type=lgns">Huskers join Huskies in basketball elite</a>
+                                        Huskies, make room for the Huskers. It could be&nbsp;&hellip;                                    </div>
+                                </li>
+                                                            <li>
+                                                                        <div class="noimage-headline">
+                                        <a href="/web/20100210011034/http://rivals.yahoo.com/ncaaw/news?slug=ap-t25-womensbkbpoll&amp;prov=ap&amp;type=lgns">Nebraska moves up to No. 3 in women's Top 25 poll</a>
+                                        Nebraska keeps winning and climbing up the Top 25.&nbsp;&hellip;                                    </div>
+                                </li>
+                                                    </ul>
+                    </div>
+                    <div class="more-sports">
+                                                <h4>More NCAAW:</h4>
+                        <ul>
+                            <li><a href="/web/20100210011034/http://sports.yahoo.com/ncaaw/morenews">Headlines</a></li><li><a href="/web/20100210011034/http://sports.yahoo.com/ncaaw/expertscorner">Analysis</a></li><li class="last"><a href="/web/20100210011034/http://sports.yahoo.com/ncaaw/rumors">Rumors</a></li>                        </ul>
+                    </div>
+                </div>
+                            <div id="pagination-bd-sports__golf" style="display: none;">
+                    <div class="headlines">
+                        <h4>Headlines</h4>
+                        <ul>
+                                                            <li>
+                                                                        <div class="noimage-headline">
+                                        <a href="/web/20100210011034/http://sports.yahoo.com/pga/news?slug=ap-mcilroyinjury&amp;prov=ap&amp;type=lgns">McIlroy has sore back, will play Match Play</a>
+                                        Rory McIlroy has stretched ligaments in his lower back,&nbsp;&hellip;                                    </div>
+                                </li>
+                                                            <li>
+                                                                            <div class="media">
+                                            <a href="/web/20100210011034/http://sports.yahoo.com/pga/news?slug=ap-northerntrustopen&amp;prov=ap&amp;type=lgns">
+                                                                                                    <img src="/web/20100210011034im_/http://d.yimg.com/b/util/anysize/54l-1209600,http%3A%2F%2Fd.yimg.com%2Fa%2Fp%2Fap%2F20100208%2Fcapt.dc269bbedc524442bca11e55212fce22.northern_trust_open_golf_cars132.jpg" width="54" height="54" alt="Stricker wins Riviera to return to No. 2">                                                                                            </a>
+                                        </div>
+                                                                        <div class="image-headline">
+                                        <a href="/web/20100210011034/http://sports.yahoo.com/pga/news?slug=ap-northerntrustopen&amp;prov=ap&amp;type=lgns">Stricker wins Riviera to return to No. 2</a>
+                                        Each victory is a reminder how far Steve Stricker&nbsp;&hellip;                                    </div>
+                                </li>
+                                                            <li>
+                                                                        <div class="noimage-headline">
+                                        <a href="/web/20100210011034/http://sports.yahoo.com/pga/news?slug=ap-matchplay&amp;prov=ap&amp;type=lgns">Verplank, Na play themselves into Match Play</a>
+                                        Ross McGowan of England might get the final spot&nbsp;&hellip;                                    </div>
+                                </li>
+                                                    </ul>
+                    </div>
+                    <div class="more-sports">
+                                                <h4>More Golf:</h4>
+                        <ul>
+                            <li><a href="/web/20100210011034/http://sports.yahoo.com/golf/morenews">Headlines</a></li><li><a href="/web/20100210011034/http://sports.yahoo.com/golf/expertscorner">Analysis</a></li><li class="last"><a href="/web/20100210011034/http://sports.yahoo.com/golf/rumors">Rumors</a></li>                        </ul>
+                    </div>
+                </div>
+                            <div id="pagination-bd-sports__nascar" style="display: none;">
+                    <div class="headlines">
+                        <h4>Headlines</h4>
+                        <ul>
+                                                            <li>
+                                                                        <div class="noimage-headline">
+                                        <a href="/web/20100210011034/http://sports.yahoo.com/pga/news?slug=ap-mcilroyinjury&amp;prov=ap&amp;type=lgns">McIlroy has sore back, will play Match Play</a>
+                                        Rory McIlroy has stretched ligaments in his lower back,&nbsp;&hellip;                                    </div>
+                                </li>
+                                                            <li>
+                                                                            <div class="media">
+                                            <a href="/web/20100210011034/http://sports.yahoo.com/pga/news?slug=ap-northerntrustopen&amp;prov=ap&amp;type=lgns">
+                                                                                                    <img src="/web/20100210011034im_/http://d.yimg.com/b/util/anysize/54l-1209600,http%3A%2F%2Fd.yimg.com%2Fa%2Fp%2Fap%2F20100208%2Fcapt.dc269bbedc524442bca11e55212fce22.northern_trust_open_golf_cars132.jpg" width="54" height="54" alt="Stricker wins Riviera to return to No. 2">                                                                                            </a>
+                                        </div>
+                                                                        <div class="image-headline">
+                                        <a href="/web/20100210011034/http://sports.yahoo.com/pga/news?slug=ap-northerntrustopen&amp;prov=ap&amp;type=lgns">Stricker wins Riviera to return to No. 2</a>
+                                        Each victory is a reminder how far Steve Stricker&nbsp;&hellip;                                    </div>
+                                </li>
+                                                            <li>
+                                                                        <div class="noimage-headline">
+                                        <a href="/web/20100210011034/http://sports.yahoo.com/pga/news?slug=ap-matchplay&amp;prov=ap&amp;type=lgns">Verplank, Na play themselves into Match Play</a>
+                                        Ross McGowan of England might get the final spot&nbsp;&hellip;                                    </div>
+                                </li>
+                                                    </ul>
+                    </div>
+                    <div class="more-sports">
+                                                <h4>More NASCAR:</h4>
+                        <ul>
+                            <li><a href="/web/20100210011034/http://sports.yahoo.com/nascar/morenews">Headlines</a></li><li><a href="/web/20100210011034/http://sports.yahoo.com/nascar/expertscorner">Analysis</a></li><li class="last"><a href="/web/20100210011034/http://sports.yahoo.com/nascar/rumors">Rumors</a></li>                        </ul>
+                    </div>
+                </div>
+                    </div>
+    </div>
+    <div class="ft"><a href="/web/20100210011034/http://sports.yahoo.com/">More from Yahoo! Sports &raquo;</a></div>
+</div>
+
+<div id="darla-ad__LREC2" class="mod ad darla_ad mod-first"></div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            
+            </div><!-- end: #sidebar -->
+        
+        </div><!-- end: #bd -->
+    
+        <div id="ft">
+   
+   <div id="yn_ft_nav" class="ult-section nav">
+       <h6>Yahoo! News Navigation</h6>
+       <ul>
+           <li class="ult-position first"><a href="/web/20100210011034/http://news.yahoo.com/">Home</a></li>
+           <li class="ult-position"><a href="/web/20100210011034/http://news.yahoo.com/us"><abbr title="United States">U.S.</abbr></a></li>
+           <li class="ult-position"><a href="/web/20100210011034/http://news.yahoo.com/business">Business</a></li>
+           <li class="ult-position"><a href="/web/20100210011034/http://news.yahoo.com/world">World</a></li>
+           <li class="ult-position"><a href="/web/20100210011034/http://news.yahoo.com/entertainment">Entertainment</a></li>
+           <li class="ult-position"><a href="/web/20100210011034/http://news.yahoo.com/sports">Sports</a></li>
+           <li class="ult-position"><a href="/web/20100210011034/http://news.yahoo.com/technology">Tech</a></li>
+           <li class="ult-position"><a href="/web/20100210011034/http://news.yahoo.com/politics">Politics</a></li>
+           <li class="ult-position"><a href="/web/20100210011034/http://news.yahoo.com/science">Science</a></li>
+           <li class="ult-position"><a href="/web/20100210011034/http://news.yahoo.com/health">Health</a></li>
+           <li class="ult-position"><a href="/web/20100210011034/http://news.yahoo.com/travel">Travel</a></li>
+           <li class="ult-position"><a href="/web/20100210011034/http://news.yahoo.com/i/964">Most Popular</a></li>
+           <li class="ult-position"><a href="/web/20100210011034/http://news.yahoo.com/odd">Odd News</a></li>
+           <li class="ult-position"><a href="/web/20100210011034/http://news.yahoo.com/opinion">Opinion</a></li>
+       </ul>
+   </div><!-- end: .nav -->
+   
+   <div id="yn_ft_services" class="ult-section services">
+       <h6>News Services</h6>
+       <ul>
+           <li class="ult-position rss first"><a href="/web/20100210011034/http://news.yahoo.com/rss"><abbr title="Really Simple Syndication">RSS</abbr></a></li>
+           <li class="ult-position"><a href="/web/20100210011034/http://beta.alerts.yahoo.com/main.php?view=create_news_step1&amp;.done=http://news.yahoo.com">News Alerts</a></li>
+           <li class="ult-position"><a href="/web/20100210011034/http://beta.alerts.yahoo.com/main.php?view=create_weather">Weather Alerts</a></li>
+           <li class="ult-position"><a href="/web/20100210011034/http://news.yahoo.com/badges/headlines">Add Yahoo! Headlines to Your Site</a></li>
+           <li class="ult-position"><a href="/web/20100210011034/http://news.yahoo.com/page/sitemap">Site Map</a></li>
+           <li class="ult-position"><a href="/web/20100210011034/http://help.yahoo.com/l/us/yahoo/news/">Help</a></li>
+           <li class="ult-position"><a href="/web/20100210011034/http://suggestions.yahoo.com/?prop=news">Feedback</a></li>
+       </ul>
+       
+          </div><!-- end: .services -->
+   
+</div><!-- end: #ft -->
+           
+
+        
+        <div id="copyright" class="mod" role="contentinfo">
+    <p>Copyright &copy; 2010 The Associated Press. All rights reserved. The information contained in the AP News report may not be published, broadcast, rewritten or redistributed without the prior written authority of The Associated Press.
+
+<br></p>
+</div>
+
+    
+        <div class="mod ad ad_footer" role="contentinfo">
+    <div class="bd">
+            <!-- Ad Keywords: flu; it; sprint; It;-->
+<!-- SpaceID=0 robot -->
+    </div>
+</div>
+
+    
+    </div><!-- end: #doc4 -->
+    
+    
+
+                            <script type="text/javascript" src="/web/20100210011034js_/http://l.yimg.com/b/news/combo/D7H8FL9F?http%3A//l.yimg.com/d/combo%3Fuh/15/js/uh-1.0.20.js&amp;story/assets/js/1.0.3/generic/story.js"></script>
+                        
+
+                            <script type="text/javascript">
+                            YAHOO.util.Event.addListener(window, 'load', function() {
+                                // Start contextual shortcuts widget
+                                var config = {
+                                    url : '/news/common/api/en-US/NEWS/storycontextualshortcut;id=ap:20100207:ap_on_sp_au_ra_ra_su:car_nascar_daytona_shootout?format=json',
+                                    css : '/web/20100210011034/http://d.yimg.com/jq/css/cs_3.5.0.css',
+                                    js : '/web/20100210011034/http://d.yimg.com/jq/js/ysc_csc_news.js'
+                                }
+                                YAHOO.News.Shortcuts.init(config);
+                            });
+                            </script>
+                        
+    
+    <div class="mod ad ad_misc_ad">
+    <div class="bd">
+            <!-- Ad Keywords: flu; it; sprint; It;-->
+<!-- SpaceID=0 robot -->
+    </div>
+</div>
+
+    
+    <div class="mod ad ad_survey_ad">
+    <div class="bd">
+            <!-- Ad Keywords: flu; it; sprint; It;-->
+<!-- SpaceID=0 robot -->
+    </div>
+</div>
+
+    
+    
+    
+</body>
+</html>
+
+
+
+
+<!-- news:story-us:0:Success -->
+<!-- fe3.story.media.ac4.yahoo.com uncompressed Tue Feb  9 17:10:33 PST 2010 -->
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 1:10:34 Feb 10, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:16:00 Jan 11, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

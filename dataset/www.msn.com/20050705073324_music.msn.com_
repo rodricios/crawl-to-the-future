@@ -1,1122 +1,0 @@
-
-
-
-<script type="text/javascript" src="/static/js/analytics.js"></script>
-<script type="text/javascript">archive_analytics.values.server_name="wwwb-app17.us.archive.org";archive_analytics.values.server_ms=2771;</script>
-<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
-
-
-
-
-<!-- BEGIN WAYBACK TOOLBAR INSERT -->
-<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
-<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
-<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
-<script type="text/javascript">//<![CDATA[
-var __wm = (function(){
-var wbPrefix = "/web/";
-var wbCurrentUrl = "http://music.msn.com/";
-
-var firstYear = 1996;
-var imgWidth = 500,imgHeight = 27;
-var yearImgWidth = 25,monthImgWidth = 2;
-var displayDay = "5";
-var displayMonth = "Jul";
-var displayYear = "2005";
-var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-var $D=document,$=function(n){return document.getElementById(n)};
-var trackerVal,curYear = -1,curMonth = -1;
-var yearTracker,monthTracker;
-function showTrackers(val) {
-  if (val===trackerVal) return;
-  var $ipp=$("wm-ipp");
-  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
-  if (val) {
-    $ipp.className="hi";
-  } else {
-    $ipp.className="";
-    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
-  }
-  yearTracker.style.display=val?"inline":"none";
-  monthTracker.style.display=val?"inline":"none";
-  trackerVal = val;
-}
-function getElementX2(obj) {
-  var $e=jQuery(obj);
-  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
-    getElementX(obj):Math.round($e.offset().left);
-}
-function trackMouseMove(event,element) {
-  var eventX = getEventX(event);
-  var elementX = getElementX2(element);
-  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
-  var monthOff = xOff % yearImgWidth;
-
-  var year = Math.floor(xOff / yearImgWidth);
-  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
-  // 1 extra border pixel at the left edge of the year:
-  var month = (year * 12) + monthOfYear;
-  var day = monthOff % 2==1?15:1;
-  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
-    zeroPad(day,2) + "000000";
-
-  $("displayYearEl").innerHTML=year+firstYear;
-  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
-  // looks too jarring when it changes..
-  //$("displayDayEl").innerHTML=zeroPad(day,2);
-  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
-  $("wm-graph-anchor").href=url;
-
-  if(curYear != year) {
-    var yrOff = year * yearImgWidth;
-    yearTracker.style.left = yrOff + "px";
-    curYear = year;
-  }
-  if(curMonth != month) {
-    var mtOff = year + (month * monthImgWidth) + 1;
-    monthTracker.style.left = mtOff + "px";
-    curMonth = month;
-  }
-}
-function hideToolbar() {
-  $("wm-ipp").style.display="none";
-}
-function bootstrap() {
-  var $spk=$("wm-ipp-sparkline");
-  yearTracker=$D.createElement('div');
-  yearTracker.className='yt';
-  with(yearTracker.style){
-    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
-  }
-  monthTracker=$D.createElement('div');
-  monthTracker.className='mt';
-  with(monthTracker.style){
-    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
-  }
-  $spk.appendChild(yearTracker);
-  $spk.appendChild(monthTracker);
-
-  var $ipp=$("wm-ipp");
-  $ipp&&disclaimElement($ipp);
-}
-return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
-})();//]]>
-</script>
-<style type="text/css">
-body {
-  margin-top:0 !important;
-  padding-top:0 !important;
-  min-width:800px !important;
-}
-</style>
-<div id="wm-ipp" lang="en" style="display:none;">
-
-<div style="position:fixed;left:0;top:0;width:100%!important">
-<div id="wm-ipp-inside">
-   <table style="width:100%;"><tbody><tr>
-   <td id="wm-logo">
-       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
-   </td>
-   <td class="c">
-       <table style="margin:0 auto;"><tbody><tr>
-       <td class="u" colspan="2">
-       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://music.msn.com/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20050705074943" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
-       </td>
-       <td class="n" rowspan="2">
-           <table><tbody>
-           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
-           <tr class="m">
-           	<td class="b" nowrap="nowrap">
-		
-		    <a href="/web/20050605030637/http://www.music.msn.com/" title="5 Jun 2005">JUN</a>
-		
-		</td>
-		<td class="c" id="displayMonthEl" title="You are here: 7:49:43 Jul 5, 2005">JUL</td>
-		<td class="f" nowrap="nowrap">
-		
-		    <a href="/web/20050805083244/http://music.msn.com/" title="5 Aug 2005"><strong>AUG</strong></a>
-		
-                </td>
-	    </tr>
-           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
-           <tr class="d">
-               <td class="b" nowrap="nowrap">
-               
-                   <a href="/web/20050704080003/http://music.msn.com/" title="8:00:03 Jul 4, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
-               
-               </td>
-               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 7:49:43 Jul 5, 2005">5</td>
-	       <td class="f" nowrap="nowrap">
-               
-		   <a href="/web/20050706011819/http://www.music.msn.com/" title="1:18:19 Jul 6, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
-	       
-	       </td>
-           </tr>
-           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
-           <tr class="y">
-	       <td class="b" nowrap="nowrap">
-               
-                   <a href="/web/20040705074109/http://music.msn.com/" title="5 Jul 2004"><strong>2004</strong></a>
-               
-               </td>
-               <td class="c" id="displayYearEl" title="You are here: 7:49:43 Jul 5, 2005">2005</td>
-	       <td class="f" nowrap="nowrap">
-               
-	           <a href="/web/20060705095850/http://music.msn.com/" title="5 Jul 2006"><strong>2006</strong></a>
-	       
-	       </td>
-           </tr>
-           </tbody></table>
-       </td>
-       </tr>
-       <tr>
-       <td class="s">
-           <a class="t" href="/web/20050705074943*/http://music.msn.com/" title="See a list of every capture for this URL">2,818 captures</a>
-           <div class="r" title="Timespan for captures of this URL">16 May 01 - 4 Jan 15</div>
-       </td>
-       <td class="k">
-       <a href="" id="wm-graph-anchor">
-       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
-	 <img id="sparklineImgId" alt="sparklines"
-		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
-		 onmousemove="__wm.mv(event,this)"
-		 width="500"
-		 height="27"
-		 border="0"
-		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000022202091_2002:-1:101041105150_2003:-1:042304222213_2004:-1:2111286697a8_2005:6:bccbdeefacce_2006:-1:ca2c17aa899b_2007:-1:99871999aca9_2008:-1:974436aa8569_2009:-1:7b9aaabaaaaa_2010:-1:aaaababaabbb_2011:-1:aabaabaa9aaa_2012:-1:aa9bb9abab98_2013:-1:babba98bbbde_2014:-1:c2456336299a_2015:-1:100000000000" />
-       </div>
-       </a>
-       </td>
-       </tr></tbody></table>
-   </td>
-   <td class="r">
-       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
-       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
-   </td>
-   </tr></tbody></table>
-</div>
-</div>
-</div>
-<script type="text/javascript">__wm.bt();</script>
-<!-- END WAYBACK TOOLBAR INSERT -->
-<noscript><meta http-equiv=refresh content="0;url=/web/20050705074943/http://music.msn.com/help/requirements.aspx"></noscript><script>var imgspromo5button = new Array(3);imgspromo5button[0] = new Image();imgspromo5button[0].src = '/web/20050705074943/http://entimg.msn.com/i/ms/bt_p5f_s.gif';imgspromo5button[1] = new Image();imgspromo5button[1].src = '/web/20050705074943/http://entimg.msn.com/i/ms/bt_p5f_h.gif';imgspromo5button[2] = new Image();imgspromo5button[2].src = '/web/20050705074943/http://entimg.msn.com/i/ms/bt_p5f_d.gif';</script><script>var imgssearch = new Array(3);imgssearch[0] = new Image();imgssearch[0].src = '/web/20050705074943/http://entimg.msn.com/i/ms/bt_go.gif';imgssearch[1] = new Image();imgssearch[1].src = '/web/20050705074943/http://entimg.msn.com/i/ms/bt_go_o.gif';imgssearch[2] = new Image();imgssearch[2].src = '/web/20050705074943/http://entimg.msn.com/i/ms/bt_go_d.gif';</script><script>var imgPre="/web/20050705074943/http://entimg.msn.com";var meetsReqs=false;var indefli=false;var serviceid=0;var rpsub=false;var pcontr=false;
-</script>
-<title>MSN - Music: Home</title><script src="/web/20050705074943js_/http://entimg.msn.com/script/msnent3028.js"></script><script>function SF(func) { try { if(eval('window.' + func) != null) { return true; } else { return false; } } catch(e) { alert('Failed exec:'+code+'\r\n'+e.description); } return false; }function GE(v) { if(document.all) { return document.all[v]; } return document.getElementById(v); }window.name='MSNMusic';</script>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
-<HTML>
-	<HEAD>
-		<meta name="Name" content="Music">
-		<link rel="stylesheet" href="/web/20050705074943cs_/http://entimg.msn.com/styles/e3028.css" rev="stylesheet" type="text/css">
-	    <style>
-			.h380	{ height: 380px; }
-			.gb1b10	{ border-bottom: 1px solid #e6e6e6; padding-bottom:10px }
-			.blt2	{ color:#737373; position: relative; top: -1px; left: -4px }
-		</style>
-	</HEAD>
-	<body>
-		<script>	var pageId = "74927";	var domaindId = "553";	var propertyId = "56656";	var gServer = "/web/20050705074943/http://g.msn.com/1ETCLT01/1";	var timeOut = "3";	var backoffTime = "1";</script><script src="/web/20050705074943js_/http://entimg.msn.com/script/tracking.js"></script><img  id="clickTarget" style="display:none" src="/web/20050705074943im_/http://entimg.msn.com/i/sp.gif" onReadyStateChange="if(SF('ctStateChange')) ctStateChange();" >	
-		<center>
-		
-				<table class="tp10" cellspacing="0" cellpadding="0" border="0" width="750">
-	<tr>
-		<td><table class="hdpos" cellspacing="0" cellpadding="0" border="0">
-			<tr>
-				<td width="118"><a onclick="if(SF('h')) return h(this,'cm=HEADER&amp;ce=2');" href="/web/20050705074943/http://g.msn.com/0nwenus0/A5/00"><script type="text/javascript" src="/web/20050705074943js_/http://sc.msn.com/global/scr/lg/hdrPOS.js">&nbsp;</script><noscript><img src="/web/20050705074943im_/http://sc.msn.com/global/c/lgpos/msft_pos.gif" alt="MSN Home" border=0 style="height:35px;width:118px;" /></noscript><script type="text/javascript">logoImg("/web/20050705074943/http://sc.msn.com");</script></a></td><td class="hdrtxt" valign="Bottom"><a onclick="if(SF('h')) return h(this,'cm=HEADER&amp;ce=3');" href="/web/20050705074943/http://music.msn.com/">Music</a></td>
-			</tr><tr>
-				<td class="sbhdsp" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=HEADER&amp;ce=4');" href="/web/20050705074943/http://entertainment.msn.com/">entertainment</a></td>
-			</tr>
-		</table></td><td align="Right"><table cellspacing="1" cellpadding="0" border="0">
-			<tr>
-				<td class="hdnvch" TABINDEX="0" onclick="if(SF('u')) u('/web/20050705074943/http://music.msn.com','cm=HEADER&amp;ce=1'); else location.href='/web/20050705074943/http://music.msn.com';" onkeypress="if(SF('u')) u('http://music.msn.com','cm=HEADER&amp;ce=1'); else location.href='http://music.msn.com';">Music</td><td class="hdnvc" TABINDEX="0" onmouseover="this.className='hdnvch'" onmouseout="this.className='hdnvc'" onclick="if(SF('u')) u('/web/20050705074943/http://radio.msn.com','cm=HEADER&amp;ce=1'); else location.href='/web/20050705074943/http://radio.msn.com';" onkeypress="if(SF('u')) u('http://radio.msn.com','cm=HEADER&amp;ce=1'); else location.href='http://radio.msn.com';">Radio</td><td class="hdnvc" TABINDEX="0" onmouseover="this.className='hdnvch'" onmouseout="this.className='hdnvc'" onclick="if(SF('u')) u('/web/20050705074943/http://movies.msn.com','cm=HEADER&amp;ce=1'); else location.href='/web/20050705074943/http://movies.msn.com';" onkeypress="if(SF('u')) u('http://movies.msn.com','cm=HEADER&amp;ce=1'); else location.href='http://movies.msn.com';">Movies</td><td class="hdnvc" TABINDEX="0" onmouseover="this.className='hdnvch'" onmouseout="this.className='hdnvc'" onclick="if(SF('u')) u('/web/20050705074943/http://tv.msn.com','cm=HEADER&amp;ce=1'); else location.href='/web/20050705074943/http://tv.msn.com';" onkeypress="if(SF('u')) u('http://tv.msn.com','cm=HEADER&amp;ce=1'); else location.href='http://tv.msn.com';">TV</td><td class="hdnvc" TABINDEX="0" onmouseover="this.className='hdnvch'" onmouseout="this.className='hdnvc'" onclick="if(SF('u')) u('/web/20050705074943/http://music.msn.com/musicvideos/','cm=HEADER&amp;ce=1'); else location.href='/web/20050705074943/http://music.msn.com/musicvideos/';" onkeypress="if(SF('u')) u('http://music.msn.com/musicvideos/','cm=HEADER&amp;ce=1'); else location.href='http://music.msn.com/musicvideos/';">Video</td>
-			</tr>
-		</table></td>
-	</tr>
-</table><span style="display:none;"><img width=0 height=0 src="/web/20050705074943im_/http://c.msn.com/c.gif?ps=74927&amp;pi=56656&amp;di=553&amp;rf="></span>
-		
-		
-			<table class="sbout" cellspacing="0" cellpadding="0" border="0" width="100%">
-	<tr>
-		<td align="Center"><table cellspacing="0" cellpadding="0" border="0" width="750">
-			<tr>
-				<td><form method='get' id=search onsubmit="if(SF('f')) return f(this, 'SEARCH&SUBMIT');" name=search action='/web/20050705074943/http://music.msn.com/search/all/'><table class="tb2" cellspacing="0" cellpadding="0" border="0" width="100%">
-					<tr>
-						<td width="260"><input type="text" id="ss" name="ss" VCARD_NAME="SearchText" maxlength=255 value="music search" onclick="if(this.value == 'music search' || this.value == 'radio search') { this.value=''; this.focus(); }" class="sbib"/></td><td><span><img title="Go" onmouseout="if(SF('nbs')) nbs(imgssearch[0]);" onkeyup="if(event.keyCode == 13 || event.keyCode == 32 ){if(SF('nbs')) { nbs(imgssearch[0]);if(event == null || event.button == 1) document.forms[&quot;search&quot;].submit();return f(document.forms[&quot;search&quot;], 'cm=SEARCH&amp;amp;ce=SUBMIT'); }}" onmouseup="if(SF('nbs')) { nbs(imgssearch[0]); if(event == null || event.button == 1) document.forms[&quot;search&quot;].submit();return f(document.forms[&quot;search&quot;], 'cm=SEARCH&amp;amp;ce=SUBMIT');}" onmouseover="if(SF('nbs')) nbs(imgssearch[1]);" TABINDEX="0" onkeydown="if(event.keyCode == 13 || event.keyCode == 32 ){if(SF('nbs')) nbs(imgssearch[2]);}" onfocus="if(SF('hFL')) hFL();" onmousedown="if(SF('nbs')) nbs(imgssearch[2]);" src="/web/20050705074943im_/http://entimg.msn.com/i/ms/bt_go.gif" alt="" border="0" style="cursor:hand;" /></span></td><td></form></td>
-					</tr>
-				</table></td><td align="Right"><table cellspacing="0" cellpadding="0" border="0">
-					<tr>
-						<td></td><td align="Right"><table cellspacing="0" cellpadding="0" border="0">
-							<tr>
-								<td><span class="canbtn"><img TABINDEX="0" onmouseover="if(SF('nbs')) nbs(imgspromo5button[1]);" onmouseout="if(SF('nbs')) nbs(imgspromo5button[0]);" onmousedown="if(SF('nbs')) nbs(imgspromo5button[2]);" onmouseup="if(SF('nbs')) { nbs(imgspromo5button[0]); javascript:RLNK(&quot;/music/buy1get5&quot;);}" onkeydown="if(event.keyCode == 13 || event.keyCode == 32 ){if(SF('nbs')) nbs(imgspromo5button[2]);}" onkeyup="if(event.keyCode == 13 || event.keyCode == 32 ){if(SF('nbs')) { nbs(imgspromo5button[0]);javascript:RLNK(&quot;/music/buy1get5&quot;); }}" src="/web/20050705074943im_/http://entimg.msn.com/i/ms/bt_p5f_s.gif" alt="" border="0" style="cursor:hand;" /></span></td><td class="SeparatorClass">&#159</td><td><a class="SignInLinkClass" onclick="if(SF('h')) return h(this,'cm=SEAMUS&amp;ce=1');" href="/web/20050705074943/http://login.passport.com/login.srf?lc=1033&amp;id=31948&amp;ru=http%3a%2f%2fmusic.msn.com%2fmusic%2fdefault.aspx&amp;tw=7200&amp;fs=1&amp;kv=6&amp;ct=1120549783&amp;cb=returl%3dhttp%253a%252f%252fmusic.msn.com%252fmusic%252fdefault.aspx%26ppcb%3dmusicstore&amp;kpp=3&amp;ver=2.1.6000.1&amp;tpf=3616c02aa3e858cb325faa78836518a0">sign&nbsp;in</a></td><td></td><td class="SeparatorClass">&#159</td><td TABINDEX="0" onfocus="if(SF('hFL')) hFL();"><span id='destLink'><a class="DownloadLinkClass" onclick="if(SF('h')) return h(this,'cm=SEAMUS&amp;ce=2');" href="javascript:if(SF('RLNK')) RLNK('/music/dlstatus.aspx')">download&nbsp;status</a></span></td>
-							</tr>
-						</table></td>
-					</tr>
-				</table></td>
-			</tr>
-		</table></td>
-	</tr>
-</table>
-		
-		
-			<table class="brtb" cellspacing="0" cellpadding="0" border="0" width="750">
-	<tr>
-		<td><table cellspacing="0" cellpadding="0" border="0">
-			<tr>
-				<td class="lnk3">MSN MUSIC</td>
-			</tr>
-		</table></td>
-	</tr>
-</table>
-		
-		
-		<table cellpadding="0" cellspacing="0" border="0" class="contb">
-			<tr>
-				<td width=750 valign=top>
-					
-					<table cellpadding="0" cellspacing="0" border="0" class="tbmf">
-						<tr>
-							<td valign="top" Width="150px">
-							
-								<table cellspacing="0" cellpadding="0" border="0" height="95" width="150">
-	<tr>
-		<td valign="Top" height="95" width="150"><span id=div1subPromotionFeature><div style='position:absolute;width:150px;height:95px'><a title="JULY 4TH MIX: Songs to celebrate" onclick="if(SF('h')) return h(this,'cm=PROTOPLEFT&amp;ce=1');" href="/web/20050705074943/http://music.msn.com/music/july4th"><img src="/web/20050705074943im_/http://entimg.msn.com/i/bdg/4thofJuly_150x95_left.jpg" alt="" border="0" height="95" width="150" /></a><div style="left:0px;top:0px; position:absolute;"><table cellspacing="0" cellpadding="0" border="0" height="95" width="150">
-			<tr>
-				<td valign="Top" onclick="if(SF('u')) u('/music/july4th', 'cm=PROTOPLEFT&amp;ce=2&amp;hl=JULY+4TH+MIX%3a+Songs+to+celebrate');" title="JULY 4TH MIX: Songs to celebrate" TABINDEX="0" height="95" width="150" style="cursor:hand;"><table cellspacing="0" cellpadding="0" border="0">
-					<tr>
-						<td valign="Top"><div id="titleDiv" style="position:absolute;" class=""></div><div id="subheadDiv1" style="position:absolute;" class=""></div><div id="subheadDiv1" style="position:absolute;" class=""></div></td>
-					</tr>
-				</table></td>
-			</tr>
-		</table></div></div></span></td>
-	</tr>
-</table>
-							
-							</td>
-							<td valign="top" Width="448px" style="border-left:solid 1px #ffffff;">
-							
-								<table cellspacing="0" cellpadding="0" border="0" height="95" width="448">
-	<tr>
-		<td valign="Top" height="95" width="448"><span id=div1promotionFeature><div style='position:absolute;width:448px;height:95px'><a title="Getting Started on MSN Music: find...listen...burn...copy" onclick="if(SF('h')) return h(this,'cm=PROTOP&amp;ce=1');" href="/web/20050705074943/http://music.msn.com/music/GettingStarted"><img src="/web/20050705074943im_/http://entimg.msn.com/i/bdg/gettingstarted_448x95_main1.jpg" alt="" border="0" height="95" width="448" /></a><div style="left:0px;top:0px; position:absolute;"><table cellspacing="0" cellpadding="0" border="0" height="95" width="448">
-			<tr>
-				<td valign="Top" onclick="if(SF('u')) u('/music/GettingStarted', 'cm=PROTOP&amp;ce=2&amp;hl=Getting+Started+on+MSN+Music%3a+find...listen...burn...copy');" title="Getting Started on MSN Music: find...listen...burn...copy" TABINDEX="0" height="95" width="448" style="cursor:hand;"><table cellspacing="0" cellpadding="0" border="0">
-					<tr>
-						<td valign="Top"><div id="titleDiv" style="position:absolute;" class=""></div><div id="subheadDiv1" style="position:absolute;" class=""></div><div id="subheadDiv1" style="position:absolute;" class=""></div></td>
-					</tr>
-				</table></td>
-			</tr>
-		</table></div></div></span></td>
-	</tr>
-</table>
-							
-							</td>
-							<td valign="top" Width="150px" style="border-left:solid 1px #ffffff;">
-							
-								<table cellspacing="0" cellpadding="0" border="0" height="95" width="150">
-	<tr>
-		<td valign="Top" height="95" width="150"><span id=div1subPromotionFeature2><div style='position:absolute;width:150px;height:95px'><a title="GET 10 FREE SONGS when you get Blue today" onclick="if(SF('h')) return h(this,'cm=PROTOPRIGHT&amp;ce=1');" href="/web/20050705074943/http://music.msn.com/music/PartnerOffers"><img src="/web/20050705074943im_/http://entimg.msn.com/i/bdg/AMEX/get10free_150x95_right.jpg" alt="" border="0" height="95" width="150" /></a><div style="left:0px;top:0px; position:absolute;"><table cellspacing="0" cellpadding="0" border="0" height="95" width="150">
-			<tr>
-				<td valign="Top" onclick="if(SF('u')) u('/music/PartnerOffers', 'cm=PROTOPRIGHT&amp;ce=2&amp;hl=GET+10+FREE+SONGS+when+you+get+Blue+today');" title="GET 10 FREE SONGS when you get Blue today" TABINDEX="0" height="95" width="150" style="cursor:hand;"><table cellspacing="0" cellpadding="0" border="0">
-					<tr>
-						<td valign="Top"><div id="titleDiv" style="position:absolute;" class=""></div><div id="subheadDiv1" style="position:absolute;" class=""></div><div id="subheadDiv1" style="position:absolute;" class=""></div></td>
-					</tr>
-				</table></td>
-			</tr>
-		</table></div></div></span></td>
-	</tr>
-</table>
-							
-							</td>
-						</tr>
-					</table>
-					
-					<table cellpadding="0" cellspacing="0" border="0" class="tbmf">
-						<tr>
-							<td  valign="top" style="padding-top:1px;">
-								<table cellpadding="0" cellspacing="0" border="0" class="brbg" >
-									<tr>
-										<td width=10  valign=top><img id="staticImg1" src="/web/20050705074943im_/http://entimg.msn.com/i/ms/c_ul_g.gif" alt="" border="0" height="10" width="10" /></td>
-										<td width="730" height=10 ></td>	
-										<td width=10  valign=top><img id="staticImg2" src="/web/20050705074943im_/http://entimg.msn.com/i/ms/c_ur_g.gif" alt="" border="0" height="10" width="10" /></td>	
-									<tr>
-									</tr>
-										<td colspan=3>
-										
-											<table class="taa2" cellspacing="0" cellpadding="0" border="0" width="750">
-	<tr>
-		<td><table cellspacing="0" cellpadding="0" border="0" width="100%">
-			<tr>
-				<td class="hc1"><span class="lnk3">NEW RELEASES</span></td><td class="hc2"><table cellspacing="0" cellpadding="0" border="0">
-					<tr>
-						<td class="rp5" valign="Top"><span></span>&nbsp;<a title="View All" onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=1');" href="/web/20050705074943/http://music.msn.com/list?list=00000000-0402-0001-0000-000000000000">View All</a></td><td><a class="mi" onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=2');" href="/web/20050705074943/http://music.msn.com/list?list=00000000-0402-0001-0000-000000000000"><img title="View All" src="/web/20050705074943im_/http://entimg.msn.com/i/ms/bt_more.gif" alt="View All" border="0" height="14" width="14" /></a></td>
-					</tr>
-				</table></td>
-			</tr>
-		</table></td>
-	</tr>
-</table><table class="brbg" cellspacing="0" cellpadding="0" border="0" width="750">
-	<tr>
-		<td valign="Top"><table class="tactb2" cellspacing="0" cellpadding="0" border="0">
-			<tr>
-				<td valign="Top"><table class="tamtb" cellspacing="0" cellpadding="0" border="0">
-					<tr>
-						<td class="rp10" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=3');" href="/web/20050705074943/http://music.msn.com/album/?album=43075068"><img src="/web/20050705074943im_/http://images.windowsmedia.com/img/prov_b/50_80/828767021522.jpg" width="50" height="50"border="0" alt="TP.3 Reloaded [Bonus DVD, Clean]" class="AlbumArt"></a></td><td valign="Top"><table cellspacing="0" cellpadding="0" border="0">
-							<tr>
-								<td class="w75"><a title="TP.3 Reloaded [Bonus DVD, Clean]" onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=4');" href="/web/20050705074943/http://music.msn.com/album/?album=43075068">TP.3 Reloaded [Bonus D...</a></td>
-							</tr><tr>
-								<td class="w75"><a title="R. Kelly" class="lnk1" onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=5');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16106376">R. Kelly</a></td>
-							</tr>
-						</table></td>
-					</tr>
-				</table></td>
-			</tr>
-		</table></td><td valign="Top"><table class="tactb2" cellspacing="0" cellpadding="0" border="0">
-			<tr>
-				<td valign="Top"><table class="tamtb" cellspacing="0" cellpadding="0" border="0">
-					<tr>
-						<td class="rp10" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=6');" href="/web/20050705074943/http://music.msn.com/album/?album=43075067"><img src="/web/20050705074943im_/http://images.windowsmedia.com/img/prov_b/50_80/828767021423.jpg" width="50" height="50"border="0" alt="TP.3 Reloaded [Bonus DVD]" class="AlbumArt"></a></td><td valign="Top"><table cellspacing="0" cellpadding="0" border="0">
-							<tr>
-								<td class="w75"><a title="TP.3 Reloaded [Bonus DVD] [Explicit]" onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=7');" href="/web/20050705074943/http://music.msn.com/album/?album=43075067">TP.3 Reloaded [Bonus D...</a></td>
-							</tr><tr>
-								<td class="w75"><a title="R. Kelly" class="lnk1" onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=8');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16106376">R. Kelly</a></td>
-							</tr>
-						</table></td>
-					</tr>
-				</table></td>
-			</tr>
-		</table></td><td valign="Top"><table class="tactb2" cellspacing="0" cellpadding="0" border="0">
-			<tr>
-				<td valign="Top"><table class="tamtb" cellspacing="0" cellpadding="0" border="0">
-					<tr>
-						<td class="rp10" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=9');" href="/web/20050705074943/http://music.msn.com/album/?album=43336577"><img src="/web/20050705074943im_/http://images.windowsmedia.com/img/prov_w/50_80/075678268823.jpg" width="50" height="50"border="0" alt="A Trick Of The Tail" class="AlbumArt"></a></td><td valign="Top"><table cellspacing="0" cellpadding="0" border="0">
-							<tr>
-								<td class="w75"><a title="A Trick Of The Tail" onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=10');" href="/web/20050705074943/http://music.msn.com/album/?album=43336577">A Trick Of The Tail</a></td>
-							</tr><tr>
-								<td class="w75"><a title="Genesis" class="lnk1" onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=11');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16073864">Genesis</a></td>
-							</tr>
-						</table></td>
-					</tr>
-				</table></td>
-			</tr>
-		</table></td><td valign="Top"><table class="tactb2" cellspacing="0" cellpadding="0" border="0">
-			<tr>
-				<td valign="Top"><table class="tamtb" cellspacing="0" cellpadding="0" border="0">
-					<tr>
-						<td class="rp10" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=12');" href="/web/20050705074943/http://music.msn.com/album/?album=43336607"><img src="/web/20050705074943im_/http://images.windowsmedia.com/img/prov_w/50_80/081227610128.jpg" width="50" height="50"border="0" alt="Loud, Fast, Ramones:  Their Toughest Hits" class="AlbumArt"></a></td><td valign="Top"><table cellspacing="0" cellpadding="0" border="0">
-							<tr>
-								<td class="w75"><a title="Loud, Fast, Ramones:  Their Toughest Hits" onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=13');" href="/web/20050705074943/http://music.msn.com/album/?album=43336607">Loud, Fast, Ramones:  ...</a></td>
-							</tr><tr>
-								<td class="w75"><a title="The Ramones" class="lnk1" onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=14');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16074649">The Ramones</a></td>
-							</tr>
-						</table></td>
-					</tr>
-				</table></td>
-			</tr>
-		</table></td><td valign="Top"><table class="tactb2" cellspacing="0" cellpadding="0" border="0">
-			<tr>
-				<td valign="Top"><table class="tamtb" cellspacing="0" cellpadding="0" border="0">
-					<tr>
-						<td class="rp10" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=15');" href="/web/20050705074943/http://music.msn.com/album/?album=43336624"><img src="/web/20050705074943im_/http://images.windowsmedia.com/img/prov_w/50_80/093624820925.jpg" width="50" height="50"border="0" alt="Everything To Everyone" class="AlbumArt"></a></td><td valign="Top"><table cellspacing="0" cellpadding="0" border="0">
-							<tr>
-								<td class="w75"><a title="Everything To Everyone" onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=16');" href="/web/20050705074943/http://music.msn.com/album/?album=43336624">Everything To Everyone</a></td>
-							</tr><tr>
-								<td class="w75"><a title="Barenaked Ladies" class="lnk1" onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=17');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16088537">Barenaked Ladies</a></td>
-							</tr>
-						</table></td>
-					</tr>
-				</table></td>
-			</tr>
-		</table></td>
-	</tr><tr>
-		<td valign="Top"><table class="tactb2" cellspacing="0" cellpadding="0" border="0">
-			<tr>
-				<td valign="Top"><table class="tamtb" cellspacing="0" cellpadding="0" border="0">
-					<tr>
-						<td class="rp10" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=18');" href="/web/20050705074943/http://music.msn.com/album/?album=43336628"><img src="/web/20050705074943im_/http://images.windowsmedia.com/img/prov_w/50_80/603497080564.jpg" width="50" height="50"border="0" alt="Love Over Gold" class="AlbumArt"></a></td><td valign="Top"><table cellspacing="0" cellpadding="0" border="0">
-							<tr>
-								<td class="w75"><a title="Love Over Gold" onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=19');" href="/web/20050705074943/http://music.msn.com/album/?album=43336628">Love Over Gold</a></td>
-							</tr><tr>
-								<td class="w75"><a title="Dire Straits" class="lnk1" onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=20');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16073630">Dire Straits</a></td>
-							</tr>
-						</table></td>
-					</tr>
-				</table></td>
-			</tr>
-		</table></td><td valign="Top"><table class="tactb2" cellspacing="0" cellpadding="0" border="0">
-			<tr>
-				<td valign="Top"><table class="tamtb" cellspacing="0" cellpadding="0" border="0">
-					<tr>
-						<td class="rp10" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=21');" href="/web/20050705074943/http://music.msn.com/album/?album=43336566"><img src="/web/20050705074943im_/http://images.windowsmedia.com/img/prov_w/50_80/054391600363.jpg" width="50" height="50"border="0" alt="Stand Up" class="AlbumArt"></a></td><td valign="Top"><table cellspacing="0" cellpadding="0" border="0">
-							<tr>
-								<td class="w75"><a title="Stand Up" onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=22');" href="/web/20050705074943/http://music.msn.com/album/?album=43336566">Stand Up</a></td>
-							</tr><tr>
-								<td class="w75"><a title="Trapt" class="lnk1" onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=23');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16572266">Trapt</a></td>
-							</tr>
-						</table></td>
-					</tr>
-				</table></td>
-			</tr>
-		</table></td><td valign="Top"><table class="tactb2" cellspacing="0" cellpadding="0" border="0">
-			<tr>
-				<td valign="Top"><table class="tamtb" cellspacing="0" cellpadding="0" border="0">
-					<tr>
-						<td class="rp10" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=24');" href="/web/20050705074943/http://music.msn.com/album/?album=43336600"><img src="/web/20050705074943im_/http://images.windowsmedia.com/img/prov_w/50_80/081227431129.jpg" width="50" height="50"border="0" alt="Best Of Bread" class="AlbumArt"></a></td><td valign="Top"><table cellspacing="0" cellpadding="0" border="0">
-							<tr>
-								<td class="w75"><a title="Best Of Bread" onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=25');" href="/web/20050705074943/http://music.msn.com/album/?album=43336600">Best Of Bread</a></td>
-							</tr><tr>
-								<td class="w75"><a title="Bread" class="lnk1" onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=26');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16073337">Bread</a></td>
-							</tr>
-						</table></td>
-					</tr>
-				</table></td>
-			</tr>
-		</table></td><td valign="Top"><table class="tactb2" cellspacing="0" cellpadding="0" border="0">
-			<tr>
-				<td valign="Top"><table class="tamtb" cellspacing="0" cellpadding="0" border="0">
-					<tr>
-						<td class="rp10" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=27');" href="/web/20050705074943/http://music.msn.com/album/?album=43336597"><img src="/web/20050705074943im_/http://images.windowsmedia.com/img/prov_w/50_80/080688612726.jpg" width="50" height="50"border="0" alt="Talk About It" class="AlbumArt"></a></td><td valign="Top"><table cellspacing="0" cellpadding="0" border="0">
-							<tr>
-								<td class="w75"><a title="Talk About It" onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=28');" href="/web/20050705074943/http://music.msn.com/album/?album=43336597">Talk About It</a></td>
-							</tr><tr>
-								<td class="w75"><a title="Nicole C. Mullen" class="lnk1" onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=29');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16158780">Nicole C. Mullen</a></td>
-							</tr>
-						</table></td>
-					</tr>
-				</table></td>
-			</tr>
-		</table></td><td valign="Top"><table class="tactb2" cellspacing="0" cellpadding="0" border="0">
-			<tr>
-				<td valign="Top"><table class="tamtb" cellspacing="0" cellpadding="0" border="0">
-					<tr>
-						<td class="rp10" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=30');" href="/web/20050705074943/http://music.msn.com/album/?album=43234407"><img src="/web/20050705074943im_/http://images.windowsmedia.com/img/prov_i/50_80/2b983146-98d6-4c25-b039-cea3e03e398f_094633245358_800.jpg" width="50" height="50"border="0" alt="King" class="AlbumArt"></a></td><td valign="Top"><table cellspacing="0" cellpadding="0" border="0">
-							<tr>
-								<td class="w75"><a title="King" onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=31');" href="/web/20050705074943/http://music.msn.com/album/?album=43234407">King</a></td>
-							</tr><tr>
-								<td class="w75"><a title="Audio Adrenaline" class="lnk1" onclick="if(SF('h')) return h(this,'cm=TOPALBUMS&amp;ce=32');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16104710">Audio Adrenaline</a></td>
-							</tr>
-						</table></td>
-					</tr>
-				</table></td>
-			</tr>
-		</table></td>
-	</tr>
-</table>
-										
-										</td>
-									</tr>
-								</table>		
-							</td>
-						</tr>
-					</table>
-					
-					<table cellpadding="0" cellspacing="0" border="0" class="tbmf" style="padding-top:5px;">
-						<tr>
-							<td  valign="top" style="padding-top:10px;" height="400">
-								<table cellpadding="0" cellspacing="0" border=0 height="100%">
-									<tr>
-										<td valign="top" class="gbl10">
-											<table cellpadding=0 cellspacing=0 border=0>
-												<tr>
-													<td class="tb5">
-														<span class="lnk3">Browse Genres</span>
-													</td>
-												</tr>
-												<tr>
-													<td class="gb1b5">
-														
-															<table cellspacing="0" cellpadding="0" border="0" width="100%">
-	<tr>
-		<td align="Center"><table cellspacing="0" cellpadding="0" border="0" width="130">
-			<tr>
-				<td><select id=genre  onchange="if(GE('genre').value != -1) document.location='/genre/?genre=' + GE('genre').value;" class=sblb><option value=-1 selected >Choose Genre</option><option value=29440078>Alternative</option><option value=29440098>Blues</option><option value=29441752>Classical</option><option value=29441771>Country</option><option value=29442390>Dance</option><option value=29442408>Easy Listening</option><option value=29442413>Electronica</option><option value=29442424>Folk</option><option value=29442443>Holiday</option><option value=29440804>Jazz</option><option value=29440812>Latin</option><option value=29440820>Metal</option><option value=29440837>New Age</option><option value=29440861>Pop</option><option value=29440881>Rap & Hip-Hop</option><option value=29440883>Reggae</option><option value=29440889>Rock</option><option value=29441160>Soul and R&B</option><option value=29441164>Soundtracks</option><option value=29441229>Vocal</option><option value=29441294>World</option><option value=-2 >All Genres</option></select></td>
-			</tr>
-		</table></td>
-	</tr>
-</table>
-														 	
-													</td>
-												</tr>
-												<tr>
-													<td class="tp10">
-														
-															<table cellspacing="0" cellpadding="0" border="0" width="130">
-	<tr>
-		<td class="tp5"><span class="lnk3">MUSIC ESSENTIALS</span></td>
-	</tr>
-</table><table cellspacing="0" cellpadding="0" border="0">
-	<tr>
-		<td valign="Top"><table cellspacing="0" cellpadding="0" border="0">
-			<tr>
-				<td valign="Top"><table class="tp5" cellspacing="0" cellpadding="0" border="0">
-					<tr>
-						<td><a title="New This Week" onclick="if(SF('h')) return h(this,'cm=MUSTASK&amp;ce=1');" href="/web/20050705074943/http://music.msn.com/music/newthisweek">New This Week</a></td>
-					</tr><tr>
-						<td><a title="Music Videos" onclick="if(SF('h')) return h(this,'cm=MUSTASK&amp;ce=2');" href="/web/20050705074943/http://music.msn.com/musicvideos/default.aspx">Music Videos</a></td>
-					</tr><tr>
-						<td><a title="Music News" onclick="if(SF('h')) return h(this,'cm=MUSTASK&amp;ce=3');" href="/web/20050705074943/http://music.msn.com/news/archive.aspx?mn=1&amp;music">Music News</a></td>
-					</tr><tr>
-						<td><a title="Device Guide" onclick="if(SF('h')) return h(this,'cm=MUSTASK&amp;ce=4');" href="/web/20050705074943/http://music.msn.com/music/Devices">Device Guide</a></td>
-					</tr><tr>
-						<td><a title="MSN Music Gift Certificates" onclick="if(SF('h')) return h(this,'cm=MUSTASK&amp;ce=5');" href="/web/20050705074943/http://music.msn.com/gift">Gift Certificates</a></td>
-					</tr><tr>
-						<td><a title="Redeem Free Music" onclick="if(SF('h')) return h(this,'cm=MUSTASK&amp;ce=6');" href="/web/20050705074943/http://music.msn.com/token/token.aspx">Redeem Free Music</a></td>
-					</tr><tr>
-						<td><a title="Try Radio Plus" onclick="if(SF('h')) return h(this,'cm=MUSTASK&amp;ce=7');" href="/web/20050705074943/http://join.msn.com/?page=radio/home&amp;pgmarket=en-us&amp;xAPID=3913&amp;DI=553">Try Radio Plus</a></td>
-					</tr><tr>
-						<td><a title="New to MSN Music? Get Started" onclick="if(SF('h')) return h(this,'cm=MUSTASK&amp;ce=8');" href="/web/20050705074943/http://music.msn.com/music/GettingStarted">New to MSN Music? <BR>Get Started</a></td>
-					</tr><tr>
-						<td><table cellspacing="0" cellpadding="0" border="0">
-							<tr>
-								<td align="Left" valign="Top"><a class="lnk1"></a></td>
-							</tr><tr>
-								<td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
-									<tr>
-										<td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
-											<tr>
-												<td valign="Top"> <STYLE>  .hover	{ cursor:hand; color: #366ab3;  text-decoration:underline; }  .blue	{ color:#366ab3; text-decoration:none; }  </STYLE>  <SCRIPT language=javascript>                            function DoLink(ele)                            {                                        if(InWmp())                                                    location.href = ele.lnk2;                                        else                                                    location.href = ele.lnk1;                            }                            </SCRIPT>  <DIV class=blue onmouseover="this.className='hover'"  onclick=javascript:DoLink(this) onmouseout="this.className='blue'" align=left  lnk2="http://www.msnvideodownloads.com/?WMPFriendly=1"  lnk1="http://www.msnvideodownloads.com">MSN Video Downloads</DIV></td>
-											</tr>
-										</table></td>
-									</tr>
-								</table></td>
-							</tr>
-						</table></td>
-					</tr>
-				</table></td>
-			</tr>
-		</table></td>
-	</tr><tr>
-		<td class="tp10" valign="Bottom"><table cellspacing="0" cellpadding="0" border="0" width="100%">
-			<tr>
-				<td valign="Top"><span></span></td><td valign="Top" title="View All"></td>
-			</tr>
-		</table></td>
-	</tr>
-</table>
-														 	
-													</td>
-												</tr>
-												<tr>
-													<td valign="top" width="149" class="tp10">
-														
-																 <SCRIPT language=javascript>  		//courtesy of HomeAdvisor  		function validateForm() 		{ 			var f = window.document.signup; 			if (! isValidEmail(f.email.value)) 			{ 				alert('Please enter a valid email address.'); 				f.email.focus(); 				return false; 			} 			return true; 		} 		function gotoLocation() 		{ 			var f = window.document.signup; 			var bAdd = false; 			var sAdd = '';  			if (validateForm()) 			{ 				email = f.email.value; 				qs = "EM=" + email;  				sAdd += "257"; 				bAdd = true; 				 				if(bAdd) 					qs += '&SNID=' + sAdd; 				 				 					qs += "&PC=TXT";  				qs += "&CN=ALL"; 				 				qs += "&RE="; 				qs += "http://" + document.location.hostname; 				qs += "/newsletter/return.aspx";  			var strGoto = '/web/20050705074943/http://newsletters.msn.com/xs-v3/insite.asp?' + qs; 			window.location.href = strGoto; 			} 		} 		function getRadioValue(radioName) { 			var c = window.document.signup[radioName];  			for (i=0;i<c.length;i++) { 				if (c[i].checked) 				return(c[i].value); 			} 		} 		function isValidEmail(email){ 			if (email.length<4) 				return false; 			if (email.length>64) 				return false; 			else if (email.lastIndexOf(' ')!=-1) 				return false; 			else if ((i=email.lastIndexOf('@'))==-1) 				return false; 			else{ 				var tail=email.substring(i+1,email.length); 				if((tail.length + 1 ) == email.length) 					return false; 				if (tail.length<3) 					return false; 				if (tail.charAt(0)=='.') 					return false; 				else if ((i = tail.lastIndexOf('.'))==-1) 					return false; 				else{ 					var tailend=tail.substring(i+1,tail.length); 					if (tailend.length==0) 						return false; 				} 			} 			return true; 		} 		</SCRIPT>  <TABLE cellSpacing=0 cellPadding=0 width=124 border=0>   <TBODY>   <TR>     <TD>       <FORM name=signup onsubmit="javascript:gotoLocation();return false;">       <TABLE cellSpacing=0 cellPadding=0 width=128 border=0>         <TBODY>         <TR>           <TD class=gbcl1 style="PADDING-TOP: 15px" colSpan=2></TD></TR>         <TR class=tp10>           <TD class=lnk1 style="PADDING-TOP: 10px" vAlign=center              colSpan=2>NEWSLETTER SIGN UP</TD></TR>         <TR>           <TD class=tp5><INPUT class=sbx id=Text2 maxLength=64              value="Enter email address" name=email>              <DIV style="PADDING-TOP: 5px"><INPUT class=btn style="MARGIN-LEFT: -1px" type=submit value=Subscribe>              </DIV></TD></TR></TBODY></TABLE></FORM></TD></TR></TBODY></TABLE> <TABLE style="MARGIN-TOP: -15px" cellSpacing=0 cellPadding=0 width=124    border=0><TBODY>   <TR>     <TD style="FONT-SIZE: 9px"><a href=/web/20050705074943/http://newsletters.msn.com/home.asp class="altlink">Unsubscribe</a></TD></TR></TBODY></TABLE><!-- Place survey code here --> <SCRIPT language=javascript> var survey_title = 'MSN Music'; var survey_location = "/web/20050705074943/https://www.msnfeedback.com/surveys/usa/music_csat_0506.htm"; var survey_delay = 2000; var days_between_surveys = 90; var days_between_reqs = 7; var random_factor = 53; var invite_title = "MSN Music needs your feedback!<BR>"; var invite_text = "You have been randomly selected to represent online users in a quick survey about MSN Music.  If you have a few minutes to spare we'd love to hear from you!";   //------------------------------------- // for getting/setting cookies function getValue(offset) { 	    var endstr = document.cookie.indexOf (";", offset); 		if (endstr == -1) 			endstr = document.cookie.length; 		return unescape(document.cookie.substring(offset, endstr)); } function GetCkVal(name) { 		var arg = name + "="; 		var arg_len = arg.length; 		var cookie_length = document.cookie.length; 		var i = 0; 		while (i<cookie_length) { 		   var j= i + arg_len; 		   if (document.cookie.substring(i,j) == arg) 		       return getValue(j); 			   i = document.cookie.indexOf(" ",i) + 1; 		   if (i == 0) break; 		} 		return null; } function SetCookie(name,value,expires) {    document.cookie = name + "=" + escape(value) + ";expires=" + expires.toGMTString(); }   //-------------------------------------- // for opening a survey in lower right corner of current page var nextwindow; function promptSurvey() {	 	var psAH = window.screen.availHeight; 	var psAW = window.screen.availWidth; 	var psSH = 500; 	var psSW = 640; 	var psSY = window.screenTop + document.body.clientHeight - psSH - 10; 	var psSX = window.screenLeft + document.body.clientWidth - psSW; 	var psIR = document.referrer; 	var psIL = document.location; 	var window_options = "left="+psSX+",top="+psSY+",width="+psSW+",height="+psSH+",location=no,resizable=yes,status=no,scrollbars=yes"	 	nextwindow = window.open(survey_location,"survey",window_options); }  function promptInvite() { 	var filter = (navigator.appName == "Netscape" && parseInt(navigator.appVersion)<3.0); 	var today = new Date(); 	//var ex_date = new Date(expiration_date);  	if (!filter) {  		var  window_html = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">'; 		window_html += '<html><head><title>MSN Survey</title></head>'; 		window_html += '<body alink="#000000" bgcolor="#ffffff" leftmargin="0" link="#000000" text="#000000" topmargin="6" vlink="#000000">'; 		window_html += '<center>'; 		window_html += '<table border="0" cellpadding="15" cellspacing="0" width="300">';   		window_html += '<tr><td colspan="2" align="center">'; 		window_html += '<p><font color="#ff8000" face="arial" size="4"><b>'; 		window_html += survey_title; 		window_html += '</b></font></p></td></tr>' 		window_html += '<tr><td colspan="2">'; 		window_html += '<font face="arial"><font color="#004080" size="5"><strong><center>' + invite_title + '</strong></font><br>'; 		window_html += '<font size="3">' + invite_text + '</center></font></font>'; 		window_html += '</td></tr>';   		window_html += '<tr><td width="10%"></td><td width="90%">'; 		window_html += '<ul>';        		window_html += '<li><font face="arial" size="3"><span onclick="javascript:window.opener.promptSurvey();window.close();"><font style="cursor:hand; text-decoration:underline;" color="#ff8000">Yes</font></span>, I\'ll take the survey</font>'; 	        window_html += '<li><font face="arial" size="3"><span onclick="javascript:window.close();"><font style="cursor:hand; text-decoration:underline;" color="#ff8000">No</font></span>, close this window.</font>';   		window_html += '</li></ul></td></tr></table>'; 		var popup_window = window.open("","eval_invite","width=350,height=350,location=no,resizable=yes,status=0,scrollbars=no"); 		if(popup_window){ 			popup_window.document.write(window_html); 			popup_window.document.close(); 			popup_window.focus(); 		} 	} }    var rnd;  rnd.today = new Date(); rnd.seed = rnd.today.getTime();  function rnd()  { 	rnd.seed = (rnd.seed*9301+49297) % 233280; 	return rnd.seed/(233280.0); };  function rand(number) { 	return Math.ceil(rnd() * number); };  //------------------------------------- //set the cookie expiration date X days from now.   var expiration_date = new Date(); var four_months = expiration_date.getTime() + (days_between_surveys * 24 * 60 * 60 * 1000); expiration_date.setTime(four_months); var ex_date = expiration_date;  expiration_date = new Date(); var one_day = expiration_date.getTime() + (days_between_reqs * 24 * 60 * 60 * 1000); expiration_date.setTime(one_day); var ex_date2 = expiration_date;  //check cookie, show survey if not already var already_seen = GetCkVal("DSurv");  if (already_seen != "true") { 	if(rand(random_factor) == 1) 	{ 		window.setTimeout("promptInvite()", survey_delay); 		document.cookie = "DSurv=true; Path=/; Expires=" + ex_date.toGMTString(); 	} 	else 	{ 		document.cookie = "DSurv=true; Path=/; Expires=" + ex_date2.toGMTString(); 	} } </SCRIPT>	
-														 	
-													</td>
-												</tr>
-											</table>
-										</td>
-										<td valign="top" width="149">
-											
-												<table cellspacing="0" cellpadding="0" border="0" width="150">
-	<tr>
-		<td class="gblp5"><a class="lnk3" onclick="if(SF('h')) return h(this,'cm=TOPSONGS&amp;ce=1');" href="/web/20050705074943/http://music.msn.com/list?list=00000000-0201-0001-0000-000000000000">TOP SELLING SONGS</a></td>
-	</tr>
-</table><table class="gbl10" cellspacing="0" cellpadding="0" border="0">
-	<tr>
-		<td valign="Top" height="400"><table class="bp5" cellspacing="0" cellpadding="0" border="0">
-			<tr>
-				<td><table cellspacing="0" cellpadding="0" border="0" width="130">
-					<tr>
-						<td class="tp5" valign="Top"><a title="Hollaback Girl [Album Version]" onclick="if(SF('h')) return h(this,'cm=TOPSONGS&amp;ce=2');" href="/web/20050705074943/http://music.msn.com/album/?song=39856071&amp;album=39147347">Hollaback Girl [Album ...</a></td>
-					</tr><tr>
-						<td class="bp5" valign="Top"><a title="Gwen Stefani" onclick="if(SF('h')) return h(this,'cm=TOPSONGS&amp;ce=3');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16309554">Gwen Stefani</a></td>
-					</tr><tr>
-						<td valign="Middle"><table class="rp5" cellspacing="0" cellpadding="0" border="0">
-							<tr>
-								<td><a onmouseout="if(SF('clpot'))clpot(this)" clipurl="mms://a1130.v11451b.c11451.g.vm.akamaistream.net/7/1130/11451/v0001/msnmusicstrm.download.akamai.com/12336/BFHJ23HZ/Prod/wma/v9/Audio/16/90/87/2879016.wma?WMCache=1&amp;WMBitrate=1000000&amp;WMThinning=1&amp;ibcd1=songid39856071" onmouseup="if(SF('clpup'))clpup(this,'39856071');return false" onmouseover="if(SF('clpov'))clpov(this)" id="clp_39856071" onblur="if(SF('clpot'))clpot(this)" onkeypress="return onmouseup()" onfocus="if(SF('clpov'))clpov(this)" clipid="39856071" onclick="if(SF('h')) return h(this,'cm=TOPSONGS&amp;ce=4');" onmousedown="if(SF('clpdn'))clpdn(this)" href="#"><img src="/web/20050705074943im_/http://entimg.msn.com/i/ms/bt_play.gif" width="14" height="14"border="0" alt="Play sample clip of the song &quot;Hollaback Girl [Album Version]&quot;" ></a></td><td><table cellspacing="0" cellpadding="0" border="0">
-									<tr>
-										<td><span id="by39856071" class="canbtn" cmvl="TOPSONGS" cevl="5" bytp="so" price="99" clck="bc(cn39856071);" conck="Buy(39856071,1,425,'ps=74927&amp;di=553&amp;cm=TOPSONGS&amp;ce=5');" pctrl="false"><img title="Buy this song for $0.99 + applicable taxes" onmouseover="if(SF('bbuy'))bbuy()" onmouseout="if(SF('bbuy'))bbuy()" onmousedown="if(SF('bbuy'))bbuy()" onmouseup="if(SF('bbuy'))bbuy()" onkeyup="bbuy()" TABINDEX="0" src="/web/20050705074943im_/http://entimg.msn.com/i/bbt/so_up_99.gif" alt="" border="0" /></span></td><td class="lp2"><span id="cn39856071" class="canbtn" bytp="so" item="39856071" style="visibility:hidden;"><img src="/web/20050705074943im_/http://entimg.msn.com/i/bbt/so_can_up.gif" alt="" border="0" /></span></td>
-									</tr>
-								</table></td>
-							</tr>
-						</table></td>
-					</tr>
-				</table></td>
-			</tr><tr>
-				<td><table cellspacing="0" cellpadding="0" border="0" width="130">
-					<tr>
-						<td class="tp5" valign="Top"><a title="Don't Phunk With My Heart [Album Version]" onclick="if(SF('h')) return h(this,'cm=TOPSONGS&amp;ce=6');" href="/web/20050705074943/http://music.msn.com/album/?song=41657920&amp;album=41657705">Don't Phunk With My He...</a></td>
-					</tr><tr>
-						<td class="bp5" valign="Top"><a title="Black Eyed Peas" onclick="if(SF('h')) return h(this,'cm=TOPSONGS&amp;ce=7');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16343199">Black Eyed Peas</a></td>
-					</tr><tr>
-						<td valign="Middle"><table class="rp5" cellspacing="0" cellpadding="0" border="0">
-							<tr>
-								<td><a onmouseout="if(SF('clpot'))clpot(this)" clipurl="mms://a1422.v114516.c11451.g.vm.akamaistream.net/7/1422/11451/v0001/msnmusicstrm.download.akamai.com/12336/BFHJ23HZ/Prod/wma/v9/Audio/29/93/35/100359329.wma?WMCache=1&amp;WMBitrate=1000000&amp;WMThinning=1&amp;ibcd1=songid41657920" onmouseup="if(SF('clpup'))clpup(this,'41657920');return false" onmouseover="if(SF('clpov'))clpov(this)" id="clp_41657920" onblur="if(SF('clpot'))clpot(this)" onkeypress="return onmouseup()" onfocus="if(SF('clpov'))clpov(this)" clipid="41657920" onclick="if(SF('h')) return h(this,'cm=TOPSONGS&amp;ce=8');" onmousedown="if(SF('clpdn'))clpdn(this)" href="#"><img src="/web/20050705074943im_/http://entimg.msn.com/i/ms/bt_play.gif" width="14" height="14"border="0" alt="Play sample clip of the song &quot;Don't Phunk With My Heart [Album Version]&quot;" ></a></td><td><table cellspacing="0" cellpadding="0" border="0">
-									<tr>
-										<td><span id="by41657920" class="canbtn" cmvl="TOPSONGS" cevl="9" bytp="so" price="99" clck="bc(cn41657920);" conck="Buy(41657920,1,425,'ps=74927&amp;di=553&amp;cm=TOPSONGS&amp;ce=9');" pctrl="false"><img title="Buy this song for $0.99 + applicable taxes" onmouseover="if(SF('bbuy'))bbuy()" onmouseout="if(SF('bbuy'))bbuy()" onmousedown="if(SF('bbuy'))bbuy()" onmouseup="if(SF('bbuy'))bbuy()" onkeyup="bbuy()" TABINDEX="0" src="/web/20050705074943im_/http://entimg.msn.com/i/bbt/so_up_99.gif" alt="" border="0" /></span></td><td class="lp2"><span id="cn41657920" class="canbtn" bytp="so" item="41657920" style="visibility:hidden;"><img src="/web/20050705074943im_/http://entimg.msn.com/i/bbt/so_can_up.gif" alt="" border="0" /></span></td>
-									</tr>
-								</table></td>
-							</tr>
-						</table></td>
-					</tr>
-				</table></td>
-			</tr><tr>
-				<td><table cellspacing="0" cellpadding="0" border="0" width="130">
-					<tr>
-						<td class="tp5" valign="Top"><a title="Don't Cha [Radio Edit]" onclick="if(SF('h')) return h(this,'cm=TOPSONGS&amp;ce=10');" href="/web/20050705074943/http://music.msn.com/album/?song=41657922&amp;album=41657707">Don't Cha [Radio Edit]</a></td>
-					</tr><tr>
-						<td class="bp5" valign="Top"><a title="The Pussycat Dolls" onclick="if(SF('h')) return h(this,'cm=TOPSONGS&amp;ce=11');" href="/web/20050705074943/http://music.msn.com/artist/?artist=39170170">The Pussycat Dolls</a></td>
-					</tr><tr>
-						<td valign="Middle"><table class="rp5" cellspacing="0" cellpadding="0" border="0">
-							<tr>
-								<td><a onmouseout="if(SF('clpot'))clpot(this)" clipurl="mms://a1233.v11451a.c11451.g.vm.akamaistream.net/7/1233/11451/v0001/msnmusicstrm.download.akamai.com/12336/BFHJ23HZ/Prod/wma/v9/Audio/87/79/35/100357987.wma?WMCache=1&amp;WMBitrate=1000000&amp;WMThinning=1&amp;ibcd1=songid41657922" onmouseup="if(SF('clpup'))clpup(this,'41657922');return false" onmouseover="if(SF('clpov'))clpov(this)" id="clp_41657922" onblur="if(SF('clpot'))clpot(this)" onkeypress="return onmouseup()" onfocus="if(SF('clpov'))clpov(this)" clipid="41657922" onclick="if(SF('h')) return h(this,'cm=TOPSONGS&amp;ce=12');" onmousedown="if(SF('clpdn'))clpdn(this)" href="#"><img src="/web/20050705074943im_/http://entimg.msn.com/i/ms/bt_play.gif" width="14" height="14"border="0" alt="Play sample clip of the song &quot;Don't Cha [Radio Edit]&quot;" ></a></td><td><table cellspacing="0" cellpadding="0" border="0">
-									<tr>
-										<td><span id="by41657922" class="canbtn" cmvl="TOPSONGS" cevl="13" bytp="so" price="99" clck="bc(cn41657922);" conck="Buy(41657922,1,425,'ps=74927&amp;di=553&amp;cm=TOPSONGS&amp;ce=13');" pctrl="false"><img title="Buy this song for $0.99 + applicable taxes" onmouseover="if(SF('bbuy'))bbuy()" onmouseout="if(SF('bbuy'))bbuy()" onmousedown="if(SF('bbuy'))bbuy()" onmouseup="if(SF('bbuy'))bbuy()" onkeyup="bbuy()" TABINDEX="0" src="/web/20050705074943im_/http://entimg.msn.com/i/bbt/so_up_99.gif" alt="" border="0" /></span></td><td class="lp2"><span id="cn41657922" class="canbtn" bytp="so" item="41657922" style="visibility:hidden;"><img src="/web/20050705074943im_/http://entimg.msn.com/i/bbt/so_can_up.gif" alt="" border="0" /></span></td>
-									</tr>
-								</table></td>
-							</tr>
-						</table></td>
-					</tr>
-				</table></td>
-			</tr><tr>
-				<td><table cellspacing="0" cellpadding="0" border="0" width="130">
-					<tr>
-						<td class="tp5" valign="Top"><a title="Behind These Hazel Eyes" onclick="if(SF('h')) return h(this,'cm=TOPSONGS&amp;ce=14');" href="/web/20050705074943/http://music.msn.com/album/?song=40009501&amp;album=39511273">Behind These Hazel Eyes</a></td>
-					</tr><tr>
-						<td class="bp5" valign="Top"><a title="Kelly Clarkson" onclick="if(SF('h')) return h(this,'cm=TOPSONGS&amp;ce=15');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16571048">Kelly Clarkson</a></td>
-					</tr><tr>
-						<td valign="Middle"><table class="rp5" cellspacing="0" cellpadding="0" border="0">
-							<tr>
-								<td><a onmouseout="if(SF('clpot'))clpot(this)" clipurl="mms://a693.v11451e.c11451.g.vm.akamaistream.net/7/693/11451/v0001/msnmusicstrm.download.akamai.com/12336/BFHJ23HZ/Prod/wma/v9/Audio/90/13/02/3021390.wma?WMCache=1&amp;WMBitrate=1000000&amp;WMThinning=1&amp;ibcd1=songid40009501" onmouseup="if(SF('clpup'))clpup(this,'40009501');return false" onmouseover="if(SF('clpov'))clpov(this)" id="clp_40009501" onblur="if(SF('clpot'))clpot(this)" onkeypress="return onmouseup()" onfocus="if(SF('clpov'))clpov(this)" clipid="40009501" onclick="if(SF('h')) return h(this,'cm=TOPSONGS&amp;ce=16');" onmousedown="if(SF('clpdn'))clpdn(this)" href="#"><img src="/web/20050705074943im_/http://entimg.msn.com/i/ms/bt_play.gif" width="14" height="14"border="0" alt="Play sample clip of the song &quot;Behind These Hazel Eyes&quot;" ></a></td><td><table cellspacing="0" cellpadding="0" border="0">
-									<tr>
-										<td><span id="by40009501" class="canbtn" cmvl="TOPSONGS" cevl="17" bytp="so" price="99" clck="bc(cn40009501);" conck="Buy(40009501,1,526,'ps=74927&amp;di=553&amp;cm=TOPSONGS&amp;ce=17');" pctrl="false"><img title="Buy this song for $0.99 + applicable taxes" onmouseover="if(SF('bbuy'))bbuy()" onmouseout="if(SF('bbuy'))bbuy()" onmousedown="if(SF('bbuy'))bbuy()" onmouseup="if(SF('bbuy'))bbuy()" onkeyup="bbuy()" TABINDEX="0" src="/web/20050705074943im_/http://entimg.msn.com/i/bbt/so_up_99.gif" alt="" border="0" /></span></td><td class="lp2"><span id="cn40009501" class="canbtn" bytp="so" item="40009501" style="visibility:hidden;"><img src="/web/20050705074943im_/http://entimg.msn.com/i/bbt/so_can_up.gif" alt="" border="0" /></span></td>
-									</tr>
-								</table></td>
-							</tr>
-						</table></td>
-					</tr>
-				</table></td>
-			</tr><tr>
-				<td><table cellspacing="0" cellpadding="0" border="0" width="130">
-					<tr>
-						<td class="tp5" valign="Top"><a title="Switch [Main Version]" onclick="if(SF('h')) return h(this,'cm=TOPSONGS&amp;ce=18');" href="/web/20050705074943/http://music.msn.com/album/?song=41151494&amp;album=41151446">Switch [Main Version]</a></td>
-					</tr><tr>
-						<td class="bp5" valign="Top"><a title="Will Smith" onclick="if(SF('h')) return h(this,'cm=TOPSONGS&amp;ce=19');" href="/web/20050705074943/http://music.msn.com/artist/?artist=38736168">Will Smith</a></td>
-					</tr><tr>
-						<td valign="Middle"><table class="rp5" cellspacing="0" cellpadding="0" border="0">
-							<tr>
-								<td><a onmouseout="if(SF('clpot'))clpot(this)" clipurl="mms://a635.v114513.c11451.g.vm.akamaistream.net/7/635/11451/v0001/msnmusicstrm.download.akamai.com/12336/BFHJ23HZ/Prod/wma/v9/Audio/39/62/55/4556239.wma?WMCache=1&amp;WMBitrate=1000000&amp;WMThinning=1&amp;ibcd1=songid41151494" onmouseup="if(SF('clpup'))clpup(this,'41151494');return false" onmouseover="if(SF('clpov'))clpov(this)" id="clp_41151494" onblur="if(SF('clpot'))clpot(this)" onkeypress="return onmouseup()" onfocus="if(SF('clpov'))clpov(this)" clipid="41151494" onclick="if(SF('h')) return h(this,'cm=TOPSONGS&amp;ce=20');" onmousedown="if(SF('clpdn'))clpdn(this)" href="#"><img src="/web/20050705074943im_/http://entimg.msn.com/i/ms/bt_play.gif" width="14" height="14"border="0" alt="Play sample clip of the song &quot;Switch [Main Version]&quot;" ></a></td><td><table cellspacing="0" cellpadding="0" border="0">
-									<tr>
-										<td><span id="by41151494" class="canbtn" cmvl="TOPSONGS" cevl="21" bytp="so" price="99" clck="bc(cn41151494);" conck="Buy(41151494,1,425,'ps=74927&amp;di=553&amp;cm=TOPSONGS&amp;ce=21');" pctrl="false"><img title="Buy this song for $0.99 + applicable taxes" onmouseover="if(SF('bbuy'))bbuy()" onmouseout="if(SF('bbuy'))bbuy()" onmousedown="if(SF('bbuy'))bbuy()" onmouseup="if(SF('bbuy'))bbuy()" onkeyup="bbuy()" TABINDEX="0" src="/web/20050705074943im_/http://entimg.msn.com/i/bbt/so_up_99.gif" alt="" border="0" /></span></td><td class="lp2"><span id="cn41151494" class="canbtn" bytp="so" item="41151494" style="visibility:hidden;"><img src="/web/20050705074943im_/http://entimg.msn.com/i/bbt/so_can_up.gif" alt="" border="0" /></span></td>
-									</tr>
-								</table></td>
-							</tr>
-						</table></td>
-					</tr>
-				</table></td>
-			</tr><tr>
-				<td><table cellspacing="0" cellpadding="0" border="0" width="130">
-					<tr>
-						<td class="tp5" valign="Top"><a title="Lose Control (Featuring Ciara &amp; Fat Man Scoop) (Clean Album Version)" onclick="if(SF('h')) return h(this,'cm=TOPSONGS&amp;ce=22');" href="/web/20050705074943/http://music.msn.com/album/?song=42296458&amp;album=42295857">Lose Control (Featurin...</a></td>
-					</tr><tr>
-						<td class="bp5" valign="Top"><a title="Missy Elliott" onclick="if(SF('h')) return h(this,'cm=TOPSONGS&amp;ce=23');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16253702">Missy Elliott</a></td>
-					</tr><tr>
-						<td valign="Middle"><table class="rp5" cellspacing="0" cellpadding="0" border="0">
-							<tr>
-								<td><a onmouseout="if(SF('clpot'))clpot(this)" clipurl="mms://a1842.v11451f.c11451.g.vm.akamaistream.net/7/1842/11451/v0001/msnmusicstrm.download.akamai.com/12336/BFHJ23HZ/Prod/wma/v9/Audio/90/44/07/101074490.wma?WMCache=1&amp;WMBitrate=1000000&amp;WMThinning=1&amp;ibcd1=songid42296458" onmouseup="if(SF('clpup'))clpup(this,'42296458');return false" onmouseover="if(SF('clpov'))clpov(this)" id="clp_42296458" onblur="if(SF('clpot'))clpot(this)" onkeypress="return onmouseup()" onfocus="if(SF('clpov'))clpov(this)" clipid="42296458" onclick="if(SF('h')) return h(this,'cm=TOPSONGS&amp;ce=24');" onmousedown="if(SF('clpdn'))clpdn(this)" href="#"><img src="/web/20050705074943im_/http://entimg.msn.com/i/ms/bt_play.gif" width="14" height="14"border="0" alt="Play sample clip of the song &quot;Lose Control (Featuring Ciara & Fat Man Scoop) (Clean Album Version)&quot;" ></a></td><td><table cellspacing="0" cellpadding="0" border="0">
-									<tr>
-										<td><span id="by42296458" class="canbtn" cmvl="TOPSONGS" cevl="25" bytp="so" price="99" clck="bc(cn42296458);" conck="Buy(42296458,1,526,'ps=74927&amp;di=553&amp;cm=TOPSONGS&amp;ce=25');" pctrl="false"><img title="Buy this song for $0.99 + applicable taxes" onmouseover="if(SF('bbuy'))bbuy()" onmouseout="if(SF('bbuy'))bbuy()" onmousedown="if(SF('bbuy'))bbuy()" onmouseup="if(SF('bbuy'))bbuy()" onkeyup="bbuy()" TABINDEX="0" src="/web/20050705074943im_/http://entimg.msn.com/i/bbt/so_up_99.gif" alt="" border="0" /></span></td><td class="lp2"><span id="cn42296458" class="canbtn" bytp="so" item="42296458" style="visibility:hidden;"><img src="/web/20050705074943im_/http://entimg.msn.com/i/bbt/so_can_up.gif" alt="" border="0" /></span></td>
-									</tr>
-								</table></td>
-							</tr>
-						</table></td>
-					</tr>
-				</table></td>
-			</tr><tr>
-				<td><table cellspacing="0" cellpadding="0" border="0" width="130">
-					<tr>
-						<td class="tp5" valign="Top"><a title="We Belong Together [Album Version]" onclick="if(SF('h')) return h(this,'cm=TOPSONGS&amp;ce=26');" href="/web/20050705074943/http://music.msn.com/album/?song=41518786&amp;album=40926490">We Belong Together [Al...</a></td>
-					</tr><tr>
-						<td class="bp5" valign="Top"><a title="Mariah Carey" onclick="if(SF('h')) return h(this,'cm=TOPSONGS&amp;ce=27');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16117745">Mariah Carey</a></td>
-					</tr><tr>
-						<td valign="Middle"><table class="rp5" cellspacing="0" cellpadding="0" border="0">
-							<tr>
-								<td><a onmouseout="if(SF('clpot'))clpot(this)" clipurl="mms://a365.v11451d.c11451.g.vm.akamaistream.net/7/365/11451/v0001/msnmusicstrm.download.akamai.com/12336/BFHJ23HZ/Prod/wma/v9/Audio/20/66/26/100266620.wma?WMCache=1&amp;WMBitrate=1000000&amp;WMThinning=1&amp;ibcd1=songid41518786" onmouseup="if(SF('clpup'))clpup(this,'41518786');return false" onmouseover="if(SF('clpov'))clpov(this)" id="clp_41518786" onblur="if(SF('clpot'))clpot(this)" onkeypress="return onmouseup()" onfocus="if(SF('clpov'))clpov(this)" clipid="41518786" onclick="if(SF('h')) return h(this,'cm=TOPSONGS&amp;ce=28');" onmousedown="if(SF('clpdn'))clpdn(this)" href="#"><img src="/web/20050705074943im_/http://entimg.msn.com/i/ms/bt_play.gif" width="14" height="14"border="0" alt="Play sample clip of the song &quot;We Belong Together [Album Version]&quot;" ></a></td><td><table cellspacing="0" cellpadding="0" border="0">
-									<tr>
-										<td><span id="by41518786" class="canbtn" cmvl="TOPSONGS" cevl="29" bytp="so" price="99" clck="bc(cn41518786);" conck="Buy(41518786,1,425,'ps=74927&amp;di=553&amp;cm=TOPSONGS&amp;ce=29');" pctrl="false"><img title="Buy this song for $0.99 + applicable taxes" onmouseover="if(SF('bbuy'))bbuy()" onmouseout="if(SF('bbuy'))bbuy()" onmousedown="if(SF('bbuy'))bbuy()" onmouseup="if(SF('bbuy'))bbuy()" onkeyup="bbuy()" TABINDEX="0" src="/web/20050705074943im_/http://entimg.msn.com/i/bbt/so_up_99.gif" alt="" border="0" /></span></td><td class="lp2"><span id="cn41518786" class="canbtn" bytp="so" item="41518786" style="visibility:hidden;"><img src="/web/20050705074943im_/http://entimg.msn.com/i/bbt/so_can_up.gif" alt="" border="0" /></span></td>
-									</tr>
-								</table></td>
-							</tr>
-						</table></td>
-					</tr>
-				</table></td>
-			</tr>
-		</table></td>
-	</tr><tr>
-		<td class="tp10" valign="Bottom"><table class="tp10" cellspacing="0" cellpadding="0" border="0" width="100%">
-			<tr>
-				<td class="mltb" valign="Top"><span></span></td><td class="mltb" valign="Top" title="View All"><table class="rp5" cellspacing="0" cellpadding="0" border="0">
-					<tr>
-						<td valign="Top"><table class="ebox" cellspacing="0" cellpadding="0" border="0" width="100%">
-							<tr>
-								<td align="Left" valign="Top" height="17"><a class="tava" onclick="if(SF('h')) return h(this,'cm=TOPSONGS&amp;ce=30');" href="/web/20050705074943/http://music.msn.com/list?list=00000000-0201-0001-0000-000000000000">View All</a></td>
-							</tr>
-						</table></td><td align="Left" valign="Top" width="14"><a class="tava" onclick="if(SF('h')) return h(this,'cm=TOPSONGS&amp;ce=31');" href="/web/20050705074943/http://music.msn.com/list?list=00000000-0201-0001-0000-000000000000"><img title="View All" src="/web/20050705074943im_/http://entimg.msn.com/i/ms/bt_more.gif" alt="View All" border="0" height="14" width="14" /></a></td>
-					</tr>
-				</table></td>
-			</tr>
-		</table></td>
-	</tr>
-</table>
-											 	
-											
-										</td>
-										<td valign="top" width="149">
-											
-												<table cellspacing="0" cellpadding="0" border="0" width="150">
-	<tr>
-		<td class="gblp5"><a class="lnk3" onclick="if(SF('h')) return h(this,'cm=NEWALBUMS&amp;ce=1');" href="/web/20050705074943/http://music.msn.com/list?list=00000000-0202-0001-0000-000000000000">TOP SELLING ALBUMS</a></td>
-	</tr>
-</table><table class="gbl10" cellspacing="0" cellpadding="0" border="0">
-	<tr>
-		<td valign="Top" height="400"><table class="bp5" cellspacing="0" cellpadding="0" border="0">
-			<tr>
-				<td><table cellspacing="0" cellpadding="0" border="0" width="130">
-					<tr>
-						<td class="tp5" valign="Top"><a title="Somewhere Down In Texas" onclick="if(SF('h')) return h(this,'cm=NEWALBUMS&amp;ce=2');" href="/web/20050705074943/http://music.msn.com/album/?album=41751125">Somewhere Down In ...</a></td>
-					</tr><tr>
-						<td class="bp5" valign="Top"><a title="George Strait" onclick="if(SF('h')) return h(this,'cm=NEWALBUMS&amp;ce=3');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16071679">George Strait</a></td>
-					</tr>
-				</table></td>
-			</tr><tr>
-				<td><table cellspacing="0" cellpadding="0" border="0" width="130">
-					<tr>
-						<td class="tp5" valign="Top"><a title="X &amp; Y" onclick="if(SF('h')) return h(this,'cm=NEWALBUMS&amp;ce=4');" href="/web/20050705074943/http://music.msn.com/album/?album=41617043">X & Y</a></td>
-					</tr><tr>
-						<td class="bp5" valign="Top"><a title="Coldplay" onclick="if(SF('h')) return h(this,'cm=NEWALBUMS&amp;ce=5');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16473157">Coldplay</a></td>
-					</tr>
-				</table></td>
-			</tr><tr>
-				<td><table cellspacing="0" cellpadding="0" border="0" width="130">
-					<tr>
-						<td class="tp5" valign="Top"><a title="The Emancipation of Mimi [U.S. Full Length CD]" onclick="if(SF('h')) return h(this,'cm=NEWALBUMS&amp;ce=6');" href="/web/20050705074943/http://music.msn.com/album/?album=40926490">The Emancipation o...</a></td>
-					</tr><tr>
-						<td class="bp5" valign="Top"><a title="Mariah Carey" onclick="if(SF('h')) return h(this,'cm=NEWALBUMS&amp;ce=7');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16117745">Mariah Carey</a></td>
-					</tr>
-				</table></td>
-			</tr><tr>
-				<td><table cellspacing="0" cellpadding="0" border="0" width="130">
-					<tr>
-						<td class="tp5" valign="Top"><a title="Patriotic Country" onclick="if(SF('h')) return h(this,'cm=NEWALBUMS&amp;ce=8');" href="/web/20050705074943/http://music.msn.com/album/?album=27822385">Patriotic Country</a></td>
-					</tr><tr>
-						<td class="bp5" valign="Top"><a title="Various Artists">Various Artists</a></td>
-					</tr>
-				</table></td>
-			</tr><tr>
-				<td><table cellspacing="0" cellpadding="0" border="0" width="130">
-					<tr>
-						<td class="tp5" valign="Top"><a title="Monkey Business" onclick="if(SF('h')) return h(this,'cm=NEWALBUMS&amp;ce=10');" href="/web/20050705074943/http://music.msn.com/album/?album=41628671">Monkey Business</a></td>
-					</tr><tr>
-						<td class="bp5" valign="Top"><a title="Black Eyed Peas" onclick="if(SF('h')) return h(this,'cm=NEWALBUMS&amp;ce=11');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16343199">Black Eyed Peas</a></td>
-					</tr>
-				</table></td>
-			</tr><tr>
-				<td><table cellspacing="0" cellpadding="0" border="0" width="130">
-					<tr>
-						<td class="tp5" valign="Top"><a title="Soulife" onclick="if(SF('h')) return h(this,'cm=NEWALBUMS&amp;ce=12');" href="/web/20050705074943/http://music.msn.com/album/?album=41591001">Soulife</a></td>
-					</tr><tr>
-						<td class="bp5" valign="Top"><a title="Anthony Hamilton" onclick="if(SF('h')) return h(this,'cm=NEWALBUMS&amp;ce=13');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16243556">Anthony Hamilton</a></td>
-					</tr>
-				</table></td>
-			</tr><tr>
-				<td><table cellspacing="0" cellpadding="0" border="0" width="130">
-					<tr>
-						<td class="tp5" valign="Top"><a title="A Change Is Gonna Come" onclick="if(SF('h')) return h(this,'cm=NEWALBUMS&amp;ce=14');" href="/web/20050705074943/http://music.msn.com/album/?album=41372296">A Change Is Gonna ...</a></td>
-					</tr><tr>
-						<td class="bp5" valign="Top"><a title="Leela James" onclick="if(SF('h')) return h(this,'cm=NEWALBUMS&amp;ce=15');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16656635">Leela James</a></td>
-					</tr>
-				</table></td>
-			</tr><tr>
-				<td><table cellspacing="0" cellpadding="0" border="0" width="130">
-					<tr>
-						<td class="tp5" valign="Top"><a title="In Your Honor" onclick="if(SF('h')) return h(this,'cm=NEWALBUMS&amp;ce=16');" href="/web/20050705074943/http://music.msn.com/album/?album=41770822">In Your Honor</a></td>
-					</tr><tr>
-						<td class="bp5" valign="Top"><a title="Foo Fighters" onclick="if(SF('h')) return h(this,'cm=NEWALBUMS&amp;ce=17');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16191169">Foo Fighters</a></td>
-					</tr>
-				</table></td>
-			</tr><tr>
-				<td><table cellspacing="0" cellpadding="0" border="0" width="130">
-					<tr>
-						<td class="tp5" valign="Top"><a title="Vehicle" onclick="if(SF('h')) return h(this,'cm=NEWALBUMS&amp;ce=18');" href="/web/20050705074943/http://music.msn.com/album/?album=43179495">Vehicle</a></td>
-					</tr><tr>
-						<td class="bp5" valign="Top"><a title="Bo Bice" onclick="if(SF('h')) return h(this,'cm=NEWALBUMS&amp;ce=19');" href="/web/20050705074943/http://music.msn.com/artist/?artist=41721204">Bo Bice</a></td>
-					</tr>
-				</table></td>
-			</tr>
-		</table></td>
-	</tr><tr>
-		<td class="tp10" valign="Bottom"><table class="tp10" cellspacing="0" cellpadding="0" border="0" width="100%">
-			<tr>
-				<td class="mltb" valign="Top"><span></span></td><td class="mltb" valign="Top" title="View All"><table class="rp5" cellspacing="0" cellpadding="0" border="0">
-					<tr>
-						<td valign="Top"><table class="ebox" cellspacing="0" cellpadding="0" border="0" width="100%">
-							<tr>
-								<td align="Left" valign="Top" height="17"><a class="tava" onclick="if(SF('h')) return h(this,'cm=NEWALBUMS&amp;ce=20');" href="/web/20050705074943/http://music.msn.com/list?list=00000000-0202-0001-0000-000000000000">View All</a></td>
-							</tr>
-						</table></td><td align="Left" valign="Top" width="14"><a class="tava" onclick="if(SF('h')) return h(this,'cm=NEWALBUMS&amp;ce=21');" href="/web/20050705074943/http://music.msn.com/list?list=00000000-0202-0001-0000-000000000000"><img title="View All" src="/web/20050705074943im_/http://entimg.msn.com/i/ms/bt_more.gif" alt="View All" border="0" height="14" width="14" /></a></td>
-					</tr>
-				</table></td>
-			</tr>
-		</table></td>
-	</tr>
-</table>		
-											 	
-											
-										</td>
-										<td valign="top" width="149">
-											
-												<table cellspacing="0" cellpadding="0" border="0" width="150">
-	<tr>
-		<td class="gblp5"><a class="lnk3" onclick="if(SF('h')) return h(this,'cm=FEATUREDARTISTS&amp;ce=1');" href="/web/20050705074943/http://music.msn.com/list?list=00000000-0502-0001-0000-000000000000">JUST ADDED</a></td>
-	</tr>
-</table><table class="gbl10" cellspacing="0" cellpadding="0" border="0">
-	<tr>
-		<td valign="Top" height="400"><table class="bp5" cellspacing="0" cellpadding="0" border="0">
-			<tr>
-				<td><table cellspacing="0" cellpadding="0" border="0" width="130">
-					<tr>
-						<td class="tp5" valign="Top"><a title="The Cookbook [Clean, DualDisc]" onclick="if(SF('h')) return h(this,'cm=FEATUREDARTISTS&amp;ce=2');" href="/web/20050705074943/http://music.msn.com/album/?album=41806941">The Cookbook [Clean, ...</a></td>
-					</tr><tr>
-						<td class="bp5" valign="Top"><a title="Missy Elliott" onclick="if(SF('h')) return h(this,'cm=FEATUREDARTISTS&amp;ce=3');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16253702">Missy Elliott</a></td>
-					</tr>
-				</table></td>
-			</tr><tr>
-				<td><table cellspacing="0" cellpadding="0" border="0" width="130">
-					<tr>
-						<td class="tp5" valign="Top"><a title="The Cookbook [DualDisc]" onclick="if(SF('h')) return h(this,'cm=FEATUREDARTISTS&amp;ce=4');" href="/web/20050705074943/http://music.msn.com/album/?album=41806888">The Cookbook [DualDisc]</a></td>
-					</tr><tr>
-						<td class="bp5" valign="Top"><a title="Missy Elliott" onclick="if(SF('h')) return h(this,'cm=FEATUREDARTISTS&amp;ce=5');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16253702">Missy Elliott</a></td>
-					</tr>
-				</table></td>
-			</tr><tr>
-				<td><table cellspacing="0" cellpadding="0" border="0" width="130">
-					<tr>
-						<td class="tp5" valign="Top"><a title="TP.3 Reloaded [Bonus DVD]" onclick="if(SF('h')) return h(this,'cm=FEATUREDARTISTS&amp;ce=6');" href="/web/20050705074943/http://music.msn.com/album/?album=43075067">TP.3 Reloaded [Bonus ...</a></td>
-					</tr><tr>
-						<td class="bp5" valign="Top"><a title="R. Kelly" onclick="if(SF('h')) return h(this,'cm=FEATUREDARTISTS&amp;ce=7');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16106376">R. Kelly</a></td>
-					</tr>
-				</table></td>
-			</tr><tr>
-				<td><table cellspacing="0" cellpadding="0" border="0" width="130">
-					<tr>
-						<td class="tp5" valign="Top"><a title="TP.3 Reloaded [Bonus DVD, Clean]" onclick="if(SF('h')) return h(this,'cm=FEATUREDARTISTS&amp;ce=8');" href="/web/20050705074943/http://music.msn.com/album/?album=43075068">TP.3 Reloaded [Bonus ...</a></td>
-					</tr><tr>
-						<td class="bp5" valign="Top"><a title="R. Kelly" onclick="if(SF('h')) return h(this,'cm=FEATUREDARTISTS&amp;ce=9');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16106376">R. Kelly</a></td>
-					</tr>
-				</table></td>
-			</tr><tr>
-				<td><table cellspacing="0" cellpadding="0" border="0" width="130">
-					<tr>
-						<td class="tp5" valign="Top"><a title="Aretha In Paris" onclick="if(SF('h')) return h(this,'cm=FEATUREDARTISTS&amp;ce=10');" href="/web/20050705074943/http://music.msn.com/album/?album=10036388">Aretha In Paris</a></td>
-					</tr><tr>
-						<td class="bp5" valign="Top"><a title="Aretha Franklin" onclick="if(SF('h')) return h(this,'cm=FEATUREDARTISTS&amp;ce=11');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16073819">Aretha Franklin</a></td>
-					</tr>
-				</table></td>
-			</tr><tr>
-				<td><table cellspacing="0" cellpadding="0" border="0" width="130">
-					<tr>
-						<td class="tp5" valign="Top"><a title="A Trick Of The Tail" onclick="if(SF('h')) return h(this,'cm=FEATUREDARTISTS&amp;ce=12');" href="/web/20050705074943/http://music.msn.com/album/?album=43336577">A Trick Of The Tail</a></td>
-					</tr><tr>
-						<td class="bp5" valign="Top"><a title="Genesis" onclick="if(SF('h')) return h(this,'cm=FEATUREDARTISTS&amp;ce=13');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16073864">Genesis</a></td>
-					</tr>
-				</table></td>
-			</tr><tr>
-				<td><table cellspacing="0" cellpadding="0" border="0" width="130">
-					<tr>
-						<td class="tp5" valign="Top"><a title="Everything To Everyone" onclick="if(SF('h')) return h(this,'cm=FEATUREDARTISTS&amp;ce=14');" href="/web/20050705074943/http://music.msn.com/album/?album=43336624">Everything To Everyone</a></td>
-					</tr><tr>
-						<td class="bp5" valign="Top"><a title="Barenaked Ladies" onclick="if(SF('h')) return h(this,'cm=FEATUREDARTISTS&amp;ce=15');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16088537">Barenaked Ladies</a></td>
-					</tr>
-				</table></td>
-			</tr><tr>
-				<td><table cellspacing="0" cellpadding="0" border="0" width="130">
-					<tr>
-						<td class="tp5" valign="Top"><a title="Love Over Gold" onclick="if(SF('h')) return h(this,'cm=FEATUREDARTISTS&amp;ce=16');" href="/web/20050705074943/http://music.msn.com/album/?album=43336628">Love Over Gold</a></td>
-					</tr><tr>
-						<td class="bp5" valign="Top"><a title="Dire Straits" onclick="if(SF('h')) return h(this,'cm=FEATUREDARTISTS&amp;ce=17');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16073630">Dire Straits</a></td>
-					</tr>
-				</table></td>
-			</tr><tr>
-				<td><table cellspacing="0" cellpadding="0" border="0" width="130">
-					<tr>
-						<td class="tp5" valign="Top"><a title="Stand Up" onclick="if(SF('h')) return h(this,'cm=FEATUREDARTISTS&amp;ce=18');" href="/web/20050705074943/http://music.msn.com/album/?album=43336566">Stand Up</a></td>
-					</tr><tr>
-						<td class="bp5" valign="Top"><a title="Trapt" onclick="if(SF('h')) return h(this,'cm=FEATUREDARTISTS&amp;ce=19');" href="/web/20050705074943/http://music.msn.com/artist/?artist=16572266">Trapt</a></td>
-					</tr>
-				</table></td>
-			</tr>
-		</table></td>
-	</tr><tr>
-		<td class="tp10" valign="Bottom"><table class="tp10" cellspacing="0" cellpadding="0" border="0" width="100%">
-			<tr>
-				<td class="mltb" valign="Top"><span></span></td><td class="mltb" valign="Top" title="View All"><table class="rp5" cellspacing="0" cellpadding="0" border="0">
-					<tr>
-						<td valign="Top"><table class="ebox" cellspacing="0" cellpadding="0" border="0" width="100%">
-							<tr>
-								<td align="Left" valign="Top" height="17"><a class="tava" onclick="if(SF('h')) return h(this,'cm=FEATUREDARTISTS&amp;ce=20');" href="/web/20050705074943/http://music.msn.com/list?list=00000000-0502-0001-0000-000000000000">View All</a></td>
-							</tr>
-						</table></td><td align="Left" valign="Top" width="14"><a class="tava" onclick="if(SF('h')) return h(this,'cm=FEATUREDARTISTS&amp;ce=21');" href="/web/20050705074943/http://music.msn.com/list?list=00000000-0502-0001-0000-000000000000"><img title="View All" src="/web/20050705074943im_/http://entimg.msn.com/i/ms/bt_more.gif" alt="View All" border="0" height="14" width="14" /></a></td>
-					</tr>
-				</table></td>
-			</tr>
-		</table></td>
-	</tr>
-</table>	
-											 	
-										</td>
-										<td valign="top" width="149" class="gblr10">
-											<table cellpadding="0" width="30" cellspacing="0" border=0 >
-												<tr>
-													<td valign="top">
-														
-															<table class="tb5" cellspacing="0" cellpadding="0" border="0" width="130">
-	<tr>
-		<td><table class="mh_inner" cellspacing="0" cellpadding="0" border="0" width="100%">
-			<tr>
-				<td><span class="lnk3">MSN MUSIC SPOTLIGHT</span></td>
-			</tr>
-		</table></td>
-	</tr>
-</table><table class="gb1b5" cellspacing="0" cellpadding="0" border="0" width="130">
-	<tr>
-		<td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
-			<tr>
-				<td class="bp5" valign="Top"><a title="Buy 1 Song, Get 5 Free" onclick="if(SF('h')) return h(this,'cm=MODTR&amp;ce=1');" href="/web/20050705074943/http://clk.atdmt.com/AVE/go/msnnkonm0020000978ave/direct/01/">Buy 1 Song, Get 5 Free</a></td>
-			</tr><tr>
-				<td class="bp5" valign="Top"><a title="This Month in Music" onclick="if(SF('h')) return h(this,'cm=MODTR&amp;ce=2');" href="/web/20050705074943/http://music.msn.com/music/thismonthinmusic">This Month in Music</a></td>
-			</tr><tr>
-				<td class="bp5" valign="Top"><a title="Icon Series: Stevie Wonder" onclick="if(SF('h')) return h(this,'cm=MODTR&amp;ce=3');" href="/web/20050705074943/http://music.msn.com/iconseries/stevie">Icon Series: Stevie Wonder</a></td>
-			</tr><tr>
-				<td class="bp5" valign="Top"><a title="RadioClassics" onclick="if(SF('h')) return h(this,'cm=MODTR&amp;ce=4');" href="/web/20050705074943/http://music.msn.com/radioclassics">RadioClassics</a></td>
-			</tr><tr>
-				<td class="bp5" valign="Top"><a title="Smithsonian Folkways Recordings" onclick="if(SF('h')) return h(this,'cm=MODTR&amp;ce=5');" href="/web/20050705074943/http://music.msn.com/smithsonian">Smithsonian Folkways Recordings</a></td>
-			</tr><tr>
-				<td class="bp5" valign="Top"><a title="Artist of the Month - Vote!" onclick="if(SF('h')) return h(this,'cm=MODTR&amp;ce=6');" href="/web/20050705074943/http://music.msn.com/artistofthemonth">Artist of the Month - Vote!</a></td>
-			</tr><tr>
-				<td class="bp5" valign="Top"><a title="Custom Playlists" onclick="if(SF('h')) return h(this,'cm=MODTR&amp;ce=7');" href="/web/20050705074943/http://music.msn.com/music/playlists">Custom Playlists</a></td>
-			</tr><tr>
-				<td class="bp5" valign="Top"><a title="Billboard's Top Albums" onclick="if(SF('h')) return h(this,'cm=MODTR&amp;ce=8');" href="/web/20050705074943/http://music.msn.com/music/billboard">Billboard's Top Albums</a></td>
-			</tr>
-		</table></td>
-	</tr>
-</table>
-														 	
-													</td>
-												</tr>
-												<tr>
-													<td valign="top">
-													
-																<table class="t17b5" cellspacing="0" cellpadding="0" border="0" width="130">
-	<tr>
-		<td><table class="mh_inner" cellspacing="0" cellpadding="0" border="0" width="100%">
-			<tr>
-				<td><span class="lnk3">PARTNER SHOWCASE</span></td>
-			</tr>
-		</table></td>
-	</tr>
-</table><table class="gb1b5" cellspacing="0" cellpadding="0" border="0" width="130">
-	<tr>
-		<td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
-			<tr>
-				<td class="bp5" valign="Top"><a title="VW Spin Cycle" onclick="if(SF('h')) return h(this,'cm=MODMR&amp;ce=1');" href="/web/20050705074943/http://vwspincycle.msn.com/"> VW Spin Cycle</a></td>
-			</tr><tr>
-				<td class="bp5" valign="Top"><a title="Sprite presents: The Scenario" onclick="if(SF('h')) return h(this,'cm=MODMR&amp;ce=2');" href="/web/20050705074943/http://ad.doubleclick.net/clk;14640478;11004760;w?http://music.msn.com/thescenario">The Scenario</a></td>
-			</tr><tr>
-				<td class="bp5" valign="Top"><a title="AMEX Presents: In THE Mix" onclick="if(SF('h')) return h(this,'cm=MODMR&amp;ce=3');" href="/web/20050705074943/http://music.msn.com/inthemix">In THE Mix</a></td>
-			</tr><tr>
-				<td class="bp5" valign="Top"><a title="Free Music Offers" onclick="if(SF('h')) return h(this,'cm=MODMR&amp;ce=4');" href="/web/20050705074943/http://music.msn.com/music/PartnerOffers">Free Music Offers</a></td>
-			</tr>
-		</table></td>
-	</tr>
-</table>
-													 	
-													</td>
-												</tr>
-												<tr>
-													<td valign="top" >
-													
-														<table class="t17b5" cellspacing="0" cellpadding="0" border="0" width="130">
-	<tr>
-		<td><table class="mh_inner" cellspacing="0" cellpadding="0" border="0" width="100%">
-			<tr>
-				<td><span class="lnk3">PLAYS FOR SURE</span></td>
-			</tr>
-		</table></td>
-	</tr>
-</table><table cellspacing="0" cellpadding="0" border="0" width="130">
-	<tr>
-		<td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
-			<tr>
-				<td class="bp5" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
-					<tr>
-						<td class="rp5" align="Left" valign="Top" width="50"><a onclick="if(SF('h')) return h(this,'cm=MODBR&amp;ce=1');" href="/web/20050705074943/http://www.playsforsure.com/default.aspx?id=14" target="_new"><img src="/web/20050705074943im_/http://entimg.msn.com/i/mu/playsforsure_50.jpg" alt="" border="0" height="50" width="50" /></a></td><td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
-							<tr>
-								<td class="vp5" align="Left" valign="Top"><a class="lnk1" onclick="if(SF('h')) return h(this,'cm=MODBR&amp;ce=2');" href="/web/20050705074943/http://www.playsforsure.com/default.aspx?id=14" target="_new">Choose your device, know it's going to work</a></td>
-							</tr>
-						</table></td>
-					</tr>
-				</table></td>
-			</tr>
-		</table></td>
-	</tr>
-</table>
-													 	
-													</td>
-												</tr>
-												<tr>
-													<td valign="top">
-													
-															
-													 	
-													</td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>	
-								
-							</td>
-						</tr>
-					</table>
-				</td>
-				
-			</tr>
-		</table>
-		
-		
-			<table class="ftout" cellspacing="0" cellpadding="0" border="0" width="100%">
-	<tr>
-		<td align="Center"><table cellspacing="0" cellpadding="0" border="0" width="750">
-			<tr>
-				<td><table cellspacing="0" cellpadding="0" border="0" width="100%">
-					<tr>
-						<td><table class="ftrtbi2" cellspacing="0" cellpadding="0" border="0">
-							<tr>
-								<td><span class="lnk1">&copy;2005 Microsoft</span></td><td><span class="blt1">&#159</span></td><td><a class="lnk4" onclick="if(SF('h')) return h(this,'cm=FOOTER&amp;ce=1');" href="/web/20050705074943/http://music.msn.com/music/providers.aspx">Partners</a><span class="lnk4">&nbsp;&amp;&nbsp;</span><a class="lnk4" onclick="if(SF('h')) return h(this,'cm=FOOTER&amp;ce=2');" href="/web/20050705074943/http://g.msn.com/0nwenus0/A5/19" target="_new">Advertisers</a></td><td><span class="blt1">&#159</span></td><td><a class="lnk4" onclick="if(SF('h')) return h(this,'cm=FOOTER&amp;ce=3');" href="/web/20050705074943/http://g.msn.com/0nwenus0/a5/20" target="_new">Privacy</a><span class="lnk4">&nbsp;&amp;&nbsp;</span><a class="lnk4" onclick="if(SF('h')) return h(this,'cm=FOOTER&amp;ce=4');" href="/web/20050705074943/http://g.msn.com/0nwenus0/a5/18" target="_new">Legal</a></td>
-							</tr>
-						</table></td><td align="Right"><table class="ftrtbi2" cellspacing="0" cellpadding="0" border="0">
-							<tr>
-								<td><span class="lnk4"><a class="lnk4" href="mailto:?subject=MSN%20-%20Music%3a%20Home&amp;body=I%20found%20this%20on%20MSN%20Entertainment%20and%20thought%20you%20might%20be%20interested%20in%20it.%0d%0a%0d%0aClick%20this%20link%3a%0d%0ahttp%3a%2f%2fmusic.msn.com%2fmusic%2fdefault.aspx%0d%0a">Email This Page</a></span></td><td><span class="blt1">&#159</span></td><td><a class="lnk4" onclick="if(SF('h')) return h(this,'cm=FOOTER&amp;ce=5');" href="/web/20050705074943/http://music.msn.com/help/customer.aspx">Customer Service</a></td>
-							</tr>
-						</table></td>
-					</tr>
-				</table></td>
-			</tr>
-		</table></td>
-	</tr>
-</table><a class="txt2" onclick="var win = window.open(); win.document.open(); win.document.writeln('Machine Code: B13 - Date: 2005-07-05T00:49:43-07&lt;br&gt;&lt;br&gt;Page URL: ' + escape(document.URL)); return false;" href="#">Page Information</a>
-			
-	
-		</center>
-	</body>
-</HTML>
-<script>if(window.sdd){sHS();}</script><script>window.onunload = Rsn; function Rsn() {window.name = 'notmine';} if(SF('SetupRatings')) SOL(SetupRatings); if(SF('cklnch')) SOL(cklnch); if(SF('chkbb')) SOL(chkbb);</script><span id=clipSpan></span>
-
-
-
-
-<!--
-     FILE ARCHIVED ON 7:49:43 Jul 5, 2005 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 6:24:42 Jan 6, 2015.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
--->

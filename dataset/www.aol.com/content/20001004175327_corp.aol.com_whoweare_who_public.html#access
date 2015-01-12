@@ -1,0 +1,827 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app14.us.archive.org";archive_analytics.values.server_ms=212;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<title>AOL Corporate</title>
+<meta http-equiv="keywords" content="America Online, AOL">
+<meta http-equiv="description" content="We're on a Mission">
+<meta http-equiv="author" content="Elizabeth, IMD,  AOL Corporate, Elizabeth@aol.net">
+ <SCRIPT LANGUAGE="JavaScript"><!-- Hide from non javascript browsers
+var isLoaded=false;
+var currSelection="";
+/********************************************
+ * Load rollover images                     *
+ ********************************************/
+if (document.images)
+{ 
+   who_on=new Image();
+   who_on.src="images/whoweare_r.gif";
+   who_off=new Image();
+   who_off.src="images/whoweare.gif";
+
+   press_on=new Image();
+   press_on.src="images/press_r.gif";
+   press_off=new Image();
+   press_off.src="images/press.gif";
+
+   invest_on=new Image();
+   invest_on.src="images/invest_r.gif";
+   invest_off=new Image();
+   invest_off.src="images/invest.gif";
+
+   member_on=new Image();
+   member_on.src="images/service_r.gif";
+   member_off=new Image();
+   member_off.src="images/services.gif";
+   
+   found_on=new Image();
+   found_on.src="images/foundation_r.gif";
+   found_off=new Image();
+   found_off.src="images/foundation.gif";
+   
+
+   careers_on=new Image();
+   careers_on.src="images/careers_r.gif";
+   careers_off=new Image();
+   careers_off.src="images/careers.gif";
+   
+   annual_on=new Image();
+   annual_on.src="images/annualreport_r.gif";
+   annual_off=new Image();
+   annual_off.src="images/annualreport.gif";
+ 
+   aolcom_on=new Image();
+   aolcom_on.src="images/aolcom_r.gif";
+   aolcom_off=new Image();
+   aolcom_off.src="images/aolcom.gif";
+   
+   contact_on=new Image();
+   contact_on.src="images/contactus_r.gif";
+   contact_off=new Image();
+   contact_off.src="images/contactus.gif";
+
+   sitemap_on=new Image();
+   sitemap_on.src="images/sitemap_r.gif";
+   sitemap_off=new Image();
+   sitemap_off.src="images/sitemap.gif";  
+
+   faq_on=new Image();
+   faq_on.src="images/m5_h.gif";
+   faq_off=new Image();
+   faq_off.src="images/m5.gif";   
+}
+
+
+function RollOver(imgName, over)
+{  
+
+   if (document.images && imgName != currSelection)
+   {
+      currImage=eval("document." + imgName);
+      if (!currImage)
+         return;
+      if (over)
+         currImage.src=eval(imgName + "_on.src");
+      else
+         currImage.src=eval(imgName + "_off.src");
+   }
+}
+
+function setSelection(imgName)
+{
+   if (document.images && imgName != currSelection)
+   {
+      if (currSelection != "")
+      {
+         // Turn of previous selection
+         currImage=eval("document." + currSelection);
+         if (currImage)
+         {
+            currImage.src=eval(currSelection + "_off.src");
+         }
+      }
+      currSelection=imgName;
+      
+      if (currSelection != "")
+      {
+         currImage=eval("document." + currSelection);
+         if (currImage)
+         {
+            currImage.src=eval(currSelection + "_on.src");
+         }
+      }
+   }
+}
+
+// -->
+</SCRIPT>
+</head>
+<body bgcolor="#003366" marginwidth="0" marginheight="0" leftmargin="0" topmargin="0">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://corp.aol.com/whoweare/who_public.html";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "18";
+var displayMonth = "Oct";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://corp.aol.com/whoweare/who_public.html" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20001018181816" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20000815202328/http://www.corp.aol.com/whoweare/who_public.html" title="15 Aug 2000">AUG</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 18:18:16 Oct 18, 2000">OCT</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20001205013600/http://corp.aol.com/whoweare/who_public.html" title="5 Dec 2000"><strong>DEC</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20000815202328/http://www.corp.aol.com/whoweare/who_public.html" title="20:23:28 Aug 15, 2000"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 18:18:16 Oct 18, 2000">18</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20001109090200/http://www.corp.aol.com/whoweare/who_public.html" title="9:02:00 Nov 9, 2000"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   1999
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 18:18:16 Oct 18, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20011021053523/http://corp.aol.com/whoweare/who_public.html" title="21 Oct 2001"><strong>2001</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20001018181816*/http://corp.aol.com/whoweare/who_public.html" title="See a list of every capture for this URL">40 captures</a>
+           <div class="r" title="Timespan for captures of this URL">15 Aug 00 - 21 Nov 11</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:9:000000020133_2001:-1:001101010100_2002:-1:001001010001_2003:-1:000000000101_2004:-1:010101010101_2005:-1:011100000000_2006:-1:001000000000_2007:-1:000000000000_2008:-1:000010000011_2009:-1:010000000000_2010:-1:000000000000_2011:-1:010201010010_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+    <!-- Centered table starts here -->
+    <table width="658" bgcolor="#003366" border="0" cellspacing="0" cellpadding="0" align="center">
+        <tr valign="top">
+            <td width="37"><font face="Verdana, Arial, Helvetica" size="2"><img src="../images/spacer.gif" width="37px" height=1 alt="" border="0"></font></td>
+            <td width="116"><font face="Verdana, Arial, Helvetica" size="2"><img src="../images/spacer.gif" width="116px" height=1 alt="" border="0"></font></td>
+            <td width="566"><font face="Verdana, Arial, Helvetica" size="2"><img src="../images/spacer.gif" width="566px" height=1 alt="" border="0"></font></td>
+        </tr>  
+        <tr valign="top"> <!-- TOP NAV BAR -->
+            <td colspan="3" bgcolor="#003366" width="723">
+<!--webbot bot="Include" U-Include="../ssi/whoweare-ssi.html" TAG="BODY" startspan -->
+ <table cellspacing="0" cellpadding="0">
+ <tr valign="top"><!-- TOP NAV BAR -->
+            
+    <td colspan="3" bgcolor="#003366"> <font face="Verdana, Arial, Helvetica" size="2"> 
+<a href="/web/20001018181816/http://corp.aol.com/whoweare.html" onMouseOver="RollOver('who', 1); window.status='who'; return true;" onMouseOut="RollOver('who', 0); window.status=''; return true;" onClick="setSelection('who');"><img name="who" src="/web/20001018181816im_/http://corp.aol.com/images/whoweare.gif" width="103" height="25" alt="Who We Are" border="0" hspace="0" vspace="0"></a><a href="/web/20001018181816/http://media.web.aol.com/media/press.cfm" onMouseOver="RollOver('press', 1); window.status='press'; return true;" onMouseOut="RollOver('press', 0); window.status=''; return true;" onClick="setSelection('press');"><img name="press" src="/web/20001018181816im_/http://corp.aol.com/images/press.gif" width="43" height="25" alt="Press" border="0" hspace="0" vspace="0"></a><a href="/web/20001018181816/http://corp.aol.com/investors.shtml" onMouseOver="RollOver('invest', 1); window.status='invest'; return true;" onMouseOut="RollOver('invest', 0); window.status=''; return true;" onClick="setSelection('invest');"><img name="invest" src="/web/20001018181816im_/http://corp.aol.com/images/invest.gif" width="62" height="25" alt="Investors" border="0" hspace="0" vspace="0"></a><a href="/web/20001018181816/http://corp.aol.com/ms_main.html" onMouseOver="RollOver('member', 1); window.status='member'; return true;" onMouseOut="RollOver('member', 0); window.status=''; return true;" onClick="setSelection('member');"><img name="member" src="/web/20001018181816im_/http://corp.aol.com/images/services.gif" width="104" height="25" alt="Member Services" border="0" hspace="0" vspace="0"></a><a href="/web/20001018181816/http://corp.aol.com/foundation.html" onMouseOver="RollOver('found', 1); window.status='found'; return true;" onMouseOut="RollOver('found', 0); window.status=''; return true;" onClick="setSelection('found');"><img name="found" src="/web/20001018181816im_/http://corp.aol.com/images/foundation.gif" width="100" height="25" alt="AOL Foundation" border="0" hspace="0" vspace="0"></a><a href="/web/20001018181816/http://recruit.web.aol.com/careers/jobsearch.cfm" onMouseOver="RollOver('careers', 1); window.status='careers'; return true;" onMouseOut="RollOver('careers', 0); window.status=''; return true;" onClick="setSelection('careers');"><img name="careers" src="/web/20001018181816im_/http://corp.aol.com/images/careers.gif" width="55" height="25" alt="Careers" border="0" hspace="0" vspace="0"></a><a href="/web/20001018181816/http://corp.aol.com/annual/index.html" onMouseOver="RollOver('annual', 1); window.status='annual'; return true;" onMouseOut="RollOver('annual', 0); window.status=''; return true;" onClick="setSelection('annual');"><img name="annual" src="/web/20001018181816im_/http://corp.aol.com/images/annualreport.gif" width="91" height="25" alt="Annual Report" border="0" hspace="0" vspace="0"></a><img src="/web/20001018181816im_/http://corp.aol.com/images/end1search.gif" width="161" height="25" alt="" border="0" hspace="0" vspace="0">
+      </font> </td>
+         </tr>
+         <tr><!-- BLACK NAV BAR -->
+            <td colspan="3" bgcolor="#000000"><font face="Verdana, Arial, Helvetica" size="2"><img src="../images/blackbelt.jpg" width="330" height="11" alt="" border="0"><img src="../images/spacer.gif" width="191" height="5" alt="" border="0"><a href="../index.html?" onMouseOver="RollOver('aolcom', 1); window.status='aolcom'; return true;" onMouseOut="RollOver('aolcom', 0); window.status=''; return true;" onClick="setSelection('aolcom');"><img name="aolcom" src="../images/aolcom.gif" alt="Back to Home Hyperlink" border="0" width="75" height="11"></a><a href="../contact.html?" onMouseOver="RollOver('contact', 1); window.status='contact'; return true;" onMouseOut="RollOver('contact', 0); window.status=''; return true;" onClick="setSelection('contact');"><img name="contact" src="../images/contactus.gif" alt="Contact Us Hyperlink" border="0" width="59" height="11"></a><a href="../sitemap.html?" onMouseOver="RollOver('sitemap', 1); window.status='sitemap'; return true;" onMouseOut="RollOver('sitemap', 0); window.status=''; return true;" onClick="setSelection('sitemap');"><img name="sitemap" src="../images/sitemap.gif" alt="Site Map Hyperlink" border="0" width="65" height="11"></a></font></td></tr>
+         <tr>
+            <td colspan="3" align="left" bgcolor="#6699CC" height="55" valign="top"><img border="0" src="../images/title_whoweare.gif" alt="Who We Are" width="128" height="55"><img border="0" src="../images/title_whoweare2.gif" alt="Who We Are" width="592" height="55"></td>
+        </tr>
+
+ </table>
+
+<!--webbot bot="Include" endspan i-checksum="57749" -->
+          </td>
+        </tr>
+        <tr> <!-- SIDE NAV BAR -->
+        <td colspan="2" background="../images/tablebkgd.gif" align="LEFT" valign="TOP" width="155"><!-- side NAV BAR -->
+            <!--webbot bot="Include" U-Include="../ssi/who-navbar-ssi.html" TAG="BODY" startspan
+-->
+<table width="153px" background="../images/yellowbox.gif" border="0" bgcolor="#003366" cellspacing="0" cellpadding="0" valign="TOP" align="left">
+                   <tr width="154" height="9" alt="" border="0">
+                    <td colspan="2" valign="TOP">
+                     <img src="../images/spacer.gif" width="5" height="12" alt="" border="0"><br>
+                        <a href="who_brandsaol.html"><img name="company" src="../images/wbrands.gif" alt="Our Brands" border=0 width="153" height="12"></a><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="who_brandsaol.html"><FONT SIZE="-2" COLOR="#000000">AOL</font></a><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="who_compuserve.html"><font size="-2" COLOR="#000000">CompuServe</font></a><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="who_digitalcity.html"><font size="-2" COLOR="#000000">Digital City</font></a><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="who_icq.html"><font size="-2" COLOR="#000000">ICQ</font></a><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="who_iplanet.html"><font size="-2" color="#000000">iPlanet</font></a><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="who_mapquest.html"><font size="-2" color="#000000">MapQuest</font></a><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="who_moviefone.html"><font size="-2" COLOR="#000000">Moviefone</font></a><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="who_netscape.html"><font size="-2" COLOR="#000000">Netscape</font></a><br>&nbsp;&nbsp;&nbsp;&nbsp;
+                     <a href="who_spinner.html"><font size="-2" COLOR="#000000">Spinner</font></a>
+                     <p>
+                        <a href="whoswho.html"><img src="../images/wwho.gif" alt="Who's Who" border=0 width="153" height="12"></a><br><br>
+                        <a href="who_datapoints.html"><img src="../images/wdata.gif" alt="Datapoints" border=0 width="153" height="12"></a><br><br>
+                        <a href="who_timeline.html"><img src="../images/wtimeline.gif" alt="Timeline" border=0 width="153" height="12"></a><br><br>
+                        <a href="who_public.html"><img src="../images/wpublic.gif" alt="Public Policy" border=0 width="153" height="12"></a><br>
+                        <br><a href="partners.html"><img src="../images/wpartners.gif" alt="Our Partners" border=0 width="153" height="12"></a>
+                     </p>
+                     <p>&nbsp;
+                        
+                     </p>
+                    </td></tr>
+                    <tr><td align="right" valign="TOP" bgcolor="#000000"><img src="../images/yinvestorbottom.gif" alt="" border="0" width="153" height="12"></td></tr>                    
+            </table>
+<!--webbot bot="Include" endspan i-checksum="27830"
+-->
+      </td>
+       <td colspan="1" align="LEFT" valign="top" bgcolor="White" width="566"><font face="Verdana, Arial, Helvetica" size="2"><br>
+       <!-- Start Content --></font><table cellpadding="15" border="0" width="483"><tr><td width="447">
+       
+<h3><font face="Verdana, Arial, Helvetica" size="3" color="#003366">Exploring
+Internet Public Policy</font></h3>
+<p><font face="Verdana, Arial, Helvetica" size="2">Every day, thousands of
+people &quot;go online&quot; for the first time to explore the exciting new
+medium known as the Internet. At America Online we believe this interactive
+medium is fundamentally changing the way citizens communicate and educate
+themselves—and the way consumers buy goods and services—both in this country
+and around the world.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2">But the development of this
+dynamic new environment has only just begun. There is still a world of exciting
+possibilities ahead, and as the Internet continues to grow, we at AOL want to
+play our part in ensuring that it grows successfully, efficiently, and
+fairly—into a medium that we can all be proud of. That’s why the AOL
+corporate mission is to build a global medium as central to people’s lives as
+the telephone or television—and even more valuable.</font></p>
+<h3><font face="Verdana, Arial, Helvetica" size="2">Public Policy Principles</font></h3>
+<p><font face="Verdana, Arial, Helvetica" size="2">America Online believes,
+therefore, that a few basic principles should guide the development of a public
+policy environment designed to make the Internet accessible, affordable and
+valuable to all members of the global community. We believe that adherence to
+these principles will deliver the economic and social benefits promised by this
+new Internet medium.</font>
+<ol>
+  <li><font face="Verdana, Arial, Helvetica" size="2">Internet policy should
+    foster individual choice and empowerment in the economic and social
+    dimensions and rely on individual decision-making for determining the
+    products, services and content available on the Internet. Practices
+    developed in the crucible of the private sector and the marketplace can best
+    direct the development of the interactive medium.</font>
+  <li><font face="Verdana, Arial, Helvetica" size="2">Public policies should be
+    market-driven and industry-led. Policies should be developed
+    collaboratively, with input from industry leaders, government officials and,
+    perhaps most importantly, consumers and other stakeholders. Public or
+    private gatekeepers should not be allowed to prevent new entry, deny
+    business opportunities or limit the free flow of information in the
+    Internet.</font>
+  <li><font face="Verdana, Arial, Helvetica" size="2">Where government
+    involvement is determined to be necessary, policies should be
+    technologically neutral and non-discriminatory, to ensure that the Internet
+    enjoys the same potential for growth as any other medium and that the value
+    of the unique, interactive nature of this new medium can be fully realized.</font>
+  <li><font face="Verdana, Arial, Helvetica" size="2">Policies should be
+    designed to assure that all segments of society and all countries of the
+    world have access to the potential economic and social benefits of this new
+    medium—and that the medium becomes as essential to our daily lives as the
+    television and the telephone, and more valuable.</font>
+</ol>
+<p><font face="Verdana, Arial, Helvetica" size="2">In sum, we seek to maximize
+the economic and social benefits of the Internet with industry-led,
+market-driven policies that allow this dynamic medium to reach its full
+potential.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2">&quot;It is more important
+than ever that policymakers, both in the U.S. and abroad, recognize the enormous
+potential economic and social benefits of the medium.&quot;</font></p>
+<p align="right"><a href="#top"><font face="Verdana, Arial, Helvetica" size="2">Back
+to top</font></a>
+<h3><font face="Verdana, Arial, Helvetica" size="2">The Internet’s Astounding
+Growth</font></h3>
+<p><font face="Verdana, Arial, Helvetica" size="2">In the few short years since
+it became a part of people’s everyday lives, the Internet has managed to link
+communities together in an unparalleled fashion. The medium’s growth rate has
+been nothing less than phenomenal. In 1990 only a small cadre of researchers
+knew what the Internet was. By mid-1999, worldwide, 150 million individuals were
+connected to the Internet. Some estimates suggest that worldwide there soon will
+be as many as one billion people online.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2">Closer to home, more than 50
+million American households and millions of businesses, schools, libraries and
+other institutions have access to the Internet, and that number is growing
+rapidly. Network traffic continues to double every 100 days, and Jupiter
+Communications, a leading Internet analyst firm, projects that almost 55 percent
+of the U.S. population will be online by 2002. According to a Roper Starch study
+that AOL recently commissioned, nearly two-thirds of Internet consumers who have
+been online three or more years now view the interactive medium as a necessity
+in their lives.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2">The Internet today has been
+compared to the telephone in the 1920s or television in the 1950s. And yet,
+while it took the mass market almost three decades to adopt the phone and TV,
+the Internet has been adopted on a mass scale within just five years. Why?
+Perhaps because, unlike radio and television, the Internet is open, interactive
+and decentralized. Any one user, anywhere in the world, can &quot;publish&quot;
+and distribute information or electronic products and services to a virtually
+unlimited Internet audience, at very little cost. In fact, most of the content
+on the Internet is user-generated. These key factors—openness, interactivity
+and decentralization—make the Internet a uniquely empowering medium that can
+have a dramatic impact on people’s lives.</font></p>
+<p align="right"><a href="#top"><font face="Verdana, Arial, Helvetica" size="2">Back
+to top</font></a>
+<h3><font face="Verdana, Arial, Helvetica" size="2">Fueling the Economy</font></h3>
+<p><font face="Verdana, Arial, Helvetica" size="2">Because of its unique
+structure, the Internet is bringing a new dynamic to the world economy. In fact,
+the low cost of opening an Internet &quot;store&quot; and of marketing and
+distributing goods and services is bringing more products and services to more
+people at lower costs.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2">Key technology—and even
+non-technology—companies and innovators will see large percentages of their
+business move online. Automotive industry analyst J.D. Power estimates that half
+of all auto sales will soon involve the Internet. Banking, advertising, real
+estate, insurance—all of these industries, and many more, now take advantage
+of the immediacy, interactivity and convenience offered by the Internet and
+online services, which provide new ways of reaching customers at a fraction of
+the costs of traditional media.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2">By 2002, according to U.S.
+Commerce Department figures, $300 billion worth of business-to-business commerce
+will be conducted online. And it’s not just big companies that are reaping the
+benefits of this new medium. More than half of all small businesses in the
+United States are now online. Analysts project that more than 500,000 small
+companies will be engaged in business-to-business electronic commerce by 2002.
+Small business is the lifeblood of any community, and when it prospers, the
+whole community prospers.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2">The information technology
+industry represents more than one-third of the real economic growth in the
+United States over the last five years. It generates more than 8% of the U.S.
+gross domestic product and more than 7 million jobs paying significantly above
+the private sector average. By 2006, the Commerce Department projects, almost
+half of U.S. workers will be employed by industries that produce information
+technology or are intensive users of it. These figures mean renewed strength for
+the economy and exciting new business opportunities for a great number of
+people.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2">&quot;The information
+technology industry represents more than one-third of the real economic growth
+in the United States over the last five years.&quot;</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2">&quot;By 2006, the Commerce
+Department projects, almost half of U.S. workers will be employed by industries
+that produce information technology or are intensive users of it.&quot;</font></p>
+<p align="right"><a href="#top"><font face="Verdana, Arial, Helvetica" size="2">Back
+to top</font></a>
+<h3><font face="Verdana, Arial, Helvetica" size="2">A Consumer Revolution</font></h3>
+<p><font face="Verdana, Arial, Helvetica" size="2"><b>Online commerce is also
+becoming nothing short of an economic revolution for consumers.</b><br>
+Like everything else in this medium that seems to move at lightning speed,
+online commerce is gaining acceptance and momentum within the mass market at a
+breakneck pace. U.S. consumers purchased almost $13.6 billion in goods and
+services online in 1998, including $3.5 billion generated during the holiday
+shopping season alone ($1.2 billion of which can be attributed to AOL members!).
+E-commerce is expected to grow to $3.2 trillion worldwide by 2003, according to
+Forrester Research. By the end of 1998, 35% of the Internet population had made
+an online purchase, and 26% of the total family holiday buying in 1998 was
+conducted over the Internet.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2">Even the most powerful brands
+are experiencing a tremendous shift in power in favor of the consumer. In fact,
+the Internet is helping to usher in a new business era in which the
+well-informed consumer rules the marketplace. We believe there are three
+important principles that govern this highly consumer-centric era—principles
+that will ultimately change the face of business.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2"><b>Better-informed buyers
+expect more value for their money</b><br>
+More than ever, consumers are seeking value. For some, this might mean lower
+prices; for others it’s convenience, product quality, excellent service, or
+some combination. The Internet provides consumers with all the information they
+need to comparison shop until they find what they regard as the best value. If
+their traditional brand doesn’t give it to them, they’ll find someone else
+who does.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2"><b>Consumers expect more
+control</b><br>
+Online consumers are active, not passive. They search the Web for the
+information they need to make their buying decisions, they read reviews and
+information bulletin boards, and they share insights with others in online
+communities. The more these customers learn, the more control they demand.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2"><b>Consumers place a high
+premium on convenience</b><br>
+Nothing is as precious as time, and consumers have ever less of it to spend.
+Computers are among the most powerful laborsaving devices ever invented, and the
+Internet has expanded that convenience by orders of magnitude. E-commerce offers
+customers the triple pleasures of speed, convenience and efficiency. They can
+buy what they want, when they want it, without leaving the comfort of their
+homes. There are no closing hours, no holidays, no battles for a parking spot in
+cyberspace. They can check their bank statement, pay their bills, or buy their
+spouse an anniversary gift in the middle of the night, if necessary.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2">Consumers are migrating to
+the interactive medium to meet their commerce needs because it is convenient and
+fast, and offers an ever-growing selection of goods and services. Already,
+consumers can get an auto loan approved on the Internet in less than 15 seconds,
+make airline reservations for a flight around the world with the click of a
+mouse, and buy gifts for an entire family online in the time it takes for dinner
+to cook.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2">And that’s only what
+consumers can do online today. Within less than a decade, technology experts
+predict that consumers will be able to do such amazing things as:</font></p>
+<ul>
+  <li><font face="Verdana, Arial, Helvetica" size="2">place a person-to-person
+    call overseas without having to know how to speak a foreign
+    language—because the computer will automatically translate;</font>
+  <li><font face="Verdana, Arial, Helvetica" size="2">buy music online directly
+    from the artist or company that created it and download it directly to his
+    or her own computer; or</font>
+  <li><font face="Verdana, Arial, Helvetica" size="2">download newspapers,
+    brochures and books of all kinds straight from the Internet to palm-sized
+    &quot;electronic books.&quot;</font>
+</ul>
+<p><font face="Verdana, Arial, Helvetica" size="2">Consumers’ confidence about
+the safety of online transactions is also steadily increasing. Secure
+technologies within the international marketplace, as well as the 100 percent
+Total Satisfaction Guarantee we offer at AOL, have gone a long way to allay
+consumer worries about the security of online commerce. In 1997, for example,
+10% of U.S. consumers did their holiday shopping online—and during the 1998
+holiday season AOL members spent $1.2 billion shopping online. In fact,
+according to ZONA research, on average, 26% of the total family holiday buying
+in 1998 was done over the Internet.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2">With today’s technology,
+we’ve been able to change the methods and economics of retailing, as well as
+offer new levels of security and protection to increase consumer confidence
+online. And we are starting to see online products and services that are
+superior in many respects to their offline counterparts—offering greater
+selection, better information, lower prices or different features. In fact,
+according to the Roper Starch study, of those who shop online regularly, almost
+half (47%) conduct online research as a first step before making a major
+purchase.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2">Longer term, we believe the
+benefits of transacting online will stimulate a consumer behavior shift away
+from bricks-and-mortar stores, paper checks and bills, and written signatures.
+Recent one-hour promotions on the AOL service, for example, attracted more than
+50,000 members to the Preview Travel site for $99 airfares and more than 30,000
+to the Music Boulevard site for the Titanic soundtrack. It’s hard to imagine a
+bricks-and-mortar store accommodating the crush of 30,000 to 50,000 customers in
+one hour.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2">In short, we believe the
+Internet is ushering in a world of digital information and personalization that
+has the capability to change how we exchange funds, contract for services, and
+purchase or sell products.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2">&quot;Consumers are migrating
+to the interactive medium to meet their commerce needs because it is convenient
+and fast, and offers an ever-growing selection of goods and services.&quot;</font></p>
+<p align="right"><a href="#top"><font face="Verdana, Arial, Helvetica" size="2">Back
+to top</font></a>
+<h3><font face="Verdana, Arial, Helvetica" size="2">Improving Our Community</font></h3>
+<p><font face="Verdana, Arial, Helvetica" size="2">Of course, technology is most
+valuable when it improves the lives of the people who use it. The Internet has
+made some remarkable contributions to society already, but there is much more
+that can be done.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2">&quot;Resources available
+online can enrich a student’s learning experience by opening doors to vast
+amounts of information, unique perspectives, and creative methods for
+teaching.&quot;</font></p>
+<p align="right"><a href="#top"><font face="Verdana, Arial, Helvetica" size="2">Back
+to top</font></a>
+<h3><font face="Verdana, Arial, Helvetica" size="2">Enriching Education</font></h3>
+<p><font face="Verdana, Arial, Helvetica" size="2">The Internet has
+extraordinary potential as an educational tool. Resources available online can
+enrich a student’s learning experience by opening doors to vast amounts of
+information, unique perspectives, and creative methods for teaching. By 1998,
+more than 85% of all schools in the United States had Internet access, compared
+to 32% in 1996. But &quot;access&quot; doesn’t necessarily mean that students
+actually have the capability to get online; unfortunately, only a relatively
+small percentage of students are being exposed to a curriculum that effectively
+integrates the Internet’s full capacity. As technology becomes more and more
+essential to our society, we must therefore work to ensure that online resources
+are widely available in the classroom, and that teachers receive training in how
+to use these technologies to their maximum potential.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2">We at AOL hope to play a part
+in this exciting new world of educational opportunity. Through our partnership
+with the Family Education Network, every school in the country has the
+opportunity to have its own free personalized Web site devoted to enhancing
+communications between parents, teachers and administrators. We offer free AOL
+accounts to schools in Empowerment Zones. In partnership with the National
+School Boards Association we are distributing free child-safety videos to
+schools and libraries across the country. And with the American Library
+Association we have set up Internet clinics for kids and parents or teachers,
+including hands-on surfing, in numerous cities across the country.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2">In addition, the AOL
+Foundation, created in 1997, is seeding scores of pilot projects across the
+country to enable teams of teachers and community leaders to test innovative
+uses of technology in education. Our hope is to use these pilot projects to
+develop best practices that can then be made available broadly to help other
+teachers and communities. We have also implemented a number of other education
+initiatives—with such goals as increasing parental involvement in education
+and promoting child safety online—and look forward to continuing to work with
+our industry colleagues, along with lawmakers and community partners, to make
+technology and education a high priority.</font></p>
+<p align="right"><a href="#top"><font face="Verdana, Arial, Helvetica" size="2">Back
+to top</font></a>
+<h3><font face="Verdana, Arial, Helvetica" size="2">Fostering Democratization</font></h3>
+<p><font face="Verdana, Arial, Helvetica" size="2">The Internet is playing a
+major role in revitalizing civic discourse and encouraging more citizen
+involvement in the political process. During the 1998 elections, 16% of U.S.
+voters generally—and an amazing 28% of voters aged 18-29—got the information
+they needed about candidates and campaigns from the Internet, according to the
+Pew Research Center for People and Media. This represents a 60% increase over
+1996, when only 10% of voters went online for election information. Many of
+those voters were also newcomers to the online world. In a survey by &quot;Web
+White &amp; Blue,&quot; a political-awareness Web site sponsored during the 1998
+elections by the Markle Foundation and Harvard University’s Shorenstein
+Center, with Web hosting services by AOL, 84% of the site users said that this
+was the first time they used the Internet to find election information.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2">&quot;My Government,&quot; a
+new AOL area that gives AOL members the latest news about the White House,
+federal agencies, Congress, the Supreme Court and election campaigns, has become
+one of the most popular areas on the service. We believe that the Internet
+medium has tremendous potential for providing all citizens with tools for making
+themselves heard on issues at the local, state and national government levels.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2">We are also dedicated to
+using the immediacy and interactivity of this medium to achieve a higher level
+of civic discourse and open meaningful dialogues between citizens and their
+elected or appointed representatives. Ultimately, we believe that many
+government services will be provided online, and we are already working on pilot
+programs at several levels to test the right way to build such programs.</font></p>
+<p align="right"><a href="#top"><font face="Verdana, Arial, Helvetica" size="2">Back
+to top</font></a>
+<h3><font face="Verdana, Arial, Helvetica" size="2">Bringing Healthcare Close to
+Home</font></h3>
+<p><font face="Verdana, Arial, Helvetica" size="2">The Internet is having a
+major impact on the awareness and availability of health care treatments,
+products and services. Online access to medical journals, support groups and
+interactive Web sites maintained by leading hospitals has made the Internet a
+source of medical information for millions of Americans. An estimated one-third
+of all Internet users now seek out health information online, and we expect that
+critical health and medical information will become even more widely available
+in the near future. Furthermore, doctors and medical personnel are expanding
+their abilities to treat rural communities through &quot;tele-medicine,&quot; or
+long-distance, Internet-based access to leading medical practitioners and
+resources.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2">At AOL and through the AOL
+Foundation we are exploring how best to harness the power of the medium to
+ensure that health information and services become widely available to all
+people regardless of geographic or economic disadvantages‚ as well as actually
+improving the quality and consistency of health care services while controlling
+costs.</font></p>
+<p align="right"><a href="#top"><font face="Verdana, Arial, Helvetica" size="2">Back
+to top</font></a>
+<p><font face="Verdana, Arial, Helvetica" size="2"><b><a name="access"></a>Making
+the Internet Accessible to People with Disabilities<br>
+</b><br>
+At America Online, we believe that the Internet and AOL should be friendly and
+easy-to-use for all consumers, including those with disabilities. In that
+spirit, we have developed the America Online <a href="../access_policy.html">Accessibility
+Policy</a> which expresses our commitment to the development of products and
+services that are accessible to all users.<br>
+<br>
+When the challenges confronted by people with disabilities are known, solutions
+can be incorporated in the research and design of information technologies. So
+we have taken steps to ensure that our employees are informed about the
+challenges faced by people with disabilities and aware of the technologies
+available to improve the user experience. We have also worked closely with
+people from the disability community whose input and feedback is essential to
+helping us design products and services that meet the needs of our users.</font></p>
+<p align="right"><a href="#top"><font face="Verdana, Arial, Helvetica" size="2">Back
+to top</font></a>
+<h3><font face="Verdana, Arial, Helvetica" size="2">Bridging the Digital Divide</font></h3>
+<p><font face="Verdana, Arial, Helvetica" size="2">As the online world continues
+to expand, embracing more people around the globe and becoming an indispensable
+part of their daily lives, it is important to ensure that we put the empowering
+educational, economic, consumer and social benefits of this technology within
+the reach of those with the greatest needs. Unfortunately, the divide between
+the haves and have-nots seems to grow wider each year. Our new medium holds
+enormous potential to narrow that gap — by empowering individuals and cutting
+across geographic, ethnic, economic and cultural boundaries to strengthen
+communities.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2">The Internet is helping to
+strengthen communities by overcoming the twin barriers of distance and
+economics. But in some places the &quot;digital divide&quot; between those who
+use computers and those who do not is widening. A recent Vanderbilt University
+study found that African-American families with annual incomes of $40,000 and up
+are rapidly closing the gap that once existed between themselves and white
+families in terms of PC ownership and online access—but that for
+African-American households making less than $40,000 a year the gap is widening.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2">AOL and the AOL Foundation
+have begun to address the problem of the &quot;digital divide&quot; through
+several research initiatives, partnerships and projects. We believe strongly
+that the medium cannot reach its potential without a strong focus by industry,
+the policy community and the non-profit community working together. There is
+much more to be done to ensure that all Americans, no matter what their
+backgrounds, can share in the economic and social benefits of the Internet. We
+believe that widespread use of the medium can be used to expand entrepreneurial
+opportunities in communities that lack access to capital, foster greater
+understanding and tolerance of religious and cultural differences, and provide
+rural citizens with greater access to information, goods and services. And
+that’s only the beginning.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2">&quot;The Internet is playing
+a major role in revitalizing civic discourse and encouraging more citizen
+involvement in the political process.&quot;</font></p>
+<p align="right"><a href="#top"><font face="Verdana, Arial, Helvetica" size="2">Back
+to top</font></a>
+<h3><font face="Verdana, Arial, Helvetica" size="2">The Public Policy
+Environment</font></h3>
+<p><font face="Verdana, Arial, Helvetica" size="2">Policymakers in the United
+States and other countries are spending increasing amounts of time on Internet
+policy, trying to determine the right approach to the public policy issues
+facing this explosive new medium. In the session of the U.S. Congress that ended
+in 1994, there were only seven bills related to the Internet. Four years later,
+the 105th Congress considered almost 200 bills relating to the Internet. And the
+106th Congress is more active on these issues than ever.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2">Other countries are also
+beginning to devote significant attention to Internet policy issues. And because
+this medium is inherently global, policy decisions overseas can have a
+significant impact on e-commerce in the United States. Therefore, it is more
+important than ever that policymakers, both in the U.S. and abroad, recognize
+the enormous potential economic and social benefits of the medium—and not
+unintentionally stifle its growth.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2">Over the last several years,
+each new session of Congress has expanded the digital agenda to include various</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2">e-commerce and consumer
+issues. The 106th Congress is now examining such issues as Internet privacy and
+security, the importance of open access and consumer choice to new broadband
+distribution systems, the role of federal antitrust laws in fostering
+competition in the Internet industry, the privatization of the Internet address
+system, and a wide range of content and consumer protection questions.</font></p>
+<p><font face="Verdana, Arial, Helvetica" size="2">As the Internet becomes
+increasingly integrated into our societal fabric, it is crucial to strike an
+appropriate balance between the role of the government and the role of industry
+in formulating solutions to Internet policy issues. Finding this balance is the
+key to ensuring that the Internet will continue to grow to reach its full
+potential, unhampered by unnecessary regulation but appropriately guided and
+monitored in crucial areas to protect the safety and security of its users.</font></p>
+<p align="right"><a href="#top"><font face="Verdana, Arial, Helvetica" size="2">Back
+to top</font></a>
+            </td></tr></table>
+        </td></tr>
+
+
+             
+    </table>  
+
+  
+    <!--webbot bot="Include" U-Include="../ssi/pagebottom-ssi.html" TAG="BODY" startspan -->
+
+<table width="723" bgcolor="#003366" border="0" cellspacing="0" cellpadding="0" align="center" height="22">
+  <tr>
+    <td valign="top" width="41" height="22">&nbsp;</td>
+    <td colspan="2" align="right" valign="top" width="684"><font face="Verdana, Arial, Helvetica" size="2"><map name="FPMap0">
+      <area href="/web/20001018181816/http://corp.aol.com/" shape="rect" coords="581, 0, 656, 19">
+      <area href="/web/20001018181816/http://corp.aol.com/privacy_policy.html" shape="rect" coords="25, 0, 123, 21"></map><img src="../images/thepagebottom.gif" alt="AOL Privacy Policy and Back to Home Hyperlinks" border="0" usemap="#FPMap0" align="right" width="682" height="22"></font></td>
+  </tr>
+</table>
+
+<!--webbot bot="Include" endspan i-checksum="14085" -->
+
+</body>
+</html>
+
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 18:18:16 Oct 18, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 3:39:30 Jan 8, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

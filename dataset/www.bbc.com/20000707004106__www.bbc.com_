@@ -1,0 +1,9107 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+
+
+<!-- HEADER -->
+<html>
+	<head>
+		<title>Internet Archive Wayback Machine</title>
+		<script type="text/javascript" src="/static/js/analytics.js"></script>
+		<script type="text/javascript">archive_analytics.values.server_name="wwwb-app17.us.archive.org";archive_analytics.values.server_ms=150;</script>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="/static/css/styles.css" />
+		<base target="_top" />
+	</head>
+	<body>
+
+<!-- /HEADER -->
+
+<script type="text/javascript">
+function SetCookie(cookieName,cookieValue,nDays) {
+  var today = new Date();
+  var expire = new Date();
+  if (nDays==null || nDays==0) nDays=1;
+  expire.setTime(today.getTime() + 86400000*nDays);
+  document.cookie = cookieName+"="+escape(cookieValue)
+    + ";expires="+expire.toGMTString() + ";path=/";
+}
+function SetAnchorDate(date) {
+  SetCookie("request.anchordate",date,365);
+}
+function SetAnchorWindow(maxSeconds) {
+  SetCookie("request.anchorwindow",maxSeconds,365);
+}
+</script>
+
+
+
+
+<script type="text/javascript" src="/static/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/static/js/excanvas.compiled.js"></script>
+<script type="text/javascript" src="/static/js/jquery.bt.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/static/js/jquery.hoverIntent.minified.js" charset="utf-8"></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<!-- More ugly JS to manage the highlight over the graph -->
+<script type="text/javascript">
+var wbCurrentUrl = "http:\/\/www.bbc.com\/";
+
+var firstYear = 1996;
+var curYear = -1;
+var startYear = 2000 - firstYear;
+var imgWidth = 980;
+var yearImgWidth = 49;
+var monthImgWidth = 5;
+
+function showTrackers(val) {
+    $('#wbMouseTrackYearImg').css('display', val);
+}
+function setActiveYear(year) {
+    if (curYear != year) {
+        var yrOff = year * yearImgWidth;
+	$('#wbMouseTrackYearImg').css('left', yrOff + "px");
+	if (curYear != -1) {
+	    $('#year-labels a:nth('+curYear+')').removeClass('activeHighlight');
+	}
+	$('#year-labels a:nth('+year+')').addClass('activeHighlight');
+        curYear = year;
+    }
+}
+function mouseOnYear(ev) {
+    var y = $(ev.target).data('year');
+    showTrackers('inline');
+    setActiveYear(y - firstYear);
+}
+function trackMouseMove(event) {
+    var element = event.target;
+    var eventX = event.pageX;
+    var elementX = Math.round($(element).offset().left);
+    var xOff = Math.min(Math.max(0, eventX - elementX), imgWidth);
+
+    var monthOff = xOff % yearImgWidth;
+    var year = Math.floor(xOff / yearImgWidth);
+    var monthOfYear = Math.min(Math.floor(monthOff / monthImgWidth), 11);
+    var month = (year * 12) + monthOfYear;
+    var dayOff = monthOff % monthImgWidth;
+    var day = dayOff > (monthImgWidth / 2) ? 15 : 1;
+    var dateString = 
+	    zeroPad(year + firstYear) + 
+	    zeroPad(monthOfYear+1,2) +
+	    zeroPad(day,2) + "000000";
+
+    var url = "/web/" + dateString + '*/' +  wbCurrentUrl;
+    $('#wm-graph-anchor').attr('href', url);
+    setActiveYear(year);
+}
+</script>
+<script type="text/javascript">
+$().ready(function(){
+    $("#year-labels").on('mouseover', 'a', mouseOnYear);
+    //$(".wbChartThisContainer div").mouseover(mouseOnYear);
+    $("#wbChart").mouseout(function(){
+        showTrackers('none'); setActiveYear(startYear);
+    });
+    $("#sparklineImgId").mousemove(trackMouseMove).mouseover(function(){
+        showTrackers('inline');
+    });
+    $(".date").each(function(i){
+	var actualsize = $(this).attr("count");
+        var size = (Math.min(actualsize, 10) - 1) * 10 + 30; //* 12;
+        var offset = -size / 2;
+        $(this).find("img").attr("src","/static/images/blueblob-dk.png");
+        $(this).find(".measure").css({width:size+'px',height:size+'px',top:offset+'px',left:offset+'px'});
+    });
+    $(".day a").each(function(i){
+        var dateClass = $(this).attr("class");
+        var dateId = "#"+dateClass;
+        $(this).hover(
+            function(){$(dateId).removeClass("opacity20");},
+            function(){$(dateId).addClass("opacity20");}
+        );
+    });
+    $(".captures").bt({
+        positions: ['top','right','left','bottom'],
+        contentSelector: "$(this).find('.pop').html()",
+        padding: 0, width: '130px', overlap: 0, cornerRadius: 5,
+        spikeGirth: 8, spikeLength: 8,
+        fill: '#efefef',
+        strokeWidth: 1, strokeStyle: '#efefef',
+        shadow: true, shadowColor: '#333', shadowBlur: 5,
+        shadowOffsetX: 0, shadowOffsetY: 0, 
+        noShadowOpts: {strokeStyle:'#ccc'},
+        hoverIntentOpts: {interval:60,timeout:2000},
+        clickAnywhereToClose: true,
+        closeWhenOthersOpen: true,
+        windowMargin: 30,
+        cssStyles: {
+            fontSize: '12px',
+            fontFamily: '"Arial","Helvetica Neue","Helvetica",sans-serif',
+            lineHeight: 'normal',
+            padding: '10px',
+            color: '#333'
+        }
+    });
+});
+</script>
+<div id="position">
+  <div id="wbSearch">
+    <a href="/web/"><img src="/static/images/logo_WM.png" alt="logo: Internet Archive's Wayback Machine" width="183" height="65" /></a>
+    <form name="form" method="get" action="/web/query" onsubmit="if (''==$('#query_url').val()){$('#query_url').attr('placeholder', 'enter a web address')} else {document.location.href='/web/*/'+$('#query_url').val();} return false;">
+      <input type="hidden" name="type" value="urlquery">
+      <input id="query_url" type="text" name="url" value="http://www.bbc.com/" placeholder="http://" size="40" maxlength="256">
+      <input class="web_button" type="submit" name="Submit" value="BROWSE HISTORY"/>
+    </form>
+    <div id="wbMeta">
+      <p class="wbUrl"><a href="http://www.bbc.com/"><strong>http://www.bbc.com/</strong></a></p>
+      <p>Saved <strong>8645 times</strong>
+      
+      
+      
+      
+      
+        between
+	<a href="/web/19981202212610/http://bbc.com/">Wed Dec 02 21:26:10 UTC 1998</a>
+	and
+	<a href="/web/20150111153439/http://www.bbc.com/">Sun Jan 11 15:34:39 UTC 2015</a>.
+      
+      
+      </p>
+      <p style="margin-top:2ex;"><a href="//archive.org/donate" target="_blank"><strong>PLEASE DONATE TODAY.</strong> Your generosity preserves knowledge for future generations. Thank you.</a></p>
+    </div>
+  </div>
+  <div id="wbChart">
+    <div id="wbChartThis" style="width:980px">
+      <a href="/web/" id="wm-graph-anchor">
+      <div id="wm-ipp-sparkline" style="height:76px" title="Explore captures for this URL">
+        <img id="sparklineImgId" alt="sparklines"
+	  style="position:absolute;z-index:9012;top:-1px;left:0;border:none;"
+	  width="980" height="75"
+	  src="/web/jsp/graph.jsp?nomonth=1&graphdata=980_75_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000002_1999:-1:130110000000_2000:6:004144110400_2001:-1:002110101002_2002:-1:100011114140_2003:-1:111203111221_2004:-1:100126789898_2005:-1:98899a9a789a_2006:-1:a99999575245_2007:-1:654545403800_2008:-1:014476001014_2009:-1:140001111300_2010:-1:100011021365_2011:-1:586755899abb_2012:-1:ccbbcbbbb9bb_2013:-1:bbbbaabbb9de_2014:-1:edfeeeeeeedd_2015:-1:a00000000000"></img>
+	<div id="wbMouseTrackYearImg" style="display:none;position:absolute;z-index:9010;width:48px;height:74px;border:none;background-color:#ffff00;"></div>
+      </div>
+      </a>
+      <div id="year-labels">
+      
+	
+	<a class="year-label " href="/web/19960101000000*/http://www.bbc.com/" data-year="1996">1996</a>
+      
+	
+	<a class="year-label " href="/web/19970101000000*/http://www.bbc.com/" data-year="1997">1997</a>
+      
+	
+	<a class="year-label " href="/web/19980101000000*/http://www.bbc.com/" data-year="1998">1998</a>
+      
+	
+	<a class="year-label " href="/web/19990101000000*/http://www.bbc.com/" data-year="1999">1999</a>
+      
+	
+	<a class="year-label activeHighlight" href="/web/20000101000000*/http://www.bbc.com/" data-year="2000">2000</a>
+      
+	
+	<a class="year-label " href="/web/20010101000000*/http://www.bbc.com/" data-year="2001">2001</a>
+      
+	
+	<a class="year-label " href="/web/20020101000000*/http://www.bbc.com/" data-year="2002">2002</a>
+      
+	
+	<a class="year-label " href="/web/20030101000000*/http://www.bbc.com/" data-year="2003">2003</a>
+      
+	
+	<a class="year-label " href="/web/20040101000000*/http://www.bbc.com/" data-year="2004">2004</a>
+      
+	
+	<a class="year-label " href="/web/20050101000000*/http://www.bbc.com/" data-year="2005">2005</a>
+      
+	
+	<a class="year-label " href="/web/20060101000000*/http://www.bbc.com/" data-year="2006">2006</a>
+      
+	
+	<a class="year-label " href="/web/20070101000000*/http://www.bbc.com/" data-year="2007">2007</a>
+      
+	
+	<a class="year-label " href="/web/20080101000000*/http://www.bbc.com/" data-year="2008">2008</a>
+      
+	
+	<a class="year-label " href="/web/20090101000000*/http://www.bbc.com/" data-year="2009">2009</a>
+      
+	
+	<a class="year-label " href="/web/20100101000000*/http://www.bbc.com/" data-year="2010">2010</a>
+      
+	
+	<a class="year-label " href="/web/20110101000000*/http://www.bbc.com/" data-year="2011">2011</a>
+      
+	
+	<a class="year-label " href="/web/20120101000000*/http://www.bbc.com/" data-year="2012">2012</a>
+      
+	
+	<a class="year-label " href="/web/20130101000000*/http://www.bbc.com/" data-year="2013">2013</a>
+      
+	
+	<a class="year-label " href="/web/20140101000000*/http://www.bbc.com/" data-year="2014">2014</a>
+      
+	
+	<a class="year-label " href="/web/20150101000000*/http://www.bbc.com/" data-year="2015">2015</a>
+      
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+  <div id="wbCalendar">
+  <div id="calUnder" class="calPosition">
+
+  
+    
+    <div class="month" id="2000-0">
+      <table>
+        <thead>
+          <tr><th colspan="7"><span class="month-label"></span></th></tr>
+	</thead>
+        <tbody>
+	  
+	  <tr>
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+          </tr>
+	  
+  	</tbody>
+      </table>
+    </div>
+  
+    
+    <div class="month" id="2000-1">
+      <table>
+        <thead>
+          <tr><th colspan="7"><span class="month-label"></span></th></tr>
+	</thead>
+        <tbody>
+	  
+	  <tr>
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+          </tr>
+	  
+  	</tbody>
+      </table>
+    </div>
+  
+    
+    <div class="month" id="2000-2">
+      <table>
+        <thead>
+          <tr><th colspan="7"><span class="month-label"></span></th></tr>
+	</thead>
+        <tbody>
+	  
+	  <tr>
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	      
+	      <td>
+		<div class="date" count="1">
+		  <div class="position">
+		    <div class="hidden">1</div>
+		    <div class="measure opacity20" id="Wed Mar 01 00:00:00 UTC 2000"><img width="100%" height="100%"/></div>
+		  </div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	      
+	      <td>
+		<div class="date" count="4">
+		  <div class="position">
+		    <div class="hidden">4</div>
+		    <div class="measure opacity20" id="Fri Mar 03 00:00:00 UTC 2000"><img width="100%" height="100%"/></div>
+		  </div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	      
+	      <td>
+		<div class="date" count="2">
+		  <div class="position">
+		    <div class="hidden">2</div>
+		    <div class="measure opacity20" id="Sat Mar 04 00:00:00 UTC 2000"><img width="100%" height="100%"/></div>
+		  </div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+          </tr>
+	  
+  	</tbody>
+      </table>
+    </div>
+  
+    
+    <div class="month" id="2000-3">
+      <table>
+        <thead>
+          <tr><th colspan="7"><span class="month-label"></span></th></tr>
+	</thead>
+        <tbody>
+	  
+	  <tr>
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	      
+	      <td>
+		<div class="date" count="1">
+		  <div class="position">
+		    <div class="hidden">1</div>
+		    <div class="measure opacity20" id="Sat Apr 08 00:00:00 UTC 2000"><img width="100%" height="100%"/></div>
+		  </div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+          </tr>
+	  
+  	</tbody>
+      </table>
+    </div>
+  
+    
+    <div class="month" id="2000-4">
+      <table>
+        <thead>
+          <tr><th colspan="7"><span class="month-label"></span></th></tr>
+	</thead>
+        <tbody>
+	  
+	  <tr>
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	      
+	      <td>
+		<div class="date" count="1">
+		  <div class="position">
+		    <div class="hidden">1</div>
+		    <div class="measure opacity20" id="Wed May 10 00:00:00 UTC 2000"><img width="100%" height="100%"/></div>
+		  </div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	      
+	      <td>
+		<div class="date" count="3">
+		  <div class="position">
+		    <div class="hidden">3</div>
+		    <div class="measure opacity20" id="Thu May 11 00:00:00 UTC 2000"><img width="100%" height="100%"/></div>
+		  </div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	      
+	      <td>
+		<div class="date" count="1">
+		  <div class="position">
+		    <div class="hidden">1</div>
+		    <div class="measure opacity20" id="Sat May 20 00:00:00 UTC 2000"><img width="100%" height="100%"/></div>
+		  </div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+          </tr>
+	  
+  	</tbody>
+      </table>
+    </div>
+  
+    
+    <div class="month" id="2000-5">
+      <table>
+        <thead>
+          <tr><th colspan="7"><span class="month-label"></span></th></tr>
+	</thead>
+        <tbody>
+	  
+	  <tr>
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	      
+	      <td>
+		<div class="date" count="1">
+		  <div class="position">
+		    <div class="hidden">1</div>
+		    <div class="measure opacity20" id="Sun Jun 18 00:00:00 UTC 2000"><img width="100%" height="100%"/></div>
+		  </div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	      
+	      <td>
+		<div class="date" count="2">
+		  <div class="position">
+		    <div class="hidden">2</div>
+		    <div class="measure opacity20" id="Tue Jun 20 00:00:00 UTC 2000"><img width="100%" height="100%"/></div>
+		  </div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	      
+	      <td>
+		<div class="date" count="4">
+		  <div class="position">
+		    <div class="hidden">4</div>
+		    <div class="measure opacity20" id="Wed Jun 21 00:00:00 UTC 2000"><img width="100%" height="100%"/></div>
+		  </div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+          </tr>
+	  
+  	</tbody>
+      </table>
+    </div>
+  
+    
+    <div class="month" id="2000-6">
+      <table>
+        <thead>
+          <tr><th colspan="7"><span class="month-label"></span></th></tr>
+	</thead>
+        <tbody>
+	  
+	  <tr>
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	      
+	      <td>
+		<div class="date" count="1">
+		  <div class="position">
+		    <div class="hidden">1</div>
+		    <div class="measure opacity20" id="Fri Jul 07 00:00:00 UTC 2000"><img width="100%" height="100%"/></div>
+		  </div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	      
+	      <td>
+		<div class="date" count="1">
+		  <div class="position">
+		    <div class="hidden">1</div>
+		    <div class="measure opacity20" id="Tue Jul 11 00:00:00 UTC 2000"><img width="100%" height="100%"/></div>
+		  </div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+          </tr>
+	  
+  	</tbody>
+      </table>
+    </div>
+  
+    
+    <div class="month" id="2000-7">
+      <table>
+        <thead>
+          <tr><th colspan="7"><span class="month-label"></span></th></tr>
+	</thead>
+        <tbody>
+	  
+	  <tr>
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	      
+	      <td>
+		<div class="date" count="1">
+		  <div class="position">
+		    <div class="hidden">1</div>
+		    <div class="measure opacity20" id="Tue Aug 15 00:00:00 UTC 2000"><img width="100%" height="100%"/></div>
+		  </div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+          </tr>
+	  
+  	</tbody>
+      </table>
+    </div>
+  
+    
+    <div class="month" id="2000-8">
+      <table>
+        <thead>
+          <tr><th colspan="7"><span class="month-label"></span></th></tr>
+	</thead>
+        <tbody>
+	  
+	  <tr>
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+  	</tbody>
+      </table>
+    </div>
+  
+    
+    <div class="month" id="2000-9">
+      <table>
+        <thead>
+          <tr><th colspan="7"><span class="month-label"></span></th></tr>
+	</thead>
+        <tbody>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	      
+	      <td>
+		<div class="date" count="1">
+		  <div class="position">
+		    <div class="hidden">1</div>
+		    <div class="measure opacity20" id="Mon Oct 09 00:00:00 UTC 2000"><img width="100%" height="100%"/></div>
+		  </div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	      
+	      <td>
+		<div class="date" count="2">
+		  <div class="position">
+		    <div class="hidden">2</div>
+		    <div class="measure opacity20" id="Tue Oct 17 00:00:00 UTC 2000"><img width="100%" height="100%"/></div>
+		  </div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	      
+	      <td>
+		<div class="date" count="1">
+		  <div class="position">
+		    <div class="hidden">1</div>
+		    <div class="measure opacity20" id="Thu Oct 19 00:00:00 UTC 2000"><img width="100%" height="100%"/></div>
+		  </div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	      
+	      <td>
+		<div class="date" count="1">
+		  <div class="position">
+		    <div class="hidden">1</div>
+		    <div class="measure opacity20" id="Fri Oct 27 00:00:00 UTC 2000"><img width="100%" height="100%"/></div>
+		  </div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	      
+	      <td>
+		<div class="date" count="1">
+		  <div class="position">
+		    <div class="hidden">1</div>
+		    <div class="measure opacity20" id="Mon Oct 30 00:00:00 UTC 2000"><img width="100%" height="100%"/></div>
+		  </div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+          </tr>
+	  
+  	</tbody>
+      </table>
+    </div>
+  
+    
+    <div class="month" id="2000-10">
+      <table>
+        <thead>
+          <tr><th colspan="7"><span class="month-label"></span></th></tr>
+	</thead>
+        <tbody>
+	  
+	  <tr>
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+          </tr>
+	  
+  	</tbody>
+      </table>
+    </div>
+  
+    
+    <div class="month" id="2000-11">
+      <table>
+        <thead>
+          <tr><th colspan="7"><span class="month-label"></span></th></tr>
+	</thead>
+        <tbody>
+	  
+	  <tr>
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"></div></td>
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+          </tr>
+	  
+  	</tbody>
+      </table>
+    </div>
+  
+  </div>
+  <div id="calOver" class="calPosition">
+  
+    
+    <div class="month" id="2000-0">
+      <table>
+        <thead>
+          <tr><th colspan="7"><span class="month-label">Sat Jan 01 00:00:00 UTC 2000</span></th></tr>
+	</thead>
+        <tbody>
+	  
+	  <tr>
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Jan 01 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Jan 02 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Jan 03 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Jan 04 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Jan 05 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Jan 06 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Jan 07 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Jan 08 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Jan 09 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Jan 10 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Jan 11 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Jan 12 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Jan 13 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Jan 14 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Jan 15 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Jan 16 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Jan 17 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Jan 18 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Jan 19 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Jan 20 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Jan 21 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Jan 22 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Jan 23 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Jan 24 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Jan 25 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Jan 26 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Jan 27 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Jan 28 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Jan 29 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Jan 30 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Jan 31 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+          </tr>
+	  
+  	</tbody>
+      </table>
+    </div>
+  
+    
+    <div class="month" id="2000-1">
+      <table>
+        <thead>
+          <tr><th colspan="7"><span class="month-label">Tue Feb 01 00:00:00 UTC 2000</span></th></tr>
+	</thead>
+        <tbody>
+	  
+	  <tr>
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Feb 01 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Feb 02 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Feb 03 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Feb 04 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Feb 05 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Feb 06 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Feb 07 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Feb 08 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Feb 09 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Feb 10 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Feb 11 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Feb 12 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Feb 13 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Feb 14 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Feb 15 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Feb 16 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Feb 17 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Feb 18 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Feb 19 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Feb 20 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Feb 21 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Feb 22 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Feb 23 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Feb 24 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Feb 25 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Feb 26 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Feb 27 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Feb 28 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Feb 29 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+          </tr>
+	  
+  	</tbody>
+      </table>
+    </div>
+  
+    
+    <div class="month" id="2000-2">
+      <table>
+        <thead>
+          <tr><th colspan="7"><span class="month-label">Wed Mar 01 00:00:00 UTC 2000</span></th></tr>
+	</thead>
+        <tbody>
+	  
+	  <tr>
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	      <td>
+		<div class="date captures">
+		  <div class="pop">
+		    <h3>Wed Mar 01 00:00:00 UTC 2000</h3>
+		    <p>1 snapshot</p>
+		    <ul>
+		    
+		    
+		    <li><a href="/web/20000301003115/http://www.bbc.com/">Wed Mar 01 00:31:15 UTC 2000</a></li>
+		    
+		    </ul>
+		  </div>
+		  <div class="day">
+		    
+		    <a href="/web/20000301003115/http://www.bbc.com/" title="1 snapshots" class="Wed Mar 01 00:00:00 UTC 2000">Wed Mar 01 00:00:00 UTC 2000</a>
+                  <div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Mar 02 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	      <td>
+		<div class="date captures">
+		  <div class="pop">
+		    <h3>Fri Mar 03 00:00:00 UTC 2000</h3>
+		    <p>4 snapshots</p>
+		    <ul>
+		    
+		    
+		    <li><a href="/web/20000303075038/http://www.bbc.com/?">Fri Mar 03 07:50:38 UTC 2000</a></li>
+		    
+		    
+		    <li><a href="/web/20000303193410/http://www.bbc.com/">Fri Mar 03 19:34:10 UTC 2000</a></li>
+		    
+		    
+		    <li><a href="/web/20000303221505/http://www.bbc.com/">Fri Mar 03 22:15:05 UTC 2000</a></li>
+		    
+		    
+		    <li><a href="/web/20000303231419/http://www.bbc.com/">Fri Mar 03 23:14:19 UTC 2000</a></li>
+		    
+		    </ul>
+		  </div>
+		  <div class="day">
+		    
+		    <a href="/web/20000303075038/http://www.bbc.com/?" title="4 snapshots" class="Fri Mar 03 00:00:00 UTC 2000">Fri Mar 03 00:00:00 UTC 2000</a>
+                  <div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	      <td>
+		<div class="date captures">
+		  <div class="pop">
+		    <h3>Sat Mar 04 00:00:00 UTC 2000</h3>
+		    <p>2 snapshots</p>
+		    <ul>
+		    
+		    
+		    <li><a href="/web/20000304001851/http://www.bbc.com/">Sat Mar 04 00:18:51 UTC 2000</a></li>
+		    
+		    
+		    <li><a href="/web/20000304201245/http://www.bbc.com/">Sat Mar 04 20:12:45 UTC 2000</a></li>
+		    
+		    </ul>
+		  </div>
+		  <div class="day">
+		    
+		    <a href="/web/20000304001851/http://www.bbc.com/" title="2 snapshots" class="Sat Mar 04 00:00:00 UTC 2000">Sat Mar 04 00:00:00 UTC 2000</a>
+                  <div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Mar 05 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Mar 06 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Mar 07 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Mar 08 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Mar 09 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Mar 10 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Mar 11 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Mar 12 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Mar 13 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Mar 14 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Mar 15 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Mar 16 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Mar 17 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Mar 18 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Mar 19 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Mar 20 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Mar 21 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Mar 22 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Mar 23 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Mar 24 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Mar 25 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Mar 26 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Mar 27 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Mar 28 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Mar 29 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Mar 30 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Mar 31 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+          </tr>
+	  
+  	</tbody>
+      </table>
+    </div>
+  
+    
+    <div class="month" id="2000-3">
+      <table>
+        <thead>
+          <tr><th colspan="7"><span class="month-label">Sat Apr 01 00:00:00 UTC 2000</span></th></tr>
+	</thead>
+        <tbody>
+	  
+	  <tr>
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Apr 01 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Apr 02 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Apr 03 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Apr 04 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Apr 05 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Apr 06 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Apr 07 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	      <td>
+		<div class="date captures">
+		  <div class="pop">
+		    <h3>Sat Apr 08 00:00:00 UTC 2000</h3>
+		    <p>1 snapshot</p>
+		    <ul>
+		    
+		    
+		    <li><a href="/web/20000408210141/http://www.bbc.com/">Sat Apr 08 21:01:41 UTC 2000</a></li>
+		    
+		    </ul>
+		  </div>
+		  <div class="day">
+		    
+		    <a href="/web/20000408210141/http://www.bbc.com/" title="1 snapshots" class="Sat Apr 08 00:00:00 UTC 2000">Sat Apr 08 00:00:00 UTC 2000</a>
+                  <div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Apr 09 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Apr 10 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Apr 11 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Apr 12 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Apr 13 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Apr 14 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Apr 15 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Apr 16 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Apr 17 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Apr 18 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Apr 19 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Apr 20 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Apr 21 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Apr 22 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Apr 23 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Apr 24 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Apr 25 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Apr 26 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Apr 27 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Apr 28 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Apr 29 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Apr 30 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+          </tr>
+	  
+  	</tbody>
+      </table>
+    </div>
+  
+    
+    <div class="month" id="2000-4">
+      <table>
+        <thead>
+          <tr><th colspan="7"><span class="month-label">Mon May 01 00:00:00 UTC 2000</span></th></tr>
+	</thead>
+        <tbody>
+	  
+	  <tr>
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon May 01 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue May 02 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed May 03 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu May 04 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri May 05 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat May 06 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun May 07 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon May 08 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue May 09 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	      <td>
+		<div class="date captures">
+		  <div class="pop">
+		    <h3>Wed May 10 00:00:00 UTC 2000</h3>
+		    <p>1 snapshot</p>
+		    <ul>
+		    
+		    
+		    <li><a href="/web/20000510164859/http://www.bbc.com/">Wed May 10 16:48:59 UTC 2000</a></li>
+		    
+		    </ul>
+		  </div>
+		  <div class="day">
+		    
+		    <a href="/web/20000510164859/http://www.bbc.com/" title="1 snapshots" class="Wed May 10 00:00:00 UTC 2000">Wed May 10 00:00:00 UTC 2000</a>
+                  <div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	      <td>
+		<div class="date captures">
+		  <div class="pop">
+		    <h3>Thu May 11 00:00:00 UTC 2000</h3>
+		    <p>3 snapshots</p>
+		    <ul>
+		    
+		    
+		    <li><a href="/web/20000511042016/http://www.bbc.com/">Thu May 11 04:20:16 UTC 2000</a></li>
+		    
+		    
+		    <li><a href="/web/20000511101725/http://www.bbc.com/">Thu May 11 10:17:25 UTC 2000</a></li>
+		    
+		    
+		    <li><a href="/web/20000511111434/http://www.bbc.com/">Thu May 11 11:14:34 UTC 2000</a></li>
+		    
+		    </ul>
+		  </div>
+		  <div class="day">
+		    
+		    <a href="/web/20000511042016/http://www.bbc.com/" title="3 snapshots" class="Thu May 11 00:00:00 UTC 2000">Thu May 11 00:00:00 UTC 2000</a>
+                  <div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri May 12 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat May 13 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun May 14 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon May 15 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue May 16 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed May 17 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu May 18 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri May 19 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	      <td>
+		<div class="date captures">
+		  <div class="pop">
+		    <h3>Sat May 20 00:00:00 UTC 2000</h3>
+		    <p>1 snapshot</p>
+		    <ul>
+		    
+		    
+		    <li><a href="/web/20000520062102/http://www.bbc.com/">Sat May 20 06:21:02 UTC 2000</a></li>
+		    
+		    </ul>
+		  </div>
+		  <div class="day">
+		    
+		    <a href="/web/20000520062102/http://www.bbc.com/" title="1 snapshots" class="Sat May 20 00:00:00 UTC 2000">Sat May 20 00:00:00 UTC 2000</a>
+                  <div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun May 21 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon May 22 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue May 23 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed May 24 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu May 25 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri May 26 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat May 27 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun May 28 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon May 29 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue May 30 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed May 31 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+          </tr>
+	  
+  	</tbody>
+      </table>
+    </div>
+  
+    
+    <div class="month" id="2000-5">
+      <table>
+        <thead>
+          <tr><th colspan="7"><span class="month-label">Thu Jun 01 00:00:00 UTC 2000</span></th></tr>
+	</thead>
+        <tbody>
+	  
+	  <tr>
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Jun 01 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Jun 02 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Jun 03 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Jun 04 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Jun 05 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Jun 06 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Jun 07 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Jun 08 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Jun 09 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Jun 10 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Jun 11 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Jun 12 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Jun 13 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Jun 14 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Jun 15 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Jun 16 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Jun 17 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	      <td>
+		<div class="date captures">
+		  <div class="pop">
+		    <h3>Sun Jun 18 00:00:00 UTC 2000</h3>
+		    <p>1 snapshot</p>
+		    <ul>
+		    
+		    
+		    <li><a href="/web/20000618201432/http://www.bbc.com/">Sun Jun 18 20:14:32 UTC 2000</a></li>
+		    
+		    </ul>
+		  </div>
+		  <div class="day">
+		    
+		    <a href="/web/20000618201432/http://www.bbc.com/" title="1 snapshots" class="Sun Jun 18 00:00:00 UTC 2000">Sun Jun 18 00:00:00 UTC 2000</a>
+                  <div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Jun 19 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	      <td>
+		<div class="date captures">
+		  <div class="pop">
+		    <h3>Tue Jun 20 00:00:00 UTC 2000</h3>
+		    <p>2 snapshots</p>
+		    <ul>
+		    
+		    
+		    <li><a href="/web/20000620121004/http://www.bbc.com/">Tue Jun 20 12:10:04 UTC 2000</a></li>
+		    
+		    
+		    <li><a href="/web/20000620224946/http://www.bbc.com/">Tue Jun 20 22:49:46 UTC 2000</a></li>
+		    
+		    </ul>
+		  </div>
+		  <div class="day">
+		    
+		    <a href="/web/20000620121004/http://www.bbc.com/" title="2 snapshots" class="Tue Jun 20 00:00:00 UTC 2000">Tue Jun 20 00:00:00 UTC 2000</a>
+                  <div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	      <td>
+		<div class="date captures">
+		  <div class="pop">
+		    <h3>Wed Jun 21 00:00:00 UTC 2000</h3>
+		    <p>4 snapshots</p>
+		    <ul>
+		    
+		    
+		    <li><a href="/web/20000621022818/http://www.bbc.com/">Wed Jun 21 02:28:18 UTC 2000</a></li>
+		    
+		    
+		    <li><a href="/web/20000621040217/http://www.bbc.com/">Wed Jun 21 04:02:17 UTC 2000</a></li>
+		    
+		    
+		    <li><a href="/web/20000621202929/http://www.bbc.com/">Wed Jun 21 20:29:29 UTC 2000</a></li>
+		    
+		    
+		    <li><a href="/web/20000621233735/http://www.bbc.com/">Wed Jun 21 23:37:35 UTC 2000</a></li>
+		    
+		    </ul>
+		  </div>
+		  <div class="day">
+		    
+		    <a href="/web/20000621022818/http://www.bbc.com/" title="4 snapshots" class="Wed Jun 21 00:00:00 UTC 2000">Wed Jun 21 00:00:00 UTC 2000</a>
+                  <div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Jun 22 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Jun 23 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Jun 24 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Jun 25 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Jun 26 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Jun 27 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Jun 28 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Jun 29 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Jun 30 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+          </tr>
+	  
+  	</tbody>
+      </table>
+    </div>
+  
+    
+    <div class="month" id="2000-6">
+      <table>
+        <thead>
+          <tr><th colspan="7"><span class="month-label">Sat Jul 01 00:00:00 UTC 2000</span></th></tr>
+	</thead>
+        <tbody>
+	  
+	  <tr>
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Jul 01 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Jul 02 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Jul 03 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Jul 04 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Jul 05 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Jul 06 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	      <td>
+		<div class="date captures">
+		  <div class="pop">
+		    <h3>Fri Jul 07 00:00:00 UTC 2000</h3>
+		    <p>1 snapshot</p>
+		    <ul>
+		    
+		    
+		    <li><a href="/web/20000707004106/http://www.bbc.com/">Fri Jul 07 00:41:06 UTC 2000</a></li>
+		    
+		    </ul>
+		  </div>
+		  <div class="day">
+		    
+		    <a href="/web/20000707004106/http://www.bbc.com/" title="1 snapshots" class="Fri Jul 07 00:00:00 UTC 2000">Fri Jul 07 00:00:00 UTC 2000</a>
+                  <div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Jul 08 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Jul 09 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Jul 10 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	      <td>
+		<div class="date captures">
+		  <div class="pop">
+		    <h3>Tue Jul 11 00:00:00 UTC 2000</h3>
+		    <p>1 snapshot</p>
+		    <ul>
+		    
+		    
+		    <li><a href="/web/20000711072911/http://www.bbc.com/">Tue Jul 11 07:29:11 UTC 2000</a></li>
+		    
+		    </ul>
+		  </div>
+		  <div class="day">
+		    
+		    <a href="/web/20000711072911/http://www.bbc.com/" title="1 snapshots" class="Tue Jul 11 00:00:00 UTC 2000">Tue Jul 11 00:00:00 UTC 2000</a>
+                  <div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Jul 12 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Jul 13 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Jul 14 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Jul 15 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Jul 16 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Jul 17 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Jul 18 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Jul 19 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Jul 20 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Jul 21 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Jul 22 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Jul 23 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Jul 24 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Jul 25 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Jul 26 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Jul 27 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Jul 28 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Jul 29 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Jul 30 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Jul 31 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+          </tr>
+	  
+  	</tbody>
+      </table>
+    </div>
+  
+    
+    <div class="month" id="2000-7">
+      <table>
+        <thead>
+          <tr><th colspan="7"><span class="month-label">Tue Aug 01 00:00:00 UTC 2000</span></th></tr>
+	</thead>
+        <tbody>
+	  
+	  <tr>
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Aug 01 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Aug 02 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Aug 03 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Aug 04 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Aug 05 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Aug 06 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Aug 07 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Aug 08 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Aug 09 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Aug 10 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Aug 11 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Aug 12 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Aug 13 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Aug 14 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	      <td>
+		<div class="date captures">
+		  <div class="pop">
+		    <h3>Tue Aug 15 00:00:00 UTC 2000</h3>
+		    <p>1 snapshot</p>
+		    <ul>
+		    
+		    
+		    <li><a href="/web/20000815082745/http://www.bbc.com/">Tue Aug 15 08:27:45 UTC 2000</a></li>
+		    
+		    </ul>
+		  </div>
+		  <div class="day">
+		    
+		    <a href="/web/20000815082745/http://www.bbc.com/" title="1 snapshots" class="Tue Aug 15 00:00:00 UTC 2000">Tue Aug 15 00:00:00 UTC 2000</a>
+                  <div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Aug 16 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Aug 17 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Aug 18 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Aug 19 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Aug 20 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Aug 21 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Aug 22 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Aug 23 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Aug 24 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Aug 25 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Aug 26 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Aug 27 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Aug 28 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Aug 29 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Aug 30 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Aug 31 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+          </tr>
+	  
+  	</tbody>
+      </table>
+    </div>
+  
+    
+    <div class="month" id="2000-8">
+      <table>
+        <thead>
+          <tr><th colspan="7"><span class="month-label">Fri Sep 01 00:00:00 UTC 2000</span></th></tr>
+	</thead>
+        <tbody>
+	  
+	  <tr>
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Sep 01 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Sep 02 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Sep 03 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Sep 04 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Sep 05 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Sep 06 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Sep 07 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Sep 08 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Sep 09 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Sep 10 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Sep 11 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Sep 12 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Sep 13 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Sep 14 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Sep 15 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Sep 16 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Sep 17 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Sep 18 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Sep 19 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Sep 20 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Sep 21 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Sep 22 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Sep 23 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Sep 24 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Sep 25 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Sep 26 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Sep 27 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Sep 28 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Sep 29 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Sep 30 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+  	</tbody>
+      </table>
+    </div>
+  
+    
+    <div class="month" id="2000-9">
+      <table>
+        <thead>
+          <tr><th colspan="7"><span class="month-label">Sun Oct 01 00:00:00 UTC 2000</span></th></tr>
+	</thead>
+        <tbody>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Oct 01 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Oct 02 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Oct 03 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Oct 04 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Oct 05 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Oct 06 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Oct 07 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Oct 08 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	      <td>
+		<div class="date captures">
+		  <div class="pop">
+		    <h3>Mon Oct 09 00:00:00 UTC 2000</h3>
+		    <p>1 snapshot</p>
+		    <ul>
+		    
+		    
+		    <li><a href="/web/20001009033250/http://www.bbc.com/">Mon Oct 09 03:32:50 UTC 2000</a></li>
+		    
+		    </ul>
+		  </div>
+		  <div class="day">
+		    
+		    <a href="/web/20001009033250/http://www.bbc.com/" title="1 snapshots" class="Mon Oct 09 00:00:00 UTC 2000">Mon Oct 09 00:00:00 UTC 2000</a>
+                  <div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Oct 10 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Oct 11 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Oct 12 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Oct 13 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Oct 14 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Oct 15 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Oct 16 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	      <td>
+		<div class="date captures">
+		  <div class="pop">
+		    <h3>Tue Oct 17 00:00:00 UTC 2000</h3>
+		    <p>2 snapshots</p>
+		    <ul>
+		    
+		    
+		    <li><a href="/web/20001017161648/http://www.bbc.com/">Tue Oct 17 16:16:48 UTC 2000</a></li>
+		    
+		    
+		    <li><a href="/web/20001017172248/http://www.bbc.com/">Tue Oct 17 17:22:48 UTC 2000</a></li>
+		    
+		    </ul>
+		  </div>
+		  <div class="day">
+		    
+		    <a href="/web/20001017161648/http://www.bbc.com/" title="2 snapshots" class="Tue Oct 17 00:00:00 UTC 2000">Tue Oct 17 00:00:00 UTC 2000</a>
+                  <div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Oct 18 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	      <td>
+		<div class="date captures">
+		  <div class="pop">
+		    <h3>Thu Oct 19 00:00:00 UTC 2000</h3>
+		    <p>1 snapshot</p>
+		    <ul>
+		    
+		    
+		    <li><a href="/web/20001019010601/http://www.bbc.com/">Thu Oct 19 01:06:01 UTC 2000</a></li>
+		    
+		    </ul>
+		  </div>
+		  <div class="day">
+		    
+		    <a href="/web/20001019010601/http://www.bbc.com/" title="1 snapshots" class="Thu Oct 19 00:00:00 UTC 2000">Thu Oct 19 00:00:00 UTC 2000</a>
+                  <div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Oct 20 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Oct 21 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Oct 22 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Oct 23 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Oct 24 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Oct 25 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Oct 26 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	      <td>
+		<div class="date captures">
+		  <div class="pop">
+		    <h3>Fri Oct 27 00:00:00 UTC 2000</h3>
+		    <p>1 snapshot</p>
+		    <ul>
+		    
+		    
+		    <li><a href="/web/20001027203045/http://www.bbc.com/">Fri Oct 27 20:30:45 UTC 2000</a></li>
+		    
+		    </ul>
+		  </div>
+		  <div class="day">
+		    
+		    <a href="/web/20001027203045/http://www.bbc.com/" title="1 snapshots" class="Fri Oct 27 00:00:00 UTC 2000">Fri Oct 27 00:00:00 UTC 2000</a>
+                  <div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Oct 28 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Oct 29 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	      <td>
+		<div class="date captures">
+		  <div class="pop">
+		    <h3>Mon Oct 30 00:00:00 UTC 2000</h3>
+		    <p>1 snapshot</p>
+		    <ul>
+		    
+		    
+		    <li><a href="/web/20001030065857/http://www.bbc.com/?">Mon Oct 30 06:58:57 UTC 2000</a></li>
+		    
+		    </ul>
+		  </div>
+		  <div class="day">
+		    
+		    <a href="/web/20001030065857/http://www.bbc.com/?" title="1 snapshots" class="Mon Oct 30 00:00:00 UTC 2000">Mon Oct 30 00:00:00 UTC 2000</a>
+                  <div>
+		</div>
+	      </td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Oct 31 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+          </tr>
+	  
+  	</tbody>
+      </table>
+    </div>
+  
+    
+    <div class="month" id="2000-10">
+      <table>
+        <thead>
+          <tr><th colspan="7"><span class="month-label">Wed Nov 01 00:00:00 UTC 2000</span></th></tr>
+	</thead>
+        <tbody>
+	  
+	  <tr>
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Nov 01 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Nov 02 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Nov 03 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Nov 04 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Nov 05 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Nov 06 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Nov 07 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Nov 08 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Nov 09 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Nov 10 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Nov 11 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Nov 12 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Nov 13 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Nov 14 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Nov 15 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Nov 16 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Nov 17 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Nov 18 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Nov 19 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Nov 20 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Nov 21 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Nov 22 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Nov 23 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Nov 24 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Nov 25 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Nov 26 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Nov 27 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Nov 28 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Nov 29 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Nov 30 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+          </tr>
+	  
+  	</tbody>
+      </table>
+    </div>
+  
+    
+    <div class="month" id="2000-11">
+      <table>
+        <thead>
+          <tr><th colspan="7"><span class="month-label">Fri Dec 01 00:00:00 UTC 2000</span></th></tr>
+	</thead>
+        <tbody>
+	  
+	  <tr>
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Dec 01 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Dec 02 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Dec 03 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Dec 04 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Dec 05 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Dec 06 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Dec 07 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Dec 08 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Dec 09 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Dec 10 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Dec 11 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Dec 12 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Dec 13 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Dec 14 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Dec 15 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Dec 16 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Dec 17 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Dec 18 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Dec 19 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Dec 20 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Dec 21 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Dec 22 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Dec 23 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Dec 24 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Mon Dec 25 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Tue Dec 26 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Wed Dec 27 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Thu Dec 28 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Fri Dec 29 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sat Dec 30 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+          </tr>
+	  
+	  <tr>
+	  
+	    
+	    
+	    
+	    
+	      <td><div class="date"><div class="day">
+	        <span>Sun Dec 31 00:00:00 UTC 2000</span>
+	      </div></td>
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+	    
+	    <td></td>
+	    
+	    
+   	    
+	  
+          </tr>
+	  
+  	</tbody>
+      </table>
+    </div>
+  
+  </div>
+  </div>
+  <div id="wbCalNote">
+    <h2>Note</h2>
+    <p>This calendar view maps the number of times http://www.bbc.com/ was crawled by the Wayback Machine, <em>not</em> how many times the site was actually updated. More info in the <a href="//archive.org/about/faqs.php#The_Wayback_Machine">FAQ</a>.</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+            <footer>
+            <div id="footerHome">
+                <p>The Wayback Machine is an initiative of the <a href="//archive.org/">Internet Archive</a>, a 501(c)(3) non-profit, building a digital library of Internet sites and other cultural artifacts in digital form.<br/>Other <a href="//archive.org/projects/">projects</a> include <a href="https://openlibrary.org/">Open Library</a> &amp; <a href="https://archive-it.org">archive-it.org</a>.</p>
+                <p>Your use of the Wayback Machine is subject to the Internet Archive's <a href="//archive.org/about/terms.php">Terms of Use</a>.</p>
+            </div>
+            </footer>
+        </div>
+    </body>
+</html>
+<!-- /FOOTER -->
+

@@ -1,0 +1,897 @@
+<!-- v.1.14 4/21/99 rebekah -->
+
+<!--  GET THE NAME OF THE CITY -->
+
+
+
+
+
+
+<html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app18.us.archive.org";archive_analytics.values.server_ms=164;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<SCRIPT LANGUAGE= "JavaScript">
+<!--
+function makePopup(){
+popup=window.open("","emailfriend","toolbar=no,scrollbars=yes,resizable=yes,location=no,menubar=0,width=490,height=325");
+}
+//-->
+</SCRIPT>
+
+
+
+
+
+
+
+<META NAME="keywords" content="Wonder Boys, National">
+<META  name="description" content="Michael Douglas stars as middle-aged writer in this subtle, brilliantly directed comedy.">
+<TITLE>Wonder Boys - National</TITLE>
+</head>
+
+
+
+<body BGCOLOR=#FFFFFF text=#000000 link=#333399 vlink=#336600 alink=#FF0000 TOPMARGIN=0 LEFTMARGIN=0>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://entertainment.citysearch.com/page/ent?_entity_id=M-AAAAA-00004987&amp;_page_type_id=1";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "11";
+var displayMonth = "Oct";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://entertainment.citysearch.com/page/ent?_entity_id=M-AAAAA-00004987&amp;_page_type_id=1" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20001011000237" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20000614181205/http://entertainment.citysearch.com/page/ent?_entity_id=M-AAAAA-00004987&amp;_page_type_id=1" title="14 Jun 2000">JUN</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 0:02:37 Oct 11, 2000">OCT</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20010417015836/http://entertainment.citysearch.com/page/ent?_entity_id=M-AAAAA-00004987%26_page_type_id=1" title="17 Apr 2001"><strong>APR</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20000614181205/http://entertainment.citysearch.com/page/ent?_entity_id=M-AAAAA-00004987&amp;_page_type_id=1" title="18:12:05 Jun 14, 2000"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 0:02:37 Oct 11, 2000">11</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20010417015836/http://entertainment.citysearch.com/page/ent?_entity_id=M-AAAAA-00004987%26_page_type_id=1" title="1:58:36 Apr 17, 2001"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   1999
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 0:02:37 Oct 11, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20011221083808/http://entertainment.citysearch.com/page/ent?_entity_id=M-AAAAA-00004987&amp;_page_type_id=1" title="21 Dec 2001"><strong>2001</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20001011000237*/http://entertainment.citysearch.com/page/ent?_entity_id=M-AAAAA-00004987&amp;_page_type_id=1" title="See a list of every capture for this URL">6 captures</a>
+           <div class="r" title="Timespan for captures of this URL">10 May 00 - 21 Dec 01</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:9:000021000100_2001:-1:000100000001_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+<!-- TOPBAR -->
+
+
+
+ <style>
+ <!--
+ .tL {font-face:verdana,sans-serif;color:#000000;}
+ .tL:hover{color:#FF3300;}
+ .tL:active{color:#000000;}
+ .tL:visited{color:#000000;}
+ .tL:visited:hover{color:#FF3300;}
+ .ttL {font-face:arial,sans-serif;color:#000000;text-decoration:none;}
+ .ttL:hover{color:#FF3300;text-decoration:underline;}
+ .ttL:active{color:#000000;}
+ .ttL:visited{color:#000000;}
+ .ttL:visited:hover{color:#FF3300;text-decoration:underline;}
+ .tsL {font-face:arial,sans-serif;color:#CC9900;text-decoration:none;}
+ .tsL:hover{color:#FF3300;text-decoration:underline;}
+ .tsL:active{color:#CC9900;}
+ .tsL:visited{color:#CC9900;}
+ .tsL:visited:hover{color:#FF3300;text-decoration:underline;}
+ .fL{font-face:arial,sans-serif;color:black;}
+ .fL:hover{color:#FF3300;}
+ .fL:active{color:#000000;}
+ .fL:visited{color:#000000;}
+ .fL:visited:hover{color:#FF3300;}
+ .t{ small arial,sans-serif;color:#FFFFFF;text-decoration:none;}
+ .tS{font:bold small arial,sans-serif;color:#FFFFFF;text-decoration:none;}
+
+A.goto{font:arial,sans-serif;font-size:10pt;color:#0000FF;}
+.goto:hover{color:#FF0000;text-decoration:underline;}
+.goto:visited{font:arial,sans-serif;color:#0000FF;}
+.goto:visited:hover{color:#FF0000;text-decoration:underline;}
+
+ //-->
+ </style>
+
+<SCRIPT LANGUAGE="javascript">
+<!--
+function mOvr(src,clrOver){
+if (!src.contains(event.fromElement)){
+src.style.cursor = 'hand'; src.bgColor = clrOver;
+}
+}
+function mOut(src,clrIn){
+if (!src.contains(event.toElement)){
+src.style.cursor = 'default';
+src.bgColor = clrIn;
+}
+}
+function mClk(src){
+if(event.srcElement.tagName=='TD'){
+src.children.tags('A')[0].click();
+}
+}
+
+function validate(){
+var zip=document.SearchStrip.postal_code.value
+var key=document.SearchStrip.keywords.value
+
+var zipmsg="Please enter a valid 5-number zip code, or select a neighborhood."
+var keymsg="Please enter something to search."
+
+    if(key!=""){
+        key=key.toLowerCase()
+        if(key.substring(key.length-1,key.length)=="s"){
+            key=key.substring(0,key.length-1)
+        }
+        document.SearchStrip.alt_keywords.VALUE=key
+        return(true)
+    }
+    else{
+        alert(keymsg)
+        document.SearchStrip.keywords.focus()
+        return(false)
+    }
+}
+// -->
+</SCRIPT>
+
+
+<!-- sidewalk branding : this should show up in addition to the default citysearch branding -->
+
+
+<!-- msn branding : this completely replaces citysearch branding and nav -->
+
+
+
+<!-- entertainment branding : this completely replaces citysearch branding and nav -->
+
+<STYLE>
+<!--
+.t{font:bold small arial,sans-serif;color:#FFFFFF;text-decoration:none;font-size: 10pt;} 
+-->
+</STYLE>
+    <TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH="100%" BGCOLOR="#FFFFFF">
+    <TR>
+    <TD>
+        
+
+
+<TABLE BORDER=0 WIDTH=608 CELLSPACING=0 CELLPADDING=0>
+<TR><TD><IMG SRC="/web/20001011000237im_/http://entertainment.citysearch.com/img/trans.gif" WIDTH=1 HEIGHT=5></TD></TR>
+<TR ALIGN=CENTER>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH=608>
+<TR ALIGN=CENTER>
+    <TD>
+     <span id=t6 class=dMSNME_1>
+	 <table cellpadding=0 cellspacing=0 border=0 width=608>
+	 <tr>
+	 <td width=92 align=center><font size=2 face=verdana,sans-serif color=#000000><b><a href="/web/20001011000237/http://go.msn.com/AS/7/" class=tL>MSN Home</a></b></font></td>
+	 <td width=1 bgcolor=#000000></td>
+	 <td width=72 align=center><font size=2 face=verdana,sans-serif color=#000000><b><a href="/web/20001011000237/http://go.msn.com/AS/8/" class=tL>Hotmail</a></b></font></td>
+	 <td width=1 bgcolor=#000000></td>
+	 <td width=100 align=center><font size=2 face=verdana,sans-serif color=#000000><b><a href="/web/20001011000237/http://go.msn.com/AS/A/" class=tL>Web Search</a></b></font></td>
+	 <td width=1 bgcolor=#000000></td>
+	 <td width=81 align=center><font size=2 face=verdana,sans-serif color=#000000><b><a href="/web/20001011000237/http://go.msn.com/AS/9/" class=tL>Shopping</a></b></font></td>
+	 <td width=1 bgcolor=#000000></td>
+	 <td width=62 align=center><font size=2 face=verdana,sans-serif color=#000000><b><a href="/web/20001011000237/http://go.msn.com/AS/C/" class=tL>Money</a></b></font></td>
+	 <td width=1 bgcolor=#000000></td>
+	 <td width=116 align=center><font size=2 face=verdana,sans-serif color=#000000><b><a href="/web/20001011000237/http://go.msn.com/AS/B/" class=tL>People &amp; Chat</a></b></font></td>
+	 <td width=1 bgcolor=#000000></td>
+	 <td width=77 align=right> &nbsp;
+	 </td>
+	 <td width=1 bgcolor=#000000></td>
+	 </tr>
+	 </table>
+	
+ </span></TD>
+</TR>
+
+<TR>
+<TD COLSPAN=6><DIV><IMG SRC='/web/20001011000237im_/http://entertainment.citysearch.com/img/trans.gif' WIDTH=1 HEIGHT=3></DIV>
+<A HREF='/web/20001011000237/http://go.msn.com/AN/0/' target='_top'>
+<IMG SRC='/web/20001011000237im_/http://logo.msn.com/en-us/default/logo.gif' WIDTH=140 HEIGHT=60 BORDER=0 ALT='go to msn.com' ALIGN=LEFT HSPACE=0 VSPACE=0></A><IFRAME WIDTH=468 HEIGHT=60 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR=#000000 SRC=/web/20001011000237if_/http://ads.tmcs.net/html.ng/Params.richmedia=yes&amp;site=msn&amp;pagepos=1&amp;size=468x60&amp;city=&amp;state=&amp;uit=UIT_00000570>
+<SCRIPT LANGUAGE=JavaScript1.1 SRC=/web/20001011000237js_/http://ads.tmcs.net/js.ng/Params.richmedia=yes&amp;site=msn&amp;city=&amp;state=&amp;uit=UIT_00000570&amp;pagepos=1&amp;size=468x60></SCRIPT>
+<NOSCRIPT>
+<A HREF=/web/20001011000237/http://ads.tmcs.net/click.ng/site=msn&amp;pagepos=1&amp;size=468x60&amp;city=&amp;state=&amp;uit=UIT_00000570>
+<IMG SRC=/web/20001011000237im_/http://ads.tmcs.net/image.ng/site=msn&amp;pagepos=1&amp;size=468x60&amp;city=&amp;state=&amp;uit=UIT_00000570></A>
+</NOSCRIPT></IFRAME>
+</TD>
+</TR></TABLE>
+
+
+        <TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=608>
+        <TR>
+        <TD WIDTH=219>
+        <font size=5 face=arial,sans-serif color=#000000>
+		<b><a href="/web/20001011000237/http://entertainment.msn.com/" class=ttL>&nbsp;&nbsp;Entertainment</a></b></font></TD>
+        <TD WIDTH=100>  </TD>
+        <TD WIDTH=289 ALIGN=RIGHT>
+        <IMG SRC="/web/20001011000237im_/http://entertainment.citysearch.com/img/by_cs.gif" align=center WIDTH=238 HEIGHT=40 border=0><TD align=left>&nbsp;|&nbsp;<A HREF="/web/20001011000237/http://go.msn.com/npl/msnp.asp" class="goto" TARGET="_top">go&nbsp;to&nbsp;msn.com</A>&nbsp;&nbsp;
+      </TD>
+        </TR></TABLE>
+
+    <DIV><IMG SRC="/web/20001011000237im_/http://entertainment.citysearch.com/img/trans.gif" WIDTH=2 HEIGHT=2></DIV>
+
+    <!-- entertainment navigation -->
+     <table cellpadding=0 cellspacing=0 border=0 bgcolor=#336699 width=608 height=17> 
+ <tr> 
+ <td nowrap width="75" align="center" onmouseover="mOvr(this,'#6699CC');" onmouseout="mOut(this,'#336699');" onclick="mClk(this);"><a href="/web/20001011000237/http://entertainment.msn.com/" class=t> <font face=arial,sans-serif size=2 color=#FFFFFF class=t> Home </font></a></td> 
+ <td nowrap width=1 bgcolor=white></td> 
+  
+ <td nowrap width="75" align="center" onmouseover="mOvr(this,'#6699CC');" onmouseout="mOut(this,'#336699');" onclick="mClk(this);"><a href="/web/20001011000237/http://entertainment.msn.com/books/books.asp" class=t> <font face=arial,sans-serif size=2 color=#FFFFFF class=t> Books </font></a></td> 
+ <td nowrap width=1 bgcolor=white></td> 
+ 
+ <td nowrap width="75" align="center" onmouseover="mOvr(this,'#6699CC');" onmouseout="mOut(this,'#336699');" onclick="mClk(this);"><a href="/web/20001011000237/http://entertainment.msn.com/celebs/celebs.asp" class=t> <font face=arial,sans-serif size=2 color=#FFFFFF class=t> Celebs </font></a></td> 
+ <td nowrap width=1 bgcolor=white></td> 
+ 
+ <td nowrap width="75" align="center" onmouseover="mOvr(this,'#6699CC');" onmouseout="mOut(this,'#336699');" onclick="mClk(this);"><a href="/web/20001011000237/http://entertainment.msn.com/movies/movies.asp" class=t> <font face=arial,sans-serif size=2 color=#FFFFFF class=t> Movies </font></a></td> 
+ <td nowrap width=1 bgcolor=white></td> 
+ 
+ <td nowrap width="75" align="center" onmouseover="mOvr(this,'#6699CC');" onmouseout="mOut(this,'#336699');" onclick="mClk(this);"><a href="/web/20001011000237/http://entertainment.msn.com/music/music.asp" class=t> <font face=arial,sans-serif size=2 color=#FFFFFF class=t> Music </font></a></td> 
+ <td nowrap width=1 bgcolor=white></td>
+
+<td nowrap width="76" align="center" onmouseover="mOvr(this,'#6699CC');" onmouseout="mOut(this,'#336699');" onclick="mClk(this);"><a href="/web/20001011000237/http://entertainment.msn.com/shopping/default.asp" class=t> <font face=arial,sans-serif size=2 color=#FFFFFF class=t> Shopping </font></a></td> 
+ <td nowrap width=1 bgcolor=white></td> 
+ 
+ <td nowrap width="75" align="center" onmouseover="mOvr(this,'#6699CC');" onmouseout="mOut(this,'#336699');" onclick="mClk(this);"><a href="/web/20001011000237/http://entertainment.msn.com/tv/tv.asp" class=t> <font face=arial,sans-serif size=2 color=#FFFFFF class=t> TV </font></a></td> 
+ <td nowrap width=1 bgcolor=white></td> 
+  
+ <td nowrap width="75" align="center" onmouseover="mOvr(this,'#6699CC');" onmouseout="mOut(this,'#336699');" onclick="mClk(this);"><a href="/web/20001011000237/http://entertainment.msn.com/news/news.asp" class=t> <font face=arial,sans-serif size=2 color=#FFFFFF class=t> News </font></a></td> 
+ 
+
+ </tr>
+ </table>
+
+    <DIV><IMG SRC="/web/20001011000237im_/http://entertainment.citysearch.com/img/trans.gif" WIDTH=2 HEIGHT=2></DIV>
+    </TD></TR></TABLE>
+
+
+<!-- citysearch branding -->
+<!-- do the following if sidewalk or citysearch (another way of saying this is not msn and not ent) -->
+
+
+
+
+
+<FORM METHOD="POST" TARGET="emailfriend" ACTION="/web/20001011000237/http://entertainment.citysearch.com/page/gen" name="MailFriend" onSubmit=makePopup();return true;>
+
+
+
+
+
+
+
+
+
+
+
+	<TABLE ALIGN=Left border=0 CELLSPACING=0 CELLPADDING=0 WIDTH="610">
+
+	<TR><FORM METHOD="POST" TARGET="emailfriend" ACTION="/web/20001011000237/http://entertainment.citysearch.com/page/gen" name="MailFriend" onSubmit=makePopup();return true;>	
+
+		<TD ALIGN=left VALIGN=top colspan=3><img src=/web/20001011000237im_/http://entertainment.citysearch.com/img/trans.gif width=7 height=2></td></tr>
+
+		<TR>
+
+			<TD ALIGN=left VALIGN=top colspan=3>
+
+				<TABLE ALIGN=Left border=0 CELLSPACING=0 CELLPADDING=0 WIDTH="610">
+
+					<TR>
+
+						<TD ALIGN=left VALIGN=top>
+
+							<font face="arial,helvetica" size=5><B>
+
+							Wonder Boys
+
+							</B></font>
+
+							<!-- RECOMMENDED -->
+
+							
+
+							<IMG  width=18 height=18 SRC="/web/20001011000237im_/http://entertainment.citysearch.com/img/recommended.gif" hspace=5><br>
+
+							
+
+						</TD>
+
+						<TD ALIGN=RIGHT VALIGN=TOP>
+
+						<SCRIPT LANGUAGE="JavaScript1.1" SRC="/web/20001011000237js_/http://ads.tmcs.net/js.ng/site=cs&amp;pagepos=777&amp;page=editorial"></SCRIPT>
+
+						</TD>				
+
+						<TD ALIGN=RIGHT VALIGN=TOP>
+
+
+
+<!----------------- MAIL THIS TO A FRIEND -------------------->
+
+						
+
+<input type=image src=/web/20001011000237im_/http://entertainment.citysearch.com/img/button_mail_to_friend.gif border=0 WIDTH=80 HEIGHT=21 Alt="send this to a friend" name="mail_a_friend">
+<input type=hidden name="_template" value="/entity/sub/ml_frnd_movie_popup.html">
+
+<input type=hidden name="name" value="Wonder Boys">
+
+<input type=hidden name="rating" value="R">
+
+<input type=hidden name="teaser" value="Michael Douglas stars as middle-aged writer in this subtle, brilliantly directed comedy.">
+
+
+<input type=hidden name="url" value="/page/ent?_entity_id=M-AAAAA-00004987&_page_type_id=1">
+
+
+
+
+
+
+
+
+
+
+		
+
+						</TD>			
+
+					</TR>
+
+				</TABLE>
+
+<BR>&nbsp;
+
+			</TD>
+
+		</TR>
+
+</FORM>
+
+		
+
+<!-------------------------TABLE ----------------------------->
+
+	<!-------------------LEFT COLUMN----------------------->
+
+			<tr>
+
+			<td align=left valign=top width=150 rowspan=2>
+
+	<!---------------RATING----------------------------->
+
+			
+
+				<img src="/web/20001011000237im_/http://entertainment.citysearch.com/img/R.gif"><BR>
+
+			
+
+			
+
+
+
+	<!-------------------RUNTIME--------------------->
+
+		
+
+			
+
+
+
+
+
+	<!-------------------ASSOCIATED EVENTS------------------>
+
+		
+
+
+		<font face="arial,helvetica" size=1>
+
+			<a href="#showtimes"><img width=18 height=16 src="/web/20001011000237im_/http://entertainment.citysearch.com/img/arrow_down.gif" border=0 valign=center align=center>Show Times</a>
+
+			</font><BR>
+
+
+
+
+	<!----------------------TITLENOTES------------------>
+
+		<!-----GENRE------>
+
+			<BR>
+
+				<font face="arial,helvetica" size=1 color="999999">
+
+					GENRE:</font><BR>
+
+				<font face="arial,helvetica" size=1>
+
+				Drama/Comedy
+
+				</font><br>	
+
+			
+
+
+
+ 		<!-------- DIRECTOR ---------->
+
+			
+
+
+
+		<!------------ STARRING ---------------->
+
+
+
+			
+
+
+
+		<!-------- STARRING EXCLUDE DIRECTOR AND STARRING -------->
+
+
+
+			
+
+
+
+			<!-- TITLE_NOTES EXCLUDING GENRE AND RATING -->
+
+				
+
+
+
+		<!-- Website -->
+
+
+
+				<br>
+
+					<font face="arial,helvetica" size=1 color="999999">
+
+					WEBSITE:<BR>
+
+					</font>
+
+					
+
+						<font face="arial,helvetica" size=1>
+
+							<a href="/web/20001011000237/http://www.wonderboysmovie.com/">
+
+								Official Site</a>
+
+						</font><BR>
+
+					
+
+					
+
+				
+
+
+
+		<!-- Ticket Purchase Information -->
+
+
+
+			
+
+
+
+
+
+<!------------------------ BUZZ ----------------------->
+
+
+
+</td>
+<!------------------------SPACER------------------------>
+<TD ALIGN=left VALIGN=top width=20 rowspan=2>&nbsp;</TD>
+
+
+
+<!---------------------------------EDITORIAL CONTENT--------------------------------->
+
+<TD ALIGN=left VALIGN=top width=450>	
+
+
+
+
+
+ 
+
+<!---------------------- IF THE REVIEW NULL PUT THE TEASER INSTEAD ------------------------->
+
+		
+
+		
+
+						<!--------EDITOR'S PROFILE---------->
+
+						<!-------- IF BOTH TEASER AND REVIEW NULL THEN COMMENT OUT THE EDITORIAL HEADER GIF ---------->
+
+						
+
+						<img width=440 height=18 src="/web/20001011000237im_/http://entertainment.citysearch.com/img/header_profile.gif" border=0><p>
+
+						
+
+						
+
+
+
+		<!-----------     IMAGE     ----------------->
+
+			
+
+				<TABLE border=0 CELLSPACING=0 CELLPADDING=5 WIDTH=100 HEIGHT=150 align=left>
+
+				<tr>
+
+					<TD align=center VALIGN=top>
+
+						<IMG SRC="/web/20001011000237im_/http://entertainment.citysearch.com/E/M/AAAAA/0000/49/87/Media1.jpg" WIDTH=100 HEIGHT=150 border=0><br>
+
+						
+
+					</TD>
+
+				</tr>
+
+				</TABLE>
+
+			
+
+			<!--end image and caption-->
+
+
+
+<!------------------------REVIEW-------------------------->
+
+		<font face="arial,helvetica" size=2>
+
+		
+
+			
+
+				<b>by Dave Kehr</b><p>
+A rumpled and engaging Michael Douglas stars in Curtis Hanson's hilarious, moving, beautifully crafted adaptation of Michael Chabon's novel. With greasy hair and two-day stubble, Douglas is Grady Tripp, an aging wunderkind&#151;his first novel was hailed as a masterpiece&#151;who is hiding out from the world as a professor of creative writing at a Philadelphia university. The film follows Grady over the course of a long weekend, during which he is dumped by his wife, informed by his mistress (and boss, played by Frances McDormand) that she's pregnant, visited by his drug-addled New York agent (Robert Downey Jr.), propositioned by his student boarder (Katie Holmes) and deeply impressed by the work of the class misfit (Tobey Maguire).
+<p>
+Without a single, strong narrative thread to see him through, Hanson ("L.A. Confidential") has to rely on intangibles like rhythm, texture and character development to hold his film together; he does it in a high, classical style, worthy of one of the best studio directors of the '40s or '50s. The mastery of detail is stunning, as Hanson wrests more emotional resonance from a slice of soggy pizza than most filmmakers can find in an entire performance. Numbed by the marijuana he smokes compulsively but drawn into life by the infinite, nagging problems he creates for himself, Grady is a man between. He's unable to choose among all the options that stand before him, yet he's painfully aware that those options are dwindling. This could be the best film about middle age ever made, but keep it to yourself&#151;can there be any better recipe for box-office disaster?<p>
+
+			
+
+		</font>
+
+		<font face="arial,helvetica" size=1 color="999999">
+
+                       			 
+
+
+
+</td></tr>
+
+<tr><td align=left valign=top>
+
+
+
+<!----------------------- ASSOCIATED LOCATIONS W/SHOWTIMES ------------------>
+
+
+
+ 	<a name="showtimes">&nbsp;<P><P>
+
+		<img width=440 height=18 src="/web/20001011000237im_/http://entertainment.citysearch.com/img/header_showtimes.gif"></a>
+
+		<br>
+<form name=zip method=get action=/web/20001011000237/http://entertainment.citysearch.com/page/ent>
+			<font size=2 face="arial, helvetica"><b>Enter your zip code for movie times near you:</b></font>&nbsp;
+			
+				<input type=hidden name="_page_type_id" value="1">
+				<input type=hidden name="_entity_id" value="M-AAAAA-00004987">
+				<input type=text size=5 name=set_home_zip value=>
+            	<input type=submit value="Go!" size=1>
+			</form>	
+
+
+
+
+</td></tr></table>
+<br clear=left>
+
+<table width=615>
+	<tr>
+		<td>
+  
+
+
+
+
+    <br>
+ <table cellpadding=0 cellspacing=0 border=0 bgcolor=#336699 width=608 height=17> 
+ <tr> 
+ <td nowrap width="75" align="center" onmouseover="mOvr(this,'#6699CC');" onmouseout="mOut(this,'#336699');" onclick="mClk(this);"><a href="/web/20001011000237/http://entertainment.msn.com/" class=t> <font face=arial,sans-serif size=2 color=#FFFFFF class=t> Home </font></a></td> 
+ <td nowrap width=1 bgcolor=white></td> 
+  
+ <td nowrap width="75" align="center" onmouseover="mOvr(this,'#6699CC');" onmouseout="mOut(this,'#336699');" onclick="mClk(this);"><a href="/web/20001011000237/http://entertainment.msn.com/books/books.asp" class=t> <font face=arial,sans-serif size=2 color=#FFFFFF class=t> Books </font></a></td> 
+ <td nowrap width=1 bgcolor=white></td> 
+ 
+ <td nowrap width="75" align="center" onmouseover="mOvr(this,'#6699CC');" onmouseout="mOut(this,'#336699');" onclick="mClk(this);"><a href="/web/20001011000237/http://entertainment.msn.com/celebs/celebs.asp" class=t> <font face=arial,sans-serif size=2 color=#FFFFFF class=t> Celebs </font></a></td> 
+ <td nowrap width=1 bgcolor=white></td> 
+ 
+ <td nowrap width="75" align="center" onmouseover="mOvr(this,'#6699CC');" onmouseout="mOut(this,'#336699');" onclick="mClk(this);"><a href="/web/20001011000237/http://entertainment.msn.com/movies/movies.asp" class=t> <font face=arial,sans-serif size=2 color=#FFFFFF class=t> Movies </font></a></td> 
+ <td nowrap width=1 bgcolor=white></td> 
+ 
+ <td nowrap width="75" align="center" onmouseover="mOvr(this,'#6699CC');" onmouseout="mOut(this,'#336699');" onclick="mClk(this);"><a href="/web/20001011000237/http://entertainment.msn.com/music/music.asp" class=t> <font face=arial,sans-serif size=2 color=#FFFFFF class=t> Music </font></a></td> 
+ <td nowrap width=1 bgcolor=white></td>
+
+<td nowrap width="76" align="center" onmouseover="mOvr(this,'#6699CC');" onmouseout="mOut(this,'#336699');" onclick="mClk(this);"><a href="/web/20001011000237/http://entertainment.msn.com/shopping/default.asp" class=t> <font face=arial,sans-serif size=2 color=#FFFFFF class=t> Shopping </font></a></td> 
+ <td nowrap width=1 bgcolor=white></td> 
+ 
+ <td nowrap width="75" align="center" onmouseover="mOvr(this,'#6699CC');" onmouseout="mOut(this,'#336699');" onclick="mClk(this);"><a href="/web/20001011000237/http://entertainment.msn.com/tv/tv.asp" class=t> <font face=arial,sans-serif size=2 color=#FFFFFF class=t> TV </font></a></td> 
+ <td nowrap width=1 bgcolor=white></td> 
+  
+ <td nowrap width="75" align="center" onmouseover="mOvr(this,'#6699CC');" onmouseout="mOut(this,'#336699');" onclick="mClk(this);"><a href="/web/20001011000237/http://entertainment.msn.com/news/news.asp" class=t> <font face=arial,sans-serif size=2 color=#FFFFFF class=t> News </font></a></td> 
+ 
+
+ </tr>
+ </table>
+            
+<table cellpadding=0 cellspacing=0 border=0 width=608> 
+ <tr> 
+ <td width=208 valign=top align=left> 
+ <A HREF="/web/20001011000237/http://go.msn.com/A5/0/"><IMG SRC="/web/20001011000237im_/http://entertainment.msn.com/images/logo.gif" WIDTH=140 HEIGHT=60 BORDER=0 ALT="go to MSN.com" align=middle></A> 
+  
+ <table cellpadding=0 cellspacing=0 border=0> 
+ <tr> 
+ <td width=20>&nbsp;</td> 
+ <td align=left valign=top> 
+ <font size=2 face=arial,sans-serif class=rL>Return to <b><a href="/web/20001011000237/http://entertainment.msn.com/" class=rL>Entertainment</a></b></font> 
+ </td> 
+ <td width=20>&nbsp;</td> 
+ </tr> 
+ </table> 
+ </td> 
+ <td width=190 valign=top align=left> 
+ <font size=2 face=arial,sans-serif><b>Other Links:</b></font> 
+ <hr size=1 color=#000000 noshade> 
+ <font size=1 face=arial,sans-serif> 
+ <a href="/web/20001011000237/http://go.msn.com/A5/2/WOMEN.ASP" class=fL>Women</a><br> 
+ <a href="/web/20001011000237/http://go.msn.com/A5/2/CHAT.ASP" class=fL>Chat</a><br> 
+ <a href="/web/20001011000237/http://go.msn.com/A5/2/FREEGAMES.ASP" class=fL>Free&nbsp;Games</a><br> 
+ <a href="/web/20001011000237/http://go.msn.com/A5/2/DOWNLOADS.ASP" class=fL>Downloads</a><br> 
+ <a href="/web/20001011000237/http://go.msn.com/A5/2/RESEARCH.ASP" class=fL>Research&nbsp;&amp;&nbsp;School</a><br> 
+ <a href="/web/20001011000237/http://go.msn.com/A5/2/MORE.ASP" class=fL>More...</a><br><br> 
+ </font> 
+ </td> 
+ <td width=20></td> 
+ <td width=190 valign=top align=left> 
+ <font size=2 face=arial,sans-serif><b>Special Features:</b></font> 
+ <hr size=1 color=#000000 noshade> 
+ <font size=1 face=arial,sans-serif> 
+ <a href="/web/20001011000237/http://go.msn.com/A5/3/it1.asp?target=http://preview.msn.com/" class="fL">Download new web surfing software</a><br> 
+ <a href="/web/20001011000237/http://go.msn.com/A5/3/it2.asp?target=http://messenger.msn.com/" class="fL">Call PC to phone for FREE*</a><br> 
+ <a href="/web/20001011000237/http://go.msn.com/A5/3/it3.asp?target=http://homeadvisor.msn.com/move/RegVoteIntro.asp" class="fL">Register to vote online</a><br> 
+ <a href="/web/20001011000237/http://go.msn.com/A5/3/it4.asp?target=http://carpoint.msn.com/advice/articles/preview2001/default.asp" class="fL">2001: Radical changes to come?</a><br> 
+ <a href="/web/20001011000237/http://go.msn.com/A5/3/it5.asp?target=http://encarta.msn.com/" class="fL">How to get straight A's this fall</a><br> 
+ <a href="/web/20001011000237/http://go.msn.com/A5/3/it10.asp?target=http://update.msn.com/quicklinks/default.asp" class="fL">More...</a><br><br>
+ </font> 
+ </td> 
+ </tr> 
+ </table>
+<table cellpadding=0 cellspacing=0 border=0 width=608> 
+ <tr> 
+ <td height=25 bgcolor=#336699 align=center> 
+ <font size=1 face=arial,sans-serif color=#FFFFFF> &nbsp;&nbsp;&copy;2000 Microsoft Corporation. All rights reserved. </font> 
+ <a href="/web/20001011000237/http://go.msn.com/A5/4/"><font size=1 face=arial,sans-serif color=#FFFFFF>Terms of Use</font></a>&nbsp;&nbsp; 
+ <a href="/web/20001011000237/http://go.msn.com/A5/5/"><font size=1 face=arial,sans-serif color=#FFFFFF>Advertise</font></a>&nbsp;&nbsp; 
+ <a href="/web/20001011000237/http://go.msn.com/A5/6/"><font size=1 face=arial,sans-serif color=#FFFFFF>TRUSTe&nbsp;Approved&nbsp;Privacy&nbsp;Statement</font></a> 
+ </td> 
+ </tr>
+ </table>
+
+
+
+
+
+	</tr>
+</table>
+
+</body></html>
+
+
+
+
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 0:02:37 Oct 11, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 4:07:42 Jan 8, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

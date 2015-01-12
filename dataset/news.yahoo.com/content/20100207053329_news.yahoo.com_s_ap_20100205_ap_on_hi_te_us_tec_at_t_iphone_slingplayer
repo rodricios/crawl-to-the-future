@@ -1,0 +1,1456 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-US">
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app14.us.archive.org";archive_analytics.values.server_ms=344;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+
+                            <link rel="stylesheet" href="/web/20100207054616cs_/http://l.yimg.com/b/news/combo/D7H8FL9F?http%3A//l.yimg.com/d/combo%3Fuh/15/css/uh-1.0.28.css&amp;story/assets/css/1.0.4/generic/story.css" type="text/css"></link>
+                        
+
+                    <link rel="canonical" href="http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer"></link>
+                
+    
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
+    <meta name="description" content="AT&amp;T Inc. said Thursday it will now allow Sling Media Inc.'s television-viewing program for the iPhone to operate over its "3G" high-speed mobile network.">
+    <meta name="keywords" content="iPhone app,FCC,AT&T,Apple,Technology,AP">
+    
+    <title>AT&T now says SlingPlayer for iPhone on 3G is OK - Yahoo! News</title>   
+
+    
+</head>
+
+<body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "7";
+var displayMonth = "Feb";
+var displayYear = "2010";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20100207054616" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Jan
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 5:46:16 Feb 7, 2010">FEB</td>
+		<td class="f" nowrap="nowrap">
+		
+		    Mar
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 5:46:16 Feb 7, 2010">7</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20100208114030/http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer" title="11:40:30 Feb 8, 2010"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2009
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 5:46:16 Feb 7, 2010">2010</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2011
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20100207054616*/http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer" title="See a list of every capture for this URL">8 captures</a>
+           <div class="r" title="Timespan for captures of this URL">7 Feb 10 - 15 Feb 10</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:1:080000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+    <script type="text/javascript">document.body.className = 'js';</script>
+
+    <div id="doc4" class="yui-t6">
+
+        <a href="#navigation" class="shortcut">Skip to navigation &raquo;</a>
+        <a href="#bd" class="shortcut">Skip to content &raquo;</a>
+    
+        <div id="hd">
+        
+            <div class="mod ad mod-first ad_header" role="banner">
+    <div class="bd">
+            <!-- Ad Keywords: it; iPhone; mobile network; broadband; wireless; Internet; home; cable; network; BlackBerry; Apple; carrier; Wi-Fi; bandwidth; video; Internet phone; Internet Protocol; VoIP; Google;-->
+<!-- SpaceID=0 robot -->
+    </div>
+</div>
+
+        
+            <div id="navigation" role="navigation">
+    <ul id="navigation-primary" class="ult-section primary">
+                <li class="ult-position">
+            <a href="/web/20100207054616/http://news.yahoo.com/" class="first" mapleUltParams="sec=tn">Home</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100207054616/http://news.yahoo.com/us" mapleUltParams="sec=tn">U.S.</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100207054616/http://news.yahoo.com/business" mapleUltParams="sec=tn">Business</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100207054616/http://news.yahoo.com/world" mapleUltParams="sec=tn">World</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100207054616/http://news.yahoo.com/entertainment" mapleUltParams="sec=tn">Entertainment</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100207054616/http://news.yahoo.com/sports" mapleUltParams="sec=tn">Sports</a>
+        </li>
+                <li class="ult-position active">
+            <a href="/web/20100207054616/http://news.yahoo.com/technology" mapleUltParams="sec=tn">Tech</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100207054616/http://news.yahoo.com/politics" mapleUltParams="sec=tn">Politics</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100207054616/http://news.yahoo.com/science" mapleUltParams="sec=tn">Science</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100207054616/http://news.yahoo.com/health" mapleUltParams="sec=tn">Health</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100207054616/http://news.yahoo.com/opinion" mapleUltParams="sec=tn">Opinion</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100207054616/http://news.yahoo.com/most-popular" mapleUltParams="sec=tn">Most Popular</a>
+        </li>
+            </ul><!-- end: .primary -->
+
+        <ul id="navigation-secondary" class="ult-section secondary">
+                <li class="ult-position">
+            <a href="/web/20100207054616/http://news.yahoo.com/video/technology" class="first" mapleUltParams="sec=sn">Tech Video</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100207054616/http://news.yahoo.com/technology/internet" mapleUltParams="sec=sn">Internet</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100207054616/http://news.yahoo.com/technology/personal-tech" mapleUltParams="sec=sn">Gadgets</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100207054616/http://news.yahoo.com/technology/digital-audio-video" mapleUltParams="sec=sn">Digital A/V</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100207054616/http://news.yahoo.com/technology/security" mapleUltParams="sec=sn">Security</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100207054616/http://news.yahoo.com/technology/apple-macintosh" mapleUltParams="sec=sn">Apple/Macintosh</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100207054616/http://news.yahoo.com/technology/linux-open-source" mapleUltParams="sec=sn">Linux/Open Source</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100207054616/http://news.yahoo.com/technology/video-games" mapleUltParams="sec=sn">Video Games</a>
+        </li>
+            </ul><!-- end: .secondary -->
+    </div><!-- end: #navigation -->
+
+            
+            <div id="yn-popular-searches" class="mod">
+    <h3>Popular Searches:</h3>
+    <div class="popular-searches">
+        <ul>
+                        <li class="first">
+                <a href="/web/20100207054616/http://news.search.yahoo.com/news/search?p=super+bowl" tabindex="-1">super bowl</a>
+            </li>
+                        <li>
+                <a href="/web/20100207054616/http://news.search.yahoo.com/news/search?p=danica+patrick" tabindex="-1">danica patrick</a>
+            </li>
+                        <li>
+                <a href="/web/20100207054616/http://news.search.yahoo.com/news/search?p=ufc+109" tabindex="-1">ufc 109</a>
+            </li>
+                        <li>
+                <a href="/web/20100207054616/http://news.search.yahoo.com/news/search?p=pro+football+hall+of+fame" tabindex="-1">pro football hall of fame</a>
+            </li>
+                        <li>
+                <a href="/web/20100207054616/http://news.search.yahoo.com/news/search?p=bob+marley" tabindex="-1">bob marley</a>
+            </li>
+                        <li>
+                <a href="/web/20100207054616/http://news.search.yahoo.com/news/search?p=china" tabindex="-1">china</a>
+            </li>
+                        <li>
+                <a href="/web/20100207054616/http://news.search.yahoo.com/news/search?p=iran" tabindex="-1">iran</a>
+            </li>
+                        <li>
+                <a href="/web/20100207054616/http://news.search.yahoo.com/news/search?p=tea+party" tabindex="-1">tea party</a>
+            </li>
+                        <li>
+                <a href="/web/20100207054616/http://news.search.yahoo.com/news/search?p=toyota+recall" tabindex="-1">toyota recall</a>
+            </li>
+                        <li>
+                <a href="/web/20100207054616/http://news.search.yahoo.com/news/search?p=nasa" tabindex="-1">nasa</a>
+            </li>
+                        <li>
+                <a href="/web/20100207054616/http://news.search.yahoo.com/news/search?p=ipad" tabindex="-1">ipad</a>
+            </li>
+                        <li>
+                <a href="/web/20100207054616/http://news.search.yahoo.com/news/search?p=haiti" tabindex="-1">haiti</a>
+            </li>
+                        <li>
+                <a href="/web/20100207054616/http://news.search.yahoo.com/news/search?p=bill+cosby" tabindex="-1">bill cosby</a>
+            </li>
+                        <li>
+                <a href="/web/20100207054616/http://news.search.yahoo.com/news/search?p=brittany+murphy" tabindex="-1">brittany murphy</a>
+            </li>
+                        <li>
+                <a href="/web/20100207054616/http://news.search.yahoo.com/news/search?p=nfl" tabindex="-1">nfl</a>
+            </li>
+                        <li>
+                <a href="/web/20100207054616/http://news.search.yahoo.com/news/search?p=taylor+lautner" tabindex="-1">taylor lautner</a>
+            </li>
+                        <li>
+                <a href="/web/20100207054616/http://news.search.yahoo.com/news/search?p=nascar" tabindex="-1">nascar</a>
+            </li>
+                        <li>
+                <a href="/web/20100207054616/http://news.search.yahoo.com/news/search?p=national+weather+service" tabindex="-1">national weather service</a>
+            </li>
+                        <li>
+                <a href="/web/20100207054616/http://news.search.yahoo.com/news/search?p=arca+racing" tabindex="-1">arca racing</a>
+            </li>
+                        <li>
+                <a href="/web/20100207054616/http://news.search.yahoo.com/news/search?p=tiger+woods" tabindex="-1">tiger woods</a>
+            </li>
+                    </ul>
+    </div>
+    <form action="/web/20100207054616/http://news.search.yahoo.com/news/search" method="get" role="search">
+        <input type="hidden" name="ei" value="UTF-8"/>
+        <ul>
+            <li class="search-type yn-menu">
+                <a href="#" class="menu-trigger">search menu</a>
+                <div class="menu-bd">
+                    <fieldset class="menu-content">
+                        <legend>Search Type</legend>
+                        
+                        <span>Choose a search type from the items below</span>
+
+                        <input type="radio" name="c" value="" id="search_all" checked="checked">                        
+                        <label for="search_all" class="first">All News</label>
+
+                        <input type="radio" name="c" value="yahoo_news" id="search_ynews">                        
+                        <label for="search_ynews">Yahoo! News Only</label>
+
+                        <input type="radio" name="c" value="images" id="search_images">                        
+                        <label for="search_images">News Photos</label>
+
+                        <input type="radio" name="c" value="av" id="search_av">                        
+                        <label for="search_av">Video/Audio</label>
+                    </fieldset>
+                </div>
+            </li>
+            <li class="search-text"><input type="text" name="p" value=""></li>
+            <li class="search-submit"><span><button type="submit"><span>News Search</span></button></span></li>
+            <li><a href="/web/20100207054616/http://news.search.yahoo.com/news/advanced" class="advanced-search">Advanced Search</a></li>
+        </ul>
+    </form>
+</div>
+
+            
+                <div id="banner-ad">
+        <div class="bd">
+            <!-- SpaceID=0 robot -->
+        </div>
+    </div>
+
+
+            
+
+        </div>
+        
+        <div id="bd">
+                
+            <div id="yui-main">
+        
+                <div class="yui-b" role="main">
+     
+                    
+
+<div id="yn-story" class="ult-section mod ">
+
+    <div class="hd">
+    
+        
+        
+            <h1 id="yn-story-title">AT&T now says SlingPlayer for iPhone on 3G is OK</h1>
+        <a href="/web/20100207054616/http://us.rd.yahoo.com/dailynews/ap/brand/SIG=11f589428/**http%3A%2F%2Fwww.ap.org%2Ftermsandconditions" id="yn-prvdlink" class="provider-logo ult-section" mapleUltParams="sec=yn-prvdlink">
+        <img src="/web/20100207054616im_/http://l.yimg.com/a/i/us/nws/2008/news/us/assets/common/images/transparent.png" width="106" height="27" alt="AP" class="lzbg" style="background-image: url(/web/20100207054616im_/http://l.yimg.com/a/i/us/nws/p/ap_logo_106.png);">    </a>
+    
+        
+        	
+	<div id="yup-container"></div>
+	<script type="text/javascript">
+		
+		if(!YAHOO){var YAHOO = {};}
+		
+		 YAHOO.BuzzWidgetTries = 0;
+		
+		(function(){
+		    if(YAHOO && YAHOO.util && YAHOO.util.Event && YAHOO.Media && YAHOO.Media.Buzz){
+		   (function(){ var buzz = new YAHOO.Media.Buzz("buzz-top",{"sync":"buzz-bottom","countPosition":"after","fetchCount":false,"loc_strings":{"buzz_up":"Buzz up!","buzzed":"Buzzed!","one_vote":"{0} vote","n_votes":"{0} votes"}});buzz.onSuccess.subscribe(function(){ if(YAHOO.Updates){ YAHOO.Updates.Disclosure.showDialog({"container":"yup-container","source":"buzz","type":"buzzUp","lang":"en-US"}); } }); })();(function(){ var buzz = new YAHOO.Media.Buzz("buzz-bottom",{"sync":"buzz-top","countPosition":"after","fetchCount":true,"loc_strings":{"buzz_up":"Buzz up!","buzzed":"Buzzed!","one_vote":"{0} vote","n_votes":"{0} votes"}});buzz.onSuccess.subscribe(function(){ if(YAHOO.Updates){ YAHOO.Updates.Disclosure.showDialog({"container":"yup-container","source":"buzz","type":"buzzUp","lang":"en-US"}); } }); })();    
+		    } else if(YAHOO.BuzzWidgetTries < 10000) {
+		        YAHOO.BuzzWidgetTries += 500;
+		        setTimeout(arguments.callee, 500);
+		    }
+		})();	
+	
+	</script>
+    <ul id="top" class="tools mod ult-section">
+            <li class="buzz ult-position">
+	
+					
+		<form method="post" action="/web/20100207054616/http://buzz.yahoo.com/vote/" class="buzz" id="buzz-top">
+			<input type="hidden" name="publisherurn" value="y_news">
+			<input type="hidden" name="guid" value="ap/20100205/us_tec_at_t_iphone_slingplayer">
+			<input type="hidden" name=".done" value="/article/y_news/ap/20100205/us_tec_at_t_iphone_slingplayer">
+			<input type="hidden" name="assettype" value="article">
+			<input type="hidden" name="votetype" value="1">
+			<input type="hidden" name="from" value="orion">
+			<input type="hidden" name="key" value="8a45c">
+			<input type="hidden" name=".crumb" value="">
+			<input type="hidden" name="logged" value="0">
+			<button type="submit">Buzz up!<span class="right"></span></button>
+		</form>
+		
+		            </li>
+            <li class="send yn-menu yn-menu2 ult-position">
+                <a href="/web/20100207054616/http://m2f.news.yahoo.com/mailto/?prop=news&amp;locale=us&amp;url=http%3A%2F%2Fnews.yahoo.com%2Fs%2Fap%2F20100205%2Fap_on_hi_te%2Fus_tec_at_t_iphone_slingplayer&amp;title=AT%26T+now+says+SlingPlayer+for+iPhone+on+3G+is+OK&amp;h1=ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer&amp;h2=T&amp;h3=562" class="menu-hd1 ult-nofollow" mapleUltParams="sec=top">Send</a>
+                <div class="menu-bd">
+                    <div class="menu-content">
+                        <ul>
+                            <li>
+                                <a href="/web/20100207054616/http://m2f.news.yahoo.com/mailto/?prop=news&amp;locale=us&amp;url=http%3A%2F%2Fnews.yahoo.com%2Fs%2Fap%2F20100205%2Fap_on_hi_te%2Fus_tec_at_t_iphone_slingplayer&amp;title=AT%26T+now+says+SlingPlayer+for+iPhone+on+3G+is+OK&amp;h1=ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer&amp;h2=T&amp;h3=562" class="email" mapleUltParams="sec=top">Email</a>
+                            </li>
+                            <li class="hide">
+                                <a href="/web/20100207054616/http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer" class="im ult-nofollow" mapleUltParams="sec=top"><abbr title="Yahoo! Instant Messenger">IM</abbr></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="share yn-menu yn-menu2 ult-position">
+                <a href="/web/20100207054616/http://delicious.com/save?url=http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer&amp;title=AT%26T+now+says+SlingPlayer+for+iPhone+on+3G+is+OK+-+Yahoo%21+News" class="menu-hd1 ult-nofollow" mapleUltPriority="1000" mapleUltParams="sec=top">Share</a>
+                <div class="menu-bd">
+                    <div class="menu-content">
+                        <ul>
+                            <li>
+                                <a href="/web/20100207054616/http://delicious.com/save?url=http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer&amp;title=AT%26T+now+says+SlingPlayer+for+iPhone+on+3G+is+OK+-+Yahoo%21+News" class="delicious ult-nofollow" mapleUltPriority="1000"  onclick="if (navigator.userAgent.indexOf('MSIE') &gt; 0){window.location.href=this.href}else{delsave=window.open(this.href+'&amp;noui=1','delSave','location=yes,links=no,scrollbars=no,toolbar=no,height=375,width=700');}; return false;"  mapleUltParams="sec=top">Delicious</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100207054616/http://digg.com/submit?phase=2&amp;url=http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer" class="digg popup" mapleUltParams="sec=top">Digg</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100207054616/http://www.facebook.com/sharer.php?u=http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer&amp;t=AT%26T+now+says+SlingPlayer+for+iPhone+on+3G+is+OK+-+Yahoo%21+News" class="facebook popup" mapleUltParams="sec=top">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100207054616/http://cgi.fark.com/cgi/fark/farkit.pl?u=http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer&amp;h=AT%26T+now+says+SlingPlayer+for+iPhone+on+3G+is+OK+-+Yahoo%21+News" class="fark popup" mapleUltParams="sec=top">Fark</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100207054616/http://www.newsvine.com/_tools/seed&amp;save?u=http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer&amp;h=AT%26T+now+says+SlingPlayer+for+iPhone+on+3G+is+OK+-+Yahoo%21+News" class="newsvine popup" mapleUltParams="sec=top">Newsvine</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100207054616/http://reddit.com/submit?url=http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer" class="reddit popup" mapleUltParams="sec=top">Reddit</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100207054616/http://www.stumbleupon.com/submit?url=http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer&amp;title=AT%26T+now+says+SlingPlayer+for+iPhone+on+3G+is+OK+-+Yahoo%21+News" class="stumbleupon popup" mapleUltParams="sec=top">StumbleUpon</a>
+                            </li>                         
+                            <li>
+                                <a href="/web/20100207054616/http://technorati.com/faves?sub=addfavbtn&amp;add=http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer" class="technorati popup" mapleUltParams="sec=top">Technorati</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100207054616/http://twitter.com/home?status=http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer&amp;title=AT%26T+now+says+SlingPlayer+for+iPhone+on+3G+is+OK+-+Yahoo%21+News" class="twitter popup" mapleUltParams="sec=top">Twitter</a>
+                            </li>                               
+                            <li>
+                                <a href="/web/20100207054616/http://myweb2.search.yahoo.com/myresults/bookmarklet?t=AT%26T+now+says+SlingPlayer+for+iPhone+on+3G+is+OK+-+Yahoo%21+News&amp;u=http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer&amp;ei=UTF-8&amp;ts=1265521575" class="yahoo-bookmarks popup" mapleUltParams="sec=top">Yahoo!&nbsp;Bookmarks</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="print last ult-position">
+                <a href="/web/20100207054616/http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer/print" mapleUltParams="sec=top">Print</a>
+            </li>
+                    </ul><!-- end: .tools -->
+
+	
+        
+        
+        
+    </div><!-- end: .hd -->
+    
+    <div class="bd" role="main" aria-labelledby="yn-story-title">
+        
+            <div id="yn-story-related-media">
+        
+                <div class="primary-media">
+        
+                        
+            
+        <div id="yn-story-minor-media">
+    
+        <ul id="yn-story-related-links" class="list2 list6 size1 ult-section yn-style3">
+        <li class="ult-position first video">
+                <a href="/web/20100207054616/http://us.rd.yahoo.com/dailynews/external/abc/av_abc_gma/d1df3b42a7cc1a0d76d194c60cfa00ae/34990630/*http://news.yahoo.com/video/tech-15749651/17972257" class="media media1" mapleUltParams="sec=yn_r_3slot_video;slk=vid-ev-thumb;staid=/abc/20100204/av_abc_gma/_yahoonewsvideo_tech100204_gma_iphone__17972247">
+            <img src="/web/20100207054616im_/http://d.yimg.com/a/p/abc/20100205/videolthumb.fdc8e21ad9b52a534352bbeaae9ddb6f.jpg?x=50&amp;y=50&amp;xc=38&amp;yc=1&amp;wc=146&amp;hc=146&amp;q=85&amp;sig=_lvYkq1RGUkuaUXwzssWUA--" width="50" height="50" alt="Who Should Win the Oscar?">
+            
+            <span>Play Video</span>        </a>
+                
+        <a href="/web/20100207054616/http://us.rd.yahoo.com/dailynews/external/abc/av_abc_gma/d1df3b42a7cc1a0d76d194c60cfa00ae/34990630/*http://news.yahoo.com/video/tech-15749651/17972257" mapleUltParams="sec=yn_r_3slot_video;slk=vid-ev-link;staid=/abc/20100204/av_abc_gma/_yahoonewsvideo_tech100204_gma_iphone__17972247"><strong>Apple Computer Video:</strong>Who Should Win the Oscar?</a>
+                <cite><a href="/web/20100207054616/http://news.yahoo.com/video/abc-news/good-morning-america" mapleUltParams="sec=yn_r_3slot_video;slk=vid-ev-provider;staid=/abc/20100204/av_abc_gma/_yahoonewsvideo_tech100204_gma_iphone__17972247">ABC News</a></cite>
+            </li>
+        <li class="ult-position  video">
+                <a href="/web/20100207054616/http://us.rd.yahoo.com/dailynews/external/cnbc/av_cnbc/7151884af6d745866481193b0fe94fa1/34981050/*http://news.yahoo.com/video/business-15749628/17957535" class="media media1" mapleUltParams="sec=yn_r_3slot_video;slk=vid-ev-thumb;staid=/cnbc/20100203/av_cnbc/_yahoonewsvideo_business1403834914__17957530">
+            <img src="/web/20100207054616im_/http://d.yimg.com/a/p/cnbc/20100204/videolthumb.e60265f94ac31e2fbfd233e8b3256385.jpg?x=50&amp;y=50&amp;xc=51&amp;yc=1&amp;wc=300&amp;hc=300&amp;q=85&amp;sig=KoQVM_PN8DxIpxckIwx7cQ--" width="50" height="50" alt="There&#39;s a Virus for That">
+            
+            <span>Play Video</span>        </a>
+                
+        <a href="/web/20100207054616/http://us.rd.yahoo.com/dailynews/external/cnbc/av_cnbc/7151884af6d745866481193b0fe94fa1/34981050/*http://news.yahoo.com/video/business-15749628/17957535" mapleUltParams="sec=yn_r_3slot_video;slk=vid-ev-link;staid=/cnbc/20100203/av_cnbc/_yahoonewsvideo_business1403834914__17957530"><strong>Apple Computer Video:</strong>There&#39;s a Virus for That</a>
+                <cite><a href="/web/20100207054616/http://news.yahoo.com/video/cnbc" mapleUltParams="sec=yn_r_3slot_video;slk=vid-ev-provider;staid=/cnbc/20100203/av_cnbc/_yahoonewsvideo_business1403834914__17957530">CNBC</a></cite>
+            </li>
+    </ul>
+        
+        <div id="yn-story-quotes" class="ult-section">
+    <table cellspacing="0">
+        <caption>Related Quotes</caption>
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Price</th>
+                <th>Change</th>
+            </tr>
+        </thead>
+        <tbody>
+                        <tr class="ult-position alternative">
+                <td class="first">
+                    <a href="/web/20100207054616/http://finance.yahoo.com/q?s=AAPL" mapleUltParams="sec=yn_r_3slot_stock">
+                        <abbr title="Apple Inc.">AAPL</abbr>
+                    </a>
+                </td>
+                <td>195.46</td>
+                <td class="positive">+3.41</td>
+            </tr>
+                        <tr class="ult-position ">
+                <td class="first">
+                    <a href="/web/20100207054616/http://finance.yahoo.com/q?s=GOOG" mapleUltParams="sec=yn_r_3slot_stock">
+                        <abbr title="Google Inc.">GOOG</abbr>
+                    </a>
+                </td>
+                <td>531.29</td>
+                <td class="positive">+4.51</td>
+            </tr>
+                        <tr class="ult-position alternative">
+                <td class="first">
+                    <a href="/web/20100207054616/http://finance.yahoo.com/q?s=SATS" mapleUltParams="sec=yn_r_3slot_stock">
+                        <abbr title="EchoStar Corporation">SATS</abbr>
+                    </a>
+                </td>
+                <td>18.80</td>
+                <td class="negative">-0.11</td>
+            </tr>
+                        <tr class="ult-position ">
+                <td class="first">
+                    <a href="/web/20100207054616/http://finance.yahoo.com/q?s=T" mapleUltParams="sec=yn_r_3slot_stock">
+                        <abbr title="AT&T INC.">T</abbr>
+                    </a>
+                </td>
+                <td>25.24</td>
+                <td class="positive">+0.21</td>
+            </tr>
+                    </tbody>
+    </table>
+    
+        <div class="ad ad_small_ad">
+        <!-- SpaceID=0 robot -->
+    </div>
+    </div>
+    
+    </div>
+                                    
+        </div><!-- end .primary-media -->
+                
+                
+    </div><!-- end .related-media -->
+
+
+
+    
+        
+<div class="byline">
+        <cite class="vcard">
+        By JESSICA MINTZ, AP Technology Writer        <span class="fn org">Jessica Mintz, Ap Technology Writer</span>
+    </cite>
+    &ndash;
+    <abbr title="2010-02-05T06:17:30-0800" class="timedate">Fri&nbsp;Feb&nbsp;5, 9:17&nbsp;am&nbsp;ET</abbr></div><!-- end .byline -->
+
+
+
+            <div class="yn-story-content">
+                <p>SEATTLE &ndash; <span class="yshortcuts" id="lw_1265379555_0">AT&amp;T Inc</span>. said Thursday it will now allow <span class="yshortcuts" id="lw_1265379555_1">Sling Media Inc</span>.'s television-viewing program for the <span class="yshortcuts" id="lw_1265379555_2">iPhone</span> to operate over its "3G" high-speed mobile network.</p>
+                <p>The reversal comes as the <span class="yshortcuts" id="lw_1265379555_3">Federal Communications Commission</span> is drafting rules to keep <span class="yshortcuts" id="lw_1265379555_4">broadband providers</span> &mdash; including wireless companies &mdash; from favoring or discriminating against <span class="yshortcuts" id="lw_1265379555_5">Internet traffic</span> flowing over their networks.</p>
+                <p><span class="yshortcuts" id="lw_1265379555_6">AT&amp;T</span> said last May it worried <span class="yshortcuts" id="lw_1265379555_7">SlingPlayer Mobile</span>, which sends a user's home cable or satellite programming to devices such as smart phones and laptops over the Internet, would clog its network.</p>
+                <p>Meantime, versions of the program that used the 3G network were available for use on other smart phones sold by AT&amp;T. But distribution of programs for <span class="yshortcuts" id="lw_1265379555_8">Windows Mobile</span> and <span class="yshortcuts" id="lw_1265379555_9">BlackBerry phones</span> aren't as tightly controlled as those for Apple Inc.'s iPhone, and AT&amp;T said it had not approved those 3G apps, either.</p>
+                <p>The wireless carrier said Thursday that it has been testing the <span class="yshortcuts" id="lw_1265379555_10">SlingPlayer Mobile program</span> for the iPhone since December. <span class="yshortcuts" id="lw_1265379555_11">Sling Media</span>, which is based in <span class="yshortcuts" id="lw_1265379555_12">Foster City, Calif</span>., has further optimized the program, AT&amp;T spokesman Mark Siegel said, and the improved version doesn't threaten the 3G network.</p>
+                <p>Sling Media, which had been selling a Wi-Fi-only <span class="yshortcuts" id="lw_1265379555_13">iPhone app</span>, has submitted an updated version with 3G features for Apple's approval.</p>
+                <p>Sling Media spokesman John Santoro said the program as it was originally written wouldn't have taxed AT&amp;T's network because it tests conditions before deciding whether to send out bandwidth-intensive, high-quality video or lighter-weight, lower-quality files.</p>
+                <p>This is the second time in recent months that AT&amp;T has revised its policy on the kind of iPhone programs that can operate over its 3G network.</p>
+                <p>AT&amp;T, which is based in Dallas, changed its mind about Internet phone applications &mdash; <span class="yshortcuts" id="lw_1265379555_14">Voice over Internet Protocol</span> or VoIP &mdash; after the <span class="yshortcuts" id="lw_1265379555_15">FCC</span> began looking into Apple's decision to not approve a <span class="yshortcuts" id="lw_1265379555_16">Google Inc</span>. calling program last year. In written responses to FCC questions in August, it came out that <span class="yshortcuts" id="lw_1265379555_17">Apple</span> had agreed to seek AT&amp;T's permission before approving VoIP programs that used AT&amp;T's 3G network.</p>
+                <p>The FCC kicked off a wide-ranging inquiry into competition in the wireless industry. Then, in October, AT&amp;T started allowing 3G VoIP programs.</p>
+                <p>The FCC is currently working on rules that would keep companies such as AT&amp;T from deciding what kind of <span class="yshortcuts" id="lw_1265379555_18">Internet traffic</span> is allowed on its networks.</p>
+                <p>Supporters say such so-called "<span class="yshortcuts" id="lw_1265379555_19">net neutrality</span>" rules are needed to prevent <span class="yshortcuts" id="lw_1265379555_20">high-speed Internet providers</span> from abusing their control over <span class="yshortcuts" id="lw_1265379555_21">broadband connections</span> to block subscribers from using cheaper Internet calling services or accessing online video sites that compete with the providers' own <span class="yshortcuts" id="lw_1265379555_22">core businesses</span>.</p>
+                <p>"AT&amp;T's announcement is a step in the right direction. Consumers benefit from mobile video choices," said FCC Chairman Julius Genachowski in a statement Thursday.</p>
+                <p>(This version corrects AT&amp;T headquarters location to Dallas.)</p>
+                <p></p>
+            </div>
+        
+        
+    </div><!-- end: .bd -->
+    
+    <div class="ft">
+
+            <div id="yn-story-related-searches" class="ult-section">
+        <h3>Related Searches:</h3>
+        <ul>
+                            <li>
+                    <a href="/web/20100207054616/http://news.search.yahoo.com/news/search?p=iphone+app" mapleUltParams="sec=yn_related_searches">iphone app</a>
+                </li>
+                            <li>
+                    <a href="/web/20100207054616/http://news.search.yahoo.com/news/search?p=fcc" mapleUltParams="sec=yn_related_searches">fcc</a>
+                </li>
+                            <li>
+                    <a href="/web/20100207054616/http://news.search.yahoo.com/news/search?p=at%26t" mapleUltParams="sec=yn_related_searches">at&t</a>
+                </li>
+                            <li class="last">
+                    <a href="/web/20100207054616/http://news.search.yahoo.com/news/search?p=apple" mapleUltParams="sec=yn_related_searches">apple</a>
+                </li>
+                    </ul>
+    </div>
+
+
+        <div id="yn-story-share">
+            
+            
+                <ul id="bottom" class="tools mod ult-section">
+            <li class="buzz ult-position">
+	
+					
+		<form method="post" action="/web/20100207054616/http://buzz.yahoo.com/vote/" class="buzz" id="buzz-bottom">
+			<input type="hidden" name="publisherurn" value="y_news">
+			<input type="hidden" name="guid" value="ap/20100205/us_tec_at_t_iphone_slingplayer">
+			<input type="hidden" name=".done" value="/article/y_news/ap/20100205/us_tec_at_t_iphone_slingplayer">
+			<input type="hidden" name="assettype" value="article">
+			<input type="hidden" name="votetype" value="1">
+			<input type="hidden" name="from" value="orion">
+			<input type="hidden" name="key" value="8a45c">
+			<input type="hidden" name=".crumb" value="">
+			<input type="hidden" name="logged" value="0">
+			<button type="submit">Buzz up!<span class="right"></span></button>
+		</form>
+		
+		            </li>
+            <li class="send yn-menu yn-menu2 ult-position">
+                <a href="/web/20100207054616/http://m2f.news.yahoo.com/mailto/?prop=news&amp;locale=us&amp;url=http%3A%2F%2Fnews.yahoo.com%2Fs%2Fap%2F20100205%2Fap_on_hi_te%2Fus_tec_at_t_iphone_slingplayer&amp;title=AT%26T+now+says+SlingPlayer+for+iPhone+on+3G+is+OK&amp;h1=ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer&amp;h2=T&amp;h3=562" class="menu-hd1 ult-nofollow" mapleUltParams="sec=bottom">Send</a>
+                <div class="menu-bd">
+                    <div class="menu-content">
+                        <ul>
+                            <li>
+                                <a href="/web/20100207054616/http://m2f.news.yahoo.com/mailto/?prop=news&amp;locale=us&amp;url=http%3A%2F%2Fnews.yahoo.com%2Fs%2Fap%2F20100205%2Fap_on_hi_te%2Fus_tec_at_t_iphone_slingplayer&amp;title=AT%26T+now+says+SlingPlayer+for+iPhone+on+3G+is+OK&amp;h1=ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer&amp;h2=T&amp;h3=562" class="email" mapleUltParams="sec=bottom">Email</a>
+                            </li>
+                            <li class="hide">
+                                <a href="/web/20100207054616/http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer" class="im ult-nofollow" mapleUltParams="sec=bottom"><abbr title="Yahoo! Instant Messenger">IM</abbr></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="share yn-menu yn-menu2 ult-position">
+                <a href="/web/20100207054616/http://delicious.com/save?url=http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer&amp;title=AT%26T+now+says+SlingPlayer+for+iPhone+on+3G+is+OK+-+Yahoo%21+News" class="menu-hd1 ult-nofollow" mapleUltPriority="1000" mapleUltParams="sec=bottom">Share</a>
+                <div class="menu-bd">
+                    <div class="menu-content">
+                        <ul>
+                            <li>
+                                <a href="/web/20100207054616/http://delicious.com/save?url=http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer&amp;title=AT%26T+now+says+SlingPlayer+for+iPhone+on+3G+is+OK+-+Yahoo%21+News" class="delicious ult-nofollow" mapleUltPriority="1000"  onclick="if (navigator.userAgent.indexOf('MSIE') &gt; 0){window.location.href=this.href}else{delsave=window.open(this.href+'&amp;noui=1','delSave','location=yes,links=no,scrollbars=no,toolbar=no,height=375,width=700');}; return false;"  mapleUltParams="sec=bottom">Delicious</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100207054616/http://digg.com/submit?phase=2&amp;url=http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer" class="digg popup" mapleUltParams="sec=bottom">Digg</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100207054616/http://www.facebook.com/sharer.php?u=http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer&amp;t=AT%26T+now+says+SlingPlayer+for+iPhone+on+3G+is+OK+-+Yahoo%21+News" class="facebook popup" mapleUltParams="sec=bottom">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100207054616/http://cgi.fark.com/cgi/fark/farkit.pl?u=http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer&amp;h=AT%26T+now+says+SlingPlayer+for+iPhone+on+3G+is+OK+-+Yahoo%21+News" class="fark popup" mapleUltParams="sec=bottom">Fark</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100207054616/http://www.newsvine.com/_tools/seed&amp;save?u=http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer&amp;h=AT%26T+now+says+SlingPlayer+for+iPhone+on+3G+is+OK+-+Yahoo%21+News" class="newsvine popup" mapleUltParams="sec=bottom">Newsvine</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100207054616/http://reddit.com/submit?url=http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer" class="reddit popup" mapleUltParams="sec=bottom">Reddit</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100207054616/http://www.stumbleupon.com/submit?url=http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer&amp;title=AT%26T+now+says+SlingPlayer+for+iPhone+on+3G+is+OK+-+Yahoo%21+News" class="stumbleupon popup" mapleUltParams="sec=bottom">StumbleUpon</a>
+                            </li>                         
+                            <li>
+                                <a href="/web/20100207054616/http://technorati.com/faves?sub=addfavbtn&amp;add=http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer" class="technorati popup" mapleUltParams="sec=bottom">Technorati</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100207054616/http://twitter.com/home?status=http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer&amp;title=AT%26T+now+says+SlingPlayer+for+iPhone+on+3G+is+OK+-+Yahoo%21+News" class="twitter popup" mapleUltParams="sec=bottom">Twitter</a>
+                            </li>                               
+                            <li>
+                                <a href="/web/20100207054616/http://myweb2.search.yahoo.com/myresults/bookmarklet?t=AT%26T+now+says+SlingPlayer+for+iPhone+on+3G+is+OK+-+Yahoo%21+News&amp;u=http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer&amp;ei=UTF-8&amp;ts=1265521575" class="yahoo-bookmarks popup" mapleUltParams="sec=bottom">Yahoo!&nbsp;Bookmarks</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="print last ult-position">
+                <a href="/web/20100207054616/http://news.yahoo.com/s/ap/20100205/ap_on_hi_te/us_tec_at_t_iphone_slingplayer/print" mapleUltParams="sec=bottom">Print</a>
+            </li>
+                    </ul><!-- end: .tools -->
+
+	
+        </div>
+        
+    </div><!-- end .ft -->
+
+</div><!-- end: #story -->
+
+<script type="text/javascript">
+(function() {
+
+    /**
+     * YUI function to get all elements by class name
+     * getElementsByClass
+     */
+    function getElementsByClass(className, tag, root) {
+        tag = tag || '*';    
+        root = (typeof root == 'string') ? document.getElementById(root) : root || document;
+    
+        var nodes = [],
+            elements = root.getElementsByTagName(tag),
+            re = new RegExp('(?:^|\\s+)' + className + '(?:\\s+|$)');
+    
+        for (var i = 0, len = elements.length; i < len; ++i) {
+            if ( re.test(elements[i].className) ) {
+                nodes[nodes.length] = elements[i];
+            }
+        }
+        return nodes;
+    }
+    
+    /**
+     * This code displays the expand button as the page loads. This prevents any lag in displaying
+     * the button if the page takes a long time to load. If the user clicks the button before the page
+     * loads then we just show the full story without animation. Thus, preventing the full implementation
+     * from loading.
+     */
+    var story = document.getElementById('yn-story');
+    var related = document.getElementById('yn-story-related-media');
+    var expandCookie = '0';
+    
+    if (
+        // make sure read-more-toggle flag exists
+        (story && story.className.indexOf('read-more-toggle') != -1) &&
+        // if user preference is 0 then collapse story
+        expandCookie == '0' && 
+        // make sure hash is not set
+        window.location.hash!='#full'
+       )
+    {
+        var buttonHeight = 18;
+        var defaultHeight = 406;
+        var heightLimit = 200;
+        var host = document.location.host;
+        var path = document.location.pathname;
+        var bd = getElementsByClass('bd','div',story)[0];
+        
+        // Figure out min height for story container based on the heights of the related media and primary media containers
+        if (related)
+        {                
+            // do height calculations if related height is larger than default minHeight
+            if (related.offsetHeight > defaultHeight) {
+            
+                // if primary exists then use that height, otherwise use related
+                var obj = getElementsByClass('primary-media','div',related)[0];
+                if (!obj) obj = related;
+                
+                // set height from primary or related container
+                minHeight = parseInt(obj.offsetHeight, 10);
+                
+                // if the minheight is smaller than default, then set it to default
+                if (
+                    (minHeight < defaultHeight) &&
+                    !document.getElementById('yn-story-main-media') && 
+                    !document.getElementById('yn-story-minor-media')
+                   )
+                {
+                    minHeight = defaultHeight;
+                }
+            } else {
+                minHeight = defaultHeight;
+            }
+        } else {
+            minHeight = defaultHeight;
+        }
+        
+        // add height of buttons to min height
+        minHeight += buttonHeight;
+            
+        // make sure there is enough story to hide
+        if ((bd.offsetHeight - minHeight) > heightLimit)
+        {
+            // set overflow and height
+            bd.style.height = minHeight + "px";
+            bd.className += " overflow";
+            story.className += " read-closed";
+            
+            // add read more expand button
+            var div = document.createElement('div');
+            div.className = 'read-more read-more-expand';
+            div.innerHTML = '<a href="http://'+host+path+'" id="yn-bodycontrol" class="ult-nofollow ult-section" accesskey="m" title="Press CTRL + SHIFT + M to toggle" mapleUltPriority="1000"><em><span>Read Full Article</span></em></a>';
+    
+            // we have to handle the case where a user might click the button before our YUI script loads
+            // if so, remove the height and overflow setting then hide the button, also add #full hash to url so
+            // if script eventually is loaded it doesnt recreate the buttons and collapse the story
+            div.onclick = function(ev) {
+                var e = ev || window.event;
+                
+                // show full story
+                bd.style.height = 'auto';
+                bd.className = bd.className.replace('overflow','expanded');
+                story.className = story.className.replace('read-closed','');
+                
+                // hide the toggle button
+                div.className += ' hide';
+                
+                // disable link follow
+                if (e.preventDefault) {
+                    e.preventDefault();
+                } else {
+                    e.returnValue = false;
+                }
+            }
+            
+            // add div to document
+            bd.appendChild(div);
+        }
+    
+    }
+
+})();
+</script>
+
+<div id="yn-story-related-content" class="yui-g mod related-content-style">
+
+        <div id="yn-r-b-left" class="yui-u first ult-section">
+    
+        <h3>More on Cell Phones</h3>
+        
+        <ul class="list list4 list6 size1">
+                        <li class="first">
+                <a href="/web/20100207054616/http://news.yahoo.com/s/nf/20100205/bs_nf/71499" class="showtt" rel=":nf:20100205:bs_nf:71499" mapleUltParams="sec=yn-r-b-left;slk=ev-AT&TWillLetRevisedSlingPlayerUse3GoniPhone;staid=/nf/20100205/bs_nf/71499">
+                                        AT&T Will Let Revised Sling Player Use 3G on iPhone                </a>
+                
+                                <cite>NewsFactor</cite>
+                            </li>
+                        <li class="">
+                <a href="/web/20100207054616/http://news.yahoo.com/s/ibd/20100204/bs_ibd_ibd/20100204tech01" class="showtt" rel=":ibd:20100204:bs_ibd_ibd:20100204tech01" mapleUltParams="sec=yn-r-b-left;slk=ev-NIIHoldingsHoldingItsOwnAs3GLooms;staid=/ibd/20100204/bs_ibd_ibd/20100204tech01">
+                                        NII Holdings Holding Its Own As 3G Looms                </a>
+                
+                                <cite>Investor's Business Daily</cite>
+                            </li>
+                        <li class="">
+                <a href="/web/20100207054616/http://news.yahoo.com/s/ap/20100204/ap_on_bi_ge/us_earns_advanced_analogic_technologies_1" class="showtt" rel=":ap:20100204:ap_on_bi_ge:us_earns_advanced_analogic_technologies_1" mapleUltParams="sec=yn-r-b-left;slk=ev-AdvancedAnalogicnarrows4Qlossto$4million;staid=/ap/20100204/ap_on_bi_ge/us_earns_advanced_analogic_technologies_1">
+                                        Advanced Analogic narrows 4Q loss to $4 million                </a>
+                
+                                <cite>AP</cite>
+                            </li>
+                    </ul>
+        
+                <a href="/web/20100207054616/http://news.yahoo.com/i/2096" class="more size1">More &raquo;</a>
+                
+    </div>
+        
+        <div id="yn-r-b-right" class="yui-u  ult-section">
+    
+        <h3>More...</h3>
+        
+        <ul class="list list4 list6 size1">
+                        <li class="first video">
+                <a href="/web/20100207054616/http://us.rd.yahoo.com/dailynews/external/abc/av_abc_wnt/327fcd16e922cef964e475ddc4b136f0/35020031/*http://news.yahoo.com/video/tech-15749651/18012051" class="showtt" rel=":abc:20100207:av_abc_wnt:_yahoonewsvideo_tech100206_wn_isnow2__18012038" mapleUltParams="sec=yn-r-b-right;slk=vid-un-link;staid=/abc/20100207/av_abc_wnt/_yahoonewsvideo_tech100206_wn_isnow2__18012038">
+                                        <strong>Technology Video:</strong> 
+                                        iSnow and YouSnow                </a>
+                
+                                <cite>
+                    <a href="/web/20100207054616/http://news.yahoo.com/video/abc-news/abc-world-news" mapleUltParams="sec=yn-r-b-right;slk=vid-un-provider;staid=/abc/20100207/av_abc_wnt/_yahoonewsvideo_tech100206_wn_isnow2__18012038">ABC News</a>
+                </cite>
+                            </li>
+                        <li class="video">
+                <a href="/web/20100207054616/http://us.rd.yahoo.com/dailynews/external/abc/av_abc_gma/02d4d0ce0048c86a82d33d185e47101c/35013394/*http://news.yahoo.com/video/tech-15749651/18004308" class="showtt" rel=":abc:20100206:av_abc_gma:_yahoonewsvideo_tech100206_gma_nym__18004294" mapleUltParams="sec=yn-r-b-right;slk=vid-un-link;staid=/abc/20100206/av_abc_gma/_yahoonewsvideo_tech100206_gma_nym__18004294">
+                                        <strong>Technology Video:</strong> 
+                                        News You Missed: Rare Parrot Makes Sex Tape                </a>
+                
+                                <cite>
+                    <a href="/web/20100207054616/http://news.yahoo.com/video/abc-news/good-morning-america" mapleUltParams="sec=yn-r-b-right;slk=vid-un-provider;staid=/abc/20100206/av_abc_gma/_yahoonewsvideo_tech100206_gma_nym__18004294">ABC News</a>
+                </cite>
+                            </li>
+                        <li class="video">
+                <a href="/web/20100207054616/http://us.rd.yahoo.com/dailynews/external/abc/av_abc_tc/6164c07dca36336f315613a59e9e8346/35001881/*http://news.yahoo.com/video/tech-15749651/17987827" class="showtt" rel=":abc:20100205:av_abc_tc:_yahoonewsvideo_tech100205_atm_techbytes__17987813" mapleUltParams="sec=yn-r-b-right;slk=vid-un-link;staid=/abc/20100205/av_abc_tc/_yahoonewsvideo_tech100205_atm_techbytes__17987813">
+                                        <strong>Technology Video:</strong> 
+                                        Facebook Gets a Face Lift                </a>
+                
+                                <cite>
+                    <a href="/web/20100207054616/http://news.yahoo.com/video/technology/abc" mapleUltParams="sec=yn-r-b-right;slk=vid-un-provider;staid=/abc/20100205/av_abc_tc/_yahoonewsvideo_tech100205_atm_techbytes__17987813">ABC News</a>
+                </cite>
+                            </li>
+                    </ul>
+        
+    </div>
+    </div><!-- end .related -->
+
+
+
+
+
+
+
+<div class="mod mod3">
+    <div class="yui-gb yui-gb1">
+        <div class="yui-u first">
+            <div id="yn-channel" class="mod ult-section mod-first">
+    <div class="hd">
+        <h3>Most Viewed - Technology</h3>
+    </div>
+    <div class="bd">
+        <ul class="list list4">
+                            <li class="ult-position first">
+                    <a href="/web/20100207054616/http://news.yahoo.com/s/ap/20100206/ap_on_bi_ge/us_toyota_the_road_to_recalls" class="showtt" rel=":ap:20100206:ap_on_bi_ge:us_toyota_the_road_to_recalls" mapleUltParams="sec=yn-channel;staid=ap/20100206/us_toyota_the_road_to_recalls" >INSIDE WASHINGTON: Missed signs in Toyota recalls</a>
+                    <cite>AP</cite>
+                </li>
+                            <li class="ult-position">
+                    <a href="/web/20100207054616/http://news.yahoo.com/s/ap/20100206/ap_on_bi_ge/us_toyota" class="showtt" rel=":ap:20100206:ap_on_bi_ge:us_toyota" mapleUltParams="sec=yn-channel;staid=ap/20100206/us_toyota" >Toyota drivers pull in for repair; Prius fix looms</a>
+                    <cite>AP</cite>
+                </li>
+                            <li class="ult-position">
+                    <a href="/web/20100207054616/http://news.yahoo.com/s/ap/20100206/ap_on_bi_ge/cn_finance_meetings" class="showtt" rel=":ap:20100206:ap_on_bi_ge:cn_finance_meetings" mapleUltParams="sec=yn-channel;staid=ap/20100206/cn_finance_meetings" >G-7 seeks to calm global markets, sustain rebound</a>
+                    <cite>AP</cite>
+                </li>
+                            <li class="ult-position">
+                    <a href="/web/20100207054616/http://news.yahoo.com/s/livescience/20100203/sc_livescience/coupleswhosaywefarebetterinfights" class="showtt" rel=":livescience:20100203:sc_livescience:coupleswhosaywefarebetterinfights" mapleUltParams="sec=yn-channel;staid=livescience/20100203/coupleswhosaywefarebetterinfights" >Couples Who Say &#39;We&#39; Fare Better in Fights</a>
+                    <cite>LiveScience.com</cite>
+                </li>
+                            <li class="ult-position">
+                    <a href="/web/20100207054616/http://news.yahoo.com/s/livescience/20100206/sc_livescience/whatisablizzard" class="showtt" rel=":livescience:20100206:sc_livescience:whatisablizzard" mapleUltParams="sec=yn-channel;staid=livescience/20100206/whatisablizzard" >What Is a Blizzard?</a>
+                    <cite>LiveScience.com</cite>
+                </li>
+                    </ul>
+        <a href="/web/20100207054616/http://news.yahoo.com/most-popular/viewed/technology" class="more size1" mapleUltParams="sec=yn-channel" >All Most Viewed&nbsp;&raquo;</a>
+    </div>
+</div>
+
+            
+            
+        </div>
+        <div class="yui-u">
+            
+<div id="yn-daily-features" class="mod ult-section mod-first">
+    <div class="hd">
+        <h3>Daily Features</h3>
+    </div>
+    <div class="bd">
+        <ul class="list list2 size1">
+            <li class="first">
+                <a href="/web/20100207054616/http://news.yahoo.com/comics/100205/cx_mmduke_umedia/20100502"><img src="/web/20100207054616im_/http://l.yimg.com/a/i/us/nws/2008/news/us/assets/common/images/transparent.png" width="201" height="218" alt="Comic" class="lzbg" style="background-image: url(/web/20100207054616im_/http://d.yimg.com/b/util/anysize/200x-1209600,http%3A%2F%2Fd.yimg.com%2Fa%2Fp%2Fumedia%2F20100205%2Fcp.069c180c2a45de82c8971b6b70d940f4.gif%3Fx%3D201%26y%3D218%26q%3D85%26sig%3DlTvuH6hBqEu5z2U4lwCD2Q--);"></a>
+                <a href="/web/20100207054616/http://news.yahoo.com/comics" class="more">All Comics &raquo;</a>
+            </li>
+            <li>
+    <h4>Opinions &amp; Editorials: <a href="/web/20100207054616/http://news.yahoo.com/i/742">Diverse views on news from the right, left, and center.</a></h4>
+    <a href="/web/20100207054616/http://news.yahoo.com/i/742" class="more">All Opinion &raquo;</a> 
+</li>            <!-- -->        </ul>
+    </div>
+</div>
+
+                <div class="ad-links mod">
+                <div id="darla-ad__REC" class="ft darla_ad"></div>
+            </div>
+
+            
+        </div>
+        <div class="yui-u last">
+                <div id="yn-elseweb" class="mod ult-section mod-first">
+        <div class="hd">
+            <h3>Elsewhere on the Web</h3>
+        </div>
+        <div class="bd">
+            <ul class="list">
+                                    <li class="ult-position first">
+                    	<a href="/web/20100207054616/http://us.rd.yahoo.com/dailynews/external/pcworld_rss/rss_pcworld_tc/onlinevideoexplodes/35016195/SIG=128d1enma/*http://feeds.pcworld.com/click.phdo?i=94ceb08963ceac57a9e26f6947a0d314" mapleUltParams="sec=yn-elseweb" ><strong>PC World: </strong>Online Video Explodes</a>
+                    </li>
+                                    <li class="ult-position">
+                    	<a href="/web/20100207054616/http://us.rd.yahoo.com/dailynews/external/infoworld_rss/rss_infoworld_tc/112372athttpwwwinfoworldcom/35007733/SIG=13p5uc1fn/*http://www.infoworld.com/d/green-it/energy-star-certification-data-centers-coming-in-june-372?source=rss_infoworld_news" mapleUltParams="sec=yn-elseweb" ><strong>InfoWorld: </strong>Energy Star certification for data centers coming in June</a>
+                    </li>
+                                    <li class="ult-position">
+                    	<a href="/web/20100207054616/http://us.rd.yahoo.com/dailynews/external/macworld_rss/rss_macworld_tc/httpwwwmacworldcomarticle146119201002laciecoatformoahtml/35014291/SIG=127ehgkh5/*http://rss.macworld.com/click.phdo?i=71202b3d0a2aff0d6e3aaeb645efbfa6" mapleUltParams="sec=yn-elseweb" ><strong>Macworld: </strong>LaCie intros iPad and MacBook bags</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+
+
+            
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+                    
+
+        
+                    
+                    
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                </div><!-- end: .yui-b -->
+        
+            </div><!-- end: #yui-main -->
+        
+            <div id="sidebar" class="yui-b" role="complementary">
+            
+                <div id="yn-top-stories" class="mod ult-section">
+    <div class="hd">
+        <h3>Top Stories</h3>
+    </div>
+    <div class="bd">
+                    <ul class="list list4 size2">
+                <li class="first  "><a href="/web/20100207054616/http://news.yahoo.com/s/ap/20100207/ap_on_el_ge/us_palin_s_people" class="showtt yltasis" rel=":ap:20100207:ap_on_el_ge:us_palin_s_people" mapleUltParams="sec=yn_top_stories;ccode=mostpopular;asset=ap/20100207/us_palin_s_people;cpos=1;"> Palin tells 'tea party': It's revolution time<!-- COKE --></a></li><li class=" "><a href="/web/20100207054616/http://news.yahoo.com/s/ap/20100207/ap_on_el_st_lo/us_new_orleans_mayor" class="showtt yltasis" rel=":ap:20100207:ap_on_el_st_lo:us_new_orleans_mayor" mapleUltParams="sec=yn_top_stories;ccode=mostpopular;asset=ap/20100207/us_new_orleans_mayor;cpos=2;"> La. lt. gov. replaces Nagin as New Orleans mayor<!-- COKE --></a></li><li class=" "><a href="/web/20100207054616/http://news.yahoo.com/s/ap/20100207/ap_on_bi_ge/toyota_recall" class="showtt yltasis" rel=":ap:20100207:ap_on_bi_ge:toyota_recall" mapleUltParams="sec=yn_top_stories;ccode=mostpopular;asset=ap/20100207/toyota_recall;cpos=3;"> Reports: Toyota decides to recall Prius in Japan<!-- COKE --></a></li><li class=" "><a href="/web/20100207054616/http://news.yahoo.com/s/ap/20100206/ap_on_re_eu/eu_spain_teenage_matador" class="showtt yltasis" rel=":ap:20100206:ap_on_re_eu:eu_spain_teenage_matador" mapleUltParams="sec=yn_top_stories;ccode=mostpopular;asset=ap/20100206/eu_spain_teenage_matador;cpos=4;"> Teenage Spanish matador kills 6 bulls<!-- COKE --></a></li><li class=" "><a href="/web/20100207054616/http://news.yahoo.com/s/ap/20100207/ap_on_re_la_am_ca/cb_haiti_earthquake" class="showtt yltasis" rel=":ap:20100207:ap_on_re_la_am_ca:cb_haiti_earthquake" mapleUltParams="sec=yn_top_stories;ccode=mostpopular;asset=ap/20100207/cb_haiti_earthquake;cpos=5;"> Haitian women become crime targets after quake<!-- COKE --></a></li><li class=" "><a href="/web/20100207054616/http://news.yahoo.com/s/ap/20100206/ap_on_re_us/us_military_medals_impostors" class="showtt yltasis" rel=":ap:20100206:ap_on_re_us:us_military_medals_impostors" mapleUltParams="sec=yn_top_stories;ccode=mostpopular;asset=ap/20100206/us_military_medals_impostors;cpos=6;"> Federal law barring lies about medals is tested<!-- COKE --></a></li><li class=" "><a href="/web/20100207054616/http://news.yahoo.com/s/ap/20100207/ap_on_re_la_am_ca/cb_haiti_americans_detained" class="showtt yltasis" rel=":ap:20100207:ap_on_re_la_am_ca:cb_haiti_americans_detained" mapleUltParams="sec=yn_top_stories;ccode=mostpopular;asset=ap/20100207/cb_haiti_americans_detained;cpos=7;"> Haitian lawyer for jailed US missionaries fired<!-- COKE --></a></li>            </ul>
+            </div>
+    <div class="ft">
+        <a href="/web/20100207054616/http://news.yahoo.com/i/2372" class="yltasis">More Top Stories &raquo;</a>
+    </div>
+</div>
+
+<div id="darla-ad__LREC" class="mod ad darla_ad mod-first"></div>
+    
+
+<div id="sponsored-links" class="mod ult-section">
+    <div class="hd">
+        <h3>Sponsored Links</h3>
+    </div>
+    <div class="bd">
+        <ul>
+                        <li class="ult-position first">
+                <a href="/web/20100207054616/http://rc.us-east.srv.overture.com/d/sr/?xargs=20ADnLzZVtGA1UJsQHGeSmxIvIfHRXxe93b7AKobox1S3DX_0QudluuTRB8DCJza3UW29YtEmdjQmUEqDmRfk3suTbW_LZ_0sFf3AJsg4QykYptbZl0kVLLqxpJVcUbYUiuQzK1zEGhKDm8dR9N2AHaZsRLUBX6M9zEgckx0qpWVkFdfmwGd-AGSEcdtIfR8z13B9cAXlh9UhWlkkx0PW5pohvwvtyD-bdaV4MZIPS1KB267Oa6CEqtM8.00000001d6a6ae12" class="yltasis">High Speed Internet Services</a>
+                Compare Internet Service Plans. Compare Wireless, DSL Performance.                <a href="/web/20100207054616/http://rc.us-east.srv.overture.com/d/sr/?xargs=20ADnLzZVtGA1UJsQHGeSmxIvIfHRXxe93b7AKobox1S3DX_0QudluuTRB8DCJza3UW29YtEmdjQmUEqDmRfk3suTbW_LZ_0sFf3AJsg4QykYptbZl0kVLLqxpJVcUbYUiuQzK1zEGhKDm8dR9N2AHaZsRLUBX6M9zEgckx0qpWVkFdfmwGd-AGSEcdtIfR8z13B9cAXlh9UhWlkkx0PW5pohvwvtyD-bdaV4MZIPS1KB267Oa6CEqtM8.00000001d6a6ae12" class="host yltasis">www.internetservicehookup.info</a>
+            </li>
+                        <li class="ult-position">
+                <a href="/web/20100207054616/http://rc.us-east.srv.overture.com/d/sr/?xargs=20AHqU-kNeFTIva-TOg3zmr844wzqUtBhfsV4ka0bJPcxb8QRf3VXejOnxT89Nq1DkqMl99lbK3OE9jCoblnb8nXnwMKhu_Z3Ohe_u20fYHkKwcAqq0Q1iNMzhkXdG_SfR_PyPtWt5Ix8xvXmNYC1xa-f1zovPyPtDILnqe3jspBXriA5MMlnQKqWkn4HInli9C9YOzKHag32PwuDDvIuuCwr3-5dv6OnSMSYW0qFE3GVzBP57jNeJQmM.00000001d6a6ae12" class="yltasis">Free iPhone Search App</a>
+                Download the Free iPhone Tool For Local Search, Maps, Directions.                <a href="/web/20100207054616/http://rc.us-east.srv.overture.com/d/sr/?xargs=20AHqU-kNeFTIva-TOg3zmr844wzqUtBhfsV4ka0bJPcxb8QRf3VXejOnxT89Nq1DkqMl99lbK3OE9jCoblnb8nXnwMKhu_Z3Ohe_u20fYHkKwcAqq0Q1iNMzhkXdG_SfR_PyPtWt5Ix8xvXmNYC1xa-f1zovPyPtDILnqe3jspBXriA5MMlnQKqWkn4HInli9C9YOzKHag32PwuDDvIuuCwr3-5dv6OnSMSYW0qFE3GVzBP57jNeJQmM.00000001d6a6ae12" class="host yltasis">yellowpages.com</a>
+            </li>
+                        <li class="ult-position">
+                <a href="/web/20100207054616/http://rc.us-east.srv.overture.com/d/sr/?xargs=20AJpVDqKMlmVpJsQHGeSmxIuxcT7sUlDM0ymGsXlfCYXNlmMRtAL9hSk7PXHtpeurypog0BikMYD5WplIsomj0UIZDalfXFIsZD7NxPqOb0VJ38Gnlt58O1PpzM3Ux6hH-fXykaZZMEqFV4xIquikwP-NY-ohcxCD6HZCdargtcL46_4f9NX7RRImTVP2DrEj2if1vkbe4x983sMLYD-EExd1psPrLtdyQHkI0C8XH1321u3B1Gug4cs.00000001d6a6ae12" class="yltasis">Latest Video Technology</a>
+                Update your Latest Video w/ Official Drivers. Free download.                <a href="/web/20100207054616/http://rc.us-east.srv.overture.com/d/sr/?xargs=20AJpVDqKMlmVpJsQHGeSmxIuxcT7sUlDM0ymGsXlfCYXNlmMRtAL9hSk7PXHtpeurypog0BikMYD5WplIsomj0UIZDalfXFIsZD7NxPqOb0VJ38Gnlt58O1PpzM3Ux6hH-fXykaZZMEqFV4xIquikwP-NY-ohcxCD6HZCdargtcL46_4f9NX7RRImTVP2DrEj2if1vkbe4x983sMLYD-EExd1psPrLtdyQHkI0C8XH1321u3B1Gug4cs.00000001d6a6ae12" class="host yltasis">Driver-Fix.com/latestvideo</a>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+<div id="yn-featured" class="mod ult-section">
+    <div class="hd">
+        <h3>Featured</h3>
+    </div>
+    <div class="bd">
+        <ul>
+            <li class="first"><a href="/web/20100207054616/http://news.yahoo.com/topics/apple-inc"><img width="67" height="67" alt="" src="/web/20100207054616im_/http://l.yimg.com/a/p/us/news/editorial/d/56/d56693884b78fb91b6c947ada922939b.jpeg" /></a>
+<div><a href="/web/20100207054616/http://news.yahoo.com/topics/apple-inc">Topics: Apple Inc.</a>Complete iPad coverage includes the latest updates and videos.<a href="/web/20100207054616/http://news.yahoo.com/topics" style="font-size:13px;font-weight:normal;">&raquo; 
+More Yahoo! News Topics</a></div></li><li><a href="/web/20100207054616/http://twitter.com/Ystartingpoint/haitiquake"><img width="67" height="67" alt="" src="/web/20100207054616im_/http://l.yimg.com/a/p/us/news/editorial/5/e1/5e17ace98f9408aaf3f124436133b134.jpeg" /></a>
+<div><a href="/web/20100207054616/http://twitter.com/Ystartingpoint/haitiquake">Haiti Twitter coverage</a>Yahoo! News rounds up reports about the Haiti quake on Twitter.<a href="/web/20100207054616/http://news.yahoo.com/nphotos/Strong-earthquake-hits-Haiti/ss/events/wl/011210haitiquake" style="font-size:13px;font-weight:normal;">&raquo; 
+Slideshow</a></div></li><li><a href="/web/20100207054616/http://abcnews.go.com/Business/safest-cars-volvo-subaru-honda-ford/story?id=9729865&amp;cid=yahoo_pitchlist"><img width="67" height="67" alt="" src="/web/20100207054616im_/http://l.yimg.com/a/p/us/news/editorial/8/f0/8f0ad08db773e80a5e5b40a38e29cd7f.jpeg"/></a><div><a href="/web/20100207054616/http://abcnews.go.com/Business/safest-cars-volvo-subaru-honda-ford/story?id=9729865&amp;cid=yahoo_pitchlist">5 safest automobiles</a>Experts help pick sturdiest vehicles for all kinds of drivers.<a href="/web/20100207054616/http://abcnews.go.com/" style="font-size:13px;font-weight:normal;">&raquo; More from ABC News</a></div></li>        </ul>
+    </div>
+</div>
+
+
+<div id="yn-vitality" class="mod ult-section">
+    <div class="hd">
+	   <h3><span>Yahoo!</span>Updates</h3>
+    </div>
+    <div class="bd pagination">
+		<ul class="tabs">
+			<li id="vitality__connections" class="pagination-nav"><a href="#updates-conn"><span>My Connections</span></a></li>
+			<li id="vitality__everyone" class="pagination-nav"><a href="#updates-everyone"><span>Everyone</span></a></li>
+		</ul>
+    	<div class="pagination-bd">
+            <div id="pagination-bd-vitality__connections">
+                
+<div id="yn-vitality-connections" class="my-connections no-updates">
+	<div class="hd"></div>
+	
+	<div class="bd">
+		<div class="updates-invite updates-login"><div class="updates-icon"></div>		<p><a href="/web/20100207054616/https://login.yahoo.com/config/login_verify2?.src=yn&amp;.done=http://news.yahoo.com/" class="signin">Sign In</a> <span>to see what your Connections are up to on Yahoo! News.</span></p>
+		<p>New User? <a href="/web/20100207054616/https://edit.yahoo.com/registration?.intl=us&amp;new=1&amp;.src=yn&amp;.done=http://news.yahoo.com/" class="signup">Sign Up</a></p></div>
+	</div>
+	<div class="ft"></div>
+</div>
+
+            </div>
+            <div id="pagination-bd-vitality__everyone" style="display: none;">
+                
+<div id="yn-vitality-everyone" class="everyone">
+	<div class="hd"></div>
+	<div class="updates-invite updates-login"><div class="updates-icon"></div>		<p><a href="/web/20100207054616/https://login.yahoo.com/config/login_verify2?.src=yn&amp;.done=http://news.yahoo.com/" class="signin">Sign In</a> <span>to see what your Connections are up to on Yahoo! News.</span></p>
+		<p>New User? <a href="/web/20100207054616/https://edit.yahoo.com/registration?.intl=us&amp;new=1&amp;.src=yn&amp;.done=http://news.yahoo.com/" class="signup">Sign Up</a></p></div>
+	<div class="bd">
+		<ul class="hfeed hslice"><li class="header today"><h4>Today</h4></li>			<li class="hentry first">
+						
+				<a href="/web/20100207054616/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aei7vmhu/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0aDlrdnZhBElfYWd1aWQDSFVWUVIzUUtVWUdUTDNESUFGT1NHMjVUUEUESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzNjM2Y4MDk5Mzc3MDhlYzVhNjk1NjM1MDNjMGUyNmE1BElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rbbgp2n/**http%3A//profiles.yahoo.com/u/HUVQR3QKUYGTL3DIAFOSG25TPE" class="avatar"><img width="32" height="32" alt="goto Langdon's profile" src="/web/20100207054616im_/http://avatars.zenfs.com/users/1ggFoic2PAAECSENxZBN-Cw==.medium.png"></a>
+				<div class="update entry-content">
+					<p class="vcard author"><a href="/web/20100207054616/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aei7vmhu/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0aDlrdnZhBElfYWd1aWQDSFVWUVIzUUtVWUdUTDNESUFGT1NHMjVUUEUESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzNjM2Y4MDk5Mzc3MDhlYzVhNjk1NjM1MDNjMGUyNmE1BElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rbbgp2n/**http%3A//profiles.yahoo.com/u/HUVQR3QKUYGTL3DIAFOSG25TPE" class="fn nickname url">Langdon</a> buzzed up: <a href="/web/20100207054616/http://news.yahoo.com/s/ap/20100206/ap_on_re_us/us_military_medals_impostors" class="entry-title bookmark">Federal law barring lies about medals is tested      (AP)</a></p>  <p class="updated">31 seconds ago <span class="value">2010-02-06T21:43:01-08:00</span></p>
+				</div>
+			</li>
+					<li class="hentry">
+						
+				<a href="/web/20100207054616/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aeqsihqg/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0Y3RiNWJtBElfYWd1aWQDTktVTk9IWFRIU1gzWURHVklSV0k2VE0yTFUESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkA2FiMTc5NDJmMmU3NGY4ZTdmYmE2N2YxNjk2NjFkMzNhBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rpr3pec/**http%3A//profiles.yahoo.com/u/NKUNOHXTHSX3YDGVIRWI6TM2LU" class="avatar"><img width="32" height="32" alt="goto Netwood's profile" src="/web/20100207054616im_/http://a323.yahoofs.com/coreid/4b663385ib63zul6re4/gLQBjdoydKss8eF2q7wzlPtD/101/tn48.jpg?ciAAToMBq7bbHJnX"></a>
+				<div class="update entry-content">
+					<p class="vcard author"><a href="/web/20100207054616/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aeqsihqg/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0Y3RiNWJtBElfYWd1aWQDTktVTk9IWFRIU1gzWURHVklSV0k2VE0yTFUESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkA2FiMTc5NDJmMmU3NGY4ZTdmYmE2N2YxNjk2NjFkMzNhBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rpr3pec/**http%3A//profiles.yahoo.com/u/NKUNOHXTHSX3YDGVIRWI6TM2LU" class="fn nickname url">Netwood</a> buzzed up: <a href="/web/20100207054616/http://news.yahoo.com/s/ap/20100207/ap_on_re_la_am_ca/cb_haiti_americans_detained" class="entry-title bookmark">Haitian lawyer for jailed US missionaries fired      (AP)</a></p>  <p class="updated">41 seconds ago <span class="value">2010-02-06T21:42:51-08:00</span></p>
+				</div>
+			</li>
+					<li class="hentry">
+						
+				<a href="/web/20100207054616/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1ae434eqb/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0Z3F1cWFoBElfYWd1aWQDVlRVV0RQM1hBRUNQRVVPSFNYQVpOUFZPUjQESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzNhZDFmOTdiOTBhMTUzMzJkMmJmMTdjNzI0NzA3MzU4BElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11ribn1ib/**http%3A//profiles.yahoo.com/u/VTUWDP3XAECPEUOHSXAZNPVOR4" class="avatar"><img width="32" height="32" alt="goto John &amp; Flo B's profile" src="/web/20100207054616im_/http://l.yimg.com/us.yimg.com/i/identity/nopic_48.gif"></a>
+				<div class="update entry-content">
+					<p class="vcard author"><a href="/web/20100207054616/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1ae434eqb/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0Z3F1cWFoBElfYWd1aWQDVlRVV0RQM1hBRUNQRVVPSFNYQVpOUFZPUjQESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzNhZDFmOTdiOTBhMTUzMzJkMmJmMTdjNzI0NzA3MzU4BElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11ribn1ib/**http%3A//profiles.yahoo.com/u/VTUWDP3XAECPEUOHSXAZNPVOR4" class="fn nickname url">John &amp; Flo B</a> buzzed up: <a href="/web/20100207054616/http://news.yahoo.com/s/afp/20100207/wl_uk_afp/britainimmigrationpolitics" class="entry-title bookmark">Govt. to cut number of student visas issued      (AFP)</a></p>  <p class="updated">49 seconds ago <span class="value">2010-02-06T21:42:43-08:00</span></p>
+				</div>
+			</li>
+					<li class="hentry">
+						
+				<a href="/web/20100207054616/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aetqefo5/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0aWs4NnNkBElfYWd1aWQDQzVEQzI2S1FJMlhWVVJMUlJVQVAzVFBLNzQESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzdjNTU5ZGYwZWIxYzc4YjE5ZjE1NjM5MzQwNGJkMDZjBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rqf7m6g/**http%3A//profiles.yahoo.com/u/C5DC26KQI2XVURLRRUAP3TPK74" class="avatar"><img width="32" height="32" alt="goto BR's profile" src="/web/20100207054616im_/http://l.yimg.com/us.yimg.com/i/identity/nopic_48.gif"></a>
+				<div class="update entry-content">
+					<p class="vcard author"><a href="/web/20100207054616/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aetqefo5/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0aWs4NnNkBElfYWd1aWQDQzVEQzI2S1FJMlhWVVJMUlJVQVAzVFBLNzQESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzdjNTU5ZGYwZWIxYzc4YjE5ZjE1NjM5MzQwNGJkMDZjBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rqf7m6g/**http%3A//profiles.yahoo.com/u/C5DC26KQI2XVURLRRUAP3TPK74" class="fn nickname url">BR</a> buzzed up: <a href="/web/20100207054616/http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_winter_weather" class="entry-title bookmark">&#39;Snowmageddon&#39; blankets Mid-Atlantic in white      (AP)</a></p>  <p class="updated">1 minute ago <span class="value">2010-02-06T21:42:03-08:00</span></p>
+				</div>
+			</li>
+					<li class="hentry last">
+						
+				<a href="/web/20100207054616/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aeofng2q/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0ZmN0YTMwBElfYWd1aWQDTkZHUDIyUUEzWEVUM0JJWVUzQTdCN1JBNE0ESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkA2UwMjNhZWY5ODI5MzMzODU1NjliMjI4NTRkY2JhZWVmBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11r6s48qs/**http%3A//profiles.yahoo.com/u/NFGP22QA3XET3BIYU3A7B7RA4M" class="avatar"><img width="32" height="32" alt="goto Patti's profile" src="/web/20100207054616im_/http://l.yimg.com/us.yimg.com/i/identity/nopic_48.gif"></a>
+				<div class="update entry-content">
+					<p class="vcard author"><a href="/web/20100207054616/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aeofng2q/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0ZmN0YTMwBElfYWd1aWQDTkZHUDIyUUEzWEVUM0JJWVUzQTdCN1JBNE0ESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkA2UwMjNhZWY5ODI5MzMzODU1NjliMjI4NTRkY2JhZWVmBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11r6s48qs/**http%3A//profiles.yahoo.com/u/NFGP22QA3XET3BIYU3A7B7RA4M" class="fn nickname url">Patti</a> buzzed up: <a href="/web/20100207054616/http://news.yahoo.com/s/nm/20100207/ts_nm/us_weather_usa" class="entry-title bookmark">Blizzard paralyzes mid-Atlantic; two killed      (Reuters)</a></p>  <p class="updated">2 minutes ago <span class="value">2010-02-06T21:40:44-08:00</span></p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="ft"> <a href="/web/20100207054616/http://profiles.yahoo.com/settings/updates/" class="settings">Manage My Updates</a></div>
+</div>
+
+            </div>
+    	</div>
+    </div>
+</div>
+
+<div id="darla-ad__LREC2" class="mod ad darla_ad mod-first"></div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            
+            </div><!-- end: #sidebar -->
+        
+        </div><!-- end: #bd -->
+    
+        <div id="ft">
+   
+   <div id="yn_ft_nav" class="ult-section nav">
+       <h6>Yahoo! News Navigation</h6>
+       <ul>
+           <li class="ult-position first"><a href="/web/20100207054616/http://news.yahoo.com/">Home</a></li>
+           <li class="ult-position"><a href="/web/20100207054616/http://news.yahoo.com/us"><abbr title="United States">U.S.</abbr></a></li>
+           <li class="ult-position"><a href="/web/20100207054616/http://news.yahoo.com/business">Business</a></li>
+           <li class="ult-position"><a href="/web/20100207054616/http://news.yahoo.com/world">World</a></li>
+           <li class="ult-position"><a href="/web/20100207054616/http://news.yahoo.com/entertainment">Entertainment</a></li>
+           <li class="ult-position"><a href="/web/20100207054616/http://news.yahoo.com/sports">Sports</a></li>
+           <li class="ult-position"><a href="/web/20100207054616/http://news.yahoo.com/technology">Tech</a></li>
+           <li class="ult-position"><a href="/web/20100207054616/http://news.yahoo.com/politics">Politics</a></li>
+           <li class="ult-position"><a href="/web/20100207054616/http://news.yahoo.com/science">Science</a></li>
+           <li class="ult-position"><a href="/web/20100207054616/http://news.yahoo.com/health">Health</a></li>
+           <li class="ult-position"><a href="/web/20100207054616/http://news.yahoo.com/travel">Travel</a></li>
+           <li class="ult-position"><a href="/web/20100207054616/http://news.yahoo.com/i/964">Most Popular</a></li>
+           <li class="ult-position"><a href="/web/20100207054616/http://news.yahoo.com/odd">Odd News</a></li>
+           <li class="ult-position"><a href="/web/20100207054616/http://news.yahoo.com/opinion">Opinion</a></li>
+       </ul>
+   </div><!-- end: .nav -->
+   
+   <div id="yn_ft_services" class="ult-section services">
+       <h6>News Services</h6>
+       <ul>
+           <li class="ult-position rss first"><a href="/web/20100207054616/http://news.yahoo.com/rss"><abbr title="Really Simple Syndication">RSS</abbr></a></li>
+           <li class="ult-position"><a href="/web/20100207054616/http://beta.alerts.yahoo.com/main.php?view=create_news_step1&amp;.done=http://news.yahoo.com">News Alerts</a></li>
+           <li class="ult-position"><a href="/web/20100207054616/http://beta.alerts.yahoo.com/main.php?view=create_weather">Weather Alerts</a></li>
+           <li class="ult-position"><a href="/web/20100207054616/http://news.yahoo.com/badges/headlines">Add Yahoo! Headlines to Your Site</a></li>
+           <li class="ult-position"><a href="/web/20100207054616/http://news.yahoo.com/page/sitemap">Site Map</a></li>
+           <li class="ult-position"><a href="/web/20100207054616/http://help.yahoo.com/l/us/yahoo/news/">Help</a></li>
+           <li class="ult-position"><a href="/web/20100207054616/http://suggestions.yahoo.com/?prop=news">Feedback</a></li>
+       </ul>
+       
+          </div><!-- end: .services -->
+   
+</div><!-- end: #ft -->
+           
+
+        
+        <div id="copyright" class="mod" role="contentinfo">
+    <p>Copyright &copy; 2010 The Associated Press. All rights reserved. The information contained in the AP News report may not be published, broadcast, rewritten or redistributed without the prior written authority of The Associated Press.
+
+<br></p>
+</div>
+
+    
+        <div class="mod ad ad_footer" role="contentinfo">
+    <div class="bd">
+            <!-- Ad Keywords: it; iPhone; mobile network; broadband; wireless; Internet; home; cable; network; BlackBerry; Apple; carrier; Wi-Fi; bandwidth; video; Internet phone; Internet Protocol; VoIP; Google;-->
+<!-- SpaceID=0 robot -->
+    </div>
+</div>
+
+    
+    </div><!-- end: #doc4 -->
+    
+    
+
+                            <script type="text/javascript" src="/web/20100207054616js_/http://l.yimg.com/b/news/combo/D7H8FL9F?http%3A//l.yimg.com/d/combo%3Fuh/15/js/uh-1.0.20.js&amp;story/assets/js/1.0.3/generic/story.js"></script>
+                        
+
+                            <script type="text/javascript">
+                            YAHOO.util.Event.addListener(window, 'load', function() {
+                                // Start contextual shortcuts widget
+                                var config = {
+                                    url : '/news/common/api/en-US/NEWS/storycontextualshortcut;id=ap:20100205:ap_on_hi_te:us_tec_at_t_iphone_slingplayer?format=json',
+                                    css : '/web/20100207054616/http://d.yimg.com/jq/css/cs_3.5.0.css',
+                                    js : '/web/20100207054616/http://d.yimg.com/jq/js/ysc_csc_news.js'
+                                }
+                                YAHOO.News.Shortcuts.init(config);
+                            });
+                            </script>
+                        
+    
+    <div class="mod ad ad_misc_ad">
+    <div class="bd">
+            <!-- Ad Keywords: it; iPhone; mobile network; broadband; wireless; Internet; home; cable; network; BlackBerry; Apple; carrier; Wi-Fi; bandwidth; video; Internet phone; Internet Protocol; VoIP; Google;-->
+<!-- SpaceID=0 robot -->
+    </div>
+</div>
+
+    
+    <div class="mod ad ad_survey_ad">
+    <div class="bd">
+            <!-- Ad Keywords: it; iPhone; mobile network; broadband; wireless; Internet; home; cable; network; BlackBerry; Apple; carrier; Wi-Fi; bandwidth; video; Internet phone; Internet Protocol; VoIP; Google;-->
+<!-- SpaceID=0 robot -->
+    </div>
+</div>
+
+    
+    
+    
+</body>
+</html>
+
+
+
+
+<!-- news:story-us:0:Success -->
+<!-- fe20.story.media.ac4.yahoo.com uncompressed Sat Feb  6 21:46:15 PST 2010 -->
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 5:46:16 Feb 7, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:03:40 Jan 11, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

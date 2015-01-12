@@ -1,0 +1,1127 @@
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app11.us.archive.org";archive_analytics.values.server_ms=223;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<script language="javascript" type="text/javascript" src="/web/20050629081657js_/http://www.latimes.com/javascript/Tacoda_AMS_DDC_Header.js"></script>
+	
+
+
+
+        
+
+        
+		<title>	Dr. West's Topanga house call </title>
+        
+
+
+<meta name="Description" content="&lt;strong&gt;Rick Schroder &lt;/strong&gt;and his wife, &lt;strong&gt;Andrea&lt;/strong&gt;, have purchased a 21-acre ranch in Topanga for about $4.2 million. The couple recently listed their nearly 15,000-acre Mesa Mood Ranch in Colorado at $29 million." />
+<meta name="robots" content="noarchive">
+
+<script language="JavaScript">
+function blockError()
+	{ return true; }
+window.onerror = blockError;
+</script>
+<script language="javascript" type="text/javascript" src="/web/20050629081657js_/http://www.latimes.com/javascript/Tacoda_AMS_DDC_Header.js"></script>
+<script language="javascript" type="text/javascript" src="/web/20050629081657js_/http://www.latimes.com/javascript/windoid.js"></script>
+<script language="javascript" type="text/javascript" src="/web/20050629081657js_/http://www.latimes.com/javascript/emailform.js"></script>
+<link rel="stylesheet" href="/web/20050629081657cs_/http://www.latimes.com/stylesheets/compressor_newspaper.css" type="text/css">
+
+
+
+
+</head>
+<body BGCOLOR="#FFFFFF" MARGINWIDTH="0" MARGINHEIGHT="0" LEFTMARGIN="0" TOPMARGIN="0" TEXT="#000000" LINK="#00497A" ALINK="#C0C0C0" VLINK="#808080">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.latimes.com/classified/realestate/hotprop/la-re-hotprop12jun12,0,7414036.story?coll=la-home-realestate";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "29";
+var displayMonth = "Jun";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.latimes.com/classified/realestate/hotprop/la-re-hotprop12jun12,0,7414036.story?coll=la-home-realestate" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20050629081657" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    May
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 8:16:57 Jun 29, 2005">JUN</td>
+		<td class="f" nowrap="nowrap">
+		
+		    Jul
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 8:16:57 Jun 29, 2005">29</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+               
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2004
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 8:16:57 Jun 29, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2006
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20050629081657*/http://www.latimes.com/classified/realestate/hotprop/la-re-hotprop12jun12,0,7414036.story?coll=la-home-realestate" title="See a list of every capture for this URL">1 captures</a>
+           <div class="r" title="Timespan for captures of this URL">29 Jun 05 - 29 Jun 05</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:5:000001000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+
+
+
+
+
+
+
+
+<TABLE height="23" cellSpacing="0" cellPadding="0" width="770" border="0">
+<TBODY>
+<TR bgColor="#215273">
+<TD><A href="/web/20050629081657/http://www.latimes.com/classified/?track=topnav-classified" target="_top"><IMG alt="Marketplace" src="/web/20050629081657im_/http://www.latimes.com/images/classifieds/latimes_subhead.gif" height="18" width="284" border="0"></A></TD>
+<TD vAlign="center" align="right" class="topnav11" noWrap><A href="/web/20050629081657/http://www.latimes.com/" target="_top">latimes.com</A> | <A href="/web/20050629081657/http://www.latimes.com/classified/jobs/?track=topnav-jobs" target="_top">Jobs</A> | <A href="/web/20050629081657/http://www.latimes.com/classified/cars/?track=topnav-cars" target="_top">Cars</A> | <A href="/web/20050629081657/http://www.latimes.com/classified/realestate/?track=topnav-homes" target="_top">Homes</A> | <A href="/web/20050629081657/http://www.latimes.com/classified/realestate/rentals/?track=topnav-apartments" target="_top">Rentals</A> | <A href="/web/20050629081657/http://www.latimes.com/printads?track=topnav-printads" target="_top">Newspaper Ads</A> | <A href="/web/20050629081657/http://www.latimes.com/personals" target="_top">Personals</A> | <A href="/web/20050629081657/http://www.latimes.com/placead?track=topnav-placead" target="_top">Place an Ad</A>&nbsp;&nbsp;&nbsp;</TD></TR>
+</TBODY>
+</TABLE>
+
+
+
+<table width="770" cellpadding="5" cellspacing="0" border="0" bgcolor="#FFFFFF">
+<tr>
+<td align="center"><DIV ALIGN="center"><TABLE height="100" BORDER="0" CELLPADDING="0" CELLSPACING="3">
+<TR><TD width="15"><IMG SRC="/web/20050629081657im_/http://www.latimes.com/images/ads/leader_label.gif" ALT="advertisement" WIDTH="15" HEIGHT="90" BORDER="0"></TD>
+<TD><!-- Ad Space: html.ng/tag=std&site=latimes&color=none&edition=newspaper&content=realestate&channel=none&adtype=leader&adsize=728x90&adplacement=top -->
+
+<!-- Custom=iab_bigbanner&TargetID -->
+<!-- DE5 lookup FlightID=493725 -->
+<IFRAME SRC="/web/20050629081657if_/http://ad.doubleclick.net/adi/N3265.tribune.com/B1512673;sz=728x90;ord=2005.6.29.8.16.57.0" WIDTH=728 HEIGHT=90 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR='#000000'> <SCRIPT language='JavaScript1.1' SRC="/web/20050629081657js_/http://ad.doubleclick.net/adj/N3265.tribune.com/B1512673;abr=!ie;sz=728x90;ord=2005.6.29.8.16.57.0"> </SCRIPT> <NOSCRIPT> <A HREF="/web/20050629081657/http://ad.doubleclick.net/jump/N3265.tribune.com/B1512673;abr=!ie4;abr=!ie5;sz=728x90;ord=2005.6.29.8.16.57.0"> <IMG SRC="/web/20050629081657im_/http://ad.doubleclick.net/ad/N3265.tribune.com/B1512673;abr=!ie4;abr=!ie5;sz=728x90;ord=2005.6.29.8.16.57.0" BORDER=0 WIDTH=728 HEIGHT=90 ALT=""></A> </NOSCRIPT> </IFRAME> <!-- HTML ad style -->
+
+<!-- /Ad Space: html.ng/tag=std&site=latimes&color=none&edition=newspaper&content=realestate&channel=none&adtype=leader&adsize=728x90&adplacement=top --></TD></TR></TABLE></DIV></td>
+</tr>
+</table>
+
+<table cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" border="0" width="770">
+<tr>
+<td rowspan="2" valign="top"><A HREF="/web/20050629081657/http://www.latimes.com/classified/realestate/?track=classnav-homes"><img src="/web/20050629081657im_/http://www.latimes.com/images/classifieds/realestate/homes_head.gif" width="303" height="42" border="0"></A></td>
+<td valign="bottom"><img src="/web/20050629081657im_/http://www.latimes.com/images/classifieds/realestate/head_shadow.gif" width="466" height="23" STYLE="border-bottom: 3px solid #FEFECA;"></td>
+</tr>
+<tr>
+<td class="secnav" valign="middle" STYLE="background-color: #FEFECA; color: #241667;">&nbsp;&nbsp;&nbsp;
+<a href="/web/20050629081657/http://www.latimes.com/classified/realestate/buying/?track=classnav-Buying" target="_parent">Buyers or Sellers</a> |
+<a href="/web/20050629081657/http://www.latimes.com/classified/realestate/rentals/?track=classnav-Renting" target="_parent">Renters</a> |
+<a href="/web/20050629081657/http://www.cityfeet.com/los_angeles/" target="_parent">Commercial</a> |
+<a href="/web/20050629081657/http://www.latimes.com/placead?track=classnav-placead" target="_parent">Place an Ad</a></td>
+</tr>
+<tr>
+<td bgcolor="#1B85B5" colspan="2"><img src="/web/20050629081657im_/http://www.latimes.com/images/empty.gif" width="10" height="2" border="0"></td>
+</tr>
+</table>
+
+
+<!-- BEGIN MAIN TABLE -->
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="600" bgcolor="ffffff" valign="top">
+
+<!-- Main Table for Frame and Borders -->
+<table width="600" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+	<td valign="top" width="156" bgcolor=#C7D9ED>
+
+	<table width="156" border="0" cellspacing="0" cellpadding="0">
+<!-- PLACE AN AD --> 
+  <tr class="reNavbar"> 
+    <td width="122"><font color="#4A688C" size="2">- -</font><a href="/web/20050629081657/http://www.latimes.com/classified/realestate/placead/la-placead-realfront,0,6144820.htmlstory?coll=la-mininav-realestate">Place an Ad</a></td>
+    <td width="34"><img src="/web/20050629081657im_/http://www.latimes.com/images/classifieds/realestate/homes_roundend_right2.gif" width="34" height="19"></td>
+  </tr>
+  <tr> 
+    <td colspan="2" class="contentMS11"> 
+	
+<!-- AD LINKS -->
+	&nbsp; <a href="/web/20050629081657/http://www.latimes.com/classified/realestate/placead/la-placead-realfront,0,6144820.htmlstory?coll=la-mininav-realestate"><b>&#149; New &amp; Existing Homes</b></a><br>
+	&nbsp; <a href="/web/20050629081657/http://smarteradsla.databasedads.com/"><b>&#149; Property Preview</b></a><br>
+	&nbsp; <a href="/web/20050629081657/http://smarteradsla.databasedads.com/loginLat.aspx?uid=%c2%bb"><b>&#149; Hot Properties</b></a><br>
+	&nbsp; <a href="/web/20050629081657/http://www.cityfeet.com/Los_Angeles/"><b>&#149; Commercial Real Estate</b></a><br>
+	&nbsp; <a href="/web/20050629081657/http://www.advertise123.com/lat/default.asp?category=RESh"><b>&#149; LA Times Classifieds</b></a><br>
+	&nbsp; <a href="/web/20050629081657/http://latimes.databasedads.com/login.asp"><b>&#149; Builder PR</b></a><br>
+      <span class="spacer5">&nbsp;</span></td>
+  </tr>
+  
+<!-- BUY OR SELL --> 
+  <tr> 
+    <td class="reNavbar" width="122"><font color="#4A688C" size="2">- -</font><a href="/web/20050629081657/http://www.latimes.com/classified/realestate/buying/">Buyers or Sellers</a></td>
+    <td width="34"><img src="/web/20050629081657im_/http://www.latimes.com/images/classifieds/realestate/homes_roundend_right2.gif" width="34" height="19"></td>
+  </tr>
+  <tr> 
+    <td colspan="2" class="contentMS11"> 
+	
+<!-- BUY OR SELL LINKS -->
+	<!-- &nbsp; <a href="/classified/realestate/buying/"><b>&#149; Find a Home</b></a><br> -->
+	&nbsp; <a href="/web/20050629081657/http://www.latimes.com/classified/realestate/buying/la-re-printads,0,5971224.ssipage?coll=la-mininav-realestate"><b>&#149; Ads Seen in the LA Times</b></a><br>
+	&nbsp; <a href="/web/20050629081657/http://www.latimes.com/classified/realestate/buying/tools/"><b>&#149; Tools for Buyers</b></a><br>
+	&nbsp; <a href="/web/20050629081657/http://www.latimes.com/classified/realestate/selling/"><b>&#149; Tools for Sellers</b></a><br>
+	&nbsp; <a href="/web/20050629081657/http://www.latimes.com/classified/realestate/buying/financing/"><b>&#149; Finance Center</b></a><br>	
+	&nbsp; <a href="/web/20050629081657/http://www.realtytrac.com/gateway_co.asp?accnt=12804&amp;password=la"><b>&#149; Find a Foreclosure Home</b></a><br>	
+	&nbsp; <a href="/web/20050629081657/http://www.latimes.com/classified/realestate/agents/"><b>&#149; Find an Agent</b></a><br>
+	
+	
+	
+      <img src="/web/20050629081657im_/http://www.latimes.com/images/empty.gif" width="1" height="30"><br>
+    </td>
+  </tr>
+  
+<!-- RENTING --> 
+  <tr> 
+    <td class="reNavbar" width="122"><font color="#4A688C" size="2">- -</font><a href="/web/20050629081657/http://www.latimes.com/classified/realestate/rentals/">Renters</a></td>
+    <td width="34"><img src="/web/20050629081657im_/http://www.latimes.com/images/classifieds/realestate/homes_roundend_right2.gif" width="34" height="19"></td>
+  </tr>
+  <tr> 
+    <td colspan="2" class="contentMS11"> 
+	
+<!-- RENTAL LINKS -->
+	&nbsp; <a href="/web/20050629081657/http://www.latimes.com/classified/realestate/rentals/"><b>&#149; Find Rentals</b></a><br>
+	&nbsp; <a href="/web/20050629081657/http://www.latimes.com/classified/realestate/rentals/news/"><b>&#149; News &amp; Information</b></a><br>
+	&nbsp; <a href="/web/20050629081657/http://www.latimes.com/classified/realestate/rentals/la-rentals-moving,0,7436017.ssipage?track=classnav-Moving"><b>&#149; Moving</b></a><br>
+	&nbsp; <a href="/web/20050629081657/http://www.latimes.com/classified/placead/la-placead-rentfront,0,5039827.htmlstory?coll=la-mininav-realestate"><b>&#149; Place an Ad</b></a><br>
+	&nbsp; <a href="/web/20050629081657/http://www.latimes.com/classified/realestate/rentals/la-prop-management,0,6910579.ssipage?coll=la-mininav-realestate"><b>&#149; Property Management</b></a><br>
+      <span class="spacer5">&nbsp;</span></td>
+  </tr>
+  
+<!-- COMMERCIAL --> 
+  <tr> 
+    <td class="reNavbar" width="122"><font color="#4A688C" size="2">- -</font><a href="/web/20050629081657/http://www.cityfeet.com/los_angeles/">Commercial</a></td>
+    <td width="34"><img src="/web/20050629081657im_/http://www.latimes.com/images/classifieds/realestate/homes_roundend_right2.gif" width="34" height="19"></td>
+  </tr>
+  <tr> 
+    <td colspan="2" class="contentMS11"> 
+	
+<!-- COMMERCIAL LINKS -->
+	&nbsp; <a href="/web/20050629081657/http://www.cityfeet.com/los_angeles/"><b>&#149; Find Properties</b></a><br>
+	&nbsp; <a href="/web/20050629081657/http://www.cityfeet.com/GoodsServices/default.asp"><b>&#149; Find Services</b></a><br>
+      &nbsp; <a href="/web/20050629081657/http://www.latimes.com/classified/realestate/rentals/commercial/"><b>&#149; News &amp; Information</b></a><br>
+      <img src="/web/20050629081657im_/http://www.latimes.com/images/empty.gif" width="1" height="6"><br>
+      &nbsp;<br>
+    </td>
+  </tr>
+</table>
+
+	<span class="contentMS11">
+<script language="JavaScript"
+src="/web/20050629081657js_/http://latimes.interest.com/ftp_rates/rates_js.asp"></script>
+</span>
+
+	</td>
+<td width="1" bgcolor="#000000"><img src="/web/20050629081657im_/http://www.latimes.com/images/empty.gif" width="1" height="1"></td>
+<td width="442" valign="top">
+
+	<!-- Inner Content Area Table -->
+	<table width="442" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+	<TD bgcolor="#FFFFFF" width="10">&nbsp;&nbsp;</TD>
+	<td>
+
+<br class="spacer3" />
+
+
+
+
+<table cellspacing="0" cellpadding="0" border="0" width="100%"><tbody>
+<tr>
+<td class="TimestampEd"> June 12, 2005</td>
+<td class="emailprint" align="right"><a href="/web/20050629081657/http://www.latimes.com/classified/realestate/hotprop/la-re-hotprop12jun12,0,931763,email.story?coll=la-home-realestate" target="win_17968624" onclick="if (window.windoid) windoid('','win_17968624',760,480,'resizable=0,scrollbars=0')"><img src="/web/20050629081657im_/http://www.latimes.com/images/icons/email.gif" width="12" height="12" border="0" hspace="3"></a><a href="/web/20050629081657/http://www.latimes.com/classified/realestate/hotprop/la-re-hotprop12jun12,0,931763,email.story?coll=la-home-realestate" target="win_17968624" onclick="if (window.windoid) windoid('','win_17968624',760,480,'resizable=0,scrollbars=0')">E-mail story</a> &nbsp;
+
+<a href="/web/20050629081657/http://www.latimes.com/classified/realestate/hotprop/la-re-hotprop12jun12,0,599519,print.story?coll=la-home-realestate"><img src="/web/20050629081657im_/http://www.latimes.com/images/icons/print.jpg" width="12" height="12" border="0" hspace="3"></a><a href="/web/20050629081657/http://www.latimes.com/classified/realestate/hotprop/la-re-hotprop12jun12,0,599519,print.story?coll=la-home-realestate">Print</a> &nbsp;
+
+<a href="/web/20050629081657/http://www.latimes.com/news/most-emailed.front"><img src="/web/20050629081657im_/http://www.latimes.com/images/icons/mostemail.jpg" width="12" height="12" border="0" hspace="3">Most E-Mailed</a></td>
+</tr>
+</tbody></table>
+<br clear="all">
+
+
+
+
+
+<div class="deckhead">HOT PROPERTY</div>
+
+
+<div class="cHeadline1">Dr. West's Topanga house call</div>
+
+
+
+
+
+<div style="width: 155px; margin: 5px; border-left: 1px solid #C7D9ED; padding-left: 4px; float: right;">
+
+
+        <table border="0" width="140" cellpadding="1" cellspacing="0" STYLE="margin-bottom: 3px;"><tr><td bgcolor="#595959" class="topnavbold">&nbsp;Photos</td></tr></table>
+
+
+
+
+        
+	<div style="margin-bottom: 5px;"><a href="/web/20050629081657/http://www.latimes.com/classified/realestate/hotprop/la-re-hotprop12-ichw2wkf,0,5496289.photo?coll=la-home-realestate" target="win_17968663" onclick="if (window.windoid) windoid('','win_17968663',760,570,'resizable=0,scrollbars=0')"><img src="/web/20050629081657im_/http://www.latimes.com/media/thumbnails/photo/2005-06/17968663.jpg" alt="Rick Schroder" border="0" width="140" height="110" /></a></div>
+        
+
+
+<div style="margin-bottom: 10px;">
+	<div class="relatedlinks12"><a href="/web/20050629081657/http://www.latimes.com/classified/realestate/hotprop/la-re-hotprop12-ichw2wkf,0,5496289.photo?coll=la-home-realestate" target="win_17968663" onclick="if (window.windoid) windoid('','win_17968663',760,570,'resizable=0,scrollbars=0')">Rick Schroder</a></div>
+
+	
+
+	
+
+	
+</div>
+	<table border="0" width="100%" cellpadding="1" cellspacing="0"><tr><td align="left" bgcolor="#595959"><span class="topnavbold">&nbsp;Top Headlines</span></td></tr><TR><TD class="spacer3">&nbsp;</TD></TR></table>
+
+<TABLE border="0" cellspacing="0" cellpadding="0">
+
+
+	<TR><TD class="spacer10">&nbsp;</TD></TR>
+	<TR valign="top"><TD class="relatedlinks"><a href="/web/20050629081657/http://www.latimes.com/classified/realestate/hotprop/la-re-hotprop26jun26,0,1838885.story?coll=la-class-realestate-hotprop">Ellen is ready for a new routine</a><br></TD></TR>
+
+	<TR><TD class="spacer10">&nbsp;</TD></TR>
+	<TR valign="top"><TD class="relatedlinks"><a href="/web/20050629081657/http://www.latimes.com/classified/realestate/hotprop/la-re-hotprop19jun19,0,2625321.story?coll=la-class-realestate-hotprop">Sun, stars align in Malibu</a><br></TD></TR>
+
+	<TR><TD class="spacer10">&nbsp;</TD></TR>
+	<TR valign="top"><TD class="relatedlinks"><a href="/web/20050629081657/http://www.latimes.com/classified/realestate/hotprop/la-re-hotprop12jun12,0,7414036.story?coll=la-class-realestate-hotprop">Dr. West's Topanga house call</a><br></TD></TR>
+
+	<TR><TD class="spacer10">&nbsp;</TD></TR>
+	<TR valign="top"><TD class="relatedlinks"><a href="/web/20050629081657/http://www.latimes.com/classified/realestate/hotprop/la-re-hotprop5jun05,0,992699.story?coll=la-class-realestate-hotprop">Hola to owning in the hills</a><br></TD></TR>
+
+	<TR><TD class="spacer10">&nbsp;</TD></TR>
+	<TR valign="top"><TD class="relatedlinks"><a href="/web/20050629081657/http://www.latimes.com/classified/realestate/hotprop/la-re-hotprop22may22,0,5906704.story?coll=la-class-realestate-hotprop">Changes afoot in the land of Ozz</a><br></TD></TR>
+
+
+	<TR><TD class="spacer5">&nbsp;</TD></TR>
+	<TR valign="top"><TD class="relatedlinks"><DIV align="right"><A HREF="/web/20050629081657/http://www.latimes.com/classified/realestate/hotprop">more &gt;</A></DIV><BR></TD></TR>
+
+</TABLE>
+	<table border="0" width="140" cellpadding="1" cellspacing="0">
+  <tr>
+    <td align="left" bgcolor="#4A688C"><span class="topnavbold">&nbsp;Home Buyers' Toolkit</span></td>
+  </tr>
+  <!-- <tr>
+    <td class="spacer3">&nbsp;</td>
+  </tr> -->
+</table>
+<table bgcolor="#C7D9ED" border="0" width="140" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td align="center"><span class="spacer10">&#160;<br></span> 
+    </td>
+  <tr> 		
+</table>
+
+<!-- START DATA QUICK SHORT SEARCH--> 
+
+<!-- SHORT SEARCH FORM --> 
+<table width="140" border="0" cellspacing="0" cellpadding="0" bgcolor="#C7D9ED">
+  <tr> 
+    <td> <img border="0" src="/web/20050629081657im_/http://www.latimes.com/images/classifieds/classpointer.gif"><span class="cHeadline5">HOME SALE PRICES</span></td>
+  </tr>
+  <tr> 
+    <td class="contentMS11" align="center"> 
+      <form method="get" action="/web/20050629081657/http://www.latimes.com/classified/realestate/transactions/transaction-results.jsp">
+        <input type="hidden" name="lowprice_boolean" value=">=">
+        <input type="hidden" name="SortBy" value="sort_time desc">
+        <input type="hidden" name="trans_lib__type" value="SINGLE FAMILY">
+        <input type="hidden" name="trans_lib__lowprice" value="100000">
+        <input type="hidden" name="trans_lib__hiprice" value="800000">
+        <input type="hidden" name="BED_boolean" value="geq">
+        <input type="hidden" name="trans_lib__bed" value="1">
+        <input type="hidden" name="BATH_boolean" value="geq">
+        <input type="hidden" name="trans_lib__bath" value="1">
+        <input type="hidden" name="YRBT_boolean" value="af">
+        <input type="hidden" name="trans_lib__yrbt" value="1920">
+        <input type="hidden" name="SQFT_boolean" value="geq">
+        <input type="hidden" name="trans_lib__sqft_num" value="1000">
+        <span class="spacer5">&nbsp;<br>
+        </span><span class="cHeadline5"><font color="#00497A">Select county</font></span><br>
+        <select name="trans_lib__county">
+          <option name="trans_lib__county" value="Los Angeles" selected>Los Angeles 
+          </option>
+          <option name="trans_lib__county" value="Orange">Orange</option>
+          <option name="trans_lib__county" value="Riverside">Riverside</option>
+          <option name="trans_lib__county" value="San Bernardino">San Bernardino</option>
+          <option name="trans_lib__county" value="Santa Barbara">Santa Barbara</option>
+          <option name="trans_lib__county" value="Ventura">Ventura</option>
+        </select><br>
+        <span class="cHeadline5"><font color="#00497A">and Enter 
+        zip code</font></span><br>
+        <input name="trans_lib__zip" type="text" size="5" maxlength="5">
+        <br>
+        <span class="spacer5">&nbsp;<br>
+        </span> 
+		<input border="0" type="image" src="/web/20050629081657im_/http://www.latimes.com/images/standard/but_search.gif" width="47" height="15" name="image" alt="">
+        <!-- <hr align="center" width="90%" size="1" noshade> -->
+        <span class="spacer5">&nbsp;<br>
+        </span> 
+        <center>
+          <span class="cImageText"><a href="/web/20050629081657/http://www.latimes.com/classified/realestate/transactions/la-re-dq-intro,0,6689802.htmlstory?coll=la-util-realestate-promos">Search using more options</a></span><br>
+        </center>
+      </form>
+    </td>
+  </tr>
+  <!-- <tr> 
+    <td class="spacer5">&nbsp;<br>
+    </td>
+  </tr> -->
+</table>
+<!-- END DATA QUICK SHORT SEARCH--> 
+
+<table bgcolor="#C7D9ED" border="0" width="140" cellpadding="0" cellspacing="0">
+  <tr valign="top"> 
+    <td class="contentMS11"><span class="spacer4">&#160;<br></span>
+      <hr noshade size="1" color="#666666" width="90%">
+	  <div align="center"><a href="/web/20050629081657/http://www.latimes.com/classified/placead/la-placead-realfront,0,3930295.htmlstory?coll=la-util-realestate-promos">Place a real estate ad</a></div>
+    </td>
+  </tr>
+  <tr valign="top"> 
+    <td class="contentMS11"><span class="spacer4">&#160;<br></span>
+      <hr noshade size="1" color="#666666" width="90%">
+    </td>
+  </tr>
+  <tr> 
+    <td> <img border="0" src="/web/20050629081657im_/http://www.latimes.com/images/classifieds/classpointer.gif"><span class="cHeadline5">SEARCH</span></td>
+  </tr>
+  
+ <tr> 
+    <td class="relatedlinks">&nbsp; &#149; <a href="/web/20050629081657/http://www.homefinder.com/latimes/index_search.jhtml?custom=1"><b>New 
+      &amp; Existing Homes</b></a><br>
+&nbsp; &#149; <a href="/web/20050629081657/http://www.homefinder.com/latimes/index_search.jhtml?custom=2"><b>This Weekend's<br> 
+ &nbsp; &nbsp; Open Houses</b></a><br>
+      &nbsp; &#149; <a href="/web/20050629081657/http://www.latimes.com/classified/realestate/buying/la-master-showcase,0,2459871.ssipage?coll=la-util-realestate-promos"><b>Master Plan<br>
+&nbsp; &nbsp; Communities</b></a><br>
+      &nbsp; &#149; <a href="/web/20050629081657/http://www.latimes.com/classified/realestate/buying/la-re-printads,0,5971224.ssipage?coll=la-util-realestate-promos"><b>Ads Printed in<br>
+ &nbsp; &nbsp; The Times</b></a><br>
+      &nbsp; &#149; <a href="/web/20050629081657/http://www.latimes.com/classified/realestate/agents/"><b>Real Estate Agents</b></a><br>
+      &nbsp; &#149; <a href="/web/20050629081657/http://www.latimes.com/classified/realestate/news/communities/"><b>Community Profiles</b></a><br>
+    </td>
+  </tr>
+  <tr> 
+    <td> 
+      <hr noshade size="1" color="#666666" width="90%">
+      <img border="0" src="/web/20050629081657im_/http://www.latimes.com/images/classifieds/classpointer.gif"><span class="cHeadline5">MORTGAGE RATES</span>
+    </td>
+  </tr>
+  <tr> 
+    <td><!-- BEGIN RATE SEARCH FORM -->
+<FORM action="/web/20050629081657/http://latimes.interest.com/rates.asp" method="GET">
+<TABLE border="0" cellpadding="0" cellspacing="0" width="140">
+<TR>
+<TD valign="top"><!-- <span class="cHeadline4"><font id="classified-table-title">Rate search:<br></FONT></span> -->
+&nbsp; <span class="contentMS11"><font id="classified-table-link">Select purpose of Loan:</FONT></span><BR>
+&nbsp; <SELECT name="loantype" SIZE="1">
+<option value="1">-- Choose One --</option>
+<option value="0">Purchase</option>
+<option value="1">Refinance</option>
+</SELECT>
+</TD>
+</TR>
+<TR><TD valign="top">&nbsp; <span class="contentMS11"><font id="classified-table-link">Select a loan type:</FONT></span><BR>
+&nbsp; <SELECT name="type">
+<OPTION>-- Conforming Loans</OPTION>
+<OPTION selected value="7">30 yr. Fixed Rate</OPTION>
+<OPTION value="25">20 yr. Fixed Rate</OPTION>
+<OPTION value="8">15 yr. Fixed Rate</OPTION>
+<OPTION value="18">7/23 Balloon</OPTION>
+<OPTION value="19">5/25 Balloon</OPTION>
+<OPTION value="13">1 yr. Adj. Rate</OPTION>
+<OPTION value="22">1 yr. Adj. Rate - COFI</OPTION>
+<OPTION value="14">3/1 yr. Adj. Rate</OPTION>
+<OPTION value="26">5/1 yr. Adj. Rate</OPTION>
+<OPTION value="15">7/1 yr. Adj. Rate</OPTION>
+<OPTION value="20">10/1 yr. Adj. Rate</OPTION>
+<OPTION value="24">1 mo. Adj. - LIBOR</OPTION>
+<OPTION>-- Non-conforming</OPTION>
+<OPTION value="16">30 yr. Fixed - Jumbo</OPTION>
+<OPTION value="17">15 yr. Fixed - Jumbo</OPTION>
+<OPTION value="21">1 yr. Adj. - Jumbo</OPTION>
+<OPTION value="101">3/1 yr. Adj. - Jumbo</OPTION>
+<OPTION value="102">5/1 yr. Adj. - Jumbo</OPTION>
+<OPTION value="103">7/1 yr. Adj. - Jumbo</OPTION>
+<OPTION value="104">10/1 yr. Adj. - Jumbo</OPTION>
+<OPTION>-- Government</OPTION>
+<OPTION value="12">30 yr. Fixed - VA</OPTION>
+<OPTION value="11">15 yr. Fixed - VA</OPTION>
+<OPTION value="10">30 yr. Fixed - FHA</OPTION>
+<OPTION value="9">15 yr. Fixed - FHA</OPTION>
+<OPTION value="27">1 yr. Adj. - FHA</OPTION>
+</SELECT>
+</TD>
+</TR>
+<TR><TD valign="top">&nbsp; <span class="contentMS11"><font id="classified-table-link">Discount point range:</FONT></span><BR>
+&nbsp; <SELECT name="points">
+<OPTION selected value="1">no discount points</OPTION>
+<OPTION value="2">0.125 - 1.000</OPTION>
+<OPTION value="3">1.125 - 2.000</OPTION>
+<OPTION value="4">2.000 and higher</OPTION>
+</SELECT>
+</TD>
+</TR>
+<TR><TD>&nbsp; <span class="contentMS11"><font id="classified-table-link">Estimated loan amount:</FONT></span>
+&nbsp; <INPUT type="text" name="amount" size="10" value="">
+</TD>
+</TR>
+<TR><TD>
+&nbsp; <INPUT TYPE=submit value="Search">
+</TD>
+</TR>
+</TABLE>
+</FORM>
+<!-- END RATE SEARCH FORM --></td>
+  </tr>
+  <tr> 
+    <td class="relatedlinks">&#160;<br>
+	</td>
+  </tr>  
+  <tr> 
+    <td class="relatedlinks" bgcolor="#ffffff">&#160;
+	</td>
+  </tr>  
+</table>
+</div>
+
+
+
+
+	<div class="cauthor">By Ruth Ryon, Times Staff Writer</div><br />
+
+
+
+
+<div class="content">
+        
+
+        <strong>Rick Schroder </strong>and his wife, <strong>Andrea</strong>, have purchased a 21-acre ranch in Topanga for about $4.2 million. The couple recently listed their nearly 15,000-acre Mesa Mood Ranch in Colorado at $29 million.<br>
+<br>
+ The actor-writer-director, 35, made his home on the range near Grand Junction, Colo., for 15 years, but he and his family aren't completely cutting ties. They plan to maintain a 500-acre ranch they own there along with a three-bedroom, 3,000-square-foot log cabin that Schroder built himself.<br>
+<br>
+ The Schroders decided to establish a home in the L.A. area, where he lived as a child while starring in the '80s sitcom "Silver Spoons," because he has "increasing professional activities in Los Angeles," said Gary Harryman of Pritchett-Rapf &amp; Associates, who represented both sides of the transaction.<br>
+<br>
+ Schroder plays Dr. Dylan West in the Lifetime series "Strong Medicine." He appeared as a regular for several years on "NYPD Blue" and costarred with Robert Duvall in the miniseries "Lonesome Dove." Schroder wrote and directed the 2004 movie "Black Cloud," starring Tim McGraw, and directed and starred in the music video "Whiskey Lullaby," performed by Brad Paisley and Alison Krauss.<br>
+<br>
+ The Schroders also bought the Topanga home because it's large enough for their family of four children, three dogs and a number of chickens, rabbits and lizards. The property, surrounded by parkland with many trails, is zoned for horses and has a playhouse, a pool and an orchard bearing avocados, apricots, oranges and pears.<br>
+<br>
+ The compound has a five-bedroom, 4,600-square-foot main house and a two-bedroom, 1,000-square-foot guesthouse. The main house has a library. The home was built in 1993.<br>
+<br>
+ Schroder also plans to sell a 7,000-square-foot home he owns in Scottsdale, Ariz. It's on the market at $4.5 million with Sandra Wilken Luxury Homes in Scottsdale. Mesa Mood Ranch, with its forests, lakes and streams, is listed with Ranch Marketing Associates, an affiliate of Mossler, Deasy &amp; Doe of Beverly Hills.<br>
+<br>
+<b>Yahoo chief<br>
+<br>
+ ends his search<br>
+<br>
+</b><strong> Terry Semel, </strong>the chairman of Yahoo and former co-chairman of Warner Bros., and his wife, <strong>Jane, </strong>have purchased a home in Beverly Hills for about $8.5 million.<br>
+<br>
+ The home was built in 1987 according to a design by architect Robert Offenhauser. Interiors were decorated by Michael Smith, who has worked for clients including Steven Spielberg and Kate Capshaw.<br>
+<br>
+ The gated contemporary, on nearly an acre, has four bedrooms and seven bathrooms in 8,800 square feet. The home also has a breakfast area, a media room and a gym. There is a pool with a spa and a guesthouse on the grounds.<br>
+<br>
+ Semel, 62, is a native of Brooklyn who began his career as an accountant with an enthusiasm for films. He entered the entertainment industry as a branch manager for Warner Bros. in 1966, working in New York, Cleveland and Los Angeles. He became president of Warner Bros. in 1982. In 1994, he and Robert Daly became co-chairmen.<br>
+<br>
+ During their tenure, Warner Bros. released such movies as "Father's Day" (1997), starring Robin Williams and Billy Crystal. Semel and Daly announced that they would step down in 1999. Semel was appointed chairman of Yahoo in 2001.<br>
+<br>
+ Jonas Heller at Westside Estate Agency, Beverly Hills, represented the buyers. Heller wasn't available to comment.<br>
+<br>
+<b>Hit-maker in a Westside groove<br>
+<br>
+</b> <strong>Guy Oseary, </strong>who joined Madonna in her upstart label known as Maverick Records when he was 17 and became a partner in the company by the time he was 23, has purchased a Beverly Hills-area home for close to $7 million.<br>
+<br>
+ The sellers were <strong>Gary Smith, </strong>a partner in the TV production company Smith-Hemion, and his wife, <strong>Maxine, </strong>an interior designer.<br>
+<br>
+ The house, built in the late '80s, is on a little more than an acre and has six bedrooms and eight bathrooms in 10,000-plus square feet. The home has an open floor plan with a family room, study, a kitchen with a fireplace, gym with a sauna, and a theater. The grounds have a tennis court, pool, spa, waterfall and rolling lawns.<br>
+<br>
+ Oseary, now in his early 30s, was only 16 when he became a music manager, but he delivered some of Maverick's biggest early hits. Among them was Canadian singer Alanis Morissette's recording of "Jagged Little Pill," which sold more than 28 million copies worldwide. He began Maverick's film division in 2002.<br>
+<br>
+ Kurt Rappaport of Westside Estate Agency represented Oseary in buying his new home; Drew Mandile and Brooke Knapp of Sotheby's International Realty and Linda May of Coldwell Banker shared the listing, according to the Multiple Listing Service.<br>
+<br>
+<b>A steel driveway for 007's car<br>
+<br>
+</b> <strong>Reagan Silber, </strong>a lawyer who became an investor in venture capital and wireless communications before he formed a talent-management firm that represented such stars as Ren&#233;e Zellweger, has put his Bel-Air home on the market at slightly under $27 million.<br>
+<br>
+ Silber, who has been working on launching a network dedicated to gaming, has hosted monthly poker games at this home, drawing such players as actors Tobey Maguire and Leonardo DiCaprio. Silber now also produces movies, including this year's "Lonesome Jim," starring Liv Tyler. It was screened at the Sundance Film Festival in January.<br>
+<br>
+ Silber completely remodeled his Bel-Air home, built in the '50s, and installed such unusual features as a stainless steel driveway, a white terrazzo bar next to an 80-foot lap pool, a circular stairway with a glass pyramid, a glass cube as an entry, and walls lacquered kelly green.<br>
+<br>
+ The 10,000-plus-square-foot house was designed by South African-born Charles Allem in a style Allem describes as "a James Bond variety." The home has four bedrooms, eight bathrooms, a media room, a two-story study, gardens, an outdoor living room and city-to-ocean views. There is also a gym with green suede walls and Louis Vuitton leather benches.<br>
+<br>
+ Kurt Rappaport of Westside Estate Agency, Beverly Hills, has the listing.<br>
+<br>
+<b>Where Headfridge can simply chill<br>
+<br>
+</b> The Grammy-nominated producer-composer <strong>Tim Ramenofsky, </strong>who also goes by the name "Headfridge," has purchased a Tarzana home for about $600,000.<br>
+<br>
+ The three-bedroom, 1,485-square-foot house, built in 1951, has been remodeled and has hardwood floors, a new kitchen and a master bedroom suite.<br>
+<br>
+ Ramenofsky produced rap-artist Afroman's single "Because I Got High" and released it on T-Bones Records, which Ramenofsky founded. The song was No. 1 in 60 countries and sold 4 million copies. In 2002, it was nominated for a Grammy in the best rap performance category.<br>
+<br>
+ Since then, Ramenofsky has gone on to compose music for film and TV for T-Bones under a number of names.<br>
+<br>
+ Owen Salkin of Coldwell Banker, Sunset, represented Ramenofsky in buying.<br>
+<br>
+<hr width="20%"><I>To see previous columns on celebrity transactions, visit latimes.com/hotproperty.<br>
+<br>
+</I>
+</div><br />
+
+<div align="center" class="copyright">If you want other stories on this topic, search the Archives at <a href="/web/20050629081657/http://www.latimes.com/archives">latimes.com/archives</a>.<br />
+
+
+<a target="_new" href="/web/20050629081657/http://www.latimes.com/copyright"><img src="/web/20050629081657im_/http://www.latimes.com/images/standard/tmsreprints_bug.gif" alt="TMS Reprints" width="92" height="21" border="0" style="margin-top: 5px"></a><br />
+<a target="_new" href="/web/20050629081657/http://www.latimes.com/copyright">Article licensing and reprint options</a></div>
+
+<br />
+
+
+
+
+
+	</td>
+	<TD bgcolor="#FFFFFF" width="10">&nbsp;&nbsp;</TD>
+	</tr>
+	</table></td>
+	<td width="1" bgcolor="#000000"><img src="/web/20050629081657im_/http://www.latimes.com/images/empty.gif" width="1" height="1"></td>
+	</tr>
+	</table></td>
+
+<td valign="top" width="156" align="center"><img src="/web/20050629081657im_/http://www.latimes.com/images/empty.gif" width="120" height="20" border="0" alt=""><BR clear="all">
+
+<P><!-- Ad Space: html.ng/tag=std&site=latimes&color=none&edition=newspaper&content=realestate&channel=none&adtype=rail&adsize=120xn&adplacement=1 -->
+
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+var swf_click = "/web/20050629081657/http://adserver.trb.com/event.ng/Type=click&FlightID=515048&AdID=169804&Custom=pardee&TargetID=50402&Segments=118,165,254,530,626,673,692,755,926,1268,1553,1652,1671,1911,1929,1952,2167,2436,2819,3370,3391,3539,3753,3907,3915,3954,4392,4709,4948,5348,5777,7846,7884,50124,50222,50822,51257,51336,52005,52682,53249,53328,53508&Targets=963,5346,801,751,54856,55397,54676,2812,5058,54111,6124,5738,50213,50402&Values=34,46,51,63,77,83,84,90,93,100,110,131,150,287,289,300,311,328,333,388,391,591,998,1016,1093,1105,1136,1171,1606,1617,1648,1816,1838,1887,1888,1917,1978,1986,2091,2281,2283,2384,2515,2794&RawValues=USERAGENTID%2Cia_archiver&Redirect=/web/20050629081657/http://www.pardeehomes.com/jump/flight404.php";
+var dcswf_click = escape(swf_click);
+var plugin = (navigator.mimeTypes && navigator.mimeTypes["application/x-shockwave-flash"]) ? navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin : 0;
+if ( plugin ) {
+ plugin = parseInt(plugin.description.substring(plugin.description.indexOf(".")-1)) >= 4;
+}
+else if (navigator.userAgent && navigator.userAgent.indexOf("MSIE")>=0 && (navigator.userAgent.indexOf("Windows 95")>=0 || navigator.userAgent.indexOf("Windows 98")>=0 || navigator.userAgent.indexOf("Windows NT")>=0)) {
+ document.write('<SCRIPT LANGUAGE=VBScript\> \n');
+ document.write('on error resume next \n');
+ document.write('plugin = ( IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.4")))\n');
+ document.write('if ( plugin <= 0 ) then plugin = ( IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.5")))\n');
+ document.write('if ( plugin <= 0 ) then plugin = ( IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.6")))\n');
+ document.write('<\/SCRIPT\> \n');
+}
+if ( plugin ) {
+ document.write('<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"');
+  document.write('  codebase="/web/20050629081657/http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=4,0,0,0" ');
+ document.write(' ID=FLASH_AD WIDTH=120 HEIGHT=600>');
+ document.write(' <PARAM NAME=movie VALUE="/web/20050629081657/http://adserver.trb.com/ads/latimes/classified/pardee/jan2005/PAR_120x600_CU_LAT.swf?clickTAG='+dcswf_click+'"> <PARAM NAME=quality VALUE=autohigh> <PARAM NAME=bgcolor VALUE=blue> ');
+ document.write(' <EMBED src="/web/20050629081657/http://adserver.trb.com/ads/latimes/classified/pardee/jan2005/PAR_120x600_CU_LAT.swf?clickTAG='+dcswf_click+'" quality=autohigh ');
+ document.write(' swLiveConnect=FALSE WIDTH=120 HEIGHT=600 bgcolor=blue');
+ document.write(' TYPE="application/x-shockwave-flash" PLUGINSPAGE="/web/20050629081657/http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">');
+ document.write(' </EMBED>');
+ document.write(' </OBJECT>');
+} else if (!(navigator.appName && navigator.appName.indexOf("Netscape")>=0 && navigator.appVersion.indexOf("2.")>=0)){
+ document.write('<A TARGET="_top" HREF="c"><IMG SRC="/web/20050629081657/http://adserver.trb.com/ads/latimes/classified/pardee/jan2005/PAR_120x600_CU_LA.gif" WIDTH=120 HEIGHT=600 BORDER=0></A>');
+}
+//-->
+</SCRIPT>
+<NOEMBED>
+<A TARGET="_top" HREF="/web/20050629081657/http://adserver.trb.com/event.ng/Type=click&amp;FlightID=515048&amp;AdID=169804&amp;TargetID=50402&amp;Segments=118,165,254,530,626,673,692,755,926,1268,1553,1652,1671,1911,1929,1952,2167,2436,2819,3370,3391,3539,3753,3907,3915,3954,4392,4709,4948,5348,5777,7846,7884,50124,50222,50822,51257,51336,52005,52682,53249,53328,53508&amp;Targets=963,5346,801,751,54856,55397,54676,2812,5058,54111,6124,5738,50213,50402&amp;Values=34,46,51,63,77,83,84,90,93,100,110,131,150,287,289,300,311,328,333,388,391,591,998,1016,1093,1105,1136,1171,1606,1617,1648,1816,1838,1887,1888,1917,1978,1986,2091,2281,2283,2384,2515,2794&amp;RawValues=USERAGENTID%2Cia_archiver&amp;Redirect=http://www.pardeehomes.com/jump/flight404.php">
+<IMG SRC="/web/20050629081657im_/http://adserver.trb.com/ads/latimes/classified/pardee/jan2005/PAR_120x600_CU_LA.gif" WIDTH=120 HEIGHT=600 BORDER=0></A>
+</NOEMBED>
+<NOSCRIPT><A TARGET="_top" HREF="/web/20050629081657/http://adserver.trb.com/event.ng/Type=click&amp;FlightID=515048&amp;AdID=169804&amp;TargetID=50402&amp;Segments=118,165,254,530,626,673,692,755,926,1268,1553,1652,1671,1911,1929,1952,2167,2436,2819,3370,3391,3539,3753,3907,3915,3954,4392,4709,4948,5348,5777,7846,7884,50124,50222,50822,51257,51336,52005,52682,53249,53328,53508&amp;Targets=963,5346,801,751,54856,55397,54676,2812,5058,54111,6124,5738,50213,50402&amp;Values=34,46,51,63,77,83,84,90,93,100,110,131,150,287,289,300,311,328,333,388,391,591,998,1016,1093,1105,1136,1171,1606,1617,1648,1816,1838,1887,1888,1917,1978,1986,2091,2281,2283,2384,2515,2794&amp;RawValues=USERAGENTID%2Cia_archiver&amp;Redirect=http://www.pardeehomes.com/jump/flight404.php">
+<IMG SRC="/web/20050629081657im_/http://adserver.trb.com/ads/latimes/classified/pardee/jan2005/PAR_120x600_CU_LA.gif" WIDTH=120 HEIGHT=600 BORDER=0></A>
+</NOSCRIPT> <!-- HTML ad style -->
+
+<!-- /Ad Space: html.ng/tag=std&site=latimes&color=none&edition=newspaper&content=realestate&channel=none&adtype=rail&adsize=120xn&adplacement=1 --></P>
+<P><!-- Ad Space: html.ng/tag=std&site=latimes&color=none&edition=newspaper&content=realestate&channel=none&adtype=rail&adsize=120xn&adplacement=2 -->
+
+<iframe src="/web/20050629081657if_/http://view.atdmt.com/QTS/iview/trbnncsv0010000241qts/direct/01/2005.6.29.8.16.57.0?click=" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" allowtransparency="true" width="120" height="600">
+<script language="JavaScript" type="text/javascript">
+document.write('<a href="/web/20050629081657/http://clk.atdmt.com/QTS/go/trbnncsv0010000241qts/direct/01/2005.6.29.8.16.57.0/" target="_blank"><img src="/web/20050629081657/http://view.atdmt.com/QTS/view/trbnncsv0010000241qts/direct/01/2005.6.29.8.16.57.0/"/></a>');
+</script><noscript><a href="/web/20050629081657/http://clk.atdmt.com/QTS/go/trbnncsv0010000241qts/direct/01/2005.6.29.8.16.57.0/" target="_blank"><img border="0" src="/web/20050629081657im_/http://view.atdmt.com/QTS/view/trbnncsv0010000241qts/direct/01/2005.6.29.8.16.57.0/" /></a></noscript></iframe> <!-- HTML ad style -->
+
+<!-- /Ad Space: html.ng/tag=std&site=latimes&color=none&edition=newspaper&content=realestate&channel=none&adtype=rail&adsize=120xn&adplacement=2 --></P>
+<P><!-- Ad Space: html.ng/tag=std&site=latimes&color=none&edition=newspaper&content=realestate&channel=none&adtype=rail&adsize=120xn&adplacement=3 -->
+
+<iframe src="/web/20050629081657if_/http://view.atdmt.com/IWC/iview/trbnnboa0100000018iwc/direct;wi.120;hi.600/01/2005.6.29.8.16.57.0?click=" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" allowtransparency="true" width="120" height="600">
+<script language="JavaScript" type="text/javascript">
+document.write('<a href="/web/20050629081657/http://clk.atdmt.com/IWC/go/trbnnboa0100000018iwc/direct;wi.120;hi.600/01/2005.6.29.8.16.57.0/" target="_blank"><img src="/web/20050629081657/http://view.atdmt.com/IWC/view/trbnnboa0100000018iwc/direct;wi.120;hi.600/01/2005.6.29.8.16.57.0/"/></a>');
+</script><noscript><a href="/web/20050629081657/http://clk.atdmt.com/IWC/go/trbnnboa0100000018iwc/direct;wi.120;hi.600/01/2005.6.29.8.16.57.0/" target="_blank"><img border="0" src="/web/20050629081657im_/http://view.atdmt.com/IWC/view/trbnnboa0100000018iwc/direct;wi.120;hi.600/01/2005.6.29.8.16.57.0/" /></a></noscript></iframe> <!-- HTML ad style -->
+
+<!-- /Ad Space: html.ng/tag=std&site=latimes&color=none&edition=newspaper&content=realestate&channel=none&adtype=rail&adsize=120xn&adplacement=3 --></P>
+
+
+
+<P><!-- Ad Space: html.ng/tag=std&site=latimes&color=none&edition=newspaper&content=realestate&channel=none&adtype=rail&adsize=120xn&adplacement=4 -->
+
+<!-- Text4 cookie D-->
+<script language=javascript>
+var url = "/web/20050629081657/http://adserver.trb.com/html.ng/site=latimes&channel=popups&adtype=popwindow&adplacement=text4";
+var min_timeout = 1440;
+expired = document.cookie.indexOf("cookieDpopunder");
+var enabled = testCookie()
+if (!enabled) {
+expired = 0;
+}
+if (expired == -1) {
+setCookie(min_timeout);
+cookieDpopunder();
+}
+function setCookie(min_timeout) {
+var domain = "www.latimes.com";
+var d = new Date();
+var timeout = d.getTime() + (min_timeout * 60 * 1000);
+var expires = new Date();
+expires.setTime(timeout);
+var stamp = d.valueOf();
+if (document.domain.indexOf(domain) == -1) {
+domain = "";
+
+}if (domain.length > 0 ) {
+	domain = "domain=." + domain + ";";
+}
+var expires_str = expires.toGMTString();
+var cookie_str = "cookieDpopunder=" + stamp + ";path=/;"
+cookie_str +=  domain + "expires=" + expires_str;
+document.cookie = cookie_str;
+}
+function testCookie() {
+var enabled = navigator.cookieEnabled
+//Netscape: cookieEnabled is not available for Netscape.
+//Test for cookies enabled by setting and getting a cookie
+if (enabled == null) {
+var d = new Date();
+var timeout = d.getTime() + (1 * 60 * 1000);
+var expires = new Date();
+expires.setTime(timeout);
+var expires_str = expires.toGMTString();
+var test_str = "bluefishCookieTest=" + 1 + ";path=/;"
+test_str +=  domain + "expires=" + expires_str;
+document.cookie = test_str;
+enabled = document.cookie.indexOf("bluefishCookieTest");
+if (enabled == -1) {
+return 0;
+}
+}
+//Explorer: Use cookieEnabled property
+else {
+if (!enabled) {
+return 0;
+}
+}
+return 1;
+}
+function cookieDpopunder() {
+var w = 720;
+var h = 300;
+props = "width=" + w + ",";
+props += "height=" + h + ",";
+props += "titlebar=0,";
+props += "toolbar=0,";
+props += "location=0,";
+props += "menubar=0,"
+props += "scrollbars=0,"
+props += "resizable=0,"
+props += "channelmode=0,"
+props += "directories=0,"
+props += "status=0";
+var popwin = window.open("","cookieDpopunder",props,true);
+popwin.location = url;
+popwin.opener.focus();
+}
+</script>
+<!-- Text4 cookie D-->
+<!-- Text3 cookie C-->
+<script language=javascript>
+var url = "/web/20050629081657/http://adserver.trb.com/html.ng/site=latimes&channel=popups&adtype=popwindow&adplacement=text3";
+var min_timeout = 1440;
+expired = document.cookie.indexOf("cookieCpopunder");
+var enabled = testCookie()
+if (!enabled) {
+expired = 0;
+}
+if (expired == -1) {
+setCookie(min_timeout);
+cookieCpopunder();
+}
+function setCookie(min_timeout) {
+var domain = "www.latimes.com";
+var d = new Date();
+var timeout = d.getTime() + (min_timeout * 60 * 1000);
+var expires = new Date();
+expires.setTime(timeout);
+var stamp = d.valueOf();
+if (document.domain.indexOf(domain) == -1) {
+domain = "";
+
+}if (domain.length > 0 ) {
+	domain = "domain=." + domain + ";";
+}
+var expires_str = expires.toGMTString();
+var cookie_str = "cookieCpopunder=" + stamp + ";path=/;"
+cookie_str +=  domain + "expires=" + expires_str;
+document.cookie = cookie_str;
+}
+function testCookie() {
+var enabled = navigator.cookieEnabled
+//Netscape: cookieEnabled is not available for Netscape.
+//Test for cookies enabled by setting and getting a cookie
+if (enabled == null) {
+var d = new Date();
+var timeout = d.getTime() + (1 * 60 * 1000);
+var expires = new Date();
+expires.setTime(timeout);
+var expires_str = expires.toGMTString();
+var test_str = "bluefishCookieTest=" + 1 + ";path=/;"
+test_str +=  domain + "expires=" + expires_str;
+document.cookie = test_str;
+enabled = document.cookie.indexOf("bluefishCookieTest");
+if (enabled == -1) {
+return 0;
+}
+}
+//Explorer: Use cookieEnabled property
+else {
+if (!enabled) {
+return 0;
+}
+}
+return 1;
+}
+function cookieCpopunder() {
+var w = 720;
+var h = 300;
+props = "width=" + w + ",";
+props += "height=" + h + ",";
+props += "titlebar=0,";
+props += "toolbar=0,";
+props += "location=0,";
+props += "menubar=0,"
+props += "scrollbars=0,"
+props += "resizable=0,"
+props += "channelmode=0,"
+props += "directories=0,"
+props += "status=0";
+var popwin = window.open("","cookieCpopunder",props,true);
+popwin.location = url;
+popwin.opener.focus();
+}
+</script>
+<!-- Text3 cookie C--> <!-- HTML ad style -->
+
+<!-- /Ad Space: html.ng/tag=std&site=latimes&color=none&edition=newspaper&content=realestate&channel=none&adtype=rail&adsize=120xn&adplacement=4 --></P>
+
+</td>
+</tr>
+</table>
+
+
+
+
+
+<BR>
+<DIV align="center" STYLE="width: 770px;">
+<!-- Ad Space: html.ng/tag=std&site=latimes&color=none&edition=newspaper&content=realestate&channel=none&adtype=leader&adsize=728x90&adplacement=bottom -->
+
+<!-- DE5 lookup FlightID=491315 -->
+<!-- JavaScript Only -->
+<script language="JavaScript1.1" src="/web/20050629081657js_/http://altfarm.mediaplex.com/ad/js/1551-29251-1944-6?mpt=2005.6.29.8.16.57.0&amp;mpvc=">
+</script>
+<noscript>
+  <a href="/web/20050629081657/http://altfarm.mediaplex.com/ad/ck/1551-29251-1944-6?mpt=2005.6.29.8.16.57.0">
+    <img src="/web/20050629081657im_/http://altfarm.mediaplex.com/ad/bn/1551-29251-1944-6?mpt=2005.6.29.8.16.57.0" alt="Click Here" border="0">
+</a>
+</noscript> <!-- HTML ad style -->
+
+<!-- /Ad Space: html.ng/tag=std&site=latimes&color=none&edition=newspaper&content=realestate&channel=none&adtype=leader&adsize=728x90&adplacement=bottom --><BR>
+
+<DIV class="copyright"><BR>
+Copyright 2005 Los Angeles Times<br>
+By visiting this site, you are agreeing to our <A HREF="/web/20050629081657/http://www.latimes.com/services/site/la-privacy,0,3125046.story">Privacy Policy</A><BR>
+<a href="/web/20050629081657/http://www.latimes.com/services/site/lat-terms,0,6713384.htmlstory">Terms of Service</a>.</DIV><BR>
+</DIV>
+</TD>
+</TR>
+</TABLE>
+
+<!-- START OF WEBTRENDS LIVE TAG -->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+// You may customize the values of the variables below to suit your website.
+// Simply insert your own values between the double-quotes.
+// Here are some examples:
+//   var ORDER= "D2,Business to Consumer,Pocket FM Radio,Audio Products,10,499.99;";
+//   var SERVER= "MyServerName";
+//   var CONTENTGROUP= "ContentGroupOfThisPage";
+
+var ORDER= "";
+var SERVER= "";
+var CONTENTGROUP= "MYCB Pages";
+//-->
+</SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+// Modification of this code is not allowed and will permanently disable your account!
+// SiteName: latimes.com
+var W="tagver=3&SiteId=60051&Sid=0014-01-3-13-180631-60051&Tz=-500&firstwkday=monday&Edition=enterprise&Button=";
+W+="&server="+escape(SERVER);
+W+="&order="+escape(ORDER);
+W+="&Group="+escape(CONTENTGROUP);
+W+="&browserDate="+escape(new Date());
+W+="&title="+escape(document.title);
+W+="&url="+window.document.URL;
+W+="&referrer="+window.document.referrer;
+W+="&appname="+escape(navigator.appName);
+W+="&appversion="+escape(navigator.appVersion);
+W+="&cookieOK="+(navigator.cookieEnabled?"Yes":"No");
+W+="&userLanguage="+(navigator.appName=="Netscape"?navigator.language:navigator.userLanguage);
+W+="&platform="+navigator.platform;
+W+="&bgColor="+escape(document.bgColor);
+W+="&javaOK=Yes";
+if(typeof(screen)=="object")
+{
+W+="&screenResolution="+screen.width+"x"+screen.height;
+W+="&colorDepth="+screen.colorDepth;
+W+="&NSpluginList=";
+for( var i=0; i< navigator.plugins.length; i++)
+W+=escape(navigator.plugins[i].name)+";";
+}
+document.write('<A TARGET="_blank" HREF="/web/20050629081657/http://www.webtrendslive.com/redirect.asp?siteID=60051">');
+document.write('<IMG BORDER="0" WIDTH="1" HEIGHT="1" SRC="/web/20050629081657/http://statse.webtrendslive.com/S0014-01-3-13-180631-60051/button3.asp?'+W+'">');
+document.write('</A>');
+//-->
+</SCRIPT>
+
+<NOSCRIPT>
+<A TARGET="_blank" HREF="/web/20050629081657/http://www.webtrendslive.com/redirect.asp?siteID=60051">
+<IMG BORDER="0" WIDTH="1" HEIGHT="1" SRC="/web/20050629081657im_/http://statse.webtrendslive.com/S0014-01-3-13-180631-60051/button3.asp?tagver=3&amp;SiteId=60051&amp;Sid=001-00-3-10-6692-7351&amp;Tz=-500&amp;firstwkday=monday&amp;Edition=enterprise&amp;Button=&amp;title=NO%20SCRIPT&amp;url=http://noscript&amp;javaOK=No&amp;">
+</A>
+</NOSCRIPT>
+<!-- END OF WEBTRENDS LIVE TAG -->
+
+
+
+<script language="JavaScript">
+ var st_v=1.0; var st_pg=""; var st_ci="703";
+ var st_di="d001"; var st_dd="st.sageanalyst.net";
+ var st_tai="v:1.2.1";
+ var st_ai="";
+</script>
+<script language="JavaScript1.1"><!--
+ st_v=1.1;
+//--></script>
+<script language="JavaScript1.2"><!--
+ st_v=1.2;
+//--></script>
+<script language="JavaScript1.1" src="/web/20050629081657js_/http://st.sageanalyst.net/tag-703.js">
+</script>
+<script language="JavaScript">
+ if (st_v==1.0) {
+  var st_uj;
+  var st_dn = (new Date()).getTime();
+  var st_rf = escape(document.referrer);
+  st_uj = "//"+st_dd+"/"+st_dn+"/JS?ci="+st_ci+"&di="+st_di+
+  "&pg="+st_pg+"&rf="+st_rf+"&jv="+st_v+"&tai="+st_tai+"&ai="+st_ai;
+  var iXz = new Image();
+  iXz.src = st_uj;
+ }
+</script>
+<noscript><img src="/web/20050629081657im_/http://st.sageanalyst.net/NS?ci=703&amp;di=d001&amp;pg=&amp;ai="></noscript>
+
+
+
+<script language="JavaScript">Tacoda_AMS_DDC_js=1.0</script>
+<script language="JavaScript1.1">Tacoda_AMS_DDC_js=1.1</script>
+<script language="JavaScript1.2">Tacoda_AMS_DDC_js=1.2</script>
+<script language="JavaScript1.3">Tacoda_AMS_DDC_js=1.3</script>
+<script language="JavaScript">
+Tacoda_AMS_DDC_addPair('rcid','');
+Tacoda_AMS_DDC("/web/20050629081657/http://te.latimes.com/blank.gif",Tacoda_AMS_DDC_js);
+</script>
+<noscript><img src="/web/20050629081657im_/http://te.latimes.com/blank.gif" border="0" width="1" height="1"></noscript>
+</body></html>
+
+
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 8:16:57 Jun 29, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 7:05:33 Jan 12, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

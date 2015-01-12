@@ -1,0 +1,704 @@
+
+<HTML>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app16.us.archive.org";archive_analytics.values.server_ms=100;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+<TITLE>Backseat Driver</TITLE>
+
+<META name="fdcHeadline" content="Ford: Close But No Cigar">
+<META name="description" CONTENT="Once Ford was the world's largest automaker, but the company lost its edge and GM became number one. After World War II, Ford disastrously made &quot;Beat GM&quot; its motto. Now some think Ford's time has come.">
+<META name="keywords" CONTENT="Flint, Ford, General Motors, Model T, Backseat Driver, Mercury, Lincoln, Oldsmobile, Buick, Pontiac">
+<META name="fdcPublication" CONTENT="Forbes.com">
+<META name="author" CONTENT="Jerry Flint">
+<META name="fdcDate" content="08/10/2000">
+<META name="fdcInktomiDate" content="2000/08/10">
+<meta name="fdcSection" content="Investment Columnists">
+<META HTTP-EQUIV="Expires" CONTENT="Tue, 01 Jan 1981 12:00:00 GMT">	
+	
+	
+<SCRIPT LANGUAGE="JavaScript" SRC="/web/20000815064234js_/http://www.forbes.com/tool/javascript/AdTag.js"></SCRIPT>
+</HEAD>
+
+<BODY BGCOLOR="#333366" LINK="#0000cc" ALINK="#0000ff" VLINK="#000066">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.forbes.com/columnists/flint/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "15";
+var displayMonth = "Aug";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.forbes.com/columnists/flint/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20000815064234" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20000709193012/http://www.forbes.com/columnists/flint" title="9 Jul 2000">JUL</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 6:42:34 Aug 15, 2000">AUG</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20001018014403/http://www.forbes.com/columnists/flint" title="18 Oct 2000"><strong>OCT</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20000709193012/http://www.forbes.com/columnists/flint" title="19:30:12 Jul 9, 2000"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 6:42:34 Aug 15, 2000">15</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20000817175015/http://forbes.com/columnists/flint/" title="17:50:15 Aug 17, 2000"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   1999
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 6:42:34 Aug 15, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20021101024404/http://www.forbes.com/columnists/flint/" title="1 Nov 2002"><strong>2002</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20000815064234*/http://www.forbes.com/columnists/flint/" title="See a list of every capture for this URL">29 captures</a>
+           <div class="r" title="Timespan for captures of this URL">1 Mar 00 - 2 Jan 08</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:7:003021230110_2001:-1:000001000000_2002:-1:000000000011_2003:-1:001010010101_2004:-1:001010010100_2005:-1:110100000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:100000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<TABLE BORDER="0" CELLSPACING="8" CELLPADDING="0">
+	<TR VALIGN="top">
+		<TD>
+
+
+
+                                     
+<!--left frame--> 
+<TABLE  ALIGN=LEFT BORDER=0 CELLSPACING=0 CELLPADDING=3 WIDTH=100>
+<TR BGCOLOR="#CCCCCC">
+<TD>
+
+<SCRIPT LANGUAGE="Javascript">
+
+
+var ThisURL = document.URL;
+ThisURL = ThisURL.toUpperCase();
+if ((ThisURL.indexOf("FORBES.STOCKSMART") > 0) || (ThisURL.indexOf("209.220.90.98") > 0)  || (ThisURL.indexOf("FORBESFINDER") > 0)) 
+{
+	document.write('<A HREF="/web/20000815064234/http://www.forbes.com">');
+}
+else
+{
+	document.write('<A HREF="/web/20000815064234/http://www.forbes.com/">');
+} 
+
+
+function DoSubmit() {
+	iquery = document.SearchForm.i.value;
+        //alert(iquery)
+	if ((iquery.length > 253) || (iquery == "") || (iquery == "Search Term") || (iquery == "Enter term and select search category below"))  {
+		window.location = "/web/20000815064234/http://www.forbesfinder.com";
+                return false;
+	} else {
+	if (document.SearchForm.Sopt[0].checked==1) {
+		document.SearchForm.action = "/web/20000815064234/http://www.forbesfinder.com/forbessearch/search.asp";
+		document.SearchForm.q1.value = document.SearchForm.i.value;
+		document.SearchForm.MT.value = document.SearchForm.i.value;
+		document.SearchForm.RD.value = "DM";
+	} else {
+		document.SearchForm.action = "/web/20000815064234/http://www.forbesfinder.com/WebSearch/finder/forbesfinder.asp";
+		document.SearchForm.q1.value = document.SearchForm.i.value;
+		document.SearchForm.MT.value = document.SearchForm.i.value;
+		document.SearchForm.RD.value = "AN";
+	}	
+	document.SearchForm.submit();
+	return true;
+	}
+}
+
+
+function SubmitUrl1() 
+{ 
+  
+var urlStr = '/web/20000815064234/http://markets2.forbes.com/Stock_delay_report.asp?Symbol='+document.Inputform.Symbol.value+'&Timespan='+document.Inputform.Timespan.value;
+var newWindow=window.open(urlStr,"_top");
+}
+
+
+function writedate(){
+	var m = new Date();
+	var d = m.getDate();
+	var y = m.getFullYear();
+	var mo = m.getMonth(); 
+	if (mo==0){	
+		monthname = "January";
+	} else if (mo==1){
+		monthname = "February";
+	} else if (mo==2){
+		monthname = "March";
+	} else if (mo==3){
+		monthname = "April";
+	} else if (mo==4){
+		monthname = "May";
+	} else if (mo==5){
+		monthname = "June";
+	} else if (mo==6){
+		monthname = "July";
+	} else if (mo==7){
+		monthname = "August";
+	} else if (mo==8){
+		monthname = "September";
+	} else if (mo==9){
+		monthname = "October";
+	} else if (mo==10){
+		monthname = "November";
+	} else if (mo==11){
+		monthname = "December";
+	}
+	document.write(monthname + " " + d + ",  " + y);
+}
+
+
+function clearInputField(inputField) {
+	inputField.value = "";
+	}
+
+//-->
+</script>
+
+
+<A HREF="/web/20000815064234/http://www.forbes.com/"><IMG SRC="/web/20000815064234im_/http://www.forbes.com/tool/images/f_com.gif"  BORDER=0></A><BR>
+<FONT SIZE="-2" FACE="helvetica,arial,sans-serif" COLOR="0000FF">
+<SCRIPT LANGUAGE="Javascript">
+writedate()
+</script>
+</FONT>
+<FONT SIZE="-2" FACE="verdana,helvetica,arial,sans-serif" COLOR="000066">
+<P>
+<A HREF="/web/20000815064234/https://commerce.cdsfulfillment.com/FRB/subscriptions.cgi"><IMG SRC="/web/20000815064234im_/http://www.forbes.com/tool/toolbox/promo/images/sub3.gif" WIDTH="114" HEIGHT="25" BORDER="0" ALT="Subscribe to Forbes" VSPACE="2"></a><BR><A HREF="/web/20000815064234/http://www.forbes.com/subscribeindex.htm">Subscriber&nbsp;Services</A><B>
+<P>
+<!--Search-->  
+<FORM NAME="SearchForm" action="" METHOD="GET" onSubmit='DoSubmit()'>
+<INPUT type="hidden" name="act.search" value="1">
+<INPUT type="hidden" name="q1" value="">
+<INPUT type="hidden" name="RD" value="">
+<INPUT type="hidden" name="MT" value="">
+<INPUT type="hidden" name="s" value="">
+<INPUT type="hidden" name="sort" value="Meta_fdcinktomidate">
+<INPUT type="hidden" name="sortorder" value="[d]">
+<INPUT type="hidden" name="newsearch" value="">
+<INPUT type="hidden" name="catalog" value="">
+<INPUT TYPE="hidden" NAME=t VALUE=SEARCH>
+<INPUT TYPE="hidden" NAME=fpage VALUE="1">
+<INPUT TYPE=hidden NAME=HTMLQueryForm VALUE="http://www.forbesfinder.com/websearch/finder/inkresults.asp">
+<P>
+<FONT SIZE="-1">
+<A HREF="/web/20000815064234/http://www.forbesfinder.com/" TITLE="Click to search the web">FORBESFINDER</a></FONT>&#153;
+<INPUT TYPE='text' NAME='i' SIZE='13' MAXSIZE='65' Value="Search Term" onfocus="clearInputField(document.SearchForm.i)";>&nbsp;<A HREF="javascript:DoSubmit();">Go!</A></B><BR><INPUT type=radio name="Sopt" checked>Forbes.com
+<INPUT type=hidden name="leftsearch" value="forbes.com"><br> 
+<INPUT type=radio name="Sopt">Entire Web<B>
+
+</FORM>
+<!--endsearch-->  
+
+
+<P><FORM METHOD="POST" NAME="Inputform" ACTION="javascript:SubmitUrl1()">
+<!--begin quote form-->
+Stocks<BR>
+<INPUT type=text name="Symbol"  value="symbol" size=12 onfocus="clearInputField(document.Inputform.Symbol);">&nbsp;<a href="javascript:SubmitUrl1()">Go!</A><br>
+<INPUT Type="Hidden" Name="Timespan" Value="260" >
+<A HREF="/web/20000815064234/http://markets.forbes.com/forbes/Markets_Update.html" TITLE="In depth market data, quotes & charts">Market Detail</A>
+<!--end quote form-->
+</FORM>
+<P>
+<FORM METHOD = "post" action="/web/20000815064234/http://www.forbes.com/tool/toolbox/lipper/tickersearch.asp"  name=val2>
+<!--Begin quote form-->
+<A HREF="/web/20000815064234/http://www.forbes.com/funds/" TITLE="Forbes Mutual Fund Center">Mutual&nbsp;Funds</A><BR>
+
+<INPUT NAME="TICKER" VALUE="symbol" SIZE=8 MAXLENGTH=10 onfocus="clearInputField(document.val2.TICKER);">&nbsp;<A HREF="javascript:document.val2.submit();">Go!</A><br>
+</B><A HREF="/web/20000815064234/http://www.forbes.com/tool/toolbox/lipper/alpha.asp?value2=A" TITLE="Find a fund symbol">Symbol lookup</A><B>
+<!--end quote form-->
+<P></FORM>
+<!--end quote form-->
+<A HREF="/web/20000815064234/http://www.forbes.com/tool/html/publications.htm" TITLE="Forbes, Forbes ASAP, Forbes FYI and more...">Magazines/Archives</A><P>
+<A HREF="/web/20000815064234/http://www.forbes.com/departments/" TITLE="Editorial content for the current week">News&nbsp;Departments</A><P>
+<A HREF="/web/20000815064234/http://www.forbes.com/tool/html/letters/index.htm" TITLE="Letters to Forbes.com and Forbes magazine">Letters&nbsp;to&nbsp;the&nbsp;Editor</A><P>
+<A HREF="/web/20000815064234/http://www.forbes.com/tool/html/toolbox.htm" TITLE="Forbes' famous annual rankings">Forbes&nbsp;Lists</A><BR>
+&nbsp;&nbsp;&nbsp;<A HREF="/web/20000815064234/http://www.forbes.com/tool/toolbox/rich400" TITLE="400 Richest Americans">Richest&nbsp;Americans</A><BR>
+&nbsp;&nbsp;&nbsp;<A HREF="/web/20000815064234/http://www.forbes.com/tool/toolbox/celeb100" TITLE="100 Most Powerful Celebrities">Celebrity&nbsp;100</A><BR>
+&nbsp;&nbsp;&nbsp;<A HREF="/web/20000815064234/http://www.forbes.com/tool/toolbox/billnew" TITLE="The World's Billionaires">Richest&nbsp;Worldwide</A><BR>
+&nbsp;&nbsp;&nbsp;<A HREF="/web/20000815064234/http://www.forbes.com/tool/toolbox/forbes500s" TITLE="Ranking of the top corporations">500&nbsp;Companies</A><BR>
+&nbsp;&nbsp;&nbsp;<A HREF="/web/20000815064234/http://www.forbes.com/tool/toolbox/bestplaces" TITLE="Forbes report on metro areas">Best&nbsp;Places</A><BR>
+&nbsp;&nbsp;&nbsp;<A HREF="/web/20000815064234/http://www.forbes.com/tool/html/toolbox.htm" TITLE="more of Forbes' famous annual rankings">more...</A><P>
+<A HREF="/web/20000815064234/http://www.forbes.com/tool/html/toolbox2.htm" TITLE="Calculate tax liability, college costs, and more...">Calculators</A><BR>
+<A HREF="/web/20000815064234/http://www.forbes.com/tool/html/toolbox3.htm" TITLE="Find financial information">Financial&nbsp;Tools</A>
+<P>
+<FORM ACTION="/web/20000815064234/http://www.forbes.com/asp/join.asp" METHOD=POST name=Newsletter>
+Free&nbsp;Newsletter<BR>
+<INPUT TYPE=text NAME="eMail" VALUE="your email" SIZE=10 onfocus="clearInputField(document.Newsletter.eMail);">&nbsp;<A HREF="javascript:document.Newsletter.submit();">Go!</A>
+</FORM>
+<P>
+<!--<A HREF="/web/20000815064234/http://www.forbes.com/rtrnewswire/current/index.asp">News</A><P>-->
+<A HREF="/web/20000815064234/http://ragingbull.forbes.com/" TITLE="Post your own comments">Chat/Message&nbsp;Boards</A><P>
+<A HREF="/web/20000815064234/http://www.forbes.com/contact" TITLE="Contact information and services">Contact&nbsp;Forbes.com</A><P>
+<A HREF="/web/20000815064234/http://www.forbes.com/helpcenter/faq.htm" TITLE="Customer service, FAQ, sitemap">Help</A><P>
+</B><P>
+<!-- Ad Here -->
+<SCRIPT LANGUAGE="JavaScript">
+OutputAdTag('homepagelogo', 'nav_tile');
+</SCRIPT>
+<NOSCRIPT>
+<A TARGET="_blank" HREF="/web/20000815064234/http://ads.forbes.net/click.ng/Creative=homepagelogo&amp;SpaceDesc=nav_tile">
+<IMG BORDER=0 SRC="/web/20000815064234im_/http://ads.forbes.net/image.ng/Creative=homepagelogo&amp;SpaceDesc=nav_tile"></A>
+</NOSCRIPT>
+<!-- /Ad Here -->
+
+
+
+</FONT></TD>
+</TR>
+
+
+</TABLE>
+<!--end left frame-->
+
+
+
+
+
+
+</TD><TD>
+<TABLE BORDER="0" CELLPADDING="3" CELLSPACING="4" WIDTH="100%">
+<TR BGCOLOR="FFFFFF">
+<TD>
+
+<TABLE BORDER="0" WIDTH="100%" BGCOLOR="#FFFFFF" CELLPADDING="0" CELLSPACING="0"><TR><TD ALIGN="left" BGCOLOR="#84947b"><IMG SRC="/web/20000815064234im_/http://www.forbes.com/tool/colimages/backseat.gif" ALT="Backseat driver" WIDTH="134" HEIGHT="13"></TD><TD ALIGN="right" BGCOLOR="#84947b"><FONT SIZE="-1" FACE="VERDANA,HELVETICA">By Jerry Flint </FONT></TD></TR>
+<TR BGCOLOR="#FFFFFF"><TD COLSPAN="2" ALIGN=CENTER VALIGN=BOTTOM HEIGHT="20" NOWRAP>
+<b>
+<FONT SIZE="-1" FACE="VERDANA,HELVETICA">
+<A HREF="/web/20000815064234/http://discussions.wellengaged.com/we/forbes?INPUT=PAGE=ForumPage&amp;PG_ForumPID=1v1.-1535769554932528157596">Forum</A> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="mailto:jflint@forbes.com">Mail</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="/web/20000815064234/http://www.forbes.com/columnists/flint/archive.htm" >Archives</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!--<A HREF="/columnists/flint/index.htm">Current Story</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-->
+<A HREF="/web/20000815064234/http://www.forbes.com/columnists/" >Index</A>
+</font>
+</B></TD></TR></TABLE><P>
+<FONT SIZE="-1" FACE="VERDANA,HELVETICA">
+     <FONT SIZE="+1"><B>Ford: Close But No Cigar</B></FONT>
+<!--HED-->
+<P>
+<!--take out before archiving-->
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="117" ALIGN="LEFT">
+<TR>
+<TD ALIGN=LEFT><IMG SRC="/web/20000815064234im_/http://www.forbes.com/forbes/gifs/standards/col/jflintxxx.gif" ALT="Jerry Flint" WIDTH="97" HEIGHT="141" BORDER="0">
+
+<FONT SIZE="-1" FACE="VERDANA,HELVETICA"><p><A HREF="mailto:jflint@forbes.com">Jerry Flint</A>, a former Forbes Senior Editor, has covered the automobile industry since 1958. <I>Business News Reporter</I> ranks him as one of the 100 most prominent business journalists in the 20th century.</FONT>
+</TD>
+<TD>&nbsp;&nbsp;&nbsp;</TD>
+</TR></TABLE>
+<!--end-->
+
+<!--begin story-->
+
+<p>&quot;<b>Ford Motor Co.</b> will be, one day, in the not-too-distant future, the
+world's largest company. I'm convinced of it.&quot; That's my friend and fellow columnist <b>Ken
+Gross</b>, writing in <i>Automotive Industries</i>. Ken, one smart guy, is director of the
+Petersen Auto Museum in Los Angeles. (A terrific show. Visit it.) He also is the auto
+columnist for <i>Playboy</i>--I told you he was smart.</p>
+
+<p>Before I tell you what I think about Ford (nyse: <a
+HREF="/web/20000815064234/http://markets2.forbes.com/Stock_delay_report.asp?Symbol=F">F</a>)
+catching <b>General Motors</b> (nyse: <a
+HREF="/web/20000815064234/http://markets2.forbes.com/Stock_delay_report.asp?Symbol=GM">GM</a>),
+here's some background.</p>
+
+<p>I once asked the past chief executive of GM whether Ford would outsell GM on his watch.
+I also listened to the present chief executive answer the same question. The answers of
+both men were similar. Both said something like this: &quot;We wouldn't want that to
+happen. Still, this is a very competitive business. But if we do our job right, it
+shouldn't happen.&quot; Their words weren't likely to inspire the charge of the light
+brigade.</p>
+
+<p>I asked a high executive of Ford the same question: whether Ford would beat GM. I won't
+mention his name because it might embarrass him, but there were witnesses. He said that
+yes, he expected Ford would overtake GM in the U.S., but not because Ford would increase
+its sales that much, but because GM sales would fall below Ford's level. Let's look at
+some numbers:</p>
+
+
+<p>
+ 
+<CENTER><P><TABLE BORDER="0" WIDTH="60%" CELLSPACING="1" CELLPADDING="3">
+	<TR ALIGN="left" VALIGN="bottom" BGCOLOR="#FFFFFF">
+		<TD COLSPAN="2"><FONT SIZE="-1" FACE="Arial,Helvetica,Sans-Serif"><B>
+Cars and Trucks </B>
+		</FONT></TD>
+	</TR>
+	<TR ALIGN="left" VALIGN="bottom" BGCOLOR="#669999">
+		
+						<TD ALIGN="RIGHT" COLSPAN="2"><FONT SIZE="-1" FACE="Arial,Helvetica,Sans-Serif"><B>
+1999 Global Sales* </B>
+		</FONT></TD>
+	</TR>
+	<TR ALIGN="left" VALIGN="bottom" BGCOLOR="#66cc99">
+		<TD><FONT SIZE="-1" FACE="Arial,Helvetica,Sans-Serif">
+General Motors
+		</FONT></TD>
+ 				<TD ALIGN="RIGHT"><FONT SIZE="-1" FACE="Arial,Helvetica,Sans-Serif">
+8,786,000
+		</FONT></TD>
+	</TR>
+	<TR ALIGN="left" VALIGN="bottom" BGCOLOR="#66ff99">
+		<TD><FONT SIZE="-1" FACE="Arial,Helvetica,Sans-Serif">
+Ford
+		</FONT></TD>
+ 				<TD ALIGN="RIGHT"><FONT SIZE="-1" FACE="Arial,Helvetica,Sans-Serif">
+7,220,000
+		</FONT></TD>
+	</TR>
+
+</TABLE>
+<I><FONT SIZE="-2" FACE="Arial,Helvetica,Sans-Serif">*Wholesale, excluding non-integrated operations.</I></FONT>
+</CENTER>
+
+<p>So last year GM was on top by 1.6 million units. In this race there is the U.S. and the
+world. Let's look at what's happening around the world. In Canada GM outsells Ford by a 5
+to 3 margin. In Mexico GM kicks Ford 2 to 1. GM beats Ford in Western Europe, and the gap
+is growing this year. GM also leads in important markets such as Brazil, Germany and
+China.</p>
+
+<p>Ford has been on an acquisition binge. This year Ford bought <b>Land Rover</b> from <b>BMW</b>,
+so figure 200,000 more units, cutting the annual lead to 1.4 million. Ford is trying to
+buy <b>Daewoo</b> of Korea, which had 1.1 million units last year. But then GM bought 20%
+of <b>Fiat</b>, and there's talk of getting it all one day, and that's 2.5 million last
+year.</p>
+
+<p>My gut feeling here is that Ford has just fallen down in too many important markets
+around the world to overtake GM.</p>
+
+<p>The United States is a different story. The two rivals are close. After seven months,
+GM had a market share of 28.5%, compared to 25% for Ford. Including Jaguar, Land Rover and Volvo in
+the Ford total, and Saab and Hummer with GM, the gap between GM and Ford is 375,000 units
+at midyear. I figure GM will come out ahead by 700,000 vehicles by the end of the year.</p>
+
+<p>Can Ford close this gap? I believe Ford suffers from a historical fear when it comes to taking on GM
+in this country. In the early days of the automobile, Ford was the largest auto company in
+the world, with its Model T dominating sales. But GM, with its variety of ever-improving
+models, outclassed the T and overtook Ford in the 1920s. Throughout the 1930s, and ever
+since, GM has been number one.</p>
+
+<p>After World War II, a young <b>Henry Ford II</b> (Old Henry's grandson), took over
+Ford. Led by the young whiz kids he hired from the military and former GM veterans, he
+rebuilt Ford. The company motto became &quot;Beat GM.&quot;</p>
+
+<p>Under <b>Robert McNamara</b>, later Secretary of Defense during the Vietnam War, Ford
+Division caught Chevrolet in the mid-1950s. But GM's greatest strength was in the
+middle of its lineup--Pontiac, Buick and Oldsmobile. Ford had only Mercury, so in the late
+1950s it created another middle division, Edsel, and expanded its Mercury and Lincoln
+products.</p>
+
+<p>But &quot;Beat GM&quot; crashed with the failure of the Edsel, a crushing blow to the
+company and its leadership. Edsel was the name of Henry II's father, so the defeat was
+quite personal.</p>
+
+<p>For 35 years Ford people didn't talk about catching GM. But in the past few years some
+have been thinking about it, hinting, dropping an off-the-record remark, but never an open
+challenge.</p>
+
+<p>Do I think Ford will catch GM in the U.S.? I say no. Ford still seems fearful of risk. Or maybe it wisely plays a conservative game and
+waits for the General to stumble.</p>
+
+<p>Ford is still far behind in cars, particularly in the middle brands. And instead of
+building up Mercury, Ford's highest executives--several who are foreigners--seem intent on
+killing the Mercury brand. Ford is doing to Mercury what Chrysler did to
+Plymouth--starving it until it could kill the brand without lawsuits.</p>
+
+<p>I believe that a great many Americans just won't buy a product that says Ford. I can't
+tell you why they just won't own a Ford, but they will buy a Mercury or Lincoln or Volvo.
+And I think Ford's foreign leadership doesn't understand this.</p>
+
+<p>Another problem: Ford just doesn't have enough product or capacity to catch GM in the
+U.S. The company would need at least two to three more assembly plants, and Ford is
+building none.</p>
+
+<p>GM could keep sliding toward that 25% market share. It could do something dumb like
+killing a division, such as Oldsmobile. But I still think Ford needs a more aggressive
+attack in the middle of the car market to catch GM, and I don't see it happening. If Ford
+got close, I suspect GM's current management would fall and a more aggressive team would
+be put in place.</p>
+
+<p>Beat GM? Not in sight yet.</p>
+
+
+
+<!-- end Story -->
+
+<P><font face="Verdana" size="2">
+What do you think? Let us know in <a href="/web/20000815064234/http://discussions.wellengaged.com/we/forbes?INPUT=PAGE=DiscussionPage&amp;PG_DiscussionPID=1v0.-585652379965927610154" target="blank"><b>Flint's forum</b></a>.
+
+<p><center>
+<FORM ACTION="" METHOD=GET>
+<SELECT NAME="columnists" onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+	<!--<OPTION VALUE="/">Forbes Columnists-->
+	<OPTION VALUE="http://www.forbes.com/columnists/index.htm">Columnists
+	<OPTION VALUE="http://www.forbes.com/columnists/sidelines/">William Baldwin
+	<OPTION VALUE="http://www.forbes.com/columnists/dvorak/">John C. Dvorak
+	<OPTION VALUE="http://www.forbes.com/columnists/fisher/">Kenneth L. Fisher
+	<OPTION VALUE="http://www.forbes.com/columnists/flint/">Jerry Flint
+	<OPTION VALUE="http://www.forbes.com/columnists/freeman/">James Freeman
+	<OPTION VALUE="http://www.forbes.com/columnists/hanke/">Steve H. Hanke
+	<OPTION VALUE="http://www.forbes.com/columnists/karlgaard/">Rich Karlgaard
+	<OPTION VALUE="http://www.forbes.com/columnists/leitzsolan/">Leitzes & Solan
+	<OPTION VALUE="http://www.forbes.com/columnists/malik/">Om Malik
+	<OPTION VALUE="http://www.forbes.com/columnists/manes/">Stephen Manes
+	<OPTION VALUE="http://www.forbes.com/columnists/penenberg/">Adam L. Penenberg
+	<OPTION VALUE="http://www.forbes.com/columnists/rutledge/">John Rutledge
+	<OPTION VALUE="http://www.forbes.com/columnists/shilling/">A. Gary Shilling
+	<OPTION VALUE="http://www.forbes.com/columnists/simons/">David Simons
+	<OPTION VALUE="http://www.forbes.com/columnists/sosnoff/">Martin Sosnoff
+    <OPTION VALUE="http://www.forbes.com/columnists/streetwalker/">Streetwalker
+	<OPTION VALUE="http://www.forbes.com/columnists/swartz/">Jon Swartz
+	<OPTION VALUE="http://www.forbes.com/columnists/weiner/">Allen Weiner
+	
+</SELECT>
+</FORM>
+
+</center>
+
+<P>
+
+<HR SIZE="1" WIDTH="100%" noshade>
+<CENTER>
+<FONT FACE="VERDANA,HELVETICA" SIZE="-2"><A HREF="/web/20000815064234/http://www.forbes.com/">Home</A>
+
+</FONT>&nbsp;&#183;&nbsp;
+<FONT FACE="VERDANA,HELVETICA" SIZE="-2">
+<A HREF="/web/20000815064234/http://www.forbes.com/tool/html/sitemap.htm">Sitemap</A></FONT>
+
+
+</FONT>&nbsp;&#183;&nbsp;
+<FONT FACE="VERDANA,HELVETICA" SIZE="-2">
+<A HREF="/web/20000815064234/http://www.forbesfinder.com/">Search</A>
+
+
+</FONT>&nbsp;&#183;&nbsp;
+<FONT FACE="VERDANA,HELVETICA" SIZE="-2">
+<A HREF="/web/20000815064234/http://www.forbes.com/contact/">Contact Us</A>
+
+</FONT>&nbsp;&#183;&nbsp;
+<FONT FACE="VERDANA,HELVETICA" SIZE="-2">
+<A HREF="/web/20000815064234/http://www.forbes.com/reprints">Reprints / Permissions</A>
+<P>
+<A HREF="/web/20000815064234/http://www.forbes.com/webdir/">Advertisers' Directory</A>
+</FONT>&nbsp;&#183;&nbsp;
+
+<FONT FACE="VERDANA,HELVETICA" SIZE="-2">
+<A HREF="/web/20000815064234/http://www.forbes.com/adbanners/mediajump" TARGET="_top">Ad Information</A>
+<P><FONT FACE="VERDANA,HELVETICA" SIZE="-2">
+&#153;
+&copy; 2000 Forbes.com
+<FONT FACE="VERDANA,HELVETICA" SIZE="-2">
+<A HREF="/web/20000815064234/http://www.forbes.com/tool/html/legal_disclaimer.htm">Terms, Conditions and Notices</A>
+<P><FONT FACE="VERDANA,HELVETICA" SIZE="-2">
+<A HREF="/web/20000815064234/http://www.forbes.com/tool/html/privacy_state.htm">Privacy Statement</A> 
+</font>
+</CENTER>
+<BR>
+&nbsp;
+
+</FONT>
+</TD></TR></TABLE>
+
+
+
+</TD><TD><!-- Ad Here -->
+<SCRIPT LANGUAGE="JavaScript">
+OutputAdTag('Column', 'flint');
+</SCRIPT>
+<NOSCRIPT>
+<A TARGET="_blank" HREF="/web/20000815064234/http://ads.forbes.net/click.ng/Creative=Column&amp;SpaceDesc=flint">
+<IMG BORDER=0 SRC="/web/20000815064234im_/http://ads.forbes.net/image.ng/Creative=Column&amp;SpaceDesc=flint"></A>
+</NOSCRIPT>
+<!-- /Ad Here -->
+
+
+
+		</TD>
+	</TR>
+</TABLE>
+</BODY>
+</HTML>
+
+
+
+
+
+
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 6:42:34 Aug 15, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 3:30:45 Jan 8, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

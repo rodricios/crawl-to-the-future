@@ -1,0 +1,759 @@
+
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app19.us.archive.org";archive_analytics.values.server_ms=564;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://entertainment.msn.com/artistofthemonth";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "3";
+var displayMonth = "May";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://entertainment.msn.com/artistofthemonth" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20050503125251" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Apr
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 12:52:51 May 3, 2005">MAY</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20050722081238/http://entertainment.msn.com/artistofthemonth" title="22 Jul 2005"><strong>JUL</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20050424082200/http://entertainment.msn.com/artistofthemonth" title="8:22:00 Apr 24, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 12:52:51 May 3, 2005">3</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20050722081238/http://entertainment.msn.com/artistofthemonth" title="8:12:38 Jul 22, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2004
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 12:52:51 May 3, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20060615015621/http://entertainment.msn.com/artistofthemonth" title="15 Jun 2006"><strong>2006</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20050503125251*/http://entertainment.msn.com/artistofthemonth" title="See a list of every capture for this URL">19 captures</a>
+           <div class="r" title="Timespan for captures of this URL">24 Apr 05 - 14 Jul 14</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:4:000110100000_2006:-1:101101001000_2007:-1:100101010101_2008:-1:000000100000_2009:-1:000000010000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:001000200000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<noscript><meta http-equiv=refresh content="0;url=/web/20050503125251/http://entertainment.msn.com/help/requirements.aspx"></noscript><script>var imgspromo5button = new Array(3);imgspromo5button[0] = new Image();imgspromo5button[0].src = '/web/20050503125251/http://entimg.msn.com/i/ms/bt_p5f_s.gif';imgspromo5button[1] = new Image();imgspromo5button[1].src = '/web/20050503125251/http://entimg.msn.com/i/ms/bt_p5f_h.gif';imgspromo5button[2] = new Image();imgspromo5button[2].src = '/web/20050503125251/http://entimg.msn.com/i/ms/bt_p5f_d.gif';</script><script>var imgssearch = new Array(3);imgssearch[0] = new Image();imgssearch[0].src = '/web/20050503125251/http://entimg.msn.com/i/ms/bt_go.gif';imgssearch[1] = new Image();imgssearch[1].src = '/web/20050503125251/http://entimg.msn.com/i/ms/bt_go_o.gif';imgssearch[2] = new Image();imgssearch[2].src = '/web/20050503125251/http://entimg.msn.com/i/ms/bt_go_d.gif';</script><script>var imgPre="/web/20050503125251/http://entimg.msn.com";var meetsReqs=false;var indefli=false;var serviceid=0;var rpsub=false;var pcontr=false;
+</script>
+<title>MSN Music - Artist of the Month</title><script src="/web/20050503125251js_/http://entimg.msn.com/script/msnent2822.js"></script><script>function SF(func) { try { if(eval('window.' + func) != null) { return true; } else { return false; } } catch(e) { alert('Failed exec:'+code+'\r\n'+e.description); } return false; }function GE(v) { if(document.all) { return document.all[v]; } return document.getElementById(v); }window.name='MSNMusic';</script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<meta name="Name" content="Hub or Article">
+		<link rel="stylesheet" href="/web/20050503125251cs_/http://entimg.msn.com/styles/e2822.css" rev="stylesheet" type="text/css">
+		<style>
+			.modbod { background-color: #f1f1f1; }
+			.mnbg	{ background-color: #98A7E2; }
+			.mbbg	{ background-color: #E0E6FF; }
+			.brbg	{ background-color: #f1f1f1; }
+			.blt	{ font-family: wingdings; }
+			.h380   { height: 380px; }
+			
+			/* find bar */
+			.fib	{ width: 100px; margin: 3px  3px 3px 5px;} 
+			.fpd	{ margin: 0px 3px 0px 5px; width: 100px;}
+			.ftt	{ padding: 3px 0px 3px 5px; font-size: 11px; color: #ffffff; text-align: left;text-transform:uppercase; } 
+			.fbb	{ margin:2px 10px 0px 2px;}
+			.fsd	{ margin: 0px 3px 0px 10px; width: 160px;}
+
+      <!-- This style class enables stylized borders around the top albums and top songs controls. -->
+			.mh_sub3{ padding: 10px 10px 10px 10px; border-top: 1px solid #e6e6e6; border-left: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; border-right: 1px solid #e6e6e6 }	/* 4 Files */
+
+		</style>
+		<style>
+#content {color:white;padding:15 20 20 10;}
+#content  a{color:white;text-decoration:none;}
+#content  a:hover{color:white;text-decoration:none;}
+#content  a:visited{color:white;}
+#content  a:visited:hover{color:#F4D4DA;text-decoration:underline;}
+
+ #poll a		{color:#FFFFFF; text-decoration:none;}
+ #poll a:hover	{color:#FFFFFF; text-decoration:underline;}
+ #poll a:visited a:visited{color:white;text-decoration:none;}
+ #poll a:visited:hover {color:#F4D4DA;text-decoration:none;}
+
+ #poll2{width:299px;padding-top:15;background:#8F1633;position:relative;z-index:0;}
+
+
+ 
+ #poll td{color:#FFFFFF;}
+ .tp20{padding-top:20px;}
+ 
+ #current{padding:20 0 0 0;width:358;}
+ #hdr{background:#AE374A;width:750;height:40;}
+ #artists{width:750;border-top:1px solid white;border-bottom:1px solid white;}
+
+/* HIDE & POSITION */
+.mbbg {display:none;}
+
+.mh_sub3{display:none;}
+.mh_outer { display:none; }
+.mh_inner { display: none; }
+.tb5  { display: none; }
+.mi{display:none;}
+.mvp5 {position:relative;top:-15;border-top:1px solid #E6E6E6;}
+
+
+</style>
+	</HEAD>
+	<body>
+		<script>	var pageId = "85206";	var domaindId = "553";	var propertyId = "56656";	var gServer = "/web/20050503125251/http://g.msn.com/1ETCLT01/1";	var timeOut = "3";	var backoffTime = "1";</script><script src="/web/20050503125251js_/http://entimg.msn.com/script/tracking.js"></script><img  id="clickTarget" style="display:none" src="/web/20050503125251im_/http://entimg.msn.com/i/sp.gif" onReadyStateChange="if(SF('ctStateChange')) ctStateChange();" >			
+		<center>
+		<img width=0 height=0 src="/web/20050503125251im_/http://c.msn.com/c.gif?ps=85206&amp;pi=56656&amp;di=553&amp;rf=">
+		
+			
+		
+		
+			<table class="tp10" cellspacing="0" cellpadding="0" border="0" width="750">
+	<tr>
+		<td><table class="hdpos" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td width="118"><a onclick="if(SF('h')) return h(this,'cm=HEADER&amp;ce=2');" href="/web/20050503125251/http://g.msn.com/0nwenus0/A5/00"><script type="text/javascript" src="/web/20050503125251js_/http://sc.msn.com/global/scr/lg/hdrPOS.js">&nbsp;</script><noscript><img src="/web/20050503125251im_/http://sc.msn.com/global/c/lgpos/msft_pos.gif" alt="MSN Home" border=0 style="height:35px;width:118px;" /></noscript><script type="text/javascript">logoImg("/web/20050503125251/http://sc.msn.com");</script></a></td><td class="hdrtxt" valign="Bottom"><a onclick="if(SF('h')) return h(this,'cm=HEADER&amp;ce=3');" href="/web/20050503125251/http://music.msn.com/">Music</a></td>
+			</tr><tr>
+				<td class="sbhdsp" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=HEADER&amp;ce=4');" href="/web/20050503125251/http://entertainment.msn.com/">entertainment</a></td>
+			</tr>
+		</table></td><td align="Right"><table cellspacing="1" cellpadding="0" border="0">
+			<tr>
+				<td class="hdnvch" TABINDEX="0" onclick="if(SF('u')) u('/web/20050503125251/http://music.msn.com','cm=HEADER&amp;ce=1'); else location.href='/web/20050503125251/http://music.msn.com';" onkeypress="if(SF('u')) u('http://music.msn.com','cm=HEADER&amp;ce=1'); else location.href='http://music.msn.com';">Music</td><td class="hdnvc" TABINDEX="0" onmouseover="this.className='hdnvch'" onmouseout="this.className='hdnvc'" onclick="if(SF('u')) u('/web/20050503125251/http://radio.msn.com','cm=HEADER&amp;ce=1'); else location.href='/web/20050503125251/http://radio.msn.com';" onkeypress="if(SF('u')) u('http://radio.msn.com','cm=HEADER&amp;ce=1'); else location.href='http://radio.msn.com';">Radio</td><td class="hdnvc" TABINDEX="0" onmouseover="this.className='hdnvch'" onmouseout="this.className='hdnvc'" onclick="if(SF('u')) u('/web/20050503125251/http://movies.msn.com','cm=HEADER&amp;ce=1'); else location.href='/web/20050503125251/http://movies.msn.com';" onkeypress="if(SF('u')) u('http://movies.msn.com','cm=HEADER&amp;ce=1'); else location.href='http://movies.msn.com';">Movies</td><td class="hdnvc" TABINDEX="0" onmouseover="this.className='hdnvch'" onmouseout="this.className='hdnvc'" onclick="if(SF('u')) u('/web/20050503125251/http://tv.msn.com','cm=HEADER&amp;ce=1'); else location.href='/web/20050503125251/http://tv.msn.com';" onkeypress="if(SF('u')) u('http://tv.msn.com','cm=HEADER&amp;ce=1'); else location.href='http://tv.msn.com';">TV</td>
+			</tr>
+		</table></td>
+	</tr>
+</table><span style="display:none;"></span>
+		
+		
+			<table class="sbout" cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td align="Center"><table cellspacing="0" cellpadding="0" border="0" width="750">
+			<tr>
+				<td><form method='get' id=search onsubmit="if(SF('f')) return f(this, 'SEARCH&SUBMIT');" name=search action='/web/20050503125251/http://entertainment.msn.com/search/all/'><table class="tb2" cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tr>
+						<td width="260"><input type="text" id="ss" name="ss" VCARD_NAME="SearchText" maxlength=255 value="music search" onclick="if(this.value == 'music search' || this.value == 'radio search') { this.value=''; this.focus(); }" class="sbib"/></td><td><span><img title="Go" onmouseout="if(SF('nbs')) nbs(imgssearch[0]);" onkeyup="if(event.keyCode == 13 || event.keyCode == 32 ){if(SF('nbs')) { nbs(imgssearch[0]);if(event == null || event.button == 1) document.forms[&quot;search&quot;].submit();return f(document.forms[&quot;search&quot;], 'cm=SEARCH&amp;amp;ce=SUBMIT'); }}" onmouseup="if(SF('nbs')) { nbs(imgssearch[0]); if(event == null || event.button == 1) document.forms[&quot;search&quot;].submit();return f(document.forms[&quot;search&quot;], 'cm=SEARCH&amp;amp;ce=SUBMIT');}" onmouseover="if(SF('nbs')) nbs(imgssearch[1]);" TABINDEX="0" onkeydown="if(event.keyCode == 13 || event.keyCode == 32 ){if(SF('nbs')) nbs(imgssearch[2]);}" onfocus="if(SF('hFL')) hFL();" onmousedown="if(SF('nbs')) nbs(imgssearch[2]);" src="/web/20050503125251im_/http://entimg.msn.com/i/ms/bt_go.gif" alt="" border="0" style="cursor:hand;" /></span></td><td></form></td>
+					</tr>
+				</table></td><td align="Right"><table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td></td><td align="Right"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td><span class="canbtn"><img TABINDEX="0" onmouseover="if(SF('nbs')) nbs(imgspromo5button[1]);" onmouseout="if(SF('nbs')) nbs(imgspromo5button[0]);" onmousedown="if(SF('nbs')) nbs(imgspromo5button[2]);" onmouseup="if(SF('nbs')) { nbs(imgspromo5button[0]); javascript:RLNK(&quot;/music/buy1get5&quot;);}" onkeydown="if(event.keyCode == 13 || event.keyCode == 32 ){if(SF('nbs')) nbs(imgspromo5button[2]);}" onkeyup="if(event.keyCode == 13 || event.keyCode == 32 ){if(SF('nbs')) { nbs(imgspromo5button[0]);javascript:RLNK(&quot;/music/buy1get5&quot;); }}" src="/web/20050503125251im_/http://entimg.msn.com/i/ms/bt_p5f_s.gif" alt="" border="0" style="cursor:hand;" /></span></td><td class="SeparatorClass">&#159</td><td><a class="SignInLinkClass" onclick="if(SF('h')) return h(this,'cm=SEAMUS&amp;ce=1');" href="/web/20050503125251/http://login.passport.com/login.srf?lc=1033&amp;id=31948&amp;ru=http%3a%2f%2fentertainment.msn.com%2fbeacon%2fhubarticle.aspx%3fptid%3d5608d8a9-3367-41e3-97e3-169a91b024b8&amp;tw=7200&amp;fs=1&amp;kv=6&amp;ct=1115124776&amp;cb=returl%3dhttp%253a%252f%252fentertainment.msn.com%252fbeacon%252fhubarticle.aspx%253fptid%253d5608d8a9-3367-41e3-97e3-169a91b024b8%26ppcb%3dmusicstore&amp;kpp=3&amp;ver=2.1.6000.1&amp;tpf=707a8168171f5dfec0fd0f76d2e40561">sign&nbsp;in</a></td><td></td><td class="SeparatorClass">&#159</td><td TABINDEX="0" onfocus="if(SF('hFL')) hFL();"><span id='destLink'><a class="DownloadLinkClass" onclick="if(SF('h')) return h(this,'cm=SEAMUS&amp;ce=2');" href="javascript:if(SF('RLNK')) RLNK('/music/dlstatus.aspx')">download&nbsp;status</a></span></td>
+							</tr>
+						</table></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+			
+			
+				
+				<table class="navin" cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td align="Center"><table class="bk" cellspacing="0" cellpadding="0" border="0" width="750">
+
+		</table></td>
+	</tr>
+</table>
+		
+		
+			<table class="brtb" cellspacing="0" cellpadding="0" border="0" width="750">
+	<tr>
+		<td><table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td><a class="lnk3" onclick="if(SF('h')) return h(this,'cm=CRUMBS&amp;ce=1');" href="/web/20050503125251/http://entertainment.msn.com/music/">MSN MUSIC</a></td><td class="blt3">&#052;</td><td><span class="lnk3">vote: artist of the month</span></td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+		
+		
+    <table class="tblcolor" cellpadding="0" cellspacing="0" border="0" width="750">
+      <tr>
+        <td align="left" valign="top">
+          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+		  				<td height="100%" valign="top">
+                <!-- TemplateHeader [Article] -->
+				  			
+					  			 <DIV id=hdr><IMG height=40 alt="vote: artist of the month - it's your choice"  src="/web/20050503125251im_/http://entimg.msn.com/i/aom/May05/hdr.gif" width=426 border=0></DIV><!-- BEGIN ARTIST IMAGES --> <DIV id=artists noWrap><a href=/web/20050503125251/http://entertainment.msn.com/artist/?artist=16186409 class="altlink"><IMG height=180 alt="Stevie Wonder"  src="/web/20050503125251im_/http://entimg.msn.com/i/mu/s/steviewonder/01.jpg" width=150 border=0></a><a href=/web/20050503125251/http://entertainment.msn.com/artist/?artist=16105973 class="altlink"><IMG height=180 alt=Weezer  src="/web/20050503125251im_/http://entimg.msn.com/i/mu/w/weezer/02.jpg" width=150 border=0></a><a href=/web/20050503125251/http://entertainment.msn.com/artist/?artist=16102025 class="altlink"><IMG height=180 alt="Aimee Mann"  src="/web/20050503125251im_/http://entimg.msn.com/i/mu/a/aimeemann/03.jpg" width=150 border=0></a><a href=/web/20050503125251/http://entertainment.msn.com/artist/?artist=16074475 class="altlink"><IMG height=180 alt="Nine Inch Nails"  src="/web/20050503125251im_/http://entimg.msn.com/i/mu/n/nineinchnails/04.jpg" width=150  border=0></a><a href=/web/20050503125251/http://entertainment.msn.com/artist/?artist=16101648 class="altlink"><IMG height=180 alt="Toby Keith"  src="/web/20050503125251im_/http://entimg.msn.com/i/mu/t/tobykeith/05.jpg" width=150  border=0></a></DIV><!-- END ARTIST IMAGES --><!-- BEGIN ARTIST BLURBS --> <TABLE cellSpacing=0 cellPadding=0 width=750 bgColor=#ae374a border=0>   <TBODY>   <TR>     <TD id=content vAlign=top width=451>       <DIV><a href=/web/20050503125251/http://entertainment.msn.com/artist/?artist=16186409 class="altlink"><B>Stevie Wonder</B></a></DIV>A legendary singer,        songwriter and all-around musician, Wonder has a string of mega-hits        dating back to the '60s. After a period of relative quiet, a big buzz is        building in anticipation of his new album, "A Time to Love."        <DIV class=tp20><a href=/web/20050503125251/http://entertainment.msn.com/artist/?artist=16105973 class="altlink"><B>Weezer</B></a></DIV>In the mid-'90s, Weezer's        quirky and endearing alt-pop made geekiness cool, but the humorous        approach didn't obscure their very smart and savvy pop-hook craftsmanship.        They've only gotten better, as you can hear on their new album, "Make        Believe."        <DIV class=tp20><a href=/web/20050503125251/http://entertainment.msn.com/artist/?artist=16102025 class="altlink"><B>Aimee Mann</B></a></DIV>Aimee Mann first tasted        fame in the '80s pop group 'Til Tuesday, but found her true musical        calling in her solo work, where she has staked a claim as one of modern        pop's finest songwriters. "The Forgotten Arm" is her latest.        <DIV class=tp20><a href=/web/20050503125251/http://entertainment.msn.com/artist/?artist=16074475 class="altlink"><B>Nine Inch Nails</B></a></DIV>Trent Reznor's Nine        Inch Nails are the band most responsible for bringing industrial music to        the masses. NIN's pounding electronic beats and Reznor's dark, brooding        persona are lyrically tempered by a quiet vulnerability. "<a href=/web/20050503125251/http://entertainment.msn.com/album/?album=41549949 class="altlink"><STRONG>With Teeth</STRONG></a>'' is the eagerly        anticipated new album.        <DIV class=tp20><a href=/web/20050503125251/http://entertainment.msn.com/artist/?artist=16101648 class="altlink"><B>Toby Keith</B></a></DIV>A hugely popular        performer, former oil field worker Toby Keith currently has the Midas        touch in contemporary country music, riding a seemingly invincible string        of hits. Keith again shows us how it's done on the new "Honkytonk        University."        <DIV id=current noWrap><a href=/web/20050503125251/http://entertainment.msn.com/artist/?artist=16117745 class="altlink"><IMG height=50 alt="Mariah Carey"        src="/web/20050503125251im_/http://entimg.msn.com/i/mu/m/mariahcarey/MariahCarey_50x50.jpg"        width=50 border=0><IMG height=51 alt="current artist of the mont"        src="/web/20050503125251im_/http://entimg.msn.com/i/aom/May05/aom_current.gif" width=258        border=0></a></DIV></TD>     <TD id=poll vAlign=top width=299>       <DIV id=poll2>       <SCRIPT src="/web/20050503125251js_/http://www.msnbc.msn.com/js/std.js"></SCRIPT>        <SCRIPT language=javascript        src="/web/20050503125251js_/http://entimg.msn.com/i/aom/May05/survey.js"></SCRIPT>        <SCRIPT language=javascript        src="/web/20050503125251js_/http://msnbc.msn.com/apps/modules/survey/getdata.asp?id=msnmusic_maynominees&amp;retfmt=js"></SCRIPT>        <SCRIPT language=javascript>         if (msnmusic_maynominees) {                             msnmusic_maynominees.appFmt = 1 ;                      msnmusic_maynominees.appWidth = 299 ;                      msnmusic_maynominees.appBG = "bgcolor=#8F1633" ;                                                                    msnmusic_maynominees.sHedStyle = "color:white;" ;                    msnmusic_maynominees.copyBorder = "border:0px ;";        msnmusic_maynominees.sBodyFont = "color:#FFFFFF;font-family:tahoma;";                         DisplayLV(msnmusic_maynominees);          }        </SCRIPT>       </DIV></TD></TR></TBODY></TABLE>	
+						  	 	
+						  </td>
+				      <td height="100%" valign="top" align="right">
+                <!-- AddGroupList [EditorialListCollection] -->
+  						  
+	  					    <table cellspacing="0" cellpadding="0" border="0">
+
+</table>
+		   				  
+			  			</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table cellpadding="0" cellspacing="0" border="0" width="750">
+  				  <td height="100%" valign="top">
+              <!-- MenuBar [EditorialListModuleCtrl] -->
+					    
+							  <table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+
+		</table></td>
+	</tr>
+</table>
+					    	
+				    </td>
+				  </table>
+				</td>
+      </tr>
+      <tr>
+        <td>
+          <table cellpadding="0" cellspacing="0" border="0" width="750">
+            <tr>
+              <td height="100%" valign="top">
+                <!-- PageDescription [EditorialListCollection] -->
+						    
+						      <table cellspacing="0" cellpadding="0" border="0">
+
+</table>
+						    
+              </td>
+							<td height="100%" valign="top">
+                <!-- centerPromoImage1 [PublishedImageCtrl] -->
+								
+										
+									
+							</td>				
+							<td height="100%" valign="top">
+                <!-- centerPromoImage2 [PublishedImageCtrl] -->
+								
+									
+									
+							</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td height="100%" valign="top">
+          <!-- OpenHTML1 [Article] -->
+				  
+					  	
+					 	
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td height="100%" valign="top">
+                <!-- editListCollection4 [EditorialListCollection]<br> -->
+						    
+						      <table cellspacing="0" cellpadding="0" border="0">
+
+</table>
+						    
+              </td>
+              <td width="300" align="left" valign="top">
+                <table cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td height="100%" valign="top">
+                      <!-- rtBigAd [Ad] -->
+								      
+									      
+								      </td>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="100%" valign="top">
+                    <!-- editListCollection2 [EditorialListCollection]-->
+						        
+						          <table cellspacing="0" cellpadding="0" border="0">
+
+</table>
+						        
+                  </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td height="100%" valign="top">
+          <!-- OpenHTML2 [Article] -->
+				  
+					  	
+					 	
+        </td>
+      </tr>
+    </table>
+    <table cellpadding="0" cellspacing="0" border="0">
+      <tr><td height=10></td></tr>
+      <tr>
+        <td height="100%" valign="top">
+          <!-- topAlbums [TopAlbumsArea]-->
+				  
+					  <table class="mh_sub3" cellspacing="0" cellpadding="0" border="0" width="750">
+	<tr>
+		<td><table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr>
+				<td class="hc1"><span class="lnk3"></span></td><td class="hc2"><table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td class="rp5" valign="Top"><span></span>&nbsp;<a onclick="if(SF('h')) return h(this,'cm=topAlbums&amp;ce=1');" href="/web/20050503125251/http://entertainment.msn.com/list?list=1f3f0e89-3d49-4d9e-a052-017938819c4b"></a></td><td><a class="mi" onclick="if(SF('h')) return h(this,'cm=topAlbums&amp;ce=2');" href="/web/20050503125251/http://entertainment.msn.com/list?list=1f3f0e89-3d49-4d9e-a052-017938819c4b"><img title="View All" src="/web/20050503125251im_/http://entimg.msn.com/i/ms/bt_more.gif" alt="View All" border="0" height="14" width="14" /></a></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table></td>
+	</tr>
+</table><table class="mvp5" cellspacing="0" cellpadding="0" border="0" width="750">
+	<tr>
+		<td class="tp10" valign="Top"><table class="tactb2" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td valign="Top"><table class="tamtb" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td class="rp10" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=topAlbums&amp;ce=3');" href="/web/20050503125251/http://entertainment.msn.com/album/?album=41538236"><img src="/web/20050503125251im_/http://images.windowsmedia.com/img/prov_u/50_80/00602498813393_800x800.jpg" width="50" height="50"border="0" alt="So What The Fuss" class="AlbumArt"></a></td><td valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td class="w75"><a title="So What The Fuss" onclick="if(SF('h')) return h(this,'cm=topAlbums&amp;ce=4');" href="/web/20050503125251/http://entertainment.msn.com/album/?album=41538236">So What The Fuss</a></td>
+							</tr><tr>
+								<td class="w75"><a title="Stevie Wonder" class="lnk1" onclick="if(SF('h')) return h(this,'cm=topAlbums&amp;ce=5');" href="/web/20050503125251/http://entertainment.msn.com/artist/?artist=16186409">Stevie Wonder</a></td>
+							</tr>
+						</table></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table></td><td class="tp10" valign="Top"><table class="tactb2" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td valign="Top"><table class="tamtb" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td class="rp10" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=topAlbums&amp;ce=6');" href="/web/20050503125251/http://entertainment.msn.com/album/?album=41448169"><img src="/web/20050503125251im_/http://images.windowsmedia.com/img/prov_u/50_80/00602498814192_800x800.jpg" width="50" height="50"border="0" alt="Beverly Hills" class="AlbumArt"></a></td><td valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td class="w75"><a title="Beverly Hills" onclick="if(SF('h')) return h(this,'cm=topAlbums&amp;ce=7');" href="/web/20050503125251/http://entertainment.msn.com/album/?album=41448169">Beverly Hills</a></td>
+							</tr><tr>
+								<td class="w75"><a title="Weezer" class="lnk1" onclick="if(SF('h')) return h(this,'cm=topAlbums&amp;ce=8');" href="/web/20050503125251/http://entertainment.msn.com/artist/?artist=16105973">Weezer</a></td>
+							</tr>
+						</table></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table></td><td class="tp10" valign="Top"><table class="tactb2" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td valign="Top"><table class="tamtb" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td class="rp10" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=topAlbums&amp;ce=9');" href="/web/20050503125251/http://entertainment.msn.com/album/?album=41391875"><img src="/web/20050503125251im_/http://images.windowsmedia.com/img/prov_u/50_80/00602498811481_800x800.jpg" width="50" height="50"border="0" alt="The Hand That Feeds" class="AlbumArt"></a></td><td valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td class="w75"><a title="The Hand That Feeds" onclick="if(SF('h')) return h(this,'cm=topAlbums&amp;ce=10');" href="/web/20050503125251/http://entertainment.msn.com/album/?album=41391875">The Hand That Feeds</a></td>
+							</tr><tr>
+								<td class="w75"><a title="Nine Inch Nails" class="lnk1" onclick="if(SF('h')) return h(this,'cm=topAlbums&amp;ce=11');" href="/web/20050503125251/http://entertainment.msn.com/artist/?artist=16074475">Nine Inch Nails</a></td>
+							</tr>
+						</table></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table></td><td class="tp10" valign="Top"><table class="tactb2" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td valign="Top"><table class="tamtb" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td class="rp10" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=topAlbums&amp;ce=12');" href="/web/20050503125251/http://entertainment.msn.com/album/?album=41421680"><img src="/web/20050503125251im_/http://images.windowsmedia.com/img/prov_u/50_80/00602498804377_800x800.jpg" width="50" height="50"border="0" alt="Honkytonk U" class="AlbumArt"></a></td><td valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td class="w75"><a title="Honkytonk U" onclick="if(SF('h')) return h(this,'cm=topAlbums&amp;ce=13');" href="/web/20050503125251/http://entertainment.msn.com/album/?album=41421680">Honkytonk U</a></td>
+							</tr><tr>
+								<td class="w75"><a title="Toby Keith" class="lnk1" onclick="if(SF('h')) return h(this,'cm=topAlbums&amp;ce=14');" href="/web/20050503125251/http://entertainment.msn.com/artist/?artist=16101648">Toby Keith</a></td>
+							</tr>
+						</table></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+				  
+        </td>
+      </tr>
+      <tr><td class="listsp"></td></tr>
+      <tr>
+        <td height="100%" valign="top">
+          <!-- topSongs [TopSongsArea]-->
+				  
+					  <table class="mh_sub3" cellspacing="0" cellpadding="0" border="0" width="750">
+	<tr>
+		<td><table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr>
+				<td class="hc1"><span class="lnk3">nominees collection</span></td><td class="hc2"><table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td class="rp5" valign="Top"><span></span>&nbsp;<a title="View All" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=1');" href="/web/20050503125251/http://entertainment.msn.com/list?list=5bb314f5-e91e-47ce-8654-63ffaf73504a">View All</a></td><td><a class="mi" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=2');" href="/web/20050503125251/http://entertainment.msn.com/list?list=5bb314f5-e91e-47ce-8654-63ffaf73504a"><img title="View All" src="/web/20050503125251im_/http://entimg.msn.com/i/ms/bt_more.gif" alt="View All" border="0" height="14" width="14" /></a></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table></td>
+	</tr>
+</table><table class="mvp5" cellspacing="0" cellpadding="0" border="0" width="750">
+	<tr>
+		<td><table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr>
+				<td><table cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tr class="tb5l10">
+						<td width="200"><a href="/web/20050503125251/http://entertainment.msn.com/beacon/hubarticle.aspx?ptid=5608d8a9-3367-41e3-97e3-169a91b024b8&amp;mpc=1&amp;sbc=0&amp;sdr=0" class="lnk3" >Song Title</a></td><td width="200"><a href="/web/20050503125251/http://entertainment.msn.com/beacon/hubarticle.aspx?ptid=5608d8a9-3367-41e3-97e3-169a91b024b8&amp;mpc=1&amp;sbc=1&amp;sdr=0" class="lnk3" >Album Title</a></td><td width="190"><a href="/web/20050503125251/http://entertainment.msn.com/beacon/hubarticle.aspx?ptid=5608d8a9-3367-41e3-97e3-169a91b024b8&amp;mpc=1&amp;sbc=2&amp;sdr=0" class="lnk3" >Artist</a></td><td width="80"><a href="/web/20050503125251/http://entertainment.msn.com/beacon/hubarticle.aspx?ptid=5608d8a9-3367-41e3-97e3-169a91b024b8&amp;mpc=1&amp;sbc=3&amp;sdr=0" class="lnk3" >Price</a></td><td width="80">Rating</td>
+					</tr><tr>
+						<td colspan="5"><table class="mvbb" cellspacing="0" cellpadding="0" border="0" width="100%">
+							<tr>
+								<td></td>
+							</tr>
+						</table></td>
+					</tr><tr class="bp5" onmouseover="this.className='brbg';" onmouseout="this.className='bp5';">
+						<td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td class="rp5"><a onmouseout="if(SF('clpot'))clpot(this)" clipurl="mms://a1855.v114514.c11451.g.vm.akamaistream.net/7/1855/11451/v0001/msnmusicstrm.download.akamai.com/12336/BFHJ23HZ/Prod/wma/v9/Audio/85/61/26/100266185.wma?WMCache=1&amp;WMBitrate=1000000&amp;WMThinning=1&amp;ibcd1=songid41538367" onmouseup="if(SF('clpup'))clpup(this,'41538367');return false" onmouseover="if(SF('clpov'))clpov(this)" id="clp_41538367" onblur="if(SF('clpot'))clpot(this)" onkeypress="return onmouseup()" onfocus="if(SF('clpov'))clpov(this)" clipid="41538367" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=3');" onmousedown="if(SF('clpdn'))clpdn(this)" href="#"><img src="/web/20050503125251im_/http://entimg.msn.com/i/ms/bt_play.gif" width="14" height="14"border="0" alt="Play sample clip of the song &quot;So What The Fuss [Album Version]&quot;" ></a></td><td><a title="So What The Fuss [Album Version]" onkeypress="return onmouseup()" clipurl="mms://a1855.v114514.c11451.g.vm.akamaistream.net/7/1855/11451/v0001/msnmusicstrm.download.akamai.com/12336/BFHJ23HZ/Prod/wma/v9/Audio/85/61/26/100266185.wma?WMCache=1&amp;WMBitrate=1000000&amp;WMThinning=1&amp;ibcd1=songid41538367" id="clp_41538367" onfocus="if(SF('clpov'))clpov(this)" onblur="if(SF('clpot'))clpot(this)" onmouseup="if(SF('clpup'))clpup(this,'41538367');return false" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=4');" href="#">So What The Fuss [Album Ver...</a></td>
+							</tr>
+						</table></td><td class="rcl2" valign="Top"><a title="So What The Fuss" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=5');" href="/web/20050503125251/http://entertainment.msn.com/album/?album=41538236">So What The Fuss</a></td><td class="rcl2" valign="Top"><a title="Stevie Wonder" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=6');" href="/web/20050503125251/http://entertainment.msn.com/artist/?artist=16186409">Stevie Wonder</a></td><td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td><span id="by41538367" class="canbtn" cmvl="topSongs" cevl="7" bytp="so" price="99" clck="bc(cn41538367);" conck="Buy(41538367,1,425,'ps=85206&amp;di=553&amp;cm=topSongs&amp;ce=7');" pctrl="false"><img title="Buy this song for $0.99 + applicable taxes" onmouseover="if(SF('bbuy'))bbuy()" onmouseout="if(SF('bbuy'))bbuy()" onmousedown="if(SF('bbuy'))bbuy()" onmouseup="if(SF('bbuy'))bbuy()" onkeyup="bbuy()" TABINDEX="0" src="/web/20050503125251im_/http://entimg.msn.com/i/bbt/so_up_99.gif" alt="" border="0" /></span></td><td class="lp2"><span id="cn41538367" class="canbtn" bytp="so" item="41538367" style="visibility:hidden;"><img src="/web/20050503125251im_/http://entimg.msn.com/i/bbt/so_can_up.gif" alt="" border="0" /></span></td>
+							</tr>
+						</table></td><td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="80">
+							<tr>
+								<td><span style="cursor:hand" RTP=1 RID=41538367 AVG=4><img src="/web/20050503125251im_/http://entimg.msn.com/i/r_sc_4.gif" width="64" height="12"/></span></td>
+							</tr>
+						</table></td>
+					</tr><tr class="bp5" onmouseover="this.className='brbg';" onmouseout="this.className='bp5';">
+						<td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td class="rp5"><a onmouseout="if(SF('clpot'))clpot(this)" clipurl="mms://a65.v114511.c11451.g.vm.akamaistream.net/7/65/11451/v0001/msnmusicstrm.download.akamai.com/12336/BFHJ23HZ/Prod/wma/v9/Audio/87/53/26/100265387.wma?WMCache=1&amp;WMBitrate=1000000&amp;WMThinning=1&amp;ibcd1=songid41448248" onmouseup="if(SF('clpup'))clpup(this,'41448248');return false" onmouseover="if(SF('clpov'))clpov(this)" id="clp_41448248" onblur="if(SF('clpot'))clpot(this)" onkeypress="return onmouseup()" onfocus="if(SF('clpov'))clpov(this)" clipid="41448248" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=8');" onmousedown="if(SF('clpdn'))clpdn(this)" href="#"><img src="/web/20050503125251im_/http://entimg.msn.com/i/ms/bt_play.gif" width="14" height="14"border="0" alt="Play sample clip of the song &quot;Beverly Hills&quot;" ></a></td><td><a title="Beverly Hills" onkeypress="return onmouseup()" clipurl="mms://a65.v114511.c11451.g.vm.akamaistream.net/7/65/11451/v0001/msnmusicstrm.download.akamai.com/12336/BFHJ23HZ/Prod/wma/v9/Audio/87/53/26/100265387.wma?WMCache=1&amp;WMBitrate=1000000&amp;WMThinning=1&amp;ibcd1=songid41448248" id="clp_41448248" onfocus="if(SF('clpov'))clpov(this)" onblur="if(SF('clpot'))clpot(this)" onmouseup="if(SF('clpup'))clpup(this,'41448248');return false" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=9');" href="#">Beverly Hills</a></td>
+							</tr>
+						</table></td><td class="rcl2" valign="Top"><a title="Beverly Hills" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=10');" href="/web/20050503125251/http://entertainment.msn.com/album/?album=41448169">Beverly Hills</a></td><td class="rcl2" valign="Top"><a title="Weezer" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=11');" href="/web/20050503125251/http://entertainment.msn.com/artist/?artist=16105973">Weezer</a></td><td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td><span id="by41448248" class="canbtn" cmvl="topSongs" cevl="12" bytp="so" price="99" clck="bc(cn41448248);" conck="Buy(41448248,1,425,'ps=85206&amp;di=553&amp;cm=topSongs&amp;ce=12');" pctrl="false"><img title="Buy this song for $0.99 + applicable taxes" onmouseover="if(SF('bbuy'))bbuy()" onmouseout="if(SF('bbuy'))bbuy()" onmousedown="if(SF('bbuy'))bbuy()" onmouseup="if(SF('bbuy'))bbuy()" onkeyup="bbuy()" TABINDEX="0" src="/web/20050503125251im_/http://entimg.msn.com/i/bbt/so_up_99.gif" alt="" border="0" /></span></td><td class="lp2"><span id="cn41448248" class="canbtn" bytp="so" item="41448248" style="visibility:hidden;"><img src="/web/20050503125251im_/http://entimg.msn.com/i/bbt/so_can_up.gif" alt="" border="0" /></span></td>
+							</tr>
+						</table></td><td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="80">
+							<tr>
+								<td><span style="cursor:hand" RTP=1 RID=41448248 AVG=4><img src="/web/20050503125251im_/http://entimg.msn.com/i/r_sc_4.gif" width="64" height="12"/></span></td>
+							</tr>
+						</table></td>
+					</tr><tr class="bp5" onmouseover="this.className='brbg';" onmouseout="this.className='bp5';">
+						<td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td class="rp5"><a onmouseout="if(SF('clpot'))clpot(this)" clipurl="mms://a236.v114515.c11451.g.vm.akamaistream.net/7/236/11451/v0001/msnmusicstrm.download.akamai.com/12336/BFHJ23HZ/Prod/wma/v9/Audio/46/51/95/3955146.wma?WMCache=1&amp;WMBitrate=1000000&amp;WMThinning=1&amp;ibcd1=songid12767785" onmouseup="if(SF('clpup'))clpup(this,'12767785');return false" onmouseover="if(SF('clpov'))clpov(this)" id="clp_12767785" onblur="if(SF('clpot'))clpot(this)" onkeypress="return onmouseup()" onfocus="if(SF('clpov'))clpov(this)" clipid="12767785" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=13');" onmousedown="if(SF('clpdn'))clpdn(this)" href="#"><img src="/web/20050503125251im_/http://entimg.msn.com/i/ms/bt_play.gif" width="14" height="14"border="0" alt="Play sample clip of the song &quot;Save Me&quot;" ></a></td><td><a title="Save Me" onkeypress="return onmouseup()" clipurl="mms://a236.v114515.c11451.g.vm.akamaistream.net/7/236/11451/v0001/msnmusicstrm.download.akamai.com/12336/BFHJ23HZ/Prod/wma/v9/Audio/46/51/95/3955146.wma?WMCache=1&amp;WMBitrate=1000000&amp;WMThinning=1&amp;ibcd1=songid12767785" id="clp_12767785" onfocus="if(SF('clpov'))clpov(this)" onblur="if(SF('clpot'))clpot(this)" onmouseup="if(SF('clpup'))clpup(this,'12767785');return false" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=14');" href="#">Save Me</a></td>
+							</tr>
+						</table></td><td class="rcl2" valign="Top"><a title="Magnolia [Original Soundtrack]" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=15');" href="/web/20050503125251/http://entertainment.msn.com/album/?album=10400596">Magnolia [Original Soundtrack]</a></td><td class="rcl2" valign="Top"><a title="Aimee Mann" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=16');" href="/web/20050503125251/http://entertainment.msn.com/artist/?artist=16102025">Aimee Mann</a></td><td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td><span id="by12767785" class="canbtn" cmvl="topSongs" cevl="17" bytp="so" price="99" clck="bc(cn12767785);" conck="Buy(12767785,1,423,'ps=85206&amp;di=553&amp;cm=topSongs&amp;ce=17');" pctrl="false"><img title="Buy this song for $0.99 + applicable taxes" onmouseover="if(SF('bbuy'))bbuy()" onmouseout="if(SF('bbuy'))bbuy()" onmousedown="if(SF('bbuy'))bbuy()" onmouseup="if(SF('bbuy'))bbuy()" onkeyup="bbuy()" TABINDEX="0" src="/web/20050503125251im_/http://entimg.msn.com/i/bbt/so_up_99.gif" alt="" border="0" /></span></td><td class="lp2"><span id="cn12767785" class="canbtn" bytp="so" item="12767785" style="visibility:hidden;"><img src="/web/20050503125251im_/http://entimg.msn.com/i/bbt/so_can_up.gif" alt="" border="0" /></span></td>
+							</tr>
+						</table></td><td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="80">
+							<tr>
+								<td><span style="cursor:hand" RTP=1 RID=12767785 AVG=4><img src="/web/20050503125251im_/http://entimg.msn.com/i/r_sc_4.gif" width="64" height="12"/></span></td>
+							</tr>
+						</table></td>
+					</tr><tr class="bp5" onmouseover="this.className='brbg';" onmouseout="this.className='bp5';">
+						<td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td class="rp5"><a onmouseout="if(SF('clpot'))clpot(this)" clipurl="mms://a478.v114513.c11451.g.vm.akamaistream.net/7/478/11451/v0001/msnmusicstrm.download.akamai.com/12336/BFHJ23HZ/Prod/wma/v9/Audio/49/07/15/100150749.wma?WMCache=1&amp;WMBitrate=1000000&amp;WMThinning=1&amp;ibcd1=songid41392244" onmouseup="if(SF('clpup'))clpup(this,'41392244');return false" onmouseover="if(SF('clpov'))clpov(this)" id="clp_41392244" onblur="if(SF('clpot'))clpot(this)" onkeypress="return onmouseup()" onfocus="if(SF('clpov'))clpov(this)" clipid="41392244" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=18');" onmousedown="if(SF('clpdn'))clpdn(this)" href="#"><img src="/web/20050503125251im_/http://entimg.msn.com/i/ms/bt_play.gif" width="14" height="14"border="0" alt="Play sample clip of the song &quot;The Hand That Feeds [Album Version]&quot;" ></a></td><td><a title="The Hand That Feeds [Album Version]" onkeypress="return onmouseup()" clipurl="mms://a478.v114513.c11451.g.vm.akamaistream.net/7/478/11451/v0001/msnmusicstrm.download.akamai.com/12336/BFHJ23HZ/Prod/wma/v9/Audio/49/07/15/100150749.wma?WMCache=1&amp;WMBitrate=1000000&amp;WMThinning=1&amp;ibcd1=songid41392244" id="clp_41392244" onfocus="if(SF('clpov'))clpov(this)" onblur="if(SF('clpot'))clpot(this)" onmouseup="if(SF('clpup'))clpup(this,'41392244');return false" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=19');" href="#">The Hand That Feeds [Album ...</a></td>
+							</tr>
+						</table></td><td class="rcl2" valign="Top"><a title="The Hand That Feeds" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=20');" href="/web/20050503125251/http://entertainment.msn.com/album/?album=41391875">The Hand That Feeds</a></td><td class="rcl2" valign="Top"><a title="Nine Inch Nails" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=21');" href="/web/20050503125251/http://entertainment.msn.com/artist/?artist=16074475">Nine Inch Nails</a></td><td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td><span id="by41392244" class="canbtn" cmvl="topSongs" cevl="22" bytp="so" price="99" clck="bc(cn41392244);" conck="Buy(41392244,1,425,'ps=85206&amp;di=553&amp;cm=topSongs&amp;ce=22');" pctrl="false"><img title="Buy this song for $0.99 + applicable taxes" onmouseover="if(SF('bbuy'))bbuy()" onmouseout="if(SF('bbuy'))bbuy()" onmousedown="if(SF('bbuy'))bbuy()" onmouseup="if(SF('bbuy'))bbuy()" onkeyup="bbuy()" TABINDEX="0" src="/web/20050503125251im_/http://entimg.msn.com/i/bbt/so_up_99.gif" alt="" border="0" /></span></td><td class="lp2"><span id="cn41392244" class="canbtn" bytp="so" item="41392244" style="visibility:hidden;"><img src="/web/20050503125251im_/http://entimg.msn.com/i/bbt/so_can_up.gif" alt="" border="0" /></span></td>
+							</tr>
+						</table></td><td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="80">
+							<tr>
+								<td><span style="cursor:hand" RTP=1 RID=41392244 AVG=4><img src="/web/20050503125251im_/http://entimg.msn.com/i/r_sc_4.gif" width="64" height="12"/></span></td>
+							</tr>
+						</table></td>
+					</tr><tr class="bp5" onmouseover="this.className='brbg';" onmouseout="this.className='bp5';">
+						<td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td class="rp5"><a onmouseout="if(SF('clpot'))clpot(this)" clipurl="mms://a1918.v11451d.c11451.g.vm.akamaistream.net/7/1918/11451/v0001/msnmusicstrm.download.akamai.com/12336/BFHJ23HZ/Prod/wma/v9/Audio/28/48/14/100144828.wma?WMCache=1&amp;WMBitrate=1000000&amp;WMThinning=1&amp;ibcd1=songid41421768" onmouseup="if(SF('clpup'))clpup(this,'41421768');return false" onmouseover="if(SF('clpov'))clpov(this)" id="clp_41421768" onblur="if(SF('clpot'))clpot(this)" onkeypress="return onmouseup()" onfocus="if(SF('clpov'))clpov(this)" clipid="41421768" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=23');" onmousedown="if(SF('clpdn'))clpdn(this)" href="#"><img src="/web/20050503125251im_/http://entimg.msn.com/i/ms/bt_play.gif" width="14" height="14"border="0" alt="Play sample clip of the song &quot;Honkytonk U [Album Version]&quot;" ></a></td><td><a title="Honkytonk U [Album Version]" onkeypress="return onmouseup()" clipurl="mms://a1918.v11451d.c11451.g.vm.akamaistream.net/7/1918/11451/v0001/msnmusicstrm.download.akamai.com/12336/BFHJ23HZ/Prod/wma/v9/Audio/28/48/14/100144828.wma?WMCache=1&amp;WMBitrate=1000000&amp;WMThinning=1&amp;ibcd1=songid41421768" id="clp_41421768" onfocus="if(SF('clpov'))clpov(this)" onblur="if(SF('clpot'))clpot(this)" onmouseup="if(SF('clpup'))clpup(this,'41421768');return false" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=24');" href="#">Honkytonk U [Album Version]</a></td>
+							</tr>
+						</table></td><td class="rcl2" valign="Top"><a title="Honkytonk U" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=25');" href="/web/20050503125251/http://entertainment.msn.com/album/?album=41421680">Honkytonk U</a></td><td class="rcl2" valign="Top"><a title="Toby Keith" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=26');" href="/web/20050503125251/http://entertainment.msn.com/artist/?artist=16101648">Toby Keith</a></td><td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td><span id="by41421768" class="canbtn" cmvl="topSongs" cevl="27" bytp="so" price="99" clck="bc(cn41421768);" conck="Buy(41421768,1,425,'ps=85206&amp;di=553&amp;cm=topSongs&amp;ce=27');" pctrl="false"><img title="Buy this song for $0.99 + applicable taxes" onmouseover="if(SF('bbuy'))bbuy()" onmouseout="if(SF('bbuy'))bbuy()" onmousedown="if(SF('bbuy'))bbuy()" onmouseup="if(SF('bbuy'))bbuy()" onkeyup="bbuy()" TABINDEX="0" src="/web/20050503125251im_/http://entimg.msn.com/i/bbt/so_up_99.gif" alt="" border="0" /></span></td><td class="lp2"><span id="cn41421768" class="canbtn" bytp="so" item="41421768" style="visibility:hidden;"><img src="/web/20050503125251im_/http://entimg.msn.com/i/bbt/so_can_up.gif" alt="" border="0" /></span></td>
+							</tr>
+						</table></td><td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="80">
+							<tr>
+								<td><span style="cursor:hand" RTP=1 RID=41421768 AVG=4><img src="/web/20050503125251im_/http://entimg.msn.com/i/r_sc_4.gif" width="64" height="12"/></span></td>
+							</tr>
+						</table></td>
+					</tr><tr class="bp5" onmouseover="this.className='brbg';" onmouseout="this.className='bp5';">
+						<td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td class="rp5"><a onmouseout="if(SF('clpot'))clpot(this)" clipurl="mms://a276.v114515.c11451.g.vm.akamaistream.net/7/276/11451/v0001/msnmusicstrm.download.akamai.com/12336/BFHJ23HZ/Prod/wma/v9/Audio/37/29/95/952937.wma?WMCache=1&amp;WMBitrate=1000000&amp;WMThinning=1&amp;ibcd1=songid13176376" onmouseup="if(SF('clpup'))clpup(this,'13176376');return false" onmouseover="if(SF('clpov'))clpov(this)" id="clp_13176376" onblur="if(SF('clpot'))clpot(this)" onkeypress="return onmouseup()" onfocus="if(SF('clpov'))clpov(this)" clipid="13176376" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=28');" onmousedown="if(SF('clpdn'))clpdn(this)" href="#"><img src="/web/20050503125251im_/http://entimg.msn.com/i/ms/bt_play.gif" width="14" height="14"border="0" alt="Play sample clip of the song &quot;You Are The Sunshine Of My Life [Album Version]&quot;" ></a></td><td><a title="You Are The Sunshine Of My Life [Album Version]" onkeypress="return onmouseup()" clipurl="mms://a276.v114515.c11451.g.vm.akamaistream.net/7/276/11451/v0001/msnmusicstrm.download.akamai.com/12336/BFHJ23HZ/Prod/wma/v9/Audio/37/29/95/952937.wma?WMCache=1&amp;WMBitrate=1000000&amp;WMThinning=1&amp;ibcd1=songid13176376" id="clp_13176376" onfocus="if(SF('clpov'))clpov(this)" onblur="if(SF('clpot'))clpot(this)" onmouseup="if(SF('clpup'))clpup(this,'13176376');return false" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=29');" href="#">You Are The Sunshine Of My ...</a></td>
+							</tr>
+						</table></td><td class="rcl2" valign="Top"><a title="Talking Book [Reissue]" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=30');" href="/web/20050503125251/http://entertainment.msn.com/album/?album=10022879">Talking Book [Reissue]</a></td><td class="rcl2" valign="Top"><a title="Stevie Wonder" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=31');" href="/web/20050503125251/http://entertainment.msn.com/artist/?artist=16186409">Stevie Wonder</a></td><td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td><span id="by13176376" class="canbtn" cmvl="topSongs" cevl="32" bytp="so" price="99" clck="bc(cn13176376);" conck="Buy(13176376,1,425,'ps=85206&amp;di=553&amp;cm=topSongs&amp;ce=32');" pctrl="false"><img title="Buy this song for $0.99 + applicable taxes" onmouseover="if(SF('bbuy'))bbuy()" onmouseout="if(SF('bbuy'))bbuy()" onmousedown="if(SF('bbuy'))bbuy()" onmouseup="if(SF('bbuy'))bbuy()" onkeyup="bbuy()" TABINDEX="0" src="/web/20050503125251im_/http://entimg.msn.com/i/bbt/so_up_99.gif" alt="" border="0" /></span></td><td class="lp2"><span id="cn13176376" class="canbtn" bytp="so" item="13176376" style="visibility:hidden;"><img src="/web/20050503125251im_/http://entimg.msn.com/i/bbt/so_can_up.gif" alt="" border="0" /></span></td>
+							</tr>
+						</table></td><td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="80">
+							<tr>
+								<td><span style="cursor:hand" RTP=1 RID=13176376 AVG=4><img src="/web/20050503125251im_/http://entimg.msn.com/i/r_sc_4.gif" width="64" height="12"/></span></td>
+							</tr>
+						</table></td>
+					</tr><tr class="bp5" onmouseover="this.className='brbg';" onmouseout="this.className='bp5';">
+						<td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td class="rp5"><a onmouseout="if(SF('clpot'))clpot(this)" clipurl="mms://a1395.v114511.c11451.g.vm.akamaistream.net/7/1395/11451/v0001/msnmusicstrm.download.akamai.com/12336/BFHJ23HZ/Prod/wma/v9/Audio/61/27/97/972761.wma?WMCache=1&amp;WMBitrate=1000000&amp;WMThinning=1&amp;ibcd1=songid10959557" onmouseup="if(SF('clpup'))clpup(this,'10959557');return false" onmouseover="if(SF('clpov'))clpov(this)" id="clp_10959557" onblur="if(SF('clpot'))clpot(this)" onkeypress="return onmouseup()" onfocus="if(SF('clpov'))clpov(this)" clipid="10959557" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=33');" onmousedown="if(SF('clpdn'))clpdn(this)" href="#"><img src="/web/20050503125251im_/http://entimg.msn.com/i/ms/bt_play.gif" width="14" height="14"border="0" alt="Play sample clip of the song &quot;Buddy Holly [Album Version]&quot;" ></a></td><td><a title="Buddy Holly [Album Version]" onkeypress="return onmouseup()" clipurl="mms://a1395.v114511.c11451.g.vm.akamaistream.net/7/1395/11451/v0001/msnmusicstrm.download.akamai.com/12336/BFHJ23HZ/Prod/wma/v9/Audio/61/27/97/972761.wma?WMCache=1&amp;WMBitrate=1000000&amp;WMThinning=1&amp;ibcd1=songid10959557" id="clp_10959557" onfocus="if(SF('clpov'))clpov(this)" onblur="if(SF('clpot'))clpot(this)" onmouseup="if(SF('clpup'))clpup(this,'10959557');return false" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=34');" href="#">Buddy Holly [Album Version]</a></td>
+							</tr>
+						</table></td><td class="rcl2" valign="Top"><a title="Weezer" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=35');" href="/web/20050503125251/http://entertainment.msn.com/album/?album=10161285">Weezer</a></td><td class="rcl2" valign="Top"><a title="Weezer" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=36');" href="/web/20050503125251/http://entertainment.msn.com/artist/?artist=16105973">Weezer</a></td><td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td><span id="by10959557" class="canbtn" cmvl="topSongs" cevl="37" bytp="so" price="99" clck="bc(cn10959557);" conck="Buy(10959557,1,425,'ps=85206&amp;di=553&amp;cm=topSongs&amp;ce=37');" pctrl="false"><img title="Buy this song for $0.99 + applicable taxes" onmouseover="if(SF('bbuy'))bbuy()" onmouseout="if(SF('bbuy'))bbuy()" onmousedown="if(SF('bbuy'))bbuy()" onmouseup="if(SF('bbuy'))bbuy()" onkeyup="bbuy()" TABINDEX="0" src="/web/20050503125251im_/http://entimg.msn.com/i/bbt/so_up_99.gif" alt="" border="0" /></span></td><td class="lp2"><span id="cn10959557" class="canbtn" bytp="so" item="10959557" style="visibility:hidden;"><img src="/web/20050503125251im_/http://entimg.msn.com/i/bbt/so_can_up.gif" alt="" border="0" /></span></td>
+							</tr>
+						</table></td><td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="80">
+							<tr>
+								<td><span style="cursor:hand" RTP=1 RID=10959557 AVG=4><img src="/web/20050503125251im_/http://entimg.msn.com/i/r_sc_4.gif" width="64" height="12"/></span></td>
+							</tr>
+						</table></td>
+					</tr><tr class="bp5" onmouseover="this.className='brbg';" onmouseout="this.className='bp5';">
+						<td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td class="rp5"><a onmouseout="if(SF('clpot'))clpot(this)" clipurl="mms://a801.v11451e.c11451.g.vm.akamaistream.net/7/801/11451/v0001/msnmusicstrm.download.akamai.com/12336/BFHJ23HZ/Prod/wma/v9/Audio/14/51/95/3955114.wma?WMCache=1&amp;WMBitrate=1000000&amp;WMThinning=1&amp;ibcd1=songid12767777" onmouseup="if(SF('clpup'))clpup(this,'12767777');return false" onmouseover="if(SF('clpov'))clpov(this)" id="clp_12767777" onblur="if(SF('clpot'))clpot(this)" onkeypress="return onmouseup()" onfocus="if(SF('clpov'))clpov(this)" clipid="12767777" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=38');" onmousedown="if(SF('clpdn'))clpdn(this)" href="#"><img src="/web/20050503125251im_/http://entimg.msn.com/i/ms/bt_play.gif" width="14" height="14"border="0" alt="Play sample clip of the song &quot;One&quot;" ></a></td><td><a title="One" onkeypress="return onmouseup()" clipurl="mms://a801.v11451e.c11451.g.vm.akamaistream.net/7/801/11451/v0001/msnmusicstrm.download.akamai.com/12336/BFHJ23HZ/Prod/wma/v9/Audio/14/51/95/3955114.wma?WMCache=1&amp;WMBitrate=1000000&amp;WMThinning=1&amp;ibcd1=songid12767777" id="clp_12767777" onfocus="if(SF('clpov'))clpov(this)" onblur="if(SF('clpot'))clpot(this)" onmouseup="if(SF('clpup'))clpup(this,'12767777');return false" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=39');" href="#">One</a></td>
+							</tr>
+						</table></td><td class="rcl2" valign="Top"><a title="Magnolia [Original Soundtrack]" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=40');" href="/web/20050503125251/http://entertainment.msn.com/album/?album=10400596">Magnolia [Original Soundtrack]</a></td><td class="rcl2" valign="Top"><a title="Aimee Mann" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=41');" href="/web/20050503125251/http://entertainment.msn.com/artist/?artist=16102025">Aimee Mann</a></td><td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td><span id="by12767777" class="canbtn" cmvl="topSongs" cevl="42" bytp="so" price="99" clck="bc(cn12767777);" conck="Buy(12767777,1,423,'ps=85206&amp;di=553&amp;cm=topSongs&amp;ce=42');" pctrl="false"><img title="Buy this song for $0.99 + applicable taxes" onmouseover="if(SF('bbuy'))bbuy()" onmouseout="if(SF('bbuy'))bbuy()" onmousedown="if(SF('bbuy'))bbuy()" onmouseup="if(SF('bbuy'))bbuy()" onkeyup="bbuy()" TABINDEX="0" src="/web/20050503125251im_/http://entimg.msn.com/i/bbt/so_up_99.gif" alt="" border="0" /></span></td><td class="lp2"><span id="cn12767777" class="canbtn" bytp="so" item="12767777" style="visibility:hidden;"><img src="/web/20050503125251im_/http://entimg.msn.com/i/bbt/so_can_up.gif" alt="" border="0" /></span></td>
+							</tr>
+						</table></td><td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="80">
+							<tr>
+								<td><span style="cursor:hand" RTP=1 RID=12767777 AVG=5><img src="/web/20050503125251im_/http://entimg.msn.com/i/r_sc_5.gif" width="64" height="12"/></span></td>
+							</tr>
+						</table></td>
+					</tr><tr class="bp5" onmouseover="this.className='brbg';" onmouseout="this.className='bp5';">
+						<td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td class="rp5"><a onmouseout="if(SF('clpot'))clpot(this)" clipurl="mms://a495.v11451f.c11451.g.vm.akamaistream.net/7/495/11451/v0001/msnmusicstrm.download.akamai.com/12336/BFHJ23HZ/Prod/wma/v9/Audio/91/10/97/971091.wma?WMCache=1&amp;WMBitrate=1000000&amp;WMThinning=1&amp;ibcd1=songid11087285" onmouseup="if(SF('clpup'))clpup(this,'11087285');return false" onmouseover="if(SF('clpov'))clpov(this)" id="clp_11087285" onblur="if(SF('clpot'))clpot(this)" onkeypress="return onmouseup()" onfocus="if(SF('clpov'))clpov(this)" clipid="11087285" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=43');" onmousedown="if(SF('clpdn'))clpdn(this)" href="#"><img src="/web/20050503125251im_/http://entimg.msn.com/i/ms/bt_play.gif" width="14" height="14"border="0" alt="Play sample clip of the song &quot;Closer [Album Version]&quot;" ></a></td><td><a title="Closer [Album Version]" onkeypress="return onmouseup()" clipurl="mms://a495.v11451f.c11451.g.vm.akamaistream.net/7/495/11451/v0001/msnmusicstrm.download.akamai.com/12336/BFHJ23HZ/Prod/wma/v9/Audio/91/10/97/971091.wma?WMCache=1&amp;WMBitrate=1000000&amp;WMThinning=1&amp;ibcd1=songid11087285" id="clp_11087285" onfocus="if(SF('clpov'))clpov(this)" onblur="if(SF('clpot'))clpot(this)" onmouseup="if(SF('clpup'))clpup(this,'11087285');return false" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=44');" href="#">Closer [Album Version]</a></td>
+							</tr>
+						</table></td><td class="rcl2" valign="Top"><a title="The Downward Spiral [Explicit Version]" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=45');" href="/web/20050503125251/http://entertainment.msn.com/album/?album=10157938">The Downward Spiral [Explic...</a></td><td class="rcl2" valign="Top"><a title="Nine Inch Nails" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=46');" href="/web/20050503125251/http://entertainment.msn.com/artist/?artist=16074475">Nine Inch Nails</a></td><td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td><span id="by11087285" class="canbtn" cmvl="topSongs" cevl="47" bytp="so" price="99" clck="bc(cn11087285);" conck="Buy(11087285,1,425,'ps=85206&amp;di=553&amp;cm=topSongs&amp;ce=47');" pctrl="false"><img title="Buy this song for $0.99 + applicable taxes" onmouseover="if(SF('bbuy'))bbuy()" onmouseout="if(SF('bbuy'))bbuy()" onmousedown="if(SF('bbuy'))bbuy()" onmouseup="if(SF('bbuy'))bbuy()" onkeyup="bbuy()" TABINDEX="0" src="/web/20050503125251im_/http://entimg.msn.com/i/bbt/so_up_99.gif" alt="" border="0" /></span></td><td class="lp2"><span id="cn11087285" class="canbtn" bytp="so" item="11087285" style="visibility:hidden;"><img src="/web/20050503125251im_/http://entimg.msn.com/i/bbt/so_can_up.gif" alt="" border="0" /></span></td>
+							</tr>
+						</table></td><td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="80">
+							<tr>
+								<td><span style="cursor:hand" RTP=1 RID=11087285 AVG=4><img src="/web/20050503125251im_/http://entimg.msn.com/i/r_sc_4.gif" width="64" height="12"/></span></td>
+							</tr>
+						</table></td>
+					</tr><tr class="bp5" onmouseover="this.className='brbg';" onmouseout="this.className='bp5';">
+						<td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td class="rp5"><a onmouseout="if(SF('clpot'))clpot(this)" clipurl="mms://a1718.v114519.c11451.g.vm.akamaistream.net/7/1718/11451/v0001/msnmusicstrm.download.akamai.com/12336/BFHJ23HZ/Prod/wma/v9/Audio/49/02/95/950249.wma?WMCache=1&amp;WMBitrate=1000000&amp;WMThinning=1&amp;ibcd1=songid12761753" onmouseup="if(SF('clpup'))clpup(this,'12761753');return false" onmouseover="if(SF('clpov'))clpov(this)" id="clp_12761753" onblur="if(SF('clpot'))clpot(this)" onkeypress="return onmouseup()" onfocus="if(SF('clpov'))clpov(this)" clipid="12761753" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=48');" onmousedown="if(SF('clpdn'))clpdn(this)" href="#"><img src="/web/20050503125251im_/http://entimg.msn.com/i/ms/bt_play.gif" width="14" height="14"border="0" alt="Play sample clip of the song &quot;How Do You Like Me Now?! [Album Version]&quot;" ></a></td><td><a title="How Do You Like Me Now?! [Album Version]" onkeypress="return onmouseup()" clipurl="mms://a1718.v114519.c11451.g.vm.akamaistream.net/7/1718/11451/v0001/msnmusicstrm.download.akamai.com/12336/BFHJ23HZ/Prod/wma/v9/Audio/49/02/95/950249.wma?WMCache=1&amp;WMBitrate=1000000&amp;WMThinning=1&amp;ibcd1=songid12761753" id="clp_12761753" onfocus="if(SF('clpov'))clpov(this)" onblur="if(SF('clpot'))clpot(this)" onmouseup="if(SF('clpup'))clpup(this,'12761753');return false" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=49');" href="#">How Do You Like Me Now?! [A...</a></td>
+							</tr>
+						</table></td><td class="rcl2" valign="Top"><a title="How Do You Like Me Now?!" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=50');" href="/web/20050503125251/http://entertainment.msn.com/album/?album=10386214">How Do You Like Me Now?!</a></td><td class="rcl2" valign="Top"><a title="Toby Keith" onclick="if(SF('h')) return h(this,'cm=topSongs&amp;ce=51');" href="/web/20050503125251/http://entertainment.msn.com/artist/?artist=16101648">Toby Keith</a></td><td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td><span id="by12761753" class="canbtn" cmvl="topSongs" cevl="52" bytp="so" price="99" clck="bc(cn12761753);" conck="Buy(12761753,1,425,'ps=85206&amp;di=553&amp;cm=topSongs&amp;ce=52');" pctrl="false"><img title="Buy this song for $0.99 + applicable taxes" onmouseover="if(SF('bbuy'))bbuy()" onmouseout="if(SF('bbuy'))bbuy()" onmousedown="if(SF('bbuy'))bbuy()" onmouseup="if(SF('bbuy'))bbuy()" onkeyup="bbuy()" TABINDEX="0" src="/web/20050503125251im_/http://entimg.msn.com/i/bbt/so_up_99.gif" alt="" border="0" /></span></td><td class="lp2"><span id="cn12761753" class="canbtn" bytp="so" item="12761753" style="visibility:hidden;"><img src="/web/20050503125251im_/http://entimg.msn.com/i/bbt/so_can_up.gif" alt="" border="0" /></span></td>
+							</tr>
+						</table></td><td class="rcl2" valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="80">
+							<tr>
+								<td><span style="cursor:hand" RTP=1 RID=12761753 AVG=4_25><img src="/web/20050503125251im_/http://entimg.msn.com/i/r_sc_4_25.gif" width="64" height="12"/></span></td>
+							</tr>
+						</table></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+				  		
+        </td>
+      </tr>
+    </table>
+
+		
+			<table class="ftout" cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td align="Center"><table cellspacing="0" cellpadding="0" border="0" width="750">
+			<tr>
+				<td><table cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tr>
+						<td><table class="ftrtbi2" cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td><span class="lnk1">&copy;2005 Microsoft</span></td><td><span class="blt1">&#159</span></td><td><a class="lnk4" onclick="if(SF('h')) return h(this,'cm=FOOTER&amp;ce=1');" href="/web/20050503125251/http://entertainment.msn.com/music/providers.aspx">Partners</a><span class="lnk4">&nbsp;&amp;&nbsp;</span><a class="lnk4" onclick="if(SF('h')) return h(this,'cm=FOOTER&amp;ce=2');" href="/web/20050503125251/http://g.msn.com/0nwenus0/A5/19" target="_new">Advertisers</a></td><td><span class="blt1">&#159</span></td><td><a class="lnk4" onclick="if(SF('h')) return h(this,'cm=FOOTER&amp;ce=3');" href="/web/20050503125251/http://g.msn.com/0nwenus0/a5/20" target="_new">Privacy</a><span class="lnk4">&nbsp;&amp;&nbsp;</span><a class="lnk4" onclick="if(SF('h')) return h(this,'cm=FOOTER&amp;ce=4');" href="/web/20050503125251/http://g.msn.com/0nwenus0/a5/18" target="_new">Legal</a></td>
+							</tr>
+						</table></td><td align="Right"><table class="ftrtbi2" cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td><span class="lnk4"><a class="lnk4" href="mailto:?subject=MSN%20Music%20-%20Artist%20of%20the%20Month&amp;body=I%20found%20this%20on%20MSN%20Entertainment%20and%20thought%20you%20might%20be%20interested%20in%20it.%0d%0a%0d%0aClick%20this%20link%3a%0d%0ahttp%3a%2f%2fentertainment.msn.com%2fbeacon%2fhubarticle.aspx%3fptid%3d5608d8a9-3367-41e3-97e3-169a91b024b8%0d%0a">Email This Page</a></span></td><td><span class="blt1">&#159</span></td><td><a class="lnk4" onclick="if(SF('h')) return h(this,'cm=FOOTER&amp;ce=5');" href="/web/20050503125251/http://entertainment.msn.com/help/customer.aspx">Customer Service</a></td>
+							</tr>
+						</table></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table></td>
+	</tr>
+</table><a class="txt2" onclick="var win = window.open(); win.document.open(); win.document.writeln('Machine Code: A59 - Date: 2005-05-03T05:52:56-07&lt;br&gt;&lt;br&gt;Page URL: ' + escape(document.URL)); return false;" href="#">Page Information</a>
+				
+		</center>
+	</body>
+</HTML>
+<script>if(window.sdd){sHS();}</script><script>window.onunload = Rsn; function Rsn() {window.name = 'notmine';} if(SF('SetupRatings')) SOL(SetupRatings); if(SF('cklnch')) SOL(cklnch); if(SF('chkbb')) SOL(chkbb);</script><span id=clipSpan></span>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 12:52:51 May 3, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:39:50 Jan 11, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

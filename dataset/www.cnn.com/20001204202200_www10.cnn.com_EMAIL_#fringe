@@ -1,1257 +1,0 @@
-<HTML>
-<HEAD>
-
-
-<script type="text/javascript" src="/static/js/analytics.js"></script>
-<script type="text/javascript">archive_analytics.values.server_name="wwwb-app19.us.archive.org";archive_analytics.values.server_ms=175;</script>
-<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
-
-
-<TITLE> CNN - E-mail Services</TITLE>
-
-
-<style>
-<!--
-
-
-.FSnBMdLt	{
-			color:#000000;
-			font-family:arial, helvetica, sans-serif;
-			font-weight:bold;
-			font-size:13px;
-			}
-
--->
-</style>
-
-<script LANGUAGE="JavaScript" SRC="/web/20001206110400js_/http://www2.cnn.com/EMAIL/latest_mail/paul.js"></script>
-<LINK rel="stylesheet" href="/web/20001206110400cs_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/virtual/2000/style/main.css" type="text/css">
-<script>
-function getemail()
-{
-	document.emailform1.email.value=location.search.substring(1,location.search.length);
-}
-</script>
-</HEAD>
-
-<BODY BGCOLOR="#FFFFFF" LINK="#0A3990" ALINK="#FF0000" VLINK="#FF0000" onload="getemail();">
-
-
-<!-- BEGIN WAYBACK TOOLBAR INSERT -->
-<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
-<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
-<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
-<script type="text/javascript">//<![CDATA[
-var __wm = (function(){
-var wbPrefix = "/web/";
-var wbCurrentUrl = "http://www2.cnn.com/EMAIL/";
-
-var firstYear = 1996;
-var imgWidth = 475,imgHeight = 27;
-var yearImgWidth = 25,monthImgWidth = 2;
-var displayDay = "6";
-var displayMonth = "Dec";
-var displayYear = "2000";
-var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-var $D=document,$=function(n){return document.getElementById(n)};
-var trackerVal,curYear = -1,curMonth = -1;
-var yearTracker,monthTracker;
-function showTrackers(val) {
-  if (val===trackerVal) return;
-  var $ipp=$("wm-ipp");
-  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
-  if (val) {
-    $ipp.className="hi";
-  } else {
-    $ipp.className="";
-    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
-  }
-  yearTracker.style.display=val?"inline":"none";
-  monthTracker.style.display=val?"inline":"none";
-  trackerVal = val;
-}
-function getElementX2(obj) {
-  var $e=jQuery(obj);
-  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
-    getElementX(obj):Math.round($e.offset().left);
-}
-function trackMouseMove(event,element) {
-  var eventX = getEventX(event);
-  var elementX = getElementX2(element);
-  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
-  var monthOff = xOff % yearImgWidth;
-
-  var year = Math.floor(xOff / yearImgWidth);
-  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
-  // 1 extra border pixel at the left edge of the year:
-  var month = (year * 12) + monthOfYear;
-  var day = monthOff % 2==1?15:1;
-  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
-    zeroPad(day,2) + "000000";
-
-  $("displayYearEl").innerHTML=year+firstYear;
-  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
-  // looks too jarring when it changes..
-  //$("displayDayEl").innerHTML=zeroPad(day,2);
-  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
-  $("wm-graph-anchor").href=url;
-
-  if(curYear != year) {
-    var yrOff = year * yearImgWidth;
-    yearTracker.style.left = yrOff + "px";
-    curYear = year;
-  }
-  if(curMonth != month) {
-    var mtOff = year + (month * monthImgWidth) + 1;
-    monthTracker.style.left = mtOff + "px";
-    curMonth = month;
-  }
-}
-function hideToolbar() {
-  $("wm-ipp").style.display="none";
-}
-function bootstrap() {
-  var $spk=$("wm-ipp-sparkline");
-  yearTracker=$D.createElement('div');
-  yearTracker.className='yt';
-  with(yearTracker.style){
-    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
-  }
-  monthTracker=$D.createElement('div');
-  monthTracker.className='mt';
-  with(monthTracker.style){
-    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
-  }
-  $spk.appendChild(yearTracker);
-  $spk.appendChild(monthTracker);
-
-  var $ipp=$("wm-ipp");
-  $ipp&&disclaimElement($ipp);
-}
-return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
-})();//]]>
-</script>
-<style type="text/css">
-body {
-  margin-top:0 !important;
-  padding-top:0 !important;
-  min-width:800px !important;
-}
-</style>
-<div id="wm-ipp" lang="en" style="display:none;">
-
-<div style="position:fixed;left:0;top:0;width:100%!important">
-<div id="wm-ipp-inside">
-   <table style="width:100%;"><tbody><tr>
-   <td id="wm-logo">
-       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
-   </td>
-   <td class="c">
-       <table style="margin:0 auto;"><tbody><tr>
-       <td class="u" colspan="2">
-       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www2.cnn.com/EMAIL/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20001206110400" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
-       </td>
-       <td class="n" rowspan="2">
-           <table><tbody>
-           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
-           <tr class="m">
-           	<td class="b" nowrap="nowrap">
-		
-		    <a href="/web/20001028173516/http://www9.cnn.com/EMAIL" title="28 Oct 2000">OCT</a>
-		
-		</td>
-		<td class="c" id="displayMonthEl" title="You are here: 11:04:00 Dec 6, 2000">DEC</td>
-		<td class="f" nowrap="nowrap">
-		
-		    <a href="/web/20010109105100/http://www8.cnn.com/EMAIL/" title="9 Jan 2001"><strong>JAN</strong></a>
-		
-                </td>
-	    </tr>
-           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
-           <tr class="d">
-               <td class="b" nowrap="nowrap">
-               
-                   <a href="/web/20001120124100/http://www9.cnn.com/EMAIL" title="12:41:00 Nov 20, 2000"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
-               
-               </td>
-               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 11:04:00 Dec 6, 2000">6</td>
-	       <td class="f" nowrap="nowrap">
-               
-		   <a href="/web/20001215230100/http://www7.cnn.com/EMAIL/" title="23:01:00 Dec 15, 2000"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
-	       
-	       </td>
-           </tr>
-           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
-           <tr class="y">
-	       <td class="b" nowrap="nowrap">
-               
-                   <a href="/web/19991011102156/http://www10.cnn.com/EMAIL/" title="11 Oct 1999"><strong>1999</strong></a>
-               
-               </td>
-               <td class="c" id="displayYearEl" title="You are here: 11:04:00 Dec 6, 2000">2000</td>
-	       <td class="f" nowrap="nowrap">
-               
-	           <a href="/web/20011206183848/http://www.cnn.com/EMAIL/" title="6 Dec 2001"><strong>2001</strong></a>
-	       
-	       </td>
-           </tr>
-           </tbody></table>
-       </td>
-       </tr>
-       <tr>
-       <td class="s">
-           <a class="t" href="/web/20001206110400*/http://www2.cnn.com/EMAIL/" title="See a list of every capture for this URL">5,009 captures</a>
-           <div class="r" title="Timespan for captures of this URL">17 Jan 99 - 5 Jan 14</div>
-       </td>
-       <td class="k">
-       <a href="" id="wm-graph-anchor">
-       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
-	 <img id="sparklineImgId" alt="sparklines"
-		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
-		 onmousemove="__wm.mv(event,this)"
-		 width="475"
-		 height="27"
-		 border="0"
-		 src="/web/jsp/graph.jsp?graphdata=475_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:250000001100_2000:11:133554040451_2001:-1:11114612eefa_2002:-1:141203047882_2003:-1:030306420224_2004:-1:120308999999_2005:-1:a99a89999788_2006:-1:971865455345_2007:-1:764366566846_2008:-1:265534416515_2009:-1:344605431315_2010:-1:113321545551_2011:-1:43122589abbc_2012:-1:cccbccccb89a_2013:-1:988878765789_2014:-1:aababba9a99a" />
-       </div>
-       </a>
-       </td>
-       </tr></tbody></table>
-   </td>
-   <td class="r">
-       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
-       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
-   </td>
-   </tr></tbody></table>
-</div>
-</div>
-</div>
-<script type="text/javascript">__wm.bt();</script>
-<!-- END WAYBACK TOOLBAR INSERT -->
-
-<a name="top"></a>
-<table width=600 cellpadding="0" cellspacing="0" border="0">
-<tr><td colspan="3">
-<table border="0" width="600" cellspacing="0" cellpadding="0"><tr><td width="120"><A HREF="/web/20001206110400/http://www2.cnn.com/event.ng/Type=click&amp;RunID=34133&amp;ProfileID=469&amp;AdID=26826&amp;GroupID=335&amp;FamilyID=7899&amp;TagValues=4.8.435.606.644.645.3654&amp;Redirect=http:%2F%2Fwww.cnnaudience.com%2Frewards%2F" target="_top"><img src="/web/20001206110400im_/http://a65.g.akamai.net/f/65/1162/1d/images.cnn.com/ads/advertiser/cnn/0011/cnn_gen_tile.gif" border=0 height=60 width=120 alt=""></a><table width="100%" cellpadding=0 cellspacing=0 border=0><tr><td><font face="verdana,ARIAL,sans-serif" size=1><a href="/web/20001206110400/http://www2.cnn.com/event.ng/Type=click&amp;RunID=34133&amp;ProfileID=469&amp;AdID=26826&amp;GroupID=335&amp;FamilyID=7899&amp;TagValues=4.8.435.606.644.645.3654&amp;Redirect=http:%2F%2Fwww.cnnaudience.com%2Frewards%2F" target="_top">Click Here</a></font></td></tr></table></td><td width="8" align=right><a href="/web/20001206110400/http://www2.cnn.com/ads/e.market/"><img src="/web/20001206110400im_/http://www2.cnn.com/images/1998/05/homepage/ad.info.gif" width=7 height=62 border=0 alt="ad info"></a></td><td width="468"><A HREF="/web/20001206110400/http://www2.cnn.com/event.ng/Type=click&amp;RunID=11885&amp;ProfileID=810&amp;AdID=14388&amp;GroupID=80&amp;FamilyID=1100&amp;TagValues=4.8.435.594.1174.3654&amp;Redirect=http:%2F%2Fhoops.si.cnn.com%2F%20" target="_top"><img src="/web/20001206110400im_/http://a89.g.akamai.net/f/89/1162/1d/images.cnn.com/ads/advertiser/cnnsi/0010/bball468.gif" border=0 height=60 width=468 alt=""></a><table width="100%" cellpadding=0 cellspacing=0 border=0><tr><td align="right"><font face="verdana,ARIAL,sans-serif" size=1><a href="/web/20001206110400/http://www2.cnn.com/event.ng/Type=click&amp;RunID=11885&amp;ProfileID=810&amp;AdID=14388&amp;GroupID=80&amp;FamilyID=1100&amp;TagValues=4.8.435.594.1174.3654&amp;Redirect=http:%2F%2Fhoops.si.cnn.com%2F%20" target="_top">Click Here</a></font></td></tr></table></td></tr></table>
-<hr noshade width="600" size="1" align="LEFT">
-</td></tr><tr valign=top><td width="125">
-<table width="125" cellspacing="0" cellpadding="0" border="0">
-<tr>
-<td colspan="2" width="125" valign="top" bgcolor="#CCCCFF"><div class="Navthreespaceindent">
-<a href="/web/20001206110400/http://www2.cnn.com/" class="NvSmBDk">MAINPAGE</a><br>
-<a href="/web/20001206110400/http://www2.cnn.com/WORLD/" class="NvSmBDk">WORLD</a><br>		
-<a href="/web/20001206110400/http://www2.cnn.com/US/" class="NvSmBDk">U.S.</a><br>	
-<a href="/web/20001206110400/http://www2.cnn.com/WEATHER/" class="NvSmBDk">WEATHER</a><br>
-<a href="/web/20001206110400/http://www2.cnn.com/cnnfn/" class="NvSmBDk">BUSINESS</a><br>
-<a href="/web/20001206110400/http://www2.cnn.com/cnnsi/" class="NvSmBDk">SPORTS</a><br>
-<a href="/web/20001206110400/http://www2.cnn.com/TECH/" class="NvSmBDk">TECHNOLOGY</a><br>	
-<a href="/web/20001206110400/http://www2.cnn.com/TECH/space/" class="NvSmBDk">SPACE</a><br>
-<a href="/web/20001206110400/http://www2.cnn.com/HEALTH/" class="NvSmBDk">HEALTH</a><br>
-<a href="/web/20001206110400/http://www2.cnn.com/SHOWBIZ/" class="NvSmBDk">ENTERTAINMENT</a><br>
-<a href="/web/20001206110400/http://www2.cnn.com/ALLPOLITICS/" class="NvSmBDk">POLITICS</a><br>						
-<a href="/web/20001206110400/http://www2.cnn.com/LAW/" class="NvSmBDk">LAW</a><br>
-<a href="/web/20001206110400/http://www2.cnn.com/CAREER/" class="NvSmBDk">CAREER</a><br>
-<a href="/web/20001206110400/http://www2.cnn.com/TRAVEL/" class="NvSmBDk">TRAVEL</a><br>
-<a href="/web/20001206110400/http://www2.cnn.com/FOOD/" class="NvSmBDk">FOOD</a><br>
-<a href="/web/20001206110400/http://www2.cnn.com/STYLE/" class="NvSmBDk">ARTS &amp; STYLE</a><br>
-<a href="/web/20001206110400/http://www2.cnn.com/books/" class="NvSmBDk">BOOKS</a><br>
-<a href="/web/20001206110400/http://www2.cnn.com/NATURE/" class="NvSmBDk">NATURE</a><br>
-<a href="/web/20001206110400/http://www2.cnn.com/SPECIALS/" class="NvSmBDk">IN-DEPTH</a><br>
-<a href="/web/20001206110400/http://www2.cnn.com/SPECIALS/views/" class="NvSmBDk">ANALYSIS</a><br>
-<a href="/web/20001206110400/http://www2.cnn.com/LOCAL/" class="NvSmBDk">LOCAL</a><br>			
-<span class="extraspace"><br></span>
-</div></td></tr>
-<tr bgcolor="#666699"><td colspan="2"><div class="Navthreespaceindent"><span class="NvSmBLt">EDITIONS:</span></div></td></tr>
-<tr> 
-<td colspan="2" bgcolor="#CCCCFF">
-<div class="Navthreespaceindent">
-<a href="/web/20001206110400/http://www.cnn.com/selectedition/europe/" class="NvSmPDk">CNN.com Europe</a><br>
-<span class="extraspace"><br></span>
-<a href="javascript:launchEditionPopup()" class="NvSmPDk">change default edition</a><br><br>
-</div>
-</td>
-</tr>
-<tr bgcolor="#666699"><td colspan="2"><div class="Navthreespaceindent"><span class="NvSmBLt">MULTIMEDIA:</span></div></td></tr>
-<tr>
-<td colspan="2" bgcolor="#CCCCFF">
-<div class="Navthreespaceindent">
-<A HREF="/web/20001206110400/http://www2.cnn.com/videoselect/" class="NvSmPDk">video</A><br>
-<A HREF="/web/20001206110400/http://www2.cnn.com/video_vault/" class="NvSmPDk">video archive</A><br>
-<A HREF="/web/20001206110400/http://www2.cnn.com/audioselect/" class="NvSmPDk">audio</A><br>
-<A HREF="/web/20001206110400/http://www2.cnn.com/interactive/" class="NvSmPDk">multimedia showcase</A><br>
-<A href="/web/20001206110400/http://www2.cnn.com/SEARCH/quiz/quiz.html" class="NvSmPDk">news quiz</A><br>
-<A HREF="/web/20001206110400/http://www2.cnn.com/INDEX/services.html" class="NvSmPDk">more services</A><br><br>
-</div>
-</td>
-</tr>
-</table>
-<table border="0" width="125" cellspacing="0" cellpadding="0" bgcolor="#ccccff">
-<SCRIPT>
-function email()
-{
-address=document.emailform.emailinput.value;
-location='/web/20001206110400/http://www.cnn.com/EMAIL/index.html?'+address;
-}
-</SCRIPT>
-<tr bgcolor="#666699"><td><div class="Navthreespaceindent"><span class="NvSmBLt">E-MAIL:</span></div></td></tr>
-<tr> 
-<td><div class="Navthreespaceindent">
-<span class="NvSmPDk">Subscribe to one of our <a href="/web/20001206110400/http://www2.cnn.com/EMAIL/" class="NvSmPDk">news e-mail lists</a>.<br>Enter your address:</span>
-</div></td>
-</tr>
-<tr>
-<td><FORM name="emailform" onsubmit="email();return false;"><input type="text" name="emailinput" size="10" class="FormLt1">&nbsp;<input type="submit" value="go"></form></td>
-</tr>
-<tr bgcolor="#666699"><td width="125"><div class="Navthreespaceindent"><span class="NvSmBLt">DISCUSSION:</span></div></td></tr>
-<tr> 
-<td><div class="Navthreespaceindent">
-<A href="/web/20001206110400/http://community.cnn.com/" class="NvSmPDk">message boards</A><BR>
-<A href="/web/20001206110400/http://www2.cnn.com/chat/" class="NvSmPDk">chat</A><BR>
-<A href="/web/20001206110400/http://www2.cnn.com/feedback/" class="NvSmPDk">feedback</A><BR><BR>
-</div></td>
-</tr>
-<!--- CNN WEB SITES NAV --->
-<tr bgcolor="#666699"><td width="125"><div class="Navthreespaceindent"><span class="NvSmBLt">CNN WEB SITES:</span></div></td></tr>
-<tr><td bgcolor="#ccccff">
-<MAP name="sites">
-<AREA shape="rect" coords="64, 20, 121, 40" href="/web/20001206110400/http://www2.cnn.com/cnnfn/">
-<AREA shape="rect" coords="0, 20, 64, 40" href="/web/20001206110400/http://www2.cnn.com/ALLPOLITICS/">
-<AREA shape="rect" coords="64, 0, 121, 20" href="/web/20001206110400/http://www2.cnn.com/cnnsi/">
-<AREA shape="rect" coords="0, 0, 64, 20" href="/web/20001206110400/http://my.cnn.com/">
-</MAP>
-<IMG src="/web/20001206110400im_/http://a388.g.akamai.net/7/388/21/7223b3eca936a5/www.cnn.com/images/1999/09/cnn.website.gif" alt="CNN Websites" width=121 height=40 border=0 usemap="#sites"><br>
-</td>
-</tr>
-<tr> 
-<td><div class="Navthreespaceindent">
-<A href="/web/20001206110400/http://fyi.cnn.com/fyi/" class="NvSmPDk">CNNfyi.com</A><BR>
-<A href="/web/20001206110400/http://europe.cnn.com/" class="NvSmPDk">CNN.com Europe</A><BR>
-<A href="/web/20001206110400/http://www2.cnn.com/ASIANOW/" class="NvSmPDk">AsiaNow</A><BR>
-<A href="/web/20001206110400/http://www2.cnn.com/cnnes/" class="NvSmPDk">Spanish</A><BR>
-<A href="/web/20001206110400/http://www2.cnn.com/cnnpt/" class="NvSmPDk">Portuguese</A><BR>
-<A href="/web/20001206110400/http://www.cnn.de/" class="NvSmPDk">German</A><BR>
-<A href="/web/20001206110400/http://www.cnnitalia.it/" class="NvSmPDk">Italian</A><BR>
-<A href="/web/20001206110400/http://cnn.passagen.se/" class="NvSmPDk">Swedish</A><BR>
-<A href="/web/20001206110400/http://cnn.vg.no/" class="NvSmPDk">Norwegian</A><BR>
-<A href="/web/20001206110400/http://www.cnn.dk/" class="NvSmPDk">Danish</A><BR>
-<A href="/web/20001206110400/http://cnn.co.jp/" class="NvSmPDk">Japanese</A><BR>
-<A href="/web/20001206110400/http://www2.cnn.com/QUICKNEWS/chinese.html" class="NvSmPDk">Chinese Headlines</A><BR><BR>
-</div></td>
-</tr>
-<!--- /CNN WEB SITES NAV --->
-<!--TIME NAV -->
-<tr bgcolor="#666699"><td width="125"><div class="Navthreespaceindent"><span class="NvSmBLt">TIME INC. SITES:</span></div></td></tr>
-<tr> 
-<td align=center>
-<FORM name="pathfinder">
-<SELECT name="site" size=1 onchange ="goTW()">
-<OPTION value=""> Go To ... </OPTION>
-<OPTION value="http://www.pathfinder.com/time/">Time.com</OPTION>
-<OPTION value="http://www.pathfinder.com/people/">People</OPTION>
-<OPTION value="http://www.money.com/">Money</OPTION>
-<OPTION value="http://www.pathfinder.com/fortune/">Fortune</OPTION>
-<OPTION value="http://cgi.pathfinder.com/ew/">EW</OPTION>
-</SELECT>
-</td></FORM>
-</tr>
-<!--/TME NAV --> 
-<!--ON TV NAV -->
-<tr bgcolor="#666699"><td width="125"><div class="Navthreespaceindent"><span class="NvSmBLt">CNN NETWORKS:</span></div></td></tr>
-<tr><td>
-<map name="networks.map">
-	<area shape="rect" coords="1, 77, 125, 94" href="/web/20001206110400/http://www2.cnn.com/Airport">
-	<area shape="rect" coords="1, 58, 125, 74" href="/web/20001206110400/http://cnnradio.com/">
-	<area shape="rect" coords="1, 39, 125, 55" href="/web/20001206110400/http://headlinenews.cnn.com/">
-	<area shape="rect" coords="1, 20, 125, 36" href="/web/20001206110400/http://www2.cnn.com/CNNI/">
-	<area shape="rect" coords="1, 1, 125, 17" href="/web/20001206110400/http://www2.cnn.com/CNN/Programs/">
-</map>
-<img src="/web/20001206110400im_/http://a388.g.akamai.net/f/388/21/15m/www.cnn.com/images/0010/network.airport.gif" width=125 height=95 border=0 alt="Networks image" usemap="#networks.map">
-</td>
-</tr>
-<tr> 
-<td><div class="Navthreespaceindent">
-<A HREF="/web/20001206110400/http://www2.cnn.com/CNN/anchors_reporters/" class="NvSmPDk">CNN anchors</A><BR>
-<A HREF="/web/20001206110400/http://www2.cnn.com/TRANSCRIPTS/" class="NvSmPDk">transcripts</A><BR>
-<A HREF="/web/20001206110400/http://www2.cnn.com/LOCAL/coordinates/" class="NvSmPDk">Turner distribution</A><BR><BR>
-</div></td>
-</tr>
-<!--ON TV NAV -->
-<!-- SITE INFO NAV -->
-<tr bgcolor="#666699"><td width="125"><div class="Navthreespaceindent"><span class="NvSmBLt">SITE INFO:</span></div></td></tr>
-<tr> 
-<td><div class="Navthreespaceindent">
-<A HREF="/web/20001206110400/http://www2.cnn.com/feedback/help/" class="NvSmPDk">help</A><BR>
-<A HREF="/web/20001206110400/http://www2.cnn.com/INDEX/" class="NvSmPDk">contents</A><BR>
-<A HREF="/web/20001206110400/http://www2.cnn.com/SEARCH/" class="NvSmPDk">search</A><BR>
-<A HREF="/web/20001206110400/http://www2.cnn.com/ads/e.market/" class="NvSmPDk">ad info</A><BR>
-<A HREF="/web/20001206110400/http://www2.cnn.com/JOBS/" class="NvSmPDk">jobs</A><BR><BR>
-</div></td>
-</tr>
-<tr bgcolor="#666699"><td width="125"><div class="Navthreespaceindent"><span class="NvSmBLt">WEB SERVICES:</span></div></td></tr>
-</table>
-<BR>
-
-<table width="125" cellspacing="0" cellpadding="5" border="0" bgcolor="#dddddd">
-<tr><td bgcolor="#dddddd" align="center" valign="middle"><A HREF="/web/20001206110400/http://www.cnnestore.com/" class="NvSmBDk" style="color: #000099;">CNN e-store</A></td></tr></table>
-
-
-</TD><TD WIDTH="15"><img src="/web/20001206110400im_/http://www2.cnn.com/images/1998/05/homepage/white.gif" width=15 height=1 hspace=0 vspace=0 border=0 alt=""></TD>
-<TD WIDTH=460 VALIGN=TOP>
-<!--=========================-->
-<!--=========================-->
-<IMG SRC="/web/20001206110400im_/http://www2.cnn.com/EMAIL/email.service.banner.gif" WIDTH=460 HEIGHT=40 HSPACE=0 VSPACE=0 BORDER=0 ALT="">
-<table width=460 border=0 cellpadding=0 cellspacing=0>
-<tr valign=top>
-<td align=right>
-<font face="Verdana, Helvetica, Arial,sans-serif" size=2>
-<a name="unsubscribe"></a>
-<A HREF="unsubscribe.html">Unsubscribe</a> from one of our e-mail lists.<br>
-</td>
-</tr>
-</table>
-<hr noshade size=1>
-<a name="subscribe"></a>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE=2>Click on the checkboxes of the e-mails you would like to receive, then fill out the registration form below.</font>
-
-
-<FORM METHOD="POST" ACTION="/web/20001206110400/http://cgi.cnn.com/cgi-bin/quicknews/register" name="emailform1">
-<INPUT TYPE="HIDDEN" NAME="transaction" VALUE="subscribe">
-<INPUT TYPE="hidden" NAME="service" VALUE="0">
-<INPUT TYPE="hidden" NAME="root" VALUE="cnn.com/EMAIL">
-
-<table CELLPADDING=4 CELLSPACING=0 BORDER=1>
-<TR VALIGN=TOP>
-<TD COLSPAN=2>
-<b><font face="Verdana, Helvetica, Arial,sans-serif">President-Elect Alert</font></b>
-</TD>
-</TR>
-<tr VALIGN=MIDDLE>
-<td WIDTH=75>
-<input type=checkbox name="presidentelect HTML">
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">HTML</font>
-<br clear=all>
-<input type=checkbox name="presidentelect TEXT">
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">Text</font>
-</td>
-<td>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="2">Be among the first to find out who will be the next United States president. CNN.com will send a one-time e-mail alert when the U.S. president-elect has been determined.</font>
-</td>
-</tr>
-</table>
-
-
-<P>
-<TABLE BORDER="0" WIDTH=460 CELLPADDING=2 CELLSPACING=0>
-<tr valign=top>
-<TD colspan=5 ALIGN="left"><b><font face="Verdana, Helvetica, Arial,sans-serif">Newsletters</font></b></TD>
-<td width=190 valign=top rowspan=30>
-
-<table align=center width=165 CELLPADDING=2 CELLSPACING=0 border="0">
-<tr bgcolor="#cccccc"><TD colspan="5" ALIGN="left"><b><font face="Verdana, Helvetica, Arial,sans-serif">Program E-mails</font></b></TD></tr>
-
-<tr bgcolor="#cccccc"><td colspan="5"><font face="Verdana, Helvetica, Arial,sans-serif" SIZE="2">Sign up to receive text e-mails about upcoming programming from anchors and producers.</font></td></tr>
-
-<tr bgcolor="#cccccc">
-<td bgcolor="#cccccc" align=right width=20>
-<input type=checkbox name="crossfire TEXT">
-</td>
-<td colspan="4" align=left>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">Crossfire</font>
-</td>
-</tr>
-
-<tr bgcolor="#cccccc">
-<td bgcolor="#cccccc" align=right width=20>
-<input type=checkbox name="twt TEXT">
-</td>
-<td colspan="4" align=left>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">The World Today</font>
-</td>
-</tr>
-
-<tr bgcolor="#cccccc">
-<td bgcolor="#cccccc" align=right width=20>
-<input type=checkbox name="lkl TEXT">
-</td>
-<td colspan="4" align=left>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">Larry King Live</font>
-</td>
-</tr>
-
-<tr bgcolor="#cccccc">
-<td bgcolor="#cccccc" align=right width=20>
-<input type=checkbox name="nstand TEXT">
-</td>
-<td colspan="4" align=left>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">CNN NewsStand</font>
-</td>
-</tr>
-
-<tr bgcolor="#cccccc">
-<td bgcolor="#cccccc" align=right width=20>
-<input type=checkbox name="cnntime TEXT">
-</td>
-<td colspan="4" align=left>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">CNN&TIME</font>
-</td>
-</tr>
-
-<tr bgcolor="#cccccc">
-<td bgcolor="#cccccc" align=right width=20>
-<input type=checkbox name="qa TEXT">
-</td>
-<td colspan="4" align=left>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">Q&A</font>
-</td>
-</tr>
-
-<tr bgcolor="#cccccc">
-<td bgcolor="#cccccc" align=right width=20>
-<input type=checkbox name="cnndot TEXT">
-</td>
-<td colspan="4" align=left>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">CNNdotCOM</font>
-</td>
-</tr>
-
-<tr bgcolor="#cccccc">
-<td bgcolor="#cccccc" align=right width=20>
-<input type=checkbox name="burden TEXT">
-</td>
-<td colspan="4" align=left>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">Burden of Proof</font>
-</td>
-</tr>
-
-<tr bgcolor="#cccccc">
-<td bgcolor="#cccccc" align=right width=20>
-<input type=checkbox name="talkback TEXT">
-</td>
-<td colspan="4" align=left>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">TalkBack Live</font>
-</td>
-</tr>
-
-<tr bgcolor="#FFFFFF">
-<td colspan=5 width=275>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="2"><B>Special Delivery</B> - "What's new"</td>
-<tr>
-
-<tr bgcolor="#FFFFFF">
-<td align=right width=20>
-<input type=checkbox name="Special HTML">
-</td>
-<td align=left width=50>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">HTML</font>
-</td>
-<td align=right width=20>
-<input type=checkbox name="Special Text">
-</td>
-<td align=left width=50>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">Text</font>
-</td>
-<td width=135>
-<A HREF="#special"><FONT face="Verdana, Helvetica, Arial,sans-serif" SIZE="1">(more info)</FONT></A>
-</td>
-</tr>
-
-<tr bgcolor="#FFFFFF">
-<td colspan="5">
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="2"><B>U.S. Storm Watch</B> - Hurricane updates</td>
-<tr>
-
-<tr bgcolor="#FFFFFF">
-<td align=right width=20>
-<input type=checkbox name="U.S. Storm Watch Text">
-</td>
-<td align=left colspan=2 width=70>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">Text only</font>
-</td>
-<td align=center width=50>&nbsp;</td>
-<td width=135>
-<A HREF="#storm"><FONT face="Verdana, Helvetica, Arial,sans-serif" SIZE="1">(more info)</FONT></A>
-</td>
-</tr>
-
-
-<tr bgcolor="#FFFFFF">
-<td colspan="5" width=275>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="2"><B>Correo noticioso</B> - Un resumen noticioso</td>
-<tr>
-
-<tr bgcolor="#FFFFFF">
-<td align=right width=20>
-<input type=checkbox name="Spanish Headlines Text">
-</td>
-<td align=left colspan=2 width=70>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">S&oacute;lo texto</font>
-</td>
-<td align=center width=50>&nbsp;</td>
-<td width=135>
-<A HREF="#spanish"><FONT face="Verdana, Helvetica, Arial,sans-serif" SIZE="1">(M&aacute;s informaci&eacute;n)</FONT></A>
-</td>
-</tr>
-
-<tr bgcolor="#FFFFFF">
-<td colspan=5 width=275>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="2"><B>Sale Mail</B> - Special offers from advertisers</td>
-<tr>
-
-<tr bgcolor="#FFFFFF">
-<td align=right width=20>
-<input type=checkbox name="salemail HTML">
-</td>
-<td align=left width=50>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">HTML</font>
-</td>
-<td align=right width=20>
-<input type=checkbox name="salemail TEXT">
-</td>
-<td align=left width=50>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">Text</font>
-</td>
-<td width=135>
-<A HREF="#salemail"><FONT face="Verdana, Helvetica, Arial,sans-serif" SIZE="1">(more info)</FONT></A>
-</td>
-</tr>
-
-
-
-</table>
-
-</td>
-</tr>
-
-<tr>
-<td colspan=5>
-<table width=275 align=left>
-<tr><td valign=top>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="2"><b>Note:</b></font></td> 
-<td>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="2">Choose <b>TEXT</b> if you cannot view Web pages inside your mail software.<BR><BR></font>
-</td></tr></table>
-</td>
-</tr>
-
-<tr>
-<td colspan=5 width=275>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="2"><B>Breaking News</B> - Alerts</td>
-</tr>
-
-<tr>
-<td align=right width=20>
-<input type=checkbox name="breakingnews TEXT">
-</td>
-<td align=left colspan=2 width=70>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">Text only</font>
-</td>
-<td align=center width=50>&nbsp;</td>
-<td width=135>
-<A HREF="#bnews"><FONT face="Verdana, Helvetica, Arial,sans-serif" SIZE="1">(more info)</FONT></A>
-</td>
-</tr>
-
-<tr>
-<td colspan=5 width=275>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="2"><B>Headline News</B>
-- Daily news summary</td>
-<tr>
-
-<tr>
-<td align=right width=20>
-<input type=checkbox name="QuickNews HTML">
-</td>
-<td align=left width=50>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">HTML</font>
-</td>
-<td align=right width=20><input type=checkbox name="QuickNews Text"></td>
-<td align=left width=50><font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">Text</font></td>
-<td width=135>
-<A HREF="#quick"><FONT face="Verdana, Helvetica, Arial,sans-serif" SIZE="1">(more info)</FONT></A>
-</td>
-</tr>
-
-
-
-<tr>
-<td colspan=5 width=275>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="2"><B>All Politics E-Wire</B> - Political briefing</td>
-<tr>
-
-<tr>
-<td align=right width=20>
-<input type=checkbox name="E-Wire Text">
-</td>
-<td align=left colspan=2 width=70>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">Text only</font>
-</td>
-<td align=center width=50>&nbsp;</td>
-<td width=135>
-<A HREF="#ewire"><FONT face="Verdana, Helvetica, Arial,sans-serif" SIZE="1">(more info)</FONT></A>
-</td>
-</tr>
-
-
-<tr>
-<td colspan=5 width=275>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="2"><B>Sports Today</B>
-- Daily sports capsule</td>
-</tr>
-
-<tr>
-<td align=right width=20>
-<input type=checkbox name="cnnsidaily HTML">
-</td>
-<td align=left width=50>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">HTML</font>
-</td>
-<td align=right width=20>
-<input type=checkbox name="cnnsidaily TEXT">
-</td>
-<td align=left width=50>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">Text</font>
-</td>
-<td width=135>
-<A HREF="#sptoday"><FONT face="Verdana, Helvetica, Arial,sans-serif" SIZE="1">(more info)</FONT></A>
-</td>
-</tr>
-
-<!--
-[[tr]]
-[[td colspan=5 width=275]]
-[[font face="Verdana, Helvetica, Arial,sans-serif" SIZE="2"]][[B]]Pro Football[[/B]]
-- Legal news, analysis[[/td]]
-[[/tr]]
-
-[[tr]]
-[[td align=right width=20]]
-[[input type=checkbox name="lawwatch HTML"]]
-[[/td]]
-[[td align=left width=50]]
-[[font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1"]]HTML[[/font]]
-[[/td]]
-[[td align=right width=20]]
-[[input type=checkbox name="lawwatch TEXT"]]
-[[/td]]
-[[td align=left width=50]]
-[[font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1"]]Text[[/font]]
-[[/td]]
-[[td width=135]]
-[[A HREF="#law"]][[FONT face="Verdana, Helvetica, Arial,sans-serif" SIZE="1"]](more info)[[/FONT]][[/A]]
-[[/td]]
-[[/tr]]
-
-[[tr]]
-[[td colspan=5 width=275]]
-[[font face="Verdana, Helvetica, Arial,sans-serif" SIZE="2"]][[B]]Gold Plus Football[[/B]]
-- Legal news, analysis[[/td]]
-[[/tr]]
-
-[[tr]]
-[[td align=right width=20]]
-[[input type=checkbox name="lawwatch HTML"]]
-[[/td]]
-[[td align=left width=50]]
-[[font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1"]]HTML[[/font]]
-[[/td]]
-[[td align=right width=20]]
-[[input type=checkbox name="lawwatch TEXT"]]
-[[/td]]
-[[td align=left width=50]]
-[[font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1"]]Text[[/font]]
-[[/td]]
-[[td width=135]]
-[[A HREF="#law"]][[FONT face="Verdana, Helvetica, Arial,sans-serif" SIZE="1"]](more info)[[/FONT]][[/A]]
-[[/td]]
-[[/tr]]
--->
-
-
-<tr>
-<td colspan=5 width=275>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="2"><B>Law Watch</B>
-- Legal news, analysis</td>
-</tr>
-
-<tr>
-<td align=right width=20>
-<input type=checkbox name="lawwatch HTML">
-</td>
-<td align=left width=50>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">HTML</font>
-</td>
-<td align=right width=20>
-<input type=checkbox name="lawwatch TEXT">
-</td>
-<td align=left width=50>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">Text</font>
-</td>
-<td width=135>
-<A HREF="#law"><FONT face="Verdana, Helvetica, Arial,sans-serif" SIZE="1">(more info)</FONT></A>
-</td>
-</tr>
-
-<tr>
-<td colspan=5 width=275>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="2"><B>Health Week</B> - News, research</td>
-<tr>
-
-<tr>
-<td align=right width=20>
-<input type=checkbox name="health TEXT">
-</td>
-<td align=left colspan=2 width=70>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">Text only</font>
-</td>
-<td align=center width=50>&nbsp;</td>
-<td width=135>
-<A HREF="#hnews"><FONT face="Verdana, Helvetica, Arial,sans-serif" SIZE="1">(more info)</FONT></A>
-</td>
-</tr>
-
-<tr>
-<td colspan=5 width=275>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="2"><B>Computer Connection</B> - Technology</td>
-<tr>
-
-<tr>
-<td align=right width=20>
-<input type=checkbox name="Computing HTML">
-</td>
-<td align=left width=50>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">HTML</font>
-</td>
-<td align=right width=20>
-<input type=checkbox name="Computing TEXT">
-</td>
-<td align=left width=50>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">Text</font>
-</td>
-<td width=135>
-<A HREF="#computing"><FONT face="Verdana, Helvetica, Arial,sans-serif" SIZE="1">(more info)</FONT></A>
-</td>
-</tr>
-
-<tr>
-<td colspan=5 width=275>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="2"><B>Space Update</B> - Launches, discoveries</td>
-<tr>
-
-<tr>
-<td align=right width=20>
-<input type=checkbox name="space HTML">
-</td>
-<td align=left width=50>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">HTML</font>
-</td>
-<td align=right width=20>
-<input type=checkbox name="space TEXT">
-</td>
-<td align=left width=50>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">Text</font>
-</td>
-<td width=135>
-<A HREF="#space"><FONT face="Verdana, Helvetica, Arial,sans-serif" SIZE="1">(more info)</FONT></A>
-</td>
-</tr>
-
-<tr>
-<td colspan=5 width=275>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="2"><B>Food Central</B>
-- News, recipes, tidbits</td>
-<tr>
-
-<tr>
-<td align=right width=20>
-<input type=checkbox name="foodupdate HTML">
-</td>
-<td align=left width=50>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">HTML</font>
-</td>
-<td align=right width=20>
-<input type=checkbox name="foodupdate TEXT">
-</td>
-<td align=left width=50>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">Text</font>
-</td>
-<td width=135>
-<A HREF="#food"><FONT face="Verdana, Helvetica, Arial,sans-serif" SIZE="1">(more info)</FONT></A>
-</td>
-</tr>
-
-
-<tr>
-<td colspan=5 width=275>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="2"><B>Fringe Mail</B> - Strange events</td>
-<tr>
-
-<tr>
-<td align=right width=20>
-<input type=checkbox name="Fringe HTML">
-</td>
-<td align=left width=50>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">HTML</font>
-</td>
-<td align=right width=20>
-<input type=checkbox name="Fringe Text">
-</td>
-<td align=left width=50>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">Text</font>
-</td>
-<td width=135>
-<A HREF="#fringe"><FONT face="Verdana, Helvetica, Arial,sans-serif" SIZE="1">(more info)</FONT></A>
-</td>
-</tr>
-
-
-<tr>
-<td colspan=5 width=275>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="2"><B>ChatWatcher</B> - Chat schedule</td>
-<tr>
-
-<tr>
-<td align=right width=20>
-<input type=checkbox name="chatwatcher HTML">
-</td>
-<td align=left width=50>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">HTML</font>
-</td>
-<td align=right width=20>
-<input type=checkbox name="chatwatcher TEXT">
-</td>
-<td align=left width=50>
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1">Text</font>
-</td>
-<td width=135>
-<A HREF="#chat"><FONT face="Verdana, Helvetica, Arial,sans-serif" SIZE="1">(more info)</FONT></A>
-</td>
-</tr>
-
-
-
-
-<TR><td colspan=6>&nbsp;</TD></TR>
-
-</TABLE>
-<font face="Verdana, Helvetica, Arial,sans-serif" size=2>
-<P><B>Note:</B>  None of the personally identifiable information below will be given to anyone outside CNN Interactive. To find out more about what CNN does to protect your privacy, read our <a href="/web/20001206110400/http://cnn.com/privacy.html">privacy guidelines</a>.</p>
-
-<TABLE BORDER="0">
-<TR>
-<TD ALIGN="RIGHT" NOWRAP><font face="Verdana, Helvetica, Arial,sans-serif" size="2">First name:</font></TD>
-<TD><INPUT TYPE="TEXT" NAME="first_name" SIZE="15"></TD><TD ALIGN="RIGHT" NOWRAP><font face="Verdana, Helvetica, Arial,sans-serif" size="2">Last name:</font></TD>
-<TD><INPUT TYPE="TEXT" NAME="last_name" SIZE="15"></TD>
-</TR>
-
-<tr>
-        <td ALIGN="RIGHT"><font face="Verdana, Helvetica, Arial,sans-serif" size="2">E-mail address:</font></TD>
-        <TD><INPUT TYPE="TEXT" NAME="email" SIZE="18" maxlength=50></TD><td align=right><font face="Verdana, Helvetica, Arial,sans-serif" size="2"> Country/ZIP: </font></td><td>
-           <INPUT TYPE="TEXT" NAME="location" SIZE="5" MAXLENGTH="5">
-        </TD>
-</TR>
-
-<TR>
-  <TD align=right><font face="Verdana, Helvetica, Arial,sans-serif" size="2">Age:</font></td>
-  <td colspan="3"><INPUT TYPE="TEXT" NAME="age" size=3 MAXLENGTH="3">
-                &nbsp;&nbsp;
-                <SELECT NAME="gender" SIZE="1">
-                <OPTION VALUE="F"><font face="Verdana, Helvetica, Arial,sans-serif">Female</font>
-                <OPTION VALUE="M"><font face="Verdana, Helvetica, Arial,sans-serif">Male</font>
-                </SELECT>
-				&nbsp;&nbsp;
-				<SELECT NAME="income" SIZE="1">
-                <OPTION VALUE="<25"><font face="Verdana, Helvetica, Arial,sans-serif">&lt; $25 K</font>
-                <OPTION VALUE="25-49"><font face="Verdana, Helvetica, Arial,sans-serif">$25-49 K</font>
-                <OPTION VALUE="50-74"><font face="Verdana, Helvetica, Arial,sans-serif">$50-74 K</font>
-                <OPTION VALUE="75-99"><font face="Verdana, Helvetica, Arial,sans-serif">$75-99 K</font>
-                <OPTION VALUE="100+"><font face="Verdana, Helvetica, Arial,sans-serif">$100+ K</font>
-                </SELECT></td>
-</tr>
-<TR>
-<TD></TD>
-<TD COLSPAN="4" align=center><INPUT TYPE="SUBMIT" NAME="submit_button" VALUE="Click here to subscribe!"></TD>
-</TR>
-</TABLE>
-
-
-
-
-</form>
-<hr noshade size=1>
-
-
-<h3><font face="Verdana, Helvetica, Arial,sans-serif">Other E-Mail Lists:</font></h3>
-
-
-
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1"><B>Svenska CNN Nyhetsbrev</B> - Senaste v&auml;rldsnyheterna och lokalnyheterna - <A HREF="/web/20001206110400/http://cnn.passagen.se/nyhetsbrev/">p&aring; svenska</A>! <BR></font>
-<BR>
-
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1"><B>Nyhetsbrev fra CNN Norge</B> - de siste nyhetene fra Norge og verden - <A HREF="/web/20001206110400/http://www.cnn.no/interaktiv/nyhetsbrev/">rett i postboksen din</A>! <BR></font>
-<BR>
-
-
-
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1"><B>Pro Football Extra</B> - Football news, analysis - <A HREF="/web/20001206110400/http://www.processrequest.com/cnnsicom/football/process.asp">Subscribe here</A> <BR></font>
-<BR>
-
-
-<font face="Verdana, Helvetica, Arial,sans-serif" SIZE="-1"><B>Golf Plus Extra</B> - Golf news, tips - <A HREF="/web/20001206110400/http://www.processrequest.com/cnnsicom/contact/process.asp">Subscribe here</A> <BR></font>
-<BR>
-
-
-
-
-<hr size=1 noshade>
-<h3><A NAME="bnews">Breaking News</A></h3>
-<P>Receive an e-mail alert anytime there's a breaking news story at CNN.com.</P>
-<P>
-
-<A HREF="#subscribe">Subscribe here</A>
-</P>             
-
-<hr size=1 noshade>
-
-<h3><A NAME="quick">Headline News (formerly QuickNews)</A></h3>
-
-<P>Get news updates by e-mail. <B>Every morning</B>, CNN Interactive will send a <B>complete news summary</B> to your e-mail address.  Try it out and tell us what you think.</P>
-
-
-<P>
-
-<A HREF="#subscribe">Subscribe here</A><p>
-<A HREF="javascript:openWindow('/EMAIL/latest_mail/HTMLQUICKNEWS.html','testing','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=640,height=480')"> See the latest Headline News mail (HTML Version)</A><p>
-<A HREF="javascript:openWindow('/EMAIL/latest_mail/TEXTQUICKNEWS.txt','testing','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=640,height=480')"> See the latest Headline News mail (Text Version)</A><p>
-
-<hr size=1 noshade>
-<H3><A NAME="ewire">The AllPolitics.com E-wire</A></H3>
-<P>So you want the best of politics on the Web sent directly to you? Sign up forthe AllPolitics E-Wire, a weekly briefing of the past week's <B>hot stories, the inside skinny, and upcoming big events</B>. This free newsletter is produced by the staff of <a href=/web/20001206110400/http://allpolitics.com/>AllPolitics</a> and e-mailed each Monday night.</P>
-
-<P>
-<A HREF="#subscribe">Subscribe here</A>
-</P>
-<A HREF="javascript:openWindow('/EMAIL/latest_mail/TEXTEWIRE.txt','testing','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=640,height=480')"> See the latest AllPolitics.com E-wire e-mail</A><p>
-
-
-
-
-<br clear=all>
-<hr size=1 noshade>
-<H3><a name="sptoday">Sports Today</a></H3>
-<P>
-CNNSI.com's Sports Today is CNN/Sports Illustrated's daily e-mail service delivered free Monday - Friday featuring a capsulized look at the world of sports. It provides readers with the day's top stories, links to new original content on the site, including columns, features and Sports Illustrated staff analysis.
-</P>
-<P>
-<A HREF="#subscribe">Subscribe here</A>
-</P>
-
-
-
-
-
-
-
-
-
-<br clear=all>
-<hr size=1 noshade>
-<H3><a name="law">Law Watch</a></H3>
-<P>
-A weekly newsletter highlighting the best of <B>legal news and commentary</B><!-- from the <a href="/LAW/">CNN.com Law Center</a> -->. Subscribers to this list will also receive <B>breaking news bulletins on major trial verdicts</B> delivered straight from the courtroom to their desktops. 
-</P>
-<P>
-<A HREF="#subscribe">Subscribe here</A>
-</P>
-<A HREF="javascript:openWindow('/EMAIL/latest_mail/HTMLLAWWATCH.html','testing','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=640,height=480')"> See the latest Law Watch mail (HTML Version)</A><p>
-<A HREF="javascript:openWindow('/EMAIL/latest_mail/TEXTLAWWATCH.txt','testing','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=640,height=480')"> See the latest Law Watch (Text Version)</A><p>
-
-<hr size=1 noshade>
-<h3><A NAME="hnews">Health Week</A></h3>
-<P>Keep up with <b>medical journals and research</b> from around the world. CNN.com's Health Week will arrive every Friday in your inbox.
-</P>
-<P>
-
-<A HREF="#subscribe">Subscribe here</A><p>
-<A HREF="javascript:openWindow('/EMAIL/latest_mail/TEXTHEALTH.txt','testing','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=640,height=480')"> See the latest Headline News mail (Text Version)</A><p>
-
-
-</P>
-
-<br clear=all>
-<hr size=1 noshade>
-<H3><a name="computing">Computer Connection</a></H3>
-<P>
-Trying to stay on the cutting edge of technology?  Sign up for the Computer Connection and get the <B>latest news on hardware, software, the Internet and more</b>.
-<P>
-Read the latest Y2K update and check out our Tip of the Week to help keep your machine running smoothly.  Get connected every Wednesday.
-</P>
-<P>
-<A HREF="#subscribe">Subscribe here</A>
-</P>
-
-<A HREF="javascript:openWindow('/EMAIL/latest_mail/HTMLCOMPUTING.html','testing','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=640,height=480')"> See the latest Computer Connection mail (HTML Version)</A><p>         
-<A HREF="javascript:openWindow('/EMAIL/latest_mail/TEXTCOMPUTING.txt','testing','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=640,height=480')"> See the latest Computer Connection (Text Version)</A><p> 
-
-
-<br clear=all>
-<hr size=1 noshade>
-<H3><a name="space">Space Update</a></H3>
-<P>
-Keep up with the latest <B>missions and discoveries</B>.  Learn about <B>space exploration</B>.  Read Miles O'Brien's latest <B>Downlinks</B> column.  CNN.com's Space Update lands in your inbox every Thursday.
-</P>          
-<P>
-<A HREF="#subscribe">Subscribe here</A>
-</P>
-<A HREF="javascript:openWindow('/EMAIL/latest_mail/HTMLSPACE.html','testing','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=640,height=480')"> See the latest Space Update mail (HTML Version)</A><p>
-<A HREF="javascript:openWindow('/EMAIL/latest_mail/TEXTSPACE.txt','testing','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=640,height=480')"> See the latest Space Update (Text Version)</A><p>        
-<br clear=all>
-<hr size=1 noshade>
-<H3><a name="food">Food Central</a></H3>
-<P>
-What's stewing and brewing in the world of food.  <b>News briefs, a favorite recipe</b> and more will be served up every Friday.
-</P>
-<P>
-<A HREF="#subscribe">Subscribe here</A>
-</P>
-<A HREF="javascript:openWindow('/EMAIL/latest_mail/HTMLFOODUPDATE.html','testing','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=640,height=480')"> See the latest Food Central mail (HTML Version)</A><p>
-<A HREF="javascript:openWindow('/EMAIL/latest_mail/TEXTFOODUPDATE.txt','testing','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=640,height=480')"> See the latest Food Central (Text Version)</A><p>
-
-
-<hr size=1 noshade>
-<h3><A NAME="fringe">Fringe Mail</A></h3>
-<P>Every Thursday we'll send you a summary of the <B>strange, bizarre or just plain silly events</B> in the news from the past week. See a sample of Fringe stories on the <A HREF="/web/20001206110400/http://cnn.com/US/index.html#fringe">U.S. page</A> or <A HREF="/web/20001206110400/http://cnn.com/WORLD/index.html#fringe">World page</A>.</P>
-
-<P>
-<A HREF="#subscribe">Subscribe here</A>
-</P>
-<A HREF="javascript:openWindow('/EMAIL/latest_mail/HTMLCNNFRINGE.html','testing','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=640,height=480')"> See the latest Fringe mail (HTML Version)</A><p>
-<A HREF="javascript:openWindow('/EMAIL/latest_mail/TEXTCNNFRINGE.txt','testing','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=640,height=480')"> See the latest Fringe mail (Text Version)</A><p>
-<hr size=1 noshade>
-<H3><A NAME="chat">ChatWatcher</A></H3>
-
-<P>What's all the chatter about?  From presidential candidates to astronauts, CNN.com has the guests you want to talk to!  Find out every Monday who is <B>chatting with us this week</B> at CNN.com...and stay tuned for occasional e-lert updates announcing special guest and breaking news chats.</P>
-
-<P>
-<A HREF="#subscribe">Subscribe here</A>
-</P>
-<A HREF="javascript:openWindow('/EMAIL/latest_mail/HTMLCHATWATCHER.html','testing', 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=640,height=480')"> See the latest ChatWatcher e-mail (HTML version)</A><p> 
-<A HREF="javascript:openWindow('/EMAIL/latest_mail/TEXTCHATWATCHER.txt','testing','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=640,height=480')"> See the latest ChatWatcher e-mail (Text version)</A><p>
-
-<hr size=1 noshade>
-<H3><a name="special">Special Delivery!</a></H3>
-<P>
-Register here to start receiving Special Delivery, the <B>weekly e-mail update</B> for CNN Interactive users. With Special Delivery, you'll get updates on the latest additions and happenings at CNN Interactive -- <B>special sections, new technologies, resources, and more</B>. Plus, find out about upcoming special programming and guests on CNN. Special Delivery will be sent directly to you, leaving CNN Interactive every Tuesday.
-</P>
-<P>
-<A HREF="#subscribe">Subscribe here</A>
-</P>
-<A HREF="javascript:openWindow('/EMAIL/latest_mail/HTMLPLUS.html','testing','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=640,height=480')"> See the latest Special Delivery mail (HTML Version)</A><p>
-<A HREF="javascript:openWindow('/EMAIL/latest_mail/TEXTPLUS.txt','testing','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=640,height=480')"> See the latest Special Delivery mail (Text Version)</A><p>
-
-
-
-<hr size=1 noshade>
-<h3><A NAME="storm">U.S. Storm Watch</A></h3>
-<P>During hurricane season, we'll update you with the latest on tropical storms and hurricanes threatening the U.S. coastline. You'll receive information about the storm's status, movements, watches, warnings and projected paths.</P>
-<P>
-<A HREF="#subscribe">Subscribe here</A>
-</P>
-
-<!-- <A HREF="javascript:openWindow('/EMAIL/latest_mail/TEXTSTORMWATCH.txt','testing','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=640,height=480')"> See the latest Storm Watch mail</A><p>-->
-
-<hr size=1 noshade>
-<h3><A NAME="spanish">Correo noticioso</A></h3>
-<P>Reciba en su correo electr&oacute;nico un resumen de las noticias m&aacute;s destacadas.  CNNenEspa&ntilde;ol.com lo mantendr&aacute; informado a primera hora de cada ma&ntilde;ana.</P>
-<P>
-<A HREF="#subscribe">Suscr&iacute;base aqu&iacute; </A>
-</P>
-
-<A HREF="javascript:openWindow('/EMAIL/latest_mail/TEXTSPANISHHEADLINES.txt','testing','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=640,height=480')"> Lea el correo noticioso m&aacute;s reciente</A><p>
-
-<hr size=1 noshade>
-<H3><a name="salemail">Sale Mail</a></H3>
-<P>
-Receive updates about sales, special deals and coupons available from the companies that advertise on CNN.com.
-</P>
-<P>
-<A HREF="#subscribe">Subscribe here</A>
-</P>
-<!-------- LATEST ----------
-<A HREF="javascript:openWindow('/EMAIL/latest_mail/HTMLSALEMAIL.html','testing','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=640,height=480')"> See the latest Sale Mail (HTML Version)</A><p>                     
-<A HREF="javascript:openWindow('/EMAIL/latest_mail/TEXTSALEMAIL.txt','testing','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=640,height=480')"> See the latest Sale Mail (Text Version)</A><p>  
---------------------------->
-
-</font>
-
-
-
-
-
-<!--=========================-->
-
-<!--=========================-->
-
-<!--=========================-->
-
-
-<CENTER><!-- search box -->
-
-<FORM action="/web/20001206110400/http://search.cnn.com/query.html" method="get" name="seek_bot" onsubmit="return validate(this);">
-<TABLE border=0 cellpadding=0 cellspacing=0 width="450" bgcolor="#666666">
-<TR><TD>&nbsp;<SPAN class="FSnBMdLt">Search</SPAN></TD><TD>
-<SELECT style="width:120px;" align="middle" name=sites>
-<OPTION value="CNN">CNN.com</OPTION>
-<OPTION value="CNNSI">CNNSI.com</OPTION>
-<OPTION value="CNNfn">CNNfn.com</OPTION>
-<!-- <OPTION value="TIME">TIME.com</OPTION> -->
-<OPTION value="Internet">The Web</OPTION>
-</SELECT>
-<INPUT name=qc type=hidden value=""><INPUT name=col type=hidden value=cnni><INPUT name=qm type=hidden value=0><INPUT name=st type=hidden value=1><INPUT name=nh type=hidden value=10><INPUT name=lk type=hidden value=1><INPUT name=rf type=hidden value=1><INPUT type=hidden name=look value=""><INPUT type=hidden name=key value=""><INPUT TYPE="HIDDEN" NAME="venue" VALUE="all"><INPUT TYPE="HIDDEN" NAME="keyword" value=""><input type=hidden name=qp value=""><input type=hidden name=comefrom value="izcb-search"><input type=hidden name=isp value=zcb></TD><TD><INPUT  style="width:120px;" type="text" name=qt size="25"></TD><TD><INPUT type="submit" value="Find"></TD></TR></TABLE></FORM>
-
-<!-- /search box -->
-</CENTER>
-
-
-<tr><td colspan="3">
-
-<hr noshade width="600" size="1" align="LEFT">
-
-<table border="0" width="600" cellspacing="0" cellpadding="0"><tr><td width="120">&nbsp;</td><td width="8" align=right>&nbsp;</td><td width="468"><table cellpadding=0 cellspacing=0 border=0>
-<tr><td><A HREF="/web/20001206110400/http://www2.cnn.com/event.ng/Type=click&amp;RunID=35805&amp;ProfileID=481&amp;AdID=8918&amp;GroupID=1032&amp;FamilyID=328&amp;TagValues=4.8.435.594.657.3654&amp;Redirect=http:%2F%2Fwww.cnn.com%2FFOOD" target="_top"><img src="/web/20001206110400im_/http://a92.g.akamai.net/f/92/1162/1d/images.cnn.com/ads/advertiser/promo/9811/24/promo_cnn_foodorange_cnn.gif" border=0 width=468 height=60></a></td></tr>
-<tr><td align="right"><font face="verdana,ARIAL,sans-serif" size=1><a class="adBannerAltText" href="/web/20001206110400/http://www2.cnn.com/event.ng/Type=click&amp;RunID=35805&amp;ProfileID=481&amp;AdID=8918&amp;GroupID=1032&amp;FamilyID=328&amp;TagValues=4.8.435.594.657.3654&amp;Redirect=http:%2F%2Fwww.cnn.com%2FFOOD" target="_top">Covering all the major food groups! Click here to taste</a></font></td></tr>
-</table></td></tr></table>
-
-
-
-</td></tr>
-
-
-
-</TD></TR></TABLE>
-
-
-
-<table border="0" width="600" cellspacing="0" cellpadding="0"><tr><td width=125>&nbsp;</td>
-
-<td width="15"><img src="/web/20001206110400im_/http://www2.cnn.com/images/1998/05/homepage/white.gif" width=15 height=1 hspace=0 vspace=0 border=0 alt=""></td><td width="460"><center><br clear=all><font face="HELVETICA, ARIAL, sans-serif" size="2"><a href="#top"> Back to the top</a></font><font face="HELVETICA, ARIAL, sans-serif" size="1"><br>&#169; 2000 Cable News Network. All Rights Reserved.<br><a href="/web/20001206110400/http://www2.cnn.com/interactive_legal.html">Terms</a> under which this service is provided to you.<br>Read our <A HREF="/web/20001206110400/http://www2.cnn.com/privacy.html">privacy guidelines</A>.</font><br></center></td></tr></table>
-
-
-
-</BODY>
-
-</HTML>
-
-
-
-
-
-
-
-<!--
-     FILE ARCHIVED ON 11:04:00 Dec 6, 2000 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 3:29:38 Jan 6, 2015.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
--->

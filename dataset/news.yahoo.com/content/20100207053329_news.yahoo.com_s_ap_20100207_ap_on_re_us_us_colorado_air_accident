@@ -1,0 +1,1375 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-US">
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app15.us.archive.org";archive_analytics.values.server_ms=173;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+
+                            <link rel="stylesheet" href="/web/20100209061816cs_/http://l.yimg.com/b/news/combo/D7H8FL9F?http%3A//l.yimg.com/d/combo%3Fuh/15/css/uh-1.0.28.css&amp;story/assets/css/1.0.4/generic/story.css" type="text/css"></link>
+                        
+
+                    <link rel="canonical" href="http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident"></link>
+                
+    
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
+    <meta name="description" content="Investigators plan to talk to other pilots to determine whether they heard any communications between two small planes just before an in-flight collision in Colorado killed all three people on board both planes.">
+    <meta name="keywords" content="small planes,Boulder Municipal Airport,Cirrus SR20,U.S. National,AP">
+    
+    <title>Authorities investigate fatal Colorado plane crash - Yahoo! News</title>   
+
+    
+</head>
+
+<body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "9";
+var displayMonth = "Feb";
+var displayYear = "2010";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20100209061816" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Jan
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 6:18:16 Feb 9, 2010">FEB</td>
+		<td class="f" nowrap="nowrap">
+		
+		    Mar
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 6:18:16 Feb 9, 2010">9</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20100211005911/http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident" title="0:59:11 Feb 11, 2010"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2009
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 6:18:16 Feb 9, 2010">2010</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2011
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20100209061816*/http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident" title="See a list of every capture for this URL">7 captures</a>
+           <div class="r" title="Timespan for captures of this URL">9 Feb 10 - 16 Feb 10</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:1:070000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+    <script type="text/javascript">document.body.className = 'js';</script>
+
+    <div id="doc4" class="yui-t6">
+
+        <a href="#navigation" class="shortcut">Skip to navigation &raquo;</a>
+        <a href="#bd" class="shortcut">Skip to content &raquo;</a>
+    
+        <div id="hd">
+        
+            <div class="mod ad mod-first ad_header" role="banner">
+    <div class="bd">
+            <!-- Ad Keywords: data; video; it; It; fuel; help; home;-->
+<!-- SpaceID=0 robot -->
+    </div>
+</div>
+
+        
+            <div id="navigation" role="navigation">
+    <ul id="navigation-primary" class="ult-section primary">
+                <li class="ult-position">
+            <a href="/web/20100209061816/http://news.yahoo.com/" class="first" mapleUltParams="sec=tn">Home</a>
+        </li>
+                <li class="ult-position active">
+            <a href="/web/20100209061816/http://news.yahoo.com/us" mapleUltParams="sec=tn">U.S.</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209061816/http://news.yahoo.com/business" mapleUltParams="sec=tn">Business</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209061816/http://news.yahoo.com/world" mapleUltParams="sec=tn">World</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209061816/http://news.yahoo.com/entertainment" mapleUltParams="sec=tn">Entertainment</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209061816/http://news.yahoo.com/sports" mapleUltParams="sec=tn">Sports</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209061816/http://news.yahoo.com/technology" mapleUltParams="sec=tn">Tech</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209061816/http://news.yahoo.com/politics" mapleUltParams="sec=tn">Politics</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209061816/http://news.yahoo.com/science" mapleUltParams="sec=tn">Science</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209061816/http://news.yahoo.com/health" mapleUltParams="sec=tn">Health</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209061816/http://news.yahoo.com/opinion" mapleUltParams="sec=tn">Opinion</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209061816/http://news.yahoo.com/most-popular" mapleUltParams="sec=tn">Most Popular</a>
+        </li>
+            </ul><!-- end: .primary -->
+
+        <ul id="navigation-secondary" class="ult-section secondary">
+                <li class="ult-position">
+            <a href="/web/20100209061816/http://news.yahoo.com/video/us" class="first" mapleUltParams="sec=sn">U.S. Video</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209061816/http://news.yahoo.com/local-news" mapleUltParams="sec=sn">Local News</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209061816/http://news.yahoo.com/us/education" mapleUltParams="sec=sn">Education</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209061816/http://news.yahoo.com/us/religion" mapleUltParams="sec=sn">Religion</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209061816/http://news.yahoo.com/politics" mapleUltParams="sec=sn">Politics</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209061816/http://news.yahoo.com/us/crimes-trials" mapleUltParams="sec=sn">Crimes and Trials</a>
+        </li>
+                <li class="ult-position">
+            <a href="/web/20100209061816/http://news.yahoo.com/topics" mapleUltParams="sec=sn">Topics</a>
+        </li>
+            </ul><!-- end: .secondary -->
+    </div><!-- end: #navigation -->
+
+            
+            <div id="yn-popular-searches" class="mod">
+    <h3>Popular Searches:</h3>
+    <div class="popular-searches">
+        <ul>
+                        <li class="first">
+                <a href="/web/20100209061816/http://news.search.yahoo.com/news/search?p=super+bowl+commercials" tabindex="-1">super bowl commercials</a>
+            </li>
+                        <li>
+                <a href="/web/20100209061816/http://news.search.yahoo.com/news/search?p=charlie+sheen" tabindex="-1">charlie sheen</a>
+            </li>
+                        <li>
+                <a href="/web/20100209061816/http://news.search.yahoo.com/news/search?p=danica+patrick" tabindex="-1">danica patrick</a>
+            </li>
+                        <li>
+                <a href="/web/20100209061816/http://news.search.yahoo.com/news/search?p=dow+jones" tabindex="-1">dow jones</a>
+            </li>
+                        <li>
+                <a href="/web/20100209061816/http://news.search.yahoo.com/news/search?p=keira+knightley" tabindex="-1">keira knightley</a>
+            </li>
+                        <li>
+                <a href="/web/20100209061816/http://news.search.yahoo.com/news/search?p=china" tabindex="-1">china</a>
+            </li>
+                        <li>
+                <a href="/web/20100209061816/http://news.search.yahoo.com/news/search?p=super+bowl+2010+commercials" tabindex="-1">super bowl 2010 commercials</a>
+            </li>
+                        <li>
+                <a href="/web/20100209061816/http://news.search.yahoo.com/news/search?p=dear+john" tabindex="-1">dear john</a>
+            </li>
+                        <li>
+                <a href="/web/20100209061816/http://news.search.yahoo.com/news/search?p=toyota+recall" tabindex="-1">toyota recall</a>
+            </li>
+                        <li>
+                <a href="/web/20100209061816/http://news.search.yahoo.com/news/search?p=iran" tabindex="-1">iran</a>
+            </li>
+                        <li>
+                <a href="/web/20100209061816/http://news.search.yahoo.com/news/search?p=peyton+manning" tabindex="-1">peyton manning</a>
+            </li>
+                        <li>
+                <a href="/web/20100209061816/http://news.search.yahoo.com/news/search?p=betty+white" tabindex="-1">betty white</a>
+            </li>
+                        <li>
+                <a href="/web/20100209061816/http://news.search.yahoo.com/news/search?p=boy+scouts" tabindex="-1">boy scouts</a>
+            </li>
+                        <li>
+                <a href="/web/20100209061816/http://news.search.yahoo.com/news/search?p=new+orleans+saints" tabindex="-1">new orleans saints</a>
+            </li>
+                        <li>
+                <a href="/web/20100209061816/http://news.search.yahoo.com/news/search?p=tiger+woods" tabindex="-1">tiger woods</a>
+            </li>
+                        <li>
+                <a href="/web/20100209061816/http://news.search.yahoo.com/news/search?p=michael+jackson" tabindex="-1">michael jackson</a>
+            </li>
+                        <li>
+                <a href="/web/20100209061816/http://news.search.yahoo.com/news/search?p=snickers" tabindex="-1">snickers</a>
+            </li>
+                        <li>
+                <a href="/web/20100209061816/http://news.search.yahoo.com/news/search?p=john+murtha" tabindex="-1">john murtha</a>
+            </li>
+                        <li>
+                <a href="/web/20100209061816/http://news.search.yahoo.com/news/search?p=david+letterman" tabindex="-1">david letterman</a>
+            </li>
+                        <li>
+                <a href="/web/20100209061816/http://news.search.yahoo.com/news/search?p=space+shuttle+endeavor" tabindex="-1">space shuttle endeavor</a>
+            </li>
+                    </ul>
+    </div>
+    <form action="/web/20100209061816/http://news.search.yahoo.com/news/search" method="get" role="search">
+        <input type="hidden" name="ei" value="UTF-8"/>
+        <ul>
+            <li class="search-type yn-menu">
+                <a href="#" class="menu-trigger">search menu</a>
+                <div class="menu-bd">
+                    <fieldset class="menu-content">
+                        <legend>Search Type</legend>
+                        
+                        <span>Choose a search type from the items below</span>
+
+                        <input type="radio" name="c" value="" id="search_all" checked="checked">                        
+                        <label for="search_all" class="first">All News</label>
+
+                        <input type="radio" name="c" value="yahoo_news" id="search_ynews">                        
+                        <label for="search_ynews">Yahoo! News Only</label>
+
+                        <input type="radio" name="c" value="images" id="search_images">                        
+                        <label for="search_images">News Photos</label>
+
+                        <input type="radio" name="c" value="av" id="search_av">                        
+                        <label for="search_av">Video/Audio</label>
+                    </fieldset>
+                </div>
+            </li>
+            <li class="search-text"><input type="text" name="p" value=""></li>
+            <li class="search-submit"><span><button type="submit"><span>News Search</span></button></span></li>
+            <li><a href="/web/20100209061816/http://news.search.yahoo.com/news/advanced" class="advanced-search">Advanced Search</a></li>
+        </ul>
+    </form>
+</div>
+
+            
+                <div id="banner-ad">
+        <div class="bd">
+            <!-- SpaceID=0 robot -->
+        </div>
+    </div>
+
+
+            
+
+        </div>
+        
+        <div id="bd">
+                
+            <div id="yui-main">
+        
+                <div class="yui-b" role="main">
+     
+                    
+<div class="promobar mod promobar-top_bar">
+
+    <div class="normal blue">
+        <div class="bd">
+            <a href="/web/20100209061816/http://www.weather.com/newscenter/?par=yahoo&amp;site=www.yahoo.com&amp;promo=top&amp;cm_ven=Yahoo&amp;cm_cat=www.yahoo.com&amp;cm_pla=weatherpage&amp;cm_ite=Other" class="media"><img src="/web/20100209061816im_/http://l.yimg.com/a/p/us/news/editorial/0/bd/0bdc052135d41557cce37703b3baed9d.jpeg" width="58" height="39" alt=""></a>
+            <h4><a href="/web/20100209061816/http://www.weather.com/newscenter/?par=yahoo&amp;site=www.yahoo.com&amp;promo=top&amp;cm_ven=Yahoo&amp;cm_cat=www.yahoo.com&amp;cm_pla=weatherpage&amp;cm_ite=Other"><strong>WINTER WALLOP:</strong>Get the latest updates on storms in the Midwest and Northeast</a></h4>
+            <a href="/web/20100209061816/http://www.weather.com/newscenter/?par=yahoo&amp;site=www.yahoo.com&amp;promo=top&amp;cm_ven=Yahoo&amp;cm_cat=www.yahoo.com&amp;cm_pla=weatherpage&amp;cm_ite=Other"></a>
+        </div><!-- end bd -->
+    </div>    
+        
+</div>
+
+<div id="yn-story" class="ult-section mod ">
+
+    <div class="hd">
+    
+        
+        
+            <h1 id="yn-story-title">Authorities investigate fatal Colorado plane crash</h1>
+        <a href="/web/20100209061816/http://us.rd.yahoo.com/dailynews/ap/brand/SIG=11f589428/**http%3A%2F%2Fwww.ap.org%2Ftermsandconditions" id="yn-prvdlink" class="provider-logo ult-section" mapleUltParams="sec=yn-prvdlink">
+        <img src="/web/20100209061816im_/http://l.yimg.com/a/i/us/nws/2008/news/us/assets/common/images/transparent.png" width="106" height="27" alt="AP" class="lzbg" style="background-image: url(/web/20100209061816im_/http://l.yimg.com/a/i/us/nws/p/ap_logo_106.png);">    </a>
+    
+        
+        	
+	<div id="yup-container"></div>
+	<script type="text/javascript">
+		
+		if(!YAHOO){var YAHOO = {};}
+		
+		 YAHOO.BuzzWidgetTries = 0;
+		
+		(function(){
+		    if(YAHOO && YAHOO.util && YAHOO.util.Event && YAHOO.Media && YAHOO.Media.Buzz){
+		   (function(){ var buzz = new YAHOO.Media.Buzz("buzz-top",{"sync":"buzz-bottom","countPosition":"after","fetchCount":false,"loc_strings":{"buzz_up":"Buzz up!","buzzed":"Buzzed!","one_vote":"{0} vote","n_votes":"{0} votes"}});buzz.onSuccess.subscribe(function(){ if(YAHOO.Updates){ YAHOO.Updates.Disclosure.showDialog({"container":"yup-container","source":"buzz","type":"buzzUp","lang":"en-US"}); } }); })();(function(){ var buzz = new YAHOO.Media.Buzz("buzz-bottom",{"sync":"buzz-top","countPosition":"after","fetchCount":true,"loc_strings":{"buzz_up":"Buzz up!","buzzed":"Buzzed!","one_vote":"{0} vote","n_votes":"{0} votes"}});buzz.onSuccess.subscribe(function(){ if(YAHOO.Updates){ YAHOO.Updates.Disclosure.showDialog({"container":"yup-container","source":"buzz","type":"buzzUp","lang":"en-US"}); } }); })();    
+		    } else if(YAHOO.BuzzWidgetTries < 10000) {
+		        YAHOO.BuzzWidgetTries += 500;
+		        setTimeout(arguments.callee, 500);
+		    }
+		})();	
+	
+	</script>
+    <ul id="top" class="tools mod ult-section">
+            <li class="buzz ult-position">
+	
+					
+		<form method="post" action="/web/20100209061816/http://buzz.yahoo.com/vote/" class="buzz" id="buzz-top">
+			<input type="hidden" name="publisherurn" value="y_news">
+			<input type="hidden" name="guid" value="ap/20100207/us_colorado_air_accident">
+			<input type="hidden" name=".done" value="/article/y_news/ap/20100207/us_colorado_air_accident">
+			<input type="hidden" name="assettype" value="article">
+			<input type="hidden" name="votetype" value="1">
+			<input type="hidden" name="from" value="orion">
+			<input type="hidden" name="key" value="f5e19">
+			<input type="hidden" name=".crumb" value="">
+			<input type="hidden" name="logged" value="0">
+			<button type="submit">Buzz up!<span class="right"></span></button>
+		</form>
+		
+		            </li>
+            <li class="send yn-menu yn-menu2 ult-position">
+                <a href="/web/20100209061816/http://m2f.news.yahoo.com/mailto/?prop=news&amp;locale=us&amp;url=http%3A%2F%2Fnews.yahoo.com%2Fs%2Fap%2F20100207%2Fap_on_re_us%2Fus_colorado_air_accident&amp;title=Authorities+investigate+fatal+Colorado+plane+crash&amp;h1=ap/20100207/ap_on_re_us/us_colorado_air_accident&amp;h2=T&amp;h3=519" class="menu-hd1 ult-nofollow" mapleUltParams="sec=top">Send</a>
+                <div class="menu-bd">
+                    <div class="menu-content">
+                        <ul>
+                            <li>
+                                <a href="/web/20100209061816/http://m2f.news.yahoo.com/mailto/?prop=news&amp;locale=us&amp;url=http%3A%2F%2Fnews.yahoo.com%2Fs%2Fap%2F20100207%2Fap_on_re_us%2Fus_colorado_air_accident&amp;title=Authorities+investigate+fatal+Colorado+plane+crash&amp;h1=ap/20100207/ap_on_re_us/us_colorado_air_accident&amp;h2=T&amp;h3=519" class="email" mapleUltParams="sec=top">Email</a>
+                            </li>
+                            <li class="hide">
+                                <a href="/web/20100209061816/http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident" class="im ult-nofollow" mapleUltParams="sec=top"><abbr title="Yahoo! Instant Messenger">IM</abbr></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="share yn-menu yn-menu2 ult-position">
+                <a href="/web/20100209061816/http://delicious.com/save?url=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident&amp;title=Authorities+investigate+fatal+Colorado+plane+crash+-+Yahoo%21+News" class="menu-hd1 ult-nofollow" mapleUltPriority="1000" mapleUltParams="sec=top">Share</a>
+                <div class="menu-bd">
+                    <div class="menu-content">
+                        <ul>
+                            <li>
+                                <a href="/web/20100209061816/http://delicious.com/save?url=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident&amp;title=Authorities+investigate+fatal+Colorado+plane+crash+-+Yahoo%21+News" class="delicious ult-nofollow" mapleUltPriority="1000"  onclick="if (navigator.userAgent.indexOf('MSIE') &gt; 0){window.location.href=this.href}else{delsave=window.open(this.href+'&amp;noui=1','delSave','location=yes,links=no,scrollbars=no,toolbar=no,height=375,width=700');}; return false;"  mapleUltParams="sec=top">Delicious</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100209061816/http://digg.com/submit?phase=2&amp;url=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident" class="digg popup" mapleUltParams="sec=top">Digg</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100209061816/http://www.facebook.com/sharer.php?u=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident&amp;t=Authorities+investigate+fatal+Colorado+plane+crash+-+Yahoo%21+News" class="facebook popup" mapleUltParams="sec=top">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100209061816/http://cgi.fark.com/cgi/fark/farkit.pl?u=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident&amp;h=Authorities+investigate+fatal+Colorado+plane+crash+-+Yahoo%21+News" class="fark popup" mapleUltParams="sec=top">Fark</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100209061816/http://www.newsvine.com/_tools/seed&amp;save?u=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident&amp;h=Authorities+investigate+fatal+Colorado+plane+crash+-+Yahoo%21+News" class="newsvine popup" mapleUltParams="sec=top">Newsvine</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100209061816/http://reddit.com/submit?url=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident" class="reddit popup" mapleUltParams="sec=top">Reddit</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100209061816/http://www.stumbleupon.com/submit?url=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident&amp;title=Authorities+investigate+fatal+Colorado+plane+crash+-+Yahoo%21+News" class="stumbleupon popup" mapleUltParams="sec=top">StumbleUpon</a>
+                            </li>                         
+                            <li>
+                                <a href="/web/20100209061816/http://technorati.com/faves?sub=addfavbtn&amp;add=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident" class="technorati popup" mapleUltParams="sec=top">Technorati</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100209061816/http://twitter.com/home?status=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident&amp;title=Authorities+investigate+fatal+Colorado+plane+crash+-+Yahoo%21+News" class="twitter popup" mapleUltParams="sec=top">Twitter</a>
+                            </li>                               
+                            <li>
+                                <a href="/web/20100209061816/http://myweb2.search.yahoo.com/myresults/bookmarklet?t=Authorities+investigate+fatal+Colorado+plane+crash+-+Yahoo%21+News&amp;u=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident&amp;ei=UTF-8&amp;ts=1265696296" class="yahoo-bookmarks popup" mapleUltParams="sec=top">Yahoo!&nbsp;Bookmarks</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="print last ult-position">
+                <a href="/web/20100209061816/http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident/print" mapleUltParams="sec=top">Print</a>
+            </li>
+                    </ul><!-- end: .tools -->
+
+	
+        
+        
+        
+    </div><!-- end: .hd -->
+    
+    <div class="bd" role="main" aria-labelledby="yn-story-title">
+        
+        
+
+
+    
+        
+<div class="byline">
+        <cite class="vcard">
+        By SAMANTHA ABERNETHY, Associated Press Writer        <span class="fn org">Samantha Abernethy, Associated Press Writer</span>
+    </cite>
+    &ndash;
+    <abbr title="2010-02-07T15:51:00-0800" class="timedate">Sun&nbsp;Feb&nbsp;7, 6:51&nbsp;pm&nbsp;ET</abbr></div><!-- end .byline -->
+
+
+
+            <div class="yn-story-content">
+                <p>BOULDER, Colo. &ndash; Investigators plan to talk to other pilots to determine whether they heard any communications between two <span class="yshortcuts" id="lw_1265586670_0">small planes</span> just before an in-flight collision in Colorado killed all three people on board both planes.</p>
+                <p>With no <span class="yshortcuts" id="lw_1265586670_1">black box data</span>, investigators are relying heavily on video, photos and witnesses' testimony to determine what led to the fiery crash Saturday, <span class="yshortcuts" id="lw_1265586670_2">National Transportation Safety Board</span> investigator Jennifer Rodi said Sunday.</p>
+                <p>The crash occurred about 1:30 p.m. Saturday near the <span class="yshortcuts" id="lw_1265586670_3">Boulder Municipal Airport</span> when a southbound <span class="yshortcuts" id="lw_1265586670_4">Cirrus SR20</span> collided with a westbound Piper Pawnee that was towing the glider, causing the "immediate disintegration and explosion of both airplanes," <span class="yshortcuts" id="lw_1265586670_5">Rodi</span> said.</p>
+                <p>The pilot of the glider was able to cut loose just before the collision and fly to safety.</p>
+                <p>Young Kim said he and his girlfriend were walking out of her condo Saturday when they heard a loud boom.</p>
+                <p>"We looked up in the sky. We saw a glider and right next to it what looked like a big black ball of fire," he said. "It looked at first like fireworks coming out of it."</p>
+                <p>His girlfriend, Barb Maiberger, said, "You're going, 'This can't be real.' But it was real, and I knew something was wrong."</p>
+                <p>Kim started running about a half-mile to the scene. "You could see a big smokestack coming out from the wreckage, and dozens of people running toward the scene hoping to rescue someone. As you got closer, you could actually smell the fumes from the jet fuel," Kim said.</p>
+                <p>"I was just hoping maybe somebody survived," he said.</p>
+                <p>Several witnesses have said they saw people plunging from the planes, but Rodi said it's hard to tell whether they saw people or airplane parts falling.</p>
+                <p>An amateur video shot at the scene showed a plane on fire, floating to the ground trailing thick, black smoke and a parachute. Sheriff's officials said the parachute was designed to deploy if a plane was disabled and was attached to the plane's wreckage, not a person.</p>
+                <p>The crash spread debris over a 1 1/2 mile region of prairie. No one on the ground was hurt.</p>
+                <p>Three people were aboard the glider that managed to disconnect from the Piper Pawnee as the <span class="yshortcuts" id="lw_1265586670_6">Cirrus</span> clipped the tow line, just before the two planes collided, <span class="yshortcuts" id="lw_1265586670_7">Boulder County sheriff</span>'s officials said.</p>
+                <p>The pilot of the glider was Ruben Bakker, his mother-in-law Deborah Tjarks said. She said he saw the collision about to happen and released the glider and banked but still flew through the flames. Bakker did not return a call for comment.</p>
+                <p>The single-engine Cirrus left the Boulder airport with two people on board around 12:45 p.m. Saturday and was lost on radar for about 10 minutes, Rodi said.</p>
+                <p>Sheriff's officials said the Piper Pawnee, with only a pilot aboard, belonged to Mile High Gliding Inc. and had just taken off from the Boulder airport before the crash with the glider in tow.</p>
+                <p>A woman who answered the phone at the glider company declined to comment.</p>
+                <p>The Cirrus had the capability to provide data from avionics, like a black box, but the avionics were destroyed in the crash and fire, Rodi said.
+<p>
+Investigators working as light snow fell Sunday planned to recover parts of the plane until dark, then start again Monday morning.
+<p>
+They will examine maintenance records, the pilots' <span class="yshortcuts" id="lw_1265586670_8">flight records</span> and look at paint transfers on the plane parts to help determine what speeds the planes were traveling.
+<p>
+Rodi wouldn't speculate on whether air congestion is a problem in the area.
+<p>
+In the airspace the planes were using, the pilots didn't have to communicate with <span class="yshortcuts" id="lw_1265586670_9">air traffic control towers</span> but could have communicated with each other. Rodi said investigators would talk with other pilots who might have heard the pilots of the two planes talking with each other. It wasn't immediately known how many other pilots were in the area at the time.
+<p>
+The Cirrus is registered to Robert L. Matthews of Boulder. A phone message left at his home Sunday wasn't returned.
+<p>
+The News Tribune in Duluth, Minn., the region where the Cirrus is manufactured, quoted Joan Pallone, of Broomfield, Colo., as saying her brother-in-law, <span class="yshortcuts" id="lw_1265586670_10">Bob Matthews</span>, and his brother, Mark Matthews, were on the Cirrus. She said they're from the Boulder area. She didn't immediately return a phone message Sunday from The Associated Press.
+<p>
+___
+<p>
+Associated Press Writer Catherine Tsai contributed to this report from Denver.</p>
+            </div>
+        
+        
+    </div><!-- end: .bd -->
+    
+    <div class="ft">
+
+            <div id="yn-story-related-searches" class="ult-section">
+        <h3>Related Searches:</h3>
+        <ul>
+                            <li>
+                    <a href="/web/20100209061816/http://news.search.yahoo.com/news/search?p=small+planes" mapleUltParams="sec=yn_related_searches">small planes</a>
+                </li>
+                            <li>
+                    <a href="/web/20100209061816/http://news.search.yahoo.com/news/search?p=boulder+municipal+airport" mapleUltParams="sec=yn_related_searches">boulder municipal airport</a>
+                </li>
+                            <li class="last">
+                    <a href="/web/20100209061816/http://news.search.yahoo.com/news/search?p=cirrus+sr20" mapleUltParams="sec=yn_related_searches">cirrus sr20</a>
+                </li>
+                    </ul>
+    </div>
+
+
+        <div id="yn-story-share">
+            
+            
+                <ul id="bottom" class="tools mod ult-section">
+            <li class="buzz ult-position">
+	
+					
+		<form method="post" action="/web/20100209061816/http://buzz.yahoo.com/vote/" class="buzz" id="buzz-bottom">
+			<input type="hidden" name="publisherurn" value="y_news">
+			<input type="hidden" name="guid" value="ap/20100207/us_colorado_air_accident">
+			<input type="hidden" name=".done" value="/article/y_news/ap/20100207/us_colorado_air_accident">
+			<input type="hidden" name="assettype" value="article">
+			<input type="hidden" name="votetype" value="1">
+			<input type="hidden" name="from" value="orion">
+			<input type="hidden" name="key" value="f5e19">
+			<input type="hidden" name=".crumb" value="">
+			<input type="hidden" name="logged" value="0">
+			<button type="submit">Buzz up!<span class="right"></span></button>
+		</form>
+		
+		            </li>
+            <li class="send yn-menu yn-menu2 ult-position">
+                <a href="/web/20100209061816/http://m2f.news.yahoo.com/mailto/?prop=news&amp;locale=us&amp;url=http%3A%2F%2Fnews.yahoo.com%2Fs%2Fap%2F20100207%2Fap_on_re_us%2Fus_colorado_air_accident&amp;title=Authorities+investigate+fatal+Colorado+plane+crash&amp;h1=ap/20100207/ap_on_re_us/us_colorado_air_accident&amp;h2=T&amp;h3=519" class="menu-hd1 ult-nofollow" mapleUltParams="sec=bottom">Send</a>
+                <div class="menu-bd">
+                    <div class="menu-content">
+                        <ul>
+                            <li>
+                                <a href="/web/20100209061816/http://m2f.news.yahoo.com/mailto/?prop=news&amp;locale=us&amp;url=http%3A%2F%2Fnews.yahoo.com%2Fs%2Fap%2F20100207%2Fap_on_re_us%2Fus_colorado_air_accident&amp;title=Authorities+investigate+fatal+Colorado+plane+crash&amp;h1=ap/20100207/ap_on_re_us/us_colorado_air_accident&amp;h2=T&amp;h3=519" class="email" mapleUltParams="sec=bottom">Email</a>
+                            </li>
+                            <li class="hide">
+                                <a href="/web/20100209061816/http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident" class="im ult-nofollow" mapleUltParams="sec=bottom"><abbr title="Yahoo! Instant Messenger">IM</abbr></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="share yn-menu yn-menu2 ult-position">
+                <a href="/web/20100209061816/http://delicious.com/save?url=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident&amp;title=Authorities+investigate+fatal+Colorado+plane+crash+-+Yahoo%21+News" class="menu-hd1 ult-nofollow" mapleUltPriority="1000" mapleUltParams="sec=bottom">Share</a>
+                <div class="menu-bd">
+                    <div class="menu-content">
+                        <ul>
+                            <li>
+                                <a href="/web/20100209061816/http://delicious.com/save?url=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident&amp;title=Authorities+investigate+fatal+Colorado+plane+crash+-+Yahoo%21+News" class="delicious ult-nofollow" mapleUltPriority="1000"  onclick="if (navigator.userAgent.indexOf('MSIE') &gt; 0){window.location.href=this.href}else{delsave=window.open(this.href+'&amp;noui=1','delSave','location=yes,links=no,scrollbars=no,toolbar=no,height=375,width=700');}; return false;"  mapleUltParams="sec=bottom">Delicious</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100209061816/http://digg.com/submit?phase=2&amp;url=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident" class="digg popup" mapleUltParams="sec=bottom">Digg</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100209061816/http://www.facebook.com/sharer.php?u=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident&amp;t=Authorities+investigate+fatal+Colorado+plane+crash+-+Yahoo%21+News" class="facebook popup" mapleUltParams="sec=bottom">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100209061816/http://cgi.fark.com/cgi/fark/farkit.pl?u=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident&amp;h=Authorities+investigate+fatal+Colorado+plane+crash+-+Yahoo%21+News" class="fark popup" mapleUltParams="sec=bottom">Fark</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100209061816/http://www.newsvine.com/_tools/seed&amp;save?u=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident&amp;h=Authorities+investigate+fatal+Colorado+plane+crash+-+Yahoo%21+News" class="newsvine popup" mapleUltParams="sec=bottom">Newsvine</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100209061816/http://reddit.com/submit?url=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident" class="reddit popup" mapleUltParams="sec=bottom">Reddit</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100209061816/http://www.stumbleupon.com/submit?url=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident&amp;title=Authorities+investigate+fatal+Colorado+plane+crash+-+Yahoo%21+News" class="stumbleupon popup" mapleUltParams="sec=bottom">StumbleUpon</a>
+                            </li>                         
+                            <li>
+                                <a href="/web/20100209061816/http://technorati.com/faves?sub=addfavbtn&amp;add=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident" class="technorati popup" mapleUltParams="sec=bottom">Technorati</a>
+                            </li>
+                            <li>
+                                <a href="/web/20100209061816/http://twitter.com/home?status=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident&amp;title=Authorities+investigate+fatal+Colorado+plane+crash+-+Yahoo%21+News" class="twitter popup" mapleUltParams="sec=bottom">Twitter</a>
+                            </li>                               
+                            <li>
+                                <a href="/web/20100209061816/http://myweb2.search.yahoo.com/myresults/bookmarklet?t=Authorities+investigate+fatal+Colorado+plane+crash+-+Yahoo%21+News&amp;u=http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident&amp;ei=UTF-8&amp;ts=1265696296" class="yahoo-bookmarks popup" mapleUltParams="sec=bottom">Yahoo!&nbsp;Bookmarks</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="print last ult-position">
+                <a href="/web/20100209061816/http://news.yahoo.com/s/ap/20100207/ap_on_re_us/us_colorado_air_accident/print" mapleUltParams="sec=bottom">Print</a>
+            </li>
+                    </ul><!-- end: .tools -->
+
+	
+        </div>
+        
+    </div><!-- end .ft -->
+
+</div><!-- end: #story -->
+
+<script type="text/javascript">
+(function() {
+
+    /**
+     * YUI function to get all elements by class name
+     * getElementsByClass
+     */
+    function getElementsByClass(className, tag, root) {
+        tag = tag || '*';    
+        root = (typeof root == 'string') ? document.getElementById(root) : root || document;
+    
+        var nodes = [],
+            elements = root.getElementsByTagName(tag),
+            re = new RegExp('(?:^|\\s+)' + className + '(?:\\s+|$)');
+    
+        for (var i = 0, len = elements.length; i < len; ++i) {
+            if ( re.test(elements[i].className) ) {
+                nodes[nodes.length] = elements[i];
+            }
+        }
+        return nodes;
+    }
+    
+    /**
+     * This code displays the expand button as the page loads. This prevents any lag in displaying
+     * the button if the page takes a long time to load. If the user clicks the button before the page
+     * loads then we just show the full story without animation. Thus, preventing the full implementation
+     * from loading.
+     */
+    var story = document.getElementById('yn-story');
+    var related = document.getElementById('yn-story-related-media');
+    var expandCookie = '0';
+    
+    if (
+        // make sure read-more-toggle flag exists
+        (story && story.className.indexOf('read-more-toggle') != -1) &&
+        // if user preference is 0 then collapse story
+        expandCookie == '0' && 
+        // make sure hash is not set
+        window.location.hash!='#full'
+       )
+    {
+        var buttonHeight = 18;
+        var defaultHeight = 406;
+        var heightLimit = 200;
+        var host = document.location.host;
+        var path = document.location.pathname;
+        var bd = getElementsByClass('bd','div',story)[0];
+        
+        // Figure out min height for story container based on the heights of the related media and primary media containers
+        if (related)
+        {                
+            // do height calculations if related height is larger than default minHeight
+            if (related.offsetHeight > defaultHeight) {
+            
+                // if primary exists then use that height, otherwise use related
+                var obj = getElementsByClass('primary-media','div',related)[0];
+                if (!obj) obj = related;
+                
+                // set height from primary or related container
+                minHeight = parseInt(obj.offsetHeight, 10);
+                
+                // if the minheight is smaller than default, then set it to default
+                if (
+                    (minHeight < defaultHeight) &&
+                    !document.getElementById('yn-story-main-media') && 
+                    !document.getElementById('yn-story-minor-media')
+                   )
+                {
+                    minHeight = defaultHeight;
+                }
+            } else {
+                minHeight = defaultHeight;
+            }
+        } else {
+            minHeight = defaultHeight;
+        }
+        
+        // add height of buttons to min height
+        minHeight += buttonHeight;
+            
+        // make sure there is enough story to hide
+        if ((bd.offsetHeight - minHeight) > heightLimit)
+        {
+            // set overflow and height
+            bd.style.height = minHeight + "px";
+            bd.className += " overflow";
+            story.className += " read-closed";
+            
+            // add read more expand button
+            var div = document.createElement('div');
+            div.className = 'read-more read-more-expand';
+            div.innerHTML = '<a href="http://'+host+path+'" id="yn-bodycontrol" class="ult-nofollow ult-section" accesskey="m" title="Press CTRL + SHIFT + M to toggle" mapleUltPriority="1000"><em><span>Read Full Article</span></em></a>';
+    
+            // we have to handle the case where a user might click the button before our YUI script loads
+            // if so, remove the height and overflow setting then hide the button, also add #full hash to url so
+            // if script eventually is loaded it doesnt recreate the buttons and collapse the story
+            div.onclick = function(ev) {
+                var e = ev || window.event;
+                
+                // show full story
+                bd.style.height = 'auto';
+                bd.className = bd.className.replace('overflow','expanded');
+                story.className = story.className.replace('read-closed','');
+                
+                // hide the toggle button
+                div.className += ' hide';
+                
+                // disable link follow
+                if (e.preventDefault) {
+                    e.preventDefault();
+                } else {
+                    e.returnValue = false;
+                }
+            }
+            
+            // add div to document
+            bd.appendChild(div);
+        }
+    
+    }
+
+})();
+</script>
+
+<div id="yn-story-related-content" class="yui-g mod related-content-style">
+
+        
+        <div id="yn-r-b-right" class="yui-u first ult-section">
+    
+        <h3>More...</h3>
+        
+        <ul class="list list4 list6 size1">
+                        <li class="first video">
+                <a href="/web/20100209061816/http://us.rd.yahoo.com/dailynews/external/ap_av/av_ap3_us/1b3f629ea19fba3b5cd2b69c2056ef7b/35036381/*http://news.yahoo.com/video/us-15749625/18035284" class="showtt" rel=":ap_av:20100209:av_ap3_us:_yahoonewsvideo_us0208dv_snowstorm_wrap__18035269" mapleUltParams="sec=yn-r-b-right;slk=vid-un-link;staid=/ap_av/20100209/av_ap3_us/_yahoonewsvideo_us0208dv_snowstorm_wrap__18035269">
+                                        <strong>U.S. Video:</strong> 
+                                        Mid-Atlantic bracing for second storm                </a>
+                
+                                <cite>
+                    <a href="/web/20100209061816/http://news.yahoo.com/video/us/ap" mapleUltParams="sec=yn-r-b-right;slk=vid-un-provider;staid=/ap_av/20100209/av_ap3_us/_yahoonewsvideo_us0208dv_snowstorm_wrap__18035269">AP</a>
+                </cite>
+                            </li>
+                        <li class="video">
+                <a href="/web/20100209061816/http://us.rd.yahoo.com/dailynews/external/ap_av/av_ap3_us/397e658b3ad3b761db693123469a29a9/35036086/*http://news.yahoo.com/video/us-15749625/18034782" class="showtt" rel=":ap_av:20100209:av_ap3_us:_yahoonewsvideo_us0208dvs_ct_plant_explosion__18034767" mapleUltParams="sec=yn-r-b-right;slk=vid-un-link;staid=/ap_av/20100209/av_ap3_us/_yahoonewsvideo_us0208dvs_ct_plant_explosion__18034767">
+                                        <strong>U.S. Video:</strong> 
+                                        Criminal probe is launched in Conn. plant blast                </a>
+                
+                                <cite>
+                    <a href="/web/20100209061816/http://news.yahoo.com/video/us/ap" mapleUltParams="sec=yn-r-b-right;slk=vid-un-provider;staid=/ap_av/20100209/av_ap3_us/_yahoonewsvideo_us0208dvs_ct_plant_explosion__18034767">AP</a>
+                </cite>
+                            </li>
+                        <li class="video">
+                <a href="/web/20100209061816/http://us.rd.yahoo.com/dailynews/external/fox_news/av_fox/bb833ebb541eea9788b6e2b97eaae824/35040578/*http://news.yahoo.com/video/us-15749625/18042561" class="showtt" rel=":fox_news:20100209:av_fox:_yahoonewsvideo_us132711_controversial_tebow_super_bowl_ad_airs__18042554" mapleUltParams="sec=yn-r-b-right;slk=vid-un-link;staid=/fox_news/20100209/av_fox/_yahoonewsvideo_us132711_controversial_tebow_super_bowl_ad_airs__18042554">
+                                        <strong>U.S. Video:</strong> 
+                                        Tebow Ad Much Ado About Nothing?                </a>
+                
+                                <cite>
+                    <a href="/web/20100209061816/http://news.yahoo.com/i/3052" mapleUltParams="sec=yn-r-b-right;slk=vid-un-provider;staid=/fox_news/20100209/av_fox/_yahoonewsvideo_us132711_controversial_tebow_super_bowl_ad_airs__18042554">FOX News</a>
+                </cite>
+                            </li>
+                    </ul>
+        
+    </div>
+    </div><!-- end .related -->
+
+
+
+
+
+
+
+<div class="mod mod3">
+    <div class="yui-gb yui-gb1">
+        <div class="yui-u first">
+            <div id="yn-channel" class="mod ult-section mod-first">
+    <div class="hd">
+        <h3>Most Viewed - U.S.</h3>
+    </div>
+    <div class="bd">
+        <ul class="list list4">
+                            <li class="ult-position first">
+                    <a href="/web/20100209061816/http://news.yahoo.com/s/ap/20100209/ap_on_re_us/us_texas_church_fires" class="showtt" rel=":ap:20100209:ap_on_re_us:us_texas_church_fires" mapleUltParams="sec=yn-channel;staid=ap/20100209/us_texas_church_fires" >Fires strike 2 more east Texas churches</a>
+                    <cite>AP</cite>
+                </li>
+                            <li class="ult-position">
+                    <a href="/web/20100209061816/http://news.yahoo.com/s/ap/20100209/ap_on_re_us/us_obit_murtha" class="showtt" rel=":ap:20100209:ap_on_re_us:us_obit_murtha" mapleUltParams="sec=yn-channel;staid=ap/20100209/us_obit_murtha" >Rep. John Murtha, voice for veterans, dies at 77</a>
+                    <cite>AP</cite>
+                </li>
+                            <li class="ult-position">
+                    <a href="/web/20100209061816/http://news.yahoo.com/s/ap/20100209/ap_on_re_us/us_winter_weather" class="showtt" rel=":ap:20100209:ap_on_re_us:us_winter_weather" mapleUltParams="sec=yn-channel;staid=ap/20100209/us_winter_weather" >Seats at a premium on planes, trains out of DC</a>
+                    <cite>AP</cite>
+                </li>
+                            <li class="ult-position">
+                    <a href="/web/20100209061816/http://news.yahoo.com/s/ap/20100209/ap_on_re_us/iran_nuclear" class="showtt" rel=":ap:20100209:ap_on_re_us:iran_nuclear" mapleUltParams="sec=yn-channel;staid=ap/20100209/iran_nuclear" >Iran moves closer to nuke warhead capacity</a>
+                    <cite>AP</cite>
+                </li>
+                            <li class="ult-position">
+                    <a href="/web/20100209061816/http://news.yahoo.com/s/nm/20100209/us_nm/us_toyota_lawsuit" class="showtt" rel=":nm:20100209:us_nm:us_toyota_lawsuit" mapleUltParams="sec=yn-channel;staid=nm/20100209/us_toyota_lawsuit" >Toyota sued in California by U.S. shareholders</a>
+                    <cite>Reuters</cite>
+                </li>
+                    </ul>
+        <a href="/web/20100209061816/http://news.yahoo.com/most-popular/viewed/us" class="more size1" mapleUltParams="sec=yn-channel" >All Most Viewed&nbsp;&raquo;</a>
+    </div>
+</div>
+
+            
+            
+        </div>
+        <div class="yui-u">
+            
+<div id="yn-daily-features" class="mod ult-section mod-first">
+    <div class="hd">
+        <h3>Daily Features</h3>
+    </div>
+    <div class="bd">
+        <ul class="list list2 size1">
+            <li class="first">
+                <a href="/web/20100209061816/http://news.yahoo.com/comics/uclickcomics/20100209/cx_crhea_uc/crhea20100209"><img src="/web/20100209061816im_/http://l.yimg.com/a/i/us/nws/2008/news/us/assets/common/images/transparent.png" width="201" height="235" alt="Comic" class="lzbg" style="background-image: url(/web/20100209061816im_/http://d.yimg.com/b/util/anysize/200x-1209600,http%3A%2F%2Fd.yimg.com%2Fa%2Fp%2Fuc%2F20100209%2Flcrhea100209.gif%3Fx%3D201%26y%3D235%26q%3D85%26sig%3D_JkFCKDSYK9ZN3zDFRJezQ--);"></a>
+                <a href="/web/20100209061816/http://news.yahoo.com/comics" class="more">All Comics &raquo;</a>
+            </li>
+            <li>
+    <h4>Opinions &amp; Editorials: <a href="/web/20100209061816/http://news.yahoo.com/i/742">Diverse views on news from the right, left, and center.</a></h4>
+    <a href="/web/20100209061816/http://news.yahoo.com/i/742" class="more">All Opinion &raquo;</a> 
+</li>            <!-- -->        </ul>
+    </div>
+</div>
+
+                <div class="ad-links mod">
+                <div id="darla-ad__REC" class="ft darla_ad"></div>
+            </div>
+
+            
+        </div>
+        <div class="yui-u last">
+                <div id="yn-elseweb" class="mod ult-section mod-first">
+        <div class="hd">
+            <h3>Elsewhere on the Web</h3>
+        </div>
+        <div class="bd">
+            <ul class="list">
+                                    <li class="ult-position first">
+                    	<a href="/web/20100209061816/http://us.rd.yahoo.com/dailynews/external/abc/rss_abc_us/michaeljacksonsdoctorpleadsnotguilty/35038214/SIG=128047rq5/*http://feeds.abcnews.com/click.phdo?i=ec840862a60bed35d92d9600d09ab351" mapleUltParams="sec=yn-elseweb" ><strong>ABC News: </strong>Michael Jackson&#39;s Doctor Pleads Not Guilty</a>
+                    </li>
+                                    <li class="ult-position">
+                    	<a href="/web/20100209061816/http://us.rd.yahoo.com/dailynews/external/npr_rss/rss_npr_us/httpwwwnprorgtemplatesstorystoryphpstoryid123406526ampft1ampf1003/35041444/SIG=12ct9u5a7/*http://www.npr.org/templates/story/story.php?storyId=123406526&amp;ft=1&amp;f=1003" mapleUltParams="sec=yn-elseweb" ><strong>NPR: </strong>For Telecommuters, It&#39;s Not About Going To Work</a>
+                    </li>
+                                    <li class="ult-position">
+                    	<a href="/web/20100209061816/http://us.rd.yahoo.com/dailynews/external/time_rss/rss_time_us/httpwwwtimecomtimenationarticle08599196047700htmlxidrssnationyahoo/35032121/SIG=12l86m0v1/*http://www.time.com/time/nation/article/0,8599,1960477,00.html?xid=rss-nation-yahoo" mapleUltParams="sec=yn-elseweb" ><strong>Time.com: </strong>U.S. Girds for a Fight for Internet Freedom</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+
+
+            
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+                    
+
+        
+                    
+                    
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                </div><!-- end: .yui-b -->
+        
+            </div><!-- end: #yui-main -->
+        
+            <div id="sidebar" class="yui-b" role="complementary">
+            
+                <div id="yn-top-stories" class="mod ult-section mod-first">
+    <div class="hd">
+        <h3>Top Stories</h3>
+    </div>
+    <div class="bd">
+                    <ul class="list list4 size2">
+                <li class="first  "><a href="/web/20100209061816/http://news.yahoo.com/s/ap/iran_nuclear" class="showtt yltasis" rel=":ap:iran_nuclear" mapleUltParams="sec=yn_top_stories;asset=ap/20100209/iran_nuclear;cpos=1;"> Iran moves closer to nuke warhead capacity</a></li><li class=" "><a href="/web/20100209061816/http://news.yahoo.com/s/ap/20100209/ap_on_bi_ge/us_health_care_overhaul" class="showtt yltasis" rel=":ap:20100209:ap_on_bi_ge:us_health_care_overhaul" mapleUltParams="sec=yn_top_stories;asset=ap/20100209/us_health_care_overhaul;cpos=2;"> Obama's health care summit: Just for show?</a></li><li class=" "><a href="/web/20100209061816/http://news.yahoo.com/s/ap/20100209/ap_on_re_us/us_ny_governor" class="showtt yltasis" rel=":ap:20100209:ap_on_re_us:us_ny_governor" mapleUltParams="sec=yn_top_stories;asset=ap/20100209/us_ny_governor;cpos=3;"> AP Interview: NY's Paterson lashes back at rumors</a></li><li class=" "><a href="/web/20100209061816/http://news.yahoo.com/s/ap/20100209/ap_on_re_us/us_obit_murtha" class="showtt yltasis" rel=":ap:20100209:ap_on_re_us:us_obit_murtha" mapleUltParams="sec=yn_top_stories;asset=ap/20100209/us_obit_murtha;cpos=4;"> Rep. John Murtha, voice for veterans, dies at 77</a></li><li class=" "><a href="/web/20100209061816/http://news.yahoo.com/s/ap/20100209/ap_on_re_us/us_winter_weather" class="showtt yltasis" rel=":ap:20100209:ap_on_re_us:us_winter_weather" mapleUltParams="sec=yn_top_stories;asset=ap/20100209/us_winter_weather;cpos=5;"> Seats at a premium on planes, trains out of DC</a></li><li class=" "><a href="/web/20100209061816/http://news.yahoo.com/s/ap/20100209/ap_on_sc/us_space_shuttle" class="showtt yltasis" rel=":ap:20100209:ap_on_sc:us_space_shuttle" mapleUltParams="sec=yn_top_stories;asset=ap/20100209/us_space_shuttle;cpos=6;"> Astronauts inspect shuttle on way to space station</a></li><li class=" "><a href="/web/20100209061816/http://news.yahoo.com/s/ap/20100209/ap_on_bi_ge/ml_dubai_tallest_building" class="showtt yltasis" rel=":ap:20100209:ap_on_bi_ge:ml_dubai_tallest_building" mapleUltParams="sec=yn_top_stories;asset=ap/20100209/ml_dubai_tallest_building;cpos=7;"> World's tallest tower closed a month after opening</a></li>            </ul>
+            </div>
+    <div class="ft">
+        <a href="/web/20100209061816/http://news.yahoo.com/top-stories" class="yltasis">More Top Stories &raquo;</a>
+    </div>
+</div>
+
+<div id="darla-ad__LREC" class="mod ad darla_ad mod-first"></div>
+    
+
+<div id="sponsored-links" class="mod ult-section">
+    <div class="hd">
+        <h3>Sponsored Links</h3>
+    </div>
+    <div class="bd">
+        <ul>
+                        <li class="ult-position first">
+                <a href="/web/20100209061816/http://rc.us-east.srv.overture.com/d/sr/?xargs=20AGRkGGzlHgXD4iVAH-VcJ4VvnzD2U-gyU-ZkA4i3LjBEgrFOMm31oeiNSBe0AZY9brIEscCV1puOIdf9XfG0QdUdT70qUlh2OIsbNzFWOwg4R3_gjmjwOUgl1RjnL0r67v6DbfWcIsFIr-X2vdTr7Jbdm4ZfKf7H8t5dHSrb_bHmBbt3XSGZCP144UxExkMm0RzXOBBxBrdgbPryxTikSDZ4xH8rjREoBMcOTGDZtpEwaSgkhFJGFYk.000000013d2555fb" class="yltasis">Obama Urges Homeowners to Refinance</a>
+                Rates Hit 3.62% APR! Calculate New Mortgage Payment Now.                <a href="/web/20100209061816/http://rc.us-east.srv.overture.com/d/sr/?xargs=20AGRkGGzlHgXD4iVAH-VcJ4VvnzD2U-gyU-ZkA4i3LjBEgrFOMm31oeiNSBe0AZY9brIEscCV1puOIdf9XfG0QdUdT70qUlh2OIsbNzFWOwg4R3_gjmjwOUgl1RjnL0r67v6DbfWcIsFIr-X2vdTr7Jbdm4ZfKf7H8t5dHSrb_bHmBbt3XSGZCP144UxExkMm0RzXOBBxBrdgbPryxTikSDZ4xH8rjREoBMcOTGDZtpEwaSgkhFJGFYk.000000013d2555fb" class="host yltasis">www.SeeRefinanceRates.com</a>
+            </li>
+                        <li class="ult-position">
+                <a href="/web/20100209061816/http://rc.us-east.srv.overture.com/d/sr/?xargs=20AHu7MuzoRomvVGJSpY6WhdAu5qRUe2us33g8F0ebF46TkTm86mIgNDtbjN-8uDruLosBkJHhKVGNFNW7YfCrNQXiaGaPOgFZo10dNRGAeBKMfu_ClyU8wXbPuCGjD28KkgxTysddnIr4W6SdyYBwlkHZ_MYS2oeGx_GdyEsEscj9jmRp6g3cgJo1HpPiPFeTRMbXwvW7-_Qh46t_G56RsciV2hz8anVmunleX4ouqMsmeGOelrXSGmE.000000013d2555fb" class="yltasis">Make Less Than $45,000/Year?</a>
+                You May Qualify for a Grant to Go Back to School.                <a href="/web/20100209061816/http://rc.us-east.srv.overture.com/d/sr/?xargs=20AHu7MuzoRomvVGJSpY6WhdAu5qRUe2us33g8F0ebF46TkTm86mIgNDtbjN-8uDruLosBkJHhKVGNFNW7YfCrNQXiaGaPOgFZo10dNRGAeBKMfu_ClyU8wXbPuCGjD28KkgxTysddnIr4W6SdyYBwlkHZ_MYS2oeGx_GdyEsEscj9jmRp6g3cgJo1HpPiPFeTRMbXwvW7-_Qh46t_G56RsciV2hz8anVmunleX4ouqMsmeGOelrXSGmE.000000013d2555fb" class="host yltasis">www.SeeCollegeDegrees.com</a>
+            </li>
+                        <li class="ult-position">
+                <a href="/web/20100209061816/http://rc.us-east.srv.overture.com/d/sr/?xargs=20AGWAnRb1USNTPqB4meNwgJ41U_HPxJtC-ShGQ9ncoW6cno1u18tN81ir3MZv0E2tf5Kft_Zwx7Eau_PPednIsCsTZSW0skFj74nZB3dnby-roDmwKOpy6yvLQCdq0MwV2RcM0SN-s0Um2mii1tqSq_CsNZA4_qNMQWOw7HSz2-Qxp4Tlhny1blY4ciEHFMyrTXz0UpxaUJT17sdLhGD8K4M_PsEz9OWNyNXNXCsemqDD.000000013d2555fb" class="yltasis">Refinance Now at 3.4% APR</a>
+                $160,000 mortgage under $752/mo. Free. No Obligation. Get 4 quotes now.                <a href="/web/20100209061816/http://rc.us-east.srv.overture.com/d/sr/?xargs=20AGWAnRb1USNTPqB4meNwgJ41U_HPxJtC-ShGQ9ncoW6cno1u18tN81ir3MZv0E2tf5Kft_Zwx7Eau_PPednIsCsTZSW0skFj74nZB3dnby-roDmwKOpy6yvLQCdq0MwV2RcM0SN-s0Um2mii1tqSq_CsNZA4_qNMQWOw7HSz2-Qxp4Tlhny1blY4ciEHFMyrTXz0UpxaUJT17sdLhGD8K4M_PsEz9OWNyNXNXCsemqDD.000000013d2555fb" class="host yltasis">MortgageRefinance.LendGo.com</a>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+<div id="yn-featured" class="mod ult-section">
+    <div class="hd">
+        <h3>Featured</h3>
+    </div>
+    <div class="bd">
+        <ul>
+            <li class="first"><a href="/web/20100209061816/http://news.yahoo.com/topics/toyota"><img width="67" height="67" alt="" src="/web/20100209061816im_/http://l.yimg.com/a/p/us/news/editorial/e/bd/ebd834b2f8a30e45ce9c5b0edb369aad.jpeg" /></a><div><a href="/web/20100209061816/http://news.yahoo.com/topics/toyota">Topics: Toyota</a>Complete coverage includes the latest updates, photos and videos.<a href="/web/20100209061816/http://news.yahoo.com/topics" style="font-size:13px;font-weight:normal;">&raquo; More Yahoo! News Topics</a></div></li><li><a href="/web/20100209061816/http://abcnews.go.com/Business/PersonalFinance/weather-forecast-wall-street/story?id=9757635&amp;cid=yahoo_pitchlist"><img width="67" height="67" alt="" src="/web/20100209061816im_/http://d.yimg.com/a/p/us/news/editorial/9/85/985dca93dbf4df880556b83b57317d71.jpeg"/></a><div><a href="/web/20100209061816/http://abcnews.go.com/Business/PersonalFinance/weather-forecast-wall-street/story?id=9757635&amp;cid=yahoo_pitchlist">Forecasts for finance</a>Wall Street relies on meteorologists, too.<a href="/web/20100209061816/http://abcnews.go.com/" style="font-size:13px;font-weight:normal;">&raquo; More from ABC News</a></div></li><li><a href="/web/20100209061816/http://www.huffingtonpost.com/simon-johnson/euro-falling-us-recovery_b_452888.html?alacarte=1"><img width="67" height="67" alt="" src="/web/20100209061816im_/http://l.yimg.com/a/p/us/news/editorial/8/00/800ccce0e213f704d02ee1936496fe86.jpeg" /></a><div><a href="/web/20100209061816/http://www.huffingtonpost.com/simon-johnson/euro-falling-us-recovery_b_452888.html?alacarte=1">Simon Johnson</a>With the euro falling, U.S. recovery is under threat.<a href="/web/20100209061816/http://www.huffingtonpost.com/" style="font-size:13px;font-weight:normal;">&raquo; More from the Huffington Post</a></div></li>        </ul>
+    </div>
+</div>
+
+<div id="promo-education" class="mod promo">
+    <div class="hd">
+        <h3>Education<span>Yahoo</span></h3>
+    </div>
+    <div class="bd">
+        <div class="headlines">
+            <div class="hd"></div>
+            <div class="bd">
+                <ul>
+                    <li class="first"><a href="/web/20100209061816/http://education.yahoo.net/articles/flexible_jobs.htm?kid=MQND"><img width="67" height="67" alt="Yahoo! Education" src="/web/20100209061816im_/http://l.yimg.com/a/p/us/news/editorial/a/7b/a7b32590a4dbfb0fe479d8bdffd0717a.jpeg"/></a>
+<div><a href="/web/20100209061816/http://education.yahoo.net/articles/flexible_jobs.htm?kid=MQND">Want Career Flexibility?</a>Break out of the "9-to-5" mold. Check out this list of top 5 flexible jobs.</div></li><li><a href="/web/20100209061816/http://education.yahoo.net/articles/5_stable_tech_jobs.htm?kid=MQNB"><img width="67" height="67" alt="Yahoo! Education" src="/web/20100209061816im_/http://l.yimg.com/a/p/us/news/editorial/6/75/675bd06b0accd9d08ec8a7cdfce2e0b7.jpeg"/></a>
+<div><a href="/web/20100209061816/http://education.yahoo.net/articles/5_stable_tech_jobs.htm?kid=MQNB">Outsource Proof Jobs</a>Learn which jobs won’t be shipped overseas - even in a recession.</div></li>                </ul>
+            </div>
+            <div class="ft"></div>
+        </div>
+    </div>
+</div>
+
+<div id="yn-vitality" class="mod ult-section">
+    <div class="hd">
+	   <h3><span>Yahoo!</span>Updates</h3>
+    </div>
+    <div class="bd pagination">
+		<ul class="tabs">
+			<li id="vitality__connections" class="pagination-nav"><a href="#updates-conn"><span>My Connections</span></a></li>
+			<li id="vitality__everyone" class="pagination-nav"><a href="#updates-everyone"><span>Everyone</span></a></li>
+		</ul>
+    	<div class="pagination-bd">
+            <div id="pagination-bd-vitality__connections">
+                
+<div id="yn-vitality-connections" class="my-connections no-updates">
+	<div class="hd"></div>
+	
+	<div class="bd">
+		<div class="updates-invite updates-login"><div class="updates-icon"></div>		<p><a href="/web/20100209061816/https://login.yahoo.com/config/login_verify2?.src=yn&amp;.done=http://news.yahoo.com/" class="signin">Sign In</a> <span>to see what your Connections are up to on Yahoo! News.</span></p>
+		<p>New User? <a href="/web/20100209061816/https://edit.yahoo.com/registration?.intl=us&amp;new=1&amp;.src=yn&amp;.done=http://news.yahoo.com/" class="signup">Sign Up</a></p></div>
+	</div>
+	<div class="ft"></div>
+</div>
+
+            </div>
+            <div id="pagination-bd-vitality__everyone" style="display: none;">
+                
+<div id="yn-vitality-everyone" class="everyone">
+	<div class="hd"></div>
+	<div class="updates-invite updates-login"><div class="updates-icon"></div>		<p><a href="/web/20100209061816/https://login.yahoo.com/config/login_verify2?.src=yn&amp;.done=http://news.yahoo.com/" class="signin">Sign In</a> <span>to see what your Connections are up to on Yahoo! News.</span></p>
+		<p>New User? <a href="/web/20100209061816/https://edit.yahoo.com/registration?.intl=us&amp;new=1&amp;.src=yn&amp;.done=http://news.yahoo.com/" class="signup">Sign Up</a></p></div>
+	<div class="bd">
+		<ul class="hfeed hslice"><li class="header today"><h4>Today</h4></li>			<li class="hentry first">
+						
+				<a href="/web/20100209061816/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aef8au83/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0bzVsb3F0BElfYWd1aWQDQ0RaSVQyWVk0MjZCVlhQS1ZMRlVEU0VTTU0ESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzFjOThkM2RiYWE2NzNiMjUxNzhhMDdjNDVhOGZlM2Q4BElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11r11cg9s/**http%3A//profiles.yahoo.com/u/CDZIT2YY426BVXPKVLFUDSESMM" class="avatar"><img width="32" height="32" alt="goto forest  hunter's profile" src="/web/20100209061816im_/http://a323.yahoofs.com/coreid/499a6b88i101czul5re4/ihQo4uc4bKdfHNtkEZ.ltg--/1/tn48.jpg?ciAAToMBSn_P7fI."></a>
+				<div class="update entry-content">
+					<p class="vcard author"><a href="/web/20100209061816/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aef8au83/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0bzVsb3F0BElfYWd1aWQDQ0RaSVQyWVk0MjZCVlhQS1ZMRlVEU0VTTU0ESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzFjOThkM2RiYWE2NzNiMjUxNzhhMDdjNDVhOGZlM2Q4BElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11r11cg9s/**http%3A//profiles.yahoo.com/u/CDZIT2YY426BVXPKVLFUDSESMM" class="fn nickname url">forest  hunter</a> buzzed up: <a href="/web/20100209061816/http://news.yahoo.com/s/ap/20100209/ap_on_re_us/us_obit_murtha" class="entry-title bookmark">Rep. John Murtha, voice for veterans, dies at 77      (AP)</a></p>  <p class="updated">4 seconds ago <span class="value">2010-02-08T22:17:22-08:00</span></p>
+				</div>
+			</li>
+					<li class="hentry">
+						
+				<a href="/web/20100209061816/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aeruqdsi/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0MjRidGIzBElfYWd1aWQDNU5IM1FZQUdDUE1ITDdNTFJKWFlSUEFESUUESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkA2E2NDE2NGIyMzk2NDEwOWJjNmVkYTI4NmFmNGRmODRjBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rq8p12e/**http%3A//profiles.yahoo.com/u/5NH3QYAGCPMHL7MLRJXYRPADIE" class="avatar"><img width="32" height="32" alt="goto Lary's profile" src="/web/20100209061816im_/http://l.yimg.com/us.yimg.com/i/identity/nopic_48.gif"></a>
+				<div class="update entry-content">
+					<p class="vcard author"><a href="/web/20100209061816/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aeruqdsi/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0MjRidGIzBElfYWd1aWQDNU5IM1FZQUdDUE1ITDdNTFJKWFlSUEFESUUESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkA2E2NDE2NGIyMzk2NDEwOWJjNmVkYTI4NmFmNGRmODRjBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rq8p12e/**http%3A//profiles.yahoo.com/u/5NH3QYAGCPMHL7MLRJXYRPADIE" class="fn nickname url">Lary</a> buzzed up: <a href="/web/20100209061816/http://news.yahoo.com/s/ap/20100209/ap_on_re_us/us_obit_murtha" class="entry-title bookmark">Rep. John Murtha, voice for veterans, dies at 77      (AP)</a></p>  <p class="updated">40 seconds ago <span class="value">2010-02-08T22:16:46-08:00</span></p>
+				</div>
+			</li>
+					<li class="hentry">
+						
+				<a href="/web/20100209061816/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1ae43s20f/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0bXBpZHR0BElfYWd1aWQDUlE3SERKM1FSSzVWTDM3UTMzNVFNVFlIQkUESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzk4ODdiYjUzYmE4MTZhMDFlZTRmZGMxOGMyNTgwZjNjBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rqitc7r/**http%3A//profiles.yahoo.com/u/RQ7HDJ3QRK5VL37Q335QMTYHBE" class="avatar"><img width="32" height="32" alt="goto A Yahoo! News User's profile" src="/web/20100209061816im_/http://l.yimg.com/us.yimg.com/i/identity/nopic_48.gif"></a>
+				<div class="update entry-content">
+					<p class="vcard author"><a href="/web/20100209061816/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1ae43s20f/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0bXBpZHR0BElfYWd1aWQDUlE3SERKM1FSSzVWTDM3UTMzNVFNVFlIQkUESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzk4ODdiYjUzYmE4MTZhMDFlZTRmZGMxOGMyNTgwZjNjBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rqitc7r/**http%3A//profiles.yahoo.com/u/RQ7HDJ3QRK5VL37Q335QMTYHBE" class="fn nickname url">A Yahoo! News User</a> buzzed up: <a href="/web/20100209061816/http://news.yahoo.com/s/nm/us_emirates_camel" class="entry-title bookmark">Camel burger newest &quot;healthy&quot; option on Dubai menu      (Reuters)</a></p>  <p class="updated">41 seconds ago <span class="value">2010-02-08T22:16:45-08:00</span></p>
+				</div>
+			</li>
+					<li class="hentry">
+						
+				<a href="/web/20100209061816/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aekr18hj/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0czJ2dTRoBElfYWd1aWQDMldBTklHRjJNWDdXRU9PTjdXR1FUNjQ0Q1kESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzIyMzNkNTg4OGJjMDIyMzRjNjA5ODU2ZjNiNWUzYzE3BElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rbp5l1p/**http%3A//profiles.yahoo.com/u/2WANIGF2MX7WEOON7WGQT644CY" class="avatar"><img width="32" height="32" alt="goto Dan's profile" src="/web/20100209061816im_/http://l.yimg.com/us.yimg.com/i/identity/nopic_48.gif"></a>
+				<div class="update entry-content">
+					<p class="vcard author"><a href="/web/20100209061816/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aekr18hj/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0czJ2dTRoBElfYWd1aWQDMldBTklHRjJNWDdXRU9PTjdXR1FUNjQ0Q1kESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzIyMzNkNTg4OGJjMDIyMzRjNjA5ODU2ZjNiNWUzYzE3BElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11rbp5l1p/**http%3A//profiles.yahoo.com/u/2WANIGF2MX7WEOON7WGQT644CY" class="fn nickname url">Dan</a> buzzed up: <a href="/web/20100209061816/http://news.yahoo.com/s/ap/iran_nuclear" class="entry-title bookmark">Iran moves closer to nuke warhead capacity      (AP)</a></p>  <p class="updated">43 seconds ago <span class="value">2010-02-08T22:16:43-08:00</span></p>
+				</div>
+			</li>
+					<li class="hentry last">
+						
+				<a href="/web/20100209061816/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aei5r439/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0c25lN3E3BElfYWd1aWQDSUw3M0VRS1U1V0FNVTNVSERBQ0QyWUVGQUkESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzk2YWNmNGE1YzJlNTdlNzdhOWM5YTg3NzU0YjRiOGQwBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11r2slter/**http%3A//profiles.yahoo.com/u/IL73EQKU5WAMU3UHDACD2YEFAI" class="avatar"><img width="32" height="32" alt="goto Tanechka's profile" src="/web/20100209061816im_/http://avatars.zenfs.com/users/17adLSOzpAAEC-IFD5N81DA==.medium.png"></a>
+				<div class="update entry-content">
+					<p class="vcard author"><a href="/web/20100209061816/http://us.rd.yahoo.com/Updates/buzz/buzzUp/SIG=1aei5r439/*http%3A//us.lrd.yahoo.com/_ylc=X3oDMTR0c25lN3E3BElfYWd1aWQDSUw3M0VRS1U1V0FNVTNVSERBQ0QyWUVGQUkESV9jZ3VpZAMESV9jcHJvcAN5YWhvby5uZXdzLmhncC1zdG9yeV9mZQRJX3VzcmMDYnV6egRJX3VzdWlkAzk2YWNmNGE1YzJlNTdlNzdhOWM5YTg3NzU0YjRiOGQwBElfdXR5cGUDYnV6elVwBF9TAzIwMjM0MzUyNjE-/SIG=11r2slter/**http%3A//profiles.yahoo.com/u/IL73EQKU5WAMU3UHDACD2YEFAI" class="fn nickname url">Tanechka</a> buzzed up: <a href="/web/20100209061816/http://news.yahoo.com/s/afp/20100209/hl_afp/healthdrinkcancer" class="entry-title bookmark">Sugary soft drinks linked to pancreatic cancer: study      (AFP)</a></p>  <p class="updated">1 minute ago <span class="value">2010-02-08T22:16:23-08:00</span></p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="ft"> <a href="/web/20100209061816/http://profiles.yahoo.com/settings/updates/" class="settings">Manage My Updates</a></div>
+</div>
+
+            </div>
+    	</div>
+    </div>
+</div>
+
+<div id="darla-ad__LREC2" class="mod ad darla_ad mod-first"></div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            
+            </div><!-- end: #sidebar -->
+        
+        </div><!-- end: #bd -->
+    
+        <div id="ft">
+   
+   <div id="yn_ft_nav" class="ult-section nav">
+       <h6>Yahoo! News Navigation</h6>
+       <ul>
+           <li class="ult-position first"><a href="/web/20100209061816/http://news.yahoo.com/">Home</a></li>
+           <li class="ult-position"><a href="/web/20100209061816/http://news.yahoo.com/us"><abbr title="United States">U.S.</abbr></a></li>
+           <li class="ult-position"><a href="/web/20100209061816/http://news.yahoo.com/business">Business</a></li>
+           <li class="ult-position"><a href="/web/20100209061816/http://news.yahoo.com/world">World</a></li>
+           <li class="ult-position"><a href="/web/20100209061816/http://news.yahoo.com/entertainment">Entertainment</a></li>
+           <li class="ult-position"><a href="/web/20100209061816/http://news.yahoo.com/sports">Sports</a></li>
+           <li class="ult-position"><a href="/web/20100209061816/http://news.yahoo.com/technology">Tech</a></li>
+           <li class="ult-position"><a href="/web/20100209061816/http://news.yahoo.com/politics">Politics</a></li>
+           <li class="ult-position"><a href="/web/20100209061816/http://news.yahoo.com/science">Science</a></li>
+           <li class="ult-position"><a href="/web/20100209061816/http://news.yahoo.com/health">Health</a></li>
+           <li class="ult-position"><a href="/web/20100209061816/http://news.yahoo.com/travel">Travel</a></li>
+           <li class="ult-position"><a href="/web/20100209061816/http://news.yahoo.com/i/964">Most Popular</a></li>
+           <li class="ult-position"><a href="/web/20100209061816/http://news.yahoo.com/odd">Odd News</a></li>
+           <li class="ult-position"><a href="/web/20100209061816/http://news.yahoo.com/opinion">Opinion</a></li>
+       </ul>
+   </div><!-- end: .nav -->
+   
+   <div id="yn_ft_services" class="ult-section services">
+       <h6>News Services</h6>
+       <ul>
+           <li class="ult-position rss first"><a href="/web/20100209061816/http://news.yahoo.com/rss"><abbr title="Really Simple Syndication">RSS</abbr></a></li>
+           <li class="ult-position"><a href="/web/20100209061816/http://beta.alerts.yahoo.com/main.php?view=create_news_step1&amp;.done=http://news.yahoo.com">News Alerts</a></li>
+           <li class="ult-position"><a href="/web/20100209061816/http://beta.alerts.yahoo.com/main.php?view=create_weather">Weather Alerts</a></li>
+           <li class="ult-position"><a href="/web/20100209061816/http://news.yahoo.com/badges/headlines">Add Yahoo! Headlines to Your Site</a></li>
+           <li class="ult-position"><a href="/web/20100209061816/http://news.yahoo.com/page/sitemap">Site Map</a></li>
+           <li class="ult-position"><a href="/web/20100209061816/http://help.yahoo.com/l/us/yahoo/news/">Help</a></li>
+           <li class="ult-position"><a href="/web/20100209061816/http://suggestions.yahoo.com/?prop=news">Feedback</a></li>
+       </ul>
+       
+          </div><!-- end: .services -->
+   
+</div><!-- end: #ft -->
+           
+
+        
+        <div id="copyright" class="mod" role="contentinfo">
+    <p>Copyright &copy; 2010 The Associated Press. All rights reserved. The information contained in the AP News report may not be published, broadcast, rewritten or redistributed without the prior written authority of The Associated Press.
+
+<br></p>
+</div>
+
+    
+        <div class="mod ad ad_footer" role="contentinfo">
+    <div class="bd">
+            <!-- Ad Keywords: data; video; it; It; fuel; help; home;-->
+<!-- SpaceID=0 robot -->
+    </div>
+</div>
+
+    
+    </div><!-- end: #doc4 -->
+    
+    
+
+                            <script type="text/javascript" src="/web/20100209061816js_/http://l.yimg.com/b/news/combo/D7H8FL9F?http%3A//l.yimg.com/d/combo%3Fuh/15/js/uh-1.0.20.js&amp;story/assets/js/1.0.3/generic/story.js"></script>
+                        
+
+                            <script type="text/javascript">
+                            YAHOO.util.Event.addListener(window, 'load', function() {
+                                // Start contextual shortcuts widget
+                                var config = {
+                                    url : '/news/common/api/en-US/NEWS/storycontextualshortcut;id=ap:20100207:ap_on_re_us:us_colorado_air_accident?format=json',
+                                    css : '/web/20100209061816/http://d.yimg.com/jq/css/cs_3.5.0.css',
+                                    js : '/web/20100209061816/http://d.yimg.com/jq/js/ysc_csc_news.js'
+                                }
+                                YAHOO.News.Shortcuts.init(config);
+                            });
+                            </script>
+                        
+    
+    <div class="mod ad ad_misc_ad">
+    <div class="bd">
+            <!-- Ad Keywords: data; video; it; It; fuel; help; home;-->
+<!-- SpaceID=0 robot -->
+    </div>
+</div>
+
+    
+    <div class="mod ad ad_survey_ad">
+    <div class="bd">
+            <!-- Ad Keywords: data; video; it; It; fuel; help; home;-->
+<!-- SpaceID=0 robot -->
+    </div>
+</div>
+
+    
+    
+    
+</body>
+</html>
+
+
+
+
+<!-- news:story-us:0:Success -->
+<!-- fe15.story.media.ac4.yahoo.com uncompressed Mon Feb  8 22:18:16 PST 2010 -->
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 6:18:16 Feb 9, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:53:59 Jan 11, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

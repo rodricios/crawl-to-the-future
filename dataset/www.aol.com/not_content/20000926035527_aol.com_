@@ -1,0 +1,965 @@
+
+<html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app11.us.archive.org";archive_analytics.values.server_ms=861;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+<style type="text/css">
+A:link{color:#0000FF;text-decoration:underline;}
+A:visited{color:#800080;text-decoration:underline;}
+</style>
+	<title>Welcome to AOL.COM</title>
+	
+
+
+<META http-equiv="PICS-Label" content='(PICS-1.1 "http://www.rsac.org/ratingsv01.html" l gen true comment "RSACi North
+America Server" by "webmaster@aol.net" for "http://www.aol.com/" on "1997.10.15T12:00-0400" r (n 0 s 0 v 0 l 0))'>
+
+ <SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!--
+function Promo(n, l) {
+        this.num = n;
+        this.ls = l;
+}
+
+function ssplit(b, s) {
+        a = new Array;
+        ii=0;
+        while ((j = b.indexOf(s)) != -1) {
+                a[ii] = b.substring(0,j);
+                b = b.substring(j+1);   
+                ii++;
+        }
+        a[ii] = b;
+        return a;
+}
+
+function showPromo() {
+        ns = new Array("aol:AD:48");
+        pd = "/popups/";
+        
+        ac = document.cookie;
+        if (ac.indexOf("SEENPROMO") != -1) return;
+        sc = ssplit(ac,';');
+        var oc;
+        for (i=0; i < sc.length; i++) {
+                if (sc[i].indexOf("HOMEPOP=") != -1) {
+                        oc = sc[i];
+                        break;
+                }
+        } 
+        p = new Array();
+        if (oc != null) {
+	oc = oc.substring(8, oc.length);
+	if (oc.charAt(0)=='=') {
+		oc = oc.substring(1, oc.length);
+	}
+	od = ssplit(oc,'+');
+	for (i=0; i < od.length; i++) {
+		t = ssplit(od[i],':');
+		p[t[0]] = new Promo(t[1],t[2]); 
+	}
+        } 
+        now = new Date();
+        ms = now.getTime();
+        dp = (now.getHours() < 12) ? "AM" : "PM";
+        pop = "";
+        for (i=0; i < ns.length; i++) {
+	e = ssplit(ns[i],':');
+	et = e[0];
+	ed = e[1];
+	es = e[2];
+	if (((ed == dp) || (ed == 'AD')) && ((p[et] == null) || (p[et].num != es)||((ms - p[et].ls) > 86400000 * 7))) {
+		pop=et + "_" + es;
+		if (p[et] == null) {
+			p[et] = new Promo(es,ms);       
+		} else {
+			p[et].num = es;
+			p[et].ls = ms;
+		}
+		break;                  
+	}
+        }
+        if (pop != "") {
+	nc = "HOMEPOP=";
+	for (entry in p) {
+		if (entry != "length") {        
+			if (p[entry].ls > ms) { p[entry].ls = ms ; }
+			nc += entry + ":" + p[entry].num + ":" + p[entry].ls + "+";
+		}
+	}
+	nc = nc.substring(0, nc.length - 1);
+	document.cookie = nc + "; path=/; expires=Fri, 01-Jan-2038 00:00:00 GMT; domain=.aol.com";
+	document.cookie = "SEENPROMO=YES";
+
+	tf = pd + pop + ".html" 
+	window.onerror = null;
+	//nw = window.open("","popup","width=330,height=330");
+	nw = window.open(tf,"popup","width=330,height=330,top=250,left=25");
+        }               
+}
+
+// -->
+</script>
+		</head>
+
+<!-- body tag -->
+<BODY BGCOLOR=#FFFFFF  onLoad="showPromo();">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://aol.com/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "26";
+var displayMonth = "Sep";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://aol.com/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20000926035527" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20000824071830/http://aol.com/" title="24 Aug 2000">AUG</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 3:55:27 Sep 26, 2000">SEP</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20001109124300/http://aol.com/" title="9 Nov 2000"><strong>NOV</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20000926014737/http://aol.com/" title="1:47:37 Sep 26, 2000"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 3:55:27 Sep 26, 2000">26</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20000926051150/http://aol.com/" title="5:11:50 Sep 26, 2000"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/19990904022530/http://aol.com/?" title="4 Sep 1999"><strong>1999</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 3:55:27 Sep 26, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20010926071446/http://aol.com/" title="26 Sep 2001"><strong>2001</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20000926035527*/http://aol.com/" title="See a list of every capture for this URL">22,051 captures</a>
+           <div class="r" title="Timespan for captures of this URL">20 Dec 96 - 7 Jan 15</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000001_1997:-1:000101000101_1998:-1:100210000002_1999:-1:230310001210_2000:8:036377477816_2001:-1:6136a8828897_2002:-1:122021878462_2003:-1:022312111513_2004:-1:121117888777_2005:-1:888878887899_2006:-1:998988675567_2007:-1:778655577755_2008:-1:354443666456_2009:-1:565654655555_2010:-1:666576766677_2011:-1:887676677a9b_2012:-1:cccbbbbbaaaa_2013:-1:baccddccccee_2014:-1:eefeeeeeeeee_2015:-1:b00000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+<!-- /body tag -->
+
+<TABLE WIDTH=585 CELLSPACING=0 CELLPADDING=0 BORDER=0 ALIGN=CENTER VALIGN=TOP>
+	<TR VALIGN=TOP>
+		<TD WIDTH=585 HEIGHT=75 COLSPAN=2 ALIGN=CENTER>
+		
+
+<TABLE WIDTH=80% ALIGN=CENTER VALIGN=TOP CELLSPACING=0 CELLPADDING=0 BORDER=0>
+	<TR VALIGN=TOP ALIGN=CENTER>
+	<TD>
+<IFRAME SRC="/web/20000926035527if_/http://ads.web.aol.com/html/7012801/-722632143/aol?target=_top&amp;height=70&amp;width=100" WIDTH="100" HEIGHT="70" SCROLLING="NO" 
+FRAMEBORDER=0 MARGINHEIGHT=0 MARGINWIDTH=0>
+<A HREF="/web/20000926035527/http://ads.web.aol.com/link/7012801/-722632143/aol">
+<IMG SRC="/web/20000926035527im_/http://ads.web.aol.com/image/7012801/-722632143/aol" width=100 height=70 border=0></A>
+</IFRAME>
+	</TD><TD> 
+
+<IFRAME SRC="/web/20000926035527if_/http://ads.web.aol.com/html/7012800/-722632143/aol?target=_top&amp;height=70&amp;width=100" WIDTH="100" HEIGHT="70" SCROLLING="NO" 
+FRAMEBORDER=0 MARGINHEIGHT=0 MARGINWIDTH=0>
+<A HREF="/web/20000926035527/http://ads.web.aol.com/link/7012800/-722632143/aol">
+<IMG SRC="/web/20000926035527im_/http://ads.web.aol.com/image/7012800/-722632143/aol" width=100 height=70 border=0></A>
+</IFRAME>
+	</TD><TD>
+<IFRAME SRC="/web/20000926035527if_/http://ads.web.aol.com/html/7012799/-722632143/aol?target=_top&amp;height=70&amp;width=100" WIDTH="100" HEIGHT="70" SCROLLING="NO" 
+FRAMEBORDER=0 MARGINHEIGHT=0 MARGINWIDTH=0>
+<A HREF="/web/20000926035527/http://ads.web.aol.com/link/7012799/-722632143/aol">
+<IMG SRC="/web/20000926035527im_/http://ads.web.aol.com/image/7012799/-722632143/aol" width=100 height=70 border=0></A>
+</IFRAME>
+	</TD><TD>
+<IFRAME SRC="/web/20000926035527if_/http://ads.web.aol.com/html/7012798/-722632143/aol?target=_top&amp;height=70&amp;width=100" WIDTH="100" HEIGHT="70" SCROLLING="NO" 
+FRAMEBORDER=0 MARGINHEIGHT=0 MARGINWIDTH=0>
+<A HREF="/web/20000926035527/http://ads.web.aol.com/link/7012798/-722632143/aol">
+<IMG SRC="/web/20000926035527im_/http://ads.web.aol.com/image/7012798/-722632143/aol" width=100 height=70 border=0></A>
+</IFRAME>
+	</TR></TD>
+</TABLE>
+
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=585 HEIGHT=55 COLSPAN=2>
+		<MAP NAME="navBar">
+<AREA SHAPE=RECT COORDS="0,0,72,21" HREF="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://aolmail.aol.com/&amp;sid=nMl">
+<AREA SHAPE=RECT COORDS="79,0,167,21" HREF="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://my.aol.com/&amp;sid=nMy">
+<AREA SHAPE=RECT COORDS="174,0,257,21" HREF="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/community/directory.html&amp;sid=nPe">
+<AREA SHAPE=RECT COORDS="264,0,319,21" HREF="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://search.aol.com/&amp;sid=nSc">
+<AREA SHAPE=RECT COORDS="327,0,372,21" HREF="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://shop.aol.com/&amp;sid=nSh">
+<AREA SHAPE=RECT COORDS="378,0,468,21" HREF="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/home.adp&amp;sid=nWc">
+<AREA SHAPE=RECT COORDS="476,0,571,21" HREF="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://free.aol.com/tryaolfree/index.adp?124510&amp;sid=nTy">
+</MAP>
+
+<TABLE WIDTH=585 BORDER=0 CELLPADDING=0 CELLSPACING=0 ALIGN=LEFT>
+	<TR ALIGN=LEFT>
+		<TD ALIGN=LEFT VALIGN=TOP HEIGHT=38 WIDTH=320>
+				<img src="/web/20000926035527im_/http://aol.com/gr/homepage/logo.gif" width=228 height=38 ALT="AOL.COM">
+		</TD>
+		<TD ALIGN=LEFT  VALIGN=MIDDLE  WIDTH=265>
+	<FONT FACE="verdana, arial, geneva" SIZE=1>
+<b><a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://free.aol.com/tryaolfree/index.adp?11&amp;sid=np1">Try AOL 5.0 With Our Best Offer Yet -- Up To 700 Hours FREE In A Month!  Sign Up NOW!</a>
+		</TD></TR>
+		<TR><TD COLSPAN=2 HEIGHT=22  ALIGN=LEFT>
+		<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0>
+		<TR VALIGN=TOP ALIGN=LEFT>
+<TD><img src="/web/20000926035527im_/http://aol.com/gr/homepage//navBar.gif" width=572 height=18 ALIGN=TOP USEMAP="#navBar" BORDER=0></TD>
+		</TR></TABLE>
+		</TD>
+	</TR>				
+</TABLE>		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<!--LEFT COLUMN-->
+		<TD WIDTH=370>
+		 <TABLE WIDTH=370 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	<TR VALIGN=TOP>
+	<TD WIDTH=375  BGCOLOR="#3834D0" VALIGN=TOP>
+
+<TABLE WIDTH=375 BGCOLOR=#3834D0 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	<TR VALIGN=TOP>
+		<TD ROWSPAN=6>
+			<img src="/web/20000926035527im_/http://aol.com/gr/homepage/tp.gif" width=35 height=5>
+		</TD>
+		<TD ALIGN=LEFT COLSPAN=2>
+			<img src="/web/20000926035527im_/http://aol.com/gr/homepage/any.gif"  WIDTH=333 HEIGHT=40 ALT="AOL Anytime, Anywhere">
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD ALIGN=LEFT COLSPAN=2>
+
+						
+			
+			
+	<TABLE VALIGN=TOP BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100% ALIGN=LEFT>
+				<TR VALIGN=TOP>
+				<TD COLSPAN=3>
+				<FONT FACE="arial, geneva" SIZE=2 COLOR=#FFFFFF>
+			<B>Check Your AOL Mail</B></FONT></TD></TR><TR VALIGN=TOP>
+					<TD ROWSPAN=2 ALIGN=LEFT VALIGN=TOP WIDTH=59>
+					<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/aolmail/&amp;sid=gfxm"><img src="/web/20000926035527im_/http://aol.com/gr/homepage/epicOut.gif"  WIDTH=59 HEIGHT=52 ALIGN=LEFT alt="AOL Mail" border=0></a>
+					</TD>
+					<TD ALIGN=LEFT WIDTH=42% VALIGN=BOTTOM>
+					<FONT FACE="verdana, arial, geneva" SIZE=1 COLOR=#96C8FF>
+					Enter AOL Screen Name:
+					</FONT>
+					</TD>
+					<TD ALIGN=LEFT VALIGN=BOTTOM>
+					<FONT FACE="verdana, arial, geneva" SIZE=1 COLOR=#96C8FF>
+					Enter Password:
+					</TD>
+				</TR>
+		<FORM method=post name=loginform action="/web/20000926035527/https://aolmail.aol.com/main.dci">
+		<input type=hidden name=langid value=0>
+		<input type=hidden name=login value=1>
+		<input type=hidden name=nmlogin value="1">
+				<TR VALIGN=TOP>
+					<TD ALIGN=LEFT>
+	
+	<INPUT TYPE="TEXT" SIZE=16 NAME="username"> 
+	</TD>
+	<TD ALIGN=LEFT>
+	<INPUT TYPE="PASSWORD" SIZE=8 NAME="password">
+	
+		
+	<INPUT TYPE="SUBMIT" VALUE="Go" ALIGN=ABSMIDDLE STYLE="height::22px;width:22px;font-family:arial;font-size:8pt;"> 
+	</TD></TR></FORM></TABLE>
+			</TD>
+	</TR>
+	<TR VALIGN=MIDDLE>
+		<TD ALIGN=LEFT WIDTH=170>
+			&nbsp;<img src="/web/20000926035527im_/http://aol.com/gr/homepage/arrow.gif" width="7" height="7" ALIGN=ABSMIDDLE>
+			<FONT FACE="arial, geneva" SIZE=2 COLOR=#FFFFFF>
+			Simplify Your Life
+		</TD>
+		<TD ALIGN=LEFT WIDTH=170>
+			&nbsp;<img src="/web/20000926035527im_/http://aol.com/gr/homepage/arrow.gif" width=7 height=7 ALIGN=ABSMIDDLE>
+			<FONT FACE="arial, geneva" SIZE=2 COLOR=#FFFFFF>
+			Connect With Friends
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD ALIGN=LEFT WIDTH="170" VALIGN="TOP">
+			<FONT FACE="verdana, arial, geneva" SIZE=1>
+			<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://calendar.aol.com/&amp;sid=mCa" STYLE="color:#C8FFFF;"><img src="/web/20000926035527im_/http://aol.com/gr/homepage/cal.gif" WIDTH=51 HEIGHT=23 ALIGN=LEFT border=0 ALT="My Calendar">
+			<B>My Calendar</B></A><BR><BR><P ALIGN=LEFT>
+		</TD>	
+		<TD ALIGN=LEFT WIDTH="170">
+			<FONT FACE="verdana, arial, geneva" SIZE=1 CLASS="sansa">
+			&nbsp;
+			<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/aim/home.html&amp;sid=mAm" STYLE="color:#C8FFFF;"><B>AOL Instant Messenger</B><BR><img src="/web/20000926035527im_/http://aol.com/gr/homepage/aim.gif" WIDTH=45 HEIGHT=30 ALIGN=LEFT border=0 ALT="AIM"></A>
+			<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/aim/aimexpress.html&amp;sid=mAq" STYLE="color:#C8FFFF;"><B>AIM Express</B></A><BR>
+			<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/chat/&amp;sid=mCh" STYLE="color:#C8FFFF;"><B>Web Chat</B></A>
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN=LEFT WIDTH=170>
+			&nbsp;<img src="/web/20000926035527im_/http://aol.com/gr/homepage/arrow.gif" width="7" height="7" ALIGN=ABSMIDDLE>
+			<FONT FACE="arial, geneva" SIZE=2 COLOR=#FFFFFF>
+			Personalize AOL.COM
+		</TD>
+		<TD ALIGN=LEFT WIDTH=170>
+			&nbsp;<img src="/web/20000926035527im_/http://aol.com/gr/homepage/arrow.gif" width=7 height=7 ALIGN=ABSMIDDLE>
+			<FONT FACE="arial, geneva" SIZE=2 COLOR=#FFFFFF>
+			Connect With Family
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD ALIGN=LEFT WIDTH=170 VALIGN=TOP>
+			<FONT FACE="verdana, arial, geneva" SIZE=1>
+			<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://my.aol.com/&amp;sid=mMy" STYLE="color:#C8FFFF;"><img src="/web/20000926035527im_/http://aol.com/gr/homepage/myaol.gif" WIDTH=52 HEIGHT=28 ALIGN=LEFT BORDER=0 ALT="My AOL.COM"><FONT FACE="verdana, arial, geneva" SIZE=1 COLOR=#C8FFFF><B>My AOL.COM</B></A><BR><BR><P ALIGN=LEFT>
+		</TD>
+		<TD ALIGN=LEFT WIDTH=170 VALIGN=TOP>
+			<FONT FACE="verdana, arial, geneva" SIZE=1>
+			<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://groups.aol.com/&amp;sid=mGp" STYLE="color:#C8FFFF;"><img src="/web/20000926035527im_/http://aol.com/gr/homepage/groups.gif" WIDTH=52 HEIGHT=28 ALIGN=LEFT BORDER=0 ALT="Groups@AOL"><FONT FACE="verdana, arial, geneva" SIZE=1 COLOR=#C8FFFF><B>Groups@AOL</B></A><BR><BR><P ALIGN=LEFT>
+		</TD>
+	</TR>
+</TABLE>
+	
+		</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT=2 WIDTH=375 BGCOLOR=#FFFFFF>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=375 HEIGHT=80 BGCOLOR=#000068>
+		
+
+<TABLE WIDTH=375 HEIGHT=80 CELLSPACING=0 CELLPADDING=0 BORDER=0 VALIGN=TOP>
+	<TR><TD WIDTH=35>
+	<IMG SRC="/web/20000926035527im_/http://aol.com/gr/homepage/tp.gif" WIDTH=35 HEIGHT=1>
+	</TD><TD ALIGN=LEFT VALIGN=MIDDLE HEIGHT=40 WIDTH=102>
+	<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://search.aol.com/&amp;sid=colF"><img src="/web/20000926035527im_/http://aol.com/gr/homepage/searchTXT.gif" BORDER=0 alt="Search"></a>	
+	</TD>
+	<FORM ACTION="/web/20000926035527/http://search.aol.com/dirsearch.adp" METHOD=GET>
+	<TD ALIGN=LEFT VALIGN=MIDDLE>
+	<INPUT TYPE=TEXT SIZE=20 NAME=query>
+	<INPUT TYPE=SUBMIT VALUE=Search STYLE="font-family: arial, geneva; font-size:8pt;">
+	</TD>
+	</FORM>
+	<TR><TD WIDTH=375 COLSPAN=3 HEIGHT=3></TD></TR>
+	<TR><TD WIDTH=35>
+	<IMG SRC="/web/20000926035527im_/http://aol.com/gr/homepage/tp.gif" WIDTH=35 HEIGHT=1>
+	</TD><TD ALIGN=LEFT VALIGN=TOP COLSPAN=2>
+	<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=0 BORDER=0>
+	<TR><TD ROWSPAN=2 ALIGN=LEFT>
+	<FONT FACE="verdana, arial, geneva" SIZE=1 COLOR="#A0D0FF">
+	<B>Other<BR> Searches:
+	</TD><TD ALIGN=LEFT>
+	<FONT FACE="verdana, arial, geneva" SIZE=1 COLOR="#A0D0FF">
+	<B><a STYLE="color:#A0D0FF;" href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/netfind/whitepages.adp&amp;sid=fWp">White Pages</A> |
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/netfind/yellowpages.adp&amp;sid=fYp" STYLE="color:#A0D0FF;">Yellow Pages</A> |
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://search.aol.com/&amp;sid=fCa" STYLE="color:#A0D0FF">Categories</A> 
+	</TD></TR><TR>
+	<TD ALIGN=LEFT VALIGN=TOP>
+	<FONT FACE="verdana, arial, geneva" SIZE=1 COLOR="#A0D0FF"><B>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://webcenter.maps.aol.com/travel/&amp;sid=fMp" STYLE="color:#A0D0FF;">Maps</A> | 
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/netfind/emailfinder.adp&amp;sid=fEm" STYLE="color:#A0D0FF;">E-mail Finder</A> | <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/netfind/hometown.html&amp;sid=fPe" STYLE="color:#A0D0FF">Home Pages</A>
+ | <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/netfind/kids/home.html&amp;sid=fKd" STYLE="color:#A0D0FF;">Kids Only</A></B>
+	</TD></TR></TABLE>
+	</TD></TR></TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT=2 WIDTH=375 BGCOLOR=#FFFFFF>
+		</TD>
+	</TR>
+	<!--WEBCENTERS-->
+	<TR VALIGN=TOP>
+		<TD  WIDTH=375 BGCOLOR=#FF9800>
+		
+
+<TABLE WIDTH=375 BORDER=0  ALIGN=CENTER VALIGN=TOP CELLSPACING=0 CELLPADDING=0 BGCOLOR=#FF9800 CLASS="sansb">
+	<TR>
+		<TD ALIGN=LEFT WIDTH=35 BGCOLOR=#FF9800>
+		<IMG SRC="/web/20000926035527im_/http://aol.com/gr/homepage/tp.gif" WIDTH=35 HEIGHT=1>
+		</TD>
+		<TD ALIGN=LEFT VALIGN=TOP HEIGHT=54>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://shop.aol.com/&amp;sid=colS"><img src="/web/20000926035527im_/http://aol.com/gr/homepage/shHeader2.gif" WIDTH=329 HEIGHT=54 BORDER=0 ALT="Shopping with Shop@AOL.COM"></A>
+		</TD>
+	</TR>
+
+			<TR>
+		<TD ALIGN=LEFT WIDTH=35 BGCOLOR=#FF9800>
+		<IMG SRC="/web/20000926035527im_/http://aol.com/gr/homepage/tp.gif" WIDTH=35 HEIGHT=1>
+		</TD>
+		<TD ALIGN=LEFT VALIGN=TOP WIDTH=50%>
+		&nbsp;<img src="/web/20000926035527im_/http://aol.com/gr/homepage/ba.gif" width=6 height=9 ALIGN=ABSMIDDLE>
+		<FONT FACE="verdana, arial, geneva" SIZE=1 class="sansb">
+
+					<b><A STYLE="color:#000000;" href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://app1.firstusa.com/card.cfm/XAL3HAL28/6ALG&amp;sid=sF1">No Annual Fee -- AOL Visa Card. Apply Now!</a></b>
+				<BR>
+		&nbsp;<img src="/web/20000926035527im_/http://aol.com/gr/homepage/ba.gif" width=6 height=9 ALIGN=ABSMIDDLE>
+
+				<b><A STYLE="color:#000000;" href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://webcenter.shop.aol.com/clothing/mens.adp&amp;sid=sF2">Spend $50, take $10 off at Old Navy.</A></b>		<BR>
+		&nbsp;<img src="/web/20000926035527im_/http://aol.com/gr/homepage/ba.gif" width=6 height=9 ALIGN=ABSMIDDLE>
+		 
+		
+		<b><A STYLE="color:#000000;" href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://webcenter.shop.aol.com/health/beauty.adp&amp;sid=sF3">FREE cK One Anorak Jacket at ibeauty.com.</A></b>		 
+		<BR><BR>
+		<FONT FACE="arial, geneva" SIZE=2 CLASS="sansb">
+
+			<TABLE WIDTH=315  ALIGN=LEFT  VALIGN=TOP BORDER=0 CELLPADDING=0 CELLSPACING=0>
+		<TR><TD><FONT FACE="Verdana, Arial, Geneva" SIZE=2><B>Great Stores:</B><BR></TD>
+		<TD><FONT FACE="Verdana, Arial, Geneva" SIZE=2><BR></TD>
+		<TD ALIGN=RIGHT><FONT FACE="Verdana, Arial, Geneva" SIZE=2><B>Hot Spots:</B></TD></TR>
+		<TR ALIGN=LEFT VALIGN=TOP>
+		<TD><FONT FACE="Arial, Geneva" SIZE=2 class="sansb">
+
+<A STYLE="color:#000000;" href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://webcenter.shop.aol.com/food/gourmet.adp&amp;sid=s1">Cooking.com</a><BR>
+<A STYLE="color:#000000;" href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://webcenter.shop.aol.com/clothing/maternity.adp&amp;sid=s2">GapMaternity</a><BR>
+<A STYLE="color:#000000;" href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://webcenter.shop.aol.com/office/index.adp&amp;sid=s3">Stamps.com</a><BR>
+<A STYLE="color:#000000;" href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://webcenter.shop.aol.com/books/music.adp&amp;sid=s4">CDNOW</a><BR>
+<A STYLE="color:#000000;" href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://webcenter.shop.aol.com/pets/index.adp&amp;sid=s5">Petopia</a><BR>
+<A STYLE="color:#000000;" href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://webcenter.shop.aol.com/toys/toys.adp&amp;sid=s6">eToys.com</a>
+</TD>
+
+		<TD><FONT FACE="Arial, Geneva" SIZE=2 class="sansb">
+
+<A STYLE="color:#000000;" href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://webcenter.shop.aol.com/sports/golf.adp&amp;sid=s7">mvp.com</a><BR>
+<A STYLE="color:#000000;" href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://webcenter.shop.aol.com/books/movies.adp&amp;sid=s8">express.com</a><BR>
+<A STYLE="color:#000000;" href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://webcenter.shop.aol.com/health/diet.adp&amp;sid=s9">AVON</a><BR>
+<A STYLE="color:#000000;" href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://webcenter.shop.aol.com/electronics/photo.adp&amp;sid=s10">CIRCUIT CITY</a><BR>
+<A STYLE="color:#000000;" href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://webcenter.shop.aol.com/clothing/mens.adp&amp;sid=s11">jcrew.com</a><BR>
+<A STYLE="color:#000000;" href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://webcenter.shop.aol.com/flowers/gifts.adp&amp;sid=s12">The Knot</a><BR>
+</TD>
+
+		<TD VALIGN=TOP ALIGN=RIGHT BGCOLOR=#FF9800>
+		<FONT FACE="arial,geneva" SIZE=2 class="sansb">
+
+<A STYLE="color:#000000;" href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://webcenter.shop.aol.com/jewelry/index.adp&amp;sid=sB1">Jewelry & Watches</a><br>
+<A STYLE="color:#000000;" href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://webcenter.shop.aol.com/food/gourmet.adp&amp;sid=sB2">Gifts & Entertaining</a><br>
+
+<BR>
+
+<a STYLE="color:#000000;" href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://shop.aol.com/&amp;sid=sMS">More Stores</A>&nbsp;<a STYLE="color:#000000;" href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://shop.aol.com/&amp;sid=sMS"><img src="/web/20000926035527im_/http://aol.com/gr/homepage/ba.gif" width="6" height="9" ALIGN=ABSMIDDLE BORDER=0></A>
+
+		
+		</TD>
+		</TR></TABLE>
+		<BR>
+		</TD>
+
+	</TR>
+	<TR><TD HEIGHT=25 BGCOLOR=#FF9800 COLSPAN=2>&nbsp;
+	</TD></TR>
+</TABLE>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+	<TD WIDTH=375 ALIGN=CENTER>
+		
+	
+<TABLE ALIGN=LEFT VALIGN=TOP CELLSPACING=0 CELLPADDING=3 WIDTH=350>
+<TR>
+	<TD ALIGN=LEFT>
+<BR>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/community/directory.html&amp;sid=colP"><img border=0 src="/web/20000926035527im_/http://aol.com/gr/homepage/chat.gif" width=116 height=22 alt="People & Chat"></A>
+	</TD>
+</TR>
+
+<TR>
+	<TD ALIGN=LEFT VALIGN=TOP>
+<FONT FACE="verdana, arial, geneva" SIZE=1>
+&nbsp;<IMG SRC="/web/20000926035527im_/http://aol.com/gr/homepage/ba.gif" WIDTH=6 HEIGHT=9 ALIGN=ABSMIDDLE> <A HREF="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://groups.aol.com&amp;sid=pGp"><B>Groups@AOL -</B> Private Family Web Pages</a><BR>
+</TD></TR>
+
+<TR>
+	<TD VALIGN=TOP ALIGN=LEFT>
+<FONT FACE="verdana, arial, geneva" SIZE=1>
+&nbsp;<IMG SRC="/web/20000926035527im_/http://aol.com/gr/homepage/ba.gif" WIDTH=6 HEIGHT=9 ALIGN=ABSMIDDLE> <B><a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/chat/&amp;sid=pHC">Hot Chats</a>:</B>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/community/aimcheck.adp/url=Romance+Chat&amp;sid=pHC1">Romance</a>,
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/community/aimcheck.adp/url=Britney+Spears&amp;sid=pHC2">Britney Spears</a>,
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/community/aimcheck.adp/url=Celebrity+Chat&amp;sid=pHC3">Celebrities</a>,
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/community/aimcheck.adp/url=Music+Chat&amp;sid=pHC4">Music</a>
+<BR>
+
+</TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP>
+<FONT FACE="verdana, arial, geneva" SIZE=1>
+&nbsp;<IMG SRC="/web/20000926035527im_/http://aol.com/gr/homepage/ba.gif" WIDTH=6 HEIGHT=9 ALIGN=ABSMIDDLE> <A HREF="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://love.aol.com/LoveMain/?partner=AOW&amp;sid=pLv"><B>Love@AOL -</B> Photo Personals</B></a><BR>
+</TD></TR><TR><TD VALIGN=TOP ALIGN=LEFT>
+<FONT FACE="verdana, arial, geneva" SIZE=1>
+
+&nbsp;<IMG SRC="/web/20000926035527im_/http://aol.com/gr/homepage/ba.gif" WIDTH=6 HEIGHT=9 ALIGN=ABSMIDDLE> <A HREF="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://hometown.aol.com/hmtwnpromo/build/index.htm&amp;sid=pFP"><B>Build Free Home Pages</B></a><br>
+
+
+</TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP>
+<FONT FACE="verdana, arial, geneva" SIZE=1>
+&nbsp;<IMG SRC="/web/20000926035527im_/http://aol.com/gr/homepage/ba.gif" WIDTH=6 HEIGHT=9 ALIGN=ABSMIDDLE> <A HREF="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://hometown.aol.com/hmtwnpromo/fame/index.htm&amp;sid=pTP"><B>Top Home Pages</B></a><BR>
+
+
+</TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP>
+<FONT FACE="verdana, arial, geneva" SIZE=1>
+&nbsp;<IMG SRC="/web/20000926035527im_/http://aol.com/gr/homepage/ba.gif" WIDTH=6 HEIGHT=9 ALIGN=ABSMIDDLE> <B><A HREF="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://www.helping.org/&amp;sid=pH">Helping.org</a>:</B> <A HREF="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://www.helping.org/volunteer/&amp;sid=pHv">Be A Volunteer</a>, <A HREF="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://www.helping.org/donate/&amp;sid=pHd">Donate To Charity</a><BR>
+
+	</TD>
+</TR>
+</TABLE>	</TABLE>		
+	</TD>
+	
+	<TD WIDTH=215>
+	<TABLE WIDTH=215 CELLSPACING=0 CELLPADDING=0 BORDER=0>
+	<TR>
+		<TD ALIGN=LEFT VALIGN=TOP>
+		 <TABLE ALIGN=RIGHT WIDTH=200 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR><TD ALIGN=LEFT VALIGN=TOP HEIGHT=20 COLSPAN=2>
+		<FONT FACE="verdana, arial, geneva" SIZE=1>
+		<B>Monday, September 25, 2000
+
+		</B><BR>
+		</TD></TR>
+	<TR><TD ALIGN=LEFT VALIGN=TOP HEIGHT=25 COLSPAN=2>
+<img src="/web/20000926035527im_/http://aol.com/gr/homepage/ess.gif" width=121 height=21 ALT="Daily Essentials">
+<BR>	<FONT FACE="verdana, arial, geneva" SIZE=1>
+	<B>TOP NEWS:</B><BR>
+	
+
+<TABLE CELLPADDING=2 CELLSPACING=0><TR VALIGN=TOP ALIGN=LEFT><TD><IMG SRC="/web/20000926035527im_/http://aol.com/gr/homepage/ba.gif" WIDTH="6" HEIGHT="9"></TD><TD><FONT FACE="geneva,arial" SIZE=1><a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://my.aol.com/&amp;sid=news">Israelis, Palestinians to Meet in U.S.</a></TD></TR>
+<TR VALIGN=TOP ALIGN=LEFT><TD><IMG SRC="/web/20000926035527im_/http://aol.com/gr/homepage/ba.gif" WIDTH="6" HEIGHT="9" ALIGN=ABSMIDDLE></TD><TD><FONT FACE="geneva,arial" SIZE=1><a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://my.aol.com/&amp;sid=news">Romanian Gymnast Stripped of Gold Medal</a></TD></TR>
+</TABLE>
+ 
+
+	<BR>
+	</TD></TR>
+	<TR><TD ALIGN=LEFT VALIGN=TOP WIDTH=50%>
+	<FONT FACE="verdana,arial, geneva" SIZE=1>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://my.aol.com/weather/home.tmpl&amp;sid=eWe">Weather</A><BR>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://my.aol.com/entertainment/horoscopes.tmpl&amp;sid=eHo">Horoscopes</A><BR>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://totalsports.aol.com/stats/aol/aol/aol/scores.html&amp;sid=eSc">Sports Scores</A><BR>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://classifiedplus.aol.com/aolnc.aolc/clfirst.html&amp;sid=eCl">Classifieds</A><br>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://my.aol.com/index.tmpl?page=2&amp;sid=eSt">Stock Portfolio</A>
+		</TD><TD ALIGN=LEFT VALIGN=TOP>
+		<FONT FACE="verdana, arial, geneva" SIZE=1>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/chat/&amp;sid=eCh">Hot Chats</a><br>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://love.aol.com/LoveMain/?partner=AOW&amp;sid=eLv">Love@AOL</A><BR>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://hometown.aol.com/hmtwnpromo/build/index.htm&amp;sid=eHm">Home Pages</A><br>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://www.aol-aol.americangreetings.com/index.pd?source=aol-aol120&amp;sid=eGt">Free Greetings</A><BR>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://free.aol.com/tryaolfree/index.adp?124514&amp;sid=eTy">AOL 5.0 FREE</a>
+<BR></TD></TR>
+	<TR><TD ALIGN=LEFT>
+	<FONT FACE="verdana, arial, geneva" SIZE=1><BR>
+	<B>STOCK QUOTE:</B></TD>
+		<TD><FONT FACE="arial, geneva" SIZE=1><BR>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://quicken.aol.com/investments/tickersearch/&amp;sid=eSy">Symbol Lookup</A></TD></TR>
+	<TR>
+	<FORM METHOD=GET ACTION="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex">
+	<input type=hidden name=s value="quickenquote">
+		<TD ALIGN=LEFT>
+		<INPUT TYPE="TEXT" SIZE=11 NAME="symbol" VALUE="">
+		</TD>
+		<TD ALIGN=LEFT>
+		<INPUT TYPE="SUBMIT" VALUE="Get Quote" STYLE="font-family:verdana, arial, geneva;font-size:7pt;">
+		</TD>
+	</FORM>
+	</TR></TABLE>		</TD>
+	</TR>
+	<TR>
+	<TD ALIGN=LEFT VALIGN=TOP CLASS="sansa">
+	<!--BEGIN NEWS-->
+	<BR>
+	<TABLE ALIGN=RIGHT WIDTH=200 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD ALIGN=LEFT VALIGN=TOP WIDTH=25%> 
+
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://tvguide.aol.com/&amp;sid=gfxb"><IMG SRC="/web/20000926035527im_/http://aol.com/photos/09_26nikki63.jpg" WIDTH=63 HEIGHT=63 BORDER=1 alt="Fall TV" ALIGN=ABSTOP></a>&nbsp;
+		</TD>
+		<TD ALIGN=LEFT VALIGN=TOP WIDTH=137>
+<FONT FACE="verdana, arial, geneva" SIZE=2>
+<B>Hot Fall TV:</B><BR>
+<FONT SIZE=1 FACE="arial, geneva">- <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://tvguide.aol.com/&amp;sid=hdb">See New Fall Shows</a><br>- <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://tvguide.aol.com/features/&amp;sid=hd2b">Returning Favorites</a><br>- <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/entertainment/television.adp&amp;sid=hd3b">Search TV Listings</a><br>
+								
+
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2 ALIGN=LEFT VALIGN=BOTTOM HEIGHT=22>
+
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/home.adp&amp;sid=colW">
+<img border=0 src="/web/20000926035527im_/http://aol.com/gr/homepage/wcHead.gif" width=103 height=22 alt="Web Centers" ALIGN=TOP></a>
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN=LEFT COLSPAN=2 VALIGN=TOP>
+	<TABLE VALIGN=TOP ALIGN=RIGHT BORDER=0 CELLPADDING=0 CELLSPACING=0>
+		<tr>
+		<td width=5 valign=middle><b>&#183;</b></td>
+		<td width=320><font face="verdana, arial, geneva" size=1><b><a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/autos/home.adp&amp;sid=wAu">Autos</a></b>: <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/autos/newcars.adp&amp;sid=wAuN">New Cars</a>, <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/autos/usedcars.adp&amp;sid=wAuU">Used Cars</a>...</td>
+		</tr>
+		<tr>
+			<td>&#183;</b></td>
+			<td><font face="verdana, arial, geneva" size=1><b><a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/workplace/home.adp&amp;sid=wBu">Bus. &amp; Careers</a></b>: <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/workplace/jobs.adp&amp;sid=wBuJ">Job Listings</a>...</td>
+		</tr>
+		<tr>
+		<td>&#183;</b></td>
+		<td><font face="verdana, arial, geneva" size=1><b><a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/computing/home.adp&amp;sid=wCo">Computing</a></b>: <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/computing/software.adp&amp;sid=wCoS">Screensavers</a>...</td>
+		</tr>
+		<tr>
+		<td>&#183;</b></td>
+		<td><font face="verdana, arial, geneva" size=1><b><a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/entertainment/home.adp&amp;sid=wEn">Entertainment</a></b>: 
+		 <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/entertainment/television.adp&amp;sid=wEnT">TV</a>, 
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://www.moviefone.com/?UID:5505&amp;sid=wEnMo">Movies</a>...</td>
+		</tr>
+		<tr>
+		<td>&#183;</b></td>
+		<td><font face="verdana, arial, geneva" size=1><b><a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/food/home.adp&amp;sid=wFo">Food</a></b>:  <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/food/recipes.adp&amp;sid=wFoR">Recipes</a>, 
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/food/quick.adp&amp;sid=wFoQ">Quick Meals</a>...</td>
+		</tr>
+		<tr>
+		<td>&#183;</b></td>
+		<td><font face="verdana, arial, geneva" size=1><b><a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/games/home.adp&amp;sid=wGa">Games</a></b>:  <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/games/pcgames.adp&amp;sid=wGaP">Demos</a>, <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://aolcom.ea.com/home/home.jsp&amp;sid=wGaO">Free Games</a>...</td>
+		</tr>
+		<tr>
+		<td>&#183;</b></td>
+		<td><font face="verdana, arial, geneva" size=1><b><a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://www.governmentguide.com/?type=aolcom&amp;sid=wGv">Govt.</a></b>: <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://election2000.aol.com/cgi-bin/election.pl?dir=home&amp;sid=wGvE">Elections</a>, <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://www.governmentguide.com/state/DMV.adp?type=aolcom&amp;sid=wGvD">DMV Forms</a>...</td>
+		</tr>
+		<tr>
+		<td>&#183;</b></td>
+		<td><font face="verdana, arial, geneva" size=1><b><a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/health/home.adp&amp;sid=wHe">Health</a></b>:  <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/health/babies.adp&amp;sid=wHeB">Babies</a>, <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/health/illness.adp&amp;sid=wHeR">Conditions</a>...</td>
+		</tr>
+		<tr>
+		<td>&#183;</b></td>
+		<td><font face="verdana, arial, geneva" size=1><b><a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/homegarden/home.adp&amp;sid=wHm">Home &amp; Garden</a></b>:  <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/homegarden/ourhouses.adp&amp;sid=wHmF">Floor Plans</a>...</td>
+		</tr>
+		<tr>
+		<td>&#183;</b></td>
+		<td><font face="verdana, arial, geneva" size=1><b><a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/international/home.adp&amp;sid=wIn">International</a></b>:  <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/international/home.adp&amp;sid=wInN">Newspapers</a>...</td>
+		</tr>
+		<tr>
+		<td>&#183;</b></td>
+		<td><font face="verdana, arial, geneva" size=1><b><a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/legal/home.adp&amp;sid=wLe">Legal</a></b>:  <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/legal/home.adp&amp;sid=wLeF">Find A Lawyer</a>...</td>
+		</tr>
+		<tr>			
+		<td>&#183;</b></td>
+		<td><font face="verdana, arial, geneva" size=1><b><a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://digitalcity.aol.com/&amp;sid=wLo">Local</a></b>: 
+		 <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://digitalcity.aol.com/entertainment/&amp;sid=wLoE">Events</a>, <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://digitalcity.aol.com/visitorsguide/&amp;sid=wLoV">Visitor's Guides</a>...</td>
+		</tr>
+		<tr>
+		<td>&#183;</b></td>
+		<td><font face="verdana, arial, geneva" size=1><b><a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://my.aol.com/&amp;sid=wNe">News</a></b>:   <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://my.aol.com/entertainment/comics/home.tmpl&amp;sid=wNeC">Comics</a>, <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://my.aol.com/entertainment/crossword/crossword.tmpl&amp;sid=wNeX">Crosswords</a>...</td>
+		</tr>
+		<tr>			
+		<td>&#183;</b></td>
+		<td><font face="verdana, arial, geneva" size=1><b><a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/parenting/home.adp&amp;sid=wPa">Parenting</a></b>:  <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/parenting/family.adp&amp;sid=wPaF">Family Fun</a>...</td>
+		</tr>
+		<tr>			
+		<td>&#183;</b></td>
+		<td><font face="verdana, arial, geneva" size=1><b><a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://quicken.aol.com/&amp;sid=wPf">Personal Finance</a></b>:  <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://quicken.aol.com/investments/stocks/&amp;sid=wPfS">Stocks</a>, <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://quicken.aol.com/investments/mutualfunds&amp;sid=wPfF">Funds</a>...</td>
+		</tr>
+		<tr>
+		<td>&#183;</b></td>
+		<td><font face="verdana, arial, geneva" size=1><b><a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/pictures/home.adp&amp;sid=wPi">Pictures &amp; Albums</a></b>:  <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/pictures/home.adp#galleries&amp;sid=wPiG">Galleries</a>...</td>
+		</tr>
+		<tr>			
+		<td>&#183;</b></td>
+		<td><font face="verdana, arial, geneva" size=1><b><a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/realestate/home.adp&amp;sid=wRl">Real Estate</a></b>: <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/realestate/homebuy.adp&amp;sid=wRlH">Homes</a>, <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/realestate/rentals.adp&amp;sid=wRlA">Rentals</a>...</td>
+		</tr>
+		<tr>			
+		<td>&#183;</b></td>
+		<td><font face="verdana, arial, geneva" size=1><b><a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/research/home.adp&amp;sid=wRs">Research</a></b>:  <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/research/genealogy.adp&amp;sid=wRsG">Genealogy</a>...</td>
+		</tr>
+		<tr>			
+		<td>&#183;</b></td>
+		<td><font face="verdana, arial, geneva" size=1><b><a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/sports/home.adp&amp;sid=wSp">Sports</a></b>: <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://webcenter.sydney.aol.com/sports/nonindex.html&amp;sid=wSpO">Olympics</a>, <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://totalsports.aol.com/bbo/mlb/&amp;sid=wSpB">MLB</a>, <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://totalsports.aol.com/fbo/nfl/&amp;sid=wSpF">NFL</a>...</td>
+		</tr>
+
+<tr>			
+	<td>&#183;</b></td>
+	<td><font face="verdana, arial, geneva" size=1><b><a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/travel/home.adp&amp;sid=wTr">Travel</a></b>: <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://webcenter.travel.aol.com/travel/air/air0.jsp&amp;sid=wTrB">Flights</a>, <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://webcenter.travel.aol.com/travel/lodging/hotel.jsp&amp;sid=wTrH">Hotels</a>...</td>
+</tr>
+
+<tr>			
+	<td>&#183;</b></td>
+	<td><font face="verdana, arial, geneva" size=1><b><a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/women/home.adp&amp;sid=wWm">Women</a></b>: <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/women/style.adp&amp;sid=wWmS">Style</a>, <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/webcenters/women/relationships.adp&amp;sid=wWmR">Relationships</a>...</td>
+</tr>
+
+		</table>
+
+		</TD>
+	</TR><TR>
+		<TD ALIGN=LEFT VALIGN=TOP COLSPAN=2>
+		
+		</TD>
+	</TR><TR>
+		
+
+		</TD>
+	</TR>
+</TABLE>
+	</TD>
+	
+		</TR>
+		</TABLE>
+		</TR><TR>
+		<TD COLSPAN=2 HEIGHT=3 WIDTH=585></TD>
+		</TR><TR>
+		<TD COLSPAN=2 VALIGN=TOP ALIGN=LEFT WIDTH=585>
+			<TABLE ALIGN=LEFT BORDER=0 CELLPADDING=5 CELLSPACING=0>
+	<TR><TD COLSPAN=2><a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://corp.aol.com/&amp;sid=colC"><img src="/web/20000926035527im_/http://aol.com/gr/homepage/foot.gif" WIDTH=158 HEIGHT=18 alt="America Online, Inc." border=0></a></TD>
+	</TR>
+	<TR ALIGN=LEFT><TD WIDTH=7 VALIGN=MIDDLE>
+	<img src="/web/20000926035527im_/http://aol.com/gr/homepage/ba.gif">
+	</TD><TD ALIGN=LEFT VALIGN=MIDDLE>
+	<FONT FACE="verdana, arial, geneva" SIZE=1>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://corp.aol.com/&amp;sid=iCor">America Online Corporate Site</a>
+	</TD></TR>
+	<TR ALIGN=LEFT>
+	<TD WIDTH=7 VALIGN=MIDDLE>
+	<img src="/web/20000926035527im_/http://aol.com/gr/homepage/ba.gif">
+	</TD><TD ALIGN=LEFT VALIGN=MIDDLE>
+	<FONT FACE="verdana, arial, geneva" SIZE=1>
+<a href="/web/20000926035527/http://corp.aol.com/whoweare/who_public.html#access">America Online Accessibility Policy</a>
+	</TD></TR>
+	<TR ALIGN=LEFT>
+	<TD WIDTH=7 VALIGN=MIDDLE>
+	<img src="/web/20000926035527im_/http://aol.com/gr/homepage/ba.gif">
+	</TD><TD ALIGN=LEFT VALIGN=MIDDLE>
+	<FONT FACE="verdana, arial, geneva" SIZE=1>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/info/onlinesafety.html&amp;sid=iSaf">Keep Your Kids Safe in Cyberspace</a>, <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir?http://www.getnetwise.org/index.html">GetNetWise</a>, <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/info/privacy.html&amp;sid=iPrv">Privacy Protection</a> and <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/info/bulkemail.html&amp;sid=iBlk">AOL's Unsolicited Bulk E-mail Policy</a>.
+	</TD></TR>
+	<TR><TD WIDTH=7 VALIGN=MIDDLE>
+	<img src="/web/20000926035527im_/http://aol.com/gr/homepage/ba.gif">
+	</TD><TD VALIGN=MIDDLE ALIGN=LEFT>
+	<FONT FACE="verdana, arial, geneva" SIZE=1>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=/info/international.adp&amp;sid=iInt">AOL's Worldwide Services</a>: 
+Special versions of AOL for residents of 
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir?http://www.br.aol.com/">Brazil</a>, 
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir?http://www.aol.ca/">Canada</a>, 
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir?http://www.aol.de/">Germany</a>, 
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir?http://www.france.aol.com/">France</a>, <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir?http://www.aol.co.uk/">United Kingdom</a>, 
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir?http://www.sverige.aol.com/index.html">Sweden</a>, 
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir?http://www.jp.aol.com/">Japan</a>,
+ <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir?http://www.aol.com.au/">Australia</a>, 
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir?http://aol.com.hk/">Hong Kong</a>, 
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir?http://www.aol.com.mx/">Mexico</a> and <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir?http://www.aol.com.ar/">Argentina</a>.
+	</TD></TR>
+	</TABLE>
+		</TD></TR>
+		<TR><TD COLSPAN=2 VALIGN=TOP ALIGN=LEFT WIDTH=585>
+			<center>
+<table width=585 cellpadding=0 cellspacing=0 border=0>
+        <TR>
+                <TD BGCOLOR="#FFFFFF" WIDTH=585 HEIGHT=2 COLSPAN=8><IMG SRC="/web/20000926035527im_/http://aol.com/gr/transpixel.gif" WIDTH=585 HEIGHT=1 BORDER=0></TD>
+        </TR>
+
+        <tr>
+                <td colspan=8><HR WIDTH=100% SIZE=1 COLOR=#000000 NOSHADE></td>
+        </tr>
+        <tr>
+                <td width=6> </td>                <td width=135 valign="top"><font face="sans-serif,Arial,Helvetica" size=1 class="sansa">
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir?http://www.aol.com/info/pricing.html">AOL Pricing Plans</a><br>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir?http://access.web.aol.com/">AOL Access Numbers</a><br>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://free.aol.com/tryaolfree/index.adp?139331&amp;sid=i50">Download AOL 5.0</a><br>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir-complex?url=http://affiliate.aol.com/affiliate/welcome.adp?siteid=20712047&amp;sid=iAf">AOL Affiliate Network</a><br>
+</font>
+                </td>
+                <td width=7> </td>                <td width=141 valign="top"><font face="sans-serif,Arial,Helvetica" size=1 class="sansa">
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir?http://www.corp.aol.com/">About AOL</a><br>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir?http://www.aol.com/info/about.html">About AOL.COM</a><br>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir?http://www.school.aol.com/">AOL@SCHOOL</a><br>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir?http://www.aol.com/info/feedback.html">Feedback</a><br></font>
+                </td>
+                <td width=7> </td>                <td width=141 valign="top"><font face="sans-serif,Arial,Helvetica" size=1 class="sansa">
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir?http://corp.aol.com/careers/">Careers@AOL</a><br>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir?http://www.aol.com/info/link.html">Link to Us</a><br>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir?http://mediaspace.aol.com/">Advertise with Us</a><br>
+<br></font>
+                </td>
+                <td width=7> </td>                <td width=141 valign="top"><font face="sans-serif,Arial,Helvetica" size=1 class="sansa">
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir?http://webmaster.info.aol.com/">Webmaster Info</a><br>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir?http://www.aol.com/nethelp/home.html">AOL.COM Help</a><br>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir?http://www.aol.com/info/siteindex.html">Site Index</a><br></font></td>
+        </tr>
+        <tr>
+                <td align="CENTER" colspan=8><font size="1">&nbsp;<br></font>	<font face="geneva, arial" size="-2"><a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir?http://www.aol.com/copyright.html">Copyright</a> &#169; 2000 America Online, Inc.<br> All rights reserved. <a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir?http://www.aol.com/copyright.html">Legal Notices</a><br>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir?http://www.aol.com/info/privacy.html">Privacy Policy</a><br>
+<a href="/web/20000926035527/http://dynamic.aol.com/cgi/redir?http://free.aol.com/tryaolfree/index.adp?121421">Try AOL 5.0</a></font></td>
+        </tr>           
+        <tr>
+                <td colspan=8> </td>        </tr>
+</table>
+<br>
+</center>		</TD>
+	</TR>
+</TABLE>
+
+</body>
+</html> 
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 3:55:27 Sep 26, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 3:39:26 Jan 8, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

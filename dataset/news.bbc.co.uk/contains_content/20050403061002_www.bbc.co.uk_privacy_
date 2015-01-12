@@ -1,0 +1,534 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app0.us.archive.org";archive_analytics.values.server_ms=328;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<title>BBC - Privacy &amp; Cookies Policy</title>
+
+<meta name="description" content="BBC’s privacy &amp; cookies policy: covering Data Protection Act and our use of cookies." />
+<meta name="keywords"    content="privacy, policy, cookies, cookie, data, protection, personal, information, email, newsletters, mybbc, rights" />
+<meta name="created" content="20011101" />
+<meta name="updated" content="20041122" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+<!--
+body {margin:0;}
+form {margin:0;padding:0;}
+.bbcpageShadow {background-color:#828282;}
+.bbcpageShadowLeft {border-left:2px solid #828282;}
+.bbcpageBar {background:#999999 url(/images/v.gif) repeat-y;}
+.bbcpageSearchL {background:#666666 url(/images/sl.gif) no-repeat;}
+.bbcpageSearch {background:#666666 url(/images/st.gif) repeat-x;}
+.bbcpageSearch2 {background:#666666 url(/images/st.gif) repeat-x 0 0;}
+.bbcpageSearchRa {background:#999999 url(/images/sra.gif) no-repeat;}
+.bbcpageSearchRb {background:#999999 url(/images/srb.gif) no-repeat;}
+.bbcpageBlack {background-color:#000000;}
+.bbcpageGrey, .bbcpageShadowLeft {background-color:#999999;}
+.bbcpageWhite,font.bbcpageWhite,a.bbcpageWhite,a.bbcpageWhite:link,a.bbcpageWhite:hover,a.bbcpageWhite:visited {color:#ffffff;text-decoration:none;font-family:verdana,arial,helvetica,sans-serif;padding:1px 4px;}
+
+-->
+</style>
+<style type="text/css">
+@import url('/web/20050401013614im_/http://www.bbc.co.uk/includes/tbenh.css') ;
+</style>
+
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function popmailwin(x, y) {window.open(x,y,'status=no,scrollbars=yes,resizable=yes,width=350,height=400');}
+// -->
+</script>
+
+
+
+<style type="text/css"></style>
+
+
+<style type="text/css">
+<!--
+body{font-family:verdana, arial, helvetica, sans-serif;}
+h1{margin-top:10px;}
+h2{margin-bottom:5px;}
+p{margin-top:0;}
+.bar {background:#8DC1D2;width:490px;}
+.bold{font-weight:bold;}
+.spaced3 { margin:5px 0 0 0;padding:0;}
+
+-->
+</style>
+</head>
+
+<body bgcolor="#ffffff" text="#000000" link="#660000" vlink="#666600" alink="#990000" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.bbc.co.uk/privacy/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "1";
+var displayMonth = "Apr";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.bbc.co.uk/privacy/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20050401013614" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20050227030202/http://www.bbc.co.uk/privacy/" title="27 Feb 2005">FEB</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 1:36:14 Apr 1, 2005">APR</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20050505221146/http://www.bbc.co.uk/privacy/" title="5 May 2005"><strong>MAY</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20050331054454/http://www.bbc.co.uk/privacy/" title="5:44:54 Mar 31, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 1:36:14 Apr 1, 2005">1</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20050405234038/http://www.bbc.co.uk/privacy/" title="23:40:38 Apr 5, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20040203204634/http://www.bbc.co.uk/privacy" title="3 Feb 2004"><strong>2004</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 1:36:14 Apr 1, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20060408101314/http://www.bbc.co.uk/privacy/" title="8 Apr 2006"><strong>2006</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20050401013614*/http://www.bbc.co.uk/privacy/" title="See a list of every capture for this URL">4,087 captures</a>
+           <div class="r" title="Timespan for captures of this URL">7 Aug 01 - 9 Jan 15</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:00000001bcd9_2002:-1:000000021532_2003:-1:020102020202_2004:-1:12020aaaa9a7_2005:3:a9aba98a4689_2006:-1:685714673125_2007:-1:256313289506_2008:-1:302510103016_2009:-1:450514030223_2010:-1:060454545662_2011:-1:688978cddede_2012:-1:ededfeeeeeee_2013:-1:eddb89cccddd_2014:-1:ddddddccdecc_2015:-1:900000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+<!-- page layout templates v2.62 --><!-- GLOBAL NAVIGATION  --><a name="top" id="top"></a><!-- toolbar 1.42 header.page  666666 --><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr> <td class="bbcpageShadow" colspan="2"><a href="#startcontent"><img src="/web/20050401013614im_/http://www.bbc.co.uk/f/t.gif" width="590" height="2" alt="Skip to main content" title="" border="0" /></a></td><td class="bbcpageShadow"><a href="/web/20050401013614/http://www.bbc.co.uk/cgi-bin/education/betsie/parser.pl"><img src="/web/20050401013614im_/http://www.bbc.co.uk/f/t.gif" width="1" height="2" alt="Text Only version of this page" title="" border="0" /></a></td></tr><form action="/web/20050401013614/http://www.bbc.co.uk/cgi-bin/search/results.pl"><tr><td class="bbcpageShadowLeft" width="94"><a href="/web/20050401013614/http://www.bbc.co.uk/go/toolbar/-/"><img src="/web/20050401013614im_/http://www.bbc.co.uk/images/logo042.gif" width="90" height="30" alt="bbc.co.uk" border="0" hspace="2" vspace="0" /></a></td><td class="bbcpageGrey" align="right"><table cellpadding="0" cellspacing="0" border="0" style="float:right"><tr><td><font size="1"><b><a href="/web/20050401013614/http://www.bbc.co.uk/go/toolbar/text/-/" class="bbcpageWhite">Home</a></b></font></td><td class="bbcpageBar" width="6"><br /></td><td><font size="1"><b><a href="/web/20050401013614/http://www.bbc.co.uk/go/toolbar/-/tv/" class="bbcpageWhite">TV</a></b></font></td><td class="bbcpageBar" width="6"><br /></td><td><font size="1"><b><a href="/web/20050401013614/http://www.bbc.co.uk/go/toolbar/-/radio/" class="bbcpageWhite">Radio</a></b></font></td><td class="bbcpageBar" width="6"><br /></td><td><font size="1"><b><a href="/web/20050401013614/http://www.bbc.co.uk/go/toolbar/-/talk/" class="bbcpageWhite">Talk</a></b></font></td><td class="bbcpageBar" width="6"><br /></td><td><font size="1"><b><a href="/web/20050401013614/http://www.bbc.co.uk/go/toolbar/-/whereilive/" class="bbcpageWhite">Where&nbsp;I&nbsp;Live</a></b></font></td><td class="bbcpageBar" width="6"><br /></td><td><nobr><font size="1"><b><a href="/web/20050401013614/http://www.bbc.co.uk/go/toolbar/-/a-z/" class="bbcpageWhite">A-Z&nbsp;Index</a></b></font></nobr></td><td class="bbcpageSearchL" width="8"><br /></td><td class="bbcpageSearch2" width="100"><input type="text" id="bbcpageSearchbox" name="q" size="6" style="margin:3px 0 0;font-family:arial,helvetica,sans-serif;width:100px;" title="BBC Search" /></td><td class="bbcpageSearch"><input type="image" src="/web/20050401013614im_/http://www.bbc.co.uk/images/srchb2.gif" name="go" value="go" alt="Search" width="64" height="25" border="0" /></td><td class="bbcpageSearchRa" width="1"><img src="/web/20050401013614im_/http://www.bbc.co.uk/f/t.gif" width="1" height="30" alt="" /></td></tr></table></td><td class="bbcpageSearchRb"><img src="/web/20050401013614im_/http://www.bbc.co.uk/f/t.gif" width="1" height="1" alt="" /><input type="hidden" name="uri" value="/privacy/" /></td></tr></form><tr><td class="bbcpageBlack" colspan="2"><table cellpadding="0" cellspacing="0" border="0"><tr><td width="110"><img src="/web/20050401013614im_/http://www.bbc.co.uk/f/t.gif" width="110" height="1" alt="" /></td><td width="10"><img src="/web/20050401013614im_/http://www.bbc.co.uk/f/t.gif" width="10" height="1" alt="" /></td><td id="bbcpageblackline" width="480"><img src="/web/20050401013614im_/http://www.bbc.co.uk/f/t.gif" width="480" height="1" alt="" /></td></tr></table></td><td class="bbcpageBlack" width="100%"><img src="/web/20050401013614im_/http://www.bbc.co.uk/f/t.gif" width="1" height="1" alt="" /></td></tr></table><!-- end toolbar 1.42 --><table cellspacing="0" cellpadding="0" border="0" width="100%"><tr><td class="bbcpageToplefttd" width="110"><table cellspacing="0" cellpadding="0" border="0"><tr><td width="8"><img src="/web/20050401013614im_/http://www.bbc.co.uk/f/t.gif" width="8" height="1" alt="" /></td><td width="102"><img src="/web/20050401013614im_/http://www.bbc.co.uk/f/t.gif" width="102" height="1" alt="" /><br clear="all" /><font face="arial, helvetica, sans-serif" size="1" class="bbcpageToplefttd" >FRIDAY<br />1st April 2005<br /><a class="bbcpageTopleftlink" style="text-decoration:underline;" href="/web/20050401013614/http://www.bbc.co.uk/cgi-bin/education/betsie/parser.pl">Text only</a>       </font></td></tr></table></td><td width="100%" valign="top"><table width="491" cellpadding="0" cellspacing="0" border="0" id="banner">
+<tr>
+	<td><img src="/web/20050401013614im_/http://www.bbc.co.uk/privacy/images/banner_ppolicy.gif" width="491" height="57" alt="privacy and cookies policy" border="0"></td>
+</tr>
+</table>
+
+<div class="spaced3">
+<table cellpadding="2" cellspacing="0" border="0" class="bar" width="491">
+<tr>
+<td align="left"><font size="1">&nbsp;</font></td>
+</tr>
+</table></div></td></tr></table><table style="margin:0px;" cellspacing="0" cellpadding="0" border="0" align="left" width="110"><tr><td class="bbcpageCrumb" width="8"><img src="/web/20050401013614im_/http://www.bbc.co.uk/f/t.gif" width="8" height="1" alt="" /></td><td class="bbcpageCrumb" width="100"><img src="/web/20050401013614im_/http://www.bbc.co.uk/f/t.gif" width="100" height="1" alt="" /><br clear="all" /><font face="arial, helvetica,sans-serif" size="2"><a class="bbcpageCrumb" href="/web/20050401013614/http://www.bbc.co.uk/">BBC Homepage</a><br />
+</font></td><td width="2" class="bbcpageCrumb"><img src="/web/20050401013614im_/http://www.bbc.co.uk/f/t.gif" width="2" height="1" alt="" /></td><td class="bbcpageGutter" valign="top" width="10" rowspan="4"><img src="/web/20050401013614im_/http://www.bbc.co.uk/f/t.gif" width="10" height="1" vspace="0" hspace="0" alt="" align="left" /></td></tr><tr><td class="bbcpageLocal" colspan="3"><img src="/web/20050401013614im_/http://www.bbc.co.uk/f/t.gif" width="1" height="7" alt="" /></td></tr><tr><td class="bbcpageLocal" width="8" valign="top" align="right"><font size="1">&#187;</font></td><td class="bbcpageLocal" valign="top"><font face="arial, helvetica,sans-serif" size="2"><a href="/web/20050401013614/http://www.bbc.co.uk/privacy/"><b>Privacy</b></a><br>
+<a href="/web/20050401013614/http://www.bbc.co.uk/terms/">Terms of use</a><br>
+&nbsp;</font></td><td class="bbcpageLocal" width="2"><img src="/web/20050401013614im_/http://www.bbc.co.uk/f/t.gif" width="1" height="1" alt="" /></td></tr><tr><td class="bbcpageServices"><img src="/web/20050401013614im_/http://www.bbc.co.uk/f/t.gif" width="1" height="1" alt="" /></td><td class="bbcpageServices"><hr width="50" align="left" /><font face="arial, helvetica, sans-serif" size="2"><a class="bbcpageServices" href="/web/20050401013614/http://www.bbc.co.uk/info/">About the BBC</a><br /><br /><a class="bbcpageServices" href="/web/20050401013614/http://www.bbc.co.uk/feedback/">Contact Us</a><br /><br /><a class="bbcpageServices" href="/web/20050401013614/http://www.bbc.co.uk/help/">Help</a><br /><br /><br /><font size="1">Like this page?<br /><a class="bbcpageServices" onclick="popmailwin('/cgi-bin/navigation/mailto.pl?GO=1&amp;REF=/web/20050401013614/http://www.bbc.co.uk/privacy/index.shtml','Mailer')" href="/web/20050401013614/http://www.bbc.co.uk/cgi-bin/navigation/mailto.pl?GO=1&amp;REF=http://www.bbc.co.uk/privacy/index.shtml" target="Mailer">Send it to a friend!</a></font><br />&nbsp;</font></td><td class="bbcpageServices"><img src="/web/20050401013614im_/http://www.bbc.co.uk/f/t.gif" width="1" height="1" alt="" /></td></tr></table><table width="480" cellspacing="0" cellpadding="0" border="0" style="margin:0px;" style="float:left;"><tr><td><!-- End of GLOBAL NAVIGATION  --><a name="startcontent" id="startcontent"></a>
+
+<p><br /><font size="-1">The following statement explains our policy regarding the personal information we collect about you.</font></p>
+<a name="top"></a>
+<font size="-1"><ol>
+	<li><a href="#1">Introduction</a></li>
+	<li><a href="#2">Visitor Information</a></li>
+	<li><a href="#3">What is a cookie?</a></li>
+	<li><a href="#4">Submitting personal information</a></li>
+	<li><a href="#5">Access to your personal information</a></li>
+	<li><a href="#6">Users 16 and under</a></li>
+	<li><a href="#7">How to find and control your cookies</a></li>
+	<li><a href="#8">How do you know which sites use cookies?</a></li>
+	<li><a href="#9">How to see your cookie code</a></li>
+	<li><a href="#10">List of bbc.co.uk cookies</a></li>
+</ol></font>
+
+<h2><font size="-1"><a name="1">1.</a> Introduction</font></h2>
+<p><font size="-1">This policy covers the BBC’s use of personal information that the BBC collects when you use bbc.co.uk. The policy also gives you information about cookies; BBC and third parties' use of cookies; and how you may reject such cookies.</font></p>
+<p><font size="-1">From time to time, you will be asked to submit personal information about yourself (e.g. name and email address) in order to receive or use services on our website. Such services include newsletters, competitions, live chats, message boards and bbc.co.uk membership.</font></p>
+<p><font size="-1">By entering your details in the fields requested, you enable the BBC and its service providers to provide you with the services you select. Whenever you provide such personal information, we will treat that information in accordance with this policy. When using your personal informaiton the BBC will act in accordance with current legislation and aim to meet current Internet best practice.</font></p>
+
+<h2><font size="-1"><a name="2">2.</a> Visitor Information</font></h2>
+<p><font size="-1">During the course of any visit to bbc.co.uk, the pages you see, along with a short text file called a 'cookie', are downloaded to your computer. Many websites do this, because cookies enable website publishers to do useful things like find out whether the computer (and probably its user) has visited the website before. This is done on a repeat visit by checking to see, and finding, the cookie left there on the last visit.</font></p>
+<p><font size="-1">Information supplied by cookies can help us to provide you with a better online user experience and assist us to analyse the profile of our visitors. For example: if on a previous visit you went to our education pages, we might find this out from your cookie and highlight educational information on your second and subsequent visits.</font></p>
+<p><font size="-1">Nielsen//Netratings, an independent measurement and research company, gathers non-personal information regarding the visitors to our website on our behalf using cookies, log file data and code which is embedded on our website. The BBC uses this type of information, as with that obtained from other cookies used on the site, to help it improve the services to its users. If you wish to reject Nielsen//Netratings' cookie, you can use the process set out below in <a href="#7">point 7</a>. To Totally Opt-Out of Nielsen//Netratings collecting any data regarding your interaction on bbc.co.uk, use the Opt-Out in their Privacy and Cookie Policy at <a href="/web/20050401013614/http://www.netratings.com/privacy.jsp?section=leg_scs">http://www.netratings.com/privacy.jsp?section=leg_scs</a>.</font></p>
+
+
+<h2><font size="-1"><a name="3">3.</a> What is a cookie?</font></h2>
+<p><font size="-1">A cookie is a small amount of data, which often includes an anonymous unique identifier that is sent to your browser from a website's computer and stored on your computer's hard drive. Each website can send its own cookie to your browser if your browser's preferences allow it, but (to protect your privacy) your browser only permits a web site to access the cookies it has already sent to you, not the cookies sent to you by other sites.</font></p>
+<p><font size="-1">Many sites do this whenever a user visits their website in order to track online traffic flows.</font></p>
+<p><font size="-1">Cookies record information about your online preferences. Users have the opportunity to set their computers to accept all cookies, to notify them when a cookie is issued, or not to receive cookies at any time. The last of these, of course, means that certain personalised services cannot then be provided to that user user and accordingly you may not be able to take full advantage of all of the bbc.co.uk features. Each browser is different, so check the "Help" menu of your browser to learn how to change your cookie preferences.</font></p>
+<p><font size="-1">If you have set your computer to reject cookies you can still browse bbc.co.uk anonymously until such time as you wish to register for bbc.co.uk services. For further information on cookies please visit <a href="/web/20050401013614/http://www.aboutcookies.org/">www.aboutcookies.org</a>.</font></p>
+
+<h2><font size="-1"><a name="4">4.</a> Use and storage of your personal information</font></h2>
+<p><font size="-1">When you supply any personal information to bbc.co.uk (e.g. for competitions, bbc.co.uk Community services or bbc.co.uk membership) we have legal obligations towards you in the way we use those data. We must collect the information fairly, that is, we must explain how we will use it (see the notices on particular webpages that let you know why we are requesting the information) and tell you if we want to pass the information on to anyone else.</font></p>
+<p><font size="-1">In general, any information you provide to the BBC will only be used within the BBC and by its agents and service providers. Your information will be disclosed where we are obliged or permitted by law. Also, if you post or send offensive, inappropriate or objectionable content anywhere on or to bbc.co.uk or otherwise engage in any disruptive behaviour on bbc.co.uk, the BBC can use whatever information that is available to it about you to stop such behaviour. This may involve informing relevant third parties such as your employer, school e-mail/Internet provider and law enforcement agencies about the content and your behaviour.</font></p>
+<p><font size="-1">We will hold your personal information on our systems for as long as you use the service you have requested, and remove it in the event that the purpose has been met, or, in the case of bbc.co.uk membership you no longer wish to continue your registration as a bbc.co.uk member. For safety reasons, however, the BBC may store messaging transcript data (including message content, member names, times and dates) arising from the use of bbc.co.uk Community services such as Connector for a period of six months. Where personal information is held for people who are not yet registered but have taken part in other bbc.co.uk services (e.g. competitions), that information will be held as long as is necessary to ensure that the service is run smoothly. We will ensure that all personal information supplied is held securely, in accordance with the Data Protection Act 1998.</font></p>
+<p><font size="-1">If you are notified on a bbc.co.uk site that your information may be used to allow the BBC to contact you for "service administration purposes", this means that the BBC may contact you for a number of purposes related to the service you have signed up for. For example, we may wish to provide you with password reminders or notify you that the particular service has been suspended for maintenance. We will not contact you for promotional purposes, such as notifying you of improvements to the service or new services on bbc.co.uk unless you specifically agree to be contacted for such purposes at the time you submit your information on the site, or at a later time if you sign up specifically to receive such promotional information.</font></p>
+
+<h2><font size="-1"><a name="5">5.</a> Access to your personal information</font></h2>
+<p><font size="-1">You have the right to request a copy of the personal information the BBC holds about you and to have any inaccuracies corrected. (We charge £10 for information requests.) Please address 
+requests to the Data Protection Officer, MC3 D1, Media Village, 201 Wood Lane, London, W12 7TQ (Email: dpa.officer@bbc.co.uk).</font></p>
+
+<h2><font size="-1"><a name="6">6.</a> Users 16 and under</font></h2>
+<p><font size="-1">If you are aged 16 or under, please get your parent/guardian's permission beforehand whenever you provide personal information to the BBC's website. Users without this consent are not allowed to provide us with personal information.</font></p>
+
+<h2><font size="-1"><a name="7">7.</a> How to find and control your cookies</font></h2>
+<font size="-1">If you're using <span class="bold">Netscape 6.0</span>:<br />
+On your Task Bar, click:
+<ol>
+	<li>Edit, then</li>
+	<li>Preferences</li>
+	<li>Click on Advanced</li>
+	<li>Click on Cookies</li>
+</ol>
+If you're using <span class="bold">Internet Explorer 6.0</span>:
+<ol>
+	<li>Choose Tools, then</li>
+	<li>Internet Options</li>
+	<li>Click the Privacy Tab</li>
+	<li>Click on Custom Level</li>
+	<li>Click on the 'Advanced' button</li>
+	<li>Check the 'override automatic cookie handing' box and select Accept, Block or Prompt for action as appropriate.</li>
+</ol>
+If you're using <span class="bold">Internet Explorer 5.0 or 5.5</span>:
+<ol>
+	<li>Choose Tools, then</li>
+	<li>Internet Options</li>
+	<li>Click the Security tab</li>
+	<li>Click on Custom Level</li>
+	<li>Scroll down to the sixth option to see how cookies are handled by IE5 and change to Accept, Disable, or Prompt for action as appropriate.</li>
+</ol>
+If you're using <span class="bold">Internet Explorer 4.0</span>:
+<ol>
+	<li>Choose View, then</li>
+	<li>Internet Options</li>
+	<li>Click the Advanced tab</li>
+	<li>Scroll down to the yellow exclamation icon under Security and choose one of the three options to regulate your use of cookies.</li>
+</ol>
+If you're using <span class="bold">Internet Explorer 3.0</span>:<br />
+You can View, Options, Advanced, then click on the button that says Warn before Accepting Cookies. <br />
+<br />
+If you're using <span class="bold">Netscape Communicator 4.0</span>:<br />
+On your Task Bar, click:
+<ol>
+	<li>Edit, then</li>
+	<li>Preferences</li>
+	<li>Click on Advanced</li>
+	<li>Set your options in the box that says Cookies.</li>
+</ol>
+<small><a href="#top">[Top]</a></small><br /><br /></font>
+
+<h2><font size="-1"><a name="8">8.</a> How do you know which of the sites you've visited use cookies?</font></h2>
+<font size="-1">If you're using <span class="bold">Netscape 6.0</span>:<br />
+On your Task Bar, click:
+<ol>
+	<li>Edit, then</li>
+	<li>Preferences</li>
+	<li>Click on Advanced</li>
+	<li>Click on Cookies</li>
+	<li>Click the View Cookies button</li>
+</ol>
+
+If you're using <span class="bold">Internet Explorer 5.0 or 6.0</span>:
+<ol>
+	<li>Choose Tools, then</li>
+	<li>Internet Options</li>
+	<li>Click the General tab</li>
+	<li>Click Settings</li>
+	<li>View Files</li>
+</ol>
+
+If you're using <span class="bold">Internet Explorer 4.0</span>:<br />
+On your Task Bar, click:
+<ol>
+	<li>View, then</li>
+	<li>Internet Options</li>
+	<li>Under the tab General (the default tab) click</li>
+	<li>Settings</li>
+	<li>View Files.</li>
+</ol>
+
+If you're using <span class="bold">Internet Explorer 3.0</span>:<br />
+On your Task Bar, click:
+<ol>
+	<li>View</li>
+	<li>Options</li>
+	<li>Advanced</li>
+	<li>View Files.</li>
+</ol>
+
+If you're using <span class="bold">Netscape Communicator 4.0</span>:<br>
+Netscape bundles all cookies into one file on your hard drive. You'll need to find the file, which it calls Cookie.txt on Windows machines. <small><a href="#top">[Top]</a></small><br><br>
+
+<h2><font size="-1"><a name="9">9.</a> How to see your cookie code</font></h2>
+<p><font size="-1">Just click on a cookie to open it. You'll see a short string of text and numbers. The numbers are your identification card, which can only be seen by the server that gave you the cookie. <small><a href="#top">[Top]</a></small></font></p>
+
+<h2><font size="-1"><a name="10">10.</a> List of bbc.co.uk cookies</font></h2>
+<p><font size="-1">This is a list of the main cookies that bbc.co.uk sets, and what each is used for:</font></p>
+
+<table width="100%" border="0">
+  <tr valign="top"> 
+    <th scope="col" width="19%" align="left"><strong><font size="-1">Cookie name</font></strong></th>
+    <th scope="col" width="81%" align="left"><strong><font size="-1">Purpose</font></strong></th>
+  </tr>
+  <tr valign="top"> 
+    <td width="19%"><font size="-1">BBC-UID cookie</font></td>
+    <td width="81%"><font size="-1">A unique identifier given to each computer 
+      to allow log analysis to determine the number of unique users for various 
+      parts of bbc.co.uk. Data is only used in aggregate.</font></td>
+  </tr>
+  <tr valign="top"> 
+    <td width="19%"><font size="-1">BBCMediaselector cookie</font></td>
+    <td width="81%"><font size="-1">Used to store your user preferences for Audio-Video 
+      content from bbc.co.uk - format (Real player or Windows Media player) and 
+      quality (narrowband or broadband).</font></td>
+  </tr>
+  <tr valign="top"> 
+    <td width="19%"><font size="-1">BBCPostcoder cookie</font></td>
+    <td width="81%"><font size="-1">Used to store your user preferences for geographic 
+      specific content on bbc.co.uk - allows pages to present information for your local area, primarily on the 
+      homepage, but also in other areas like bbc.co.uk/arts.</font></td>
+  </tr>
+  <tr valign="top"> 
+    <td width="19%"><font size="-1">BBCWEACITY cookie</font></td>
+    <td width="81%"><font size="-1">Used to store your user preferences for home city - allows the
+	the weather site to present information for your local area.</font></td>
+  </tr>
+  <tr valign="top"> 
+    <td width="19%"><font size="-1">BBCNewsAudience cookie</font></td>
+    <td width="81%"><font size="-1">Used to store your user preferences for which 
+      version of the News site (domestic UK or International) you wish to view 
+      when visiting news.bbc.co.uk/.</font></td>
+  </tr>
+  <tr valign="top"> 
+    <td width="19%"><font size="-1">SSO2-UID cookie</font></td>
+    <td width="81%"><font size="-1">Used to allow you to be automatically signed 
+      in to a bbc.co.uk service which you have previously registered for. </font></td>
+  </tr>
+  <tr valign="top"> 
+    <td width="19%"><font size="-1">BBC-H2-User cookie</font></td>
+    <td width="81%"><font size="-1">Used for user authentication for the bbc.co.uk 
+      messageboard system.</font></td>
+  </tr>
+  <tr valign="top"> 
+    <td width="19%"><font size="-1">rmRpDetectReal cookie</font></td>
+    <td width="81%"><font size="-1">Used to store a preference to prevent 'You 
+      don't have Real player installed &#133;' alerts coming up if you really 
+      don't want to install it and don't want to be pestered with requests to do so.</font></td>
+  </tr>
+  <tr valign="top"> 
+    <td width="19%"><font size="-1">*votename* cookie</font></td>
+    <td width="81%"><font size="-1">Some voting systems on bbc.co.uk may set a 
+      cookie to discourage voters voting more than once. In each case the cookie's 
+      name will reflect the vote in question.</font></td>
+  </tr>
+</table>
+<br />
+<font size=-1>We regularly monitor this website and will update this list of cookies when necessary.</font><br />
+<br />
+<font size="-1">British Broadcasting Corporation &copy; 2001-2004<br />
+Broadcasting House,<br />
+Portland Place,<br />
+London,<br />
+W1A 1AA
+<br /><br />
+<small><a href="#top">[Top]</a></small>
+<br />
+</font>
+<!-- begin footer --></td></tr></table><!--if no nav or stretchy but not both --><br clear="all" /><table  cellpadding="0" cellspacing="0" border="0"><tr><td class="bbcpageFooterMargin" width="110"><img src="/web/20050401013614im_/http://www.bbc.co.uk/f/t.gif" width="110" height="1" alt="" /></td><td class="bbcpageFooterGutter" width="10"><img src="/web/20050401013614im_/http://www.bbc.co.uk/f/t.gif" width="10" height="1" alt="" /></td><td class="bbcpageFooter" width="480" align="center"><img src="/web/20050401013614im_/http://www.bbc.co.uk/f/t.gif" width="480" height="1" alt="" /><br /><font face="arial, helvetica, sans-serif" size="1"><a class="bbcpageFooter" href="/web/20050401013614/http://www.bbc.co.uk/terms/">Terms of Use</a> | <a class="bbcpageFooter" href="/web/20050401013614/http://www.bbc.co.uk/privacy/">Privacy &amp; Cookies Policy</a><br />&nbsp;</font></td></tr></table><br clear="all" /><!-- end footer -->
+
+
+</body>
+</html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 1:36:14 Apr 1, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:05:20 Jan 11, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

@@ -1,0 +1,305 @@
+<HTML>
+<HEAD>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app12.us.archive.org";archive_analytics.values.server_ms=126;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<TITLE>Forbes Conferences</TITLE>
+
+<META NAME="Keywords" CONTENT="Business, Conferences, Forums, Symposiums, Training, Education, Executive Education, Distance Learning, Calendars, Networking, Technology, CEO, CFO, Entrepreneurs, Tradeshows">
+<META NAME="Description" CONTENT="Upcoming Forbes conferences for Senior Executives Including The CEO Forum, CFO Forum, Presidents Forum for Fast-Growth Companies, Telecosm Conference and many more.">
+<SCRIPT LANGUAGE="JavaScript" SRC="/web/20000815053738js_/http://www.forbes.com/tool/javascript/AdTag.js"></SCRIPT>
+</HEAD>
+<BODY TEXT="#000000" LINK="#003366" VLINK="#003366" ALINK="#990000" BGCOLOR="#FFFFFF" MARGIN HEIGHT="8" MARGINWIDTH="8">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.forbes.com/conf/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "15";
+var displayMonth = "Aug";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.forbes.com/conf/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20000815053738" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20000706212919/http://www.forbes.com/conf" title="6 Jul 2000">JUL</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 5:37:38 Aug 15, 2000">AUG</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20001018022407/http://www.forbes.com/conf" title="18 Oct 2000"><strong>OCT</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20000706212919/http://www.forbes.com/conf" title="21:29:19 Jul 6, 2000"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 5:37:38 Aug 15, 2000">15</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20000815220020/http://www.forbes.com/conf" title="22:00:20 Aug 15, 2000"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/19990418021304/http://www.forbes.com/conf" title="18 Apr 1999"><strong>1999</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 5:37:38 Aug 15, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20011111230559/http://www.forbes.com/conf/" title="11 Nov 2001"><strong>2001</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20000815053738*/http://www.forbes.com/conf/" title="See a list of every capture for this URL">214 captures</a>
+           <div class="r" title="Timespan for captures of this URL">16 Jan 97 - 18 Oct 14</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:100000000000_1998:-1:110100000000_1999:-1:220100000010_2000:7:012223120210_2001:-1:1001020000af_2002:-1:010100001432_2003:-1:021101020202_2004:-1:010202011202_2005:-1:021c00003203_2006:-1:110014332324_2007:-1:010020000121_2008:-1:221244002001_2009:-1:101010010111_2010:-1:010111101010_2011:-1:101020101020_2012:-1:201020101130_2013:-1:100211012201_2014:-1:010100100200_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<TABLE BORDER="0" CELLSPACING="8" CELLPADDING="0">
+	<TR VALIGN="top">
+		<TD><CENTER><!-- 
+
+This is our outer table used to create a one pixel margin
+
+--><TABLE BORDER="0" CELLPADDING="1" CELLSPACING="0" WIDTH="602" BGCOLOR="#003366"><TR ALIGN=LEFT VALIGN=TOP><TD WIDTH="602"><!--
+
+This is the main nested table, it is THREE columns, 155,266,178
+
+--><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="600" BGCOLOR="#FFFFCC"><TR ALIGN=LEFT VALIGN=TOP><TD WIDTH="155" bgcolor="#003366"><!--
+
+ROW 1/CELL 1: This is the FCO logo cell
+
+--><A HREF="index.htm"><IMG SRC="shrd_resources/fco_logo.gif" WIDTH="155" HEIGHT="75" BORDER="0"></A></TD><TD WIDTH="266"><!--
+
+ROW 1/CELL 2: this is the header and subhead cell
+
+--><IMG SRC="shrd_resources/hom_head.gif" WIDTH="266" HEIGHT="50" BORDER="0"><BR><IMG SRC="shrd_resources/sbhd_intr.gif" WIDTH="266" HEIGHT="25" BORDER="0"></TD><!--
+
+ROW 1/CELL 3: this is CONFERENCE logo cell
+
+--><TD WIDTH="179"><IMG SRC="shrd_resources/spc_logo.gif" WIDTH="179" HEIGHT="111" BORDER="0"></TD></TR><TR ALIGN=LEFT VALIGN=TOP>
+<TD WIDTH="155" bgcolor="#003366"><!--
+
+ROW 2/CELL 1: This is the menu buttons cell
+
+--><A HREF="clnd.htm"><IMG SRC="shrd_resources/btn_clnd_f.gif" WIDTH="155" HEIGHT="35" BORDER="0"></A><BR><!--<A HREF="trns.htm"><IMG SRC="shrd_resources/btn_trns_f.gif" WIDTH="155" HEIGHT="35" BORDER="0"></A><BR>--><A HREF="wach.htm"><IMG SRC="shrd_resources/btn_wach_f.gif" WIDTH="155" HEIGHT="35" BORDER="0"></A><BR><A HREF="cont.htm"><IMG SRC="shrd_resources/btn_cont_f.gif" WIDTH="155" HEIGHT="35" BORDER="0"></A><BR><BR><BR><A HREF="index.htm"><IMG SRC="shrd_resources/btn_home_n.gif" WIDTH="155" HEIGHT="35" BORDER="0"></A><BR><BR></TD><TD WIDTH="445" COLSPAN=2><!--
+
+ROW 2/CELL 2: This will be the main content cell, it contains a nested table, with a left and right margin column, that will make the content behave
+
+--><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="445">
+<TR ALIGN=LEFT VALIGN=TOP><TD WIDTH="25"><!--
+
+left margin
+
+--><IMG SRC="shrd_resources/pixel_clear.gif" WIDTH="25" HEIGHT="1" BORDER="0"></TD>
+<TD WIDTH="395"><!-- 
+
+Place content here
+
+--><FONT SIZE="2" FACE="HELVETICA,ARIAL"><P><IMG SRC="shrd_resources/dropcap_f.gif" ALIGN=LEFT WIDTH="40" HEIGHT="57" BORDER="0"><IMG SRC="shrd_resources/home_image_04.gif" ALIGN=RIGHT WIDTH="169" HEIGHT="153" BORDER="0"><BR>ounded in January of 1995, the Forbes Management Conference Group has established itself as the premier producer of unique, peer-driven forums for senior executives.</P>
+
+<P>
+Not unlike Forbes Magazine, Forbes conferences provide the most thought-provoking business editorial in the marketplace--boldly reviewing management performance and challenging conventional wisdom.  The only difference is our conferences do it by bringing executives face-to-face in an atmosphere of candid and interactive discussion.
+</P>
+
+<P>
+Each event is by invitation-only, and includes a content-rich agenda that is chock-full with global business and industry leaders.  Equally as important as the business sessions, are the numerous informal, relationship-building opportunities.  It's these relationships that form the backbone of each event, and insure the dialogue continues throughout the year.
+</P>
+<P><B><A HREF="clnd.htm">View our upcoming events calendar ></A></B></FONT></P>
+
+<BR><IMG SRC="shrd_resources/pixel_clear.gif" HEIGHT="25" WIDTH="1" BORDER="0"></FONT></TD><TD WIDTH="25"><!--
+
+right margin
+
+--><IMG SRC="shrd_resources/pixel_clear.gif" WIDTH="25" HEIGHT="1" BORDER="0"></TD></TR></TABLE><!--
+
+end nested content table
+
+--></TD></TR></TABLE></TD></TR></TABLE><BR><FONT SIZE="-2" FACE="HELVETICA,ARIAL"><A HREF="clnd.htm">Upcoming Events</A> &nbsp;|<!--&nbsp; <A HREF="trns.htm">Conference Transcripts</A> &nbsp;|-->&nbsp; <A HREF="wach.htm">Watch and Listen</A> &nbsp;|&nbsp; <A HREF="cont.htm">Contacts</A> &nbsp;|&nbsp; <A HREF="/web/20000815053738/http://www.forbes.com/">Forbes Digital Tool</A></FONT>
+<TD VALIGN="TOP" BGCOLOR="#FFFFFF">
+<IMG SRC="/web/20000815053738im_/http://www.forbes.com/tool/assets/images/clear_pixel.gif" WIDTH="6" HEIGHT="1000" BORDER="0" ALIGN="LEFT">
+<!-- Ad Here -->
+<SCRIPT LANGUAGE="JavaScript">
+OutputAdTag('Column', 'conferences');
+</SCRIPT>
+<NOSCRIPT>
+<A TARGET="_blank" HREF="/web/20000815053738/http://ads.forbes.net/click.ng/Creative=Column&amp;SpaceDesc=conferences">
+<IMG border=0 SRC="/web/20000815053738im_/http://ads.forbes.net/image.ng/Creative=Column&amp;SpaceDesc=conferences"></A>
+</NOSCRIPT>
+<!-- /Ad Here -->
+
+
+
+		</TD>
+	</TR>
+</TABLE>
+</CENTER>	
+</BODY>
+</HTML>
+
+
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 5:37:38 Aug 15, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 3:33:06 Jan 8, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

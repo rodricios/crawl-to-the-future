@@ -1,0 +1,1377 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app18.us.archive.org";archive_analytics.values.server_ms=138;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<title>BBC NEWS | England | London | 'No surprise' at party shooting</title>
+
+
+<meta name="keywords" content="BBC, News, BBC News, news online, world, uk, international, foreign, british, online, service" />
+<meta name="OriginalPublicationDate" content="2005/08/29 13:37:15" />
+
+    <meta name="UKFS_URL" content="/1/hi/england/london/4194738.stm" />
+    <meta name="IFS_URL" content="/2/hi/uk_news/england/london/4194738.stm" />
+
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+
+
+<meta name="Headline" content="'No surprise' at party shooting" />
+<meta name="Section" content="London" />
+<meta name="Description" content="That a woman was shot dead on their estate as she held a baby arouses little surprise in Wood Dene, Peckham." />
+
+<link type="text/css" rel="stylesheet" href="/web/20050923124331cs_/http://news.bbc.co.uk/nol/shared/css/news_r3.css" />	
+
+<script src="/web/20050923124331js_/http://newsimg.bbc.co.uk/nol/shared/js/nol4.js" language="JavaScript" type="text/javascript"></script>
+<script src="/web/20050923124331js_/http://newsimg.bbc.co.uk/nol/ukfs_news/js/av.js" language="JavaScript" type="text/javascript"></script>
+
+</head>
+
+<body marginwidth="0" topmargin="0" leftmargin="0" marginheight="0">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://news.bbc.co.uk/1/hi/england/london/4194738.stm";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "23";
+var displayMonth = "Sep";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://news.bbc.co.uk/1/hi/england/london/4194738.stm" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20050923124331" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Aug
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 12:43:31 Sep 23, 2005">SEP</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20070903104936/http://news.bbc.co.uk/1/hi/england/london/4194738.stm" title="3 Sep 2007"><strong>SEP</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 12:43:31 Sep 23, 2005">23</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20070903104936/http://news.bbc.co.uk/1/hi/england/london/4194738.stm" title="10:49:36 Sep 3, 2007"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2004
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 12:43:31 Sep 23, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20070903104936/http://news.bbc.co.uk/1/hi/england/london/4194738.stm" title="3 Sep 2007"><strong>2007</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20050923124331*/http://news.bbc.co.uk/1/hi/england/london/4194738.stm" title="See a list of every capture for this URL">4 captures</a>
+           <div class="r" title="Timespan for captures of this URL">23 Sep 05 - 3 Dec 08</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:8:000000001000_2006:-1:000000000000_2007:-1:000000001100_2008:-1:000000000001_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+<a name="top" id="top"></a>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td class="tbsh" colspan="2"><a href="#startcontent" title="Skip to main content" accesskey="2"><img src="/web/20050923124331im_/http://newsimg.bbc.co.uk/shared/img/o.gif" width="590" height="2" alt="Skip to main content" border="0" /></a></td>
+		<td class="tbsh"><a href="/web/20050923124331/http://news.bbc.co.uk/text_only.stm" title="Text Only version of this page"><img src="/web/20050923124331im_/http://newsimg.bbc.co.uk/shared/img/o.gif" width="1" height="2" alt="" border="0" /></a><a href="/web/20050923124331/http://www.bbc.co.uk/accessibility/accesskeys/keys.shtml" accesskey="0"><img src="/web/20050923124331im_/http://newsimg.bbc.co.uk/shared/img/o.gif" width="1" height="1" alt="Access keys help" title="" border="0" /></a></td>
+	</tr>
+	<form action="/web/20050923124331/http://newssearch.bbc.co.uk/cgi-bin/search/results.pl">
+	<input type="hidden" name="scope" value="newsukfs" />
+	<input type="hidden" name="tab" value="news" />
+	<tr>
+		<td class="tbshl" width="54"><a href="/web/20050923124331/http://www.bbc.co.uk/" accesskey="1"><img src="/web/20050923124331im_/http://newsimg.bbc.co.uk/shared/img/logo042.gif" width="86" height="18" alt="bbc.co.uk" border="0" hspace="4" vspace="6" /></a></td>
+		<td class="tbg" align="right">
+			<table cellpadding="0" cellspacing="0" border="0" style="float:right">
+				<tr>
+					<td><b><a href="/web/20050923124331/http://www.bbc.co.uk/" class="tbwl" title="Home of the BBC on the Internet"><font size="1">Home</font></a></b></td>
+					<td class="tbb" width="6"><br /></td>
+					<td><b><a href="/web/20050923124331/http://www.bbc.co.uk/tv" class="tbwl" title="Home of BBC Television on the Internet"><font size="1">TV</font></a></b></td>
+					<td class="tbb" width="6"><br /></td>
+					<td><b><a href="/web/20050923124331/http://www.bbc.co.uk/radio" class="tbwl" title="Home of BBC Radio on the Internet"><font size="1">Radio</font></a></b></td>
+					<td class="tbb" width="6"><br /></td>
+					<td><b><a href="/web/20050923124331/http://www.bbc.co.uk/talk" class="tbwl" title="Interact with BBC community chat and message boards"><font size="1">Talk</font></a></b></td>
+					<td class="tbb" width="6"><br /></td>
+					<td><b><a href="/web/20050923124331/http://www.bbc.co.uk/whereilive" class="tbwl" title="Local news, entertainment and debate"><font size="1">Where&nbsp;I&nbsp;Live</font></a></b></td>
+					<td class="tbb" width="6"><br /></td>
+					<td><nobr><b><a href="/web/20050923124331/http://www.bbc.co.uk/a-z/" class="tbwl" title="A to Z index" accesskey="3"><font size="1">A-Z&nbsp;Index</font></a></b></nobr></td>
+					<td class="tbs1" width="8"><br /></td>
+					<td class="tbs2" width="127"><input type="text" id="bbcpageSearchbox" name="q" size="6" style="margin:3px 0 0;font-family:arial,helvetica,sans-serif;width:127px;" title="BBC Search" accesskey="4" /></td>
+					<td class="tbs"><input type="image" src="/web/20050923124331im_/http://newsimg.bbc.co.uk/shared/img/v3_tb/srchb.gif" name="go" value="go" title="Search the BBC News website" alt="Search" width="64" height="25" border="0" /></td>
+					<td class="tbsra" width="1"><img src="/web/20050923124331im_/http://newsimg.bbc.co.uk/shared/img/o.gif" width="1" height="30" alt="" /></td>
+				</tr>
+			</table>
+		</td>
+		<td class="tbsrb"><img src="/web/20050923124331im_/http://newsimg.bbc.co.uk/shared/img/o.gif" width="1" height="1" alt="" /></td>
+	</tr>
+	</form>
+	<tr>
+		<td class="tbbl" colspan="2"><img src="/web/20050923124331im_/http://newsimg.bbc.co.uk/shared/img/o.gif" width="760" height="1" alt="" /></td>
+		<td class="tbbl" width="100%"><img src="/web/20050923124331im_/http://newsimg.bbc.co.uk/shared/img/o.gif" width="1" height="1" alt="" /></td>
+	</tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" width="760">
+	<tr>
+		<td class="ba"><div class="pvl"><a href="/web/20050923124331/http://news.bbc.co.uk/1/low/default.stm" class="bl">Low Graphics version</a> | <a href="/web/20050923124331/http://news.bbc.co.uk/1/shared/bsp/hi/change_edition/html/change-edition.stm?http://news.bbc.co.uk/1/hi/england/london/4194738.stm" class="bl">Change edition</a></div></td>
+		<td class="ba" align="right"><div class="pvr"><a href="/web/20050923124331/http://news.bbc.co.uk/newswatch/ukfs/hi/feedback/default.stm" class="bl">Contact us</a> | <a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/help/default.stm" class="bl">Help</a></div></td>
+	</tr>
+	<tr>
+		<td colspan="2"><img src="/web/20050923124331im_/http://newsimg.bbc.co.uk/nol/shared/img/nav/v3_banners/v3_ukfs_banner_rb.gif" width="557" height="46" alt="" border="0" usemap="#banner_map" /><a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/help/3681938.stm" onClick="javascript: void launchAVConsoleV3();return false;"><img src="/web/20050923124331im_/http://newsimg.bbc.co.uk/nol/shared/img/nav/v3_banners/av_ukfs.gif" width="203" height="46" alt="WATCH/LISTEN TO BBC NEWS" border="0" /></a></td>
+	</tr>	
+</table>
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="760">
+    <tr>
+        <td width="121" valign="top">
+    
+
+			
+
+<div class="lhs">
+	
+		
+	
+	
+	
+	
+		
+			
+			
+				<div class="lhsb">
+					
+					<a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/default.stm">News Front Page</a>
+				</div>
+				
+			
+			
+			
+		
+		
+	
+	
+	
+
+
+
+
+	
+	
+	
+	
+		
+			
+			
+				<div class="lhsb">
+					
+					<a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/world/default.stm">World</a>
+				</div>
+				
+			
+			
+			
+		
+		
+	
+	
+	
+
+
+
+
+	
+	
+	
+	
+		
+			
+			
+				<div class="lhsb">
+					
+					<a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/uk/default.stm">UK</a>
+				</div>
+				
+			
+			
+			
+		
+		
+	
+	
+	
+
+
+
+
+	
+	
+	
+	
+		
+			
+				<div class="lhssq">
+					
+					<a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/england/default.stm">England</a>
+				</div>
+				
+				
+			
+			
+			
+			
+		
+		
+	
+	
+	
+
+
+
+
+	
+	
+	
+	
+		
+			
+			
+				<div class="lhsb">
+					
+					<a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/northern_ireland/default.stm">Northern Ireland</a>
+				</div>
+				
+			
+			
+			
+		
+		
+	
+	
+	
+
+
+
+
+	
+	
+	
+	
+		
+			
+			
+				<div class="lhsb">
+					
+					<a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/scotland/default.stm">Scotland</a>
+				</div>
+				
+			
+			
+			
+		
+		
+	
+	
+	
+
+
+
+
+	
+	
+	
+	
+		
+			
+			
+				<div class="lhsb">
+					
+					<a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/wales/default.stm">Wales</a>
+				</div>
+				
+			
+			
+			
+		
+		
+	
+	
+	
+
+
+
+
+	
+	
+	
+	
+		
+			
+			
+				<div class="lhsb">
+					
+					<a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/business/default.stm">Business</a>
+				</div>
+				
+			
+			
+			
+		
+		
+	
+	
+	
+
+
+
+
+	
+	
+	
+	
+		
+			
+			
+				<div class="lhsb">
+					
+					<a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/uk_politics/default.stm">Politics</a>
+				</div>
+				
+			
+			
+			
+		
+		
+	
+	
+	
+
+
+
+
+	
+	
+	
+	
+		
+			
+			
+				<div class="lhsb">
+					
+					<a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/health/default.stm">Health</a>
+				</div>
+				
+			
+			
+			
+		
+		
+	
+	
+	
+
+
+
+
+	
+	
+	
+	
+		
+			
+			
+				<div class="lhsb">
+					
+					<a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/education/default.stm">Education</a>
+				</div>
+				
+			
+			
+			
+		
+		
+	
+	
+	
+
+
+
+
+	
+	
+	
+	
+		
+			
+			
+				<div class="lhsb">
+					
+					<a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/sci/tech/default.stm">Science/Nature</a>
+				</div>
+				
+			
+			
+			
+		
+		
+	
+	
+	
+
+
+
+
+	
+	
+	
+	
+		
+			
+			
+				<div class="lhsb">
+					
+					<a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/technology/default.stm">Technology</a>
+				</div>
+				
+			
+			
+			
+		
+		
+	
+	
+	
+
+
+
+
+	
+	
+	
+	
+		
+			
+			
+				<div class="lhsb">
+					
+					<a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/entertainment/default.stm">Entertainment</a>
+				</div>
+				
+			
+			<div class="lhsdl">-----------------</div>
+			
+		
+		
+	
+	
+	
+
+
+
+
+	
+	
+	
+	
+		
+			
+			
+				<div class="lhsl">
+					
+					<a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/talking_point/default.stm">Have Your Say</a>
+				</div>
+				
+			
+			
+			
+		
+		
+	
+	
+	
+
+
+
+
+	
+	
+	
+	
+		
+			
+			
+				<div class="lhsl">
+					
+					<a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/magazine/default.stm">Magazine</a>
+				</div>
+				
+			
+			
+			
+		
+		
+	
+	
+	
+
+
+
+
+	
+	
+	
+	
+		
+			
+			
+				<div class="lhsl">
+					
+					<a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/in_pictures/default.stm">In Pictures</a>
+				</div>
+				
+			
+			
+			
+		
+		
+	
+	
+	
+
+
+
+
+	
+	
+	
+	
+		
+			
+			
+				<div class="lhsl">
+					
+					<a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/week_at-a-glance/default.stm">Week at a Glance</a>
+				</div>
+				
+			
+			
+			
+		
+		
+	
+	
+	
+
+
+
+
+	
+	
+	
+	
+		
+			
+			
+				<div class="lhsl">
+					
+					<a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/country_profiles/default.stm">Country Profiles</a>
+				</div>
+				
+			
+			
+			
+		
+		
+	
+	
+	
+
+
+
+
+	
+	
+	
+	
+		
+			
+			
+				<div class="lhsl">
+					
+					<a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/in_depth/default.stm">In Depth</a>
+				</div>
+				
+			
+			
+			
+		
+		
+	
+	
+	
+
+
+
+
+	
+	
+	
+	
+		
+			
+			
+				<div class="lhsl">
+					
+					<a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/programmes/default.stm">Programmes</a>
+				</div>
+				
+			
+			
+			
+		
+		
+	
+	
+	
+
+
+
+
+
+	
+</div>
+
+
+
+
+    
+    
+
+		<div class="lhsad"><script language="JavaScript">getRssUrl()</script></div>
+<ul id="othersites">
+	<li id="sportLoz"><a href="/web/20050923124331/http://news.bbc.co.uk/sport1/hi/default.stm" title="Home of BBC Sport on the internet">BBC Sport</a></li>
+	<li id="weatherLoz"><a href="/web/20050923124331/http://www.bbc.co.uk/weather" title="Weather information from around the world">BBC Weather</a></li>
+	<li id="cbbcLoz"><a href="/web/20050923124331/http://news.bbc.co.uk/cbbcnews/default.stm" title="CBBC News">CBBC News</a></li>
+	<li id="otdLoz"><a href="/web/20050923124331/http://www.bbc.co.uk/onthisday" title="BBC On This Day">On This Day</a></li>
+	<li id="newswatchLoz"><a href="/web/20050923124331/http://news.bbc.co.uk/newswatch/ukfs/hi/default.stm" title="Newswatch">Newswatch</a></li>	
+</ul>
+
+	
+		
+</td>
+        <td width="10"><img height="1" hspace="0" vspace="0" border="0" width="10" alt="" src="/web/20050923124331im_/http://newsimg.bbc.co.uk/shared/img/o.gif" /></td>
+        <td width="629" valign="top">
+            <table width="629" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td valign="top" width="629">
+			
+                        
+                        
+<a name="startcontent"></a><span class="ds"><span class="lu">Last Updated: </span>Monday, 29 August 2005, 13:37 GMT 14:37 UK</span>
+<img height="2" hspace="0" vspace="0" border="0" width="2" alt="" src="/web/20050923124331im_/http://newsimg.bbc.co.uk/shared/img/o.gif" />
+<div class="mvb"><img height="1" hspace="0" vspace="0" border="0" width="629" alt="" src="/web/20050923124331im_/http://newsimg.bbc.co.uk/nol/shared/img/v3/dot_629.gif" /></div>
+
+	
+
+
+                        
+    
+        <div class="mvtb"><table cellspacing="0" width="416" border="0" cellpadding="0"><tr>
+            <td width="213"><a onClick="popUpPage('/web/20050923124331/http://newsvote.bbc.co.uk/mpapps/pagetools/email/news.bbc.co.uk/1/hi/england/london/4194738.stm','status=no,scrollbars=yes,resizable=yes,width=370,height=445','Mailer')" href="/web/20050923124331/http://newsvote.bbc.co.uk/mpapps/pagetools/email/news.bbc.co.uk/1/hi/england/london/4194738.stm" class="epl" target="Mailer">
+                <img height="11" hspace="3" align="left" vspace="0" border="0" width="17" alt="" src="/web/20050923124331im_/http://newsimg.bbc.co.uk/nol/shared/img/v3/email.gif" />
+                E-mail this to a friend
+            </a></td>
+            <td width="203"><a onClick="popUpPage('/web/20050923124331/http://newsvote.bbc.co.uk/mpapps/pagetools/print/news.bbc.co.uk/1/hi/england/london/4194738.stm','status=no,scrollbars=yes,toolbar=yes,resizable=yes,menubar=yes,width=600,height=445','Printer')" href="/web/20050923124331/http://newsvote.bbc.co.uk/mpapps/pagetools/print/news.bbc.co.uk/1/hi/england/london/4194738.stm" class="epl" target="Printer">
+	       	<img height="11" hspace="3" align="left" vspace="0" border="0" width="17" alt="" src="/web/20050923124331im_/http://newsimg.bbc.co.uk/nol/shared/img/v3/print.gif" />
+	 	Printable version
+            </a></td>
+        </tr></table></div>
+    
+
+
+                    </td>
+                </tr>
+            </table>
+            <table width="629" border="0" cellpadding="0" cellspacing="0">
+		
+                
+		<tr>
+		<td colspan="3">
+			<div class="mxb">
+				<div class="sh">
+					'No surprise' at party shooting
+				</div>
+			</div>
+		</td>
+		</tr>
+    		
+		
+                <tr>
+                    <td valign="top" width="416">
+                        
+	
+		
+                    	<font size="2">
+		
+			<!-- S BO -->
+<!-- S IBYL -->
+<div class="mvb">
+
+
+    <table border="0" width="416" cellpadding="0" cellspacing="0">
+        <tr>
+        <td valign="bottom">
+            <div class="mvb">
+                
+                    
+                    <span class="byl">
+                        By Duncan Walker
+                    </span>
+                
+                
+                    <br />
+                    <span class="byd">
+                        BBC News
+                    </span>
+                
+            </div>
+        </td>
+        </tr>
+    </table><img height="1" hspace="0" vspace="0" border="0" width="416" alt="" src="/web/20050923124331im_/http://newsimg.bbc.co.uk/shared/img/999999.gif" /><br />
+
+
+
+
+</div>
+<!-- E IBYL -->
+
+
+
+<!-- S IIMA -->
+	
+		<table cellspacing="0" align="right" border="0" width="203" cellpadding="0">
+			<tr><td>
+			<div>
+				<img height="250" hspace="0" vspace="0" border="0" width="203" alt="Wood dene, Peckham" src="/web/20050923124331im_/http://newsimg.bbc.co.uk/media/images/40739000/jpg/_40739814_blocklong.jpg" />
+				<div class="cap">Much of the Wood dene block is now boarded up and empty</div>
+			</div>
+			</td></tr>
+		</table>
+		
+	
+
+	
+<!-- E IIMA -->
+<B>That a woman was shot dead on their estate as she held a baby elicits little surprise among residents of Wood Dene in London's Peckham.</B>
+<P>
+It is a particularly nasty attack, they say, but among the condemned flats and dilapidated landings surrounding their homes, crime is never that far away.
+<P>
+"You see kids with drugs" volunteers one man, while others are scared by the gangs of youths hidden by bad lighting.
+<P>
+Some are more sanguine: "You get the yobbos. But it's not like you can't
+walk round without getting mugged."
+<P>
+<B>'Spray pattern'</B>
+<P>
+A blue tarpaulin now hides the entrance to the estate's community centre - forensics experts ducking inside to carry out their investigation.
+<p>
+
+    
+    <!-- S IBOX -->
+	<table cellspacing="0" cellpadding="0" width="208" align="right" border="0">
+	<tr>
+            <td width="5"><img height="1" hspace="0" vspace="0" border="0" width="5" alt="" src="/web/20050923124331im_/http://newsimg.bbc.co.uk/shared/img/o.gif" /></td>
+            <td class="sibtbg">
+                
+		
+                
+                     
+                    <div>
+	<div class="mva">
+		<img height="13" border="0" width="24" alt="" src="/web/20050923124331im_/http://newsimg.bbc.co.uk/nol/shared/img/v3/start_quote_rb.gif" />
+		<b>You ignore everything that's going on, close your door and try to forget it</b>
+		<img height="13" align="right" vspace="0" border="0" width="23" alt="" src="/web/20050923124331im_/http://newsimg.bbc.co.uk/nol/shared/img/v3/end_quote_rb.gif" /><br clear="all"/>	</div>
+
+
+
+
+</div>
+                
+                     
+                    <div class="mva">
+	<div>Wood Dene resident</div>
+
+
+</div>
+                
+            </td>
+        </tr>
+	</table>
+	
+    <!-- E IBOX -->
+    
+
+
+
+<P>
+Police were called  here at 2000 BST on Saturday, after a christening party was gatecrashed by gunmen, who opened fire before making off with handbags, mobile phones and wine.
+<P>
+The victim, 33-year-old Zainab Kalokoh, died in hospital. The baby she was holding - who was not her own - was unhurt.
+<P>
+Denise Brown, who lives in a flat overlooking the community centre, says the thing she finds most shocking is that she was completely unaware of the shooting until she saw it on the news.
+<P>
+"You ignore everything that's going on, close your door and try to forget it," she says of life in one of the 300-odd Wood dene flats.
+<P>
+The mother of an eight-year-old girl, she is fed up with the youths who congregate between the blocks and "make noise until 4am" and the general lack of security.
+<p>
+<B>'Worst time'</B>
+<P>
+Ms Brown's unease is shared by another woman, who asks not to be named. "This is a bad place to live, it's so unsafe - there are guns and drugs all around," she says.
+<p>
+
+<!-- S IIMA -->
+	
+		<table cellspacing="0" align="right" border="0" width="203" cellpadding="0">
+			<tr><td>
+			<div>
+				<img height="152" hspace="0" vspace="0" border="0" width="203" alt="Police on Wood dene estate" src="/web/20050923124331im_/http://newsimg.bbc.co.uk/media/images/40739000/jpg/_40739810_police203.jpg" />
+				<div class="cap">Police are searching the centre where Zainab Kalokoh was shot</div>
+			</div>
+			</td></tr>
+		</table>
+		
+	
+
+	
+<!-- E IIMA -->
+<P>
+"There's not much light at night... the winter is the worst time - there are groups just hanging around."
+<P>
+Part of the problem, says Vicky Idiegbe, from the Wood Dene Project Community Group, is that the estate is being slowly closed down, so that it can be redeveloped.
+<P>
+"Many of the flats are becoming derelict, and are now being filled up by
+squatters and junkies, the lifts don't work, and people are scared to walk
+around at night," she says.
+<p>
+<B>'Normal estate'</B>
+<p>
+Elsewhere in Peckham signs of regeneration are easy to find - with rows of smart houses, new shops and fashionable restaurants - all clues to the money coming into the area.
+<p>
+These signs of change are largely missing in Wood Dene, but there are still residents who say that say people are too quick to jump on the estate's obvious problems.
+<p>
+
+<!-- S IIMA -->
+	
+		<table cellspacing="0" align="right" border="0" width="203" cellpadding="0">
+			<tr><td>
+			<div>
+				<img height="152" hspace="0" vspace="0" border="0" width="203" alt="Wood dene flats" src="/web/20050923124331im_/http://newsimg.bbc.co.uk/media/images/40739000/jpg/_40739812_derelict.jpg" />
+				<div class="cap">Residents complain that some empty flats are used for drugs</div>
+			</div>
+			</td></tr>
+		</table>
+		
+	
+
+	
+<!-- E IIMA -->
+<p>
+"People make out it's like World War III here, but it's a normal estate like any other in the country," says 52-year-old Kevin Donavan. "I have not really come across any trouble and I have been here since I was a kid."
+<p>
+His view that demolishing Wood Dene will not end the problems associated with it is shared by John Oldbrook - whose house faces the estate from the other side of the street.
+<p>
+Pointing down the road, he indicates a couple of flats used by prostitutes and then, turning the other way, indicates the scenes of other shootings.
+<p>
+As with many other inner city areas across the country, Ms Kalokoh's shooting is not the first Peckham has seen and is almost certainly not the last.<!-- E BO -->
+		
+                    	</font>
+		
+	
+	
+<br /><br clear="all" />
+                        
+    
+        <div class="mvtb"><table cellspacing="0" width="416" border="0" cellpadding="0"><tr>
+            <td width="213"><a onClick="popUpPage('/web/20050923124331/http://newsvote.bbc.co.uk/mpapps/pagetools/email/news.bbc.co.uk/1/hi/england/london/4194738.stm','status=no,scrollbars=yes,resizable=yes,width=370,height=445','Mailer')" href="/web/20050923124331/http://newsvote.bbc.co.uk/mpapps/pagetools/email/news.bbc.co.uk/1/hi/england/london/4194738.stm" class="epl" target="Mailer">
+                <img height="11" hspace="3" align="left" vspace="0" border="0" width="17" alt="" src="/web/20050923124331im_/http://newsimg.bbc.co.uk/nol/shared/img/v3/email.gif" />
+                E-mail this to a friend
+            </a></td>
+            <td width="203"><a onClick="popUpPage('/web/20050923124331/http://newsvote.bbc.co.uk/mpapps/pagetools/print/news.bbc.co.uk/1/hi/england/london/4194738.stm','status=no,scrollbars=yes,toolbar=yes,resizable=yes,menubar=yes,width=600,height=445','Printer')" href="/web/20050923124331/http://newsvote.bbc.co.uk/mpapps/pagetools/print/news.bbc.co.uk/1/hi/england/london/4194738.stm" class="epl" target="Printer">
+	       	<img height="11" hspace="3" align="left" vspace="0" border="0" width="17" alt="" src="/web/20050923124331im_/http://newsimg.bbc.co.uk/nol/shared/img/v3/print.gif" />
+	 	Printable version
+            </a></td>
+        </tr></table></div>
+    
+
+
+                        <div class="mvtb">
+    <div><img height="1" border="0" width="416" alt="" src="/web/20050923124331im_/http://newsimg.bbc.co.uk/nol/shared/img/v3/dot_629.gif" /><br /><img height="5" hspace="0" vspace="0" border="0" width="10" alt="" src="/web/20050923124331im_/http://newsimg.bbc.co.uk/shared/img/o.gif" /><br /><div class="msd"><b>
+LINKS TO MORE LONDON STORIES
+</b></div><br /><img height="5" hspace="0" vspace="0" border="0" width="10" alt="" src="/web/20050923124331im_/http://newsimg.bbc.co.uk/shared/img/o.gif" /><br /><table cellspacing="0" cellpadding="0" border="0"><form method="post" action="/web/20050923124331/http://www.bbc.co.uk/cgi-bin/openurl.pl" name="storyMenu"><tr><td><select name="link" width="300" style="width:300px" onchange="if (this.options[selectedIndex].value != '') location.href=this.options[selectedIndex].value"><option value="#">Select</option><option value="http://news.bbc.co.uk/1/hi/uk/4275054.stm">Terror conviction for tunnel man</option><option value="http://news.bbc.co.uk/1/hi/uk/4273804.stm">Widow of bomber 'abhors' attack</option><option value="http://news.bbc.co.uk/1/hi/england/london/4272842.stm">Mayor fights for Mandela statue</option><option value="http://news.bbc.co.uk/1/hi/uk/4273680.stm">Bomb suspect remanded in custody</option><option value="http://news.bbc.co.uk/1/hi/entertainment/music/4270416.stm">Lemar 'over moon' at Mobo double</option><option value="http://news.bbc.co.uk/1/hi/england/london/4274906.stm">Youth bailed over subway stabbing</option><option value="http://news.bbc.co.uk/1/hi/health/4270940.stm">Airport flu screening 'worthless'</option><option value="http://news.bbc.co.uk/1/hi/england/london/4274018.stm">Boy charged over fatal stabbing</option><option value="http://news.bbc.co.uk/1/hi/england/london/4273542.stm">Man charged with 'machete' murder</option></select>&nbsp;<INPUT src="/web/20050923124331im_/http://news.bbc.co.uk/nol/shared/img/v3/go_button.gif" onClick="window.location = document.storyMenu.link.options[document.storyMenu.link.options.selectedIndex].value" value="Go" type="image" border="0"></td></tr></form></table>
+</div>
+
+    
+    
+</div><br />
+                    </td>
+                    <td width="10" valign="top"><img height="1" hspace="0" vspace="0" border="0" width="10" alt="" src="/web/20050923124331im_/http://newsimg.bbc.co.uk/shared/img/o.gif" /></td>
+                    <td width="203" valign="top">
+			
+			
+                        
+        
+        <div class="puffbox">
+    
+
+			
+
+
+ 
+    <div class="o"><img height="15" border="0" width="203" alt="" src="/web/20050923124331im_/http://newsimg.bbc.co.uk/nol/shared/img/branded_puffs/bbci_rb.gif" /></div>
+
+
+<div class="o"><a href="/web/20050923124331/http://www.bbc.co.uk/london/"><img height="66" hspace="0" align="left" vspace="0" border="0" width="66" alt="BBC LONDON" src="/web/20050923124331im_/http://newsimg.bbc.co.uk/media/images/39908000/jpg/_39908701_london2_6666.jpg" /><img height="66" hspace="0" align="left" vspace="0" border="0" width="5" alt="" src="/web/20050923124331im_/http://newsimg.bbc.co.uk/shared/img/o.gif" /><b>BBC LONDON</b><br />
+Travel, features and more from the BBC website for London</a><br clear="all" />
+<img height="2" vspace="6" border="0" width="203" alt="" src="/web/20050923124331im_/http://newsimg.bbc.co.uk/nol/shared/img/branded_puffs/line_bbci.gif" /></div>
+
+
+
+
+    
+    
+<img height="10" width="1" alt="" src="/web/20050923124331im_/http://news.bbc.co.uk/shared/img/o.gif" /><br /></div>
+
+        
+        	
+        	
+	
+
+	
+		
+		
+                        
+                                <div class="nlp">
+                                        RELATED INTERNET LINKS:
+                                        
+                                </div>
+                        
+                        
+                                
+                                        <div class="arr">
+                                                <a href="/web/20050923124331/http://www.met.police.uk/">
+                                                        Metropolitan Police
+                                                        
+                                                </a>
+                                        </div>
+                                
+                        
+                        
+                                
+                                        <div class="di">
+                                                The BBC is not responsible for the content of external internet sites
+                                        </div>
+                                        
+                                
+                        
+                
+	
+
+
+
+<img height="10" width="1" alt="" src="/web/20050923124331im_/http://newsimg.bbc.co.uk/shared/img/o.gif" /><br />
+        
+        
+        	
+    
+    
+        
+		
+                    <div class="o">
+                        <div class="snh">
+                            TOP LONDON STORIES NOW
+                        </div>
+                    </div>
+                    <div class="sng">
+                        
+                            <div class="arr">
+	
+		<a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/uk/4275054.stm">
+			
+			
+			
+			Terror conviction for tunnel man
+			
+		</a>
+		
+			<br />
+		
+	
+</div>
+                        
+                            <div class="arr">
+	
+		<a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/uk/4273804.stm">
+			
+			
+			
+			Widow of bomber 'abhors' attack
+			
+		</a>
+		
+			<br />
+		
+	
+</div>
+                        
+                            <div class="arr">
+	
+		<a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/england/london/4272842.stm">
+			
+			
+			
+			Mayor fights for Mandela statue
+			
+		</a>
+		
+			<br />
+		
+	
+</div>
+                        
+                            <div class="arr">
+	
+		<a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/uk/4273680.stm">
+			
+			
+			
+			Bomb suspect remanded in custody
+			
+		</a>
+		
+			<br />
+		
+	
+</div>
+                        
+			<script language="JavaScript">getRssUrlStory('/rss/newsonline_uk_edition/england/london/rss.xml')</script>
+                    </div>
+		
+        
+
+	<img height="10" width="1" alt="" src="/web/20050923124331im_/http://newsimg.bbc.co.uk/shared/img/o.gif" />
+    
+        
+		
+                    <div class="o">
+                        <div class="snh">
+                            TOP UK STORIES NOW
+                        </div>
+                    </div>
+                    <div class="sng">
+                        
+                            <div class="arr">
+	
+		<a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/england/manchester/4274516.stm">
+			
+			
+			
+			Man held in airport terror alert
+			
+		</a>
+		
+			<br />
+		
+	
+</div>
+                        
+                            <div class="arr">
+	
+		<a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/health/4274642.stm">
+			
+			
+			
+			Avian flu could 'overwhelm' NHS
+			
+		</a>
+		
+			<br />
+		
+	
+</div>
+                        
+                            <div class="arr">
+	
+		<a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/uk_politics/4274102.stm">
+			
+			
+			
+			Howard urges new Iraq strategy
+			
+		</a>
+		
+			<br />
+		
+	
+</div>
+                        
+                            <div class="arr">
+	
+		<a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/business/4271942.stm">
+			
+			
+			
+			Up pension age to 69, report says
+			
+		</a>
+		
+			<br />
+		
+	
+</div>
+                        
+			<script language="JavaScript">getRssUrlStory('/rss/newsonline_uk_edition/uk/rss.xml')</script>
+                    </div>
+		
+        
+
+	
+    
+
+
+    
+    
+<img height="10" width="1" alt="" src="/web/20050923124331im_/http://newsimg.bbc.co.uk/shared/img/o.gif" /><br />
+        
+        
+
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+    <div id="footer">
+	<ul id="services">
+		<li><a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/help/3533099.stm" title="BBC News desktop alerts service">News Alerts</a></li>
+		<li><a href="/web/20050923124331/http://www.bbc.co.uk/email/news" title="BBC Daily E-mail">E-mail services</a></li>
+		<li><a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/help/3304673.stm" title="Get BBC News on your handheld or mobile phone">Mobiles/PDAs</a></li>
+		<li><a href="/web/20050923124331/https://ssl.bbc.co.uk/syndication/html/registration/" title="Access BBC News Headlines free from your site" class="none">Headlines for your site</a></li>
+	</ul>
+	<ul id="copyrighttop">
+		<li class="copyright"><a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/help/3281849.stm" title="BBC Copyright Notice">BBC Copyright Notice</a></li>
+		<li class="backtotop"><a href="#top" title="">Back to top</a></li>
+	</ul>
+	<ul id="footnav">
+		<li><a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/help/default.stm" title="Help">Help</a></li>
+		<li><a href="/web/20050923124331/http://www.bbc.co.uk/privacy/" title="Privacy and Cookies Policy">Privacy and Cookies Policy</a></li>
+		<li><a href="/web/20050923124331/http://news.bbc.co.uk/1/hi/help/3281815.stm" title="News sources">News sources</a></li>
+		<li><a href="/web/20050923124331/http://www.bbc.co.uk/info/" title="About the BBC">About the BBC</a></li>
+		<li><a href="/web/20050923124331/http://news.bbc.co.uk/newswatch/ukfs/hi/feedback/default.stm" title="Contact us" class="none">Contact us</a></li>		
+	</ul>
+</div>
+    
+    <!--index banner-->
+<map name="index_banner" id="index_banner">
+<area alt="banner" coords="1,2,185,34" href="javascript: void request_launch('IFS News');" accesskey="5" />
+<area alt="watch listen" coords="551,5,757,33" href="javascript: void request_launch('IFS News');" />
+</map>
+
+<map name="banner_map" id="banner_map">
+<area alt="banner" coords="125,2,294,38" href="/web/20050923124331/http://news.bbc.co.uk/1/hi/default.stm" accesskey="5" />
+</map>
+
+<!-- story sport logo in banner-->
+<map name="bbc_sport_story" id="bbc_sport_story">
+<area alt="bbc sport" coords="1,1,119,34" href="/web/20050923124331/http://news.bbc.co.uk/" />
+</map>
+
+<!-- story watch/listen in banner-->
+<map name="banner_watchlisten" id="banner_watchlisten">
+<area alt="watch listen" coords="0,6,201,33" href="javascript: void request_launch('IFS News');" />
+</map>
+
+<map name="world_map" id="world_map">
+<area alt="Americas" coords="0,0,34,53" href="/web/20050923124331/http://news.bbc.co.uk/1/hi/world/americas/default.stm" />
+<area alt="Africa" shape="poly" coords="37,25,37,51,52,51,52,33,48,33,48,31,40,31" href="/web/20050923124331/http://news.bbc.co.uk/1/hi/world/africa/default.stm" />
+<area alt="Europe" shape="poly" coords="35,2,66,2,66,12,56,12,56,20,37,20" href="/web/20050923124331/http://news.bbc.co.uk/1/hi/world/europe/default.stm" />
+<area alt="Middle East" shape="poly" coords="44,24,57,24,58,50,55,50,55,31,52,28,44,28" href="/web/20050923124331/http://news.bbc.co.uk/1/hi/world/middle_east/default.stm" />
+<area alt="South Asia" coords="60,24,67,49" href="/web/20050923124331/http://news.bbc.co.uk/1/hi/world/south_asia/default.stm" />
+<area alt="Asia Pacific" shape="poly" coords="71,2,89,3,88,51,69,51,69,20,62,20,62,16,71,16" href="/web/20050923124331/http://news.bbc.co.uk/1/hi/world/asia-pacific/default.stm" />
+</map>
+
+    <br />
+
+
+    <br />
+
+</body>
+</html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 12:43:31 Sep 23, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:07:49 Jan 11, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

@@ -1,497 +1,0 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-
-
-<script type="text/javascript" src="/static/js/analytics.js"></script>
-<script type="text/javascript">archive_analytics.values.server_name="wwwb-app17.us.archive.org";archive_analytics.values.server_ms=1428;</script>
-<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
-
-<title>
-	Movies New on DVD - MSN Movies
-</title><meta name="description" content="Movies on DVD: movie dvd releases, special DVD features, reviews, upcoming DVDs"/><meta name="keywords" content="movies on dvd, new dvd releases, new dvd, blockbuster new dvd releases, upcoming dvd, dvd guide, dvd features, dvd review"/><meta name="Search.Vertical" content="Entertainment Movies"/><meta name="Search.PageType" content="New on DVD"/><meta name="Search.SubPageType" content="Movies"/><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
-    <meta name="PackageEnabled" content="True">
-    <meta name="PackageVisible" content="False">
-    
-
-	
-<link rel="shortcut icon" href="/web/20100924180810im_/http://blstc.msn.com/br/gbl/lg/1/favicon.ico" /><link rel="stylesheet" href="/web/20100924180810cs_/http://entcss.s-msn.com/styles/entertainment9302.css" rev="stylesheet" type="text/css"/><link rel="stylesheet" href="/web/20100924180810cs_/http://entcss.s-msn.com/styles/gtl_sitegeneric9302.css" rev="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="/web/20100924180810cs_/http://entcss.s-msn.com/styles/tvvertical9302.css" rev="stylesheet" type="text/css"/>
-    
-<link rel="stylesheet" href="/web/20100924180810cs_/http://entcss.s-msn.com/App_Themes/FirefoxWindows/EntertainmentAlternateBrowsers9302.css" rev="stylesheet" type="text/css"/><style type="text/css">
-.pageHeader_ButtonAd{position:absolute;top:40px;left:842px;padding-left:0px;padding-top:0px;}
-#search {float:left;}
-</style>
-<!--[if IE]><style type="text/css">
-#channeltitle{position: static; visibility:visible !important;}
-</style><![endif]-->
-  <script src="/web/20100924180810js_/http://help.live.com/resources/neutral/launchhelp.js" type="text/javascript"></script>
- <script type="text/javascript">var imgPre="/web/20100924180810/http://entimg.s-msn.com";var meetsReqs=false;var indefli=false;var serviceid=0;var rpsub=false;var pcontr=false;
-var currWebHost = '/web/20100924180810/http://movies.msn.com'; </script>
-<script type="text/javascript" src="/web/20100924180810js_/http://entjs.msn.com/script/msnent9302.js"></script><script type="text/javascript" src="/web/20100924180810js_/http://ads1.msn.com/library/dap.js"></script><script type="text/javascript" src="/web/20100924180810js_/http://images.video.msn.com/js/vp.js"></script><script type="text/javascript">function SF(func) { return  window['func'] == null; }function GE(v) { if(document.all) { return document.all[v]; } return document.getElementById(v); }window.name='MSNMusic';</script><script type="text/javascript">photoCatUsgBaseUrl='/web/20100924180810/http://catalog.photos.msn.com/';photoCatImgBaseUrl='/web/20100924180810/http://img1.catalog.photos.msn.com/';</script><script type="text/javascript">	var pageId = "invalidPS";	var domaindId = "invalidDI";	var propertyId = "invalidPI";	var gServer = "/web/20100924180810/http://g.msn.com/1ETCLT01/1";	var timeOut = "3";	var backoffTime = "1";</script><script type="text/javascript" src="/web/20100924180810js_/http://entjs.msn.com/script/tracking.js"></script>
-
-
-<!-- BEGIN WAYBACK TOOLBAR INSERT -->
-<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
-<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
-<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
-<script type="text/javascript">//<![CDATA[
-var __wm = (function(){
-var wbPrefix = "/web/";
-var wbCurrentUrl = "http://movies.msn.com/new-on-dvd/movies/";
-
-var firstYear = 1996;
-var imgWidth = 500,imgHeight = 27;
-var yearImgWidth = 25,monthImgWidth = 2;
-var displayDay = "24";
-var displayMonth = "Sep";
-var displayYear = "2010";
-var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-var $D=document,$=function(n){return document.getElementById(n)};
-var trackerVal,curYear = -1,curMonth = -1;
-var yearTracker,monthTracker;
-function showTrackers(val) {
-  if (val===trackerVal) return;
-  var $ipp=$("wm-ipp");
-  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
-  if (val) {
-    $ipp.className="hi";
-  } else {
-    $ipp.className="";
-    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
-  }
-  yearTracker.style.display=val?"inline":"none";
-  monthTracker.style.display=val?"inline":"none";
-  trackerVal = val;
-}
-function getElementX2(obj) {
-  var $e=jQuery(obj);
-  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
-    getElementX(obj):Math.round($e.offset().left);
-}
-function trackMouseMove(event,element) {
-  var eventX = getEventX(event);
-  var elementX = getElementX2(element);
-  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
-  var monthOff = xOff % yearImgWidth;
-
-  var year = Math.floor(xOff / yearImgWidth);
-  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
-  // 1 extra border pixel at the left edge of the year:
-  var month = (year * 12) + monthOfYear;
-  var day = monthOff % 2==1?15:1;
-  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
-    zeroPad(day,2) + "000000";
-
-  $("displayYearEl").innerHTML=year+firstYear;
-  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
-  // looks too jarring when it changes..
-  //$("displayDayEl").innerHTML=zeroPad(day,2);
-  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
-  $("wm-graph-anchor").href=url;
-
-  if(curYear != year) {
-    var yrOff = year * yearImgWidth;
-    yearTracker.style.left = yrOff + "px";
-    curYear = year;
-  }
-  if(curMonth != month) {
-    var mtOff = year + (month * monthImgWidth) + 1;
-    monthTracker.style.left = mtOff + "px";
-    curMonth = month;
-  }
-}
-function hideToolbar() {
-  $("wm-ipp").style.display="none";
-}
-function bootstrap() {
-  var $spk=$("wm-ipp-sparkline");
-  yearTracker=$D.createElement('div');
-  yearTracker.className='yt';
-  with(yearTracker.style){
-    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
-  }
-  monthTracker=$D.createElement('div');
-  monthTracker.className='mt';
-  with(monthTracker.style){
-    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
-  }
-  $spk.appendChild(yearTracker);
-  $spk.appendChild(monthTracker);
-
-  var $ipp=$("wm-ipp");
-  $ipp&&disclaimElement($ipp);
-}
-return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
-})();//]]>
-</script>
-<style type="text/css">
-body {
-  margin-top:0 !important;
-  padding-top:0 !important;
-  min-width:800px !important;
-}
-</style>
-<div id="wm-ipp" lang="en" style="display:none;">
-
-<div style="position:fixed;left:0;top:0;width:100%!important">
-<div id="wm-ipp-inside">
-   <table style="width:100%;"><tbody><tr>
-   <td id="wm-logo">
-       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
-   </td>
-   <td class="c">
-       <table style="margin:0 auto;"><tbody><tr>
-       <td class="u" colspan="2">
-       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://movies.msn.com/new-on-dvd/movies/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20100924180810" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
-       </td>
-       <td class="n" rowspan="2">
-           <table><tbody>
-           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
-           <tr class="m">
-           	<td class="b" nowrap="nowrap">
-		
-		    <a href="/web/20100812162316/http://movies.msn.com/new-on-dvd/movies/" title="12 Aug 2010">AUG</a>
-		
-		</td>
-		<td class="c" id="displayMonthEl" title="You are here: 18:08:10 Sep 24, 2010">SEP</td>
-		<td class="f" nowrap="nowrap">
-		
-		    <a href="/web/20101104145506/http://movies.msn.com/new-on-dvd/movies" title="4 Nov 2010"><strong>NOV</strong></a>
-		
-                </td>
-	    </tr>
-           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
-           <tr class="d">
-               <td class="b" nowrap="nowrap">
-               
-                   <a href="/web/20100812162316/http://movies.msn.com/new-on-dvd/movies/" title="16:23:16 Aug 12, 2010"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
-               
-               </td>
-               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 18:08:10 Sep 24, 2010">24</td>
-	       <td class="f" nowrap="nowrap">
-               
-		   <a href="/web/20101011233802/http://movies.msn.com/new-on-dvd/movies/" title="23:38:02 Oct 11, 2010"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
-	       
-	       </td>
-           </tr>
-           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
-           <tr class="y">
-	       <td class="b" nowrap="nowrap">
-               
-                   <a href="/web/20090905015924/http://movies.msn.com/new-on-dvd/movies/" title="5 Sep 2009"><strong>2009</strong></a>
-               
-               </td>
-               <td class="c" id="displayYearEl" title="You are here: 18:08:10 Sep 24, 2010">2010</td>
-	       <td class="f" nowrap="nowrap">
-               
-	           <a href="/web/20110925072853/http://movies.msn.com/new-on-dvd/movies/?" title="25 Sep 2011"><strong>2011</strong></a>
-	       
-	       </td>
-           </tr>
-           </tbody></table>
-       </td>
-       </tr>
-       <tr>
-       <td class="s">
-           <a class="t" href="/web/20100924180810*/http://movies.msn.com/new-on-dvd/movies/" title="See a list of every capture for this URL">266 captures</a>
-           <div class="r" title="Timespan for captures of this URL">31 May 07 - 3 Nov 14</div>
-       </td>
-       <td class="k">
-       <a href="" id="wm-graph-anchor">
-       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
-	 <img id="sparklineImgId" alt="sparklines"
-		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
-		 onmousemove="__wm.mv(event,this)"
-		 width="500"
-		 height="27"
-		 border="0"
-		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000024041db9_2008:-1:b53311df9006_2009:-1:3b3222221223_2010:8:2222011411a6_2011:-1:205242453765_2012:-1:320351010200_2013:-1:200120116110_2014:-1:200101001010_2015:-1:000000000000" />
-       </div>
-       </a>
-       </td>
-       </tr></tbody></table>
-   </td>
-   <td class="r">
-       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
-       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
-   </td>
-   </tr></tbody></table>
-</div>
-</div>
-</div>
-<script type="text/javascript">__wm.bt();</script>
-<!-- END WAYBACK TOOLBAR INSERT -->
-<img  id="clickTarget" style="display:none" src="/web/20100924180810im_/http://entimg.s-msn.com/i/sp.gif" onReadyStateChange="if(SF('ctStateChange')) ctStateChange();" alt="" ></object></head>    
-  <body id="ctl00_ctl00_pageBody">
-    
-    <div class="pageContent">
-      <div class="pageHeader_control"><div class="pageHeader_skinAd" id="skinAd"><script src="/web/20100924180810js_/http://blstj.msn.com/br/gbl/js/7/jquery-1.3.2.min.js" type="text/javascript"></script><script src="/web/20100924180810js_/http://blstj.msn.com/br/gbl/js/4/mozcompat.js" type="text/javascript"></script><script src="/web/20100924180810js_/http://blstj.msn.com/br/gbl/js/7/core.js" type="text/javascript"></script><script src="/web/20100924180810js_/http://blstj.msn.com/br/gbl/js/7/navigation.js" type="text/javascript"></script><img width=1 height=1 id="ctag" src="/web/20100924180810im_/http://c.msn.com/c.gif?ps=56669&amp;pi=56656&amp;di=395&amp;rf="><!--BeginAd(ENTDV5,SuperBanner)--><table cellpadding="0" cellspacing="0" align="center" pagegroup="ENTDV5"><tr><td><script type="text/javascript">if(SF('dap'))dap('&PG=ENTDV5&AP=1390', 728, 90); </script><!--EndAd--></td></tr></table></div><div class=""><div style="margin-top: 0px;" id="topSpacingDiv"></div><div class="head" id="head"><div class="" id="brandnav"><ul id="xnav" class="noscript"><li class="c1 first"><a href="/web/20100924180810/http://www.msnbc.msn.com/">News</a><div class="menucontainer" xmlns:msncp="urn:schemas-microsoft-com/contentpublishing/content"><ul class="section"><li class="first"><a href="/web/20100924180810/http://www.msnbc.msn.com/id/3032076/ns/health" rel="">Health News</a></li><li class=""><a href="/web/20100924180810/http://local.msn.com/news.aspx" rel="">Local News</a></li><li class=""><a href="/web/20100924180810/http://www.msnbc.msn.com/id/3096434/ns/msnbc_tv" rel="">MSNBC TV</a></li><li class=""><a href="/web/20100924180810/http://www.msnbc.msn.com/id/3032553/ns/politics" rel="">Politics</a></li><li class=""><a href="/web/20100924180810/http://www.msnbc.msn.com/id/3032118/ns/technology_and_science" rel="">Tech &amp; Science</a></li><li class=""><a href="/web/20100924180810/http://today.msnbc.msn.com/" rel="">Today Show</a></li><li class=""><a href="/web/20100924180810/http://www.msnbc.msn.com/id/3032525/ns/us_news" rel=""><strong>US News</strong></a></li><li class=""><a href="/web/20100924180810/http://www.msnbc.msn.com/id/8004316/?from=en-us_msnhp" rel="">Video</a></li><li class=""><a href="/web/20100924180810/http://local.msn.com/weather.aspx" rel="">Weather</a></li><li class=""><a href="/web/20100924180810/http://www.msnbc.msn.com/id/3032507/ns/world_news" rel="">World News</a></li></ul></div></li><li class="c2"><a href="/web/20100924180810/http://entertainment.msn.com/">Entertainment</a><div class="menucontainer" xmlns:msncp="urn:schemas-microsoft-com/contentpublishing/content"><ul class="section"><li class="first"><a href="/web/20100924180810/http://wonderwall.msn.com/" rel="">Celebrities</a></li><li class="new"><a href="/web/20100924180810/http://thebubble.msn.com/" rel=""><strong>Comedy</strong></a></li><li class=""><a href="/web/20100924180810/http://entertainment.msn.com/news/?ipp=15" rel="">Entertainment News </a></li><li class=""><a href="/web/20100924180810/http://zone.msn.com/en-us/home" rel="">Games</a></li><li class=""><a href="/web/20100924180810/http://movies.msn.com/" rel="">Movies</a></li><li class=""><a href="/web/20100924180810/http://music.msn.com/" rel="">Music</a></li><li class=""><a href="/web/20100924180810/http://movies.msn.com/new-on-dvd/movies/" rel="">New on DVD</a></li><li class=""><a href="/web/20100924180810/http://tv.msn.com/" rel=""> TV</a></li><li class=""><a href="/web/20100924180810/http://entertainment.msn.com/video/?from=en-us_msnhp" rel=""> Video</a></li></ul></div></li><li class="c3"><a href="/web/20100924180810/http://msn.foxsports.com/">Sports</a><div class="menucontainer" xmlns:msncp="urn:schemas-microsoft-com/contentpublishing/content"><ul class="section"><li class="first"><a href="/web/20100924180810/http://msn.foxsports.com/golf" rel="">Golf</a></li><li class=""><a href="/web/20100924180810/http://msn.foxsports.com/mlb" rel=""><strong> MLB</strong></a></li><li class=""><a href="/web/20100924180810/http://msn.foxsports.com/nascar" rel="">NASCAR</a></li><li class=""><a href="/web/20100924180810/http://msn.foxsports.com/nba" rel="">NBA</a></li><li class=""><a href="/web/20100924180810/http://msn.foxsports.com/cfb" rel="">NCAA Football</a></li><li class=""><a href="/web/20100924180810/http://msn.foxsports.com/nfl" rel="">NFL</a></li><li class=""><a href="/web/20100924180810/http://msn.foxsports.com/fantasy" rel="">Play Fantasy</a></li><li class=""><a href="/web/20100924180810/http://msn.foxsports.com/foxsoccer" rel="">Soccer</a></li><li class=""><a href="/web/20100924180810/http://msn.foxsports.com/tennis" rel="">Tennis</a></li><li class=""><a href="/web/20100924180810/http://msn.foxsports.com/video?from=en-us_msnhp" rel="">Video Highlights</a></li></ul></div></li><li class="c4"><a href="/web/20100924180810/http://moneycentral.msn.com/home.asp">Money</a><div class="menucontainer" xmlns:msncp="urn:schemas-microsoft-com/contentpublishing/content"><ul class="section"><li class="first"><a href="/web/20100924180810/http://autos.msn.com/" rel="">Autos</a></li><li class=""><a href="/web/20100924180810/http://www.msnbc.msn.com/id/3032072/ns/business" rel="">Business News</a></li><li class=""><a href="/web/20100924180810/http://msn.careerbuilder.com/?siteid=cbmsn_home&amp;sc_cmp1=JS_MSN_Home" rel="">Careers &amp; Jobs</a></li><li class=""><a href="/web/20100924180810/http://moneycentral.msn.com/investor/home.aspx" rel="">Investing</a></li><li class=""><a href="/web/20100924180810/http://moneycentral.msn.com/personal-finance/" rel="">Personal Finance</a></li><li class=""><a href="/web/20100924180810/http://moneycentral.msn.com/detail/stock_quote" rel=""><strong>Quotes</strong></a></li><li class=""><a href="/web/20100924180810/http://realestate.msn.com/" rel="">Real Estate &amp; Rentals</a></li><li class=""><a href="/web/20100924180810/http://articles.moneycentral.msn.com/video/default.aspx?from=en-us_msnhp" rel="">Video</a></li></ul></div></li><li class="c5"><a href="/web/20100924180810/http://lifestyle.msn.com/">Lifestyle</a><div class="menucontainer" xmlns:msncp="urn:schemas-microsoft-com/contentpublishing/content"><ul class="section"><li class="first"><a href="/web/20100924180810/http://lifestyle.msn.com/your-look/" rel="">Beauty &amp; Fashion</a></li><li class=""><a href="/web/20100924180810/http://www.delish.com/" rel=""> Cooking</a></li><li class=""><a href="/web/20100924180810/http://lifestyle.msn.com/your-home/" rel="">Decor &amp; Organizing</a></li><li class=""><a href="/web/20100924180810/http://glo.msn.com/" rel="">Glo: For Her</a></li><li class=""><a href="/web/20100924180810/http://health.msn.com/" rel=""><strong>Health, Diet &amp; Fitness</strong></a></li><li class=""><a href="/web/20100924180810/http://astrocenter.astrology.msn.com/msn/DeptHoroscope.aspx?When=0&amp;Af=-1000&amp;VS" rel="">Horoscopes</a></li><li class=""><a href="/web/20100924180810/http://lifestyle.msn.com/relationships/" rel="">Love &amp; Relationships</a></li><li class=""><a href="/web/20100924180810/http://dating.msn.com/index.aspx?TrackingID=516163&amp;BannerID=670269" rel="">Online Dating</a></li><li class=""><a href="/web/20100924180810/http://www.bing.com/travel/?cid=msn_nav_lifestyle&amp;FORM=MSNNAV" rel=""> Travel</a></li><li class=""><a href="/web/20100924180810/http://lifestyle.msn.com/your-look/video/?from=en-us_msnhp" rel="">Video</a></li></ul></div></li><li class="c6 last fluid"><a href="/web/20100924180810/http://specials.msn.com/alphabet.aspx">More</a><div class="menucontainer" xmlns:msncp="urn:schemas-microsoft-com/contentpublishing/content"><ul class="section"><li class="first"><a href="/web/20100924180810/http://autos.msn.com/" rel="">Autos</a></li><li class=""><a href="/web/20100924180810/http://www.bing.com/maps/default.aspx?FORM=MSNNAV" rel="">Maps &amp; Directions</a></li><li class=""><a href="/web/20100924180810/http://www.bing.com/videos/browse?from=en-us_msnhp" rel="">Video</a></li><li class=""><a href="/web/20100924180810/http://careers.msn.com/" rel="">Careers &amp; Jobs</a></li><li class=""><a href="/web/20100924180810/http://my.msn.com/" rel="">My MSN</a></li><li class=""><a href="/web/20100924180810/http://local.msn.com/weather.aspx" rel="">Weather</a></li><li class=""><a href="/web/20100924180810/http://www.delish.com/" rel="">Delish</a></li></ul><ul class="section"><li class=""><a href="/web/20100924180810/http://dating.msn.com/index.aspx?TrackingID=516163&amp;BannerID=670268" rel="">Personals</a></li><li class=""><a href="/web/20100924180810/http://msn.whitepages.com/" rel="">White Pages</a></li><li class=""><a href="/web/20100924180810/http://zone.msn.com/en-us/home" rel=""><strong>Games</strong></a></li><li class=""><a href="/web/20100924180810/http://moneycentral.msn.com/detail/stock_quote" rel="">Quotes</a></li><li class=""><a href="/web/20100924180810/http://wonderwall.msn.com/" rel="">Wonderwall</a></li><li class=""><a href="/web/20100924180810/http://astrocenter.astrology.msn.com/" rel="">Horoscopes</a></li><li class=""><a href="/web/20100924180810/http://realestate.msn.com/" rel="">Real Estate/Rentals</a></li></ul><ul class="section"><li class=""><a href="/web/20100924180810/http://yellowpages.msn.com/" rel="">Yellow Pages</a></li><li class=""><a href="/web/20100924180810/http://latino.msn.com/" rel="">Latino</a></li><li class=""><a href="/web/20100924180810/http://www.bing.com/shopping?FORM=SHOPH2" rel="">Shopping</a></li><li class=""><a href="/web/20100924180810/https://secure.opinionlab.com/ccc01/o.asp?ID=WpkpVtTB" rel="">Feedback</a></li><li class=""><a href="/web/20100924180810/http://local.msn.com/news.aspx" rel="">Local Edition</a></li><li class=""><a href="/web/20100924180810/http://www.bing.com/travel/?cid=msn_nav_more&amp;FORM=MSNNAV" rel="">Travel</a></li><li class=""><a href="/web/20100924180810/http://specials.msn.com/alphabet.aspx" rel="">Full MSN Index</a></li></ul></div></li></ul><span class="blogo"><a href="/web/20100924180810/http://www.bing.com/search?Form=MOVIES">Bing</a></span><ul class="linklist9" id="big3"><li id="first"><a href="/web/20100924180810/http://mail.live.com/">Hotmail</a><li id="msg"><a href="/web/20100924180810/http://download.live.com/?sku=messenger">Messenger</a><li class="last"><a href="/web/20100924180810/http://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=11&amp;ct=1285351689&amp;rver=5.5.4177.0&amp;wp=MBI&amp;wreply=http:%2F%2Fmovies.msn.com%2Fnew-on-dvd%2Fmovies%2F&amp;lc=1033&amp;id=75104&amp;cb=wreply%3dhttp%3a%2f%2fmovies.msn.com%2fnew-on-dvd%2fmovies%2f%26ppcb%3dmovies">Sign in</a></div><div class="" id="brand"><div class="" id="logo"><a href="/web/20100924180810/http://www.msn.com/"><img id="msnLogo" src="/web/20100924180810im_/http://entimg.s-msn.com/i/grandprix/msft.png" alt="MSN" border="0" /></a></div><form id="search" method="get" action="/web/20100924180810/http://www.bing.com/search"><div class=""><label accessKey="s" for="q">Bing Search:</label><input name="FORM" type="hidden" value="MOVIES"/><input name="mkt" type="hidden" value="en-US"/><div class="" id="searchform"><div class="searchinputarea"><div class="searchinput"><input name="q" title="Search for" id="q" type="text" maxLength="215" value="Search Movies"/></div><div class="searchsubmit"><input title="Search" id="spyglass" type="image" alt="Search" src="/web/20100924180810im_/http://entimg.s-msn.com/i/grandprix/searchicon_22x22.gif"/></div></div><div class="" id="ntwscopes"><input id="drpbutton" type="image" src="/web/20100924180810im_/http://entimg.s-msn.com/i/grandprix/scope_white.gif" complete="complete"/><div class="" id="scopescontainer"><div class="selected"><a id="sslink" href="/web/20100924180810/http://movies.msn.com/search/Movies/">Search this site</a></div><div class=""><a id="wslink" href="/web/20100924180810/http://www.bing.com/search">Search the web</a></div></div></div></div></form><script type="text/javascript">Msn.SiteSearch.bind("#search",{searchParam:"q",searchParams:"",searchUrl:"/web/20100924180810/http://movies.msn.com/search/Movies/",siteSearchOn:"true",helpertext:"Search Movies",onepxgif:"/web/20100924180810/http://entimg.s-msn.com/i/grandprix/t.gif"});</script></div><script>searchBoxControlId = 'q';</script></form></div><div class="" id="channeltitle"><a class="verticalLogoLink" href="/web/20100924180810/http://movies.msn.com/movies/">Movies</a><a id="hplink" href="/web/20100924180810/http://www.myhomemsn.com/">Make msn.com your home page</a></div></div></div><div class=""><div class="pageHeader_horizNavBar"><div class="pageHeader_horizNavBarButton"><a href="/web/20100924180810/http://movies.msn.com/movies/">Home</a><img class="pageHeader_horizonalButtonSeparator" src="/web/20100924180810im_/http://entimg.s-msn.com/i/grandprix/nav_pipe.gif" border="0" /></div><div class="pageHeader_horizNavBarButton"><a href="/web/20100924180810/http://movies.msn.com/showtimes/">Showtimes & Tickets</a><img class="pageHeader_horizonalButtonSeparator" src="/web/20100924180810im_/http://entimg.s-msn.com/i/grandprix/nav_pipe.gif" border="0" /></div><div class="pageHeader_horizNavBarButton"><a href="/web/20100924180810/http://movies.msn.com/movies/top-box-office/">Top Box Office</a><img class="pageHeader_horizonalButtonSeparator" src="/web/20100924180810im_/http://entimg.s-msn.com/i/grandprix/nav_pipe.gif" border="0" /></div><div class="pageHeader_horizNavBarButton"><a href="/web/20100924180810/http://movies.msn.com/movies/movie-trailers/">Trailers & More</a><img class="pageHeader_horizonalButtonSeparator" src="/web/20100924180810im_/http://entimg.s-msn.com/i/grandprix/nav_pipe.gif" border="0" /></div><div class="pageHeader_horizNavBarButton"><a href="/web/20100924180810/http://movies.msn.com/movies/in-theaters/">In Theaters</a><img class="pageHeader_horizonalButtonSeparator" src="/web/20100924180810im_/http://entimg.s-msn.com/i/grandprix/nav_pipe.gif" border="0" /></div><div class="pageHeader_horizNavBarButton"><a href="/web/20100924180810/http://movies.msn.com/movies/coming-soon/">Coming Soon</a><img class="pageHeader_horizonalButtonSeparator" src="/web/20100924180810im_/http://entimg.s-msn.com/i/grandprix/nav_pipe.gif" border="0" /></div><div class="pageHeader_horizNavBarButton"><a href="/web/20100924180810/http://movies.msn.com/new-on-dvd/movies/">New on DVD</a><img class="pageHeader_horizonalButtonSeparator" src="/web/20100924180810im_/http://entimg.s-msn.com/i/grandprix/nav_pipe.gif" border="0" /></div><div class="pageHeader_horizNavBarButton"><a href="/web/20100924180810/http://movies.msn.com/movies/critics-reviews/">Critics' Reviews</a><img class="pageHeader_horizonalButtonSeparator" src="/web/20100924180810im_/http://entimg.s-msn.com/i/grandprix/nav_pipe.gif" border="0" /></div><div class="pageHeader_horizNavBarButton"><a href="/web/20100924180810/http://movies.msn.com/photos/movies/">Photos</a><img class="pageHeader_horizonalButtonSeparator" src="/web/20100924180810im_/http://entimg.s-msn.com/i/grandprix/nav_pipe.gif" border="0" /></div><div class="pageHeader_horizNavBarButton"><a href="/web/20100924180810/http://movies.msn.com/news/movies/">News</a><img class="pageHeader_horizonalButtonSeparator" src="/web/20100924180810im_/http://entimg.s-msn.com/i/grandprix/nav_pipe.gif" border="0" /></div><div class="pageHeader_horizNavBarButton"><a href="/web/20100924180810/http://movies.msn.com/the-hitlist-blog/">Blog</a><img class="pageHeader_horizonalButtonSeparator" src="/web/20100924180810im_/http://entimg.s-msn.com/i/grandprix/nav_pipe.gif" border="0" /></div><div class="pageHeader_horizNavBarButton"><a href="/web/20100924180810/http://social.entertainment.msn.com/bloglist.aspx">Superfans</a></div></div></div></div>
-      
-    <div id="pageBody" class='movies_editorspicks__body' >
-		<div class="movies_editorspicks__leftcontent">
-			
-     <div class="MoviesleftNav"><table cellspacing="0" cellpadding="0" border="0">
-	<tr>
-		<td><div class="InfoModLargeHeaderULCellCss"> </div></td><td><div class="InfoModLargeHeaderUCCellCss"> </div></td>
-	</tr><tr>
-		<td class="InfoModLargeContentLeftCellCss"></td><td><div class="leftNav_content"><img class="leftNav_bg" src="/web/20100924180810im_/http://entimg.s-msn.com/i/grandprix/leftNavBg.gif" border="0" /><div class="MoviesLeftNav_selected01"><div class="MoviesLeftNav_selected"><a href="/web/20100924180810/http://movies.msn.com/new-on-dvd/movies/">Movies</a></div></div><div class="MoviesleftNav_linkDiv"><a class="leftNav_Link" href="/web/20100924180810/http://movies.msn.com/new-on-dvd/tv/">TV</a></div><div class="MoviesleftNav_linkDiv"><a class="leftNav_Link" href="/web/20100924180810/http://movies.msn.com/new-on-dvd/music/">Music</a></div><div class="MoviesleftNav_linkDiv"><a class="leftNav_Link" href="/web/20100924180810/http://movies.msn.com/new-on-dvd/special-releases/">Special Releases</a></div><div class="MoviesleftNav_linkDiv"><a class="leftNav_Link" href="/web/20100924180810/http://movies.msn.com/new-on-dvd/blu-ray/">Blu-ray</a></div><div class="MoviesleftNav_linkDiv"><a class="leftNav_Link" href="/web/20100924180810/http://movies.msn.com/new-on-dvd/coming-soon/">Coming Soon</a></div><div class="MoviesleftNav_linkDiv"><a class="leftNav_Link" href="/web/20100924180810/http://movies.msn.com/new-on-dvd/view-all/">All Releases</a></div><div class="MoviesleftNav_linkDiv"><a class="leftNav_Link" href="/web/20100924180810/http://movies.msn.com/new-on-dvd/features/">Features</a></div></div></td>
-	</tr><tr>
-		<td><div class="InfoModLargeFooterLeftCellCss"> </div></td><td><div class="InfoModLargeFooterCenterCellCss"> </div></td>
-	</tr>
-</table></div>
-
-		</div>
-		<div class="movies_editorspicks__middlecontent">
-                         <H1 class='H1Css'>New on DVD</H1>
-                         <div class='HeaderSeperator'>:</div>
-                         <H2 class='H2Css'>Movies</H2>
-               	 	<div class='movies_editorspicks__maincontent'>
-					
-       <div class="">
-            <div class="">
-                    <table cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;">
-                    <tr>
-                            <td><div class="InfoModLargeHeaderULCellCss"> </div></td>
-                            <td><div class="InfoModLargeHeaderUCCellCss"> </div></td>
-                            <td><div class="InfoModLargeHeaderURCellCss"> </div></td>
-                    </tr>
-                    <tr>
-                            <td class="InfoModLargeContentLeftCellCss"></td>
-                            <td class="InfoModLargeContentCellCss">
-                            <div class="NewOnDVDMainModule">
-                                <div class="NewOnDvdLeftColumn">
-                                     <table cellspacing="0" cellpadding="0" border="0" width="100%">
-	<tr>
-		<td valign="top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
-			<tr>
-				<td valign="top"> <STYLE>  .header	{ color: #333333; }  .tp2	{ padding-top: 2px; }  .adText	{ padding: 1px 1px 0px 0px; }  .lp2	{ padding-left: 2px; }  .fl10	{ float: left }   .topbdr	{border-top: 1px solid #e1e1e1;margin-top: 10px;} .topbdr img{padding-top:10px} 	 .tp5{font-size:13px} .lnk5{font-size:13px}  </STYLE>  <STYLE> #container0{font-size:13px} #container1{font-size:13px} #container2{font-size:13px} #container3{font-size:13px} #container4{font-size:13px} #container5{font-size:13px} #container6{font-size:13px} #container7{font-size:13px} #container8{font-size:13px} #container9{font-size:13px} #container10{font-size:13px} #container11{font-size:13px} #container12{font-size:13px} #container13{font-size:13px} #container14{font-size:13px} #container15{font-size:13px}   #subMod1{display:none} #subMod2{display:none} #subMod3{display:none} #subMod4{display:none} #subMod5{display:none} #subMod6{display:none} #subMod7{display:none} #subMod8{display:none} #subMod9{display:none} #subMod10{display:none} #subMod11{display:none} #subMod12{display:none} #subMod13{display:none} #subMod14{display:none} #subMod15{display:none}  </STYLE>  <SCRIPT>  function SetOverflow(inNum,sValue) {    if(sValue == "visible"){  document.getElementById("container"+inNum).innerHTML = document.getElementById("subMod"+inNum).innerHTML + " <span onclick=SetOverflow("+inNum+",'hidden') style='font-size:13px;color:#07519A;cursor:pointer' onmouseover=\"this.style.textDecoration='underline'\" onmouseout=\"this.style.textDecoration='none'\">Close</span>";} else{  document.getElementById("container"+inNum).innerHTML = document.getElementById("subMod"+inNum).innerHTML.substr(0,220) + " <span onclick=SetOverflow("+inNum+",'visible') style='font-size:13px;color:#07519A;cursor:pointer' onmouseover=\"this.style.textDecoration='underline'\" onmouseout=\"this.style.textDecoration='none'\">...Full review</span>"; } } </SCRIPT>  <DIV class=tp2> <DIV class=tp10><a href=/web/20100924180810/http://movies.msn.com/movies/movie/robin-hood.9/ class="altlink"><IMG border=0 name=image0 alt="'Robin Hood'/Universal"  src="/web/20100924180810im_/http://entimg.msn.com/i/GrandPrix_Movies/DVDGuide/robin2_503.jpg"  width=503></a></DIV> <DIV class="tp10 lp2"> <DIV class=dvdhed><a href=/web/20100924180810/http://movies.msn.com/movies/movie/robin-hood.9/ class="altlink">Robin Hood</a></DIV> <DIV id=subMod0>The legend of Robin Hood is one of those stories that gets a new  retelling for each generation. This take, from director Ridley Scott and  screenwriter Brian Helgeland, stars Russell Crowe in a new origin story for the  familiar myth. He's a war-weary soldier home from the crusades, not a nobleman  at all but a peasant thrust into leadership who rises to the occasion when a  hero is needed. At least that's the romantic narrative under the otherwise  brutish portrait of peasant life in 12th-century England under King John. <a href=/web/20100924180810/http://movies.msn.com/movies/movie-critic-reviews/robin-hood.9/ class="altlink">MSN critic Kat Murphy complains that</a>  "this saga makes for grim going, with little of the sustaining sweetness and  choreographed athleticism that characterized the Fairbanks and Flynn versions."  I find it more interesting, if not quite exciting, thanks to an adult  relationship between Robin and Marion (Cate Blanchett) and the bonding of  soldiers-in-arms into the Merry Men, and to Scott's muscular approach to action  with broadswords and bows and heavy armor.<BR><BR>Plenty of versions are being  offered, all of them featuring the theatrical version and a director's cut that  runs 15 minutes longer. The 2-Disc Special Edition DVD has the well-made and  very thorough 62-minute "Rise and Rise Again: Making Ridley Scott's Robin Hood,"  plus 10 deleted scenes with an introduction and optional commentary by editor  Pietro Scalia. Exclusive to the 3-disc Blu-ray Combo Pack is the "Director's  Notebook" mode, with short production featurettes periodically interrupting the  film (theatrical cut only) with video commentary and illustrations. Also  features a bonus DVD and a digital copy of the director's cut. </DIV> <DIV id=container0></DIV> <DIV class="tp5 "><a href=/web/20100924180810/http://movies.msn.com/movies/movie/robin-hood.9/ class="altlink">DVD Info</a><STRONG> </STRONG>| <a href=/web/20100924180810/http://www.bing.com/shopping/search?q=Robin%20Hood%20Russell%20Crowe&amp;FORM=R5FD&amp;p1=[CommerceService+scenario%3d%5C%22f%5C%22+r%3d%5C%22leafcategoryid|5319%5C%22] class="altlink">Buy DVD</a> | <a href=/web/20100924180810/http://www.bing.com/shopping/search?q=Robin%20Hood%20Blu-ray&amp;FORM=R5FD&amp;p1=[CommerceService+scenario%3d%5C%22f%5C%22+r%3d%5C%22leafcategoryid|5319%5C%22] class="altlink">Buy  Blu-ray</a></DIV></DIV></DIV></td>
-			</tr>
-		</table></td>
-	</tr>
-</table>
-                                        
-                                     <table cellspacing="0" cellpadding="0" border="0" width="100%">
-	<tr>
-		<td valign="top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
-			<tr>
-				<td valign="top"><table class="topbdr" cellspacing="0" cellpadding="0" border="0">
-					<tr>
-						<td class="rp5" align="left" valign="top" width="70"><a href="/web/20100924180810/http://movies.msn.com/movies/movie/the-secret-in-their-eyes/"><img title="©Sony" src="/web/20100924180810im_/http://entimg.s-msn.com/i/GrandPrix_Movies/DVDGuide/secreto0_%5B1%5D_70.jpg" alt="©Sony" height="105" width="70" border="0" /></a></td><td valign="top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
-							<tr>
-								<td class="tp10" align="left" valign="top"><a class="lnk5" href="/web/20100924180810/http://movies.msn.com/movies/movie/the-secret-in-their-eyes/">The Secret in Their Eyes<a name=title2></a></a></td>
-							</tr><tr>
-								<td valign="top">
-<DIV id=subMod1>A retired prosecutor in Buenos Aires (played by Ricardo Darín, 
-surely Argentina's most exportable leading man) revisits a case of injustice in 
-this art-house murder mystery from Argentina, which won the 2009 Academy Award 
-for Best Foreign Language Film. It's a handsome production with a story rooted 
-in the nasty past of political fascism, but also graceless, and the direction by 
-Juan José Campanella (a veteran of American TV shows like "House" and "Law &amp; 
-Order: SVU") is lacking in subtlety and subtext and at times even confusing. 
-Spanish with English subtitles, with commentary by director Juan José Campanella 
-(also in Spanish with English subtitles), a casting featurette with audition 
-footage and a generic promotional featurette.</DIV>
-<DIV id=container1></DIV>
-<DIV class=tp5>
-<DIV class=tp5><A 
-href="/web/20100924180810/http://movies.msn.com/movies/movie/the-secret-in-their-eyes-%28el-secreto-de-sus-ojos%29.1/" 
-type=Msn.Entertain.Server.WebControls.LinkableHyperlink target="" Arg="113838" 
-GLink="0" LinkType="Page">DVD Info</A>&nbsp;| <A 
-href="/web/20100924180810/http://www.bing.com/shopping/search?q=The%20Secret%20In%20Their%20Eyes&amp;FORM=R5FD2&amp;p1=[CommerceService+scenario%3d%5C%22f%5C%22+r%3d%5C%22leafcategoryid|5319%5C%22]" 
-type=Msn.Entertain.Server.WebControls.LinkableHyperlink target="" Arg="113839" 
-GLink="0" LinkType="Page">Buy DVD</A>&nbsp;| <A 
-href="/web/20100924180810/http://www.bing.com/shopping/search?q=The%20Secret%20In%20Their%20Eyes%20Blu-ray&amp;FORM=R5FD&amp;p1=[CommerceService+scenario%3d%5C%22f%5C%22+r%3d%5C%22leafcategoryid|5319%5C%22]" 
-type=Msn.Entertain.Server.WebControls.LinkableHyperlink target="" Arg="113840" 
-GLink="0" LinkType="Page">Buy Blu-ray</A>&nbsp;&nbsp;</DIV></DIV></td>
-							</tr>
-						</table></td>
-					</tr>
-				</table></td>
-			</tr><tr>
-				<td valign="top"><table class="topbdr" cellspacing="0" cellpadding="0" border="0">
-					<tr>
-						<td class="rp5" align="left" valign="top" width="70"><a href="/web/20100924180810/http://movies.msn.com/movies/movie/ondine.2/"><img title="©Magnolia" src="/web/20100924180810im_/http://entimg.s-msn.com/i/GrandPrix_Movies/DVDGuide/ondine0_%5B1%5D_70.jpg" alt="©Magnolia" height="105" width="70" border="0" /></a></td><td valign="top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
-							<tr>
-								<td class="tp10" align="left" valign="top"><a class="lnk5" href="/web/20100924180810/http://movies.msn.com/movies/movie/ondine.2/">Ondine<a name=title3></a></a></td>
-							</tr><tr>
-								<td valign="top">
-<DIV id=subMod4>Fisherman outcast Syracuse (Colin Farrell) pulls up his net and 
-finds &amp; a woman, barely, along with his fish. Is this a modern-day fairy 
-tale and the young woman (Alicja Bachleda) a selkie (a seal-woman in Irish folk 
-mythology), as his daughter thinks? And if not, what explains this strange catch 
-and the woman's reluctance to be around anyone else in this Irish coastal 
-village? Neil Jordan is a master at this kind of tale and "Ondine" is a lovely 
-little film with a mythology weaving through the decidedly mortal stories of 
-fragile humans, broken families, alcohol-fueled anger and a struggling parent. 
-Includes a standard "Making Ondine" featurette. </DIV>
-<DIV id=container4></DIV>
-<DIV class=tp5>
-<DIV class=tp5><A href="/web/20100924180810/http://movies.msn.com/movies/movie/ondine.2/" 
-type=Msn.Entertain.Server.WebControls.LinkableHyperlink target="" 
-LinkType="Page" GLink="0" Arg="113841">DVD Info</A><STRONG> </STRONG>|&nbsp;<A 
-href="/web/20100924180810/http://www.bing.com/shopping/search?q=Ondine&amp;FORM=R5FD4&amp;p1=[CommerceService+scenario%3d%5C%22f%5C%22+r%3d%5C%22leafcategoryid|5319%5C%22]" 
-type=Msn.Entertain.Server.WebControls.LinkableHyperlink target="" 
-LinkType="Page" GLink="0" Arg="113843">Buy DVD</A>&nbsp;| <A 
-href="/web/20100924180810/http://www.bing.com/shopping/search?q=Ondine%20Blu-ray&amp;FORM=R5FD&amp;p1=[CommerceService+scenario%3d%5C%22f%5C%22+r%3d%5C%22leafcategoryid|5319%5C%22]" 
-type=Msn.Entertain.Server.WebControls.LinkableHyperlink target="" 
-LinkType="Page" GLink="0" Arg="113844">Buy Blu-ray</A></DIV></DIV></td>
-							</tr>
-						</table></td>
-					</tr>
-				</table></td>
-			</tr><tr>
-				<td valign="top"><table class="topbdr" cellspacing="0" cellpadding="0" border="0">
-					<tr>
-						<td class="rp5" align="left" valign="top" width="70"><a href="/web/20100924180810/http://movies.msn.com/movies/movie/eccentricities-of-a-blonde-haired-girl/"><img title="©Cinema Guild" src="/web/20100924180810im_/http://entimg.s-msn.com/i/GrandPrix_Movies/DVDGuide/eccentric0_%5B1%5D_70.jpg" alt="©Cinema Guild" height="115" width="70" border="0" /></a></td><td valign="top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
-							<tr>
-								<td class="tp10" align="left" valign="top"><a class="lnk5" href="/web/20100924180810/http://movies.msn.com/movies/movie/eccentricities-of-a-blonde-haired-girl/">Eccentricities of a Blonde-Haired Girl<a name=title2></a></a></td>
-							</tr><tr>
-								<td valign="top">
-<DIV id=subMod2>Manoel de Oliveira (the oldest active film director in the 
-world) has become a master of miniatures, and this short story of a feature is a 
-perfectly executed tale of obsessive love, enormous personal sacrifice and an 
-almost capricious twist of irrational emotional reflex. For all the dialogue it 
-has the patience of a silent film, with long, still shots observing the 
-characters until they reveal themselves through the smallest of telling action 
-or the slightest emotional reaction to a ripple across the face. The DVD 
-features a bonus 2009 short by Oliveira, a press conference from the 2009 Berlin 
-Film Festival and a promo for his next film, as well as an insert with an essay 
-by James Quandt.</DIV>
-<DIV id=container2></DIV>
-<DIV class=tp5>
-<DIV class=tp5><A 
-href="/web/20100924180810/http://movies.msn.com/movies/movie/eccentricities-of-a-blonde-haired-girl-%28singularidades-de-uma-rapariga-loura%29/" 
-type=Msn.Entertain.Server.WebControls.LinkableHyperlink target="" 
-LinkType="Page" GLink="0" Arg="113846">DVD Info</A><STRONG> </STRONG>|&nbsp;<A 
-href="/web/20100924180810/http://www.amazon.com/Eccentricities-Blonde-Haired-Girl-Ricardo-Trepa/dp/B003G53K8A" 
-type=Msn.Entertain.Server.WebControls.LinkableHyperlink target="" 
-LinkType="Page" GLink="0" Arg="113847">Buy 
-DVD</A>&nbsp;&nbsp;&nbsp;&nbsp;</DIV></DIV></td>
-							</tr>
-						</table></td>
-					</tr>
-				</table></td>
-			</tr><tr>
-				<td valign="top"><table class="topbdr" cellspacing="0" cellpadding="0" border="0">
-					<tr>
-						<td class="rp5" align="left" valign="top" width="70"><a href="/web/20100924180810/http://movies.msn.com/movies/movie/untitled.3/"><img title="©Screen Media" src="/web/20100924180810im_/http://entimg.s-msn.com/i/GrandPrix_Movies/DVDGuide/untitled0_%5B1%5D_70.jpg" alt="©Screen Media" height="105" width="70" border="0" /></a></td><td valign="top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
-							<tr>
-								<td class="tp10" align="left" valign="top"><a class="lnk5" href="/web/20100924180810/http://movies.msn.com/movies/movie/untitled.3/">(Untitled)<a name=title4></a></a></td>
-							</tr><tr>
-								<td valign="top">
-<DIV id=subMod3>What is art? This satire of the contemporary art scene has no 
-answers, but it does have a soft spot for those who put their heart into seeking 
-it out in the face of criticism, ridicule and frustration. Marley Shelton stars 
-as a gallery curator with a passion for confrontational art and artists who gets 
-involved with a brooding, self-involved composer (Adam Goldberg) of atonal 
-soundscapes and his financially successful but conventional artist brother (Eion 
-Bailey). It walks a shaky line between ridicule and respect, but does so with 
-wit and style. Jonathan Parker directs. No supplements.</DIV>
-<DIV id=container3></DIV>
-<DIV class=tp5>
-<DIV class=tp5><A href="/web/20100924180810/http://movies.msn.com/movies/movie/%28untitled%29/" 
-type=Msn.Entertain.Server.WebControls.LinkableHyperlink target="" Arg="113848" 
-GLink="0" LinkType="Page">DVD info</A>&nbsp;| <A 
-href="/web/20100924180810/http://www.bing.com/shopping/search?q=%28Untitled%29&amp;FORM=R5FD15&amp;p1=[CommerceService+scenario%3d%5C%22f%5C%22+r%3d%5C%22leafcategoryid|5319%5C%22]" 
-type=Msn.Entertain.Server.WebControls.LinkableHyperlink target="" Arg="113849" 
-GLink="0" LinkType="Page">Buy DVD</A>&nbsp;| <A 
-href="/web/20100924180810/http://www.bing.com/shopping/search?q=Untitled%20blu-ray&amp;FORM=R5FD&amp;p1=[CommerceService+scenario%3d%5C%22f%5C%22+r%3d%5C%22leafcategoryid|5319%5C%22]" 
-type=Msn.Entertain.Server.WebControls.LinkableHyperlink target="" Arg="113850" 
-GLink="0" LinkType="Page">Buy Blu-ray</A></DIV></DIV></td>
-							</tr>
-						</table></td>
-					</tr>
-				</table></td>
-			</tr><tr>
-				<td valign="top"> <DIV class="topbdr tp5"> <DIV class="header tp5">Also New This Week<BR><a href=/web/20100924180810/http://movies.msn.com/movies/movie/the-experiment.4/ class="altlink">The Experiment</a> | <a href=/web/20100924180810/http://www.bing.com/shopping/search?q=Necromentia&amp;FORM=R5FD&amp;p1=[CommerceService+scenario%3d%5C%22f%5C%22+r%3d%5C%22leafcategoryid|5319%5C%22] class="altlink">Buy DVD</a><BR><a href=/web/20100924180810/http://movies.msn.com/movies/movie/triple-dog/ class="altlink">Triple Dog</a> | <a href=/web/20100924180810/http://www.bing.com/shopping/search?q=Necromentia&amp;FORM=R5FD&amp;p1=[CommerceService+scenario%3d%5C%22f%5C%22+r%3d%5C%22leafcategoryid|5319%5C%22] class="altlink">Buy DVD</a><BR><a href=/web/20100924180810/http://movies.msn.com/movies/movie/the-secret-of-moonacre/ class="altlink">The Secret of Moonacre</a> | <a href=/web/20100924180810/http://www.bing.com/shopping/search?q=Necromentia&amp;FORM=R5FD&amp;p1=[CommerceService+scenario%3d%5C%22f%5C%22+r%3d%5C%22leafcategoryid|5319%5C%22] class="altlink">Buy DVD</a><BR><a href=/web/20100924180810/http://movies.msn.com/movies/movie/stomp-the-yard-homecoming/ class="altlink">Stomp the Yard: Homecoming</a> | <a href=/web/20100924180810/http://www.bing.com/shopping/search?q=Necromentia&amp;FORM=R5FD&amp;p1=[CommerceService+scenario%3d%5C%22f%5C%22+r%3d%5C%22leafcategoryid|5319%5C%22] class="altlink">Buy DVD</a><BR><a href=/web/20100924180810/http://movies.msn.com/movies/movie/stripped-naked/ class="altlink">Stripped Naked</a> | <a href=/web/20100924180810/http://www.bing.com/shopping/search?q=Necromentia&amp;FORM=R5FD&amp;p1=[CommerceService+scenario%3d%5C%22f%5C%22+r%3d%5C%22leafcategoryid|5319%5C%22] class="altlink">Buy DVD</a><BR><a href=/web/20100924180810/http://movies.msn.com/movies/movie/kandahar-break/ class="altlink">Kandahar Break</a> | <a href=/web/20100924180810/http://www.bing.com/shopping/search?q=Necromentia&amp;FORM=R5FD&amp;p1=[CommerceService+scenario%3d%5C%22f%5C%22+r%3d%5C%22leafcategoryid|5319%5C%22] class="altlink">Buy DVD</a><BR><a href=/web/20100924180810/http://movies.msn.com/movies/movie/growth/ class="altlink">Growth</a> | <a href=/web/20100924180810/http://www.bing.com/shopping/search?q=Necromentia&amp;FORM=R5FD&amp;p1=[CommerceService+scenario%3d%5C%22f%5C%22+r%3d%5C%22leafcategoryid|5319%5C%22] class="altlink">Buy DVD</a><BR><a href=/web/20100924180810/http://movies.msn.com/movies/movie/american-cowslip/ class="altlink">American Cowslip</a> | <a href=/web/20100924180810/http://www.bing.com/shopping/search?q=American%20Cowslip&amp;FORM=R5FD1&amp;p1=[CommerceService+scenario%3d%5C%22f%5C%22+r%3d%5C%22leafcategoryid|5319%5C%22] class="altlink">Buy DVD</a> </DIV> <DIV class="header tp5"><a href=/web/20100924180810/http://www.bing.com/shopping/search?q=Captive+michael+ironside+DVD&amp;go=&amp;form=QBRE class="altlink"></a></DIV></DIV></td>
-			</tr><tr>
-				<td valign="top"> <DIV class="topbdr tp10"> <P><EM>Sean Axmaker is a film critic for the Seattle Post-Intelligencer, a DVD  columnist for MSN Entertainment and a contributing writer for GreenCine.com,  Turner Classic Movies Online, <a href=/web/20100924180810/http://parallax-view.org/ class="altlink">Parallax View</a> and Asian Cult Cinema, among other  publications. Find links to all of this and more on his shamelessly  self-promoting <a href=/web/20100924180810/http://www.seanax.com/ class="altlink">blog</a>.</EM>  <P></P></DIV></td>
-			</tr><tr>
-				<td valign="top"> <SCRIPT> //**NUMBER OF SUB MODULES - INCLUDE FEATURE MODULE var subModSize = 5 </SCRIPT>  <SCRIPT>  for(i=0;i<subModSize;i++){  document.getElementById("container"+i).innerHTML = document.getElementById("subMod"+i).innerHTML.substr(0,220) + " <span style='font-size:13px;color:#07519A;cursor:pointer' onclick=SetOverflow("+i+",'visible') onmouseover=\"this.style.textDecoration='underline'\" onmouseout=\"this.style.textDecoration='none'\">...Full review</span>";  }    if(location.href.match("#title")){ numVal = location.href.substr(location.href.indexOf("#title")+6,1); SetOverflow(numVal,"visible"); }   </SCRIPT>  <STYLE> #subMod0{display:none} </STYLE> </td>
-			</tr>
-		</table></td>
-	</tr>
-</table>
-                                </div>
-                                <div class="NewOnDvdRightColumn">
-                                    <div>
-                                        <!--BeginAd(ENT3DR,MediumShowcase)--><table cellpadding="0" cellspacing="0" align="center" pagegroup="ENT3DR"><tr><td class="adText">advertisement</td></tr><tr><td><script type="text/javascript">if(SF('dap'))dap('&PG=ENT3DR&AP=1089', 300, 250); </script><!--EndAd--></td></tr></table>                                
-                                    </div>
-                                    <div class="NewOnDvdTopChartSummaryModule">
-                                        <div><table cellspacing="0" cellpadding="0" class="" border="0">
-	<tr>
-		<td class="pr" colspan="3"><div class="RelatedPhotoGalleryTopNoBorder"> </div><div class="RelatedPhotoGalleryHeaderText">Top DVD Rentals</div></td>
-	</tr><tr>
-		<td><div> </div></td><td class="RelatedPhotoGalleryContentCell"><div><div class="MoviesChart300RootDiv"> <div class="MoviesChart300RightRootDiv"> <div class="MoviesChart300ItemDiv"> <span class="MoviesChart300ItemNumber">1.  </span><div class="MoviesChart300ItemLink"><a href="/web/20100924180810/http://movies.msn.com/movies/movie/prince-of-persia-the-sands-of-time/">Prince of Persia: The Sands of Time</a></div></div><div class="MoviesChart300ItemDiv"> <span class="MoviesChart300ItemNumber">2.  </span><div class="MoviesChart300ItemLink"><a href="/web/20100924180810/http://movies.msn.com/movies/movie/cop-out.2/">Cop Out</a></div></div><div class="MoviesChart300ItemDiv"> <span class="MoviesChart300ItemNumber">3.  </span><div class="MoviesChart300ItemLink"><a href="/web/20100924180810/http://movies.msn.com/movies/movie/clash-of-the-titans.2/">Clash of the Titans</a></div></div><div class="MoviesChart300ItemDiv"> <span class="MoviesChart300ItemNumber">4.  </span><div class="MoviesChart300ItemLink"><a href="/web/20100924180810/http://movies.msn.com/movies/movie/date-night.1/">Date Night</a></div></div><div class="MoviesChart300ItemDiv"> <span class="MoviesChart300ItemNumber">5.  </span><div class="MoviesChart300ItemLink"><a href="/web/20100924180810/http://movies.msn.com/movies/movie/the-bounty-hunter.4/">The Bounty Hunter</a></div></div></div><div class="MoviesChart300LeftRootDiv"> <div class="MoviesChart300ItemDiv"> <span class="MoviesChart300ItemNumber">6.  </span><div class="MoviesChart300ItemLink"><a href="/web/20100924180810/http://movies.msn.com/movies/movie/letters-to-juliet/">Letters to Juliet</a></div></div><div class="MoviesChart300ItemDiv"> <span class="MoviesChart300ItemNumber">7.  </span><div class="MoviesChart300ItemLink"><a href="/web/20100924180810/http://movies.msn.com/movies/movie/kick-ass/">Kick-Ass</a></div></div><div class="MoviesChart300ItemDiv"> <span class="MoviesChart300ItemNumber">8.  </span><div class="MoviesChart300ItemLink"><a href="/web/20100924180810/http://movies.msn.com/movies/movie/the-last-song.3/">The Last Song</a></div></div><div class="MoviesChart300ItemDiv"> <span class="MoviesChart300ItemNumber">9.  </span><div class="MoviesChart300ItemLink"><a href="/web/20100924180810/http://movies.msn.com/movies/movie/killers.5/">Killers</a></div></div><div class="MoviesChart300ItemDiv"> <span class="MoviesChart300ItemNumber">10.  </span><div class="MoviesChart300ItemLink"><a href="/web/20100924180810/http://movies.msn.com/movies/movie/the-back-up-plan/">The Back-up Plan</a></div></div></div></div></div></td><td><div> </div></td>
-	</tr><tr>
-		<td><div> </div></td><td><div> </div></td><td><div> </div></td>
-	</tr>
-</table></div>                                
-                                    </div>
-                                    <div class="FeaturedArticleRightModule">
-                                        <div><table cellspacing="0" cellpadding="0" class="tm10" border="0">
-	<tr>
-		<td class="pr" colspan="3"><div class="RelatedPhotoGalleryTopNoBorder"> </div><div class="RelatedPhotoGalleryHeaderText">Featured Articles</div></td>
-	</tr><tr>
-		<td><div> </div></td><td class="RelatedPhotoGalleryContentCell"><div class="lp10 rp10 tm10"><div class="tm5"><!-- DON'T DELETE THIS --> <STYLE> .tm5	{ margin-top: 5px; } .lrp10tm5	{ padding: 0px 10px 0px 10px; margin-top: 5px; } </STYLE> </div><div class="tm5"><a href=/web/20100924180810/http://paralleluniverse.msn.com/photos/movies/out-foxed/ class="boldLink">Gallery: Out-Foxed</a><BR>Ten serious questions about  the overexposed 'Jonah Hex' star</div><div class="tm5"><a href=/web/20100924180810/http://movies.msn.com/movie-guide-winter/heart-of-the-game/ class="boldLink"></a><a href=/web/20100924180810/http://movies.msn.com/sketch-movies-best-worst/photo-gallery/feature/ class="boldLink">Gallery: Sketchy Flicks</a> <BR>The  skit-zophrenic history of movies based on sketch comedy shows </div><div class="tm5"><a href=/web/20100924180810/http://movies.msn.com/mom-pop-culture/10-best-dog-movies/photo-gallery/ class="boldLink">Gallery: 10 Best Dog Movies of All  Time</a><BR>Our favorite films of the canine variety</div><div class="tm5"><a href=/web/20100924180810/http://paralleluniverse.msn.com/photos/movies/cinematic-easter-eggs/ class="boldLink">Gallery: Jumbo-Size Cinematic Easter  Eggs</a><BR>Spotting the movie treasures that pay homage to classic  films</div><div class="tm5"><a href=/web/20100924180810/http://movies.msn.com/sketch-movies-best-worst/photo-gallery/feature/ class="boldLink">Animated Sequels: Why Parents Like  Them</a><BR>One mom is lining up for 'Toy Story 3' and 'Shrek Forever  After'</div><div class="tm5"><a href=/web/20100924180810/http://movies.msn.com/green-cine/photo-gallery/feature/ class="boldLink">Gallery: Green Cinema</a><BR>For Earth Day, we  celebrate our 10 favorite eco-friendly films</div></div></td><td><div> </div></td>
-	</tr><tr>
-		<td><div> </div></td><td><div> </div></td><td><div> </div></td>
-	</tr>
-</table></div>                                
-                                    </div>
-                                </div>
-                            </div>
-                        </td> 
-                            <td class="InfoModLargeContentRightCellCss"></td>
-                    </tr>
-                    <tr>
-                            <td><div class="InfoModLargeFooterLeftCellCss"> </div></td>
-                            <td><div class="InfoModLargeFooterCenterCellCss"> </div></td
-                            ><td><div class="InfoModLargeFooterRightCellCss"> </div></td>
-                    </tr>
-                </table>
-                </div>                                                                                                        
-                </div>
-
-			</div>
-		</div>
-		<div class="movies_editorspicks__rightcontent">
-			<div class="movies_editorspicks__popoutdisplay">
-				
-			</div>
-			<div class="movies_editorspicks__vertad">
-				
-			</div>
-		</div>
-	</div>
-
-      <script type="text/javascript" src="/web/20100924180810js_/http://hp.msn.com/scr/op/ol-fdbkv3_r1.js"></script><div class="pageFooter_control"><div class="pageFooter_link"><a href="/web/20100924180810/http://go.microsoft.com/fwlink/?LinkId=74170" target="_new">MSN Privacy</a></div><div class="pageFooter_link"><a href="/web/20100924180810/http://g.msn.com/0TO_/enus" target="_new">Legal</a></div><div class="pageFooter_link"><a href="/web/20100924180810/http://g.msn.com/0nwenus0/A5/19">Advertise</a></div><div class="pageFooter_link"><a href="/web/20100924180810/http://movies.msn.com/RSS">RSS</a></div><div class="pageFooter_rightLink"><a href="/web/20100924180810/http://movies.msn.com/sitemap">Site map</a></div><div class="pageFooter_link"><a href="/web/20100924180810/http://g.msn.com/AIPRIV/en-us">About our ads</a></div><div class="pageFooter_link"><a href="javascript:O_LC();">Feedback</a></div><div class="pageFooter_lastLink"><a href="javascript:var nw=window.open('/web/20100924180810/http://onlinehelp.microsoft.com/msn/en-us/entertainment.aspx', '_blank', 'width=970,height=700,scrollbars=1,status=1,resizable=1');">Help</a></div><div class="pageFooter_ownership"><div class="pageFooter_logo"><img id="microsoftLogo" src="/web/20100924180810im_/http://entimg.s-msn.com/i/ms/ms_logo.gif" border="0" /></div><div class="pageFooter_logoSeparator"><span>|</span></div><div class="pageFooter_copyright"><span>&copy; 2010 Microsoft</span></div></div></div><!-- Page Information = Machine Code: A10 - Date: 2010-09-24T11:08:09-07 , PageUrl =http%3a%2f%2fmovies.msn.com%2fnew-on-dvd%2fmovies%2fdefault.aspx --><!-- SiteCatalyst code version: H.1.Copyright 1997-2005 Omniture, Inc. More info available at /web/20100924180810/http://www.omniture.com --><script language="JavaScript"><!--
-var s_account ="msnportalmovies";//--></script><script type="text/javascript" src="/web/20100924180810js_/http://stj.msn.com/br/om/js/s_code.js"></script><script language="JavaScript"><!--
- try{
- s.linkInternalFilters="javascript:,music.msn.,yourroad.msn.,sissy.msn.,thenoiz.msn.,fanclub.msn.,movies.msn.,radio.msn.,tv.msn.,entertainment.msn.,gossip.msn.,rockstar.msn.,tonightshow.msn.,entertainment.sidewalk.msn.,rockstarforums.msn.,celebs.msn.,originals.msn.,nextgreatband.msn."; s.trackExternalLinks=true; var _servername = "movies.msn.com"; var _channelname = "Movies"; if(window.location.pathname.length > 1 && window.location.pathname.toLowerCase() != '/default.aspx'){ s.pageName=window.location.pathname.toLowerCase();} else if(_channelname.length > 0) {s.pageName ="Movies.HOMEPAGE"; } else {s.pageName = _servername + window.location.pathname.toLowerCase(); } s.server ="movies.msn.com"; s.channel ="Movies"; s.prop1 ="Entertainment"; s.prop2 ="en-us"; s.prop3 ="Movies New on DVD - MSN Movies";s.prop32 = "0"; s.eVar10 = "0";if(typeof search_term != 'undefined'){ if(search_term.length > 0) { var st_up = search_term.toUpperCase(); if(st_up.match(/^[A-D].*/)){s.prop36 = search_term;} else if(st_up.match(/^[E-K].*/)){s.prop37 = search_term;} else if(st_up.match(/^[L-P].*/)){s.prop38 = search_term;} else if(st_up.match(/^[Q-U].*/)){s.prop39 = search_term;} else {s.prop40 = search_term;} s.prop41 = "sort=1&t=1&ft=20";}} s.prop22 = "0"; s.eVar8 = "0";_om_gbls.setExtraVars();var s_code=s.t();if(s_code){document.write(s_code);} 
-}catch(e){}
-//--></script><script type="text/javascript"><!--
- if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')//--></script><noscript><img src="/web/20100924180810im_/http://msnportalent.112.2o7.net/b/ss/msnportalent/1/H.1--NS/0" height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/--><!-- End SiteCatalyst code version: H.1. --><script type="text/javascript"><!--
- var tmppageName; if(window.location.pathname.length > 1){ tmppageName=window.location.pathname;} else {tmppageName ="Movies.HOMEPAGE"; } var tmpcampaignID=""; var tmpcm2="";//--></script><!-- start Vibrant Media IntelliTXT script section --><script type="text/javascript" src="/web/20100924180810js_/http://entertainment.msn.us.intellitxt.com/ast/js/msn/entertainment.msn_cs.js"></script><!-- end Vibrant Media IntelliTXT script section -->
-    </div>
-    
-   
-  </body>
-</html>
-<script type="text/javascript">if(window.sdd){sHS();}</script><span id=clipSpan></span>
-
-
-
-
-<!--
-     FILE ARCHIVED ON 18:08:10 Sep 24, 2010 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 20:13:38 Jan 7, 2015.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
--->

@@ -1,0 +1,871 @@
+<!-- v.1.14 4/21/99 rebekah -->
+
+<!--  GET THE NAME OF THE CITY -->
+
+
+
+
+
+
+<html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app11.us.archive.org";archive_analytics.values.server_ms=191;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<SCRIPT LANGUAGE= "JavaScript">
+<!--
+function makePopup(){
+popup=window.open("","emailfriend","toolbar=no,scrollbars=yes,resizable=yes,location=no,menubar=0,width=490,height=325");
+}
+//-->
+</SCRIPT>
+
+
+
+
+
+
+
+<META NAME="keywords" content="The Legend of Bagger Vance, National">
+<META  name="description" content="Will Smith is back on the big screen, playing golf caddy to Matt Damon.">
+<TITLE>The Legend of Bagger Vance - National</TITLE>
+</head>
+
+
+
+<body BGCOLOR=#FFFFFF text=#000000 link=#333399 vlink=#336600 alink=#FF0000 TOPMARGIN=0 LEFTMARGIN=0>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://entertainment.citysearch.com/page/ent?_entity_id=E-AAAAA-00030526&amp;_page_type_id=1";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "1";
+var displayMonth = "Oct";
+var displayYear = "2000";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://entertainment.citysearch.com/page/ent?_entity_id=E-AAAAA-00030526&amp;_page_type_id=1" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20001001215837" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20000620014236/http://entertainment.citysearch.com/page/ent?_entity_id=E-AAAAA-00030526&amp;_page_type_id=1" title="20 Jun 2000">JUN</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 21:58:37 Oct 1, 2000">OCT</td>
+		<td class="f" nowrap="nowrap">
+		
+		    Nov
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20000620014236/http://entertainment.citysearch.com/page/ent?_entity_id=E-AAAAA-00030526&amp;_page_type_id=1" title="1:42:36 Jun 20, 2000"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 21:58:37 Oct 1, 2000">1</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+               
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   1999
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 21:58:37 Oct 1, 2000">2000</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2001
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20001001215837*/http://entertainment.citysearch.com/page/ent?_entity_id=E-AAAAA-00030526&amp;_page_type_id=1" title="See a list of every capture for this URL">3 captures</a>
+           <div class="r" title="Timespan for captures of this URL">19 Jun 00 - 1 Oct 00</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:9:000002000100_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+<!-- TOPBAR -->
+
+
+
+<STYLE>
+<!--
+TABLE.toolCell{border-top-style:solid;border-width:1px;border-color:#CCCCFF}
+TD.toolCell{border-right-style:solid;border-width:1px;border-color:#FFFFFF}
+A.toolLnk{text-decoration:none;font:x-small helvetica,arial}
+//-->
+</STYLE>
+
+<SCRIPT LANGUAGE="javascript">
+<!--
+function mOvr(src,clrOver){
+    if(!src.contains(event.fromElement)){
+        src.style.cursor="hand"
+        src.BGCOLOR=clrOver
+    }
+}
+
+function mOut(src,clrIn){
+    if(!src.contains(event.toElement)){
+        src.style.cursor="default"
+        src.BGCOLOR=clrIn
+    }
+}
+
+function mClk(src){
+    if(event.srcElement.tagName=="TD"){
+        src.children.tags("A")[0].click()
+    }
+}
+
+function validate(){
+var zip=document.SearchStrip.postal_code.value
+var key=document.SearchStrip.keywords.value
+
+var zipmsg="Please enter a valid 5-number zip code, or select a neighborhood."
+var keymsg="Please enter something to search."
+
+    if(key!=""){
+        key=key.toLowerCase()
+        if(key.substring(key.length-1,key.length)=="s"){
+            key=key.substring(0,key.length-1)
+        }
+        document.SearchStrip.alt_keywords.VALUE=key
+        return(true)
+    }
+    else{
+        alert(keymsg)
+        document.SearchStrip.keywords.focus()
+        return(false)
+    }
+}
+// -->
+</SCRIPT>
+
+
+<!-- sidewalk branding : this should show up in addition to the default citysearch branding -->
+
+
+<!-- msn branding : this completely replaces citysearch branding and nav -->
+
+
+
+<!-- entertainment branding : this completely replaces citysearch branding and nav -->
+
+    <TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH="100%" BGCOLOR="#FFFFFF">
+    <TR>
+    <TD>
+        <TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=608>
+        <TR>
+        <TD>
+        <A HREF="/web/20001001215837/http://go.msn.com/A5/0/" TARGET="_top"><IMG SRC="/web/20001001215837im_/http://entertainment.msn.com/chan/partner/MSFT.gif" WIDTH=140 HEIGHT=60 BORDER=0 ALT="go home"></A></TD>
+
+        <TD><IFRAME WIDTH=468 HEIGHT=60 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR=#000000 SRC=/web/20001001215837if_/http://ads.tmcs.net/html.ng/Params.richmedia=yes&amp;site=msn&amp;pagepos=1&amp;size=468x60&amp;city=&amp;state=&amp;uit=UIT_00000570>
+<SCRIPT LANGUAGE=JavaScript1.1 SRC=/web/20001001215837js_/http://ads.tmcs.net/js.ng/Params.richmedia=yes&amp;site=msn&amp;city=&amp;state=&amp;uit=UIT_00000570&amp;pagepos=1&amp;size=468x60></SCRIPT>
+<NOSCRIPT>
+<A HREF=/web/20001001215837/http://ads.tmcs.net/click.ng/site=msn&amp;pagepos=1&amp;size=468x60&amp;city=&amp;state=&amp;uit=UIT_00000570>
+<IMG SRC=/web/20001001215837im_/http://ads.tmcs.net/image.ng/site=msn&amp;pagepos=1&amp;size=468x60&amp;city=&amp;state=&amp;uit=UIT_00000570></A>
+</NOSCRIPT></IFRAME>
+</TD></TR>
+        </TABLE>
+
+        <TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=608>
+        <TR>
+        <TD WIDTH=219>
+        <IMG SRC="/web/20001001215837im_/http://entertainment.msn.com/chan/partner/title.gif" WIDTH=219 HEIGHT=36 BORDER=0></TD>
+        <TD WIDTH=100>  </TD>
+        <TD WIDTH=289 ALIGN=RIGHT>
+        <IMG SRC="/web/20001001215837im_/http://entertainment.citysearch.com/img/by_cs.gif" align=center WIDTH=238 HEIGHT=40></TD>
+        </TR></TABLE>
+
+    <DIV><IMG SRC="/web/20001001215837im_/http://entertainment.citysearch.com/img/trans.gif" WIDTH=2 HEIGHT=2></DIV>
+
+    <!-- entertainment navigation -->
+    <TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=608 BGCOLOR=#003366>
+   <TR VALIGN=TOP ALIGN=CENTER HEIGHT=17>
+     
+     <TD CLASS="toolCell" WIDTH="14%" BGCOLOR="#CCCCFF"><A CLASS="toolLnk" TARGET='_top' HREF='/web/20001001215837/http://entertainment.msn.com/Ehome.asp' STYLE='color:#000000' TITLE='Entertainment Home'>home</A></TD>
+
+        
+        
+
+           <TD CLASS="toolCell" WIDTH="14%" BGCOLOR="#003366" onmouseover="mOvr(this,'#666699')" onmouseout="mOut(this,'#003366')" onclick="mClk(this)"> <A CLASS="toolLnk" TARGET='_top' HREF='/web/20001001215837/http://entertainment.msn.com/books/books.asp' STYLE='color:#FFFFFF'>books</A></TD>
+
+        
+
+           <TD CLASS="toolCell" WIDTH="14%" BGCOLOR="#003366" onmouseover="mOvr(this,'#666699')" onmouseout="mOut(this,'#003366')" onclick="mClk(this)"> <A CLASS="toolLnk" TARGET='_top' HREF='/web/20001001215837/http://entertainment.msn.com/celebs/celebs.asp' STYLE='color:#FFFFFF'>celebs</A></TD>
+
+        
+
+           <TD CLASS="toolCell" WIDTH="14%" BGCOLOR="#003366" onmouseover="mOvr(this,'#666699')" onmouseout="mOut(this,'#003366')" onclick="mClk(this)"> <A CLASS="toolLnk" TARGET='_top' HREF='/web/20001001215837/http://entertainment.msn.com/movies/movies.asp' STYLE='color:#FFFFFF'>movies</A></TD>
+
+        
+
+           <TD CLASS="toolCell" WIDTH="14%" BGCOLOR="#003366" onmouseover="mOvr(this,'#666699')" onmouseout="mOut(this,'#003366')" onclick="mClk(this)"> <A CLASS="toolLnk" TARGET='_top' HREF='/web/20001001215837/http://entertainment.msn.com/music/music.asp' STYLE='color:#FFFFFF'>music</A></TD>
+
+        
+
+           <TD CLASS="toolCell" WIDTH="14%" BGCOLOR="#003366" onmouseover="mOvr(this,'#666699')" onmouseout="mOut(this,'#003366')" onclick="mClk(this)"> <A CLASS="toolLnk" TARGET='_top' HREF='/web/20001001215837/http://entertainment.msn.com/tv/tv.asp' STYLE='color:#FFFFFF'>tv</A></TD>
+
+        
+
+           <TD CLASS="toolCell" WIDTH="14%" BGCOLOR="#003366" onmouseover="mOvr(this,'#666699')" onmouseout="mOut(this,'#003366')" onclick="mClk(this)"> <A CLASS="toolLnk" TARGET='_top' HREF='/web/20001001215837/http://entertainment.msn.com/news/news.asp' STYLE='color:#FFFFFF'>news</A></TD>
+
+        
+   </TR>
+</TABLE>
+
+
+    <DIV><IMG SRC="/web/20001001215837im_/http://entertainment.citysearch.com/img/trans.gif" WIDTH=2 HEIGHT=2></DIV>
+    </TD></TR></TABLE>
+
+
+<!-- citysearch branding -->
+<!-- do the following if sidewalk or citysearch (another way of saying this is not msn and not ent) -->
+
+
+
+
+
+<FORM METHOD="POST" TARGET="emailfriend" ACTION="/web/20001001215837/http://entertainment.citysearch.com/page/gen" name="MailFriend" onSubmit=makePopup();return true;>
+
+
+
+
+
+
+
+
+
+
+
+	<TABLE ALIGN=Left border=0 CELLSPACING=0 CELLPADDING=0 WIDTH="610">
+
+	<TR><FORM METHOD="POST" TARGET="emailfriend" ACTION="/web/20001001215837/http://entertainment.citysearch.com/page/gen" name="MailFriend" onSubmit=makePopup();return true;>	
+
+		<TD ALIGN=left VALIGN=top colspan=3><img src=/web/20001001215837im_/http://entertainment.citysearch.com/img/trans.gif width=7 height=2></td></tr>
+
+		<TR>
+
+			<TD ALIGN=left VALIGN=top colspan=3>
+
+				<TABLE ALIGN=Left border=0 CELLSPACING=0 CELLPADDING=0 WIDTH="610">
+
+					<TR>
+
+						<TD ALIGN=left VALIGN=top>
+
+							<font face="arial,helvetica" size=5><B>
+
+							The Legend of Bagger Vance
+
+							</B></font>
+
+							<!-- RECOMMENDED -->
+
+							
+
+						</TD>
+
+						<TD ALIGN=RIGHT VALIGN=TOP>
+
+						<SCRIPT LANGUAGE="JavaScript1.1" SRC="/web/20001001215837js_/http://ads.tmcs.net/js.ng/site=cs&amp;pagepos=777&amp;page=editorial"></SCRIPT>
+
+						</TD>				
+
+						<TD ALIGN=RIGHT VALIGN=TOP>
+
+
+
+<!----------------- MAIL THIS TO A FRIEND -------------------->
+
+						
+
+<input type=image src=/web/20001001215837im_/http://entertainment.citysearch.com/img/button_mail_to_friend.gif border=0 WIDTH=80 HEIGHT=21 Alt="send this to a friend" name="mail_a_friend">
+<input type=hidden name="_template" value="/entity/sub/ml_frnd_movie_popup.html">
+
+<input type=hidden name="name" value="The Legend of Bagger Vance">
+
+
+<input type=hidden name="teaser" value="Will Smith is back on the big screen, playing golf caddy to Matt Damon.">
+
+
+<input type=hidden name="url" value="/page/ent?_entity_id=E-AAAAA-00030526&_page_type_id=1">
+
+
+
+
+
+
+
+
+
+
+		
+
+						</TD>			
+
+					</TR>
+
+				</TABLE>
+
+<BR>&nbsp;
+
+			</TD>
+
+		</TR>
+
+</FORM>
+
+		
+
+<!-------------------------TABLE ----------------------------->
+
+	<!-------------------LEFT COLUMN----------------------->
+
+			<tr>
+
+			<td align=left valign=top width=150 rowspan=2>
+
+	<!---------------RATING----------------------------->
+
+			
+
+			
+
+				
+
+			
+
+
+
+	<!-------------------RUNTIME--------------------->
+
+		
+
+			
+
+
+
+
+
+	<!-------------------ASSOCIATED EVENTS------------------>
+
+		
+
+
+		<font face="arial,helvetica" size=1>
+
+			<a href="#showtimes"><img width=18 height=16 src="/web/20001001215837im_/http://entertainment.citysearch.com/img/arrow_down.gif" border=0 valign=center align=center>Show Times</a>
+
+			</font><BR>
+
+
+
+
+	<!----------------------TITLENOTES------------------>
+
+		<!-----GENRE------>
+
+			<BR>
+
+				<font face="arial,helvetica" size=1 color="999999">
+
+					GENRE:</font><BR>
+
+				<font face="arial,helvetica" size=1>
+
+				Drama
+
+				</font><br>	
+
+			
+
+
+
+ 		<!-------- DIRECTOR ---------->
+
+			
+
+
+
+		<!------------ STARRING ---------------->
+
+
+
+			
+
+
+
+		<!-------- STARRING EXCLUDE DIRECTOR AND STARRING -------->
+
+
+
+			
+
+
+
+			<!-- TITLE_NOTES EXCLUDING GENRE AND RATING -->
+
+				
+
+
+
+		<!-- Website -->
+
+
+
+				
+
+
+
+		<!-- Ticket Purchase Information -->
+
+
+
+			
+
+
+
+
+
+<!------------------------ BUZZ ----------------------->
+
+
+
+</td>
+<!------------------------SPACER------------------------>
+<TD ALIGN=left VALIGN=top width=20 rowspan=2>&nbsp;</TD>
+
+
+
+<!---------------------------------EDITORIAL CONTENT--------------------------------->
+
+<TD ALIGN=left VALIGN=top width=450>	
+
+
+
+
+
+ 
+
+<!---------------------- IF THE REVIEW NULL PUT THE TEASER INSTEAD ------------------------->
+
+		
+
+		
+
+						<!--------EDITOR'S PROFILE---------->
+
+						<!-------- IF BOTH TEASER AND REVIEW NULL THEN COMMENT OUT THE EDITORIAL HEADER GIF ---------->
+
+						
+
+						<img width=440 height=18 src="/web/20001001215837im_/http://entertainment.citysearch.com/img/header_profile.gif" border=0><p>
+
+						
+
+						
+
+
+
+		<!-----------     IMAGE     ----------------->
+
+			
+
+				<TABLE border=0 CELLSPACING=0 CELLPADDING=5 WIDTH=130 HEIGHT=145 align=left>
+
+				<tr>
+
+					<TD align=center VALIGN=top>
+
+						<IMG SRC="/web/20001001215837im_/http://entertainment.citysearch.com/E/E/AAAAA/0003/05/26/Media540.jpg" WIDTH=130 HEIGHT=145 border=0><br>
+
+						
+
+					</TD>
+
+				</tr>
+
+				</TABLE>
+
+			
+
+			<!--end image and caption-->
+
+
+
+<!------------------------REVIEW-------------------------->
+
+		<font face="arial,helvetica" size=2>
+
+		
+
+			
+
+				<b>Welcome back, Will Smith. After the space aliens, after the Wild West, after the money and ladies and Hype Williams-directed music videos, welcome back to movies that make you think.</b>
+<p>
+<b>Background</b><br>
+In "The Legend of Bagger Vance," Smith plays the title character, a 
+golf caddy in Georgia after World War II. Veteran Rannulph Junah (Matt 
+Damon) is directly out of the war and about to enter a high-profile golf tournament. In preparation, Vance helps him deliver "the 
+Authentic Swing." Charlize Theron plays the match's promoter with Jack Lemmon as the film's narrator.
+<p>
+<b>Buzz</b><br>
+It's been a while since Smith has done dramatic work like "Six Degrees of Separation." "Bagger Vance" may be the film that
+rediscovers his acting talent. Directed by ever-hunky Robert Redford,
+the film is based on Steven Pressfield's novel of the same name and borrows its themes from the Bhagavad Gita. (Bagger Vance, Bhagavad. Get it?) Reports say the National Council of Hindu Temples is worried about the ancient text's cinematic interpretation, but, with a powerhouse cast, this shouldn't hurt the film's assured box-office intake. &#151;David C.
+Madden
+<p>
+<i>Release date: November 3
+</i><p>
+
+			
+
+		</font>
+
+		<font face="arial,helvetica" size=1 color="999999">
+
+                       			 
+
+
+
+</td></tr>
+
+<tr><td align=left valign=top>
+
+
+
+<!----------------------- ASSOCIATED LOCATIONS W/SHOWTIMES ------------------>
+
+
+
+ 	<a name="showtimes">&nbsp;<P><P>
+
+		<img width=440 height=18 src="/web/20001001215837im_/http://entertainment.citysearch.com/img/header_showtimes.gif"></a>
+
+		<br>
+<form name=zip method=get action=/web/20001001215837/http://entertainment.citysearch.com/page/ent>
+			<font size=2 face="arial, helvetica"><b>Enter your zip code for movie times near you:</b></font>&nbsp;
+			
+				<input type=hidden name="_page_type_id" value="1">
+				<input type=hidden name="_entity_id" value="E-AAAAA-00030526">
+				<input type=text size=5 name=set_home_zip value=>
+            	<input type=submit value="Go!" size=1>
+			</form>	
+
+
+
+
+</td></tr></table>
+<br clear=left>
+
+<table width=615>
+	<tr>
+		<td>
+  
+
+
+
+
+    <BR>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=608 BGCOLOR=#003366>
+<TR VALIGN=TOP ALIGN=CENTER HEIGHT=17>
+ 
+<TD CLASS="toolCell" WIDTH="14%" BGCOLOR="#CCCCFF"><A CLASS="toolLnk" TARGET='_top' HREF='/web/20001001215837/http://entertainment.msn.com/Ehome.asp' STYLE='color:#000000' TITLE='Entertainment Home'>home</A></TD>
+
+
+
+       
+    <TD CLASS="toolCell" WIDTH="14%" BGCOLOR="#003366" onmouseover="mOvr(this,'#666699')" onmouseout="mOut(this,'#003366')" onclick="mClk(this)">
+    <A CLASS="toolLnk" TARGET='_top' HREF='/web/20001001215837/http://entertainment.msn.com/books/books.asp' STYLE='color:#FFFFFF'>books</A></TD>
+        
+
+       
+    <TD CLASS="toolCell" WIDTH="14%" BGCOLOR="#003366" onmouseover="mOvr(this,'#666699')" onmouseout="mOut(this,'#003366')" onclick="mClk(this)">
+    <A CLASS="toolLnk" TARGET='_top' HREF='/web/20001001215837/http://entertainment.msn.com/celebs/celebs.asp' STYLE='color:#FFFFFF'>celebs</A></TD>
+        
+
+       
+    <TD CLASS="toolCell" WIDTH="14%" BGCOLOR="#003366" onmouseover="mOvr(this,'#666699')" onmouseout="mOut(this,'#003366')" onclick="mClk(this)">
+    <A CLASS="toolLnk" TARGET='_top' HREF='/web/20001001215837/http://entertainment.msn.com/movies/movies.asp' STYLE='color:#FFFFFF'>movies</A></TD>
+        
+
+       
+    <TD CLASS="toolCell" WIDTH="14%" BGCOLOR="#003366" onmouseover="mOvr(this,'#666699')" onmouseout="mOut(this,'#003366')" onclick="mClk(this)">
+    <A CLASS="toolLnk" TARGET='_top' HREF='/web/20001001215837/http://entertainment.msn.com/music/music.asp' STYLE='color:#FFFFFF'>music</A></TD>
+        
+
+       
+    <TD CLASS="toolCell" WIDTH="14%" BGCOLOR="#003366" onmouseover="mOvr(this,'#666699')" onmouseout="mOut(this,'#003366')" onclick="mClk(this)">
+    <A CLASS="toolLnk" TARGET='_top' HREF='/web/20001001215837/http://entertainment.msn.com/tv/tv.asp' STYLE='color:#FFFFFF'>tv</A></TD>
+        
+
+       
+    <TD CLASS="toolCell" WIDTH="14%" BGCOLOR="#003366" onmouseover="mOvr(this,'#666699')" onmouseout="mOut(this,'#003366')" onclick="mClk(this)">
+    <A CLASS="toolLnk" TARGET='_top' HREF='/web/20001001215837/http://entertainment.msn.com/news/news.asp' STYLE='color:#FFFFFF'>news</A></TD>
+        
+
+
+<!--
+<TD CLASS="toolCell" WIDTH=14% BGCOLOR="#CCCCFF"><A CLASS="toolLnk" TARGET='_top' HREF='/web/20001001215837/http://entertainment.msn.com/Ehome.asp' STYLE='color:#000000' TITLE='Entertainment Home'>home</A></TD>
+
+<TD CLASS="toolCell" WIDTH=14% BGCOLOR=#003366 onmouseover="mOvr(this,'#666699')" onmouseout="mOut(this,'#003366')" onclick="mClk(this)"><A CLASS="toolLnk" TARGET='_top' HREF='/web/20001001215837/http://entertainment.msn.com/books/books.asp' STYLE='color:#FFFFFF' TITLE='New Books, Bestsellers & Book News'>books</A></TD>
+        
+<TD CLASS="toolCell" WIDTH=14% BGCOLOR=#003366 onmouseover="mOvr(this,'#666699')" onmouseout="mOut(this,'#003366')" onclick="mClk(this)"><A CLASS="toolLnk" TARGET='_top' HREF='/web/20001001215837/http://entertainment.msn.com/celebs/celebs.asp' STYLE='color:#FFFFFF' TITLE='Celebrity News, Gossip & Interviews'>celebs</A></TD>
+
+<TD CLASS="toolCell" WIDTH=14% BGCOLOR=#003366 onmouseover="mOvr(this,'#666699')" onmouseout="mOut(this,'#003366')" onclick="mClk(this)"><A CLASS="toolLnk" TARGET='_top' HREF='/web/20001001215837/http://entertainment.msn.com/movies/movies.asp' STYLE='color:#FFFFFF' TITLE='Films, Videos & Movie News'>movies</A></TD>
+        
+<TD CLASS="toolCell" WIDTH=14% BGCOLOR=#003366 onmouseover="mOvr(this,'#666699')" onmouseout="mOut(this,'#003366')" onclick="mClk(this)"><A CLASS="toolLnk" TARGET='_top' HREF='/web/20001001215837/http://entertainment.msn.com/music/music.asp' STYLE='color:#FFFFFF' TITLE='CDs, Concerts, Webcasts & Music News'>music</A></TD>
+
+<TD CLASS="toolCell" WIDTH=14% BGCOLOR=#003366 onmouseover="mOvr(this,'#666699')" onmouseout="mOut(this,'#003366')" onclick="mClk(this)"><A CLASS="toolLnk" TARGET='_top' HREF='/web/20001001215837/http://entertainment.msn.com/tv/tv.asp' STYLE='color:#FFFFFF' TITLE='Television News, Talk Shows & Nielsen Ratings'>tv</A></TD>
+
+<TD CLASS="toolCell" WIDTH=14% BGCOLOR=#003366 onmouseover="mOvr(this,'#666699')" onmouseout="mOut(this,'#003366')" onclick="mClk(this)"><A CLASS="toolLnk" TARGET='_top' HREF='/web/20001001215837/http://entertainment.msn.com/news/news.asp' STYLE='color:#FFFFFF' TITLE='Daily News'>news</A></TD>
+-->
+</TR></TABLE>
+            
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=608>
+<TR VALIGN=TOP>
+<TD WIDTH=208>
+<A HREF="/web/20001001215837/http://go.msn.com/AS/0"><IMG SRC="/web/20001001215837im_/http://logo.msn.com/en-us/default/logo.gif" WIDTH=140 HEIGHT=60 BORDER=0 ALT="go to msn.com"></A>
+
+<DIV><IMG SRC="/web/20001001215837im_/http://entertainment.citysearch.com/img/trans.gif" WIDTH=15 HEIGHT=1>
+	
+		<a href="/web/20001001215837/http://entertainment.msn.com/" class=rL><font size=2 face=arial,sans-serif class=rL>Return to <b>Entertainment</b></font></a>
+	
+	</DIV></TD>
+
+<TD WIDTH=190>
+<FONT SIZE=2 FACE="helvetica,arial"><B>Other Links:</B></FONT>
+<HR SIZE=1 COLOR="#000000" NOSHADE>
+<FONT SIZE=1 FACE="helvetica,arial">
+
+
+<A HREF="/web/20001001215837/http://go.msn.com/A5/2/WOMEN.ASP"><FONT COLOR="#000000">
+Women</FONT></A>
+
+
+    <BR><A HREF="/web/20001001215837/http://go.msn.com/A5/2/CHAT.ASP"><FONT COLOR="#000000">Chat</FONT></A>
+
+    <BR><A HREF="/web/20001001215837/http://go.msn.com/A5/2/FREEGAMES.ASP"><FONT COLOR="#000000">Free Games</FONT></A>
+
+    <BR><A HREF="/web/20001001215837/http://go.msn.com/A5/2/DOWNLOADS.ASP"><FONT COLOR="#000000">Downloads</FONT></A>
+
+    <BR><A HREF="/web/20001001215837/http://go.msn.com/A5/2/RESEARCH.ASP"><FONT COLOR="#000000">Research &amp; School</FONT></A>
+
+    <BR><A HREF="/web/20001001215837/http://go.msn.com/A5/2/MORE.ASP"><FONT COLOR="#000000">More...</FONT></A>
+
+<BR><BR>
+</FONT></TD>
+
+<TD WIDTH=20></TD>
+
+<TD WIDTH=190>
+<FONT SIZE=2 FACE="helvetica,arial"><B>Special Features:</B></FONT>
+<HR SIZE=1 COLOR="#000000" NOSHADE>
+<FONT SIZE=1 FACE="helvetica,arial">
+
+
+<A HREF="/web/20001001215837/http://go.msn.com/A5/3/it1.asp?target=http://www.passport.com/Promo/Magazine/default.asp?P=msn"><FONT COLOR="#000000">
+Is your coffee table a little bare?</FONT></A>
+
+
+    <BR><A HREF="/web/20001001215837/http://go.msn.com/A5/3/it2.asp?target=http://www.windowsmedia.com/preview/launch/launch.asp"><FONT COLOR="#000000">Upgrade your PC's stereo for FREE!</FONT></A>
+
+    <BR><A HREF="/web/20001001215837/http://go.msn.com/A5/3/it3.asp?target=http://newsweek.msnbc.com"><FONT COLOR="#000000">Read all about it!</FONT></A>
+
+    <BR><A HREF="/web/20001001215837/http://go.msn.com/A5/3/it4.asp?target=http://on.linkexchange.com/?ATID=15%26AID=1293"><FONT COLOR="#000000">If you build it, they will come</FONT></A>
+
+    <BR><A HREF="/web/20001001215837/http://go.msn.com/A5/3/it5.asp?target=http://www.msnbc.com/news/olympics_front.asp"><FONT COLOR="#000000">Countdown to the games down under</FONT></A>
+
+    <BR><A HREF="/web/20001001215837/http://go.msn.com/A5/3/it10.asp?target=http://update.msn.com/quicklinks/default.asp"><FONT COLOR="#000000">More...</FONT></A>
+
+<BR><BR>
+</FONT>
+</TD></TR></TABLE>
+
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=608>
+<TR>
+<TD HEIGHT=25 BGCOLOR="#336699" ALIGN=CENTER>
+<FONT SIZE=1 FACE="helvetica,arial" COLOR="#FFFFFF"> &nbsp;&nbsp;&copy;2000 Microsoft Corporation. All rights reserved.</FONT>
+<A HREF="/web/20001001215837/http://go.msn.com/AS/4"><FONT SIZE=1 FACE="helvetica,arial" COLOR="#FFFFFF">Terms of Use</FONT></A>&nbsp;&nbsp;
+<A HREF="/web/20001001215837/http://go.msn.com/AS/5"><FONT SIZE=1 FACE="helvetica,arial" COLOR="#FFFFFF">Advertise</FONT></A>&nbsp;&nbsp;
+<A HREF="/web/20001001215837/http://go.msn.com/AS/6"><FONT SIZE=1 FACE="helvetica,arial" COLOR="#FFFFFF">
+TRUSTe&nbsp;Approved&nbsp;Privacy&nbsp;Statement</FONT></A></TD></TR></TABLE>
+
+
+
+
+
+
+
+	</tr>
+</table>
+
+</body></html>
+
+
+
+
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 21:58:37 Oct 1, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 4:04:52 Jan 8, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

@@ -1,0 +1,900 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app13.us.archive.org";archive_analytics.values.server_ms=295;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<title>Richard Bangs Adventures Presented by Yahoo!</title>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="description" content="Use Yahoo! News to find breaking news, current events, the latest headlines, news photos, analysis & opinion on top stories, world, business, politics, entertainment, sports, technology, and more."/>
+<meta name="keywords" content="Yahoo! News, news, daily news, current events, today's top headlines, breaking news, news photos, news video, Full Coverage">
+<link rel="stylesheet" type="text/css" href="/web/20051026235937cs_/http://us.i1.yimg.com/us.yimg.com/lib/common/lsmfonts20040826.css" />
+<script type="text/javascript" language="javascript" src="/web/20051026235937js_/http://adventures.yahoo.com/v10/us/news/includes/browserdetect_lite.js"></script>
+<script type="text/javascript" language="javascript" src="/web/20051026235937js_/http://adventures.yahoo.com/v10/us/news/includes/opacity.js"></script>
+<style type="text/css"><!-- 
+@import url("/v10/us/news/css/ynews.css"); 
+--></style>
+<style type="text/css"><!-- 
+@import url("/v10/us/news/css/rbblog.css"); 
+--></style>
+
+<script type="text/javascript" language="javascript" src="/web/20051026235937js_/http://adventures.yahoo.com/v10/us/news/includes/ynrater.js"></script>
+<script type="text/javascript" language="javascript"><!--
+
+function imStory1(storyheadline,storylink){
+  location.href="ymsgr:im?msg="+immsg+"+"+storyheadline+"+"+storylink;
+}
+
+document.write('<style>#rater1 fieldset{display:none; }</style>'); //HIDE BEFORE TRANSFORMED
+function init() {
+  initRatings('rater1');
+}
+//--></script>
+<script type="text/javascript" language="javascript">
+document.sYQPartnerCode = "news";
+document.sYQTheme = "news";
+</script>
+<script type="text/javascript" language="javascript" src="/web/20051026235937js_/http://us.js1.yimg.com/us.yimg.com/lib/s/yq_050616.js"></script>
+
+<style>
+body {background:#BCBCBC url(/web/20051026235937im_/http://us.news3.yimg.com/us.i2.yimg.com/p/adventures/site/v1/bggryfd.gif) top repeat-x;}
+.panview, #rbview {height:300px;width:750px;position:relative;overflow:hidden;}
+#rbview {position:absolute;height:663px;width:750px; z-index:-1;background:#fff url(/web/20051026235937im_/http://us.a1.yahoofs.com/ymg/adventures/adventures-669836042-1130182664.jpg?ymKwsk6CyDHQmN9y) left top no-repeat; }
+</style>
+
+</head>
+<body onload="init();">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://adventures.yahoo.com/b/adventures/adventures1245";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "26";
+var displayMonth = "Oct";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://adventures.yahoo.com/b/adventures/adventures1245" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20051026235937" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Sep
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 23:59:37 Oct 26, 2005">OCT</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20051130094052/http://adventures.yahoo.com/b/adventures/adventures1245" title="30 Nov 2005"><strong>NOV</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 23:59:37 Oct 26, 2005">26</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20051028015314/http://adventures.yahoo.com/b/adventures/adventures1245" title="1:53:14 Oct 28, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2004
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 23:59:37 Oct 26, 2005">2005</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20061112203556/http://adventures.yahoo.com/b/adventures/adventures1245" title="12 Nov 2006"><strong>2006</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20051026235937*/http://adventures.yahoo.com/b/adventures/adventures1245" title="See a list of every capture for this URL">24 captures</a>
+           <div class="r" title="Timespan for captures of this URL">26 Oct 05 - 4 Apr 07</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:9:000000000362_2006:-1:021100022111_2007:-1:010100000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<!-- BEGIN GLOBAL MAST HEAD -->
+<style type="text/css">
+<!--
+@import url("/web/20051026235937/http://us.a1.yimg.com/us.yimg.com/lib/hdr/ygma5.css");body{margin:0px 4px;}
+#ygma a{text-decoration:none; color:#003DB8 ; }
+#ygma a:visited{color:#003DB8 ; }
+#ygma a:hover{text-decoration:underline; }
+-->
+</style>
+<!-- SpaceID=0 robot -->
+<!-- feedback --><!-- END GLOBAL MASTHEAD -->
+
+
+<div id="ynwrap"><!-- BEGIN OUTER WRAP -->
+	<div id="yncont"><!-- BEGIN MAIN CONTAINER -->	
+
+<!-- topbanner and nav -->
+<script language="Javascript" src="/web/20051026235937js_/http://us.js2.yimg.com/us.js.yimg.com/lib/common/utils/position_0.10.0.js"></script>
+
+<script language="Javascript">
+var oRO = {
+  //addEvent cross browser event handling for ie5+ and ns6/mozilla by Scott Andrew
+  addEvent : function (elm, evType, fn, useCapture) {
+    if (elm.addEventListener) {
+      elm.addEventListener(evType, fn, useCapture);
+      return true;
+    } else if (elm.attachEvent) {
+      var r = elm.attachEvent('on' + evType, fn);
+      return r;
+    } else {
+      elm['on' + evType] = fn;
+    }
+  },
+  init: function() {
+    if (!document.getElementsByTagName || 
+        !document.getElementById)
+      return;
+    var oNav = document.getElementById('rbnavlist');
+    if (!oNav)
+      return; 
+    oRO.listLinks = oNav.getElementsByTagName('a');
+    for (var x=0; x < oRO.listLinks.length; x++) {
+      //attach the mouse over and mouse out events to the links
+      oRO.addEvent(oRO.listLinks[x], 'mouseover', oRO.mOver, false);
+      oRO.addEvent(oRO.listLinks[x], 'mouseout', oRO.mOut, false);
+      oRO.listLinks[x].hoverDiv = document.getElementById('day'+(x+1));
+      oRO.listLinks[x].hoverDiv.opened = false;
+      oRO.addEvent(oRO.listLinks[x].hoverDiv, 'mouseover', oRO.hoverMOver, false);
+      oRO.addEvent(oRO.listLinks[x].hoverDiv, 'mouseout', oRO.hoverMOut, false);
+      
+    }
+  },
+  
+  mOver: function(e) {
+    var oLink;
+    if (e && e.target)
+      oLink = e.target;
+    if (window.event && window.event.srcElement)
+      oLink = window.event.srcElement;
+    if (!oLink) 
+      return;
+    if (oLink.nodeType == 3) {
+      oLink = oLink.parentNode;  
+    }
+    oRO.closeAllHovers();
+    oLink.hoverDiv.style.position = 'absolute';
+    var offset = (oLink.parentNode.clientWidth) ? (oLink.parentNode.clientWidth/2 -10) : 25; //hack to approximate for browsers that dont return clientWidth
+    oLink.hoverDiv.style.left = ( ygPos.getX(oLink) - (100 - offset) )+ 'px';
+    oLink.hoverDiv.style.top = (ygPos.getY(oLink)) + 'px';
+    oLink.hoverDiv.style.display = 'block';
+    if (oRO.timeOut) window.clearTimeout(oRO.timeOut);
+    oLink.hoverDiv.opened = true;
+  },
+  startHoverClose:function() {
+    oRO.timeOut = window.setTimeout('oRO.closeAllHovers()', 1000); 
+  },
+  mOut: function(e) {
+    var oLink;
+    if (e && e.target)
+      oLink = e.target;
+    if (window.event && window.event.srcElement)
+      oLink = window.event.srcElement;
+    if (!oLink) 
+      return;
+    if (oLink.nodeType == 3) {
+      oLink = oLink.parentNode;  
+    }
+    oRO.startHoverClose();
+    oLink.hoverDiv.opened = false;
+  },
+  hoverMOver: function(e) {
+    var oLink;
+    if (e && e.target)
+      oLink = e.target;
+    if (window.event && window.event.srcElement)
+      oLink = window.event.srcElement;
+    if (!oLink) 
+      return;
+    if (oLink.nodeType == 3) {
+      oLink = oLink.parentNode;  
+    }
+    if (oRO.timeOut) window.clearTimeout(oRO.timeOut);
+    oLink.opened = true;
+  },
+  hoverMOut : function(e) {
+    var oLink;
+    if (e && e.target)
+      oLink = e.target;
+    if (window.event && window.event.srcElement)
+      oLink = window.event.srcElement;
+    if (!oLink) 
+      return;
+    if (oLink.nodeType == 3) {
+      oLink = oLink.parentNode;  
+    }
+    oRO.startHoverClose();
+    oLink.opened = false;
+  },
+  closeAllHovers: function() {
+    for (var x=0; x<oRO.listLinks.length; x++) {
+      if (!oRO.listLinks[x].hoverDiv.opened) {
+        oRO.listLinks[x].hoverDiv.style.display='none';
+        oRO.listLinks[x].hoverDiv.opened = false;
+      }
+    }
+  }
+}
+
+
+oRO.addEvent(window, 'load', oRO.init, false);
+</script>
+<style>
+#rbnav {background: url(/web/20051026235937im_/http://us.news3.yimg.com/us.i2.yimg.com/p/adventures/site/v1/navbg.gif); border-bottom: 1px solid #000; }
+#rbnav h4 { color:#FDCD00; font: bold 114% arial, verdana; float:left;  width:30%; margin:0px; padding:7px 0 0 15px;}
+body #ynwrap #yncont #rbnav h4 a, body #ynwrap #yncont #rbnav h4 a:visited, body #ynwrap #yncont #rbnav h4 a:hover { color:#FDCD00; font-size:114%; font-weight:bold;  font-family:arial; text-decoration: none;}
+#rbnav form { float:right; padding:3px;}
+#rbnav ul { list-style-type:none; margin:0; padding:0; float:left;  height:30px;}
+#rbnav ul li { float:left; padding:8px 12px 0 12px; text-align:center; font-weight:bold; font-size:114%; line-height:10px;}
+#rbnav ul li a { color:#FFF; }
+#rbnav ul li a:visited { color:#FFF; }
+#rbnav ul li a:hover { color:#71A4C1; text-decoration:none; }
+#rbnav ul li.inactive a { color:#8E918A; }
+#rbnav ul li.inactive a:visited { color:#8E918A; }
+#rbnav ul li.inactive a:hover { color:#8E918A; text-decoration:none; }
+#rbnav ul li.abt { margin-left: 20px; }
+.cday {color:#FDCD00;}
+.navHover { z-index: 100; padding:0 0 0; display:none; width:204px; margin-top:23px; text-align:center;}
+.navHover span.pntr {display:block; overflow:hidden; height: 9px; width: 20px; margin: 0 auto; background: url(/web/20051026235937im_/http://us.news3.yimg.com/us.i2.yimg.com/p/adventures/site/v1/pointer.png) top center no-repeat; _background-image/* */: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://us.news3.yimg.com/us.i2.yimg.com/p/adventures/site/v1/pointer.png', sizingMethod='crop'); }
+body #ynwrap #yncont div.navHover p {background-color: #333;  text-align:left;  margin:0; padding: 0 2px 0;}
+html>body .navHover p,html>body .navHover p  {background-color: none; background:url(/web/20051026235937im_/http://us.news3.yimg.com/us.i2.yimg.com/p/adventures/site/v1/pulldown_bg.png);}
+body #ynwrap #yncont div.navHover p img {margin: 5px 0 10px;}
+body #ynwrap #yncont div.navHover p.ttl {margin:0; padding:0 5px; text-align: left;}
+body #ynwrap #yncont div.navHover p.ndate {margin: 0; padding: 0 5px 10px; font: normal 77% verdana, arial; color: #999; text-align: left;}
+body #ynwrap #yncont div.navHover p.summ {margin: 0; padding: 0 5px; font: normal 77% verdana, arial; color: #fff; text-align: left;}
+body #ynwrap #yncont div.navHover p.endlnk {display: block; margin: 0; padding: 0 5px; text-align: left;}
+body #ynwrap #yncont div.navHover p.empty {display: block; margin: 0; padding: 5px 5px; text-align: left; color: #fff; font: normal 77% verdana, arial;}
+body #ynwrap #yncont div.navHover p.abt {display: block; margin: 0; padding: 0 5px; text-align: left;}
+body #ynwrap #yncont div.navHover a, body #ynwrap #yncont div.navHover a:visited, body #ynwrap #yncont div.navHover a:hover {color: #A7CC25; font: bold 77% verdana, arial; text-decoration:none; }
+
+.rblogomasthead {position:relative;}
+.rblogomasthead .prmo {position: absolute; top: 10px; right:10px;}
+</style>
+
+<div class="rblogomasthead"><img src="/web/20051026235937im_/http://us.news3.yimg.com/us.i2.yimg.com/p/adventures/site/v1/topbanner.gif" border="0" alt="Richard Bangs Adventure Logo"><div class="prmo"><a href="/web/20051026235937/http://exilim.casio.com/yahoo"><div class="lrec"><!-- SpaceID=0 robot -->
+</div></a></div></div>
+<div id="rbnav" class="clearfix">
+<h4><a href="/web/20051026235937/http://adventures.yahoo.com/">EXPEDITION: EIGER</a></h4>
+<ul id="rbnavlist" class="clearfix">
+           <li ><a href="/web/20051026235937/http://adventures.yahoo.com/b/adventures/adventures1185">DAY 1</a></li>
+           <li class='cday'><a href="/web/20051026235937/http://adventures.yahoo.com/b/adventures/adventures1245">DAY 2</a></li>
+           <li ><a href="/web/20051026235937/http://adventures.yahoo.com/b/adventures/adventures1253">DAY 3</a></li>
+        <li class="inactive"><a href=#>DAY 4</a></li>
+        <li class="inactive"><a href=#>DAY 5</a></li>
+  <li class="abt"><a href=#>ABOUT</a></li>
+</ul>
+</div>
+
+
+
+
+<!--- nav modules ---->
+<div id="day1" class="navHover">
+<span class="pntr"></span>
+<p><img src="/web/20051026235937im_/http://us.a1.yahoofs.com/ymg/adventures/adventures-25552944-1129855969.jpg?ymi_cj6CJqln2uFt"></p>
+<p>&nbsp;</p>
+<p class="ttl"><a href="/web/20051026235937/http://adventures.yahoo.com/b/adventures/adventures1185">Challenging the Man-Eating Mountain</a></p>
+<!--<p class="ndate">Mon Oct 24, 3:36 AM ET</p>-->
+<p class="summ">John Harlin III contemplates the climb that claimed his father 40 years ago.</p>
+<p class="endlnk"><a href="/web/20051026235937/http://adventures.yahoo.com/b/adventures/adventures1185">>> Read Full Entry</a></p>
+<p>&nbsp;</p>
+</div>
+<div id="day2" class="navHover">
+<span class="pntr"></span>
+<p><img src="/web/20051026235937im_/http://us.a1.yahoofs.com/ymg/adventures/adventures-117677590-1130186818.jpg?ymDxtk6Cjs9iyj.a"></p>
+<p>&nbsp;</p>
+<p class="ttl"><a href="/web/20051026235937/http://adventures.yahoo.com/b/adventures/adventures1245">School of Hard Rock</a></p>
+<!--<p class="ndate">Mon Oct 24,11:19 PM ET</p>-->
+<p class="summ">John Harlin III spent a lifetime trying to live up to the legend of his father's passion. Now it is his turn on the Eiger.</p>
+<p class="endlnk"><a href="/web/20051026235937/http://adventures.yahoo.com/b/adventures/adventures1245">>> Read Full Entry</a></p>
+<p>&nbsp;</p>
+</div>
+<div id="day3" class="navHover">
+<span class="pntr"></span>
+<p><img src="/web/20051026235937im_/http://us.a1.yahoofs.com/ymg/adventures/adventures-100722530-1130285765.jpg?ymG7Fl6CHwdDvXGN"></p>
+<p>&nbsp;</p>
+<p class="ttl"><a href="/web/20051026235937/http://adventures.yahoo.com/b/adventures/adventures1253">Mountain Men and Mountain Women</a></p>
+<!--<p class="ndate">Tue Oct 25,11:07 PM ET</p>-->
+<p class="summ">Mountain climbing is not just a sport for &ldquo;hard men&rdquo; &mdash; there are hard women, too, both on the wall and on the ground.</p>
+<p class="endlnk"><a href="/web/20051026235937/http://adventures.yahoo.com/b/adventures/adventures1253">>> Read Full Entry</a></p>
+<p>&nbsp;</p>
+</div>
+<div id="day4" class="navHover" style="visibility:hidden;">
+<span class="pntr"></span><p class="empty">
+Content not yet available.
+</p>
+</div>
+<div id="day5" class="navHover" style="visibility:hidden;">
+<span class="pntr"></span><p class="empty">
+Content not yet available.
+</p>
+</div>
+
+<div id="day6" class="navHover">
+<span class="pntr"></span><p>&nbsp;</p>
+<p class="abt">
+<a href="/web/20051026235937/http://adventures.yahoo.com/eiger/about">About the Expedition</a></p>
+<p class="abt"><a href="/web/20051026235937/http://adventures.yahoo.com/eiger/topten">Top Ten Adventures</a></p>
+<p class="abt"><a href="/web/20051026235937/http://adventures.yahoo.com/eiger/partners">About Our Partners</a></p>
+<p class="abt"><a href="/web/20051026235937/http://adventures.yahoo.com/richardbangs">About Richard Bangs</a></p>
+<p>&nbsp;</p>
+</div>
+<!--- /nav modules --->
+<!-- /topbanner and nav -->
+  
+<div class="panview">
+  <div id="rbview">
+  </div>
+
+</div>
+
+		<div id="ynbody" class="clearfix"><!-- BEGIN MAIN CONTENT -->		
+			<div id="ynpri">
+
+<!-- ratings --> 
+<style type="text/css"><!--@import url("/v10/us/news/css/rater.css"); --></style>
+
+
+<script type="text/javascript" language="javascript" src="/web/20051026235937js_/http://us.js1.yimg.com/news.yahoo.com/v10/us/news/includes/ynim.js?v=1127422132&amp;akamaize=1"></script>
+
+
+<!-- BEGIN BLOG ENTRY CONTAINER-->
+<div id="ynblgntry">
+
+<div class="ynbeswf">
+<script type="text/javascript">
+<!--
+var flashversion = 0;
+if(navigator.plugins && navigator.mimeTypes.length) {
+        var x = navigator.plugins["Shockwave Flash"];
+        if(x && x.description) {
+                var y = x.description;
+                flashversion = y.charAt(y.indexOf('.') - 1);
+        }
+} else {
+        result = false;
+        for(var i = 15; i >= 3 && result != true; i--){
+                execScript('on error resume next: result = IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.'+i+'"))', 'VBScript');
+                flashversion = i;
+        }
+}
+
+if(flashversion > 5) {
+        document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="/web/20051026235937/http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0"  width="418" height="95" id="Flash Module" align="middle" VIEWASTEXT>')
+;
+        document.write('<param name="allowScriptAccess" value="always" />');
+        document.write('<param name="movie" value="/web/20051026235937/http://us.news3.yimg.com/us.i2.yimg.com/p/rbangs/ms/eiger/d2_mediamodule_v2.swf" />');
+        document.write('<param name="quality" value="high" />');
+        document.write('<param name="wmode" value="transparent">');
+        document.write('<embed src="/web/20051026235937/http://us.news3.yimg.com/us.i2.yimg.com/p/rbangs/ms/eiger/d2_mediamodule_v2.swf" quality="high" width="418" height="95" wmode="transparent" name="Flash module" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash" pluginspage="/web/20051026235937/http://www.macromedia.com/go/getflashplayer" />');
+        document.write('</object>');
+} else {
+        document.write('<a href="/web/20051026235937/http://us.lrd.yahoo.com/_ylt=AlwAEIkgI07LhTm8F.3A_F2LFMsF/SIG=11guel6s4/**http%3a//www.macromedia.com/go/getflashplayer"><img alt="Flash 7 Required. Click here to upgrade." border="0" height="95" src="/web/20051026235937/http://us.news3.yimg.com/us.i2.yimg.com/p/rbangs/ms/eiger/d2_mediamodule_v2.swf" width="415" /></a>');
+}
+//-->
+</script>
+</div>
+
+<!-- BEGIN ENTRY -->
+<div class="ymosbday">
+DAY 2</div>
+<div id="ymosbetit" class="clearfix">
+  <div id="ymosbedesc">
+    <h1>School of Hard Rock</h1>
+    <div class="clearfix">
+    <div id="ymosbedesctxt">
+      <div class="ymosbepb">by Richard Bangs</div>
+      <!--div class="ymosbepd">on Mon Oct 24,11:19 PM ET </div-->
+    </div>
+    </div>
+  </div>
+</div>
+<div id="ymosbe">  
+  <p>
+<strong>John Harlin III spent a lifetime trying to live up to the legend of his fathers passion. Now its his turn on the Eiger.</strong></p>  </p>
+  <p>
+An enormous eddy of warm air has slipped into the Jungfrau region in the Swiss Alps. The bane of climbers on the Eiger, a <em>foehn</em>, is coming in. Like a chinook, it is a coil of air that thaws ice and snow and triggers avalanches. Worse, directly after a foehn often follows a big chill that varnishes rock walls with a thin sheen of ice that neither ice axe nor piton can grip. That thin ice layer is called <em>verglas</em>. Verglas, John Harlin III repeats in almost mantra-like manner, is not something he wants to face on the North Face of the Eiger. </p>  </p>
+  <p>
+And so he waits.</p>  </p>
+  <p>
+<img align="left" src="/web/20051026235937im_/http://us.a1.yahoofs.com/ymg/adventures/adventures-175318299-1130189809.jpg?ymyfuk6Ce6fG1CBz" alt="John Harlin contemplates the challenge" />As were gathered in the Victorian salon of the not-overstated-in-name Bellevue des Alpes hotel we take turns making introductions. We go through the film crew, the supporting climbers, the Yahoo! team, John, and finally his wife, Adele Hammond. </p>  </p>
+  <p>
+Midway through describing a new school for her nine-year-old daughter, Siena, Adeles voice cracks, and she struggles to hold back tears. While not everyone in the room knows the grim history of the North Face of the Eiger, everyone knows how risky this concept is and how terribly wrong things could go. </p>  </p>
+  <p>
+By the mid-1930s every major face in the Alps had been climbed, save one. After years of covetous consideration, Munich-based Max Sedlmayer and Karl Mehringer made the first incursion onto the North Face in 1935. But a storm drove in, trapping them halfway up the mountains 13,025-foot summit, and they froze to death at a spot known since as Death Bivouac.</p>  </p>
+  <p>
+<img src="/web/20051026235937im_/http://us.a1.yahoofs.com/ymg/adventures/adventures-871592361-1130190497.jpg?ymiquk6CKBKrgv8K" alt="Pull Quote." /> </p>  </p>
+  <p>
+A year later, another German team consisting of Edi Rainer, Willy Angerer, Andreas Hinterstoisser and Toni Kurz was retreating from the mountain in brutal weather after a minor rock fall mishap. Within earshot of the <em>Jungfraubahn</em> tourist railway tunnel window, a third of the way up where the caretaker had already begun to brew tea for the climbers all except Kurz fell to their deaths. Kurz hung on for a night and a day, one arm frostbitten and useless, while local guides tried to rescue him.</p>  </p>
+  <p>
+<a href="javascript:void(window.open('/web/20051026235937/http://cosmos.bcst.yahoo.com/up/free?ch=103343&amp;cl=128943','playerWindow','width=793,height=608,scrollbars=no'));"><img border="0" align="right" alt="John Harlin works out the kinks on a practice climb." src="/web/20051026235937im_/http://us.a1.yahoofs.com/ymg/adventures/adventures-353806442-1130203542.jpg?ymX2xk6CKbN2fqZu" /></a>Somehow Kurz found the strength to clamber part of the way back up, where he cut a length of rope, unraveled its three strands and tied them together in order to make a line long enough to rappel down to his rescuers. As he dangled beneath an overhang, so close the guides could almost touch the soles of his boots, a knot jammed. He yelled down, Ich kann nicht mehr, (<em>I'm finished</em>) and then slumped over, dead.</p>  </p>
+  <p>
+Finally, in 1938, the year Germany annexed Austria into the Reich, Austrians Heinrich Harrer and Fritz Kasparek, along with Germans Andrel Heckmair and Ludwig Vorg, cracked the code and made the first successful ascent of the North Face. But the accomplishment stirred its own storm after a photograph was published of the four climbers flanking Adolf Hitler at Breslau, inciting accusations that the climb was a Nazi propaganda effort. The charge is denied to this day by the last surviving member of the team, Harrer, who, at 93, is living out his final days in his native Austria. </p>  </p>
+  <p>
+Today the route that Harrer and companions blazed is known as the Classic Route, following the lines of weakness up the face; it is the one John hopes to attempt in a few days time, if weather permits. Twenty-five years ago, when he was a much younger man, hed entertained a retracing of the John Harlin Direct Route the route named for his father but something happened to change his mind. </p>  </p>
+  <p>
+John was only six when he made his first multi-pitch climb, in the Calanques of southern France; it must have inspired his father as the elder Harlin made his first ascent of the North Face, the first Anglophone to do so, in 1963. </p>  </p>
+  <p>
+<a href="javascript:void(window.open('/web/20051026235937/http://cosmos.bcst.yahoo.com/up/free?ch=103343&amp;cl=115713','playerWindow','width=793,height=608,scrollbars=no'));"><img border="0" align="right" alt="Pointing out the route to the summit of the Eiger." src="/web/20051026235937im_/http://us.a1.yahoofs.com/ymg/adventures/adventures-922400905-1130203544.jpg?ymZ2xk6CwIMfSwVe" /></a>It was on his second attempt three years later, following the more pure route that now bears his name, that John Harlin II fell to his death. </p>  </p>
+  <p>
+Even so, John continued to climb after his fathers fall. At 13 he climbed Mt. Chamberlin, the highest peak in Alaskas Brooks Range. At college in California he became president of the mountaineering club, and his dorm room was decorated with posters of Himalayan peaks he hoped to climb. By his early 20s he was an extreme skier and accomplished climber, and began to contemplate a path that would connect him to the climbs his dad had done. </p>  </p>
+  <p>
+Then in 1979 he set out to Mt. Robson in the Canadian Rockies with a climbing partner, Chuck Hospedales. After climbing its Wishbone Arte, they were descending in the late afternoon beneath a huge <em>couloir</em> (a hanging wall of ice) without being roped up. John led and, after negotiating over a knob and down a 10-foot section of vertical rock, looked up to coach his less-experienced cohort. There was an unnaturally long pause as John waited, so he yelled up, Cant you feel the handhold?</p>  </p>
+  <p>
+<img align="left" src="/web/20051026235937im_/http://us.a1.yahoofs.com/ymg/adventures/adventures-272593288-1130189814.jpg?ym3fuk6CkuySFcGS" alt="John Harlin poses with his family in front of Eiger." />I cant, Chuck muttered back. And he peeled off the mountain. John lunged and felt the fabric of his partners jacket, but found no grip. Helplessly, John listened to the death scream and watched the sparks of crampons as they repeatedly struck the rock through the 500-foot fall. </p>  </p>
+  <p>
+John scrambled down in the darkness to reach the mountaineers hut below, where he wrote in the logbook: This mountain game isnt worth it. </p>  </p>
+  <p>
+The next morning he reached the police station, and a helicopter was dispatched for the body. John couldnt bring himself to call Chucks folks, but he did call his own mother, who was overwrought with the news. John realized then how awful it would be for his mom should he die in a climbing accident, and at that moment he vowed to quit alpinism, for my moms sake. What he once felt was the finest expression of freedom and self-validation he now saw as a photographic negative: everything white was black.</p>
+<p>
+<img src="/web/20051026235937im_/http://us.a1.yahoofs.com/ymg/adventures/adventures-631301279-1130190498.jpg?ymjquk6C8BmS4eWF" alt="Pullquote." /></p>
+<p>
+Sitting in the salon, facing the gleaming wilderness of the North Face, John touches a deep spring of memory; his countenance breaks, and he cries. For a moment the alpine world seems to balance on a point of silence. </p>
+<p>
+He then gathers himself and looks to the middle distance. I dont know why we deliberately put ourselves in harms way. But some things are part of you that you cant leave behind. </p>
+<p>
+John took a 12-year interregnum from radical alpine climbing, but in its place he mastered extreme skiing. He made ski descents of Orizaba and Popocateptl in Mexico, the first three-pin descent of Perus Huascaran, the first ski descent of Bolivas Cunantincato, and he performed other ski heroics in the Rockies and Alps. </p>
+<p>
+The most important characteristic for an alpinist is a short memory, he likes to say. You forget the suffering and try again. And so in 1991 he was back, making an ascent of the Matterhorn and other peaks throughout the Alps. </p>
+<p>
+<img align="left" src="/web/20051026235937im_/http://us.a1.yahoofs.com/ymg/adventures/adventures-978328661-1130189810.jpg?ymzfuk6CGWylVOBf" alt="Rapture on a Tyrolean traverse." />In 1999 he brought Adele and Siena, then three years old, to Leysin, where they planted flowers on his fathers grave. It was then and there that he decided to attempt the Eiger himself, the mountain that claimed his fathers life. But when he separated from his family at the train station he found himself wandering around in a spate of tears. Whats wrong? John asked himself. He felt like he was saying goodbye and realized how awful it would be for his daughter to grow up without a dad. </p>
+<p>
+When he reached the Jungfrau, fully intending to climb the Eiger, he found that climbing conditions were poor, as they are some years, and few attempts were made. It was with some relief that his climb was aborted. </p>
+<p>
+John went on to pioneer a new route up Mont Blanc and made hard climbs in Germany, Austria, Italy and elsewhere in Europe. He even made an attempt on a virgin peak in Tibet. But always the dark wall of the Eiger dropped stones into the pool of his life, rippling. </p>
+<p>
+If for a time his spirit was skyjacked, it has now come home. And here, John is hoping he can join the one club that has nagged him throughout his life, chalk off that one item on his list of life goals, and reach the peerage that would make his father proud.</p></p>
+
+  </p>
+      <div class="jnt">Expedition coverage in cooperation with MacGillivray Freeman Films, producers of the upcoming IMAX&reg; Theater film, <a href="/web/20051026235937/http://www.alpsfilm.com/">The Alps: Giants of Nature</a>, featuring John Harlin's attempt to climb the Eiger and presented by Holcim Ltd.  Watch for the book from Simon & Schuster, due Spring 2007.
+</div>
+</div>
+<!-- END ENTRY -->
+  
+  <div class="ynblgactions">
+
+  <!-- BEGIN BLOG ACTIONS CONTAINER --->
+          <!-- BEGIN EMAIL -->
+           <!-- START getIntegrationLinks -->
+           <div class="ymoseip"><a href="/web/20051026235937/http://m2f.news.yahoo.com/mailto/?prop=news&amp;locale=us&amp;url=http%3A%2F%2Fadventures.yahoo.com%2Fb%2Fadventures%2Fadventures1245&amp;title=School+of+Hard+Rock&amp;h1=adventures/20051025/adventures1245&amp;h2=T&amp;h3=2559" id="ymoseipe">Email Story</a>      <a href="javascript:imStory1('School+of+Hard+Rock','http%253A%252F%252Fadventures.yahoo.com%252Fb%252Fadventures%252Fadventures1245');" id="ymoseipi">IM Story</a></div>
+
+<div id="ynactions" class="clearfix">
+	<div class="storytools">
+		<div id="ratings" class="clearfix">	
+			<h4>RECOMMEND THIS STORY</h4>
+			<div class="ratemod cola">				
+				<form name="rater1" id="rater1" action="/web/20051026235937/http://personal.news.yahoo.com/v10/us/news/pages/ratings/post_silent_rating.php">
+					<input type="hidden" id="rate" name="rate" value="#">
+					<input type="hidden" id="locale" name="locale" value="us">
+					<input type="hidden" id="prop" name="prop" value="news">
+					<input type="hidden" id="rateid" name="rateid" value="adventures/20051025/adventures1245">
+					<input type="hidden" id="type" name="type" value="T">
+					<input type="hidden" id="cat" name="cat" value="2559">
+					<input type="hidden" id="short_url" name="short_url" value="/adventures/adventures1245">
+					<input type="hidden" id="origurl" name="origurl" value="http://adventures.yahoo.com/b/adventures/adventures1245">
+					<fieldset>
+						<legend>Recommend It: </legend>
+						<label for="rater1_rater_input0radio1"><input type="radio" name="rater1_rater_input0" id="rater1_rater_input0radio1" value="1" class="stars"  >Not at All</label>
+						<label for="rater1_rater_input0radio2"><input type="radio" name="rater1_rater_input0" id="rater1_rater_input0radio2" value="2" class="stars"   >Somewhat</label>
+						<label for="rater1_rater_input0radio3"><input type="radio" name="rater1_rater_input0" id="rater1_rater_input0radio3" value="3" class="stars"  >Moderately</label>
+						<label for="rater1_rater_input0radio4"><input type="radio" name="rater1_rater_input0" id="rater1_rater_input0radio4" value="4" class="stars"  >Highly</label>
+						<label for="rater1_rater_input0radio5"><input type="radio" name="rater1_rater_input0" id="rater1_rater_input0radio5" value="5" class="stars"  >Very Highly</label>
+						<input type="submit" value="rate it" class="submit">
+					</fieldset>
+				</form>									
+			</div>
+			<div id="avgrating" class="ratemod colb">
+				<p>Average (<span id="numvotes">Not Rated</span>)</p>
+				<div class="ratestars">
+				<img id="ratestars" src="/web/20051026235937im_/http://us.i1.yimg.com/us.yimg.com/i/us/ls/gr/star_redzero16_3.gif" alt="0.0 stars" border="0">
+				</div>
+			</div>
+		</div>
+        
+
+	</div>
+</div>
+  </div>
+  <!-- BEGIN COMMENTS -->
+  <div id="ymosbcom">
+
+    <div id="ymosbcomtcont" class="clearfix">
+      <a name="comments"></a>
+      <div id="ymosbcomt" class="clearfix">
+        <!--<div id="ymosbcomtpc"><a href="">Report Abuse</a></div>-->
+        <h3>Comments</h3>
+      </div>
+      <p>Join the discussion.  Here you'll see the comments in the order they were posted.</p>
+    </div>
+
+    <div class="pagingnav clearfix">
+      <ul>
+        <li class="first"><strong>1</strong> - <strong>5</strong> of <strong>26</strong></li>
+        <li><span>First</span></li>
+        <li><span>&lt; Previous</span></li>
+        <li><span><a href='?rf=6#comments'>Next &gt;</a></span></li>
+        <li class="last"><span><a href='?rf=22#comments'>Last</a></span></li>
+      </ul>
+    </div>
+
+    <div class="ynblgcmnthdr clearfix">
+        <div id="ymosbcomtpc"><a href="/web/20051026235937/http://login.yahoo.com/config/login?intl=us&amp;.done=http%3A%2F%2Fadventures.yahoo.com%2Fb%2Fadventures%2Fadventures1245#commententry&amp;.src=yn&amp;.intl=us">Sign in to Post a Comment</a></div>
+        <div class="ynblgcntr">1</div>
+    </div>
+    <div class="ymosbcomment">
+    <div class="ymosbptxt">In the souls of alpinist lives the unfathomable dream to die on the mountain...</div>
+    <div class="ymosbpd">Posted by <span class="ybosbpn">barrship@prodigy.net</span> on <span class="ymosbpt">Tue, Oct 25, 2005 2:32 AM ET</span></div>
+    </div>
+
+    <div class="ynblgcmnthdr clearfix">
+        <div id="ymosbcomtpc"><a href="/web/20051026235937/http://login.yahoo.com/config/login?intl=us&amp;.done=http%3A%2F%2Fadventures.yahoo.com%2Fb%2Fadventures%2Fadventures1245#commententry&amp;.src=yn&amp;.intl=us">Sign in to Post a Comment</a></div>
+        <div class="ynblgcntr">2</div>
+    </div>
+    <div class="ymosbcomment">
+    <div class="ymosbptxt">This&#39;s good, but Kevin Sites is more interesting</div>
+    <div class="ymosbpd">Posted by <span class="ybosbpn">kamgoalfive</span> on <span class="ymosbpt">Tue, Oct 25, 2005 8:06 AM ET</span></div>
+    </div>
+
+    <div class="ynblgcmnthdr clearfix">
+        <div id="ymosbcomtpc"><a href="/web/20051026235937/http://login.yahoo.com/config/login?intl=us&amp;.done=http%3A%2F%2Fadventures.yahoo.com%2Fb%2Fadventures%2Fadventures1245#commententry&amp;.src=yn&amp;.intl=us">Sign in to Post a Comment</a></div>
+        <div class="ynblgcntr">3</div>
+    </div>
+    <div class="ymosbcomment">
+    <div class="ymosbptxt">&quot;Yahoo team,&quot; who wrote this? Ok, I think I can like this. It&#39;s more hopeful than Kevin Sites if not just as adventurous. You fans of Kevin get back to his site and stay there!....... John, why do you have to follow your dad? Because you know no other way. All you need to do is to not make the same mistakes as he did! Ok Yahoo team members, this expedition will last a few days. How about sending your crew to cover the adventure of a young man growing up in the ghetto without an education, can he escape poverty and find happiness along the way?.... Stay tuned, we might find it a blossom in one of the daily dispatch.</div>
+    <div class="ymosbpd">Posted by <span class="ybosbpn">madd_twisted_ape</span> on <span class="ymosbpt">Tue, Oct 25, 2005 8:39 AM ET</span></div>
+    </div>
+
+    <div class="ynblgcmnthdr clearfix">
+        <div id="ymosbcomtpc"><a href="/web/20051026235937/http://login.yahoo.com/config/login?intl=us&amp;.done=http%3A%2F%2Fadventures.yahoo.com%2Fb%2Fadventures%2Fadventures1245#commententry&amp;.src=yn&amp;.intl=us">Sign in to Post a Comment</a></div>
+        <div class="ynblgcntr">4</div>
+    </div>
+    <div class="ymosbcomment">
+    <div class="ymosbptxt">Unfortunately, another media hype for one reason: money. The Eiger has been climbed countless times but why now, to get all excited about Harlin&#39;s climb?</div>
+    <div class="ymosbpd">Posted by <span class="ybosbpn">climb14er</span> on <span class="ymosbpt">Tue, Oct 25, 2005 9:01 AM ET</span></div>
+    </div>
+
+    <div class="ynblgcmnthdr clearfix">
+        <div id="ymosbcomtpc"><a href="/web/20051026235937/http://login.yahoo.com/config/login?intl=us&amp;.done=http%3A%2F%2Fadventures.yahoo.com%2Fb%2Fadventures%2Fadventures1245#commententry&amp;.src=yn&amp;.intl=us">Sign in to Post a Comment</a></div>
+        <div class="ynblgcntr">5</div>
+    </div>
+    <div class="ymosbcomment">
+    <div class="ymosbptxt">What an interesting life this man has led - I can&#39;t imagine a more exciting life.    I wish him well in his climb up the Eiger.</div>
+    <div class="ymosbpd">Posted by <span class="ybosbpn">leon-margaret@sbcglobal.net</span> on <span class="ymosbpt">Tue, Oct 25, 2005 10:10 AM ET</span></div>
+    </div>
+
+
+    <div class="pagingnav clearfix">
+      <ul>
+        <li class="first"><strong>1</strong> - <strong>5</strong> of <strong>26</strong></li>
+        <li><span>First</span></li>
+        <li><span>&lt; Previous</span></li>
+        <li><span><a href='?rf=6#comments'>Next &gt;</a></span></li>
+        <li class="last"><span><a href='?rf=22#comments'>Last</a></span></li>
+      </ul>
+    </div>
+<!--
+    <div class="pagingnav clearfix">
+      <ul>
+        <li class="first"><strong>1</strong> - <strong>10</strong> of <strong>50</strong></li>
+
+        <li><span>First</span></li>
+        <li><span>&lt; Previous</span></li>
+        <li><span><a href='?rf=11#comments'>Next &gt;</a></span></li>
+        <li><span class="last"><a href='?rf=41#comments'>Last</a></span></li>
+      </ul>
+    </div>
+-->
+
+	  <!-- END COMMENTS -->
+
+    <!-- BEGIN COMMENT ENTRY -->
+    <!-- START getFullEntryPageForm  -->
+        <a name="commententry"></a>
+          <div id="ymosbcomen">
+    <br><div align="left"><a href="/web/20051026235937/http://login.yahoo.com/config/login?intl=us&amp;.done=http%3A%2F%2Fadventures.yahoo.com%2Fb%2Fadventures%2Fadventures1245#commententry&amp;.src=yn&amp;.intl=us">Sign in to Post a Comment</a></div>
+          </div>
+    </div>
+</div>
+<!-- END BLOG ENTRY CONTAINER -->
+			</div>
+			<div id="ynsec">
+
+      <div class="lrec"><!-- SpaceID=0 robot -->
+</div>      <div class="lrec"><!-- SpaceID=0 robot -->
+</div>      <div class="mabartwo"><!-- SpaceID=0 robot -->
+</div>      
+<div class="rsrcs">
+  <div class="rc_north"><div class="rc_nw"></div><div class="rc_ne"></div></div>
+  <div class="bg">
+
+<div class="chunk">
+
+   <h4>TRAVEL</h4>
+<ul>
+              <li><a href="/web/20051026235937/http://travel.yahoo.com/trip?pid=343960&amp;action=view&amp;expand=1">Yahoo! Travel Trip Planner</a> - explore the locations visited by the Adventures team, plan your trip, and customize it to fit your needs.</li>
+
+              <li><a href="/web/20051026235937/http://www.myswitzerland.com/">MySwitzerland.com</a> - travel planning site from the Swiss Tourist Board with maps, travel tips, and information on destinations, accommodation, events, and more.</li>
+
+ <!--<li><a href="/web/20051026235937/http://travel.yahoo.com/p-travelguide-191501807-switzerland_vacations-i">Yahoo! Travel: Switzerland</a> - profiles of destinations and accommodation throughout the country.</li>-->
+
+<li> <a href="/web/20051026235937/http://www.jungfraubahnen.com/">Jungfrau Railways</a> - rail service with a line that tunnels through the Eiger.  Site includes <a href="/web/20051026235937/http://www.jungfraubahn.ch/en/DesktopDefault.aspx/tabid-138/">live webcams</a>.</li>
+</ul>
+
+</div>
+
+<div class="chunk">
+
+   <h4>Learn More</h4>
+
+              <ul>
+
+              <li><a href="/web/20051026235937/http://www.sfdrs.ch/eiger-live/english/index-eiger.html">SFDRS: The Eiger</a> - site from Swiss Television that explores the 13,000-foot high Bernese summit's history, its topography, and ascent routes.</li>
+
+              <li><a href="/web/20051026235937/http://en.wikipedia.org/wiki/Eiger">Wikipedia: Eiger</a> - learn more about the history of ascents and the area surrounding the Eiger.</li>
+
+              <li><a href="/web/20051026235937/http://movies.yahoo.com/shop?d=hv&amp;cf=info&amp;id=1800061041">Yahoo! Movies: The Eiger Sanction</a> - synopsis of the 1975 movie, starring Clint Eastwood.</li>
+
+              <!--<li><a href="/web/20051026235937/http://www.nationalgeographic.com/traveler/articles/1051swiss_idyll.html">National Geographic: Swiss Idyll</a> - recounts a visit to Grindelwald, nestled in the Swiss Alps, and the Jungfrau region.</li>
+
+              <li><a href="/web/20051026235937/http://outside.away.com/news/200312/200312_fire_ice_1.html">Outside: Fire and Ice</a> - Mark Jenkins' December 2003 dispatch about a climb in the Swiss Alps with John Harlin III, observing how melting glaciers and a warmer climate are affecting the region.</li>
+
+              <li><a href="/web/20051026235937/http://www.americanalpineclub.org/knowledge/aaj.asp">American Alpine Journal</a> - chronicles mountaineering and long rock climbing ascents worldwide.  Edited by John Harlin III.</li>
+
+              <li><a href="/web/20051026235937/http://www.backpacker.com/author/list/0,3179,14,00.html">Backpacker.com: John Harlin III</a> - index of trekking and climbing tales, and gear reviews, written by contribuing editor Harlin.</li>-->
+
+              <!--<li><a href="/web/20051026235937/http://www.trevanian.com/books/eiger.htm">Trevanian.com: The Eiger Sanction</a> - describes the 1972 novel set in the Swiss Alps, a super-spy/action genre spoof set around an ascent of the mountain.</li>-->
+
+</ul>
+<a href="/web/20051026235937/http://search.yahoo.com/search?p=eiger&amp;fr=FP-tab-web-t&amp;toggle=1&amp;cop=&amp;ei=UTF-8" class="mrlnk">&raquo; Web Search: Eiger</a>
+
+
+</div>
+
+
+<div class="chunk rss">
+   <h4>Add to My Yahoo!/RSS</h4>
+   <ul class="providers">
+      <li> Add Adventures headlines to My Yahoo!
+<br>
+<br>
+      <div><a href="/web/20051026235937/http://add.my.yahoo.com/rss?url=http%3A%2F%2Frss.news.yahoo.com%2Frss%2Fadventures"><img src="/web/20051026235937im_/http://us.i1.yimg.com/us.yimg.com/i/us/my/addtomyyahoo3.gif" alt="Add to My Yahoo!" border="0" align="middle"></a> <a href="/web/20051026235937/http://rss.news.yahoo.com/rss/adventures"><img src="/web/20051026235937im_/http://us.i1.yimg.com/us.yimg.com/i/us/ext/rss.gif" alt="xml" border="0"  align="middle"></a></div></li>
+   </ul>
+   <a href="/web/20051026235937/http://rss.news.yahoo.com/" class="action">&raquo; All News RSS Feeds</a>
+</div>
+
+
+
+
+
+                 <!--<h4>MORE NEWS</h4>
+
+              <ul>
+
+              <li><a href="/web/20051026235937/http://news.yahoo.com/news?tmpl=story&cid=1512&ncid=1512&e=8&u=/afp/20050924/wl_afp/somaliasomalilandattacksqaeda_050924113634">Outsiders, Islamic clerics told to leave Somaliland</a> <div class="ymosbepb">AFP via Yahoo! News - Sat, Sep 24, 2005</div></li>
+
+              <li><a href="/web/20051026235937/http://news.yahoo.com/news?tmpl=story&u=/afp/20050922/hl_afp/whohealthsomaliapolio_050922185032">UN launches vaccination in Somalia after polio resurfaces</a> <div class="ymosbepb">AFP via Yahoo! News - Thu, Sep 22, 2005</div></li>
+
+</ul>
+<a href="/web/20051026235937/http://news.yahoo.com/fc/world/Somalia" class="mrlnk">&raquo; Yahoo! News Full Coverage: Somalia</a>
+<div class="spacer"></div>
+<a href="/web/20051026235937/http://news.yahoo.com" class="mrlnk">&raquo; Yahoo! News Home</a> - <a href="/web/20051026235937/http://news.yahoo.com/i/721" class="mrlnk">World</a> - <a href="/web/20051026235937/http://news.yahoo.com/i/723" class="mrlnk">Africa</a>
+</div>-->  </div>
+  <div class="rc_south"><div class="rc_sw"></div><div class="rc_se"></div></div>
+</div>
+
+
+			</div>
+		</div>
+    <!-- END MAIN CONTENT -->
+
+		<!-- BEGIN LOWER SEARCH/NAV -->
+    <div id="ynknees">
+	<hr noshade size="1">
+	<div id="searchbarbot" class="searchbar">
+		<div class="network"><p><a href="/web/20051026235937/http://www.yahoo.com/">Yahoo!</a> - <a href="/web/20051026235937/http://my.yahoo.com/">My Yahoo!</a> - <a href="/web/20051026235937/http://mail.yahoo.com/">Mail</a></p></div>
+		<form action="/web/20051026235937/http://news.search.yahoo.com/news/search" method="get">
+		<strong>Search:</strong> 
+		<input type="text" name="p" size="30"> 
+		<select name="c">
+		<option value="">All News & Blogs</option>
+		<option value="yahoo_news"  >Yahoo! News Only</option>
+		<option value="news_photos" >News Photos</option>
+		<option value="av" >Video/Audio</option>
+		</select> 
+		<input type="submit" class="submit" value="Search"> <a href="/web/20051026235937/http://news.search.yahoo.com/news/advanced">Advanced</a>
+		</form>
+	</div>
+	<div class="spacer"></div>
+	
+		<!-- END LOWER SEARCH/NAV -->
+		
+		<!-- BEGIN FOOTER -->
+		<div id="ynfeet">
+
+    <p id="copyright">
+        </p>
+    
+<!-- start footer -->
+<!-- SpaceID=0 robot -->
+</div>
+<!-- This page is brought to you by the letter U, the number 6 and adventures.yahoo.com. -->
+
+<!-- recent_timestamp 2005/10/25 20:07:08 [86400] -->
+		<!-- END FOOTER -->
+    
+    
+	</div>
+	<!-- END MAIN CONTAINER -->
+</div>
+<!-- END OUTTER WRAP -->
+<script type="text/javascript" language="javascript" src="/web/20051026235937js_/http://personal.news.yahoo.com/us/news/ratings/getratingdata.html?locale=us&amp;prop=news&amp;rateid=adventures/20051025/adventures1245&amp;type=T&amp;cat=2559"></script>
+</body>
+</html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 23:59:37 Oct 26, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:35:53 Jan 11, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
