@@ -5,14 +5,14 @@ Structure of this project
 -------------------------
 
 1. [Datasets](dataset) - covers years 2000, 2005, 2010 - read more about this below
-  * [www.nytimes.com](dataset/www.nytimes.com)
-  * [www.cnn.com](dataset/www.cnn.com)
   * [news.bbc.co.uk](dataset/news.bbc.co.uk)
+  * [www.cnn.com](dataset/www.cnn.com)
   * [news.yahoo.com](dataset/news.yahoo.com)
   * [www.latimes.com](dataset/www.latimes.com)
   * [entertainment.msn.com](dataset/entertainment.msn.com)
   * [www.foxnews.com](dataset/www.foxnews.com)
   * [www.forbes.com](dataset/www.forbes.com)
+  * [www.nytimes.com](dataset/www.nytimes.com)
 2. [Crawlers](crawlers)
   * [**WayBack Machine**](crawlers/Way-Back) - only possible source and candidate for dataset
     * [The Archival Year](crawlers/Way-Back#the-archival-year) - First specification for a dataset built from WayBack archives
@@ -39,28 +39,28 @@ HTML file it was extracted from.
 
 The following datasets are closest to being primed for testing:
 
-* news.yahoo.com
-* entertainment.msn.com
-* news.bbc.co.uk
-* www.forbes.com
-* www.latimes.com
-* www.cnn.com
-
+  * [www.cnn.com](dataset/www.cnn.com)
+  * [news.bbc.co.uk](dataset/news.bbc.co.uk)
+  * [news.yahoo.com](dataset/news.yahoo.com)
+  * [www.latimes.com](dataset/www.latimes.com)
+  * [entertainment.msn.com](dataset/entertainment.msn.com)
+  * [www.forbes.com](dataset/www.forbes.com)
+  
 The following datasets are not for reasons relating, but not limited to: unavailable/unreacheable archive servers, too many non-content
 sites, too many sites I'm unsure about (somewhere in between article and non-article). The biggest reason of them all is that
 sites from the year 2000 and, to a lesser degree, 2005 are rare to come by, but this was expected.
 
 Anyways, the following datasets need more work:
 
-* www.nytimes.com
-* www.foxnews.com
+* [www.nytimes.com](dataset/www.nytimes.com)
+* [www.foxnews.com](dataset/www.foxnews.com)
 
 I've dropped the following datasets for the same reasons mentioned above:
 
-* www.reuters.com
-* www.bbc.com
-* www.yahoo.com
-* www.msn.com
+* reuters.com
+* bbc.com
+* yahoo.com
+* msn.com
 
 I'm also in the process of finding new, heavily-archived domains. If anyone has a tip on which domains to try out, please send me an
 email: rodrigopala91@gmail.com
