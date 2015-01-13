@@ -4,14 +4,13 @@ crawl to the future
 Structure of this project
 -------------------------
 
-1. [Datasets](dataset) - covers years 2000, 2005, 2010, 2015 - read more about this below
+1. [Datasets](dataset) - covers years 2000, 2005, 2010 - read more about this below
   * [www.nytimes.com](dataset/www.nytimes.com)
   * [www.cnn.com](dataset/www.cnn.com)
-  * [www.bbc.com](dataset/www.bbc.com)
+  * [news.bbc.co.uk](dataset/news.bbc.co.uk)
   * [news.yahoo.com](dataset/news.yahoo.com)
-  * [www.msn.com](dataset/www.msn.com)
-  * [www.yahoo.com](dataset/www.yahoo.com)
-  * [www.reuters.com](dataset/www.reuters.com)
+  * [www.latimes.com](dataset/www.latimes.com)
+  * [entertainment.msn.com](dataset/entertainment.msn.com)
   * [www.foxnews.com](dataset/www.foxnews.com)
   * [www.forbes.com](dataset/www.forbes.com)
 2. [Crawlers](crawlers)
@@ -23,6 +22,53 @@ Structure of this project
     * [Part II](crawlers/Crawling-Google/README.md#part-ii) - Google Search By Year
 
 ---
+
+Update 1/12/2015
+
+Woo, finally got to manually seperating the majority of the files into either of two groups: "has article" or "doesn't have article"
+
+It's pretty easy to visuallize what I mean. Sites that have no content can be described as such: landing pages, directory pages
+(very popular in the early 2000's from what I can tell), or just about anything which does not have a central piece or group of text.
+
+Sites that an *article* are simply those sites under a domain, and particularly so with the newspaper domains I've targetted, that have
+an article waiting to be read.
+
+You'll find that in this latest commit, I've tried my best to remove those sites that have no content (lack an article) by hand. What I've included
+though is the preliminary automatically-extracted content. These extractions are within a text file under the same name of the original
+HTML file it was extracted from.
+
+The following datasets are closest to being primed for testing:
+
+* news.yahoo.com
+* entertainment.msn.com
+* news.bbc.co.uk
+* www.forbes.com
+* www.latimes.com
+* www.cnn.com
+
+The following datasets are not for reasons relating, but not limited to: unavailable/unreacheable archive servers, too many non-content
+sites, too many sites I'm unsure about (somewhere in between article and non-article). The biggest reason of them all is that
+sites from the year 2000 and, to a lesser degree, 2005 are rare to come by, but this was expected.
+
+Anyways, the following datasets need more work:
+
+* www.nytimes.com
+* www.foxnews.com
+
+I've dropped the following datasets for the same reasons mentioned above:
+
+* www.reuters.com
+* www.bbc.com
+* www.yahoo.com
+* www.msn.com
+
+I'm also in the process of finding new, heavily-archived domains. If anyone has a tip on which domains to try out, please send me an
+email: rodrigopala91@gmail.com
+
+Anyways, the last bit of work is related to hand-correcting the extracted text files and making sure they include the title, the author,
+and the article itself - every single sentence :|
+
+I hope to be update once more this week with datasets that can be consider "golden". 
 
 Update 1/8/2015
 ---------------
