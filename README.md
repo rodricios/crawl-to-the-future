@@ -5,16 +5,17 @@ Structure of this project
 -------------------------
 
 1. [Datasets](dataset) - covers years 2000, 2005, 2010, 2015 - read more about this below
-  * [news.bbc.co.uk](dataset/news.bbc.co.uk)
-  * [www.cnn.com](dataset/www.cnn.com)
-  * [news.yahoo.com](dataset/news.yahoo.com)
-  * [www.thenation.com](dataset/www.thenation.com)
-  * [www.latimes.com](dataset/www.latimes.com)
-  * [entertainment.msn.com](dataset/entertainment.msn.com)
-  * [www.foxnews.com](dataset/www.foxnews.com)
-  * [www.forbes.com](dataset/www.forbes.com)
-  * [www.nymag.com](dataset/www.nymag.com)
-  * [www.esquire.com](dataset/www.esquire.com)
+ * news.bbc.co.uk
+ * cnn.com
+ * news.yahoo.com
+ * thenation.com
+ * latimes.com
+ * entertainment.msn.com
+ * foxnews.com
+ * forbes.com
+ * nymag.com
+ * esquire.com
+
 2. [Crawlers](crawlers)
   * [**WayBack Machine**](crawlers/Way-Back) - only possible source and candidate for dataset
     * [The Archival Year](crawlers/Way-Back#the-archival-year) - First specification for a dataset built from WayBack archives
@@ -46,9 +47,6 @@ etc.
 Cheers
 
 ###Update 1/12/2015
-
-
-Update 1/12/2015
 
 Woo, finally got to manually seperating the majority of the files into either of two groups: "has article" or "doesn't have article"
 
