@@ -1,586 +1,0 @@
-
-
-
-<script type="text/javascript" src="/static/js/analytics.js"></script>
-<script type="text/javascript">archive_analytics.values.server_name="wwwb-app12.us.archive.org";archive_analytics.values.server_ms=194;</script>
-<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
-
-
-
-
-<!-- BEGIN WAYBACK TOOLBAR INSERT -->
-<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
-<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
-<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
-<script type="text/javascript">//<![CDATA[
-var __wm = (function(){
-var wbPrefix = "/web/";
-var wbCurrentUrl = "http://movies.msn.com/movies/summermovieguide/starwarstop10";
-
-var firstYear = 1996;
-var imgWidth = 500,imgHeight = 27;
-var yearImgWidth = 25,monthImgWidth = 2;
-var displayDay = "25";
-var displayMonth = "May";
-var displayYear = "2005";
-var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-var $D=document,$=function(n){return document.getElementById(n)};
-var trackerVal,curYear = -1,curMonth = -1;
-var yearTracker,monthTracker;
-function showTrackers(val) {
-  if (val===trackerVal) return;
-  var $ipp=$("wm-ipp");
-  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
-  if (val) {
-    $ipp.className="hi";
-  } else {
-    $ipp.className="";
-    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
-  }
-  yearTracker.style.display=val?"inline":"none";
-  monthTracker.style.display=val?"inline":"none";
-  trackerVal = val;
-}
-function getElementX2(obj) {
-  var $e=jQuery(obj);
-  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
-    getElementX(obj):Math.round($e.offset().left);
-}
-function trackMouseMove(event,element) {
-  var eventX = getEventX(event);
-  var elementX = getElementX2(element);
-  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
-  var monthOff = xOff % yearImgWidth;
-
-  var year = Math.floor(xOff / yearImgWidth);
-  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
-  // 1 extra border pixel at the left edge of the year:
-  var month = (year * 12) + monthOfYear;
-  var day = monthOff % 2==1?15:1;
-  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
-    zeroPad(day,2) + "000000";
-
-  $("displayYearEl").innerHTML=year+firstYear;
-  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
-  // looks too jarring when it changes..
-  //$("displayDayEl").innerHTML=zeroPad(day,2);
-  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
-  $("wm-graph-anchor").href=url;
-
-  if(curYear != year) {
-    var yrOff = year * yearImgWidth;
-    yearTracker.style.left = yrOff + "px";
-    curYear = year;
-  }
-  if(curMonth != month) {
-    var mtOff = year + (month * monthImgWidth) + 1;
-    monthTracker.style.left = mtOff + "px";
-    curMonth = month;
-  }
-}
-function hideToolbar() {
-  $("wm-ipp").style.display="none";
-}
-function bootstrap() {
-  var $spk=$("wm-ipp-sparkline");
-  yearTracker=$D.createElement('div');
-  yearTracker.className='yt';
-  with(yearTracker.style){
-    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
-  }
-  monthTracker=$D.createElement('div');
-  monthTracker.className='mt';
-  with(monthTracker.style){
-    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
-  }
-  $spk.appendChild(yearTracker);
-  $spk.appendChild(monthTracker);
-
-  var $ipp=$("wm-ipp");
-  $ipp&&disclaimElement($ipp);
-}
-return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
-})();//]]>
-</script>
-<style type="text/css">
-body {
-  margin-top:0 !important;
-  padding-top:0 !important;
-  min-width:800px !important;
-}
-</style>
-<div id="wm-ipp" lang="en" style="display:none;">
-
-<div style="position:fixed;left:0;top:0;width:100%!important">
-<div id="wm-ipp-inside">
-   <table style="width:100%;"><tbody><tr>
-   <td id="wm-logo">
-       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
-   </td>
-   <td class="c">
-       <table style="margin:0 auto;"><tbody><tr>
-       <td class="u" colspan="2">
-       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://movies.msn.com/movies/summermovieguide/starwarstop10" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20050525031107" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
-       </td>
-       <td class="n" rowspan="2">
-           <table><tbody>
-           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
-           <tr class="m">
-           	<td class="b" nowrap="nowrap">
-		
-		    Apr
-		
-		</td>
-		<td class="c" id="displayMonthEl" title="You are here: 3:11:07 May 25, 2005">MAY</td>
-		<td class="f" nowrap="nowrap">
-		
-		    <a href="/web/20050826151157/http://movies.msn.com/movies/summermovieguide/starwarstop10" title="26 Aug 2005"><strong>AUG</strong></a>
-		
-                </td>
-	    </tr>
-           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
-           <tr class="d">
-               <td class="b" nowrap="nowrap">
-               
-                   <a href="/web/20050524014751/http://movies.msn.com/movies/summermovieguide/starwarstop10" title="1:47:51 May 24, 2005"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
-               
-               </td>
-               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 3:11:07 May 25, 2005">25</td>
-	       <td class="f" nowrap="nowrap">
-               
-		   <a href="/web/20050526013052/http://movies.msn.com/movies/summermovieguide/starwarstop10" title="1:30:52 May 26, 2005"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
-	       
-	       </td>
-           </tr>
-           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
-           <tr class="y">
-	       <td class="b" nowrap="nowrap">
-               
-                   2004
-               
-               </td>
-               <td class="c" id="displayYearEl" title="You are here: 3:11:07 May 25, 2005">2005</td>
-	       <td class="f" nowrap="nowrap">
-               
-                   2006
-               
-	       </td>
-           </tr>
-           </tbody></table>
-       </td>
-       </tr>
-       <tr>
-       <td class="s">
-           <a class="t" href="/web/20050525031107*/http://movies.msn.com/movies/summermovieguide/starwarstop10" title="See a list of every capture for this URL">14 captures</a>
-           <div class="r" title="Timespan for captures of this URL">19 May 05 - 28 Apr 06</div>
-       </td>
-       <td class="k">
-       <a href="" id="wm-graph-anchor">
-       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
-	 <img id="sparklineImgId" alt="sparklines"
-		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
-		 onmousemove="__wm.mv(event,this)"
-		 width="500"
-		 height="27"
-		 border="0"
-		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:4:000084010000_2006:-1:000100000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
-       </div>
-       </a>
-       </td>
-       </tr></tbody></table>
-   </td>
-   <td class="r">
-       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
-       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
-   </td>
-   </tr></tbody></table>
-</div>
-</div>
-</div>
-<script type="text/javascript">__wm.bt();</script>
-<!-- END WAYBACK TOOLBAR INSERT -->
-<noscript><meta http-equiv=refresh content="0;url=/web/20050525031107/http://movies.msn.com/help/requirements.aspx"></noscript><script>var imgssearch = new Array(3);imgssearch[0] = new Image();imgssearch[0].src = '/web/20050525031107/http://entimg.msn.com/i/ms/bt_go.gif';imgssearch[1] = new Image();imgssearch[1].src = '/web/20050525031107/http://entimg.msn.com/i/ms/bt_go_o.gif';imgssearch[2] = new Image();imgssearch[2].src = '/web/20050525031107/http://entimg.msn.com/i/ms/bt_go_d.gif';</script><script>var imgPre="/web/20050525031107/http://entimg.msn.com";var meetsReqs=false;var indefli=false;var serviceid=0;var rpsub=false;var pcontr=false;
-</script>
-<title>MSN Movies - 2005 Summer Movie Guide</title><script src="/web/20050525031107js_/http://entimg.msn.com/script/msnent2918.js"></script><script>function SF(func) { try { if(eval('window.' + func) != null) { return true; } else { return false; } } catch(e) { alert('Failed exec:'+code+'\r\n'+e.description); } return false; }function GE(v) { if(document.all) { return document.all[v]; } return document.getElementById(v); }window.name='MSNMusic';</script>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
-<HTML>
-	<HEAD>
-		<meta name="Name" content="Hub or Article">
-		<link rel="stylesheet" href="/web/20050525031107cs_/http://entimg.msn.com/styles/e2918.css" rev="stylesheet" type="text/css">
-		<style>
-			.modbod { background-color: #f1f1f1; }
-			.mnbg	{ background-color: #98A7E2; }
-			.mbbg	{ background-color: #E0E6FF; }
-			.brbg	{ background-color: #f1f1f1; }
-			.blt	{ font-family: wingdings; }
-			.h380   { height: 380px; }
-			
-			/* find bar */
-			.fib	{ width: 100px; margin: 3px  3px 3px 5px;} 
-			.fpd	{ margin: 0px 3px 0px 5px; width: 100px;}
-			.ftt	{ padding: 3px 0px 3px 5px; font-size: 11px; color: #ffffff; text-align: left;text-transform:uppercase; } 
-			.fbb	{ margin:2px 10px 0px 2px;}
-			.fsd	{ margin: 0px 3px 0px 10px; width: 160px;}
-
-      <!-- This style class enables stylized borders around the top albums and top songs controls. -->
-			.mh_sub3{ padding: 10px 10px 10px 10px; border-top: 1px solid #e6e6e6; border-left: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; border-right: 1px solid #e6e6e6 }	/* 4 Files */
-
-		</style>
-		<style>
-
-.content a	{color: #F93004; }
-.content a:hover	{ color: #F93004;; text-decoration: underline; }
-.content a:visited	{color: #F93004; }
-
-#img {position:relative;top:-1;}
-
-/* MENU NAV BACKGROUND */
-.navbg	{ 
-	background: url(/web/20050525031107im_/http://entimg.msn.com/i/SumMG/bg_nav_art.jpg) no-repeat; 
-	height:20px;
-	padding-left:10px;
-	padding-top:3px;
-}
-
-
-/* MENU NAV LINX */
-.navtxt	{ color: #ffffff; text decoration: none; }
-.navtxt a	{ color: #ffffff; text-decoration: none }		
-.navtxt a:visited { color: #ffffff; text-decoration: none; }			
-.navtxt a:hover {  text-decoration: none; color: F93004; }
-
-.tblcolor	{ background:#080A05 url(/web/20050525031107im_/http://entimg.msn.com/i/SumMG/bg_article.jpg) no-repeat;border-top:1px solid white;margin-top:10px;}
-
-.content{ 
-background:#080A05 url(/web/20050525031107im_/http://entimg.msn.com/i/SumMG/bg_article.jpg) no-repeat;
-color:white;
-width:750;
-position:relative;
-padding:15 15 30 15;
-
-}
-p { color: white; font-size:11px;padding-top:5px;}
-#cnt1{
-font-family:tahoma;
-font-size:11px;
-}
-a.cnt1{color:#F93004;}
-a.cnt1:hover{color:#F93004;}
-
-
-/* PADDING AND MARGINS */
-.rp20	{ padding-right: 20px; }
-.bp30	{ padding-bottom:30px; }
-.tp20	{ padding-top: 20px ; }
-.l10r60	{ padding: 0px 60px 0px 10px; }
-.l10r20	{ padding: 0px 20px 0px 10px; }
-.l15r50	{ padding: 0px 50px 0px 15px; }
-.lp47	{ padding-left:47px; }
-.lp3	{ padding-left: 3px; }
-.mh_inner	{ display: none; }
-.mh_outer	{ display: none; }
-.wbrb	{ border-right: 1px solid #ffffff; border-bottom: 1px solid #ffffff; }
-
-</style>
-	</HEAD>
-	<body>
-		<script>	var pageId = "86803";	var domaindId = "395";	var propertyId = "56656";	var gServer = "/web/20050525031107/http://g.msn.com/1ETCLT01/1";	var timeOut = "3";	var backoffTime = "1";</script><script src="/web/20050525031107js_/http://entimg.msn.com/script/tracking.js"></script><img  id="clickTarget" style="display:none" src="/web/20050525031107im_/http://entimg.msn.com/i/sp.gif" onReadyStateChange="if(SF('ctStateChange')) ctStateChange();" >			
-		<center>
-		<img width=0 height=0 src="/web/20050525031107im_/http://c.msn.com/c.gif?ps=86803&amp;pi=56656&amp;di=395&amp;rf=">
-		
-			
-		
-		
-			<table class="sbtb" cellspacing="0" cellpadding="0" border="0">
-	<tr>
-		<td><!--BeginAd(ENTSG1,SuperBanner)--><!--NOAD--><img src="/web/20050525031107im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A44"/><!--EndAd--></td>
-	</tr>
-</table><table class="tp10" cellspacing="0" cellpadding="0" border="0" width="750">
-	<tr>
-		<td><table class="hdpos" cellspacing="0" cellpadding="0" border="0">
-			<tr>
-				<td width="118"><a onclick="if(SF('h')) return h(this,'cm=HEADER&amp;ce=2');" href="/web/20050525031107/http://g.msn.com/0nwenus0/A5/00"><script type="text/javascript" src="/web/20050525031107js_/http://sc.msn.com/global/scr/lg/hdrPOS.js">&nbsp;</script><noscript><img src="/web/20050525031107im_/http://sc.msn.com/global/c/lgpos/msft_pos.gif" alt="MSN Home" border=0 style="height:35px;width:118px;" /></noscript><script type="text/javascript">logoImg("/web/20050525031107/http://sc.msn.com");</script></a></td><td class="hdrtxt" valign="Bottom"><a onclick="if(SF('h')) return h(this,'cm=HEADER&amp;ce=3');" href="/web/20050525031107/http://movies.msn.com/">Movies</a></td>
-			</tr><tr>
-				<td class="sbhdsp" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=HEADER&amp;ce=4');" href="/web/20050525031107/http://entertainment.msn.com/">entertainment</a></td>
-			</tr>
-		</table></td><td align="Right"><table cellspacing="1" cellpadding="0" border="0">
-			<tr>
-				<td class="hdnvc" TABINDEX="0" onmouseover="this.className='hdnvch'" onmouseout="this.className='hdnvc'" onclick="if(SF('u')) u('/web/20050525031107/http://music.msn.com','cm=HEADER&amp;ce=1'); else location.href='/web/20050525031107/http://music.msn.com';" onkeypress="if(SF('u')) u('http://music.msn.com','cm=HEADER&amp;ce=1'); else location.href='http://music.msn.com';">Music</td><td class="hdnvc" TABINDEX="0" onmouseover="this.className='hdnvch'" onmouseout="this.className='hdnvc'" onclick="if(SF('u')) u('/web/20050525031107/http://radio.msn.com','cm=HEADER&amp;ce=1'); else location.href='/web/20050525031107/http://radio.msn.com';" onkeypress="if(SF('u')) u('http://radio.msn.com','cm=HEADER&amp;ce=1'); else location.href='http://radio.msn.com';">Radio</td><td class="hdnvch" TABINDEX="0" onclick="if(SF('u')) u('/web/20050525031107/http://movies.msn.com','cm=HEADER&amp;ce=1'); else location.href='/web/20050525031107/http://movies.msn.com';" onkeypress="if(SF('u')) u('http://movies.msn.com','cm=HEADER&amp;ce=1'); else location.href='http://movies.msn.com';">Movies</td><td class="hdnvc" TABINDEX="0" onmouseover="this.className='hdnvch'" onmouseout="this.className='hdnvc'" onclick="if(SF('u')) u('/web/20050525031107/http://tv.msn.com','cm=HEADER&amp;ce=1'); else location.href='/web/20050525031107/http://tv.msn.com';" onkeypress="if(SF('u')) u('http://tv.msn.com','cm=HEADER&amp;ce=1'); else location.href='http://tv.msn.com';">TV</td><td class="hdnvc" TABINDEX="0" onmouseover="this.className='hdnvch'" onmouseout="this.className='hdnvc'" onclick="if(SF('u')) u('/web/20050525031107/http://music.msn.com/musicvideos/','cm=HEADER&amp;ce=1'); else location.href='/web/20050525031107/http://music.msn.com/musicvideos/';" onkeypress="if(SF('u')) u('http://music.msn.com/musicvideos/','cm=HEADER&amp;ce=1'); else location.href='http://music.msn.com/musicvideos/';">Video</td>
-			</tr>
-		</table></td>
-	</tr>
-</table><span style="display:none;"></span>
-		
-		
-			
-			<table class="sbout" cellspacing="0" cellpadding="0" border="0" width="100%">
-	<tr>
-		<td align="Center"><table class="ftb" cellspacing="0" cellpadding="0" border="0" width="750">
-			<tr>
-				<td><table cellspacing="0" cellpadding="0" border="0">
-					<tr>
-						<td><form id=PageFindForm method=GET action='/web/20050525031107/http://movies.msn.com/search/'><span class="lnk1">Search by:</span></td><td><label for="tp"><span style=display:none>Select search type</span></label><select name="tp" id="tp" class="fpd">
-							<option value="5">movie</option>
-							<option value="4">person</option>
-							<option value="6">theater</option>
-						</select></td><td><label for="ss"><span style=display:none>Enter your search query</span></label><input name="ss" id="ss" type="text" class="fib" VCARD_NAME="SearchText" maxlength="45" /></td><td><span><img title="Go" TABINDEX="0" onmouseover="if(SF('nbs')) nbs(imgssearch[1]);" onmouseout="if(SF('nbs')) nbs(imgssearch[0]);" onmousedown="if(SF('nbs')) nbs(imgssearch[2]);" onmouseup="if(SF('nbs')) { nbs(imgssearch[0]); document.forms[&quot;PageFindForm&quot;].submit();}" onkeydown="if(event.keyCode == 13 || event.keyCode == 32 ){if(SF('nbs')) nbs(imgssearch[2]);}" onkeyup="if(event.keyCode == 13 || event.keyCode == 32 ){if(SF('nbs')) { nbs(imgssearch[0]);document.forms[&quot;PageFindForm&quot;].submit(); }}" src="/web/20050525031107im_/http://entimg.msn.com/i/ms/bt_go.gif" alt="" border="0" style="cursor:hand;" /></span></td>
-					</tr>
-				</table></td><td></form></td><td align="Right"><table cellspacing="0" cellpadding="0" border="0">
-					<tr>
-						<td align="Right"><table cellspacing="0" cellpadding="0" border="0">
-							<tr>
-								<td><a class="SignInLinkClass" onclick="if(SF('h')) return h(this,'cm=SEAMUS&amp;ce=1');" href="/web/20050525031107/http://login.passport.com/login.srf?lc=1033&amp;id=31948&amp;ru=http%3a%2f%2fmovies.msn.com%2fbeacon%2fhubarticle.aspx%3fptid%3dcd22ea8d-9fed-4d38-81da-8cc448662644&amp;tw=7200&amp;fs=1&amp;kv=6&amp;ct=1116990666&amp;cb=returl%3dhttp%253a%252f%252fmovies.msn.com%252fbeacon%252fhubarticle.aspx%253fptid%253dcd22ea8d-9fed-4d38-81da-8cc448662644&amp;kpp=3&amp;ver=2.1.6000.1&amp;tpf=280ebfe7e8dd26e1ed45f15a7ce9bef4">Sign&nbsp;In</a></td><td></td>
-							</tr>
-						</table></td>
-					</tr>
-				</table></td>
-			</tr>
-		</table></td>
-	</tr>
-</table>
-			
-				
-				<table class="navin" cellspacing="0" cellpadding="0" border="0" width="100%">
-	<tr>
-		<td align="Center"><table class="bk" cellspacing="0" cellpadding="0" border="0" width="750">
-
-		</table></td>
-	</tr>
-</table>
-		
-		
-			<table class="brtb" cellspacing="0" cellpadding="0" border="0" width="750">
-	<tr>
-		<td><table cellspacing="0" cellpadding="0" border="0">
-			<tr>
-				<td><a class="lnk3" onclick="if(SF('h')) return h(this,'cm=CRUMBS&amp;ce=1');" href="/web/20050525031107/http://movies.msn.com/movies/">msn movies</a></td><td class="blt3">&#052;</td><td><span class="lnk3">2005 summer movie guide</span></td>
-			</tr>
-		</table></td>
-	</tr>
-</table>
-		
-		
-    <table class="tblcolor" cellpadding="0" cellspacing="0" border="0" width="750">
-      <tr>
-        <td align="left" valign="top">
-          <table width="100%" cellpadding="0" cellspacing="0" border="0">
-            <tr>
-		  				<td height="100%" valign="top">
-                <!-- TemplateHeader [Article] -->
-				  			
-					  			 <STYLE> #header{} .120x30{width:120; padding:10 10 10 0;} .120x30_ad{margin-top:2px;width:120;height:30;background:white;}  </STYLE> <!-- background-image:url(/web/20050525031107/http://entimg.msn.com/i/SumMG/hdr.jpg);background-repeat:no-repeat;width:750;height:60;color:white;font-size:9px;font-family:tahoma; --> <TABLE cellSpacing=0 cellPadding=0 border=0>   <TBODY>   <TR>     <TD width=613 height=60><IMG height=60        alt="MSN Movies: 2005 Summer Movie Guide"        src="/web/20050525031107im_/http://entimg.msn.com/i/SumMG/hdrL.jpg" width=613 border=0></TD>     <TD      style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 9px; BACKGROUND-IMAGE: url(/web/20050525031107im_/http://entimg.msn.com/i/SumMG/hdrR.jpg); PADDING-BOTTOM: 0px; COLOR: white; PADDING-TOP: 9px"      vAlign=top width=137>       <DIV style="PADDING-LEFT: 10px">presented by:        <TABLE style="MARGIN-TOP: 2px" cellSpacing=0 cellPadding=0 border=0>         <TBODY>         <TR>           <TD width=120 bgColor=white height=30><!--NOAD--><img src="/web/20050525031107im_/http://global.msads.net/defaultads/ads/defaultads/TR.gif?C=P&amp;E=10&amp;N=A44"/></TD></TR></TBODY></TABLE></DIV></TD></TR></TBODY></TABLE>	
-						  	 	
-						  </td>
-				      <td height="100%" valign="top" align="right">
-                <!-- AddGroupList [EditorialListCollection] -->
-  						  
-	  					    <table cellspacing="0" cellpadding="0" border="0">
-
-</table>
-		   				  
-			  			</td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <table cellpadding="0" cellspacing="0" border="0" width="750">
-  				  <td height="100%" valign="top">
-              <!-- MenuBar [EditorialListModuleCtrl] -->
-					    
-							  <table class="navbg" cellspacing="0" cellpadding="0" border="0" width="750">
-	<tr>
-		<td valign="Top"><table class="navtxt" cellspacing="0" cellpadding="0" border="0">
-			<tr>
-				<td class="rp20" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=MenuBar&amp;ce=1');" href="/web/20050525031107/http://movies.msn.com/movies/summermovieguide">Home</a></td><td class="rp20" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=MenuBar&amp;ce=2');" href="/web/20050525031107/http://movies.msn.com/movies/summermovieguide/gallery">Photo Gallery</a></td><td class="rp20" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=MenuBar&amp;ce=3');" href="/web/20050525031107/http://movies.msn.com/movies/summermovieguide/action">Action/Adventure/Thriller</a></td><td class="rp20" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=MenuBar&amp;ce=4');" href="/web/20050525031107/http://movies.msn.com/movies/summermovieguide/comedy">Comedy</a></td><td class="rp20" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=MenuBar&amp;ce=5');" href="/web/20050525031107/http://movies.msn.com/movies/summermovieguide/drama">Drama</a></td><td class="rp20" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=MenuBar&amp;ce=6');" href="/web/20050525031107/http://movies.msn.com/movies/summermovieguide/family">Family</a></td><td class="rp20" valign="Top"><a onclick="if(SF('h')) return h(this,'cm=MenuBar&amp;ce=7');" href="/web/20050525031107/http://movies.msn.com/movies/summermovieguide/horror_scifi">Horror/Science Fiction</a></td>
-			</tr>
-		</table></td>
-	</tr>
-</table>
-					    	
-				    </td>
-				  </table>
-				</td>
-      </tr>
-      <tr>
-        <td>
-          <table cellpadding="0" cellspacing="0" border="0" width="750">
-            <tr>
-              <td height="100%" valign="top">
-                <!-- PageDescription [EditorialListCollection] -->
-						    
-						      <table cellspacing="0" cellpadding="0" border="0">
-
-</table>
-						    
-              </td>
-							<td height="100%" valign="top">
-                <!-- centerPromoImage1 [PublishedImageCtrl] -->
-								
-										<table cellspacing="0" cellpadding="0" border="0">
-	<tr>
-		<td><img title="©20th Century Fox" src="/web/20050525031107im_/http://entimg.msn.com/i/SW/StarWarsIII_panel2_750x180.jpg" alt="©20th Century Fox" border="0" height="180" width="750" /></td>
-	</tr>
-</table>
-									
-							</td>				
-							<td height="100%" valign="top">
-                <!-- centerPromoImage2 [PublishedImageCtrl] -->
-								
-									
-									
-							</td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td height="100%" valign="top">
-          <!-- OpenHTML1 [Article] -->
-				  
-					  	
-					 	
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <table cellpadding="0" cellspacing="0" border="0">
-            <tr>
-              <td height="100%" valign="top">
-                <!-- editListCollection4 [EditorialListCollection]<br> -->
-						    
-						      <table cellspacing="0" cellpadding="0" border="0">
-	<tr>
-		<td valign="Top"><table class="content" cellspacing="0" cellpadding="0" border="0" width="440">
-			<tr>
-				<td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
-					<tr>
-						<td class="tp10" valign="Top"> <DIV class=lp3><span class=txt2 style="FONT-SIZE: 14px">TOP 10 STAR WARS  MOMENTS</span></DIV></td>
-					</tr><tr>
-						<td class="tp10" valign="Top"><table border="0">
-							<tr>
-								<td class="txt2"><FONT size=3>As the series winds down, we look back on our favorite scenes  from the Lucas Universe</FONT>  <P></P> <P><EM>By Gregory Ellwood<BR>Special to MSN Entertainment</EM></P> <SCRIPT src="/web/20050525031107js_/http://video.msn.com/js/vp.js"></SCRIPT>  <P>After 28 years, one of cinema's greatest sagas is coming to an end with the  release of "<a href=/web/20050525031107/http://movies.msn.com/movies/movie.aspx?m=543674 class="art">Star Wars: Episode III -- Revenge of the Sith</a>." The final  events leading to Anakin Skywalker's journey to the Dark Side and his  transformation into Darth Vader will finally be revealed. Plus, we'll find out  the fate of Padmé, Obi-Wan, Yoda and numerous other Jedi, as well as just how  siblings Luke and Leia end up separated across the galaxy. So, while you wait,  what better way to refresh your "Star Wars" memory than to revisit some of the  greatest moments in the series so far? </P> <P><IMG alt="Attack of the Clones"  src="/web/20050525031107im_/http://entimg.msn.com/i/SW/starwars_clip10_75x75.jpg" align=left  border=0><STRONG>10. Obi-Wan vs. Jango  Fett</STRONG><BR><STRONG>Episode:</STRONG> '<a href=/web/20050525031107/http://movies.msn.com/movies/movie.aspx?m=123 class="art">II -- Attack of the Clones</a>'<BR><BR><STRONG>Why:</STRONG>  Ever since his first appearance in "<a href=/web/20050525031107/http://movies.msn.com/movies/movie.aspx?m=27844 class="art">The Empire Strikes Back</a>," fans had been salivating to see  just what that cool Boba Fett action figure, err, character could do. They  partially got their wish in 'Episode II.' When Obi-Wan visits the planet Kamino,  he discovers an army cloned from the genes of bounty hunter Jango Fett has been  built to service the Republic. In addition to a large sum of money, Jango has  received a clone of himself that will age naturally. (The soldiers' aging has  been accelerated.) He is raising him as his son, Boba Fett. Realizing Obi-Wan  might find out more than he should, Jango and Boba attempt to escape. Their  rain-drenched encounter showcases the cool aspects of Jango's jet pack and some  quick thinking by Obi-Wan. For many fans, the long wait to see a Fett in action  was well worth it.<BR><BR><STRONG>Cheese Factor:</STRONG> Having the young Boba  Fett fire on Obi-Wan, while helping Jango fight, was a little goofy, but  certainly showed he was a gene off the old block.<BR><BR><STRONG>Memorable  Line:</STRONG> <BR>Obi-Wan: "Oh, not good." </P> <P><a href="javascript:oMvsLink('01/64','e065947b-1cb0-4d7d-b7b3-ec51427fac3b','0','Movies - Music','Movie Previews','','','','','Entertainment_Movies');" class="art">Watch the clip</a><BR> <BR><IMG  alt="The Phantom Menace"  src="/web/20050525031107im_/http://entimg.msn.com/i/SW/starwars_clip8_75x75.jpg" align=left  border=0><STRONG>9. The Pod Race</STRONG> <BR><STRONG>Episode:</STRONG> '<a href=/web/20050525031107/http://movies.msn.com/movies/movie.aspx?m=103032 class="art">I -- The Phantom Menace</a>' <BR><BR><STRONG>Why:</STRONG> This  is arguably the most effective scene in "The Phantom Menace," and it is also one  of the few with genuine tension. Showing off the technical jump in CGI special  effects, the pod race stands as a beautifully rendered showcase for young  Anakin's skills as a pilot and machinist. Half video game simulation and half  plot point, Anakin's triumph against the shifty Dug Sebulba frees him from junk  shop proprietor Watto's enslavement. It also allows him to leave Tatooine with  Qui-Gon and Padmé to begin his journey as a Jedi.<BR><BR><STRONG>Cheese  Factor:</STRONG> Where to begin! From Anakin's silly alien racers to the  two-headed American sports style announcing team, this scene is full of moments  where someone should have told <a href=/web/20050525031107/http://movies.msn.com/celebs/celeb.aspx?c=312084 class="art">Lucas</a>, "George, stop the insanity!" <SCRIPT src="/web/20050525031107js_/http://video.msn.com/js/vp.js"></SCRIPT> <BR><BR><a href="javascript:oMvsLink('01/64','147afcda-d043-4614-8f50-f57072c78fbe','0','Movies - Music','Movie Previews','','','','','Entertainment_Movies');" class="art">Watch the clip</a>  <P></P> <P><IMG alt="The Phantom Menace"  src="/web/20050525031107im_/http://entimg.msn.com/i/SW/starwars_clip9_75x75.jpg" align=left  border=0><STRONG>8. Qui-Gon and Obi-Wan vs. Darth Maul</STRONG>  <BR><BR><STRONG>Episode:</STRONG> 'I -- The Phantom  Menace'<BR><BR><STRONG>Why:</STRONG> No moment showed what a great leap the live  action fights were going to take in the three new episodes than this climactic  showdown within Naboo's Theed Royal Palace. Fighting with his two-bladed Sith  lightsaber, the mysterious Darth Maul takes on both Qui-Gon and Obi-Wan in  spectacular fashion. Separated from each other, Obi-Wan watches in horror as  Qui-Gon is taken down by the Sith lord. Obi-Wan avenges his death by slicing  Maul in half -- much to the Sith lord's surprise. Qui-Gon's sacrifice is the  first sign that a truly dark time is coming. Fans ended up loving Maul much more  than Lucas had anticipated. In retrospect, even Lucas would admit his death may  have been somewhat premature. <BR><BR><STRONG>Cheese Factor:</STRONG> The  concurrent scene of Padmé and her security forces attempting to recapture her  palace intercut with this fight are typical examples of Lucas' stiff direction  in the first two episodes, but the battle itself is well  done.<BR><BR><STRONG>Memorable Line:</STRONG> <BR>Qui-Gon: "We'll handle  this."</P> <P><a href="javascript:oMvsLink('01/64','ae7ff65a-be39-4503-989f-3df44474ce51','0','Movies - Music','Movie Previews','','','','','Entertainment_Movies');" class="art">Watch the clip</a></P> <P><IMG alt="Return of the Jedi"  src="/web/20050525031107im_/http://entimg.msn.com/i/SW/starwars_clip7_75x75.jpg" align=left  border=0><STRONG>7. The Escape from Jabba at the Sarlaac Pit</STRONG>  <BR><BR><STRONG>Episode:</STRONG> ' <a href=/web/20050525031107/http://movies.msn.com/movies/movie.aspx?m=462979 class="art">VI -- Return of the  Jedi</a>'<BR><BR><STRONG>Why:</STRONG> Fun and action packed, this scene showed  the influence of old movie serials on Lucas' storytelling. Nothing was cooler  than realizing Luke Skywalker had become so confident and powerful as a Jedi  that even as he was seemingly being thrown from a galley plank to his death, he  was still completely in control. A blinded Han Solo's banter and physical comedy  with Chewbacca are also highlights. Occurring at the end of the first act,  the scene foreshadows that the rebels' luck is not as bad as it was in "The  Empire Strikes Back." And who didn't love the skimpy outfit Lucas convinced <a href=/web/20050525031107/http://movies.msn.com/celebs/celeb.aspx?c=113257 class="art">Carrie Fisher</a> to wear as Leia?<BR><BR><STRONG>Cheese  Factor:</STRONG> None.<BR><BR><STRONG>Memorable Line:</STRONG> <BR>Luke: "Jabba,  this is your last chance. Free us or die." </P> <P><a href="javascript:oMvsLink('01/64','540016b8-22d3-47dd-a7d0-f4dbe4f46ddd','0','Movies - Music','Movie Previews','','','','','Entertainment_Movies');" class="art"> <SCRIPT src="/web/20050525031107js_/http://video.msn.com/js/vp.js"></SCRIPT> Watch the clip</a></P> <P><IMG alt="Attack of the Clones"  src="/web/20050525031107im_/http://entimg.msn.com/i/SW/starwars_clip6_75x75.jpg" align=left  border=0><STRONG>6. Yoda vs. Dooku<BR></STRONG><BR><STRONG>Episode:</STRONG> 'II  -- Attack of the Clones' <BR><BR><STRONG>Why:</STRONG> Yoda had been a fan  favorite since <a href=/web/20050525031107/http://movies.msn.com/celebs/celeb.aspx?c=325412 class="art">Frank Oz</a> began voicing and manipulating him in puppet form  in "The Empire Strikes Back," but by 2002 digital effects allowed Yoda to do  things Oz could never accomplish. The smallest Jedi shows just how strong the  Force can be in his battle against the dark Count Dooku, played by geek favorite  <a href=/web/20050525031107/http://movies.msn.com/celebs/celeb.aspx?c=483386 class="art">Christopher Lee</a>. Yoda's whirling dervish attack elicited  cheers of joy from many fans when they first saw it. You always knew Yoda could  kick some butt and this fight was worth the price of the ticket alone. Now if  only it was a bit longer...<BR><BR><STRONG>Cheese Factor:</STRONG> None. It's  the coolest thing Lucas has directed in the new episodes so  far.<BR><BR><STRONG>Memorable Line: </STRONG><BR>Dooku: "It's obvious this that  this contest cannot be decided by our knowledge of the force, but by our skills  with a lightsaber." </P> <P><a href="javascript:oMvsLink('01/64','d9b862c5-66d9-4e85-9de8-dcf0375dc61f','0','Movies - Music','Movie Previews','','','','','Entertainment_Movies');" class="art">Watch the clip</a></P> <P><IMG alt="The Empire Strikes Back"  src="/web/20050525031107im_/http://entimg.msn.com/i/SW/starwars_clip5_75x75.jpg" align=left  border=0><STRONG>5. Lando Calrissian Betrays Han and Leia</STRONG>  <BR><BR><STRONG>Episode:</STRONG> 'V -- The Empire Strikes  Back'<BR><BR><STRONG>Why:</STRONG> One of the few true surprises in the series,  Calrissian's duping of the rebels into Vader's grasp cut like a knife. You knew  things were going to get bad, but this event felt incredibly ominous. It also  was just another sign of how few characters in the "Star Wars" universe could be  trusted, though to the delight of many Calrissian makes up for his mistake later  on in the film and later leads the rebel attack fleet in "Return of the  Jedi."<BR><BR><STRONG>Cheese Factor:</STRONG> Darth Vader at a formal dinner  table is a bit odd...<BR><BR><STRONG>Memorable Line:</STRONG> <BR>Lando: "I'm  sorry."<BR>Han Solo: "I'm sorry too." </P> <P><a href="javascript:oMvsLink('01/64','a1cca3f9-8cdc-4db5-8939-d2e676f1633d','0','Movies - Music','Movie Previews','','','','','Entertainment_Movies');" class="art">Watch the clip</a></P> <P><IMG alt="Return of the Jedi"  src="/web/20050525031107im_/http://entimg.msn.com/i/SW/starwars_clip4_75x75.jpg" align=left  border=0><STRONG>4. Luke vs. Vader vs. the Emperor</STRONG>  <BR><BR><STRONG>Episode:</STRONG> 'VI -- Return of the  Jedi'<BR><BR><STRONG>Why:</STRONG> Luke resists the temptation to join the Dark  Side and then makes a heroic sacrifice in order to save his father. Lucas had  slowly been hinting that Vader's feelings for his son were conflicted and his  turning on the Emperor is one of the best moments in the film. In light of the  long history between Anakin Skywalker and the Emperor chronicled in the first  three episodes, this scene will only become more poignant over time. <a href=/web/20050525031107/http://movies.msn.com/celebs/celeb.aspx?c=117101 class="art">Ian McDiarmid</a>'s deliciously devilish performance as the  Emperor is a highlight.<BR><BR><STRONG>Cheese Factor:</STRONG> The Emperor gets  a little too zealous zapping "young Skywalker" and creeps around like the Wicked  Witch of the West from the "<a href=/web/20050525031107/http://movies.msn.com/movies/movie.aspx?m=130 class="art">Wizard of Oz</a>," but he <EM>is</EM> supposed to be  evil.<BR><BR><STRONG>Memorable Lines:</STRONG> <BR>The Emperor: "Now young  Skywalker, you will die." <BR>Luke: "Father! Help...me...!"</P> <P><a href="javascript:oMvsLink('01/64','e8c03d3d-5ba0-4ca1-a6c3-51f8acae9c79','0','Movies - Music','Movie Previews','','','','','Entertainment_Movies');" class="art">Watch the clip</a></P> <P><IMG alt="A New Hope"  src="/web/20050525031107im_/http://entimg.msn.com/i/SW/starwars_clip3_75x75.jpg" align=left  border=0><STRONG>3. Luke Destroys the Death Star<BR></STRONG><BR>Episode: '<a href=/web/20050525031107/http://movies.msn.com/movies/movie.aspx?m=62623 class="art">IV -- A New Hope</a>' <BR><BR><STRONG>Why:</STRONG> Luke's  willingness to turn off the automatic guidance system, "search his feelings" and  take his chances with "The Force" is a metaphor for modern day faith. In the  context of the film's initial release in 1977, it was perceived as an  anti-establishment call that soon became part of the pop culture vernacular. It  also hints at how powerful this young Jedi from Tatooine will  become.<BR><BR><STRONG>Cheese Factor:</STRONG> A lever from a 1977  television editing console is used to try and destroy the rebel base  at Yavin, but they only had so big a budget back then.  <BR><BR><STRONG>Memorable Line:</STRONG> <BR>Obi-Wan: "Use the force, Luke."</P> <P><a href="javascript:oMvsLink('01/64','120d5237-f176-4ab7-b105-e95cc07934b4','0','Movies - Music','Movie Previews','','','','','Entertainment_Movies');" class="art">Watch the clip</a><BR> <BR><IMG  alt="The Empire Strikes Back"  src="/web/20050525031107im_/http://entimg.msn.com/i/SW/starwars_clip2_75x75.jpg" align=left  border=0><STRONG>2. Leia Admits Her Love Before Han Freezes</STRONG>  <BR><BR><STRONG>Episode:</STRONG> 'V -- The Empire Strikes  Back'<BR><BR><STRONG>Why:</STRONG> Lucas had hinted at a love triangle between  Luke, Han and Leia in "A New Hope," but one of best sub plots of "Empire" is the  growing <a href=/web/20050525031107/http://movies.msn.com/celebs/celeb.aspx?c=297534 class="art">Hepburn</a>/<a href=/web/20050525031107/http://movies.msn.com/celebs/celeb.aspx?c=347265 class="art">Tracy</a>-esque love affair between Han and Leia. When Vader is  about to drop Han into the carbon-freezing chamber, Leia's true feelings are  revealed and audience's allegiances start to drift away from the stoic young  Jedi and toward the separated lovebirds.<BR><BR><STRONG>Cheese Factor:</STRONG>  None. It's a finely directed and compelling scene.<BR><BR><STRONG>Memorable  Lines:</STRONG> <BR>Leia: "I love you." <BR>Han: "I know." </P> <P><a href="javascript:oMvsLink('01/64','6d3340a7-66ce-4000-8d0c-508ac1deff64','0','Movies - Music','Movie Reviews','','','','','Entertainment_Movies');" class="art">Watch the clip</a></P> <P><IMG alt="The Empire Strikes Back"  src="/web/20050525031107im_/http://entimg.msn.com/i/SW/starwars_clip1_75x75.jpg" align=left  border=0><STRONG>1. Hey, Luke, Who's Your  Daddy?<BR></STRONG><BR><STRONG>Episode:</STRONG> 'V -- The Empire Strikes  Back'<BR><BR><STRONG>Why:</STRONG> At the time, Darth Vader's revelation to Luke  Skywalker that he was his father was the biggest shocker since the "Who shot  J.R.?" cliffhanger on the TV series "Dallas." The scene set up an epic  confrontation for the third film and three long years for fans to wonder if it  was true or just a ruse for Vader to draw Luke to the Dark Side. (Imagine the  scuttlebutt if the internet had existed back then.) In the context of the three  new episodes, the relationship mirrored the struggles that would lead Anakin  Skywalker into becoming Darth Vader. Luke's ability to resist that calling and  free his father (in "Return of the Jedi") only illustrates what a stronger Jedi  and man he was. But it all began here. <BR><BR><STRONG>Cheese Factor:</STRONG>  <a href=/web/20050525031107/http://movies.msn.com/celebs/celeb.aspx?c=143385 class="art">Mark Hamill</a>'s line reading when discovering Vader is his pop  is whiney... but when compared to some of the more recent Lucas-directed  performances, it's really not that bad.<BR><BR><STRONG>Memorable Lines:</STRONG>  <BR>Darth Vader: "No, I am your father." <BR>Luke: "That's not true! That's  impossible!" </P> <P><a href="javascript:oMvsLink('01/64','b351f0c1-f65c-4bce-9957-ba51026fb856','0','Movies - Music','Movie Previews','','','','','Entertainment_Movies');" class="art">Watch the clip</a><BR><BR><STRONG>Honorable  Mentions:</STRONG><BR>- Luke saves Leia from chasing storm troopers by swinging  through the Death Star like a hero from a '30's serial. ('Episode IV -- A New  Hope')</P> <P>- R2-D2 sends a message to Obi-Wan, but Luke gets it instead... and the  action begins ('Episode IV -- A New Hope') </P> <P>- The Millennium Falcon hides in an asteroid that surprisingly turns out to  be alive. ('Episode V -- The Empire Strikes Back')</P> <P><EM>Gregory Ellwood writes Hollywood Hitlist, a weekly column for MSN Movies.  He's worked in the movie industry for almost a decade and lives in Los  Angeles.</EM> </P> <P>Think we missed one? Email us your thoughts at <a href=mailto:heymsn@microsoft.com class="art">heymsn@microsoft.com</a></P> <P><span style="FONT-SIZE: 8pt; FONT-FAMILY: Verdana"><STRONG><a href=/web/20050525031107/http://shopping.msn.com/softcontent/softcontent.aspx?scpId=4421&amp;scmId=1639&amp;ptnrid=26&amp;ptnrdata=776660042&amp;ptnrID=26 class="art">Buy "Star Wars"  memorabilia</a></STRONG></span></P></FONT></FONT></td>
-							</tr>
-						</table></td>
-					</tr>
-				</table></td>
-			</tr>
-		</table></td>
-	</tr>
-</table>
-						    
-              </td>
-              <td width="300" align="left" valign="top">
-                <table cellpadding="0" cellspacing="0" border="0">
-                  <tr>
-                    <td height="100%" valign="top">
-                      <!-- rtBigAd [Ad] -->
-								      
-									      
-								      </td>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td height="100%" valign="top">
-                    <!-- editListCollection2 [EditorialListCollection]-->
-						        
-						          <table cellspacing="0" cellpadding="0" border="0">
-	<tr>
-		<td valign="Top"><table class="tp10" cellspacing="0" cellpadding="0" border="0" width="100%">
-			<tr>
-				<td><table class="tp10" cellspacing="0" cellpadding="0" border="0" width="100%">
-					<tr>
-						<td><span class="lnk3"></span></td>
-					</tr>
-				</table></td>
-			</tr>
-		</table><table cellspacing="0" cellpadding="0" border="0" width="100%">
-			<tr>
-				<td valign="Top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
-					<tr>
-						<td class="tp10" valign="Top"> <STYLE>   #poll a		{color:#FFFFFF; text-decoration:none;}  #poll a:hover	{color:#FFFFFF; text-decoration:underline;}  #poll a:visited {color:#FFFFFF; text-decoration:none;}  #poll a:visited:hover {color:#FFFFFF; text-decoration:underline;}  #poll td{color:#FFFFFF;}  </STYLE> <!--  --> <DIV id=poll> <SCRIPT src="/web/20050525031107js_/http://www.msnc.msn.com/js/std.js"></SCRIPT>  <SCRIPT language=javascript  src="/web/20050525031107js_/http://msnbc.msn.com/apps/modules/survey/survey.js"></SCRIPT>  <SCRIPT language=javascript  src="/web/20050525031107js_/http://msnbc.msn.com/apps/modules/survey/getdata.asp?id=MSNe_starwars_moments&amp;retfmt=js"></SCRIPT>  <SCRIPT language=javascript>     if (window.MSNe_starwars_moments) {     MSNe_starwars_moments.copyMargin = 10 ;  	MSNe_starwars_moments.columns = 1 ;                  MSNe_starwars_moments.appFmt = 1 ;                  MSNe_starwars_moments.appWidth = 300 ;                  MSNe_starwars_moments.appBG = "bgcolor=#252920" ;                                                                       MSNe_starwars_moments.sHedStyle = "background-color:#252920;color:#8C5F0C;" ;                MSNe_starwars_moments.copyBorder = "border:1px #FFFFFF solid; ";                       DisplayLV(MSNe_starwars_moments);      }    </SCRIPT> </DIV></td>
-					</tr>
-				</table></td>
-			</tr>
-		</table></td>
-	</tr>
-</table>
-						        
-                  </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td height="100%" valign="top">
-          <!-- OpenHTML2 [Article] -->
-				  
-					  	
-					 	
-        </td>
-      </tr>
-    </table>
-    <table cellpadding="0" cellspacing="0" border="0">
-      <tr><td height=10></td></tr>
-      <tr>
-        <td height="100%" valign="top">
-          <!-- topAlbums [TopAlbumsArea]-->
-				  
-					  
-				  
-        </td>
-      </tr>
-      <tr><td class="listsp"></td></tr>
-      <tr>
-        <td height="100%" valign="top">
-          <!-- topSongs [TopSongsArea]-->
-				  
-					  
-				  		
-        </td>
-      </tr>
-    </table>
-
-		
-			<table class="ftout" cellspacing="0" cellpadding="0" border="0" width="100%">
-	<tr>
-		<td align="Center"><table cellspacing="0" cellpadding="0" border="0" width="750">
-			<tr>
-				<td><table cellspacing="0" cellpadding="0" border="0" width="100%">
-					<tr>
-						<td><table class="ftrtbi2" cellspacing="0" cellpadding="0" border="0">
-							<tr>
-								<td><span class="lnk1">&copy;2005 Microsoft</span></td><td><span class="blt1">&#159</span></td><td><a class="lnk4" onclick="if(SF('h')) return h(this,'cm=FOOTER&amp;ce=1');" href="/web/20050525031107/http://movies.msn.com/music/providers.aspx">Partners</a><span class="lnk4">&nbsp;&amp;&nbsp;</span><a class="lnk4" onclick="if(SF('h')) return h(this,'cm=FOOTER&amp;ce=2');" href="/web/20050525031107/http://g.msn.com/0nwenus0/A5/19" target="_new">Advertisers</a></td><td><span class="blt1">&#159</span></td><td><a class="lnk4" onclick="if(SF('h')) return h(this,'cm=FOOTER&amp;ce=3');" href="/web/20050525031107/http://g.msn.com/0nwenus0/a5/20" target="_new">Privacy</a><span class="lnk4">&nbsp;&amp;&nbsp;</span><a class="lnk4" onclick="if(SF('h')) return h(this,'cm=FOOTER&amp;ce=4');" href="/web/20050525031107/http://g.msn.com/0nwenus0/a5/18" target="_new">Legal</a></td>
-							</tr>
-						</table></td><td align="Right"><table class="ftrtbi2" cellspacing="0" cellpadding="0" border="0">
-							<tr>
-								<td><span class="lnk4"><a class="lnk4" href="mailto:?subject=MSN%20Movies%20-%202005%20Summer%20Movie%20Guide&amp;body=I%20found%20this%20on%20MSN%20Entertainment%20and%20thought%20you%20might%20be%20interested%20in%20it.%0d%0a%0d%0aClick%20this%20link%3a%0d%0ahttp%3a%2f%2fmovies.msn.com%2fbeacon%2fhubarticle.aspx%3fptid%3dcd22ea8d-9fed-4d38-81da-8cc448662644%0d%0a">Email This Page</a></span></td><td><span class="blt1">&#159</span></td><td><a class="lnk4" onclick="if(SF('h')) return h(this,'cm=FOOTER&amp;ce=5');" href="/web/20050525031107/http://movies.msn.com/help/customer.aspx">Customer Service</a></td>
-							</tr>
-						</table></td>
-					</tr>
-				</table></td>
-			</tr>
-		</table></td>
-	</tr>
-</table><a class="txt2" onclick="var win = window.open(); win.document.open(); win.document.writeln('Machine Code: A44 - Date: 2005-05-24T20:11:06-07&lt;br&gt;&lt;br&gt;Page URL: ' + escape(document.URL)); return false;" href="#">Page Information</a>
-				
-		</center>
-	</body>
-</HTML>
-<script>if(window.sdd){sHS();}</script><script>window.onunload = Rsn; function Rsn() {window.name = 'notmine';} if(SF('SetupRatings')) SOL(SetupRatings); if(SF('cklnch')) SOL(cklnch); if(SF('chkbb')) SOL(chkbb);</script><span id=clipSpan></span>
-
-
-
-
-<!--
-     FILE ARCHIVED ON 3:11:07 May 25, 2005 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 18:37:40 Jan 11, 2015.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
--->

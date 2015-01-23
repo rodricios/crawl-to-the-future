@@ -4,15 +4,17 @@ crawl to the future
 Structure of this project
 -------------------------
 
-1. [Datasets](dataset) - covers years 2000, 2005, 2010 - read more about this below
+1. [Datasets](dataset) - covers years 2000, 2005, 2010, 2015 - read more about this below
   * [news.bbc.co.uk](dataset/news.bbc.co.uk)
   * [www.cnn.com](dataset/www.cnn.com)
   * [news.yahoo.com](dataset/news.yahoo.com)
+  * [www.thenation.com](dataset/www.thenation.com)
   * [www.latimes.com](dataset/www.latimes.com)
   * [entertainment.msn.com](dataset/entertainment.msn.com)
   * [www.foxnews.com](dataset/www.foxnews.com)
   * [www.forbes.com](dataset/www.forbes.com)
-  * [www.nytimes.com](dataset/www.nytimes.com)
+  * [www.nymag.com](dataset/www.nymag.com)
+  * [www.esquire.com](dataset/www.esquire.com)
 2. [Crawlers](crawlers)
   * [**WayBack Machine**](crawlers/Way-Back) - only possible source and candidate for dataset
     * [The Archival Year](crawlers/Way-Back#the-archival-year) - First specification for a dataset built from WayBack archives
@@ -22,6 +24,29 @@ Structure of this project
     * [Part II](crawlers/Crawling-Google/README.md#part-ii) - Google Search By Year
 
 ---
+
+###Update 1/23/2015
+
+This update is long overdue. Without saying too much about how I've lost all faith with so-called "tripple-padded ergonomic office chairs", I'm glad to say
+that there are +1000 sites and +1000 text files (containing the extracted articles) from 10 domains, originally published in years 2000, 2005, 2010, and 2015.
+
+I unfortunately didn't have time to document the process, but if I were to summarize what I did, it would be this:
+
+1. Run all sites through a content-extractor (*cought* [eatiht](http://github.com/rodricios/eatiht) *cough*)
+2. Hand verify the resulting text files to make sure they contain: article, title, author, and date
+
+A disclaimer: this is a **dataset**, not a testset, yet.
+
+I've done only one comprehensive scan of each htmlfile-textfile pair. If you do plan on using this dataset, please be aware that you may
+and likely will find a duplicate.
+
+That said, I'll have a *testset* uploaded once I've been able to do another comprehensive scan (in progress) inorder to weed out any discrepencies, duplicates,
+etc.
+
+Cheers
+
+###Update 1/12/2015
+
 
 Update 1/12/2015
 

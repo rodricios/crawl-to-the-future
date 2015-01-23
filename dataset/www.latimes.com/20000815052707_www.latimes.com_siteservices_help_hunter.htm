@@ -1,433 +1,0 @@
-<html><head>
-
-
-<script type="text/javascript" src="/static/js/analytics.js"></script>
-<script type="text/javascript">archive_analytics.values.server_name="wwwb-app0.us.archive.org";archive_analytics.values.server_ms=200;</script>
-<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
-
-<title>LA Times</title><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><link rel="stylesheet" href="/web/20000815053737cs_/http://www.latimes.com/generalpx.css"></head><body bgcolor="#FFFFFF" MARGINWIDTH=0 MARGINHEIGHT=0 LEFTMARGIN=0 TOPMARGIN=0 text="#000000" vlink="#00497A" alink="#689681" link="#00497A">
-
-
-<!-- BEGIN WAYBACK TOOLBAR INSERT -->
-<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
-<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
-<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
-<script type="text/javascript">//<![CDATA[
-var __wm = (function(){
-var wbPrefix = "/web/";
-var wbCurrentUrl = "http://www.latimes.com/siteservices/help_hunter.htm";
-
-var firstYear = 1996;
-var imgWidth = 500,imgHeight = 27;
-var yearImgWidth = 25,monthImgWidth = 2;
-var displayDay = "15";
-var displayMonth = "Aug";
-var displayYear = "2000";
-var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-var $D=document,$=function(n){return document.getElementById(n)};
-var trackerVal,curYear = -1,curMonth = -1;
-var yearTracker,monthTracker;
-function showTrackers(val) {
-  if (val===trackerVal) return;
-  var $ipp=$("wm-ipp");
-  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
-  if (val) {
-    $ipp.className="hi";
-  } else {
-    $ipp.className="";
-    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
-  }
-  yearTracker.style.display=val?"inline":"none";
-  monthTracker.style.display=val?"inline":"none";
-  trackerVal = val;
-}
-function getElementX2(obj) {
-  var $e=jQuery(obj);
-  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
-    getElementX(obj):Math.round($e.offset().left);
-}
-function trackMouseMove(event,element) {
-  var eventX = getEventX(event);
-  var elementX = getElementX2(element);
-  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
-  var monthOff = xOff % yearImgWidth;
-
-  var year = Math.floor(xOff / yearImgWidth);
-  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
-  // 1 extra border pixel at the left edge of the year:
-  var month = (year * 12) + monthOfYear;
-  var day = monthOff % 2==1?15:1;
-  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
-    zeroPad(day,2) + "000000";
-
-  $("displayYearEl").innerHTML=year+firstYear;
-  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
-  // looks too jarring when it changes..
-  //$("displayDayEl").innerHTML=zeroPad(day,2);
-  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
-  $("wm-graph-anchor").href=url;
-
-  if(curYear != year) {
-    var yrOff = year * yearImgWidth;
-    yearTracker.style.left = yrOff + "px";
-    curYear = year;
-  }
-  if(curMonth != month) {
-    var mtOff = year + (month * monthImgWidth) + 1;
-    monthTracker.style.left = mtOff + "px";
-    curMonth = month;
-  }
-}
-function hideToolbar() {
-  $("wm-ipp").style.display="none";
-}
-function bootstrap() {
-  var $spk=$("wm-ipp-sparkline");
-  yearTracker=$D.createElement('div');
-  yearTracker.className='yt';
-  with(yearTracker.style){
-    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
-  }
-  monthTracker=$D.createElement('div');
-  monthTracker.className='mt';
-  with(monthTracker.style){
-    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
-  }
-  $spk.appendChild(yearTracker);
-  $spk.appendChild(monthTracker);
-
-  var $ipp=$("wm-ipp");
-  $ipp&&disclaimElement($ipp);
-}
-return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
-})();//]]>
-</script>
-<style type="text/css">
-body {
-  margin-top:0 !important;
-  padding-top:0 !important;
-  min-width:800px !important;
-}
-</style>
-<div id="wm-ipp" lang="en" style="display:none;">
-
-<div style="position:fixed;left:0;top:0;width:100%!important">
-<div id="wm-ipp-inside">
-   <table style="width:100%;"><tbody><tr>
-   <td id="wm-logo">
-       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
-   </td>
-   <td class="c">
-       <table style="margin:0 auto;"><tbody><tr>
-       <td class="u" colspan="2">
-       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.latimes.com/siteservices/help_hunter.htm" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20000815053737" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
-       </td>
-       <td class="n" rowspan="2">
-           <table><tbody>
-           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
-           <tr class="m">
-           	<td class="b" nowrap="nowrap">
-		
-		    <a href="/web/20000620162440/http://www.latimes.com/siteservices/help_hunter.htm" title="20 Jun 2000">JUN</a>
-		
-		</td>
-		<td class="c" id="displayMonthEl" title="You are here: 5:37:37 Aug 15, 2000">AUG</td>
-		<td class="f" nowrap="nowrap">
-		
-		    <a href="/web/20001015152519/http://www.latimes.com/siteservices/help_hunter.htm" title="15 Oct 2000"><strong>OCT</strong></a>
-		
-                </td>
-	    </tr>
-           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
-           <tr class="d">
-               <td class="b" nowrap="nowrap">
-               
-                   <a href="/web/20000620162440/http://www.latimes.com/siteservices/help_hunter.htm" title="16:24:40 Jun 20, 2000"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
-               
-               </td>
-               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 5:37:37 Aug 15, 2000">15</td>
-	       <td class="f" nowrap="nowrap">
-               
-		   <a href="/web/20001015152519/http://www.latimes.com/siteservices/help_hunter.htm" title="15:25:19 Oct 15, 2000"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
-	       
-	       </td>
-           </tr>
-           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
-           <tr class="y">
-	       <td class="b" nowrap="nowrap">
-               
-                   1999
-               
-               </td>
-               <td class="c" id="displayYearEl" title="You are here: 5:37:37 Aug 15, 2000">2000</td>
-	       <td class="f" nowrap="nowrap">
-               
-	           <a href="/web/20011106012036/http://www.latimes.com/siteservices/help_hunter.htm" title="6 Nov 2001"><strong>2001</strong></a>
-	       
-	       </td>
-           </tr>
-           </tbody></table>
-       </td>
-       </tr>
-       <tr>
-       <td class="s">
-           <a class="t" href="/web/20000815053737*/http://www.latimes.com/siteservices/help_hunter.htm" title="See a list of every capture for this URL">21 captures</a>
-           <div class="r" title="Timespan for captures of this URL">27 Nov 99 - 29 Jan 05</div>
-       </td>
-       <td class="k">
-       <a href="" id="wm-graph-anchor">
-       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
-	 <img id="sparklineImgId" alt="sparklines"
-		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
-		 onmousemove="__wm.mv(event,this)"
-		 width="500"
-		 height="27"
-		 border="0"
-		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000010_2000:7:010112010101_2001:-1:000101000010_2002:-1:000010000001_2003:-1:000011010000_2004:-1:100100000100_2005:-1:100000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000" />
-       </div>
-       </a>
-       </td>
-       </tr></tbody></table>
-   </td>
-   <td class="r">
-       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
-       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
-   </td>
-   </tr></tbody></table>
-</div>
-</div>
-</div>
-<script type="text/javascript">__wm.bt();</script>
-<!-- END WAYBACK TOOLBAR INSERT -->
-<!-- top bar: logo, banner ad --><table background="/web/20000815053737im_/http://www.latimes.com/images/LAT_table_bg.gif" WIDTH="100%" CELLPADDING="0" CELLSPACING="0" border="0" bgcolor="#355e8f">  <tr VALIGN="MIDDLE">    <td ALIGN=left valign="bottom" background="/web/20000815053737im_/http://www.latimes.com/images/LAT_table_bg.gif" nowrap>      <!-- BEGIN logo --><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="180" height="1"><br>      <img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="3" height="64"><a href="/web/20000815053737/http://www.latimes.com/"><img src="/web/20000815053737im_/http://www.latimes.com/images/lat_logosmall.gif" width="163" height="31" vspace="8" border="0"></a>            <!-- END logo --></td>    <td ALIGN=RIGHT width="20%" nowrap bgcolor="#355e8f" background="/web/20000815053737im_/http://www.latimes.com/images/empty.gif"><nobr><A HREF="/web/20000815053737/http://www.latimes.com/RealMedia/ads/click_lx.ads/www.latimes.com/siteservices/help_hunter.htm/14318/Top/NextCardGW002/VS_0006_debt.gif/63306138643531333339393864373230" target="_top"><IMG SRC="/web/20000815053737im_/http://www.latimes.com/RealMedia/ads/adstream_lx.ads/www.latimes.com/siteservices/help_hunter.htm/14318/Top/NextCardGW002/VS_0006_debt.gif/63306138643531333339393864373230"  WIDTH=468 HEIGHT=60 BORDER=0 ALT="NextCard Internet Visa - Apply Now" ></A><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="4" height="1"></nobr></td>    </tr></table><table width="100%" border="0" cellspacing="0"  cellpadding="0" bgcolor="#414F54">
-<tr>
-<td class="topnav"><table cellpadding="0" border="0">
-        <tr>
-          <form method="GET" action="/web/20000815053737/http://www.latimes.com/search/search.cgi">
-             <input type="hidden" name="headline" value="">
-			 <input type="hidden" name="author" value="">
- 			 <input type="hidden" name="SortSpec" value="Pubdate Desc">
- 			 <input type="hidden" name="Collection" value="DailyNews">
-			 <input type="hidden" name="Filter" value="full_search_filter.hts">
-			 <input type="hidden" name="ACTION" value="FILTERSEARCH">
-			 <input type="hidden" name="ResultCount" value="15">
-			 <input type="hidden" name="ResultTemplate" value="search_template.html">
-            <td class="topnav" nowrap align="left"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="9" height="1"><input type=text name=Query value="" maxlength="40" size="15">
-              <input border=0 type=image src="/web/20000815053737im_/http://www.latimes.com/images/but_search.gif" hspace="0" width="38" height="7" align="absmiddle"></td>
-          </form>
-        </tr>
-      </table>
-	  </td>
-    <td class="topnav" nowrap align="right" valign="middle">
-	<font color="#FFFFFF"><a href="/web/20000815053737/http://www.latimes.com/"><font color="#FFFFFF">Home</font></a> | <a href="/web/20000815053737/http://www.latimes.com/archives"><font color="#FFFFFF">Archives</font></a> | <a href="/web/20000815053737/http://www.latimes.com/print"><font color="#FFFFFF">Print Edition</font></a> | <a href="/web/20000815053737/http://www.latimes.com/siteservices/subscriptions.htm"><font color="#FFFFFF">Home Delivery</font></a> | <a href="/web/20000815053737/http://www.latimes.com/ads"><font color="#FFFFFF">Advertise</font></a> | <a href="/web/20000815053737/http://www.latimes.com/sitemap.htm"><font color="#FFFFFF">Site Map</font></a>
-      | <a href="/web/20000815053737/http://www.latimes.com/siteservices/talk_contacts.htm"><font color="#FFFFFF">Feedback</font></a> | <a href="/web/20000815053737/http://www.latimes.com/siteservices"><font color="#FFFFFF">Help</font></a></font><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="4" height="23" align="absmiddle">
-	  </td>
-  </tr>
-  <tr>
-    <td colspan="2"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="600" height="1"></td>
-  </tr>
-</table>
-<!-- BEGIN MAIN TABLE --><table width="97%" border="0" cellspacing="0" cellpadding="0" height="100%">  <tr><!-- BEGIN LEFT SIDE -->    <td width="45%" valign="top" bgcolor="#254970">      <table width="100%" border="0" cellspacing="0" cellpadding="0">        <tr>          <td bgcolor="#254970" width="1%"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="10" height="5"></td>          <td bgcolor="#254970" width="50%"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="1" height="5"></td>          <td bgcolor="#254970" width="50%"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="1" height="1"></td>          <td width="1%" bgcolor="#ffffff"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="1" height="1"></td>        </tr>        <tr>          <td bgcolor="#b2cbd2" width="1%">&nbsp;</td>          <td bgcolor="#b2cbd2" colspan="2"><table width="100%" border="0" cellpadding="3" cellspacing="0">
-
-<tr>
-<td width="30%" valign="top" nowrap><span class="nMainSection"><b><a href="/web/20000815053737/http://www.latimes.com/news">News</a><br>
-<a href="/web/20000815053737/http://www.latimes.com/news/politics">Politics</a><br>
-<a href="/web/20000815053737/http://www.calendarlive.com/">Entertainment</a></b></span><br>
-<span class="nMainSection2"><nobr><a href="/web/20000815053737/http://www.calendarlive.com/LA_Times/Arts_and_Entertainment/Music/">music</a>, <a href="/web/20000815053737/http://www.calendarlive.com/LA_Times/Arts_and_Entertainment/Movies/">movies</a>, <a href="/web/20000815053737/http://www.calendarlive.com/LA_Times/Arts_and_Entertainment/Art/">art</a>,</nobr><br>
-<a href="/web/20000815053737/http://www.calendarlive.com/tvent/tvtopic.html">TV</a>, <a href="/web/20000815053737/http://www.calendarlive.com/LA_Times/Arts_and_Entertainment/Restaurants_Cafes/">restaurants</a></span></td>
-
-<td width="5%"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="8" height="1"></td>
-
-<td width="30%" valign="top"><span class="nMainSection"><b><a href="/web/20000815053737/http://www.latimes.com/business">Business</a><br>
-<a href="/web/20000815053737/http://www.latimes.com/travel">Travel</a><br>
-<a href="/web/20000815053737/http://www.latimes.com/class">Classifieds</a></b></span><br>
-<span class="nMainSection2"><a href="/web/20000815053737/http://www.latimes.com/class/employ">jobs</a>, <a href="/web/20000815053737/http://www.latimes.com/class/realestate">homes</a>,
-<a href="/web/20000815053737/http://www.cars.com/carsapp/latimes/?srv=parser&amp;act=display&amp;tf=/index-default.tmpl">cars</a>,<a href="/web/20000815053737/http://www.latimes.com/class/rentals"> rentals</a></span></td>
-
-<td width="5%"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="8" height="1"></td>
-
-<td width="30%" valign="top" nowrap><span class="nMainSection"><b><a href="/web/20000815053737/http://sports.latimes.com/">Sports</a><br><a href="/web/20000815053737/http://www.latimes.com/news/comment/">Commentary</a><br>
-<a href="/web/20000815053737/http://latimes.pointshop.com/">Shopping</a></b>
-</span>
-</td>
-</tr>
-</table>
-</td>          <td width="1%" bgcolor="#b2cbd2"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="1" height="1"></td>        </tr>        <tr>          <td bgcolor="#254970" width="1%"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="3" height="3"></td>          <td bgcolor="#254970" colspan="2"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="280" height="3"></td>          <td width="1%" bgcolor="#ffffff"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="1" height="3"></td>        </tr>        <tr bgcolor="#FFDC77">		<td width="1%">&nbsp;</td>		<td colspan="2" align="right"><img src="/web/20000815053737im_/http://www.latimes.com/images/top_siteserv.jpg" width="292" height="48"></td>		<td width="1%" bgcolor="#917D67" background="/web/20000815053737im_/http://www.latimes.com/images/newsimage_end.gif"><img src="/web/20000815053737im_/http://www.latimes.com/images/top_side.jpg" width="5" height="48"></td>        </tr><!-- SUBSECTION LABEL -->      <!--<tr bgcolor="#b2cbd2">          <td width="1%" bgcolor="#FFDC77">&nbsp;</td>          <td colspan="2" bgcolor="#FFF0C3" valign="top" align="right"><img src="/images/nationWorld.gif" width="118" height="9" vspace="5"></td>          <td width="1%" bgcolor="#FFF0C3" align="right"><img src="/images/empty.gif" width="5" height="1"></td>        </tr>--><!-- END SUBSECTION LABEL --><!-- BEGIN HEADLINE AREA -->       <tr bgcolor="#b2cbd2">          <td width="1%" bgcolor="#FFDC77">&nbsp;</td>          <td colspan="2" bgcolor="#FFF0C3" valign="top" align="left">		<table border="0" cellspacing="2">
-              <tr>
-                <td rowspan="7" width="1%"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="10" height="1"></td>
-                <td><div align=right><b class="nSubTop">Help</b></div></td>
-              </tr>
-              <tr>
-                <td valign="top" class="nHeadline"><b>&#149;</b>&#160;&#160;<a href="help_registration.htm">Registration</a></td>
-              </tr>
-              <tr>
-                <td valign="top" class="nHeadline"><b>&#149;</b>&#160;&#160;<a href="help_archives.htm">Archives</a></td>
-              </tr>
-              <tr>
-                <td valign="top" class="nHeadline"><b>&#149;</b>&#160;&#160;<a href="help_hunter.htm">Hunter</a></td>
-              </tr>
-              <tr>
-                 <td valign="top" class="nHeadline"><b>&#149;</b>&#160;&#160;<a href="help_crossword.htm">Crosswords</a></td>
-              </tr>
-              <tr>
-                <td valign="top" class="nHeadline"><b>&#149;</b>&#160;&#160;<a href="help_pdf.htm">PDF Files</a></td>
-              </tr>
-              <tr>
-                <td valign="top" class="nHeadline"><b>&#149;</b>&#160;&#160;<a href="help_forms.htm">Using Our Forms</a></td>
-              </tr>
-            </table>
-</font>
-          </td>          <td width="1%" bgcolor="#FFF0C3" align="right"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="5" height="1"></td>        </tr><!-- END HEADLINE AREA --><!-- BEGIN RELATED LINKS AREA --><!--include virtual="relatedinc.htm"--><!-- END RELATED LINKS AREA --><!-- BEGIN LOWER NEWS NAV -->		<tr>          <td width="1%" bgcolor="#FFDC77">&nbsp;</td>          <td colspan="2" bgcolor="#FFDC77"><table width="100%" border="0" cellpadding="3" cellspacing="0">
-  <tr>
-	<td valign="top" class="nLevel2Section" width="45%"><b>&#149; <a href="/web/20000815053737/http://www.latimes.com/siteservices/memberaccounts.htm">Member Services</b></a><br>
-      &#149; <a href="/web/20000815053737/http://www.latimes.com/siteservices/talk_contacts.htm"><b>Talk to Us</b></a><br>
-      &#149; <a href="/web/20000815053737/http://www.latimes.com/siteservices/websitestaff.htm"><b>About the Site</b></a></td>
-    <td width="5%"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="8" height="1"></td>
-    <td valign="top" class="nLevel2Section" width="45%">&#149; <a href="/web/20000815053737/http://www.latimes.com/siteservices/facts.htm"><b>Inside the Times</b></a><br>
-      &#149; <a href="/web/20000815053737/http://www.latimes.com/siteservices/help_archives.htm"><b>Help</b></a><br>
-      &#149; <a href="/web/20000815053737/http://www.latimes.com/siteservices/members.htm"><b>Legal Issues</b></a></td>
-    <td width="5%"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="8" height="1"></td>
-    <!--<td valign="top" class="nLevel2Section" width="30%"><a href="#"><b></b></a><br>
-      <a href="#"><b></b></a><br>
-      <a href="#"><b></b></a></td>-->
-  </tr>
-</table></td>          <td width="1%" bgcolor="#FFDC77"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="5" height="1"></td>        </tr><!-- END LOWER NEWS NAV -->        <tr>          <td bgcolor="#254970" width="1%"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="3" height="3"></td>          <td bgcolor="#254970" colspan="2"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="1" height="3"></td>          <td width="1%" bgcolor="#ffffff"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="1" height="3"></td>        </tr>	   <tr>
-          <td bgcolor="#b2cbd2" width="1%">&nbsp;</td>
-          <td colspan="2" bgcolor="#b2cbd2" valign="top"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="5" height="5" align="top"><br>
-
-            <b class="nClassifiedTitle"><a href="/web/20000815053737/http://www.latimes.com/class">Classifieds</a></b><span class="nClassified">&nbsp;&nbsp;Find a <a href="/web/20000815053737/http://www.latimes.com/class/realestate">home</a>, <a href="/web/20000815053737/http://www.cars.com/carsapp/latimes/?srv=parser&amp;act=display&amp;tf=/index-default.tmpl">car</a>,
-            <a href="/web/20000815053737/http://www.latimes.com/class/rental">rental</a>, <a href="/web/20000815053737/http://www.latimes.com/class/employ">job</a>, <a href="/web/20000815053737/http://www.latimes.com/class/pets">pet</a>,
-            <a href="/web/20000815053737/http://www.latimes.com/class/merchandise">merchandise</a>, <a href="/web/20000815053737/http://www.laauctions.com/">auction</a>, <a href="/web/20000815053737/http://www.latimes.com/class/transportation">boat,
-            plane or RV</a>&nbsp;&nbsp;</span><b class="nClassifiedTitle"><a href="/web/20000815053737/http://www.latimes.com/class/placead"><nobr>Place
-            an Ad</nobr></a></b><br>
-            <img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="5" height="5"></td>
-          <td width="1%" bgcolor="#b2cbd2"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="1" height="1"></td>
-        </tr>
-        <tr>
-          <td bgcolor="#254970" width="100%" colspan=4><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="3" height="3"></td>
-        </tr>
-		   <tr>
-          <td bgcolor="#AED4E9" width="1%">&nbsp;</td>
-          <td colspan="2" bgcolor="#AED4E9" valign="top"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="5" height="5" align="top"><br>
-
-           <b class="nClassifiedTitle"><a href="/web/20000815053737/http://195.7.48.75/release/new/losangeles/times/latimeads/todaysads/f-todaysads.htm">Print Edition Advertisements</a></b> &nbsp;&nbsp;<span class="nClassified">See this week's ads</span><br>
-            <img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="5" height="5"></td>
-          <td width="1%" bgcolor="#AED4E9"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="1" height="1"></td>
-        </tr>	<tr><td bgcolor="#254970" width="1%">&nbsp;</td>
-
-	<td class="nSubSection" bgcolor="#254970" colspan="2" width="98%">
-
-	&nbsp;<br><b>OTHER EDITIONS</b><br>
-
-	<a href="/web/20000815053737/http://www.latimes.com/print/"><font color="#FFFFFF">Print Edition</font></a>, <a href="/web/20000815053737/http://www.latimes.com/editions/orange/"><font color="#FFFFFF">Orange County</font></a>,
-
-	<a href="/web/20000815053737/http://www.latimes.com/editions/valley/"><font color="#FFFFFF">Valley</font></a>, <a href="/web/20000815053737/http://www.latimes.com/editions/ventura/"><font color="#FFFFFF">Ventura County</font></a>,
-
-	<a href="/web/20000815053737/http://www.latimes.com/editions/national/"><font color="#FFFFFF">National</font></a>, <a href="/web/20000815053737/http://www.latimes.com/communities/"><font color="#ffffff">Community Papers</font></a></td>
-
-	<td width="1%" bgcolor="#254970"><img alt="" src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="5" height="3"></td></tr>
-       <tr>          <td bgcolor="#254970" width="1%">&nbsp;</td>          <td bgcolor="#254970" colspan="2" align="left"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="1" height="5"><br>            <img src="/web/20000815053737im_/http://www.latimes.com/images/moresections.gif" width="81" height="7" vspace="5" hspace="3"></td>          <td width="1%" bgcolor="#254970"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="5" height="5"></td>        </tr>        <tr>          <td bgcolor="#254970" width="1%">&nbsp;</td>          <td bgcolor="#254970" colspan="2" valign="top" align="center">                <table width="100%" border="0" cellpadding="0" cellspacing="0">
-<tr>
-
-<td width="30%" class="nSubSection" valign="top">
-<a href="/web/20000815053737/http://www.calendarlive.com/LA_Times/Arts_and_Entertainment/Books_Talks/"><font color="#FFFFFF">Books</font></a><br>
-<a href="/web/20000815053737/http://www.latimes.com/food/"><font color="#FFFFFF">Food</font></a><br>
-<a href="/web/20000815053737/http://www.latimes.com/news/health/"><font color="#FFFFFF">Health</font></a><br>
-<a href="/web/20000815053737/http://www.latimes.com/news/highway1/"><font color="#FFFFFF">Highway 1</font></a><br>
-<a href="/web/20000815053737/http://www.latimes.com/print/realestate/"><font  color="#FFFFFF">Real Estate</font></a><br>
-<a href="/web/20000815053737/http://www.latimes.com/living/"><font color="#FFFFFF">So.Cal. Living</font></a><br>
-<a href="/web/20000815053737/http://www.latimes.com/print/opinion/"><font color="#FFFFFF">Sunday Opinion</font></a><br>
-</td>
-<td>&nbsp;</td>
-
-<td width="30%" class="nSubSection" valign="top">
-<a href="/web/20000815053737/http://www.latimes.com/news/columns/"><font color="#FFFFFF">Columnists</font></a><br>
-<a href="/web/20000815053737/http://www.latimes.com/learning/"><font color="#FFFFFF">Education</font></a><br>
-<a href="/web/20000815053737/http://www.latimes.com/obituary"><font color="#FFFFFF">Obituaries</font></a><br>
-<a href="/web/20000815053737/http://www.latimes.com/news/religion/"><font color="#FFFFFF">Religion</font></a><br>
-<a href="/web/20000815053737/http://www.latimes.com/news/science/science/"><font color="#FFFFFF">Science</font></a><br>
-<a href="/web/20000815053737/http://www.latimes.com/news/reports/"><font color="#FFFFFF">Special Reports</font></a><br>
-<a href="/web/20000815053737/http://www.latimes.com/news/timespoll/"><font color="#FFFFFF">Times Poll</font></a><br>
-</td>
-<td>&nbsp;</td>
-
-<td width="30%" class="nSubSection" valign="top">
-<a href="/web/20000815053737/http://www.latimes.com/siteservices/crossword.htm"><font color="#FFFFFF">Crossword</font></a><br>
-<a href="/web/20000815053737/http://www.latimes.com/extras/horoscope/"><font color="#FFFFFF">Horoscope</font></a><br>
-<a href="/web/20000815053737/http://www.latimes.com/extras/lottery/"><font color="#FFFFFF">Lottery</font></a><br>
-<a href="/web/20000815053737/http://www.latimes.com/readingby9/"><font color="#FFFFFF">Reading by 9</font></a><br>
-<a href="/web/20000815053737/http://www.latimes.com/extras/traffic/"><font color="#FFFFFF">Traffic</font></a><br>
-<a href="/web/20000815053737/http://rain.advance.net/latimes/"><font color="#FFFFFF">Weather</font></a><br>
-<!-- <a href="/discuss"><font color="#FFFFFF">Discussions</font></a><br> -->
-<a href="/web/20000815053737/http://www.latimes.com/sitemap.htm"><font color="#b2cbd2"><B>SITE MAP</B></font></a>
-</td>
-</tr>
-</table>
-            <img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="1" height="10"></td>          <td width="1%" bgcolor="#254970"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="1" height="5"></td>        </tr><!-- begin ecom box for LAT/Sports -->
-<tr><td bgcolor="#FFC501" width="1%">&nbsp;</td>
-
-<td class="nMarketplace" bgcolor="#FFC501" colspan="2" align="left" valign="bottom">SHOP 'TIL YOUR LAPTOP DROPS</td>
-
-<td width="1%" bgcolor="#FFC501"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="5" height="3"></td></tr>
-<tr><td bgcolor="#FFC501" width="1%"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" height="2" width="5"></td>
-<td bgcolor="#FF0000" colspan="2" align="left"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="1" height="1"></td>
-<td width="1%" bgcolor="#FF0000"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="5" height="2"></td></tr>
-<tr><td bgcolor="#FFC501" width="1%">&nbsp;</td>
-<td bgcolor="#FFC501" rowspan="2" align="left" valign="top"><a href="/web/20000815053737/http://latimes.pointshop.com/"><IMG SRC="/web/20000815053737im_/http://www.latimes.com/ads/vendors/ecom_box1.gif" ALT="Shopping" BORDER="0" width="83" height="47"></a><IMG SRC="/web/20000815053737im_/http://www.latimes.com/ads/vendors/fade_right.gif" ALT="" BORDER="0" width="60" height="47"></td>
-<td class="nHeadline" bgcolor="#FFC501" valign="top" rowspan="2">
-       <FORM action="/web/20000815053737/http://www.latimes.com/RealMedia/ads/click_lx.ads/www.latimes.com/siteservices/help_hunter.htm/4979/Position2/IH-ECommerce03a/psecommedit.htm/63306138643531333339393864373230">
-<font face="arial, helvetica" size="-2" color="#000000">Search</font>
-<table border="0" cellpadding="0" cellspacing="3">
-<tr><td><INPUT name="KEYWORDS" maxlength="100" size="8" value=""></td><td><input type="image" name="SearchProduct" src="/web/20000815053737im_/http://www.latimes.com/ads/vendors/go1.gif" border=0 hspace=3 width="25" height="18"></td></tr></table>
-<FONT face="arial, helvetica" size="-2" color="#000000"><INPUT type="Radio" name="SELECTED" value="Products" checked>Products</font>
-<FONT face="arial, helvetica" size="-2" color="#000000"><INPUT type="Radio" name="SELECTED" value="Stores" >Stores</font>
-<!--td><FONT face="arial, helvetica" size="-2" color="#FFFFFF"><INPUT type="Radio" name="SELECTED" value="Specials">Specials</font></td-->
-</FORM>
-  </td>
-<td width="1%" bgcolor="#FFC501"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="5" height="3"></td></tr>
-<tr><td bgcolor="#FFC501" width="1%">&nbsp;</td>
-<td width="1%" bgcolor="#FFC501"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="5" height="3"></td></tr>
-<!-- end ecom box -->  	<tr>          <td bgcolor="#254970" width="1%">&nbsp;</td>          <td bgcolor="#254970" align="center" colspan="2">&nbsp;<br><A HREF="/web/20000815053737/http://www.latimes.com/RealMedia/ads/click_lx.ads/www.latimes.com/siteservices/help_hunter.htm/5203/Left1/NextCardGW002a/z41_understand_120X90.gif/63306138643531333339393864373230" target="_top"><IMG SRC="/web/20000815053737im_/http://www.latimes.com/RealMedia/ads/adstream_lx.ads/www.latimes.com/siteservices/help_hunter.htm/5203/Left1/NextCardGW002a/z41_understand_120X90.gif/63306138643531333339393864373230"  WIDTH=120 HEIGHT=90 BORDER=0 ALT="NextCard Internet Visa - Apply Now" ></A>&nbsp;&nbsp;&nbsp<A HREF="/web/20000815053737/http://www.latimes.com/RealMedia/ads/click_lx.ads/www.latimes.com/siteservices/help_hunter.htm/27575/Left2/TravelS_LAT_001g/129TravelROS.htm/63306138643531333339393864373230?27575">
-<IMG SRC="/web/20000815053737im_/http://view.avenuea.com/view/losangelestimes_travelscape1042_050100cp_120x90_4/direct/0127575" BORDER=0 WIDTH=120 HEIGHT=90 ALT="Travelscape.com"></A></td>          <td width="1%" bgcolor="#254970"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="5" height="5"></td>        </tr>        <tr>          <td bgcolor="#254970" width="1%">&nbsp;</td>          <td bgcolor="#254970" colspan="2" valign="top" align="center"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="1" height="10"></td>          <td width="1%" bgcolor="#254970"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="1" height="5"></td>        </tr>      </table>    </td><!-- END LEFT SIDE -->          <!-- GUTTER -->          <td width="1%"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="10" height="10"></td>		  <!-- END GUTTER --><!--BEGIN RIGHT SIDE -->    <td  CLASS="content" valign="top" width="55%"><!-- TIMESTAMP -->      <div align="right" class="cTimestamp"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="1" height="3"><br>	  Monday, August 14, 2000
- 10:37 PM
-	  <img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="4" height="1"></div>		  <img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="335" height="10"><br>      <!-- END TIMESTAMP --> <!-- BEGIN RIGHT MAIN -->       <p> <img src="help_hunter.gif" width="335" height="96">      <p><a href="/web/20000815053737/http://www.latimes.com/hunter/">Hi, I'm Hunter</a>, your News Retriever&reg;. Anyway, I'm here to tell you exactly how to make the Customized News Service (CNS) work best.<p>		&#160;&#160;&#160;&#160;&#160;I'll help you create a personalized newspaper. You tell me your interests and then I'll bring you stories in your interest groups that have run in the newspaper in the last seven days;		<p>		&#160;&#160;&#160;&#160;&#160;Here's what you do to get access to these features:		<p>		&#160;&#160;&#160;&#160;&#160;You have to join my paper route for me to visit your computer, so if you haven't registered, better <a href="/web/20000815053737/http://www.latimes.com/cgi-bin/latreg">do that now</a>.		<p>		<ol>		<li> When you're in the site and you want to create or view your personal newspaper, click on me -- Hunter -- in the toolbar (watch the nose). You'll log in your user name and password, and go to the Hunter home page.		<p>		<li> Now, if I haven't brought you a paper before, you'll have to tell me what your interests are. Do this by clicking on the Change Profile button on the bottom of the page. If you've created a profile before, you already know what's coming, so <a href="#jump">jump ahead</a>.		<p>		<li> The change profile page looks pretty heavy, but it's not so bad. Hey, you get to click boxes and that's always fun. You've got a couple ways to pick your topics (pre-searched topics or topics you define yourself), but remember that you shouldn't pick more than ten total or I won't be able to fit the paper in my mouth.		<p>		<li> The first way to pick topics is from The Times' pre-defined topics. There are about 60 subjects that they think you might be interested in, from Wall Street to Obituaries. Simply click the box and I'll bring you stories from that topic.		&#160;&#160;&#160;&#160;&#160;The pre-defined topics probably won't change much, but if you'd like to suggest one, please email me at <a href="mailto:hunter@latimes.com">hunter@latimes.com</a>.		<p>		<li> You can also name and define your own topics. The name is what shows up on your personal page, and is what you click on to tell me to search. So, fill in the form like this:		<form type=post>		<b>Name of Topic&#160;&#160;&#160;&#160;Search Words for Topic</b><br>		<nobr><input type=text value="Horses" size="10">&#160;&#160;&#160;&#160;&#160;&#160;<input type=text value="Horse Racing " size="20">		</nobr>		</form>		&#160;&#160;&#160;&#160;&#160;		You can define your own topic in order to search for stories in broader areas -- for issues or concepts. For example, searching for stories that include the word "Clinton" will bring you everything from biographies to bills. By including "and Whitewater" you'll be able to limit the number of stories that I fetch, and I'll be more accurate with what I bring you.		<p>		<li> <a name="jump">When you've made all your selections and changes, be sure to hit the "Submit" button. Your profile won't be saved if you don't!</a>		<p>		<li> If you've gotten to the bottom of the Change Profile screen and you decide not to make those changes, hit the "Undo Changes" button to keep the changes from being saved. Your old profile will still be in effect.		<p>		<li> Completing your profile will take you back to the Hunter home page. I'll have your personal paper waiting! The topics will appear as hypertext links (i.e.: <font color="#0066ff">Clinton</font>) and clicking on them will bring up the stories in your paper.		<p>		</ol>		&#160;&#160;&#160;&#160;&#160;Other things you might want to know:		<p>		<ol>		<li>Clicking on a topic will give you a list of stories organized chronologically, from most to least recent about that topic. By clicking on the story icon, you'll be able to read the story.<p>		<li>You may change or add to your profile at any time by choosing the Change Profile link or icon. Just don't forget to submit the changes!<p>		</ol>		&#160;&#160;&#160;&#160;&#160;I'm looking forward to delivering your paper.		<p>		<hr noshade size=1>		<font size=+1>Need More Help?</font><br>		Additional questions or comments? <a href="/web/20000815053737/http://www.latimes.com/siteservices/comment_hunter.htm">Message us with comments</a>. Or, visit our <a href="/web/20000815053737/http://www.latimes.com/siteservices/tech_hunter.htm">Trouble Report page</a> to report technical problems.<!-- END RIGHT MAIN --></td></tr><!-- BEGIN END-OF-STORY NAV, COPYRIGHT (both sides) <tr><!-- BEGIN LEFT SIDE -->    <td width="45%" valign="top" bgcolor="#254970">	       <table width="100%" border="0" cellspacing="0" cellpadding="0"><!--include virtual="relatednavinc.htm"-->		   <tr>	          <td bgcolor="#b2cbd2" width="1%">&nbsp;</td>	          <td bgcolor="#b2cbd2"><table width="100%" border="0" cellpadding="3" cellspacing="0">
-
-<tr>
-<td width="30%" valign="top" nowrap><span class="nMainSection"><b><a href="/web/20000815053737/http://www.latimes.com/news">News</a><br>
-<a href="/web/20000815053737/http://www.latimes.com/news/politics">Politics</a><br>
-<a href="/web/20000815053737/http://www.calendarlive.com/">Entertainment</a></b></span><br>
-<span class="nMainSection2"><nobr><a href="/web/20000815053737/http://www.calendarlive.com/LA_Times/Arts_and_Entertainment/Music/">music</a>, <a href="/web/20000815053737/http://www.calendarlive.com/LA_Times/Arts_and_Entertainment/Movies/">movies</a>, <a href="/web/20000815053737/http://www.calendarlive.com/LA_Times/Arts_and_Entertainment/Art/">art</a>,</nobr><br>
-<a href="/web/20000815053737/http://www.calendarlive.com/tvent/tvtopic.html">TV</a>, <a href="/web/20000815053737/http://www.calendarlive.com/LA_Times/Arts_and_Entertainment/Restaurants_Cafes/">restaurants</a></span></td>
-
-<td width="5%"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="8" height="1"></td>
-
-<td width="30%" valign="top"><span class="nMainSection"><b><a href="/web/20000815053737/http://www.latimes.com/business">Business</a><br>
-<a href="/web/20000815053737/http://www.latimes.com/travel">Travel</a><br>
-<a href="/web/20000815053737/http://www.latimes.com/class">Classifieds</a></b></span><br>
-<span class="nMainSection2"><a href="/web/20000815053737/http://www.latimes.com/class/employ">jobs</a>, <a href="/web/20000815053737/http://www.latimes.com/class/realestate">homes</a>,
-<a href="/web/20000815053737/http://www.cars.com/carsapp/latimes/?srv=parser&amp;act=display&amp;tf=/index-default.tmpl">cars</a>,<a href="/web/20000815053737/http://www.latimes.com/class/rentals"> rentals</a></span></td>
-
-<td width="5%"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="8" height="1"></td>
-
-<td width="30%" valign="top" nowrap><span class="nMainSection"><b><a href="/web/20000815053737/http://sports.latimes.com/">Sports</a><br><a href="/web/20000815053737/http://www.latimes.com/news/comment/">Commentary</a><br>
-<a href="/web/20000815053737/http://latimes.pointshop.com/">Shopping</a></b>
-</span>
-</td>
-</tr>
-</table>
-</td>	          <td width="1%" bgcolor="#b2cbd2"><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="1" height="1"></td>        </tr>		</table>	</td><!-- END LEFT SIDE -->	 <!-- GUTTER -->     <td width="1%" bgcolor=#FFFFFF><img src="/web/20000815053737im_/http://www.latimes.com/images/empty.gif" width="10" height="10"></td>	 <!-- END GUTTER --><!-- BEGIN RIGHT SIDE: copyright -->	<td bgcolor=#FFFFFF CLASS="content" valign="top" width="55%">	<p>&nbsp</p>
-<span class="cImageText">Copyright 2000 Los Angeles Times</span>
-	</td><!-- END RIGHT SIDE: copyright -->	</tr>	</table><!-- END BOTTOM NAV AND COPYRIGHT, END MAIN TABLE --><!-- BOTTOM BANNER AD --><table width=100% cellpadding=0 cellspacing=0 border=0>  <tr align="right" bgcolor="#254970">    <td><p><font size=-3>&nbsp;</font></p><A HREF="/web/20000815053737/http://www.latimes.com/RealMedia/ads/click_lx.ads/www.latimes.com/siteservices/help_hunter.htm/10582/Bottom/NextCardGW002/DH_0014_orangecombo.gif/63306138643531333339393864373230" target="_top"><IMG SRC="/web/20000815053737im_/http://www.latimes.com/RealMedia/ads/adstream_lx.ads/www.latimes.com/siteservices/help_hunter.htm/10582/Bottom/NextCardGW002/DH_0014_orangecombo.gif/63306138643531333339393864373230"  WIDTH=468 HEIGHT=60 BORDER=0 ALT="NextCard Internet Visa - Apply Now" ></A>&nbsp;&nbsp<p><font size=-3>&nbsp;</font></p></td>  </tr></table><!-- END BOTTOM BANNER AD --></body></html>
-
-
-
-
-
-<!--
-     FILE ARCHIVED ON 5:37:37 Aug 15, 2000 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 6:30:55 Jan 12, 2015.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
--->
