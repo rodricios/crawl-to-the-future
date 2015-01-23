@@ -4,18 +4,16 @@ Datasets - websites from 2000, 2005, 2010, and 2015
 This directory is where you'll find an on-going accumulation of
 websites from the following domains:
 
-  * [news.bbc.co.uk](news.bbc.co.uk)
-  * [www.cnn.com](www.cnn.com)
-  * [news.yahoo.com](news.yahoo.com)
-  * [www.thenation.com](www.thenation.com)
-  * [www.latimes.com](www.latimes.com)
-  * [entertainment.msn.com](entertainment.msn.com)
-  * [www.foxnews.com](www.foxnews.com)
-  * [www.forbes.com](www.forbes.com)
-  * [www.nymag.com](www.nymag.com)
-  * [www.esquire.com](www.esquire.com)
-
-* more domains yet to be listed
+  * news.bbc.co.uk
+  * cnn.com
+  * news.yahoo.com
+  * thenation.com
+  * latimes.com
+  * entertainment.msn.com
+  * foxnews.com
+  * forbes.com
+  * nymag.com
+  * esquire.com
 
 ###Update 1/23/2015
 
