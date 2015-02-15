@@ -106,6 +106,7 @@ def prep_data_for_measurements(directory, extractor,
     #print(textfile_names)
 
     #Step 2
+    '''
     for key, val in golden_dict.items():
         #print()
         #print(os.path.abspath(val['testpath']))
@@ -123,7 +124,9 @@ def prep_data_for_measurements(directory, extractor,
     #Step 4
     for key, val in golden_dict.items():
         val['C'] = tokens_to_hist_extractor(extractor, os.path.abspath(val['testpath']))
+    '''
     return golden_dict
+
 
 
 def get_measurements(prep_data):
