@@ -1,6 +1,10 @@
 import re #for tokenizing
 import collections #for multiset/histogram
 import os
+try:
+    from StringIO import StringIO
+except ImportError:
+    from io import StringIO
 
 import lxml.html
 
@@ -17,8 +21,11 @@ def tokens_to_hist_from_universe(data_filepath):
 
     with open(data_filepath,'r') as data_file:
 
-        parsed_goldhtml = lxml.html.parse(data_file)
-
+        try:
+            parsed_goldhtml = lxml.html.parse(data_file,
+                            lxml.html.HTMLParser(encoding="utf-8"))
+        except:
+            print(str(data_file.read()))
         tokenized_content = collections.Counter()
 
         content = "".join(parsed_goldhtml.xpath('//text()'))
@@ -30,9 +37,11 @@ def tokens_to_hist_from_universe(data_filepath):
 
 #get every word from gold std. as f-distribution
 def tokens_to_hist_goldstd(test_filepath):
-
+    if not os.path.exists(test_filepath):
+        test_filepath += '.txt'
     with open(os.path.abspath(test_filepath), 'r') as f:
 
+        #print("test_filepath",os.path.abspath(test_filepath))
         content = str(f.read())
 
         tokenized_content = collections.Counter()
@@ -43,17 +52,20 @@ def tokens_to_hist_goldstd(test_filepath):
 
 
 #get every extracted (predicted) word as f-distribution
-def tokens_to_hist_extractor(extractor, data_filepath):
+def tokens_to_hist_extractor(extract, data_filepath):
+    
     try:
-        content = extractor.extract(data_filepath)
-    except:
+        content = extract(data_filepath)
+    except Exception:
         print(data_filepath)
         raise
         #raise Exception("\"exception\" method needs to be implemented")
 
     tokenized_content = collections.Counter()
-    tokenized_content.update(re.split(r'\W+', content))
-
+    try:
+        tokenized_content.update(re.split(r'\W+', content))
+    except:
+        print(content)
     return tokenized_content
 
 
@@ -72,9 +84,12 @@ def calc_praf(goldstd,predicted,universe):
     recall = (histsum(TP)*1.0)/histsum(TP+FN)
 
     accuracy = (histsum(TP+TN)*1.0)/histsum(TP+FP+FN+TN)
-
-    f1 = 2 * ((precision*recall)/(precision+recall))
-
+    try:
+        f1 = 2 * (((precision*recall)*1.0)/(precision+recall))
+    except ZeroDivisionError:
+        f1 = 0
+        #print(precision,recall, accuracy)
+        #raise
     return {'p':precision,'r':recall,'a':accuracy,'f1':f1}
 
 
@@ -96,6 +111,8 @@ def prep_data_for_measurements(directory, extractor,
     filenames =  set([re.sub(("\\"+ goldfile_ext+"|"+"\\"+testfile_ext),"",name)
                     for name in os.listdir(directory) ])
 
+    #print("prep_data_for_measurements",filenames[0])
+
     golden_dict = { name:
                     {
                         'domain': os.path.split(os.path.split(directory)[0])[1],
@@ -105,12 +122,23 @@ def prep_data_for_measurements(directory, extractor,
                     } for name in filenames }
     #print(textfile_names)
 
-    #Step 2
+
+    for key, val in golden_dict.items():
+        content = tokens_to_hist_extractor(extractor, os.path.abspath(val['testpath']))
+
+        universe = tokens_to_hist_from_universe(os.path.abspath(val['testpath']))
+
+        goldstd = tokens_to_hist_goldstd(os.path.abspath(val['goldpath']))
+
+        val['measurements'] = calc_praf(goldstd,content,universe)
+
     '''
+    #Step 2
     for key, val in golden_dict.items():
         #print()
-        #print(os.path.abspath(val['testpath']))
+        print(val['testpath'])
         val['W'] = tokens_to_hist_from_universe(os.path.abspath(val['testpath']))
+
         #print(val['W'])
 
     #Step 3
@@ -126,7 +154,6 @@ def prep_data_for_measurements(directory, extractor,
         val['C'] = tokens_to_hist_extractor(extractor, os.path.abspath(val['testpath']))
     '''
     return golden_dict
-
 
 
 def get_measurements(prep_data):
@@ -153,7 +180,7 @@ def main():
         domainpath,year =  os.path.split(folder)
         domain = os.path.split(domainpath)[1]
         prep_data = prep_data_for_measurements(os.path.abspath(folder),eatiht)
-        get_measurements(prep_data)
+        #get_measurements(prep_data)
         exhaustive_test.append(prep_data)
 
     #prep_data = prep_data_for_measurements(os.path.abspath(dataset_path),eatiht)
